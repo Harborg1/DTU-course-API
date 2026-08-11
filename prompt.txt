@@ -1,0 +1,708 @@
+Byg et komplet produktionsklart projekt med navnet dtu-course-api.
+
+FORMÅL
+
+Projektet skal hente alle DTU-kurser for studieåret 2026/2027 fra den officielle DTU Kursusbase, gemme dem struktureret i PostgreSQL og stille dem til rådighed via et REST API.
+
+API'et skal bruges som Tool i Microsoft Copilot Studio til en DTU-kursusanbefaler.
+
+Copilot skal kunne:
+
+1. Søge i alle DTU-kurser.
+2. Søge efter emner som machine learning, computer vision, physics og optimization.
+3. Filtrere på ECTS.
+4. Filtrere på kursusniveau.
+5. Filtrere på undervisningsperiode.
+6. Filtrere på skemagruppe.
+7. Filtrere på institut.
+8. Filtrere på sprog.
+9. Hente komplette oplysninger om ét bestemt kursus.
+10. Få officielle source URLs med hvert resultat.
+
+KILDER
+
+Brug officielle DTU-sider som datakilde.
+
+Primær kursusliste:
+
+https://kurser.dtu.dk/CourseList/list/
+
+Individuelle kurser for studieåret 2026/2027 følger strukturen:
+
+https://kurser.dtu.dk/course/2026-2027/{course_number}
+
+Undersøg den faktiske HTML-struktur på siderne før parseren implementeres.
+
+Gæt ikke på CSS-selectors eller HTML-struktur.
+
+Hvis DTU-siden bruger en bagvedliggende offentlig datakilde eller et endpoint, må den bruges efter verifikation. Dokumentér i README, hvor data kommer fra.
+
+Brug ikke uofficielle kursusdatabaser.
+
+TEKNOLOGIER
+
+Brug:
+
+Python 3.12
+FastAPI
+PostgreSQL 17
+SQLAlchemy 2.x
+Pydantic 2
+Alembic
+httpx
+BeautifulSoup4
+lxml
+pytest
+Docker
+Docker Compose
+
+Brug psycopg som PostgreSQL-driver.
+
+PROJEKTSTRUKTUR
+
+Opret en ren struktur omtrent som:
+
+dtu-course-api/
+app/
+**init**.py
+main.py
+config.py
+database.py
+models/
+**init**.py
+course.py
+import_failure.py
+schemas/
+**init**.py
+course.py
+search.py
+api/
+**init**.py
+routes/
+**init**.py
+health.py
+courses.py
+services/
+**init**.py
+course_service.py
+search_service.py
+security/
+**init**.py
+api_key.py
+importer/
+**init**.py
+course_list.py
+course_parser.py
+importer.py
+cli.py
+migrations/
+tests/
+fixtures/
+test_course_parser.py
+test_courses_api.py
+test_search.py
+test_security.py
+connector/
+swagger.json
+scripts/
+import_courses.py
+Dockerfile
+docker-compose.yml
+requirements.txt
+.env.example
+.gitignore
+README.md
+
+DATABASE
+
+Opret en Course-model.
+
+Et kursus skal mindst indeholde:
+
+id
+course_number
+academic_year
+title
+title_da
+title_en
+ects
+level
+course_type
+language
+department
+department_code
+period
+schedule
+campus
+prerequisites
+mandatory_prerequisites
+exam
+evaluation
+description
+content
+learning_objectives
+course_responsible
+teachers
+registration_requirements
+remarks
+source_url
+source_last_updated
+imported_at
+updated_at
+
+Felter, som DTU ikke stiller til rådighed, skal være nullable.
+
+Opfind aldrig manglende værdier.
+
+Brug kombinationen course_number + academic_year som unik constraint.
+
+Data fra andre studieår må senere kunne gemmes uden at overskrive 2026/2027.
+
+IMPORT AF KURSUSLISTE
+
+Implementér en importer, som først læser den officielle samlede DTU-kursusliste.
+
+Den skal:
+
+1. Hente kursuslisten.
+2. Finde alle kursusnumre for 2026/2027.
+3. Fjerne dubletter.
+4. Validere kursusnumrene.
+5. Logge hvor mange unikke kurser der blev fundet.
+6. Hente den årgangsspecifikke side for hvert kursus.
+7. Parse informationen.
+8. Validere data.
+9. Gemme kurset med UPSERT.
+10. Fortsætte selv om et enkelt kursus fejler.
+11. Gemme fejlede imports separat.
+12. Udskrive en slutrapport.
+
+Slutrapporten skal fx. vise:
+
+Courses discovered: 1450
+Courses imported: 1448
+Courses updated: 20
+Courses unchanged: 1428
+Courses failed: 2
+
+Tallene her er eksempler. Brug de faktiske tal.
+
+ROBUST IMPORT
+
+Implementér:
+
+Request timeout.
+Retries med exponential backoff.
+Rate limiting mellem requests.
+Et tydeligt User-Agent.
+Logging.
+HTTP status validation.
+Duplicate protection.
+Transaction handling.
+Graceful handling af manglende felter.
+
+DTU's server må ikke bombarderes med parallelle requests.
+
+Brug konservativ concurrency eller sekventiel import med passende pause.
+
+Implementér CLI-parametre som:
+
+python -m importer.cli --academic-year 2026-2027
+
+python -m importer.cli --academic-year 2026-2027 --course 02450
+
+python -m importer.cli --academic-year 2026-2027 --retry-failed
+
+python -m importer.cli --academic-year 2026-2027 --limit 20
+
+Parseren skal kunne testes på få kurser før en fuld import.
+
+PARSER
+
+Parseren skal hente og normalisere felterne fra DTU's faktiske kursusside.
+
+Separér HTML-hentning fra parsing.
+
+Denne funktion:
+
+fetch_course_page(course_number, academic_year)
+
+skal returnere HTML.
+
+Denne funktion:
+
+parse_course_page(html, course_number, academic_year)
+
+skal returnere en valideret Course-data-struktur.
+
+Det gør parseren testbar med gemte HTML-fixtures.
+
+Gem relevante HTML-fixtures i tests/fixtures.
+
+Implementér parser-tests mod mindst tre forskellige typer DTU-kurser.
+
+SEARCH API
+
+Implementér:
+
+GET /api/v1/courses/search
+
+Understøt parametrene:
+
+q
+academic_year
+ects
+level
+period
+schedule
+department
+language
+campus
+limit
+offset
+
+academic_year skal som standard være 2026-2027.
+
+limit skal som standard være 20.
+
+Maksimum limit skal være 50.
+
+Eksempel:
+
+GET /api/v1/courses/search?q=machine%20learning&academic_year=2026-2027&ects=5&period=E
+
+Søg i:
+
+title
+description
+content
+learning_objectives
+prerequisites
+
+Brug PostgreSQL full-text search.
+
+Resultater skal rangeres efter relevans.
+
+Titler skal vægte højere end beskrivelse og kursusindhold.
+
+Søgeord i titel skal derfor give højere score.
+
+Returnér også relevance_score.
+
+SEARCH RESPONSE
+
+Returnér et kompakt format, der passer til Copilot Studio.
+
+Eksempel:
+
+{
+"count": 3,
+"limit": 20,
+"offset": 0,
+"courses": [
+{
+"courseNumber": "02450",
+"title": "Introduction to Machine Learning",
+"ects": 5,
+"level": "MSc",
+"period": "E",
+"schedule": "E2A",
+"language": "English",
+"department": "DTU Compute",
+"description": "...",
+"relevanceScore": 0.91,
+"sourceUrl": "https://kurser.dtu.dk/course/02450"
+}
+]
+}
+
+Brug ikke ovenstående kursusoplysninger som faktiske DTU-data. Det er alene et JSON-format eksempel.
+
+COURSE DETAILS API
+
+Implementér:
+
+GET /api/v1/courses/{course_number}
+
+Understøt optional query parameter:
+
+academic_year
+
+Default:
+
+2026-2027
+
+Returnér alle databasefelter for kurset.
+
+Hvis kurset ikke eksisterer, returnér HTTP 404.
+
+LIST API
+
+Implementér også:
+
+GET /api/v1/courses
+
+Det endpoint skal understøtte pagination og de strukturerede filtre.
+
+Det skal ikke returnere hele databasen i ét response.
+
+HEALTH
+
+Implementér:
+
+GET /health
+
+Response:
+
+{
+"status": "ok",
+"database": "ok",
+"academicYear": "2026-2027"
+}
+
+IMPORT STATUS
+
+Implementér:
+
+GET /api/v1/import/status
+
+Returnér fx.:
+
+{
+"academicYear": "2026-2027",
+"courseCount": 1450,
+"lastSuccessfulImport": "...",
+"failedImports": 0
+}
+
+AUTHENTICATION
+
+Beskyt /api/v1 endpoints med API-key.
+
+Brug header:
+
+X-API-Key
+
+API-nøglen skal komme fra environment variable.
+
+Gem aldrig secrets i Git.
+
+Health endpoint må være offentligt.
+
+Returnér HTTP 401 ved ugyldig eller manglende API-key.
+
+ENVIRONMENT VARIABLES
+
+Lav .env.example med mindst:
+
+DATABASE_URL=
+API_KEY=
+DTU_BASE_URL=https://kurser.dtu.dk
+DEFAULT_ACADEMIC_YEAR=2026-2027
+IMPORT_REQUEST_DELAY=
+LOG_LEVEL=
+
+DOCKER
+
+Lav Dockerfile til FastAPI.
+
+Lav docker-compose.yml med:
+
+api
+postgres
+
+PostgreSQL-data skal ligge i persistent volume.
+
+Projektet skal kunne startes med:
+
+docker compose up --build
+
+Derefter skal:
+
+http://localhost:8000/health
+
+virke.
+
+FASTAPI DOCUMENTATION
+
+Aktivér:
+
+/docs
+/redoc
+/openapi.json
+
+Dokumentér alle endpoints og parametre tydeligt.
+
+COPILOT STUDIO
+
+Lav filen:
+
+connector/swagger.json
+
+Den skal være en OpenAPI 2.0 Swagger-definition beregnet til Microsoft Power Platform Custom Connector.
+
+Eksponér primært to operations til Copilot:
+
+SearchCourses
+GetCourse
+
+SearchCourses skal have operationId:
+
+SearchCourses
+
+Beskrivelse:
+
+Search the official DTU course catalogue for academic year 2026/2027. Use this operation when a student asks for DTU course recommendations or searches for courses by topic, ECTS, study level, teaching period, schedule, department, language or campus.
+
+GetCourse skal have operationId:
+
+GetCourse
+
+Beskrivelse:
+
+Retrieve detailed official information about one DTU course for academic year 2026/2027. Use this operation to verify ECTS, course level, teaching period, schedule, prerequisites, examination information and course content before presenting detailed course information.
+
+Swagger-filen skal konfigurere X-API-Key authentication.
+
+COPILOT-OPTIMERING
+
+SearchCourses-response skal være kompakt.
+
+Send ikke lange learning objectives med hvert søgeresultat.
+
+De fulde oplysninger skal hentes via GetCourse.
+
+Copilot-flowet skal derfor være:
+
+User question
+→ SearchCourses
+→ relevante kandidater
+→ Copilot vælger højst fem
+→ GetCourse på udvalgte kurser ved behov
+→ svar til bruger
+
+DATAKVALITET
+
+Tilføj validering, som opdager:
+
+Manglende course number.
+Manglende titel.
+Ugyldig ECTS.
+Duplicate courses.
+Forkert academic year.
+HTTP failures.
+Parsing failures.
+
+Opfind aldrig værdier ved manglende DTU-data.
+
+Gem null.
+
+LOGGING
+
+Brug Python logging.
+
+Log:
+
+Import start.
+Antal fundne kurser.
+Import progress.
+HTTP-fejl.
+Parser-fejl.
+Database-fejl.
+Import summary.
+
+Log ikke API keys.
+
+TESTS
+
+Skriv tests med pytest.
+
+Der skal mindst være tests for:
+
+Course parser.
+Search endpoint.
+GetCourse endpoint.
+404.
+API-key authentication.
+Filters.
+Pagination.
+Academic year.
+Database UPSERT.
+Duplicate handling.
+Failed imports.
+
+Tests må ikke afhænge af live DTU-websider hver gang.
+
+Brug fixtures og mocks.
+
+README
+
+README skal forklare:
+
+Projektets formål.
+Arkitekturen.
+Installation.
+Python setup.
+Docker setup.
+PostgreSQL.
+Environment variables.
+Database migrations.
+Hvordan en import startes.
+Hvordan få kurser importeres til test.
+Hvordan hele 2026/2027 importeres.
+API endpoints.
+Eksempelrequests.
+API authentication.
+Swagger/OpenAPI.
+Copilot Studio Custom Connector.
+Hvordan connector/swagger.json importeres.
+Hvordan SearchCourses tilføjes som Tool.
+Hvordan GetCourse tilføjes som Tool.
+Hvordan API'et deployes.
+Hvordan fremtidige studieår tilføjes.
+
+README skal også indeholde arkitekturdiagrammet:
+
+DTU Course Base
+↓
+Importer
+↓
+PostgreSQL
+↓
+FastAPI
+↓
+Power Platform Custom Connector
+↓
+Copilot Studio
+↓
+Student
+
+MIGRATIONS
+
+Brug Alembic.
+
+Opret initial migration til alle nødvendige tabeller og indexes.
+
+Tilføj indexes for:
+
+course_number
+academic_year
+ects
+level
+period
+schedule
+department
+language
+
+Tilføj nødvendige PostgreSQL-indekser til full-text search.
+
+KODEKVALITET
+
+Brug type hints.
+
+Hold funktioner små.
+
+Undgå duplicate logic.
+
+Adskil:
+
+HTTP retrieval
+HTML parsing
+database operations
+search logic
+API routes
+authentication
+
+Brug dependency injection til database sessions i FastAPI.
+
+Returnér Pydantic response models frem for SQLAlchemy-objekter direkte.
+
+Brug klare HTTP status codes.
+
+IMPLEMENTERINGSRÆKKEFØLGE
+
+Arbejd i denne rækkefølge:
+
+1. Opret projektstruktur.
+2. Konfigurer PostgreSQL.
+3. Opret SQLAlchemy models.
+4. Opret Alembic.
+5. Implementér health endpoint.
+6. Undersøg DTU CourseList HTML.
+7. Implementér course list extraction.
+8. Undersøg flere forskellige 2026/2027-kursussider.
+9. Implementér parser.
+10. Test parseren på enkelte kurser.
+11. Implementér database UPSERT.
+12. Implementér fuld import.
+13. Verificér antal kurser.
+14. Implementér GetCourse.
+15. Implementér SearchCourses.
+16. Implementér filtre.
+17. Implementér full-text ranking.
+18. Implementér authentication.
+19. Implementér tests.
+20. Implementér Docker.
+21. Lav OpenAPI 2.0 Custom Connector.
+22. Skriv README.
+23. Kør alle tests.
+24. Kør en testimport.
+25. Kør en fuld 2026/2027-import.
+26. Kontrollér at antallet i databasen stemmer overens med det fundne kursuskatalog.
+
+VIGTIGE REGLER
+
+Gæt aldrig DTU-kursusdata.
+
+Brug aldrig eksempelkurser som faktiske data.
+
+Verificér DTU's HTML-struktur før selectors skrives.
+
+Hvis et felt ikke findes på DTU-siden, gem null.
+
+Hvis HTML-strukturen varierer mellem kurser, håndtér variationen eksplicit.
+
+Stop ikke en fuld import på grund af én fejlet side.
+
+Gem alle importfejl.
+
+Lav løsningen så næste studieår senere tilføjes uden større kodeændringer.
+
+Hold Copilot API-responses korte.
+
+Bevar source_url, så alle kursusoplysninger spores tilbage til den officielle DTU-side.
+
+AFLEVERING
+
+Implementér hele projektet.
+
+Opret alle nødvendige filer.
+
+Skriv al kode.
+
+Skriv migrations.
+
+Skriv tests.
+
+Skriv Docker-konfiguration.
+
+Skriv Swagger 2.0 connector-definition.
+
+Skriv README.
+
+Kør tests og ret fejl.
+
+Kør parseren mod rigtige 2026/2027 DTU-kurser og verificér resultatet.
+
+Vis til sidst:
+
+1. Den færdige projektstruktur.
+2. Antal DTU-kurser fundet for 2026/2027.
+3. Antal importerede kurser.
+4. Eventuelle fejlede imports.
+5. Kommandoen til at starte systemet.
+6. Kommandoen til fuld import.
+7. Eksempel på SearchCourses.
+8. Eksempel på GetCourse.
+9. Placeringen af connector/swagger.json.
+10. De sidste trin til at forbinde connectoren til Copilot Studio.

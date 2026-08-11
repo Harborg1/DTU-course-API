@@ -1,0 +1,158 @@
+# DTU Course API
+
+Produktionsorienteret importer og REST API til det officielle DTU-kursuskatalog. Projektet henter kurser for 2026/2027 fra DTU, gemmer dem i PostgreSQL 17 og eksponerer kompakte, kildehenviste resultater til Microsoft Copilot Studio.
+
+## Arkitektur
+
+```text
+DTU Course Base
+       ↓
+    Importer
+       ↓
+  PostgreSQL
+       ↓
+    FastAPI
+       ↓
+Power Platform Custom Connector
+       ↓
+ Copilot Studio
+       ↓
+    Student
+```
+
+Importeren er opdelt i HTTP-hentning, HTML-parsing, validering og databaseoperationer. API-laget bruger services og dependency-injected SQLAlchemy-sessions. PostgreSQLs genererede `tsvector` vægter titler som A, beskrivelse og indhold som B samt læringsmål og forudsætninger som C.
+
+## Officiel datakilde
+
+Kun [DTU Kursusbasens officielle kursusliste](https://kurser.dtu.dk/CourseList/list/) og årgangsspecifikke sider som `https://kurser.dtu.dk/course/2026-2027/01001` bruges. Kursuslisten er server-renderet HTML. Importeren læser den aktuelle institutliste fra `select[name=department]`, henter `/courselist/courselist.aspx?volume=2026/2027&department=...` for hvert institut og deduplikerer numrene. Kursussider parses fra `#pagecontents`, metadata-rækker med `<label>` og indholdssektioner med `.bar`. Ingen uofficiel database bruges, og manglende værdier gemmes som `NULL`.
+
+## Hurtig start med Docker
+
+Kopiér miljøfilen og skift især API-nøglen:
+
+```bash
+cp .env.example .env
+docker compose up --build
+```
+
+Compose starter PostgreSQL 17 med en persistent `postgres_data` volume, venter på databasen, kører `alembic upgrade head` og starter API'et på `http://localhost:8000`.
+
+```bash
+curl http://localhost:8000/health
+curl -H "X-API-Key: $API_KEY" http://localhost:8000/api/v1/import/status
+```
+
+API-dokumentation findes på `/docs`, `/redoc` og `/openapi.json`.
+
+## Lokal Python-installation
+
+Projektet målretter Python 3.12:
+
+Se også den separate trin-for-trin-guide i [`VENV_SETUP.md`](VENV_SETUP.md), som dækker Windows CMD, PowerShell, Linux, macOS og VS Code.
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+cp .env.example .env
+```
+
+Ved lokal kørsel skal `DATABASE_URL` pege på en PostgreSQL-instans, typisk `postgresql+psycopg://dtu:dtu@localhost:5432/dtu_courses`. Opret eller opgrader skemaet med:
+
+```bash
+alembic upgrade head
+uvicorn app.main:app --reload
+```
+
+## Miljøvariabler
+
+| Variabel | Formål |
+|---|---|
+| `DATABASE_URL` | SQLAlchemy URL med psycopg-driver |
+| `API_KEY` | Hemmelig nøgle til `X-API-Key`; må ikke committes |
+| `DTU_BASE_URL` | Officiel DTU-base-URL |
+| `DEFAULT_ACADEMIC_YEAR` | Standardårgang, `2026-2027` |
+| `IMPORT_REQUEST_DELAY` | Pause mellem DTU-requests i sekunder |
+| `LOG_LEVEL` | Fx `INFO` eller `DEBUG` |
+
+## Import
+
+Kør migrations først. Importeren bruger timeout, fire forsøg med eksponentiel backoff, konservativ sekventiel hentning, et tydeligt User-Agent, HTTP-statusvalidering og én transaktion pr. kursus. En fejlet side stopper ikke resten; fejlen gemmes i `import_failures`.
+
+```bash
+# Ét kursus
+python -m importer.cli --academic-year 2026-2027 --course 01001
+
+# De første 20 som test
+python -m importer.cli --academic-year 2026-2027 --limit 20
+
+# Genforsøg kun tidligere fejl
+python -m importer.cli --academic-year 2026-2027 --retry-failed
+
+# Hele kataloget
+python -m importer.cli --academic-year 2026-2027
+```
+
+I Docker køres kommandoerne sådan:
+
+```bash
+docker compose exec api python -m importer.cli --academic-year 2026-2027 --limit 20
+docker compose exec api python -m importer.cli --academic-year 2026-2027
+```
+
+Slutrapporten viser discovered, imported, updated, unchanged og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
+
+## API
+
+Alle `/api/v1`-endpoints kræver `X-API-Key`. `/health` er offentlig. Pagination har standard `limit=20`, maksimum 50 og `offset=0`.
+
+| Metode og sti | Formål |
+|---|---|
+| `GET /health` | API- og databasekontrol |
+| `GET /api/v1/courses/search` | Full-text-søgning og filtre |
+| `GET /api/v1/courses` | Sideinddelt liste med strukturerede filtre |
+| `GET /api/v1/courses/{course_number}` | Komplet kursus for valgt årgang |
+| `GET /api/v1/import/status` | Kursusantal, seneste import og fejlantal |
+
+Search understøtter `q`, `academic_year`, `ects`, `level`, `period`, `schedule`, `department`, `language`, `campus`, `limit` og `offset`. Niveau normaliseres til blandt andet `BSc`, `MSc` og `PhD`; sprog normaliseres til blandt andet `Danish` og `English`.
+
+```bash
+curl -G http://localhost:8000/api/v1/courses/search \
+  -H "X-API-Key: $API_KEY" \
+  --data-urlencode "q=machine learning" \
+  --data-urlencode "academic_year=2026-2027" \
+  --data-urlencode "ects=5" \
+  --data-urlencode "period=E"
+
+curl -H "X-API-Key: $API_KEY" \
+  "http://localhost:8000/api/v1/courses/01001?academic_year=2026-2027"
+```
+
+Søgeresultater indeholder kun kompakte felter, højst 500 tegn af beskrivelsen, `relevanceScore` og den officielle `sourceUrl`. Brug detail-endpointet til forudsætninger, eksamen, indhold og læringsmål.
+
+## Tests
+
+Tests bruger gemte, reducerede HTML-fixtures baseret på tre verificerede 2026/2027-sider og laver ingen live requests:
+
+```bash
+pytest -q
+```
+
+De dækker parservariationer, manglende valgfrie felter, forkert studieår, søgning, filtre, pagination, detailvisning, 404, API-key, UPSERT, dubletter og importfejl.
+
+## Copilot Studio og Custom Connector
+
+Swagger 2.0-definitionen ligger i [`connector/swagger.json`](connector/swagger.json). Før import skal `host` ændres fra `api.example.com` til API'ets offentlige HTTPS-host; `basePath` skal fortsat være `/api/v1`.
+
+1. Deploy API'et på en offentligt tilgængelig HTTPS-adresse.
+2. Ret `host` i `connector/swagger.json`.
+3. Gå i Power Apps eller Power Automate → Custom connectors → New custom connector → Import an OpenAPI file.
+4. Upload `connector/swagger.json`, opret connectoren og angiv API-nøglen ved forbindelsen.
+5. Test `SearchCourses` og `GetCourse` i connectorens testfane.
+6. Åbn agenten i Copilot Studio, vælg Tools → Add a tool → Connector, og tilføj begge operationer.
+7. Instruér Copilot i først at kalde `SearchCourses`, vælge højst fem relevante kandidater og kun kalde `GetCourse` på de kandidater, hvor detaljer skal verificeres.
+8. Publicér agenten og kontrollér, at officielle `sourceUrl`-links følger svarene.
+
+## Deployment
+
+Containeren kan deployes på enhver platform med Docker og en PostgreSQL 17-database. Sæt secrets i platformens secret store, kør Alembic som release/start-step, eksponér port 8000 via HTTPS og brug en persistent administreret PostgreSQL-database. Kør importerjobbet som et separat planlagt job; kør ikke flere fulde imports parallelt mod DTU.

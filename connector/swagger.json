@@ -1,0 +1,116 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "DTU Course API",
+    "description": "Official DTU course search for Microsoft Copilot Studio.",
+    "version": "1.0.0"
+  },
+  "host": "api.example.com",
+  "basePath": "/api/v1",
+  "schemes": ["https"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "X-API-Key",
+      "in": "header"
+    }
+  },
+  "security": [{"api_key": []}],
+  "paths": {
+    "/courses/search": {
+      "get": {
+        "operationId": "SearchCourses",
+        "summary": "Search DTU courses",
+        "description": "Search the official DTU course catalogue for academic year 2026/2027. Use this operation when a student asks for DTU course recommendations or searches for courses by topic, ECTS, study level, teaching period, schedule, department, language or campus.",
+        "x-ms-summary": "Search official DTU courses",
+        "parameters": [
+          {"name": "q", "in": "query", "type": "string", "description": "Topic or keywords, for example machine learning or optimization."},
+          {"name": "academic_year", "in": "query", "type": "string", "default": "2026-2027", "description": "Academic year in YYYY-YYYY form."},
+          {"name": "ects", "in": "query", "type": "number", "format": "double", "description": "Exact ECTS points."},
+          {"name": "level", "in": "query", "type": "string", "description": "Course level such as Bachelor or MSc."},
+          {"name": "period", "in": "query", "type": "string", "description": "Teaching period, for example E, F or J."},
+          {"name": "schedule", "in": "query", "type": "string", "description": "Schedule group, for example E2A."},
+          {"name": "department", "in": "query", "type": "string", "description": "Department name or part of it."},
+          {"name": "language", "in": "query", "type": "string", "description": "Language of instruction."},
+          {"name": "campus", "in": "query", "type": "string", "description": "Campus name."},
+          {"name": "limit", "in": "query", "type": "integer", "format": "int32", "default": 20, "minimum": 1, "maximum": 50},
+          {"name": "offset", "in": "query", "type": "integer", "format": "int32", "default": 0, "minimum": 0}
+        ],
+        "responses": {
+          "200": {"description": "Ranked compact course results.", "schema": {"$ref": "#/definitions/CourseSearchResponse"}},
+          "401": {"description": "Invalid or missing API key."}
+        }
+      }
+    },
+    "/courses/{course_number}": {
+      "get": {
+        "operationId": "GetCourse",
+        "summary": "Get DTU course details",
+        "description": "Retrieve detailed official information about one DTU course for academic year 2026/2027. Use this operation to verify ECTS, course level, teaching period, schedule, prerequisites, examination information and course content before presenting detailed course information.",
+        "x-ms-summary": "Get official DTU course details",
+        "parameters": [
+          {"name": "course_number", "in": "path", "required": true, "type": "string", "description": "Official DTU course number."},
+          {"name": "academic_year", "in": "query", "type": "string", "default": "2026-2027", "description": "Academic year in YYYY-YYYY form."}
+        ],
+        "responses": {
+          "200": {"description": "Complete official course details.", "schema": {"$ref": "#/definitions/CourseDetail"}},
+          "401": {"description": "Invalid or missing API key."},
+          "404": {"description": "Course not found."}
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CourseSummary": {
+      "type": "object",
+      "required": ["courseNumber", "title", "sourceUrl"],
+      "properties": {
+        "courseNumber": {"type": "string"},
+        "title": {"type": "string"},
+        "ects": {"type": "number", "format": "double", "x-nullable": true},
+        "level": {"type": "string", "x-nullable": true},
+        "period": {"type": "string", "x-nullable": true},
+        "schedule": {"type": "string", "x-nullable": true},
+        "language": {"type": "string", "x-nullable": true},
+        "department": {"type": "string", "x-nullable": true},
+        "campus": {"type": "string", "x-nullable": true},
+        "description": {"type": "string", "x-nullable": true},
+        "relevanceScore": {"type": "number", "format": "double", "x-nullable": true},
+        "sourceUrl": {"type": "string"}
+      }
+    },
+    "CourseSearchResponse": {
+      "type": "object",
+      "required": ["count", "limit", "offset", "courses"],
+      "properties": {
+        "count": {"type": "integer", "format": "int32"},
+        "limit": {"type": "integer", "format": "int32"},
+        "offset": {"type": "integer", "format": "int32"},
+        "courses": {"type": "array", "items": {"$ref": "#/definitions/CourseSummary"}}
+      }
+    },
+    "CourseDetail": {
+      "type": "object",
+      "required": ["courseNumber", "academicYear", "title", "sourceUrl"],
+      "properties": {
+        "courseNumber": {"type": "string"}, "academicYear": {"type": "string"}, "title": {"type": "string"},
+        "titleDa": {"type": "string", "x-nullable": true}, "titleEn": {"type": "string", "x-nullable": true},
+        "ects": {"type": "number", "format": "double", "x-nullable": true}, "level": {"type": "string", "x-nullable": true},
+        "courseType": {"type": "string", "x-nullable": true}, "language": {"type": "string", "x-nullable": true},
+        "department": {"type": "string", "x-nullable": true}, "departmentCode": {"type": "string", "x-nullable": true},
+        "period": {"type": "string", "x-nullable": true}, "schedule": {"type": "string", "x-nullable": true}, "campus": {"type": "string", "x-nullable": true},
+        "prerequisites": {"type": "string", "x-nullable": true}, "mandatoryPrerequisites": {"type": "string", "x-nullable": true},
+        "exam": {"type": "string", "x-nullable": true}, "evaluation": {"type": "string", "x-nullable": true},
+        "description": {"type": "string", "x-nullable": true}, "content": {"type": "string", "x-nullable": true},
+        "learningObjectives": {"type": "string", "x-nullable": true}, "courseResponsible": {"type": "string", "x-nullable": true},
+        "teachers": {"type": "string", "x-nullable": true}, "registrationRequirements": {"type": "string", "x-nullable": true},
+        "remarks": {"type": "string", "x-nullable": true}, "sourceUrl": {"type": "string"},
+        "sourceLastUpdated": {"type": "string", "format": "date-time", "x-nullable": true},
+        "importedAt": {"type": "string", "format": "date-time"}, "updatedAt": {"type": "string", "format": "date-time"}
+      }
+    }
+  }
+}
+
