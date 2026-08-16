@@ -1,6 +1,6 @@
 # DTU Course API
 
-Produktionsorienteret importer og REST API til det officielle DTU-kursuskatalog. Projektet henter kurser for 2026/2027 fra DTU, gemmer dem i PostgreSQL 17 og eksponerer kompakte, kildehenviste resultater til Microsoft Copilot Studio.
+Produktionsorienteret kursusanbefaler, importer og REST API til det officielle DTU-kursuskatalog. Projektet henter kurser for 2026/2027 fra DTU, gemmer dem i PostgreSQL 17 og giver studerende anbefalinger gennem en responsiv chat-hjemmeside. Det eksisterende API kan også bruges fra Microsoft Copilot Studio.
 
 ## Arkitektur
 
@@ -12,12 +12,10 @@ DTU Course Base
   PostgreSQL
        ↓
     FastAPI
-       ↓
-Power Platform Custom Connector
-       ↓
- Copilot Studio
-       ↓
-    Student
+     ↙   ↘
+Web-chat  Beskyttet REST API
+              ↓
+      Copilot Studio
 ```
 
 Importeren er opdelt i HTTP-hentning, HTML-parsing, validering og databaseoperationer. API-laget bruger services og dependency-injected SQLAlchemy-sessions. PostgreSQLs genererede `tsvector` vægter titler som A, beskrivelse og indhold som B samt læringsmål og forudsætninger som C.
@@ -44,6 +42,8 @@ curl -H "X-API-Key: $API_KEY" http://localhost:8000/api/v1/import/status
 
 API-dokumentation findes på `/docs`, `/redoc` og `/openapi.json`.
 
+Hjemmesiden findes på `/`. Den sender brugerens samtalekontekst til `POST /api/chat`, hvor emne, niveau, ECTS, periode og sprog udledes, og der søges direkte i de officielle kursusdata. Browseren modtager aldrig den interne `API_KEY`.
+
 ## Lokal Python-installation
 
 Projektet målretter Python 3.12:
@@ -53,7 +53,7 @@ Se også den separate trin-for-trin-guide i [`VENV_SETUP.md`](VENV_SETUP.md), so
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 cp .env.example .env
 ```
 
@@ -108,7 +108,10 @@ Alle `/api/v1`-endpoints kræver `X-API-Key`. `/health` er offentlig. Pagination
 
 | Metode og sti | Formål |
 |---|---|
+| `GET /` | Offentlig chat-hjemmeside |
 | `GET /health` | API- og databasekontrol |
+| `GET /api/info` | Offentlig serviceinformation |
+| `POST /api/chat` | Offentlige, kildehenviste kursusanbefalinger |
 | `GET /api/v1/courses/search` | Full-text-søgning og filtre |
 | `GET /api/v1/courses` | Sideinddelt liste med strukturerede filtre |
 | `GET /api/v1/courses/{course_number}` | Komplet kursus for valgt årgang |
@@ -156,3 +159,21 @@ Swagger 2.0-definitionen ligger i [`connector/swagger.json`](connector/swagger.j
 ## Deployment
 
 Containeren kan deployes på enhver platform med Docker og en PostgreSQL 17-database. Sæt secrets i platformens secret store, kør Alembic som release/start-step, eksponér port 8000 via HTTPS og brug en persistent administreret PostgreSQL-database. Kør importerjobbet som et separat planlagt job; kør ikke flere fulde imports parallelt mod DTU.
+
+### Vercel preview
+
+Vercel kører FastAPI-applikationen fra `app.main:app` som én Python Function i Paris-regionen tæt på Supabase. Docker og Docker Compose bruges fortsat kun lokalt. Den fulde DTU-import skal køres lokalt eller i et separat job og ikke fra en Vercel-request.
+
+1. Log ind og link den lokale mappe:
+
+   ```bash
+   vercel login
+   vercel link
+   ```
+
+2. Tilføj `DATABASE_URL`, `API_KEY`, `DEFAULT_ACADEMIC_YEAR`, `DTU_BASE_URL` og `LOG_LEVEL` som Preview environment variables i Vercel. Brug Supabases transaction pooler på port 6543 til `DATABASE_URL`. Tilføj ikke `MIGRATION_DATABASE_URL` til Vercel.
+3. Kontrollér konfigurationen lokalt med `vercel dev`.
+4. Opret preview med `vercel deploy` og verificér `/`, `/health` og et autentificeret søgekald.
+5. Tilføj de samme nødvendige variabler til Production og kør først `vercel deploy --prod`, når previewet er godkendt.
+
+Python er fastlåst til 3.12 i `.python-version`. `requirements.txt` indeholder kun runtime-afhængigheder til Vercel, `requirements-import.txt` tilføjer importer og Alembic, og `requirements-dev.txt` tilføjer testværktøjer.

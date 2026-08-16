@@ -4,13 +4,17 @@ from alembic import context
 from sqlalchemy import engine_from_config, pool
 
 from app.config import get_settings
-from app.database import Base
+from app.database import Base, normalize_database_url
 from app.models import Course, ImportFailure, ImportRun  # noqa: F401
 
 config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
-config.set_main_option("sqlalchemy.url", get_settings().database_url)
+settings = get_settings()
+config.set_main_option(
+    "sqlalchemy.url",
+    normalize_database_url(settings.migration_database_url or settings.database_url),
+)
 target_metadata = Base.metadata
 
 

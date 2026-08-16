@@ -57,5 +57,10 @@ htmlcov/
 
 # Local configuration and databases
 .env
+.env.*
+!.env.example
+.vercel/
 *.db
 *.sqlite3
+.vercel
+.env*

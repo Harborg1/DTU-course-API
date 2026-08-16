@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Få personlige anbefalinger blandt officielle DTU-kurser.">
+    <title>Kurskompas — find dit næste DTU-kursus</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Kurskompas forside">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>Kurskompas</span>
+      </a>
+      <div class="header-actions">
+        <span class="status"><i></i> Officielle DTU-data</span>
+        <button class="reset-button" id="resetButton" type="button">Ny samtale</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <p class="eyebrow">Din personlige kursusguide</p>
+        <h1 id="heroTitle">Fra interesse til<br><em>det rigtige kursus.</em></h1>
+        <p class="hero-copy">
+          Fortæl hvad du læser, hvilket niveau du er på, og hvad du gerne vil lære.
+          Så finder vi relevante kurser i DTU's officielle kursuskatalog.
+        </p>
+      </section>
+
+      <section class="chat-shell" aria-label="Kursusanbefaler">
+        <div class="chat-topbar">
+          <div class="guide-avatar" aria-hidden="true">K</div>
+          <div>
+            <p class="guide-name">Kursusguiden</p>
+            <p class="guide-state">Klar til at hjælpe · Studieår 2026/2027</p>
+          </div>
+        </div>
+
+        <div class="conversation" id="conversation" aria-live="polite">
+          <article class="message-row assistant-row">
+            <div class="message-avatar" aria-hidden="true">K</div>
+            <div class="message assistant-message">
+              <p>Hej! Beskriv din studieretning og dine interesser, så finder jeg et godt udgangspunkt.</p>
+              <p class="message-hint">Du kan også nævne niveau, ECTS, periode eller undervisningssprog.</p>
+            </div>
+          </article>
+
+          <div class="suggestions" id="suggestions" aria-label="Eksempler">
+            <button type="button" data-prompt="Jeg læser Computer Science and Engineering på MSc-niveau og søger kurser inden for machine learning.">
+              <span>Machine learning</span><small>MSc · Computer Science</small>
+            </button>
+            <button type="button" data-prompt="Jeg er BSc-studerende og vil gerne finde et kursus på 5 ECTS om optimization.">
+              <span>Optimization</span><small>BSc · 5 ECTS</small>
+            </button>
+            <button type="button" data-prompt="Jeg søger engelsksprogede MSc-kurser inden for computer vision.">
+              <span>Computer vision</span><small>MSc · English</small>
+            </button>
+          </div>
+        </div>
+
+        <form class="composer" id="chatForm">
+          <label class="sr-only" for="messageInput">Fortæl om dine kursusønsker</label>
+          <textarea
+            id="messageInput"
+            name="message"
+            rows="1"
+            maxlength="800"
+            placeholder="Fx: Jeg læser MSc Computer Science og interesserer mig for machine learning…"
+            required
+          ></textarea>
+          <button class="send-button" id="sendButton" type="submit" aria-label="Send besked">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+        <p class="disclaimer">Anbefalingerne er vejledende. Tjek altid kursusbeskrivelsen og forudsætningerne hos DTU.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Bygget på data fra <a href="https://kurser.dtu.dk" target="_blank" rel="noreferrer">DTU Kursusbasen</a></p>
+      <a href="/docs">API-dokumentation</a>
+    </footer>
+  </body>
+</html>
+

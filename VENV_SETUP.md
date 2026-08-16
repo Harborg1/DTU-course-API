@@ -2,7 +2,7 @@
 
 Projektet er beregnet til **Python 3.12**. Det virtuelle miljø skal ligge i mappen `.venv` i projektets rod.
 
-`.venv` er tilføjet til `.gitignore` og bliver derfor ikke sendt til Bitbucket. Hver udvikler opretter sit eget miljø og installerer pakkerne fra `requirements.txt`.
+`.venv` er tilføjet til `.gitignore` og bliver derfor ikke sendt til Bitbucket. Hver udvikler opretter sit eget miljø og installerer pakkerne fra `requirements-dev.txt`.
 
 ## Windows CMD
 
@@ -12,7 +12,7 @@ Projektet er beregnet til **Python 3.12**. Det virtuelle miljø skal ligge i map
 py -3.12 -m venv .venv
 .venv\Scripts\activate.bat
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 ```
 
 Når miljøet er aktivt, står der normalt `(.venv)` foran kommandoprompten.
@@ -23,7 +23,7 @@ Når miljøet er aktivt, står der normalt `(.venv)` foran kommandoprompten.
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 ```
 
 Hvis PowerShell blokerer aktiveringsscriptet, kan du midlertidigt tillade det i den aktuelle terminal:
@@ -39,7 +39,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 ```
 
 På nogle Linux-distributioner skal understøttelse af virtuelle miljøer installeres først, eksempelvis pakken `python3.12-venv`.
@@ -98,4 +98,3 @@ cp .env.example .env
 ```
 
 Ret derefter mindst `API_KEY` og `DATABASE_URL` i `.env`. Filen `.env` er ignoreret af Git og må ikke indeholde secrets, som committes til Bitbucket.
-
