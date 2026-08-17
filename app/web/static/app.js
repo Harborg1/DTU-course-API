@@ -52,7 +52,7 @@ function addTyping() {
 }
 
 function addContextTags(context) {
-  const values = [context.topic, context.level, context.ects ? `${context.ects} ECTS` : null, context.language, context.period].filter(Boolean);
+  const values = [context.program, context.topic, context.level, context.ects ? `${context.ects} ECTS` : null, context.language, context.period].filter(Boolean);
   if (!values.length) return;
   const tags = document.createElement("div");
   tags.className = "context-tags";
@@ -62,6 +62,92 @@ function addContextTags(context) {
     tags.append(tag);
   });
   conversation.append(tags);
+}
+
+function studyCourseLabel(course) {
+  const number = course.courseNumber ? `${course.courseNumber} · ` : "";
+  const ectsValues = course.ectsOptions?.length > 1 ? course.ectsOptions.join("/") : course.ects;
+  const ects = ectsValues ? ` (${ectsValues} ECTS)` : "";
+  return `${number}${course.title}${ects}`;
+}
+
+function addStudyPlan(plan) {
+  if (!plan) return;
+  const overview = document.createElement("section");
+  overview.className = "study-plan";
+  overview.setAttribute("aria-label", `Studieplan for ${plan.programName}`);
+
+  const heading = document.createElement("div");
+  heading.className = "study-plan-head";
+  const title = document.createElement("h2");
+  title.textContent = plan.programName;
+  const meta = document.createElement("span");
+  meta.textContent = plan.validFromYear ? `${plan.degreeType} · Optag fra ${plan.validFromYear}` : plan.degreeType;
+  heading.append(title, meta);
+  overview.append(heading);
+
+  plan.sections.forEach((section) => {
+    const card = document.createElement("article");
+    card.className = "study-plan-section";
+    const sectionTitle = document.createElement("h3");
+    sectionTitle.textContent = section.name;
+    card.append(sectionTitle);
+
+    const mandatory = section.courses.filter((course) => course.requirementRole === "mandatory");
+    if (mandatory.length) {
+      const label = document.createElement("p");
+      label.className = "study-plan-label";
+      label.textContent = "Obligatoriske kurser";
+      const list = document.createElement("ul");
+      mandatory.forEach((course) => {
+        const item = document.createElement("li");
+        item.textContent = studyCourseLabel(course);
+        list.append(item);
+      });
+      card.append(label, list);
+    }
+
+    section.requirements.filter((rule) => rule.requirementType !== "all_of").forEach((rule) => {
+      const block = document.createElement("div");
+      block.className = `study-plan-rule${rule.isSubrequirement ? " subrule" : ""}`;
+      const description = document.createElement("p");
+      description.textContent = rule.description;
+      block.append(description);
+      if (rule.courses.length) {
+        const choices = document.createElement("p");
+        choices.className = "study-plan-choices";
+        choices.textContent = rule.courses.map(studyCourseLabel).join(" · ");
+        block.append(choices);
+      }
+      card.append(block);
+    });
+
+    if (["projekter", "projects"].includes(section.name.toLowerCase())) {
+      const projects = document.createElement("p");
+      projects.className = "study-plan-choices";
+      projects.textContent = section.courses.map(studyCourseLabel).join(" · ");
+      card.append(projects);
+    }
+    const sectionName = section.name.toLowerCase();
+    if (sectionName === "forhåndsgodkendte kandidatkurser" || (sectionName.includes("pre-approved") && sectionName.includes("msc"))) {
+      const count = document.createElement("p");
+      count.textContent = `${section.courses.length} forhåndsgodkendte kandidatkurser i den importerede studieplan.`;
+      card.append(count);
+    }
+    overview.append(card);
+  });
+
+  const url = safeSourceUrl(plan.sourceUrl);
+  if (url) {
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.textContent = "Se den officielle studieplan hos DTU ↗";
+    overview.append(link);
+  }
+  conversation.append(overview);
+  scrollToLatest();
 }
 
 function safeSourceUrl(value) {
@@ -155,6 +241,7 @@ async function submitMessage(text) {
     messages.push({ role: "assistant", content: result.reply });
     addMessage("assistant", result.reply);
     addContextTags(result.understood);
+    addStudyPlan(result.studyPlan);
     addRecommendations(result.recommendations);
   } catch (error) {
     document.querySelector("#typingRow")?.remove();
@@ -185,4 +272,3 @@ document.querySelectorAll("[data-prompt]").forEach((button) => {
 });
 
 resetButton.addEventListener("click", () => window.location.reload());
-

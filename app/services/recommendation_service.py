@@ -2,10 +2,20 @@ import re
 from dataclasses import dataclass
 from decimal import Decimal, InvalidOperation
 
-from sqlalchemy.orm import Session
+from sqlalchemy import select
+from sqlalchemy.orm import Session, selectinload
 
 from app.models.course import Course
-from app.schemas.recommendation import ChatResponse, RecommendedCourse, UnderstoodContext
+from app.models.study_plan import StudyPlanRequirement, StudyPlanRequirementCourse, StudyPlanSection, StudyProgram
+from app.schemas.recommendation import (
+    ChatResponse,
+    RecommendedCourse,
+    StudyPlanCourseInfo,
+    StudyPlanOverview,
+    StudyPlanRequirementInfo,
+    StudyPlanSectionInfo,
+    UnderstoodContext,
+)
 from app.services.search_service import SearchResult, search_courses
 
 
@@ -70,6 +80,19 @@ _STOP_WORDS = {
     "want", "within", "you", "please", "find", "looking", "interested", "interesseret", "interesserer", "msc", "bsc",
     "master", "bachelor", "phd", "level", "niveauet", "the", "some", "in", "engineering", "science", "og", "søger", "ønsker",
 }
+
+_STUDY_PLAN_TERMS = (
+    "obligatorisk",
+    "opbygning",
+    "studieplan",
+    "studieordning",
+    "retningsspecifik",
+    "polytekniske grundlag",
+    "hvilke kurser skal",
+    "hvordan er studiet",
+    "hvordan studiet er",
+    "uddannelsen bygget op",
+)
 
 
 @dataclass(frozen=True)
@@ -151,6 +174,144 @@ def understand_context(messages: list[str]) -> RecommendationContext:
     )
 
 
+def _program_key(value: str) -> str:
+    return " ".join(re.findall(r"[a-zæøå0-9]+", value.casefold()))
+
+
+def _is_study_plan_question(text: str) -> bool:
+    folded = _normalise(text)
+    return any(term in folded for term in _STUDY_PLAN_TERMS)
+
+
+def _matching_study_program(session: Session, text: str) -> StudyProgram | None:
+    normalized_text = f" {_program_key(text)} "
+    statement = select(StudyProgram).options(
+        selectinload(StudyProgram.sections).selectinload(StudyPlanSection.courses),
+        selectinload(StudyProgram.sections)
+        .selectinload(StudyPlanSection.requirements)
+        .selectinload(StudyPlanRequirement.course_links)
+        .selectinload(StudyPlanRequirementCourse.course),
+    )
+    matches: list[tuple[int, StudyProgram]] = []
+    for program in session.scalars(statement):
+        aliases = [program.name, program.slug.replace("-", " "), *(program.aliases or [])]
+        alias_keys = {_program_key(alias) for alias in aliases if alias}
+        matching_lengths = [len(alias) for alias in alias_keys if f" {alias} " in normalized_text]
+        if matching_lengths:
+            matches.append((max(matching_lengths), program))
+    return max(matches, key=lambda item: item[0])[1] if matches else None
+
+
+def _study_plan_course_info(course) -> StudyPlanCourseInfo:
+    return StudyPlanCourseInfo(
+        courseNumber=course.course_number,
+        title=course.title,
+        ects=float(course.ects) if course.ects is not None else None,
+        ectsOptions=course.ects_options or [],
+        schedule=course.schedule,
+        requirementRole=course.requirement_role,
+        sourceUrl=course.source_url,
+    )
+
+
+def _study_plan_overview(program: StudyProgram) -> StudyPlanOverview:
+    sections = []
+    for section in program.sections:
+        requirements = []
+        for requirement in section.requirements:
+            linked_courses = sorted(
+                (link.course for link in requirement.course_links), key=lambda course: course.position
+            )
+            requirements.append(
+                StudyPlanRequirementInfo(
+                    requirementType=requirement.requirement_type,
+                    description=requirement.description,
+                    requiredEcts=float(requirement.required_ects) if requirement.required_ects is not None else None,
+                    requiredCount=requirement.required_count,
+                    isSubrequirement=requirement.parent_requirement_id is not None,
+                    courses=[_study_plan_course_info(course) for course in linked_courses],
+                )
+            )
+        sections.append(
+            StudyPlanSectionInfo(
+                name=section.name,
+                description=section.description,
+                courses=[_study_plan_course_info(course) for course in section.courses],
+                requirements=requirements,
+            )
+        )
+    return StudyPlanOverview(
+        programName=program.name,
+        degreeType=program.degree_type,
+        academicYear=program.academic_year,
+        validFromYear=program.valid_from_year,
+        validToYear=program.valid_to_year,
+        sourceUrl=program.source_url,
+        sections=sections,
+    )
+
+
+def _course_labels(requirement: StudyPlanRequirement) -> str:
+    courses = sorted((link.course for link in requirement.course_links), key=lambda course: course.position)
+    return ", ".join(
+        f"{course.course_number} {course.title}" if course.course_number else course.title for course in courses
+    )
+
+
+def _study_plan_reply(program: StudyProgram) -> str:
+    validity = f" for studerende optaget fra {program.valid_from_year}" if program.valid_from_year else ""
+    lines = [f"Her er opbygningen af {program.name}{validity}:"]
+    for section in program.sections:
+        details: list[str] = []
+        mandatory = [course for course in section.courses if course.requirement_role == "mandatory"]
+        if mandatory:
+            labels = ", ".join(
+                f"{course.course_number} {course.title}" if course.course_number else course.title
+                for course in mandatory
+            )
+            details.append(f"Obligatoriske kurser: {labels}.")
+        for requirement in section.requirements:
+            if requirement.requirement_type == "all_of":
+                continue
+            if requirement.requirement_type in {"one_of", "min_count"} and requirement.course_links:
+                details.append(f"{requirement.description.rstrip('.:')} — {_course_labels(requirement)}.")
+            else:
+                details.append(requirement.description)
+        if section.name.casefold() in {"projekter", "projects"} and section.courses:
+            if section.description:
+                details.append(section.description)
+            details.append(
+                "Projekter: "
+                + ", ".join(
+                    f"{course.course_number} {course.title}" if course.course_number else course.title
+                    for course in section.courses
+                )
+                + "."
+            )
+        if section.name.casefold() == "forhåndsgodkendte kandidatkurser" or (
+            "pre-approved" in section.name.casefold() and "msc" in section.name.casefold()
+        ):
+            details.append(f"Listen indeholder {len(section.courses)} forhåndsgodkendte kandidatkurser.")
+        if details:
+            lines.append(f"{section.name}: {' '.join(details)}")
+    lines.append("Kurser i underkrav tæller samtidig med i den overordnede ECTS-pulje; de tælles ikke dobbelt.")
+    return "\n\n".join(lines)
+
+
+def _answer_study_plan(
+    program: StudyProgram,
+    *,
+    academic_year: str,
+) -> ChatResponse:
+    return ChatResponse(
+        reply=_study_plan_reply(program),
+        understood=UnderstoodContext(topic="study plan", level=program.degree_type, program=program.name),
+        recommendations=[],
+        studyPlan=_study_plan_overview(program),
+        academicYear=program.academic_year or academic_year,
+    )
+
+
 def _run_search(session: Session, context: RecommendationContext, academic_year: str) -> SearchResult:
     kwargs = {
         "q": None if context.topic == "DTU courses" else context.topic,
@@ -189,6 +350,17 @@ def recommend_courses(
     messages: list[str],
     academic_year: str,
 ) -> ChatResponse:
+    conversation = " ".join(messages)
+    if _is_study_plan_question(conversation):
+        program = _matching_study_program(session, conversation)
+        if program is not None:
+            return _answer_study_plan(program, academic_year=academic_year)
+        return ChatResponse(
+            reply="Jeg kan forklare studieplanen, men jeg mangler navnet på din uddannelse. Skriv for eksempel ‘Jeg studerer Anvendt Matematik’.",
+            understood=UnderstoodContext(topic="study plan"),
+            recommendations=[],
+            academicYear=academic_year,
+        )
     context = understand_context(messages)
     result = _run_search(session, context, academic_year)
     ranked_courses = result.courses

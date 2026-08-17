@@ -23,6 +23,7 @@ class UnderstoodContext(BaseModel):
     ects: float | None = None
     language: str | None = None
     period: str | None = None
+    program: str | None = None
 
 
 class RecommendedCourse(BaseModel):
@@ -41,11 +42,53 @@ class RecommendedCourse(BaseModel):
     source_url: str = Field(alias="sourceUrl")
 
 
+class StudyPlanCourseInfo(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    course_number: str | None = Field(default=None, alias="courseNumber")
+    title: str
+    ects: float | None = None
+    ects_options: list[float] = Field(default_factory=list, alias="ectsOptions")
+    schedule: str | None = None
+    requirement_role: str = Field(alias="requirementRole")
+    source_url: str | None = Field(default=None, alias="sourceUrl")
+
+
+class StudyPlanRequirementInfo(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    requirement_type: str = Field(alias="requirementType")
+    description: str
+    required_ects: float | None = Field(default=None, alias="requiredEcts")
+    required_count: int | None = Field(default=None, alias="requiredCount")
+    is_subrequirement: bool = Field(default=False, alias="isSubrequirement")
+    courses: list[StudyPlanCourseInfo] = Field(default_factory=list)
+
+
+class StudyPlanSectionInfo(BaseModel):
+    name: str
+    description: str | None = None
+    courses: list[StudyPlanCourseInfo] = Field(default_factory=list)
+    requirements: list[StudyPlanRequirementInfo] = Field(default_factory=list)
+
+
+class StudyPlanOverview(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    program_name: str = Field(alias="programName")
+    degree_type: str = Field(alias="degreeType")
+    academic_year: str | None = Field(default=None, alias="academicYear")
+    valid_from_year: int | None = Field(default=None, alias="validFromYear")
+    valid_to_year: int | None = Field(default=None, alias="validToYear")
+    source_url: str = Field(alias="sourceUrl")
+    sections: list[StudyPlanSectionInfo]
+
+
 class ChatResponse(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
     reply: str
     understood: UnderstoodContext
-    recommendations: list[RecommendedCourse]
+    recommendations: list[RecommendedCourse] = Field(default_factory=list)
+    study_plan: StudyPlanOverview | None = Field(default=None, alias="studyPlan")
     academic_year: str = Field(alias="academicYear")
-

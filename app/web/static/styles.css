@@ -288,6 +288,36 @@ h1 em { color: var(--accent); font-weight: 500; }
 .course-card a { display: inline-flex; align-items: center; gap: 5px; color: var(--ink); text-decoration: none; font-size: .71rem; font-weight: 750; }
 .course-card a:hover { color: var(--accent-dark); }
 
+.study-plan {
+  display: grid;
+  gap: 12px;
+  margin: -5px 0 25px 40px;
+  animation: enter .4s .08s ease both;
+}
+
+.study-plan-head, .study-plan-section {
+  padding: 17px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 28px rgba(36, 49, 43, .05);
+}
+
+.study-plan-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.study-plan-head h2, .study-plan-section h3 { margin: 0; font-family: Georgia, serif; color: var(--ink); }
+.study-plan-head h2 { font-size: 1.25rem; }
+.study-plan-head span { color: var(--muted); font-size: .7rem; }
+.study-plan-section h3 { margin-bottom: 12px; font-size: 1rem; }
+.study-plan-section p, .study-plan-section li { color: #515e59; font-size: .73rem; line-height: 1.5; }
+.study-plan-section ul { margin: 6px 0 13px; padding-left: 19px; }
+.study-plan-label { margin: 0; color: var(--green) !important; font-weight: 750; }
+.study-plan-rule { margin-top: 9px; padding: 10px; border-radius: 9px; background: #f4f7f5; }
+.study-plan-rule.subrule { margin-left: 14px; border-left: 3px solid rgba(31,110,85,.35); }
+.study-plan-rule p { margin: 0; }
+.study-plan-choices { margin: 5px 0 0 !important; color: var(--green) !important; }
+.study-plan > a { color: var(--ink); text-decoration: none; font-size: .71rem; font-weight: 750; }
+.study-plan > a:hover { color: var(--accent-dark); }
+
 .composer {
   margin: 0 20px;
   padding: 10px 10px 10px 17px;
@@ -374,6 +404,7 @@ footer a { color: inherit; text-underline-offset: 3px; }
   .conversation { padding: 22px 15px 16px; max-height: 63vh; }
   .suggestions { grid-template-columns: 1fr; margin-left: 40px; }
   .recommendations { grid-template-columns: 1fr; margin-left: 0; }
+  .study-plan { margin-left: 0; }
   .context-tags { margin-left: 40px; }
   .composer { margin: 0 12px; }
   footer { flex-direction: column; gap: 8px; }
@@ -382,4 +413,3 @@ footer a { color: inherit; text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
-

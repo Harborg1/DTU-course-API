@@ -100,6 +100,35 @@ docker compose exec api python -m importer.cli --academic-year 2026-2027 --limit
 docker compose exec api python -m importer.cli --academic-year 2026-2027
 ```
 
+### Studieplaner
+
+Studieplaner gemmes separat fra kursuskataloget i `study_programs`, `study_plan_sections`,
+`study_plan_courses`, `study_plan_requirements` og `study_plan_requirement_courses`. Regler som
+obligatoriske kurser, “vælg ét af”, samlede ECTS-krav og minimums-ECTS fra en kurspulje bevares
+som strukturerede krav. Kandidatsider behandles med deres særskilte struktur for programme provision,
+polytechnical foundation, programme specific course pools, speciale og valgkursusgrænser. Kurser i
+underkrav genbruger samme studieplanspost og tælles derfor ikke dobbelt.
+
+Importér én studieplan i Docker:
+
+```bash
+docker compose exec api python -m importer.study_plan_cli \
+  --url https://student.dtu.dk/studieordninger/Bachelor/anvendt-matematik/studieplan
+
+docker compose exec api python -m importer.study_plan_cli \
+  --url https://www.dtu.dk/english/education/graduate/msc-programmes/applied-chemistry/curriculum
+```
+
+Eller importér alle understøttede DTU-URL'er i en fil:
+
+```bash
+docker compose exec api python -m importer.study_plan_cli --urls-file app/data/program_urls.txt
+```
+
+Chatten genkender derefter spørgsmål som “Jeg studerer Anvendt Matematik – hvordan er studiet
+opbygget, og hvilke kurser er obligatoriske?” og returnerer både en forklaring og et struktureret
+`studyPlan`-objekt.
+
 Slutrapporten viser discovered, imported, updated, unchanged og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
 
 ## API
@@ -135,7 +164,8 @@ Søgeresultater indeholder kun kompakte felter, højst 500 tegn af beskrivelsen,
 
 ## Tests
 
-Tests bruger gemte, reducerede HTML-fixtures baseret på tre verificerede 2026/2027-sider og laver ingen live requests:
+Tests bruger gemte, reducerede HTML-fixtures baseret på verificerede bachelor- og kandidatsider for
+2026/2027 og laver ingen live requests:
 
 ```bash
 pytest -q
