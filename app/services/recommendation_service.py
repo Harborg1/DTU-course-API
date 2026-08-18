@@ -391,6 +391,13 @@ def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
     if requirement.requirement_type == "group_ects" and requirement.required_ects is not None:
         return f"Vælg {_format_ects(requirement.required_ects)} ECTS fra denne pulje: {labels}."
 
+    if requirement.requirement_type == "remainder_pool":
+        return (
+            "De resterende ECTS i den programspecifikke blok skal vælges fra "
+            f"den brede pulje med {len(courses)} kurser. Den fulde kursusliste vises "
+            "i studieplansoversigten nedenfor."
+        )
+
     return None
 
 

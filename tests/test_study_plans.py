@@ -305,8 +305,17 @@ def test_chat_uses_degree_context_to_resolve_bilingual_program_names(client, db_
 
 
 def test_chat_remembers_program_context_and_tolerates_a_spelling_error(client, db_session):
+    curriculum_html = (
+        _msc_curriculum_html()
+        .replace("Applied Chemistry", "Computer Science and Engineering")
+        .replace(
+            "Choose 25 ECTS among the rest of the programme specific courses:",
+            "The remaining ECTS points in the programme specific block must be chosen "
+            "from the following list of courses:",
+        )
+    )
     program = parse_study_plan_page(
-        _msc_curriculum_html().replace("Applied Chemistry", "Computer Science and Engineering"),
+        curriculum_html,
         "https://www.dtu.dk/english/education/graduate/msc-programmes/computer-science-and-engineering/curriculum",
     )
     upsert_study_plan(db_session, program)
@@ -342,6 +351,8 @@ def test_chat_remembers_program_context_and_tolerates_a_spelling_error(client, d
     assert contextual_body["understood"]["level"] == "Master"
     assert "Vælg ét kursus på 5 ECTS blandt: 12100" in contextual_body["reply"]
     assert "The following courses are mandatory — 12100" not in contextual_body["reply"]
+    assert "den brede pulje med" in contextual_body["reply"]
+    assert "following list of courses: Elective courses" not in contextual_body["reply"]
     elective_rule = "Any course classified as MSc course in DTU's course base may be an elective course."
     assert contextual_body["reply"].count(elective_rule) == 1
     assert typo_response.status_code == 200

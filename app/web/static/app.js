@@ -71,6 +71,50 @@ function studyCourseLabel(course) {
   return `${number}${course.title}${ects}`;
 }
 
+function commonCourseEcts(courses) {
+  const values = [...new Set(courses.map((course) => course.ects).filter((value) => value != null))];
+  return values.length === 1 ? values[0] : null;
+}
+
+function studyRuleDescription(rule) {
+  const ects = commonCourseEcts(rule.courses);
+  const ectsPhrase = ects == null ? "" : ` på ${ects} ECTS`;
+
+  if (rule.requirementType === "one_of") {
+    const alternativeMatch = rule.description.match(/alternative to\s+([0-9/\s]+)/i);
+    if (alternativeMatch) {
+      const primaryNumbers = alternativeMatch[1].match(/\d{5}/g) || [];
+      const alternativeNumbers = rule.courses
+        .map((course) => course.courseNumber)
+        .filter((number) => number && !primaryNumbers.includes(number));
+      return (
+        `Vælg ét kursus${ectsPhrase}. Normalt vælges ét af ${primaryNumbers.join(", ")}. ` +
+        `Hvis du har avancerede innovationskompetencer, kan du i stedet vælge ét af ${alternativeNumbers.join(", ")}.`
+      );
+    }
+    return `Vælg ét kursus${ectsPhrase} blandt mulighederne nedenfor.`;
+  }
+  if (rule.requirementType === "exact_count" && rule.requiredCount != null) {
+    return `Vælg præcis ${rule.requiredCount} kurser blandt mulighederne nedenfor.`;
+  }
+  if (rule.requirementType === "min_count" && rule.requiredCount != null) {
+    return `Vælg mindst ${rule.requiredCount} kurser blandt mulighederne nedenfor.`;
+  }
+  if (rule.requirementType === "group_ects" && rule.requiredEcts != null) {
+    return `Vælg ${rule.requiredEcts} ECTS fra puljen nedenfor.`;
+  }
+  if (rule.requirementType === "remainder_pool") {
+    return `De resterende ECTS i den programspecifikke blok vælges fra puljen nedenfor (${rule.courses.length} kurser).`;
+  }
+  return rule.description;
+}
+
+function sectionEctsSummary(section) {
+  const opening = section.description?.slice(0, section.name.length + 80) || "";
+  const match = opening.match(/\((\d+(?:[.,]\d+)?)\s*ECTS(?:\s*points?)?\)/i);
+  return match ? `Krav for denne blok: ${match[1].replace(",", ".")} ECTS i alt.` : null;
+}
+
 function addStudyPlan(plan) {
   if (!plan) return;
   const overview = document.createElement("section");
@@ -93,6 +137,14 @@ function addStudyPlan(plan) {
     sectionTitle.textContent = section.name;
     card.append(sectionTitle);
 
+    const ectsSummary = sectionEctsSummary(section);
+    if (ectsSummary) {
+      const summary = document.createElement("p");
+      summary.className = "study-plan-label";
+      summary.textContent = ectsSummary;
+      card.append(summary);
+    }
+
     const mandatory = section.courses.filter((course) => course.requirementRole === "mandatory");
     if (mandatory.length) {
       const label = document.createElement("p");
@@ -107,11 +159,16 @@ function addStudyPlan(plan) {
       card.append(label, list);
     }
 
+    const seenUnlinkedDescriptions = new Set();
     section.requirements.filter((rule) => rule.requirementType !== "all_of").forEach((rule) => {
+      const descriptionKey = rule.description.trim().replace(/\s+/g, " ").toLowerCase();
+      if (!rule.courses.length && seenUnlinkedDescriptions.has(descriptionKey)) return;
+      if (!rule.courses.length) seenUnlinkedDescriptions.add(descriptionKey);
+
       const block = document.createElement("div");
       block.className = `study-plan-rule${rule.isSubrequirement ? " subrule" : ""}`;
       const description = document.createElement("p");
-      description.textContent = rule.description;
+      description.textContent = studyRuleDescription(rule);
       block.append(description);
       if (rule.courses.length) {
         const choices = document.createElement("p");
