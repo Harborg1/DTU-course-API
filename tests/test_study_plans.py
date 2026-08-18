@@ -254,6 +254,95 @@ def test_chat_explains_applied_mathematics_study_structure(client, db_session):
     assert "tælles ikke dobbelt" in body["reply"]
 
 
+def test_chat_uses_degree_context_to_resolve_bilingual_program_names(client, db_session):
+    bachelor = parse_study_plan_page(
+        _study_plan_html().replace("Anvendt Matematik", "Bioteknologi"),
+        "https://student.dtu.dk/studieordninger/Bachelor/bioteknologi/studieplan",
+    )
+    master = parse_study_plan_page(
+        _msc_curriculum_html().replace("Applied Chemistry", "Biotechnology"),
+        "https://www.dtu.dk/english/education/graduate/msc-programmes/biotechnology/curriculum",
+    )
+    upsert_study_plan(db_session, bachelor)
+    upsert_study_plan(db_session, master)
+    db_session.commit()
+
+    master_response = client.post(
+        "/api/chat",
+        json={
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "Jeg læser bioteknologi på kandidaten. Hvad er reglerne for mit studie?",
+                }
+            ]
+        },
+    )
+    bachelor_response = client.post(
+        "/api/chat",
+        json={
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "I study Biotechnology on my bachelor's. What are my degree requirements?",
+                }
+            ]
+        },
+    )
+
+    assert master_response.status_code == 200
+    assert master_response.json()["understood"] == {
+        "topic": "study plan",
+        "level": "Master",
+        "ects": None,
+        "language": None,
+        "period": None,
+        "program": "Biotechnology",
+    }
+    assert bachelor_response.status_code == 200
+    assert bachelor_response.json()["understood"]["program"] == "Bioteknologi"
+    assert bachelor_response.json()["understood"]["level"] == "Bachelor"
+
+
+def test_chat_remembers_program_context_and_tolerates_a_spelling_error(client, db_session):
+    program = parse_study_plan_page(
+        _msc_curriculum_html().replace("Applied Chemistry", "Computer Science and Engineering"),
+        "https://www.dtu.dk/english/education/graduate/msc-programmes/computer-science-and-engineering/curriculum",
+    )
+    upsert_study_plan(db_session, program)
+    db_session.commit()
+
+    contextual_response = client.post(
+        "/api/chat",
+        json={
+            "messages": [
+                {"role": "user", "content": "Jeg læser datalogi på kandidaten."},
+                {
+                    "role": "user",
+                    "content": "Hvordan er min uddannelse bygget op, og hvilke kurser skal jeg tage?",
+                },
+            ]
+        },
+    )
+    typo_response = client.post(
+        "/api/chat",
+        json={
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "I study Computer Sciense and Engineering. Which courses do I need?",
+                }
+            ]
+        },
+    )
+
+    assert contextual_response.status_code == 200
+    assert contextual_response.json()["understood"]["program"] == "Computer Science and Engineering"
+    assert contextual_response.json()["understood"]["level"] == "Master"
+    assert typo_response.status_code == 200
+    assert typo_response.json()["understood"]["program"] == "Computer Science and Engineering"
+
+
 def test_parser_supports_english_h2_sections_and_programme_specific_rules():
     html = f"""
     <html><head><title>Study plan 2025 - General Engineering</title></head><body>

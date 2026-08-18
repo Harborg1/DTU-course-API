@@ -1,6 +1,7 @@
 import re
 from dataclasses import dataclass
 from decimal import Decimal, InvalidOperation
+from difflib import SequenceMatcher
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session, selectinload
@@ -17,6 +18,7 @@ from app.schemas.recommendation import (
     UnderstoodContext,
 )
 from app.services.search_service import SearchResult, search_courses
+from app.services.study_program_aliases import PROGRAM_ALIASES
 
 
 _TOPICS = (
@@ -83,12 +85,33 @@ _STOP_WORDS = {
 
 _STUDY_PLAN_TERMS = (
     "obligatorisk",
+    "adgangskrav",
+    "course requirements",
+    "curriculum",
+    "degree requirements",
+    "hvad er kravene",
+    "hvad er reglerne",
+    "hvad skal jeg have",
+    "hvad skal jeg tage",
+    "how is my degree structured",
+    "how is my programme structured",
+    "how is my program structured",
     "opbygning",
+    "program structure",
+    "programme structure",
+    "programme requirements",
+    "program requirements",
+    "regler for mit studie",
+    "reglerne for mit studie",
     "studieplan",
     "studieordning",
+    "study plan",
     "retningsspecifik",
     "polytekniske grundlag",
     "hvilke kurser skal",
+    "which courses do i need",
+    "which courses must i take",
+    "mandatory courses",
     "hvordan er studiet",
     "hvordan studiet er",
     "uddannelsen bygget op",
@@ -109,9 +132,9 @@ def _normalise(text: str) -> str:
 
 
 def _extract_level(text: str) -> str | None:
-    if re.search(r"\b(msc|master|kandidat)\b", text):
+    if re.search(r"\b(msc|master(?:'s)?|kandidat(?:en|uddannelse[nr]?)?|civilingeniør|graduate)\b", text):
         return "MSc"
-    if re.search(r"\b(bsc|bachelor|diplom)\b", text):
+    if re.search(r"\b(bsc|bachelor(?:en|uddannelse[nr]?)?|diplom(?:ingeniør)?)\b", text):
         return "BSc"
     if re.search(r"\b(phd|ph\.d)\b", text):
         return "PhD"
@@ -183,23 +206,79 @@ def _is_study_plan_question(text: str) -> bool:
     return any(term in folded for term in _STUDY_PLAN_TERMS)
 
 
+def _requested_degree_type(text: str) -> str | None:
+    return {"MSc": "Master", "BSc": "Bachelor"}.get(_extract_level(_normalise(text)))
+
+
+def _program_aliases(program: StudyProgram) -> dict[str, int]:
+    aliases: dict[str, int] = {}
+
+    def add(value: str | None, priority: int) -> None:
+        if not value:
+            return
+        key = _program_key(value)
+        if key:
+            aliases[key] = max(priority, aliases.get(key, 0))
+
+    add(program.name, 40)
+    for alias in program.aliases or []:
+        add(alias, 35)
+    add(program.slug.replace("-", " "), 30)
+    for alias in PROGRAM_ALIASES.get(program.slug, ()):
+        add(alias, 20)
+    return aliases
+
+
+def _alias_similarity(alias: str, text_tokens: list[str]) -> float:
+    alias_tokens = alias.split()
+    if len(alias) < 5 or not alias_tokens or len(alias_tokens) > len(text_tokens):
+        return 0.0
+    window_size = len(alias_tokens)
+    return max(
+        SequenceMatcher(None, alias, " ".join(text_tokens[index : index + window_size])).ratio()
+        for index in range(len(text_tokens) - window_size + 1)
+    )
+
+
 def _matching_study_program(session: Session, text: str) -> StudyProgram | None:
-    normalized_text = f" {_program_key(text)} "
-    statement = select(StudyProgram).options(
+    normalized_key = _program_key(text)
+    padded_text = f" {normalized_key} "
+    text_tokens = normalized_key.split()
+    requested_degree = _requested_degree_type(text)
+    programs = list(session.scalars(select(StudyProgram)))
+    candidates: list[tuple[int, float, int, int, StudyProgram]] = []
+
+    for program in programs:
+        if requested_degree and program.degree_type != requested_degree:
+            continue
+        for alias, priority in _program_aliases(program).items():
+            if f" {alias} " in padded_text:
+                candidates.append((2, 1.0, priority, len(alias), program))
+                continue
+            similarity = _alias_similarity(alias, text_tokens)
+            threshold = 0.88 if len(alias.split()) == 1 else 0.84
+            if similarity >= threshold:
+                candidates.append((1, similarity, priority, len(alias), program))
+
+    if not candidates:
+        return None
+    candidates.sort(key=lambda item: item[:4], reverse=True)
+    best = candidates[0]
+    competing = next((item for item in candidates[1:] if item[4].id != best[4].id), None)
+    if competing is not None:
+        if best[0] == competing[0] == 2 and best[1:4] == competing[1:4]:
+            return None
+        if best[0] == competing[0] == 1 and best[1] - competing[1] < 0.04:
+            return None
+
+    statement = select(StudyProgram).where(StudyProgram.id == best[4].id).options(
         selectinload(StudyProgram.sections).selectinload(StudyPlanSection.courses),
         selectinload(StudyProgram.sections)
         .selectinload(StudyPlanSection.requirements)
         .selectinload(StudyPlanRequirement.course_links)
         .selectinload(StudyPlanRequirementCourse.course),
     )
-    matches: list[tuple[int, StudyProgram]] = []
-    for program in session.scalars(statement):
-        aliases = [program.name, program.slug.replace("-", " "), *(program.aliases or [])]
-        alias_keys = {_program_key(alias) for alias in aliases if alias}
-        matching_lengths = [len(alias) for alias in alias_keys if f" {alias} " in normalized_text]
-        if matching_lengths:
-            matches.append((max(matching_lengths), program))
-    return max(matches, key=lambda item: item[0])[1] if matches else None
+    return session.scalar(statement)
 
 
 def _study_plan_course_info(course) -> StudyPlanCourseInfo:
@@ -356,7 +435,10 @@ def recommend_courses(
         if program is not None:
             return _answer_study_plan(program, academic_year=academic_year)
         return ChatResponse(
-            reply="Jeg kan forklare studieplanen, men jeg mangler navnet på din uddannelse. Skriv for eksempel ‘Jeg studerer Anvendt Matematik’.",
+            reply=(
+                "Jeg kan forklare studieplanen, men jeg kan ikke identificere uddannelsen entydigt. "
+                "Skriv både uddannelsens navn og niveau, for eksempel ‘Jeg læser Bioteknologi på kandidaten’."
+            ),
             understood=UnderstoodContext(topic="study plan"),
             recommendations=[],
             academicYear=academic_year,
