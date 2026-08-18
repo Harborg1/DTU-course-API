@@ -337,8 +337,13 @@ def test_chat_remembers_program_context_and_tolerates_a_spelling_error(client, d
     )
 
     assert contextual_response.status_code == 200
-    assert contextual_response.json()["understood"]["program"] == "Computer Science and Engineering"
-    assert contextual_response.json()["understood"]["level"] == "Master"
+    contextual_body = contextual_response.json()
+    assert contextual_body["understood"]["program"] == "Computer Science and Engineering"
+    assert contextual_body["understood"]["level"] == "Master"
+    assert "Vælg ét kursus på 5 ECTS blandt: 12100" in contextual_body["reply"]
+    assert "The following courses are mandatory — 12100" not in contextual_body["reply"]
+    elective_rule = "Any course classified as MSc course in DTU's course base may be an elective course."
+    assert contextual_body["reply"].count(elective_rule) == 1
     assert typo_response.status_code == 200
     assert typo_response.json()["understood"]["program"] == "Computer Science and Engineering"
 

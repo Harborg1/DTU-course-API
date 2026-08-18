@@ -337,11 +337,69 @@ def _course_labels(requirement: StudyPlanRequirement) -> str:
     )
 
 
+def _format_ects(value: Decimal) -> str:
+    return f"{float(value):g}"
+
+
+def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
+    courses = sorted((link.course for link in requirement.course_links), key=lambda course: course.position)
+    if not courses:
+        return None
+
+    labels = _course_labels(requirement)
+    ects_values = {course.ects for course in courses if course.ects is not None}
+    common_ects = next(iter(ects_values)) if len(ects_values) == 1 else None
+    ects_phrase = f" på {_format_ects(common_ects)} ECTS" if common_ects is not None else ""
+
+    if requirement.requirement_type == "one_of":
+        alternative_match = re.search(
+            r"alternative to\s+([0-9/\s]+)", requirement.description, flags=re.IGNORECASE
+        )
+        primary_numbers = set(re.findall(r"\d{5}", alternative_match.group(1))) if alternative_match else set()
+        if primary_numbers:
+            primary = [course for course in courses if course.course_number in primary_numbers]
+            alternatives = [course for course in courses if course.course_number not in primary_numbers]
+            if primary and alternatives:
+                primary_labels = ", ".join(
+                    f"{course.course_number} {course.title}" if course.course_number else course.title
+                    for course in primary
+                )
+                alternative_labels = ", ".join(
+                    f"{course.course_number} {course.title}" if course.course_number else course.title
+                    for course in alternatives
+                )
+                return (
+                    f"Vælg ét kursus{ects_phrase}: normalt ét blandt {primary_labels}. "
+                    "Hvis du har avancerede innovationskompetencer, kan du i stedet vælge ét blandt "
+                    f"{alternative_labels}."
+                )
+        return f"Vælg ét kursus{ects_phrase} blandt: {labels}."
+
+    if requirement.requirement_type == "exact_count" and requirement.required_count is not None:
+        note = ""
+        if "core competence courses" in requirement.description.casefold():
+            leading_text = re.split(
+                r"core competence courses", requirement.description, maxsplit=1, flags=re.IGNORECASE
+            )[0].strip()
+            if leading_text:
+                note = f"Bemærk: {leading_text} "
+        return f"{note}Vælg præcis {requirement.required_count} kurser blandt: {labels}."
+
+    if requirement.requirement_type == "min_count" and requirement.required_count is not None:
+        return f"Vælg mindst {requirement.required_count} kurser blandt: {labels}."
+
+    if requirement.requirement_type == "group_ects" and requirement.required_ects is not None:
+        return f"Vælg {_format_ects(requirement.required_ects)} ECTS fra denne pulje: {labels}."
+
+    return None
+
+
 def _study_plan_reply(program: StudyProgram) -> str:
     validity = f" for studerende optaget fra {program.valid_from_year}" if program.valid_from_year else ""
     lines = [f"Her er opbygningen af {program.name}{validity}:"]
     for section in program.sections:
         details: list[str] = []
+        seen_requirement_descriptions: set[str] = set()
         mandatory = [course for course in section.courses if course.requirement_role == "mandatory"]
         if mandatory:
             labels = ", ".join(
@@ -352,10 +410,14 @@ def _study_plan_reply(program: StudyProgram) -> str:
         for requirement in section.requirements:
             if requirement.requirement_type == "all_of":
                 continue
-            if requirement.requirement_type in {"one_of", "min_count"} and requirement.course_links:
-                details.append(f"{requirement.description.rstrip('.:')} — {_course_labels(requirement)}.")
-            else:
+            typed_detail = _choice_requirement_detail(requirement)
+            if typed_detail:
+                details.append(typed_detail)
+                continue
+            description_key = _normalise(requirement.description)
+            if description_key not in seen_requirement_descriptions:
                 details.append(requirement.description)
+                seen_requirement_descriptions.add(description_key)
         if section.name.casefold() in {"projekter", "projects"} and section.courses:
             if section.description:
                 details.append(section.description)
