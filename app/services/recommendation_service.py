@@ -19,12 +19,25 @@ from app.schemas.recommendation import (
     StudyPlanSectionInfo,
     UnderstoodContext,
 )
-from app.services.course_qa_service import CourseQAError, answer_course_question
+from app.services.course_qa_service import CourseQAError, answer_with_remote_mcp
+from app.services.intent_service import (
+    CourseQAIntent,
+    OpenQuestionIntent,
+    RecommendationIntent,
+    StudyPlanIntent,
+    classify_intent,
+    extract_course_number,
+)
 from app.services.search_service import SearchResult, search_courses
 from app.services.study_program_aliases import PROGRAM_ALIASES
 
 
 logger = logging.getLogger(__name__)
+
+
+def _extract_course_number(text: str) -> str | None:
+    """Backward-compatible wrapper around the shared intent extractor."""
+    return extract_course_number(text)
 
 
 _TOPICS = (
@@ -89,52 +102,11 @@ _STOP_WORDS = {
     "master", "bachelor", "phd", "level", "niveauet", "the", "some", "in", "engineering", "science", "og", "søger", "ønsker",
 }
 
-_STUDY_PLAN_TERMS = (
-    "obligatorisk",
-    "adgangskrav",
-    "course requirements",
-    "curriculum",
-    "degree requirements",
-    "hvad er kravene",
-    "hvad er reglerne",
-    "hvad skal jeg have",
-    "hvad skal jeg tage",
-    "how is my degree structured",
-    "how is my programme structured",
-    "how is my program structured",
-    "opbygning",
-    "program structure",
-    "programme structure",
-    "programme requirements",
-    "program requirements",
-    "regler for mit studie",
-    "reglerne for mit studie",
-    "studieplan",
-    "studieordning",
-    "study plan",
-    "retningsspecifik",
-    "polytekniske grundlag",
-    "hvilke kurser skal",
-    "which courses do i need",
-    "which courses must i take",
-    "mandatory courses",
-    "hvordan er studiet",
-    "hvordan studiet er",
-    "uddannelsen bygget op",
-)
-
-_COURSE_NUMBER_PATTERN = r"\b(\d{5})\b"
-
-
-def _extract_course_number(text: str) -> str | None:
-    match = re.search(_COURSE_NUMBER_PATTERN, text)
-    return match.group(1) if match else None
-
 
 def _answer_with_llm(course: Course, messages: list[str], academic_year: str) -> ChatResponse:
     latest_user_message = messages[-1] if messages else "Hvad kan du fortælle om dette kursus?"
 
-    answer = answer_course_question(course, latest_user_message)
+    answer = answer_with_remote_mcp(latest_user_message, academic_year)
 
     return ChatResponse(
         reply=answer,
@@ -204,8 +176,6 @@ def _extract_topic(text: str) -> str:
         for match in re.finditer(rf"\b{re.escape(topic)}\b", text):
             positions.append((match.start(), _TOPIC_ALIASES.get(topic, topic)))
     if positions:
-        # The final named subject is commonly the requested specialisation after
-        # the student has first described their study programme.
         return max(positions, key=lambda item: item[0])[1]
 
     tokens = re.findall(r"[a-zæøå0-9][a-zæøå0-9+#.-]{1,}", text)
@@ -226,11 +196,6 @@ def understand_context(messages: list[str]) -> RecommendationContext:
 
 def _program_key(value: str) -> str:
     return " ".join(re.findall(r"[a-zæøå0-9]+", value.casefold()))
-
-
-def _is_study_plan_question(text: str) -> bool:
-    folded = _normalise(text)
-    return any(term in folded for term in _STUDY_PLAN_TERMS)
 
 
 def _requested_degree_type(text: str) -> str | None:
@@ -527,17 +492,20 @@ def recommend_courses(
 ) -> ChatResponse:
     conversation = " ".join(messages)
 
-    course_number = _extract_course_number(conversation)
-    if course_number:
-        course = get_course(session, course_number, academic_year)
+    # Intent-based routing
+    intent = classify_intent(conversation)
+
+    # 1. Course Q&A — 5-digit course number → Groq via remote MCP
+    if isinstance(intent, CourseQAIntent):
+        course = get_course(session, intent.course_number, academic_year)
         if course:
             try:
                 return _answer_with_llm(course, messages, academic_year)
             except CourseQAError:
-                logger.exception("Groq could not answer a question about course %s", course_number)
+                logger.exception("Groq could not answer a question about course %s", intent.course_number)
                 return ChatResponse(
                     reply=(
-                        f"Jeg fandt kursus {course_number}, men AI-svaret kunne ikke hentes lige nu. "
+                        f"Jeg fandt kursus {intent.course_number}, men AI-svaret kunne ikke hentes lige nu. "
                         "Prøv igen om et øjeblik."
                     ),
                     understood=UnderstoodContext(topic=f"course {course.course_number}", level=course.level),
@@ -545,20 +513,74 @@ def recommend_courses(
                     academicYear=academic_year,
                     isDirectAnswer=True,
                 )
-
-    if _is_study_plan_question(conversation):
-        program = _matching_study_program(session, conversation)
-        if program is not None:
-            return _answer_study_plan(program, academic_year=academic_year)
         return ChatResponse(
             reply=(
-                "Jeg kan forklare studieplanen, men jeg kan ikke identificere uddannelsen entydigt. "
-                "Skriv både uddannelsens navn og niveau, for eksempel ‘Jeg læser Bioteknologi på kandidaten’."
+                f"Jeg kunne ikke finde kursus {intent.course_number}. "
+                "Tjek venligst at du har skrevet et 5-cifret kursusnummer."
             ),
-            understood=UnderstoodContext(topic="study plan"),
+            understood=UnderstoodContext(topic="course not found"),
             recommendations=[],
             academicYear=academic_year,
         )
+
+    # 2. Study Plan Q&A — Groq via remote MCP, fallback to static plan
+    if isinstance(intent, StudyPlanIntent):
+        program = _matching_study_program(session, conversation)
+        if program is None:
+            return ChatResponse(
+                reply=(
+                    "Jeg kan forklare studieplanen, men jeg kan ikke identificere uddannelsen entydigt. "
+                    "Skriv både uddannelsens navn og niveau, for eksempel 'Jeg læser Bioteknologi på kandidaten'."
+                ),
+                understood=UnderstoodContext(topic="study plan"),
+                recommendations=[],
+                academicYear=academic_year,
+            )
+        try:
+            reply = answer_with_remote_mcp(conversation, academic_year)
+            return ChatResponse(
+                reply=reply,
+                understood=UnderstoodContext(topic="study plan qa", level=program.degree_type, program=program.name),
+                recommendations=[],
+                studyPlan=_study_plan_overview(program),
+                academicYear=program.academic_year or academic_year,
+                isDirectAnswer=True,
+            )
+        except CourseQAError:
+            logger.exception("Groq/MCP could not answer a study plan question — falling back to static plan")
+            return _answer_study_plan(program, academic_year=academic_year)
+
+    # 3. Course Recommendation — Groq via remote MCP
+    if isinstance(intent, RecommendationIntent):
+        try:
+            reply = answer_with_remote_mcp(conversation, academic_year)
+            return ChatResponse(
+                reply=reply,
+                understood=UnderstoodContext(topic=intent.topic, level=intent.level or None),
+                recommendations=[],
+                academicYear=academic_year,
+                isDirectAnswer=True,
+            )
+        except CourseQAError:
+            logger.exception("Groq/MCP could not answer a recommendation request")
+            pass  # fall through to regex search
+
+    # 4. Open Question — Groq (no DB)
+    if isinstance(intent, OpenQuestionIntent):
+        try:
+            reply = answer_with_remote_mcp(conversation, academic_year)
+            return ChatResponse(
+                reply=reply,
+                understood=UnderstoodContext(topic="general question"),
+                recommendations=[],
+                academicYear=academic_year,
+                isDirectAnswer=True,
+            )
+        except CourseQAError:
+            logger.exception("Groq could not answer an open question")
+            pass  # fall through to regex search
+
+    # Fallback — regex-based search (unchanged)
     context = understand_context(messages)
     result = _run_search(session, context, academic_year)
     ranked_courses = result.courses

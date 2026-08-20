@@ -9,6 +9,7 @@ from sqlalchemy.pool import StaticPool
 
 os.environ["API_KEY"] = "test-secret"
 os.environ["DATABASE_URL"] = "sqlite://"
+os.environ["MCP_TOKEN"] = "test-mcp-token"
 
 from app.config import get_settings  # noqa: E402
 get_settings.cache_clear()

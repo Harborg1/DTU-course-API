@@ -12,10 +12,10 @@ DTU Course Base
   PostgreSQL
        ↓
     FastAPI
-     ↙   ↘
-Web-chat  Beskyttet REST API
-              ↓
-      Copilot Studio
+   ↙   ↓   ↘
+Web-chat MCP  Beskyttet REST API
+          ↑             ↓
+        Groq    Copilot Studio
 ```
 
 Importeren er opdelt i HTTP-hentning, HTML-parsing, validering og databaseoperationer. API-laget bruger services og dependency-injected SQLAlchemy-sessions. PostgreSQLs genererede `tsvector` vægter titler som A, beskrivelse og indhold som B samt læringsmål og forudsætninger som C.
@@ -74,6 +74,14 @@ uvicorn app.main:app --reload
 | `DEFAULT_ACADEMIC_YEAR` | Standardårgang, `2026-2027` |
 | `IMPORT_REQUEST_DELAY` | Pause mellem DTU-requests i sekunder |
 | `LOG_LEVEL` | Fx `INFO` eller `DEBUG` |
+| `GROQ_API_KEY` | Groq API-nøgle til chatten |
+| `GROQ_MODEL` | Groq-model; standard er `openai/gpt-oss-120b` |
+| `MCP_TOKEN` | Lang, tilfældig bearer token, der beskytter `/mcp` |
+| `MCP_SERVER_URL` | Offentlig HTTPS-base-URL, fx `https://app.example.com` |
+
+Chatten bruger Groqs Responses API. Groq kalder de skrivebeskyttede MCP-tools
+`get_course`, `search_courses` og `get_study_plan` på `/mcp`; browseren får aldrig
+adgang til `GROQ_API_KEY` eller `MCP_TOKEN`.
 
 ## Import
 
@@ -201,9 +209,9 @@ Vercel kører FastAPI-applikationen fra `app.main:app` som én Python Function i
    vercel link
    ```
 
-2. Tilføj `DATABASE_URL`, `API_KEY`, `DEFAULT_ACADEMIC_YEAR`, `DTU_BASE_URL` og `LOG_LEVEL` som Preview environment variables i Vercel. Brug Supabases transaction pooler på port 6543 til `DATABASE_URL`. Tilføj ikke `MIGRATION_DATABASE_URL` til Vercel.
+2. Tilføj `DATABASE_URL`, `API_KEY`, `DEFAULT_ACADEMIC_YEAR`, `DTU_BASE_URL`, `LOG_LEVEL`, `GROQ_API_KEY`, `GROQ_MODEL`, `MCP_TOKEN` og `MCP_SERVER_URL` som Preview environment variables i Vercel. `MCP_SERVER_URL` skal være deploymentets offentlige HTTPS-base-URL, og `MCP_TOKEN` skal være en separat lang, tilfældig secret. Brug Supabases transaction pooler på port 6543 til `DATABASE_URL`. Tilføj ikke `MIGRATION_DATABASE_URL` til Vercel.
 3. Kontrollér konfigurationen lokalt med `vercel dev`.
-4. Opret preview med `vercel deploy` og verificér `/`, `/health` og et autentificeret søgekald.
+4. Opret preview med `vercel deploy` og verificér `/`, `/health`, et autentificeret søgekald og et MCP-kald med `Authorization: Bearer $MCP_TOKEN`.
 5. Tilføj de samme nødvendige variabler til Production og kør først `vercel deploy --prod`, når previewet er godkendt.
 
 Python er fastlåst til 3.12 i `.python-version`. `requirements.txt` indeholder kun runtime-afhængigheder til Vercel, `requirements-import.txt` tilføjer importer og Alembic, og `requirements-dev.txt` tilføjer testværktøjer.

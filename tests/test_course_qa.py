@@ -110,13 +110,10 @@ def test_answer_course_question_without_api_key():
 
 
 def test_course_question_triggers_llm(client, sample_courses):
-    mock_response = MagicMock()
-    mock_response.choices = [MagicMock(message=MagicMock(content="Skemagruppen for 02450 er E2A."))]
-
-    with patch("openai.OpenAI") as MockClient:
-        instance = MockClient.return_value
-        instance.chat.completions.create.return_value = mock_response
-
+    with patch(
+        "app.services.recommendation_service.answer_with_remote_mcp",
+        return_value="Skemagruppen for 02450 er E2A.",
+    ) as answer:
         response = client.post(
             "/api/chat",
             json={
@@ -128,6 +125,8 @@ def test_course_question_triggers_llm(client, sample_courses):
                 ]
             },
         )
+
+    answer.assert_called_once_with("hvad er skemagruppen for 02450?", "2026-2027")
 
     assert response.status_code == 200
     body = response.json()
@@ -158,18 +157,17 @@ def test_course_question_nonexistent_course(client, sample_courses):
 
 
 def test_recommend_courses_with_course_number_uses_llm(db_session, sample_courses):
-    mock_response = MagicMock()
-    mock_response.choices = [MagicMock(message=MagicMock(content="Eksamen er mundtlig."))]
-
-    with patch("openai.OpenAI") as MockClient:
-        instance = MockClient.return_value
-        instance.chat.completions.create.return_value = mock_response
-
+    with patch(
+        "app.services.recommendation_service.answer_with_remote_mcp",
+        return_value="Eksamen er mundtlig.",
+    ) as answer:
         result = recommend_courses(
             db_session,
             messages=["hvad er eksamen for 02450?"],
             academic_year="2026-2027",
         )
+
+    answer.assert_called_once_with("hvad er eksamen for 02450?", "2026-2027")
 
     assert result.is_direct_answer is True
     assert result.reply == "Eksamen er mundtlig."

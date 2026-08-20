@@ -18,6 +18,8 @@ class Settings(BaseSettings):
     groq_model: str = Field(default="openai/gpt-oss-120b")
     groq_base_url: str = Field(default="https://api.groq.com/openai/v1")
     groq_temperature: float = Field(default=0.0)
+    mcp_token: str = ""
+    mcp_server_url: str = ""
 
 
 @lru_cache

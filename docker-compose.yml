@@ -24,6 +24,8 @@ services:
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
       GROQ_API_KEY: ${GROQ_API_KEY:-}
       GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+      MCP_TOKEN: ${MCP_TOKEN:-}
+      MCP_SERVER_URL: ${MCP_SERVER_URL:-}
     ports:
       - "8000:8000"
     depends_on:
