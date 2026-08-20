@@ -13,25 +13,21 @@ os.environ["GROQ_API_KEY"] = "test-groq-key"
 get_settings.cache_clear()
 
 
-def test_detects_danish():
-    assert _detect_language("hvad er skemagruppen for 02285?") == "da"
+def test_detects_danish_from_real_question():
+    assert _detect_language("Jeg vil gerne vide hvem der underviser i kurset 02421") == "da"
 
 
-def test_detects_english():
-    assert _detect_language("what is the schedule group for 02285?") == "en"
+def test_detects_english_from_real_question():
+    assert _detect_language("Who teaches course 02421?") == "en"
 
 
-def test_detects_swedish():
-    assert _detect_language("vad är schemagruppen för 02285?") == "sv"
-
-
-def test_detects_german():
-    assert _detect_language("was ist die Gruppierung für 02285?") == "de"
-
-
-def test_fallback_to_danish_on_detection_error():
+def test_fallback_to_english_on_detection_error():
     result = _detect_language("")
-    assert result == "da"
+    assert result == "en"
+
+
+def test_fallback_to_english_for_unknown_language():
+    assert _detect_language("¿Quién enseña?") == "en"
 
 
 def test_extract_course_number_from_question():

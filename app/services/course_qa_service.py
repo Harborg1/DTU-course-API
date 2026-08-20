@@ -7,13 +7,6 @@ from app.models.course import Course
 _LANG_NAMES = {
     "da": "dansk",
     "en": "engelsk",
-    "de": "tysk",
-    "fr": "fransk",
-    "es": "spansk",
-    "sv": "svensk",
-    "no": "norsk",
-    "nl": "hollandsk",
-    "fi": "finsk",
 }
 
 
@@ -23,20 +16,28 @@ class CourseQAError(RuntimeError):
 
 def _detect_language(text: str) -> str:
     try:
-        return detect(text)
+        lang = detect(text)
+        if lang in _LANG_NAMES:
+            return lang
+        return "en"  # fallback til engelsk
     except Exception:
-        return "da"
+        return "en"
 
 
 def _build_system_prompt(course: Course, language: str) -> str:
-    lang_name = _LANG_NAMES.get(language, "sproget")
+    if language == "da":
+        lang_instruction = "DU SKAL SVARE PÅ DANSK"
+    elif language == "en":
+        lang_instruction = "DU SKAL SVARE PÅ ENGLSK"
+    else:
+        lang_instruction = "DU SKAL SVARE PÅ ENGLSK"
 
     prompt = (
-        "Du er en hjælpende kursusguide for DTU-studerende. "
-        f"Svar på {lang_name}. Brug kun de oplyste kursuselementer til at besvare spørgsmål. "
-        "Hvis et felt ikke er relevant for spørgsmålet, eller hvis du ikke kan besvare "
-        "spørgsmålet baseret på de oplyste elementer, så sig det kort og præcist. "
-        "Svar kort og præcist — højst 3 sætninger."
+        "Du er en hjælpende kursusguide for DTU-studerende.\n\n"
+        f"{lang_instruction}. Brug kun de oplyste kursuselementer til at besvare spørgsmålet.\n"
+        "Hvis et felt ikke er relevant for spørgsmålet, så sig det kort og præcist.\n"
+        "Svar kort og præcist — højst 3 sætninger.\n\n"
+        "Kursusdata:\n"
     )
 
     fields = []
@@ -51,7 +52,7 @@ def _build_system_prompt(course: Course, language: str) -> str:
         if value is not None:
             fields.append(f"{field_name}: {value}")
     course_info = "\n".join(fields)
-    return f"{prompt}\n\nKursusdata:\n{course_info}"
+    return f"{prompt}{course_info}"
 
 
 def answer_course_question(course: Course, question: str) -> str:
