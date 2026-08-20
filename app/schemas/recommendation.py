@@ -92,3 +92,4 @@ class ChatResponse(BaseModel):
     recommendations: list[RecommendedCourse] = Field(default_factory=list)
     study_plan: StudyPlanOverview | None = Field(default=None, alias="studyPlan")
     academic_year: str = Field(alias="academicYear")
+    is_direct_answer: bool = Field(default=False, alias="isDirectAnswer")

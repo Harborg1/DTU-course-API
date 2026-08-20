@@ -22,6 +22,8 @@ services:
       DEFAULT_ACADEMIC_YEAR: 2026-2027
       IMPORT_REQUEST_DELAY: ${IMPORT_REQUEST_DELAY:-0.5}
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
     ports:
       - "8000:8000"
     depends_on:

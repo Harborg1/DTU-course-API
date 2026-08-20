@@ -1,3 +1,4 @@
+import logging
 import re
 from dataclasses import dataclass
 from decimal import Decimal, InvalidOperation
@@ -8,6 +9,7 @@ from sqlalchemy.orm import Session, selectinload
 
 from app.models.course import Course
 from app.models.study_plan import StudyPlanRequirement, StudyPlanRequirementCourse, StudyPlanSection, StudyProgram
+from app.services.course_service import get_course
 from app.schemas.recommendation import (
     ChatResponse,
     RecommendedCourse,
@@ -17,8 +19,12 @@ from app.schemas.recommendation import (
     StudyPlanSectionInfo,
     UnderstoodContext,
 )
+from app.services.course_qa_service import CourseQAError, answer_course_question
 from app.services.search_service import SearchResult, search_courses
 from app.services.study_program_aliases import PROGRAM_ALIASES
+
+
+logger = logging.getLogger(__name__)
 
 
 _TOPICS = (
@@ -116,6 +122,27 @@ _STUDY_PLAN_TERMS = (
     "hvordan studiet er",
     "uddannelsen bygget op",
 )
+
+_COURSE_NUMBER_PATTERN = r"\b(\d{5})\b"
+
+
+def _extract_course_number(text: str) -> str | None:
+    match = re.search(_COURSE_NUMBER_PATTERN, text)
+    return match.group(1) if match else None
+
+
+def _answer_with_llm(course: Course, messages: list[str], academic_year: str) -> ChatResponse:
+    latest_user_message = messages[-1] if messages else "Hvad kan du fortælle om dette kursus?"
+
+    answer = answer_course_question(course, latest_user_message)
+
+    return ChatResponse(
+        reply=answer,
+        understood=UnderstoodContext(topic=f"course {course.course_number}", level=course.level),
+        recommendations=[],
+        academicYear=academic_year,
+        isDirectAnswer=True,
+    )
 
 
 @dataclass(frozen=True)
@@ -499,6 +526,26 @@ def recommend_courses(
     academic_year: str,
 ) -> ChatResponse:
     conversation = " ".join(messages)
+
+    course_number = _extract_course_number(conversation)
+    if course_number:
+        course = get_course(session, course_number, academic_year)
+        if course:
+            try:
+                return _answer_with_llm(course, messages, academic_year)
+            except CourseQAError:
+                logger.exception("Groq could not answer a question about course %s", course_number)
+                return ChatResponse(
+                    reply=(
+                        f"Jeg fandt kursus {course_number}, men AI-svaret kunne ikke hentes lige nu. "
+                        "Prøv igen om et øjeblik."
+                    ),
+                    understood=UnderstoodContext(topic=f"course {course.course_number}", level=course.level),
+                    recommendations=[],
+                    academicYear=academic_year,
+                    isDirectAnswer=True,
+                )
+
     if _is_study_plan_question(conversation):
         program = _matching_study_program(session, conversation)
         if program is not None:

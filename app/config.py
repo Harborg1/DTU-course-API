@@ -14,6 +14,10 @@ class Settings(BaseSettings):
     default_academic_year: str = "2026-2027"
     import_request_delay: float = Field(default=0.5, ge=0)
     log_level: str = "INFO"
+    groq_api_key: str = Field(default="")
+    groq_model: str = Field(default="openai/gpt-oss-120b")
+    groq_base_url: str = Field(default="https://api.groq.com/openai/v1")
+    groq_temperature: float = Field(default=0.0)
 
 
 @lru_cache
