@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62783" Volume="2026/2027" University="dtu" LastUpdated="2026-04-12+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Projektarbejde 3. semester" />
+        <Title Lang="en-GB" Title="Project 3. sem" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="170915" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ashraf Fathi Khalil</GivenName>
+            <FamilyName>Sulayman</FamilyName>
+            <Email>ashka@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="214374" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sam</GivenName>
+            <FamilyName>Roozbehani</FamilyName>
+            <Email>samro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Gruppearbejde 
+Laboratoriearbejde 
+Informationssøgning 
+Rapportskrivning 
+Evaluerng af eget arbejde</Contents>
+          <Teaching_And_Learning_Methods>Projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet med kurset er, at de studerende skal kunne beskrive et system på en passende måde, f.eks. med differentialligninger, konvertere disse til en overføringsfunktion, bruge denne til at designe en regulator og teste denne i et passende simuleringsprogram. I det omfang det er muligt skal regulatorens funktion testes med et laboratorieeksperiment. Et passende udvalg af viden fra andre kurser skal også anvendes og en micro-controller eller lignende skal også benyttes.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektrisk Energiteknologi: 3. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Team work 
+Lab work 
+Gathering information 
+Report writing 
+Evaluation of own work</Contents>
+          <Teaching_And_Learning_Methods>Project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The goal of the course is, that the students must describe a system in a suitable way, e.g. with differential equations, convert these to a transfer function, use this to design a controller and test this in a suitable simmulation program. To the degree it is possible, the controller's function must be tested with a lab experiment. A suitable selection of knowledge from other courses must be used and a micro-controller or the like must be used as well.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektrisk Energiteknologi: 3. semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Anvendt reguleringsteknik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Applied Control Engineering" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62677" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vise evne til at kombinere viden opnået fra flere separate og relevante fag" />
+          <Txt Lang="en-GB" Txt="Show an ability to combine knowledge gained from previously taught relevant courses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive en problematik på en passende, ingeniørmæssig måde." />
+          <Txt Lang="en-GB" Txt="Describe a problem in a suitable engineering fashion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbryde en problemstilling i et antal mindre delelementer" />
+          <Txt Lang="en-GB" Txt="Divide a comlex task in several sub-tasks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive et specifikt system på en passende måde, f.eks. vha differentialligninger" />
+          <Txt Lang="en-GB" Txt="Describe a specific system in a suitable way, e.g. with differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille overføringsfunktionen for det valgte system." />
+          <Txt Lang="en-GB" Txt="Construct the transfer function for the chosen system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille passende designkriterier for en regulator til det valgte system" />
+          <Txt Lang="en-GB" Txt="Valuate the regulators usability for the chosen system in a suitable simulation program" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sandsynliggøre regulatorens egnethed for det valgte system i et passende simuleringsprogram" />
+          <Txt Lang="en-GB" Txt="Make possible that the regulator is suitable for the chosen system is a suitable simulation program" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Eftervise regulatorens egnethed ved et laboratorieeksperiment" />
+          <Txt Lang="en-GB" Txt="Show that the regulator is suitable in a lab experiment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere sit laboratoriearbejde med en rapport" />
+          <Txt Lang="en-GB" Txt="Document the work in a repport" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fungere i gruppearbejde" />
+          <Txt Lang="en-GB" Txt="Work in a team" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:19.873" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

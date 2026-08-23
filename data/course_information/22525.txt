@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22525" University="dtu" LastUpdated="2026-04-13+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Medicinsk billedanalyse" />
+        <Title Lang="en-GB" Title="Medical Image Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="92" KVL_Resources="100" />
+          <Ass_Dep UID="1" Resources="8" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <External_Course_Responsible Email="oulap@drcmr.dk" Name="Oula Puonti" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="74337" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Axel</GivenName>
+            <FamilyName>Thielscher</FamilyName>
+            <Email>axthi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset afsluttes med en mundtlig eksamen. Eksamensdeltagelse forudsætter godkendelse af obligatoriske opgaver som ikke indgår i den endelige karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course is concluded with an oral exam. To participate in the exam, all mandatory exercises must be approved. They are not part of the final grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Registrering baseret på landmærker; intensitetsbaseret registrering (sum af kvadrerede forskelle, Mutual Information, principal axis transformation); lineær og ikke-lineære transformationsmodeller (stive og affine transformationer, tynde plade splines, B-splines); overfladebaseret registrering og segmentering; voxel-baseret segmentering ved brug af generative og diskriminerende metoder (Gaussisk blanding, Markov tilfældige felt priorer,  neurale netværk); optimering (Gauss-Newton, forventningsmaksimering, stokastisk gradient nedstigning); atlasser; validering.</Contents>
+          <Teaching_And_Learning_Methods>forelæsninger; øvelser;</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne indsigt i metoder til manipulation af billeder i medikotekniske applikationer. Efter kurset vil deltagerne kunne implementere og anvende de matematiske metoder på en computer. Deltagerne vil efter kurset være i stand til at løse en lang række billedanalytiske problemer på en radiologisk eller medicinsk forskerafdeling.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Landmark-based registration; intensity-based registration (sum-of-squared differences, Mutual Information, principal axis transform); linear and non-linear transformation models (rigid and affine transformations, thin plate splines, B-splines); surface-based registration and segmentation; voxel-based segmentation using generative and discriminative methods (Gaussian mixture models, Markov random field priors, neural networks); optimization (Gauss-Newton, expectation-maximization, stochastic gradient descent); atlases; validation.</Contents>
+          <Teaching_And_Learning_Methods>lectures; computer exercises;</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the participants insight into methods for manipulation of images in biomedical applications. After the course the participants will be able to implement and apply the mathematical models on computers. The participants will learn to solve typical image analysis problems arising in radiological departments and biomedical research organizations.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forudsættes, at deltagerne har haft et indledende kursus i statistik samt et indledende kursus i billedanalyse. Endvidere forudsættes arbejdskendskab til Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is assumed that the participants have had an introductory statistics course and an introductory image analysis course. Furthermore, working knowledge of Python is expected." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402. 02502" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre landemærkebaseret, intensitetsbaseret samt overfladebaseret billedregistrering." />
+          <Txt Lang="en-GB" Txt="perform landmark-based, intensity-based, and surface-based image registration." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge det mest passende similaritets-mål til specifikke billedregistreringsproblemer." />
+          <Txt Lang="en-GB" Txt="decide on the most appropriate similarity measure for specific image registration problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende flere forskellige lineære og ikke-lineære transformationsmodeller i specifikke billedregistreringsproblemer." />
+          <Txt Lang="en-GB" Txt="use several linear and non-linear transformation models for image registration." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere segmenteringsalgoritmer baseret på generative probalistiske modeller." />
+          <Txt Lang="en-GB" Txt="implement segmentation algorithms based on generative probabilistic models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere simple og avancerede neurale netværk (aka AI) til eksempel baseret segmentering." />
+          <Txt Lang="en-GB" Txt="implement simple and state-of-the-art neural networks (aka AI) for example-based segmentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de matematiske modeller og optimizers der bruges i medicinsk billedregistrering og segmentering." />
+          <Txt Lang="en-GB" Txt="explain the mathematical models and optimizers used in medical image registration and segmentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="validere resultaterne af automatiserede algoritmer til medicinsk analyse, herunder vurdere effekten af bias i billeddata og den deraf følgende betydning for kliniske anvendelser." />
+          <Txt Lang="en-GB" Txt="validate the results of automated medical analysis algorithms, including evaluating the effects of bias in the image data and the resulting impact on clinical applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge det mest passende interpolationsskema." />
+          <Txt Lang="en-GB" Txt="decide on the most appropriate interpolation schemes." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>interpreting medical images</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="2" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="02505" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:52.897" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

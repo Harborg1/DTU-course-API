@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02417" University="dtu" LastUpdated="2026-03-25+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Tidsrækkeanalyse" />
+        <Title Lang="en-GB" Title="Time Series Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="20293" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jan Kloppenborg</GivenName>
+            <FamilyName>Møller</FamilyName>
+            <Email>jkmo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="97978" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christian Ankerstjerne</GivenName>
+            <FamilyName>Thilker</FamilyName>
+            <Email>chant@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1559" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Madsen</FamilyName>
+            <Email>hmad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="16518" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peder</GivenName>
+            <FamilyName>Bacher</FamilyName>
+            <Email>pbac@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="26777" FUniversity="DTU" SortID="4" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Pernille Yde</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>pydni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individuelle rapporter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment of individual reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Autokorrelationsfunktion og spektrum for lineære stationære processer. Modelbygning, herunder identifikation, estimation og validitetskontrol. Forecasting modeller. Periodiske variationer og trends. Bivariante modeller og krydskorrelerede tidsrækker. Spektralanalyse. Introduktion til systemdynamik under stokastiske påvirkninger, overføringsfunktioner. Flerdimensionale tidsrækker og modelbygning for disse, herunder feed back. Tilstandsrepræsentation af dynamiske systemer, tilstandsprædiktion og opdatering, tidsrækker med manglende eller aggrerede observationer. Introduktion til on-line estimation af tidsrækkemodeller, og adaptive prognosemodeller.  En række eksempler på reelle anvendelser vil blive anvendt til illustration af metoderne. Ligeledes vil nogle af afleveringsopgaverne blive rette mod de fagspecifikke områder, fx udvikling af medicin eller modellering af afløbssystemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning og computer-øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Henrik Madsen (2007), Time Series Analysis, Chapman and Hall.
+ISBN: 142005967X</Course_Literature>
+          <Course_Objectives>At indføre deltagerne i statistisk analyse af tidsrækker med særligt henblik på anvendelser i ingeniørfagene og ved modellering af fysiske systemer. Herunder lægges vægt på modelformulering og estimation, og på at give baggrund for anvendelser indenfor forudsigelser, automatisk kontrol, billedanalyse, økonometri, kvalitetskontrol, instrumentering m.v</Course_Objectives>
+          <Remark>Kurset udgør en god baggrund for en lang række DTU kurser inden for signalbehandling, modellering, forudsigelse,  proceskontrol, dynamisk simulation, optimal beslutningstagen, automatisk regulering  og system identifikation.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Linear stochastic processes. Conditional expectations with applications. Characterisation of stochastic processes. Second order analysis. Description in time and frequency domain. Correlation functions and their applications. Model formulation. Non-stationary processes. Time series with periodic variations and trends. Identification, estimation and verification of models for stochastic processes. Box-Jenkins method. Spectral analysis. Bivariate and multivariate time series analysis. Transfer functions with stochastic models. State space formulation, prediction and reconstruction. Kalman filter. Time series with missing observations. Methods for recursive estimation. Adaption methods. Introduction to non-linear stochastic processes. 
+A number of examples of real life applications will be used for illustrating the methods. Likewise some of the assignments will be focused on application areas, e.g. development of medicine or modelling of sewage systems.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and excercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Henrik Madsen (2007), Time Series Analysis, Chapman and Hall. ISBN: 142005967X</Course_Literature>
+          <Course_Objectives>To give a thorough introduction to time series analysis with a focus on applications relevant to engineering science and for modelling of physical systems. A special attention is put on methods for model formulation and estimation. A main goal is to form the theoretical background for applications within forecasting, automatic and adaptive control, image analysis, econometrics and technometrics.</Course_Objectives>
+          <Remark>The course provides a good background for a number of activities such as signal processing, modelling, forecasting,  process control, dynamic simulation, optimal decision making, automatic control and system identification.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et grundkursus i statistik og et grundkursus i programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="An elementary course in statistics and an introductory course in programming." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02402/02403) . (02631/02525)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende metoder til opbygning af dynamiske stokastisk modeller" />
+          <Txt Lang="en-GB" Txt="Apply methods for building stochastic dynamic models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå sammenhængen mellem dynamiske systemer og stokastiske processer" />
+          <Txt Lang="en-GB" Txt="Understand the relation between dynamic systems and stochastic processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende en række linæere stokastiske procesmodeller (ARMA; ARX; Box-Jenkins; GLM; OE; ARIMA; Sæsonmodeller; mv.)" />
+          <Txt Lang="en-GB" Txt="Knowlegde about linear stochastics process models (ARMA; ARX; Box-Jenkins; GLM; OE; ARIMA; Seasonal models; etc.)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og beregne korrelationsfunktioner " />
+          <Txt Lang="en-GB" Txt="Apply and calculate correlation functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende tidsdomæne og frekvensdomæne beskrivelser" />
+          <Txt Lang="en-GB" Txt="Apply time domain and frequency domain descriptions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forudsigelser i tidsrækker" />
+          <Txt Lang="en-GB" Txt="Predictions in time series" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulerer tilstandsbeskrivelser" />
+          <Txt Lang="en-GB" Txt="Formulate state space descriptions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og implementere Kalman filteret" />
+          <Txt Lang="en-GB" Txt="Understand and implement the Kalman filter" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende regressionsbaserede metoder for tidsrækker" />
+          <Txt Lang="en-GB" Txt="Apply regression based methods for time series" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere forudsigelsesfunktioner og modelbaseret regulering" />
+          <Txt Lang="en-GB" Txt="Optimize prediction functions and model based control" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere og præsentere resultater i en skriftlig rapport" />
+          <Txt Lang="en-GB" Txt="Document and present results in a written report" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give konstruktiv feedback på andres arbejde" />
+          <Txt Lang="en-GB" Txt="Give constructive feedback to others reports" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Time Series Analysis</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:42.48" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

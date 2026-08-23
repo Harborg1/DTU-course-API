@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34359" Volume="2026/2027" University="dtu" LastUpdated="2026-04-09+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="SDN: software-defineret netværk" />
+        <Title Lang="en-GB" Title="SDN: software-defined networking" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="5643" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Dittmann</FamilyName>
+            <Email>ladit@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>The course aims to give an introduction into Software Defined Networking and how it can be used to improve current networks, as well as to enable students to develop network services using SDN specific tools.
+In the first part of the course the students will be introduced to the SDN paradigm. A series of SDN-based network services, from different areas of telecommunications, is covered during the lectures (e.g. security, load balancing, wireless, routing, network virtualization, etc.). The course material draws from latest research and developments within SDN. The students will get hands-on experience with tools and programming models for SDN. 
+The second part of the course is reserved for students to design and implement a network application (service) using the tools and concepts introduced in the first part.</Contents>
+          <Course_Objectives>To give participants knowledge about the design and implementation of network services using the Software Defined Networking (SDN) paradigm.</Course_Objectives>
+          <Remark>The course material consists of lecture slides and selected papers. Minimal programming experience in Java is required. Participants are expected to use their own laptop in order to set up a virtualized environment and use it as working environment for the course. 
+
+This course is suitable as part of a PhD study plan.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course aims to give an introduction into Software Defined Networking and how can it be used to improve current networks, as well as to enable students to develop network services using SDN specific tools.
+In the first part of the course the students will be introduced to the SDN paradigm. A series of SDN-based network services, from different areas of telecommunications, is covered during the lectures (e.g. security, load balancing, wireless, routing, network virtualization, etc.). The course material draws from latest research and developments within SDN. The students will get hands-on experience with tools and programming models for SDN. 
+The second part of the course is reserved for students to design and implement a network application (service) using the tools and concepts introduced in the first part.</Contents>
+          <Course_Objectives>To give participants knowledge about the design and implementation of network services using the Software Defined Networking (SDN) paradigm.</Course_Objectives>
+          <Remark>The course material consists of lecture slides and selected papers. Minimal programming experience in Java is required. Participants are expected to use their own laptop in order to set up a virtualized environment and use it as working environment for the course. 
+
+This course is suitable as part of a PhD study plan.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Understand the concept of SDN (i.e. abstracting and centralizing the control plane)" />
+          <Txt Lang="en-GB" Txt="Understand the concept of SDN (i.e. abstracting and centralizing the control plane)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze the implications of shifting from traditional network architectures to software defined networks" />
+          <Txt Lang="en-GB" Txt="Analyze the implications of shifting from traditional network architectures to software defined networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Assess the benefits and drawbacks of applying SDN in different areas in telecommunications (e.g. WAN, data centers etc.)" />
+          <Txt Lang="en-GB" Txt="Assess the benefits and drawbacks of applying SDN in different areas in telecommunications (e.g. WAN, data centers etc.)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain how existing network services can be created in SDN (e.g. firewalls, load balancing, mobility, etc.)" />
+          <Txt Lang="en-GB" Txt="Explain how existing network services can be created in SDN (e.g. firewalls, load balancing, mobility, etc.)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Understand the SDN programming model (with respect to the ONOS SDN controller)" />
+          <Txt Lang="en-GB" Txt="Understand the SDN programming model (with respect to the ONOS SDN controller)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluate the possibility of creating novel network services using SDN and design such a service" />
+          <Txt Lang="en-GB" Txt="Evaluate the possibility of creating novel network services using SDN and design such a service" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implement a network service using the knowledge acquired throughout the lectures" />
+          <Txt Lang="en-GB" Txt="Implement a network service using the knowledge acquired throughout the lectures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Document and defend orally the project work" />
+          <Txt Lang="en-GB" Txt="Document and defend orally the project work" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34302.34313.34351.34357.34323/34347" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Software-Defined Networking</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:16.26" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

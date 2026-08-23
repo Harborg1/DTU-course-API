@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02805" University="dtu" LastUpdated="2026-04-13+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Sociale grafer og interaktioner" />
+        <Title Lang="en-GB" Title="Social graphs and interactions" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="25317" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Sune</GivenName>
+            <FamilyName>Lehmann</FamilyName>
+            <Email>sljo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Én samlet karakter gives på basis af en helhedsvurdering af øvelser, kort skriftlig eksamen midt på semestret og afsluttende projektrapport." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A single grade based on an overall evaluation of exercises, a brief written exam mid-semester, and final project report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Allowed use of Generative AI is specified in the first lecture." />
+            <Aid_Txt Lang="da-DK" Txt="Tilladt brug af AI vil blive angivet i første forelæsning." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver mulighed for at analysere data baseret på online sociale netværk som fx Twitter, Wikipedia, og Facebook, samt arbejde med kvantitativ tekstanalyse. Kurset er struktureret omkring korte forelæsninger kombineret med praktiske øvelser, samt en høj grad af selvstændigt projektarbejde.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger samt gruppearbejde med projekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset har som overordnet mål at gøre de studerende fortrolige med elementer og værktøjer forbundet med at hente og analysere brugergenereret data og tekst, samt analysere og modellere sociale relationer via netværksteori.</Course_Objectives>
+          <Remark>Det anbefales at medbringe bærbar computer i forbindelse med kursets øvelser.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is based on analyzing data from online social networks (e.g. Twitter, Wikipedia, and Facebook), as well as working with quantitative text analysis. The course is structured around short lectures combined with exercises, as well as a high degree of independent project work.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work with projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The overall objective of the course is to make students able to access and analyze user generated data and text - as well as analyze and model social relations using network theory.</Course_Objectives>
+          <Remark>It is recommended to bring your own laptop computer to carry out exercises in the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset benytter højniveau programmerinssprog (Python), så praktisk programmeringserfaring er anbefalet (fx i Python/Java/JavaScript/C/C++)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course involves work with high level programming languages (e.g. Python), so practical programming experience is recommended (e.g. in Python/Java/JavaScript/C/C++)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02100/02101" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Interagere med APIer for dataindsamling." />
+          <Txt Lang="en-GB" Txt="Explore web APIs for data collection." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et nøjniveauprogrammeringssprong (fx python) til at tilgå APIer for dataindsamling." />
+          <Txt Lang="en-GB" Txt="Apply a high level programming language (e.g. Python) to utilize such APIs for data acquisition." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende natural language processing til at repræsentere statistiske strukturer i tekst og analysere indholdet." />
+          <Txt Lang="en-GB" Txt="Apply natural language processing to represent statistical structures in text and analyze the content." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og diskutere hovedstrategierne for at bestemme humør i medier (fx tekst, musik, billeder, osv)." />
+          <Txt Lang="en-GB" Txt="Apply and discuss the main strategies for detecting sentiment in media (e.g. text, music, images, etc)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende standardalgoritmer til at anbefale media (tekst, audio, video) udfra brugerpræferencer og kontekst (venner, humør, lokation, osv)." />
+          <Txt Lang="en-GB" Txt="Apply standard algorithms to recommend media (text, audio, video) according to user preferences and user context (friends, mood, location, etc)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere fundamentale metoder for komplekse netværk og modellere sociale strukturer baseret på netværksteori" />
+          <Txt Lang="en-GB" Txt="Assess basic metrics for complex networks, and model social relations based on network analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere software til at detektere grupper i sociale netværk og analysere grupperne via netværksmål." />
+          <Txt Lang="en-GB" Txt="Implement software for detecting communities in social networks and analyze the communities using network metrics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificere relationerne i sociale netværk med henblik på at analysere deres dynamik ved brug af metode fra kompleks netværksteori." />
+          <Txt Lang="en-GB" Txt="Quantify relations in social networks to analyze their dynamics, using measures from complex network theory." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Arkitekturer for deling af indhold og social interaktion</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02815/02467" />
+        <PreviousCourse CourseCode="02821" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="72" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="72" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="32" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:32.257" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

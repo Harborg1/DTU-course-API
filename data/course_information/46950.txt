@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46950" Volume="2026/2027" University="dtu" LastUpdated="2026-03-20+01:00">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Generative AI-værktøjer til forskning" />
+        <Title Lang="en-GB" Title="Generative AI Tools for Research" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Riso">
+          <LocationTxt Lang="da-DK" Txt="Meeting room in B330" />
+          <LocationTxt Lang="en-GB" Txt="Meeting room in B330" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Efterårssemester. Kurset er baseret på seks forelæsninger fordelt mellem oktober og november." />
+          <Schedule_Txt Lang="en-GB" Txt="Fall semester. The course is based on six lectures distributed between October and November." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Vind" />
+        <Course_Responsible PersonKey="214804" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Licio</GivenName>
+            <FamilyName>Romao</FamilyName>
+            <Email>licio@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="76711" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mattia</GivenName>
+            <FamilyName>Marinelli</FamilyName>
+            <Email>matm@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="799" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Martin Otto Laver</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>molh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De studerende vil opnå en praktisk forståelse af landskabet for generativ AI, herunder afvejningerne mellem open‑source‑ og closed‑source‑modeller, lokal kontra cloud‑baseret kørsel, samt API‑baseret versus interface‑drevet interaktion.
+
+Med dette som udgangspunkt vil de få hands‑on erfaring med at designe og implementere flertrins AI‑workflows i Python, der dækker opgaver som batch‑dokumentbehandling, tværdokumentarisk syntese, automatiseret oversættelse og generering af struktureret output.
+
+En betydelig del af kurset er dedikeret til AI‑assisteret videnskabelig skrivning. De studerende lærer at konfigurere professionelle skrive‑miljøer, der kombinerer LaTeX, VS Code og AI‑baserede kodeassistenter, og de får mulighed for at øve brugen af disse værktøjer i alle faser af manuskriptudarbejdelsen — fra disposition og udkast til figurtekster, revision og peer review.
+
+Vigtigt er det, at de studerende arbejder med rigtige data: enten fra deres eget ph.d.-projekt eller fra offentligt tilgængelige energisystemdatasæt hentet via ENTSO‑E Transparency Platform. Dette sikrer, at de udviklede færdigheder kan anvendes direkte i deres eget arbejde.
+
+Gennem hele kurset lægges der vægt på ansvarlig og transparent brug af AI. De studerende beskæftiger sig med de etiske, erkendelsesteoretiske og institutionelle dimensioner af AI’s udbredelse i akademia og udvikler kriterier for at evaluere og tydeliggøre AI’s bidrag i overensstemmelse med retningslinjer fra forlag og DTU.</Contents>
+          <Teaching_And_Learning_Methods>Kurset kombinerer korte forelæsninger, live‑demonstrationer, individuelle kodningsøvelser og peer‑review‑sessioner.
+
+De studerende forventes at medbringe deres egen forskningskontekst — datasæt, artikler, kode — og kritisk vurdere hvert eneste AI‑genererede output, de møder.
+
+Målet er ikke at automatisere forskning, men at gøre forskere mere effektive, samtidig med at de intellektuelle standarder, der kendetegner god videnskab, bevares.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Fremkomsten af kapable generative AI‑modeller giver ph.d.-forskere både en mulighed og en udfordring. Læringsmålene, indholdet og kursusstrukturen er designet til at fremme kritisk tænkning, teknisk kompetence og ansvarlig brug af AI i forskning på ph.d.-niveau.
+
+På den ene side kan værktøjer som large language models, kodeassistenter og multimodale pipelines markant accelerere forskningsopgaver, der tidligere krævede betydelig manuel indsats — litteratursyntese, eksplorativ dataanalyse, skrivning og formidling.
+
+På den anden side indebærer ukritisk anvendelse reelle risici: hallucinerede referencer, udvanding af den videnskabelige stemme, etiske brud og overtrædelser af institutionelle retningslinjer.
+
+Dette kursus er designet til at opbygge reel kompetence frem for overfladisk kendskab. De studerende begynder med at forankre sig i det etiske, institutionelle og erkendelsesteoretiske landskab for AI‑brug i akademia og arbejder sig derefter gennem gradvist mere krævende praktiske projekter, som kulminerer i udarbejdelsen af en kort videnskabelig artikel baseret på reelle forskningsdata.
+
+Hver session kombinerer konceptuel indsigt med en konkret opgave, hvilket sikrer, at de tilegnede færdigheder direkte kan overføres til de studerendes egne ph.d.-projekter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Students will develop a working understanding of the generative AI landscape, including the trade-offs between open-source and closed-source models, local and cloud-based deployment, and API-based versus interface-driven interaction. 
+
+From this foundation, they will acquire hands-on experience designing and implementing multi-step AI workflows in Python, covering tasks such as batch document processing, cross document synthesis, automated translation, and structured output generation.
+
+A significant portion of the course is devoted to AI-assisted scientific writing. Students will learn to configure professional writing environments that combine LATEX, VSCode, and AI coding assistants, and will practise using these tools across all stages of manuscript preparation — from outlining and drafting to figure captioning, revision, and peer review. 
+
+Critically, students will work with real data: either from their own PhD research or from publicly available energy-system datasets retrieved via the ENTSO-E Transparency
+Platform. This ensures that the skills developed are immediately applicable to their own work.
+
+Throughout, the course emphasizes responsible and transparent use of AI. Students will engage with the ethical, epistemological, and institutional dimensions of AI adoption in academia, and will develop criteria for evaluating and disclosing AI contributions in line with publisher and DTU standards.</Contents>
+          <Teaching_And_Learning_Methods>The course combines short lectures, live demonstrations, individual coding exercises, and peer review sessions. 
+
+Students are expected to bring their own research context — datasets, papers, code — and to critically evaluate every AI-generated output they encounter. 
+
+The goal is not to automate research, but to make researchers more effective while preserving the intellectual standards that define good science.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The emergence of capable generative AI models presents PhD researchers with both an opportunity and a challenge. The learning objectives, content, and course structure have been designed to promote critical thinking, technical competence, and responsible use of AI in PhD-level research.
+
+On one hand, tools such as large language models, code assistants, and multi-modal pipelines can dramatically accelerate research tasks that previously required significant manual effort — literature synthesis, exploratory data analysis, writing, and communication. 
+
+On the other hand, uncritical adoption carries real risks: hallucinated references, eroded scientific voice, ethical breaches, and institutional policy violations.
+
+This course is designed to build genuine competence rather than surface familiarity. Students begin by grounding themselves in the ethical, institutional, and epistemological landscape of AI use in academia, and they progress through progressively more demanding hands-on projects that culminate in producing a short scientific paper from real research data. 
+
+Each session pairs conceptual input with a concrete task, ensuring that the skills acquired transfer directly to students’ own PhD projects.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Indskrivning som ph.d.-studerende ved Wind &amp; Energy Systems eller et beslægtet fagområde" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Enrolment as a PhD student in Wind &amp; Energy Systems or related field" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Studerende fra alle ingeniør- og naturvidenskabelige discipliner er velkomne; der kræves ingen tidligere erfaring med AI‑værktøjer eller API’er, men kendskab til Python‑programmering forudsættes." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students from all engineering and science disciplines are welcome; no prior experience with AI tools or APIs is required, though familiarity with Python programming is assumed." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Navigere i det aktuelle landskab af generative AI‑værktøjer" />
+          <Txt Lang="en-GB" Txt="Navigate the current landscape of generative AI tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere AI‑værktøjers egnethed til specifikke forskningsopgaver under hensyntagen til ydeevne, omkostninger, privatliv og licensforhold" />
+          <Txt Lang="en-GB" Txt="Evaluate AI tools suitability for specific research tasks, taking into account performance, cost, privacy, and licensing considerations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Interagere med AI‑modeller programmatisk via API‑kald og lokale deployment‑løsninger" />
+          <Txt Lang="en-GB" Txt="Interact with AI models programmatically through API calls and local deployments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe flertrins automatiserede workflows tilpasset forskningsbehov" />
+          <Txt Lang="en-GB" Txt="Design multi-step automated workflows tailored to research needs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere AI‑assistance i professionelle akademiske skrive‑miljøer" />
+          <Txt Lang="en-GB" Txt="Integrate AI assistance into professional academic writing environments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende AI‑værktøjer til dataanalyse, visualisering og videnskabelig formidling ved hjælp af data fra deres egen forskning" />
+          <Txt Lang="en-GB" Txt="Apply AI tools to data analysis, visualization, and scientific communication using data from their own research" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kritisk vurdere kvaliteten, nøjagtigheden og begrænsningerne af AI‑genereret tekst, kode, figurer og fortolkninger" />
+          <Txt Lang="en-GB" Txt="Critically assess the quality, accuracy, and limitations of AI-generated text, code, figures, and interpretations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle principielle strategier for at acceptere, tilpasse eller afvise AI‑forslag" />
+          <Txt Lang="en-GB" Txt="Develop principled strategies for accepting, adapting, or rejecting AI suggestion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over de bredere etiske, erkendelsesteoretiske og samfundsmæssige implikationer af AI’s anvendelse i akademisk forskning" />
+          <Txt Lang="en-GB" Txt="Reflect on the broader ethical, epistemological, and societal implications of AI adoption in academic research" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilpasse deres praksis til DTU’s retningslinjer og de udviklende standarder hos forlag" />
+          <Txt Lang="en-GB" Txt="Align their practice with DTU policy and evolving publisher standards" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-04-14" Time="14:16:16.923" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

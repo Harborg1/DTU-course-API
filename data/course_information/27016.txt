@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="27016" Volume="2026/2027" University="dtu" LastUpdated="2026-05-01+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Design-build 1: Instrumenter til måling af cellevækst" />
+        <Title Lang="en-GB" Title="Design-build 1: Devices for measuring cell growth" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="27" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="22" Resources="25" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="41" Resources="25" University="DTU" SortID="1" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="27" />
+        <Course_Responsible PersonKey="41468" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Arto Rainer</GivenName>
+            <FamilyName>Heiskanen</FamilyName>
+            <Email>arhe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives på baggrund af en helhedsvurdering af multiple choice-eksamen, øvelser i klassen samt individuelle og gruppeopgaver.&#xD;&#xA;Aktiv deltagelse i gruppearbejde i den 3-ugers periode er påkrævet for at deltage i eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is based on an overall assessment of a multiple-choice exam, in-class exercises, as well as individual and group assignments.&#xD;&#xA;Active participation in group work during the 3-week period is required for attending the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The multiple-choice exam is given on DTU Learn." />
+            <Aid_Txt Lang="da-DK" Txt="Multiple choice-eksamenen afholdes på DTU Learn." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The multiple-choice exam is given on the last Wednesday of the 3-week course period in January." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Multiple-choice-eksamen afholdes sidste onsdag i 3-ugersperioden i januar." />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset kan kun tages af studerende på bacheloruddannelsen i General Engineering&#xD;&#xA;" />
+            <Supp_Txt Lang="en-GB" Txt="This course is only available for students enrolled on the bachelor study programme in General Engineering" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus introducerer koncepter for ingeniørprocessen og anvender nogle af principperne i en problembaseret sammenhæng. Problemet, der forelægges af underviserne, vedrører design og opbygning af en anordning til måling af væksten af enkeltcelleorganismer i batchkulturer. Hvert hold skal udvikle en projektplan for de forskellige aspekter af instrumentet, identificere underopgaver og lave en tidsplan. Enheden vil blive designet og implementeret med det formål at måle og registrere udviklingen af celletætheden i flydende kultur over tid. Måleapparatet måler lysabsorption/spredning som en indikation af cellekoncentration. Enheden vil blive analyseret for dens ydelse med hensyn til nøjagtighed, præcision og linearitet. Derudover vil enheden blive forbundet til en mikrocontroller for online dataindsamling. En batch-dyrkning af bagergær (Saccharomyces cerevisiae) vil blive udført, og cellekoncentrationen vil blive målt online. Data indsamlet fra celler, der vokser i eksponentiel fase, vil blive analyseret af et softwarescript, implementeret af teamet i Python eller ved hjælp af en matematisk softwarepakke efter eget valg. En videopræsentation vil blive brugt til at kommunikere resultaterne af design-build-projektet, enhedens ydeevne og resultater af vækstforsøgene.</Contents>
+          <Teaching_And_Learning_Methods>3-ugers kursus (Januar)
+Problem-baserede gruppeprojekter</Teaching_And_Learning_Methods>
+          <Course_Objectives>At være udfordret i et problembaseret ingeniørprojekt og løse et problem med teamwork. Blive fortrolig med den tekniske proces med fokus på design og opbygningsfaser. Være motiveret til at tænke på engineering-processen i forbindelse med samarbejdet i en projektgruppe.</Course_Objectives>
+          <DTU_Remark>Kurset kan kun tages af studerende på bacheloruddannelsen i General Engineering. Kursusarbejde kræver aktiv deltagelse i grupper på 3-5. Gruppearbejde starter på dag 1.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course will introduce concepts of the engineering process and apply some of the principles in a problem-based setting. The problem, presented by the instructors, relates to designing and building a device for measuring the growth of single-cell organisms in batch cultivations. Teams will develop a project plan for the different aspects of the build, identifying the sub-tasks and time plan. The device will be designed and implemented for the purpose of measuring and recording cell density in liquid culture over time. The measurement device measures light absorption/scattering as an indication of cell concentration. The device will be analyzed for its performance with respect to accuracy, precision and range of linear detection. In addition, the device will be connected to a microcontroller for online data acquisition. A batch cultivation of baker’s yeast (Saccharomyces cerevisiae) will be performed and the cell concentration will be measured either online. Data collected from cells growing in exponential phase will be analyzed by a software script, implemented by the team in Python or using a mathematical software package of choice. A video presentation will be used to communicate the results of the design-build project, performance of the device, and results of the growth experiments.</Contents>
+          <Teaching_And_Learning_Methods>3-Week course (January)
+Problem-based group projects</Teaching_And_Learning_Methods>
+          <Course_Objectives>To be immersed in a problem-based engineering project and solve a problem through teamwork. Become familiar with the engineering process with a focus on the Design and Build (Implementation) phases. Be motivated to think about the engineering process in the context of cooperation in a project team.</Course_Objectives>
+          <DTU_Remark>This course is only available to students enrolled on the bachelor study programme in General Engineering. Course work requires active participation in groups of 3-5. Group work starts on day 1.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive en innovations- produktudviklingsproces" />
+          <Txt Lang="en-GB" Txt="Describe the innovation and engineering process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde en projektplan, der nedbrydninger et større problem til konkrete delopgaver" />
+          <Txt Lang="en-GB" Txt="Devise a project plan based on the decomposition of a larger problem into component tasks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende teori til at designe og fremstille et elektrisk kredsløb, der indeholder en LED og en lyssensor" />
+          <Txt Lang="en-GB" Txt="Apply basic theory to design and build an electrical circuit, which incorporates an LED and a light sensor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere et program, der registrerer måledata og kører på en mikrocontroller" />
+          <Txt Lang="en-GB" Txt="Design and implement a program that records measurement data and runs on a microcontroller " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og fremstille en systemholder vha. CAD-værktøjer og 3D-print" />
+          <Txt Lang="en-GB" Txt="Design and produce a measurement device using CAD software and 3D printing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og udføre kalibreringsprocedurer" />
+          <Txt Lang="en-GB" Txt="Describe and perform device calibration procedures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende grundlæggende teori om lysabsorption og spredning, inklusiv optisk densitet" />
+          <Txt Lang="en-GB" Txt="Describe and apply basic theory about light absorbtion and scaterring including optical density" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Genkende mikroorganismer ved brug af lysmikroskopi" />
+          <Txt Lang="en-GB" Txt="Recognize microorganisms using light microscopy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere data fra en levende organisme til at identificere faser i væksten, eksponentielle vækstkonstanter og kolonidannende enheder" />
+          <Txt Lang="en-GB" Txt="Analyze data from a living system to identify phases in growth,  exponential growth constants and colony forming units" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere styrker og begrænsninger af det fremstillede system" />
+          <Txt Lang="en-GB" Txt="Evaluate the performance and limitations of the developed device" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommunikere projektarbejdet (design, implementering og resultater) i en kort videopræsentation." />
+          <Txt Lang="en-GB" Txt="Communicate the project work (design, implementation, and results) in a short video presentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="56" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="56" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:22:18.48" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

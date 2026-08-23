@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02463" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Aktiv machine learning og agency" />
+        <Title Lang="en-GB" Title="Active machine learning and agency." />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="28085" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kristoffer Hougaard</GivenName>
+            <FamilyName>Madsen</FamilyName>
+            <Email>khma@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="16497" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Morten</GivenName>
+            <FamilyName>Mørup</FamilyName>
+            <Email>mmor@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="792" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lars Kai</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>lkai@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="64228" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jesper Løve</GivenName>
+            <FamilyName>Hinrich</FamilyName>
+            <Email>jehi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen baseret på øvelser og tre mini-projekter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam based on exercises and three mini-projects" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The exam is oral, so aids are not directly relevant. However, you are allowed to bring preparation notes and similar materials." />
+            <Aid_Txt Lang="da-DK" Txt="Eksamen er mundtlig så hjælpemidler ikke er direkte relevante. Det er tilladt at medbringe forberedelsesnoter, rapporter og etc." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset diskuterer begrænsningerne ved modellering baseret alene på observationelle data, og vigtigheden af agency og embodiment af machine learning algoritmer. Kurset introducerer aktive Bayesianske modeller, herunder en introduktion til Gaussiske processer.  Kurset introducerer teoretiske begreber indenfor Bayesiansk optimering, aktiv læring og kausal inferens. Programmering i kurset er baseret på Python.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og mini-projekter</Teaching_And_Learning_Methods>
+          <Course_Literature>Bishop, C.M., 2006. Pattern recognition and machine learning. Springer.
+
+Shahriari, B., Swersky, K., Wang, Z., Adams, R.P. and De Freitas, N., 2016. Taking the human out of the loop: A review of bayesian optimization. Proceedings of the IEEE, 104(1), pp.148-175.
+
+Settles, B., 2009. Active learning literature survey. University of Wisconsin-Madison Department of Computer Sciences.</Course_Literature>
+          <Course_Objectives>Generelle mål for kurset: Aktiv læring, agency og kausal forståelse er menneskelige kernekompetencer. Kursets overordnede mål er at introducere aktive Bayesianske machine learning modeller. Kurset diskuterer begrænsninger ved rent observationelle data og vigtigheden af agency og embodiment i machine learning. Kurset giver en introduktion til theoretiske aspekter af Bayesiansk optimering, aktiv læring og kausal inferens.</Course_Objectives>
+          <DTU_Remark>Kurset er en del af bacheloruddannelsen Kunstig Intelligens og Data og er forbeholdt studerende fra denne uddannelse.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course discusses the limitations of purely observational data and the importance of agency and embodiment of machine learning algorithms. The course introduces active Bayesian machine learning models,  including Gaussian processes,  acquisition functions and uncertainty modelling.  The course gives an introduction to theoretical aspects of Bayesian optimization, active learning and causal inference. Programming in the course is carried out in Python.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and mini-projects</Teaching_And_Learning_Methods>
+          <Course_Literature>Bishop, C.M., 2006. Pattern recognition and machine learning. Springer.
+
+Shahriari, B., Swersky, K., Wang, Z., Adams, R.P. and De Freitas, N., 2016. Taking the human out of the loop: A review of bayesian optimization. Proceedings of the IEEE, 104(1), pp.148-175.
+
+Settles, B., 2009. Active learning literature survey. University of Wisconsin-Madison Department of Computer Sciences.</Course_Literature>
+          <Course_Objectives>General course objectives:
+Active learning, agency and causal reasoning are fundamental human competences. The objective of the course is to introduce active Bayesian machine learning models. The course discusses the limitations of purely observational data and the importance of agency and "embodiment" of machine learning algorithms.  The course gives an introduction to theoretical aspects of Bayesian optimization, active learning and causal inference.</Course_Objectives>
+          <DTU_Remark>The course is part of the BSc programme Artificial Intelligence and Data and is reserved for students from this program.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Introduktion til Machine Learning og Data Mining. Introduktion til  matematisk statistik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introduction to Machine Learning and Data Mining. Introduction to mathematical statistics" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450. 02403" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter begrænsninger for machine learning baseret alene på observationelle data " />
+          <Txt Lang="en-GB" Txt="Discuss limitations of machine learning based on observational data " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter begreberne kausal modellering og agency" />
+          <Txt Lang="en-GB" Txt="Discuss the concepts of causal discovery and agency" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter den rolle som agency spiller i Bayesiansk optimerng og aktiv machine learning" />
+          <Txt Lang="en-GB" Txt="Discuss the role of agency in Bayesian optimization and active machine learning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend Bayesiansk optimering til at optimere machine learning algoritmer" />
+          <Txt Lang="en-GB" Txt="Apply Bayesian optimization to improve machine learning algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend active machine learning metoder" />
+          <Txt Lang="en-GB" Txt="Apply active machine learning methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar implementering af aktiv machine learning og kausale modeller i Python." />
+          <Txt Lang="en-GB" Txt="Explain implementations of active learning and causal models in Python." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter anvendelse af aktiv machine learning og kausal modellering inden for fysik, bio-medicin og adfærdsdata" />
+          <Txt Lang="en-GB" Txt="Discuss applications of active learning and causal modeling in the physical, medical, and behavioral sciences." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og gennemfør et mini-projekt indenfor Bayesiansk optimering af machine learning algoritmer" />
+          <Txt Lang="en-GB" Txt="Design and carry out a mini-project in Bayesian optimization for tuning a machine learning algorithm" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og gennemfør et mini-project indenfor aktiv machine learning." />
+          <Txt Lang="en-GB" Txt="Design and carry out a mini-project in Active learning." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give en kritisk præsentation af resultater opnået i mini-projekter og øvelser " />
+          <Txt Lang="en-GB" Txt="Present and critically discuss results obtained in the mini-projects and course exercises" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:59.87" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

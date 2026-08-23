@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02277" Volume="2026/2027" University="dtu" LastUpdated="2025-03-24+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="1" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Cyberrisikostyring og Hændelsesrespons" />
+        <Title Lang="en-GB" Title="Cyber Risk Management and Incident Response" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="53257" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Nicola</GivenName>
+            <FamilyName>Dragoni</FamilyName>
+            <Email>ndra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="167491" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Gaurav</GivenName>
+            <FamilyName>Choudhary</FamilyName>
+            <Email>gauch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Vurdering er baseret på individualiserede grupperapporter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individualized group reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset behandler problemer der opstår i forbindelse med håndtering af computersikkerhedshændelser, med et særligt forkus på forberedelse og træning. Kurset dækker de mest hyppigt anvendte standarder for risikoanalyse i forbindelse med it-sikkerhed (dvs. NIST SP 800-30, ISO 27001 og Octave) samt modelbaseret risikoanalyse (CORAS).
+Kurset omhandler også indsamling og konsolidering af hændelsesdata, gennem brug af Security Information and Event Management (SIEM) systemer, sammen med teknikker til at opdage hændelser i det indsamlede data - Intrusion Detection Systemer (IDS).
+Kurset behandler endvidere forberedelse og træning af sikkerhedshændelser gennem udarbejdelse af en beredskabsplan og de dertil hørende kommunikationsstrategier i forbindelse med computersikkerhedshændelseshåndtering.
+Endeligt introducerer kurset forskellige teknikker til at retablere systemer efter sikkerhedshændlser og iværksætte normal drift.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning og opgaver</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med dette kursus er at give et praktisk kendskab til håndtering af sikkerhedshændelser i computer systemer. Kurset adresserer planlægning og forberedelse af sikkerhedsarbejdet, oplysningsopgaver, organisatorisk sikkerhedsarbejde og håndtering af igangværende sikkerhedshændelser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course addresses problems relating to computer security incident event handling, with a special focus on the preparation and detection phases, i.e. incident planning and training. It will cover the most commonly used standards in risk analysis (NIST SP 800-30, ISO 27.001 and Octave) as well as model based risk analysis (CORAS). 
+Collection and consolidation of computer security event information, e.g. Security Information and Event Management (SIEM) systems, will also be covered in the course, along with techniques and technologies to identify such events, e.g. Intrusion Detection Systems (IDS). 
+The course will also cover security incident preparation and training through the development of a standard operating procedure (SOP) and the associated communication strategies relating to computer security event handling. 
+Finally, the course will introduce common techniques to recover from computer security incidents and restore systems to normal operations.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and assingments</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of this course is to provide a working knowledge of computer security incident response. The course addresses security planning and preparation, security awareness, organizational security exercises and management of ongoing security incidents.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset er et videregående kursus der foudsætter kendskab til computer- og netværkssikkerhed. Kurset kan tages sideløbende med 02271." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is an advanced course that requires basic understanding of computer and network security. The course may be taken in parallel with 02271." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02270" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de mest hyppigt brugte risikoanalysestandarder indenfor it-sikkerhed" />
+          <Txt Lang="en-GB" Txt="Explain the risk analysis standards most commonly used in IT-security" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre en risikoanalyse af en mindre til mellemstor organisation" />
+          <Txt Lang="en-GB" Txt="Complete a computer security risk analysis of a small to medium sized organisation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere resultatet af en risikoanalyse (både skriftligt og mundtligt)" />
+          <Txt Lang="en-GB" Txt="Present the results of a risk analysis (both written and orally)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forselå passende forholdsregler mod risici identificeret i risikoanalysen " />
+          <Txt Lang="en-GB" Txt="Propose appropriate controls to mitigate risks identified in a risk analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive normale teknikker og teknologier til at opdage computersikkerhedshændelser" />
+          <Txt Lang="en-GB" Txt="Describe common techniques and technologies to detect computer security incidents" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere en infrastruktur til at indsamle og konsolidere computersikkerhedshændelsesdata" />
+          <Txt Lang="en-GB" Txt="Define infrastructure to collect and consolidate computer security event data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en beredskabsplan foe en given type af hændelse" />
+          <Txt Lang="en-GB" Txt="Write a Standard Operating Procedure (a.k.a. a runbook) for a given threat" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere en kommunikationsstrategi til brug i tilfælde af en computersikkerhedshændelse" />
+          <Txt Lang="en-GB" Txt="Define a communication strategy for computer security incidents" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle en plan for at retablere et kompromiteret system og iværksætte normal drift" />
+          <Txt Lang="en-GB" Txt="Develop a plan for recovering systems and restoring normal operations" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02192" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:18.857" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

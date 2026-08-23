@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02135" Volume="2026/2027" University="dtu" LastUpdated="2025-04-30+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="1" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Introduktion til Cyber Systemer" />
+        <Title Lang="en-GB" Title="Introduction to Cyber Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="74954" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Luca</GivenName>
+            <FamilyName>Pezzarossa</FamilyName>
+            <Email>lpez@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="74568" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Charalampos</GivenName>
+            <FamilyName>Orfanidis</FamilyName>
+            <Email>chaorf@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering af individualiserede grupperapporter og en 2 timers skriftlig prøve." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of individualized reports and a 2 hour written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Vi vil studere, hvordan computere udfører programmer og manipulere data, og undersøge de involverede værktøjer og metoder. Vi vil studere hvad værktøjerne, som compiler, gør, og vi vil træne i at bruge debuggere til at finde og fjerne fejl fra vores programmer. Computere består af flere dele, hvor processoren uden tvivl er den vigtigste. For at opnå en solid forståelse af, hvordan computere opfører sig, vil vi i kurset studere, hvordan en generaliseret processor udfører programmer . Vi vil også studere, hvordan programmer, herunder variabelt indhold, er kodet for at kunne eksekveres.
+
+De fleste moderne computere er forbundet i store netværk. I mange tilfælde er det utænkeligt at have computere uden adgang til netværk, såsom internettet. Vi vil i kurset studere, hvordan computernetværk i princippet arbejder, og hvordan man skriver programmer, der gør det muligt for computere at kommunikere via internettet, men også Internet-of-Things.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Computersystemer er blevet en integreret del af vores samfund. De er grundlaget for en bred vifte af teknologier fra Internet-of-Things og Smartphones til Skyen. I dette kursus vil vi studere, hvordan moderne computere virker. Vi vil undersøge computerens begrænsninger, samt hvilke muligheder den giver.</Course_Objectives>
+          <DTU_Remark>Kurset udbydes under bachelor uddannelsen i General Engineering.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>We will study how computers execute programs and manipulate data, and explore the tools and methods involved. We will study what the tools, such as the compiler, do and we will train on
+using debuggers to eliminate defects and errors from our programs. Computers consists of multiple parts with the processor being arguably the most important. In the course, we will study how a generalized processor executes programs so as to reach a solid understanding of how computers behave. We will also study how programs, including variable contents, are encoded to be executable.
+
+Most modern computers are connected in large networks. In many cases it is unthinkable to have computers without access to networks, such as the Internet. We will in the course study how computer networks fundamentally work and how you write programs allowing computers to communicate over the Internet, but also Internet-of-things.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and projects work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Computer systems have become an integral part of our society. They are the foundation for a wide range of technologies from Internet-of-Things and Smartphones to the Cloud. In this course, we will study how modern computers work. We will understand what the limitations of computers are as well as what opportunities are possible.</Course_Objectives>
+          <DTU_Remark>The course is given within the bachelor education in General Engineering.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende programmeringsfærdigheder" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic programming skills" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02003/02631" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, hvordan compileren, assembleren og linkeren bruges til at oprette eksekverbare filer." />
+          <Txt Lang="en-GB" Txt="Explain how the compiler, assembler and linker are used to create executables." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Liste og beskrive tre kildekode transformationer som oversætteren kan udføre for at opnå højere ydeevne." />
+          <Txt Lang="en-GB" Txt="List and describe three source code transformations the compiler can perform to achieve higher performance. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive, hvordan data er repræsenteret i computersystemer." />
+          <Txt Lang="en-GB" Txt="Describe how data is represented in computer systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare forskellen mellem at kommunikere med en I / O-enhed ved hjælp af hukommelseskortede I / O- eller I / O-instruktioner." />
+          <Txt Lang="en-GB" Txt="Explain the difference between communicating with an I/O device using memory mapped I/O or I/O instructions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar i deres egne ord følgende begreber: processor, register, programtæller, cache, hukommelse og I / O-enhed." />
+          <Txt Lang="en-GB" Txt="Explain in their own words the following terms: processor, register, program counter, cache, memory and I/O device." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare i deres eget ord, hvordan afbrydelser (interrupts) håndteres i processoren." />
+          <Txt Lang="en-GB" Txt="Explain in their own words how interrupts are handled in the processor." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tegne en figur, der viser hukommelseshierarkiet for en moderne computer med processoren, cacheniveauer, hukommelse og opbevaring." />
+          <Txt Lang="en-GB" Txt="Draw a figure showing the memory hierarchy of a modern computer with the processor, cache levels, memory and storage." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og simulere en processor arkitektur for et simpelt instruktionsset." />
+          <Txt Lang="en-GB" Txt="Develop and simulate a processor architecture based on a simple instruction set. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere ydeevne og energiforbrug af et softwareprogram." />
+          <Txt Lang="en-GB" Txt="Analyse performance and energy consumption of a software program." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare i sig selv begreberne OSI-modellen og hvordan den bruges til at kommunikere mellem computersystemer." />
+          <Txt Lang="en-GB" Txt="Explain in their own words the concepts of the OSI model and how it is used to communicate between computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare i deres eget ord, hvordan stikkene bruges til at kommunikere mellem programmer og computersystemer." />
+          <Txt Lang="en-GB" Txt="Explain in their own words how sockets are used to communicate between programs and computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle et sensorsystem, hvor sensordata præsenteres på et fjerntliggende system via en webserver." />
+          <Txt Lang="en-GB" Txt="Develop a sensor system where sensor data is presented on a remote system via a web server." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:43.41" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

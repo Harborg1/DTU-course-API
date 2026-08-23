@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="12345" Volume="2026/2027" University="dtu" LastUpdated="2026-04-10+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Dataanalyse, forudsigelse og datadrevet modellering af miljøsystemer" />
+        <Title Lang="en-GB" Title="Data analysis, prediction and data-driven modelling of environmental systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="12" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="12" />
+        <Course_Responsible PersonKey="66407" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Roland</GivenName>
+            <FamilyName>Löwe</FamilyName>
+            <Email>rolo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="multiple choice quizzer, præsentationer, mundtlig eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="multiple choice quizzes, presentations, oral exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Indhentning af data fra offentlige kilder. Matematisk beskrivelse af processer. (Fysisk-baseret) maskinlæring for miljøprocesser.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning og hands-on gruppearbejde struktureret omkring 2-3 opgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>1. Beven, K (2012). Rainfall runoff modelling: The primer, 2nd ed. Wiley
+2. McKinney, W. (2022). Python for Data Analysis, 3rd ed., https://wesmckinney.com/book/
+3. Shen, Chaopeng, Alison P Appling, Pierre Gentine, Toshiyuki Bandai, Hoshin Gupta, Alexandre Tartakovsky, Marco Baity-Jesi, et al. “Differentiable Modelling to Unify Machine Learning and Physical Models for Geosciences.” Nature Reviews Earth &amp; Environment 4, no. 8 (2023): 552–67.</Course_Literature>
+          <Course_Objectives>Det overordnede mål med dette kursus er at lære at arbejde med spatiale data og sensor-observationer, og at bruge dem til at konstruere modeller af miljøprocesser. Dette er et avanceret modelleringskursus, der kombinerer koncepter fra f.eks. 12104, 12320, 02450 med det formål at udnytte store datasæt i prognoser og analyser af miljøprocesser.
+
+Vi fokuserer på afstrømnings- og forureningsprocesser, men de metoder og udfordringer, der opstår i datahåndtering og modeludvikling, er bredt anvendelige til modellering og prognoser i miljøområdet (f.eks. grundvandsmodellering, forudsigelser af oversvømmelser, forudsigelser af forureningsbelastninger i vandløb osv.) Du vil lære at:
+• Indhente spatiale (f.eks. højdekort) og tidsseriedata (f.eks. vandstande i vandløb) fra offentlige kilder og analysere dem ved hjælp af Python og GIS,
+• Genkende og håndtere fejl og usikkerheder i datakilderne,
+• Konceptualisere, implementere og validere modelbeskrivelser for afstrømningsprocesser, og
+• Integrere klassiske procesbeskrivelser med maskinlæringsteknikker for at generere robuste forudsigelser. 
+
+Kurset henvender sig til studerende, der er interesserede i avancerede modelleringskoncepter for miljøprocesser og ønsker at forfølge en videnskabelig eller industriel karriere inden for environmental datascience. Det antages, at du har en grundlæggende forståelse af programmering i skriptsprog, GIS og hydrologiske processer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Obtaining open data from public sources. Mathematical description of environmental processes. (Physics-informed) machine learning for environmental processes.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and hands-on group work on 2-3 assignments with weekly question sessions</Teaching_And_Learning_Methods>
+          <Course_Literature>1. Beven, K (2012). Rainfall runoff modelling: The primer, 2nd ed. Wiley
+2. McKinney, W. (2022). Python for Data Analysis, 3rd ed., https://wesmckinney.com/book/
+3. Shen, Chaopeng, Alison P Appling, Pierre Gentine, Toshiyuki Bandai, Hoshin Gupta, Alexandre Tartakovsky, Marco Baity-Jesi, et al. “Differentiable Modelling to Unify Machine Learning and Physical Models for Geosciences.” Nature Reviews Earth &amp; Environment 4, no. 8 (2023): 552–67.</Course_Literature>
+          <Course_Objectives>The overall objective of this course is to enable you to work with spatial and sensor data and use them to construct models of environmental systems in an independent manner. This is an advanced modelling course that combines concepts from e.g. 12104, 12320, 02450 and/or 02456 with the intention of making large, open data sources useful for prediction and analysis of environmental systems. 
+
+We will consider rainfall-runoff and pollution problems in the course, but the methods and challenges encountered in data management and model development are widely applicable for modelling and forecasting in environmental management (e.g. groundwater modelling, predictions of flooding, predictions of pollutant loads in rivers, etc.)
+
+You will learn to
+• Obtain spatial (e.g. elevation) and time series data (e.g. river water levels) from public sources and analyze them using scripts and GIS,
+• Recognize and manage the faults and uncertainties included in the data sources
+• Conceptualize, implement and validate model descriptions for environmental processes, and 
+• Integrate classical process descriptions and machine learning techniques to generate robust predictions
+
+The course is aimed at students that are interested in advanced environmental modelling concepts and are interested in pursueing a scientific or industrial career in environmental data science. The course will be centered around real-world cases. It is assumed that you have a basic understanding of programming in scripting languages, GIS, and hydrological processes.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmering i skriptsprog (f.eks. Python), GIS, hydrologiske processer" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Programming in scripting languages (e.g. Python), GIS , and hydrological processes" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="12320/12104/02402/02450/02002/02003" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Administrere og analysere store datasæt der beskriver miljøprocesser ved hjælp af scripting og GIS-værktøjer" />
+          <Txt Lang="en-GB" Txt="Manage and analyze large environmental data sets by means of scripting and GIS tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og analysere begrænsninger af miljøobservationer" />
+          <Txt Lang="en-GB" Txt="Understand and analyse limitations of environmental observation data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere, implementere og forbedre afstrømningsmodeller ved hjælp af scriptsprog" />
+          <Txt Lang="en-GB" Txt="Construct, implement and improve rainfall runoff models using scripting languages" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere numeriske kalibreringsprocedurer på selvskrevne modeller" />
+          <Txt Lang="en-GB" Txt="Implement numerical parameter estimation procedures on self-written models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende systematiske fejlfindingsprocedurer for at opdage programmeringsfejl i datastyring og modelleringskode" />
+          <Txt Lang="en-GB" Txt="Apply systematic debugging procedures to detect programming mistakes in data management and modelling code" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere maskinlæringsarkitekturer, der er anvendelige til forskellige typer af miljødata" />
+          <Txt Lang="en-GB" Txt="Formulate machine learning architectures that are applicable for predicting environmental processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og validere de antagelser, der ligger til grund for modelkalibreringsprocedurer" />
+          <Txt Lang="en-GB" Txt="Understand and validate the assumptions underlying model calibration procedures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konceptualisere og implementere modelarkitekturer der kombinerer fysisk procesforståelse og datadrevne lag til modellering af miljøprocesser" />
+          <Txt Lang="en-GB" Txt="Conceptualize and implement combined physics-based and data-driven model architectures for environmental processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for modelleringsvalg baseret på procesforståelse" />
+          <Txt Lang="en-GB" Txt="Argue for modelling choices based on process understanding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere modellens nøjagtighed med fokus på modelleringsformålet" />
+          <Txt Lang="en-GB" Txt="Assess model performance with a focus on the modelling purpose" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommunikere modelleringsresultater og begrænsninger i forskellige formater" />
+          <Txt Lang="en-GB" Txt="Communicate modelling results and limitations in different formats" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Data analysis, prediction and data-driven modelling of environmental systems</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="9" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:14.46" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

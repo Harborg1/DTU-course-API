@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22111" University="dtu" LastUpdated="2026-02-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til bioinformatik" />
+        <Title Lang="en-GB" Title="Introduction to Bioinformatics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="25617" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>henni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="142840" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carolina Barra</GivenName>
+            <FamilyName>Quaglia</FamilyName>
+            <Email>carolet@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Oral re-exam." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Mundtlig reeksamen." />
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Evolution på DNA-niveau. Taksonomi. Brug af taksonomi-databaser.
+
+Biologisk information. Informationsindhold i biologiske makromolekyler. DNA sekventering – herunder fejlkilder. DNA sekvens på elektronisk form. Brug af GenBank databasen.
+
+Proteinsekvens. Proteinstruktur-niveauer. Elektronisk repræsentation af proteinsekvens. Kilder til proteinsekvens (translation og direkte sekventering). Brug af UniProt databasen.
+
+Proteinstruktur. Proteinstruktur bestemmelse. Kvalitet af proteinstruktur data. Brug af PDB databasen. Computerbaseret visualisering af proteinstruktur.
+
+Parvis alignment. Alignment score, brug af "gaps", substitutions-matricer. Globalt og lokalt alignment.
+
+BLAST. Brug af BLAST algoritmen til søgning i sekvensdatabaser. Kritisk evaluering af søgeresultater. Iterativ BLAST (PSI-BLAST).
+
+Multiple alignments. Brug af heuristiske metoder pga. datakompleksitet. 
+
+Konstruktion og fortolking af fylogenetiske træer ud fra multiple alignments. Brug af NJ algoritmen. Rodfæstede versus ikke-rodfæstede træer.
+
+Vægt-matrice baserede metoder. Søgning med vægt-matrice. Konstruktion og fortolkning af LOGO plots.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Udleverede noter / kompendiemateriale</Course_Literature>
+          <Course_Objectives>Computerbaserede metoder spiller i disse år en afgørende rolle indenfor molekylærbiologi, mikrobiologi, bioteknologi og lægemiddelforskning. Store internationale sekvens- og strukturdatabaser indeholder information som i mange tilfælde helt kan erstatte eksperimentelt arbejde, og i andre tilfælde bruges til at optimere udbyttet af de eksperimentelle ressourcer. Kursets mål er således at give de studerende kendskab til de vigtigste databaser og metoder til molekylær sekvens- og strukturanalyse.
+
+Introduktion til Bioinformatik er et praktisk orienteret kursus, med fokus på anvendelse af metoderne snarere end deres matematiske udledning. Bioinformatik præsenteres som en biologisk disciplin baseret på evolutionsteori. En stor del af undervisningen består af computer-øvelser, hvor de beregningsmæssige værktøjer anvendes baseret på deltagernes biologiske forhåndskendskab.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Evolution at the DNA level. Taxonomy. Practical use of taxonomy databases.
+
+Biological information. Information content in biological macromolecules. DNA sequencing – including error sources. DNA sequences in electronical format. How to use the GenBank database.
+
+Protein sequences. Protein structure levels. Protein sequences in electronical format. Sources of protein sequences (direct sequencing and computer based translation). How to use the UniProt database.
+
+Protein structure. How protein structures are determined. Quality of protein structure data. How to use the PDB database. Computer based visualization of protein structure.
+
+Pairwise alignment. Alignment scores, gaps, substitution matrices. Global and local alignment.
+
+BLAST. How to use BLAST for searching sequence databases. Critical evaluation of results. Iterative BLAST.
+
+Multiple alignments. The use of heuristic methods due to data complexity. 
+
+Generation and interpretation of phylogenetic trees from multiple alignments. The NJ algorithm for tree construction. Rooted versus unrooted trees.
+
+Weight-matrix based methods. How to search using weight-matrices. Generation and interpretation of LOGO plots.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes and exercise manuals handed out during the course</Course_Literature>
+          <Course_Objectives>These years, computer based methods play a crucial role in molecular biology, microbiology, biotechnology, and drug discovery. Huge international databases of sequence and structure contain information which in many cases can entirely replace experimental work, and in other cases can be used to optimize the benefit of experimental resources. The objective of the course is thus to provide the students with a knowledge of the most essential databases and methods for molecular sequence and structure analysis.
+ 
+Introduction to Bioinformatics is a practically oriented course with focus on using the methods rather than deriving them mathematically. Bioinformatics is presented as a biological discipline rooted in evolutionary theory. A large part of the course consists of computer-based exercises, where the computational tools are applied based on the participants’ biological prior knowledge.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Basal forståelse for industrielt vigtige biologiske processer. Kendskab til cellers indre struktur, deres biologiske funktioner samt biokemiske og molekylærbiologiske processer sammen med bioteknologiske processer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic understanding of biological processes used in the industry. Knowledge of cell structure, their biological functions, biochemical and molecular biological processes together with biotechnological processes" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="27002/27008" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for hvordan informationen i biologiske makromolekyler, såsom DNA og protein, kan repræsenteres i et elektronisk format." />
+          <Txt Lang="en-GB" Txt="explain how the information in biological macromolecules, such as DNA and protein can be represented in an electronical format." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for hvorledes en fælles evolutionshistorie påvirker DNA og protein-sekvens i beslægtede organismer." />
+          <Txt Lang="en-GB" Txt="explain how DNA and protein sequences from related organisms are influenced by a common evolutionary history." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="søge efter data i de offentligt tilgængelige sekvens- og struktur-databaser, såsom GenBank, UniProt og PDB." />
+          <Txt Lang="en-GB" Txt="search for sequence and structure data from the publicly available databases, such as GenBank, UniProt and PDB." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende programmer til visualisering af protein 3D struktur." />
+          <Txt Lang="en-GB" Txt="visualize protein 3D structure using computer software." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fremstille og kritisk evaluere kvaliteten af DNA- og protein-alignments." />
+          <Txt Lang="en-GB" Txt="generate and critically evaluate DNA and peptide alignments." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="søge i sekvensdatabaser med alignment-baserede metoder (BLAST) og kritisk evaluere pålideligheden af resultaterne." />
+          <Txt Lang="en-GB" Txt="query sequence databases using alignment based methods (BLAST) and critically evaluate the results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme den sandsynlige biologiske funktion af et ukendt gen eller protein-produkt ud fra sammenligning med kendte gener / proteiner." />
+          <Txt Lang="en-GB" Txt="predict the most probable biological function of a novel gene or protein product by comparison to already characterized genes/proteins." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende programmer til at fremstille multiple alignments af grupper af beslægtede sekvenser." />
+          <Txt Lang="en-GB" Txt="use programs to generate multiple sequence alignments of sets of related sequences." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fremstille fylogenetiske træer ud fra multiple alignments." />
+          <Txt Lang="en-GB" Txt="generate phylogenetic trees from multiple alignments." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fremstille og tolke visualiseringer af informationsindholdet i grupper af beslægtede sekvenser (“logo plots”)." />
+          <Txt Lang="en-GB" Txt="generate and interpret visualizations of the information content of sets of related sequences (“logo plots”)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe relevante forespørgsler og kritisk evaluere AI-genererede resultater ved at vurdere deres korrekthed, begrænsninger, validitet, reproducerbarhed og biologiske relevans" />
+          <Txt Lang="en-GB" Txt="design relevant queries and critically evaluate AI-generated outputs, assessing their correctness, limitations, validity, reproducibility, and biological relevance" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://teaching.healthtech.dtu.dk/22111" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Sekvensanalyse, Bioinformatik, Computer, Biologi</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="27611" />
+        <PreviousCourse CourseCode="36611" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:05.917" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

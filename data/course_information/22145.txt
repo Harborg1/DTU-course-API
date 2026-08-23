@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22145" University="dtu" LastUpdated="2026-05-19+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Immunologisk bioinformatik" />
+        <Title Lang="en-GB" Title="Immunological Bioinformatics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="142840" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carolina Barra</GivenName>
+            <FamilyName>Quaglia</FamilyName>
+            <Email>carolet@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="5973" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Morten</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>morni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_And_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset er opdelt i to dele: Den første del består af forelæsninger og øvelser. I uge 10 vil der være en teoretisk multiple choice‑eksamen (MCQ) uden adgang til internettet. Den anden del af kurset består af et projektarbejde med en mundtlig præsentation, inklusiv individuelle spørgsmål, på kursets sidste dag. Karakteren gives på baggrund af en samlet vurdering af kurset. Det er et krav, at den mundtlige præsentation gennemføres, og at den skriftlige eksamen bestås for at kunne bestå hele kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course is separated in two parts: the first part consist of lectures and exercises. On week 10 there will be a MCQ theorethical exam without access to the internet. The second part of the course consists of a project work with an oral presentation with individual questions at the last day of the course. The grade is based on an overall assessment of the course. It is a requirement that both the written exam is passed, and oral presentation is completed, to pass the entire course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The oral presentation is at the end of the course." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Den mundtlige præsentation ligger i slutningen af kurset." />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Mundtlig reeksamen - dato aftales med kursusansvarlig." />
+          <Duration Lang="en-GB" Txt="Oral reexam - the date is arranged with the course responsible." />
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset har til formål at introducere de studerende til de nyeste metoder inden for computational immunology.
+
+De teoretiske grundlag for disse metoder introduceres gennem forelæsninger og efterfølges af praktiske øvelser, der sætter de studerende i stand til selvstændigt at udføre computational analyser.
+
+Kurset er opbygget i to dele. Del 1 består af forelæsninger og gruppeøvelser. Del 2 fokuserer på gruppebaseret projektarbejde med henblik på at udvikle og implementere en komplet projektworkflow.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Al relevant litteratur vil være tilgængelig via DTU Learn</Course_Literature>
+          <Course_Objectives>Den studerende vil være i stand til at skitsere den teoretiske baggrund, anvende og analysere resultaterne af beregningsmetoder relateret til forudsigelse af immunresponser.
+
+Desuden vil den studerende efter afslutningen af kurset være i stand til at:
+- Anvende beregningsmetoder til modellering af genetiske, strukturelle og funktionelle karakteristika ved immunreceptorerne og deres tilsvarende epitoper i inducering af immunresponser.
+- Designe en pipeline og gennemføre et projekt ved at anvende og kombinere beregningsmetoder i en immunresponskontekst, dvs. vaccinologi af infektionssygdomme, allergi, autoimmunitet, prioritering af kræftneoepitoper, proteinlægemiddel-deimmunisering.
+
+Generelle ingeniørkompetencer indgår i sammenhæng med konkret anvendelse i et gruppebaseret projektarbejde, hvor de studerende er ansvarlige for planlægning, design, implementering og kommunikation af et projekt.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course aims to introduce students to state-of-the-art methods in computational immunology.
+
+The theoretical foundations of these methods are introduced through lectures and are followed by practical exercises, enabling students to independently perform computational analyses.
+
+The course is structured in two parts. Part 1 consists of lectures and group-based exercises. Part 2 focuses on group-based project work aimed at developing and implementing a complete project workflow.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Literature>All relevant literature will be available via DTU Learn</Course_Literature>
+          <Course_Objectives>The student will be able to outline the theoretical background, apply, and analyze the output of computational methods related to the prediction of immune responses. 
+Moreover, upon completion of the course the student will be able to: 
+- Apply computational methods for modeling genetic, structural, and functional characteristics of the immune receptors and their corresponding epitopes in inducing immune responses. 
+- Design a pipeline and execute a project applying and combining computational methods in an immune response context, i.e. vaccinology of infectious diseases, allergy, autoimmunity, cancer neo-epitope prioritization, protein drug-deimmunization.
+General engineering competencies are included in context with concrete application in a group-based project work, where the students are responsible for planning, designing, implementing, and communicating a project.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="-eller tilsvarende. De anførte forudsætningskurser anbefales, men er ikke obligatoriske. Det forventes dog, at du allerede har kendskab til det stof, der dækkes i disse kurser.&#xD;&#xA;Hvis du ikke har denne baggrundsviden, er det dit ansvar at indhente den manglende viden på egen hånd. Hvis du er i tvivl om, hvorvidt du har den nødvendige baggrundsviden, bedes du kontakte kursusansvarlig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="-or equivalent. The listed prerequisite courses are recommended but not required. However, you are expected to already know the material covered in those courses.&#xD;&#xA;If you do not have this background knowledge, you are responsible for learning the missing material on your own. If you are unsure whether you have the necessary background, please contact the course responsible." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="22111.22117.27070" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og søge i relevante immunologiske databaser og integrere flere værktøjer og datakilder for at bestemme allelfrekvenser og estimere befolkningsdækning" />
+          <Txt Lang="en-GB" Txt="Identify and query relevant immunological databases, and integrate multiple tools and data sources to determine allele frequencies and estimate population coverage" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne og analysere de strukturelle og funktionelle egenskaber ved MHC-I- og MHC-II-molekyler, herunder deres respektive antigenbehandlings- og præsentationsveje" />
+          <Txt Lang="en-GB" Txt="Compare and analyze the structural and functional characteristics of MHC-I and MHC-II molecules, including their respective antigen processing and presentation pathways" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende offentligt tilgængelige værktøjer til at behandle og analysere data fra proteomik- og immunopeptidomikeksperimenter" />
+          <Txt Lang="en-GB" Txt="Apply publicly available tools to process and analyze data from proteomics and immunopeptidomics experiments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og fortolke forudsigelsesværktøjer til MHC-I- og MHC-II-peptidbinding og -præsentation" />
+          <Txt Lang="en-GB" Txt="Apply and interpret predictive tools for MHC-I and MHC-II peptide binding and presentation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og konstruere en positionsspecifik scoringsmatrix (PSSM) og demonstrere, hvordan den bruges til at generere sekvenslogoer fra peptiddatasæt" />
+          <Txt Lang="en-GB" Txt="Explain and construct a Position Specific Scoring Matrix (PSSM) and demonstrate how it is used to generate sequence logos from peptide datasets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare arkitekturen, træningsprocessen og forudsigelsesmekanismerne i kunstige neurale netværk og illustrere deres anvendelse i immunforudsigelsesmodeller" />
+          <Txt Lang="en-GB" Txt="Explain the architecture, training process, and prediction mechanisms of artificial neural networks, and illustrate their application in immune prediction models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne, evaluere og begrunde brugen af forskellige præstationsmålinger i vurderingen af immunforudsigelsesmodeller" />
+          <Txt Lang="en-GB" Txt="Compare, evaluate, and justify the use of different performance metrics in the assessment of immune prediction models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere TCR- og BCR-sekvensdata ved hjælp af avancerede værktøjer, identificere brug af kimcellegener og find relevante sekvensarkiver" />
+          <Txt Lang="en-GB" Txt="Analyze TCR and BCR sequence data using state-of-the-art tools, identify germline gene usage, and locate relevant sequence repositories" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne de strukturelle og funktionelle forskelle mellem antistoffer/BCR'er og TCR'er, og anvend beregningsmetoder til at forudsige deres struktur" />
+          <Txt Lang="en-GB" Txt="Compare the structural and functional differences between antibodies/BCRs and TCRs, and apply computational methods to predict their structure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge og begrunde passende beregningsværktøjer til forudsigelse af T-celleepitoper, B-celleepitoper og TCR–pMHC-interaktioner og evaluere fordele og begrænsninger ved immunforudsigelsesmetoder" />
+          <Txt Lang="en-GB" Txt="Select and justify appropriate computational tools for predicting T-cell epitopes, B-cell epitopes, and TCR–pMHC interactions, and evaluate the advantages and limitations of immune prediction methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe, gennemføre og præsentere et forskningsprojekt ved hjælp af in silico-metoder til undersøgelse af immunresponser" />
+          <Txt Lang="en-GB" Txt="Design, conduct, and present a research project using in silico methods to investigate immune responses " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe relevante forespørgsler og kritisk evaluere AI-genererede resultater ved at vurdere deres korrekthed, begrænsninger, validitet, reproducerbarhed og biologiske relevans" />
+          <Txt Lang="en-GB" Txt="Design relevant queries and critically evaluate AI-generated outputs, assessing their correctness, limitations, validity, reproducibility, and biological relevance" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://teaching.healthtech.dtu.dk/22145/index.php/22145_-_Immunological_Bioinformatics" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Sekvensanalyse, bioinformatik, computer, biologi, immunologi, data science, cancer immunoterapi</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="27685" />
+        <PreviousCourse CourseCode="36685" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-07-30" Time="08:58:26.097" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

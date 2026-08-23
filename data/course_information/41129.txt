@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41129" University="dtu" LastUpdated="2025-03-20+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Turbulente strømninger" />
+        <Title Lang="en-GB" Title="Turbulent flows" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="9680" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>David R.</GivenName>
+            <FamilyName>Fuhrman</FamilyName>
+            <Email>drfu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="33549" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Clara Marika</GivenName>
+            <FamilyName>Velte</FamilyName>
+            <Email>cmve@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="3 grupperapporter afleveres i løbet af kurset efter afslutning af relevante forelæsninger. Kurset afsluttes med en mundtlig eksamen. En enkelt karakter gives efter den mundtlige eksamen, baseret på en samlet vurdering af disse to elementer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="3 group reports are handed in during the course, following completion of relevant lectures.  The course finishes with an oral examination. A single grade is given after the oral examination, based on an overall assessment of these two elements." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>(1) Introduktion. (2) Basisligninger (kontinuitet, bevægelses- og energiligninger). (3) Stationære grænselagsstrømninger (strømninger tæt på en væg, strømninger over hele tværsnittet, turbulensmodellering, strømningsmodstand, burstingproces). (4) Statistisk analyse (korrelationsanalyse, spektrumsanalyse). (5) Fri turbulens. (6) Ikke stationære grænselag (laminar bølgegrænselag, transition, turbulente bølgegrænselag). (7) Turbulensmodeller. (8) Ikke-ligevægts-turbulens.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregningsøvelser, afløsningsopgaver, laboratorie øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Sumer, B.M. and Fuhrman, D.R. (2020) Turbulence in Coastal and Civil Engineering. World Scientific. https://doi.org/10.1142/10829</Course_Literature>
+          <Course_Objectives>At give en dybdegående teoretisk forståelse af strømningsprocesser i turbulente grænselag og turbulente strømninger.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>(1) Introduction. (2) Basic equations (continuity, equation of motion and energy equations). (3) Steady boundary layer flows (flow close to a wall, flow across the entire section, turbulence-modelling, flow resistance, bursting process). (4) Statistical analysis (correlation analysis, spectrum analysis). (5) Free shear flows. (6) Unsteady boundary layers (laminar oscillatory boundary layer, transition, turbulent oscillatory boundary layers). (7) Turbulence models. (8) Non-equilibrium turbulence.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, assignments and laboratory exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Sumer, B.M. and Fuhrman, D.R. (2020) Turbulence in Coastal and Civil Engineering. World Scientific. https://doi.org/10.1142/10829</Course_Literature>
+          <Course_Objectives>To give a thorough theoretical understanding of the flow processes in turbulent boundary layers and turbulent flows.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og udlede de grundlæggende ligninger der styrer turbulente strømninger inklusiv turbulens modellering" />
+          <Txt Lang="en-GB" Txt="explain and derive the basic equations that govern turbulent flows including turbulence modelling" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende disse til at analysere turbulente strømninger, såsom stationære, ensformige grænselag i kanalstrømninger, rør osv., og frie strømninger med forskydningslag" />
+          <Txt Lang="en-GB" Txt="apply these to analyse turbulent flows, such as steady, uniform boundary layers in channels, pipes, etc., and free shear flows" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere turbulente strømninger ved anvendelse af statistisk analyse, sandsynlighedsfordeling af turbulente hastigheder, korrelationsanalyse og spektrumsanalyse" />
+          <Txt Lang="en-GB" Txt="analyse turbulent flows using statistical analyses such as probability distribution of turbulent velocities, correlation and spectrum analyses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udfærdige et samlet billede af den turbulente energi balance i simple strømninger ud fra de grundlæggende ligninger, statistisk analyse, spektrumsanalyse og fysiske ræsonnementer" />
+          <Txt Lang="en-GB" Txt="compose a complete picture of the turbulent energy balance in simple flows using basic equations, statistical and spectral analysis, and physical reasoning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenligne og kontrastere stationære og ikke stationære (eksemplificeret ved oscillerende grænselag) turbulente strømninger, herunder forekomsten af laminar-til-turbulent overgang" />
+          <Txt Lang="en-GB" Txt="compare and contrast steady and unsteady (exemplified with oscillatory boundary layer) turbulent flows, including the occurrence of laminar-to-turbulent transition" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende og vurdere resultater fra turbulens modeller, fra simple modeller (f.eks. blandingslængde modellen) til de mere avancerede modeller (f.eks. k-omega model)" />
+          <Txt Lang="en-GB" Txt="apply and evaluate results from turbulence models, ranging from simple models (e.g., the mixing length model) to more advanced models (e.g. k-omega model)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diskutere og evaluere implikationerne af ikke-ligevægtsturbulens på konklusionerne af Kolmogorovs (ligevægts)-teori." />
+          <Txt Lang="en-GB" Txt="discuss and evaluate the implications of non-equilibrium turbulence on the inferences of the Kolmogorov (equilibrium) theory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende og vurdere resultater fra laboratorie eksperimenter med avanceret måleudstyr/ teknikker" />
+          <Txt Lang="en-GB" Txt="analyze and evaluate results from laboratory experiments using advanced facilities/techniques" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="(41102.41111)/41312" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Theoretical understanding of the flow processes in turbulent boundary layers and diffusion / dispersion processes in turbulent flows</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41128" />
+        <PreviousCourse CourseCode="41128" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="6" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:40.09" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

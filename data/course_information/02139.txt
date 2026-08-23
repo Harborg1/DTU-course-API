@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02139" University="dtu" LastUpdated="2026-03-18+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Digital Elektronik 2" />
+        <Title Lang="en-GB" Title="Digital Electronics 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="59001" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Martin</GivenName>
+            <FamilyName>Schoeberl</FamilyName>
+            <Email>masca@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren fremkommer ved helhedsvurdering af individualiserede grupperapporter og en skriftlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The mark is given by an overall assessment of individualized group reports and a written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Design af medium-komplekse digitale kredsløb ved hjælp af moderne designmetoder.
+Beregning af forsinkelsestid i kombinatoriske kredsløb. Beregning af kritisk vej for et givent kredsløb, dvs. den minimale periodetid af kloksignalet ved hvilken kredsløbet kan operere korrekt. 
+Metastabilitet og synkronisering af asynkrone inputsignaler. 
+FPGA-teknologi: Grundlæggende opbygning og virkemåde. 
+FSMD-skabelon for et digitalt kredsløb (en såkaldt data-path med en tilhørende tilstandsmaskine). 
+Grundlæggende HDL: (a) selve sproget, (b) semantiken forstået ud fra hvordan en given beskrivelse simuleres, og (c) kodeskabeloner for kombinatoriske og sekventielle kredsløb.
+Øvelser i praktisk brug af Chisel og tilhørende simulations- og synteseværktøjer og prototyperealisering i FPGA-teknologi (p.t. Chisel, GKTWave og Xilinx Vivado).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde og hjemmeopgaver. Obligatoriske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte deltagerne i stand til at analysere, designe, simulere, implementere, afprøve og dokumentere digitale kredsløb som foretager simple beregninger eller simple styringssopgaver ved anvendelse af gængse simulerings- og synteseværktøje, og at realisere disse kredsløb i rekonfigurerbar hardware (FPGA-teknologi).</Course_Objectives>
+          <Remark>Kurset indgår på 2. semester af bachelorretningen i elektroteknologi og computer engineering.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Design of medium-complex digital circuits using modern design methodologies.
+Calculation of circuit delay of combinatorial circuits. Calculation of the critical path, i.e., the minimum period of the clock signal for which the circuit will operate correctly. 
+Metastability and synchronization of asynchronous input signals. 
+FPGA technology: Basics of structure and principles of operation.
+FSMD-style implementation template for a digital circuit (a so-called data-path controlled by a finite state machine).
+Elementary HDL: (a) basic language constructs, (b) understanding its semantics based on how a given circuit simulates, (c) code templates for combinatorial and sequential circuits.
+Lab exercises covering Chisel and related CAD tools for simulation, synthesis, and prototype implementation using FPGA technology (currently Chisel, GKTWave, and Xilinx Vivado).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, and home work. Mandatory laboratory exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the participants with the competencies necessary to design digital circuits that perform simple calculations or control tasks using typical simulation and synthesis tools and to implement these circuits using reconfigurable hardware (FPGA technology).</Course_Objectives>
+          <Remark>The course is a 2nd semester constituent of the bachelor's programme in Electrical Engineering and Computer Engineering.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere digitale kredsløb/systemer som foretager simple beregninger eller simple styringssopgaver og vurdere alternative realiseringer mht. areal, hastighed og energiforbrug." />
+          <Txt Lang="en-GB" Txt="Design digital circuits that implement simple computations or control tasks, and assess design alternatives with respect to area, speed and energy consumption." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive sådanne systemer i et hardwarebeskrivende sprog, og anvende gængse  simulerings- og synteseværktøjer til at realisere disse kredsløb i rekonfigurerbar hardware (FPGA) under anvendelse af prædefinerede design-flows." />
+          <Txt Lang="en-GB" Txt="Describe such circuits using a hardware description language and use common simulation and synthesis tools to implement these circuits using reconfigurable hardware (FPGA technology) and predefined design flows." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere et sådant designarbejde i en teknisk rapport." />
+          <Txt Lang="en-GB" Txt="Document a design project in a technical report." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for forskellen på en Mealy og en Moore type tilstandsmaskine og analysere og konstruere sådanne synkrone tilstandsmaskiner.  " />
+          <Txt Lang="en-GB" Txt="Explain the difference between a Mealy type and a Moore type finite state machine and analyze and design such synchronous finite state machines." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar en tilstandsmaskine med en datasti." />
+          <Txt Lang="en-GB" Txt="Explain a state machine with a datapath." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere og forklare/redegøre for tidsparametre for komponenter på RTL-niveau (registre og logik) og på baggrund af disse at beregne kritiske signalveje for et givent sekventielt kredsløb og bestemme den minimalt mulige periodetid for kloksignalet." />
+          <Txt Lang="en-GB" Txt="Define and explain timing parameters for RTL-level components (registers and logic). Use these parameters to: (i) calculate the critical signal paths in a given sequential circuit, in order to determine the minimum possible clock period for the circuit, and (ii) check if setup and hold times for registers are satisfied. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare fænomenet metastabilitet og beskrive hvorledes inputsignaler kan synkroniseres." />
+          <Txt Lang="en-GB" Txt="Explain the phenomenon meta-stability and describe how input signals may be synchronized." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive princippet bag en FPGA-chip og forklare hvorledes den kan konfigureres til at realisere et givent sekventielt kredsløb." />
+          <Txt Lang="en-GB" Txt="Describe the internal organization of an FPGA chip and explain how it is configured to implement a given digital circuit" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare opbygning og virkemåde af et sekventielt kredsløb bestående af en såkaldt data-path og en tilhørende tilstandsmaskinekontrolenhed." />
+          <Txt Lang="en-GB" Txt="Explain the structure and operation of a sequential circuit consisting of a so-called data-path and a finite state machine control unit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Interface til eksterne komponenter (ready/valid signal), f.eks. en seriel port." />
+          <Txt Lang="en-GB" Txt="Interfacing to external components (ready/valid signal), e.g., a serial port." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmering af simple hardware generatorer." />
+          <Txt Lang="en-GB" Txt="Programming of simple hardware generators." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.compute.dtu.dk/courses/02139" />
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02138" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:44.933" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

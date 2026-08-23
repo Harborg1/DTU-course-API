@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34332" Volume="2026/2027" University="dtu" LastUpdated="2025-04-11+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Projekter i digital hardwaredesign til kommunikation" />
+        <Title Lang="en-GB" Title="Projects in Digital hardwaredesign for Communications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="6050" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Michael Stübert</GivenName>
+            <FamilyName>Berger</FamilyName>
+            <Email>msbe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Projektopgaver med design af Kredsløb til kommunikationssystemer, såsom pakke parsing, Fejl detektion, Hash funktioner, kryptografiske blokke til kodning, High speed Serial links, pakke behandling og hukommelsesstyring, scrambling og ram-mehåndtering.  Kodning fortrinsvis i VHDL med henblik på syntese i FPGA.  Opti-mering af kode (timing, areal) med henblik på at møde definerede design kriterier.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>At udvikle FPGA baseret digitalt hardware design til anvendelse i kommunikations-systemer og herigennem benytte moderne udviklingsværktøjer til design, syntese, simulering og afprøvning. Kurset henvender sig til kursister der vil anlægge en mere projektorienteret tilgang til opnåede kompetencer i kursus 34311 eller tilsva-rende. Eksempler på opgaver kan være checksumberegning, rammehåndtering, switching, routing m.m. Projekterne udføres fortrinsvis baseret på Intel Quartus værktøjerne herunder ModelSim.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Project tasks with design of Circuits for communication systems, such as package parsing, Bug detection, Hash features, cryptographic blocks for coding, High speed Serial links, package processing and memory management, scrambling and frame management.  Coding preferably in VHDL for synthesis in the FPGA.  Optimization of code (timing, area) in order to meet defined design criteria.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To develop FPGA based digital hardware design for use in communication systems and thereby use modern development tools for design, synthesis, simulation and testing. The course is aimed at students who want to take a more project-oriented approach to acquired skills in course 34311 or equivalent. Examples of tasks in-clude checksum calculation, frame management, switching, routing, etc. Projects are carried out mainly based on the Intel Quartus tools including ModelSim.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå fundamentale problemer i forbindelse med udvikling af kommunikati-onselektronik." />
+          <Txt Lang="en-GB" Txt="Understand fundamental problems related to the development of communica-tion electronics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Syntetisere funktioner som hashes, CRC, hukommelsesstyring, rammehåndte-ring m.m." />
+          <Txt Lang="en-GB" Txt="Synthesize features like hashes, CRC, memory management, frame man-agement, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende moderne digitale hardwaredesignværktøjer." />
+          <Txt Lang="en-GB" Txt="Using modern digital hardware design tools." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive effektiv VHDL kode til anvendelse i kommunikationssystemer." />
+          <Txt Lang="en-GB" Txt="Write effective VHDL code for use in communication systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simulering af det udviklede design." />
+          <Txt Lang="en-GB" Txt="Perform simulation of the developed design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre syntese og verifikation ved hjælp af testbench." />
+          <Txt Lang="en-GB" Txt="Perform synthesis and verification using test benchmark." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende optimerings strategier til henblik på at opnå designkrav." />
+          <Txt Lang="en-GB" Txt="Apply optimization strategies in order to achieve design requirements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en teknisk rapport som dokumenterer arbejdet." />
+          <Txt Lang="en-GB" Txt="Write a technical report documenting the work." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34331 eller tilsvarende" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:11.547" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

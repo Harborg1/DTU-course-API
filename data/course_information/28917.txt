@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="28917" University="dtu" LastUpdated="2022-03-17+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Kemiteknik" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Statistical Thermodynamics for Chemical Engineering" />
+        <Title Lang="en-GB" Title="Statistical Thermodynamics for Chemical Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="E4B" />
+          <Schedule_Txt Lang="en-GB" Txt="E4B" />
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="10353" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Nicolas von</GivenName>
+            <FamilyName>Solms</FamilyName>
+            <Email>nvs@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of homework and projects" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se engelsk inhold</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, projekter, hjemmearbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Required:
+D.A. McQuarrie, Statistical Mechanics, Harper and Row, New York, 1976.
+
+Recommended:
+M.P. Allen and D.J. Tildesley, Computer Simulation of Liquids</Course_Literature>
+          <Course_Objectives>Se engelsk beskrivlse</Course_Objectives>
+          <Remark>Kursus bliver tilbudt i lige år</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>1. Review of Thermodynamics; 2. Mathematics Preliminaries; 3. Equilibrium Ensembles; 4. Classical Partition Functions; 5. Ideal Gases; 6. Chemical Reaction Equilibria; 7. Non-ideal Gases, Virial Equation; 8. Distribution function theories of liquids, Ornstein-Zernike equation; 9. Graph theory, fugacity and density expansions, Percus-Yevick equation; 10. Perturbation theories; 11. Molecular-based equations of state, SAFT; 12. Introduction to computer simulation; 13. Special Topics – statistical thermodynamics of chain molecules; statistical thermodynamics of electrolytes (Debye-Hückel, Mean Spherical Approximation)
+
+Required:
+D.A. McQuarrie, Statistical Mechanics, Harper and Row, New York, 1976.
+
+Recommended:
+M.P. Allen and D.J. Tildesley, Computer Simulation of Liquids</Contents>
+          <Teaching_And_Learning_Methods>Lectures, projects, homework problems, self-study</Teaching_And_Learning_Methods>
+          <Course_Literature>Required:
+D.A. McQuarrie, Statistical Mechanics, Harper and Row, New York, 1976.
+
+Recommended:
+M.P. Allen and D.J. Tildesley, Computer Simulation of Liquids</Course_Literature>
+          <Course_Objectives>The goal of this course is the direct theoretical calculation of physical (bulk, macroscopic) properties based on first-principles, statistical mechanics considerations. The course will enable students to derive equations (of state) for simple and complex fluids from statistical mechanics formalism. It will give insight into current advanced equations of state based on molecular thermodynamics – such as SAFT. Computer simulation will also be covered in the course.</Course_Objectives>
+          <Remark>Course is only offered in even years</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Se engelsk version." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Masters level courses in thermodynamics, physical chemistry." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Recall relevant macroscopic thermodynamic properties and relations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Acquire mathematical tools, including graph theory, relevant to statistical mechanics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Apply the relevant equilibrium ensemble in a given situation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Derive partition functions for the various ensembles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Obtain ideal gas and chemical equilibrium properties from partition functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Apply the virial equation to obtain properties for non-ideal gases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Derive distribution functions for liquids" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Derive various liquid theories based on the distribution function " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Compare these various theories for liquids" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Obtain properties of real fluids based on perturbation theories" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Recognize the relation between perturbation theories and molecular-based equations of state such as SAFT" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk læringsmål" />
+          <Txt Lang="en-GB" Txt="Carry out Monte Carlo simulations of simple fluids" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:37.927" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

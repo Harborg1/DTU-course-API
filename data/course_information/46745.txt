@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46745" University="dtu" LastUpdated="2026-03-04+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Integration af vindkraft i elsystemet" />
+        <Title Lang="en-GB" Title="Integration of wind power in the power system" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="76711" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mattia</GivenName>
+            <FamilyName>Marinelli</FamilyName>
+            <Email>matm@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="111353" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jan</GivenName>
+            <FamilyName>Engelhardt</FamilyName>
+            <Email>janen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig rapport og præsentation i plenum (gruppevis) plus skriftlig eksamen.&#xD;&#xA;Karakter gives på grundlag af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written report and plenary presentation (group wise) plus written examination. &#xD;&#xA;Grades will be given based on an overall evaluation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Driftsprincipper for elforsyningsanlæg. Vindenergi og generatortyper. 
+Modellering af vindmøller og -parker. 
+Indflydelse fra vindkraft på elforsyningens stabilitet, især på frekvens og spænding.
+Frekvens og spænding kontrol og overholdelse netkrav.
+Statiske og dynamiske simulering studier med Powerfactory.</Contents>
+          <Teaching_And_Learning_Methods>a) Forelæsninger og gruppearbejde
+b) Load flow simuleringer og transientstabilitetsproblemer. Projektarbejde, hvor integrationsudfordringer bliver undersøgt ved modellering net med vindkraft.</Teaching_And_Learning_Methods>
+          <Course_Literature>T. Ackermann et al., “Wind Power in Power Systems, Second Edition,” 2012, pp. 1-1049.
+tilgængelig online - https://findit.dtu.dk/en/catalog/54499e30e44c7a86671d2587
+og supplerende materiale</Course_Literature>
+          <Course_Objectives>Kurset introducerer studenten til relevante metoder til kontrol af elforsyningen og giver kendskab til operationel integration af vindkraft.
+Dernæst analyseres forskellige elektriske vindmølleteknologier og deres samvirke med elnettet operationelt.
+Modellering af vindmøller, load flow samt indvirkning på systemfrekvens og spænding analyseres ved hjælp af simuleringsprogrammet DIgSILENT - Powerfactory.</Course_Objectives>
+          <Remark>E-learning anvendes i form af on-line quiz (home assignments), interactive quiz og electronic correction system.
+YouTube-videoer på Mattias kanal understøtter læringsprocessen.
+Grundlæggende kendskab til PowerFactory er stærkt anbefales - studerende med ingen kendskab til softwaren rådes kraftigt til at tage tutorial før kursusstart.
+Forkursets tutorial kan tages ved at bruge pc'erne i databarerne i B325 og B329 (bare start powerfactory, åbn hjælpemenuen og start tutorial).
+Kurset organisation kræver et tidligt stadium opgave i de første 4 uger. Ikke-deltagelse vil blive betragtet som frafald fra kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Power system operation principles. Wind power and wind generator types. 
+Modeling of wind turbines and large wind farms.
+Impact of wind on power systems stability, particularly on frequency and voltage. 
+Frequency and voltage control and compliance with grid codes.  
+Static and dynamic simulation studies with Powerfactory.</Contents>
+          <Teaching_And_Learning_Methods>a) Lectures and group work
+b) Load flow simulations and transient stability problems. Group projects, where integration challenges in term of frequency and voltage stability are investigated by modelling grids with wind power.</Teaching_And_Learning_Methods>
+          <Course_Literature>T. Ackermann et al., “Wind Power in Power Systems, Second Edition,” 2012, pp. 1-1049.
+available online - https://findit.dtu.dk/en/catalog/54499e30e44c7a86671d2587
+and supplementary material</Course_Literature>
+          <Course_Objectives>The course provides the students with an overview to relevant control issues of power systems and gives knowledge about operational integration of wind power.
+Analysis of the different electrical wind turbines technologies and their interaction with the grid both during transients and steady states.
+Modelling of wind turbines, load flows and influence on system frequency and voltages are investigated with the usage of the simulation software DIgSILENT - Powerfactory.</Course_Objectives>
+          <Remark>E-learning is used in the form of on-line quiz (home assignments), interactive quiz and electronic correction system. 
+YouTube videos on Mattia's channel support the learning process.
+Basic knowledge of Powerfactory is highly recommended - students with no knowledge of the software are strongly advised to take the tutorial before the course begins. 
+Pre-course tutorial can be taken by using the PCs in the databars in B325 and B329 (just launch powerfactory, open the help menu and start tutorial).
+The course organisation requires an early stage assignment in the first 4 weeks. Non-participation will be considered as drop-out from the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til elforsyning, elgeneratorer og vindmøller&#xD;&#xA;Grundlæggende kendskab til fysisk modellering og DIgSILENT Powerfactory.&#xD;&#xA;Studerende, der tager både kursus 46745 og 46740, anbefales at tage 46740 før 46745." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of electric power engineering, electric generators and wind turbines&#xD;&#xA;Basic knowledge of physical modelling and DIgSILENT Powerfactory.&#xD;&#xA;Students taking both course 46745 og 46740, are advised to take 46740 before 46745." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere principper for drift af elnettet" />
+          <Txt Lang="en-GB" Txt="Analyze power system operation principles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare spænding og frekvensstyringens rolle i elsystemet" />
+          <Txt Lang="en-GB" Txt="Explain the role of voltage and frequency control in power systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre load flow beregninger i formasket net" />
+          <Txt Lang="en-GB" Txt="Perform load flow calculations in meshed grids" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de vigtigste typer vindmøller" />
+          <Txt Lang="en-GB" Txt="Explain the main types of wind turbines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive avancere statiske og avancere dynamiske modeller af vindmøller" />
+          <Txt Lang="en-GB" Txt="Describe advanced stationary and dynamic models of wind turbines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere vindkraft og elsystemer i PowerFactory" />
+          <Txt Lang="en-GB" Txt="Create wind power and power systems models in Powerfactory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bekræftelse af overholdelse af teknisk forskrift " />
+          <Txt Lang="en-GB" Txt="Verify grid code compliance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere hvordan vindmøller kan understøtte sikker drift af elsystemet " />
+          <Txt Lang="en-GB" Txt="Assess how wind turbines can support power system secure operation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Færdighed til at definere sine egne forskningsproblemstillinger" />
+          <Txt Lang="en-GB" Txt="Ability to define your own research questions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Færdighed til at arbejde i grupper og effektiv mundtlig kommunikation" />
+          <Txt Lang="en-GB" Txt="Ability to work in groups and effective oral communication" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31783" />
+        <PreviousCourse CourseCode="31783" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="20" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="32" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:51.053" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

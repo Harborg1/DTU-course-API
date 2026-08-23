@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62776" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Anvendt elteknik for Maskin" />
+        <Title Lang="en-GB" Title="Applied electrical engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="178698" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mehdi</GivenName>
+            <FamilyName>Savaghebi</FamilyName>
+            <Email>medi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="214374" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sam</GivenName>
+            <FamilyName>Roozbehani</FamilyName>
+            <Email>samro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Grundlæggende principper for AC-systemer, AC-kredsløbselementer, Effekt i enfasede AC-systemer, Effektfaktorkorrektion, Trefasede AC-systemer, Fasevis analyse af trefasesystemer
+, Transformermodellering, Generatormodellering, Per-unit-systemanalyse, Modellering af transmissionslinjer, Grundlæggende principper for trefasede motorer</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde, problemløsning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus giver en omfattende introduktion til vekselstrøms- (AC) elsystemer. Det dækker de grundlæggende principper for AC-kredsløb, herunder spænding, strøm, impedans og effektforhold. De studerende lærer metoder til effektanalyse samt modellering af centrale elektriske komponenter såsom transformere, generatorer, transmissionslinjer og de grundlæggende principper for trefasede motorer. Der lægges vægt på både teoretisk forståelse og praktiske analysemetoder, som anvendes i moderne elsystemer.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Maskinteknik: 3. semester
+
+Kurset blev tidligere holdt delvist sammen med 62771, som var et tilsvarende, men lidt simplere kursus for eksportingeniørstuderende</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fundamentals of AC Systems, AC Circuit Elements, Power in Single-Phase AC Systems, Power Factor Correction, Three-Phase AC Systems, Per-Phase Analysis of Three-Phase Systems, Transformer Modeling, Generator Modeling, Per-Unit System Analysis, Transmission Line Modeling, Fundamentals of Three-Phase Motors</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group Work, problem solving.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course provides a comprehensive introduction to alternating current (AC) power systems. It covers the fundamental principles of AC circuits, including voltage, current, impedance, and power relationships. Students will learn power analysis techniques and how to model key electrical components such as transformers, generators, transmission lines, and the fundamentals of three-phase motors. Emphasis is placed on developing both a strong theoretical foundation and practical analytical skills relevant to modern power systems.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Maskinteknik: 3. semester
+
+The course was previously partly held togeather with 62771, which was a similar, but simpler course intended for eksprotingeniørstuderende</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="En vis kompetence i brugen af et beregningsprogram såsom Matlab er nødvendig, såvel som en forståelse af løsning af systemer af ligninger, differentialer og integraler, samt komplekse tal" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A level of competence in the use of a calculation program such as Matlab is necessary, as well as an understanding of the solution to systems of equations, differentials and integrals and complex numbers." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt=" Forstå og anvende grundlæggende AC-begreber, herunder bølgeformsanalyse og fasorrepræsentation. " />
+          <Txt Lang="en-GB" Txt="Understand and apply fundamental AC concepts, including waveform analysis and phasor representation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere AC-kredsløb ved hjælp af impedans, admittans og kredsløbslove. " />
+          <Txt Lang="en-GB" Txt="Analyze AC circuits using impedance, admittance, and circuit laws." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere effekt i AC-systemer, herunder aktiv, reaktiv og tilsyneladende effekt. " />
+          <Txt Lang="en-GB" Txt="Evaluate power in AC systems, including real, reactive, and apparent power." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere og forbedre effektfaktoren i elektriske systemer. " />
+          <Txt Lang="en-GB" Txt="Assess and improve power factor in electrical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere balancerede trefasesystemer og udføre beregninger pr. fase. " />
+          <Txt Lang="en-GB" Txt="Analyze balanced three-phase systems and perform per-phase calculations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle ækvivalente kredsløbsmodeller for transformere og generatorer. " />
+          <Txt Lang="en-GB" Txt="Develop equivalent circuit models for transformers and generators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende per-unit-systemet til forenklet analyse af elsystemer. " />
+          <Txt Lang="en-GB" Txt="Use the per-unit system for simplified power system analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere og analysere transmissionslinjer under forskellige driftsforhold. " />
+          <Txt Lang="en-GB" Txt="Model and analyze transmission lines under different operating conditions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare funktionsprincipperne for trefasede motorer og vurdere deres ydeevne. " />
+          <Txt Lang="en-GB" Txt="Explain the working principles of three-phase motors and evaluate their performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og simulere AC-kredsløb og elsystemmodeller ved hjælp af MATLAB." />
+          <Txt Lang="en-GB" Txt="Develop and simulate AC circuits and power system models using MATLAB." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="(62770).(62771).(62775)" />
+        <PreviousCourse CourseCode="62775" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:54.953" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

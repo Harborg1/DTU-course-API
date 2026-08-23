@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02339" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Grundlæggende cybersikkerhed" />
+        <Title Lang="en-GB" Title="Cybersecurity Fundamentals" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="53257" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Nicola</GivenName>
+            <FamilyName>Dragoni</FamilyName>
+            <Email>ndra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="218403" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lejla</GivenName>
+            <FamilyName>Islami</FamilyName>
+            <Email>lejis@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Or_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige eksamensform vil blive meddelt ved det første forelæsning, afhængigt af antallet af studerende." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Precise exam form will be communicated in the first lecture, based on students number." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Sikkerhedsbegreber: fortrolighed, integritet, autentificering, tilgængelighed etc. Symmetrisk og asymmetrisk kryptografi og deres anvendelser; nøglefordeling og digitale signaturer; ”discretionary” og ”mandatory” politikker til adgangskontrol for fortrolighed og integritet. Kommunikationsprotokoller til authentificering, fortrolighed og meddelelsesintegritet; netværkssikkerhed; systemsikkerhed, detektering af indbrud, ondsindet programmel. Sikkerhedsmodeller og sikkerhedsevaluering. Administration af sikkerhed.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning, øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende en introduktion til fundamentale begreber inden for cybersikkerhed og introducere centrale teorier og teknikker til udvikling og analyse af sikre IT-systemer.</Course_Objectives>
+          <DTU_Remark>Kurset udbydes først gang i efteråret 2026</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Security concepts: confidentiality, integrity, authenticity, availability etc. Symmetric and asymmetric cryptography and their uses; key distribution and digital signatures; discretionary and mandatory access control policies for confidentiality and integrity. Communication protocols for authentication, confidentiality and message integrity; network security; system security, intrusion detection and malicious code. Security models and security evaluation. Administration of security.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercise classes, practical classes.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give students an introduction to fundamental concepts in cybersecurity and introduce central theories and techniques for the development and analysis of secure IT systems.</Course_Objectives>
+          <DTU_Remark>The course is running for the first time in Autumn 2026.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kurser i programmering, softwareudvikling og systemarkitektur" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introductory courses in programming, software engineering and system architecture" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere alle de vigtigste problemstillinger der skal adresseres i en sikkehedsanalyse af et givent system" />
+          <Txt Lang="en-GB" Txt="identify all major factors that have to be addressed in a security analysis of a particular system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="definere operationalle sikkehedsmål for et givent system" />
+          <Txt Lang="en-GB" Txt="define operational security goals for a given computing system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere en systemanvendelse og identificere normale trusler og sårbarheder" />
+          <Txt Lang="en-GB" Txt="analyse an application scenario and identify common threats and vulnerabilities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere mulige foranstaltninger mod de normale trusler, sårbarheder og risici i et givent sikkerhedssystem" />
+          <Txt Lang="en-GB" Txt="identify possible countermeasures against threats and vulnerabilities in a given security scenario" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og diskutere de nødvendige sikkerhedsmekanismer i et givent sikkerhedssystem" />
+          <Txt Lang="en-GB" Txt="compare and contrast the underlying security mechanisms needed to implement security countermeasures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et sikkerhedssystem der kan håndhæve en given sikkerhedspolitik" />
+          <Txt Lang="en-GB" Txt="design a security infrastructure that implements an operational security policy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende moderne værktøjer analyse og konstruktion af, dele af, et sikkerhedssystem" />
+          <Txt Lang="en-GB" Txt="use contemporary tools to analyse and implement (part of) a security infrastructure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere forskellige typer ondsindet software (ranwomware, worms, viruses, spyware, …)" />
+          <Txt Lang="en-GB" Txt="identify different types of malicious software (ranwomware, worms, viruses, spyware, …)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="genkend symptomer på malwareinfektion" />
+          <Txt Lang="en-GB" Txt="recognise symptoms of malware infection" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.compute.dtu.dk/courses/02270" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundkursus i cybersikkerhed</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02270" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:33.467" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

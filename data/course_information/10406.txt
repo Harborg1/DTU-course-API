@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10406" Volume="2026/2027" University="dtu" LastUpdated="2026-04-17+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Numerisk simulering af magnetiserede plasmaer" />
+        <Title Lang="en-GB" Title="Numerical Simulation of Magnetised Plasmas" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="38623" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Volker</GivenName>
+            <FamilyName>Naulin</FamilyName>
+            <Email>vona@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Numerisk modellering af magnetiserede plasmaer. Plasmamodelhierarki: væske-, driftreducerede, kinetiske og gyrokinetiske beskrivelser. Numerisk diskretisering af partielle differentialligninger. Enkeltvæske- og resistiv magnetohydrodynamik. Driftreducerede og tovæskemodeller. Plasmaturbulens og transportdiagnostik. Tokamak-geometri, magnetiske koordinater og geometribevidste numeriske skemaer. Kinetiske modeller, herunder Vlasov- og Particle-in-Cell-metoder. Konceptuel introduktion til gyrokinetisk modellering. Ekstern opvarmning og partikelkilder med vægt på neutralstråleinjektion. Verifikation, validering og usikkerhedsvurdering i plasmasimuleringer.</Contents>
+          <Course_Objectives>Formålet med kurset er at give de studerende en anvendelsesorienteret forståelse af, hvordan magnetiserede plasmaer modelleres og simuleres numerisk, med særlig vægt på fusionsrelevante systemer. Kurset introducerer modelhierarkiet fra væske- til kinetiske beskrivelser og demonstrerer, hvordan geometri, turbulens, opvarmning og kilder repræsenteres i numeriske simuleringer.
+
+Gennem forenklede og reducerede modeller opnår de studerende evnen til at implementere, analysere og kritisk vurdere numeriske simuleringer. Kurset danner grundlag for videregående arbejde inden for fusionsplasmafysik, plasmaturbulens og numerisk modellering af komplekse plasmasystemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Numerical modelling of magnetised plasmas. Plasma model hierarchy: fluid, drift-reduced, kinetic and gyrokinetic descriptions. Numerical discretisation of partial differential equations. Single-fluid and resistive magnetohydrodynamics. Drift-reduced and two-fluid models. Plasma turbulence and transport diagnostics. Tokamak geometry, magnetic coordinates, and geometry-aware numerical schemes. Kinetic models including Vlasov and Particle-in-Cell methods. Conceptual introduction to gyrokinetic modelling. External heating and particle sources with emphasis on Neutral Beam Injection. Verification, validation, and uncertainty assessment in plasma simulations</Contents>
+          <Course_Objectives>The objective of the course is to provide students with an applied understanding of how magnetised plasmas are modelled and simulated numerically, with particular emphasis on fusion-relevant systems. The course introduces the hierarchy of models from fluid to kinetic descriptions and demonstrates how geometry, turbulence, heating, and sources are represented in numerical simulations. Through simplified and reduced models, the students acquire the ability to implement, analyse, and critically assess numerical simulations. The course provides a foundation for advanced work in fusion plasma physics, plasma turbulence, and numerical modelling of complex plasma systems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="kursus 10400 eller tilsvarende&#xD;&#xA;Introduktion til plasmafysik, numeriske metoder til PDE'er og programmeringsfærdigheder (f.eks. Python/Julia/C/C++) eller tilsvarende kurser" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="course 10400 or similar&#xD;&#xA;Introductory plasma physics, numerical methods for PDEs, and programming skills (e.g. Python/Julia/C/C++), or equivalent courses" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10400" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar hierarkiet af plasmamodeller og deres validitetsdomæner" />
+          <Txt Lang="en-GB" Txt="Explain the hierarchy of plasma models and their domains of validity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler fluid- og reducerede kinetiske ligninger egnede til numerisk simulering" />
+          <Txt Lang="en-GB" Txt="Formulate fluid and reduced kinetic equations suitable for numerical simulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend numeriske diskretiseringsmetoder på advektionsdominerede plasmaligninger" />
+          <Txt Lang="en-GB" Txt="Apply numerical discretisation methods to advection-dominated plasma equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv hvordan tokamak-geometri og magnetiske koordinater indgår i numeriske modeller" />
+          <Txt Lang="en-GB" Txt="Describe how tokamak geometry and magnetic coordinates enter numerical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simuler reducerede modeller af plasmaturbulens og -transport" />
+          <Txt Lang="en-GB" Txt="Simulate reduced models of plasma turbulence and transport" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellér eksterne opvarmnings- og partikelkilder, såsom Neutral Beam Injection, i forenklet form" />
+          <Txt Lang="en-GB" Txt="Model external heating and particle sources, such as Neutral Beam Injection, in simplified form" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Være i stand til at anvende verifikations- og valideringsteknikker" />
+          <Txt Lang="en-GB" Txt="Be able to use Verification and Validation techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurder numeriske resultater kritisk, og skeln fysiske effekter fra numeriske artefakter" />
+          <Txt Lang="en-GB" Txt="Assess numerical results critically, distinguishing physical effects from numerical artefacts" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg passende modelleringsmetoder til givne fysikproblemer" />
+          <Txt Lang="en-GB" Txt="Select appropriate modelling approaches for given physics problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:40.467" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41637" University="dtu" LastUpdated="2026-04-30+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Mass Customization - anvendelse af produktkonfigurering" />
+        <Title Lang="en-GB" Title="Mass Customization - application of product configuration" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="6264" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Hvam</FamilyName>
+            <Email>lahv@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1669" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Niels Henrik</GivenName>
+            <FamilyName>Mortensen</FamilyName>
+            <Email>nhmo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der afleveres 2 øvelses rapporter i kurset. Første rapport afleveres i slutningen af oktober. Den anden rapport afleveres ved kursets afslutning. Den endelige karakter er en helhedsvurdering af eksamen og de to øvelsesrapporter. Rapporterne afleveres gruppevis (ca 4 personer i hver gruppe),  hvor det angives hvem der har udført de enkelte dele af rapporten" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="You will hand in two reports on assignments in the course. The first report will be handed in end of October. The second report will be handed in at the end of the course. The final grade is an overall evaluation of the exam and the two assignments. You do the assignment in groups of approx. 4 persons and each group hand in the reports, with specification of which group member did which part of the report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omfatter to større øvelser. Den første øvelse, der afleveres i slutningen af oktober, omhandler udarbejdelse af en konceptuel konfigureringsmodel af et produkt, samt implementering af denne model i et standard konfigureringssystem. I øvelsen modelleres specifikationsprocesserne for udarbejdelse af tilbud til kunder og specifikationer til produktionen. Der udarbejdes en konceptuel konfigureringsmodel ved anvendelse af produktvariant master, desuden udarbejdes en formel IT model baseret på Unified Modeling Language (UML) og ved anvendelse af CRC (Class Responsibility, Collaboration) cards. Brugergrænsefladen defineres og modellen implementeres i et standard konfigureringssystem.
+Den anden øvelse, der afleveres ved kursets slutning omfatter en analyse af en virksomheds specifikationsprocesser, og udvikling af forslag til hvorledes disse processer kan digitaliseres og automatiseres. Der fokuseres på Configure to Order processer, der kan understøttes af konfigureringssystemer og Engineering to Order processer kan håndtere special produkter.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppearbejde. Grupperne består af ca 4 personer.</Teaching_And_Learning_Methods>
+          <Course_Literature>Product Customization
+Lars Hvam, Niels Henrik Mortensen, Jesper Riis.
+Springer 2008, 277 sider</Course_Literature>
+          <Course_Objectives>Industrielle virksomheder oplever et stigende krav fra kunderne om at kunne levere kundetilpassede produkter til omtrent samme tid og pris som massefremstillede produkter. Mass Customization betyder produktion af kundetilpassede produkter med masseproduktionens fordele. Grundprincipperne i Mass Customization er modulopbygning af virksomhedens produktsortiment og anvendelse af ekspertsystemer (produktkonfigureringssystemer) i de kunderettede forretningsprocesser. Kursets overordnede mål er at sætte de studerende i stand til at forstå principperne i Mass Customization, samt operationelt at kunne udvikle og digitalisere en virksomheds kunderettede specifikationsprocesser, analysere og modellere en virksomheds produktsortiment, samt modellere og implementere et produktkonfigureringssystem.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course contains two major assignments. The first assignment, to hand in end of October, contains working out a conceptual configuration model of a product and implementation of this model in a standard configuration system. The specification processes for working out quotes for customers and specifications for production are modeled. A conceptual configuration model is elaborated by using a product variant master, and a formal IT model is made based on Unified Modeling Language (UML) and by use of Class Responsibility Collaboration (CRC) cards. The User Interface is defined, and the model is implemented in a standard configuration system.
+The second assignment will be handed in at the end of the course, and contains an analysis of a company’s specification processes, and development of suggested ways to improve these processes through digitalization and automatization. The assignment focuses on Configure to Order processes supported by configurators and Engineer to Order processes for handling special products.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work. You will will work in groups of approx. 4 persons.</Teaching_And_Learning_Methods>
+          <Course_Literature>Product Customization
+Lars Hvam, Niels Henrik Mortensen, Jesper Riis.
+Springer 2008, 277 sider</Course_Literature>
+          <Course_Objectives>Industrial companies experience an increasing demand from customers for customized products with approximately the same delivery time and price as mass produced products. Mass Customization is the production of customized products by using the advantages of mass production. The basic principles of Mass Customization are the modular structuring of the company’s product range, and application of expert systems (product configuration systems) in the customer-oriented business processes. The general aim of the course is to enable students to understand the principles of Mass Customization, and to develop and digitalise a company’s customer-oriented specification processes, analyse and model the company’s product range, and model and implement a product configuration system.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurser vedr. produktudvikling og produktion vil være gode forudsætninger." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Courses on product development and production will be useful to have as background" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41612. 41619" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere en virksomheds specifikationsprocesser og digitalisere disse ved anvendelse af produktkonfigureringssystemer." />
+          <Txt Lang="en-GB" Txt="Analyse and develop a company’s specification processes. Increase digitalization by using product configuration systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og modellere en virksomheds produktsortiment ved anvendelse af en produktvariantmaster." />
+          <Txt Lang="en-GB" Txt="Analyse and model a company’s product range by using a product variant master." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge en produktmodel ved anvendelse af UML modelleringsteknikkerne." />
+          <Txt Lang="en-GB" Txt="Structure a product model by using UML modelling techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende principperne i Mass Customization og vurdere deres relevans i forhold til en konkret virksomhed." />
+          <Txt Lang="en-GB" Txt="Apply the principles of Mass Customization and evaluate how relevant they are to a concrete company." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende principperne i produkt modularisering og de forretningsmæssige incitamenter for at anvende produkt modularisering." />
+          <Txt Lang="en-GB" Txt="Apply the principles of product modularisation and the business incentives for using product modularisation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere de grundlæggende principper i ekspertsystemer og ræssonneringsformer i produktkonfigureringssystemer." />
+          <Txt Lang="en-GB" Txt="Evaluate the basic principles of expert systems and forms of reasoning in product configuration systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge et standard konfigureringssystem i forhold til en virksomheds konkrete behov." />
+          <Txt Lang="en-GB" Txt="Select a standard configuration system in relation to a company’s concrete requirements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende principperne i systemer til produktdatastyring (product data management (pdm) systemer/product life cycle management (plm) systemer). Herunder metoder til digitalisering af forretningsprocesser (specifikationsprocesser) i salg og engineering." />
+          <Txt Lang="en-GB" Txt="Apply the principles of systems for product data management (product data management (pdm) systems/product life cycle management (plm) systems). Methods and principles for digitalisation of sales and engineering processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>kundetilpasset produktion og produktudvikling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="42450/42451" />
+        <PreviousCourse CourseCode="42450/42451" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="30" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="15" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:34.42" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

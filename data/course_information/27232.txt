@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="27232" Volume="2026/2027" University="dtu" LastUpdated="2026-04-30+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Modellering af cellulær metabolisme" />
+        <Title Lang="en-GB" Title="Modeling cellular metabolism" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="27" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="27" />
+        <Course_Responsible PersonKey="91215" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Pep</GivenName>
+            <FamilyName>Charusanti</FamilyName>
+            <Email>pecha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsbedømmelse af en grupperapport og en afsluttende mundtlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of a group project report and a final oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No aids at oral exam" />
+            <Aid_Txt Lang="da-DK" Txt="Ingen hjælpemidler ved mundtlig eksamen" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omhandler konstruktion og anvendelse af matematiske modeller af cellulær metabolisme baseret på stoikiometriske og constraint-baserede tilgange. Hovedfokus er på prokaryote organismer, men kurset vil også omfatte eksempler og hjemmeopgaver baseret på eukaryote og mammale systemer for at illustrere den brede anvendelighed og de mange praktiske anvendelser inden for metabolisk systembiologi.
+
+Kurset består af forelæsninger, der introducerer centrale begreber, kombineret med guidede øvelser i undervisningen, som understøtter og udbygger forelæsningsstoffet. Derudover vil de studerende arbejde med opgaver og et gruppeprojekt. Kursusmaterialet omfatter en lærebog, videnskabelige artikler, multi-omics-datasæt fra offentlige databaser, gæsteforelæsninger og supplerende videoer. Alt beregningsarbejde udføres i Python.</Contents>
+          <Teaching_And_Learning_Methods>Kurset kombinerer forelæsninger, opgavesæt, case-studier fra litteraturen og projektarbejde for at understøtte både teoretisk forståelse og praktisk anvendelse.</Teaching_And_Learning_Methods>
+          <Course_Literature>Systems Biology: Constraint-based Reconstruction and Analysis. Forfatter: Bernhard Palsson. Cambridge University Press. 2015</Course_Literature>
+          <Course_Objectives>Kurset introducerer de studerende til teori og praksis indenfor opbygning af matematiske modeller af cellulær metabolisme med anvendelser i både prokaryote og mammale systemer. De centrale modelleringsrammer omfatter stoikiometriske og constraint-baserede tilgange implementeret i Python. Der er særligt fokus på de diverse anvendelsesmuligheder af modellerne. Gennem eksempler og øvelser vil de studerende opbygge og anvende constraint-baserede modeller til at adressere bioteknologiske problemstillinger såsom design af mikrobielle og mammale produktionsstammer, analyse af lægemidlers effekt på metaboliske pathways, optimering af mediesammensætning samt undersøgelse af interaktioner i mikrobielle samfund. Kurset omfatter desuden integration af transkriptom-, proteom- og metabolomdata i metaboliske modeller. Ved kursets afslutning vil de studerende kunne konstruere og anvende metaboliske modeller samt kritisk vurdere, hvilke biologiske spørgsmål modellerne kan og ikke kan besvare.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course covers the construction and application of mathematical models of cellular metabolism based on stoichiometric and constraints-based approaches. The primary focus is on prokaryotic organisms, but the course will also include examples and homework assignments based on eukaryotic and mammalian systems to highlight the generality and the diverse practical applications of metabolic systems biology.
+
+The course will comprise lectures that introduce core concepts along with guided in‑class assignments that reinforce and extend the lecture material. Students will also complete homework assignments and a group project. The course material will include a textbook, scientific articles, multi‑omic datasets from public repositories, guest lectures, and supplementary videos. All computational work will be carried out in Python.</Contents>
+          <Teaching_And_Learning_Methods>The course combines lectures, problem sets, case studies from the literature, and project work to support both theoretical understanding and practical application.</Teaching_And_Learning_Methods>
+          <Course_Literature>Systems Biology: Constraint-based Reconstruction and Analysis. Author: Bernhard Palsson. Cambridge University Press. 2015</Course_Literature>
+          <Course_Objectives>This course introduces students to the theory and practice of building mathematical models of cellular metabolism, with applications spanning both prokaryotic and mammalian systems. The principal modeling frameworks covered are stoichiometric and constraint-based approaches, implemented in Python. A central aim is to illustrate the diverse ways in which the models can be used. Through numerous examples and exercises, students will build and apply constraint‑based models to a range of biotechnological problems, such as microbial and mammalian strain design, analyzing drug effects on metabolic pathways, optimizing media formulations, and exploring microbial community interactions. The course also covers strategies for incorporating transcriptomic, proteomic, and metabolomic datasets into metabolic models. By the end of the course, students will be able to construct and apply metabolic models, and will have developed the critical judgment to understand what biological questions these models can and cannot address.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med Python-programmering samt kendskab til grundlæggende biokemi og bioinformatik (f.eks. hvordan man henter genomer fra NCBI; hvordan man bruger BLAST, etc.) på et niveau, der er nødvendigt for at kunne gennemføre øvelserne og deltage i læsning og diskussion af videnskabelig litteratur." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Experience with Python prgramming and knowledge of basic biochemistry and bioinformatics (e.g. how to retrieve genomes from NCBI; how to use BLAST, etc.) to the level needed to complete the excercises and to participate in reading and discussion of scientific literature." />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå forskellen mellem et netværk og en tilstand." />
+          <Txt Lang="en-GB" Txt="Understand the difference between a network and a state." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Rekonstruere en organismes metaboliske netværk ud fra dens genomsekvens." />
+          <Txt Lang="en-GB" Txt="Reconstruct an organism’s metabolic network from its genome sequence." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Omsætte en metabolisk rekonstruktion til en matematisk model egnet til computersimulering." />
+          <Txt Lang="en-GB" Txt="Convert the metabolic reconstruction into a mathematical model suitable for computer simulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere forskellige funktionelle tilstande af det metaboliske netværk." />
+          <Txt Lang="en-GB" Txt="Simulate different functional states of the metabolic network." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og fejlfinde problemer, når modeller ikke simulerer korrekt." />
+          <Txt Lang="en-GB" Txt="Identify and troubleshoot issues when models do not simulate properly." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere egenskaber ved forskellige funktionelle tilstande ved hjælp af flux balance-analyse og andre værktøjer." />
+          <Txt Lang="en-GB" Txt="Analyze properties of different functional states using flux balance analysis and other tools." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå grundlæggende principper for, hvordan forskellige -omics-datasæt genereres eksperimentelt, især genomiske, transkriptomiske, proteomiske, metabolomiske og fluxomiske data." />
+          <Txt Lang="en-GB" Txt="Understand core concepts of how different -omics datasets are generated experimentally, especially genomic, transcriptomic, proteomic, metabolomic, and fluxomic data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere metaboliske modeller med forskellige -omics-data og forstå fordele og begrænsninger ved hver datatype." />
+          <Txt Lang="en-GB" Txt="Integrate metabolic models with different -omics data and understand the advantages and limitations of each data type." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende metaboliske modeller på forskellige anvendelser, for eksempel metabolisk engineering/stammedesign, optimering af medier, identifikation af drug targets og off-targets samt interaktioner i mikrobielle samfund." />
+          <Txt Lang="en-GB" Txt="Apply metabolic models to different use cases, for example metabolic engineering/strain design, media optimization, identification of drug targets and off-targets, and interactions within microbial communities." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="27200" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="150" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:33:17.48" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

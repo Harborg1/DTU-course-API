@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62670" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Statistisk Analyse og Datavisualisering" />
+        <Title Lang="en-GB" Title="Statistical Analysis and Data visualisation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="145690" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Iver Mølgaard</GivenName>
+            <FamilyName>Ottosen</FamilyName>
+            <Email>ivot@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="153116" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Deena</GivenName>
+            <FamilyName>Francis</FamilyName>
+            <Email>dfra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kursuskarakteren er baseret på et vægtet gennemsnit på 70%/30% for den skriftlige eksamen og projektrapporten." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course grade is based on a 70%/30% weighted average of the written exam and the project report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Grundlæggende om sandsynlighed: tilfældige eksperimenter, hændelser, stikprøverum, sandsynligheder, regler for beregning af sandsynligheder, Bayes' sætning, uafhængighed og afhængighed.
+
+- Fordelinger: stokastiske variable - diskrete og kontinuerte, fordelingsfunktioner, fordelingsegenskaber - middelværdi og varians, kvantiler.
+
+- Diskrete fordelinger: Bernoulli, binomial, Poisson og uniforme fordelinger.
+
+- Kontinuerte fordelinger: uniform, eksponentiel, Poisson, normal, chi-i-anden, Students t og F-fordelinger.
+
+- Flerdimensionale stokastiske variable: simultane, marginale og betingede fordelinger.
+
+- Dataanalyse: beskrivende statistik, måling af sammenhæng ved hjælp af kovarians og korrelation.
+
+- Estimationsproblemet: stikprøve, population, konfidensintervaller, den centrale grænsesætning.
+
+- Statistisk hypotesetestning: teststatistik, signifikansniveau, p-værdi.
+
+- Lineær regression: enkel og multipel, model fit, forudsigelse.
+
+- Tidsrækkeanalyse: additive og multiplikative modeller, tendenser og sæsonvariation, prognoser.
+
+R: analyse og visualisering af data ved hjælp af R, beregning, udførelse af hypotesetestning, tilpasning og forudsigelse.</Contents>
+          <Teaching_And_Learning_Methods>Kurset består af forelæsninger og øvelsessessioner med vægt på brug af R. Der er et obligatorisk projekt, der kan laves i grupper på 4-5 personer.</Teaching_And_Learning_Methods>
+          <Course_Literature>Online E-lærebog for kurset 02323 Introduktion til Statistik, 
+https://02323.compute.dtu.dk/book</Course_Literature>
+          <Course_Objectives>At give de studerende en grundlæggende statistisk, datarelateret begrebsforståelse. At træne de studerende i datavisualisering og anvendelser af statistiske analysemetoder.</Course_Objectives>
+          <Remark>Sektion for Mekanisk teknologi
+Mobilitet, Transport og Logistik: 2. semester
+Proces og Innovation: 3. semester
+Sundhedsteknologi: 4. semester
+Global Business og Teknologi: 4. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Basics of probability: random experiments, events, sample space, probabilities, rules for computation of probabilities, Bayes' theorem, independence and dependence.
+
+- Distributions: random variables- discrete and continuous, distribution functions, properties of distributions- mean and variance, quantiles.
+
+- Discrete distributions: Bernoulli, binomial, Poisson, and uniform distributions.
+
+- Continuous distributions: uniform, exponential, Poisson, normal, chi-squared, Student's t and F distributions.
+
+- Multidimensional random variables: joint, marginal, and conditional distributions.
+
+- Data analysis: descriptive statistics, measuring relationship using covariance and correlation.
+
+- The estimation problem: sample, population, confidence intervals, central limit theorem.
+
+- Statistical hypothesis testing: test statistic, level of significance, p value.
+
+- Linear regression: simple and multiple, fitting, prediction.
+
+- Time series analysis: additive and multiplicative models, trends and seasonality, forecasting.
+
+- R: analyzing and visualizing data using R, computing, performing hypothesis testing, fitting and prediction.</Contents>
+          <Teaching_And_Learning_Methods>The course consists of lectures and exercise sessions with an emphasis on using R. There is a mandatory project that can be done in groups of 4-5 persons.</Teaching_And_Learning_Methods>
+          <Course_Literature>Online E-book for the course 02323 Introduction to Statistics
+https://02323.compute.dtu.dk/book</Course_Literature>
+          <Course_Objectives>To give the students a basic understanding of statistical, data-related concepts. To train the students in data visualization and the use of statistical analysis methods.</Course_Objectives>
+          <Remark>Section of Mechanical Technology
+Mobility, Transport and Logistics: 2nd semester
+Process and Innovation: 3rd semester
+Healthcare Technology: 4th semester
+Global Business Engineering: 4th semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Matematisk Analyse og Modellering, Lineær Algebra og Modellering" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Mathematical Analysis and Modelling, Linear Algebra and Modelling" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01911/01922" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende sandsynlighedsteoriens principper til at løse et givent problem." />
+          <Txt Lang="en-GB" Txt="Apply the principles of probability theory to solve a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Oprette oversigter og visualiseringer af et givent datasæt." />
+          <Txt Lang="en-GB" Txt="Create summaries and visualizations of a given dataset." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere egenskaber for en population og kvantificere usikkerheden af estimatet ved hjælp af konfidensintervaller." />
+          <Txt Lang="en-GB" Txt="Estimate properties of a population and quantify the uncertainty of the estimate using confidence intervals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre en ensidet Students t test på et givet datasæt." />
+          <Txt Lang="en-GB" Txt="Perform a one-sample Student's t test on a given dataset." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre en Welchs test på et givet datasæt." />
+          <Txt Lang="en-GB" Txt="Perform Welch's test on a given dataset." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre estimering af enkelte og flere forhold." />
+          <Txt Lang="en-GB" Txt="Perform estimation of single and multiple proportions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Test for lineær afhængighed af data ved hjælp af lineær regression." />
+          <Txt Lang="en-GB" Txt="Test for linear dependence of data using linear regression." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Students t-test på data i en multiple lineær regressions setup." />
+          <Txt Lang="en-GB" Txt="Apply Student's t test to a data in a multiple linear regression setting." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre analyse og forudsigelse for tidsrække data på et givet datasæt." />
+          <Txt Lang="en-GB" Txt="Perform analysis and prediction for time series data on a given dataset." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre statistiske test på data, der ikke har normalitetsantagelser." />
+          <Txt Lang="en-GB" Txt="Perform statistical tests on data that do not have normality assumptions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne de fælles, marginale og betingede sandsynligheder for en given problemstilling." />
+          <Txt Lang="en-GB" Txt="Compute the joint, marginal and conditional probabilities for a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62668/62429/62022/62518" />
+        <PreviousCourse CourseCode="62668 Statistik, 62669" />
+        <PreviousCourse CourseCode="62429 Datavisualisering" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="18" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:56.15" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

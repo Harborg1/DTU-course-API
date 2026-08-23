@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02427" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående tidsrækkeanalyse" />
+        <Title Lang="en-GB" Title="Advanced Time Series Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="Afdelingen for Matematisk Statistik, Lunds Universitet" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="Department of Mathematical Statistics, Lund University" />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <External_Course_Responsible Email="erikl@maths.lth.se" Name="Erik Lindstrom, tlf. +46 462224578" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="20293" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jan Kloppenborg</GivenName>
+            <FamilyName>Møller</FamilyName>
+            <Email>jkmo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="64403" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tobias Kasper Skovborg</GivenName>
+            <FamilyName>Ritschel</FamilyName>
+            <Email>tobk@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Transport til Lund organiseres." />
+            <Supp_Txt Lang="en-GB" Txt="Transportation to Lund will be organized." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Ikke-lineære tidsrækkemodeller. Ikke-parametriske metoder. Identifikation af ikke-lineære modeller. Tilstandsmodeller for ikke-lineære systemer. Tilstandsfiltrering. Stokastiske differentialligninger (SDE). Estimation af lineære og ikke-lineære SDE. Prædiktion i ikke-lineære modeller. Optimale forsøg for estimation af dynamiske systemer. Ikke-stationære systemer. Ikke-lineære modeller og kaosteori. Eksempler på ikke-lineære og ikke-stationære modeller. Modelbygning for real life systemer. 
+Indholdet fastlægges endeligt i samråd med de studerende.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>H. Madsen, E. Lindström, J. Holst (2007): Modelling Non-Linear and Non-Stationary Time Series, samt en række artikler</Course_Literature>
+          <Course_Objectives>At indføre de studerende i mere advancerede metoder inden for tidsrækkeanalyse. Der sigtes mod at give den studerende et solidt kendskab til modellering (identifikation) af dynamiske systemer og metoder til analyse af tidsrækker. Der fokuseres på ikke-lineære og ikke-stationære systemer. Endelig lægges vægt på metoder til modellering af fysiske og tekniske dynamiske systemer. Hovedformålet er at tilvejebringe en viden om modeller og metoder for tidsrækkenanalyse som giver en studerende en mulighed for at etablere modeller for real life systemer.</Course_Objectives>
+          <DTU_Remark>Udbydes i samarbejde med Lunds Universitet. Nogle forelæsninger vil muligvis foregå i Lund.</DTU_Remark>
+          <Remark>Internationalt kursus.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Non-linear time series models. Kernel estimators and time series analysis. Identification of non-linear models. State space models. Prediction in non-linear models. State filtering. Stochastic differential equations. Estimation of linear and (some) non-linear stochastic differential equations. Experimental design for dynamic identification. Methods for tracking parameters in non-stationary time series. Examples of both non-linear and non-stationary models. Non-linear models and chaos. Model building for real life systems. The final contents of the course will be discussed with the students.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>H. Madsen, E. Lindström, J. Holst (2007): Modelling Non-Linear and Non-Stationary Time Series, plus a number of articles</Course_Literature>
+          <Course_Objectives>To give an introduction to advanced methods for time series analysis. The primary goal to give a thorough knowledge on modelling dynamic systems. Special attention is paid on non-linear and non-stationary systems, and the use of stochastic differential equations for modelling physical and technical systems. The main goal is to obtain a solid knowledge on methods and tools for using time series for setting up models for real life systems.</Course_Objectives>
+          <DTU_Remark>In collaboration with Lund University. Some lectures might take place in Lund.</DTU_Remark>
+          <Remark>International course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Tidsrækkeanalyse (02417 eller lignende)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Time series analysis (02417 or similar)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02417" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende metoder til opbygning dynamiske stokastisk modeller" />
+          <Txt Lang="en-GB" Txt="Apply methods for building stochastic dynamic models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere behov for ikke-lineær model" />
+          <Txt Lang="en-GB" Txt="Identify the need for a non-linear model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere behov for ikke-stationær model" />
+          <Txt Lang="en-GB" Txt="Identify the need for a non-stationary model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende en række ikke-lineære og ikke-stationære modelklasser" />
+          <Txt Lang="en-GB" Txt="Knowledge about a number of non-linear and non-stationary model classes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge stokastiske modeller i diskret og kontinuert tid" />
+          <Txt Lang="en-GB" Txt="Establish models in discrete and continuous time" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Differentiere mellem metoder til opstilling af stokastiske modeller" />
+          <Txt Lang="en-GB" Txt="Differentiate between methods for formulating stochastic models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende stokastiske modeller til prædiktion" />
+          <Txt Lang="en-GB" Txt="Apply stochastics models for prediction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kendskab til brug af stokastiske differentialligninger til modellering" />
+          <Txt Lang="en-GB" Txt="Knowledge about using stochastic differential equations for modelling" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende ikke-parametriske og semiparametriske metoder" />
+          <Txt Lang="en-GB" Txt="Apply non-parametric and semi-parametric methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne forudsigelser af tidsrækker" />
+          <Txt Lang="en-GB" Txt="Calculate predictions of time series" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere parametre i stokastiske dynamiske modeller" />
+          <Txt Lang="en-GB" Txt="Estimate parameters in stochastic dynamic models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere og præsentere resultater i en skriftlig rapport" />
+          <Txt Lang="en-GB" Txt="Document and present results in a written report." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.imm.dtu.dk/courses/02427" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modelbygning for real life systemer baseret på tidsrække data</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="20" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:46.41" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

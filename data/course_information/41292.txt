@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41292" Volume="2026/2027" University="dtu" LastUpdated="2026-02-12+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Avancerede emner inden for maritimteknik" />
+        <Title Lang="en-GB" Title="Advanced topics in marine engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset følger ikke normal skemaplacering. Gennemførelse og format aftales efter henvendelse til kursusansvarlige." />
+          <Schedule_Txt Lang="en-GB" Txt="Meeting time will be agreed upon at the beginning of the semester." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Mekanik" />
+        <Course_Responsible PersonKey="117076" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Yanlin</GivenName>
+            <FamilyName>Shao</FamilyName>
+            <Email>yshao@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6371" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Harry Bradford</GivenName>
+            <FamilyName>Bingham</FamilyName>
+            <Email>hbbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="12409" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ulrik Dam</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>udni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset indeholder typisk alle eller flere af følgende elementer: forelæsninger, litteraturundersøgelse, selvstudier, diskussionssessioner mellem underviser og studerende samt selvstændigt og/eller gruppebaseret projektarbejde.
+
+I begyndelsen af kurset skal hver studerende have besluttet sig for et foretrukket maritimteknisk emne; enten selvvalgt eller valgt fra den liste, som underviser har givet.
+
+Projektarbejdet har fokus på implementering af den valgte teori og de(n) numeriske analysemodel(ler).
+
+Rapporten skal opsummere projektarbejdet, suppleret med verifikation og validering af implementeringen, samt matematisk og/eller fysisk fortolkning. Rapporten kan være i form af et udkast til konference-/tidsskriftspublikation eller en mere detaljeret videnskabelig rapport.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, selvstudier, diskussionssessioner og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give den studerende viden om udvalgte avancerede maritimtekniske metoder og analysemodeller og relaterede emner, som i dag ikke er omfattet af eksisterende kurser på DTU.
+
+At sætte den studerende i stand til at forstå, anvende og implementere den involverede teori og de numeriske metoder.</Course_Objectives>
+          <Remark>Inden tilmelding skal den studerende kontakte kursusansvarlige for at få flere detaljer om emnet/de emner af interesse. Følgende emner tilbydes i øjeblikket:
+
+1. 3D Rankine panelmetode og implementering (faste og/eller porøse strukturer)
+
+2. Sødygtighedsanalyser, herunder generelle bølge-strøm-struktur interaktioner og søtilstandsestimering
+
+3. Andenordens bølgebelastninger og reaktioner fra fortøjede strukturer (f.eks. middel-, sum- og differensfrekvensbelastninger, langsom-driftsdæmpning og reaktioner og fortøjningsdynamik)
+
+4. Analyse af tilgængelige in-service/driftsdata
+
+5. Slamming som følge af bølgeslag, tilhørende vibrationsnalyser (f.eks.: Wagner og von Karman teorier, generaliserede Wagner og von Karman ”Beam equations”)
+
+6. Sloshing og relaterede resonansproblemer (f.eks.: lineær og ikke-lineær multimodal teori, væskeresonanser).
+
+7. Andre numeriske metoder og maritimtekniske anvendelser (f.eks.: Finite Difference Method, Harmonic Polynomial Cell method, Finite element method og Spectral element method)</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will consist of lectures by the instructors, a literature survey, independent study by the students, discussion sessions between instructors and students, and project work.  
+
+At the beginning of the course, each student should have decided on a preferred topic within the area of marine hydrodynamics or related from the list provided by the course instructors.  
+
+The project work focuses on the implementation of the chosen theory and numerical analysis model.  
+
+The report should summarize the project work, supplemented by verification and validation of the implementation, as well as mathematical and/or physical interpretation.  The report can be in the format of a draft journal publication, or a more detailed scientific report.</Contents>
+          <Teaching_And_Learning_Methods>Lectures by instructors, self-learning by students, discussion sessions, and project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the student with knowledge of selected advanced analysis models within marine hydrodynamics and related topics that are currently not covered by existing courses at DTU.  
+
+To enable the student to understand, apply and implement the involved theory and numerical analysis/models.</Course_Objectives>
+          <Remark>Before registering for the course, each student should contact the course responsible to get more details about the topic(s) of interest.  The following topics are currently offered:
+
+1. 3D Rankine panel method and implementation (solid and/or porous structures) 
+
+2. Forward speed seakeeping problem (or called wave-current-structure interactions) 
+
+3. Second-order wave loads and responses of moored structures (e.g.  mean, sum, and difference-frequency loads, slow-drift damping and responses, and mooring dynamics)
+
+4. Analysis of available in-service/operational data 
+
+5. Slamming (water entry and exit) and vibration (e.g.: Wagner and von Karman theories, Generalized Wagner and von Karman, Beam equations) 
+
+6. Sloshing and related resonant problems  (e.g.: linear and nonlinear multimodal theory for sloshing, gap resonance, and other fluid resonances, and sloshing-floater coupling). 
+
+7. Other numerical methods and marine hydrodynamics applications in the form of guest lectures (e.g.: Finite Difference Method, Harmonic Polynomial Cell method, Finite element method, and Spectral element method)</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre litteratursøgning efter et specifikt avanceret emne fra bibliotekets database" />
+          <Txt Lang="en-GB" Txt="Perform a literature search for a specific advanced topic from the library database" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende state-of-the-art inden for det valgte område, og foreslå mulige udvidelser" />
+          <Txt Lang="en-GB" Txt="Master the state-of-the-art of the selected topic, and propose possible extensions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beherske det grundlæggende og forstå begrænsningerne af de involverede teorier og tilhørende numeriske modeller" />
+          <Txt Lang="en-GB" Txt="Comprehend the fundamentals and understand the limitations of the involved theories and numerical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere de involverede teoretiske modeller i numeriske værktøjer (Matlab e.l.)" />
+          <Txt Lang="en-GB" Txt="Implement the involved theory and numerical models in Matlab or similar" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre fornuftig numerisk kodning, evt. gennem Git" />
+          <Txt Lang="en-GB" Txt="Utilize a version control system, e.g. Git, for a good numerical coding practice" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere de teoretiske og/eller numeriske resultater ved hjælp af benchmark" />
+          <Txt Lang="en-GB" Txt="Evaluate the theoretical and/or numerical results using benchmark results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende den benyttede viden og tilhørende numeriske værktøjer til at forklare den involverede fysik i udvalgte eksempler fra industriel praksis" />
+          <Txt Lang="en-GB" Txt="Apply the provided knowledge and tools to explain the involved physics in selected real-life engineering examples" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle resultaterne i en teknisk rapport eller en videnskabelig artikel" />
+          <Txt Lang="en-GB" Txt="Disseminate the project results in a technical report or a scientific paper " />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41222/41275/41216/41107/41317" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:50.64" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

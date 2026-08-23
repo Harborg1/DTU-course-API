@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34302" University="dtu" LastUpdated="2024-04-11+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Introduktion til Cyberteknologi" />
+        <Title Lang="en-GB" Title="Introduction to Cyber Technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Projektarbejde i 13-ugers perioden kan også foregå i andre skemamoduler." />
+          <Schedule_Txt Lang="en-GB" Txt="Project work in the 13-week period can also take place in other timetable groups" />
+          <Schedule ScheduleKey="E4A" SortID="0" />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="5991" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Wessing</FamilyName>
+            <Email>hewe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Udvikling af studieteknikker, refleksion over studieattitude, smagsprøver på uddannelsens områder, studieopbygning, python til kommunikation, webserver, innovation, GUI opbygning, multitrådet programmering, sikker kommunikation.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Det overordnede formål med kurset:
+- At give en generel introduktion til at studere ved DTU og på Cyberteknolgi i særdeleshed, herunder at indøve gode studie – og arbejdsmetoder.
+- At introducere mulige anvendelser af uddannelsens fagområder.
+- At binde de generiske kurser på uddannelsen sammen.
+- At udvikle og dokumentere software, der kommunikerer over Internettet.</Course_Objectives>
+          <DTU_Remark>Kurset er forbeholdt studerende på bacheloruddannelsen i Cyberteknologi</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Development of study techniques, reflection over attitude towards studying, glimpse of the educations' topics, study structure, python for communication, web-server, innoation, GUI development, multithreading, secure communication.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The overall purpose with the course:
+- To give a general introduction to studying at DTU and at BSc Cyber Technology in particular. This includes development of good study and work habits. 
+- To introduce different applications of the education field. 
+- To make a coupling between the generic courses in the education
+- To develop and document software, which communicates via the Internet</Course_Objectives>
+          <DTU_Remark>The course is reserved for students on the bachelor programme in Cyber Technology</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere projekt og øvelsestarbejde i grupper." />
+          <Txt Lang="en-GB" Txt="Organise project and lab work in groups" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfærdige skriftlig dokumentation over udført projektarbejde." />
+          <Txt Lang="en-GB" Txt="Document project work in written reports" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og give feedback på skriftlig dokumentation." />
+          <Txt Lang="en-GB" Txt="Evaluate and provide feedback on written reports" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende DTUs elektroniske platforme herunder opbygge en studieplan." />
+          <Txt Lang="en-GB" Txt="Use DTU’s electronic platforms including how to build and maintain a study plan" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle studieteknik samt reflektere den individuelle studietilgang" />
+          <Txt Lang="en-GB" Txt="Develop study techniques and reflect over the individual study approach" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive typiske elementer i et kommunikationssystem fra klient/server/sensor til klient/server/sensor." />
+          <Txt Lang="en-GB" Txt="Describe typical elements of a communication system from client/server/sensor to client/server/sensor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle software, der kan udveksle information via Internettet." />
+          <Txt Lang="en-GB" Txt="Develop software, which can exchange information via the Internet" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Python til multitrådet programmering i forhold til kommunikation" />
+          <Txt Lang="en-GB" Txt="Use Python for multi threaded programming in relation to communication" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simple protokoller for sikker datatransmission." />
+          <Txt Lang="en-GB" Txt="Apply simple protocols for secure data transmission" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:06.807" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

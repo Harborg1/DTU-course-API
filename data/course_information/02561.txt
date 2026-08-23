@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02561" University="dtu" LastUpdated="2026-03-30+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computergrafik" />
+        <Title Lang="en-GB" Title="Computer Graphics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="21367" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jeppe Revall</GivenName>
+            <FamilyName>Frisvad</FamilyName>
+            <Email>jerf@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Individuel aflevering af lab journal (løsninger til arbejdssedler) og projektrapport. I tilfælde af samarbejde med en anden skal ansvarsdelingen i samarbejdet klart fremgå af afleveringen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Individual submission of lab journal (worksheet solutions) and project report. In case of collaboration with someone else, the distribution of responsibilities in the collaboration must be stated clearly in the submission." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>WebGPU som API. Kameramodeller. Transformationer og projektioner. 
+3D objekt repræsentationer. Lokale kontra globale belysningsmodeller. Hybridmetoder. 
+Realtids-rendering: Skygge, bump, refleksion, omgivelser og texture mapping. 
+3D-grafikkort og implementering af vertex og pixel shadere i WGSL.
+Interaktionsteknikker (events, picking, virtual trackball). 
+Glatte kurver og flader: parameterfremstillinger (Bézier, NURBS), underinddeling (Loop).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Computer-skabte modeller og billeder er allestedsnærværende. Klassiske anvendelser er CAD-systemer til produktdesign, game engines, computeranimation, 3D multimedie, virtual reality, og videnskabelig visualisering. Med den seneste udvikling inden for 3D scannings- og printningsteknologi er arbejdet med digitaliserede objekter fra den virkelige verden også blevet et vigtigt anvendelsesområde.
+
+Interaktiv computergrafik muliggør manipulation af digitale 3D modeller. Evnen til at arbejde interaktivt med digitale objekter er en vigtig ingeniørkompetence. Computergrafik er både essentielt i de klassiske discipliner, hvor vi modellerer og renderer digitale objekter, og i den fulde cyklus fra digitalisering til visualisering og manipulation til print af virkelige objekter. Dertil kommer, at moderne internet browsere understøtter hardware accelereret 3D grafik på websider, som kan køre både på almindelige og mobile platforme, hvilket betyder at 3D grafik vil få større udbredelse på fremtidens websider.
+
+Dette kursus giver et overblik over interaktiv computergrafik. Vores mål er at gøre deltagerne i stand til at (a) implementere realtids computergrafik systemer og (b) at udvikle grafik algoritmer og anvende dem til visualisering, modellering og animation. Dette kursus dækker web grafik teknologi og introducerer de 3D grafik principper, som man bør kende for at arbejde med de nævnte anvendelser.</Course_Objectives>
+          <Remark>Indgangskursus til computergrafik på Kandidat-niveau.
+Kurset kan følges sideløbende med kursus 02562 Rendering - Introduktion og komplementerer dette kursus, men kan også følges uafhængigt af dette kursus. 
+Computergrafik interesserede bachelor studerende kan følge kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>WebGPU as an API. Camera models. Transformations and projections. 
+3D object representations. Local versus global illuminations models. Hybrid methods.
+Real-time rendering: Shadow, bump, reflection, environment, and texture mapping.
+3D graphics cards and implementing vertex and pixel shaders in WGSL.
+Interaction techniques (picking, selecting, rubber banding, events). 
+Smooth curves and surfaces: parametric representations (Bézier, NURBS), subdivision (Loop).</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Computer generated models and images are ubiquitous. Classic applications are CAD systems for product design, game engines, computer animation, 3D multimedia, virtual reality, and scientific visualization. With the recent development in 3D scanning and printing technology, working with digitized real-world objects has become another important area of application.
+
+Interactive computer graphics enables us to manipulate digital 3D objects. The ability to work interactively with digital objects is an important engineering skill. Computer graphics is essential both in the classic disciplines, where we model and render digital objects, and in the full cycle from digitization to visualization and manipulation to printing of real world objects. In addition, modern internet browsers support hardware accelerated 3D graphics in webpages that run on both desktop and mobile platforms. This means that 3D graphics will also be used more broadly in the webpages of the future.
+
+This course provides an overview of interactive computer graphics. Our objective is to enable the participants to (a) implement real-time computer graphics systems and (b) to develop graphics algorithms for and apply them in visualization, modelling, and animation. The course covers web graphics technology and introduces the principles of 3D graphics that one would need to operate in the graphics applications discussed above.</Course_Objectives>
+          <Remark>Introductory computer graphics course at the M.Sc. level.
+It is possible to take this course alongside 02562 Rendering - Introduction. The two courses complement each other. However, this course can also be attended independently. 
+Bachelor student with an interest in computer graphics may follow the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmeringserfaring (fx Python, Java, C/C++, JavaScript eller Matlab)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Programming experience (for instance Python, Java, C/C++, JavaScript, or Matlab)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01002/01004).(02002/02003/02100/02312/02635)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende en applikationsgrænseflade som WebGPU til udvikling af en grafik applikation." />
+          <Txt Lang="en-GB" Txt="Use an application programming interface such as WebGPU for developing a graphics application." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilgå grafik hardware vha. shadersprog som WGSL." />
+          <Txt Lang="en-GB" Txt="Access graphics hardware using shader languages such as WGSL." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skabe en 3D scene med forskellige objekter, lyskilder og materialer." />
+          <Txt Lang="en-GB" Txt="Create a 3D scene with different objects, light sources, and materials." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende forskellige kamera-typer og -geometrier til at visualisere scenen." />
+          <Txt Lang="en-GB" Txt="Use different camera types and geometries to visualize the scene." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Interagere med dele af scenen vha. forskellige interaktionsteknikker." />
+          <Txt Lang="en-GB" Txt="Interact with the scene using various interaction techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere lys-materiale interaktion for en overflade og udvikle simple shadere." />
+          <Txt Lang="en-GB" Txt="Model light-material interaction for a surface and develop simple shaders." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere overfladedetaljer vha. texture mapping og bump mapping." />
+          <Txt Lang="en-GB" Txt="Simulate surface details using texture mapping and bump mapping." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere omgivelserne vha. environment maps." />
+          <Txt Lang="en-GB" Txt="Simulate the environment using environment mapping." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere skygger og spejlinger." />
+          <Txt Lang="en-GB" Txt="Simulate shadows and specular reflections." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Animere kamera, objektplacering og lyssætning." />
+          <Txt Lang="en-GB" Txt="Animate camera, object position, and light settings." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Rendere parametriserede flader baseret på et valgt underinddelingsniveau (subdivision level)." />
+          <Txt Lang="en-GB" Txt="Render parametric surfaces based on a selected subdivision level." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02561/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grafikprogrammering, WebGL, WebGPU, Shadere</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="85" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="15" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:15.4" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

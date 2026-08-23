@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34745" University="dtu" LastUpdated="2025-04-10+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Reguleringsteknik 2" />
+        <Title Lang="en-GB" Title="Linear control design 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="87" KVL_Resources="100" />
+          <Ass_Dep UID="41" Resources="13" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Course_Responsible PersonKey="34110" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Roberto</GivenName>
+            <FamilyName>Galeazzi</FamilyName>
+            <Email>roga@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9550" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ilmar Ferreira</GivenName>
+            <FamilyName>Santos</FamilyName>
+            <Email>ilsa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den skriftlige eksamen består af teoretiske spørgsmål og numeriske øvelser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The written exam consists of theoretical questions and numerical exercises." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="6H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Multivariable (MIMO) kontinuerte og diskrete systemer og deres beskrivende ligninger. Tilstandsbeskrivelse. Linearisering. Laplace- og z-transformation anvendt på MIMO systemer. Sammenhæng mellem tilstands- og overføringsfunktionsbeskrivelser. Tilstandstransformationer og standardformer. Poler, nulpunkter og egenværdier, minimal repræsentation, diskussion af fælles poler og nulpunkter. Styrbarhed, Observerbarhed, Gram-matricer, Stabilitet. Tilstandstilbagekobling og polplacering. Integralregulering. Optimalregulering ved minimering af kvadratisk index i kontinuert og diskret tid (LQR). Kontinuerte og diskrete observere. Introduktion til stokastiske processer for kalmanfiltre og LQG dimensionering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger (2 gange om ugen), grupperegning øvelser (Matlab/Simulink), hjemmeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>E. Hendricks, O. Jannerup and P. H. Sørensen: Linear Systems Control (Springer, ISBN 978-3-540-78485-2)</Course_Literature>
+          <Course_Objectives>Kurset sigter mod at skabe analytiske redskaber og metoder til design af lineære styringssystemer til MIMO (Multi-input multi-ouptut) fysiske systemer, baseret på staten rummet rammer. Kurset præsenterer også, hvordan de teoretiske metoder omsætte til computerstøttet teknikker til praktisk design og implementering af kontrolsystemerne.</Course_Objectives>
+          <Remark>Kurset er relevant som tilvalgskursus for diplomstuderende.
+E-learning anvendes i form af on-line voting systems, forelæsningsvideoer og digital eksamen.</Remark>
+          <No_Credit_Points_With>Reguleringsteknik 2</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Multivariable (MIMO) continuous and discrete time dynamic systems. State-space formulation. Linearization, Laplace- and Z-transforms for MIMO systems. State transformations and canonical forms. Poles, zeros, eigenvalues, minimal representation. Controllability, observability, gramians. Stability. State feedback, pole placement. Integral control. Optimal control in continuous and discrete time (LQR). Observers in continuous and discrete time. Introduction to stochastic processes and Kalman filters. LQG design.</Contents>
+          <Teaching_And_Learning_Methods>Lectures (2 modules per week), group work exercises (Matlab/Simulink), homeworks.</Teaching_And_Learning_Methods>
+          <Course_Literature>E. Hendricks, O. Jannerup and P. H. Sørensen: Linear Systems Control (Springer, ISBN 978-3-540-78485-2)</Course_Literature>
+          <Course_Objectives>The course aims at providing analytical tools and methods for the design of linear control systems for MIMO (multi-input multi-ouptut) physical systems, based on the state space framework. The course also presents how the theoretical methods transpose into computer aided techniques for the practical design and implementation of the control systems.</Course_Objectives>
+          <Remark>The course is a relevant optional course for B.Eng.-students.
+E-learning is used in the form of on-line voting systems, videos of lectures and digital exam.</Remark>
+          <No_Credit_Points_With>Linear Control Design 2</No_Credit_Points_With>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer tilstandsvariable i en enkelt/multivariabelt dynamiske system og formulere den tilsvarende ikke-lineær tilstandsmodeller" />
+          <Txt Lang="en-GB" Txt="Identify state variables of a single/multivariable dynamical system and formulate the corresponding nonlinear state space models " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne lineære tilstandsmodeller fra ikke-lineære modeller og relatere deres adfærd tæt på/langt væk fra det linearisering punktet" />
+          <Txt Lang="en-GB" Txt="Compute linear state space models from nonlinear ones and relate their behaviours close to/far away from the point of linearization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere systemets statiske og dynamiske egenskaber og diskutere deres virkninger på adfærd af systemets tilstandsvariable og udgange" />
+          <Txt Lang="en-GB" Txt="Assess the system's static and dynamic properties and discuss their effects on the behaviour of the system's states and outputs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design fuld state feedback regulatorer uden/med integral virkning og sammenligne de respektive lukket-sløjfe overførings funktioner i forhold til design specifikationer" />
+          <Txt Lang="en-GB" Txt="Design full state feedback controllers without/with integral action and compare the respective closed loop performances in relation to the design specifications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design fuld/reduceret ordens tilstands estimatorer og vurder deres estimations fejl" />
+          <Txt Lang="en-GB" Txt="Design full/reduced order state estimators and appraise the behaviour of the estimation error" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Syntetisere output feedback regulatorer og evaluere deres ydeevne i forhold til fuld tilstand feedback- regulatorer" />
+          <Txt Lang="en-GB" Txt="Synthesize output feedback controllers and evaluate their performance in comparison to full state feedback controllers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare simple stokastiske processer og beregne effekten af ​​støj udbredelse gennem et dynamisk system" />
+          <Txt Lang="en-GB" Txt="Explain simple stochastic processes and calculate the effect of noise propagation through a dynamical system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design lineære kvadratiske optimal feedback regulatorer og tilstands estimatorer ( Kalman filter) og vurdere fordele/ulemper ved optimale løsninger med hensyn til ikke- optimale dem" />
+          <Txt Lang="en-GB" Txt="Design linear quadratic optimal feedback controllers and state estimators (Kalman filter) and evaluate the advantages/disadvantages of optimal solutions with respect to non-optimal ones" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Syntetisere optimale output feedback regulatorer og evaluere deres ydeevne i forhold til ikke-optimale output feedback regulatorer" />
+          <Txt Lang="en-GB" Txt="Synthesize optimal output feedback controllers and evaluate their performance in comparison to non-optimal output feedback controllers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere lukket sløjfe systemets ydeevne og konkludere om niveauet for overholdelse af specifikationer" />
+          <Txt Lang="en-GB" Txt="Analyse the closed loop system's performance and conclude about the level of adherence to the design specifications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge Matlab/Simulink som CAD-værktøj til analyse, design og simulering af dynamiske systemer" />
+          <Txt Lang="en-GB" Txt="Use Matlab/Simulink as CAD tool for the analysis, design and simulation of dynamical systems" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="31300 / 34721 / 31301 / 34722" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Optimal control and estimation for linear systems, Kalman filtering, state space modelling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31310" />
+        <PreviousCourse CourseCode="50310" />
+        <PreviousCourse CourseCode="31310" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="65" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="30" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:50.99" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

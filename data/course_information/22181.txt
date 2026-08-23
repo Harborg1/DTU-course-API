@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22181" Volume="2026/2027" University="dtu" LastUpdated="2026-04-22+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Design Build for PK/PD Kontrolleret Drug Testing: Infektion-on-Chip" />
+        <Title Lang="en-GB" Title="Design Build for PK/PD Controlled Drug Testing: Infection-on-Chip" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="111964" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ruggero La</GivenName>
+            <FamilyName>Rosa</FamilyName>
+            <Email>rugros@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="107248" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Pernille Rose</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>peroje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen er en mundtlig gruppepræsentation. Deltagelse i eksamen kræver at obligatoriske afleveringer er godkendt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam is a group oral presentation. Participation in the exam requires that mandatory assignments have been approved." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset bygger videre på de problembaserede ingeniør- og prototypekompetencer, der er udviklet i kurset Design-build in Life Science (22180), og fokuserer på anvendelsen heraf i PK/PD-kontrollerede infection-on-chip eksperimenter.  
+Baggrundsviden om bakteriel infektionsbiologi, PK/PD-principper og mikrofluidiske systemer formidles gennem forelæsninger, som udgør det teoretiske fundament for projekterne. Mikrofluidisk chip-teknologi gør det muligt at efterligne fysiologiske doseringsregimer af lægemidler og infektionsbetingelser.
+Prototypen baseres på en infection-on-chip mikrofluidisk chip, der muliggør kontrollerede flow- og transportforhold og dermed forskellige strategier for lægemiddellevering. Systemet integrerer kontrol af pumper til levering og blanding af antibiotika kombineret med sensorbaserede målinger med kameraer og optiske sensorer. Dette muliggør realtids måling af bakterievækst og eliminering gennem hele eksperimentet. En mikrocontroller anvendes til dataopsamling ved hjælp af basal scripting.</Contents>
+          <Teaching_And_Learning_Methods>Kurset er projektbaseret og anvender en kombination af forelæsninger, øvelser og laboratoriearbejde, hvor de studerende arbejder i grupper.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver de studerende grundlæggende viden om bakterielle infektioner og infektionssygdomme samt basale principper inden for farmakokinetik (PK) og farmakodynamik (PD) relateret til antimikrobiel behandling. Parallelt hermed vil de studerende designe og bygge et mikrofluidisk system, der understøtter dannelse af bakterielle biofilm. Systemet anvendes til at studere doseringsregimer af antimikrobielle behandlinger som efterligner humane PK/PD-profiler. Prototypen vil muliggøre dataopsamling i realtid samt modellering af behandlingsforløb.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course builds on the problem-based engineering and prototyping skills developed in the course Design-build in Life Science (22180) and focuses on applying them to PK/PD-controlled infection-on-chip experiments. 
+Background knowledge on bacterial infection biology, PK/PD principles and microfluidic systems will be provided through lectures that deliver the theoretical foundation for the projects. Microfluidic chip technology allows mimicking physiological drug exposure and infection conditions.
+The prototype will be built around an infection-on-chip microfluidic chip, which allows controlled flow and transport conditions, enabling different drug delivery strategies. It will integrate pump control for drug mixing and treatment delivery, combined with sensor-based monitoring such as cameras and optical sensors to enable real-time monitoring of bacterial growth and eradication throughout the experiment. A microcontroller will be employed to acquire real-time data using basic scripting.</Contents>
+          <Teaching_And_Learning_Methods>The course is project based and uses a mixture of lectures, exercises and lab work where the students work in groups.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course provides students with foundational knowledge of bacterial infections and infectious diseases, as well as basic principles of pharmacokinetics (PK) and pharmacodynamics (PD) for antimicrobial therapy. In parallel, students will design and build a microfluidic device that supports bacterial biofilm production. The device will be used to study antimicrobial treatments using dosing regiments that approximates human PK/PD profiles. The prototype instrument will enable real-time data acquisition and treatment modeling.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare biofilmdannelse og dynamik i bakterievækst under infektion." />
+          <Txt Lang="en-GB" Txt="explain biofilm formation and bacterial growth dynamics during infection." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive centrale PK- og PD-koncepter og deres betydning for antimikrobiel effekt." />
+          <Txt Lang="en-GB" Txt="describe essential PK and PD concepts and how they apply to antimicrobial efficacy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og bygge en mikrofluidisk chip enhed, der simulerer lægemiddellevering." />
+          <Txt Lang="en-GB" Txt="design and build a microfluidic chip device simulating drug delivery." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dyrke bakteriekulturer og anvende antibiotisk behandling i en mikrofluidisk chip." />
+          <Txt Lang="en-GB" Txt="grow bacterial cultures and apply antibiotic treatment in a microfluidic chip." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere eksperimentelle data fra den mikrofluidiske enhed for at kvantificere lægemiddeleffekt ved hjælp af PK/PD-principper." />
+          <Txt Lang="en-GB" Txt="analyze experimental data obtained from the microfluidic device to quantify drug efficacy using PK/PD principles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="undersøge videnskabelige problemstillinger relateret til antibiotisk effekt under bakteriel infektion." />
+          <Txt Lang="en-GB" Txt="investigate scientific problems related to antibiotic efficacy during bacterial infection." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende generativ AI med effektiv prompting til at evaluere og forbedre prototypedesign." />
+          <Txt Lang="en-GB" Txt="use Generative AI with effective prompting to evaluate and improve prototype designs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="præsentere og kritisk analysere designrationale, prototypeimplementering og eksperimentelle resultater i en mundtlig præsentation." />
+          <Txt Lang="en-GB" Txt="present and critically analyze their design rationale, prototype implementation and experimental findings in an oral presentation." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="26241. 27023/23214" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="22180" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="16" Min="4" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:33:21.53" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

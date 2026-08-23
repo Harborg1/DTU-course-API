@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34322" Volume="2026/2027" University="dtu" LastUpdated="2025-09-24+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Kommunikationsnetværk til styring og dataopsamling" />
+        <Title Lang="en-GB" Title="Communication Network for Control and Data Acquisition" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="5991" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Wessing</FamilyName>
+            <Email>hewe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering baseret på mundtlig eksamen og skriftligt arbejde." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Holistic assessment based on oral examination and written work during the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No aid in oral exam." />
+            <Aid_Txt Lang="da-DK" Txt="Ingen hjælpemidler ved mundtlig eksamen." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Internet of Things. Arkitekturer af kommunikationsnet herunder internettet og lokale net. Protokoller herunder IP, TCP, UDP, HTTP. Dataopsamling ved LoraWAN, SigFox, GSM, LTE m.f. Datasikkerhed. Analoge og digitale signaler. Trådløse, metalliske og optiske transmissionsmedier. Kodning, kompression og fejlhåndtering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende en introduktion til kommunikationssystemer og teknologier med særlig fokus på dataopsamling i relation til f.eks. energiforsyningen. Kurset vil – med udgangspunkt i eksisterende kommunikationsnet – gennemgå de relevante principper og teknologier, således at det er muligt at afdække, analysere og undgå, at kommunikationsnettet giver anledning til kapacitetsproblemer i forhold til dataopsamling.</Course_Objectives>
+          <DTU_Remark>Kurset afholdes hovedsageligt på dansk, såfremt der udelukkende deltager dansktalende studerende. Kursusmateriale er på engelsk</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Internet of Things.  Architectures of communication net-works including the internet and local networks. Protocols among others IP, TCP, UDP, HTTP. Data acquisition using LoraWAN, SigFox, GSM, LTE etc. Security in data networks. Analog and digital signals. Wireless, metallic and optical transmission channels. Coding, compression and error handling.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the students an introduction to communication systems and technolo-gies with special focus on data acquisition for applications like, e.g., energy sup-ply systems. The course will – based on existing communication networks – ad-dress the relevant principles and technologies to make it possible to identify, ana-lyze and avoid capacity bottlenecks caused by the communication network in rela-tion to massive data acquisition.</Course_Objectives>
+          <DTU_Remark>If only Danish-speaking students participate, the course will mainly be in Danish. 
+The course material is in English.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for generelle principper for overførsel af information, herunder hvordan information kan repræsenteres og behandles" />
+          <Txt Lang="en-GB" Txt="Explain general principles for transmission of information including how information can be represented and used." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og sammenligne topologier og arkitekturer for kommunikationsnet" />
+          <Txt Lang="en-GB" Txt="Describe and compare topologies and architectures in communication networks " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for relevante protokollers betydning for ydeevnen af et netværk" />
+          <Txt Lang="en-GB" Txt="Explain the relevant protocols and their impact on network efficiency" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive sikkerhedsmæssige aspekter ved datakommunikation" />
+          <Txt Lang="en-GB" Txt="Explain security aspects in data communication" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille krav til et kommunikationssystem på baggrund af en analyse af den anvendte applikation" />
+          <Txt Lang="en-GB" Txt="Specify requirements to a communication system based on an analysis of the used application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere valg af protokoller og kommunikationssystemer for anvendte applikationer" />
+          <Txt Lang="en-GB" Txt="Discuss choice of protocols and communication systems for the used applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og vurdere teknologier til trådløs dataopsamling og transport" />
+          <Txt Lang="en-GB" Txt="Apply and evaluation technologies for wireless data acquisition and transport." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere og diskutere øvelsesresultater i en journal/rapport" />
+          <Txt Lang="en-GB" Txt="Document and discuss exercise results in journal/report." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="34310/34311/34312/34313" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:09.463" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

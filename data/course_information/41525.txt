@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41525" University="dtu" LastUpdated="2026-02-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Finite Element Metoder" />
+        <Title Lang="en-GB" Title="Finite Element Methods" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="2278" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Sigmund</FamilyName>
+            <Email>olsi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17478" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Casper Schousboe</GivenName>
+            <FamilyName>Andreasen</FamilyName>
+            <Email>csan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Samlet bedømmelse af 3 individualiserede rapporter udarbejdet i tomandsgrupper, byggende på FEM-koder programmeret og anvendt af de studerende gennem kurset. Rapporterne afleveres henholdsvis kursusugerne 5, 10 og 13." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of 3 individualized reports written in groups of two, based on codes programmed and applied by the students during the course. Deadlines for the reports are in course weeks 5, 10 and 13, respectively." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset “Finite Element Metoder” fokuserer på teoretiske forelæsninger kombineret med computerøvelser i Matlab/Python og Fortran i tomandsgrupper. Dækkede emner inkluderer: virtuelt arbejdes princip; gitterelementer; isoparametriske elementer og numerisk integration; løsning af store ligningssystemer; eksplicitte og implicitte ikke-lineære inkrementelle løsningsmetoder; geometriske og materiale ikke-lineariteter og topologioptimering.  Som en del af kurset skal de studerende opbygge deres eget Finite Element program og anvende det til at modellere simple geometrier. Kommercielle Finite Element koder vil kun blive anvendt til pre-processering. Valget af endeligt projekt (se forslag ovenfor) kan afhænge af forkundskaber.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Cook, Malkus, Plesha and Witt, "Concepts and Applications of Finite Elements Analysis", Wiley, 4th edition, 2002.</Course_Literature>
+          <Course_Objectives>Computerberegninger af det mekaniske respons for maskindele, strukturer og konstruktioner er en basal ingeniørdisciplin under stadig udvikling og udbredelse, også inden for nye teknologier som Industri 4.0, digitale tvillinger, biomekanik, life sciences og additiv fremstilling / 3d print. Finite Element Metoden (FEM) udgør den altdominerende computerberegningsmetode til modellering af faststofmekaniske problemer og kobles til og anvendes også inden for adskillige andre fysiske domæner såsom strømninger, akustik, varmetransport og elektromagnetisme. Målet for kurset er at lære de studerende grundlæggende og avancerede FEM gennem teoriudvikling og programmering af egen FE kode og anvendelser inden for lineær og ikke-lineær elasticitet. Slutningen af kurset består af et større programmeringsprojekt, hvor studerende kan vælge mellem emner som f.eks.: tidsafhængighed, koblede termomekaniske problemer, fluid-struktur interaktion, plader, plasticitet eller akustisk-strukturel interaktion, hvor nogen af dem kan kombineres med strukturelt design gennem topologioptimering.</Course_Objectives>
+          <DTU_Remark>Kurset har skiftet navn fra "FEM Heavy" til "Finite Element Metoder" fra E20</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course “Finite Element Methods” focuses on theoretical lectures combined with computer exercises in Matlab/Python and Fortran in groups of two. Subjects covered include: the principle of virtual work; truss elements; isoparametric elements and numerical integration; solution of large systems of equations, explicit and implicit non-linear incremental solution methods; geometric and material non-linearities and topology optimization. As a part of the course, the students should build their own finite element code and apply it to model simple geometries. Commercial finite element codes will only be used for pre-processing. Choice of final project (see suggestions above) may depend on prerequisites.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Cook, Malkus, Plesha and Witt, "Concepts and Applications of Finite Elements Analysis", Wiley, 4th edition, 2002.</Course_Literature>
+          <Course_Objectives>Computational modelling of the mechanical response of engineering parts, structures and devices is a basic engineering discipline with ever-growing applications, also within Industry 4.0, Digital Twins, biomechanics, life sciences and Additive Manufacturing (AM). The Finite Element Method (FEM) constitutes the all-dominating computational approach to modelling of solids and also covers applications and couplings to multiple other physical domains like fluids, acoustics, heat transport and electromagnetism. The goal of the course is to teach the students basic and advanced FEM through theory development, extensive programming of own FE codes and applications within linear and non-linear elasticity.  The final part of the course constitutes a larger programming project, where students can choose between subjects including, but not limited to: transient analysis, coupled thermomechanical problems, fluid-structure interaction, plates, plasticity or acoustic-structure interaction, some of them possibly combined with structural design through topology optimization.</Course_Objectives>
+          <DTU_Remark>The course has changed name from "FEM Heavy" to "Finite Elements Methods" in E20</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende forståelse for flerdimensionale tøjninger og spændinger samt programmeringserfaring f.eks. 41502 og 02002.&#xD;&#xA;Andre faststofmekaniske fag er ønskelige, f.eks. Dynamik og svingninger 41564" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic understanding of stresses and strains in two and three dimensions and programming experience f.ex. 41502 and 02002.&#xD;&#xA;Other courses in solid mechanics, e.g. Dynamics and vibrations 41564." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende virtuelt arbejdes princip til at opstilling af finiteelement ligninger" />
+          <Txt Lang="en-GB" Txt="Use the principle of virtual work to set up finite element equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere Finite Element Metoder for gitter- og kontinuumsstrukturer" />
+          <Txt Lang="en-GB" Txt="Program Finite Element Methods for truss and continuum problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Finite Element Metoder til løsning af statiske og dynamiske mekaniske problemer" />
+          <Txt Lang="en-GB" Txt="Apply Finite Element Methods to the solution of static and dynamic mechanical problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse ikke-lineære materiale- og geometriproblemer ved brug af explicitte og implicitte løsningsmetoder" />
+          <Txt Lang="en-GB" Txt="Solve material and geometrically non-linear problems by use of explicit and implicit solution methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere simple mekaniske strukturer på basis af Finite Element beregninger" />
+          <Txt Lang="en-GB" Txt="Optimize simple mechanical structures based on Finite Element calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere iso-parametriske elementer på basis af numerisk integration" />
+          <Txt Lang="en-GB" Txt="Program iso-parametric Finite Elements based on numerical integration" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Verificere rigtigheden af beregninger ved hjælp af test-problemer og sammenligning med analytiske løsninger" />
+          <Txt Lang="en-GB" Txt="Verify correctness of calculations based on test problems and comparisons with analytical solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere kvaliteten af en Finite Element Model når den eksakte fysiske løsning er ukendt" />
+          <Txt Lang="en-GB" Txt="Evaluate the quality of a Finite Element model when the exact solution is unknown" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere kvaliteten af Finite Element beregninger på basis af konvergensanalyser" />
+          <Txt Lang="en-GB" Txt="Evaluate the quality of Finite Element calculations based on convergence analyses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere resultater fra Finite Element analyser i en overskuelig, letforståelig og effektiv form" />
+          <Txt Lang="en-GB" Txt="Present results of Finite Element analyses in a transparent, easily accessible and efficient form" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille virtuelt arbejdes princip i kontinuert og diskret form for løsning af vilkårlige partielle differentialligninger" />
+          <Txt Lang="en-GB" Txt="Set up continuous and discrete forms of the principle of virtual work for arbitrary partial differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge et større Finite Element programmeringsprojekt og selvstændigt foreslå og udføre relevante testeksempler" />
+          <Txt Lang="en-GB" Txt="Plan a larger Finite Element programming project and in an independent way suggest and implement test examples." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Programmering af Finite Element Metoden</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="65" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="39" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="96" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="4" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:23.193" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34870" University="dtu" LastUpdated="2026-04-27+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Elektroakustik" />
+        <Title Lang="en-GB" Title="Electroacoustics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Laboratorie øvelser ligger mandag eftermiddag, med mulighed for at udvide til andre hverdage gennem en fleksibel tilmeldingsplan." />
+          <Schedule_Txt Lang="en-GB" Txt="Lab exercises are scheduled for Monday afternoons, with the possibility of extending to other weekdays through a flexible sign-up schedule." />
+          <Schedule ScheduleKey="E2" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="5829" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Vicente Cutanda</GivenName>
+            <FamilyName>Henriquez</FamilyName>
+            <Email>vcuhe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="11" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Finn T.</GivenName>
+            <FamilyName>Agerkvist</FamilyName>
+            <Email>ftag@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="150863" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Frieder</GivenName>
+            <FamilyName>Lucklum</FamilyName>
+            <Email>fluc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Obligatoriske eksamensforudsætning: Bestået laboratorieøvelser og projekt, samt aktiv deltagelse i laboratoriearbejde, projektpræsentation og diskussion.&#xD;&#xA;Samlet karakter: Quizzer baseret på de gennemførte laboratorieøvelser samt projekt, bedømmes som en helhed og udgør 30% af den samlede karakter. Den mundtlige eksamen udgør de resterende 70% af den samlede karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Mandatory exam prerequisites: Passed laboratory exercises and project, together with active participation in the laboratory work and the project presentation and discussion.&#xD;&#xA;Final grade: Quizzes based on the completed laboratory exercises and project count equally and make for 30% in the final course grade. The oral exam make for the remaining 70 % in the final course grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="1/2 time" />
+          <Duration Lang="en-GB" Txt="1/2 hour" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Analogier mellem mekaniske, akustiske og elektriske systemer. Transducere: standard og MEMS højttalere, telefoner og mikrofoner; teori, opbygning, retningsegenskaber, udstrålingsforhold, måle- og kalibreringsmetoder. Akustisk metrologi. Mikrofon- og højttaleropstillinger.
+Øvelserne omhandler måling af mikrofoner og højtalere. Endvidere bliver LTspice-modellering brugt til opgaverne. Kurset indeholder også et projekt om design af højttalersystemer, der dækker modellering, akustiske og elektriske målinger samt subjektive audio lyttetests.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaver, simuleringer, obligatoriske laboratorie-øvelser samt et højttaler projekt.</Teaching_And_Learning_Methods>
+          <Course_Literature>L.L. Beranek &amp; T.J. Mellow: Acoustics, Sound Fields and Transducers (2012)
+M. Leach: An introduction to electroacoustics and audio amplifiers 4. ed
+A. Lenk et al.: Electromechanical Systems in Microtechnology and Mechatronics: Electrical, Mechanical and Acoustic Networks, their Interactions and Applications (2011)</Course_Literature>
+          <Course_Objectives>At give den studerende viden om audio- og målemikrofoner, højttalerenheder og -bokse samt subjektiv evaluering af audiosystemer.</Course_Objectives>
+          <Remark>E-learning anvendes i form a online lab report hand in.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Analogies between mechanical, acoustical and electrical systems. Transducers: standard and MEMS loudspeakers and microphones; theory, construction, directivity, radiation, measurements and calibration. Acoustic metrology. Microphone and loudspeaker configurations.
+The exercises comprise the measurement of microphones and loudspeakers. LTspice modeling is used for the practice problems.
+The course also contains a project on loudspeaker system design that covers modeling, acoustic and electrical measurements, and subjective audio listening tests.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problems, simulations, compulsory laboratory exercises and a loudspeaker project.</Teaching_And_Learning_Methods>
+          <Course_Literature>L.L. Beranek &amp; T.J. Mellow: Acoustics, Sound Fields and Transducers (2012)
+M. Leach: An introduction to electroacoustics and audio amplifiers 4. ed
+A. Lenk et al.: Electromechanical Systems in Microtechnology and Mechatronics: Electrical, Mechanical and Acoustic Networks, their Interactions and Applications (2011)</Course_Literature>
+          <Course_Objectives>To give the student knowledge about audio and measurement microphones, loudspeaker units and boxes, and subjective evaluation of audio systems.</Course_Objectives>
+          <Remark>E-learning is used in the form of online lab report hand in.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Der forudsættes kendskab til simple, analoge kredsløb, herunder Bode-plot, koblede resonanskredse og basal mekanisk fysik. Det er en fordel med kendskab til audio optagelse og afspilning." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of simple analog electrical circuits, including Bode-plots, coupling of resonant circuits and basic mechanics. Familiarity with audio recording and playback setups is desirable." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34840.22050" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne i analogier mellem elektriske, mekaniske og akustiske systemer" />
+          <Txt Lang="en-GB" Txt="Explain the principles of analogies between electrical, mechanical and acoustic sytems " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tegne ækvivalent netværk for simple akustiske og mekaniske systemer" />
+          <Txt Lang="en-GB" Txt="Draw equivalent circuits for simple mechanical and acoustic systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende analogier ved analyse og modellering af elektroakustiske transducere" />
+          <Txt Lang="en-GB" Txt="Apply the analogies when analyzing and modelling electro acoustic devices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne frekvensresponset for kondensator, dynamiske og MEMS mikrofoner og forklare de enkelte mikrofon parametres indflydelse på responset " />
+          <Txt Lang="en-GB" Txt="Predict the frequency response of dynamic, condenser and MEMS microphones and explain the influence of each microphone component in this response " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne frekvensresponset for elektrodynamiske højttalere og microhøjtalere og forklare de enkelte højttaler parametres indflydelse på responset  " />
+          <Txt Lang="en-GB" Txt="Predict the frequency response of electro dynamic loudspeakers and microspeakers and explain the influence of each loudspeaker component on the response" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare effekten af lukkede og basrefleks kabinetter på højttalerens impedans og lydtrykkarakteristik og designe kabinetter for en given enhed" />
+          <Txt Lang="en-GB" Txt="Explain the effects of closed and vented enclosures on frequency response and impedance of the loudspeaker and to design such enclosures for a given loudspeaker unit" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvad de almindelige problemer i delefilter design er og hvordan de kan løses" />
+          <Txt Lang="en-GB" Txt="Explain what the common problems in crossover filters design are and how to solve them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lave en frekvensanalyse af simple lineære netværk i LTspice" />
+          <Txt Lang="en-GB" Txt="Make a frequency analysis of simple linear circuits in LTspice" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør en usikkerhedsvurdering af en akustisk måling og kalibrering af mikrofoner og højtalere." />
+          <Txt Lang="en-GB" Txt="Perform an uncertainty estimation of an acoustic measurement and calibration of microphones and loudspeakers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design et højttalersystems frekvensrespons gennem præcise målinger, brug af fysiske principper, og analytiske beregninger." />
+          <Txt Lang="en-GB" Txt="Design the frequency response of a loudspeaker system through rigorous measurements, use of the physical principles, and analytical calculations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Subjektivt evaluere og sammenligne højttaler systemers ydeevne gennem lyttetests i et standardiseret audiotestmiljø." />
+          <Txt Lang="en-GB" Txt="Subjectively evaluate and compare the performance of loudspeaker systems through listening tests in an standardized audio testing environment. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31220" />
+        <PreviousCourse CourseCode="31220" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:08.31" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

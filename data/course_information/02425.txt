@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02425" University="dtu" LastUpdated="2026-04-13+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Diffusioner og stokastiske differentialligninger" />
+        <Title Lang="en-GB" Title="Diffusions and stochastic differential equations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="2493" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Uffe Høgsbro</GivenName>
+            <FamilyName>Thygesen</FamilyName>
+            <Email>uhth@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1559" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Madsen</FamilyName>
+            <Email>hmad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den mundtlige eksamen tager udgangspunkt i opgaver lavet i løbet af semestret" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The oral exam takes its starting point in exercises done during the semester." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="20 min" />
+          <Duration Lang="en-GB" Txt="20 min" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset starter med advektiv og diffusive transport, og Monte Carlo simulering af et molekyle i en væskestrøm. Vi vender os derefter mod Brownsk bevægelse og stokastiske integraler, og etablerer Ito-integralet. Vi definerer stokastiske differentialligninger og dækker analytiske og numeriske teknikker til at løse dem. Vi beskriver overgangssandsynlighederne for løsninger til sde'er, og etablerer Kolmogorovs fremad- og bagudligninger, inklusiv randbetingelser/randadfærd. Vi betragter stokastisk filtrering i sde'er med målinger i diskret tid, stokastisk stabilitet, og stokastisk kontrol. Teorien er illustreret med anvendelser i ingeniørfagene, fysik, biologi, og oceanografi.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>U.H. Thygesen: Stochastic Differential Equations for Science and Engineering. CRC Press, 2023.
+
+Supplerende litteratur er B. Øksendal: Stochastic differential equations: An introduction with applications. Springer, 2010.</Course_Literature>
+          <Course_Objectives>Kurset forbinder teoretien for differentialligninger drevet af støj med teorien for molekylær diffusion.  Det sætter den studerende i stand til at bygge og undersøge modeller af hvordan støj og usikkerhed propagerer gennem dynamiske systemer. Dette kan bruges for tidsrækkeanalse, og for dynamisk beslutningsteori under usikkerhed, d.v.s. stokastisk kontrolteori. Kurset indeholder teori for stokastiske differentialligninger, stokastisk analyse, og anvendelser til ingeniørproblemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course starts with advective and diffusive transport, and Monte Carlo simulation of a molecule in flow. We then turn to Brownian motion and stochastic integrals, and establish the Ito integral. We define stochastic differential equations (sde's), and cover analytical and numerical techniques to solve them. We describe the transition probabilities of solutions to sde's, and establish the forward and backward Kolmogorov equations, including boundary conditions/boundary behavior. We consider stochastic filtering in sde's with discrete time measurements, stochastic stability, and stochastic control. The theory is illustrated with applications in engineering, physics, biology, and oceanography.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>U.H. Thygesen: Stochastic Differential Equations for Science and Engineering. CRC Press, 2023.
+
+Supplementary literature is B. Øksendal: Stochastic differential equations: An introduction with applications. Springer, 2010.</Course_Literature>
+          <Course_Objectives>The course connects the theory of differential equations driven by noise with the theory of  molecular diffusion. It enables the student to build and examine models of how noise and uncertainty propagates in dynamic systems. This can be used for time series analysis, and for dynamic decision making under uncertainty, i.e. stochastic control. The course contains theory for stochastic differential equations, stochastic calculus, and applications to engineering problems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset antager at den studerende har været eksponeret for stokastiske processer; for eksempel gennem 02407, 02417 eller 02443, og er velbekendt med ikkelineære dynamiske systemer, f.ek.s 01617. En vis eksponering for partielle differentialligninger antages; f.eks. 01418. Programmering med R, python, Matlab, e.l, antages. Teoretiske koncepter og konstruktioner er centrale for kurset så en vis matematisk modenhed er en forudsætning." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course assumes some exposure to stochastic processes, for example obtained through 02407, 02417 or 02443. Familiarity with nonlinear dynamic systems, e.g., 01617. Some exposure to partial differential equations, e.g., 01418. Programming using R, python, Matlab, or similar is assumed. Theoretical concepts and constructions are central to the course so mathematical maturity is a prerequisite" />
+          <DTU_CoursesTxt Lang="da-DK" Txt=" 01035. (02407/02417/02443). 01617. 01418" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere og beskrive diffusion og Brownsk bevægelse" />
+          <Txt Lang="en-GB" Txt="Define and describe diffusion and Brownian motion " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne stokastiske integraler, først og fremmest Ito-integraler, og anvende reglerne fra stokastisk analyse" />
+          <Txt Lang="en-GB" Txt="Compute stochastic integrals, most importantly the Ito integral, and apply the rules of stochastic calculus" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bygge stokastiske dynamiske modeller ved at kombinere sædvanlige differentialligninger med modeller af hvordan støj påvirker systemet. " />
+          <Txt Lang="en-GB" Txt="Build stochastic dynamic models by combining ordinary differential equations with models of how noise affects the system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan en given stokastisk differentialligninger svarer til en bestemt transportligning af advektions/diffusionstype" />
+          <Txt Lang="en-GB" Txt="Explain how a given stochastic differential equation corresponds to a certain advective-diffusive transport equation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge egenskaberne for en stokastisk differentialligninger hvad angår trajektorier og overgangssandsynligheder, både analytisk og numerisk. " />
+          <Txt Lang="en-GB" Txt="Investigate the properties of a stochastic differential equation in terms of sample paths and transition probabilities, both analytically and numerically. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere et tilstandsestimationsfilter for at analysere tidsrækker baseret på en stokastisk differentialligning" />
+          <Txt Lang="en-GB" Txt="Implement a state estimation filter for analyzing time series data based on a stochastic differential equation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere den optimale strategi til at styre et system under tilstædeværelse af støj" />
+          <Txt Lang="en-GB" Txt="Identify the optimal strategy to control a system in presence of noise " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere vigtigheden af at inkludere støj i studiet af et givet system" />
+          <Txt Lang="en-GB" Txt="Evaluate the importance of including noise in a study of a given system. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Analysis of dynamic systems subject to random noise.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:44.933" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

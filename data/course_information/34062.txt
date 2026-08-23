@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34062" Volume="2026/2027" University="dtu" LastUpdated="2026-04-10+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Fotonisk integrerede kredsløb" />
+        <Title Lang="en-GB" Title="Photonic integrated circuits" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="6528" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kresten</GivenName>
+            <FamilyName>Yvind</FamilyName>
+            <Email>kryv@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="43588" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Minhao</GivenName>
+            <FamilyName>Pu</FamilyName>
+            <Email>mipu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="58575" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Yunhong</GivenName>
+            <FamilyName>Ding</FamilyName>
+            <Email>yudin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53356" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Elizaveta</GivenName>
+            <FamilyName>Semenova</FamilyName>
+            <Email>esem@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De grundlæggende fotoniske komponenter, der anvendes i fotoniske integrerede kredsløb (PIC) såsom bølgeledere, splittere, koblere, resonatorer, bølgelængdeselektive komponenter, polariseringsafhængige komponenter, forstærkere, lasere og detektorer, analyseres. De vigtigste integrationsplatforme: InP, Si, SiO2, Si3N4, GaAs, LiNbO3 og den heterogene silicium fotoniske integration ved waferfusion eller mikrooverføring af avancerede materialer er detaljeret beskrevet. Integration ved direkte epitaksial dyrkninger er også beskrevet. Pakning, industrielt udbudte fabrikationsprocesser, electronisk-fotonisk integration, resultat af fabrikationsfejl, og komponentoptimering vil også blive dækket.
+De fleste forelæsninger vil være baseret på en tidsskriftartikel, der diskuterer en PIC på en integrationsplatform, gennemgå en fotonisk komponent i detaljer og have 2 timers øvelse ved hjælp af forskellige simuleringssoftware. Mode og udbredelsesberegning udføres med Lumerical software og maske design ved hjælp af python / Nazca.
+I første del af kurset laver hver studerende et komponentdesign til kursets fælles komponentbibliotek. En stor del af anden halvdel af kurset er en større designopgave for en komponent eller et kredsløb, herunder fuld 3D-simuleringer og maskelayout i en valgt platform.</Contents>
+          <Teaching_And_Learning_Methods>Foredrag, øvelser og computerøvelser. Afsluttes med design projekt.</Teaching_And_Learning_Methods>
+          <Course_Literature>For bølgelederkomponenter bruges: Principles of Photonic Integrated Circuits : Materials, Device Physics, Guided Wave Design, af Richard Osgood Jr. og Xiang Meng (2021) (tilgængelig elektronisk fra DTUs videncenter). Videnskabelige artikler bliver brugt til at illustrere forskellige integrationsplatforme.</Course_Literature>
+          <Course_Objectives>Kurset sigter mod at give viden og færdigheder inden for moderne fotoniske integrerede kredsløbsteknologier herunder forskellige former for siliciumfotonik. De studerende skal danne sig et overblik over de forskellige integrationsplatforme, der anvendes til fotoniske integrerede kredsløb og være i stand til at vælge en baseret på en målapplikation. Den studerende skal være i stand til at designe komponenter og kredsløb ved hjælp af standard designværktøjer og generere et maskesæt til en intern eller kommercielt udbudt chipteknologi.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The basic photonic components used in photonic integrated circuits (PIC) like waveguides, splitters, directional couplers, resonators, wavelength-selective devices, polarization-dependent components, amplifiers, lasers, and detectors are analyzed. The main integration platforms: InP, Si, SiO2, Si3N4, GaAs, LiNbO3 and the heterogeneous integrated silicon photonics by wafer bonding and micro-transfer printing is described in detail. Also, integration by direct epitaxial growth is described. Packaging, electronic-photonic integration (EPIC), foundry processes, fabrication imperfections, and optimization will also be covered.
+Most lectures will be based on a journal article discussing a PIC on an integration platform, go through a photonic component in detail and have 2 hour exercise using various simulation software. Mode and propagation calculation are done with the Lumerical software, and mask design using python/Nazca. In the first part of the course each student makes a component for the joint component library of the course. A large part of the second half of the course will be devoted to a large design task for a device or circuit including full 3D simulations and mask layout in a chosen platform.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and computer simulations. Ends by large design project.</Teaching_And_Learning_Methods>
+          <Course_Literature>For waveguide components, we will use part of Principles of Photonic Integrated Circuits : Materials, Device Physics, Guided Wave Design, by Richard Osgood Jr. and Xiang Meng (2021) (available electronically from the DTU library). Scientific papers will be used to illustrate state of the art for the different integration platforms.</Course_Literature>
+          <Course_Objectives>The course aims at providing knowledge and skills within contemporary photonic integrated circuit technologies including different forms of silicon photonics. The students should acquire an overview of the different integration platforms used for photonic integrated circuits and be able to select one based on a target application. The student should be able to design components and circuits using standard design tools and generate a mask set for an internal or foundry process.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende programmering (f.eks. Python)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic programming (e.g. Python)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34034" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar oprindelsen af ​​tab i bølgeledere" />
+          <Txt Lang="en-GB" Txt="Explain the origin of losses in waveguides." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar funktionaliteten af ​​grundlæggende bølgelederkomponenter: Bølgeledere, MMI og Y splittere, retningskoblere, bølgeledergitre, mikroring-resonatorer, gitterkoblere og modeudvidere." />
+          <Txt Lang="en-GB" Txt="Explain the functionality of basic waveguide components: Waveguides, MMI and Y splitters, directional couplers, arrayed waveguide gratings, microring-resonators, grating couplers and mode expanders. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udled funktionaliteten af ​​interferometre, gitre og koblede ringe (S-matrix/koblede egenfunktioner)" />
+          <Txt Lang="en-GB" Txt="Derive the functionality of interferometers, gratings and coupled rings (S-matrix/coupled mode theory)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne materialeplatforme for ikke-lineær integreret fotonik" />
+          <Txt Lang="en-GB" Txt="Compare material platforms for non-linear integrated photonics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar funktionaliteten af ​​DFB-lasere, Nonius-tunede lasere, modulatorer, justerbare spejle og koblere." />
+          <Txt Lang="en-GB" Txt="Explain the functionality of DFB lasers, Vernier tuned lasers, modulaters, tuneable mirrors and couplers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn funktionaliteten af ​​bølgelederkomponenter ved hjælp af kommercielt software" />
+          <Txt Lang="en-GB" Txt="Calculate the performance of waveguide components using commercial software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimer layoutet af en komponent eller et kredsløb for en given funktionalitet." />
+          <Txt Lang="en-GB" Txt="Optimize the layout of a component or circuit for a chosen figure of merit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere fordele og ulemper ved forskellige integrationsplatforme og integrationsteknikker til at kombinere materialer" />
+          <Txt Lang="en-GB" Txt="Analyse the pros and cons of different integration platforms and integration techniques for combining materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser ydeevnen af ​​et fotonisk integreret kredsløb." />
+          <Txt Lang="en-GB" Txt="Analyse the performance of a photonic integrated circuit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser implikationerne fra fremstillingsbegrænsninger" />
+          <Txt Lang="en-GB" Txt="Analyse the implications of fabrication constraints" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design maskelayout til en komponent eller et kredsløb" />
+          <Txt Lang="en-GB" Txt="Design mask layout for a component or circuit" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="68" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="68" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="8" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:44.96" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

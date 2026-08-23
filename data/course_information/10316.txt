@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10316" Volume="2026/2027" University="dtu" LastUpdated="2026-04-21+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Materialedesign med machine learning og kunstig intelligens" />
+        <Title Lang="en-GB" Title="Materials design with machine learning and artificial intelligence" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="80" KVL_Resources="100" />
+          <Ass_Dep UID="47" Resources="20" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="988" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Karsten Wedel</GivenName>
+            <FamilyName>Jacobsen</FamilyName>
+            <Email>kwja@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="13069" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Kristian Sommer</GivenName>
+            <FamilyName>Thygesen</FamilyName>
+            <Email>thygesen@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2737" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jakob</GivenName>
+            <FamilyName>Schiøtz</FamilyName>
+            <Email>schiotz@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6858" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Thomas</GivenName>
+            <FamilyName>Bligaard</FamilyName>
+            <Email>tbli@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Eksamen består af en præsentation af en poster udarbejdet i grupper suppleret med spørgsmål til de enkelte studerende." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment. The exam consists of the presentation of a poster made by a group of students supplemented by questions for each of the students." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Elementær objekt-orienteret programmering i Python. Sandsynlighedsteori og Bayes' teorem. Machine learnings metoder: lineære basisfunktionsmodeller, kernel regression, Gaussiske processer og neurale netværk. Beregning af hyperparametre. Python-biblioteker til machine learning og kunstig intelligens. Fingerprints. Beregning af deskriptorer for materialeegenskaber. Web-baserede databaser med materialeegenskaber. Søgning i databaser for bestemte materialeegenskaber. Anvendelse af machine learning og kunstig intelligens ved materiale-screening.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, teoretiske øvelser, computerøvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere den studerende til anvendelser af machine learning og kunstig intelligens med henblik på at forstå og designe materialer på atomart niveau.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Elementary object-oriented programming in Python. Probability theory and Bayes' theorem. Machine learning methods: linear basis function models, kernel regression, Gaussian processes, and neural networks. Estimation of hyperparameters. Python libraries for machine learning and artificial intelligence. Fingerprints. Calculation of descriptors for materials properties. Web-based databases of material properties. Database search for particular materials properties. Application of machine learning and artificial intelligence to materials screening.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, theoretical exercises, computer exercises, and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce the student to applications of machine learning and artificial intelligence with the aim of understanding and designing materials at the atomic level.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende kurser" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or corresponding courses" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02451.(02002/02003)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave objekt-orienteret basal programmering i Python" />
+          <Txt Lang="en-GB" Txt="make basic object-oriented programs in Python" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå det sandsynlighedsteoretiske grundlag for machine learning" />
+          <Txt Lang="en-GB" Txt="understand the probabilistic basis for machine learning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende machine-learningsmetoder som kernel regression, Gaussiske processer og neurale netværk" />
+          <Txt Lang="en-GB" Txt="apply machine-learning methods like kernel regression, Gaussian processes, and neural networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå begrebet fingerprints i machine learning" />
+          <Txt Lang="en-GB" Txt="understand the concept of fingerprints in machine learning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kende til eksisterende beregningbiblioteker til machine learning i Python" />
+          <Txt Lang="en-GB" Txt="know existing  computational libraries in Python for machine learning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå betydningen af atomare og elektroniske deskriptorer i materialedesign" />
+          <Txt Lang="en-GB" Txt="understand the meaning of atomic and electronic descriptors in materials design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende offentligt tilgængelige databaser med beregnede materialeegenskaber" />
+          <Txt Lang="en-GB" Txt="use publicly available databases with computed material properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave simple screeninger af databaser for at finde materialer med bestemte egenskaber" />
+          <Txt Lang="en-GB" Txt="make simple screenings of databases to identify materials with specific properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre et projekt med at identificere materialer med bestemte egenskaber ved anvendelse af machine learning og kunstig intelligens " />
+          <Txt Lang="en-GB" Txt="carry through a project with identification of materials with specific properties by use of machine learning and artificial intelligence" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="75" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="75" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="15" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:06.38" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

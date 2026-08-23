@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10384" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kvanteinformation" />
+        <Title Lang="en-GB" Title="Quantum information" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="29186" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jonas Schou</GivenName>
+            <FamilyName>Neergaard-Nielsen</FamilyName>
+            <Email>jsne@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53475" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jonatan Bohr</GivenName>
+            <FamilyName>Brask</FamilyName>
+            <Email>jobb@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives som en helhedsvurdering af 2-3 obligatoriske individuelle opgaver eller individualiserede gruppeopgaver (samlet vægt ~40%) samt en mundtlig eksamen (vægt ~60%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is based on an overall assessment of 2-3 mandatory individual assignments or individualized group assignments (total weight ~40%) and an oral exam (weight ~60%)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Konceptet kvanteinformation vil blive introduceret og diskuteret. Med udgangspunkt i kvantemekanikkens grundprincipper (superpositionsprincippet, unitære transformationer og målinger) vil qubit tilstande, sammenfiltrede tilstande og blandede tilstande blive diskuteret indgående. Kvanteinformationsprotokoller såsom deling af kryptografiske nøgler og kvanteteleportation vil blive introduceret. Bell's ulighed vil blive gennemgået og (hvis tiden tillader det) testet i laboratoriet. Et andet emne er kvantecomputere som inkluderer diskussion af forskellige operander med en og to qubits såvel som forskellige algoritmer, inklusiv Shors faktoriseringsalgoritme. Forskellige fysiske systemer til implementering af kvanteinformatik vil blive diskuteret kort, men fokus er på den teoretiske formalisme som er fælles for forskellige teknologiske platforme. Hvis tiden tillader det vil der være hands-on computerøvelser omkring programmering af kvantecomputere, enten via simuleringer eller over skyen.
+Et til to emner (f.eks. loophole-fri Bell tests, Grovers algoritme) vil blive studeret indgående i gruppearbejde. Præsentationerne af dette vil indgå i den studerendes samlede karakter.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveløsning, quizzer, gruppearbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Naturlovene på kvanteskala er anderledes end i den klassiske fysik, som vi oplever i hverdagen. Denne forskel kan udnyttes til at effektivisere informationbehandling og muliggør nye teknikker, som er umulige indenfor den klassiske fysik. Et slående eksempel er muligheden for kvantecomputere, som kan løse visse opgaver eksponentielt hurtigere end nogen konventionel computer. Formålet med kurset er, at introducere dig til kvanteinformationsteori generelt, og at give en indgående forståelse af et udvalg af kvanteinformationsprotokoller inklusive kvantekryptografi, kvanteteleportation og kvantecomputere.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The concept of quantum information will be introduced and discussed. Starting from the basic principles of quantum mechanics (superpositions, unitary transformations, and measurements), qubit states, entangled states, and mixed states will be rigorously discussed. Quantum information protocols such as quantum key distribution and quantum teleportation will be introduced. Bell's inequality will be discussed and (if time allows) tested in the lab. 
+Another subject is quantum computing which includes the discussion of different single and two qubit gates as well as various algorithms including Shor’s factoring algorithm. Some physical technologies for the implementation of quantum information processing will be briefly discussed, but the focus is on the theoretical formulation that is common across multiple technology platforms. If time allows, there will be hands-on computational exercises on programming a quantum computer, either by simulation or over the cloud.
+One to two topics (e.g. loophole-free Bell tests, Grover's algorithm) will be studied in-depth through group work. The presentations of this will contribute to the student's overall grade.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem solving, quizzes, group work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The laws of nature at the quantum scale are different than the laws of classical physics
+experienced in everyday life. This difference can be exploited to improve  information processing tasks and to enable new ones which are otherwise impossible. One striking example is the possibility for quantum computers which can solve certain tasks exponentially faster than any traditional computer. The aim of this course is to introduce you to the theory of quantum information, and to give you an understanding of different quantum information protocols including quantum cryptography, quantum teleportation, and quantum computing.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser (grundlæggende kvantemekanik) er en fordel men ikke absolut nødvendig" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses (basic quantum mechanics) are an advantage but not absolutely required" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10102" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og forstå begreberne kvantemekanisk superposition og sammenfiltring i relation til kvanteinformation." />
+          <Txt Lang="en-GB" Txt="Recognise the notions of quantum superposition and entanglement in the context of quantum information." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over ikke-lokalitet i naturen; fortolke et eksperiment som tester ikke-lokalitet." />
+          <Txt Lang="en-GB" Txt="Question the nonlocal nature of reality; interpret an experiment testing nonlocality." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere konceptet kvantekommunikation incl. kvanteteleportation og dense coding." />
+          <Txt Lang="en-GB" Txt="Discuss the concept of quantum communication including quantum teleportation and dense coding." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige kvanteprotokoller for deling af kryptografiske nøgler og generation af tilfældige tal." />
+          <Txt Lang="en-GB" Txt="Compare different protocols for quantum key distribution and random number generation. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå hovedkoncepterne bag kvantecomputere, inkl. gates, kredsløb, og fejlkorrektion." />
+          <Txt Lang="en-GB" Txt="Explain the main concepts of quantum computing,  including gates, circuits, and error correction." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere et udvalg af kvantealgoritmer, deres implementation, og deres fordele ift. klassiske algoritmer." />
+          <Txt Lang="en-GB" Txt="Discuss various quantum algorithms, their implementation, and advantages over classical algorithms. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, diskutere, give kritik af og præsentere artikler om kvanteinformations-eksperimenter." />
+          <Txt Lang="en-GB" Txt="Analyse, discuss, critique and present articles on quantum information experiments." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre beregninger af kvanteinformationsprotokoller analytisk på papir og numerisk med kode." />
+          <Txt Lang="en-GB" Txt="Carry out calculations of quantum information protocols analytically on paper and numerically with code." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>kvantebaseret informatik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:15.717" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

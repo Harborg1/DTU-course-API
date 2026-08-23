@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41953" University="dtu" LastUpdated="2025-02-11+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Bærende konstruktioner 1" />
+        <Title Lang="en-GB" Title="Structural engineering 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="30781" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Per</GivenName>
+            <FamilyName>Goltermann</FamilyName>
+            <Email>pego@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="33216" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Gregor Daniel</GivenName>
+            <FamilyName>Fischer</FamilyName>
+            <Email>grfi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Experiments" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der gennemføres 3 quizzer (kursusuge 2, 4 og 8) og der afholdes en afsluttende skriftlig eksamen. Den samlede karakter for kurset opnås ved en helhedsvurdering af quizzer og eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="There are 3 quizzes (course week 2, 4 and 8) and a final, written exam. The grade for the course relies on an overall assessment of the quizzes and exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Kræfter og momenter
+- Ligevægt
+- Snitkræfter
+- Normalspændinger og tøjninger
+- Deformationer
+- Gitterkonstruktioner
+- Bjælkekonstruktioner
+- Søjler
+- Rammer
+Eksempler på konstruktionsanalyse med simple, numeriske programmer gennemgås eller indgår som en mulig selvkontrol i øvelsesregningerne</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaveregning</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver en introduktion til beregning og dimensionering af bærende konstruktioner. Det dækker bl.a. bestemmelse af reaktioner, snitkræfter og bjælkedeformationer under forskellige belastninger og randbetingelser. 
+Derudover inkluderer kurset en introduktion til materialers spændinger, tøjninger og styrker. Kurset giver også kendskab til enkle beregningsmetoder og numeriske værktøjer til dimensionering og optimering af konstruktioner. Kurset dækker bjælker, søjler, stænger, rammer og gitre og gør det muligt at gennemregne og designe simple, statisk bestemte konstruktioner. Kurset udgør det primære grundlag for efterfølgende konstruktionskurser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Forces and moments
+- Equilibrium
+- Section forces
+- Normal stresses and strains
+- Deformations
+- Trusses
+- Beams
+- Columns
+- Frames
+Examples of structural analysis with simple, numerical programs are demonstrated or used as a possible control of the results in the exercises</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem solving</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course provides an introduction to the calculation and design of load-bearing structures. It covers determination of reactions, section forces and beam deformations under various loads and boundary conditions. 
+Additionally, the course includes an introduction to stresses, strains, and strengths of materials. It also familiarizes students with simple calculation methods and numerical tools for designing and optimizing structures. Topics covered include beams, columns, bars, frames, and trusses, enabling students to analyze and design simple, statically determined structures. The course forms the primary foundation for subsequent structural engineering courses.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive belastninger ved kræfter og momenter" />
+          <Txt Lang="en-GB" Txt="Describe loading with forces and moments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille ligevægtsligninger og bestemme reaktioner ved ligevægtsligninger" />
+          <Txt Lang="en-GB" Txt="Establish equations of equilibrium and determine reactions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme snitkræfter i statisk bestemte bjælkekonstruktioner" />
+          <Txt Lang="en-GB" Txt="Determine section forces in statically determinate beam structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme stangkræfter i statisk bestemte gitterkonstruktioner" />
+          <Txt Lang="en-GB" Txt="Determine member forces in statically determinate truss structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende virtuelt arbejdes princip til bestemmelse af reaktioner og deformationer i gitter- og bjælkekonstruktioner" />
+          <Txt Lang="en-GB" Txt="Use the principle of virtual work for the determination of reactions and deformations in truss- and beam structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simple numeriske programmer til at bestemme reaktioner, snitkræfter og deformationer" />
+          <Txt Lang="en-GB" Txt="Use simple, numerical programs to determine reactions, section forces and deformations " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme inertimoment for simple tværsnit" />
+          <Txt Lang="en-GB" Txt="Determine moment of inertia for simple cross sections" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme normalspændingerne i gitre, bjælker, søjler og rammer" />
+          <Txt Lang="en-GB" Txt="Determine normal stresses in trusses, beams, columns and frames" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille ligevægtsligninger og bestemme søjlers bæreevne" />
+          <Txt Lang="en-GB" Txt="Establish equations of equilibrium and determine the load carrying capacity of columns" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="11911/41951/41203/41205/41236/11341" />
+        <PreviousCourse CourseCode="11341" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:33.253" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

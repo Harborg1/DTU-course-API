@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02635" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Programmering af matematisk software" />
+        <Title Lang="en-GB" Title="Mathematical software programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="78666" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Martin Skovgaard</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>mskan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Programmeringsparadigmer: imperativ programmering, objekt-orienteret programmering. 
+Datastrukturer: lister, arrays, tyndt befolkede matricer.
+Programmeringsprojekter omfatter: 
+- Indlæsning af data.
+- Kald af eksterne programmer og biblioteker (især numeriske).
+- Optimering og parallelisering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og mindre programmeringsprojekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At gøre deltagerne i stand til at skrive software som kan løse numeriske problemer på baggrund af en matematisk model.
+
+At give deltagerne en indføring i imperativ og objekt-orienteret programmering samt evnen til at kunne gøre brug af disse paradigmer vha. gængse imperative og objekt-orienterede programmeringssprog. I kurset anvendes C/C++, da C-baserede programmeringsprog anvendes i stor udstrækning til programmering af matematisk software. 
+
+Deltagerne indføres også i de grundlæggende algoritmer og datastrukturer, der ofte anvendes til programmering af matematisk software.
+
+For at sikre at man som deltager udvikler praktiske færdigheder, arbejdes der i kurset med mindre matematiske projekter, hvor programmering indgår som et uundværligt værktøj. Desuden trænes dokumentering af software i rapporter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Programming paradigms: imperative programming, object-oriented programming.
+Data structures: lists, arrays, sparse matrices.
+Programming projects encompass:
+- Loading data.
+- Calling external programs and libraries (especially numerical).
+- Optimization and parallelization.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and small programming projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable the participants to write software that can solve numerical problems based on a mathematical model.
+
+To give the participants an introduction to imperative and object-oriented programming as well as the ability to employ these paradigms using imperative and object-oriented programming languages. In this course we use C/C++ as C-based programming languages are widely used for programming mathematical software.
+
+The participants are also given an introduction to basic algorithms and data structures that are often used in mathematical software.
+
+To ensure that you, as a participant, develop practical skills, you will work with small mathematical projects in which programming is an indispensable tool. Moreover, you will train software documentation in reports.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende kurser der giver kendskab til numeriske metoder samt grundlæggende datalogiske begreber som løkker, variabeltyper og simple matematiske operationer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or similar courses that provide knowledge of numerical methods and basic concepts in computer science such as loops, variable types, and simple mathematical operations." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02525/02002/02631/02633.02601" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere diskrete og kontinuerte matematiske udtryk." />
+          <Txt Lang="en-GB" Txt="Evaluate discrete and continuous mathematical expressions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og bruge datastrukturer såsom lister, arrays, og tyndt befolkede matricer." />
+          <Txt Lang="en-GB" Txt="Describe and use data structures such as lists, arrays, and sparse matrices." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge passende datatyper og datastrukturer til et givent problem." />
+          <Txt Lang="en-GB" Txt="Choose appropriate data types and data structures for a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne iterativ og rekursiv løsning af simple problemer." />
+          <Txt Lang="en-GB" Txt="Compare iterative and recursive solutions for simple problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere kørslen af et simpelt program, herunder tids- og pladskompleksitet." />
+          <Txt Lang="en-GB" Txt="Analyze the runtime behavior and the time and space complexity of simple programs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kalde eksterne (tredjeparts) programmer og biblioteker." />
+          <Txt Lang="en-GB" Txt="Call external (third party) programs and libraries." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe, implementere og dokumentere et program som løser et matematisk problem." />
+          <Txt Lang="en-GB" Txt="Design, implement, and document a program that solves a mathematical problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fejlfinde og teste matematisk software." />
+          <Txt Lang="en-GB" Txt="Debug and test mathematical software." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende basale objektorienterede programmeringskoncepter såsom klasser og objekter." />
+          <Txt Lang="en-GB" Txt="Describe and use basic object-oriented programming concepts such as classes and objects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare afrundingsfejl og flydende-komma-repræsentation af reelle tal." />
+          <Txt Lang="en-GB" Txt="Explain rounding errors and floating point number representation of real numbers." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Software til numerisk løsning af problemer inden for matematisk modellering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:29.333" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

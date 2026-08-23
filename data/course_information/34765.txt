@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34765" Volume="2026/2027" University="dtu" LastUpdated="2025-04-28+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Digital Regulering" />
+        <Title Lang="en-GB" Title="Digital Control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="54033" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Xinxin</GivenName>
+            <FamilyName>Zhang</FamilyName>
+            <Email>xinz@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="14453" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jens Christian</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>jcan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1842" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Hans Henrik</GivenName>
+            <FamilyName>Niemann</FamilyName>
+            <Email>hahe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="De studerende skal designe og implementere digitale styringer til de mobile robotter, der stilles til rådighed af kurset, og dokumentere deres design i en projektrapport. En samlet vurdering vil være baseret på to elementer: 1) kvaliteten af kontrolimplementeringen gennem klasse-demonstration og individuel Q&amp;A, og 2) kvaliteten af en gruppe-rapport med individuelle sektioner, der dokumenterer designvalg." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The students are required to design and implement digital controls for the mobile robots that provided by the course and document their design in a project report. An overall assessment will be based on two elements: 1) the quality of the control implementation through in-class demonstration and individualized Q&amp;A, and 2) the quality of a group report with individualized section contribution that documenting the design choices." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus dækker nøgleaspekter af digital styring af lineære systemer samt grundlæggende teoretiske begreber som differensligninger og Z-transformen. Det udforsker forskellige diskretiseringsmetoder, deres forskelle, og hvordan de bør anvendes. Kurset omhandler også valg af samplingsperiode og dens indvirkning på systemets ydeevne. Derudover fokuserer det på design af diskret-tids regulatorer, herunder konvertering af kontinuerlige regulatorer til digital form samt praktisk implementering af digitale regulatorer på computere. Kurset består af 10 forelæsninger og 3 sessioner til det afsluttende projekt. Det praktiske projekt vil inkludere programmering i C++ (Arduino stil)</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde (Matlab/Simulink) og øvelses-/projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Selected Chapters from "Digital Control of Dynamic Systems (Third Edition, by Franklin, Powell, and Workman, available online)".</Course_Literature>
+          <Course_Objectives>De studerende vil opnå en forståelse af sammenhæng mellem systemer i kontinuert tid og diskrete systemer, samt grundlæggende design af digitale regulatorer for dynamiske systemer.
+Kurset dækker Z-transformation, konsekvenser af diskrediteringsmetoder, valg af samplingsfrekvens og effekt af kvantificering. Desuden indgår implementering, test, fejlfinding og performance evaluering af digitale regulatorer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course covers key aspects of digital control of linear systems and fundamental theoretical concepts like difference equations and the Z-transform. It explores different discretization methods, their distinctions, and how they should be applied. The course also addresses sampling period selection and its impact on system performance. Additionally, it delves into the design of discrete-time controllers, including the conversion of continuous-time controllers into digital form and the practical implementation of digital controllers on computers. The course includes 10 lectures and 3 sessions for final project. The practical project will include programming in C++ (Arduino style).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work (Matlab/Simulink) and exercise / project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Selected Chapters from "Digital Control of Dynamic Systems (Third Edition, by Franklin, Powell, and Workman, available online)".</Course_Literature>
+          <Course_Objectives>Students will develop an understanding of the relationship between continuous-time and discrete-time systems, learning fundamentals of digital control design for dynamic systems. The course covers Z-transform, various discretization methods and their effects. Students will also learn to select appropriate sampling periods, evaluate quantization effects, and implement, test, and debug digital controllers to assess their performance.</Course_Objectives>
+          <DTU_Remark>This course is based on a previous course 34747 and had been tested in Fall 2024 as a special course.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Studerende skal have gennemført kurset Reguleringsteknik 1 eller et tilsvarende kursus. Kendskab til C++ er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The students must complete Linear Control Design 1 course or equivalent courses. Knowledge of C++ is advantageous." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34721/34722" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne kontinuerlige og diskrete styringsmetoder, og forstå hvornår digital styring er fordelagtig." />
+          <Txt Lang="en-GB" Txt="Compare continuous-time and discrete-time control approaches, understanding when digital control is advantageous." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere digitale styresystemer ved hjælp af diskrete modeller." />
+          <Txt Lang="en-GB" Txt="Analyze digital control systems using discrete-time models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Z-transformationsteknikker til systemanalyse." />
+          <Txt Lang="en-GB" Txt="Apply Z-transform techniques for system analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne og anvende forskellige diskretiseringsmetoder (f.eks. zero-order hold, bilineær transformation) og forstå deres effekter." />
+          <Txt Lang="en-GB" Txt="Compare and apply different discretization methods (e.g., zero-order hold, bilinear transform) and their effects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og analysere digitale regulatorer ved hjælp af diskrete ækvivalenter af klassiske regulatorer (f.eks. digital PID)." />
+          <Txt Lang="en-GB" Txt="Design and analyze digital controllers using discrete-time equivalents of classical controllers (e.g., digital PID)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge passende samplingperioder baseret på systemmæssige overvejelser." />
+          <Txt Lang="en-GB" Txt="Select appropriate sampling periods based on system considerations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere kvantiseringens indflydelse." />
+          <Txt Lang="en-GB" Txt="Evaluate the influence of quantization." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere et systems ydeevne efter praktisk implementering, test og fejlfinding." />
+          <Txt Lang="en-GB" Txt="Implement, test, and debug digital controllers and assess their performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34747/31340" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:59.79" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

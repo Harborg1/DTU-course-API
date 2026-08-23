@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02841" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">15</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computerspilprogramering i en produktion (DADIU)" />
+        <Title Lang="en-GB" Title="Computer Game Programming in a Production (DADIU)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset foregår i alle skemamoduler og løber i anden halvdel af 13-uger period" />
+          <Schedule_Txt Lang="en-GB" Txt="This course covers all time slots in the second half of the 13 week period." />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="4465" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>J. Andreas</GivenName>
+            <FamilyName>Bærentzen</FamilyName>
+            <Email>janba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individuelle rapporter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individual reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Studerende, der tilmelder sig dette kursus skal være optaget på DADIU" />
+            <Supp_Txt Lang="en-GB" Txt="Students who register for this course must be accepted into DADIU" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Udvikling af game features så som spilregler og spilmekansimer, animation, grafik, og AI med Unity3D spil engineen.</Contents>
+          <Teaching_And_Learning_Methods>Projektorienteret gruppearbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende erfaring i at programmere et komplet computerspil i et realistisk udviklingsmiljø.</Course_Objectives>
+          <Remark>Kurset foregår i eller nær Københavnsområdet.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Programming of game features such as game rules and mechanics, animation, graphics, and artificial intelligence, with the Unity3D game engine.</Contents>
+          <Teaching_And_Learning_Methods>Project oriented teamwork</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the student  experience in programming a complete computer game in a realistic development environment.</Course_Objectives>
+          <Remark>The activities take place in or near the Copenhagen area.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Dette kursus er anden halvdel af DADIU forløbet og kan ikke følges uden at man følger 02840 og er tilmeldt DADIU." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="This course is the second half of the DADIU educational element and cannot be followed independently from 02840. Also requires that the student is signed up for DADIU." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02840" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="arbejde i alle faser af en software udviklingsproces" />
+          <Txt Lang="en-GB" Txt="work in all phases of a software development cycle" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="samarbejde med et hold i et realistisk multidisciplinært miljø" />
+          <Txt Lang="en-GB" Txt="collaborate with a team in a realistic multidisciplinary   environment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="give teknisk feedback til en project manager ang. kravspecifikation" />
+          <Txt Lang="en-GB" Txt="provide technical feedback to project managers on feature requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="deltage i en agile udviklingsproces" />
+          <Txt Lang="en-GB" Txt="participate in an agile development process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge algoritmer og datastrukturer, der egner sig til spiludvikling" />
+          <Txt Lang="en-GB" Txt="choose data structures and algorithms appropriate to game requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere et computerprogram for at opnå bedst ydelse" />
+          <Txt Lang="en-GB" Txt="optimize a computer program for maximum performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="inddrage bruger feedback i software forbedring" />
+          <Txt Lang="en-GB" Txt="incorporate user feedback into software refinements " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe, udføre og tilføje spil mekanismer til en eksisterende engine" />
+          <Txt Lang="en-GB" Txt="design, implement and add game mechanics to an existing game engine " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="78" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="78" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="156" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="10" Min="2" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:37.78" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

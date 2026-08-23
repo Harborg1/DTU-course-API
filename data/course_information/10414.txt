@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10414" Volume="2026/2027" University="dtu" LastUpdated="2026-04-23+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Neutronics Monte-Carlo simulering af fissionsreaktorer" />
+        <Title Lang="en-GB" Title="Neutronics Monte-Carlo simulation of nuclear reactors" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Riso" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="142307" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Amalia</GivenName>
+            <FamilyName>Chambon</FamilyName>
+            <Email>amacha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38572" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bent</GivenName>
+            <FamilyName>Lauritzen</FamilyName>
+            <Email>blau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedvurdering af en poster lavet af en gruppe med indiviualisering i en mundtlig eksamen baseret på posteren." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of a scientific-style poster prepared as group work and on individual oral examination based on the poster presentation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="All Aids for preparing poster, no aid for oral exam" />
+            <Aid_Txt Lang="da-DK" Txt="Alle hjælpemidler til udarbejdelse af poster, ingen hjælpemidler til mundtlig eksamen" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset bygger på kursus 10411, atomreaktorfysik, og vil give den studerende mulighed for ”hands-on” at opsætte og udføre neutronik simuleringer af en fisssionsreaktor. Undervisningen gennemføres i tre trin: 
+1) gennemgang og instruktion i plenum, 
+2) modelsimulering i grupper (opsætning, simulering, dataanalyse og validering i forhold til tilgængelig litteratur), 
+3) design og fremlæggelse af poster.
+I første uge opsættes og valideres Monte-Carlo neutronik modellen, og i uge 2 anvendes modellen til beregning og analyse af neutronspektre, neutronfluks og udbrænding, koblet til den underliggende reaktorfysik teori. I uge 3 fuldføres analyserne og grupperne fremstiller hver en poster til præsentation af metoder og resultater.</Contents>
+          <Teaching_And_Learning_Methods>Computersimulation og resultatanalyse.
+Introduktions- og opsummeringsforelæsninger, gruppearbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Målrettet kompendium leveres af underviseren.</Course_Literature>
+          <Course_Objectives>Kurset sigter mod at etablere færdigheder i modellering og simulering af fissionsreaktorer: opsætning af Monte-Carlo neutronik model til beregning af beregning af neutronspektre og neutronfluks, anvendelse på stationær reaktor og under udbrænding af reaktor, betydningen af forskellige nukleare data. I kurset udfører den studerende Monte-Carlo simuleringer af et simpelt Molten Salt Fast Reactor design.
+Monte-Carlo simuleringer benyttes til beregning af strålingstransport med bred anvendelse, bl.a. til design og analyse af fission, fusion, nuklearmedicin, dosimetri, design af strålingsinstrumenter og strålingsbeskyttelse. Kurset vil bibringe færdigheder, der kan bruges inden for disse felter.</Course_Objectives>
+          <Remark>Der er behov for en laptop til at tilgå Unix clusteret på hvilket Monte Carlo simuleringerne vil blive kørt.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Based on the theory presented in 10411, this learn-by-doing course will allow you to perform a basic neutronics analysis of a nuclear reactor. The general teaching format consists of a three-step loop: 
+1) Briefing in plenum with introductory concepts and instructions.
+2) Hands-on work in groups (model setup, simulations, data analysis and comparison with available literature. 
+3) Feedback on preliminary poster submission to prepare the final poster submission. 
+In the first week, you will be introduced to the chosen reactor design and learn about its characteristic properties. Based on provided literature, you will set-up the Monte-Carlo modelling to perform a basic neutronics analysis and perform first sanity checks. 
+In the second week, you will perform simulations in order to obtain the neutron energy spectrum, the neutron flux shape and the fuel inventory as a function of burnup. At each step of the analysis, you will compare your results with literature and with the underlying reactor physics theory. Each group will make a scientific-style poster based on their results taking inspiration from examples provided. In the third week, you will mainly work on completing the analysis and preparing the poster. Comments will be provided on a preliminary version of the poster.</Contents>
+          <Teaching_And_Learning_Methods>Computer simulation and results analysis.
+Introductory/wrap-up lectures, group work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Custom compendium provided by the teacher.</Course_Literature>
+          <Course_Objectives>The course aims at developing the skills required for the design and analysis of nuclear reactors, addressing key questions. How to set-up a neutronics model of a nuclear reactor to perform a simple analysis both in steady-state and in depletion? How to extract data like neutron energy spectrum and neutron flux? What can be the impact of nuclear data libraries on obtained results? In the course, you will learn how to find answers to these questions by guided hands-on work centered on Monte-Carlo simulations of a simplified nuclear reactor design of the Molten Salt Fast Reactor. Monte-Carlo simulations are not only used for nuclear reactor analysis but also for all kind of radiation transport calculations including applications in neutronics design, radiation protection, fusion energy, nuclear medicine, dosimetry, detectors. This course will give you basic knowledge that can be applied in other contexts.</Course_Objectives>
+          <Remark>A laptop is required to access the Unix cluster on which the Monte-Carlo simulations will be run.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til reaktorfysik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Familiarity with nuclear reactor physics." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10411 or equivalent" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne og design af Molten Salt Fast Reactor" />
+          <Txt Lang="en-GB" Txt="Explain the Molten Salt Fast Reactor Reactor principles and design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende basale koncepter i neutronik" />
+          <Txt Lang="en-GB" Txt="Explain and apply basic neutronics concepts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne ved Monte-Carlo udbrændingsberegninger." />
+          <Txt Lang="en-GB" Txt="Explain the principle of Monte-Carlo burnup calculations.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og anvende simple Monte-Carlo neutronik modeller baseret på data fra litteraturen." />
+          <Txt Lang="en-GB" Txt="Develop and apply simplified Monte-Carlo neutronics models based on literature data. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere resultater fra Monte-Carlo beregninger, forklare og analysere neutronspektre, neutronfluks, samt reaktivitet og brændselsindhold som funktion af udbrænding." />
+          <Txt Lang="en-GB" Txt="Extract results obtained by Monte-Carlo simulations, in particular, explain and analyze the neutron energy spectrum, the neutron flux shape and the reactivity and fuel inventory evolution as a function of burnup." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og validere beregningerne i forhold til litteraturen." />
+          <Txt Lang="en-GB" Txt="Analyze and validate simulation results against information from scientific literature." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere betydningen, som forskellige nukleare data sæt har for beregningerne." />
+          <Txt Lang="en-GB" Txt="Analyze the impact of the choice of nuclear data library on the simulation results. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe en poster til et videnskabeligt publikum." />
+          <Txt Lang="en-GB" Txt="Design a poster for a scientific audience." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="25" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:22.587" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

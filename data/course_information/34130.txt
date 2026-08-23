@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34130" University="dtu" LastUpdated="2025-04-29+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Grundkursus i fiber-optiske kommunikationssystemer" />
+        <Title Lang="en-GB" Title="Fundamentals of fibre-optic communication systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="5639" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Clausen</FamilyName>
+            <Email>ancl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen og obligatoriske rapporter. Den mundtlige eksamen vil dække både pensum i lærebog samt de afleverede karakterbedømte rapporter.&#xD;&#xA;Mundtlig eksamen (50 %), rapporter (50 %)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral examination and mandatory reports. The oral examination will cover both the textbook curriculum and the graded submitted reports.&#xD;&#xA;Total grade: Oral exam (50 %), reports (50 %)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Optiske fibre:
+     Struktur, optiske modes, udbredelsesforhold, dæmpning, ulinearitet og dispersion.
+Optiske forstærkere:
+     Opbygning, forstærkning, støjforhold, Raman, EDFA.
+Lyskilder og sendere:
+     Komponent struktur, modulationsbåndbredde og spektralegenskaber.
+Fotodioder og modtagere:
+     Komponent struktur, elektrisk båndbredde, støj og følsomhed.
+Kohærent kommunikation:
+     Kohærente sendere og modtagere.
+Multikanalsystemer.
+Computer simulering af optiske transmissionssystemer.</Contents>
+          <Teaching_And_Learning_Methods>26 forelæsninger inklusive opgaveregning samt afleverede obligatoriske computersimuleringsøvelser der karakterbedømmes</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte de studerende til at
+1.	Beskrive fysiske principper af komponenter i optiske kommunikationssystemer samt opliste relevante data parametre.
+2.	Udtrække komponent specifikationer fra datablade.
+3.	Designe et optiske kommunikationssystem i det fysiske lag.
+4.	Evaluere den forventede systemydelse af et designet system</Course_Objectives>
+          <Remark>Kurset 34130 adskiller sig fra 34121 ved at behandle de forskellige dele af et optisk kommunikationssystem mere tilbundsgående.
+Dette kursus er det teoretiske sidestykke til det eksperimentelle kursus i optisk kommunikation 34126 og 34129; kurserne komplementerer hinanden.
+Dette kursus giver den nødvendige baggrundsviden til at følge videregående kurser i optisk kommunikation som f.eks.34153 fysiske koncepter i optisk kommunikation samt 34156 Avancerede optiske kommunikationssystemer. 
+For studerende som tidligere har fulgt kurset 34361 optiske netværk, giver dette kursus en mere grundlæggende behandling af optik i kommunikation på det fysiske lag.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Optical fibres:
+     Structure, conditions of propagation, attenuation and pulse dispersion.
+Optical amplifiers:
+     Construction, amplification, noise, Raman, EDFA.
+Light sources and transmitters:
+     Device structure, modulation bandwidth and spectral properties.
+Photodiodes and receivers:
+     Device structure, electrical bandwidth, noise and sensitivity.
+Coherent communication:
+     Coherent transmitters and receivers.
+Multichannel systems.
+Computer simulations of optical transmission.</Contents>
+          <Teaching_And_Learning_Methods>26 lectures including problem solving and handed in mandatory computer simulation exercises which are graded.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable the student to
+1.	Describe physical working principles of components for optical communication systems and list relevant data parameters.
+2.	Extract component specifications from data sheets.
+3.	Design an optical communication system on the physical layer.
+4.	Evaluate the expected system performance of a designed system.</Course_Objectives>
+          <Remark>The course 34130 distinguish itself from 34121 by treating the different parts of optical communications systems more in-depth.
+This course is the theoretical counterpart of the experimental optical communication system course 34126 and 34129; the courses complement each other.
+This course provides the basis for advanced courses in optical communication such as 34153 Physical Concepts in Optical Communication and 34156 Advanced Optical Communication Systems.
+For students who previously have been following the course 34361 Optical Networks, this course provides a more in-depth treatment of optics in communication on the physical layer</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende Matlab programmeringserfaring" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic experience with Matlab programming." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34120/31400/10036.34210/34230/34231" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive bølgeudbredelse i en trin-indeks fiber og afgøre krav til single-mode udbredelse samt redegøre for afskæringsfrekvens, dobbeltbrydning, pletstørrelse, dæmpning og ikke lineære optiske effekter samt vurdere indflydelsen af disse på systemydelse." />
+          <Txt Lang="en-GB" Txt="Describe wave propagation in step-index fibres and determine requirements for single-mode propagation, explain cut-off frequency, birefringence, spot size, attenuation and nonlinear optical effects and evaluate the impact on system performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for spontan emission, absorption, stimuleret emission samt forstærkning og give en teoretisk beskrivelse af halvlederlaseren vha. rateligninger." />
+          <Txt Lang="en-GB" Txt="Explain spontaneous emission, absorption, stimulated emission and amplification and give a theoretical explanation of the rate equations of a semiconductor laser." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for halvlederlaserens og lysdiodens opbygning og virkemåde, herunder statiske og dynamiske egenskaber." />
+          <Txt Lang="en-GB" Txt="Describe the structure and function of semiconductor lasers and light-emitting diodes including static and dynamic properties." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for fotodioders fysiske virkemåde samt den optiske modtagers elektroniske opbygning på blokdiagramniveau." />
+          <Txt Lang="en-GB" Txt="Describe the physical processes in photodiodes and the structure of optical receivers at block diagram level." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage detaljerede beregninger af optiske modtageres termiske støj, haglstøj, signal-støjforhold, fejlhyppighed og følsomhed og sammenligne med kvantegrænsen." />
+          <Txt Lang="en-GB" Txt="Calculate thermal noise, shot noise, signal-to-noise ratio, bit-error rate and sensitivity in relation to the quantum limit for optical receivers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="definer båndbrede, mætning, optiske signal støjforhold samt støjtal for Raman og erbiumdoterede fiberforstærkere." />
+          <Txt Lang="en-GB" Txt="Define bandwidth, saturation, optical signal to noise ratio and noise figure for Raman and erbium doped fibre amplifiers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere indflydelsen af optisk forstærkning samt støj på den totale ydeevne af et system." />
+          <Txt Lang="en-GB" Txt="Evaluate the impact of amplifier gain and noise on total system performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for principperne for bølgelængde selektive komponenters virkemåde og for anvendelsen af interferens og diffraktion til bølgelængdefiltrering samt udnyttelsen af disse i optiske add-drop multipleksere." />
+          <Txt Lang="en-GB" Txt="Explain the working principles of wavelength selective devices and the application of interference and diffraction to perform wavelength filtering and the usage of these in reconfigurable optical add-drop multiplexers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for oprindelsen af krydstale i bølgelængde multipleksede systemer samt forudse system begrænsninger." />
+          <Txt Lang="en-GB" Txt="Discuss origin and predict system limitations of crosstalk in wavelength division multiplexed systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare opbygningen af en kohærent sender på blokdiagramniveau og hvorledes avancerede modulationsformater kan blive dannet." />
+          <Txt Lang="en-GB" Txt="Explain the building blocks of a coherent transmitter and how advanced modulation formats can be generated." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare opbygningen af en kohærent modtager på blokdiagramniveau og diskuter indflydelsen af støj på kohærent detektering." />
+          <Txt Lang="en-GB" Txt="Explain the building blocks of a coherent receiver and discuss the impact of noise on coherent detection." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simuler fiber optiske transmissionssystemer og diskuter resultaterne." />
+          <Txt Lang="en-GB" Txt="Simulate subsystems of fibre-optic transmissions systems and discuss the results." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Optisk fiber kommunikation</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="34140" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:52.55" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

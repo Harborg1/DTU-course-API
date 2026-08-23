@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41927" University="dtu" LastUpdated="2026-05-26+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Åben Bygningsinformationsmodellering (OpenBIM)" />
+        <Title Lang="en-GB" Title="Open Building Information Modeling (OpenBIM)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="23158" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kristoffer</GivenName>
+            <FamilyName>Negendahl</FamilyName>
+            <Email>krnj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="136125" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tim Pat</GivenName>
+            <FamilyName>McGinley</FamilyName>
+            <Email>timmc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der skal afleveres 9 individualiserede gruppeopgaver, 1 individualiseret test/quiz (uge 5) i løbet af semestret. Der benyttes helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="9 individualized group assignments, 1 individualized test/quiz (week 5) must be handed in during the semester. An overall assessment is used." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="BIM models are used as the primary basis for assessment, in addition, theory tests are used as part of the overall assessment." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="BIM modeller anvendes som primær-grundlag for bedømmelse, derudover anvendes teoritest som part af den samlede vurdering" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>På kurset gennemgåes det teoretiske grundlag for processen/arbejdsmetoden kendt som openBIM. Der lægges vægt på hvordan modeller og formater er opbygget og hvordan semantiske modeller med information om bygninger og dens bygningsdele er håndteret. Undervejs i kurset opbygges BIM-modeller fra bunden med udgangspunkt i IFC-specifikationer. Objekter så som bjælker, søjler og lagopdelte komponenter, herunder ydervægge opbygges efter standarder. Undervejs i kurset udvikles et byggeprojekt (i form af en åben BIM-model) med en større kompleksitet, hvor både konstruktive- og energitekniske overvejelser tages i brug. Denne model forberedes for dataudveksling ift. forskellige kravspecifikationer anvendt i dansk og international praksis. Kurset gennemgår danske og internationale guidelines og åbne neutrale standarder der anvendes i byggeriet for udveksling af data, ligeledes beskrives klassifikationssystemer som er udbredt i dansk byggeri. Modelkonsistens, modelkontrol, kollisionskontrol og regelbaseret kontrolsystemer undersøges og anvendes i projektet.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, individuelle opgaver og gruppeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset udbygger deltagernes forståelse for bygningsinformationsmodellering (BIM). Kurset leverer indsigt i BIMs teoretiske grundlag og gennemgår specifikt hvordan åbne specifikationsprocesser og -modeller er sammensat. På kurset arbejdes med de grundlæggende begreber, objekter, klasser og ontologier som tilsammen skaber BIM. Der tages udgangspunkt i åbne BIM-systemer, -klassifikationssystemer og -formater hvor den grundlæggende model kan manipuleres frit. Sidenhen indarbejdes yderligere kompleksiteter i BIM, hvor både tværfaglighed og synkrone manipulationer skal håndteres. På kurset er der fokus på at kunne frembringe en bygningsmodelgrundlag og drage nytte af andres informationer. Undervejs i kurset undersøges linkede- og koblede objekter, herunder parametriske og afhængige variable. Kurset er indrettet til at oparbejde dybere kendskab til metoder, standarder og værktøjer, hvor BIM indgår. Undervejs opnås kendskab til modelleringsværktøjer anvendt til Computational Design &amp; Engineering.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course examines the theoretical basis for the process/working method known as openBIM. Emphasis is placed on how models and formats are constructed and how semantic models with information about buildings and their building components are handled. During the course, BIM models are built from scratch based on IFC specifications. Objects such as beams, columns and layered components, including external walls, are built according to standards. During the course, a building project (in the form of an open BIM model) with greater complexity is developed, where both constructive and energy engineering considerations are used. This model is being prepared for data exchange in relation to various requirement specifications used in Danish and international practice. The course covers Danish and international guidelines and open neutral standards used in construction for data exchange. It also describes classification systems that are widespread in Danish construction. Model consistency, model control, collision control and rule-based control systems are investigated and used in the project.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, individual assignments, and group assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course develops the participants' understanding of building information modeling (BIM). The course provides insight into BIM's theoretical basis and specifically reviews how open specification processes and models are composed. The course works with the basic concepts, objects, classes and ontologies that together create BIM. The starting point is open BIM systems, classification systems and formats where the basic model can be manipulated freely. Since then, further complexities have been incorporated into BIM, where both interdisciplinary and synchronous manipulations must be handled. The course focuses on being able to produce a building model basis and benefit from other people's information. During the course, linked and coupled objects are examined, including parametric and dependent variables. The course is designed to build up a deeper knowledge of methods, standards and tools that include BIM. Along the way, knowledge of modeling tools used for Computational Design &amp; Engineering is gained.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende principper og begreber efter bygningsinformationsmodellering-konceptet (BIM) i en åben og transparrent kontekst" />
+          <Txt Lang="en-GB" Txt="Apply principles and concepts according to the building information modeling concept (BIM) in an open and transparent context" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende digitale værktøjer til fremstilling af et modeller med informationer relevante for konstruktions- og energi-design i bygninger" />
+          <Txt Lang="en-GB" Txt="Use digital tools to produce a model with information relevant to construction and energy design in buildings" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende metoder til fremstilling af parametriske objekter" />
+          <Txt Lang="en-GB" Txt="Apply basic methods for application of parametric objects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende modeller til at udveksle digitale informationer og udtrække data for at kunne frembringe værdiskabende indsigt i byggeriet - eksempelvis et økonomisk overslag og miljømæssige konsekvenser af design- og materialevalg" />
+          <Txt Lang="en-GB" Txt="Use models to exchange digital information and extract data in order to generate value-creating insight into construction - for example, a financial estimate and environmental consequences of design and material choices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fremstille og anvende komplekse datamodeller på forskellige informationsniveauer og sammenholde disse med klassifikations- og aftalegrundlag typisk anvendt i praksis " />
+          <Txt Lang="en-GB" Txt="Produce and use complex data models at different levels of information and compare these with classification and agreement bases typically used in practice " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende digitale udvekslingsformater mellem værktøjer og mellem byggeprojektets parter " />
+          <Txt Lang="en-GB" Txt="Use digital exchange formats between applications and between building project partners" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre grundlæggende digitale kontroller i fag/fælles- modeller" />
+          <Txt Lang="en-GB" Txt="Perform basic digital controls in disciplinary/aggregate models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejde struktureret med andre parter i et byggeprojekt" />
+          <Txt Lang="en-GB" Txt="Collaborate in a structured manner with other partners in a construction project" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41911/41925" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Kursus for samarbejdsorienteret anvendelse af BIM i byggeriets processer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-29" Time="09:07:46.65" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46310" University="dtu" LastUpdated="2026-03-11+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Aeroelasticitet for vindmøller" />
+        <Title Lang="en-GB" Title="Wind Turbine Aeroelasticity" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="799" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Martin Otto Laver</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>molh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="125991" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Grinderslev</FamilyName>
+            <Email>cgrinde@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives på basis af en helhedsvurdering. Alle rapporter skal afleveres og både rapporter og eksamen skal bestås." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One combined grade is given (overall assessment). All assignments must be handed in and both the asignments and the exam must be passed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Strukturel modellering af vindmølle med et begrænset antal frihedsgrader, opbygning af dynamiske stall modeller, instationær BEM model, modellering af atmosfærisk turbulens, vindgradienter, numerisk tidsintegration af bevægelsesligningerne, moderne regulering af vindmøller</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og projektarbejde (max 2 studerende per gruppe)</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende en grundig indføring i struktur- og aerodynamiske modeller for vindmøller til beregning af det aeroelastiske respons. At beregne og analysere de tidsvarierende laster stammende fra den atmosfæriske turbulens, vindgradient, yaw, tårnskygge samt tyngde og inertilaster.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Structural modeling of a wind turbine with a limited number of DOFs, implementation of dynamic stall models, implementation of instationary BEM model, modeling of atmospheric turbulence, wind shear, numerical time integration of governing equations for motion, modern control of wind turbine.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project work (up to 2 students per group)</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give a thorough insight to the structural and aerodynamic modelling of a wind turbine in order to calculate the aeroelastic response. To compute and analyse the time varying loads stemming from atmospheric turbulence, wind shear, yaw, tower shadow as well as gravity and inertial loads.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til programmering, eks. Matlab, Fortran, Python eller C" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic programming skills as e.g Matlab, Fortran, Python or C" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46300" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Producere et program til bestemmelse af instationære aerodynamiske laster" />
+          <Txt Lang="en-GB" Txt="Write a computer code to determine the unsteady aerodynamic loads" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer dynamisk wake modeller" />
+          <Txt Lang="en-GB" Txt="Implement a dynamic wake model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer dynamisk stall model" />
+          <Txt Lang="en-GB" Txt="Implement a dynamic stall model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer en yaw model" />
+          <Txt Lang="en-GB" Txt="Implement a yaw model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et program til at generere atmosfærisk turbulens" />
+          <Txt Lang="en-GB" Txt="Use a software to generate atmospheric turbulence" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere en pitch controller" />
+          <Txt Lang="en-GB" Txt="Implement a pitch controller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille bevægelsesligningerne for en vindmølle" />
+          <Txt Lang="en-GB" Txt="Establish the equations of motion for a wind turbine construction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere bevægelsesligningerne i tidsdomænet og koble dem med de aerodynamiske laster" />
+          <Txt Lang="en-GB" Txt="Integrate the equations of motion including the coupling with the aerodynamic loads" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare indflydelsen af delmodellerne i den aerodynamiske beregning udfra den bagvedliggende fysik" />
+          <Txt Lang="en-GB" Txt="Explain the contribution of the different models on the resulting time series and validate the code" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Verificere koblingen mellem struktur- og aerodynamik" />
+          <Txt Lang="en-GB" Txt="Verify that the structural and aerodynamic models are coupled correctly" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>aeroelasticitet for vindmøller</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:36.52" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

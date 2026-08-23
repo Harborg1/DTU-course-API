@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02322" Volume="2026/2027" University="dtu" LastUpdated="2026-04-07+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Maskinnær programmering" />
+        <Title Lang="en-GB" Title="Machine oriented programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="6158" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Edward Alexandru</GivenName>
+            <FamilyName>Todirica</FamilyName>
+            <Email>eato@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter gives på baggrund af en helhedsvurdering. Grupperapporterne er individualiserede." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on all results in their entirety. Group reports are individualized." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Instruktionssæt for en simpel CPU. 
+• Lav-niveau programmering i maskinkode og assembler. 
+• Virkemåde og intern organisation af en simpel computer. 
+• ANSI C programmering 
+• Hukommelseslayout (stak, heap osv.)
+• Interaktion med I/O enheder: polling, interrupts, memory mapping
+• Programmer, der styrer I/O enheder
+• Pointere: Pointere generelt, pointere til arrays, pointere til pointere, void pointere 
+• Structs og brugerdefinerede typer. Array af strukturer. 
+• Preprocessor: Filinkludering, symbolske konstanter
+• Funktioner: Syntaks. Pointere til strukturer og funktioner, static og register variabler. Pointeraritmetik 
+• Bitwise operationer: Operatorer, shift, bit-field 
+• I/O: Formatted I/O, streng formattering, filer</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projekt(er)</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne en god viden om simple computer-systemers opbygning og virkemåde ved gennemgang af de involverede komponenter og abstraktionsniveauer, som bruges til at håndtere kompleksiteten af et sådant system. At give deltagerne en forståelse af grænsefladen mellem en processor/microcontroller og eksterne enheder.
+At gøre deltagerne i stand til at designe, implementere, fejlfinde, teste og dokumentere computer programmer på forskelige abstraktionsniveauer: maskinkode, assemblersprog, og højniveau programmeringssprog (som for eksempel C).
+Kurset give en generel forståelse af, hvorledes et simpelt computer system er opbygget omfattende: 
+- processor instruktionssæt arkitektur (ISA)
+- organisering af hukommelse og "adressing modes" 
+- "memory mapping",  interface til IO kredsløb</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Instruction set of a simple CPU.
+• Low-level programming in machine code og assembly.
+• Operation and internal organization of a simple computer.
+• ANSI C programming 
+• Memory layout (Stack, heap etc.)
+• Interacting with I/O devices: polling, interrupts, memory mapping
+• Programs that control I/O devices
+• Pointers: Pointers in general, pointers to arrays, pointers to pointers, void pointers
+• Structs and user defined types. Array of structs.
+• Preprocessor: File inclusion, symbolic constants
+• Functions: Syntax. Pointers to data structures and functions. Static and register variables. Pointer arithmetic.
+• Bitwise operations. Operators, shift, bit-field
+• I/O: Formatted I/O, string format, files</Contents>
+          <Teaching_And_Learning_Methods>Lectures, lab exercises and project(s)</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give a good understanding of how a simple computer system is organized and works by considering the components involved and the layers of abstractions used to handle the complexity of such a system. To give an understanding of how an embedded processor/microcontroller interfaces with peripheral devices.
+To enable participants to design, implement, debug, test and document computer programs at different levels of abstraction: machine code, assembly, high level programming language (like for example C).
+The course gives a general understanding of how a simple computer system is organized, covering the topics:
+- processor instruction set architecture (ISA)
+- memory organization and addressing modes
+- memory mapping, interfacing with IO devices</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Færdighed i programmering i et imperativ programmeringssprog (som for eksempel Java)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Programming skills using an imperative programming language (like for example Java)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02312/02314" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare arkitekturen i en simpel computer" />
+          <Txt Lang="en-GB" Txt="Explain the architecture of a simple computer" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de forskellige abstraktionslag, der anvendes i et computersystem" />
+          <Txt Lang="en-GB" Txt="Describe the different layers of abstraction used in a computer system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare binært repræsentationen af forskellige datatyper (signed/unsigned integer, char etc) og konvertering mellem talrepræsentationer (f. eks. binært, decimalt, hexidecimalt) " />
+          <Txt Lang="en-GB" Txt="Explain the binary representation of different datatypes (signed/unsigned integer, char, etc.) and the conversion between number representations (for example binary, decimal, hexadecimal)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og konstruere softwareprogrammer skrevet i maskinkode, assembly og et højniveauprogrammeringssprog" />
+          <Txt Lang="en-GB" Txt="Explain and construct software programs written in machine code, assembly and high-level programming language" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare memory mapped I/O" />
+          <Txt Lang="en-GB" Txt="Explain memory mapped input/output" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og bruge pointere i programmer, eksempelvis til at konstruere simple dynamiske datastrukturer såsom lænkede lister." />
+          <Txt Lang="en-GB" Txt="Describe and use pointers in programs, for example to create simple dynamic data structures like linked lists." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, hvorledes programvariable lagres i hukommelsen (heap, stak, globale variable)." />
+          <Txt Lang="en-GB" Txt="Explain how variables in a program are stored in memory (heap vs. stack vs. global variables)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare relationen mellem assembly og et højniveauprogrammeringssprog (for eksempel C)" />
+          <Txt Lang="en-GB" Txt="Explain the relation between assembly and a high-level language (for example C)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere programmer, der gør det muligt for processoren at styre input/output-enheder" />
+          <Txt Lang="en-GB" Txt="Construct programs that allow the processor to control input/output devices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bidrage konstruktivt som medlem af et lille designteam" />
+          <Txt Lang="en-GB" Txt="Contribute constructively as a member of a small design team" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="62409" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:26.4" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

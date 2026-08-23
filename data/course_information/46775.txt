@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46775" Volume="2026/2027" University="dtu" LastUpdated="2026-04-01+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Realtids electro-magnetic transient-simulering og beskyttelsestest i elnet" />
+        <Title Lang="en-GB" Title="Real-time electro-magnetic transient simulation and protection testing in power systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="54018" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Guangya</GivenName>
+            <FamilyName>Yang</FamilyName>
+            <Email>gyyan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset udgøres af en kombination af forelæsninger og faciliteret gruppearbejde i laboratoriet ved brug af realtidssimuleringsudstyret i PowerLab (Lyngby, B329A). De studerende arbejder i grupper med et projektemne, de har valgt at arbejde med. Projektemnerne dækker compliance test af vindmøller, beskyttelsesdesign og hardware-in-the-loop (HiL)-test. I løbet af kurset forventes hver gruppe at holde et præsentere deres resultater og udveksle erfaringer med andre grupper. Hver gruppe og individuelle studerende har muligheden for at definere læringsmål, der knytter sig til deres egen, fremtidige specialisering.
+ 
+Forelæsningerne og projekterne dækker følgende områder,
+• EMT-modeller og realtidssimuleringer med hardware-in-the-loop-løsninger
+• Beskyttelse af elforsyningssystem, især med fokus på afstandsbeskyttelse
+• Konverterkontrol og systemstabilitet
+• Grid code og grid compliance</Contents>
+          <Teaching_And_Learning_Methods>1) Forelæsninger
+2) Gruppeprojekter, hvor elnettet vil blive undersøgt ved modellering af mindre, realistisk net.
+3) Realtidssimuleringer i laboratoriet med hardware-in-the-loop</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er at give de studerende mere dybdegående viden og praktisk erfaring om beskyttelse af elnettet, elektromagnetisk transientsimulering og hardware-in-the-loop testmetoder af elforsyningskomponenter. De studerende får mulighed for at få indsigt i konverterkontrol, parametrering og test- og verifikationsprocedurerne af beskyttelsesrelæer.</Course_Objectives>
+          <DTU_Remark>Kurset vil blive givet første gang i juni 2026</DTU_Remark>
+          <Remark>Aktiv deltagelse i projektarbejde og interaktion med underviserne er en væsentlig forudsætning for at forstå den præsenterede teori og metode.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will be instructed through a combination of lectures and facilitated group work in the lab using the real-time simulation equipment in PowerLab (Lyngby, B329A). Students will be divided into a few groups with a define project topic up to selection. The project topics cover the area of grid compliance test of wind turbines, protection design, and HiL testing. During the course, each group is expected to give a presentation on the findings and exchange with other groups. Each group and individual student have the flexibility to define the learning objectives linking to future specialization. 
+
+The lectures and projects cover the following fields,
+•	EMT models and real-time simulations with hardware-in-the-loop solutions
+•	Power system protection in particular focusing on distance protection
+•	Converter control and system stability
+•	Grid codes and grid compliance</Contents>
+          <Teaching_And_Learning_Methods>1) Lectures 
+2) Group projects, where the power system will be investigated by modelling of minor, realistic grid.
+3) Real time simulations in the lab with hardware-in-the-loop</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to give students more in-depth knowledge and hands-on experience on  protection of power systems, electromagnetic transient simulation and hardware-in-the-loop testing methods for power system applications. The students will have the opportunity to gain insight of the converter control, the parameterization of protective relays, and the testing and verification procedures.</Course_Objectives>
+          <DTU_Remark>This course will be held first time in June 2026</DTU_Remark>
+          <Remark>Active participation in project work and interaction with the instructor(s) is an essential condition for understanding the presented theory and methods.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Interesserede studerende anbefales at have taget DTU kursus 46700 og 46705 eller med tilsvarende kendskab af elforsyningsnettet. Simuleringserfaring i software så som Real time digital simulator (RTDS) er en fordel, PSCAD, Simulink og Digsilient Powerfactory er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The perspective students are recommended to have taken DTU course 46700 and 46705 or with equivalent power system knowledge. Simulation experience in software like Simulink, Digsilient Powerfactory, PSCAD, and Real time digital simulator (RTDS) is welcome." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Viden om nye udfordringer med beskyttelse og kontrol af elnettet" />
+          <Txt Lang="en-GB" Txt="Knowledge of emerging power system protection and control challenges" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlæggende principper for beskyttelse og koordinering af elnettet" />
+          <Txt Lang="en-GB" Txt="Explain basic power system protection and coordination principles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og udføre elektromagnetiske transientsimuleringer" />
+          <Txt Lang="en-GB" Txt="Explain and perform basic electromagnetic transient simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begreber om grid code og grid compliance" />
+          <Txt Lang="en-GB" Txt="Explain concepts of grid code and grid compliance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør tidsdomæne kortslutningsanalyse af elforsyningskomponenter" />
+          <Txt Lang="en-GB" Txt="Perform time domain short circuit analysis for power system applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre transient stabilitetsvurdering for elnettet" />
+          <Txt Lang="en-GB" Txt="Perform transient stability assessment for power systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere beskyttelsestestrutiner" />
+          <Txt Lang="en-GB" Txt="Define protection testing routines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere kontrol- og stabilitetstestrutiner" />
+          <Txt Lang="en-GB" Txt="Define control and stability testing routines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør hardware-in-the-loop (HiL) test af beskyttelsesrelæer" />
+          <Txt Lang="en-GB" Txt="Perform hardware-in-the-loop (HiL) testing of protection relays" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="39" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:54.917" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

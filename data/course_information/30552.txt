@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30552" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Satellitgeodæsi" />
+        <Title Lang="en-GB" Title="Satellite Geodesy" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="38307" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ole Baltazar</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>oand@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset har fokus på rum- og satellit-baserede observationer, der anvendes i positionering og definition af de grundlæggende geodætiske referencenet til kortlægning og navigation; hvorledes positioner beregnes og anvendes i bestemmelse af kontinentaldrift og deformationer.
+
+Kurset fokuserer også på satellit-altimetri og dets anvendelse i kortlægning af jordens topografi, ændringer i havniveau, gletschere og iskapper, samt indenfor hydrologi. Endelig fokuserer kurset på satellit-gravimetri, hvorledes disse missioner anvendes i kortlægning af jordens tyngdefelt og i bestemmelse af masse
+
+Øvelserne udføres i Matlab.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Günter Seeber: Satellite geodesy: foundations, methods, and applications.</Course_Literature>
+          <Course_Objectives>I en tidsalder med store klima forandringer. er nøjagtig kortlægning og overvågning af forandringer i f.eks. havniveauet og iskappernes størrelse, afhængig af det globale geodætiske observationssystem (GGOS) og rumbaserede systemer som GNSS og jordobservation.
+Kurset har til formål at give et grundigt overblik over rumbaserede geodætiske teknologier, herunder instrumentering, observationsteknikker, modeller og metoder, der bruges til at kortlægge præcise positioner, samt Jordens form og tyngdefelt og dens ændringer.</Course_Objectives>
+          <DTU_Remark>Kurset dækker grundlæggende emner i satellit-geodæsi og dele af de tidligere kurser 30550 Satellitbaseret positionering og 30200 Måleteknologi inden for rum- og geofysik.</DTU_Remark>
+          <Remark>Dette kursus giver eleverne kompetencer, der er relevante for FN's Verdensmål, især #13 (Klimahandling), #14 (Livet under vand) og #15 (Livet på jord).
+Kurset anbefales til første semester på ESPE kandidat og forudsættes gennemført på studielinien Kortlægning og Navigation. Kurset forudsættes endvidere gennemført før 30554 Globale Navigationssatellitsystemer.
+Kurset omhandler ikke hardware. Kurset indeholder ikke praktisk dataindsamling.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will focus on the space geodetic observations utilized for positioning and defining the basic reference frames for mapping and navigation, as well as how to compute positions and obtain information about continental drift and crustal deformations.
+
+The course will also focus on satellite altimetry and its use for mapping the topography of the Earth and monitoring changes in sea level, glaciers and ice sheets, and in-land water bodies. Finally, the course will focus on satellite gravimetry missions and how these satellite missions are used for measuring the Earth's gravity field. Some examples of how satellite gravimetry may be used for monitoring mass movements will be explained.
+
+Exercises are carried out using Matlab.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Günter Seeber: Satellite geodesy: foundations, methods, and applications.</Course_Literature>
+          <Course_Objectives>In this era of climate change, accurate mapping and monitoring of changes, e.g., inland topography, sea level and ice sheets, highly rely on the global geodetic observing system (GGOS), compromising various space geodetic techniques such as GNSS and Earth Observation.
+
+The course aims to provide a thorough overview of space-based geodetic technologies, including instrumentation, observation techniques, models, and methods used to map precise positions, as well as the shape and gravity field of the Earth and its changes.</Course_Objectives>
+          <DTU_Remark>The course covers basic aspects of satellite geodesy and elements from the former courses 30550 satellite-based positioning and 30200 Measurement Technologies in Earth and Space Physics.</DTU_Remark>
+          <Remark>This course provides students with competencies relevant to UN SDGs, particularly #13 (Climate Action), #14 (Life below water) and #15 (Life on land). 
+The course is recommended for the first semester of the master program Earth and Space Physics and Engineering and is mandatory for the program's study line 'Mapping and Navigation'.
+The course is a prerequisite for 30554 Global navigation satellite systems.
+The course does not deal with hardware. The course does not include data collection or fieldwork.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive geodætiske koordinat- og tidssystemer, Kepler-elementer til beskrivelse af satellitters baner og hovedtyper af satellitbaner (GEO, MEO og LEO)," />
+          <Txt Lang="en-GB" Txt="Describe geodetic coordinate and time systems, Kepler elements to describe satellite motion, and main types of satellite orbits: GEO, MEO, and LEO," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne positioner på satellitbaner og transformere mellem koordinatsystemer," />
+          <Txt Lang="en-GB" Txt="Compute positions of satellites and transformations used in satellite geodesy," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive vigtige baneafvigelser forårsaget af tyngde hhv andre kræfter samt kendetegn ved gentagende baner," />
+          <Txt Lang="en-GB" Txt="Describe the main orbit perturbations due to gravimetric and non-gravimetric forces  and characteristics of repeat and sun-synchronous orbits," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne baneafvigelser forårsaget af J2," />
+          <Txt Lang="en-GB" Txt="Compute J2 pertubations," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare beregning af en geodætisk referenceramme baseret på geodætiske rumteknologier som VLBI, SLR og GNSS," />
+          <Txt Lang="en-GB" Txt="Explain the realization of a geodetic reference frame based on space geodetic techniques (VLBI, SLR, GNSS)," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyse GNSS data med henblik på bestemmelse af kontinentaldrift og andre deformationer," />
+          <Txt Lang="en-GB" Txt="Analyse GNSS positions for monitoring continental drift and crustal deformations," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og anvende konventionelle modeller for atmosfæriske effekter på GNSS-satellitsignaler" />
+          <Txt Lang="en-GB" Txt="Implement and apply conventional models for atmospheric effects on GNSS signals," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere præcision og nøjagtighed af afstandsmåling i satellit-altimetri," />
+          <Txt Lang="en-GB" Txt="Assess range precision and accuracy estimates for satellite altimetry," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere data fra satellitaltimetri i kortlægning af vandstande, havstrømme, landtopografi og ismasser," />
+          <Txt Lang="en-GB" Txt="Analyse satellite altimeter data for mapping sea level and ocean currents, land topography, and cryosphere," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principper og kendetegn for satellit-misioner indenfor satellit-gravimetri, samt at" />
+          <Txt Lang="en-GB" Txt="Explain the principles and mission characteristics of satellite gravimetry, and to" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle model over masse and fysiske ændringer af jorden ud fra data fra satellit" />
+          <Txt Lang="en-GB" Txt="Create a model of mass and physical changes of the Earth from satellite data." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Satellit-geodæsi indenfor positionering og referencenet, samt jordobservation</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="30550.30200" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:14.833" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34251" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avancerede kodningssystemer med iterative dekodningsmetoder" />
+        <Title Lang="en-GB" Title="Advanced forward error correction and iterative decoding" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="575" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Søren Otto</GivenName>
+            <FamilyName>Forchhammer</FamilyName>
+            <Email>sofo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Fejlkorrigerende koder anvendes med meget stor udbredelse i moderne kommunikationssystemer såsom mobilkommunikation (4G, 5G, osv.), satellitkommunikation og digitalt TV. Kurset omfatter følgende emner:
+
+- foldningskoder med hastighed 1/n ved tilstandsformulering.
+- BCJR algoritmen til dekodning af foldningskoder.
+- Turbo-kode systemet baseret på foldningskoder.
+- Turbo-kode baseret standarder: rumkommunikation og 4G
+- Dekodning af LDPC koder. Sum-product algoritmen.
+- Hamming koder 
+- LDPC baseret standarder: DVB-S2 satelit TV og 5G
+- Belief propagation (BP) algoritmen. Relation mellem BP, sum-product og BCJR.
+- Simulering af dekodning i gaussisk støj.
+- Eksempler på anvendelser, i tele- og kvante-komunikation.
+
+Kurset indeholder dels forelæsninger med øvelser og dels et obligatorisk projekt med iterativ dekodning fx. til LDPC- eller turbo-kodning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Indføre de studerende i teori for avancerede fejlkorrigerende koder (forward error correction (FEC)), f. eks low-density parity check (LDPC) koder og turbo koder.
+Indføre de studerende i signalbehandlings-metoder for FEC dekodning anvendt i nyere telekommunikationsstandarder, som f. eks 4G, 5G, satellitkommunikation og rumkommunication, samt i kvantekommunikations-systemer, fx. quantum key distribution.
+Relatere ikke-lineær signalbehandlings teori og FEC dekodningsmetoder.</Course_Objectives>
+          <Remark>Det forudsættes at de studerende selv medbringer en laptop-computer og har adgang til programmering i Python, MATLAB eller C/C++.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Standard convolutional codes of rate 1/n: notation, theory, puncturing-based rate control 
+  and relation to block codes.
+- The BCJR algorithm for decoding of convolutional codes.
+- Turbo codes with convolutional constituent codes.
+- Turbo codes in telecommunication standards: deep space communications and 4G
+- LDPC codes: notation and theory.
+- LDPC codes in telecommunication standards: DVB-S2 television standard and 5G.
+- Hamming codes as LDPC codes.
+- Decoding algorithms for LDPC codes: the sum-product algorithm.
+- Belief propagation algorithm and its relation to the sum-product and BCJR algorithms.
+- Simulation of basic FEC in the presence of Gaussian noise.
+- Examples of applications in tele- and quantum-communication
+
+The course is composed of lectures around the topics of interest with simple exercises following each lecture. The course concludes with a project on applying iterative decoding e.g. in an LDPC or a turbo decoder.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce students to advanced forward error correction (FEC) codes such as low-density parity check (LDPC) codes and convolutional turbo codes.
+To introduce signal processing techniques for their decoding and error correction as applied in communication standards, such as 4G, 5G, deep space and satellite communications, as well as in quantum communication systems, e.g. quantum key distribution.
+To relate nonlinear signal processing theory to the theory and application of FEC.</Course_Objectives>
+          <Remark>It is assumed that the students bring their own laptop computer and have access to programming in Python, MATLAB or C/C++.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med Python(/MATLAB) er påkrævet. Erfaring med C/C++ kan være et alternativ." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience in Python(/MATLAB) is required. C/C++ may be used as an alternative." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01405/30300/34230/34231" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare teorien bag foldningskoder og deres egenskaber." />
+          <Txt Lang="en-GB" Txt="explain the theory of convolutional codes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare princippet i turbo-kode systemet baseret på foldningskoder." />
+          <Txt Lang="en-GB" Txt="explain the principle of convolutional turbo codes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare princippet i LDPC kode systemet." />
+          <Txt Lang="en-GB" Txt="explain the principle of LDPC codes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare relationen mellem dekodning af turbo- og LDPC koder og belief propagation algoritmen." />
+          <Txt Lang="en-GB" Txt="explain the relation between decoding of turbo and LDPC codes and the belief propagation algorithm." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere i et af sprogene, Python, MATLAB, C++, C (eller lignende), en avanceret iterativ dekoder for en turbo-, produkt eller en LDPC kode." />
+          <Txt Lang="en-GB" Txt="implement in Python, MATLAB or C++, C (or similar) an advanced iterative decoder for a turbo, product or an LDPC code." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="simulere en sådan koder og iterative algoritmer som anvendes i nyere kommunikationstandarder." />
+          <Txt Lang="en-GB" Txt="simulate the performance of a typical LDPC or turbo coded system as per a telecommunication standard." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere relevante dele i telekommunikations-standarder med foldnings-,turbo- og LDPC kodere." />
+          <Txt Lang="en-GB" Txt="extract relevant information from telecommunication standards employing convolutional, turbo and LDPC codes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe en dekoderkonfiguration for disse koder afhængigt af systemets kompleksitetkrav og performancekrav. " />
+          <Txt Lang="en-GB" Txt="Design a decoder configuration for these codes depending on system requirements for performance and complexity." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Indføring i kodning og dekodning af foldningskoder</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:04.76" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

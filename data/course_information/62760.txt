@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62760" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Elforsyning 1" />
+        <Title Lang="en-GB" Title="Power Engineering 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="178698" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mehdi</GivenName>
+            <FamilyName>Savaghebi</FamilyName>
+            <Email>medi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="214374" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sam</GivenName>
+            <FamilyName>Roozbehani</FamilyName>
+            <Email>samro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Elforsyningsnettet
+- 3-fase-systemet
+- Kompleks effekt
+- Komponenter i elsystemet
+- Admittansmatricen
+- Transformere, ækvivalenter, koblinger, tab
+- Transmissionslinier, Serie- , pi- og R, L, C, G ækvivalent
+- Luftledninger
+- Kabler
+- Per-unit system
+- Effektflowanalyse</Contents>
+          <Course_Objectives>At give en grundlæggende forståelse for elforsyningen og de vigtigste relaterede beregningsprincipper. 
+De studerende opnår kendskab til elforsyningsnettet og de vigtigste komponenter, som indgår i produktion, transmission og distribution af elektrisk energi. Desuden behandles og trænes principper for beregninger inden for simple net.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektrisk Energiteknologi: 3. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- The electricity grid
+- 3-phase system
+- Complex power
+- Components of the power system
+- Admittance matrix
+- Transformers equivalents
+- Transmission lines, Series, pi and R, L, C, G equivalent
+- Overhead lines
+- Cables
+- Per-unit system
+- Power flow analysis</Contents>
+          <Course_Objectives>To provide a basic understanding of electricity and the main related calculation principles.
+The students are introduced to the electricity grid and the main components involved in the generation, transmission, and distribution of electrical energy. Moreover, principal calculations in simple networks are covered.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektrisk Energiteknologi: 3. semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det vil være vanskeligt at følge faget, hvis den studerende ikke har et godt kendskab til kredsløbs-teknik og herunder især beregninger med brug af komplekse tal og beregninger på trefasede systemer. En rimelig kompetance inden for beregningsprogrammer som Excel, Maple, Matlab og lignende er også nødvendig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It will be difficult to complete the course if the student doesn't have a good understanding of circuit calculations and especially calculations using complex numbers and three phase systems. The student also should have a level ov competetency in the use of calculation programs like Excel, Maple, Matlab and the like." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62715/62745" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere de vigtigste sammenhænge i elforsyningsnettet" />
+          <Txt Lang="en-GB" Txt="Identify key relationships in the electricity supply grid" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne elektriske størrelser i 3-fasede elektriske net" />
+          <Txt Lang="en-GB" Txt="Calculate the electrical quantities of 3-phase electrical network" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende elektriske komponenters ækvivalenter" />
+          <Txt Lang="en-GB" Txt="Apply electrical components equivalents" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere transformere med passende ækvivalenter" />
+          <Txt Lang="en-GB" Txt="Model transformers with appropriate equivalents" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere luftledninger med passende ækvivalenter" />
+          <Txt Lang="en-GB" Txt="Model the overhead lines with appropriate equivalent" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere kabler med passende ækvivalenter" />
+          <Txt Lang="en-GB" Txt="Model the cables with appropriate equivalents" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne spændings- og strømforhold i simple net" />
+          <Txt Lang="en-GB" Txt="Calculate the voltage and current in simple networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere givne belastningssituationer" />
+          <Txt Lang="en-GB" Txt="Analyse given load conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende per-unit princippet" />
+          <Txt Lang="en-GB" Txt="Apply the per-unit principle" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Introduktion til nummeriske metoder til løsning af elektriske systemer" />
+          <Txt Lang="en-GB" Txt="Introduction to numerical methods for solving electrical system's." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende værktøjer såsom MATLAB og DIgSILENT PowerFactory til analyse og simulering af elsystemer." />
+          <Txt Lang="en-GB" Txt="Utilize tools such as MATLAB and DIgSILENT PowerFactory for power system analysis and simulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundlæggende Elforsyning</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:12.123" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

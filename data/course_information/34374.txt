@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34374" Volume="2026/2027" University="dtu" LastUpdated="2025-11-21+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="IoT Hardware og PCB Design" />
+        <Title Lang="en-GB" Title="IoT Hardware and PCB Design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="114401" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anas Mohamad Al</GivenName>
+            <FamilyName>Shalyan</FamilyName>
+            <Email>amals@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="62516" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tiberiu-Gabriel</GivenName>
+            <FamilyName>Zsurzsan</FamilyName>
+            <Email>tgzsur@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="19827" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Martin Nordal</GivenName>
+            <FamilyName>Petersen</FamilyName>
+            <Email>mnpe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den afsluttende vurdering baseres på en samlet bedømmelse af øvelserne og den afsluttende rapport." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final evaluation is based on an overall assessment of the exercises and the final report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer principper for IoT-hardware med fokus på grundlæggende koncepter, arkitekturer og praktiske hardwarehensyn. Der arbejdes med skematisk design og layout af printkort (PCB) ved brug af professionel CAD-software, Altium Designer. Kurset dækker essentielle aspekter af IoT-hardwareudvikling, herunder valg og integration af strømforsyningsmoduler (f.eks. LDO, buck-konvertere og batteristyrings-IC'er), STM32-mikrocontrollere samt trådløse kommunikationsmoduler (GPS og LoRa) med særligt fokus på RF-kredsdesign og impedanstilpasning. De studerende får praktisk erfaring med at forberede PCB-design til produktion, herunder udarbejdelse af nødvendig fremstillingsdokumentation (BOM, Gerber-filer).
+
+De studerende arbejder praktisk med projektarbejde i grupper og fører et koncept gennem hele IoT-hardwareudviklingsprocessen. Praktiske øvelser og vejledninger understøtter projektforløbet. Evalueringen baseres på øvelser gennemført i løbet af kurset samt en afsluttende teknisk rapport, der dokumenterer hardwaredesignet og udviklingsprocessen.
+
+De studerende forventes at have grundlæggende kendskab til elektroniske kredsløb. Der kræves ingen specifikke lærebøger; kursusmateriale stilles til rådighed.</Contents>
+          <Teaching_And_Learning_Methods>Ugentlige forelæsninger og praktiske øvelser understøtter en projektbaseret tilgang, hvor studerende designer og dokumenterer en komplet IoT hardware prototype gennem individuelt og gruppearbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver de studerende praktisk erfaring med design, udvikling og klargøring af IoT-hardwaresystemer til produktion. Gennem projektbaseret læring gennemgår de studerende hele hardwareudviklingsprocessen, fra koncept og skematisk design til PCB-layout og komponentvalg. Centrale emner inkluderer design af strømforsyningsarkitektur, integration af mikrocontrollere samt design af hardwaregrænseflader til GPS- og LoRa-moduler. De studerende genererer produktionsfiler og lærer praktiske arbejdsgange til udvikling af omkostningseffektive, lavenergi IoT-enheder, klar til prototyper og produktion.</Course_Objectives>
+          <DTU_Remark>Kurset vil ikke blive udbudt om efteråret i fremtiden. Det vil altid blive afholdt om foråret fremover.</DTU_Remark>
+          <Remark>Dette kursus fokuserer på hardwaredesign til IoT og supplerer andre IoT-kurser på DTU såsom 34325, 34346, 34365 og 34373, der primært fokuserer på netværksteknologier, kommunikationsprotokoller og udvikling af embedded software.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces IoT hardware principles, covering fundamental concepts, architectures, and practical hardware considerations. It includes schematic design and printed circuit board (PCB) layout using professional CAD software Altium Designer. The course addresses critical aspects of IoT hardware development, including selection and integration of power management modules (e.g., LDO, buck converters, and battery management ICs), STM32 microcontrollers, and wireless communication modules (GPS and LoRa), focusing particularly on RF circuit design and impedance matching. Students gain practical experience in preparing PCB designs for fabrication, including creating essential manufacturing documentation (BOM, Gerber files).
+
+Students will engage in hands-on project work in groups, taking a concept through the entire IoT hardware development process. Practical exercises and tutorials are included to support project development. Evaluation is based on exercises completed during the course and a final technical report documenting the hardware design and development process.
+
+Students are expected to have basic knowledge of electronic circuits. No specific textbooks are required; course materials will be provided.</Contents>
+          <Teaching_And_Learning_Methods>Weekly lectures and practical exercises support a project-based approach, where students design and document a complete IoT hardware prototype through individual and group work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course provides students with hands-on experience in designing, developing, and preparing IoT hardware systems for production. Through project-based learning, students follow the full hardware development process, from concept and schematic design to PCB layout, and component selection. Key topics include power supply architecture, microcontroller integration, and designing interfaces for GPS and LoRa modules. Students will generate manufacturing files and learn practical workflows for building cost-efficient, low-power IoT devices ready for prototyping and production.</Course_Objectives>
+          <DTU_Remark>The course will not be offered in Autumn in any future years. It will always be scheduled in the Spring moving forward.</DTU_Remark>
+          <Remark>This course focuses on IoT hardware design and complements other DTU IoT courses such as 34325, 34346, 34365, and 34373, which focus mainly on networking technologies, communication protocols, and embedded software development.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Elektriske kredsløb 1 og grundlæggende elektronik samt kendskab til IoT anbefales" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Electric Circuits 1, basic electronics, and familiarity with IoT is recommended" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34600 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive strukturen og de grundlæggende komponenter i IoT-hardwaresystemer" />
+          <Txt Lang="en-GB" Txt="Describe the structure and fundamental components of IoT hardware systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og vælge egnede elektroniske komponenter ud fra datablade og applikationskrav. " />
+          <Txt Lang="en-GB" Txt="Identify and select appropriate electronic components based on datasheets and application requirements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare opbygningen af printkort (PCB), inklusive lag, baner, vias og pads." />
+          <Txt Lang="en-GB" Txt="Explain printed circuit board (PCB) anatomy, including layers, traces, vias, and pads." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe kredsløbsdiagrammer og PCB-layouts ved hjælp af professionel CAD-software (f.eks. Altium)." />
+          <Txt Lang="en-GB" Txt="Design schematic diagrams and PCB layouts using professional CAD software (e.g., Altium)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere og vælge passende strømforsyningsarkitekturer baseret på energieffektivitet og applikationsbehov." />
+          <Txt Lang="en-GB" Txt="Evaluate and select suitable power supply architectures based on energy efficiency and application needs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere batteristyrings-IC'er og batteribeskyttelseskredsløb i IoT-hardwaredesigns." />
+          <Txt Lang="en-GB" Txt="Integrate battery management ICs and battery protection circuits into IoT hardware designs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere mikrocontrollere i specialdesignede PCB’er under hensyn til perifere krav og lavt strømforbrug." />
+          <Txt Lang="en-GB" Txt="Implement microcontrollers within custom PCB designs, considering peripheral requirements and low-power operation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere hardwaregrænseflader til GPS- og LoRa-moduler med fokus på impedanstilpasning og RF-design." />
+          <Txt Lang="en-GB" Txt="Implement hardware interfaces for GPS and LoRa modules, including impedance matching and RF considerations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Generere og validere produktionsdokumentation, inklusive styklister (BOM) og Gerber-filer." />
+          <Txt Lang="en-GB" Txt="Generate and validate manufacturing documentation, including Bill of Materials (BOM) and Gerber files." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere hardwaredesign-beslutninger tydeligt i professionelle tekniske rapporter." />
+          <Txt Lang="en-GB" Txt="Document hardware design decisions clearly in professional technical reports. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende en komplet IoT-hardwareudviklingsproces, fra indledende koncept til PCB-produktion." />
+          <Txt Lang="en-GB" Txt="Apply an end-to-end IoT hardware development workflow from initial concept through PCB production." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="60" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:22.67" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

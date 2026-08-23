@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30410" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Antenne- og mikrobølgeteknik" />
+        <Title Lang="en-GB" Title="Antenna and microwave techniques" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="6153" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tom Keinicke</GivenName>
+            <FamilyName>Johansen</FamilyName>
+            <Email>tkj@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="219558" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Adam</GivenName>
+            <FamilyName>Narbudowicz</FamilyName>
+            <Email>adana@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kortfattet oversigt over mikrobølgesystemer til anvendelse inden for trådløs kommunikation, radar og radiometre. Repetition af transmissionslinieteori. Analyse og syntese af transmissionslinjer og bølgeledere. Kredsløbsteori for bølgeledende systemer. Impedanstransformation og -tilpasning. Mikrobølgeresonatorer, effektdelere og retningskoblere. Grundlæggende antenneparametre og simple udstrålende systemer. inkl. simple antennegrupper. Tråd- og sløjfeantenner. Bredbåndet antenner (dipoles). Patch antenner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, projekter og opgaveløsning.</Teaching_And_Learning_Methods>
+          <Course_Literature>Udvalgte kapitler fra D. M. Pozar, Microwave Techniques, Wiley, 4th edition 2012
+
+Udvalgte kapitler fra C. A. Balanis, Antenna Theory - Analysis and Design, Wiley, 4th edition 2016</Course_Literature>
+          <Course_Objectives>Målet med kurset er få de studerende til at forstå teorierne, metoderne, fysisk virkemåde, og teknisk konstruktion af passive mikrobølgekomponenter og antenner til brug i trådløse systemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Short review of microwave systems for wireless communication, radar and radiometer applications. Repetition of transmission line theory. Analysis and synthesis of planar transmission lines and waveguides. Microwave network analysis for waveguiding systems. Impedance transformation and matching. Microwave resonators, power dividers and directional couplers. Antenna fundamentals and simple radiation systems incl simple antenna arrays. Wire and loop antennas. Broadband antennas (dipoles). Patch antennas.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, project and problem-solving.</Teaching_And_Learning_Methods>
+          <Course_Literature>Selected chapters from D. M. Pozar, Microwave Techniques, Wiley, 4th edition 2012
+
+Selected chapters from C. A. Balanis, Antenna Theory - Analysis and Design, Wiley, 4th edition 2016</Course_Literature>
+          <Course_Objectives>The course aims to make the student understand the theories, methods, physical mode of operation, and the technical construction of the passive microwave components and antennas used in wireless systems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset kræver basal kendskab til elektromagnetisme (Maxwell's ligninger, plane bølger, og transmission linjer), kredsløbsteori samt kendskab til trådløse kommunikationssystemer (sendere og modtagere, HF kredsløb og antenner, støj, radiobølgeudbredelse, analog og digital modulation)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course requires basic knowledge of electromagnetics (Maxwell's equations, plane waves, and transmission lines), circuit theory and knowledge about wireless communication systems (transmitters and receivers, RF circuits and antennas, noise, radio wave propagation, analogue and digital modulation)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30400. 30035. 30405" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og designe transmissionlinjer (rektangulær bølgeleder, koaxialkabel, microstrip og stripline) og demonstrere kendskab til TEM, TE og TM bølger" />
+          <Txt Lang="en-GB" Txt="analyze and design transmission lines (rectangular waveguide, coaxial cables, microstrip, and stripline) and demonstrate knowledge of TEM, TE and TM waves" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende S-, Z-, Y-, ABCD parametre til analyse af mikrobølgekredsløb" />
+          <Txt Lang="en-GB" Txt="use S-, Z-, Y-, ABCD parameters for the analysis of microwave networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe impedanstilpasningskredsløb (diskrete komponenter, enkel og dobbel stub og kvartbølgetransformer)" />
+          <Txt Lang="en-GB" Txt="design impedance matching circuits (discrete components, single and double stub, and quarter-wave transformer)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og designe mikrobølgeresonatorer (lumped element ekvivalenter, TEM transmissionslinjeresonatorer og kaviteter) og demonstrere kendskab til koblingmekanismer for resonatorer" />
+          <Txt Lang="en-GB" Txt="analyze and design microwave resonators (lumped element equivalents, TEM transmission line resonators, and cavities) and demonstrate knowledge of resonator coupling mechanisms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe effektdelere og retningskoblere samt analysere symmetriske mikrobølgenetværk ved stimulering af lige og ulige modes.  " />
+          <Txt Lang="en-GB" Txt="design power dividers and directional couplers and analyze symmetrical microwave networks using the even-odd mode excitation technique" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå grundlæggende antenneteori og simple udstrålende systemer inkl. antennegrupper" />
+          <Txt Lang="en-GB" Txt="understand antenna fundamentals and simple radiating systems incl. simple antenna arrays" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og designe tråd- og sløjfeantenner" />
+          <Txt Lang="en-GB" Txt="analyze and design wire and loop antennas" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og designe broadband dipoles (og andre udvalgte antenner) og tilhørende tilpasningsteknikker" />
+          <Txt Lang="en-GB" Txt="analyze and design broadband dipoles (and other selected antennas) and associated matching techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og designe patchantenner ved brug af analytiske udtryk og kommercial elektromagnetisk simulerings software" />
+          <Txt Lang="en-GB" Txt="analyze and design patch antennas using analytic approaches and commercial electromagnetic simulation software" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Antenne- og mikrobølgeteknik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31417. 30417" />
+        <PreviousCourse CourseCode="31417" />
+        <PreviousCourse CourseCode="30417" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:07.107" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

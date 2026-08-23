@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34451" University="dtu" LastUpdated="2026-06-03+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Ikke-lineær matematisk fysik" />
+        <Title Lang="en-GB" Title="Nonlinear mathematical physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="6148" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Bang</FamilyName>
+            <Email>oban@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="199379" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Coraline</GivenName>
+            <FamilyName>Lapre</FamilyName>
+            <Email>corla@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen (40%), 4 rapporter (60%)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="oral exam (40%), 4 reports (60%)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Fundamentale ikke-lineære ligninger (Sine-Gordon, Klein-Gordon, Korteweg-de-Vries, Ikke-lineær Schrödinger, Diskret ikke-lineær Schrödinger og chi2 ligninger). Fundamentale ikke-lineære løsninger (lyse og mørke solitoner). Integrabilitet. Flerskala perturbations teori. Moment metoden. Virial teori. Fredholm’s alternativ, Modulations instabilitet. Generering af dispersive bølger – Cherenkov stråling. Raman rødskift. 2. harmonisk generering, cascading, kvasi-fase tilpasning og induceret Kerr ikke-linearitet.</Contents>
+          <Teaching_And_Learning_Methods>13 eftermiddagssessioner (13-17) med først 3 forelæsninger (35 minutter hver) og derefter 
+grupperegning (2 timer om 4 projekter)</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere begreber, værktøjer og metoder fra avanceret ikke-lineær anvendt matematik for Fysik og Nanoteknologi studerende, så de er rustede til studier af ikke-lineære systemer inden for fysik, optik, fotonik, hydrodynamik, superledning og biofysik.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fundamental nonlinear equations (Sine-Gordon, Klein-Gordon, Korteweg-de-Vries, nonlinear Schrödinger, discrete nonlinear Schrödinger, and chi2 equations). Fundamental nonlinear solutions (bright, dark and solitons). Integrability. Multiple-scale perturbation theory. Method of moments. Virial theory. Fredholm’s alternative. Modulational instability. Generation of dispersive waves – Cherenkov radiation. Raman redshift. Second harmonic generation, cascading, quasi-phase matching and induced Kerr nonlinearity.</Contents>
+          <Teaching_And_Learning_Methods>13 afternoons (1 - 5pm) starting with 3 lectures (35 minutes each) followed by group exercises (4 projects of 2 hours)</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce concepts, tools and methods from advanced nonlinear applied mathematics to physics and nanotechnology students and thereby enable them to study nonlinear effects in physics, optics, photonics, hydrodynamics, superconductivity, and biophysics.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende egenskaberne af de fundamentale ikke-lineære ligninger i fysikken" />
+          <Txt Lang="en-GB" Txt="Know the properties of the fundamental nonlinear equations in physics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende til fundamentale ikke-lineære løsninger, som lyse og mørke solitoner" />
+          <Txt Lang="en-GB" Txt="Know the fundamental types of nonlinear solutions, such as bright and dark solitons" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende flerskala perturbationsteori og Fredholm’s alternativ til stringent udledning og reduktion af ikke-lineære ligninger" />
+          <Txt Lang="en-GB" Txt="Apply multiple-scale perturbation theory and Fredholm’s alternative for rigorous derivation and reduction of nonlinear equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde bevarede størrelse og symmetrier og anvende disse i udledningen af generelle ikke-lineære løsninger" />
+          <Txt Lang="en-GB" Txt="Find conserved quantities and symmetries and use them to derive general nonlinear solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge virial teori til studier af kollaps" />
+          <Txt Lang="en-GB" Txt="Apply Virial theory to study collapse" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme modulations instabilitet af plan-bølge løsninger til ikke-lineære ligninger" />
+          <Txt Lang="en-GB" Txt="Calculate modulational instability gain bands for plane-wave solutions to nonlinear equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne Raman induceret frekvens rødshift af solitoner" />
+          <Txt Lang="en-GB" Txt="Calculate Raman-induced frequency red-shift of solitons" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende moment metoden til bestemmelse af løsninger af ikke-lineære ligninger, som ikke har en Lagrange funktion" />
+          <Txt Lang="en-GB" Txt="Apply the Method of Moments to find solutions to nonlinear equations that do not have a Lagrangian" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne hvordan en soliton kan generere lineære bølger, eller såkaldte Cherenkov stråling, og ved hvilke frekvenser disse optræder" />
+          <Txt Lang="en-GB" Txt="Calculate when a soliton can emit linear dispersive waves and at what frequencies they appear" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge Fourier-midlings perturbationsteori til at analysere anden harmonisk generering og solitonegenskaber i kvadratisk ikke-lineære materialer med ikke-lineære kvasifase tilpasningsgitre og vise hvordan disse kan inducere en kubisk ikke linearitet" />
+          <Txt Lang="en-GB" Txt="Use Fourier-averaging perturbation theory to analyse second-harmonic generation and soliton properties in quadratic nonlinear materials with nonlinear quasi-phase-matching gratings and show how these gratings induce a cubic nonlinearity" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34031" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Ikke-lineær matematisk fysik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="2" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-03" Time="11:45:10.947" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

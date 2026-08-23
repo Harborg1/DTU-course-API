@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41391" University="dtu" LastUpdated="2024-03-11+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Mekanik" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="High Performance Computing: FORTRAN, OpenMP and MPI" />
+        <Title Lang="en-GB" Title="High Performance Computing: FORTRAN, OpenMP and MPI" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="ServiceCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="3 ugers periode (januar)" />
+          <Schedule_Txt Lang="en-GB" Txt="3 week period (January)" />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="67" KVL_Resources="100" />
+          <Ass_Dep UID="1" Resources="33" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Course_Responsible PersonKey="7646" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jens Honore</GivenName>
+            <FamilyName>Walther</FamilyName>
+            <Email>jhwa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="449" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bernd</GivenName>
+            <FamilyName>Dammann</FamilyName>
+            <Email>beda@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Phd. kurset består af 3 dele:
+Del I: FORTRAN programmering
+Del II: Introduktion til OpenMP
+Del III: MPI</Contents>
+          <Teaching_And_Learning_Methods>Phd. kurset bestaar af 2-3 timers forelæsning per dag, samt 2-3 timers øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>FORTRAN et et af hoved programmeringssprogene indenfor  de natur- og teknisks videnskaber og kendskab til FORTRAN er derfor en nødvenlig kompetence for såvel studerende, som forskere og ingeniøerer generelt.
+Med de to sidste revisioner af sproget har FORTRAN fulgt med udviklingen og kravene til moderne programmeringssprog. De fleste harware udbydere (IBM, HP, SGI, Intel, Sun, Cray) tilbyder 
+effektive FORTRAN compilere, baseret på mere end 50 års erfaring.
+
+MPI (Message Passing Interface) er de-facto standard til programmeting af kode til distributeret memory computer arkitekturer. MPI kan kaldes fra C/C++ og  FORTRAN, og er porteret til alle massivt-parallel supercomputers. 
+
+OpenMP (Open Multi-Processing) er et standard Application Programming Interface (API) til programmering af shared memory multiprocessing i C/C++ and FORTRAN. OpenMP består af et sæt af compiler direktiver, biblioteksfunktioner, samt miljø variable som tillader og understøtter shared memory parallelisme.
+
+Nuværende og fremtidens supercomputers bestaar typisk af klynger af computere (noder), hver med flere kerner (dual, quad, multi-kerner), som deler nodens hukommelsen.
+
+Formålet med kurset er at skitsere strategier til portering, og udvikling af effektiv, portabel og veldokumentet kode til denne hybride computer arkitektur.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The Ph.D. course consists of 3 parts:
+
+Part I: Programming FORTRAN
+Part II: Introduction to OpenMP
+Part III: MPI</Contents>
+          <Teaching_And_Learning_Methods>The PhD. course consists of 2-3 hours lecture per day and 2-3 hours exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>FORTRAN is one of the principal languages used in scientific, numerical and engineering programming and knowledge in FORTRAN is an indispensible qualification for students, researchers, and engineers. With the two recent revisions of the language, the power of the language has been progressively enhanced, and most vendors (IBM, HP, SGI, Intel, Sun, Cray) provide highly optimizing FORTRAN compilers, based on more than 50 years of experience. 
+
+MPI (Message Passing Interface) is the de-facto standard for programming portable message-passing parallel applications on networked computers (also known as clusters). MPI has bindings to C/C++ and FORTRAN, and it is available on all massively-parallel supercomputers. 
+
+OpenMP (Open Multi-Processing) is a standard application programming interface (API) that supports multi-platform shared memory multiprocessing programming in C/C++ and FORTRAN. It consists of a set of compiler directives, library routines, and environment variables that enable shared memory parallelism and execution.
+
+The current and the future supercomputers consist of a cluster of computers (nodes) each with  multiple processing cores (dual, quad, multicore) that share the memory of the node. 
+
+The goal of the course it to outline strategies for porting and writing efficient, portable, maintainable code for such hybrid computer archictectures.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="kendskab til unix/linux" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="knowledge in unix/linux" />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="læse programmer skrevet i FORTRAN" />
+          <Txt Lang="en-GB" Txt="read programs written in FORTRAN" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive programmer i FORTRAN" />
+          <Txt Lang="en-GB" Txt="write programs in FORTRAN" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="læse programmer med OpenMP direktiver" />
+          <Txt Lang="en-GB" Txt="read programs with OpenMP directives" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive programmer med OpenMP direktiver" />
+          <Txt Lang="en-GB" Txt="write programs with OpenMP directives" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="læse programmer med MPI" />
+          <Txt Lang="en-GB" Txt="read programs using MPI" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive programmer med MPI" />
+          <Txt Lang="en-GB" Txt="write programs using MPI" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå forskellen mellem share og distritubed memory parallelitet" />
+          <Txt Lang="en-GB" Txt="understand the difference between shared and distributed memory paralleism" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage seriel benchmarking af kode" />
+          <Txt Lang="en-GB" Txt="perform serial benchmarking of code" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage debugging af kode" />
+          <Txt Lang="en-GB" Txt="perform code debugging" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="måle parallel effektivitet" />
+          <Txt Lang="en-GB" Txt="measure parallel efficiency" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte Amdahls regel" />
+          <Txt Lang="en-GB" Txt="use Amdah's law" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til FORTRAN og parallel programeering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:59.997" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

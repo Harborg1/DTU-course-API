@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02452" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Machine learning" />
+        <Title Lang="en-GB" Title="Machine Learning" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="111385" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Georgios</GivenName>
+            <FamilyName>Arvanitidis</FamilyName>
+            <Email>gear@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="16497" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Morten</GivenName>
+            <FamilyName>Mørup</FamilyName>
+            <Email>mmor@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="14854" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bjørn Sand</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>bjje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Godkendelse af opgaver er en forudsætning for at bestå kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Approval of assignments/exercises is a prerequisite for passing the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Multiple choice.&#xD;&#xA;No electronic aids (e.g., calculators).&#xD;&#xA;Only allowed to bring two A4 sheets of handwritten notes." />
+            <Aid_Txt Lang="da-DK" Txt="Multiple choice.&#xD;&#xA;Ingen elektroniske hjælpemidler (f.eks. lommeregnere).&#xD;&#xA;Kun tilladt at medbringe to A4-ark håndskrevne noter." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The exam will be held on a special day: Click &quot;Date of examination&quot; to the left to see the date see DT" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Eksamen afholdes på en særlig dag: klik på Eksamensplacering til venstre for at se dato" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Struktureret datamodellering. 
+Dataforbedredelse og featureudtrækning.
+Beskrivende statistikker. 
+Similaritetsmål.
+Kostfunktioner (inkl. maximum likelihood). 
+Optimeringsmetoder til machine learning.
+Overindlæring, generalisering, regularisering og bias-varians trade-offs.  
+Krydsvalidering.
+Statistisk evaluering og sammenligning af machine learning modeller.
+Visualisering og fortolkning af modeller. 
+Dimensionalitetsreduktion (inkl. principal komponent analyse). 
+Klassifikationsmetoder (beslutningstræer, logistisk og multinomial regression, nærmeste nabo, naiv Bayes, feed forward neurale netværk og ensemblemetoder). 
+Regressionsmetoder (regressionstræer, lineær regression, nærmeste nabo, feed forward neurale netværk og ensemblemetoder).
+Gruppering (k-means, hierarkisk gruppering og miksturmodeller). 
+Tæthedsestimering (kernel tæthedsestimering, Gaussiske miksturmodeller, og EM-algoritmen). 
+Anomali/outlier-detektion (inkl. tæthedsbaserede metoder).</Contents>
+          <Teaching_And_Learning_Methods>Aktiviteterne skifter mellem forelæsninger, opgaveregning og øvelser i Python.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusnoter</Course_Literature>
+          <Course_Objectives>At give deltagerne kendskab til:
+* en generel struktur til datamodellering
+* en række grundlæggende og bredt anvendte machine learning metoder
+* Python som værktøj til dataanalyse, datamodellering, og machine learning
+
+Kurset sætter således deltagerne i stand til at benytte machine learning til modellering af real-world data.</Course_Objectives>
+          <Remark>Kurset er et grundlæggende machine learning kursus som er relevant for alle masterretninger. Kurset giver en indføring i grundlæggende machine learning, matematikken bag metoderne samt hands-on erfaring i metodernes anvendelser. Kurset kan således stå alene.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Structured data modelling. 
+Data preprocessing and feature extraction.
+Summary statistics. 
+Similarity measures.
+Cost functions including maximum likelihood.
+Optimization methods for machine learning.
+Overfitting, generalization, regularization, and bias-variance tradeoffs.
+Cross-validation.
+Statistical evaluation and comparison of machine learning methods
+Visualization and interpretation of models. 
+Dimensionality reduction (including principal component analysis). 
+Classification methods (decision trees, logistic and multinomial regression, nearest neighbor, naïve Bayes classifier, feed forward neural networks, and ensemble methods) 
+Regression methods (regression trees, linear regression, nearest neighbor, feed forward neural networks, and ensemble methods)
+Clustering (k-means, hierarchical clustering, and mixture models) 
+Density estimation (kernel density estimation, Gaussian mixture models, and the EM algorithm) 
+Anomaly/outlier detection including density-based methods.</Contents>
+          <Teaching_And_Learning_Methods>The activities alternate between lectures, problem classes and hands-on Python exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Course notes</Course_Literature>
+          <Course_Objectives>To provide the participants knowledge of
+* a framework for data modeling
+* fundamental and widely applied machine learning methods
+* Python as a tool for data analysis, data modelling and machine learning
+
+The course enables the participants to apply machine learning for modeling of real world data.</Course_Objectives>
+          <Remark>The course is a basic machine learning course relevant for all master programs. The course is designed as a stand-alone course and provides an introduction to basic machine learning, the mathematics behind the methods, and hands-on experience in their use.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundkursus i lineær algebra og matematisk analyse, kendskab til sandsynlighedsregning og statistik, kendskab til Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic course in linear algebra and calculus, basic knowledge of probability theory and statistics, basic knowledge of Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01001/01002/01003/01004/01005).(02402/02403).(02002/02101/02102/02525/02631/02632/02633/02692)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de vigtigste trin der er involveret i datamodellering fra forberedelse af data, modellering af data til evaluering og formidling af resultaterne." />
+          <Txt Lang="en-GB" Txt="Explain the major steps involved in data modeling from preparing the data, modeling the data to evaluating and disseminating the results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere centrale machine learning begreber som featureudtrækning, kryds-validering, generalisering og overindlæring, prædiktion, curse of dimensionality og bias-varians tradeoff." />
+          <Txt Lang="en-GB" Txt="Discuss key machine learning concepts such as feature extraction, cross-validation, generalization and over-fitting, prediction, curse of dimensionality, and the bias-variance trade-off." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Matche praktiske problemer til standard datamodelleringsproblemer såsom dimensionalitetsreduktion, regression, klassifikation, tæthedsestimering og gruppering (clustering)." />
+          <Txt Lang="en-GB" Txt="Match practical problems to standard data modeling problems such as dimensionality reduction, regression, classification, density estimation and clustering." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skitsere hvordan relevante machine learning metoder virker samt beskrive deres forudsætninger, begrænsninger og styrker." />
+          <Txt Lang="en-GB" Txt="Sketch how a relevant set of machine learning methods work and describe their assumptions, strengths, and limitations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og modificere machine learning algoritmer i Python." />
+          <Txt Lang="en-GB" Txt="Apply and modify machine learning algorithms in Python." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende visualiseringsteknikker og statistik til at evaluere modelpræstationer, identificere mønstre og problemer med data." />
+          <Txt Lang="en-GB" Txt="Apply visualization techniques and statistics to evaluate model performance, identify patterns and data issues." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge, kombinere og modificere datamodelleringsmetoder for at analysere data og formidle resultaterne af analysen." />
+          <Txt Lang="en-GB" Txt="Select, combine and modify data modeling tools in order to analyze data and disseminate the results of the analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende struktureret datamodellering indenfor en bred vifte af anvendelsesområder såsom medicoteknik, bio-informatik, kemi, elektronik og computer science." />
+          <Txt Lang="en-GB" Txt="Apply the data modeling framework to a broad range of application domains in medical engineering, bio-informatics, chemistry, electrical engineering and computer science." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.compute.dtu.dk/courses/02451" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Machine Learning</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02450/02451" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:54.187" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="22150" University="dtu" LastUpdated="2026-04-13+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Introduktion til Systembiologi; MSc" />
+        <Title Lang="en-GB" Title="Introduction to Systems Biology; MSc" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="104310" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kristoffer</GivenName>
+            <FamilyName>Vitting-Seerup</FamilyName>
+            <Email>krivi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="18103" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Rasmus</GivenName>
+            <FamilyName>Wernersson</FamilyName>
+            <Email>rawe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen består af 3 dele:&#xD;&#xA;&#xD;&#xA;1) En 1-times skriftlig multiple-choice eksamen (MCQ) baseret på kursets overordnede læringsmål.&#xD;&#xA;2) Et anvendt system-biologi projekt udført i grupper, hvor alle medlemmer er ansvarlige for alle dele af projektet. 3&#xD;&#xA;3) En mundtlig gruppepræsentation af projektet. &#xD;&#xA;&#xD;&#xA;Den endelige karakter gives på baggrund af en samlet vurdering af alle tre dele af eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam consists of 3 parts: &#xD;&#xA;&#xD;&#xA;1) A 1 hour written multiple-choice exam based on the general course learning objectives.&#xD;&#xA;2) A systems biology project made in groups where all members are responsible for all parts of the project.&#xD;&#xA;3) An oral group presentation of the project. &#xD;&#xA;&#xD;&#xA;The final grade is based on an overall assessment of all three parts of the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No aids (and no internet) allowed for the multiple choice exam. All aids are allowed during the group project" />
+            <Aid_Txt Lang="da-DK" Txt="Ingen hjælpemidler (inkl internet) er tilladt til multiple-choice examen. Alle hjælpemidler er tilladt for gruppe projektet" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion:
+* Introduktion til systembiologi ("Systems Biology"), motivation for anvendelse af system/netværksorienterede metoder til analyse af biologiske problematikker.
+* Introduktion til netværksanalyse, inklusiv topologibaseret analyse af biologiske netværker, topologiske metrikker og algoritmer til identifikation af subnetværker.
+
+Grundlæggende systembiologisk forskning:
+* Introduktion til de vigtigste elementer af funktionel regulering.
+* Visualisering af regulatoriske netværk.
+* Introduktion to transcriptomics-data, samt overlejring af disse på netværk.
+* Kombination af tidsserie gen-ekspressionsdata og netværk som metode til datadreven identifikation af funktionel regulering.
+
+Anvendt systembiologi i biomedicinsk forskning:
+* Kombination af protein-protein-interaktionsdata fra flere modelorganismer med henblik på at opnå bedre dækning af humane interaktioner ("inferred human interactome").
+* Begreberne "virtual pulldowns" og "relevance scored networks" (0. og 1. ordens filtrering) 
+* Vigtigheden af proteinisoformer i systembiologisk kontekst.
+* Analyse af molekylære netværk specifikke for forskellige humane sygdomme.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er at give de studerende teoretisk såvel som praktisk erfaring med hvordan, hvornår, og hvorfor man bruger systembiologiske metoder til at forstå biologiske systemer.</Course_Objectives>
+          <DTU_Remark>Kurset udbydes også på bachelorniveau (22140)</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction:
+* Introduction to systems biology, the motivation for applying network analysis to biological problems.
+* Introduction to network analysis, including topology-based analysis of biological networks, key topological metrics, and algorithms for identification of communities in graphs.
+
+Basic Systems Biology Research:
+* Introduction to core components of functional regulation.
+* Visualizing regulatory networks.
+* Introduction to transcriptomics data – how to overlay expression data with networks.
+* Combining temporal (time-series) expression data with molecular networks, to discover modes of functional regulation.
+
+Applied Systems Biology in Biomedical Research:
+* Combining protein-protein interaction data from multiple species to form an inferred human interactome.
+* The concepts of virtual pulldowns and relevance scored networks (0th and 1st order filtering).
+* The importance of protein isoforms in a systems biology context.
+* Analysis of molecular networks related to the functional characteristics of different human diseases.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the students both theoretical and practical experience with how, when and why to apply systems biology approaches to analyze biological systems.</Course_Objectives>
+          <DTU_Remark>The course is also offered at BSc level (22140)</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende færdigheder i programmeringssproget R -ELLER- parallel deltagelse i kursus 22100 - R for Bio Data Science. Bemærk at opgaveløsning både til øvelser og eksamen forudsætter evnen til at programmere i R.&#xD;&#xA;&#xD;&#xA;Kendskab til basal celle- og molekylærbiologi, herunder cellens struktur, biologiske funktion, cellulære komponenter, biokemiske og molekylærbiologiske processer (metabolisme, RNA og proteinsyntese mm), DNA struktur, proteinkodende gener, den genetiske kode, primær, sekundær, tertiær og kvartenær proteinstruktur.&#xD;&#xA;&#xD;&#xA;Basal kendskab til bioinformatiske metoder og deres anvendelse, i forbindelse med indsamling og analyse af stor-skala biologisk data fra databaser såsom UniProt og GenBank." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A working knowledge of the programming language R -OR- parallel participation in course 22100 - R for Bio Data Science. Note that solving exercises both at lectures and the exam requires programming in R.&#xD;&#xA;&#xD;&#xA;Knowledge of cell structure, its biological function, subcomponents, biochemical and molecular processes (metabolism, RNA- and protein synthesis), structure of DNA, protein-coding genes, the standard genetic code, the primary (sequence), secondary (helices/coils), tertiary (3D) and quaternary (complex) structure of proteins.&#xD;&#xA; &#xD;&#xA;Basic knowledge and ability to apply bioinformatics methods and the knowledge to collect and process relevant biological data from large-scale databases such as UniProt and GenBank." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(27002/27008).27022.27026.(36611/22111).22100" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå og forklare de funktionelle niveauer af biologiske systemer, såsom gener, transkripter, proteiner, proteinkomplekser, pathways, celler, væv, osv." />
+          <Txt Lang="en-GB" Txt="understand and explain the functional levels of biological systems, e.g. genes, transcripts, proteins, protein complexes, pathways, cells, tissues, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå og forklare det teoretiske fundament for netværksbiologiske analyser af &quot;omics&quot; data." />
+          <Txt Lang="en-GB" Txt="understand and explain the theoretical foundation of network biology driven approaches for analysis of “omics” data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå og anvende protein-protein interaktionsdata til funktionelle analyser af biologiske systemer." />
+          <Txt Lang="en-GB" Txt="understand and apply protein-protein interaction data for functional analysis of biological systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå, anvende, analysere og evaluere forskellige metoder til gene set enrichment analyse (GSEA)." />
+          <Txt Lang="en-GB" Txt="understand, apply, analyze, and interpret different methods for gene set enrichment analysis (GSEA)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå og anvende genontologi (GO) til GSEA." />
+          <Txt Lang="en-GB" Txt="understand and apply the gene ontology (GO) for GSEA." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå, anvende, analysere og evaluere system biologiske metoder til analyse af &quot;omics&quot; data til biomedicinsk forskning." />
+          <Txt Lang="en-GB" Txt="Understand, use, apply and evaluate system biology approaches for analysis of &quot;omics&quot; data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge R til at organisere, hpndtere og visualisere data" />
+          <Txt Lang="en-GB" Txt="use R to organize, modify, and visualize data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Som en gruppe designe og udføre et anvendt system biologi projekt" />
+          <Txt Lang="en-GB" Txt="as part a group design and execute a applied systems biology project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tydeligt præsentere opnåede resultater mundtligt ved hjælp af passende visuelle hjælpemidler" />
+          <Txt Lang="en-GB" Txt="clearly present obtained results orally using proper visual aids" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare princippet bag, hvordan GenAI (såsom ChatGPT) fungerer, og hvordan det kan føre til hallucinationer" />
+          <Txt Lang="en-GB" Txt="Explain the principle behind how GenAI (such as ChatGPT) works and how that can lead to hallucination" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklaer forskellen i læringsudbytte ved at bruge GenAI (såsom ChatGPT) som tutor versus at bruge GenAI som en “svarmaskine”" />
+          <Txt Lang="en-GB" Txt="Explain the difference in learning outcomes when using GenAI  (such as ChatGPT) as a tutor vs using GenAI as an answer machine" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge GenAI (såsom ChatGPT) som sparringspartner i et anvendt projekt for at styrke/understøtte dit arbejde" />
+          <Txt Lang="en-GB" Txt="Use GenAI (such as ChatGPT) as a sparring partner in an applied project to augment your work" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Integrativ dataanalyse</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="22140" />
+        <PreviousCourse CourseCode="27040" />
+        <PreviousCourse CourseCode="36040" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="55" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="45" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:14.66" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

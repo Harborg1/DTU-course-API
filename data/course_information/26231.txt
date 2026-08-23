@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="26231" University="dtu" LastUpdated="2026-03-20+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Fysisk Kemi 3" />
+        <Title Lang="en-GB" Title="Physical Chemistry 3" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="26" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="26" />
+        <Course_Responsible PersonKey="882" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Niels Engholm</GivenName>
+            <FamilyName>Henriksen</FamilyName>
+            <Email>neh@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2794" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Klaus Braagaard</GivenName>
+            <FamilyName>Møller</FamilyName>
+            <Email>kbmo@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Stoftransport, diffusion og elektrolytisk ledningsevne. Kinetisk gasteori. Emner fra reaktionskinetik, herunder adsorption og heterogen katalyse. Introduktion til atomar beskrivelse af kemiske reaktioner. Vekselvirkningen mellem elektromagnetisk stråling og molekyler, kvantisering af molekylers energi, Schrödingerligningen, spektroskopi med mikrobølge (MW), infrarød (IR) og ultraviolet (UV) stråling, Raman spektroskopi samt kernemagnetisk (NMR)- og elektron spin (ESR) resonans spektroskopi.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning og hjemmeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>Atkins' Physical Chemistry,
+Peter Atkins, m.fl., Oxford</Course_Literature>
+          <Course_Objectives>At give deltagerne en indføring i teorien for stoftransport, kinetisk gasteori og kemisk reaktionsdynamik. Endvidere at give en indføring i teorien for energitilstandene knyttet til molekylers translations, rotations og vibrationsbevægelser, samt atomkerners og elektroners spin, som grundlag for forskellige spektroskopiske teknikker og statistisk termodynamik.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Mass and charge transport, diffusion and electrolytic conductivity. The kinetic model of gases. Topics in reaction kinetics, including adsorption and heterogeneous catalysis. Introduction to the atomic-level description of chemical reactions. Interaction between electromagnetic radiation and molecules, quantization of molecular energy, the Schrödinger equation, spectroscopy with microwave (MW), infrared (IR) and ultraviolet (UV) radiation, Raman spectroscopy, nuclear magnetic (NMR)- and electron spin (ESR) resonans spectroscopy.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem sessions, and homework assignments.</Teaching_And_Learning_Methods>
+          <Course_Literature>Atkins' Physical Chemistry,
+Peter Atkins, et al., Oxford</Course_Literature>
+          <Course_Objectives>To give an introduction to the theory of mass- and charge transport, kinetic theory of gases, and reaction dynamics. Furthermore, to give an introduction to the theory of energy states associated with the translational-, rotational- and vibrational motions of molecules, including nuclear- and electron spin, as a foundation for different spectroscopic techniques and statistical thermodynamics.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Fysisk kemi og obligatorisk matematik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Physical chemistry and mandatory mathematics." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01001/01003).(01001/01004).(26220/26222)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere transportkoefficienter  til beskrivelse af ikke-ligevægts fænomener i termodynamiske systemer og gennemføre beregninger med disse." />
+          <Txt Lang="en-GB" Txt="Define transport coefficients to be used in the description of non-equilibrium phenomena in thermodynamic systems and apply them in calculations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for den kinetiske gasteori for ideale gasser." />
+          <Txt Lang="en-GB" Txt="Explain the kinetic model of ideal gasses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre beregninger af transportkoefficienter i ideale gasser." />
+          <Txt Lang="en-GB" Txt="Apply the kinetic model to calculate transport coefficients for ideal gasses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre reaktionkinetiske beregninger på simple og komplekse kemiske reaktioner." />
+          <Txt Lang="en-GB" Txt="Apply chemical kinetics to perform calculations of the rate of simple and complex chemical reactions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den kvantemekaniske baggrund for eksistensen af spektra med veldefinerede spektrallinier." />
+          <Txt Lang="en-GB" Txt="Explain the quantum mechanical background for the existence of spectra with well defined spectral lines." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for vekselvirkningen mellem elektromagnetiske felter og molekyler" />
+          <Txt Lang="en-GB" Txt="Describe the interaction between electromagnetic fields and molecules." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme molekylers struktur og egenskaber ud fra spektroskopi." />
+          <Txt Lang="en-GB" Txt="Determine the structure and properties of molecules from spectroscopy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for baggrunden for MW, IR, UV og NMR spektroskopi." />
+          <Txt Lang="en-GB" Txt="Explain the background for MW, IR, UV, and NMR spectroscopy." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Spektroskopi og transportprocesser</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:21:47.113" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

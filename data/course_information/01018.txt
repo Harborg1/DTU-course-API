@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="01018" University="dtu" LastUpdated="2025-03-19+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Diskret matematik 2: algebra" />
+        <Title Lang="en-GB" Title="Discrete mathematics 2: algebra" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="123707" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Maria</GivenName>
+            <FamilyName>Montanucci</FamilyName>
+            <Email>marimo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="28452" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Beelen</FamilyName>
+            <Email>pabe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Algebra danner grundlaget for mange anvendelser, specielt i kodningsteori og kryptografi.
+Kursets overordnede mål er at introducere en række af algebraiske konstruktioner (grupper, ringe og legemer). Konstruktionerne vil blive eksemplificeret i forskellige områder, bl.a. geometri og diskret matematik. Der gives et indtryk af hvordan teorien bliver anvendt og kurset fungerer således også som forberedelse på videregående kurser indenfor diskret matematik.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegning</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusmateriale vil være tilgængeligt på campusnet.</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at introducere en række af algebraiske konstruktioner (specifikt: grupper, ringe og legemer). Konstruktionerne vil blive eksemplificeret i forskellige områder, bl.a. geometri og diskret matematik.
+Udover det styrker kurset evnen til at formulere og gennemføre et matematisk bevis og i at håndtere matematiske begreber.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Algebra is the foundation of many applications, especially in coding theory and cryptography.
+The goal with this course is to introduce several algebraic constructions (groups, rings and fields). These constructions will be exemplified in different areas, among others geometry and discrete mathematics. Also an impression is given as to how this theory is applied and as such the course is a preparatory course for further courses in discrete mathematics.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercise sessions</Teaching_And_Learning_Methods>
+          <Course_Literature>Course notes will be made available on campusnet.</Course_Literature>
+          <Course_Objectives>The goal with this course is to introduce several algebraic constructions (specifically: groups, rings and fields). These constructions will be exemplified in different areas, among others geometry and discrete mathematics.
+Apart from this, the course strengthens the ability to formulate and carry out a mathematical proof as well as to handle mathematical concepts.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Følgende emner fra Diskret Mat (01017) bliver brugt: inductionsprincippet, Euclids udvidede algoritme (både på tal og på polynomier), moduloregning.&#xD;&#xA;&#xD;&#xA;Følgende emner fra 01001/01003 bliver brugt: lineær algebra, blandt andet matriksregning, lineære afbildninger, nulrum og billedmængde af en lineær afbildning." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The following topics from Discrete Math (01017) will be used: the induction principle, the extended Euclidean algorithm (both for integers and for polynomials), modular arithmetic.&#xD;&#xA;&#xD;&#xA;The following topics from 01001/01003 will be used: linear algebra, among others matrix arithmetic, linear maps, kernel and image of a linear map." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01017/01019).(01001/01003/01005/01006/01015/01016)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="give definitionen på en gruppe" />
+          <Txt Lang="en-GB" Txt="give the definition of a group" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende gruppeteori for at løse talproblemer" />
+          <Txt Lang="en-GB" Txt="apply group theory to solve counting problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive symmetrier af geometriske objekter" />
+          <Txt Lang="en-GB" Txt="describe symmetries of geometric object" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="give definitionen på en ring" />
+          <Txt Lang="en-GB" Txt="give the definition of a ring" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare idealbegrebet og bruge det til at konstruere kvotientringe" />
+          <Txt Lang="en-GB" Txt="explain the notion of an ideal and use this to construct quotient rings" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå kontruktionen af legemer ud fra ringe (især endelige legemer)" />
+          <Txt Lang="en-GB" Txt="understand the construction of fields from rings (especially finite fields)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="angive hvordan endelige legemer bliver anvendt" />
+          <Txt Lang="en-GB" Txt="indicate how finite fields are applied" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre et matematisk bevis " />
+          <Txt Lang="en-GB" Txt="carry out a mathematical proof" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til algebra</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="2" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:11.197" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

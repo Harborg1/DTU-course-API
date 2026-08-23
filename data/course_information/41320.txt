@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41320" University="dtu" LastUpdated="2026-04-17+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående fluidmekanik" />
+        <Title Lang="en-GB" Title="Advanced fluid mechanics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="33549" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Clara Marika</GivenName>
+            <FamilyName>Velte</FamilyName>
+            <Email>cmve@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakter er baseret på helhedsvurdering af individuel eksamen og 2 individuelle afleveringsopgaver. Afleveringerne består af individuelle præsentationer af faglige løsninger i videoformat med tilhørende materiale." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Grade is based on an overall assessment of individual exam and 2 individual hand-in exercises. The assignments consist of individual presentations of technical solutions in video format and accompanied material." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Udledelse af kontinuitetsligningen, Navier-Stokes ligning og energiligningen på differential form. Tensornotation for beskrivelse af strømningskinematik. Analogier mellem impuls, varme og stoftransport. Strømning i kanaler, grænselag langs vægge, frie skærelag, Creeping/Stokes strømning, potentialstrømning. Similaritetsløsninger og vorticitetsformulering af Navier-Stokes ligning. Linær instabilitet og laminart/turbulent omslag. Teorien vil også diskuteres i forhold til industrielle problemstillinger.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og løsning af opgaver. Feedback på opgaverne undervejs i forløbet. Kurset indeholder elementer af mundtlig formidling.</Teaching_And_Learning_Methods>
+          <Course_Literature>Fluid Mechanics (tilgængelig som ebog, DTUs bibliotek)
+Pijush K. Kundu, Ira M. Cohen, David R. Dowling</Course_Literature>
+          <Course_Objectives>At opøve en analytisk og fysisk forståelse for de fundamentale ligninger og at løse dem analytisk i reduceret form i en række praktiske og teoretiske strømningsproblemer. Antagelserne i de reducerede former af ligningerne og deres implikationer på de opnåede løsninger vil blive grundigt diskuteret og evalueret. Den studerende vil anvende løsningerne til de reducerede ligningerne på relevante ingeniørproblemer og evaluere gyldigheden i løsningerne med udgangspunkt i de respektive antagelser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Derivation of the continuity equation, the Navier-Stokes equation and the energy equation on differential form. Tensor notation for describing flow kinematics. Analogies between transfer of momentum, heat and mass. Flow in ducts, boundary layers, free shear flows, Creeping/Stokes flows, potential flows. Similarity solutions and vorticity formulation of the Navier-Stokes equation. Linear instability analysis and laminar to turbulent transition. Theory will also be discussed in relation to industrial problems.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem solving. Feedback on exercises during the course. The course includes activities involving oral presentation of technical content.</Teaching_And_Learning_Methods>
+          <Course_Literature>Fluid Mechanics (available as ebook, DTU library)
+Pijush K. Kundu, Ira M. Cohen, David R. Dowling</Course_Literature>
+          <Course_Objectives>To develop an analytical and physical understanding of the fundamental equations that govern fluid flow and solve them analytically in reduced form in a range of engineering and academic problems. The assumptions in the reduced forms of the equations and their implications on the obtained solutions will be carefully discussed and evaluated. The student will apply the solutions of the reduced equation on relevant engineering problems and evaluate the validity of the solutions based on the respective assumptions made.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Viden om grundlæggende fluidmekanik samt kendskab til Matlab, Python eller lignende. &#xD;&#xA;Viden om matematik, specifikt for at kunne løse partielle differentialligninger (fx kæderegeln, partiel differentiering og intergration, grundlæggende vektoranalyse inklusive kendskab til Stokes og Gauss teoremer)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of basic fluid mechanics and basic knowledge of Matlab, Python or similar.&#xD;&#xA;Knowledge of mathematics, specifically for solving partial differential equations (e.g. the chain rule, partial differentiation and integration, basic vector calculus including familiarity with Stokes' and Gauss' theorems)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41312/41102 . 02631/02633/28864" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og udlede de grundlæggende fluid-mekaniske bevarelsesligninger i differentialform" />
+          <Txt Lang="en-GB" Txt="Explain and derive the basic conservation laws of fluid mechanics on differential form" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende tensornotation for beskrivelse af strømningskinematik og løsning af strømningsproblemer" />
+          <Txt Lang="en-GB" Txt="Apply tensor notation to describe flow kinematics and solve flow problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende analogier mellem impuls, varme og stoftransport" />
+          <Txt Lang="en-GB" Txt="Explain and apply the analogy between momentum, heat and mass transfer" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede og løse simplificerede former af Navier-Stokes ligninger, for eksempel vorticitetsligningen, Creeping/Stokes strømninger, potentialstrømning, similaritetsløsninger og grænselagsligningerne" />
+          <Txt Lang="en-GB" Txt="Derive and solve simplified versions of the Navier-Stokes equations, such as the vorticity equation, Creeping/Stokes flow, potential flow, similarity solutions and the boundary layer equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse og analysere forskellige tilsvarende simplificerede strømningsproblemer og identificere problemformuleringer som yderligere simplificerer løsninger af de reducerede ligninger. " />
+          <Txt Lang="en-GB" Txt="Solve and analyze various corresponding simplified flow problems and identify problem formulations that even further simplify solutions of the reduced equations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere gyldigheden og indvirkningen af de antagelser der er blevet brugt for at løse strømningsproblemerne" />
+          <Txt Lang="en-GB" Txt="Evaluate the validity and impact of the assumptions used to solve the flow problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere den fysiske fortolkning af disse løsninger" />
+          <Txt Lang="en-GB" Txt="Discuss the physical interpretation of these solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge grænselags-approksimationen til at løse simple grænselagsproblemer " />
+          <Txt Lang="en-GB" Txt="Use the boundary layer approximation to solve simple boundary layer problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende normal modes-metoden på simple strømningsproblemer relateret til strømningsinstabiliteter og identificere strømninger med potentielt optrædende almindelige strømningsinstabiliteter" />
+          <Txt Lang="en-GB" Txt="Apply the method of normal modes to simple problems of flow instability and identify flow settings with potential appearance of common instabilities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere en teknisk løsning i skrift og mundtligt på en kort og præcis måde" />
+          <Txt Lang="en-GB" Txt="Document a technical solution in writing and orally in a short and precise form" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Teoretisk Strømningsteknik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41323" />
+        <PreviousCourse CourseCode="41323" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:54.63" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41341" University="dtu" LastUpdated="2025-04-30+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Økobil" />
+        <Title Lang="en-GB" Title="Ecocar" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P12M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Onsdag eftermiddag er den primære skemaplacering, men torsdag eftermiddag er også til rådighed, særligt for diplomstuderende der har Innovation Pilot om onsdagen." />
+          <Schedule_Txt Lang="en-GB" Txt="Wednesday afternoon is the primary schedule, but Thursday afternoon is also available, particularly for Bachelor of Engineering students having Innovation Pilot on Wednesdays." />
+          <Schedule ScheduleKey="F5B" SortID="0" />
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="14800" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Ivarsson</FamilyName>
+            <Email>aniv@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6371" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Harry Bradford</GivenName>
+            <FamilyName>Bingham</FamilyName>
+            <Email>hbbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der afleveres 2 individualiserede grupperapporter. Der foretages en helhedsvurdering" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="2 individualized group reports. Overall assessment" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Studerende på DTU har gennem de senere år afprøvet forskellige drivmiddelkoncepter i køretøjer. I den forbindelse er forskellige køretøjer blevet bygget. Idéen med køretøjerne har været, at det skal være så brændstoføkonomisk som muligt. De studerende på kurset skal revidere drivmiddelkonceptet på et af de eksisterende køretøjer, evt. bygge et nyt på baggrund af et nyt koncept. Efter udvælgelsen af konceptet skal de studerende i grupper bidrage med løsninger på hvert deres enkeltområde (brændstofsystem, el.-system, motor, transmission, karosseri (design og konstruktion) og projektstyring. Det er vigtigt, at de enkelte elementer integreres således, at det samlede system bliver optimalt. Kurset vil blive indledt med introducerende forelæsninger indenfor væsentlige fagområder, som de studerende kan vælge at arbejde med. Disse kan f.eks. være: Køretøjsteknik, energiteknik, forbrændingsmotorer, brændselsceller, solceller, elmotorer/elsystemer, aerodynamik, skalkonstruktion og/eller projektstyring.</Contents>
+          <Teaching_And_Learning_Methods>Projektarbejde og forelæsninger. Projektarbejdet i kurset baseres på CDIO-arbejdsformen. Dvs. at projektarbejdet baseres på en meget åben problemstilling og det er de studerende selv der planlægger og initierer alle aktiviteter, herunder inddrager undervisere fra alle instituttets faglige sektioner.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere større praktiske konstruktionsopgaver for de studerende. At give dem lejlighed til i praksis at bruge stof, de har lært i teorien. At give de studerende mulighed for at bidrage til opbygning af et brændstoføkonomisk køretøj. Det er meningen, at køretøjet afslutningsvis skal stille op til deltagelse i en international energiforbrugskonkurrence, typisk "Shell Eco-Marathon" med økobilen og ”World Solar Challenge” med solbilen.</Course_Objectives>
+          <DTU_Remark>Kurset er identisk med 41342, men med start i forårssemestere</DTU_Remark>
+          <Remark>Kurset starter i forårssemesteret og strækker sig over både forårs- og efterårssemesteret.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The students at DTU have constructed different vehicles, based on different powertrain concepts, during the last years. The goal has been to end up with a very fuel economic vehicle. In the course the students should revise the powertrain concept on one of the existing vehicles or build a new vehicle based on a new concept. After choosing the concept, the students should contribute to the final product by working in different groups on a specific sub-task like fuel system, electrical system, engine, power transmission, vehicle body or project management. The course will be introduced with different lectures in each of the relevant technical areas that the students can work in. These could for instance be vehicle technology, energy technology, combustion engines, fuel cells, solar cells, electric motors/systems, aerodynamics, vehicle body and/or project management.</Contents>
+          <Teaching_And_Learning_Methods>Project work and lectures. The project work is based on the CDIO principle. This means that the problem is very broad defined, and the students should plan and organize all the activities.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To let the students work on practical construction tasks, based on theory. The idea is to construct a fuel economic vehicle. This vehicle should eventually participate in an international energy consumption competition, typically " Shell Eco-Marathon" with the ecocar and ”World Solar Challenge” with the solarcar.</Course_Objectives>
+          <DTU_Remark>The course is identical to course 41342, but starts up in the spring semester</DTU_Remark>
+          <Remark>The course will start in the autumn semester and proceed in the spring semester.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde kreativt med problemløsning på baggrund af et konkret krav til køretøjet." />
+          <Txt Lang="en-GB" Txt="Work creatively with a given problem based on a specific demand on the vehicle." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe en praktisk løsning, dvs. f.eks. sige udarbejde tekniske tegninger eller optimere en løsning på baggrund af matematiske modelberegninger." />
+          <Txt Lang="en-GB" Txt="Design a functional solution, for instance produce technical drawings or optimizing a solution based on mathematical model calculations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kendskab til beregning af kræfterne, der virker på et køretøj , samt hvorledes energien tilvejebringes i fremdrifts systemet for køretøjet." />
+          <Txt Lang="en-GB" Txt="Understand how to calculate the forces that act on a vehicle, and how the energy necessary for propulsion is accomplished in a propulsion system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage en analyse af eksisterende viden om et konkret emne" />
+          <Txt Lang="en-GB" Txt="Carry out an analysis of the existing knowledge about a certain topic" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende ingeniørmæssige målemetoder til at bestemme parametre, som er nødvendige for at finde en optimal løsning." />
+          <Txt Lang="en-GB" Txt="Apply engineering measurement principles as an assisting tool to design the optimized solution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille en arbejdsplan for den praktiske udførelse af en ingeniøropgave" />
+          <Txt Lang="en-GB" Txt="Put up a working plan for the practical carrying-out of an engineering problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en teknisk rapport" />
+          <Txt Lang="en-GB" Txt="Write a technical report" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med projektstyring med henblik på fremme samarbejde og resultater i en produktion med mange delelementer." />
+          <Txt Lang="en-GB" Txt="Work with project management in order to promote collaboration and result achievement in a multi element production." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41343/41347/41046/41312/41511/41533/34600" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="41412/41342" />
+        <PreviousCourse CourseCode="41412" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="56" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="76" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="24" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:56.26" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

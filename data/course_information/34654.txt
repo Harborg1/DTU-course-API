@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34654" University="dtu" LastUpdated="2026-04-27+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kredsløbsteknologi og EMC" />
+        <Title Lang="en-GB" Title="Circuit technology and EMC" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="gruppearbejde kan ligge uden for skema - studerende organiserer selv indenfor grupperne" />
+          <Schedule_Txt Lang="en-GB" Txt="group work can be outside the schedule - students organise themselves inside the groups" />
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="37925" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Arnold</GivenName>
+            <FamilyName>Knott</FamilyName>
+            <Email>knott@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53459" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ziwei</GivenName>
+            <FamilyName>Ouyang</FamilyName>
+            <Email>ziou@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="62516" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tiberiu-Gabriel</GivenName>
+            <FamilyName>Zsurzsan</FamilyName>
+            <Email>tgzsur@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset indeholder 4 projekter. Hver studerende afleverer en rapport for hvert projekt som gruppearbejde. Mindst 3 rapporter skal være bestået for at bestå kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course contains 4 projects, each student submits an individual report for each project as group work. At least 3 passed reports are needed to pass the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Everything, that is legal is allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Alt lovligt er tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset er relevant for alle studerende, der interesserer sig for fysisk implementering af elektroniske kredsløb.&#xD;&#xA;" />
+            <Supp_Txt Lang="en-GB" Txt="The course is relevant for all students interested in physical implementation of electronic circuits." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Komponentlære:
+- valg af komponenter til given applikation
+- modstande: typer, materialer, udførselsformer, drift, støj, derating
+- kondensatorer: dielektrika, model af kondensatoren med parasitkomponenter
+- induktorer: modeller med parasitkomponenter
+- bestemmelse af parasitkomponenter på baggrund af applikation og datablade.
+- plast/papir kondensatorer, keramiske kondensatorer Klasse I, II og III,
+- elektrolytkondensatorer, derating
+Printteknik:
+- print materialer, egenskaber
+- dimensionering af printbaner: spændingsfald, max temp. stigning , kortslutning, sikkerhedsafstande
+EMC:
+-EMC fænomener og grundlæggende definitioner.
+-Støjkilder
+-Koblings mekanismer
+-EMC-komponenter
+-PCB-design
+-Filtrering
+-Skærmning
+-Mekanisk design
+-Jordingsprincipper
+-EMC-Direktivet og standarder
+-EMC testprocedurer
+-Praktisk problem løsning
+Termiske forhold:
+- varmeledning, konvektion, stråling 
+- dimensionering af køleplader, max junctiontemperatur.
+- varmekapacitet, og ækvivalentdiagrammer for termiske systemer (SPICE)</Contents>
+          <Teaching_And_Learning_Methods>Flipped classroom, klasseundervisning, projekt- og laboratoriearbejde.
+Ca. halvdelen af kursustiden er reserveret til at gennemføre gruppeopgaver, som danner grundlægget til de 4 afleveringer</Teaching_And_Learning_Methods>
+          <Course_Objectives>- at sætte den studerende i stand til at vælge komponenter ved realisation af kredsløb, ud fra gældende elektriske, termiske, mekaniske, miljømæssige og produktionstekniske krav.
+- at introducere den studerende til de forhold, der skal tages i betragtning, når elektriske kredsløb skal realiseres på en printplade.
+- at give den studerende et grundlæggende kendskab til EMC Direktivet og Standarder og sætte studerende i stand til at foretage basale EMC-målinger.
+- undersøge miljøafhængigheder af elektriske kredsløb.</Course_Objectives>
+          <DTU_Remark>Der indgår et antal øvelser/opgaver i kurset, som er fordelt over hele semesteret og er baseret på gruppearbejde. Noget af kurset er klargjort til online deltagelse</DTU_Remark>
+          <Remark>Projekter:
+Støj, termisk drift projekt
+PCB layout (minimer EMC) projekt
+EMC filter design test og måling, laboratorie projekt
+Termisk projekt
+
+E-learning anvendes i form af flipped classroom og interactive quiz.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Components:
+- selection of components for a specified application.
+- resistors: types and materials, parameter drift noise and derating.
+- capacitors: dielectrics, models with parasitic components.
+- inductors: models with parasitic components 
+- estimating the parasitic components from datasheets and applications.
+- Film/paper capacitors, ceramic capacitors, Class I, II, III.
+- Electrolytic capacitors, derating.
+PCB technology:
+- materials and properties.
+- design rules for PCB layout, according to temperature, shortcircuit and safety distances.
+EMC:
+- EMC Phenomena and Basic Definitions
+- Noise Sources
+- Interference Coupling Mechanisms
+- EMC-components
+- PCB-design
+- Filtering
+- Shielding
+- Mechanical Design
+- Principles for Grounding
+- The EMC Directive and Standards
+- EMC Test Procedures
+- Practical Trouble Shooting
+Thermal design:
+- heat conduction, convection and radiation.
+- Design of cooling fins, max. junction temperature.
+- Heat capacity and thermal equivalent circuits for thermal systems (PSPICE)</Contents>
+          <Teaching_And_Learning_Methods>Flipped classroom, classroom teaching, project and laboratory work.
+About half of the course time is reserved to conduct the group exercises, which are the basis for the 4 hand-ins.</Teaching_And_Learning_Methods>
+          <Course_Objectives>- To enable the student to select components for the realization of circuits according to applicable electrical, thermal, mechanical, environmental and production technological requirements.
+- To introduce the student to the practical considerations to be taken into account when designing electrical circuits for a printed circuit board technology.
+- To provide a basic knowledge about the EMC Directive and Standards and to enable the student to perform basic EMC-measurements.
+- examine environmental influences on electrical circuits.</Course_Objectives>
+          <DTU_Remark>There are a number of exercises / assignments in the course which are distributed throughout the semester and based on group work. Parts of the course is prepared for online participation.</DTU_Remark>
+          <Remark>Projects:
+Noise, thermal drift project
+PCB layout (minimize EMC) project
+EMC filter design test and verification, lab project
+Thermal project
+
+E-learning is used in the form of flipped classroom an interactive quiz.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om elektronik, så som Ohms lov, Kirchhoffs regler, Fourier, LaPlace, elektriske komponenter og elektromagnetisme og analoge og/eller digitale elektriske kredsløb" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of electronics, such as Ohms law, Kirchhoffs rules, Fourier, LaPlace, electric components, electromagnetism and analog and / or digital electrical circuits" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="31037/31036/31350/31351.31352" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede parasitkomponenter for modstande kondensatorer, induktorer og printbaner på baggrund af producentens datablade" />
+          <Txt Lang="en-GB" Txt="determine parasitic components for resistors, capacitors, inductors and PCB tracks using the component datasheet" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvælge komponenter til en given applikation, således at givne krav til dette opfyldes" />
+          <Txt Lang="en-GB" Txt="select components to a given application in order to satisfy the applications specifications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere støjkilder i kredsløb og beregne kredsløbets samlede støj på udgangen" />
+          <Txt Lang="en-GB" Txt="identify noise sources in circuits and compute the accumulated noise level on the output" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe printbaner under hensyntagen til max spændingsfald, temperaturstigning og kortslutningsforhold" />
+          <Txt Lang="en-GB" Txt="design PCB tracks according to voltage drop, temperature rise and shortcircuit conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="genkalde sig de enkelte trin i en industriel print produktionsproces" />
+          <Txt Lang="en-GB" Txt="recall the individual steps in an industrial PCB manufacturing process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare grundlæggende EMC fænomener og definitioner" />
+          <Txt Lang="en-GB" Txt="explain basic EMC phenomena and definitions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere støjkilder og koblingsmekanismer" />
+          <Txt Lang="en-GB" Txt="identify noise sources and coupling mechanisms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne EMC filtre" />
+          <Txt Lang="en-GB" Txt="calculate EMC filters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende EMC-direktivet og Standarder" />
+          <Txt Lang="en-GB" Txt="apply the EMC Directive and Standards" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende EMC testprocedurer" />
+          <Txt Lang="en-GB" Txt="apply EMC test procedures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne et elektrisk kredsløbs drift som funktion af tid og temperatur" />
+          <Txt Lang="en-GB" Txt="compute the electrical drift of a circuit as a function og temperature and time" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="modellere og beregne varmestråling varmeledning og konvektion for simple geometrier" />
+          <Txt Lang="en-GB" Txt="model and calculate thermal radiation, conduction and convection for simple geometries" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Printteknik, EMC,  komponentteknologi og termisk design af kredsløb</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31495.31024.31355.31354" />
+        <PreviousCourse CourseCode="31354" />
+        <PreviousCourse CourseCode="31024" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:41.67" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30082" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Projektarbejde i Digitaldesign" />
+        <Title Lang="en-GB" Title="Project work in Digital design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="IHK" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="2766" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Brauer</FamilyName>
+            <Email>brau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="78867" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Schultz</FamilyName>
+            <Email>osch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Design og implementering af et mindre system, der består af en microcontroller og en FPGA. De to delsystemer skal arbejde sammen om at løse en større opgave. De studerende bliver delt op i projektgrupper, som selv er ansvarlige for at fordele opgaverne i projektet imellem sig og definere snitfladerne.</Contents>
+          <Teaching_And_Learning_Methods>CDIO projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At gøre den studerende i stand til at kombinere digital- og datateknik til opbygning af et mindre digitalt system. Endvidere at indøve systematiske metoder til projektstyring under design-, afprøvnings- og dokumentationsfasen.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Design and implementation of a smaller system consisting of a microcontroller and an FPGA. The two subsystems must work together to solve a larger task. The students are divided into project groups, which themselves are responsible for distributing the tasks in the project between them and defining the intersections.</Contents>
+          <Teaching_And_Learning_Methods>CDIO project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable students to combine digital and computer engineering to develop a small digital system. Furthermore, to train students in systematic methods for project management during the design, testing, and documentation phases.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="organisere gruppearbejde med henblik på fælles mål, tidsplanlægning og arbejdsdeling" />
+          <Txt Lang="en-GB" Txt="organize teamwork with regards to common goal, time schedule and work sharing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="afkode en åben problemstilling og fastsætte afgrænsede krav til opgaven, der skal løses" />
+          <Txt Lang="en-GB" Txt="decode an open assignment and set delimited requirements to a problem to be solved" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="definere interfaceflader mellem digitale delsystemer" />
+          <Txt Lang="en-GB" Txt="define interfaces between digital subsystems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og implementere en løsning på en mindre systemopgave ud fra funktionalitetskrav" />
+          <Txt Lang="en-GB" Txt="design and implement a solution for a smaller system from the perspective of functional requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte løkker og interrupt i et mikrokontrollersystem til at realisere et simpelt realtidssystem" />
+          <Txt Lang="en-GB" Txt="use loops and interrupts in a microcontroller system to realize a simple realtime system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte tilstandsmaskiner og algoritmeblokke i et synkront netværk til at realisere et simpelt digitalt system  " />
+          <Txt Lang="en-GB" Txt="use finite state machines and algorithm blocks in a synchronous network to realize a simple digital system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende simple kommunikationsprotokoller mellem digitale enheder og beskrive lagdelingen i disse" />
+          <Txt Lang="en-GB" Txt="apply simple communication protocols between digital units and describe the communication layers used." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og argumentere for løsningen af en digital designopgave skriftligt og mundtligt." />
+          <Txt Lang="en-GB" Txt="explain and argue for the solution of a digital design in writing and orally." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="30081.62734" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>CDIO semesterprojekt om interface mellem elektroniske enheder</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="30080" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="66" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="34" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:48.86" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

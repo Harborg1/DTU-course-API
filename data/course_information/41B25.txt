@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41B25" Volume="2026/2027" University="dtu" LastUpdated="2026-05-28+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_MASTER" />
+        <Title Lang="da-DK" Title="Branddynamik" />
+        <Title Lang="en-GB" Title="Fire Dynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Forår. Tre moduler, se https:/​/​www.brand.dtu.dk/​undervisningsuger for de eksakte datoer" />
+          <Schedule_Txt Lang="en-GB" Txt="Spring. Three modules, see https://www.brand.dtu.dk/undervisningsuger for detailed dates" />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="34501" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anne Simone</GivenName>
+            <FamilyName>Dederichs</FamilyName>
+            <Email>aded@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The written exam will be held in May/June." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Eksamen afholdes i Maj/Juni." />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Tilmelding kun via DTU Learn for Life: learnforlife@dtu.dk &#xD;&#xA;(se også https://www.brand.dtu.dk/mib-tilmelding)" />
+            <Supp_Txt Lang="en-GB" Txt="Registration only via DTU Learn for Life: learnforlife@dtu.dk&#xD;&#xA;(see https://www.brand.dtu.dk/mib-tilmelding)" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset indeholder undervisning indenfor primære branddynamiske emner som brandeffekt, flammehøjder &amp; røgfaner, ventilationsflow, trykprofiler og temperaturberegninger for gastemperaturer. I øvrigt indeholder kurset emner indenfor varmeudveskling under brandforløb, konservationsligninger for masse og energi, røgfyldning, forbrændingsprodukter samt en introduktion til brandmodeller, navnlig de såkaldte 2-zonemodeller. Kurset indeholder også vigtigheden af valide inputparametre til brug i branddynamiske analyser.</Contents>
+          <Teaching_And_Learning_Methods>Undervisningen gennemføres som forelæsninger med integrerede øvelser. Der tilbydes frivillige regneopgaver mellem kursusgangene til understøttelse af de studerendes læring.</Teaching_And_Learning_Methods>
+          <Course_Literature>Karlsson, B. &amp; Quintiere, J. G.: Enclosure Fire Dynamics. CRC Press. Supplerende materiale udleveres i kurset.</Course_Literature>
+          <Course_Objectives>Kurset har til formål at give de studerende forståelse for de fysiske love og sammenhænge, der styrer brandforløb og røgudvikling i bygningsbrande, som grundlag for branddynamiske analyser og beregninger.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course includes teaching on primary fire dynamic topics such as heat release rate, flame heights &amp; smoke plumes, ventilation flow, pressure profiles and temperature calculations for gas temperatures. The course also includes topics on heat exchange during fire processes, conservation equations for mass and energy, smoke filling, combustion products and an introduction to fire models, especially the so-called 2-zone models. The course also includes the importance of valid input parameters for use in fire dynamic analyses.</Contents>
+          <Teaching_And_Learning_Methods>Teaching is conducted through lectures with integrated exercises. Voluntary problem sets are provided between lectures for supporting of the students learning.</Teaching_And_Learning_Methods>
+          <Course_Literature>Karlsson, B. &amp; Quintiere, J. G.: Enclosure Fire Dynamics. CRC Press. Supplementary material will be provided during the course.</Course_Literature>
+          <Course_Objectives>The course aims to provide students with an understanding of the physical laws and relationships that govern fire development and smoke propagation in building fires, as a basis for fire‑dynamic analyses and calculations.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de fysiske forudsætninger og antagelser, der ligger til grund for centrale modeller inden for branddynamik." />
+          <Txt Lang="en-GB" Txt="Explain the physical assumptions and principles underlying key models used in fire dynamics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare det teoretiske grundlag for henholdsvis håndregnemetoder, 2‑zonemodeller og CFD‑modeller, herunder deres anvendelsesområder og begrænsninger." />
+          <Txt Lang="en-GB" Txt="Describe the theoretical foundations of hand calculation methods, two‑zone models, and CFD models, including their areas of application and limitations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og udføre beregninger af centrale branddynamiske størrelser såsom brandeffekt, temperatur, tryk, termisk stråling, røgudvikling og toksikologiske forhold." />
+          <Txt Lang="en-GB" Txt="Apply and perform calculations of central fire dynamic parameters such as heat release rate, temperature, pressure, thermal radiation, smoke production, and toxic effects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for fagområdets centrale terminologi og begreber." />
+          <Txt Lang="en-GB" Txt="Explain the core terminology and concepts used within the field of fire dynamics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere og validere beregningsresultater med hensyn til størrelsesorden, enheder og fysiske rimelighed." />
+          <Txt Lang="en-GB" Txt="Evaluate and validate calculated results with respect to order of magnitude, units, and physical plausibility." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere et initialt brandrum og fastlægge relevante inputparametre til håndregnemetoder og zonemodeller." />
+          <Txt Lang="en-GB" Txt="Analyse an initial fire compartment and determine relevant input parameters for hand calculation methods and zone models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare princippet bag 2‑zonemodeller samt fortolke og vurdere test‑ og forsøgsdata fra brandforsøg." />
+          <Txt Lang="en-GB" Txt="Explain the principles of two‑zone models and interpret and assess experimental data from fire tests." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge og strukturere en branddynamisk analyse ved anvendelse af både håndregnemetoder og simple brandmodeller." />
+          <Txt Lang="en-GB" Txt="Plan and structure a fire dynamics analysis using both hand calculation methods and simple fire models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give en kvalitativ og kvantitativ beskrivelse af en bygningsbrand med fokus på tryk‑ og temperaturforhold." />
+          <Txt Lang="en-GB" Txt="Provide a qualitative and quantitative description of a building fire with a focus on pressure‑ and temperature‑related phenomena." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="www.brand.dtu.dk" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="11B25" />
+        <PreviousCourse CourseCode="11B25" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="35" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="229075" PersonUniversity="dtu" Date="2026-05-28" Time="14:18:33.373" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

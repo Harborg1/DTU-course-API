@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22530" Volume="2026/2027" University="dtu" LastUpdated="2026-03-03+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computerintensiv strålingsdosimetri" />
+        <Title Lang="en-GB" Title="Computational radiation dosimetry" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Riso">
+          <LocationTxt Lang="da-DK" Txt="Risø Campus, bygn. 313, Frederiksborgvej 399, 4000 Roskilde" />
+          <LocationTxt Lang="en-GB" Txt="Risø Campus, build. 313, Frederiksborgvej 399, 4000 Roskilde" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="38587" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Claus E.</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>clan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Rapport, som præsenteres mundtligt for de andre studerende.   &#xD;&#xA;Det er alene rapporten, som tæller med i den endelige karakter.&#xD;&#xA;Rapporten kan være individuel eller en grupperapport med individualisering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Report which is presented orally for the other students. &#xD;&#xA;It is only the report that counts in the final grade.&#xD;&#xA;The report can be individual or a group report with individualization." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette 3-ugersprojekt omfatter Monte-Carlo simuleringer af strålingsdosimetri og eksperimentelt arbejde. Projektet relaterer til aktuelle forskningsemner indenfor medicinske anvendelser af ioniserende stråling, acceleratordosimetri, eller metrologi. 
+Problemstillinger omfattende nukleare reaktioner (f.x. isotop production) og billeddannelse (f.x. time-of-flight analysis) kan simuleres. Beregningerne gennemføres vha. de studerendes egne computere. Kurset omfatter følgende elementer: (i) Forelæsninger (detaljer vedr. Monte-Carlo programmet TOPAS/GEANT4 og det teoretiske grundlag for dosimetri), (ii) Litteraturstudier relateret til projektet (f.x. artikler), (iii) Tilvejebringelse af fysiske parametre for beregningerne, (iv) Målinger og eksperimenter, (v) Modellering, (vi) Studenterpræsentationer og (vi) Rapportskrivning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Software manualer.
+IAEA kursusmateriale.</Course_Literature>
+          <Course_Objectives>Hovedformålet med kurset er at udføre et projekt omhandlende Monte-Carlo simuleringer og eksperimentelt arbejde vedr. strålingsdosimetri (ioniserende stråling).</Course_Objectives>
+          <Remark>Afhængig af antallet af deltagere, så kan det være nødvendigt at dele holdet ind i grupper.
+De studerende vil blive introduceret til sikkerhedsprocedurer som en del af kurset. 
+
+Første uge: Forelæsninger om dosimetri og Monte-Carlo teknikken. Installation af software vha. openTOPAS/GEANT4 på en Virtualbox maskine, som kører Linux. Definition og valg af projekt. Præsentation af det valgte projekt.
+
+Anden uge: Målinger og beregninger. Præsentation af status for projekt.
+
+Sidste uge: Opfølgende målinger og beregninger samt rapportskrivning. Præsentation af detendelige resultat.
+
+De eksperimentelle faciliteter kan findes via linket: www.mrdc.dtu.dk
+
+TOPAS link: http://www.topasmc.org/
+OpenTOPAS link: https://opentopas.github.io/contact.html
+EGSnrc link: https://nrc-cnrc.github.io/EGSnrc/ (alternativ kode)</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This three-week project comprises Monte-Carlo simulations of radiation dosimetry and experimental work. The project relates to current research issues in medical applications of ionizing radiation, accelerator dosimetry, or metrology. Problems associated with nuclear reactions (e.g. isotope production) and imaging (e.g. time-of-flight analysis) can be studied. The computations can normally be carried out using the students' own computers. The course consists of the following elements: (i) Lectures (details about the Monte-Carlo code such as TOPAS/GEANT4 and the theoretical basis for radiation dosimetry), (ii) Studying literature related to the project problem (e.g. research papers), (iii) Obtaining physical parameters for the computations, (iv) Measurements and experiments, (v) Modelling, (vI) Student presentations, and (vi) Report writing.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project.</Teaching_And_Learning_Methods>
+          <Course_Literature>Software manuals.
+IAEA course material.</Course_Literature>
+          <Course_Objectives>The main objective of this course is to carry out a project involving Monte-Carlo simulations and experimental work within the field of dosimetry of ionizing radiation.</Course_Objectives>
+          <Remark>Depending on the number of students, if may be necessary to split the class into groups.
+The students will be introduced to safety procedures as part of the course. 
+
+First week: Lectures on dosimetry and the Monte-Carlo technique. Installation of the software using openTOPAS/GEANT4 on a Virtualbox running the Linux operating system. Define and select project. Presentation of the chosen project.
+
+Second week: measurements and computations. Presentation of the project status.
+
+
+Last week: Supplementary measurements and computations, as well as report writing. Presentation of final results.
+
+The experimental facilities can be found using the link: www.mrdc.dtu.dk
+OpenTOPAS link: https://opentopas.github.io/contact.html
+TOPAS link: http://www.topasmc.org/
+EGSnrc link: https://nrc-cnrc.github.io/EGSnrc/ (alternative code)</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Der er ingen obligatoriske forudsætninger. Som en del af kurset bliver de studerende indført i  sikkerhedsprocedurerne for det eksperimentelle arbejde." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="There are no mandatory prerequisites. As part of the course, the students will be introduced to the safety procedures for the experimental work." />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="KU180 (Medicinske anvendelser af ioniserende stråling) &#xD;&#xA;eller&#xD;&#xA;22610 Fysik i Sunhedsteknologi&#xD;&#xA;eller&#xD;&#xA;Ækvivalente kurser vedr. ioniserende stråling" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="KU180 (Medical applications of ionizing radiation)&#xD;&#xA;or&#xD;&#xA;22610 Physics in Health Technology&#xD;&#xA;or&#xD;&#xA;Equivalent courses on ionizing radiation" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="KU180/22610" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en beregning af partikelfluens, kerma, og absorberet dosis for problemer indenfor medicinsk dosimetri." />
+          <Txt Lang="en-GB" Txt="design a computation of particle fluence, kerma and absorbed dose for actual medical dosimetry problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne graden af ladet-partikelligevægt." />
+          <Txt Lang="en-GB" Txt="compute the degree of charged-particle equilibrium." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare grundlaget for transportberegninger af ladede (elektroner, positroner og protoner) og uladede partikler (fotoner og neutroner) i stof." />
+          <Txt Lang="en-GB" Txt="explain the basis for transport computations of charged particles (electrons, positrons, and protons)  and uncharged particles (photons and neutrons) in matter." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere betydningen af cut-off energier." />
+          <Txt Lang="en-GB" Txt="evaluate the significance of cut-off energies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare forholdet mellem antal historier og usikkerheden ved Monte-Carlo simulationer." />
+          <Txt Lang="en-GB" Txt="evaluate the relation between number of histories and the uncertainty related to Monte-Carlo simulations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og simplificere modelgeometrier under hensyntagen til beregningstid." />
+          <Txt Lang="en-GB" Txt="analyze and simplify model geometries under consideration of computational efficiency." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="etablere en simpel model af en lineær accelerator eller en radioaktiv kilde." />
+          <Txt Lang="en-GB" Txt="establish a simple model of a linear accelerator or a radioactive source." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende en eller flere detektorsystemer til måling af absorberet dosis." />
+          <Txt Lang="en-GB" Txt="apply one or more detector systems for measurement of absorbed dose." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og udføre kritisk eksperimentel evaluering af Monte-Carlo modelberegninger." />
+          <Txt Lang="en-GB" Txt="design and execute a critical experimental evaluation of the Monte-Carlo model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="programmere og løse en realistisk dosimetriopgave vha. Monte-Carlo teknikker (hovedformålet med kurset)." />
+          <Txt Lang="en-GB" Txt="programme and solve a realistic radiation dosimetry problem using Monte-Carlo techniques (main learning objective)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive en rapport og kommunikere tekniske resultater" />
+          <Txt Lang="en-GB" Txt="write a report and communicate technical results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="demonstrer evnen til kritisk at vurdere resultatet af generativ Kunstig Intelligens indenfor strålebeskyttelse.   " />
+          <Txt Lang="en-GB" Txt="demonstrate ability to critically assess the output of generative AI in radiation dosimetry problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="10814" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="30" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="8" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:53.517" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

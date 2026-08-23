@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28342" University="dtu" LastUpdated="2026-04-23+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Reaktionsteknik" />
+        <Title Lang="en-GB" Title="Chemical Reaction Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="5085" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ulrich</GivenName>
+            <FamilyName>Krühne</FamilyName>
+            <Email>ulkr@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Samlet vurdering af:&#xD;&#xA; &#xD;&#xA;1. Python programmerings hjemmeopgaver (vægtet ca. 20%) &#xD;&#xA;2. Skriftlig stedstest i uge 12 med alle hjælpemidler inklusive internetforbindelse (ca. 20%)&#xD;&#xA;3. Skriftlig eksamen (ca. 60%), hvilke skal beståes med en karakterpå  02 som minimum." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Averaged evaluation of: &#xD;&#xA;&#xD;&#xA;1. Homework on Python Programming (20%)&#xD;&#xA;2. Written test in week 12. All helping aids and internet are allowed (20%)&#xD;&#xA;3. Written examination (60%). The final written examination must be passed (grade 02)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kemisk kinetik, reaktionsmekanismer for homogene og heterogene reaktioner, laboratorieundersøgelser i batch og strømningsreaktorer, opstilling af hastighedsudtryk og beregning af de indgående modelparametre. Dimensionering og design af ideale reaktorer; optimalt temperaturforløb; Katalytiske reaktorer og bioreaktorer. Vigtigste tekniske reaktortyper og processer, beregning af industrielle reaktorer. De studerende anvender Python til at løse opgaver; materiale and tutorials bliver stillet til rådighed. Kursusindhold er relevant for bæredygtig produktion; det vil blive illustreret i kurset. Det bidrager til SDG 7 og 12 (Affordable and Clean Energy / Responsible Consumption and Production).</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning med opgaveregning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give den studerende et grundlæggende kendskab til kobling mellem kemisk kinetik og design af reaktorer, således at han/hun bliver i stand til at udføre beregningsmæssige løsninger på reaktionstekniske problemer. Herunder planlægning af laboratorieundersøgelser, behandling af forsøgsresultater, samt dimensionering af simple reaktorer til homogene, heterogene og bioteknologiske reaktioner. At give kendskab til de vigtigste reaktortyper og deres tekniske udformning og anvendelse i industrielle processer.
+
+Derudover får de studerende kendskab til Python-programmering og løser enkle reaktionstekniske opgaver ved hjælp af programmering. Dette foregår via en online-baseret kursusdel, hvor de studerende gennemgår forskellige tutorials selvstændigt.</Course_Objectives>
+          <Remark>Lærebog: H. Scott Fogler: Elements of Chemical Reaction Engineering. 4. udgave, 2006, Prentice Hall.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Chemical kinetics. Reaction mechanisms for homogeneous and heterogeneous reactions. Laboratory investigations in batch and flow reactors, determination of the rate equation. Determining size and design of ideal reactors and optimum temperature progression. Catalytic reactors and bioreactors. Important industrial reactor types and processes, calculations on industrial reactors. Students use Python to solve the assignments; material and practical tutorials to learn Python are provided. The content of the course is relevant for sustainable production which will be illustrated in the course. It contributes to SDG 7 and 12 (Affordable and Clean Energy / Responsible Consumption and Production).</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem sessions</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to give the students a basic knowledge of the coupling between chemical kinetics and reactor design so that they will be able to conduct calculations to solve chemical reaction engineering problems. These involve planning of laboratory investigations, analysis of experimental results, and dimensioning of simple reactors for homogeneous, heterogeneous and biotechnological reactions. The student should know the most important types of reactors and their technical design and operation in industrial processes.
+
+In addition, the students gain knowledge of Python programming and solve simple reaction engineering tasks using programming. This takes place through an online-based course module where the students independently go through various tutorials.</Course_Objectives>
+          <Remark>Textbook: H. Scott Fogler: Elements of Chemical Reaction Engineering, 4. ed., 2006, Prentice Hall.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for hvorledes man indenfor reaktiorsteknik behandler kemiske og biokemiske reaktioners kinetik, herunder forskellen mellem hastighedsudtryk for elementarreaktioner og ikke-elementarreaktioner" />
+          <Txt Lang="en-GB" Txt="Account for the treament of reaction kinetics, including the difference between elementary and non-elementary reactions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de ideale reaktormodeller: stempelstrømningsreaktor, kontinuert omrørt tankreaktor og ideelt omrørt batchreaktor" />
+          <Txt Lang="en-GB" Txt="Account for the ideal reactor models: plug flow reactor, continuous stirred tank reactor, and ideally stirred batch reactor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille matematiske modeller for de ideale reaktortyper under isoterme forhold både for en enkelt og for multiple reaktioner, herunder homogene, heterogene og katalytiske reaktioner" />
+          <Txt Lang="en-GB" Txt="Formulate mathematical models for the ideal reactor types under isothermal conditions for both single and multiple reactions, including homogeneous, heterogeneous, and catalyzed reactions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne opstille molbalancer for andre reagerende systemer end de ideale reaktortyper" />
+          <Txt Lang="en-GB" Txt="Formulate material balance equations for other reacting systems than the ideal types" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge hvorledes målinger af kemiske reaktioners kinetik skal udføres i laboratoriet og hvorledes målingerne skal behandles for at bestemme reaktionernes kinetik" />
+          <Txt Lang="en-GB" Txt="Plan how kinetic investigations should be made and how such measurements must be treated to deduce the reaction kinetics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille energibalancer for de ideale reaktortyper for en enkelt reaktion" />
+          <Txt Lang="en-GB" Txt="Formulate the energy balance for a single reaction in the three ideal reactor types" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse energibalancen sammen med molbalancen for en enkelt reaktion og bruge modellerne til en fastsættelse af optimale driftsbetingelser" />
+          <Txt Lang="en-GB" Txt="Solve the energy balance in combination with the material balances" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne opstille matematiske modeller for kemisk reaktion i porøse katalysatorer og anvende dem til reaktorberegninger" />
+          <Txt Lang="en-GB" Txt="Formulate mathematical models for porous catalysts and use the models in reactor design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne dimensionere reaktorer til kemiske og bioteknologiske processer" />
+          <Txt Lang="en-GB" Txt="Design reactors for chemical and biotechnological processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere enkelte Python-code" />
+          <Txt Lang="en-GB" Txt="Programming simple Python code" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løsning ved hjælp af Python reaktionstekniske problemer" />
+          <Txt Lang="en-GB" Txt="Solving with help of Python chemical reaction engineering problems " />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="28022. 28322" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="28140" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:06.703" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30320" University="dtu" LastUpdated="2026-04-07+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Rumfartsinstrumentering" />
+        <Title Lang="en-GB" Title="Spacecraft Instrumentation Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="1197" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>John Leif</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>jlj@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Afløsningsrapporten vil blive bedømt efter følgende (i prioriteret følge): 1. Originalitet og anvendelighed af det udviklede del-system, 2. Teknisk-videnskabeligt indhold, 3. Grad af færdiggørelse/kompleksitet, og 4. Rapportkvalitet." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The report will be evaluated based on these criteria: 1. Novelty and usefulness of the system developed, 2. Technical-scientific level of the work presented 3. Complexity, comprehensiveness and level of completion, and 4. Report quality." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Each team must deliver the report to the teacher before 17.00 at the F2-A day." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Projektrapport afleveres på eksamensdagen for F2-A senest kl. 17.00." />
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset består af en teoretisk del, hvor principper, metoder, normer, systemkrav og verifikationsmetoder for rumfartsudstyr o.l. gennemgås, samt af en praktisk del, hvor de studerende i hold danner et "ingeniørteam", der skal løse en designopgave indenfor ruminstrumentering. 
+
+Da opgaverne stammer fra afdelingens løbende satellitprojekter er det hensigten, at de studerende igennem deres arbejde skal løse problemer eller udvikle metoder, som senere kan finde anvendelse på satellitter. 
+
+Da et ingeniørteam både skal løse opgavespecifikke problemer og bevare systemoverblikket, indeholder den teoretiske del dels en grundig indføring i aspekter af system-engineering, dels en specifik gennemgang af generelle designdrivere såsom termisk design og kontrol, chok og vibration, EMC, ioniserende stråling og kemiske påvirkninger; men hovedvægten lægges på instrumenttekniske designdrivere, som udover de direkte elektriske og fysiske interface specifikationer, omhandler effekt- og massestyring, redundans, autonomi og fejltolerans. 
+
+Da de metoder og normer samt den arbejdsform, der behandles og anvendes, er generelle for højtydende systemer, giver kurset ikke blot kompetence inden for rumfart, men også for andre højtydende instrumenteringssystemer, f.eks. indenfor medikoteknik.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger samt projektarbejde. Forelæsninger primært i 2A og projektarbejde i 2B.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At gøre de studerende i stand til, selvstændigt, at løse en kompleks instrumenteringsopgave ud fra et aerospace designoplæg eller måleprincip. Typiske designparametre er stringente krav til kvalitet, præcision, levetid, robusthed, internationale normer og evt. specifikke krav om hensyn til omgivelserne. Sigtet er, at de studerende kan udnytte erfaringerne fra kurset inden for luft- og rumfart, robot- og medikoteknik samt militære og andre højkvalitets instrumenteringssystemer.</Course_Objectives>
+          <Remark>Ved undervisningens start, bliver de studerende præsenteret for et et problemkompleks der munder ud i årets opgave. De studerende vil blive bedt om at danne teams inden for forskellige områder, der tilsammen dækker feltet på en sådan måde, at problemkomplekset er godt dækket.. Tilknytningen til et team vil typisk være baseret på oplæg, personlige præferencer og erfaring samt tidligere uddannelse.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is sectioned into two parts: The lecture hours, where the theory, standards and methods are taught, and a laboratory part, where teams of students form study groups that solve design assignments within space instrumentation. 
+
+These assignments are all derived from the international satellite projects in which the department participates, why it is the intention that the designs are to be used for later missions. Therefore, the assignments include system engineering, robustness and space-hardening aspects, and instrumentation aspects.
+
+Since the methods, norms and working process are general for high-performance systems, the course not only provides competence within aerospace but also for other high-performance instrumentation systems, e.g., within medical technology.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project work. Lectures in 2A and exercises in 2B.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable the students to independently solve a complex instrumentation task based on an aerospace design proposal or a measurement principle. Typical design parameters are stringent requirements for quality, precision, lifetime, robustness, international standards and possibly specific requirements for consideration of the surroundings. The aim is that the students can use the experiences from the course in aviation and space, robotics and medical technology, and military and other high-quality instrumentation systems.</Course_Objectives>
+          <Remark>At the start of the semester, the students will be presented with a problem complex, i.e., that year's topic. The students will be asked to form teams that together cover the field in such a way that the problem complex is well covered. Each student will join a team based on experience, personal preferences, education and skills.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et solidt kendskab til elektronisk systemdesign, digitalt el. analogt, er ønskeligt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Digital or analogue system design experience is desirable." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30020.30330" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et instrumenteringssystem til rumbrug" />
+          <Txt Lang="en-GB" Txt="design a instrumentation system for space use " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede designdrivere fra et sæt af komplekse krav og forudsætninger" />
+          <Txt Lang="en-GB" Txt="derive relevant design drivers from a suite of requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede designspecifikation fra missionskrav og drivere" />
+          <Txt Lang="en-GB" Txt="derive an adequate design from mission specification and drivers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og rangordne forskellige designs mht. PA aspekter" />
+          <Txt Lang="en-GB" Txt="analyse and rank different designs with respect to PA aspects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og rangordne forskellige designs mht. QA aspekter" />
+          <Txt Lang="en-GB" Txt="analyse and rank different designs with respect to QA aspects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere et instrumentdesign mht. kritiske designparametre" />
+          <Txt Lang="en-GB" Txt="analyse a given instrument with respect to relevant consumables for the application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og kvantificere det opnåede designs ydeevne" />
+          <Txt Lang="en-GB" Txt="analyse and quantify the design arrived with respect to performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere instrumentdesignet mht. robusthed og autonomi" />
+          <Txt Lang="en-GB" Txt="optimize the achieved design wrt. robustness and autonomy of operation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere instrumentets struktur og komponentvalg mht. operation under rumforhold" />
+          <Txt Lang="en-GB" Txt="optimize the chosen design wrt. choise of components and parts vis-a-vis the space environment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere et design for robusthed i forhold til opsendelse og operation i rummet" />
+          <Txt Lang="en-GB" Txt="optimize a design for ruggedness wrt. launch and space operation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en test og verifikationsstrategi for det valgte design." />
+          <Txt Lang="en-GB" Txt="design a test and verification strategy for the chosen design." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Instrumenter til rumfart</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31830" />
+        <PreviousCourse CourseCode="31830" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="30" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:02.457" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

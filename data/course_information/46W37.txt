@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46W37" Volume="2026/2027" University="dtu" LastUpdated="2026-04-27+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_MASTER" />
+        <Title Lang="da-DK" Title="Måleteknikker i vindenergi" />
+        <Title Lang="en-GB" Title="Measurement Techniques in Wind Energy" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="E-learning" />
+          <LocationTxt Lang="en-GB" Txt="E-learning" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="6569" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ebba</GivenName>
+            <FamilyName>Dellwik</FamilyName>
+            <Email>ebde@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="144427" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Vasiliki</GivenName>
+            <FamilyName>Mallini</FamilyName>
+            <Email>vasma@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="The final grade for the course is based on an overall assessment. There will be 5 mandatory exercises and a final oral exam based on the course content." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade for the course is based on an overall assessment. There will be 5 mandatory exercises and a final oral exam based on the course content." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="1 juni" />
+            <DeadLineTxt Lang="en-GB" Txt="June 1st" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="On the Wind Energy Master website www.lifelonglearning.dtu.dk" />
+            <Supp_Txt Lang="en-GB" Txt="On the Wind Energy Master website www.lifelonglearning.dtu.dk" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Core elements of the course are:
+•	Data acquisition and data management
+•	Measurement uncertainty
+•	Wind measurements
+•	Wind turbine power performance measurement
+•	Wind turbine loads and structural response measurements
+•	Wind turbine noise measurements
+•	Wind energy measurement standards
+
+Format of the course:
+•	The course will be divided in 13 modules. Every module will start with a short online lecture and will include one or two training exercises or a quiz. 
+•	The lecture will be supported either with videos, video or written tutorials and/or reading material depending on the module.
+•	The final grade will be based on an overall assessment of the assignments (exercises to be submitted to the teachers for 6 modules) and an oral exam based on the content of the assignments.</Contents>
+          <Teaching_And_Learning_Methods>E-learning</Teaching_And_Learning_Methods>
+          <Course_Objectives>The focus of the course is measurement techniques used in and around wind turbines –including use of the relevant international standards and evaluation of uncertainty.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Core elements of the course are:
+•	Data acquisition and data management
+•	Measurement uncertainty
+•	Wind measurements
+•	Wind turbine power performance measurement
+•	Wind turbine loads and structural response measurements
+•	Wind turbine noise measurements
+•	Wind energy measurement standards
+
+Format of the course:
+•	The course will be divided in 13 modules. Every module will start with a short online lecture and will include one or two training exercises or a quiz. 
+•	The lecture will be supported either with videos, video or written tutorials and/or reading material depending on the module.
+•	The final grade will be based on an overall assessment of the assignments (exercises to be submitted to the teachers for 6 modules) and an oral exam based on the content of the assignments.</Contents>
+          <Teaching_And_Learning_Methods>E-learning</Teaching_And_Learning_Methods>
+          <Course_Objectives>The focus of the course is measurement techniques used in and around wind turbines –including use of the relevant international standards and evaluation of uncertainty.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Wind Turbine Technology (46W11) or similar background is recommended.&#xD;&#xA;Working knowledge of Python or Matlab will be necessary in order to complete the assignments." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Wind Turbine Technology (46W11) or similar background is recommended.&#xD;&#xA;Working knowledge of Python or Matlab will be necessary in order to complete the assignments." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Outline the basic concepts concerning data acquisition systems. " />
+          <Txt Lang="en-GB" Txt="Outline the basic concepts concerning data acquisition systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organise wind measurements in a database." />
+          <Txt Lang="en-GB" Txt="Organise wind measurements in a database." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Perform quality control on wind measurements." />
+          <Txt Lang="en-GB" Txt="Perform quality control on wind measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Define the concept of uncertainty for a measured quantity." />
+          <Txt Lang="en-GB" Txt="Define the concept of uncertainty for a measured quantity." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identify relevant measurement standards in wind energy." />
+          <Txt Lang="en-GB" Txt="Identify relevant measurement standards in wind energy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyse wind speed measurements for a wind resource assessment." />
+          <Txt Lang="en-GB" Txt="Analyse wind speed measurements for a wind resource assessment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Determine wind turbine power performance from measurements." />
+          <Txt Lang="en-GB" Txt="Determine wind turbine power performance from measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Determine structural properties for a wind turbine from measurements." />
+          <Txt Lang="en-GB" Txt="Determine structural properties for a wind turbine from measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Select the most suitable wind measurement technology for a given purpose and location." />
+          <Txt Lang="en-GB" Txt="Select the most suitable wind measurement technology for a given purpose and location." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain different methods for structural loads measurements on wind turbines." />
+          <Txt Lang="en-GB" Txt="Explain different methods for structural loads measurements on wind turbines." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain the need for wind turbine noise measurements and how these are carried out." />
+          <Txt Lang="en-GB" Txt="Explain the need for wind turbine noise measurements and how these are carried out." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="www.lifelonglearning.dtu.dk" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="54673" PersonUniversity="dtu" Date="2026-04-28" Time="14:41:34.25" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

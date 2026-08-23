@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="12363" Volume="2026/2027" University="dtu" LastUpdated="2026-04-01+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avanceret simulering af indeklima og energiforbrug" />
+        <Title Lang="en-GB" Title="Advanced simulation of indoor environment and energy use" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="12" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="12" />
+        <Course_Responsible PersonKey="21678" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Rune Korsholm</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>rvan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dynamiske bygningssimuleringsværktøjer spiller en central rolle i analyse og forudsigelse af bygningers ydeevne under varierende forhold. Dette kursus fokuserer på at anvende både standard og avancerede funktioner i IDA ICE til at undersøge indeklima, energiforbrug og systemadfærd. Kurset giver deltagerne omfattende praktisk erfaring med opsætning af simuleringer og arbejdet med den underliggende modelleringsstruktur i IDA ICE.
+De studerende introduceres til den matematiske modelleringsmetode i IDA ICE, herunder zonedeling, controllere og opbygningen af interne modelkomponenter. De lærer at implementere makroer og avancerede styringsstrategier til at repræsentere belægningsmønstre og brugeradfærd, samt hvordan disse påvirker indeklima og energiforbrug.
+Derudover gør kurset deltagerne i stand til at anvende automatiske parametervariationer og optimeringsværktøjer i IDA ICE. De får erfaring med at generere og håndtere outputfiler, logge relevante variable og bruge programmets visualiseringsfunktioner til at fortolke simuleringsresultater. Dette omfatter evaluering af tidsserier, aggregerede resultater og andre outputformater, der er relevante for vurdering af designs.
+Gennem arbejdet med disse elementer udvikler de studerende evnen til kritisk at analysere simuleringsresultater og vurdere både muligheder og begrænsninger ved avanceret bygningsperformance-modellering.</Contents>
+          <Teaching_And_Learning_Methods>Gruppearbejde, øvelser, studenterpræsentationer og forelæsninger</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset introducerer de studerende til simulering af indeklima og energiforbrug i bygninger og tekniske systemer ved hjælp af IDA ICE. Deltagerne lærer, hvordan man designer systemer, knytter dem til en bygningsgeometri og specificerer skræddersyede styringsstrategier for både aktive og passive systemer.
+De studerende udforsker de modelleringsprincipper, der ligger til grund for bygningssimuleringsværktøjer, og opnår indsigt i, hvordan IDA ICE strukturerer sine matematiske modeller, zoneinddeling og styring af systemer.
+Kurset lægger vægt på forståelsen af stokastiske modeller for belægning og brugeradfærd, med særligt fokus på implementeringen af sådanne modeller og deres indflydelse på simuleringsresultater. De studerende lærer at vurdere, hvornår disse modeller er hensigtsmæssige, og hvordan de kan anvendes i vurderinger af designs.
+Ved kursets afslutning er deltagerne i stand til at anvende avancerede værktøjer i IDA ICE til at opsætte og køre simuleringer og dermed kritisk evaluere modelleringsantagelser og simuleringsresultater i en bygningsperformance‑kontekst.</Course_Objectives>
+          <Remark>Kurset henvender sig mest til ingeniørstuderende på kandidatniveau, der er interesseret i brugen af avancerede, state-of-the-art metoder og programmer til at simulere konsekvenserne for indeklima og energiforbrug af afgørelser truffet i projekteringsfasen. Kurset kan imidlertid også følges af ph.d.-studerende med den nødvendige grundlæggende viden, der er interesseret i at lære at bruge de avancerede niveauer af IDA ICE.
+
+Kurset er afhængigt af at de studerende medbringer deres egen PC. De programmer, der anvendes i kurset kræver en Windows-baseret pc.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Dynamic building simulation tools play a central role in analysing and predicting how buildings perform under varying conditions. This course focuses on applying both standard and advanced functionalities of IDA ICE to investigate indoor environment, energy use and system behaviour. The course provides participants with extensive hands on experience in setting up simulations and working with the underlying modelling framework of IDA ICE.
+The students are introduced to the mathematical modelling approach in IDA ICE, including zone division, controllers, and the structure of internal model components. They learn how to implement macros and advanced control strategies to represent occupancy patterns and occupant behaviour, and how these influence indoor climate and energy performance.
+Furthermore, the course enables participants to apply automated parameter variations and optimisation tools within IDA ICE. They gain experience in generating and managing output files, logging relevant variables, and using the program’s result visualisation features to interpret simulation outcomes. This includes evaluating time series, aggregated results and other output formats relevant for performance assessment.
+By working through these elements, the students develop the ability to critically analyse simulation results and assess both the possibilities and limitations of advanced building performance modelling.</Contents>
+          <Teaching_And_Learning_Methods>Group work, exercises, student presentations and lectures</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course introduces students to the simulation of indoor environment and energy use in buildings and systems using IDA ICE. Participants learn how to design system, assign them to a building geometry, and specify customized control strategies for both active and passive systems.
+Students explore the modelling principles behind building energy simulation tools, gaining insight into how IDA ICE structures its mathematical models, zoning, and system controls.
+The course emphasizes understanding of stochastic models for occupancy and occupant behaviour, with particular focus on implementation of such models and how they influence simulation results. Students learn to assess when these models are appropriate and how they can be applied in performance evaluations.
+By the end of the course, participants are equipped to use advanced tools in IDA ICE to set up and run simulations and, enabling them to critically evaluate modelling assumptions and simulation outputs in a building performance context.</Course_Objectives>
+          <Remark>The course targets engineering students at master level that are interested in the use of advanced, state-of-the-art methodologies and programs to simulate the consequences for indoor environment and building energy consumption of decisions made at the design stage. However, the course may also be followed by PhD students with the required basic knowledge that are interested in learning how to use the advanced levels of IDA ICE.
+
+The course relies on students bringing their own PC. The programs used in the course requires a Windows based PC.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Deltagerne skal have grundlæggende viden om indeklima, principiel virkning af HVAC systemerne i bygninger samt af varme- og massetransport. Erfaringer med IDA ICE er også påkrævet" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Participants should have fundamental knowledge of indoor environment, the working principles of HVAC systems in buildings, and of heat- and mass transfer. Experience with IDA ICE is also required" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41462.(11141/41459).12361/12360/(12350.41458/11112) 11937/41452" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere egenskaber for klimaskærm og systemer i IDA ICE" />
+          <Txt Lang="en-GB" Txt="Define building envelope properties and system characteristics in IDA ICE" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skitsere de grundlæggende arbejdsprincipper for IDA ICE og lignende simuleringsprogrammer" />
+          <Txt Lang="en-GB" Txt="Outline the basic working principles of IDA ICE and related simulation programs " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere simuleringskonfiguration til formålet med simuleringen" />
+          <Txt Lang="en-GB" Txt="Relate simulation configuration to purpose of the simulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolk resultater fra forskellige former for automatiserede parametervariationer" />
+          <Txt Lang="en-GB" Txt="Interpret results of different types of automatic paramer variations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne mellem variable, parametre og interfaces i objektstrukturen i IDA ICE" />
+          <Txt Lang="en-GB" Txt="Distinguish between variables, parameters and interfaces in the structure of objects in IDA ICE" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe tilpassede og avancerede makroer til simulering af passive og aktive designløsninger " />
+          <Txt Lang="en-GB" Txt="Design customized and advanced control macros for simulation of passive and active design solutions. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere stokastiske modeller af brugeradfærd i reguleringsmakroer" />
+          <Txt Lang="en-GB" Txt="Integrate stochastic models of occupants’ behaviour in a control macro" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere modellers gyldigheden baseret på simuleringsresultater " />
+          <Txt Lang="en-GB" Txt="Assess model validity based on simulation outputs" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="11522" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="50" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:18.42" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

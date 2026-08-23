@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="47341" Volume="2026/2027" University="dtu" LastUpdated="2025-04-29+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="47" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="AI4Materials" />
+        <Title Lang="en-GB" Title="AI4Materials: Artificial Intelligence for Accelerated Materials Design and Discovery" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="47" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="93668" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Arghya</GivenName>
+            <FamilyName>Bhowmik</FamilyName>
+            <Email>arbh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Én grupperapport skal afleveres ved kursets afslutning. Der vil være en samlet vurdering af rapporten, en mundtlig gruppepræsentation af projektet og en individuel mundtlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One group report to be submitted at the end of the course. There will be an overall assessment of the report, the oral group project presentation, and an individual oral examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Principper for anvendt datalogi, datasæt, FAIR-data, udforskende analyse af materialedata, surrogatmodeller til accelererede simuleringer, omvendt design med generative modeller, AI-integrerede materialedesign-arbejdsgange, design af eksperimenter, maskinlæring i karakterisering og testning af accelererede materialesynteseprocesser.
+Litteraturreferencer.
+Bogkapitler, oversigtsartikler og indsamlede online læringsressourcer vil blive leveret.</Contents>
+          <Teaching_And_Learning_Methods>Kurset vil være baseret på forelæsninger, computerøvelser og gruppeprojekter.</Teaching_And_Learning_Methods>
+          <Course_Literature>Bogkapitler, anmeldelsesartikler, indsamlede online læringsressourcer vil blive leveret</Course_Literature>
+          <Course_Objectives>Maskinlæringsteknikker (ML) inden for materialevidenskab bruges til at accelerere opdagelsen og designet af nye materialer og systemer. Dette kursus vil dække det grundlæggende i ML-metoder, der er skræddersyet til materialevidenskabelige applikationer. De overordnede strategier for datadrevet accelereret materialevidenskab, herunder datainfrastruktur, vil blive diskuteret.
+
+Det vil give indsigt i centrale forskningsmetoder, såsom multiskalasimuleringer, automatiseret materialesyntese med eksperimentplanlægning, materialekarakteriseringsteknikker og test på systemniveau, der kan drage fordel af AI-acceleration for at spare tid og penge.
+
+Vi vil dække ML til at accelerere eksperimentelle og beregningsmetoder, der anvendes i materialeforskning på flere længde- og tidsskalaer, fra atomar skala til systemniveau.
+
+Med projektdrevne læringsmål vil de studerende få praktisk erfaring med, hvordan ML-metoder kan bruges til at accelerere alle stadier af materialeopdagelse til beregningsmetoder og eksperimentelle teknikker. 4-ugers gruppeprojekt, hvor de studerende arbejder sammen om at anvende ML-teknikker på en specifik materialevidenskabelig metode. Projektresultatet er en skriftlig rapport og præsentation.</Course_Objectives>
+          <DTU_Remark>Maskinlæringsmodeller til acceleration af simulering og eksperimentelle metoder inden for materialevidenskab</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Principles of applied data science, datasets, FAIR data, exploratory analysis of materials data, surrogate models for accelerated simulations, reverse design with generative models, AI integrated materials design workflows, design of experiments, machine learning in accelerated materials synthesis process characterization and testing
+Literature references
+Book chapters, review articles, collected online learning resources will be provided</Contents>
+          <Teaching_And_Learning_Methods>The course will be based on lectures, computer exercises and group projects</Teaching_And_Learning_Methods>
+          <Course_Literature>Book chapters, review articles, collected online learning resources will be provided</Course_Literature>
+          <Course_Objectives>Machine Learning (ML) techniques in materials science are being used to accelerate the discovery and design of new materials and systems. This course will cover the fundamentals of ML methods tailored to materials science applications. The overall strategies for data-driven accelerated materials science, including data infrastructure, will be discussed.
+It will provide insight into key research methods, such as multi-scale simulations, automated materials synthesis with experiment planning, materials characterization techniques, and system-level testing that can benefit from AI acceleration for time and cost savings. 
+We will cover ML for accelerating experimental and computational methods employed in materials research at multiple length and time scales, from atomic scale to system level. 
+With project-driven learning objectives, students will gain hands-on experience of how ML methods can be used to accelerate all stages of materials discovery for computational methods and experimental techniques. 4-week group project where students work collaboratively to apply ML techniques to a specific materials science method. The project outcome is a written report and presentation.</Course_Objectives>
+          <DTU_Remark>Machine learning models for accelerating simulation and experimental methods in materials science</DTU_Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende begreber inden for materialevidenskab (f.eks. 10031 or 41659) og en vis baggrund i programmering (f.eks. 02631) er påkrævet." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Basic concepts of materials science (e.g. 10031 or 41659) and some programming (e.g. 02631) background is required" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02631 or similar and 10031 or 41659 or similar" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Bachelor i fysik og nanoteknologi, eller kemi og teknologi, eller produktion og konstruktion, eller elektroteknologi, eller generel ingeniørvidenskab, eller softwareteknologi, eller matematik og teknologi, eller lignende. Programmeringserfaring i Python og kursus i materialesimuleringer med viden i mindst én skala (f.eks. atomar skala som molekylær dynamik eller mesoskala som fasefelt eller makroskala som finite element-metoder)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Bachelor in Physics and Nanotechnology, or Chemistry and Technology, or Production and Construction, or Electro Technology, or General Engineering, or Software Technology, or Mathematics and Technology, or similar. Programming experience in Python and course in materials simulations with knowledge in at least one scale (e.g. atomic scale like molecular dynamics or meso scale like phase field or macro scale like finite element methods)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar de datadrevne strategier til at accelerere materialeopdagelse, herunder essentiel datavidenskabelig infrastruktur og bedste praksis for håndtering af store multi-fidelity datasæt." />
+          <Txt Lang="en-GB" Txt="Explain the data-driven strategies to accelerate materials discovery, including essential data science infrastructure and best practices for managing large multi-fidelity datasets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsummer centrale ML-teknikker og deres anvendelser inden for materialevidenskab, herunder superviseret og uovervåget læring, forstærkningslæring og generative modeller." />
+          <Txt Lang="en-GB" Txt="Summarize key ML techniques and their applications to materials science, including supervised and unsupervised learning, reinforcement learning, and generative models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer de materialevidenskabelige metoder, der anvendes i materialeopdagelse inden for beregningssimulering, syntese og karakteriseringsteknikker, som vil drage fordel af acceleration med maskinlæringsmodellering." />
+          <Txt Lang="en-GB" Txt="Identify the materials science methods used in materials discovery within computational simulation, synthesis, and characterization techniques that will benefit from acceleration with machine learning modeling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend feature engineering, dataforbehandling og udforskende analyse på materialevidenskabelige datasæt." />
+          <Txt Lang="en-GB" Txt="Apply feature engineering, data preprocessing, and exploratory analysis on materials science dataset." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opret ML-surrogatmodeller for at accelerere fysikbaserede materialesimuleringer på en af ​​skalaerne - molekylær dynamik, fasefeltsimulering eller finite element-simulering." />
+          <Txt Lang="en-GB" Txt="Create ML surrogate models to accelerate physics-based materials simulations at one of the scales - molecular dynamics, or phase field simulation, or finite element simulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer ML-værktøj og -workflow til planlægning af materialesyntese, design af eksperimenter eller accelereret testning og karakterisering." />
+          <Txt Lang="en-GB" Txt="Implement ML tool and workflow for materials synthesis planning, or design of experiments, or accelerated testing and characterization." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser kritisk ydeevnen af ​​ML-modeller inden for rammerne af projekter med at accelerere simuleringer eller materialekarakterisering ved at samarbejde i teams." />
+          <Txt Lang="en-GB" Txt="Critically analyze the performance of ML models within the context of projects in accelerating simulations or material characterization by collaborating in teams." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejd en skriftlig rapport, der beskriver projektets mål, metoder, resultater og opnåede indsigter, og lav en forskningspræsentation." />
+          <Txt Lang="en-GB" Txt="Prepare a written report describing the project's objectives, methods, results, and insights gained, and make a research presentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="20" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="32" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:21.047" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

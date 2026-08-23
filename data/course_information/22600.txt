@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22600" University="dtu" LastUpdated="2026-04-22+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Fabrikation af mikro- og nanostrukturer" />
+        <Title Lang="en-GB" Title="Fabrication of micro- and nanostructures" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="2466" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Erik Vilain</GivenName>
+            <FamilyName>Thomsen</FamilyName>
+            <Email>ervt@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9525" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Kristensen</FamilyName>
+            <Email>akri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives ved en helhedsbedømmelse med følgende vægtning: Skriftlig eksamen (70%), individuelle afleveringsopgaver (15%), gruppepræsentation af projekt (15%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final mark is given by a total evaluation where the weight of the different elements is: Written examination (70%), individual exercises (15%) group presentation of project (15%)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I kurset gennemgås fysik, kemi og teknologi for fremstillingsprocesserne, der benyttes ved mikro- og nanofabrikation:
+·Mønsterdannelse: UV-mikrolithografi, e-beam nanolithografi og nanoimprint.
+·Mønsteroverførsel: ætsning, lift-off
+·Tynd-film processer: CVD (Chemical Vapor Deposition), PVD (Physical Vapor Deposition), spin-on.
+·Substrat-materialer: Silicium og silica
+·Materialemodifikation: Ionimplantation og dotering – diffusion, varmebehandling
+·Bonding – sammenføjning: anodiskbonding, fusionbonding
+·Procesintegration
+·Processimulering
+Som en del af kurset lærer du at bruge en moderne processimulator (ATHENA - se http://www.silvaco.com) der tillader dig at foretage avancerede beregninger.
+
+I den sidste del af kurset arbejder du i en gruppe med at lave en procesfølge for en komponent, som gruppen selv har valgt. Processen præsenteres ved et foredrag for alle studerende.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, e-læring og opgaveregning, 4 timer om ugen. I løbet af semestret er der tre hjemmeafleveringsopgaver. Kurset afsluttes med et projekt, der fremlægges mundtligt ved en videnskabelig mini-konference samt en skriftlig eksamen.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Komponenter og delsystemer fremstillet ved hjælp af nano- og mikrofabrikationsmetoder indgår i en lang række moderne produkter fra airbagsensorerne i en bil til processoren i en computer. Produkternes funktionalitet er kritisk afhængige af disse mikro- og nanokomponenter. 
+
+Det overordnede mål med kurset er at sætte dig i stand til at udvælge relevante processer, og designe en fremstillingsprocess til siliciumbaseret mikro- og nanofabrikation med anvendelse af de metoder der f.eks. bruges i DTU’s renrum, Nanolab, samt hos en række danske virksomheder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>In the course the physics, chemistry, and technology of the fabrication processes used is described:
+·Lithography: UV-microlithography, e-beam nanolithography, and nano-imprint
+·Pattern-transfer: etching, lift-off
+·Thin film processes: CVD, PVD, spin-on
+·Substrate-materials: Silicon and Silica
+·Material modification: Ion-implant and doping-diffusion, annealing
+·Bonding: anodic bonding, fusion bonding
+·Process integration
+·Process simulation
+You will learn to use a modern process simulator (ATHENA - http://www.silvaco.com)  which will allow you to perform advanced computation.
+
+In the final part of the course you work in teams on making a process flow for a device that the team can freely choose. The process is then presented orally for all students.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, e-learning and exercises, 4 hours a week. During the semester there are three home assignments. In the final part of the course there is a project which is presented at a scientific mini conference and finally there is a written exam.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Devices and sub-systems fabricated using nano- and microfabrication techniques are used in an increasing number of modern products ranging from airbag sensors for cars to the processor in computers. The functionality of these products is critically dependent on the micro and nano devices.
+
+The overall aim of the course is to enable you to select relevant processes and to design a fabrication process for silicon based micro- and nanofabrication using the methods available in for example the DTU cleanroom Nanolab and in commercial cleanrooms.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare principperne i de basale litografiske metoder (herunder UV-litografi, elektronstrålelitografi samt nanoimprintlitografi) og deres anvendelsesområder samt begrænsninger." />
+          <Txt Lang="en-GB" Txt="explain the principles behind the basic lithographic processes (including UV lithography, e-beam lithography and nanoimprint lithography), field of use and limitations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de basale principper, der anvendes ved planar processering (herunder termisk oxidation, ionimplantation, diffusion, metallisering samt våd- og tørætsning)." />
+          <Txt Lang="en-GB" Txt="explain the basic principles behind the processes used for planar processing (including diffusion, metallisation and wet and dry etching)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne relevante procesparametre (f.eks. tid, temperatur eller tryk) baseret på den underliggende teori (f.eks. termisk oxidation af silicium, ionimplantation, diffusion, elektronspredning og vekselvirkning mellem stråling og stof)." />
+          <Txt Lang="en-GB" Txt="calculate relevant process parameters (e.g. time, temperature or pressure) based on the underlying theory (e.g thermal oxidation of silicon, ion implantation, diffusion, electron scattering and interaction between radiation and matter)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="specificere detaljerede procesfølger til fremstilling af mikro- og nanosystemer." />
+          <Txt Lang="en-GB" Txt="specify detailed process recipes for fabrication of micro- and nanosystems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge den bedst egnede procesteknologi for en given opgave under hensyn til tekniske og økonomiske overvejelser." />
+          <Txt Lang="en-GB" Txt="select the most suitable process technology for a given task based on technical and economical considerations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende ATHENA processimulatoren til at forudsige resultaterne af og optimere en siliciumbaseret fremstillingsproces." />
+          <Txt Lang="en-GB" Txt="use the ATHENA process simulator to predict the result of and optimise a silicon based fabrication process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare tekniske og fundamentale begrænsninger for de benyttede fremstillingsprocesser." />
+          <Txt Lang="en-GB" Txt="explain technical and fundamental limitations for the fabrication processes used." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende kinetisk gas teori til at beregne procesparametre (f.eks. flux af molekyler, middelfri vejlængde)." />
+          <Txt Lang="en-GB" Txt="use the kinetic gas theory to calculate process parameters (e.g. flux of molecules, mean free paths)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diskutere og kommunikere fagets emner på engelsk." />
+          <Txt Lang="en-GB" Txt="use English to communicate and discuss the course content." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende generativ AI til at udarbejde processimuleringskode" />
+          <Txt Lang="en-GB" Txt="apply generative AI to make process simulation code" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Fremstilling af nano- &amp; mikrokomponenter</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="33255" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:54.347" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

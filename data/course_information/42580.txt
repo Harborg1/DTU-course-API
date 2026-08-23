@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42580" Volume="2026/2027" University="dtu" LastUpdated="2026-04-29+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til Data Science" />
+        <Title Lang="en-GB" Title="Introduction to Data Science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="64390" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mads</GivenName>
+            <FamilyName>Paulsen</FamilyName>
+            <Email>madsp@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="36022" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jesper Bláfoss</GivenName>
+            <FamilyName>Ingvardson</FamilyName>
+            <Email>jbin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6509" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Thomas Jacob Riis</GivenName>
+            <FamilyName>Stidsen</FamilyName>
+            <Email>thst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset bedømmes som en helhed baseret på gruppeprojekter og den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course is assessed as a whole based on group projects and the oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er en introduktion til data science med det formål at udvikle de studerendes forståelse for, hvad det vil sige at arbejde med data science i en samfundsmæssig kontekst. Kurset introducerer forskellige typer af basale data science-metoder (multipel lineær regression, logistisk regression og cluster-analyse), men sigter også efter at give de studerende mulighed for at erhverve sig relevante generiske ingeniørkompetencer såsom at arbejde i en gruppe og kommunikere resultater skriftligt såvel som mundtligt. Kurset fokuserer på, hvordan ingeniører arbejder med data science i praksis, og tillader således de studerende at opnå en forståelse af samfundsmæssige anvendelser af data science udenfor universitetet. 
+
+Kurset består af en blanding af projektarbejde og interaktive klassesessioner baseret på aktiv læring med maksimal fokus på hands-on erfaring, diskussioner og peer-feedback. De studerende har allokeret tid til at arbejde med deres projekter i løbet af sessionerne, men selvstændigt videre arbejde med projekterne mellem kursusgangene forventes.</Contents>
+          <Teaching_And_Learning_Methods>Interaktiv klasseundervisning samt projekter udført som gruppearbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Kurset gør brug af udvalgte dele af følgende: 
+-	James, Witten, Hastie, Tibshirani, Taylor (2023) An Introduction to Statistical Learning: with Applications in Python. https://findit.dtu.dk/en/catalog/64f4119c68cc5422d030e2e9. 
+-	Wilke (2019). Fundamentals of data visualization: a primer on making informative and compelling figures. O'Reilly Media. https://clauswilke.com/dataviz/. 
+
+Yderligere materiale stilles til rådighed i løbet af kurset.</Course_Literature>
+          <Course_Objectives>At give deltagerne en grundlæggende indsigt i:
+•	Basale data science-koncepter og udvalgte metoder
+•	Kommunikation af data science-analyser
+•	Projektarbejde i grupper i forbindelse med data science</Course_Objectives>
+          <DTU_Remark>Kurset er et indledende obligatorisk element af bacheloruddannelsen Data Science og Management, og kan kun tages af studerende på Data Science og Management.</DTU_Remark>
+          <Remark>Kurset er et indledende obligatorisk element af bacheloruddannelsen Data Science og Management, og kan kun tages af studerende på Data Science og Management.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is an introduction to data science with the aim of developing the students' understanding of what it means to work with data science in a societal context. The course introduces different kinds of basic data science methods (multiple linear regression, logistic regression, and cluster analysis) but also aims to give the students opportunities to acquire relevant generic engineering skills, such as working in a group and disseminating results both written and orally. The courses focuses on how engineers work with data science in practice, so that the students gain an understanding of societal applications of data science outside of the university. 
+
+The course consists of a mix of project work and interactive class sessions based on active learning with a maximal focus on hands-on experience, discussions and peer-feedback. The students have allocated time to work on their projects during classes, but independent further work on the projects between classes is expected.</Contents>
+          <Teaching_And_Learning_Methods>Interactive classes and projects carried out in groups</Teaching_And_Learning_Methods>
+          <Course_Literature>The course makes use of selected parts of: 
+-	James, Witten, Hastie, Tibshirani, Taylor (2023) An Introduction to Statistical Learning: with Applications in Python. https://findit.dtu.dk/en/catalog/64f4119c68cc5422d030e2e9 
+-	Wilke (2019). Fundamentals of data visualization: a primer on making informative and compelling figures. O'Reilly Media. https://clauswilke.com/dataviz/ 
+
+Additional material is provided throughout the course.</Course_Literature>
+          <Course_Objectives>To give participants a basic insight into:
+•	Basic data science concepts and selected methods
+•	Communication of data science analyses 
+•	Group project work in connection with data science</Course_Objectives>
+          <DTU_Remark>This course is an introductory mandatory element of the Bachelor program in Data Science and Management and can only be taken by students in that program.</DTU_Remark>
+          <Remark>This course is an introductory mandatory element of the Bachelor program in Data Science and Management and can only be taken by students in that program.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare data science-processerne i den statistiske undersøgelsescyklus" />
+          <Txt Lang="en-GB" Txt="Explain the data science processes of the Statistical Enquiry Cycle" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge egnet data til at analysere et selvvalgt samfundsrelevant emne" />
+          <Txt Lang="en-GB" Txt="Choose suitable data for analysing a self-selected topic of societal relevance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommunikere data science-analyser til et ikke-teknisk publikum i en mundtlig præsentation med hensigtsmæssigt designede datavisualiseringer" />
+          <Txt Lang="en-GB" Txt="Communicate data science analyses to a non-technical audience through an oral presentation with appropriately designed data visualisations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give relevant peerfeedback baseret på prædefinerede kriterier og benytte feedback til konstruktivt at forbedre en data science-analyse" />
+          <Txt Lang="en-GB" Txt="Provide relevant peer-feedback based on predefined criteria and use the feedback constructively to improve a data science analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og reflektere over egen rolle i et projektbaseret gruppearbejde" />
+          <Txt Lang="en-GB" Txt="Describe and reflect on their own role in a project-based group work" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende basale data science-metoder i Python og vurdere deres egnethed for et givent problem og datasæt" />
+          <Txt Lang="en-GB" Txt="Apply basic data science methods and assess their suitability for a given problem and dataset" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for valg af variable og deres form i en multipel regressionsmodel baseret på statistiske mål og visualiseringer " />
+          <Txt Lang="en-GB" Txt="Argue for chosen variables and their functional forms in a regression model based on statistical measures and visualisations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre relevante scenarieanalyser baseret på modelprædiktioner i Python og fortolke resultaterne med henblik på at kvalificere den offentlige debat af en samfundsmæssig problemstilling" />
+          <Txt Lang="en-GB" Txt="Carry out relevant scenario analyses based on model predictions in Python and interpret the results for the purpose of qualifying the public debate of a societal matter" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en sammenhængende rapport der syntetiserer en data science-analyse og dens begrænsninger på en velstruktureret måde" />
+          <Txt Lang="en-GB" Txt="Write a coherent technical report that synthetises a data science analysis and its limitations in a well-structured manner " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:12.7" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

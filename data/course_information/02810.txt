@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02810" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="UX Design Prototypeudviking" />
+        <Title Lang="en-GB" Title="UX Design Prototyping" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="73371" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Per</GivenName>
+            <FamilyName>Bækgaard</FamilyName>
+            <Email>pgba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individualiserede grupperapporter og individuelle arbejder. Kurset indlejrer DTU Computes Digitale Innovations-Kanon. Det er en forudsætning for deltagelse i eksamen at prøverne hørende til de enkelte elementer af denne kanon indeholdt i kurset er bestået." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individualized group reports and individual works. The course embeds the DTU Compute Digital Innovation Canon. Passing the tests for each element of the canon contained in this course is a prerequisite for taking the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Allowed use of Generative AI is specified in the first lecture." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Tilladt brug af Generativ AI beskrives i første forelæsning." />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer på udvikling af funktionelle UX design prototyper der kombinerer flere typer af mobile enheder og interfaces, fra flat UI til dialog- og stemme-baserede design mønstre.
+
+Kurset bruger lean metodik baseret på at identificere behov, hierarkisk user story mapping, multidevice designmønstre og microinteractions system design, såvel som hurtig prototyping der kombinerer både velkendte og nye værktøjer og metoder.
+
+Kurset giver den studerende et systematisk fundament og praktisk erfaring med design af UX prototyper, som også senere kan anvendes til "næste generation" interfaces indenfor andre områder, som det f.eks. adresseres i 02266 "User Experience Engineering".</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger kombineret med praktiske øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset har til formål at gøre de studerende i stand til 1) at anvende lean prototypeudvikling til UX design af personaliserede brugerflader, og 2) at vælge passende værktøjer, metoder og design til opgaverne.</Course_Objectives>
+          <Remark>Kurset er en del af DTU Computes Digitale Innovations-Kanon.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is focused on development of functional UX design prototypes that combine multiple mobile devices and interfaces, from flat UI to dialog and voice based design patterns.
+
+It uses lean methods based on pain driven design, hierarchical user story mapping, multidevice design patterns and microinteractions system design, as well as rapid prototyping combining both industry proven and novel tools and methods.
+
+The course provides students with a systematic foundation and practical experience in designing UX prototype designs, which can also later be applied to "next generation" interfaces in other domains, subsequently addressed in 02266 "User Experience Engineering".</Contents>
+          <Teaching_And_Learning_Methods>Lectures combined with practical exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The objective of the course is to enable students 1) to apply lean prototyping methods for UX design of personalized user interfaces, and 2) to select appropriate tools, methods and designs for the tasks at hand.</Course_Objectives>
+          <Remark>The course is part of DTU Compute's Digital Innovation Canon.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til agil softwareudvikling, f.eks. svarende til de metoder som bruges i 02160 eller gennem praktisk arbejdserfaring, er en fordel (men ikke en forudsætning)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of agile software development, e.g. in the form of the methods taught in 02160 or through working experience, is an advantage (but not a prerequisite)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02160/02161/02267" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere bruger-behov og -problemer i forhold til et markedssegment" />
+          <Txt Lang="en-GB" Txt="Identify user needs and pain points for a market segment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere værdi i forhold til potentielle løsninger ved hjælp af business model canvas" />
+          <Txt Lang="en-GB" Txt="Optimize unique value proposition (UVP) using a lean business model canvas" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere brugerbehov hierarkisk i form af mål, aktiviteter og opgaver" />
+          <Txt Lang="en-GB" Txt="Model user needs hierarchically as goals, activities and tasks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Prioritere og oversætte brugerbehov til UX prototype wireframe story boards " />
+          <Txt Lang="en-GB" Txt="Prioritize user needs to sketch out UX prototype designs as wireframes in a story boards" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere microinteractions for et UX system design" />
+          <Txt Lang="en-GB" Txt="Model microinteractions for a UX system design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere påkrævet interaktion med backend for et UX system design" />
+          <Txt Lang="en-GB" Txt="Identify backend interaction required for a UX system design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge og implementere passende designmønstre for et UX prototype design" />
+          <Txt Lang="en-GB" Txt="Select and implement appropriate design patterns for a UX prototype design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe et MVP minimum viable product baseret på iterativ UX prototypeudvikling ved brug af Build-Measure-Learn" />
+          <Txt Lang="en-GB" Txt="Design a minimum viable product (MVP) based on iterative UX prototyping using Build-Measure-Learn cycles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Validere et MVP minimum viable product under brug af hypotese-drevne design metoder" />
+          <Txt Lang="en-GB" Txt="Validate a minimum viable product (MVP) using hypothesis driven design methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive metoder design principper for et digitalt produkt: Design Thinking, Transformation vs Innovation, Etik og Bias" />
+          <Txt Lang="en-GB" Txt="Describe methodologies and design principles of a digital product: Design Thinking, Transformation vs Innovation, Ethics and Bias" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive (yderligere) nødvendige nøgleprocesser for at kunne udvikle et digitalt produkt: Agil, Lean og Build-Measure-Learn" />
+          <Txt Lang="en-GB" Txt="Describe (additional) key processes that are necessary when developing a digital product: Agile, Lean and Build-Measure-Learn" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive yderligere overvejelser når et digitalt produkt går fra udvikling til produktion: Scalability" />
+          <Txt Lang="en-GB" Txt="Describe additional concerns when a digital product transitions from the development phase to production: Scalability" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Design af User Experience ved hjælp af prototyper og lean metoder</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02809" />
+        <PreviousCourse CourseCode="02809" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:35.267" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

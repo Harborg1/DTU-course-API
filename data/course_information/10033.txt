@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10033" University="dtu" LastUpdated="2026-04-23+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Mekanik og fysisk modellering" />
+        <Title Lang="en-GB" Title="Mechanics and Physical Modeling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P12M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="3949" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Knudsen</FamilyName>
+            <Email>cakn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38686" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Kristina Jørkov</GivenName>
+            <FamilyName>Thomsen</FamilyName>
+            <Email>krth@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Der er en afsluttende fire timers skriftlig eksamen (70%) og et antal journaler (30%) over eksperimenter.&#xD;&#xA;&#xD;&#xA;Det er en forudsætning for at gå til eksamen i kurset at man har modtaget feedback fra undervisere/hjælpelærere mindst fire gange i løbet af kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment. There is a final, written four hour exam (70%) and a number of lab reports (30%) about experiments.&#xD;&#xA;&#xD;&#xA;It is a requirement for taking the exam that you have received feedback from the lecturer/TAs at least four times." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Newtons love og impulsmomentsætningen anvendt dels på partikler, dels på stive legemer. Arbejdssætningen, konservative og ikke-konservative kræfter. Stød. Introduktion af fiktive kræfter. Svingninger, koblede svingninger og introduktion til simple kontinuerte medier (svingende streng). Planetbevægelse. Elementer af  Lagrange og Hamilton formalismerne. Praktiske forhold omkring computersimulering, hvor der benyttes programmeringssproget Python. Anvendelse af usikkerhedsvurdering. Anvendelse af dimensionsanalyse og ikke-dimensionalisering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, eksperimenter og grupperegning.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kurset har to lærebøger.
+Den første er Engineering Mechanics 3 af Dietmar Gross et al, Spring Verlag. 
+
+Den anden er bind 1 af University Physics fra OpenStax, der er gratis tilgængelig på https:/​/​openstax.org/​details/​books/​university-physics-volume-1.</Course_Literature>
+          <Course_Objectives>At gøre den studerende fortrolig med mekanikkens grundbegreber og sætte den studerende i stand til med analytiske metoder at løse simple mekaniske og tekniske problemer. Ved at kombinere anvendelse af analytiske metoder med computersimulering tilstræbes det at give den studerende en mere intuitiv forståelse af bevægelseslovene. Samtidig skal det med computersimulering være muligt at løse mere komplicerede og teknisk mere relevante problemstillinger.</Course_Objectives>
+          <DTU_Remark>Kurset kan kun tages af studerende på "Fysik og Ingeniørvidenskab"- samt "Geofysik og rumteknologi"-bacheloruddannelserne.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Newton’s laws, and the angular momentum relation – applied partly to particles and partly to rigid bodies. The law of conservation of energy, conservative and non-conservative forces. Collisions. Introduction to fictitious forces. Oscillations, coupled oscillations, and introduction to simple continuous media (vibrating string). Planetary motion. Elements of Lagrangian and Hamiltonian formalisms. Practical considerations concerning computer simulation using the programming language Python. Applications of error analysis. Applications of dimensional analysis and non-dimensionalization.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, experiments, and problem sessions.</Teaching_And_Learning_Methods>
+          <Course_Literature>The course has two textbooks.
+The first is Engineering Mechanics 3 by Dietmar Gross et al, Spring Verlag. 
+
+The other is Volume 1 of University Physics from OpenStax, that is available free of charge at  https:/​/​openstax.org/​details/​books/​university-physics-volume-1.</Course_Literature>
+          <Course_Objectives>Our aim is to make the student familiar with the fundamental concepts of mechanics, and enable the student to apply analytical methods, when solving simple mechanical and technical problems.
+
+To achieve our objective of giving our students a more intuitive understanding of the laws of motion, we use a combination of analytical methods and computer simulations. The use of computer simulations will enable us to perform more complex as well as technically relevant tasks.</Course_Objectives>
+          <DTU_Remark>The course is only available to Engineering Physics, and Earth and Space Physics Engineering bachelor students.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere en problemstilling, planlægge og udføre løsning samt kontrollere resultatet." />
+          <Txt Lang="en-GB" Txt="Analyse a problem, plan and carry out a solution, and control the results. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere vigtige begreber  i mekanisk fysik så som position, hastighed, acceleration, vinkelhastighed, impuls, impulsmoment, inertimoment, kinetisk og potentiel energi, massemidtpunkt, kræfter, kraftmomenter og fiktive kræfter." />
+          <Txt Lang="en-GB" Txt="Define important concepts of mechanics - such as position, velocity, acceleration, angular velocity, momentum, angular momentum, moment of inertia, kinetic and potential energy, centre of mass, forces, torques, and fictitious forces. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende relevante fysiske love og deres afledede: Newtons love, massemidtpunktssætningen, arbejdssætningen, og impulsmomentsætningen." />
+          <Txt Lang="en-GB" Txt="Know relevant physical laws and their consequences: Newton's laws of motion, centre of mass motion, work-energy theorem, toques, and rotational motion." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Erkende når impuls, impulsmoment og total mekanisk energi er bevaret og anvende bevarelseslovene til mekanisk problemløsning." />
+          <Txt Lang="en-GB" Txt="Recognise when momentum, angular momentum and/or total mechanical energy is conserved, and apply conservation laws to solving mechanical problems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende symbolsk matematik til at kunne løse simplere problemstillinger for partikler og stive legemer ved anvendelse af Newtons love, massemidtpunktssætningen, impulsmomentsætningen, bevarelsessætninger mm." />
+          <Txt Lang="en-GB" Txt="Use calculus and the laws of motion to solve problems for particles and rigid bodies by applying Newton's laws, the center of mass, torque and angular momentum, conservation laws, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre ikke-dimensionalisering for at simplificere ligninger og bestemme dimensionsløse parametre." />
+          <Txt Lang="en-GB" Txt="Perform nondimensionalisation in order to simplify equations and determine dimensionless parameters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Lagrange formalismen til at udlede bevægelsesligninger for partikler og stive legemer." />
+          <Txt Lang="en-GB" Txt="Apply the Lagrangian formalism to derive the equations of motion for a particles and a rigid bodies. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende dimensionsanalyse til at bestemme sammenhænge mellem fysiske størrelser." />
+          <Txt Lang="en-GB" Txt="Apply dimensional analysis to determine relationships between physical quantities." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende computerprogrammer til at  løse mere komplicerede problemstillinger, hvor en numerisk løsning er nødvendig for partikler og for stive legemer ved anvendelse af Newtons love, mm." />
+          <Txt Lang="en-GB" Txt="Use computer programs to solve more complicated problems when a numeric solution is necessary for particles and rigid bodies by using the laws of motion." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage usikkerhedsvurderinger herunder anvendelse af fejlophobningsloven." />
+          <Txt Lang="en-GB" Txt="Estimate uncertainties including propagation of errors." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge og udføre eksperimenter, herunder håndtere dataopsamling, dataanalyse og at sammenholde resultater fra eksperimenter med modeller." />
+          <Txt Lang="en-GB" Txt="Plan and execute experiments, including data acquisition, data analysis, and comparing results from experiments with models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive journaler over eksperimenter." />
+          <Txt Lang="en-GB" Txt="Writing lab reports on experiments." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="10001/10010/10011/10018/10020/10022/10024/10026/10028/10050/10052/10054/10060/10063/10065" />
+        <PreviousCourse CourseCode="10001" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="57" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="43" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:47.203" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

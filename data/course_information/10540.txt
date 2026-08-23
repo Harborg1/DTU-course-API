@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10540" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="CAMD Summer School on Electronic Structure Theory and Materials Design" />
+        <Title Lang="en-GB" Title="CAMD Summer School on Electronic Structure Theory and Materials Design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Fysik" />
+        <Course_Responsible PersonKey="40609" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Thomas</GivenName>
+            <FamilyName>Olsen</FamilyName>
+            <Email>tolsen@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="988" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Karsten Wedel</GivenName>
+            <FamilyName>Jacobsen</FamilyName>
+            <Email>kwja@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen består i vurderingen af en poster, som præsenteres på skolen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation consists of assessment of a poster presented at the school." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="ALL participants must register via Conferencemanager (link TBA). FURTHERMORE:&#xD;&#xA;- PhD students enrolled at DTU must register via Studieplanlæggeren&#xD;&#xA;- PhD students enrolled at other universities must register here: https://www.dtu.dk/english/education/phd/intro/guest-phd/guest_courses/registration_form &#xD;&#xA;- MSc students enrolled at DTU must register via Studieplanlæggeren&#xD;&#xA;- MSc students from other Danish universities, must register here: https://www.dtu.dk/uddannelse/gaestestuderende/tilmeld &#xD;&#xA;" />
+            <Supp_Txt Lang="en-GB" Txt="ALL participants must register via Conferencemanager (link TBA). FURTHERMORE:&#xD;&#xA;- PhD students enrolled at DTU must register via Studieplanlæggeren&#xD;&#xA;- PhD students enrolled at other universities must register here: https://www.dtu.dk/english/education/phd/intro/guest-phd/guest_courses/registration_form &#xD;&#xA;- MSc students enrolled at DTU must register via Studieplanlæggeren&#xD;&#xA;- MSc students from other Danish universities, must register here: https://www.dtu.dk/uddannelse/gaestestuderende/tilmeld &#xD;&#xA;" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Emner der vil blive dækket i forelæsningerne: 
+
+The fundamentals of Density Functional Theory
+Strategies for solving the Kohn-Sham equations 
+Projector Augmented Wave Implementation 
+Exchange-correlation functionals 
+Time-dependent DFT 
+Many-body approaches to the electronic structure problem 
+Magnetism
+Energy Materials 
+Chemistry at surfaces/Heterogeneous Catalysis 
+Electrochemistry 
+Materials Informatics</Contents>
+          <Teaching_And_Learning_Methods>Sommerskolen vil være en kombination af forelæsninger af eksperter inden for området og computerøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne basal viden om og erfaring med elektronstrukturberegninger blandt andet med henblik på materialedesign.</Course_Objectives>
+          <DTU_Remark>Afholdes næste gang i august 2028</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Subjects covered in lectures will relate to: 
+
+The fundamentals of Density Functional Theory 
+Strategies for solving the Kohn-Sham equations 
+Projector Augmented Wave Implementation 
+Exchange-correlation functionals
+Time-dependent DFT 
+Many-body approaches to the electronic structure problem 
+Magnetism
+Energy Materials 
+Chemistry at surfaces/Heterogeneous Catalysis 
+Electrochemistry 
+Materials Informatics</Contents>
+          <Teaching_And_Learning_Methods>The summer school will be a combination of lectures given by experts in the field and computer exercises giving hands-on-experience with the Atomic Simulation Environment (ASE) and the GPAW electronic structure code.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The school will teach the students electronic structure methods which can be applied in materials design.</Course_Objectives>
+          <DTU_Remark>Will take place the next time in August 2028.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset kræver viden om kvantefysik på MSc-niveau." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course requires knowledge about quantum physics at the MSc level" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de grundlæggende elementer i tæthedsfunktionalteori (Density Funtional Theory, DFT) inden for elektronstruktur" />
+          <Txt Lang="en-GB" Txt="Describe the fundamental elements of density functional theory (DFT) with electronic structure theory." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundelementer i projector augmented wave metoden inden for DFT" />
+          <Txt Lang="en-GB" Txt="Describe the fundamental elements in the projector augmented wave method within DFT" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive mere avancerede metoder end DFT til beregning af totalenergier og exciterede tilstande for elektroniske systemer" />
+          <Txt Lang="en-GB" Txt="Describe beyond-DFT methods for calculations of total energies and excited states of electronic systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Atomic Simulation Environment (ASE) til modellering af atomare og elektroniske systemer" />
+          <Txt Lang="en-GB" Txt="Use the Atomic Simulation Environment (ASE) for modeling of atomic and electronic systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simple beregninger af totalenergier og kræfter for atomare systemer ved hjælp af DFT-koden GPAW" />
+          <Txt Lang="en-GB" Txt="Perform simple calculations of total energies and forces for atomic systems using the DFT-code GPAW" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give eksempler på anvendelser af DFT inden for materialedesign, herunder udvikling af energimaterialer" />
+          <Txt Lang="en-GB" Txt="Give examples of materials design based on DFT, including development of energy materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og bidrage til beregnede materialedatabaser" />
+          <Txt Lang="en-GB" Txt="Use and contribute to computational materials databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere workflows til &quot;high throughput screening&quot; efter specifikke materiale-egenskaber" />
+          <Txt Lang="en-GB" Txt="Construct workflows for high throughput screening for specific materials properties" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.fysik.dtu.dk/english/Research/CAMD/Events/Summer-school-2022" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:33.23" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

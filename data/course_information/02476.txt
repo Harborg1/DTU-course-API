@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02476" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Machine Learning Operations" />
+        <Title Lang="en-GB" Title="Machine Learning Operations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="77347" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Nicki Skafte</GivenName>
+            <FamilyName>Detlefsen</FamilyName>
+            <Email>nsde@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="29284" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Søren</GivenName>
+            <FamilyName>Hauberg</FamilyName>
+            <Email>sohau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kode miljøer, kode organisering, god kodningspraksis, kode og data versionsstyring, reproducerbare og containerized miljøer, reproducerbare eksperimenter, kode fejlfinding tools, kode profilering, storskala experiment logging og monitoring, unit testing, continuous integration, continuous maskinlæring, cloud infrastruktur, cloud baseret maskinlæring, distribueret data loading og træning, optimeringsmetoder for inferens, lokal og cloud baseret deployment, monitorering af deployed applikation</Contents>
+          <Teaching_And_Learning_Methods>Kurset inkluderer forelæsninger, øvelser og projektarbejde. Forelæsningerne er korte og er ment til at give kontekst hvorfor hvert emne er vigtigt. Hovedfokus er øvelserne med vægt på praktiske værktøjer og kode praksis for at implementere maskine læringsmodeller i produktion. Omkring 30% af kurset bliver brugt på projektarbejde i grupper på 3-5 personer, hvor værktøjer gennemgået i kurset skal anvendes på et selvvalgt maskinelærings problem.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Introducere den studerende til multiple programmeringsværktøjer og praksisser for softwareudvikling for organisering, skalering, deployment og monitorering af maskinlærings modeller til forskning og produktion. Fokus er på hands-on erfaring med en række frameworks, lokalt og i cloud miljøer, til at arbejde med storskala maskinlærings systemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Proper coding environments, code organization, good coding practices, code and data version control, reproducible and containerized environments, reproducible experiment management, debugging tools, code profiling, large scale collaborative experiment logging and monitoring, unit testing, continuous integration, continuous machine learning, cloud infrastructure, cloud based machine learning, distributed data loading and training, optimization methods for inference, local and cloud based deployment, monitoring of deployed applications.</Contents>
+          <Teaching_And_Learning_Methods>The course includes lectures, exercises and project work. The lectures are short and provide context for why each topic is important. The main focus is on exercises with emphasis on practical tools and coding skills for machine learning in production. Finally, approximately 30% of the course is spent on project work in groups of 3-5 persons, where tools used throughout the course should be applied on a self-chosen machine learning problem.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Introduce the student to several tools and software development practices that will help them organize, scale, deploy and monitor machine learning models either in a research or production setting. To provide hands-on experience with a number of frameworks, both local and in the cloud, for working with large scale machine learning pipelines.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="General forståelse for maskinlæring (datasets, sandsynlighedsregning, klassifikationsmodeller, overfitting etc.) og grundlæggende erfaring med dyb læring (backpropagation, convolutional neural networks, auto-encoders etc.). Kendskab til kodning i Pytorch" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="General understanding of machine learning (datasets, probability, classifiers, overfitting etc.) and basic knowledge about deep learning (backpropagation, convolutional neural networks, auto-encoders etc.). Familiar with coding in Pytorch." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02456" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere kode effektivt for at gøre det nemmere at vedligeholde og dele" />
+          <Txt Lang="en-GB" Txt="Organize code in an efficient way for easy maintainability and shareability" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="være i stand til at bruge versionsstyring til at samarbejde effektivt om kodeudvikling og håndtering af store mængder data" />
+          <Txt Lang="en-GB" Txt="Capable of using version control systems to efficiently collaborate on code development and handle large amounts of data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="være i stand til at lave reproducerbare softwaremiljøer og reproducerbare containerized applikationer og eksperimenter" />
+          <Txt Lang="en-GB" Txt="Being able to create reproduceable software environments and reproduceable containerized applications and experiments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="være i stand til at fejlfinde, profilere, visualisere og overvåge multiple eksperimenter for at vurdere model performance" />
+          <Txt Lang="en-GB" Txt="Being able to debug, profile, visualize and monitor multiple experiments to assess model performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere basale tests af software og bruge continuous integration (CI) til at automatisere kode udvikling" />
+          <Txt Lang="en-GB" Txt="Implement basic testing of software and apply continuous integration (CI) for automating code development" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="være i stand til at bruge online cloud baserede computing services for at skalere eksperimenter og automatisere processer" />
+          <Txt Lang="en-GB" Txt="Capable of using cloud based computing services to scale experiments and automate processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="deploy maskine læringsmodeller, både lokalt og i cloud og monitorere modellens livscyklus efter implementering" />
+          <Txt Lang="en-GB" Txt="Able to deploy machine learning models, both locally and in the cloud and monitor the lifecycle of the model after deployment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="demonstrere hvordan man skalerer dataindlæsning, træning og inferens af maskinlæringspipelinen ved hjælp af distribuerede metoder og optimeringsstrategier" />
+          <Txt Lang="en-GB" Txt="Demonstrate how to scale data loading, training and inference of the machine learning pipeline using distributed frameworks and optimization strategies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage et mindre forskningsprojekt i samarbejde med ens medstuderende hvor der anvendes de værktøjer man har lært i kurset" />
+          <Txt Lang="en-GB" Txt="Conduct a research project in collaboration with follow students using the frameworks taught in the course" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://skaftenicki.github.io/dtu_mlops/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Machine Learning Operations - hands-on experience</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+        </OfferedAsACourseOfTypes>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:04.573" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

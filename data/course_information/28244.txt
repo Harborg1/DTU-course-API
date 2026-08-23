@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28244" University="dtu" LastUpdated="2026-04-15+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Forbrænding og højtemperaturprocesser" />
+        <Title Lang="en-GB" Title="Combustion and High Temperature Processes" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="646" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Glarborg</FamilyName>
+            <Email>PGL@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakter gives udfra en helhedsvurdering på basis af 2 kursusopgaver udført i løbet af semestret samt 4 hjemmeopgavesæt. Dog vægtes kursusopgaverne samlet ca 90%, hjemmeopgaverne i alt ca. 10%." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is determined from an overall evaluation of two course exercises (90%) and four problem sets (10%)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="No exam" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ingen eksamen i den ordinære eksamensperiode" />
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Faget grænser op til såvel kemiteknik som maskinteknik, og industrielt arbejder både kemi- og maskiningeniører med brændsler og miljøforhold. Kurset  dækker teoretiske aspekter af termisk omsætning af gasformige, væskeformige og faste brændsler (forbænding, forgasning, pyrolyse). Udviklede modeller anvendes ifm. praktiske processer som gasturbiner, motorer, pulverfyrede anlæg, fixed bed og fluid bed samt en række industrielle højtemperaturprocesser. Kurset er relevant for udvikling af bæredygtige højtemperaturprocesser og det vil blive illustreret i kurset. I løbet af kurset udarbejdes to større kursusopgaver. Der lægges vægt på rapporteringsteknik. For ikke-kemikere vil der tidligt i kurset blive givet en introduktion til kemi.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, udarbejdelse af 2 større kursusopgaver</Teaching_And_Learning_Methods>
+          <Course_Objectives>At bibringe deltagerne en grundlæggende forståelse af forbrænding og andre højtemperaturprocesser, herunder dannelse og begrænsning af miljøskadelige komponenter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is related to both chemical and mechanical engineering, as both of these types of engineers work with fuels and emissions.  Topics covered include thermal conversion of gaseous, liquid and solid fuels (pyrolysis, gasification, combustion). Developed models are applied to practical systems, i.e., gas turbines, motors, pulverized fuel combustors, fixed bed and fluid bed, as well as related industrial high temperature processes. The content of the course is relevant for developing sustainable high temperature processes and this will be illustrated in the course. The different systems are treated theoretically and the students solve larger, practically oriented problems during the course. For non-chemical engineers, introductory material is presented at the start of the course.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem sessions, 2 larger course exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the participants with a fundamental knowledge about combustion and other high temperature processes, including formation and reduction of harmful emissions.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med numeriske værktøjer til løsning af ordinære differentialligninger, feks Matlab, Maple eller lignende. Derudover er det en fordel at have haft et grundkursus i kemi." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience with numerical tools for solution of ordinary differential equations such as Matlab, Maple, or similar. In addition it is an advantage with knowledge of chemistry at an introductory level." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="28020/41401" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille masse- og energibalancer for forbrændingssystemer" />
+          <Txt Lang="en-GB" Txt="Set up mass and energy balances for combustion systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne røggasmængde og sammensætning udfra støkiometriske beregninger" />
+          <Txt Lang="en-GB" Txt="Estimate flue gas amount and composition from stoichiometric calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende forenklede og detaljerede kemiske modeller til at estimere forbrændingshastighed og dannelse af miljøskadelige komponenter" />
+          <Txt Lang="en-GB" Txt="Use simplified and detailed chemical models to estimate combustion rate and formation of pollutant species" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Koble kemisk og termisk analyse af reagerende systemer" />
+          <Txt Lang="en-GB" Txt="Couple chemical and thermal analyses of reacting systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille bevarelsesligninger for reagerende flow" />
+          <Txt Lang="en-GB" Txt="Set up simplified conservation equations for reacting flows" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gøre rede for konceptuelle og praktiske forskelle mellem forblandede og diffusionsflammer" />
+          <Txt Lang="en-GB" Txt="Explain conceptual and practical differences between premixed and diffusion flames" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere effekten af turbulens på forbrændingshastighed " />
+          <Txt Lang="en-GB" Txt="Assess the impact of turbulence on combustion rates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og bruge simpel model for dråbefordampning og forbrænding" />
+          <Txt Lang="en-GB" Txt="Set up and use simplified model for droplet evaporation and combustion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og bruge simpel model for partikelopvarmning og pyrolyse" />
+          <Txt Lang="en-GB" Txt="Set up and use simplified model for particle heating and pyrolysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og bruge simpel model for koksoxidation " />
+          <Txt Lang="en-GB" Txt="Set up and use simplified model for char oxidation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende ovenstående værktøjer sammen med numeriske løsningsmetoder til vurdering og optimering af industrielle højtemperaturprocesser" />
+          <Txt Lang="en-GB" Txt="Use the above tools together with numerical solvers to evaluate and optimize industrial high-temperature processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Kurset giver en introduktion til industrielle højtemperaturprocesser.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="7" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:02.067" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

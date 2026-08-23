@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="28928" University="dtu" LastUpdated="2024-04-24+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Kemiteknik" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">7.5</Point>
+        <Title Lang="da-DK" Title="Elektrolytopløsningers termodynamik" />
+        <Title Lang="en-GB" Title="Electrolyte Solution Thermodynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="13-ugers periode" />
+          <Schedule_Txt Lang="en-GB" Txt="13-week period" />
+          <Schedule ScheduleKey="F" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="6678" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Georgios</GivenName>
+            <FamilyName>Kontogeorgis</FamilyName>
+            <Email>gk@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se kursusindhold i den engelske kursusbeskrivelse</Contents>
+          <Teaching_And_Learning_Methods>Selv-studie med mulighed for enkelte forelæsninger (on-line)</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusmateriale og opgaver skrevet af Kaj Thomsen DTU Kemiteknik. Artikler fra den internationale litteratur om emnet vil blive brugt i forbindelse med opgaver.
+Ekstra kursusmateriale skrevet af Georgios Kontogeorgis, DTU Kemiteknik.</Course_Literature>
+          <Course_Objectives>At introducere elektrolytopløsningers termodynamik for de studerende samt de relevante modeller</Course_Objectives>
+          <DTU_Remark>Kun forår, 13-ugers periode</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The aim of the course is to give an introduction to concepts important for understanding and working with electrolyte solution thermodynamics. Topics being discussed include experimental methods for measuring properties of salt solutions, molal, molar and mole fraction activity coefficients, the Nernst equation, Debye-Hückel theory, the Mean Spherical Approximation (MSA) theory, molecular interactions in electrolyte solutions, dielectric properties of solvents and its effect on salt solubility, Born equation, Gibbs energy of transfer, Meisner model, Bromley model, Pitzer model, e-NRTL model, Extended UNIQUAC model, MSE model, equations of state for electrolytes, apparent properties, thermal properties, volumetric properties of electrolytes, phase rule and invariant points.</Contents>
+          <Teaching_And_Learning_Methods>Self-study with possibility for some on-line lectures</Teaching_And_Learning_Methods>
+          <Course_Literature>Compendium and exercises written by Kaj Thomsen DTU Chemical Engineering. In addition, several scientific papers will be used in connection with exercises.
+Extra course material written by Georgios Kontogeorgis, DTU Kemiteknik.</Course_Literature>
+          <Course_Objectives>To introduce the participants to the thermodynamics of electrolyte solutions including the relevant models</Course_Objectives>
+          <DTU_Remark>Only Spring semester, 13-week period</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="MSc Chemical Engineering. Godt kendskab til og interesse for kemisk termodynamik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="MSc Chemical Engineering. Good knowledge of chemical thermodynamics" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge en passende termodynamisk model for en given elektrolyt opløsning" />
+          <Txt Lang="en-GB" Txt="Select a proper thermodynamic model for specific electrolyte solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre en konvertering af standardtilstandsegenskaber mellem de tre skalaer: molalitet og symmetrisk/usymmetrisk molbrøk" />
+          <Txt Lang="en-GB" Txt="Perform the conversion between standard state properties on the molality scale and symmetric/unsymmetric mole fraction scales" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Omregne aktivitetskoefficienter fra en skala til en anden" />
+          <Txt Lang="en-GB" Txt="Convert activity coefficients from one scale to another" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede middel activitetskoefficienter, osmotiske koefficienter og andre termodynamiske størrelser fra en Gibbs overskudsfunktion" />
+          <Txt Lang="en-GB" Txt="Derive mean activity coefficients, osmotic coefficients and other solution properties from a Gibbs excess function" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne aktivitetskoefficienter fra fugacitetskoefficienter" />
+          <Txt Lang="en-GB" Txt="Calculate activity coefficients from fugacity coefficients" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge en egnet eksperimentel metode til måling af elektrolytopløsningers egenskaber" />
+          <Txt Lang="en-GB" Txt="Determine a proper experimental method for measuring properties of electrolyte solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Gibbs-Duhem ligningen til at beregne osmotiske koefficienter fra middelaktivitetskoefficienter" />
+          <Txt Lang="en-GB" Txt="Apply the Gibbs-Duhem equation for calculating osmotic coefficients from mean activity coefficients" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre beregning af specieringsligevægte" />
+          <Txt Lang="en-GB" Txt="Perform speciation equilibrium calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre fast stof-væske, damp-væske, og væske-væske ligevægts beregninger" />
+          <Txt Lang="en-GB" Txt="Perform solid-liquid, vapour-liquid, and liquid-liquid equilibrium calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme temperatur-, tryk- og sammensætningsafhængigheden af ligevægtskonstanter" />
+          <Txt Lang="en-GB" Txt="Determine, the temperature, pressure, and composition dependence of equilibrium constants" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende fasediagrammer for fast stof – væske ligevægte for salt opløsninger" />
+          <Txt Lang="en-GB" Txt="Use phase diagrams for solid-liquid equilibrium of salt solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemgå Debye-Hückel teorien og andre teorier for elektrolytter" />
+          <Txt Lang="en-GB" Txt="Present the Debye-Hückel theory and other theories for electrolyte solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modellering og beregning af saltopløsningers egenskaber</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="1" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="1" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="5" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:40.303" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

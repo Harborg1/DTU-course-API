@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02501" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående Deep Learning i Computer Vision" />
+        <Title Lang="en-GB" Title="Advanced Deep Learning in Computer Vision" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="94795" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Dimitrios</GivenName>
+            <FamilyName>Papadopoulos</FamilyName>
+            <Email>dimp@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="142917" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Aasa</GivenName>
+            <FamilyName>Feragen</FamilyName>
+            <Email>afhar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Or_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eller skriftlig eksamen og rapporter.&#xD;&#xA;Godkendte rapporter er et krav for at bestå kurset.&#xD;&#xA;Eksamen er mundtlig, medmindre der er så mange deltagere, at det bliver upraktisk. I dette tilfælde vil der være en skriftlig eksamen sammen med en vurdering af det afsluttende projekt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral or written examination and reports.&#xD;&#xA;Approval of reports is a prerequisite for passing the course.&#xD;&#xA;The exam is oral unless there are so many participants that it becomes impractical. In this case, a written exam will be combined with an assessment of the final project." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver en introduktion til avancerede emner indenfor deep learning for computer vision. Derfor vil øvelsernes fokus ligge på at implementere algoritmer og at bruge disse til at løse praktiske problemer indenfor computer vision indenfor emner så som: billedgenkendelse, sekvensiel data, generative modeller, videoforståelse, forklarbarhed og retfærdig AI.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, praktiske opgaver og projekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give viden om avancerede deep learning metoder og modeller for computer vision, samt at give kompetencer til at anvende disse teknikker i forskellige anvendelser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course gives an introduction to advanced topics within deep learning for computer vision. Therefore, focus in the exercises is on implementing algorithms and using these for solving practical computer vision problems within the following topics: image recognition, sequential data, generative models, video understanding, explainability, and fairness.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, practical exercises and projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give knowledge of advanced deep learning methods and models for computer vision, and give competence in applying these techniques in different applications.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="02450, 02456, 02516 eller tilsvarende (især forventer vi at du er erfaren med at træne  neurale netværk for computer vision på brugerdefineret data ved hjælp af PyTorch på en remote server)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="02450, 02456, 02516 or their equivalents (in particular, we expect that you are well experienced with training neural networks for computer vision on custom data using PyTorch on a remote server)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450.02456.02516" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge, implementere og bruge state-of-the-art deep learning arkitekturer for klassiske computer vision opgaver så som klassifikation, segmentering og objektgenkendelse" />
+          <Txt Lang="en-GB" Txt="Select, implement, and utilize state-of-the-art deep learning architectures for classical computer vision tasks such as classification, segmentation, and recognition" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og undersøge deep learning modeller der kombinerer billeddata med andre modaliteter, så som tekst" />
+          <Txt Lang="en-GB" Txt="Utilize and examine deep learning models that combine image data with other modalities, such as text" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere deep learning modeller for temporal billed data, så som videoer" />
+          <Txt Lang="en-GB" Txt="Implement deep learning models for temporal image data, such as videos" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og implementere dype generative modeller for billedsyntese" />
+          <Txt Lang="en-GB" Txt="Explain and implement deep generative models for image synthesis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive, implementere og sammenligne alternative metoder for at træne deep learning modeller i situationer med begrænset adgang til data" />
+          <Txt Lang="en-GB" Txt="Describe, implement and compare alternative methods for training deep learning models in limited data settings" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere kvaliteten af deep learning modeller både fra performance-synspunkt samt ansvarlig AI/etisk synspunkt" />
+          <Txt Lang="en-GB" Txt="Assess the quality of deep learning models for computer vision from viewpoints of both performance and responsibility/ethics. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere projekter og tilhørende resultater skriftligt og mundtligt" />
+          <Txt Lang="en-GB" Txt="Present projects and associated results in writing as well as oral presentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere styrker, svagheder og samfundsmessige konsekvenser af state-of-the-art deep learning modeller." />
+          <Txt Lang="en-GB" Txt="Discuss strengths, weaknesses and societal implications of state-of-the-art deep learning models." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Advanced Deep Learning in Computer Vision</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="66" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="34" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:06.887" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

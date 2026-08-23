@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34020" University="dtu" LastUpdated="2024-03-20+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Optik og fotonik" />
+        <Title Lang="en-GB" Title="Optics and photonics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="56974" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Martijn</GivenName>
+            <FamilyName>Wubs</FamilyName>
+            <Email>mwubs@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Følgende koncepter of fænomener samt nogle af deres vigtigste anvendelser: stråleoptik , Maxwells ligninger, bølgeligning, vektorfelter, polarisation egenskaber, Fresnel ligninger, diffraktion, interferens og superposition af elektromagnetiske felter, bølgelederoptik, periodiske medier, vekselvirkning mellem lys og materiale, laser</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaveregning</Teaching_And_Learning_Methods>
+          <Course_Literature>E. Hecht, Optics, 5th edition (Global Edition), (Pearson, 2017). ISBN-13: 978-1292096933. 
+plus selected topics from G. A. Reider, Photonics - An Introduction (Springer, 2016). ISBN: 978-3-319-26074-7 and ISBN: 978-3-319-26076-1 (eBook, available in DTU Library).</Course_Literature>
+          <Course_Objectives>Kurset sigter på at give en bred indføring i optik of fotonik med henblik på at give en fysisk forståelse for hvad lys er, hvorledes lys vekselvirker med stof samt hvorledes lys anvendes i måleteknik og informationsteknologi.</Course_Objectives>
+          <Remark>Dette kursus tæller som teknologisk liniefag på Bachelor of Science i Fysik og Ingeniørvidenskab.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The following concepts and phenomena, and some of their most important applications: Light rays, Maxwell wave equations, vector fields and polarization properties, wave diffraction, wave interference and superposition of waves, Fresnel relations, periodic media and multilayers, waveguide optics, optical resonators, light-matter interactions, laser amplification and lasers</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem solving</Teaching_And_Learning_Methods>
+          <Course_Literature>E. Hecht, Optics, 5th edition (Global Edition), (Pearson, 2017). ISBN-13: 978-1292096933. 
+plus selected topics from G. A. Reider, Photonics - An Introduction (Springer, 2016). ISBN: 978-3-319-26074-7 and ISBN: 978-3-319-26076-1 (eBook, available in DTU Library).</Course_Literature>
+          <Course_Objectives>The course provides a broad introduction to both classical and modern optics and photonics. The aim is that the students obtain a physical understanding of what light is, how it interacts with matter, and how light is used in measurement techniques and information technology.</Course_Objectives>
+          <Remark>Please note that this course is part of the BSc in Physics and Nanotechnology.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="senest samtidigt" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="not later that at the same time" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10009/ 10013/ 10036/ 31400" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere egnetheden af forskellige beskrivelser (stråleoptik, skalær bølgeoptik, fuld elektromagnetisk bølgeoptik, foton billede) for et konkret optisk problem" />
+          <Txt Lang="en-GB" Txt="Identify whether a ray optics, a scalar wave optics, an electromagnetic wave optics, or a photon optics description is required in a given situation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende stråleoptik til at beregne billeder lavet med linser og spejle" />
+          <Txt Lang="en-GB" Txt="Use ray optics to calculate images made with lenses and mirrors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede bølgeligningen fra Maxwells ligninger i et generelt materiale og have kendskab til forskellige løsninger og disses karakteristika og udbredelsesegenskaber" />
+          <Txt Lang="en-GB" Txt="Derive the wave equation from Maxwell’s equations in a medium and understand the different solutions and their characteristic properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udregne superpositionen af forskellige elektromagnetiske felter ved brug af superpositionsprincippet" />
+          <Txt Lang="en-GB" Txt="Describe the superposition principle and apply it to electromagnetic waves" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere begrebet interferens og gennemføre beregninger på forskellige interferometriske systemer" />
+          <Txt Lang="en-GB" Txt="Describe the concept of interference and calculate the properties of different interferometric systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare Fourier analyse af optiske felter" />
+          <Txt Lang="en-GB" Txt="Explain Fourier analysis of optical waves" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begrebet polarisation og beskrive forskellige polarisationstilstande og hvorledes de kan skabes og ændres" />
+          <Txt Lang="en-GB" Txt="Explain the concept of polarization,  describe several polarization states of light and how they can be generated and transformed " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive udbredelsen af lys i en simpel optisk bølgeleder, herunder betydningen af modes, dispersion og effektivt indeks" />
+          <Txt Lang="en-GB" Txt="Describe and calculate the propagation of light in simple optical waveguides in terms of modes, dispersion relation and effective index" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begreberne Fraunhofer og Fresnel diffraktion og regne på diffraktion i forskellige aperturer" />
+          <Txt Lang="en-GB" Txt="Explain the concepts of Fraunhofer and Fresnel diffraction and calculate the diffraction patterns of different apertures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Regne på overgangen mellem to medier ved brug af Fresnel ligningerne samt teorien for multilags film" />
+          <Txt Lang="en-GB" Txt="Derive the Fresnel equations and describe how light is transferred at an interface of two materials, and through multilayer films" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Maxwells ligninger til beskrivelse af vekselvirkning mellem lys og materiale, samt til beskrivelse af de grundlæggende principper for en laser" />
+          <Txt Lang="en-GB" Txt="Describe the interaction between light and matter and explain the basic principles of a laser" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og genkende fagspecifikke termer på engelsk" />
+          <Txt Lang="en-GB" Txt="Apply and recognize professional terminology in English" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Optik og fotonik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34021" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:32" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

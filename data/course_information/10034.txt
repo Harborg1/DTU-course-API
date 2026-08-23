@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10034" University="dtu" LastUpdated="2025-04-29+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="10" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Termodynamik og statistisk fysik" />
+        <Title Lang="en-GB" Title="Thermodynamics and statistical physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="42124" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Kaare Hartvig</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>khjensen@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="54844" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Alexander Simon</GivenName>
+            <FamilyName>Thrysøe</FamilyName>
+            <Email>alec@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Vægtning: Skriftlig eksamen 75%, rapporter 25%. Delprøver, som bedømmes med delkarakterer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Weight: Written exam 75%, reports 25%. Part-exams assessed with partial grades." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Termodynamiske tilstande og tilstandsligninger.  Faser og faseovergange. Statistisk ensemble. Entropi og temperatur. Termodynamikkens hovedsætninger. Boltzmannfaktoren. Fri energi. Varme, arbejde og energiomdannelse. Idealgasprocesser.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppeaktiviteter.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: Blundell og Blundell: Concepts in Thermal Physics, Oxford ISBN 978-0-19-956209-1 , 978-0-19-956210-7.</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at give de studerende en introduktion til termodynamikkens grundbegreber på basis af elementer fra statistisk fysik.  De studerende opnår et kendskab til, hvorledes termodynamikken udledes fra den statistiske fysik, og bliver i stand til at udføre beregninger på simple systemer inden for den statistiske fysik og termodynamikken.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Thermodynamical states and equations of states.  Phases and phase transitions. Statistical ensemble. Entropy and temperature. The laws of thermodynamics. Boltzmann factor. Free energy. Heat, work, and energy conversion. Ideal gas processes.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group activities</Teaching_And_Learning_Methods>
+          <Course_Literature>Book: Blundell and Blundell: Concepts in Thermal Physics, Oxford ISBN 978-0-19-956209-1 , 978-0-19-956210-7.</Course_Literature>
+          <Course_Objectives>The aim of the course is to give the students an introduction to the basic concepts of thermodynamics on the basis of elements from statistical physics.  The students acquire a knowledge of how thermodynamics is derived from statistical physics and the ability to perform calculations on simple systems within statistical physics and thermodynamics.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Operere med begreberne multiplicitet, entropi og temperatur, og redegøre for deres sammenhæng." />
+          <Txt Lang="en-GB" Txt="Operate with the terms multiplicity, entropy and temperature, and account for their relationship" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne sandsynligheden for at finde et system i en given tilstand med kendt energi, hvis systemet er i ligevægt med et varmebad." />
+          <Txt Lang="en-GB" Txt="Calculate the probability of finding a system in a given state with known energy, if the system is in equilibrium with a heat bath." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne tilstandssummen for simple modelsystemer med diskrete tilstande." />
+          <Txt Lang="en-GB" Txt="Calculate the partition function for simple model systems with discrete states." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne middelenergi, fri energi og entropi ud fra tilstandssummen." />
+          <Txt Lang="en-GB" Txt="Calculate average energy, free energy and entropy from the partition function." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne volumen, tryk og temperaturændringer for en idealgas der gennemgår de fire fundamentale processer: isochor, isobar, isoterm og reversibel adiabat." />
+          <Txt Lang="en-GB" Txt="Calculate changes in volume, pressure and temperature of an ideal gas undergoing the four fundamental processes: isochoric, isobaric, isothermal and adiabatic processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne tilført varme og arbejde for en idealgas der udfører en eller flere processer." />
+          <Txt Lang="en-GB" Txt="Calculate heat and work on an ideal gas undergoing one or more processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne virkningsgraden for en simpel kraftvarmemaskine og effektfaktoren for en simpel kølemaskine." />
+          <Txt Lang="en-GB" Txt="Calculate the efficiency of a simple heat engine, and the coefficient of performance of a simple refrigerator." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende termodynamikken første og anden hovedsætning." />
+          <Txt Lang="en-GB" Txt="Apply the first and second law of thermodynamics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere, om en proces er mulig ved hjælp af begreberne entropi og fri energi." />
+          <Txt Lang="en-GB" Txt="Estimate if a process is possible using the concepts entropy and free energy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre et konkret projekt i en mindre gruppe, og redegøre skriftligt for resultaterne." />
+          <Txt Lang="en-GB" Txt="Carry out a specific project in a small group, and explain the results in writing." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="10004/10005/10012" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:48.13" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

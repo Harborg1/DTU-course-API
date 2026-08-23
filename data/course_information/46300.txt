@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46300" University="dtu" LastUpdated="2026-03-11+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Vindkraft og aeroteknologi" />
+        <Title Lang="en-GB" Title="Wind Turbine Technology and Aerodynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="799" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Martin Otto Laver</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>molh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="49626" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Nenad</GivenName>
+            <FamilyName>Mijatovic</FamilyName>
+            <Email>nemi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="125991" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Grinderslev</FamilyName>
+            <Email>cgrinde@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset bliver evalueret ud fra afleveringsopgaver og en skriftlig eksamen. Karakteren er baseret på en samlet vurdering. Alle rapporter skal afleveres og både rapporter og skriftlig eksamen skal bestås." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course will be assessed by assignments and a written exam. The final grade for the course is based on overall assessment. All reports must must be handed in and both the reports and the written exam must be passed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1A" />
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Aerodynamik: todimensional profilteori og tredimensionale effekter. Anvendelse af Blad Element Momentum teori til bestemmelse af ydelsesberegninger for en rotor med given vridnings- og kordefordeling. Kontrol af vindmølle (stall, pitch eller variabel omløbshastighed). 
+Struktur: Statiske udbøjninger og egensvingninger af vindmøllevinger. 
+Placeringsproblematik: vindatlas, terrænindflydelse og årlig vindfordeling.
+Elektriske vindenergi systemer (udgør 25% af kurset)
+- Ohms og Kirchhoffs love
+- Spoler og kapacitorer
+- AC spændinger og strømstyrker, kompleks beregning
+- Aktiv og reaktiv effekt
+- AC kredsløb
+- Trefaset vekselstrøm
+- Introduktion til modeller og drift af transformere, generatorer, kabler og konvertere</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninge, øvelser og rapporter</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give et generelt indblik i vindmøllers aerodynamiske og strukturelastiske virkemåde, elektriske maskiner samt samfundsmæssige forhold for vindenergi. Placeringen af vindmøller behandles og en indføring i elastiske strukturer og deres interaktion med strømningen vil blive foretaget. Endvidere vil grundlæggende elektrisk energiteknik blive undervist, herunder kredsløbsteori og introduktion til relevante elektriske komponeter (generatorer, transformatorer, kabler...) 
+Vindenergi vil også blive belyst i et historisk og samfundsmæssig perspektiv med vægt på de teknologiske koncepter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Placement: wind atlas, influence of the terrain and annual wind distribution.
+Aerodynamics: two-dimensional aerodynamics and three-dimensional effects. Use of Blade Element Momentum theory to determine the energy production for a rotor with a given twist and chord distribution. Control of a wind turbine (stall-, pitch-, and variable speed control). Structure: Static deflections and natural vibrations for wind turbine blades. 
+Electrical wind energy system topics: (This part is 25 % of the course)
+-Ohm's and Kirchhoff's laws, calculation of simple resistive circuits
+-Coils and capacitors
+-AC voltages and currents, phasors, complex calculation
+-Concepts of active and reactive power
+-AC circuits
+-Three phase power system
+-High level component introduction to models and operation: transformers, generators cables, converters</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and assignments</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give a general introduction to the aerodynamics and elastic behaviour of a modern wind turbine. Further, the placement of wind turbines is addressed. Also, the elastic blade response with the aerodynamic loads is addressed. 
+In addition, students will learn basics of Electrical Power Engineering including circuit theory, introduction to relevant components (generators, transformers, cables...) and wind electric energy system.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Fluid mekanik. Kendskab til programmering (Matlab, Python eller lignende)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic fluid mechanics. Programming skills required (Matlab, Python or similar)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere vingeprofildata" />
+          <Txt Lang="en-GB" Txt="Define airfoil data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne inducerede hastigheder" />
+          <Txt Lang="en-GB" Txt="Compute induced velocities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle et program til bestemmelse af statiske aerodynamiske laster" />
+          <Txt Lang="en-GB" Txt="Develop a computer code to calculate aerodynamic loads" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne snitkræfter og statisk deformation af belastet vindmølle" />
+          <Txt Lang="en-GB" Txt="Calculate internal loads and the static deformation of a loaded wind turbine blade" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse egensvingningsformer og tilhørende egenfrekvenser for vindmølleblad" />
+          <Txt Lang="en-GB" Txt="Compute the eigenmodes and associated eigenfrequencies for a wind turbine blade" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tegne hastighedstrekanten inkl. inducerede hastigheder" />
+          <Txt Lang="en-GB" Txt="Draw velocity triangle incl. induced velocities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme den årlige energiproduktion" />
+          <Txt Lang="en-GB" Txt="Determine annual energy production for a wind turbine" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne elektriske DC og AC kredsløb ved brug af Ohms og Kirchhoffs love" />
+          <Txt Lang="en-GB" Txt="Understand and be able to solve electric DC and AC circuits using Ohm's and Kirchhoff's laws" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificere relevante komponenters operation ved hjælp af ækvivalente kredsløb" />
+          <Txt Lang="en-GB" Txt="Understand and be able to quantify the relevant component's operation with equivalent circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificere de elektriske komponenters sammenspil i moderne vindenergi systemer" />
+          <Txt Lang="en-GB" Txt="Understand and be able to quantify the components interaction as a part of the system in modern wind energy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne aktiv og reaktiv effekt i AC kredsløb" />
+          <Txt Lang="en-GB" Txt="Calculate active and reactive power in AC circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne laster og energiproduktion for en vertikal akslet vindmølle" />
+          <Txt Lang="en-GB" Txt="Calculate loads and energy production for a vertical axis wind turbine" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til vindenergi, simpel aerodynamik, introduktion til elektriske komponenter i vindmøllen samt samfundsmæssige forhold.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:35.687" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

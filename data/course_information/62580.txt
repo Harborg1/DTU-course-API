@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62580" Volume="2026/2027" University="dtu" LastUpdated="2026-03-25+01:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Digitale Systemer &amp; Anvendelse" />
+        <Title Lang="en-GB" Title="Digital Systems and Applications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="42028" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Rolf</GivenName>
+            <FamilyName>Nordahl</FamilyName>
+            <Email>rono@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="215716" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Sommer</FamilyName>
+            <Email>lasom@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="78715" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Birger</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>birad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="individuel mundtlig eksamen baseret på projektarbejdet, herunder tilhørende øvelser og projektportefølje. Forudsætning for deltagelse i eksamen er, at projektporteføljen og det tilhørende website er godkendt af kursusansvarlig (kursusholder) på forhånd." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Individual oral examination based on the project work, including associated exercises and the project portfolio. Participation in the exam requires prior approval of the project portfolio and the associated website by the course responsible (course instructor)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The student must bring their project portfolio (including exercises) and access to the developed website." />
+            <Aid_Txt Lang="da-DK" Txt="Den studerende skal medbringe sin projektportefølje (herunder øvelser) samt adgang til det udviklede website." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="2 modules - (E5B &amp; E4B)" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="2 moduler - (E5B &amp; E4B)" />
+            <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til digitale systemer og systemarkitektur:
+
+- Udvikling af digitale løsninger fra idé til implementeret system
+
+- Brugercentreret design og behovsafdækning (fx personas, scenarier, usability og accessibility)
+
+- Grundlæggende modellering og systembeskrivelse (fx UML på overordnet niveau)
+
+- Digitale værktøjer og platforme til opbygning af systemer
+
+- Brugergrænseflader og interaktive systemer
+
+- Klient-server arkitektur og kommunikation mellem systemer
+
+- Grundlæggende netværksforståelse, herunder Internet, DNS og centrale protokoller på et overordnet niveau
+
+- Datahåndtering og databaser
+
+- Introduktion til sikkerhed og privatliv i digitale systemer
+
+- Introduktion til deployment og anvendelse af simple digitale systemer
+
+- Analyse og beskrivelse af digitale systemer
+
+- Grundlæggende projektstruktur og planlægning i udvikling af digitale systemer
+
+- Integration af ovenstående i projektarbejde</Contents>
+          <Teaching_And_Learning_Methods>Kurset omfatter forelæsninger, klassebaserede diskussioner, øvelser og projektarbejde. Kurset indeholder en struktureret række øvelser, der understøtter projektudviklingen (f.eks. programmering). Projektet kan gennemføres i grupper, men hver studerende skal være ansvarlig for en klart afgrænset del (inkl. implementering). Projektet dokumenteres gennem et digitalt artefakt (f.eks. et webbaseret system eller en applikation) samt en projektportefølje.</Teaching_And_Learning_Methods>
+          <Course_Literature>- Eventuelle bøger, der skal anskaffes, fastlægges ved kursusstart.
+- Relevante artikler, værktøjer samt andre materialer fra internettet.</Course_Literature>
+          <Course_Objectives>Kurset giver den studerende en anvendelsesorienteret forståelse af, hvordan digitale systemer er opbygget og fungerer i praksis.
+
+Endvidere skal kurset give forudsætninger for selvstændige studier af emner relateret til digitale systemer og deres anvendelse i en sundhedsteknologisk kontekst.</Course_Objectives>
+          <Remark>Energiteknologi og computer science
+Sundhedsteknologi: 3. semester
+
+Kurset bygger videre på de grundlæggende IT kundskaber den studerende har tilegnet sig på kursurne 62420 og 62450.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to digital systems and system architecture:
+
+- Development of digital solutions from idea to implemented system
+
+- User-centred design and requirements understanding (e.g. personas, scenarios, usability and accessibility)
+
+- Basic modelling and system description (e.g. UML at an overall level)
+
+- Digital tools and platforms for building systems
+
+- User interfaces and interactive systems
+
+- Client-server architecture and communication between systems
+
+- Basic network understanding, including Internet, DNS and core protocols at an overall level
+
+- Data handling and databases
+
+- Introduction to security and privacy in digital systems
+
+- Introduction to deployment and use of simple systems
+
+- Analysis and description of digital systems
+
+- Basic project structuring and planning in the development of digital systems
+
+- Integration of the above in project work</Contents>
+          <Teaching_And_Learning_Methods>Lectures, classroom discussions, exercises, and project work. The course includes a structured sequence of exercises supporting project development, including preparatory exercises (e.g. programming). The project may be carried out in groups, but each student must be responsible for a clearly defined part (incl. implementation). The project is documented through a digital artefact (e.g. a web-based system or application) and a project portfolio.</Teaching_And_Learning_Methods>
+          <Course_Literature>- Any required textbooks will be determined at the start of the course.
+- Relevant articles, tools, and other materials from the internet.</Course_Literature>
+          <Course_Objectives>To provide the student with an application-oriented understanding of how digital systems are structured and operate in practice.
+
+Furthermore, the course provides the foundation for independent study of topics related to digital systems and their application in a healthcare technology context.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Sundhedsteknologi: 3. semester
+
+The course extends the basic IT skills the students have acquired by following course 62420 and 62450.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende fagtermer korrekt inden for digitale systemer og kommunikation" />
+          <Txt Lang="en-GB" Txt="apply subject terminology correctly within digital systems and communication" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare opbygningen af digitale systemer og samspillet mellem deres centrale komponenter (fx brugergrænseflader, backend, databaser)" />
+          <Txt Lang="en-GB" Txt="explain the structure of digital systems and the interaction between their central components (e.g. user interfaces, backend, and databases)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for, hvordan digitale løsninger udvikles fra idé til implementeret system (behov, koncept, design, implementering)" />
+          <Txt Lang="en-GB" Txt="account for how digital solutions are developed from idea to implemented system (needs, concept, design, and implementation)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende grundlæggende principper for brugercentreret design (fx behovsafdækning, personas, scenarier, usability og accessibility)" />
+          <Txt Lang="en-GB" Txt="apply basic principles of user-centred design (e.g. requirements analysis, personas, scenarios, usability and accessibility)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende grundlæggende modellering og systembeskrivelse (fx UML på overordnet niveau)" />
+          <Txt Lang="en-GB" Txt="apply basic modelling and system description (e.g. UML at an overall level)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare principper for kommunikation mellem systemkomponenter (fx klient-server arkitektur og grundlæggende netværksforståelse)" />
+          <Txt Lang="en-GB" Txt="explain principles of communication between system components (e.g. client-server architecture and basic network understanding)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive hvordan data lagres, struktureres og håndteres i digitale systemer (databaser og dataflow)" />
+          <Txt Lang="en-GB" Txt="describe how data is stored, structured, and managed in digital systems (e.g. databases and data flow)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare centrale sikkerheds- og privatlivsproblematikker i digitale systemer" />
+          <Txt Lang="en-GB" Txt="explain key security and privacy issues in digital systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og beskrive et digitalt system med udgangspunkt i dets komponenter og samspil" />
+          <Txt Lang="en-GB" Txt="analyse and describe a digital system based on its components and interaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge og strukturere udviklingen af en digital løsning som en del af et projektarbejde (opgaver, opdeling og koordinering)" />
+          <Txt Lang="en-GB" Txt="plan and structure the development of a digital solution as part of project work (e.g. tasks, decomposition, and coordination)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="relatere kursets begreber og metoder til udvikling af en konkret digital løsning" />
+          <Txt Lang="en-GB" Txt="relate course concepts and methods to the development of a concrete digital solution" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="deltage i en faglig diskussion inden for kursets område" />
+          <Txt Lang="en-GB" Txt="participate in a professional discussion within the subject area" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="62420.62450" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="62480 62481" />
+        <PreviousCourse CourseCode="62581" />
+        <PreviousCourse CourseCode="62480/62481" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:55.647" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="MA604" Volume="2026/2027" University="dtu" LastUpdated="2026-08-14+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Termodynamik og energiteknik" />
+        <Title Lang="en-GB" Title="Thermodynamics and energy technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup">
+          <LocationTxt Lang="da-DK" Txt="Undervisning udbydes på MARTEC, campus Frederikshavn, delvist via streaming" />
+          <LocationTxt Lang="en-GB" Txt="The course is taught at MARTEC, campus Frederikshavn, partially via streaming" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="83" University="DTU" Resources="20" KVL_Resources="100" />
+          <Ass_Dep UID="41" Resources="40" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="IHK" Resources="40" University="DTU" SortID="1" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="83" />
+        <Course_Responsible PersonKey="23707" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jens Michael</GivenName>
+            <FamilyName>Bertelsen</FamilyName>
+            <Email>miber@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="36698" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jonas Kjær</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>jkjje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen 4 timer og CDIO-rapporter. Skriftlig eksamen og CDIO-rapporter skal hver især være bedømt bestået for at kunne bestå kurset. 30 % af den endelige karakter er baseret på CDIO-rapporterne. Ekstern censur for både skriftlig eksamen og CDIO-rapporter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written exam 4 hours and CDIO reports. Written exams and CDIO reports must each be assessed as passed in order to pass the course. 30% of the final grade is based on the CDIO reports. External examiner for both written exams and CDIO reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Termodynamik:
+Termodynamikkens grundbegreber, definitioner og anvendelser, herunder system, univers, termodynamisk ligevægt, processer, tilstande og kontrolvolumen. Faser: fast, flydende og gas. Stoffers termodynamiske egenskaber: densitet, specifik varmekapacitet, rumudvidelseskoefficient, kompressibilitet samt varmeledningsevne. Termodynamiske koordinater, herunder tryk, temperatur og specifik volumen. Idealgas og realgas samt tilstandsligninger. Varme og arbejde samt energikvalitet. Tripelpunkt, PvT-relation, kritisk punkt, fasesovergange og vægtstangsreglen. Termodynamikkens 1. hovedsætning for lukkede systemer samt indre energi. Termodynamikkens 1. hovedsætning for åbne systemer samt entalpi. Termodynamikkens 2. hovedsætning, reversibilitet og irreversibilitet. Begreberne entropi og exergi, kredsprocessers omløbsretning, herunder Carnot processen og Stirlingmaskinen som både motor og køling. 
+
+Energiteknik:
+Forbrændingsmotorer herunder Otto-processen og Dieselmotoren. Termodynamisk virkningsgrad for en kredsproces. Brayton kredsproces. Rankine kredsproces. Kredsprocessen for 1-trins køle- og varmepumpeanlæg. Komponenter i anlæg herunder, kedler, fordamper, kondensatorer, drøvleventiler, dyser, diffusere, varmevekslere samt pumper, kompressorer, turbiner med tilhørende isentropiske virkningsgrader. Vedvarende energi og energilagring. T-s , h-s , log(p)-h diagrammer samt termodynamiske tabeller. Gasblandinger, forbrænding og fugtig luft herunder Mollier-diagram.
+
+Fluid mekanik:
+Introduktion til beregning af tryktab i rør.
+
+Varmetransmission:
+Introduktion til varmeledning, konvektion og stråling.
+
+Projekt:
+I 3-ugers perioden udarbejdes et mindre CDIO-projekt, som udføres som gruppearbejde med skriftlig metoderigtig rapport, og indeholder væsentlige forhold fra CDIO dvs. definition/beskrivelse af anlæg og dettes afgrænsninger, design understøttet af relevante tekniske beregninger, beskrivelse af væsentligst forhold for montage, opstart og drift af anlægget. Valg af anlæg skal have relevans til de komponenter og anlæg, som er behandlet i kurset.</Contents>
+          <Teaching_And_Learning_Methods>Undervisningen er baseret på 'learning by doing'. De studerende følger undervisning og opgaveregning. Der er computer simuleringer i EES og Coolpack. I 3-ugers perioden er der  undervisning samt øvelser med forbrændingsmotor og varmepumpe og evt. andet projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give en teoretisk og praktisk baggrund i at formulere og løse termodynamiske problemer inden for det energi- og maskintekniske område, herunder energilagring og vedvarende energi i relation til verdensmålene og bæredygtighed.</Course_Objectives>
+          <Remark>Sektion for Mekanisk teknologi
+Maskinteknik: 2. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Thermodynamics:
+The basic concepts, definitions and applications of thermodynamics, including system, universe, thermodynamic equilibrium, processes, states and control volume. Phases: solid, liquid and gas. Thermodynamic properties of substances: density, specific heat capacity, coefficient of thermal expansion, compressibility and thermal conductivity. Thermodynamic coordinates, including pressure, temperature and specific volume. Ideal gas and real gas as well as state equations. Heat and work as well as energy quality. Triple point, PvT-relation, critical point, phase change processes and the lever rule. The 1st law of thermodynamics for closed systems and internal energy. The 1st law of thermodynamics for open systems and enthalpy. The 2nd law of thermodynamics, reversibility and irreversibility. The concepts of entropy and exergy, the direction of rotation of cycles, including the Carnot process and the Stirling machine as both engine and cooling.
+
+Energy technology:
+Internal combustion engines including the Otto process and the Diesel engine. Thermodynamic efficiency of a cycle. Brayton cycle process. Rankine cycle process. The cycle process for 1-stage cooling and heat pump systems. Components in systems including, boilers, evaporators, condensers, throttle valves, nozzles, diffusers, heat exchangers as well as pumps, compressors, turbines with associated isentropic efficiencies. Renewable energy and energy storage. T-s , h-s , log (p)-h diagrams as well as thermodynamic tables. Gas mixtures, combustion and humid air including Mollier diagram.
+
+Fluid mechanics:
+Introduction to calculating pressure loss in pipes.
+
+Heat transfer:
+Introduction to heat conduction, convection and radiation.
+
+Project:
+During the 3-week period, a small CDIO project is prepared, which is carried out as group work with a written methodological report, and contains significant matters from CDIO, ie. definition / description of plant and its boundaries, design supported by relevant technical calculations, description of most important conditions for installation, start-up and operation of the plant. The choice of plant must be relevant to the components and plants that are covered in the course.</Contents>
+          <Teaching_And_Learning_Methods>The teaching is based on 'learning by doing'. The students follow lectures and problem solving. There are computer simulations in EES and Coolpack. In the 3-week period, there are lectures and exercises with an internal combustion engine and heat pump and possibly another project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide a theoretical and practical background in formulating and solving thermodynamic problems in the field of energy and mechanical engineering, including energy storage and renewable energy in relation to Sustainable Development Goals.</Course_Objectives>
+          <Remark>Section of Mechanical Technology
+Maskinteknik: 2. semester</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for termodynamikkens grundlæggende begreber." />
+          <Txt Lang="en-GB" Txt="explain the basic concepts of thermodynamics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive stoffers forskellige faser og fysiske egenskaber." />
+          <Txt Lang="en-GB" Txt="describe the different phases and physical properties of substances." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive tilstandsligninger for idealgas, idealgas blandinger (herunder fugtig luft) og realgas." />
+          <Txt Lang="en-GB" Txt="describe state equations for ideal gas, ideal gas mixtures (including humid air) and real gas." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende tabeller, diagrammer og EES til at bestemme stoffers forskellige termodynamiske egenskaber og tilstandstørrelser." />
+          <Txt Lang="en-GB" Txt="use tables, diagrams and the EEA to determine the different thermodynamic properties and state sizes of substances." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere termodynamikkens 1. hovedsætning og 2. hovedsætning for delprocesser og kredsprocesser samt anvende massebevarelsessætningen." />
+          <Txt Lang="en-GB" Txt="formulate the 1st law and 2nd law of thermodynamics as well as mass conservation for sub-processes and cycles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende termodynamikken til at beskrive principperne bag energitekniske maskiner som dampkraftværker, gasturbiner, forbrændingsmotorer, køleanlæg og varmepumper." />
+          <Txt Lang="en-GB" Txt="apply thermodynamics to describe the principles behind energy engineering machines such as steam power plants, gas turbines, internal combustion engines, refrigeration systems and heat pumps." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende forenklinger af virkelige anlæg, så de kan gøres til genstand for termodynamisk beregning." />
+          <Txt Lang="en-GB" Txt="apply simplifications of real plants so that they can be subjected to thermodynamic calculation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende entropibegrebet til at vurdere en termodynamisk proces’ effektivitet samt dens udnyttelige energi." />
+          <Txt Lang="en-GB" Txt="use the concept of entropy to assess the efficiency of a thermodynamic process and its useable energy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive de enkelte komponenters anvendelsesfunktion i anlæg. " />
+          <Txt Lang="en-GB" Txt="describe the application function of the individual components in systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre eksperimentelle undersøgelser, analysere måleresultater og udarbejde tekniske rapporter." />
+          <Txt Lang="en-GB" Txt="conduct experimental studies, analyze measurement results and prepare technical reports." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende grundlæggende principper for varmetransmission, fluid mekanik og forbrænding." />
+          <Txt Lang="en-GB" Txt="apply basic principles of heat transfer, fluid mechanics and combustion." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for begreberne energilagring og vedvarende energi samt deres anvendelsesmuligheder." />
+          <Txt Lang="en-GB" Txt="Explain the concepts of energy storage and renewable energy as well as their applications and possibilities." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="41431 og 62603" />
+        <PreviousCourse CourseCode="62603" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-08-14" Time="12:56:08.717" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

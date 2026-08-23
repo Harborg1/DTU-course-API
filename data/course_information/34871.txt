@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34871" University="dtu" LastUpdated="2026-04-09+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Ulineære transducere" />
+        <Title Lang="en-GB" Title="Nonlinear transducers" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="11" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Finn T.</GivenName>
+            <FamilyName>Agerkvist</FamilyName>
+            <Email>ftag@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Ulineariteter i højttalere.
+Forvrængningsmål
+Numeriske løsningsmetoder til ulineære systemer
+Identifikation of model parametere
+Kompensering af forvrængning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger. Obligatoriske laboratorie øvelser og simulerings øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere avancerede elementer i højttalermodeller der udvider modellens anvendelses område til at inkludere høje niveauer. Give forståelse af de mest dominerende ulineariteter i højttaleren og at introducere metoder til at identificere lineære og ulineære parametre . At introducere metoder til kompensering af forvrængning.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Nonlinear components in loudspeakers.
+Distortion measures 
+Numerical solvers for nonlinear systems
+Identification of model parameters
+Compensation of distortion</Contents>
+          <Teaching_And_Learning_Methods>Lectures. Mandatory simulation exercises and laboratory measurements.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce advanced elements in loudspeaker models in order to improve the validity of the models at higher levels. To describe the dominant sources of distortion in the loudspeaker and to introduce methods for identifying linear and nonlinear parameters. To introduce methods for compensation of the distortion.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de grundlæggende forskelle på lineære og ulineære systemer" />
+          <Txt Lang="en-GB" Txt="Explain the fundamental differences between linear and non-linear systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gøre rede for de dominerende ulineariteter i elektrodynamiske højttalere, og forudsige hvordan en given ulinearitet vil påvirke højttalerens bevægelse" />
+          <Txt Lang="en-GB" Txt="Account for the dominant nonlinearities in electrodynamic loudspeakers and to predict how a given nonlinearity will affect the movement of loudspeaker" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare højttalerens opførsel i det ulineære domæne, herunder overtone spektrum og DC position" />
+          <Txt Lang="en-GB" Txt="Explain how the loudspeaker behaves in the non-linear mode, including harmonic spectrum and DC position" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne og anvende teknikker til modellering af fysiske systemer i diskret tid" />
+          <Txt Lang="en-GB" Txt="Compare and apply techniques for modelling physical systems in discrete time" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage måling og beregning af gængse forvrængningmål " />
+          <Txt Lang="en-GB" Txt="Carry out measurements and calculation of common measures of distortion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gøre rede for grundlæggende metoder til at identificere model parametre " />
+          <Txt Lang="en-GB" Txt="Account for basic methods for identifying model parameters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende numeriske metoder til at løse ulineære differential ligninger" />
+          <Txt Lang="en-GB" Txt="Explain and apply numerical methods for solving nonlinear differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundprincipperne i ikke-lineær kompensering" />
+          <Txt Lang="en-GB" Txt="Explain the fundamentals of non-linear compensation" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34870/31220" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Højttalermodellering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31221" />
+        <PreviousCourse CourseCode="31221" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="60" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="60" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="5" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:09.133" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

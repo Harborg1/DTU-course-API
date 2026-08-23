@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34759" Volume="2026/2027" University="dtu" LastUpdated="2026-04-22+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Perception for Autonome Systemer" />
+        <Title Lang="en-GB" Title="Perception for Autonomous Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="142538" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lazaros</GivenName>
+            <FamilyName>Nalpantidis</FamilyName>
+            <Email>lanalpa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="142534" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Evangelos</GivenName>
+            <FamilyName>Boukas</FamilyName>
+            <Email>evanb@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Godkendelse af rapport er forudsætning for at gå til eksamen. Skriftlig eksamen er multiple-choice. Rapporten og eksamen vil blive bedømt som en helhed. &#xD;&#xA;Reeksamen kan være skriftlig eller mundtlig eksamen alene (når rapporten er godkendt)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Approval of report is mandatory for taking the exam. The written exam is multiple-choice. The report and the exam will be evaluated together.&#xD;&#xA;Re-exam can be written or oral exam only (when the report is approved)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Written exam with all aids and closed internet." />
+            <Aid_Txt Lang="da-DK" Txt="Skriftlig eksamen med alle hjælpemidler og lukket net." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Multiple View Geometry, Image Feature Detection and Description, Ranging, 3D Cloud  Processing, Object Pose Estimation, State Estimation, Classification, Visual Odometry, SLAM, Object Detection.
+Øvelsesdelen består af introducerende øvelser og en projektopgave</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelse, gruppearbejde og hjemmeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset orienterer deltagerne om teori og praktiske anvendelser af perception for autonome systemer. Formålet er at sætte eleverne i stand til at omdanne sensorers input fra en række billeddannelses- og 3D-sensorer til mere abstrakte beskrivelser af den observerede scene. Således vil sådanne teknikker tillade autonome systemer at sanser deres omverden og handle ind i det eller interagere med det. Kurset skal give både de matematiske beskrivelser og programmeringsværktøjer for at implementere sådanne perception teknikker.
+Endelig er målet at sætte deltagerne i stand til at anvende de undervisede koncepter og værktøjer til yderligere at udvikle enten autonome systemer, der er udformet (fx roboter) eller immaterielle (fx software agent).</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Multiple View Geometry, Image Feature Detection and Description, Ranging, 3D Cloud  Processing, Object Pose Estimation, State Estimation, Classification, Visual Odometry, SLAM, Object Detection.
+The exercise part consists of introductory exercises and a project solved in teams.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, group work and homework.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course familiarizes participants with the theory and practical applications of perception for autonomous systems. The aim is to enable students to transform sensory input from a variety of imaging and 3D sensors into more abstract descriptions of the observed scene. Thus, such techniques will allow autonomous systems to perceive their environment and act within it or interact with it. The course will provide both the mathematical descriptions and programming tools to implement such perception techniques.
+Finally, the aim is to enable the participants to use the taught concepts and tools to further develop either embodied (e.g. robotic) or intangible (e.g. software agent) autonomous systems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab af Python programmering er en forudsætning." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of Python programming is a prerequisite." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34758 31391" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv de trin, der fører til 3D rekonstruktion ved hjælp af flere visninger." />
+          <Txt Lang="en-GB" Txt="Describe the steps that lead to 3D reconstruction using multiple views." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definer almindelige image feature ekstraktion og matchende teknikker." />
+          <Txt Lang="en-GB" Txt="Define commonly used image feature extraction and matching techniques,." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter egenskaber ved forskellige afstand sansning sensorer og teknikker." />
+          <Txt Lang="en-GB" Txt="Discuss characteristics of various ranging sensors and techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend softwareværktøjer til at behandle 3D point clouds." />
+          <Txt Lang="en-GB" Txt="Apply software tools to process 3D point clouds." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombiner billeddannelse og 3D sensorers input med state estimation teknikker." />
+          <Txt Lang="en-GB" Txt="Combine visual and 3D sensory input with state estimation techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv forskellene mellem klassisk og læringsbaseret objekt / scene klassifikation teknikker." />
+          <Txt Lang="en-GB" Txt="Describe the differences between classical and learning-based object/scene classification techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv de forskellige trin i visual odometry og forklar driften af de relaterede algoritmer." />
+          <Txt Lang="en-GB" Txt="Describe the different steps in visual odometry and explain the operation of the related algorithms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombiner det lærte materiale til at foreslå og beskrive mulige implementeringer af yderligere perception applikationer." />
+          <Txt Lang="en-GB" Txt="Combine the taught material to propose and describe possible implementations of further perception applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31392" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:56.617" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

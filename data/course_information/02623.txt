@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02623" University="dtu" LastUpdated="2026-04-14+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Finite Element Metoden for partielle differentialligninger" />
+        <Title Lang="en-GB" Title="The Finite Element Method for Partial Differential Equations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset udbydes kun i lige år dvs i Januar 2024, 2026 ..." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is offered in even years, i.e, January 2024, 2026 ..." />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="22171" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Allan Peter</GivenName>
+            <FamilyName>Engsig-Karup</FamilyName>
+            <Email>apek@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="To skriftlige rapporter og en poster udarbejdet i grupper på 2-3 personer. Individuel eksamination er baseret mundligt presentation af poster. Den endelige karakter er baseret på en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Two written reports and one poster made in groups of 2-3 persons. Individual examination is based on oral presentation of poster. The final grade is based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Finite element metoden (FEM) er en af de vigtigste metoder computer-baseret simuleringer til brug ved ingeniørmæssige analyseformål, opnå nye indsigter, og til beslutningstøtte. Kortfattet gennemgang af forskellige aspekter af Finite Element Metoden (FEM), herunder: lokale og globale interpolationsfunktioner baseret på trekantede elementer, randværdiproblemer for partielle differential ligninger, opbygning af globale algebraiske ligningssystemer, Gauss-elimination for systemer med båndmatrix, tidsafhængige problemer. Systematisk udvikling, gennem øvelser, af computer software til implementering af FEM, herunder mulig kobling til udnyttelse af high-performance computing. Kurset afsluttes med en opgave i et special emne, fx. anvendelse af FEM til løsning af et praktisk problem fra ingeniørvidenskab. Der lægges i hele kurset vægt på metodeforståelse, herunder forståelse mellem teori og praksis.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og kursusarbejde i 3 uger.</Teaching_And_Learning_Methods>
+          <Course_Literature>A. P. Engsig-Karup,  'The Spectral/hp-Finite Element Method for Partial Differential Equations', noter</Course_Literature>
+          <Course_Objectives>Det primære mål med dette kursus er at lære samt opnå praktiske erfaringer med selvstændigt at udvikle og implementere Finite Element Metoden (FEM) i 1D/2D til løsning af Randværdi Problemer (BVPs) for lineære Partielle Differential Ligninger (PDEs) gennem computer øvelser. Erfaringerne der opnås i kursus er relevante for løsning af PDEer der optræder i anvendelser indenfor ingeniørvidenskab. Efter aftale med lærer er det muligt at lave individuelle projekter med tilknytning til emnet.</Course_Objectives>
+          <DTU_Remark>Kurset kan med fordel kombineres med 02686/02687 og et avancerede numerisk kursus som 02689.</DTU_Remark>
+          <Remark>Dette kursus sammen med kurserne 02686 og 02687 danner basis for at forstå og anvende numeriske metoder til løsning af differentialligninger. Kursus 02689 supplerer disse kurser med detaljer om moderne beregningsmetoder.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The Finite Element Method (FEM) is of major importance for computer-based simulation for engineering analysis, insight and decision support. In this course we give a concise treatment of the various aspects of the Finite Element Method (FEM) including: local and global interpolation functions based on triangular elements, boundary value problems for partial differential equations, the assembly of global algebraic system of equations, Gaussian elimination for banded systems, iterative solution methods, time-dependent problems. Systematic development, through exercises, of computer software implementing the FEM, and possible exploitation of high-performance computing. The final assignment of the course will be in one of the special topics, for example an application of the finite element method for the solution of a particular problem from engineering sciences. Throughout the course, emphasis is on learning methods behind FEM, and linking theory and application.</Contents>
+          <Teaching_And_Learning_Methods>Three weeks of practical computer exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>A. P. Engsig-Karup,  'The Spectral/hp-Finite Element Method for Partial Differential Equations',
+Lecture notes</Course_Literature>
+          <Course_Objectives>The primary focus of this course is to learn and get practical experiences on how to independently develop and implement the Finite Element Method (FEM) in 1D/2D for the solution of Boundary Value Problems (BVPs) for linear Partial Differential Equations (PDEs) through computer exercises. The experiences gained in the course will be relevant for the solution of PDEs rooted in engineering applications. In agreement with the teacher it is possible to define individual projects within the scope of the topic.</Course_Objectives>
+          <DTU_Remark>The course can be advantageous to take together with 02686/02687 and an advanced numerical course such as 02689.</DTU_Remark>
+          <Remark>This course together with 02686 and 02687 forms a basis for understanding and applying numerical methods for the solution of differential equations. Course 02689 supplements these course with details on modern scientific calculations methods.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundkursus i programmering.&#xD;&#xA;Grundkursus i numeriske algoritmer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic course in programming.&#xD;&#xA;Basic course in numerical algorithms." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02002/02631/02632/02633).(02601/02603)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende basale principper til udledning af svage formuleringer for lineære PDEer." />
+          <Txt Lang="en-GB" Txt="Apply the basic principles for deriving weak formulations of linear PDEs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne lokale og globale finite element matricer." />
+          <Txt Lang="en-GB" Txt="Compute local and global finite element matrices." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Effektivt setup og løsning af systemer of linear algebraiske ligninger opstillet via diskretisering med FEM." />
+          <Txt Lang="en-GB" Txt="Efficiently setup and solve systems of linear algebraic equation resulting from FEM discretizations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere nøjagtighed på en beregnet løsning." />
+          <Txt Lang="en-GB" Txt="Assess the accuracy of computed approximate solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Generere graduerede og ustrukturede grids til brug for finite element metoden i 1D og 2D og forstå fordele og ulemper ved brugen heraf." />
+          <Txt Lang="en-GB" Txt="Utilize graded and unstructured meshes for use with FEM in 1D and 2D and understand their pros and cons." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere computer programmer til løsning af randværdiproblemer ved hjælp af FEM i 1D og 2D." />
+          <Txt Lang="en-GB" Txt="Implement computer programs to solve BVPs using FEM in 1D and 2D." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kendskab til basale direkte og iterative metoder til løsning af systemer af algebraiske ligninger." />
+          <Txt Lang="en-GB" Txt="Knowledge of basic direct and iterative methods for solving systems of algebraic equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Selvstændigt løse et problem indenfor et special emne der udbydes i kursus." />
+          <Txt Lang="en-GB" Txt="Independently solve a special topics problem offered in the course." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrivning og mundtlige præsentation af opnåede resultater i rapporter og en poster" />
+          <Txt Lang="en-GB" Txt="Written and oral presentation of results in reports and a poster" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opnå erfaring med at kvantificere energiforbrug af software og relatere resultater til bæredygtige udviklingsmål" />
+          <Txt Lang="en-GB" Txt="Acquire experience with quantifying the energy consumption of software and relate results to sustainable development objectives" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Implementering og anvendelse af Finite Element Metoden</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="04413" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:27.75" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

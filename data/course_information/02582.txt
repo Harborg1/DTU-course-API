@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02582" University="dtu" LastUpdated="2026-04-07+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computerintensiv dataanalyse" />
+        <Title Lang="en-GB" Title="Computational Data Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="160076" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sneha</GivenName>
+            <FamilyName>Das</FamilyName>
+            <Email>sned@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="14823" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Line Katrine Harder</GivenName>
+            <FamilyName>Clemmensen</FamilyName>
+            <Email>lkhc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen med udgangspunkt i både lærebog, øvelser og forelæsninger samt to cases med aflevering i semesteret. Karakteren gives ud fra en helhedsbedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written exam is based on both the text book, exercises, and the lectures plus two cases wth hand-ins during the semster. The grade is given based on an overall assessment of these items." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Closed internet" />
+            <Aid_Txt Lang="da-DK" Txt="Lukket internet" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Methods: Clustering, ridge regression, elastic net, sparse principale komponenter, sparse diskriminant analyse og Gaussian mixture analyse, logistisk regression, support vector machine, classification and regression trees, bagging, boosting, random forests, nonnegative matrix factorization, independent component analysis, sparse coding, archetypical analysis, multiway methods, functional data analysis.
+Case studies: Varies each year.</Contents>
+          <Teaching_And_Learning_Methods>Tretten uger med forelæsninger og databarøvelser. Aktiviteterne veksler mellem øvelser og forelæsninger. Desuden udføres to cases.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At bibringe studenten viden om avancerede computer intensive metoder til dataanalyse med applikationer indenfor fx life sciences. Dette inkluderer problemer med mange variable og relativt få observationer, billeder mv. Målet er at give den studerende evnen til analytisk så well som baseret på beregnede resultater at evaluere data anlyse metoder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Methods: Clustering, ridge regression, elastic net, sparse principal components, sparse discriminant analysis and Gaussian mixture analysis, logistic regression, support vector machine, classification and regression trees, bagging, boosting, random forests, nonnegative matrix factorization, independent component analysis, sparse coding, archetypical analysis, multivay methods, functional data analysis.
+Case studies: Varies each year.</Contents>
+          <Teaching_And_Learning_Methods>Thirteen weeks of lectures and data bar exercises. The activities alternate between hands-on exercises and lectures. Additionally, two cases are carried out.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the student knowledge of advanced computer intensive data analysis methods with applications to e.g. life sciences. These include problems with many variables and relatively few observations, images etc. The am is to give the student to analytically as well as based on computational results evaluate data analysis methods.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det er tilstrækkeligt med et af ovenstående kurser. Alternativt et lignende kursus i videregående statistik eller dataanalyse. Kendskab til Matlab, R eller Python er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It suffices with one of the above mentioned courses. Alternatively a similar course in advanced statistics or data analysis. Knowledge of Matlab, R or Python is an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02409/02450/27411" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere cluster metoder og vælge passende parametre og metoder for givne data" />
+          <Txt Lang="en-GB" Txt="Evaluate clustering methods and select suitable parameters and models for given data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere lineær diskriminant analyse og ridge regression" />
+          <Txt Lang="en-GB" Txt="Evaluate linear discriminant analysis and ridge regression" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og anvende krydsvalidering, bootstrapping og koncepter som overfitting." />
+          <Txt Lang="en-GB" Txt="Evaluate cross validation, bootstrapping and concepts such as overfitting." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere sparse regressions- og klassifikationsmodeller." />
+          <Txt Lang="en-GB" Txt="Evaluate sparse regression and classification models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere logistisk regression og support vector klassifikation for 2-klasse problemer" />
+          <Txt Lang="en-GB" Txt="Evaluate logistic regression and support vector classifiers for 2 class problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og fortolke Classification and Regression Trees (CART)" />
+          <Txt Lang="en-GB" Txt="Evaluate and interpret Classification and Regression Trees (CART)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere bagging, boosting og random forests for klassifikation og regression." />
+          <Txt Lang="en-GB" Txt="Evaluate bagging, boosting and random forests for classification and regression." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og fortolke sparse latente metoder som sparse principale komponenter og sparse partial least squares." />
+          <Txt Lang="en-GB" Txt="Evaluate and interpret sparse latent methods such as sparse principal component and sparse partial least squares." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere forskellige usuperviserede dekompositions metoder" />
+          <Txt Lang="en-GB" Txt="Evaluate a range of unsupervised decomposition methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne gennemgåede metoder teoretisk" />
+          <Txt Lang="en-GB" Txt="Compare the mentioned methods theoretically" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.imm.dtu.dk/courses/02582" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Statistics for high-dimensional data - overview of theory and practice</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02581" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="300" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:19.82" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

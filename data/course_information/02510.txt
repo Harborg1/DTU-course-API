@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02510" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Deep learning og data engineering for billedanalyse" />
+        <Title Lang="en-GB" Title="Deep learning and data engineering for image analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="42623" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Hans Martin</GivenName>
+            <FamilyName>Kjer</FamilyName>
+            <Email>hmkj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="32847" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Anders Bjorholm</GivenName>
+            <FamilyName>Dahl</FamilyName>
+            <Email>abda@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen baseres på både teoretiske og praktiske aspekter af kursusindholdet." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam will be based on both theoretical and practical of the course content" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Efter at have gennemført dette kursus, vil du være i stand til at benytte deep learning modeller til at analysere 2D og 3D billeder samt at udtrække kvantitativ information fra dem. Du vil få viden om relevante eksisterende deep learning modeller, hvordan de kan anvendes og gen-trænes, samt hvordan man kan forberede et datasæt. Strukturering af data er et kerne-element i deep learning, og du vil få erfaring med annoterings-værktøjer til forberedelse og forbedring af billeder til segmentering, klassifikation samt detektion. Du vil undersøge billede indkodning og grupperings-teknikker til at evaluere et datasæts varians og kvalitet, samt benytte Python til at implementere scripts der løser analyse-opgaver baseret på eksisterende biblioteker og funktioner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser samt et 3 ugers mini-projekt</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusnoter.</Course_Literature>
+          <Course_Objectives>I dette kursus vil du få praktisk erfaring med at benytte deep learning modeller til billedanalyse med et fokus på betydningen af data håndteringen. Det underliggende datasæt er afgørende for at opnå effektive deep learning modeller, og du vil lære om at forbedre datasæts, evaluere label kvalitet samt vurdere indflydelsen på modellerne brugbarhed. Kurset dækker forskellige metoder herunder billede-segmentering, klassifikation, detektion i 2D og 3D billeder, og er derfor relevant for anvendelser indenfor bl.a. forskning i medicin, biologi samt materialer.</Course_Objectives>
+          <DTU_Remark>Hvis du vil analysere komplekse billeder ved hjælp af deep learning, er dette kursus for dig! Sideløbende med dette kursus er der er kursus kaldet '02518 Computational 3D-billeddannelse og analyse', som introducerer andre billedanalyseteknikker og mere praktisk billeddannelse. Du kan med fordel også følge det kursus.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>After completing this course, you will be able to use deep learning models to analyze both 2D and 3D images and to extract quantitative information. You will gain knowledge of relevant deep learning models, how to deploy and retrain these methods, and how to prepare datasets. Data engineering is core to effective learning-based image analysis, and you will gain experience with annotation tools necessary for preparing and refining images for segmentation, classification, and detection. You will explore image embedding and clustering techniques to evaluate dataset consistency and quality, and use Python to implement scripts that solve analysis tasks based on existing deep learning libraries and functions.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises plus a 3 week mini-project</Teaching_And_Learning_Methods>
+          <Course_Literature>Course notes.</Course_Literature>
+          <Course_Objectives>In this course, you will gain practical experience in using deep learning models for image analysis, with an emphasis on the importance of data engineering. The dataset is a crucial element in obtaining effective deep learning models, and you will learn how to refine datasets, evaluate label quality and assess the impact on model performance. The course will cover various methods, including image segmentation, classification, and detection in 2D and 3D images making it relevant for applications in medicine, biology, materials research, and more.</Course_Objectives>
+          <DTU_Remark>If you want to analyze complex images using deep learning, this course is for you! In parallel to this course, there is the course '02518 Computational 3D Imaging and Analysis’, which introduces other image analysis techniques and imaging techniques. You are also recommended to follow that course.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det er en fordel at have erfaring med machine learning og billedanalyse, men kurset kan også følges uden disse forudsætninger. Men der må påregnes en ekstra indsats uden disse forudsætninger." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is an advantage with experience in machine learning and image analysis, but the course can be followed without these prerequisites. Still, you should expect that an extra effort is needed without these prerequisites." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450/02502" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge og implementere passende deep learning-baserede metoder til billedsegmentering, klassificering og detektionsproblemer," />
+          <Txt Lang="en-GB" Txt="select and deploy appropriate deep learning-based methods for image segmentation, classification, and detection problems," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge og implementere passende værktøjer til at inspicere og fortolke træning og resultater af deep learning metoder," />
+          <Txt Lang="en-GB" Txt="select and deploy appropriate tools for inspecting and interpreting the deep learning progress and results," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="organisere data til dyb læring for at vurdere træning, validering, test og balance i data," />
+          <Txt Lang="en-GB" Txt="organize data for deep learning to consider training, validation, testing, and balancing data," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge og bruge værktøjer til effektiv annotering af data," />
+          <Txt Lang="en-GB" Txt="select and use tools for efficient data labeling," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge billedanalysepipeline, herunder problembeskrivelse, indledende undersøgelse og plan for implementering af deep learning-metoder," />
+          <Txt Lang="en-GB" Txt="plan image analysis pipeline including problem description, initial investigation, and deploying deep learning methods," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne strukturelle mål fra udtrukne billedfeatures," />
+          <Txt Lang="en-GB" Txt="compute structural measures from extracted image features," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kvantificere målte strukturer og præsentere relevant statistik," />
+          <Txt Lang="en-GB" Txt="quantify measured structures and present relevant statistics," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge high performance computing til træning af deep learning modeller " />
+          <Txt Lang="en-GB" Txt="use high performance computing infrastructure for training deep learning models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenligne forskellige metoder til billede-indkodning for at identificere mønstre, afvigelser og sammenhænge i et datasæt" />
+          <Txt Lang="en-GB" Txt="compare different embedding methods to identify patterns, anomalies, and relationships within a dataset" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="50" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:09.317" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

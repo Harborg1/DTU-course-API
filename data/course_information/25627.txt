@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="25627" Volume="2026/2027" University="dtu" LastUpdated="2026-04-27+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Kvantitativ modellering af naturressourcer" />
+        <Title Lang="en-GB" Title="Quantitative Modelling of Natural resources" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" Tuition_Fee="8255" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="campus_hirtshals">
+          <LocationTxt Lang="da-DK" Txt="Se Engelsk version" />
+          <LocationTxt Lang="en-GB" Txt="Is offered with remote Classroom in Lyngby, https://www.aqua.dtu.dk/english/education/courses/remote-classroom" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="25" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Aqua" />
+        <Course_Responsible PersonKey="40378" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>an@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Se Engelsk version" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="In the evaluation the reports are weighted 70% and the oral exam 30%." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Se Engelsk version" />
+          <Duration Lang="en-GB" Txt="Each of the reports having a duration of about 2 weeks - oral exam 15 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se Engelsk version</Contents>
+          <Teaching_And_Learning_Methods>Se Engelsk version</Teaching_And_Learning_Methods>
+          <Course_Literature>Se Engelsk version</Course_Literature>
+          <Course_Objectives>Se Engelsk version</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This advanced statistics course deals with non-standard models, which are models that are not possible to analyze via pre-written code in standard statistical software packages. The analysis of non-standard require the analysts to explicity write efficient code for the likelihood, which function of the problem and optimize the likelihood, which require use of modern techniques for automatic calculation of derivatives. These tools will be taught and studied. In addition to the technical side of things a lot of emphasis will be put on model-formulation, on drawing correct conclusions from the models and on validating that appropriate models are being applied. Among the types of models that wll be studied are: Non-linear regression models, general random-effects models (including state-space models), multivariate models, and models informed by multiple different data sources.</Contents>
+          <Teaching_And_Learning_Methods>Weekly: 2 hours lecture + 2 hours exercise + 1 weekly mandatory home assignment.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes and textbook sections (e.g. Pawithan: In all likelihood or Millar: Maximum likelihood estimation and inference: with examples R, SAS and ADMB or Bolker: Ecological Models and Data in R)</Course_Literature>
+          <Course_Objectives>This advanced statistics course aims to enable the students to draw inference from models which are not covered by linear model routines in standard statistical software packages. Such non-standard models are very common in natural resource modelling an dcould e.g. contain: non-trival non-linearities, complex covariance structures, complicated couplings between fixed and random effects, or different sources of observations needing different likelihood types. in additionthey could contain large amounts of data. By the end of the course the students should be able to formulate (on paper and in code) non-standard models, estimate model parameters from these, quantify uncertainties, and test model hypothesis.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se Engelsk version." />
+          <Txt Lang="en-GB" Txt="Identify observational situations that cannot be analyzed via standard statistical software packages." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se Engelsk version." />
+          <Txt Lang="en-GB" Txt="Carry out analysis for non-standard statistical models with non-trivial non-linearities and multiple data sources.   " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se Engelsk version." />
+          <Txt Lang="en-GB" Txt="Describe non-standard models precisely in text and formulas. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se Engelsk version." />
+          <Txt Lang="en-GB" Txt="Carry out inference efficiently in models including random and fixed effects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se Engelsk version." />
+          <Txt Lang="en-GB" Txt="Utilize efficient representations of the multivariate Gaussian to implement spatio-temporal (and similar high-dimensional) models ." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se Engelsk version." />
+          <Txt Lang="en-GB" Txt="Propagate uncertainties from observations to estimates and derived quantities of interest." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se Engelsk version." />
+          <Txt Lang="en-GB" Txt="Conduct proper statistical model validation of statistical models with non-normal and non-independent observations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se Engelsk version." />
+          <Txt Lang="en-GB" Txt="Formulate the result of a statistical analysis (estimates, uncertainties, and hypothesis testing) in a style suitable for a scientific publication. " />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="25345" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Quantitative Modelling of Natural resources</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="1" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="25343" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:21:18.517" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

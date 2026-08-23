@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30415" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="HF-kommunikationskredsløb" />
+        <Title Lang="en-GB" Title="RF communication circuits" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="32148" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Vitaliy</GivenName>
+            <FamilyName>Zhurbenko</FamilyName>
+            <Email>vizh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering af skriftlig eksamen og designprojekt rapport(er)&#xD;&#xA;(designprojekt rapport(er) bidrager med 1/3 og eksamen bidrager med 2/3).&#xD;&#xA;Obligatoriske opgavebesvarelser er en forudsætning for at kunne gå til eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of written examination and project report(s).&#xD;&#xA;(Project report(s) contribute with 1/3 while exam contributes with 2/3 to the final grade)&#xD;&#xA;Mandatory assignments are a prerequisite for exam participation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>HF signaler og kredsløb omfattende lineære forstærkere, blandingstrin (mixere), oscillatorer, detektorer, begrænsere og effektforstærkere. Strukturer for radiosendere og -modtagere. Design af integrerede HF kredsløb. Kredsløbsbegreber som stabilitet, støj, forvrængning, intermodulation og dynamikområde. Systemegenskaber som signal-støjforhold, tærskelværdi og bitfejlhyppighed. HF-kommunikationskredsløb som bruges i Bluetooth, WiFi, Internet of Things (IoT), 5G/6G communications, Connected Cars, radarer, medicinske og biomedicinske instrumenter, og sv. 3 laboratorieøvelser.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, laboratorieøvelser, obligatoriske hjemmeopgaver, obligatorisk designprojekt.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusnoter af Prof. Jens Vidkjær, som er frit tilgængelige til download gennem 
+RF Toolbox App i App Store:https://apps.apple.com/dk/app/rf-circuit-toolbox/id1142515821 
+eller WebApp: https://rftoolbox.dtu.dk/</Course_Literature>
+          <Course_Objectives>At introducere HF-kommunikationskredsløb, herunder metoder til design i såvel diskret som integreret form og endvidere samspillet mellem kredsløbsteknologi og kommunikationssystemernes krav. Deltageren bliver i stand til at konstruere HF kommunikationskredsløb og delsystemer på baggrund af data og specifikationer for komponenter, kredsløb og kommunikationssystemer.</Course_Objectives>
+          <DTU_Remark>Anbefales på 1. semester af kandidatuddannelsen.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>RF signals and circuits, including linear amplifiers, mixers, oscillators, detectors, limiters, and power amplifiers. Transmitter and receiver structures. Design of RF integrated circuits. Circuit concepts like stability, noise, distortion, intermodulation, and dynamic range. System concepts including signal to noise ratio, thresholds, and bit error rates. Circuits, which are used in Bluetooth, WiFi, Internet of Things (IoT), 5G/6G communications, Connected Cars, radars, medical and biomedical instruments and many others. 3 laboratory exercises.</Contents>
+          <Teaching_And_Learning_Methods>Class lectures, group tutorials, laboratory exercises, mandatory home assignments, and mandatory design project.</Teaching_And_Learning_Methods>
+          <Course_Literature>Class notes by Prof. Jens Vidkjær are freely available for download through
+RF Toolbox App in App Store: https://apps.apple.com/dk/app/rf-circuit-toolbox/id1142515821 or WebApp: https://rftoolbox.dtu.dk/</Course_Literature>
+          <Course_Objectives>To introduce RF communication circuits, their design concepts in discrete or integrated realizations, and the trade-off between circuit technology and communication systems requirements. The student will be able to design RF communication circuits or subsystems based on component, circuit, and system data and specifications.</Course_Objectives>
+          <DTU_Remark>Recommended in the 1st semester of the master's program.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Trådløs Kommunikation" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Wireless Communication" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30405" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for principperne i de mest benyttede radiosender og -modtager systemer" />
+          <Txt Lang="en-GB" Txt="explain principles of the most common radio transmitter and receiver systems " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte smalbåndsapproximationer og serie-parallel omregninger til design af frekvensselektive kredsløb" />
+          <Txt Lang="en-GB" Txt="design frequency selective networks using narrow band approximations and series-to-parallel conversions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere HF impedanstilpasnings- og transformationskredsløb med diskrete komponenter" />
+          <Txt Lang="en-GB" Txt="construct RF impedance matching and transformation circuits using discrete components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere stabile småsignal HF forstærkere" />
+          <Txt Lang="en-GB" Txt="design stable small-signal RF amplifiers " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne støjtal og dynamikområder  for forstærkere på baggrund af komponentspecifikationer " />
+          <Txt Lang="en-GB" Txt="calculate noise-figure and dynamic ranges of amplifiers from component data " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for grundlæggende principper for HF-effektforstærkere og gennemføre simple designberegninger " />
+          <Txt Lang="en-GB" Txt="explain basic RF power amplifier principles and conduct simple design calculations " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere simple HF oscillatorer med LC og krystal resonatorer" />
+          <Txt Lang="en-GB" Txt="design simple RF-oscillators using LC and crystal resonators" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for principper i mixerkredsløb og foretage grundlæggende designberegninger." />
+          <Txt Lang="en-GB" Txt="explain mixer principles and conduct basic design calculations." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Design af RF kredsløb incl. lavstøj of effekt forstærkere, oscillatorer, mixere </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31415" />
+        <PreviousCourse CourseCode="31415" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="50" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="54" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:07.923" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

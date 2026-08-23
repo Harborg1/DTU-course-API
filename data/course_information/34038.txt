@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34038" Volume="2026/2027" University="dtu" LastUpdated="2024-04-11+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Optisk design og modellering" />
+        <Title Lang="en-GB" Title="Optical design and modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Riso" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="38636" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Michael Linde</GivenName>
+            <FamilyName>Jakobsen</FamilyName>
+            <Email>mlja@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De studerende bliver inddelt i grupper når de vælger et optisk designprojekt. Evt. kan de på forhånd definere deres eget projekt i samarbejde med underviseren. Hver gruppe laver overslag over én eller et par mulige optiske løsninger. Løsningsforslagene vil blive simuleret og evalueret med Zemax. Evt. projektet kan også involvere et par mindre eksperimenter. Grupperne fremlægger og diskuterer i fælleskab fremgang og løsninger. De studerende får adgang til Zemax under kurset.</Contents>
+          <Teaching_And_Learning_Methods>Projektarbejde i grupper</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus er projektorienteret, og giver den studerende mulighed for at bruge kompetencerne fra de introducerende kurser til optik og Fotonik, samt for at evaluere/optimere deres løsning med optiske design- og modelleringsprogrammel, såsom Zemax.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The students will be organized in groups as they select an optical designproject. Alternative design projects can be suggested by students and planned on forehand with the supervisor. Each group outlines one or two solutions to the problem. Then the solutions will be simulated or evaluated with Zemax and maybe minor experiments can be included as well. The groups will present and discus progress and solutions together. The students will get a license to Zemax during the course.</Contents>
+          <Teaching_And_Learning_Methods>Project work in groups</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course is project orientated, and provides the students an option to use the skills, they have learned during the introduction courses in optics and photonics, and to evaluate/optimize their solutions with optical design and simulation tools such as Zemax.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Danne sig et overblik over et realistisk problem indenfor optisk design." />
+          <Txt Lang="en-GB" Txt="Summarize a realistic optical design problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Indhente data om lyskilder, optiske materialer og komponenter fra datablade" />
+          <Txt Lang="en-GB" Txt="Collect data about light sources, optical materials and components from datasheets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere relevante antagelser for optiske overslagsberegninger" />
+          <Txt Lang="en-GB" Txt="Define relevant assumptions for optical calculations/estimates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre optiske overslagsberegninger herunder radiometriske/photometriske overvejelser" />
+          <Txt Lang="en-GB" Txt="Estimate optical parameters and do radiometric/photometric estimates.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge en simpel model i Zemax" />
+          <Txt Lang="en-GB" Txt="Build a simple model in Zemax" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge en makro i Zemax til optimering af optiske løsninger" />
+          <Txt Lang="en-GB" Txt="Build a macro in Zemax for optimization of optical solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere antagelserne i overslagsberegningerne" />
+          <Txt Lang="en-GB" Txt="Evaluate the influence of the assumptions used for the calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere tilnærmelserne og begrænsningerne i Zemax modelen" />
+          <Txt Lang="en-GB" Txt="Evaluate the approximations and limitations of the Zemax model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fremlæg fremgang og diskutere løsningsforslag med de andre grupper" />
+          <Txt Lang="en-GB" Txt="Communicate progress and discuss solutions with other groups " />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34020/34021" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Optical design and modelling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:38.23" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

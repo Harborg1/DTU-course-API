@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46700" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Introduktion til Elforsyningssystemer" />
+        <Title Lang="en-GB" Title="Introduction to Electric Power Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="113161" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Spyros</GivenName>
+            <FamilyName>Chatzivasileiadis</FamilyName>
+            <Email>spchatz@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="111976" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Haris</GivenName>
+            <FamilyName>Ziras</FamilyName>
+            <Email>chazi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Digital eksamen med overvåget overvågning. For at kunne bestå kurset, skal man have afleveret 67% af hjemmeopgaverne." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Proctored Digital Exam.  In order to pass the course, it is required that 67% of the home assignments have been handed in." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Elforsyningsnettet,
+- Vekselspændingsteknik, 3-fase-systemet, effektbetragtninger.
+- Komponenter i elsystemet som transmissionslinier, kabler, transformere, generatorer, m.m.
+- Power Flows og beregningsværktøjer hertil
+- Symmetriske fejl
+
+Lærebogsstoffet kan blive suppleret med emner fra relaterede områder. 
+
+Ved projektarbejdet findes en realistisk problemstilling, som skal løses ved hjælp af det numeriske simuleringsprogram PowerFactory (Load Flow) med grafisk brugerflade.</Contents>
+          <Teaching_And_Learning_Methods>a) Forelæsninger og grupperegning i forbindelse med forelæsninger
+b) Opgaver afleveres hver anden uge 
+c) Power flow simuleringer. Projektarbejde, hvor elsystemet bliver undersøgt ved modellering af et mindre, realistisk net. Deltagelse i projektet og kvalitet af arbejdet vil blive evalueret under et antal peer-to-peer møder.</Teaching_And_Learning_Methods>
+          <Course_Literature>Glover, Sarma og Overbye, "Power System, Analysis and Design"
++supplerende materiale</Course_Literature>
+          <Course_Objectives>At give en grundlæggende forståelse for elforsyningssystemer og de essentielle aspekter som har indflydelse på f. eks. fremtidens elektriske energisystem.
+De studerende opnår kendskab til elforsyningsnettet og de vigtigste komponenter som indgår i produktion, transmission og distribution af elektrisk energi.Desuden behandles og trænes principper og numeriske metoder for beregninger inden for elforsyningsnettet.
+Kurset giver grundlaget for videre studier inden for elforsyning, men er generelt nyttig for studerende som vil specialisere sig inden for elektriske energisystemer i bredeste forstand.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Power grid
+- AC circuits, 3-phase systems, power considerations
+- Components in the grid like transmission lines, cables, transformers, generators and more.
+- Power flows and tools for simulation
+- Symmetrical faults
+
+The topics from the text book can be supported by topics from related areas. 
+
+In the project, a realistic problem will be defined and has to be solved by means of the numerical simulation program PowerFactory (load flow) with graphical user interface.</Contents>
+          <Teaching_And_Learning_Methods>a) Lectures  and group  exercises in connection with the lectures
+b) Assignments to be handed in every second week 
+c) Power Flow simulations. Group projects, where the power system will be investigated by modelling of af minor, realistic grid. Participation in the project and quality of the work will be evaluated by a number of peer-to-peer meetings.</Teaching_And_Learning_Methods>
+          <Course_Literature>Glover, Sarma and Overbye, "Power System, Analysis and Design"
++ supplementary material</Course_Literature>
+          <Course_Objectives>To give basic understanding of the power system and the essential aspects having influence on issues like the future electrical power system.
+The students achieve knowledge about the power grid and the main components involved under production, transmission and distribution of electric energy. The main principles and numerical tools for grid calculations are treated and will give experience and confidence for use hereof. 
+The course forms the base for further education within power engineering, but is in general useful for all students aiming at some specialization within electrical energy systems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til kredsløbs- og vekselspændingsteknik plus væsentlige AC komponenter, som 31003, 31036, 31735 eller tilsvarende." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge within AC-circuits and main AC components." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere forskellen mellem et simpelt elektrisk kredsløb og et trefaset system" />
+          <Txt Lang="en-GB" Txt="Identify differences between a simple electric circuit and a three-phase power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare strukturen af et elforsyningssystem" />
+          <Txt Lang="en-GB" Txt="Explain the structure of a power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive elektriske komponenter og forklare deres funktioner" />
+          <Txt Lang="en-GB" Txt="Describe power system components and explain their functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge passende modeller for elektriske komponenter" />
+          <Txt Lang="en-GB" Txt="Select appropriate models for power system components " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne nettets størrelser ved hjælp af per-unit-systemet" />
+          <Txt Lang="en-GB" Txt="Calculate power system quantities by means of the per-unit system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme begrænsninger ved drift af elsystemet" />
+          <Txt Lang="en-GB" Txt="Determine operational limitis in a power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne symmetriske trefasede kortslutningsstrømme" />
+          <Txt Lang="en-GB" Txt="Calculate balanced three-phase short circuit currents " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare power flow problemet og metoder til at løse det" />
+          <Txt Lang="en-GB" Txt="Explain the power flow problem and approaches to solve it" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenfatte driftsprincipper for et elsystemet med hensyn til styring af spænding, aktiv og reaktiv effekt" />
+          <Txt Lang="en-GB" Txt="Summarize operation principles of a power system in terms of control of voltage, active and reactive power" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe et realistisk elsystem" />
+          <Txt Lang="en-GB" Txt="Design a realistic power system " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere den overordnede performance af et elsystem under forskellige driftsscenarier ved hjælp af et power flow program" />
+          <Txt Lang="en-GB" Txt="Evaluate the overall performance of a power system under different operating scenarios by means of a power flow program" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundkursus i Elforsyning </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62760/62761/31730" />
+        <PreviousCourse CourseCode="31730" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:44.75" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

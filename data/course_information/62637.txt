@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="62637" University="dtu" LastUpdated="2025-06-25+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Videregående analytics i mobilitet og transport" />
+        <Title Lang="en-GB" Title="Advanced analytics for mobility and transport" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="93497" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Steven Seth</GivenName>
+            <FamilyName>Harrod</FamilyName>
+            <Email>stehar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der bliver fire vurderet opgaver. Karakteren beregnes ud fra: 25% opgaver, 25% midtvejs eksamen og 50% kursus eksamen. Eksamen og opgave spørgsmål stilles på engelsk, men aflevering kan foregå på dansk ved de studerendes anmodning. Ekstern censoren vurderer alt undtaget opgaverne." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="There are four graded exercises. Course grade is calculated from: 25% exercises, 25% midterm exam and 50% course exam. Exam and exercise questions are presented in English, but submissions can be delivered in Danish on the students request. External censor evaluates all except exercises." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer lineær regression og derefter fortsætter til avanceret metoder. Læringsmål omfatter både metoder og problemløsning tip. Et sortiment af datasæt om mobilitet og transport udforskes til at demonstrere kompleks modeler, også til vise hvad kan tage fejl, og hvordan man kan undgå falsk fortolkninger. Kurset sluttes med et fokus på virkelige data og muligheden for flere fortolkninger af dataene.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning, øvelser og en del gruppearbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Washington, Simon et al. (2020) Statistical and Econometric Methods for Transportation Data Analysis, 3rd. Edition
+
+Harvard Business School case studier må købes direkte fra forlægger online. Cases bliver udgivet ved kursusstart. Cases ændrer sig løbende hvert år.
+
+Videnskabelige artikler fra DTU biblioteket.</Course_Literature>
+          <Course_Objectives>Kurset holder meget på lineær regressionsanalyse, som er et vigtigt værktøj i markedsføring, planlægning, drift og årsagsanalyse. Kurset fortsætter med brug af "R" statistik software, som var præsenteret i Grundkursus i Statistik. Studerende øve sig i forskellige datatyper og problemstillinger med vægt på anvendelser i mobility og transport.</Course_Objectives>
+          <Remark>Sektion for Produktion, transport og planlægning
+Mobilitet, transport og logistik: 3. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces linear regression and then continues to advanced methods. Learning objectives cover both methods and problem solving tips.  A variety of data sets from mobility and transport are explored to demonstrate complex models, but also to demonstrate what can go wrong, and how to avoid false interpretations. The course ends with an emphasis on real world data and the possibility of multiple interpretations of that data.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and some group work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Washington, Simon et al. (2020) Statistical and Econometric Methods for Transportation Data Analysis, 3rd. Edition
+
+Harvard Business School case studies must be purchased direct from publisher online. Cases are announced at course start. Cases change every year.
+
+Research articles from DTU library.</Course_Literature>
+          <Course_Objectives>The course is focused on linear regression analysis, which is an important tool in marketing, planning, operations and causal analysis. The course continues to use "R" statistics software, which was introduced in the course "Statistics - A first Course". Students practice with a variety of data types and problem descriptions, with emphasis on applications in mobility and transport.</Course_Objectives>
+          <Remark>Section of Production, Transportation and Planning
+Obligatorisk B.Eng. in Mobility, transport and logistics: 3. semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Studerende bør havde bestået et kursus som indeholder deskriptiv statistik, estimatberegninger af parametre i statistiske modeller og hypotesetester. Det er et fast krav." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students should have previously passed a course covering descriptive statistics, distribution fitting, and hypothesis testing. This is a firm requirement." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62668" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv problemer med en formel struktur og vælg den relevant analyse" />
+          <Txt Lang="en-GB" Txt="Formally define problems and identify the relevant analysis " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg, samle, lave om og rette data ifølge erkendt standarder" />
+          <Txt Lang="en-GB" Txt="Choose, collect, format, and clean data according to recommended standards" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv datasæt ved hjælp af deskriptiv statistikker, ANOVA og signifikanstest" />
+          <Txt Lang="en-GB" Txt="Describe data by means of descriptive statistics, ANOVA, and test for significance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegør for grundliggende teori af lineær regression og &quot;ordinary least squares&quot;" />
+          <Txt Lang="en-GB" Txt="Explain the theoretical basis for linear regression and &quot;ordinary least squares&quot;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør restanalyse, anvend data transformationer og evaluer hvordan en model passer " />
+          <Txt Lang="en-GB" Txt="Perform residual analysis, apply data transformations, and evaluate model fit" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilpas multipel regressionsmodeler ved hjælp af trinvis regression" />
+          <Txt Lang="en-GB" Txt="Fit multiple regression models with stepwise regression" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler beslutningsmodeler med logistisk regression" />
+          <Txt Lang="en-GB" Txt="Formulate decision models with logistic regression" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løs casestudier om forudsigelser eller årsagsanlyser" />
+          <Txt Lang="en-GB" Txt="Evaluate case studies in forecasting or causal analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle relevant statistisk analyse software færdigheder, især &quot;R&quot;." />
+          <Txt Lang="en-GB" Txt="Develop skills in relevant statistical analysis software, especially &quot;R&quot;." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Videregående analytics i mobilitet og transport</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="10" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="42890" />
+        <PreviousCourse CourseCode="42890" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:49.663" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

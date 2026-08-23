@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41793" Volume="2026/2027" University="dtu" LastUpdated="2026-02-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Præcisionsfremstilling" />
+        <Title Lang="en-GB" Title="Precision Manufacturing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Den tilstedeværende del er placeret på DTU campus i Lyngby." />
+          <LocationTxt Lang="en-GB" Txt="The part in presence is located at the DTU campus in Lyngby." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset består af to dele:&#xD;&#xA;Del 1 Online, 40 timer, to dage om ugen, med to til fire timers forelæsninger om dagen, fra den 28. april til den 2. juni&#xD;&#xA;Del 2 Fysisk fremmøde på DTU, 40 timer, 8 timer om dagen fra den 22. juni til den 26. juni" />
+          <Schedule_Txt Lang="en-GB" Txt="The course consists of two parts:&#xD;&#xA;Part 1 Online, 40 hours, two days per week, with two to four hours of lectures per day, from April 28th to June 2nd &#xD;&#xA;Part 2 Onsite at DTU, 40 hours, 8 hours per day from June 22nd to June 26th" />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Mekanik" />
+        <External_Course_Responsible Email="archenti@kth.se" Name="Andrteas Archenti" IsContact="false" SortID="1" />
+        <External_Course_Responsible Email="peter.krajnik@chalmers.se" Name="Peter Krajnik" IsContact="false" SortID="1" />
+        <External_Course_Responsible Email="knut.sorby@ntnu.no" Name="Knut Sørby" IsContact="false" SortID="1" />
+        <External_Course_Responsible Email="raine.viitala@aalto.fi" Name="Viitala Raine" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="9669" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Giuliano</GivenName>
+            <FamilyName>Bissacco</FamilyName>
+            <Email>gibi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueringen er baseret på en grupperapport og præsentation med individuel spørgsmålstagning." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based on a group report and presentation with individual questioning." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="60 minuter" />
+          <Duration Lang="en-GB" Txt="60 minutes" />
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="April 15th" />
+            <DeadLineTxt Lang="en-GB" Txt="April 15th" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="Registration link: https://www.conferencemanager.dk/nordicfivetechphdcourseprecisionmanufacturing&#xD;&#xA;" />
+            <Supp_Txt Lang="en-GB" Txt="Registration link: https://www.conferencemanager.dk/nordicfivetechphdcourseprecisionmanufacturing" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset tager udgangspunkt i kendskab til grundlæggende fremstillingsprocesser. Efter en introduktion til sammenhængene mellem produktfunktionalitet og procesegenskaber og ydeevne defineres grænserne for præcisionsfremstilling, og kravene til implementering af præcisionsfremstilling præsenteres. De to nødvendige betingelser for implementering af præcisionsfremstilling beskrives og valideres gennem en række eksempler. De fire grupper af værktøjer og metoder til implementering af præcisionsfremstilling, nemlig: 1) Forventet procesviden (herunder modellering og simulering, DOE, eksperimentel optimering); 2) Procesovervågning, kontrol og feedback, kompensation, in situ-metrologi; 3) hardware med høj præcision (værktøjsmaskiner, værktøjer og fixturer); 4) Kontrolleret produktionsmiljø vil blive beskrevet, og praktisk implementering på udvalgte processer vil blive demonstreret. Konceptet Concurrent Engineering introduceres i forbindelse med præcisionsfremstilling, hvor behovet for produktionsbevidsthed forklares tidligt i produktdesignprocessen. Præcisionsfremstillingsprocesser vil blive introduceret ved hjælp af en passende ramme for deres klassificering og udvælgelse. Der vil blive givet en dybdegående præsentation for udvalgte processer, herunder både teoretisk beskrivelse samt praktisk anvendelse af værktøjer og metoder til avanceret processimulering, optimering og overvågning.</Contents>
+          <Teaching_And_Learning_Methods>Onlineforelæsninger og projektarbejde. Projektarbejdet udføres i grupper. Grupperne dannes på den første dag af den fysiske del.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Ph.d.-kurset i præcisionsproduktion er egnet til ph.d.-studerende med en baggrund inden for produktionsteknik. Formålet med dette kursus er at sætte de studerende i stand til at udnytte mulighederne i præcisionsproduktionsprocesser for at designe præcisionstekniske produkter med enestående ydeevne. Kurset fokuserer på at udvikle en omfattende forståelse af de nødvendige betingelser, værktøjer og metoder inden for præcisionsproduktion og introducere det grundlæggende i digital produktion uden fejl. Efter dette kursus vil de studerende udvikle en dyb forståelse af: 1) præcisionsteknik og principper for præcisionsproduktion, 2) betingelser for at opnå høj præcision i fremstilling, 3) avancerede fremstillingsteknologier, 4) værktøjer og metoder til at implementere præcision, forbedre procesydelse og reducere defekter i produktionen.
+
+Kursets fokus er på værktøjer og metoder, mens udvalgte processer diskuteres for at understøtte deres præsentation og anvendelse i praksis.</Course_Objectives>
+          <DTU_Remark>Ph.d.-kursus undervist i samarbejde med Nordic 5 Tech-partnere</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course takes its starting point from the knowledge of basic manufacturing processes. After introducing the relationships between product functionality and process properties and performance, the boundaries of Precision Manufacturing are defined and the requirements for the implementation of Precision Manufacturing are presented. The two necessary conditions for implementation of Precision Manufacturing are described and validated through a number of examples. The four groups of tools and methods for implementation of Precision Manufacturing, namely: 1) Anticipated Process Knowledge (including modelling and simulation, DOE, experimental optimization); 2) Process monitoring, control and feedback, compensation, in situ metrology; 3) high accuracy hardware (machine tools, tools and fixtures); 4) Controlled manufacturing environment will be described and practical implementation to selected processes will be demonstrated. The concept of Concurrent Engineering is introduced in the context of Precision Manufacturing, explaining the need of manufacturing awareness early in the product design process. Precision Manufacturing processes will be introduced with the aid of a suitable framework for their classification and selection. In depth presentation will be given for selected processes, including both theoretical description as well as practical application of the tools and methods for advanced process simulation, optimization and monitoring.</Contents>
+          <Teaching_And_Learning_Methods>Online lectures and project work. Project work is carried out in groups. Groups are formed during the first day of the part in presence.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The PhD course on Precision Manufacturing is dedicated to PhD students with a background in manufacturing engineering. The aim of this course is to enable the students to exploit the capabilities of Precision Manufacturing processes in order to design Precision Engineering products with outstanding performance. The course centres on developing a comprehensive understanding of the necessary conditions, tools and methods of Precision Manufacturing and introducing the basics of Zero Defect Digital Manufacturing. Following this course the students will develop a deep understanding of: 1) precision engineering and precision manufacturing principles, 2) conditions to achieve high precision in manufacturing, 3) advanced manufacturing technologies, 4) tools and methods to implement precision, improve process performance and reduce defects in production.
+The focus of the course is on tools and methods, while selected processes are discussed to support their presentation and application in practice.</Course_Objectives>
+          <DTU_Remark>PhD Course taught in collaboration with Nordic 5 Tech partners</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kandidatniveauviden om produktions- og materialeteknologi" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="MSc level knowledge of Production technology and Materials technology" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå betingelserne for at opnå højpræcisionsproduktion" />
+          <Txt Lang="en-GB" Txt="Understand the conditions to achieve high precision manufacturing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser funktionelle krav og oversæt dem til designspecifikationer med fokus på præcisionskrav" />
+          <Txt Lang="en-GB" Txt="Analyze functional requirements and translate them  into design specifications with focus on precision requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg (anvend) passende avancerede fremstillingsprocesser, der matcher produktspecifikationerne" />
+          <Txt Lang="en-GB" Txt="Select (apply) suitable advanced manufacturing processes matching the product specifications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer (evaluer) kritiske problemer, der hindrer fremstillingsnøjagtighed" />
+          <Txt Lang="en-GB" Txt="Identify (evaluate) critical issues hindering manufacturing accuracy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend de værktøjer og metoder, der er undervist i, til at forbedre fremstillingsnøjagtigheden" />
+          <Txt Lang="en-GB" Txt="Apply the tools and methods taught to improve manufacturing accuracy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør (anvend) teoretiske beregninger til at understøtte beslutninger vedrørende procesvalg og valg af procesparametre" />
+          <Txt Lang="en-GB" Txt="Perform (apply) theoretical calculations to support decisions concerning process selection and choice of process parameters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg (anvend) passende målemetoder til verifikation af produktets overholdelse af designspecifikationer" />
+          <Txt Lang="en-GB" Txt="Select (apply)  suitable measurement methods for verification of product compliance with design specifications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opret en strategi til forbedring af fremstillingsnøjagtigheden i fremstillingsscenarier (processer og/eller komponenter), der er forskellige fra dem, der præsenteres i klassen" />
+          <Txt Lang="en-GB" Txt="Create a strategy for improving manufacturing accuracy in manufacturing scenarios (processes and or components) different from those presented in class" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend systematiske metoder til at skabe en sammenhængende rækkefølge af handlinger, der fører til produktion af præcisionsprodukter" />
+          <Txt Lang="en-GB" Txt="Apply systematic methods to create a coherent sequence of actions leading to production of precision products" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://www.conferencemanager.dk/nordicfivetechphdcourseprecisionmanufacturing" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Precision Manufacturing</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="80" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="80" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="5" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="24" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:59.597" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

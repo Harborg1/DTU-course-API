@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34315" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Internet of things – applikation og infrastruktur udvikling" />
+        <Title Lang="en-GB" Title="Internet of things – application and infrastructure implementation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="17715" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Sarah Renée</GivenName>
+            <FamilyName>Ruepp</FamilyName>
+            <Email>srru@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamensforudsætninger: aflevering af øvelser (skal beståes) før påbegyndelse af projektarbejde&#xD;&#xA;Mundtlig eksamen finder sted på sidste kursusdag" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Exam requirements: exercises must be passed before start of project work&#xD;&#xA;Oral exam will take place on the last course day" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til arkitekturer, protokolprincipper og udfordringer relateret til IoT. Prototypeudvikling af en IoT enhed med brug af Arduino samtsensorer, f.eks. temperatur sensorer, lyssensorer, bevægelsessensorer, afstandssensorer, o.l. De studerende forventes at købe deres eget IoT kit (ca. kr. 300-400.-), men ingen udgifter til bøger. Projektarbejde i grupper. Deltagelse i kursets øvelser og projektarbejde kræver fysisk fremmøde. Evaluering er baseret på opgaver, peer-feedback, rapporter og mundtlig fremlæggelse for klassen på sidste kursusdag.</Contents>
+          <Teaching_And_Learning_Methods>Projektarbejde / Forelæsninger / Øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver den studerende en forståelse af Internet of Things, inklusiv arkitektur, protokoller og udfordinger, og opnår hards-on erfaring på alle niveauer vedrørende embedded HW/SW udvikling, applikations udvikling og tjeneste udrulning. Kurset vil give den studerende kendskab til state-of-the-art open-source hardware og software, samt cloud service tools til udvikling af innovative IoT applications/services rettet mod forøget energy effiktivitet, forbedret livskvalitet, og/eller øget produktivitet</Course_Objectives>
+          <Remark>Studerende på B.Sc. Cyberteknologi og studerende med større kendskab til Arduino programmering anbefales at følge kursus 34325 i stedet for (samme skemagruppe).</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to architectures, protocol principles, and challenges of IoT. 
+Circuit board prototyping using Arduino with sensor devices, including temperature sensor, light sensor, motion sensor, distance sensor, etc. Simple data collection and visualization through webservers and IoT Cloud solutions. Students are expected buy their own IoT kit (approx. kr. 300-400.-), but no expenses for books. IoT project development in groups. Physical presence in class for exercises and group work is required as an integral part of the course. Evaluation is based on assignments, giving peer-feedback, reports and an oral presentation to the class on the last course day.</Contents>
+          <Teaching_And_Learning_Methods>Project work / Lectures / Exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course will let students obtain an introduction to Internet of Things, including architecture, protocols, and challenges, and gain valuable full-stack hands-on experiences on hardware development, application development and service deployment. The course will provide students with state-of-the-art open-source hardware, software and cloud service tools to build innovative IoT applications/services aiming at increasing energy efficiency, improving quality of life, and/or increasing productivity.</Course_Objectives>
+          <Remark>Students from B.Sc. Cyberteknologi and students with prior advanced knowledge in Arduino programming are recommended to follow course 34325 instead (same timeslot).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Interesse i at arbejde i laboratorie, udvikle hardware prototyper og embedded software." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Interested in working in the lab, developing hardware prototypes, and embedded programming." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de basale unfordringer i Internet of things" />
+          <Txt Lang="en-GB" Txt="Describe the essence and challenges of Internet of Things." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive netværksprotokoller i forskellige netværkslag" />
+          <Txt Lang="en-GB" Txt="Describe networking protocols in different network layers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undvikle simple hardware prototyper med sensorer" />
+          <Txt Lang="en-GB" Txt="Develop simple hardware prototypes with sensors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle programmer til øverførsel af data til/fra IoT enheder" />
+          <Txt Lang="en-GB" Txt="Develop programs to transmit data to/from the IoT device." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive state-of-the-art cloud services" />
+          <Txt Lang="en-GB" Txt="Describe state-of-the-art cloud services." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge cloud services til at processere, analysere og gemme IoT data" />
+          <Txt Lang="en-GB" Txt="Use cloud services to process, analyze and store IoT data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og demonstrere udviklingen af IoT systemer og applikationer" />
+          <Txt Lang="en-GB" Txt="Deploy and showcase the developed IoT system and application." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive anvendelsesområder for forskellige standard løsninger" />
+          <Txt Lang="en-GB" Txt="Describe usecases for different standard solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bidrage til gruppearbejde og præsentere gruppens projekt i en rapport og ved en mundtlig præsentation" />
+          <Txt Lang="en-GB" Txt="Contribute to group work and present the groups outcome in a report and an oral presentation" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Internet of things – application and infrastructure implementation</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34338" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="60" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:08.103" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

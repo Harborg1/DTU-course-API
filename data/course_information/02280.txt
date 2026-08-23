@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02280" University="dtu" LastUpdated="2026-03-17+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kunstig intelligens og multiagent-systemer" />
+        <Title Lang="en-GB" Title="Artificial Intelligence and Multi-Agent Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="6474" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Thomas</GivenName>
+            <FamilyName>Bolander</FamilyName>
+            <Email>tobo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen baseres på en kombination af afleveringsopgaver undervejs i kurset samt det afsluttende store programmeringsprojekt. Alle obligatoriske elementer er gruppeopgaver med krav om individualisering af hver enkelt studerendes bidrag. Bedømmelsen gives som en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assessment is based on a combination of assignments during the course and a large final programming project. All mandatory elements are group assignments with strict requirements for individualising each student's contribution. The course is evaluated as a whole." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="There is the final competition in the course on the official day of the exam, where all students are expected to attend." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Der er en afsluttende konkurrence i kurset på kursets officielle eksamensdag, hvor alle studerende forventes at deltage." />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer primært på emner indenfor automatiseret planlægning og multiagent-systemer, men vil også berøre andre emner indenfor AI (f.eks. problemløsning ved søgning, vidensrepræsentation og ræssonering med logiske agenter).  
+
+Programmeringsprojektet omhandler design og implementation af avancerede AI-teknikker i et simuleret multiagent-miljø. Programmeringsprojektet er meget åbent og lægger op til udvikling af egne algoritmer og multiagent-arkitekturer. Projektet udføres i grupper og skal resultere i et fungerende softwaresystem og en videofremlæggelse, som præsenterer systemet og dets underliggende algoritmer og ideer i stil med forskningspræsentationer på AI-konferencer.
+
+Udover programmeringsprojektet vil der være et antal mindre afleveringsopgaver i løbet af kurset. Disse afleveringsopgaver giver de studerende træning i videopræsentationer indenfor kursets emner, og hjælper med at bygge op til det afsluttende projekt.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, afleveringsopgaver og et større programmeringsprojekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus introducerer de studerende til avancerede teknikker inden for kunstig intelligens (AI) med særligt fokus på automatiseret planlægning og multiagent-systemer. Kursets mål er at blive i stand til at forklare, analysere og implementere avancerede AI-teknikker, udforske og formidle den nyeste forskningslitteratur på området, samt kombinere og udvikle nye AI-teknikker i et stort softwaresystem.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course primarily focuses on topics within automated planning and multi-agent systems, but will also address other areas of AI (e.g. problem-solving by searching, knowledge representation and reasoning with logical agents). 
+
+The programming project concerns the design and implementation of advanced AI techniques in a simulated multiagent environment. The programming project is very open-ended and invites for the development of your own algorithms and multiagent architectures. The project is carried out in groups, and should result in a working system and a video in which you present the system and its underlying algorithms and ideas in the style of research presentations at AI conferences.
+
+In addition to the programming project there will be a number of smaller assignments during the course. These assignments will give the students experience in doing video presentations within the areas of the course curriculum, and will assist in building up to the final programming project.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, assignments and a large programming project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course introduces students to advanced techniques within artificial intelligence (AI), with particular focus on automated planning and multi-agent systems. The objective of the course is to become able to explain, analyse and implement advanced AI techniques, to explore and present the latest research literature in the area, as well as to combine and develop novel AI techniques in a large software system.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser, herunder kendskab til grafsøgningsalgoritmer, søgeheuristikker og lidt prædikatlogik. Desuden kræves erfaring med implementering af ikke-trivielle algoritmer og større softwaresystemer. Det er muligt at følge 02180 i parallel med 02285, og studerende som er stærke i algoritmik kan formodentlig også følge 02285 uden at tage eller have taget 02180." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses, including knowledge about graph search algorithms, search heuristics and a bit of predicate logic. Furthermore, the course requires experience with implementing non-trivial algorithms and larger software systems. It is possible to follow 02180 in parallel with 02285, and students strong in algorithms can probably follow 02285 without taking or having taken 02180." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01017. 02101. 02105. 02180." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive et antal af de mest udbredte teknikker i kunstig intelligens og multiagent-systemer - både i overordnede termer og på et detaljeret teknisk niveau " />
+          <Txt Lang="en-GB" Txt="describe a number of the most prevalent techniques in artificial intelligence and multi-agent systems - both in overall terms and on a detailed technical level" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenligne og vurdere anvendeligheden af forskelige AI-teknikker indenfor automatiseret planlægning og multiagent-systemer til løsning af et givet konkret problem" />
+          <Txt Lang="en-GB" Txt="compare and assess the appropriateness of various AI techniques within automated planning and multi-agent systems for solving a given concrete problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kombinere forskellige AI-teknikker på en teoretisk sund og praktisk anvendelig måde " />
+          <Txt Lang="en-GB" Txt="combine different AI techniques in a theoretically sound and practically useful way" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende en given AI-teknik til løsning af et givet konkret problem" />
+          <Txt Lang="en-GB" Txt="apply a given AI technique to a given concrete problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gøre rede for de generelle komplikationer og fælder involveret i praktisk brug af AI-teknikker indenfor automatiseret planlægning og multiagent-systemer" />
+          <Txt Lang="en-GB" Txt="clarify the general complications and pitfalls involved in practical uses of AI techniques within automated planning and multi-agent systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="selvstændigt søge efter, læse og kritisk analysere relevant forskningslitteratur til et konkret AI-projekt indenfor automatiseret planlægning og multiagent-systemer " />
+          <Txt Lang="en-GB" Txt="independently search for, read, and critically analyse research literature relevant to a specific AI project within automated planning and multi-agent systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere avancerede AI-teknikker indenfor automatiseret planlægning og multiagentsystemer i et stort softwaresystem" />
+          <Txt Lang="en-GB" Txt="implement advanced AI techniques within automated planning and multi-agent systems in a large software system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="mundtligt formidle indholdet af nye forskningsartikler indenfor automatiseret planlægning og multiagent-systemer på en klar og teknisk præcis måde " />
+          <Txt Lang="en-GB" Txt="orally communicate the content of recent research publications within automated planning and multiagent systems in a clear and technically precise manner" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle og implementere egne AI-algoritmer og -løsninger ved kombination eller udvidelse af eksisterende teknikker" />
+          <Txt Lang="en-GB" Txt="design and implement novel AI algorithms and solutions through the combination or extension of existing techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="mundtligt formidle egne AI-algoritmer og eksperimentielle resultater i stil med et videnskabeligt konferencebidrag" />
+          <Txt Lang="en-GB" Txt="orally present developed AI algorithms and experimental results in the style of a scientific conference contribution" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>kunstig intelligence (artificial intelligence), automatiseret planlægning (automated planning), multiagent-systemer (multi-agent systems)</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="02285" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:21.113" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

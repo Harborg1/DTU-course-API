@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42380" Volume="2026/2027" University="dtu" LastUpdated="2026-02-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Supply Chain Analytics" />
+        <Title Lang="en-GB" Title="Supply Chain Analytics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="53748" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Dario</GivenName>
+            <FamilyName>Pacino</FamilyName>
+            <Email>darpa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="199127" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jasmine</GivenName>
+            <FamilyName>Lam</FamilyName>
+            <Email>slela@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus vil introducere de studerende til komplekse netværk bestående af leverandører, producenter, distributører, detailhandlere og andre aktører, der samarbejder om at bringe et produkt eller en service frem til kunden. Kurset vil vise, hvordan aktiviteter inden for forsyningsnetværk effektivt kan designes, koordineres og integreres ved hjælp af SCA med henblik på at øge effektiviteten, reducere omkostningerne og forbedre kundeservicen. Der tages derfor et end-to-end perspektiv på styringen og ledelsen af forsyningskæderne. På den operationelle side vil de studerende anvende SCA til efterspørgselsprognoser, produktionsplanlægning, lagerstyring og ordreopfyldelse. På den strategiske og taktiske side vil SCA blive brugt til netværksdesign, logistik- og transportplanlægning, leverandørvalg, udformning af forsyningskontrakter, outsourcing samt vertikalt og horisontalt samarbejde. De SCA-værktøjer, der anvendes, vil blive hentet fra en bred vifte af analytiske områder, herunder sandsynlighedsteori, statistik, maskinlæring, matematisk optimering og spilteori.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>LV Snyder and ZJM Shen, Fundamentals of supply chain theory, 2nd edition, Wiley
+Studerende kan købe business cases til en pris, der ikke overstiger 300 DKK.</Course_Literature>
+          <Course_Objectives>Supply Chain Analytics (SCA) benytter analytiske teknikker fra statistik, machine learning, matematisk optimering og spilteori for at forbedre anvendelsen af store datamængder med henblik på bedre beslutningstagning og planlægning på tværs af supply chains. Formålet med kurset er at lære de studerende det grundlæggende i at opstille analytiske modeller til løsning af supply chain-problemer samt at udvikle forståelse for logikken bag disse værktøjer og deres potentielle betydning for konkurrenceevnen i supply chains.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course will introduce students to complex networks consisting of suppliers, manufacturers, distributors, retailers, etc., that collaborate in bringing a product or service to the customer. It will be shown how activities within supply networks can be effectively designed, coordinated and integrated using SCA in order to increase efficiency, reduce costs, and improve customer service. An end-to-end view of supply chain management is therefore taken. On the operational side, students will use SCA for demand forecasting, production planning, inventory management, and order fulfillment. On the strategic and tactical side, SCA will be used for network design, logistics and transportation planning, supplier selection, supply contract design, outsourcing and vertical/horizontal collaboration. The SCA tools used will be drawn from a wide range of analytical domains, including probability theory, statistics, machine learning, mathematical programming and game theory.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>LV Snyder and ZJM Shen, Fundamentals of supply chain theory, 2nd edition, Wiley
+Students may be required to purchase business cases at a cost not exceeding 300 DKK.</Course_Literature>
+          <Course_Objectives>Supply Chain Analytics (SCA) utilizes analytical techniques from statistics, machine learning, mathematical optimization and game theory in order to leverage the availability of large amounts of data towards improved decision making and planning across supply chains. The purpose of this course is to teach students the basics of building analytical models to solve supply chain problems, and to build intuition into the logic behind these tools and their potential impact on the competitiveness of supply chains.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="(eller lignende kurser i OR, statistik og SCM). Grundlæggende programmeringsevner på sprog som R, Python, Matlab, Julia eller lignende." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="(or similar introductory courses in OR, statistics and SCM). It is expected that participants have some basic programming skills in languages such as R, Python, Matlab, Julia, or similar." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42101.02402/02403.42402/42587" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlæggende terminologi og centrale koncepter inden for supply chain management og supply chain analytics (SCA)." />
+          <Txt Lang="en-GB" Txt="Explain fundamental terminology and concepts in supply chain management and Supply Chain Analytics (SCA)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlæggende og nødvendige data, der fungerer som input til forskellige SCA-værktøjer, samt forklare det tilhørende output." />
+          <Txt Lang="en-GB" Txt="Describe the data sources that provide the input needed for different SCA tools and interpret the output provided by SCA tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere supply chain planlægning og designproblemer inden for et SCA framework" />
+          <Txt Lang="en-GB" Txt="Analyze supply chain planning and design problems within an SCA framework" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bedømme anvendelsen af SCA i forskellige situationer" />
+          <Txt Lang="en-GB" Txt="Assess the applicability of SCA in different situations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og sammenligne SCA værktøjer til løsning af supply chain planlægning og design" />
+          <Txt Lang="en-GB" Txt="Apply and compare SCA tools to solve supply chain planning and design problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte analytiske modeller og softwareværktøjer til at løse strategiske og operationelle problemstillinger inden for forsyningskæder" />
+          <Txt Lang="en-GB" Txt="Use analytical models and software tools to solve strategic and operational supply chain problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende metoder og kvantitativ analyse til at udvikle indsigt samt træffe strategiske og operationelle beslutninger" />
+          <Txt Lang="en-GB" Txt="Apply methods and quantitative analysis  to develop insights and make strategic and operational decisions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere påvirkningen af SCA på performance af en supply chain" />
+          <Txt Lang="en-GB" Txt="Discuss the impact SCA can have on the performance of supply chains" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan SCA kan anvendes til opsamling af vigtig ledelsesindsigt med henblik på forbedring af performance i en supply chain" />
+          <Txt Lang="en-GB" Txt="Describe how SCA can be used to gather important managerial insights about improving supply chain performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Kvantitative værktøjer til analyse af forsyningskæder</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="22" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:59.85" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

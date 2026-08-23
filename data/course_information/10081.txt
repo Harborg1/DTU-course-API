@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10081" University="dtu" LastUpdated="2026-04-21+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Fysik for materialer og energi, digital udgave" />
+        <Title Lang="en-GB" Title="Physics for materials and energy, digital version" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_online" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="47" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="81686" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jesper</GivenName>
+            <FamilyName>Rasmussen</FamilyName>
+            <Email>jeras@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="25130" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Thomas Sand</GivenName>
+            <FamilyName>Jespersen</FamilyName>
+            <Email>tsaje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Omtrentlig vægtning: Mundtlig eksamen 75%, individualiserede gruppeprojekter 25%." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Judged as a whole. Approximate weighting: Oral exam 75%, individualized group assignments 25%." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Electrisk og magnetisk flux. Maxwell's ligninger. Elektromagnetiske bølger. Antenner. Diffraktion. Fotoner og partikelbølger. Grundlæggende introduktion til kvantemekaniske principper og formalismer. Potentialbrønde. Grundlæggende krystalstruktur af faste stoffer. Båndstruktur. Halvledere. Transistorer, dioder. Nukleare processer og energi. Nukleare tværsnit. Dannelse og anvendelser af plasma.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger (live + video), spørgetimer, regneopgaver, projekter.</Teaching_And_Learning_Methods>
+          <Course_Literature>OpenStax: University Physics Vol 2/3 og noter</Course_Literature>
+          <Course_Objectives>At introducere den studerende til brugen af begreber fra elektromagnetisme, kvantemekanik, faststoffysik og nanovidenskab i teknologiske anvendelser relateret til materialer og energiproduktion. De studerende opnår viden om hvordan disse begreber anvendes i dagligdags elektronik såsom smartphones og i udnyttelsen af fremtidige energikilder.</Course_Objectives>
+          <DTU_Remark>Dette kursus er en online udgave af 10080 og løber i efteråret.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Electric and magnetic flux. Maxwell's equations. Electromagnetic waves. Antennas. Diffraction. Photons and particle waves. Basic introduction to quantum mechanical principles and formalisms. Potential wells. Basic crystal structure of solids. Band structure. Semiconductors. Transistors, diodes. Nuclear processes and energetics. Nuclear cross sections. Generation and applications of plasmas.</Contents>
+          <Teaching_And_Learning_Methods>Lectures (live + video), consultations, problem exercises, assignments.</Teaching_And_Learning_Methods>
+          <Course_Literature>OpenStax: University Physics Vol 2/3 and notes</Course_Literature>
+          <Course_Objectives>To introduce the student to the use of concepts from electromagnetism, quantum mechanics, condensed matter physics, and nanoscience in technological applications related to materials and energy production. The students acquire knowledge of how these concepts are applied in common devices such as smartphones and in the use of future energy sources.</Course_Objectives>
+          <DTU_Remark>This course is an online version of 10080 and runs in the autumn.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Fysik 1 og Matematik 1 (Polyteknisk Grundlag) eller ækvivalente kurser" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Physics 1 and Mathematics 1 (Polytechnical Foundation) or equivalent courses" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(10060/10063/10065).(01001.01002/01003.01004)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlæggende elektromagnetisk bølgeudbredelse." />
+          <Txt Lang="en-GB" Txt="Describe basic electromagnetic wave propagation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse problemer med interferens og diffraktion af lys og disses anvendelse til karakterisering af materialer. " />
+          <Txt Lang="en-GB" Txt="Solve problems with interference and diffraction of light and their use in characterizing materials." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive partikel-bølge dualiteten af lys og partikler." />
+          <Txt Lang="en-GB" Txt="Describe the wave-particle duality of light and matter." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse simple kvantemekaniske problemer med frie elektroner og elektroner i (periodiske) potentialer." />
+          <Txt Lang="en-GB" Txt="Solve simple quantum mechanical problems involving free electrons and electrons in (periodic) potentials." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende båndteorien for faste stoffer til at forklare forskelle mellem ledere, halvledere og isolatorer. " />
+          <Txt Lang="en-GB" Txt="Apply the band theory of solids to explain differences between conductors, semiconductors, and insulators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere den kvalitative funktionalitet af vigtige halvlederkomponenter som transistorer og dioder og deres brug i teknologiske anvendelser." />
+          <Txt Lang="en-GB" Txt="Discuss the qualitative functionality of key semiconductor devices such as transistors and diodes and their use in technological applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne nuklear energiomdannelse og bindingsenergier relevant for fission-/fusionsreaktioner." />
+          <Txt Lang="en-GB" Txt="Calculate nuclear energetics and binding energies relevant for fission/fusion reactions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare dannelse og opvarmning af plasma brugt i industri og energiforskning." />
+          <Txt Lang="en-GB" Txt="Explain generation and heating of plasmas used in industry and energy research." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere elektromagnetiske og kvantemekaniske begreber til teknologiske anvendelser vedrørerende materialer og energiproduktion." />
+          <Txt Lang="en-GB" Txt="Relate electromagnetic and quantum mechanical concepts to technological applications involving materials and energy production." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="10036/10041/10080/62773/62774" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:53.77" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

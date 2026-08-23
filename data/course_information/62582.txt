@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62582" Volume="2026/2027" University="dtu" LastUpdated="2025-02-14+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Komplekse systemer og Devops" />
+        <Title Lang="en-GB" Title="Complex Systems and Devops" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="215716" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Sommer</FamilyName>
+            <Email>lasom@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Udvikling af single page applikationer med et frontend framework. Progressive web-apps som alternativ til mobilapplikationer.
+Håndtering af frontend application-state med en state manager.
+Backend sikkerhed med hashing, salting og tokens. 
+Anvendelse af package managers til at styre versionering og integration.
+Anvendelse af automatisering af builds og opsætning af containers til at styre Continuous Integration og Development.
+Web-baseret Continuous Integration og Delivery.
+Embeddede og Standalone webservere.
+Containerization systemer som understøttelse af CI/CD DevOps.
+Evt. Realtime webapplikationer med publish-subscribe arkitektur.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset samler op og bygger videre på Versionsstyring og testmetoder (02315/62532) samt enten Videregående programmering (02324) eller Backendudvikling / distribuerede systemer (62597/62596) og Front End Webteknologi (02363). 
+På kurset lærer man at udvikle, integrere, idriftsætte og drifte de forskellige delkomponenter i en større IT-løsning. Som en del af kurset vil vi udvikle og idriftsætte et nøglefærdigt web-system. 
+Kurset giver forudsætninger for at indgå i et udviklingsteam, der anvender principperne i DevOps og etablere en infrastruktur til et komplet web baseret it-system. 
+Kurset bidrager til den grønne omstilling, ved at gøre de studerende i stand til at udvikle og idriftsætte IT-løsninger på en effektiv måde, således at splid reduceres.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Valgfag: Softwareteknologi
+Valgfag: IT og Økonomi</Remark>
+          <No_Credit_Points_With>Kurset kan ikke følges af studerende, der har taget et tilsvarende specialkursus.</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Development of single page applications using a frontend framework. Progressive web-apps as an alternative to mobile applications.
+Handling frontend application-state with a state manager.
+Backend security using hashing, salting og tokens. 
+Use of package managers til for versioning and integration.
+Use of build automation and containers for control of Continuous Integration and Development.
+Web-based Continuous Integration and Delivery.
+Embedded og Standalone Web Servers.
+Containerization systems as support for CI/CD DevOps.
+Optionally realtime web applications using publish-subscribe architecture.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and lab work</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course builds on, and extends version control and test methods (02315/62532) and either advanced programming (02324) or backend development / distributed systemes (62597/62596) and frontend web technology (02363). 
+In the course you will learn to develop, integrate, deploy and maintain the various components in a larger IT-solution. As part of the course we will develop and deploy a turnkey web system. 
+The course provides prerequisites to participate in a development team that uses the principles of DevOps and establish an infrastructure for a complete web based it-system.
+The course contributes to the green transition by enabling the students to develop and operate IT-solutions in an efficient manner, reducing waste of resources.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Valgfag: Softwareteknologi
+Valgfag: IT og Økonomi</Remark>
+          <No_Credit_Points_With>This course cannot be followed by students who have taken a corresponding special course.</No_Credit_Points_With>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset forudsætter erfaring med backendudvikling i Java (alternativt C#) og erfaring med JavaScript." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The Course requires experience with backend development in Java (alternatively C#) and experience with JavaScript." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02324/(((62596/62597).02363)/62595).(02315/62532)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende udvalgte frameworks til frontend- og backendudvikling." />
+          <Txt Lang="en-GB" Txt="Apply selected frameworks for frontend and backend development." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for og implementere 'Application state' med en state manager." />
+          <Txt Lang="en-GB" Txt="Explain and implement 'Application state' using a state manager." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsætte grundlæggende backend-sikkerhed og token baseret sikkerhed." />
+          <Txt Lang="en-GB" Txt="Setup fundamental backend security and token based security." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende frameworks til udvikling af komplekse systemer. " />
+          <Txt Lang="en-GB" Txt="Apply frameworks for development of complex systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende package managers." />
+          <Txt Lang="en-GB" Txt="Apply package managers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsætte continuous integration, test og delivery (CI/CD)." />
+          <Txt Lang="en-GB" Txt="Setup continuous integration, test and delivery (CI/CD)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage containerization og opsætte build servers, PaaS og IaaS." />
+          <Txt Lang="en-GB" Txt="Apply containerization and setup build servers, PaaS and IIaaS" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå DevOps og være i stand til at agere i en DevOps baseret organisation" />
+          <Txt Lang="en-GB" Txt="Understand DevOps and be able to engage effectively in a DevOps organisation" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:43.277" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10036" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Elektromagnetisme for fysikere" />
+        <Title Lang="en-GB" Title="Electromagnetism for physicists" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Der er eksperimenter i kurset, der ligger udenfor kursets skemaplacering E4." />
+          <Schedule_Txt Lang="en-GB" Txt="There are experimental exercises in this course, which are done outside the course schedule E4." />
+          <Schedule ScheduleKey="E4" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="41928" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mirko</GivenName>
+            <FamilyName>Salewski</FamilyName>
+            <Email>msal@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9845" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Cathrine</GivenName>
+            <FamilyName>Frandsen</FamilyName>
+            <Email>fraca@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette er et kursus i Maxwells teori for elektromagnetisme. Det omfatter elektro- og magnetostatik i vakuum og i materialer, magnetisk induktion, forskydningsstrømme, elektrodynamik, elektromagnetiske bølger i  vakuum og i materialer, elektromagnetisk arbejde, energi og energistrømtæthed og elektromagnetisk impuls og impulsmoment.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelsesregning og laboratorieøvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: D. J. Griffiths: Introduction to Electrodynamics, 5. ed., ISBN-10: 1009397753, ISBN-13: 978-1009397759</Course_Literature>
+          <Course_Objectives>Med centrum i elektromagnetismens begreber, love og metoder skal der - med såvel teoretisk som praktisk orientering - etableres et grundlæggende kendskab til elektriske og magnetiske fænomener.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This is a course in Maxwell’s theory of electromagnetism. It involves electrostatics and magnetostatics in vacuum and in matter, magnetic induction, displacement currents, electrodynamics, electromagnetic waves in vacuum and in matter, electromagnetic work, energy and energy flux, and electromagnetic momentum and angular momentum.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem sessions and laboratory exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Book: D. J. Griffiths: Introduction to Electrodynamics,  5. ed., ISBN-10: 1009397753, ISBN-13: 978-1009397759</Course_Literature>
+          <Course_Objectives>To obtain a working knowledge – theoretical as well as practical - of basic electromagnetic theory and its applications.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10033.10037.01001" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende vektoranalyse (divergens, gradient, rotation, Gauss og Stokes teorem) i elektromagnetiske problemer." />
+          <Txt Lang="en-GB" Txt="Apply vector analysis (divergence, gradient, curl, the Gauss and Stokes theorems) in electromagnetism problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne elektrostatiske kræfter, felter, og potentialer associeret med simple eller symmetriske ladningstætheder." />
+          <Txt Lang="en-GB" Txt="Calculate electrostatic forces, fields, and potentials associated with simple or symmetrical charge distributions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere strømtætheder i termer af konduktivitet og ved brug af kontinuitetsligningen til at sikre ladningsbevarelse." />
+          <Txt Lang="en-GB" Txt="Analyze current densities in terms of conductivity and using the continuity equation to ensure charge conservation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne magnetiske kræfter, felter, og vektorpotentialer associeret med simple eller symmetriske strømtætheder." />
+          <Txt Lang="en-GB" Txt="Calculate magnetic forces, fields, and vector potentials associated with simple or symmetrical current distributions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne elektromagnetiske felter i materialer med polarisation og magnetisering." />
+          <Txt Lang="en-GB" Txt="Calculate electromagnetic fields in matter with polarization and magnetization." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme den elektriske og magnetiske feltenergi og det tilknyttede arbejde og energistrømtæthed." />
+          <Txt Lang="en-GB" Txt="Determine the electric and magnetic field energy and the associated work and energy flux density." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme det elektromagnetiske felts impuls og impulsmoment og den tilknyttede Maxwell stresstensor og impulsstrømtæthed." />
+          <Txt Lang="en-GB" Txt="Determine the electric and magnetic field momentum and angular momentum and the associated Maxwell stress tensor and momentum flux densities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne inducerede magnetiske og elektriske felter ved brug af induktionsloven og forskydningsstrømme." />
+          <Txt Lang="en-GB" Txt="Calculate induced magnetic and electric fields using the law of induction and displacement currents." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse Maxwells ligninger med randbetingelser i problemer med mere end et materiale." />
+          <Txt Lang="en-GB" Txt="Solve Maxwell's equations with boundary conditions in problems with more than one material." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke Maxwells ligninger som basis for at forklare og beregne elektromagnetiske bølger i vakuum og i materialer." />
+          <Txt Lang="en-GB" Txt="Interpret Maxwell’s equations as a basis for explaining and determining electromagnetic waves in vacuum and in matter." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere laboratorieøvelser til teorien." />
+          <Txt Lang="en-GB" Txt="Relate exercises in the laboratory to the theory." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31400. 62773. 62774" />
+        <PreviousCourse CourseCode="10009" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:49.68" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

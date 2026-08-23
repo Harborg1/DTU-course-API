@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34753" University="dtu" LastUpdated="2024-04-02+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Robotteknik" />
+        <Title Lang="en-GB" Title="Robotics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="70" KVL_Resources="100" />
+          <Ass_Dep UID="41" Resources="30" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Course_Responsible PersonKey="142533" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Matteo</GivenName>
+            <FamilyName>Fumagalli</FamilyName>
+            <Email>mafum@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="65472" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Konstantinos</GivenName>
+            <FamilyName>Poulios</FamilyName>
+            <Email>kopo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen og rapport bedømmes som en helhed" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The written exam and the report are evaluated together." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til robotteknik og applikationsområder, herunder industrirobotter og servicerobotter. Matematisk modellering af robotter og mekanismer. Rumlige, geometriske beskrivelser af robotsystemer og deres bevægelser, herunder direkte og invers kinematik samt geometriske notationer og transformationer. Robotarmens dynamik og bevægelsesligninger. Styring af robotter, klassisk lineær styring, multivariabel styring og modelbaserede styrestrategier. Trajektorie- og bevægelsesplanlægning samt trajektorie-generering ved interpolation. Indføring i programmering og simulation af robotsystemer ved brug af IT-værktøjer. Tekniske, økonomiske overvejelser ved indføring af robotsystemer i industrien. Obligatorisk projektopgave med robottekniske temaer inden for kinematik, dynamik, trajektorieplanlægning, styring, simulering, programmering mm. Skriftlig projektrapportering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelse, gruppearbejde og hjemmeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>Robot Modeling and Control by Mark W. Spong, Seth Hutchinson, M Vidyasagar. John Wiley &amp; Sons, Inc 2006</Course_Literature>
+          <Course_Objectives>At indføre deltagerne i teori, metoder og teknikker for matematisk modellering, design, styring og programmering af robotsystemer og applikationer. 
+Formålet er, at deltagerne bliver i stand til at arbejde professionelt med robotteknik med fokus på anvendelsesmuligheder af industrirobotter og servicerobotter, herunder i integrerede produktionssystemer. 
+Desuden er formålet, at tilegne sig ingeniørmæssige kundskaber og kompetencer for forskning og produktudvikling med intelligente robotter og løsninger.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to robotics and application areas. Mathamatical modelling of robots and mechanisms. Spatial descriptions and transformations related to robotic systems. Kinematic notations. Direct and inverse kinematics. Jacobians for the calculation velocities and static forces. Robot manipulator dynamics. Trajectory planning, and trajectory generation by interpolation. Robot control; classic linear control, multivariable control, and model based control strategies. Introduction to CAD/CAE based programming and simulation of robotic systems. Technical and economical considerations concerning the implementation of robotics system in industry. Obligatory project task concerning kinetic modelling, programming and simulation of a robotic system, etc. Written project report.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, group work and homework.</Teaching_And_Learning_Methods>
+          <Course_Literature>Robot Modeling and Control by Mark W. Spong, Seth Hutchinson, M Vidyasagar. John Wiley &amp; Sons, Inc 2006</Course_Literature>
+          <Course_Objectives>Is to introduce the robotics theories, methods, and techniques for the mathematical modelling, design, control, and programming of robot systems and applications.
+The aim is to enable the students to manage to work professional engineering with focus on application of industrial robots and service robots, including the Computer Integrated Manufacturing. 
+Furthermore the aim is to qualify the students with competences and engineering skills for further research and product development of intelligent robots and solutions.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til styreteknik svarende til et indledende kursus i styreteknik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of control theory  corresponding to an introductory control course." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="31300/31301/41671/41672/42672" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og vurdere kravspecifikationer og analysere anvendelsesområderne for industrielle robotter og servicerobotter med fokus på matematisk modellering af robotters og mekanismers geometri, kinematik, dynamik og energikilde. " />
+          <Txt Lang="en-GB" Txt="Define and evaluate design specifications and analyze application areas of industrial robot and service robots focusing on  mathematical modelling of robots’ and mechanisms’ geometry, kinematics, dynamics and sources of energy, " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og anvende rumlige koordinatbeskrivelser og koordinattransformationer baseret på homogene transformationsmatricer." />
+          <Txt Lang="en-GB" Txt="Analyze and apply coordinate transformations and representations in the three dimensional space by use of homogeneous transformation matrices." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Denavit-Hartenberg Convension til repræsentation af serielle robotmekanismers kinematik." />
+          <Txt Lang="en-GB" Txt="Apply the Denavit-Hartenberg Convension for the kinematic representation of serial robot mechanisms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage ligefremme- og invers kinematiske transformations-beregninger mellem serielle industrirobotters egne koordinatrum og det kartesiske koordinatrum." />
+          <Txt Lang="en-GB" Txt="Apply forward and inverse kinematic transformations between the robot joint space and the three dimensional Cartesian space." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede Jacobimatricer og benytte disse i forbindelse med udregning af hastighedstransformationer, statiske kraft/moment transformationer, singularitetsanalyse samt analyse af robottens bevægelighed (manipulabilitet) mm." />
+          <Txt Lang="en-GB" Txt="Derive the Jacobians for serial mechanisms and apply these matrices for the transformation of velocities and static force/torque as well as the analysis of singularities and manipulability, etc" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille multivariable, ulineære og koblede dynamiske bevægelsesligninger for serielle robotmekanismer." />
+          <Txt Lang="en-GB" Txt="Develop the multivariable, nonlinear and coupled dynamic equations for serial mechanisms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille lineære, dynamisk afkoblede robotmodeller ud fra analyser af ulineære, multivariable og koblede robotmodeller. " />
+          <Txt Lang="en-GB" Txt="Develop linear, dynamically uncoupled robot models from the nonlinear, multivariable and coupled robot models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere forskellige former for planlægning af robotters bevægelsesmønstre (trajektorieplanlægning)." />
+          <Txt Lang="en-GB" Txt="Carry out different kinds of trajectory planning." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte klassisk styreteori til analyse og syntese af servosystemer til drift af robotter. " />
+          <Txt Lang="en-GB" Txt="Apply classic control theory for analysis and synthesis of robotics servo systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre et mindre projektarbejde vedrørende styreteknisk analyse og dimensionering af robot manipulatorer." />
+          <Txt Lang="en-GB" Txt="Carry out project teamwork on control engineering analysis and design of a robot manipulator." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere en grundlæggende viden om de forskellige, gængse robotprogrammerings¬metoder der benyttes i industrien i dag. " />
+          <Txt Lang="en-GB" Txt="Demonstrate a basic knowledge concerning typical state of the art robot programming methods used in industry. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Lær om industrirobotter</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41625.42625.31383" />
+        <PreviousCourse CourseCode="42625" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="2" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="5639" PersonUniversity="dtu" Date="2026-07-13" Time="13:51:50.52" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

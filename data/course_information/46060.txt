@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46060" Volume="2026/2027" University="dtu" LastUpdated="2026-03-16+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Projekt i design af hybrid kraftværk" />
+        <Title Lang="en-GB" Title="Hybrid power plant design project" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Hybrid kursus - forelæsninger og aktiviteter vil foregå både i klasseværelset og online." />
+          <LocationTxt Lang="en-GB" Txt="Hybrid course - lectures and activities will be done both classroom and online." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Hybrid kursus - forelæsninger og aktiviteter vil foregå både i klasseværelset og online." />
+          <Schedule_Txt Lang="en-GB" Txt="Hybrid course - lectures and activities will be done both classroom and online." />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="81572" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kaushik</GivenName>
+            <FamilyName>Das</FamilyName>
+            <Email>kdas@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="188890" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Megha</GivenName>
+            <FamilyName>Gupta</FamilyName>
+            <Email>gupta@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="154843" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Rujie</GivenName>
+            <FamilyName>Zhu</FamilyName>
+            <Email>ruzhu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="23054" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mikkel</GivenName>
+            <FamilyName>Friis-Møller</FamilyName>
+            <Email>mikf@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eleverne skal arbejde i grupper. Hver gruppe afleverer en rapport inden den mundtlige eksamen. Ved den mundtlige eksamen præsenterer de studerende det arbejde, der er udført i løbet af forløbet. Karakteren gives ud fra en helhedsvurdering af projektrapporten og den mundtlige prøve." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The students should work in groups. Each group will hand in a report before the oral exam. At the oral exam, the students will present the work done during the course. The grade will be given based on an overall assessment of the project report and the oral examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="30 min " />
+          <Duration Lang="en-GB" Txt="30 min" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus vil introducere koncepter for et hybridkraftværk bestående af vindmøller, solpaneler, elektrisk lagring såsom batteri og brintelektrolysator forbundet og drevet i koordination som et enkelt kraftværk. Problemet, præsenteret af instruktørerne, vedrører design og evaluering af et hybridkraftværks ydeevne for at maksimere dets profit ved at sælge elektricitet og brint til henholdsvis elnettet og brintbrugere. Teams vil udvikle en projektplan for de forskellige aspekter af projektet, der identificerer delopgaverne og tidsplanen. Hvert hold vil bruge DTU’s Python-baserede HyDesign-værktøj (https://topfarm.pages.windenergy.dtu.dk/hydesign/) til at designe og evaluere et hybridkraftværks ydeevne. Holdene vil udføre flere følsomhedsundersøgelser af deres design, som vil blive diskuteret og besluttet under udviklingen af ​​projektplanen. Holdene vil præsentere resultaterne i en slide-deck-præsentation eller en plakatpræsentation, der viser ydeevnen af ​​deres hybridkraftværksdesign og mulige retningslinjer for at forbedre det.</Contents>
+          <Teaching_And_Learning_Methods>gruppebaseret projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Alt undervisningsmateriale og relevant litteratur vil blive leveret af lærerne i digital form.</Course_Literature>
+          <Course_Objectives>Kursets fokus er på brugsskala multi-teknologi hybride kraft-/energianlæg, der omfatter vindkraft, solenergi, elektrisk lagring og eller P2X-konverteringsteknologier som brintelektrolysatorer. De studerende på dette kursus skal designe et sådant hybridkraftværk ved hjælp af ’DTU’s Python-baserede værktøj HyDesign’ gennem simulering. Den studerende vil evaluere rentabiliteten og gennemførligheden af ​​deres design gennem følsomhedsundersøgelser. I løbet af processen vil de studerende forstå det grundlæggende i et hybridkraftværk - såsom - de fremtrædende træk ved et hybridkraftværk, faktorer, der påvirker rentabiliteten af ​​et hybridkraftværk og evaluering af et hybridkraftværks ydeevne. Bliv motiveret til at arbejde i teams.</Course_Objectives>
+          <DTU_Remark>I løbet af dette kursus vil du forstå det grundlæggende i et hybridkraftværk bestående af vindkraft, solenergi, batterilagring og brintelektrolysatorer. Slut dig til os og lær uvurderlige designfærdigheder for at booste dit CV som ingeniør i bæredygtig energi.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course will introduce concepts of a hybrid power plant consisting of wind turbines, solar panels, electrical storage such as battery, and hydrogen electrolyzer connected and operated in coordination as a singular power plant. The problem, presented by the instructors, relates to designing and evaluating the performance of a hybrid power plant to maximize its profit by selling electricity and hydrogen to the power grid and hydrogen users respectively. Teams will develop a project plan for the different aspects of the project, identifying the sub-tasks and the time plan. Each team will use DTU’s Python-based HyDesign tool (https://topfarm.pages.windenergy.dtu.dk/hydesign/) to design and evaluate the performance of a hybrid power plant. The teams will perform multiple sensitivity studies on their design which will be discussed and decided during the development of the project plan. The teams will present the results in a slide-deck presentation or a poster presentation, showing the performance of their hybrid power plant design and possible guidelines to improve it.</Contents>
+          <Teaching_And_Learning_Methods>group-based project work</Teaching_And_Learning_Methods>
+          <Course_Literature>All learning materials and relevant literature will be provided by the teachers in digital form.</Course_Literature>
+          <Course_Objectives>The focus of the course is on utility-scale multi-technology hybrid power/energy plants comprising wind power, solar power, electrical storage, and or P2X conversion technologies like hydrogen electrolyzers. The students in this course will be designing such a hybrid power plant using ‘DTU’s Python-based tool HyDesign’ through simulation. The student will evaluate the profitability and feasibility of their design through sensitivity studies. During the process, the students will understand the fundamentals of a hybrid power plant – such as – the salient features of a hybrid power plant, factors affecting the profitability of a hybrid power plant, and evaluation of the performance of a hybrid power plant. Be motivated to work in teams.</Course_Objectives>
+          <DTU_Remark>During this course, you will understand the fundamentals of a hybrid power plant consisting of wind power, solar power, battery storage and hydrogen electrolysers. Join us and learn invaluable design skills to boost your CV as an engineer in sustainable energy.</DTU_Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Programmeringsforudsætninger: grundlæggende kendskab til Python" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Programming prerequisites: basic knowledge of Python" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om generations- og lagringsteknologier." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of generation and storage technologies." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="47214" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definer konceptet for et hybridkraftværk" />
+          <Txt Lang="en-GB" Txt="Define the concept of a hybrid power plant." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Angiv de potentielle værdier af hybridkraftværker" />
+          <Txt Lang="en-GB" Txt="List the potential values of a hybrid power plant." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør grundlæggende tidsserieanalyse, grundlæggende statistisk analyse og visualisering i Python." />
+          <Txt Lang="en-GB" Txt="Perform basic time series analysis, basic statistical analysis, and visualization in Python." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar de grundlæggende principper for designprincipper for et hybridkraftværk." />
+          <Txt Lang="en-GB" Txt="Explain the fundamentals of design principles of a hybrid power plant." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skitser det grundlæggende i driftsprincipperne for et hybridkraftværk." />
+          <Txt Lang="en-GB" Txt="Outline the fundamentals of operational principles of a hybrid power plant." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og drift et realistisk hybridkraftværk gennem simulering i HyDesign." />
+          <Txt Lang="en-GB" Txt="Design and operate a realistic hybrid power plant through simulation in HyDesign." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser ydeevnen af ​​et hybridkraftværk gennem øvelsesbaseret læring." />
+          <Txt Lang="en-GB" Txt="Analyze the performance of a hybrid power plant through exercise-based learning." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle teknisk rapportskrivning og præsentationsevner." />
+          <Txt Lang="en-GB" Txt="Develop technical report writing and presentation skills." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="60" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:27.78" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

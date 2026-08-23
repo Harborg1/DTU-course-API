@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34603" University="dtu" LastUpdated="2026-04-04+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Elektriske vekselstrøm kredsløb" />
+        <Title Lang="en-GB" Title="Electric circuits with alternating currents" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Det er muligt, at obligatoriske øvelser ligger udenfor skemaet - afhængig af, hvordan studiegrupperne organiserer deres læring" />
+          <Schedule_Txt Lang="en-GB" Txt="Mandatory exercises might be scheduled outside the scheme - dependent on how the study groups organise their work." />
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="37925" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Arnold</GivenName>
+            <FamilyName>Knott</FamilyName>
+            <Email>knott@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset vurderes ved en helhedsvurdering. Der er ingen afsluttende eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course is evaluated based on overall assessment. There is no final exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Elektriske signaler i vekselstrømskredsløb i tids og frekvensdomæne, passive komponenter i vekselstrømssammenhæng, analoge elektriske kredsløb, overføringsfunktioner, og anvendelser (f.x. passive og aktive filtre, forstærkere, motor drives, oscillatorer, strømforsyninger)</Contents>
+          <Teaching_And_Learning_Methods>Undervisningsmaterialet består af: video and quizzes, chat-baseret kommunikation, kunstig intelligens, peer-reviewing, opgaveregning og laboratoriearbejde, øvelser
+Undervisning er baseret på flipped classroom.
+Læring fremmes ved samskabelse med grupperne og klassen.</Teaching_And_Learning_Methods>
+          <Course_Literature>Thomas, Roland E., Albert J. Rosa, and Gregory J. Toussaint. The analysis and design of linear circuits. Wiley Publishing. (alle udgaver er ok)</Course_Literature>
+          <Course_Objectives>Forståelse og anvendelse af analoge signaler, komponenter og deres sammensætning i vekselstrømkredsløb samt anvendelse i applikationer</Course_Objectives>
+          <DTU_Remark>Der indgår et antal opgaver i kurset, som er fordelt over hele semesteret. Den teoretiske del af kurset kan tages online.
+Alle studieretninger er velkomne, så længe du bringer lysten til at lære indholdet af faget.</DTU_Remark>
+          <Remark>Kurset indgår på andet semester af civilbachelor-programmet Elektroteknologi.
+E-learning: Teori-delen (cirka den første halvdel af kurset) kan i høj grad være "self-paced" learning (baseret på videoer og quizzes med hjælp igennem chat).
+Kursets opsætning afspejler i høj grad betingelserne på en ingeniørarbejdsplads.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Electric signals in alternating current circuitries in time and frequency domain, passive components in alternating current contexts, analog electrical circuits, transfer functions, and their applications (e.g. passive and active filters, amplifiers, motor drives, oscillator, power supplies)</Contents>
+          <Teaching_And_Learning_Methods>Offered teaching material through videos and quizzes, chat-based communication, artificial intelligens, peer-review, problem solving and lab work, exercises.
+The teaching is based on flipped classroom.
+Learning is encouraged as co-creation with group and class members.</Teaching_And_Learning_Methods>
+          <Course_Literature>Thomas, Roland E., Albert J. Rosa, and Gregory J. Toussaint. The analysis and design of linear circuits. Wiley Publishing. (all editions are ok)</Course_Literature>
+          <Course_Objectives>Understanding and application of analog signals, components and their composition in alternating current circuits as well as their usage in applications</Course_Objectives>
+          <DTU_Remark>A number of exercises are part of the course. Those are distributed throughout the semester. The theoretical part of the course can be taken online.
+All study lines are welcome as long as bring the desire to learn the content of the course.</DTU_Remark>
+          <Remark>The course is a second semester constituent of the bachelor programme Electro Technology.
+E-learning: The theory part (approximately the first half part of the course) can be taken "self-paced" to a high extend (based on videos, quizzes and chat-based help).
+The setup of the course highly reflects working conditions for a practicing engineer.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="- viden om trigonometriske funktioner,&#xD;&#xA;- komplekse tal, og&#xD;&#xA;- ohms lov og Kirchhoffs regler anvendt på jævnstrømskredsløb" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="- knowledge of trigonometric functions,&#xD;&#xA;- complex numbers, and&#xD;&#xA;- ohm's law and Kirchhoff's rules applied to direct current circuits" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="31001/34600" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gengive forskellige notationer og parametre af vekselstrøm, -spænding og -effekt" />
+          <Txt Lang="en-GB" Txt="Reproduce different notations and parameters of alternating currents, voltage and power" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlæggende Fourierrækker" />
+          <Txt Lang="en-GB" Txt="Explain basic Fourier series" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne decibel og anvende bodeplot" />
+          <Txt Lang="en-GB" Txt="Calculate decibel and apply bode plot" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de grundlæggende fysiske fænomener bagved passive komponenter (modstande, spoler, kondensatorer)" />
+          <Txt Lang="en-GB" Txt="Explain basic physical principles behind passive components (resistors, inductors and capacitors)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme egenskaber af passive kredsløb som impedanser og effekt" />
+          <Txt Lang="en-GB" Txt="Determine properties of passive circuits, such as impedances and power" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende Laplace-transformationer og bestemme og analysere overføringsfunktioner" />
+          <Txt Lang="en-GB" Txt="Apply basic LaPlace transformations and determine and analyse transfer functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere aktive vekselstrømkredsløb" />
+          <Txt Lang="en-GB" Txt="Analyse active alternating current circuitries" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere grundlæggende teoretisk viden til praktiske anvendelser" />
+          <Txt Lang="en-GB" Txt="Link basic theoretical knowledge to practical applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere viden om fagbegreber også på engelsk" />
+          <Txt Lang="en-GB" Txt="Demonstrate knowledge about technical terms also in English" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne forskellige simulerings- og måleværktøjer" />
+          <Txt Lang="en-GB" Txt="Compare different simulation and measurement tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skabe løsningsforslag til realistiske ingeniøropgaver under realistiske arbejdsbetingelser for ingeniører på en arbejdsplads" />
+          <Txt Lang="en-GB" Txt="Design solutions for realistic engineering problems under realistic working conditions for practicing engineers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samskabelse af resultater til alle opgaver og selv reflektion over eget læring og trivsel i ingeniørmiljø" />
+          <Txt Lang="en-GB" Txt="Co-creation of all exercises and self-reflection on own learning and wellbeing in an engineering environment" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Kredsløbsteori og analogelektronik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31004.31003.62732" />
+        <PreviousCourse CourseCode="31003" />
+        <PreviousCourse CourseCode="62732" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="39" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="48" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="52" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+        </OfferedAsACourseOfTypes>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:35.987" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

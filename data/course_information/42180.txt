@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42180" University="dtu" LastUpdated="2026-03-23+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kvantitativ modellering af adfærd" />
+        <Title Lang="en-GB" Title="Quantitative modelling of behaviour" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="31478" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anders Fjendbo</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>afjje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6666" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jeppe</GivenName>
+            <FamilyName>Rich</FamilyName>
+            <Email>rich@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evaluering består af et gruppeprojekt med individualiseret grupperapport og en mundtlig eksamen.&#xD;&#xA;&#xD;&#xA;Karakteren for kurset gives ud fra en samlet vurdering af den individuelle grupperapport og præstationen ved eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation consists of a group project with individualized report and an oral exam. &#xD;&#xA;&#xD;&#xA;The grade for the course is based on an overall assessment of the the indiviualised group report and the performance at the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="For the exam, written aid is allowed and a calculator." />
+            <Aid_Txt Lang="da-DK" Txt="Til eksamen er skriftlige hjælpemidler tilladt samt en lommeregner." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset består af forelæsninger om metode kombineret med øvelser og modelanvendelser på adfærdsdata fra forskellige domæner. Den metodiske del introducerer det mikroøkonomiske grundlag baseret på stokastisk nyttemaksimering, som danner grundlag for diskrete valgmodeller. Derudover introduceres de mest almindelige modeller: multinomiel logit og nested logit, samt mere avancerede modeller, der er mere realistiske. Anvendelserne fokuserer på, hvordan modellerne kan anvendes på både observationsdata og hypotetiske data. Kurset afsluttes med et større projekt, som lægger vægt på, at den studerende opnår en selvstændig og kritisk forståelse af metoden.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, diskussioner, teoretiske opgaver, computerøvelser og et projekt.</Teaching_And_Learning_Methods>
+          <Course_Literature>K. E. Train (2003), Discrete Choice Methods with Simulation, Cambridge University Press, UK
+
+M. Ben-Akiva and S. Lerman (1985),
+Discrete Choice Analysis, MIT Press, Cambridge Massachusetts</Course_Literature>
+          <Course_Objectives>Kurset introducerer de studerende til en væsentlig metode til markeds- og efterspørgselsanalyser. Kursets fokus er at give studerende kompetencer til at anvende diskrete valgmodeller til at analysere valg og adfærd, f.eks. i transport- eller energisystemer. Det dækker hvordan man konceptuelt modellerer adfærd ved hjælp af en matematisk model, analyserer adfærdsdata og anvender statistiske modeller til forudsigelser og markedsanalyse.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course mixes lectures on methodology with exercises and applications of the models to data on behaviour in various contexts. The methodological part introduces the microeconomic framework based on random utility maximization that is fundamental for discrete choice models. Furthermore, it focuses on the most common discrete choice models: multinomial logit models and nested logit model. In addition, we also look at more advanced models and how they can enhance the realism of the modelling. The applications focus on how to apply the models to real as well as hypothetical data. The final part of the course focuses on overall and critical understanding of the methodology through application of the methods in a project.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, discussions, theoretical and computer exercises, and a project.</Teaching_And_Learning_Methods>
+          <Course_Literature>K. E. Train (2003), Discrete Choice Methods with Simulation, Cambridge University Press, UK
+
+M. Ben-Akiva and S. Lerman (1985),
+Discrete Choice Analysis, MIT Press, Cambridge Massachusetts</Course_Literature>
+          <Course_Objectives>The course introduces a powerful method for market and demand analysis. The main objective is to make students capable of using discrete choice models to analyse choice behaviour, e.g. in transportation or energy systems. This includes how to conceptualise behaviour using a mathematical model, analyse behavioural data, and statistical modelling that can be used for forecasting and market analysis.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller lignende introduktionskursus om statistik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or similar introduction course to statistics." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402/02403/02323" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de grundlæggende principper bag diskrete valgmodeller" />
+          <Txt Lang="en-GB" Txt="Explain the basic principles behind discrete choice models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Klassificere diskrete valgmodeller og diskutere deres begrænsninger og styrker" />
+          <Txt Lang="en-GB" Txt="Classify choice models and discuss their strengths and weaknesses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere adfærdsdata ved hjælp af diskrete valgmodeller " />
+          <Txt Lang="en-GB" Txt="Analyse behavioural data using discrete choice models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte software til at estimere diskrete valgmodeller " />
+          <Txt Lang="en-GB" Txt="Use software to estimate discrete choice models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke og sammenligne statistiske analyser af valgdata " />
+          <Txt Lang="en-GB" Txt="Interpret and compare statistical analyses of choice data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende diskrete valgmodeller til efterspørgsels- og markedsanalyser " />
+          <Txt Lang="en-GB" Txt="Apply discrete choice models to do demand and market analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne værdisætninger og elasticiteter af væsentlige attributer " />
+          <Txt Lang="en-GB" Txt="Calculate valuation measures and elasticities of relevant attributes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for brugen af en specifik model til et specifikt problem " />
+          <Txt Lang="en-GB" Txt="Argue concerning the usefulness of a specific model for a specific problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en metodemæssigt korrekt rapport, der beskriver fænomenet gennem en deskriptiv analyse af data, databehandling, modelestimering og en kritisk diskussion af resultaterne" />
+          <Txt Lang="en-GB" Txt="Write a methodologically sound report containing description of the phenomenon using a descriptive analysis of the data, treatment of data, model estimation and a critical discussion of the results" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Statistisk modellering af beslutninger </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="10" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="22" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="21" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="43" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:58.193" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

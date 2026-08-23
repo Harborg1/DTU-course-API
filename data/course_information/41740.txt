@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41740" Volume="2026/2027" University="dtu" LastUpdated="2026-02-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Digital fremstilling - Industri 4.0" />
+        <Title Lang="en-GB" Title="Digital Manufacturing - Industry 4.0" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="75" KVL_Resources="100" />
+          <Ass_Dep UID="1" Resources="25" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="14205" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Guido</GivenName>
+            <FamilyName>Tosello</FamilyName>
+            <Email>guto@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="844" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jesper Henri</GivenName>
+            <FamilyName>Hattel</FamilyName>
+            <Email>jhat@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="75743" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sankhya</GivenName>
+            <FamilyName>Mohanty</FamilyName>
+            <Email>samoh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="33533" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Murat</GivenName>
+            <FamilyName>Külahci</FamilyName>
+            <Email>muku@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af 2 individuelle rapporter. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of 2 individual reports. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Generelle digitale værktøjer til analyse af fremstillingsprocesser, herunder specielt additiv fremstilling og sprøjtestøbning. Klassificering af datatyper, herunder off-line data, in-line data, eksperimentelle data og observationsdata. Data processering og datakvalitet. Data-drevne modeller. Korrelation (sammenhæng) og kausalitet (årsagssammenhæng). Fysikbaserede modeller for sprøjtestøbning og additiv fremstilling til beskrivelse af temperaturer, flow og spændinger/deformationer. Simple analytiske løsninger og numeriske løsninger. Reduced Order Models (ROMs) baseret på både eksperimentelle data, observationsdata og simulerede data. Optimering af processer baseret på ROMs.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Hovedformålet med kurset er at give de studerende en forståelse for og en portefølje af værktøjer (teknikker) til optimering af fremstillingsprocesser.
+Opfyldelsen af målet er baseret på indhentning af data (både eksperimentelle og simulerede) og de tilsvarende analysemetoder til ekstrahering af nyttig information og viden fra disse data.
+Rent konkret vil kurset integrere følgende tre hovedområder inden for data, analyse og digital fremstilling:
+(1) Multi-fysisk processimulering (modeldrevet simulering, f.eks. finite element-metoder og computational fluid dynamics samt analytiske løsninger for simple systemer).
+(2) Statistisk modellering (datadrevet simulering, f.eks. design af eksperimenter, multivariat analyse, maskinlæring).
+(3) Digital tvillingteknologi (integration af fysiske data og simulerede data).</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>General digital tools for analysis of manufacturing processes with special focus on additive manufacturing and injection moulding. Classification of data including off-line data, in-line data, experimental data and observational data. Data processing and data quality. Data-driven models. Correlation and causation. 1st principles models for injection moulding and additive manufacturing for description of temperatures, material flow as well stresses and deformations. Simple analytical solutions and numerical solutions. Reduced Order Models (ROMs) based on both experimental data, observational data as well as simulated data. Optimization of manufacturing processes based on ROMs.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The main goal of the course is to provide the students with an understanding and a portfolio of actionable tools (techniques) for the optimization of manufacturing processes.
+The achievement of the objective is based on acquisition of data (both experimental and simulation) and the corresponding analytics to extract knowledge from those data.
+Specifically, the course will integrate three main domains of data, analytics, and digital manufacturing:
+(1) Multi-physics process simulation (model-driven simulation, e.g., finite element methods, computational fluid dynamics as well analytical solutions from simplified systems).
+(2) Statistical modelling (data-driven simulation, e.g., design of experiments, multivariate analysis, machine learning).
+(3) Digital twin technology (integration of physical data and simulative data).</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Produktionsteknologi svarende til 41714/41787/41788. Materialelære svarende til 41681/41650/41659. Styrkelære svarende til 41502/41534. Matematik svarende til 01035." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of basic production technology 41714/41787/41788. Knowledge of materials technology corresponding to 41681/41650/41659. Knowledge of strength of materials corresponding to 41502/41534. Knowledge of mathematics corresponding to 01035." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de vigtigste tilgange og metoder anvendt indenfor digitalisering af fremstillingsprocesser og produktion." />
+          <Txt Lang="en-GB" Txt="Describe the most important approaches and methods used within digitalization of manufacturing processes and production." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Behandle og analysere data (både off-line og in-line) genereret under fremstilling og identificere sammenhænge til effektiv beslutningstagning på tværs af hele dataværdikæden, herunder: (i) Predefinering af data; (ii) Databehandling; (iii) Data efterbehandling; (iv) Datakvalitet." />
+          <Txt Lang="en-GB" Txt="Manage and analyze data (both off-line and in-line) generated during manufacturing to extract insight and valuable information for effective decision making cross the entire data value chain including: (i) Data pre-setting; (ii) Data processing; (iii) Data post-process; (iv) Data quality." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og anvende de mest relevante ”1. principle”-baserede modelleringsteknikker til simulering og optimering af en given fremstillingsproces." />
+          <Txt Lang="en-GB" Txt="Identify and apply the most relevant 1st principles-based modelling techniques for the simulation and optimization of a given manufacturing process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og anvende de mest relevante datadrevne modelleringsteknikker til simulering og optimering af en given fremstillingsproces. " />
+          <Txt Lang="en-GB" Txt="Identify and apply the most relevant data-driven modelling techniques for the simulation and optimization of a given manufacturing process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare produkt/proces kausaliteter og sammenhænge baseret på (a) viden om materialevidenskab og materialeopførsel; b) viden om fremstilling; (c) dataanalyse." />
+          <Txt Lang="en-GB" Txt="Explain product/process causalities and correlations based on (a) materials science and material behavior understanding; (b) manufacturing knowledge; (c) data analytics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne og diskutere forskelle mellem 'korrelation' (sammenhæng) og 'kausalitet' (årsagssammenhæng)." />
+          <Txt Lang="en-GB" Txt="Distinguish and discuss the differences between 'correlation' and 'causality'." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anbefale optimeringsstrategier for at forbedre fremstillingsprocesser og proceskæder baseret på eksperimentelle og simulative data." />
+          <Txt Lang="en-GB" Txt="Recommend optimization strategies to improve the performance of single manufacturing processes as well as process chains based on experimental and simulative data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge Reduced Order Models (ROMs)." />
+          <Txt Lang="en-GB" Txt="Use Reduced Order Models (ROMs)." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="22" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="30" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:52.85" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="62664" University="dtu" LastUpdated="2025-03-10+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Matematik i Fysikken" />
+        <Title Lang="en-GB" Title="Matematical Methods in Physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="campua_sisimiut" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="6 uger&#xD;&#xA;1. del ligger 13. januar til og med den 31. januar. &#xD;&#xA;2. del endnu ikke fastlagt" />
+          <Schedule_Txt Lang="en-GB" Txt="6 weeks&#xD;&#xA;Part 1 runs from January 13th to January 31st.&#xD;&#xA;Part 2 not yet determined" />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="3786" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Bo</GivenName>
+            <FamilyName>Gervang</FamilyName>
+            <Email>boge@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="(1) Forståelsestest (25%) - (2) Praktisk opgave (75%)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="(1) Test of understanding (25%) - (2) Practical assignment (75%)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="however (1) without any aid - (2) all aid allowed" />
+            <Aid_Txt Lang="da-DK" Txt="(1) er dog uden hjælpemidler - (2) alle hjælpemidler er tilladt" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="(1) 1 time - (2) 8 timer" />
+          <Duration Lang="en-GB" Txt="(1) 1 hour - (2) 8 hours" />
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Centrale elementer:
+- Dynamiske systemer
+- Differentialligninger
+
+Emner:
+
+Repetition matematik: polynomier, trigonometriske funktioner, eksponent-, potens- og logaritmefunktioner, differentation, integration
+
+Repetition fysik: kinematik, Newtons love, kræfter, energi, effekt, bevarelsessætninger
+
+Komplekse tal: definition, polære koordinater, kompleks eksponentialfunktion, Eulers formler
+
+Differentialligninger: lineære og ikke-lineære af første orden, homogene og inhomogene lineære af anden orden med konstante koefficienter
+
+Parameterfremstilling
+
+Arealmomenter og planintegraler
+
+Funktioner af to variable: partiel differentation, stationære punkter
+ 
+Nøjagtighed, usikkerhed, middelværdi, spredning
+
+Harmoniske svingninger: vinkelfrekvens, frie, dæmpede, tvungne, resonans
+
+Mekanisk fysik: vinkelhastighed, vinkelacceleration, kraftmoment, massemidtpunkt, inertimoment, impulsmoment 
+
+Computerprogrammer til matematik, visualisering af matematiske funktioner</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning og opgaveregning</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give den studerende forståelse for matematiske metoder og sætte den studerende i stand til at bruge matematiske værktøjer til at modellere og løse problemer fra fysikken.</Course_Objectives>
+          <Remark>Sektion for Ingeniørdidaktik og -pædagogik
+Arktisk Byggeri og Infrastruktur: 1. og 2. semester
+Fiskeriteknologi: 1. og 2. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Core elements:
+- Dynamic systems
+- Differential equations
+
+Topics:
+
+Refresher mathematics: trigonometric functions, exponential, power and logarithmic functions, differentiation, integration
+
+Refresher physics: kinematics, Newton's laws, forces, energy, power,  laws of conservation
+
+Complex numbers: definition, polar coordinates, the complex exponential function, Eulers's formulas
+
+Differential equations: linear and non-linear of first order,  linear of second order with constant coefficients
+
+Parametric equation
+
+Double integrals and area moments
+
+Functions of two variables, partial differentiation
+
+Accuracy, mean value, std. deviation
+
+Harmonic oscillations: angular frequency, free, forced, damped, ressonance
+
+Mechanics: torque, center of mass, momentum of inertia, angular momentum 
+
+Computer programs for mathematics, visualization</Contents>
+          <Teaching_And_Learning_Methods>Lectures and assignments</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the student an appreciation of mathematical methods and make the student able to use mathematical tools to model and solve problems from physics.</Course_Objectives>
+          <Remark>Section of Engineering Education Research
+
+Arctic Civil Engineering: 1 and 2 term
+Fisheries Technology: 1 and 2 term</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opstille matematiske modeller for dynamiske systemer" />
+          <Txt Lang="en-GB" Txt="set up mathematical models for dynamic systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere randværdier for modellerne under givne betingelser" />
+          <Txt Lang="en-GB" Txt="identify intial conditions for a specifik situation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="finde løsninger til modellerne med disse randværdier" />
+          <Txt Lang="en-GB" Txt="find solutions to these models with given initial conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="præsentere løsningerne grafisk og beskrive disse" />
+          <Txt Lang="en-GB" Txt=" graphic presentations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="finde ekstremer for funktioner af to variable" />
+          <Txt Lang="en-GB" Txt="functions of two variables" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kategorisere forskellige typer svingning, dæmpning og interferens" />
+          <Txt Lang="en-GB" Txt="categorize types of oscillation, damping and interference" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere datas usikkerhed og løsningers nøjagtighed" />
+          <Txt Lang="en-GB" Txt="evaluate uncertainty and the validity of a solution" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende matematikprogram til at løse autentiske problemer" />
+          <Txt Lang="en-GB" Txt="use software to solve real-world problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="01901/11834" />
+        <PreviousCourse CourseCode="11834" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="16" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="95" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="5" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:55.457" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

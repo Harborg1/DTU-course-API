@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="23257" Volume="2026/2027" University="dtu" LastUpdated="2025-04-08+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="23" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Kompositionel analyse af genomiske data" />
+        <Title Lang="en-GB" Title="Compositional data analysis with applications in genomics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="23" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="95209" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Brinch</FamilyName>
+            <Email>cbri@food.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Report" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="2 uger" />
+          <Duration Lang="en-GB" Txt="2 weeks" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus giver en interdisciplinær introduktion til kompositionel dataanalyse og modellering. Vi tager udgangspunkt i genomiske data, men undervejs vil vi kigge på data fra andre kilder en genetik. Undervisningen består af forelæsninger som vil præsentere de matematiske metoder, samt af øvelser hvor vi arbejder med kompositionelle data.</Contents>
+          <Teaching_And_Learning_Methods>50% forelæsninger, 50% praktiske øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>I dette kursus introduceres de matematiske metoder der bruges til at analysere, visualisere og fortolke genomiske (kompositionelle) data. Data, som består af proportioner, tælletal, procenter eller koncentrationer er kompositionelle, og de kan ikke analyseres som almindelige multivariate data. Man kan imidlertid transformere kompositioner således at standard multivariate metoder kan anvendes. 
+Målet med kurset er at forstå de matematiske principper bag kompositioner og lære at vurdere kvaliteten af genomiske data. De studerende lærer at lave eksplorativ dataanalyse, visualisere kompositioner, samt at anvende statistiske metoder på kompositionelle data.
+Man møder kompositionelle data i mange grene af videnskaben (fx. geologi, kemi, miljøstudier, sundhedsvidenskab) og derfor er dette kursus relevant for enhver som har interesse i generel data science.</Course_Objectives>
+          <Remark>Den studerende forventes at have kendskab til lineær algebra, statistik, og have grundlæggende programmeringserfaring med Python, R, Matlab eller tilsvarende.
+Imod slutningen af kurset vil der blive delt sæt af kompositionelle data ud til de studerende som skal analyseres på baggrund af teknikker som er blevet gennemgået. Denne analyse skal afleveres som en skriftlig opgave og bliver evalueret som en skriftlig eksamen.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course gives an interdisciplinary introduction to compositional data analysis and modeling. While the course will mainly be anchored in applications to genomic data analysis, we will, throughout the course, draw examples from a variety of other topics.  We will work through the mathematical framework during lectures and apply the techniques to real world examples during hand-on exercises.</Contents>
+          <Teaching_And_Learning_Methods>50% lectures, 50% hands-on exercise</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course introduces to the mathematical tools that are required to analyze, visualize, and interpret genomic (compositional) count data. Data, which describes proportions, counts, percentages, or concentrations are compositional and cannot be analyzed as real multivariate data. However, using appropriate transformations, compositional data can be projected into a multivariate real space, on which we can use all available standard multivariate methods. 
+The objectives of this course are to let the students understand the mathematical principles behind compositions, and asses the quality of genomic data. The students will learn how to perform explorative data analysis and visualize compositions, and finally how to use standard statistical methods in a compositional framework.
+Apart from the study of genomics, compositional data are encountered in broad range of study fields (e.g., geology, chemistry, political sciences, environmental studies, health science, etc.) and this course is therefore relevant for any student who has an interest in general data science.</Course_Objectives>
+          <Remark>Students are expected to have prior knowledge of linear algebra and statistics, and basic programing skills in Python, R or Matlab.
+Towards the end of the course, students will pick a compositional data set, which they will analyze and visualize based on the techniques they have learned. The result should be handed in as a written report, which is the exam for the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Mathematics 1a and 1b (01001-01004)&#xD;&#xA;Computer programming (02002-02003) eller tilsvarende" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Mathematics 1a and 1b (01001-01004)&#xD;&#xA;Computer programming (02002-02003) or equivalent" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne genkende kompositionelle data og huske de matematiske regler der gælder for denne slags data" />
+          <Txt Lang="en-GB" Txt="Identify compositional data and remember the basic mathematical rules that apply to such data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellen mellem kompositionelle og ikke-kompositionelle data" />
+          <Txt Lang="en-GB" Txt="Describe the difference between compositional and non-compositional data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gøre rede for og anvende grundlæggende algebraiske principper, så som afstandsmetrikker, vektorrum og logratio-transformationer" />
+          <Txt Lang="en-GB" Txt="Describe and use the basic algebraic concepts, such as distance metrics, vector spaces, and log-ratio transformations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende de passende transformationer til at udforske kompositionelle data" />
+          <Txt Lang="en-GB" Txt="Use the appropriate transformation techniques to explore compositional data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Bayesianske metoder til at analysere kompositioner med nul-værdier" />
+          <Txt Lang="en-GB" Txt="Use Bayesian techniques to analyze sparse compositions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne teste hypoteser på baggrund af kompositionelle data" />
+          <Txt Lang="en-GB" Txt="Visualize compositional data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre explorativ analyse af kompositionelle data med PCA" />
+          <Txt Lang="en-GB" Txt="Perform hypothesis testing on compositional data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualisere kompositionalle data" />
+          <Txt Lang="en-GB" Txt="Perform exploratory analysis of compositional data using PCA" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive tidsopløste kompositionalle data som en kompositionel process" />
+          <Txt Lang="en-GB" Txt="Describe time-resolved compositional data as a compositional process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forsvare den generelle brug af CoDa metoder til analyse af genomiske data." />
+          <Txt Lang="en-GB" Txt="Defend the general use of CoDa methods in genomic data analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:20:07.797" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

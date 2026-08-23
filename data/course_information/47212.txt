@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="47212" Volume="2026/2027" University="dtu" LastUpdated="2026-04-30+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Computersimulering af materialer" />
+        <Title Lang="en-GB" Title="Computer simulation of materials" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="47" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="41" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="47" />
+        <Course_Responsible PersonKey="86373" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Andrea Roberto</GivenName>
+            <FamilyName>Insinga</FamilyName>
+            <Email>aroin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38341" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Wolfgang</GivenName>
+            <FamilyName>Pantleon</FamilyName>
+            <Email>pawo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Efter hvert emne vil studerende aflevere en rapport om resultaterne fra et mindre gruppeprojekt.  Nogle grupper vil blive udvalgt til at præsentere resultaterne i form af en gruppepræsentation for lærerne og de andre studerende. Hver gruppe vil præsentere mindst en gang, muligvis flere gange hvis antallet af studerende tillader det. Bedømmelsen vil være baseret på en samlet vurdering af de tre projekt rapporter, præsentationen/præsentationerne og den endelige skriftlige eksamen. Den skriftlige eksamen will blive erstattet af en mundtlig eksamen uden hjælpemidler, hvis der er færre end 50 studerende. Ændringen vil blive annonceret i begyndelsen af kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Following each of the three topics, the students will hand in a report with the results of a small group project. Some groups will be selected to present their results in the form of a group presentation to the teachers and the other students. Each group will have to present at least once, or possibly more if the number of students allows it. The assessment will be based on an overall assessment of the three project reports, the presentation/presentations, and the final written examination. The written examination will be replaced by an oral exam without aids if there are less than 50 students. The change will be announced at the beginning of the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Forskellige beregningsmetoder til simulering af materialer vil blive opdelt i tre hovedemner, der hvert dækkes i løbet af fire uger. Følgende metoder vil blive introduceret i kurset: 1) termodynamiske beregninger og diffusionssimuleringer, 2) Monte Carlo-simuleringer, og 3) egenskabsmodellering ved homogenisering ved brug af finite element-metoden. Inden for hver 4-ugers periode vil de studerende først lære om de forskellige simuleringsværktøjer via forelæsninger og små øvelser. Derefter vil der blive introduceret et gruppeprojekt for hvert emne. Gruppeprojekterne vil anvende simuleringsmetoderne på et materialevidenskabeligt problem. De studerende vil bruge de lærte simuleringsværktøjer til at løse specifikke problemer med komplekse faseligevægte, diffusionsinduceret fasetransformation, mikrostrukturel evolution under kornvækst og mekaniske egenskaber. Den simulerede mikrostruktur vil blive sammenlignet med rigtige mikrostrukturer. De studerende vil yderligere forudsige materialers egenskaber baseret på de simulerede mikrostrukturer. I slutningen af hver 4-ugers periode vil de studerende præsentere projektets resultater i form af en rapport eller en gruppepræsentation for underviserne og de øvrige studerende.</Contents>
+          <Teaching_And_Learning_Methods>Kurset indeholder tre hovedemner, der dækker over forskellige materialesimuleringsmetoder. Kurset er baseret på forelæsninger, simuleringsøvelser og projektarbejde i grupper.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusmaterialet vil blive gjort tilgængeligt online under kurset.</Course_Literature>
+          <Course_Objectives>I dette kursus vil den studerende opnå forståelse for de grundlæggende principper bag numeriske simuleringer af mikrostrukturudvikling i krystallinske materialer (oxider og metaller) induceret af kemiske, mekaniske eller termiske eksterne belastninger, herunder de tilhørende ændringer i materialeegenskaber, såsom mikrostruktur, elektrisk og termisk ledningsevne, elasticitet osv. Dette kursus giver en introduktion til forskellige materialesimuleringsmetoder fra mikro- til makroskala og hjælper de studerende, som ønsker at gå dybere ind i computersimulering og/eller design af strukturelle eller funktionelle materialer i senere kurser, på vej.</Course_Objectives>
+          <DTU_Remark>Er du interesseret i at lære computersimuleringer for at forstå materialesystemer og drive fremtidig teknologi og innovation inden for materialevidenskab og -teknik? Hvis ja, er dette et kursus for dig.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Different computational materials simulation methods will be divided into three main topics each being discussed for four weeks. The following methods will be introduced in the course: (1) thermodynamic calculations and diffusion simulations, (2) Monte Carlo simulations, and (3) property modelling by homogenization using the finite element method. Within each 4-week period, the students will first learn about the different simulation tools via lectures and small exercises. Then a group project will be introduced for each topic. The students will apply the simulation methods to a materials science problem. The students will utilize the simulation tools to address specific problems of complex phase equilibria, diffusion induced phase transformation, microstructural evolution during grain growth and mechanical properties. The simulated microstructure will be compared with real microstructures. The students will further predict materials properties based on the simulated microstructures. At the end of each 4-week period, the students will present the results of the project in the form of a report or a group presentation to the teachers and the other students.</Contents>
+          <Teaching_And_Learning_Methods>The course will contain three main topics discussing different materials simulation methods. The course will be based on lectures, simulation exercises and project work in groups.</Teaching_And_Learning_Methods>
+          <Course_Literature>Course materials will be made available online during the course.</Course_Literature>
+          <Course_Objectives>In this course, the student will obtain an understanding of basic principles behind numerical simulations of microstructure evolution in crystalline materials (oxides and metals) induced by chemical, mechanical or thermal external loads, including the associated changes in material properties, such as microstructure, electrical and thermal conductivity, elasticity etc. This course gives an introduction to various materials simulation methods from micro to macro scale and is thus priming the students who wish to go deeper into computer simulation and/or design of structural or functional materials in later courses.</Course_Objectives>
+          <DTU_Remark>Are you interested in learning computer simulations to understand materials systems and to drive future technology and innovation in materials science and engineering? If so, this is the course for you.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="basalt kendskab til Matlab" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="basic knowledge about Matlab" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41680/41681/41659/41686/62009/02631/02632/02633" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne bag CALPHAD-modellering, termodynamiske ligevægtsberegninger og kinetiske diffusionssimuleringer" />
+          <Txt Lang="en-GB" Txt="Explain the principles behind CALPHAD modelling, thermodynamic equilibrium calculations and kinetic diffusion simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forudsige faseligevægte i simple metal-/oxidsystemer ved at bruge termodynamiske ligevægtsberegninger og diffusionssimuleringer" />
+          <Txt Lang="en-GB" Txt="Predict phase equilibria in simple metal/oxide systems by using thermodynamic equilibrium calculations and diffusion simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere materialeegenskaber og/eller bearbejdningsbetingelser ved at bruge resultaterne af termodynamiske ligevægtsberegninger og diffusionssimuleringer" />
+          <Txt Lang="en-GB" Txt="Optimize material property and/or processing conditions by using the results of thermodynamic equilibrium calculations and diffusion simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for tilfældighedens betydning i kinetiske Monte Carlo simuleringer" />
+          <Txt Lang="en-GB" Txt="Describe the role of chance in kinetic Monte Carlo simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare det grundlæggende inden for Monte Carlo simuleringer" />
+          <Txt Lang="en-GB" Txt="Explain basics of Monte Carlo simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Monte Carlo simuleringer på kornvækst" />
+          <Txt Lang="en-GB" Txt="Apply Monte Carlo simulations to grain growth" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare det grundlæggende i homogenisering baseret på termisk ledningsevne" />
+          <Txt Lang="en-GB" Txt="Explain basics of homogenization based on thermal conductivity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende finite element metoden til homogenisering af metal-/oxidsystem (elastisk respons)" />
+          <Txt Lang="en-GB" Txt="Apply finite element method for homogenization of metal/oxide system (elastic response)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge mikrostrukturens opførsel under mekanisk belastning" />
+          <Txt Lang="en-GB" Txt="Investigate the influence of microstructure on response to mechanical load" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="47210" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="20" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="32" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:02.663" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

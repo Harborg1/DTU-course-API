@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41863" University="dtu" LastUpdated="2024-04-19+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Mekanisk dimensionering" />
+        <Title Lang="en-GB" Title="Mechanical dimensioning" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_online">
+          <LocationTxt Lang="da-DK" Txt="Undervisningen er online" />
+          <LocationTxt Lang="en-GB" Txt="Teaching is online" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="18078" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Niels</GivenName>
+            <FamilyName>Aage</FamilyName>
+            <Email>naage@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17478" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Casper Schousboe</GivenName>
+            <FamilyName>Andreasen</FamilyName>
+            <Email>csan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En grupperapport og en individuel mundtlig eksamen. Grupperapporten bygger på en projektopgave der udføres i løbet af semestret. Grupperapporten skal godkendes for at deltage i den mundtlige eksamen. Eksaminationen er uden forberedelse. Den endelige bedømmelse baseres på en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One group report and one individual oral exam. The group report is based on a project assignment that will be carried out through the semester. The group report must be approved to participate in the oral exam. The exam is without preparation time. The final evaluation is based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="20 min" />
+          <Duration Lang="en-GB" Txt="20 min" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Tredimensionelle spændinger og tøjninger. Hovedspændinger/tøjninger og de dertil hørende hovedkoordinatsystemer. Hookes generaliserede lov. Plan spændingstilstand og plan tøjningstilstand. Deformation af tykvæggede rør og cirkulære skiver. Plastiske deformationsmekanismer og flydehypoteser. Dimensionering mod udmattelsesbrud. Gennem kurset introduceres den studerende for flerdimensionel elastisk spændings- og deformationsanalyse. Der introduceres dimensionering mod varig formændring (plasticitet) samt udmattelsesbrud.</Contents>
+          <Teaching_And_Learning_Methods>Online undervisning og opgaveregning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At udbygge forståelsen af styrkelærens fundementale begreber og metoder opnået i 62806 Mekanisk Design 2 og dermed gøre den studerende i stand til at analysere og beregne, hvordan en given struktur dvs. maskinkomponenter, trykbeholdere, krympesamlinger, konstruktioner, rammer, etc. deformerer og hvornår plastisk deformation eller udmattelse indtræffer. Kursets indhold danner en nødvendig forudsætning for benyttelse og forståelse af finite element metoden (FEM), og ikke mindst, evnen til at komme med en kvalificeret bedømmelse og tolkning af resultater opnået gennem FEM beregninger.</Course_Objectives>
+          <DTU_Remark>Kun for studerende, der er indskrevet på den digitale version af diplomingeniøruddannelsen i Maskinteknik.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is taught in Danish.
+
+Three-dimensional stresses and strains. Principal stresses / strains and the associated principal coordinate systems. Hooke's generalized law. Plane stress and plane strain. Deformation of thick-walled pipes and circular discs. Plastic deformation mechanisms and yield hypotheses. Dimensioning against fatigue fractures. As part of the course, the student is introduced to multidimensional elastic stress and deformation analysis. Dimensioning is introduced against permanent deformation (plasticity) as well as fatigue fractures.</Contents>
+          <Teaching_And_Learning_Methods>Online lectures and problem solving</Teaching_And_Learning_Methods>
+          <Course_Objectives>Expanding the understanding of the fundamental concepts and methods of strength of materials achieved in 62806 Mechanical Design 2, in order to enable the student to analyze and calculate how a given structure ie. machine components, pressure vessels, shrinkage joints, structures, frames, etc. deform and when plastic deformation or fatigue occurs. The content of the course constitute a necessary prerequisite for the use and understanding of the finite element method (FEM), and not least, the ability to provide qualified assessment and interpretation of results obtained through FEM calculations.</Course_Objectives>
+          <DTU_Remark>Only for bachelor of engineering students from Mechanical Engineering, the digital version.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Mekanik. Statik. Indledende styrkelære om spændinger og tøjninger i bjælker" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Mechanics. Statics. Introductional strength of materials within stresses and strains for beams" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62805.62806" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme spændings og tøjningsstilstanden i et belastet kontinuum ved benyttelse af Hookes generaliserede lov samt eventuelle strain-gauge målinger." />
+          <Txt Lang="en-GB" Txt="Determine the stress and strain state in a loaded continuum using Hooke's generalized law as well as any strain gauge measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne hovedspændinger og hovedtøjninger samt tilhørende hovedretninger for generelle 3D-tilstande." />
+          <Txt Lang="en-GB" Txt="Perform analyses of principal stresses and strains and corresponding principal directions for general 3D-states. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og redegøre for specielle spændingstilstande som fx. enaksede, plane, cylindriske eller hydrostatiske." />
+          <Txt Lang="en-GB" Txt="Identify special stress states as for instance uniaxial, plane, cylindrical or hydrostatic" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne spændinger på baggrund af tøjninger og omvendt som følge af mekanisk og termisk belastning bl.a. på tyndvæggede trykbeholdere." />
+          <Txt Lang="en-GB" Txt="Calculate stresses based on strains and conversely, as a result of mechanical and thermal loading, for e.g. thin-walled pressure vessels." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere spændings og tøjningstilstanden i cirkulære skiver og tykvæggede rør." />
+          <Txt Lang="en-GB" Txt="Analyze the stress and strain state in circular in-plane loaded plates and thick walled pipes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte von Mises' og Trescas flydehypoteser til dimensionering mod plastisk flydning." />
+          <Txt Lang="en-GB" Txt="Utilize von Mises' and Tresca's yield hypotheses to dimension against plastic deformation in structures, including safety factors." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere mod udmattelse, herunder opstille et reduceret Haigh/Goodman diagram" />
+          <Txt Lang="en-GB" Txt="Dimension against fatigue and establishing reduced Haigh/Goodman diagrams" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme sikkerhedsfaktorer under samtidig hensyntagen til plastisk deformation og udmattelse, samt minimere materialeforbrug for sikring af bæredygtighed i henhold til FN’s verdensmål for grøn omstilling." />
+          <Txt Lang="en-GB" Txt="Determine safety factors while taking plastic deformation and fatigue into account, i.e. enabling the minimization of material consumption to ensure sustainability in accordance with the UN World Goals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive tidsuafhængige materialers mekaniske egenskaber under statisk énakset trækbelastning" />
+          <Txt Lang="en-GB" Txt="Describe the mechanical properties of time-independent materials under static uniaxial tensile loading." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="41534" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:08.303" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

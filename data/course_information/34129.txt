@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34129" University="dtu" LastUpdated="2019-06-21+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Eksperimentelt kursus i optisk kommunikation" />
+        <Title Lang="en-GB" Title="Experimental course in optical communication" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3B" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="F3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="20242" FUniversity="DTU" SortID="0" DepartmentKey="" Show="true" Primary="true">
+          <Description>
+            <GivenName>Michael</GivenName>
+            <FamilyName>Galili</FamilyName>
+            <Email>mgal@fotonik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Samlet vurdering af laboratoriearbejde, logbøger, ugentlige præsentationer samt 2 mundtlige prøver uden hjælpemidler med afsæt i udførte eksperimenter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of lab work, log books, weekly presentations and two oral examinations without aid based on the conducted experiments." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3B" />
+            <Schedule ScheduleKey="F3B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Lasere (byg en laser fra grunden).
+Fibre (transmission af lys, tab, polarisation, dispersion, ulineære effekter, skattering ).
+Optiske komponenter (Raman og Erbium doterede fiber forstærkere, modulator).
+Optisk datatransmission gennem fiber.
+Digitale optiske systemer (evaluering af kommunikationskvalitet).</Contents>
+          <Teaching_And_Learning_Methods>De studerende skal udføre obligatoriske eksperimenter i en session pr. uge (4 timer). Eksperimenterne vil blive udført i grupper af 2-4, mens der føres individuelle logbøger. Hver studerende skal være forberedt hjemmefra og have læst dagens øvelsesvejledning samt svare på de spørgsmål som stilles. Desuden skal den studerende præsenterer sine resultater fra forrige uges eksperimenter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at introducere alle de basale fysiske komponenter i et avanceret moderne optisk kommunikations system gennem ”hands-on” eksperimenter. Dette vil bibringe den studerende en god fornemmelse for optik, laseregenskaber, interferometre, optiske forstærkere og optisk kommunikation. Udvikle praktiske færdigheder i et optisk studenterlaboratorium. At få praktisk erfaring i et optisk laboratorium - brug dine hænder til at få ting til at ske. Lær at bruge en laboratorie-journal som dokumentation for eksperimenter. Bemærk, 34126 i skemaplacering E5B/F5B er identisk til dette kursus.</Course_Objectives>
+          <Remark>Dette kursus er godkendt til at erstatte det teknologiske linjefag 34127 Eksperimentel Optik og Fotonik når der startes på MSc i Photonics Engineering. Kontakt studielinjelederen af Photonics Engineering for godkendelse.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Lasers (build one from scratch)
+Fibres (transmission, loss, polarisation, dispersion, nonlinear effects, scattering)
+Optical components (Raman and Erbium doped fibre amplifiers, modulators)
+Optical data transmission over fibre
+Digital optical systems (communication quality assessment).</Contents>
+          <Teaching_And_Learning_Methods>The course consists of mandatory laboratory experiments one session per week (4 hours). Experiments will be carried out in groups of 2-4, while keeping individual log books of the experiments. Each student should be prepared from home by reading the exercise manuals and answer the assignments. Furthermore, the student needs to prepare a small presentation of previous week results.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course aims at introducing all the basic physical components of an advanced modern optical communication system through hands-on experience. In the process, the student will get a good feeling for the splendour of optics, the properties of lasers, interferometers, optical amplifiers and optical communications, and develop practical skills in the optical student lab. To get a practical experience in an optical laboratory - learning-by-doing by using your hands to make things happen. Learn to use a laboratory log-book as documentation for the experiments. Notice, course 34126 in module E5B/F5B is identical to this course.</Course_Objectives>
+          <Remark>This course is approved to replace the technology core course 34127 Experimental Optics and Photonics when starting on MSc in Photonics Engineering. Contact the head of studies of Photonics Engineering for approval.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere grundstenene i en laser, samle og måle relevante parametre" />
+          <Txt Lang="en-GB" Txt="Identify the key elements of a laser, assemble and characterise it" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte interferometer til kontrolleret manipulation af lys" />
+          <Txt Lang="en-GB" Txt="Apply interferometers for controlled manipulation of light" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere samt fortolke målelige fænomener i transmissions fibre" />
+          <Txt Lang="en-GB" Txt="Characterise and interpret impact of measureable phenomena in optical fibres " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere samt fortolke målelige fænomener i optiske forstærkere" />
+          <Txt Lang="en-GB" Txt="Characterise and interpret measurable phenomena in optical amplifiers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere implementering af en optisk sender samt mål relevante parametre" />
+          <Txt Lang="en-GB" Txt="Demonstrate the implementation of an optical transmitter and characterise it." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere de nødvendige komponenter der kræves for at implementere et digitalt optisk kommunikationssystem." />
+          <Txt Lang="en-GB" Txt="Characterize the components required for implementing a digital optical communication system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere et punkt-til-punkt optisk kommunikations system" />
+          <Txt Lang="en-GB" Txt="Assemble a point-to-point full optical communication system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere kvaliteten af et optisk kommunikations system" />
+          <Txt Lang="en-GB" Txt="Evaluate the quality and performance of an optical communication system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge eksperimentelle opstillinger" />
+          <Txt Lang="en-GB" Txt="Plan experimental set-ups" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Føre en detaljeret videnskabelig log-bog." />
+          <Txt Lang="en-GB" Txt="Write a detailed scientific log-book" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Karakteriserisation af enkeltkomponenter i et optisk kommunikationssystem</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34126" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="12" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:51.79" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

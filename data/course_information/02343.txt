@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02343" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Oversættere og fortolkere" />
+        <Title Lang="en-GB" Title="Compilers and Interpreters" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kun i 13 af de 26 slots bliver brugt. Kursusaktiviteter finder sted tirsdage og fredage (sammen med 02141). Aktivitetsplanen vil blive annonceret på DTU Learn." />
+          <Schedule_Txt Lang="en-GB" Txt="This course will use only 13 of the 26 slots. Course activities will take place on Tuesdays and Fridays (sometimes together with 02141 and 02143). The activity plan will be announced on DTU Learn." />
+          <Schedule ScheduleKey="F3A" SortID="0" />
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="94040" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alberto Lluch</GivenName>
+            <FamilyName>Lafuente</FamilyName>
+            <Email>albl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Et antal individualiserede opgaver udgør den samlede vurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A number of group and individualized assignments constitute the overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="During the semester" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="During the semester" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursusindhold
+
+Kurset dækker to hovedområder:
+
+(1)  Konstruktion af parsere, oversættere og fortolkere.
+
+(2) Datalogiske modeller, formalismer og teknikker nødvendige for konstruktion af disse værktøjer, herunder grammatikker, regulære udtryk og operationel semantik.
+
+Kurset er baseret på praktisk erfaring med relevante værktøjer og udviklingen af et projekt bestående af en parser, oversætter og fortolker til et simpelt programmeringssprog. Gennem dette projekt tilegner de studerende sig viden om de nødvendige teoretiske grundlag, og således integreres kursets praktiske og teoretiske dele.
+
+Dette kursus kan også betragtes som en projektbaseret version af 02143.</Contents>
+          <Teaching_And_Learning_Methods>Primært som et projektbaseret læringsforløb. Det vil inholde forelæsninger, teoretiske øvelser, programmeringsøvelser og en obligatorisk opgave.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes and online materials.</Course_Literature>
+          <Course_Objectives>De studerende vil lære at bygge en parser, en Oversætter og en fortolker til et simpelt programmeringssprog. Kurset følger en projektbaseret læringstilgang, hvor de studerende tilegner sig viden om centrale modeller og formalismer i datalogi, som er nødvendige for at konstruere oversættere og fortolkere.</Course_Objectives>
+          <Remark>Kurset gives på engelsk.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers two main topics: 
+ 
+(1) Building parsers, compilers and interpreters.    
+ 
+(2) Computer science models, formalisms and techniques needed to build parsers, compilers and interpreters, such as grammars, regular expressions and operational semantics.  
+ 
+The course is driven by a hands-on experience with various tools and development of a project consisting of a parser, compiler and interpreter for a simple programming language. Through  this, the students will acquire knowledge of the central models and formalisms from computer science that are needed to build compilers and interpreters, hence integrating both parts of the course. 
+ 
+This course can also be seen as a project-based learning version of 02143.</Contents>
+          <Teaching_And_Learning_Methods>Primarily as a project-based learning course. It will include lectures, theoretical exercises, programming exercises and a mandatory assignment.</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningsnotater og onlinemateriale.</Course_Literature>
+          <Course_Objectives>The students will learn how to build a parser, a compiler and an interpreter for a simple programming language. The course will follow a project-based learning approach; students will acquire knowledge of the central models and formalisms from computer science that are needed to build compilers and interpreters.</Course_Objectives>
+          <Remark>The course is given in English.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om diskret matematik (logik, mængder, grafer, funktioner, induktion) - som forudsat f.eks. i 01904&#xD;&#xA;Grundlæggende viden om algoritmer og datastrukturer - som forudsat f.eks. i 02326.&#xD;&#xA;Grundlæggende viden om funktionel programmering - som forudsat f.eks. i 02312 og 02324." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of discrete math (logic, sets, graphs, functions, induction) - as provided e.g. in 01904 Basic knowledge of algorithms and data structures - as provided e.g. in 02326. Basic knowledge of programming - as provided e.g. in 02312 and 02324." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01904.02326.02312.02324" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå betydningen af programmer skrevet i et simpelt programmeringssprog ud fra dets specifikation;" />
+          <Txt Lang="en-GB" Txt="understand the meaning of programs written in a simple programming language through its specification; " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende udvalgte værktøjer til at køre programmer (f.eks. medfølgende oversætter og fortolkere);" />
+          <Txt Lang="en-GB" Txt="operate selected tools to run programs (e.g., provided compilers &amp; interpreters); " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="relatere programkørsler til betydningen af programmer som defineret i sprogets specifikation;" />
+          <Txt Lang="en-GB" Txt="relate program runs with the meaning of programs as prescribed in the language specification;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en parser til et simpelt programmeringssprog baseret på sprogspecifikationen;" />
+          <Txt Lang="en-GB" Txt="implement a parser for a simple programming language based on the language specification; " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en oversætter til et simpelt programmeringssprog baseret på sprogspecifikationen;" />
+          <Txt Lang="en-GB" Txt="implement a compiler for a simple programming language based on the language specification; " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en oversætter, der genererer relevant kode på maskinniveau;" />
+          <Txt Lang="en-GB" Txt="implement a compiler that generates relevant machine-level code; " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en fortolker til et simpelt programmeringssprog baseret på sprogspecifikationen;" />
+          <Txt Lang="en-GB" Txt="implement an interpreter for a simple programming language based on the language specification; " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvælge og anvende datalogiske modeller og formalismer, der er nødvendige for at implementere parsere, oversættere og fortolkere (f.eks. regulære udtryk og grammatikker);" />
+          <Txt Lang="en-GB" Txt="select and apply computer science models and formalisms necessary to implement parsers, the compilers and interpreters (e.g. regular expressions and grammars); " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare forskellen mellem forskellige datalogiske modeller og formalismer;" />
+          <Txt Lang="en-GB" Txt="state the difference between computer science models and formalisms; " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="modificere en model i henhold til givne kriterier (f.eks. eliminere tvetydigheder i en grammatik)." />
+          <Txt Lang="en-GB" Txt="modify a model according to certain criteria (e.g. remove ambiguities in grammars)." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02141.02143.02332" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:34.183" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

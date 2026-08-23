@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34371" Volume="2026/2027" University="dtu" LastUpdated="2023-04-27+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Communication Network Security" />
+        <Title Lang="en-GB" Title="Communication Network Security" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="5643" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Dittmann</FamilyName>
+            <Email>ladit@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursets indhold dækker grundlæggende aspekter af netværkssikkerhed på forskellige lag: fysiske, mac-, netværks- og transportlag, med vægt på IoT-specifikke udfordringer. Efter en indledende introduktion til netværkskommunikations arkitektoniske modeller og grundlæggende mekanismer, fokuserer kurset på typiske sårbarheder og udfordringer ved kommunikationsnetværks systemer på MAC , netværk og transportlag. Alt dette er baseret på praktiske laboratorier (der vil være eksperimenter og praktiske øvelser i alle forelæsninger). Bagefter fokuserer kurset på specifikke IoT-komponenter og -teknologier for at give en grundlæggende forståelse af de systemer og enheder, der skal beskyttes. Desuden vil kurset præsentere elementer relateret til privatlivsbestemmelser og standarder, der gælder for sikring af IoT-systemer. 
+Kurset vil også inkludere et projektarbejde, der kræver, at de studerende designer, bygger og evaluerer et praktisk IoT-system. Studerende vil blive bedt om at demonstrere deres prototyper og præsentere deres projekter mundtligt i slutningen af ​​kurset, dokumentere deres design og resultater i en rapport. Det forventes, at gæstetalere præsenterer relaterede emner.</Contents>
+          <Teaching_And_Learning_Methods>Foredrag og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset omhandler netværkssikkerhedsudfordringer på forskellige niveauer af OSI-lagmodellen. Kurset introducerer efterfølgende specifikke aspekter relateret til IoT-teknologier med fokus på praktiske cases og opsætninger. Studerende vil lære at betjene trafikopsamlings- og genereringsværktøjer, analysere netværkssikkerhedssårbarheder i forskellige protokoller og opbygge og analysere konkrete IoT-relaterede opsætninger med det formål at øge bevidstheden om og forståelsen af IoT-datakommunikationssikkerhed og dens inkorporering i fremtidige designs.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course contents cover fundamental aspects of network security at different layers: physical, mac, network, and transport layers, with emphasis on IoT-specific challenges. After an initial introduction to network communication architectural models and basic mechanisms, the course focus on typical vulnerabilities and challenges of communication network systems at MAC, network, and transport layers. All these, are based on practical hands-on labs (There will be experiments and hands-on exercises in all lectures). Afterward, the course turns focus to specific IoT components and technologies to provide a baseline understanding of the systems and devices to protect. Furthermore.  the course will present elements related to privacy regulations and standards that apply to securing IoT systems.
+The course will include a project work requiring students to design, build, and evaluate a practical IoT system. Students will be required to demonstrate their prototypes and present orally their projects at the end of the course, documenting their designs and results in a report. It is expected that guest-speakers present related topics.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course addresses network security challenges at different levels of the OSI layer model.  The course introduces afterward specific aspects related to IoT technologies with a focus on practical cases and setups. Students will learn to operate traffic capturing and generating tools, analyze network security vulnerabilities of different protocols and build up and analyze concrete IoT-related setups, with the aim to increase awareness and understanding of IoT data communication security and its incorporation in future designs.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive formålet med og elementerne i den OSI-lagdelte netværksmodel." />
+          <Txt Lang="en-GB" Txt="Describe the purpose and elements of the OSI-layered networking model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Betjene netværkstrafikanalyseværktøjer (Wireshark) og generere trafik fra et programmatisk miljø (Scapy)." />
+          <Txt Lang="en-GB" Txt="Operate network traffic analyses tools (Wireshark) and generate traffic from a programmatic environment (Scapy)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og forklare typiske netværkssikkerhedssårbarheder og angreb til protokoller ved L2, L3 og L4 i OSI-modellen." />
+          <Txt Lang="en-GB" Txt="Analyze and explain typical network security vulnerabilities and attacks to protocols at L2, L3 and L4 of the OSI model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge og forklare sikkerhedsegenskaber for typiske applikationslagsprotokoller til IoT." />
+          <Txt Lang="en-GB" Txt="Investigate and explain security properties of typical application-layer protocols for IoT. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Eksperimentere og analysere sikkerhedsaspekter af konventionelle trådløse teknologier til IoT-enheder (WiFi og Bluetooth)." />
+          <Txt Lang="en-GB" Txt="Experiment and analyse security aspects of conventional wireless technologies for IoT devices (WiFi and Bluetooth)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå anvendeligheden af cellulære og ikke-cellulære radioteknologier til IoT-netværk (NBIoT, LoRa)." />
+          <Txt Lang="en-GB" Txt="Understand applicability of cellular and non-cellular radio technologies for IoT networks (NBIoT, LoRa)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge praktiske eksempler på brug af netværkssikkerhed og designe alternative målløsninger." />
+          <Txt Lang="en-GB" Txt="Investigate practical network-security use cases, and design alternative target solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive offentligt et netværkssikkerhedsproblem og sandsynlige løsninger på det." />
+          <Txt Lang="en-GB" Txt="Publically describe a network security problem and likely solutions for it." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34315/34330/34313/34346/34333" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="32" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="32" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="20" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:21.237" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

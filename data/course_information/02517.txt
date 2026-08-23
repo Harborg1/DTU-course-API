@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02517" Volume="2026/2027" University="dtu" LastUpdated="2026-08-17+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Ansvarlig AI: Algoritmisk fairness og forklarbarhed" />
+        <Title Lang="en-GB" Title="Responsible AI: Algorithmic fairness and explainability" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="142917" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Aasa</GivenName>
+            <FamilyName>Feragen</FamilyName>
+            <Email>afhar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="172842" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Siavash Arjomand</GivenName>
+            <FamilyName>Bigdeli</FamilyName>
+            <Email>sarbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="211451" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Stella</GivenName>
+            <FamilyName>Frank</FamilyName>
+            <Email>stefra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Godkendelse af rapporter er en forudsætning for at bestå kurset. Hvis der er tilstrækkeligt få studerende, vil der være en individuel mundtlig eksamen. Ellers vil det være en 3-timers skriftlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Approval of reports is a prerequisite for passing the course.&#xD;&#xA;If there are sufficiently few students, there will be an individual oral exam. Otherwise, it will be a 3-hour written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No electronic devices permitted.&#xD;&#xA;You are allowed to bring two A4 sheets of handwritten notes." />
+            <Aid_Txt Lang="da-DK" Txt="Ingen elektroniske enheder tilladt.&#xD;&#xA;Studerende kan medbringe to A4 ark med håndskrevne noter." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil bestå af tre dele:
+Den første del af kurset vil handle om epistemologi i maskinlæring, model-fitting versus kunstig intelligens, Bayesianske problemer og generativ AI. Fairness-delen vil gennemgå klassiske metoder fra algorithmic fairness og deres begrænsninger og mulige løsninger. Til sidst vil vi lære om forskellige paradigmer for forklarbar AI, så som saliency og prototype-baserede metoder, deres anvendelsesområder, og deres validering, Vi vil diskutere og eksperimentere med forklarbarhed i generativ AI. Som en del af dette, vil vi diskutere de filosofiske antagelser der laves i forklarbar AI og lave en gennemgang af AI-etik.</Contents>
+          <Teaching_And_Learning_Methods>Kurset vil bestå af forelæsninger, diskussioner, og praktiske øvelser. Det bliver struktureret omkring tre emner, som alle starter med en introduktion af etablerede metoder, som går videre til at læse og diskutere state-of-the-art forskningsartikler, og til sidst en praktisk case-implementation baseret på de besøgte metoder.</Teaching_And_Learning_Methods>
+          <Course_Objectives>I dette kursus bliver de studerende introducedet til etiske udfordringer forbundet med kunstig intelligens, samt værktøjer til at forstå og undersøge dem. Hovedtemaer i kurset inkluderer paradigmer for og begrænsninger ved maskinlæring (epistemologi), fairness og bias, samt forklarbar kunstig intelligens. Aktuelle state-of-the-art emner og nye publikationer fra relevante ML-konferencer og -tidsskrifter bliver udvalgt og diskuteret i detaljer. Deltagerne implementerer prototyper af diskuterede algoritmer og præsenterer sine observationer og resultater i rapporter eller præsentationer.
+
+Kursets mål er et etablere og forstærke de studerendes know-how indenfor tre vigtige emner for ansvarlig AI. En studerende, der opfyldets kursets læringsmål, vil være i stand til at:</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will consist of three parts: 
+The first part of the course will be about the epistemology of machine learning, model-fitting vs. artificial intelligence, Bayesian problems, and Generative AI. Next, the fairness component will review classical algorithmic fairness methods and their limitations and potential solutions. Finally, we will learn about different paradigms of explainable AI such as saliency and prototype based methods, their use cases, as well as their validation. We will discuss and experiment the possibility of explaining generative AI. As part of this, we will study the philosophical assumptions in explainable AI and review AI ethics.</Contents>
+          <Teaching_And_Learning_Methods>The course will consist of lectures, discussions, and practical exercises. It will be structured around three topics, all starting out with an introduction of established knowledge, moving to reading and discussing state-of-the-art papers, and finally a practical case implementation building on the visited methods.</Teaching_And_Learning_Methods>
+          <Course_Objectives>In this course students will get introduced to ethical challenges in AI and tools to understand and examine them. Main topics of the course are on paradigms and limitations of machine learning (Epistemology), Fairness and bias, and Explainable-AI. Current state-of-the-art topics and recent publications from relevant ML conferences and journals are selected and discussed in detail. Participants will implement prototypes of the presented algorithms and present their observations and results to the class via reports or presentations.
+
+The aim of the course is to build and enhance know-how on three major topics for responsible AI. A student who has met the objectives of the course will be able to:</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Vi forventer at de studerende er i stand til at implementere og træne maskinlæringsmodeller fra udleverede datasæt, inkluderet deep learning modeller." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="We expect that students are able to implement and train machine learning models from custom datasets, including deep learning models." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450/02451/02452/02456" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvad kunstig intelligens betyder, diskutere og identificere almindelige antagelser vi ofte laver, samt identificere hvilke vi bør undgå for at bygge AI ansvarligt," />
+          <Txt Lang="en-GB" Txt="explain what AI means to discuss and identify the common assumptions we make, and the ones we should avoid when building AI responsibly," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="undersøge, identificere og diskutere problemer ved AI-systemer på en ansvarlig måde i og udenfor vores eget fagdomæne," />
+          <Txt Lang="en-GB" Txt="investigate, identify, and discuss issues with AI systems responsibly within and outside the community," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="give en oversigt over udfordringer og state-of-the-art metoder til fairness og bias der kan opstå når man udvikler og deployer AI," />
+          <Txt Lang="en-GB" Txt="give an overview of challenges and state-of-the-art in fairness and bias when building and deploying AI, " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diagnosticere bias i prædiktiv og generativ AI," />
+          <Txt Lang="en-GB" Txt="diagnose bias in predictive and generative AI," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="være bekendt med almindelige kilder til bias, og kunne mitigere bias i prædiktiv og generativ AI ved enten at tilpasse modelleringen, eller ved at anvende mitigations-teknikker fra algoritmisk fairness," />
+          <Txt Lang="en-GB" Txt="be familiar with common sources of bias, and mitigate bias in predictive and generative AI by either adapting the modeling or employing mitigation strategies from algorithmic fairness," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå de mest almindelige typer af explainable AI modeller, og diskutere deres styrker og svagheder," />
+          <Txt Lang="en-GB" Txt="understand most common types of explainable AI models, and discuss their strengths and weaknesses," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende explainable AI-modeller i reelle scenarier for prædiktiv og generativ AI, og fortolke deres forklaringer," />
+          <Txt Lang="en-GB" Txt="apply explainable AI models in real scenarios for predictive and generative AI, and interpret their explanations," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="læse forskningsartikler med både teknisk og etisk indhold, forstå dem, og præsentere deres indhold," />
+          <Txt Lang="en-GB" Txt="reading research papers with both technical and ethical content, understanding them and presenting their content," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="præsentere analyser og resultater skriftlig." />
+          <Txt Lang="en-GB" Txt="presenting analysis and results in writing." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Responsible AI</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-08-17" Time="15:13:30.5" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

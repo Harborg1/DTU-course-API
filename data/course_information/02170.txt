@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02170" Volume="2026/2027" University="dtu" LastUpdated="2026-03-17+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Databasesystemer" />
+        <Title Lang="en-GB" Title="Database Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="853" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anne Elisabeth</GivenName>
+            <FamilyName>Haxthausen</FamilyName>
+            <Email>aeha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Godkendelse af en gruppeopgave er en betingelse for at deltage i den skriftlige eksamen.&#xD;&#xA;Den endelige karakter er karakteren fra den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Approval of a group project is mandatory for participation in the written examination.&#xD;&#xA;The final mark is the mark from the written examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Note that the schema group for the exam is F7 and not F2B." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Bemærk, at skemagruppen for eksamen er F7 og ikke F2B." />
+            <Schedule ScheduleKey="F7" />
+            <Schedule ScheduleKey="F7" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Den relationelle model 
+• Relationsalgebra og calculus baserede beregninger
+• Structured Query Language, SQL:
+- SQL kommandoer til at defining, manipulere og forespørge relationelle databaser
+- Avancerede SQL sprogkonstruktioner, så som triggere, lagrede procedurer og views 
+• Conceptual database design:
+- ER-modellering med ER-diagrams visende entiteter og deres relationer, nøgler, domæner og andre constraints 
+• Logisk databasedesign, inklusiv:
+- transformation af ER-model til relationel model
+- Egenskaber ved gode relationelle designs og normal former
+- normalisering af relationelle modeller til 4NF 
+• Fysisk databasedesign og implementering, inklusiv:
+- konvertering af en logisk model til en implementering i SQL
+• Teknikker til optimering af den fysiske tilgang til data i databaser</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser samt et gruppe projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Det overordnede kursusmål er en introduktion til databaser, fundamentale database begreber, samt brugen af databaser. Siden en database ofte er det centrale element i et IT System, så er en basal forståelse af database begreber et godt udgangspunkt for at forstå design og anvendelse af de fleste IT Systemer anvendt af private og offentlige virksomheder.
+
+Kursusdeltagerne vil få kendskab til database teori og fundamentale database begreber, og vil blive i stand til at udarbejde data modeller, konvertere disse til simple databaser, og kunne udføre database udtræk og beregninger. Samtidig vil kursusdeltagerne få indsigt i de opgaver, der normalt udføres af database designere og database administratorer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• The relational model 
+• Relational algebra and calculus base calculations
+• Structured Query Language, SQL:
+- SQL commands for defining, manipulating and querying relational databases
+- Advanced SQL language constructs such as triggers, stored procedures and views 
+• Conceptual database design:
+- ER-modelling with ER-diagrams showing entities and their relationships, keys, domains and other constraints.
+• Logical database design, including:
+- transforming an ER-model to a relational model 
+- features of good relational designs and normal forms
+- normalisation of relational models to 4NF
+•  Physical database design and implementation, including
+- conversion of a logical model into an implementation in SQL
+•  Techniques for optimizing the physical access of data in databases.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises and a group project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course objective is to give an introduction to databases, fundamental database concepts, and the usage of databases. As a database is often the central component in an IT system, a basic knowledge of database concepts is most useful in order to understand the design and working of most IT systems used by private and public enterprises.
+
+Students will become familiar with database theory and fundamental database concepts, be able to make data models, be able to convert these to simple databases, and be able to perform operations on databases. Students will also get a basic knowledge of the tasks normally performed by database designers and administrators.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalent kundskaber om:&#xD;&#xA;(1) diskret matematik: mængdelære og logiske operatorer,&#xD;&#xA;(2) programmering, algoritmer og datastrukturer (på niveau med 02105) og&#xD;&#xA;(3) balancerede træer (som undervist i 02110)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent knowledge about&#xD;&#xA;(1) discrete mathematics: set theory and logical operators,&#xD;&#xA;(2) programming, algorithms and data structures (at the level of 02105), and&#xD;&#xA;(3) balanced trees (as taught in 02110)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01017/01019).02105.02110" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en konceptuel datamodel " />
+          <Txt Lang="en-GB" Txt="design a conceptual data model " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="transformere en konceptuel datamodel til logisk datamodel for en relationel database" />
+          <Txt Lang="en-GB" Txt="transform a conceptual data model into a logical data model for a relational database" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere en logisk datamodel vha normalisering" />
+          <Txt Lang="en-GB" Txt="optimize a logical data model using normalization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fortage et fysik database design for relationsdatabaser: beslutte hvordan den logiske datamodel skal implementeres i et database management system" />
+          <Txt Lang="en-GB" Txt="carry out a physical database design for relational databases: decide how the logical data model is to be implemented in a database management system " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge et udbredt database management system" />
+          <Txt Lang="en-GB" Txt="use a widespread database management system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og anvende teknikker til optimering af fysisk tilgang til data i databaser" />
+          <Txt Lang="en-GB" Txt="explain and apply techniques for optimizing the physical access of data in databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fortage programmeringsopgaver til at oprette, forspørge, opdatere og administerer en database" />
+          <Txt Lang="en-GB" Txt="perform programming tasks to create, query, update, and administrate a database" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere forespørgsler i formelle, relationelle forespørgselssprog" />
+          <Txt Lang="en-GB" Txt="formulate queries in formal relational query languages " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå de arbejdsopgaver, som database designere og administratorer løser" />
+          <Txt Lang="en-GB" Txt="understand tasks normally solved by database designers and administrators" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>En introduktion til databaser, fundamentale database begreber og brugen af databaser.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02327" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="62" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="38" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:53.41" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

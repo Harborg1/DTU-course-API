@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02278" Volume="2026/2027" University="dtu" LastUpdated="2026-03-23+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kvantesikker Kryptografi" />
+        <Title Lang="en-GB" Title="Post-Quantum Cryptography" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="190664" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Baum</FamilyName>
+            <Email>cabau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="166539" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Majenz</FamilyName>
+            <Email>chmaj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Projektpræsentation og mundtlig eksamen. Projekt og præsentation i grupper på op til 3, mundtlig eksamen individuel.&#xD;&#xA;Projektpræsentationen vægtes med 50% og den mundtlige eksamen også med 50%." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Project presentation and oral exam. Project and presentation in groups up to 3, oral exam individual. &#xD;&#xA;The project presentation counts for 50% and the oral exam for the other 50%." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="20 minutter til den mundtlige eksamen" />
+          <Duration Lang="en-GB" Txt="20min for the oral exam " />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Grundlæggende principper for kvantekryptanalyse, matematiske fundamenter for gitre og fejlkorrigerende koder, digitale signaturer, nøgleindkapslingsmekanismer, gitterbaseret kryptering og nøgleindkapsling, Fiat-Shamir og Fujisaki-Okamoto transformationer, MPC-in-the-head, kvantetilgængelige tilfældige orakelmodel</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, projekter, hjemmearbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>https://eprint.iacr.org/2024/1287.pdf</Course_Literature>
+          <Course_Objectives>Kursets overordnet mål er at formidle de centrale værktøjer og koncepter inden for kvantesikker kryptografi. De studerende vil også dykke ned i et af de introducerede emner i et projekt.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Foundations of quantum cryptanalysis, mathematical foundations of lattices and error correcting codes, digital signatures, key encapsulation mechanisms, lattice-based encryption and key encapsulation, Fiat-Shamir and Fujisaki-Okamoto transforms, MPC-in-the-head, Quantum-accessible Random Oracles</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, projects, homework</Teaching_And_Learning_Methods>
+          <Course_Literature>https://eprint.iacr.org/2024/1287.pdf</Course_Literature>
+          <Course_Objectives>The main purpose of this course is for students to learn the central tools and concepts of  post-quantum cryptography. Students will also take a deep dive into one of the introduced topics in a project.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Se engelsk" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="02231 or 01410 strongly recommended, 01425 or 01426 recommended" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01410/02231" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar principperne bag Grovers og Shors algoritmer, og hvordan de påvirker den nuværende kryptografi." />
+          <Txt Lang="en-GB" Txt="Explain the principles of Grover’s and Shor’s algorithms and how they impact current cryptography." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv teorien bag gitterbaseret og fejlkorrigerende-kode-baseret kryptografi." />
+          <Txt Lang="en-GB" Txt="Describe the theory of lattice-based and error correcting codes-based cryptography." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend definitionerne af digitale signaturer og nøgleindkapslingsmekanismer samt deres sikkerhedsdefinitioner." />
+          <Txt Lang="en-GB" Txt="Apply the definitions of digital signatures and key encapsulation mechanisms and their security definitions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv digitale signaturalgoritmer baseret på hashfunktioner." />
+          <Txt Lang="en-GB" Txt="Describe simple digital signature schemes based on hash functions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter Fiat-Shamir- og Fujisaki-Okamoto-transformationerne." />
+          <Txt Lang="en-GB" Txt="Discuss the Fiat-Shamir and Fujisaki-Okamoto transformations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsenter hovedideerne bag gitterbaseret nøgleindkapsling og signaturer." />
+          <Txt Lang="en-GB" Txt="Present the main ideas behind lattice-based key encapsulation and signatures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar signaturteknikker baseret på MPC-in-the-head." />
+          <Txt Lang="en-GB" Txt="Explain advanced signature techniques based on MPC-in-the-head." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar den kvantetilganglige tilfældsorakelmodel (QROM)." />
+          <Txt Lang="en-GB" Txt="Explain the Quantum-accessible Random Oracle Model (QROM)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser og præsenter en avanceret postkvantebaseret kryptografisk algoritme eller kvantekryptografisk teknik, herunder dens fordele og ulemper." />
+          <Txt Lang="en-GB" Txt="Analyze and present  an advanced Post-Quantum primitive or Quantum-cryptographic technique, including its advantages and drawbacks." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="20" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="32" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="5" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="60" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:19.52" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

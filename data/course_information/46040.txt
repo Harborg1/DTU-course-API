@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46040" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til energianalyse" />
+        <Title Lang="en-GB" Title="Introduction to energy analytics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="111976" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Haris</GivenName>
+            <FamilyName>Ziras</FamilyName>
+            <Email>chazi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="113161" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Spyros</GivenName>
+            <FamilyName>Chatzivasileiadis</FamilyName>
+            <Email>spchatz@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives på baggrund af en bedømmelse af en skriftlig eksamen og opgaverapporter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is given on basis of an evaluation of a written exam and assignment reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kombinationen af ​​stigende datatilgængelighed i energisystemer og liberaliseringen af ​​energimarkederne medfører en række muligheder og udfordringer i driften af ​​energisystemer. Kurset fokuserer primært på elektricitet og relaterede anvendelsesscenarier. Der vil blive givet en kompakt introduktion til elmarkeder og -priser, da dette vil tjene som den vejledende anvendelse af de metoder, der undervises i dette kursus.
+
+Forskellige teknikker til analyse af relevante datasæt og løsning af en række relaterede problemer vil blive introduceret, såsom regression, prognoser, maskinlæring og optimering. Der vil blive lagt vægt på en række analyse- og optimeringsproblemer, f.eks. optimal planlægning af lagring for at maksimere profitten på et marked og prognoser for elpriser. Der vil også blive fokuseret på at lære at opstille rigorøse optimeringsproblemer, på at sammenligne forskellige teknikker (f.eks. ARIMA-modeller vs. maskinlæring) og på at træne og korrekt evaluere modellerne. Derudover vil de studerende anvende programmeringssproget Python til at behandle data, udføre analyser og implementere optimeringsmetoder. Et vigtigt mål med kurset er at kombinere de udviklede modeller og teknikker (f.eks. optimering og prognoser) til at løse større energianalyseproblemer ved hjælp af reelle data.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Hovedformålet med kurset er at løfte sløret for mulighederne i grænsefladen af digitalisering af energisektoren, ved at gennemgå nogle indledende begreber inden for energianalyse, maskinlæring og optimering.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The combination of increasing data availability in energy systems and the liberalization of energy markets brings a number of opportunities and challenges in the operation of energy systems. The course mainly concentrates on the case of electricity and related use cases. A compact introduction to electricity markets and prices will be given, as this will serve as the guiding application of the methods taught in this course. 
+
+Various techniques for analyzing relevant datasets and solving a set of related problems will be introduced, such as regression, forecasting, machine learning and optimization. Emphasis will be placed on a number of analytics and optimization problems, e.g., the optimal scheduling of storage to maximize profits in a market, and the forecasting of electricity prices. Focus will also be placed on learning to setup rigorous optimization problems, on comparing different techniques (e.g., ARIMA models vs machine learning) and on training and properly evaluating the models. Moreover, students will employ the Python programming language to process data, execute analytics, and implement optimization methods. An important goal of the course is to combine the developed models and techniques (e.g., optimization and forecasting) for solving larger energy analytics problems using real data.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The main aim of the course is to unveil the opportunities at the interface of digitization of the energy sector, by going through some introductory concepts in energy analytics, machine learning and optimization.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="En solid forståelse og brug af Python anbefales stærkt" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A solid understanding and use of Python is highly recommended" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402/02002" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv en række beslutningsproblemer hos elforbrugere og prosumere som optimeringsproblemer" />
+          <Txt Lang="en-GB" Txt="Describe a number of decision problems of electricity consumers and prosumers as optimization problems " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere, bruge og evaluere regressions- og maskinlæringsteknikker med fokus på forecasting" />
+          <Txt Lang="en-GB" Txt="Implement, use and evaluate regression and machine learning techniques with a focus on forecasting " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle dataanalyse- og optimeringsprogrammer i Python" />
+          <Txt Lang="en-GB" Txt="Develop data analytics and optimization programs in Python " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombiner forskellige dataanalyseteknikker til større og mere komplicerede problemer" />
+          <Txt Lang="en-GB" Txt="Combine various data analytics techniques into larger and more complicated problems " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designværktøjer til optimering af profit for elmarkedsdeltagere" />
+          <Txt Lang="en-GB" Txt="Design tools for optimizing the profits of electricity market participants" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og sammenligne værktøjer til prognoser for elpriser" />
+          <Txt Lang="en-GB" Txt="Develop and compare tools for forecasting electricity prices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere og udføre gruppebaseret projektarbejde" />
+          <Txt Lang="en-GB" Txt="Organize and execute group-based project work " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Effektivt præsentere projektarbejde i skriftlig form" />
+          <Txt Lang="en-GB" Txt="Effectively present project work in written form" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31762" />
+        <PreviousCourse CourseCode="31762" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:24.82" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

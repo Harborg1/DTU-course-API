@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28845" University="dtu" LastUpdated="2026-04-22+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Øvelser i reaktionsteknik" />
+        <Title Lang="en-GB" Title="Chemical Reaction Engineering Laboratory" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="29644" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Hao</GivenName>
+            <FamilyName>Wu</FamilyName>
+            <Email>haw@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Deltagelse i forberedelsesmøder før øvelsesgennemførsel, tilstedeværelse under øvelser og deltagelse i diskussions- og opfølgningsmøder efter rapportaflevering er obligatorisk." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Participation in pre-exercise meetings, presence during exercises, and participation in report discussion and feed-back meetings are mandatory." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="No exam" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ingen eksamen i den ordinære eksamensperiode" />
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Reaktorer med katalyserede eller homogene reaktioner undersøges eksperimentelt og teoretisk: F.eks.: Transient forløb med opstart af en adiabatisk reaktor, opholdstidsfordeling, multiple stationære tilstande, drift af fixed bed katalytisk reaktor. De eksperimentelle resultater gennemarbejdes og sættes i relation til teorien i reaktionsteknik. Modeller for dynamiske indsving til stationære tilstande opstilles og indkorporeres i simuleringsprogrammer. Den ingeniørmæssige anvendelse af programmer som f.eks. Excel og Maple/Matlab/Python indgår som en naturlig del af kurset (se Anbefalede forudsætninger og Bemærkninger).</Contents>
+          <Teaching_And_Learning_Methods>Laboratorieøvelser, computersimulering samt rapportskrivning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At belyse teorien gennemgået i 28140 (Introduktion til reaktionsteknik) eller 28342 (Kemisk reaktionsteknik) ved laboratorieøvelser og modelberegninger knyttet til disse.</Course_Objectives>
+          <Remark>Studerende på kandidatuddannelsen Kemisk og Biokemisk Teknologi har fortrinsret.
+
+Studerende, der efter kursusstart konstateres ikke at være i stand til at anvende regneark og simuleringsprogrammel svarende til forudsætningskravet, vil blive udelukket.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The operation of chemical and catalytic reactors are investigated experimentally: the dynamic startup of an adiabatic tank reactor, residence time distribution, multiple steady states, operation of a catalytic fixed bed reactor. The experimental results are analysed on the basis of theory taught in the introductory course in chemical reaction engineering. Models for the dynamic approach to steady state are developed and implemented in numerical solvers. Application of programs like Excel and Maple/Matlab/Python is an integrated part of the course (see Qualified Prerequisites and Remarks).</Contents>
+          <Teaching_And_Learning_Methods>Laboratory experiments, computer simulations/calculations and writing of reports</Teaching_And_Learning_Methods>
+          <Course_Objectives>To illustrate the theory taught in a basic chemical reaction engineering course (such as 28140 Introduction to Chemical Reaction Engineering or 28342 Chemical Reaction Engineering) by experimental exercises with accompanying calculations and simulations.</Course_Objectives>
+          <Remark>Students in the MSc Chemical and Biochemical Engineering program have preferential access.
+
+Students who cannot use spreadsheets and simulation software as specified in the qualified prerequisites will be dropped from the course by the instructor.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et grundkursus i kemisk reaktionsteknik på en bacheloruddannelse som kemiingeniør, samt et kursus der behandler modelopstilling eller -analyse.&#xD;&#xA;&#xD;&#xA;Til rapportskrivning kræves brug af tekstbehandlingsprogrammel (f. eks. Word). Til databehandling og -analyse forventes brug af regneark og simuleringsprogrammel (f. eks. Excel og Maple/Matlab/Python). &#xD;&#xA;&#xD;&#xA;Se bemærkninger." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A basic course in chemical reaction engineering, such as is part of a bachelor program in chemical engineering, and a basic course in mathematical modelling.&#xD;&#xA;&#xD;&#xA;Reports should be written using Word or some other text editing software. Data treatment and analysis involves use of spreadsheets and mathematical simulation software (fx. Excel and Maple/Matlab/Python).&#xD;&#xA;&#xD;&#xA;See Remarks." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(28140/28342).(28016/28160)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge korte forsøgsserier på laboratoriereaktorer, så forud fastsatte mål kan nås." />
+          <Txt Lang="en-GB" Txt="Plan short series of experiments in lab reactors with the intent of satisfying preset goals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere reaktormodeller med henblik på at kunne sammenligne modelforudsigelser og eksperimentelle data." />
+          <Txt Lang="en-GB" Txt="Analyze reactor models in order to be able to compare model predictions with experimental evidence." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modificere standardmodeller for simple kemiske reaktorer, så modelbeskrivelsen passer til de eksperimentelle betingelser." />
+          <Txt Lang="en-GB" Txt="Modify standard models for simple chemical reactors to get agreement between model description and experimental conditions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombinere simple standardmodeller for kemiske reaktorer til beskrivelse af ikke-ideale laboratorierektorers opførsel." />
+          <Txt Lang="en-GB" Txt="Combine standard models for simple chemical reactors to a model for the behaviour of non-ideal lab reactors." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere laboratoriereaktorer ved opholdstidsfordelinger (målte eller modelbaserede)" />
+          <Txt Lang="en-GB" Txt="Characterize lab reactors through residence time distributions (measured or model based)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne over- og undergrænse for reaktoromsætning ud fra kendskab til opholdstidsfordeling." />
+          <Txt Lang="en-GB" Txt="Calculate upper and lower limits for conversion based on knowledge of residence time distributions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Behandle måledata i regneark med henblik på dataanalyse, reaktorsimulering, og grafisk fremstilling af data og beregningsresultater." />
+          <Txt Lang="en-GB" Txt="Process experimental data in spreadsheets to carry out data analysis, reactor simulation, and graphical representation of data and computational results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne målte data med reaktorberegninger udført med brug af simuleringsprogrammel som Maple eller Matlab, herunder foretage simpel parametertilpasning i modeller." />
+          <Txt Lang="en-GB" Txt="Compare measured data with reactor calculations carried out through use of simulation software such as Maple or Matlab." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere forsøgsdatas nøjagtighed og forklare afvigelser fra teoretiske forudsigelser." />
+          <Txt Lang="en-GB" Txt="Judge the accuracy of experimental data, and explain deviations from theoretical predictions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samle beskrivelserne af øvelsers planlægning, udførelse, resultater og sammenligning med teori i velstrukturerede rapporter." />
+          <Txt Lang="en-GB" Txt="Collect the descriptions of exercise planning, execution, results and comparison with theory in well structured reports." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundlæggende teori for simple kemiske reaktorer brugt i øvelsessammenhæng</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="21" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:29.92" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

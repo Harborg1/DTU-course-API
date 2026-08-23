@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34021" Volume="2026/2027" University="dtu" LastUpdated="2024-04-11+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Introduktion til optik og fotonik" />
+        <Title Lang="en-GB" Title="Introduction to optics and photonics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="38636" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Michael Linde</GivenName>
+            <FamilyName>Jakobsen</FamilyName>
+            <Email>mlja@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen (60%). Rapporter (40%)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written exam (60%). Reports (40%)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Dette kursus tæller som teknologisk linjefag på Bachelor of Science i Design and Innovation." />
+            <Supp_Txt Lang="en-GB" Txt="This course is part of the BSc in Design and Innovation" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Følgende koncepter af fænomener samt nogle af deres vigtigste anvendelser: radiometri, fotometri, kolorimetri, inkohærente og kohærente lyskilder, optisk detektering, Fresnels ligninger, stråleoptik, paraxial stråleoptik, optiske aberrationer, polarisation, interferens, Michelson-interferometer, Fabry-Perot-interferometer, kohærens, optisk kohærens tomografi, diffraktion, spektroskopi.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>F.L. Pedrotti, L.M. Pedrotti and L.S. Pedrotti, Introduction to Optics, third edition, Cambridge University Press 2018). ISBN: 978-1-108-42826-2
+E. F. Schubert, Light-Emitting Diodes, second edition, (Cambridge, 2006). ISBN: 978-0-521-86538-8</Course_Literature>
+          <Course_Objectives>Kurset sigter på at give en bred indføring i klassisk optik med henblik på at give en fysisk forståelse for hvorledes lys kan beskrives både som stråleoptik samt bølgeoptik. Kurset gennemgår diverse lyskilder og egenskaber ved lys. Kurset beskriver hvorledes radiometriske parametre bestemmes for lys, hvorledes det menneskelige øje opfanger og opfatter lys (fotometri og kolorimetri), hvorledes lysstråler kan guides og manipuleres med diverse passive optiske komponenter (reflekterende, brydende og polariserende komponenter), samt hvorledes de vigtigste måleteknikker inden for optisk bølgelære fungerer (kohærens, interferens, diffraktion).</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The following concepts and phenomena, and some of their most important applications: Radiometry, photometry, colorimetry, incoherent and coherent light sources, optical detection, Fresnel’s equations, ray optics, ray-tracing, paraxial ray optics, optical aberrations, polarization, interference, Michelson interferometry, Fabry-Perot interferometry, coherence, optical coherence tomography, diffraction, spectroscopy</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>F.L. Pedrotti, L.M. Pedrotti and L.S. Pedrotti, Introduction to Optics, third edition, Cambridge University Press 2018). ISBN: 978-1-108-42826-2
+E. F. Schubert, Light-Emitting Diodes, second edition, (Cambridge, 2006). ISBN: 978-0-521-86538-8</Course_Literature>
+          <Course_Objectives>The course provides a broad and fundamental introduction to classical optics. The aim is to give the student an understanding of the physics behind both the ray description and wave description of light. The course is divided into three areas: 1) Light sources, how light is measured and characterized and how the human eye will experience light. 2) Geometrical optics in mirrors, lenses and materials. 3) Polarization, interference and diffraction of light.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne og udmåle de radiometriske og fotometriske parametre for lys generelt" />
+          <Txt Lang="en-GB" Txt="Calculate and measure the radiometric and photometric parameters for light generally" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og karakterisere en optisk lyskilde mht. farve og udstråling" />
+          <Txt Lang="en-GB" Txt="Design and characterize optical light sources with regards to color and radiation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte Fresnel´s ligningerne til at beregne energiforhold ved lysudbredelse gennem en overgang mellem to dielektriske medier" />
+          <Txt Lang="en-GB" Txt="Use the Fresnel’s equations to calculate energy relations of light propagating through an interface between two dielectric media" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive princippet i udbredelse af lys i en simpel optisk bølgeleder" />
+          <Txt Lang="en-GB" Txt="Describe the principle of propagation of light in an optical wave guide" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne paraxiale strålematricer, til beskrivelse af simple såvel som komplekse optiske systemer" />
+          <Txt Lang="en-GB" Txt="Calculate paraxial ray matrices to describe simple as well as complex optical systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere diverse aberrationer og indflydelse af blændere på afbildningssystemer." />
+          <Txt Lang="en-GB" Txt="Discuss the different aberrations and the influence of apertures on imaging systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive optiske principper bag ray tracing programmel" />
+          <Txt Lang="en-GB" Txt="Discuss optical principles behind ray tracing software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere øjets funktion" />
+          <Txt Lang="en-GB" Txt="Discuss the functionality of the eye" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive polarisation og de forskellige polarisationstilstande med Jones matricer samt diskutere hvorledes polariseret lys kan genereres" />
+          <Txt Lang="en-GB" Txt="Describe polarization and the different states of polarization with the Jones matrices, and discuss how polarized light can be generated" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere begrebet interferens og kohærens, og gennemføre beregninger på forskellige interferometriske systemer" />
+          <Txt Lang="en-GB" Txt="Discuss the concept of interference and coherence, and calculate properties of different interferometric systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere indflydelsen af diffraktion i et optisk system, samt måletekniske anvendelser (spektroskopi)" />
+          <Txt Lang="en-GB" Txt="Discuss the influence of diffraction on optical systems, and its application (e.g. spectroscopy)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Indsigt i anvendelser af optik og fotonik – og i innovative metoder til at bringe disse på markeder indenfor medicinsk udstyr og kommunikation" />
+          <Txt Lang="en-GB" Txt="Insight into real-life applications of optics and photonics – and innovative ways to bring these to the market in medical devices, communications, and other industries" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="10020.10036.31400.34120" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Naturvidenskablig grundfag, Design &amp; Innovation, Elektroteknik, Geofysik &amp; Rumteknologi, Medicin &amp; Teknologi</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34020" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:32.803" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

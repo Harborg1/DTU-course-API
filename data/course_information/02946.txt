@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02946" University="dtu" LastUpdated="2024-10-14+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Compute" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Scientific computing for røntgen-tomografi" />
+        <Title Lang="en-GB" Title="Scientific Computing for X-Ray Computed Tomography" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset udbydes januar i lige år, dvs. januar 2026, januar 2028, etc." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is given in January in even years, i.e., January 2026, January 2028, etc." />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="27111" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jakob Sauer</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>jakj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="812" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Per Christian</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>pcha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til CT med anvendelser.  CT-scanneren.  Radon-transformationen og dens inverse, Filtered Back Projetion.  Diskretisering af CT-problemet.  Singular værdi dekomposition (SVD) og dens brug til analyse af CT-problemer.  Stabilitet og behovet for filtrereing; trunkeret SVD.
+Algebraiske iterative rekonstruktions-algoritmer - grundlæggende teori og konvergensegenskaber. Metodernes opførsel med støjfyldte data; semi-konvergens og stopkriterier. Brug af GPU'er.  Softwarepakken Core Imaging Library (CIL) og dens algebraiske rekonstruktionsmetoder.
+Støj-modeller, a priori-viden og regularisering. Variationelle formuleringer og bayesiansk modellering.  Eksempler: Total Variation og Tikhonov regulariering. Introduktion til konveks optimering og numeriske optimerings-metoder. Artifakt-reduktion og modelkalibrering.</Contents>
+          <Teaching_And_Learning_Methods>Seminarer og små rapporter om computer-øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Røntgen-CT bruges rutinemæssigt i medicin, materialevidenskab og mange andre områder til at rekonstruere et objekts indre vha matematiske metoder og numeriske algoritmer.
+Dette kursus fokuserer på formulering, implementering og brug af standard rekonstruktions-metoder til CT, såsom Filtered Back Projection, algebraiske iterative rekonstruktions-metoder, og regulariserings-metoder.  Vi giver en grundig matematisk beskrivelse af CT-rekonstruktionsproblemet, de tilhørende matematiske formuleringer samt de underliggende beregningsalgoritmer - suppleret med Matlab-computerøvelser.  Derudover giver vi øvelser i stor-skala rekonstruktion af rigtige CT data med Python pakken Core Imaging Library (CIL).  Målet er at deltagerne opnår en basal forståelse af formulering, implementering og brug af basale og avancerede CT-rekonstuktionsmetoder, og således kan bruge disse til data-analyse af egne CT-problemer. Som en del af kurset vil deltagerne optage deres egne CT data på DTU 3D Imaging centeret og rekonstruere det med metoderne fra kurset.</Course_Objectives>
+          <DTU_Remark>Kurset udbydes januar i lige år, dvs. januar 2026, januar 2028, etc.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to CT and some of its applications. The CT-scanner. The Radon transform and its inverse, Filtered Back Projection. Discretization of the CT problem. The Singular Value Decomposition (SVD) and its use for studying the CT problem. Stability and the need for filtering; truncated SVD.
+Algebraic iterative reconstruction algorithms - foundations and convergence properties. Their behavior for noisy data; semi-convergence and stopping rules. The use of GPU computing. The software package Core Imaging Library (CIL) and its algebraic reconstruction algorithms.
+Noise models, priors and regularization. Variational formulations and Bayesian modeling. Cases: Total Variation and Tikhonov regularization. Introduction to convex optimization and numerical optimization algorithms. Artifacts in reconstructions and model calibration.</Contents>
+          <Teaching_And_Learning_Methods>Seminars and small reports on the computer projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>X-ray Computed Tomography (CT) is used routinely in medicine, materials science and many other applications to reconstruct an object's interior using mathematical methods and numerical algorithms.
+This course focuses on the formulation, implementation, and use of standard reconstruction methods for CT such as Filtered Back Projection, Algebraic Iterative Reconstruction methods, and regularization methods. We give a rigorous mathematical description of the CT reconstruction problem, the associated mathematical formulations, and the underlying computational algorithms - supplemented with hands-on MATLAB computer exercises that illustrate these methods. In addition, we give exercises in large-scale reconstruction of real CT data using the Python package Core Imaging Library (CIL). The goal is that participants will get a basic understanding of the formulation, implementation, and use of basic and advanced CT reconstruction algorithms, and thus be able to use them to perform data analysis for their own CT problems. As part of the course, participants will acquire their own X-ray CT data at the DTU 3D Imaging Facility and reconstruct it using the methods from the course.</Course_Objectives>
+          <DTU_Remark>The course is given in January in even years, i.e., January 2026, January 2028, etc.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med Matlab-programmering(fx 02631/33) og numeriske beregninger (fx 02601)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience with Matlab programming (e.g, 02631/33) and numerical computations (e.g., 02601)." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare fysikken bag en CT-scanner." />
+          <Txt Lang="en-GB" Txt="Describe the underlying physics of a CT scanner." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere den tilsvarende matematisk model og Radon-transformationen." />
+          <Txt Lang="en-GB" Txt="Formulate the corresponding mathematical model and the Radon transform." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere den inverse Radon-transformation og Filtered Back Projection-algoritmen." />
+          <Txt Lang="en-GB" Txt="Formulate the inverse Radon transform and the Filtered Back Projection algorithm." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskretisere Radon-transformationen og herved opstille et lineært ligningssystem." />
+          <Txt Lang="en-GB" Txt="Discretize the Radon transform to obtain a system of linear equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge singulær værdi dekomposition (SVD) til at analysere rekonstruktionsproblemet." />
+          <Txt Lang="en-GB" Txt="Use the singular value decomposition (SVD) to analyze the reconstruction problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og bruge algebraiske iterative metoder som inkluderer simple bibetingelser." />
+          <Txt Lang="en-GB" Txt="Formulate and use algebraic iterative methods that include simple constraints." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere konvergens-opførslen for disse metoder." />
+          <Txt Lang="en-GB" Txt="Formulate the convergence behavior of these methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge softwarepakken Core Imaging Library (CIL) til storskala-problemer." />
+          <Txt Lang="en-GB" Txt="Use the software package Core Imaging Library (CIL) for large-scale problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere variationelle problemer baseret på bayesiansk modellering af støjen." />
+          <Txt Lang="en-GB" Txt="Formulate variational problems based on Bayesian noise modeling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og bruge Tikhonov-regularisering og Total Variation-regularisering." />
+          <Txt Lang="en-GB" Txt="Formulate and use Tikhonov regularization and Total Variation regularization." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge moderne numeriske metoder for konveks optimering til CT-rekonstruktion." />
+          <Txt Lang="en-GB" Txt="Use modern numerical methods from convex optimization for CT reconstruction." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Scientific Computing for X-Ray CT</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:40.253" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62677" Volume="2026/2027" University="dtu" LastUpdated="2026-04-03+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Anvendt reguleringsteknik" />
+        <Title Lang="en-GB" Title="Applied Control Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Timer udenfor skemamodulet kan forekomme i forbindelse med øvelser i RobotLab" />
+          <Schedule_Txt Lang="en-GB" Txt="Extra time beyond the course module can occur in relation to experimental work in RobotLab" />
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="36701" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Christian Kim</GivenName>
+            <FamilyName>Christiansen</FamilyName>
+            <Email>chkch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="209706" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Karam</GivenName>
+            <FamilyName>Eliker</FamilyName>
+            <Email>kaeli@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="3 timers skriftlig multiple choice eksamen. Vægt: 75%.&#xD;&#xA;Projektetopgave udarbejdes i grupper. Vægt 25%.&#xD;&#xA;Karakteren gives ved en helhedsbedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="3 hour written multiple choice exam. Weight: 75%.&#xD;&#xA;Course Project prepared in groups. Weight: 25%.&#xD;&#xA;The grade is given by overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Labtop and Matlab/Simulink." />
+            <Aid_Txt Lang="da-DK" Txt="Computer og Matlab/Simulink." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Matematisk modellering af mekaniske og elektriske systemer. Laplace-transformation og overføringsfunktioner. Linearisering af ikke-lineære systemer. Åbne og lukkede reguleringskredsløb. Transientanalyse. Root locus. Ziegler-Nichols metoder. Systemorden, systemtype og minimum/non-minimum faseadfærd. Slutværdissætningen. Statisk forstærkning. Steady-state fejlanalyse. PID- reguleringsdesign og tuning. Frekvensanalyse. Praktiske laboratorieøvelser.</Contents>
+          <Teaching_And_Learning_Methods>Undervisningen er baseret på forelæsninger, opgaveregning, computerbaserede simuleringsøvelser på egen PC, samt øvelser i RobotLab</Teaching_And_Learning_Methods>
+          <Course_Literature>Faglitteratur oplyses ved semesterstart.
+Lektionsnoter på DTU Learn.
+MATLAB &amp; Simulink Student Version.
+Studerende skal anskaffe et Arduino-board, såsom Arduino UNO.</Course_Literature>
+          <Course_Objectives>Kurset giver grundlæggende færdigheder i reguleringsteknik til at analysere, modellere, simulere og designe kontinuerlig PID-regulering for mekaniske og elektriske systemer. Det integrerer teori, praktisk arbejde og teknisk rapportskrivning.</Course_Objectives>
+          <Remark>Sektion for Mekanisk teknologi
+Maskinteknik: 3. semester
+Elektrisk Energiteknologi: 3. semester
+
+Studerende skal anskaffe et Arduino-board, såsom Arduino UNO.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Mathematical modeling of mechanical and electrical systems. Laplace transform and transfer functions. Linearization of nonlinear systems. Open-loop and closed-loop control. Transient analysis. Root locus. Ziegler-Nichols methods. System order, type, and minimum/non-minimum phase behavior. Final value theorem. Static gain. Steady-state error analysis. PID control design and tuning. Frequency analysis. Hands-on lab exercises.</Contents>
+          <Teaching_And_Learning_Methods>The course is based on lectures, exercises, computer based simulation exercises on your own PC, and experimental work ind RobotLab</Teaching_And_Learning_Methods>
+          <Course_Literature>Literature will be announced at the beginning of the semester.
+Lecture notes on DTU Learn.
+MATLAB &amp; Simulink Student Version.
+Students are required to purchase an Arduino board, such as Arduino UNO.</Course_Literature>
+          <Course_Objectives>The course provides fundamental skills in control engineering to analyze, model, simulate, and design continuous-time PID control for mechanical and electrical systems. It integrates theory, practical work, and technical writing.</Course_Objectives>
+          <Remark>Section of Mechanical Technology
+Mechanical Engineering, Ballerup: 3. semester
+Electrical Engineering, Ballerup: 3. semester
+
+Students are required to purchase an Arduino board, such as Arduino UNO.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede matematiske modeller af simple dynamiske systemer." />
+          <Txt Lang="en-GB" Txt="Derive mathematical models of simple dynamical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konvertere et system mellem tidsdomænet og Laplace-domænet. " />
+          <Txt Lang="en-GB" Txt="Convert a system between the time domain and the Laplace domain. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive et system ved hjælp af overføringsfunktion og et blokdiagram." />
+          <Txt Lang="en-GB" Txt="Describe a system using transfer function and block diagram." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere et ikke-lineært system og anvend en lineariseringsteknik." />
+          <Txt Lang="en-GB" Txt="Identify a nonlinear system and apply a linearization technique." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere transiente responser for første- og andenordens systemer." />
+          <Txt Lang="en-GB" Txt="Analyze the transient response of first-order and second-order systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne poler og nulpunkter for at analysere systemets opførsel." />
+          <Txt Lang="en-GB" Txt="Compute poles and zeros to analyze system behavior." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre en stabilitetsanalyse i både tidsdomænet og frekvensdomænet." />
+          <Txt Lang="en-GB" Txt="Perform a stability analysis in both the time domain and frequency domain." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Indstille PID-parametre ved hjælp af Root Locus og Ziegler-Nichols metoder." />
+          <Txt Lang="en-GB" Txt="Tune PID gains using Root Locus and Ziegler-Nichols methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende MATLAB og SIMULINK til analyse og simulering af reguleringssystemer." />
+          <Txt Lang="en-GB" Txt="Use MATLAB and SIMULINK for control system analysis and simulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere et reguleringssystem i laboratoriet og skrive en teknisk rapport herom." />
+          <Txt Lang="en-GB" Txt="Implement a control system in the lab and write a technical report regarding this." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01901.(62646/62735).(62675/62601)" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Reguleringsteknik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62612.62969.62714.62904" />
+        <PreviousCourse CourseCode="62612" />
+        <PreviousCourse CourseCode="62904" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="39" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:57.633" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

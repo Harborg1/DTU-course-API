@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34368" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Infrastruktur og design af globale kommunikationsnetværk" />
+        <Title Lang="en-GB" Title="Global communication network infrastructure and design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="17715" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Sarah Renée</GivenName>
+            <FamilyName>Ruepp</FamilyName>
+            <Email>srru@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evaluation of assignments, oral presentations and reports evaluated as a whole" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of assignments, oral presentations and reports evaluated as a whole" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>The focus of the course will be on providing the students of a general understanding of the complexity of the core and transport infrastructure. It will contain topics such as network topologies, network layering and stratification, reference models, complex communication systems, transmission and multiplexing protocols and their internal relation, logical vs. physical networks, traffic characterization, network resilience, network control and management, node architecture, energy efficiency, quality of service (QoS) and Quality of Experience, and transition from legacy to next generation networks. Assignments, groupwork, peer-evaluation and presentations are an integral part of the course. 
+At an appropriate level the course will incorporate topics from ongoing research activities within the department as well as guest lecturers from Danish industry.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and assignments</Teaching_And_Learning_Methods>
+          <Course_Objectives>The objective for this course is to provide the students with a network perspective overview of functions and elements as well as related standards which form the basis for the implementation of future integrated global communication networks.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The focus of the course will be on providing the students of a general understanding of the complexity of the core and transport infrastructure. It will contain topics such as network topologies, network layering and stratification, reference models, complex communication systems, transmission and multiplexing protocols and their internal relation, logical vs. physical networks, traffic characterization, network resilience, network control and management, node architecture, energy efficiency, quality of service (QoS) and Quality of Experience, and transition from legacy to next generation networks. Assignments, groupwork, peer-evaluation and presentations are an integral part of the course.
+At an appropriate level the course will incorporate topics from ongoing research activities within the department as well as guest lecturers from Danish industry.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and assignments</Teaching_And_Learning_Methods>
+          <Course_Objectives>The objective for this course is to provide the students with a network perspective overview of functions and elements as well as related standards which form the basis for the implementation of future integrated global communication networks.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Knowledge about communication systems as taught in courses 34302, 34313 and 34334." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge about communication systems as taught in courses 34302, 34313 and 34334." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identify the challenges of building and scaling global communication networks" />
+          <Txt Lang="en-GB" Txt="Identify the challenges of building and scaling global communication networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Differentiate between physical and logical networks" />
+          <Txt Lang="en-GB" Txt="Differentiate between physical and logical networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Illustrate and compare different topologies for communication networks" />
+          <Txt Lang="en-GB" Txt="Illustrate and compare different topologies for communication networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Characterize traffic by relevant parameters" />
+          <Txt Lang="en-GB" Txt="Characterize traffic by relevant parameters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Asses control and management systems for large networks" />
+          <Txt Lang="en-GB" Txt="Asses control and management systems for large networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Devise procedures for building networks providing high reliability " />
+          <Txt Lang="en-GB" Txt="Devise procedures for building networks providing high reliability " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain the difference between quality of service (QoS) and Quality of Experience (QoE)" />
+          <Txt Lang="en-GB" Txt="Explain the difference between quality of service (QoS) and Quality of Experience (QoE)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Describe the principles of providing sustainable communication network infrastructure" />
+          <Txt Lang="en-GB" Txt="Describe the principles of providing sustainable communication network infrastructure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze ongoing research in communication networks and its relation to legacy technologies" />
+          <Txt Lang="en-GB" Txt="Analyze ongoing research in communication networks and its relation to legacy technologies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Present own findings in reports and oral presentations, and give constructive feedback to others" />
+          <Txt Lang="en-GB" Txt="Present own findings in reports and oral presentations, and give constructive feedback to others" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Core and transport networks</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34350" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:19.21" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

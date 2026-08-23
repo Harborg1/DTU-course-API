@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30121" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Astrofysik" />
+        <Title Lang="en-GB" Title="Astrophysics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="146011" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Georgios</GivenName>
+            <FamilyName>Magdis</FamilyName>
+            <Email>geoma@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38290" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jerome</GivenName>
+            <FamilyName>Chenevez</FamilyName>
+            <Email>jerome@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der er krav om at aflevere en obligatorisk opgave (delprøve), for at kunne gå til eksamen. Delprøven vægtes med 1/3 og den afsluttende mundtlige eksamen vægtes med 2/3." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="It is required to hand in a mandatory assignment (part-exam counting 1/3 of the final grade) to meet at the final oral exam (2/3 of the grade)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Only the given set of formulas is allowed at the part-exam." />
+            <Aid_Txt Lang="da-DK" Txt="Kun den leverede samling af formler er tilladt til delprøven." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="If necessary, the oral examinations will be spread over several days, which will be agreed upon together with the students." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Hvis nødvendigt, afholdes de mundtlige eksamener over flere dage, og datoen aftales på bedste vis med de studerende." />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="25 minuter" />
+          <Duration Lang="en-GB" Txt="25 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil præsentere himmelrummet og forklare, hvordan detektionen af elektromagnetisk stråling er afgørende i astrofysikken for at forstå vores kosmos.
+
+Kurset vil dække hele spektret af astrofysiske skalaer – fra detektion og dannelse af exoplaneter til fysikken og udviklingen af stjerner, kompakte objekter (hvide dværge, neutronstjerner og sorte huller), og fra klassificeringen og egenskaberne af galakser gennem den kosmiske historie til universets geometri og den standard kosmologiske model for Big Bang.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, quizzes, regneøvelser, og online programmering i python.</Teaching_And_Learning_Methods>
+          <Course_Literature>Universe, Stars and Galaxies, 6th edition (eller Universe 11th edition) og tidligere udgaver af R.A. Freedman, R.M. Geller, W.J. Kaufmann III. Ed. W.H. Freeman and Company, NY, 2019.</Course_Literature>
+          <Course_Objectives>Kurset har til formål at introducere hovedprincipperne inden for moderne astrofysik og kosmologi ved at dække det grundlæggende i stjerners og galaksers fysik og natur, såvel som mørkt stof og Big Bang. Kurset har også til formål at give et overblik over de teknologiske udfordringer i moderne astrofysiske faciliteter og observationer.</Course_Objectives>
+          <DTU_Remark>Kurset er åbent for alle. Dog ved overtegning af tilmeldte deltagere, vil studerende på uddannelsen i Geofysik og Rumteknologi blive priorieteret.</DTU_Remark>
+          <Remark>Kurset kan betragtes som relevant for SDG #4: "Sikre inkluderende og retfærdig kvalitetsuddannelse og fremme livslange læringsmuligheder for alle."</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will present the heavens and explain how the detection of electromagnetic radiation is essential in astrophysics to understand our Cosmos.
+
+The course will cover the full range of astrophysical scales, from the detection and formation of exoplanets to the physics and evolution of stars, compact objects (white dwarfs, neutron stars and black holes),  and from the classification and the properties of galaxies across cosmic time to the geometry of the universe and the standard cosmological model of the Big Bang.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, quizzes, exercises, and online python programming.</Teaching_And_Learning_Methods>
+          <Course_Literature>Universe, Stars and Galaxies, 6th edition (or Universe 11th edition) and earlier editions, by R.A. Freedman, R.M. Geller, W.J. Kaufmann III. Ed. W.H. Freeman and Company, NY, 2019.</Course_Literature>
+          <Course_Objectives>This course aims to introduce the main principles of modern astrophysics and cosmology by covering the fundamentals of the physics and nature of stars and galaxies, as well as of dark matter and the Big Bang. The course also aims to provide an overview of the technological challenges in modern astrophysical facilities and observations.</Course_Objectives>
+          <DTU_Remark>The course is open to all. However, students from the ESPE programme will be given precedence.</DTU_Remark>
+          <Remark>The course can be considered as relevant for SDG #4: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all."</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmering og Fysik 1, eller Mekanik of fysisk modellering, Termodynamik og statistisk fysik, samt Elektromagnetisme eller tilsvarende." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Computer Programming and Physics 1, or Mechanics and Physical Modeling, Thermodynamics, Electromagnetics, or equivalent." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002.10024/(10033.10034).30400" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvise grundlæggende kendskab til himlens koordinatsystemer" />
+          <Txt Lang="en-GB" Txt="demonstrate basic knowledge about sky coordinate systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for elektromagnetisk strålings betydning for astrofysiske observationer og strålings vekselvirkning med stof" />
+          <Txt Lang="en-GB" Txt="explain the fundamental elements of the electromagnetic radiation processes and the photon interactions with matter" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for grundstoffernes sammensætning i Universet, stjernerne, planeterne og galakserne" />
+          <Txt Lang="en-GB" Txt="explain the origin of the composition of the Universe, the planets, the stars and the galaxies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive anvendelsen af Newtons og Einsteins tyngdelove i astrofysik" />
+          <Txt Lang="en-GB" Txt="describe how theories of gravitation apply in astrophysics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for stjernernes opbygning, fysik, dannelse og udvikling" />
+          <Txt Lang="en-GB" Txt="explain the formation, structure, physics, and evolution of the stars" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de grundlæggende egenskaber ved kompakte objekter (hvide dværge, neutronstjerner og sorte huller) og deres dannelse som slutstadier af stjernernes udvikling" />
+          <Txt Lang="en-GB" Txt="explain the fundamental properties of compact objects (white dwarfs, neutron stars and black holes) and their formation as the end stages of stellar evolution" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare Mælkevejens opbygning og observationer heraf" />
+          <Txt Lang="en-GB" Txt="explain the structure of the Milky Way and its observations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for galakser og galaksehobes opbygning og observationelle udfordringer" />
+          <Txt Lang="en-GB" Txt="explain the structure of galaxies and galaxy clusters, and the related observational challenges" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for den kosmiske mikrobølgebaggrundsstråling og universets dannelse i et big bang" />
+          <Txt Lang="en-GB" Txt="explain the cosmic microwave background and the overall theory about the Start of the Universe in the &quot;Big Bang&quot;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvordan man leder efter exoplaneter" />
+          <Txt Lang="en-GB" Txt="explain methods to search for exoplanets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre mini programmering projekter på online platforme" />
+          <Txt Lang="en-GB" Txt="perform mini programming projects on online platforms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive forskellige typer af observationsteknikker, herunder teleskoper, detektorer og spektrografer." />
+          <Txt Lang="en-GB" Txt="describe different methods of observational techniques, such as telescopes, detectors, and spectrographs." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="30120" />
+        <PreviousCourse CourseCode="30120" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="80" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:52.02" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

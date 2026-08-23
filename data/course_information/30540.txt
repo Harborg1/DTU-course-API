@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30540" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kortlægning fra fly- og satellitbilleder" />
+        <Title Lang="en-GB" Title="Mapping from Aerial and Satellite Images" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="60105" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Daniel Haugård</GivenName>
+            <FamilyName>Olesen</FamilyName>
+            <Email>danole@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="50252" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Karina</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>karni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen med 24 timers forberedelse. &#xD;&#xA;Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral examination with 24-hour preparation.&#xD;&#xA;Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Fotogrammetriske optagesystemer: Digitale flybilledkameraer, multispektral skanning, laserskanning, billeddannende radar og højopløselige billeddata fra satellit. Billedorientering og aerotriangulation. Anvendelse af billedbehandling til fotogrammetrisk måling i billederne. Analyse af multispektrale og hyperspektrale billeddata, herunder principal komponentanalyse og klassifikation. Dataindsamling til ortofotos og 3D bymodeller. Billedbehandlingssystemer til tolkning og dataanalyse. Øvelser med billedorientering, kortlægning og dataanalyse (herunder egen implementering i R, Matlab eller Python). Besøg hos/fra et fotogrammetrisk firma.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give kendskab til de instrumenter og metoder, der anvendes ved kortlægning og analyse af Jordens overflade fra fly og satellit. Kurset omhandler digitale fotogrammetriske og spektrale metoder til topografisk kortlægning og opdatering af kort, samt relaterede teknikker til analyse af digitale billeder i forbindelse med tematisk kortlægning, jordobservation og forandringsanalyse.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Photogrammetric sensing systems: Digital aerial cameras, multispectral scanners, laser scanning, imaging radar, and high-resolution satellite images. Image orientation and aerotriangulation. Photogrammetric measurements by image processing. Analysis of multispectral and hyperspectral image data, including principal component analysis and classification. Data collection for orthophotos and 3D city models. Image analysis for interpretation and data analysis. Exercises in image orientation, mapping, and data analysis (including students' own implementations in R, Matlab, or Python). Visit to/from a photogrammetric company.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide knowledge of instruments and methods used to map and analyse the earth's surface. The course includes digital photogrammetric and spectral methods for topographic mapping and related techniques for analysing digital image data for thematic mapping, earth observation, and change detection.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Billedanalyse og Computer vision." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Digital image analysis and Computer vision." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02502/02504/02501)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre typiske opgaver til processering af fly- eller satellitbilleder og ekstrahere information fra disse billeder" />
+          <Txt Lang="en-GB" Txt="carry out typical tasks to process aerial or satellite images and extract information from these images" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere hvordan billeder dannes og hvordan flere billeder fra forskellige synsvinkler kan udlede 3D information omkring et objekt" />
+          <Txt Lang="en-GB" Txt="analyse how an image is formed and how multiple images from different viewpoints of the same scene can be used to extract 3D information" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive pinhole-kamera modellen og betydningen af interne og eksterne kameraparametre" />
+          <Txt Lang="en-GB" Txt="describe the pinhole-camera model and the meaning of intrinsic and extrinsic camera parameters " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et program som kan generere 3d modeller baseret på flere billeder af det samme objekt" />
+          <Txt Lang="en-GB" Txt="design a program that can generate a 3d model based on multiple images of the same scene" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre kamera kalibrering for at kompensere effekter af linseforvrængning ved hjælp af forskellige modeller" />
+          <Txt Lang="en-GB" Txt="carry out a camera calibration to mitigate effects of lens distortion using different models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive spektrale egenskaber for forskellige overflade typer, herunder, vand, is og vegetation" />
+          <Txt Lang="en-GB" Txt="describe the spectral properties of different surface types such as water, ice, and vegitation " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og anvende forskellige forskellige spektrale indeks som det normaliserede vegetations indeks (NDVI) til simpel overflade kortlægning i optiske billeder. " />
+          <Txt Lang="en-GB" Txt="describe and apply various spectral indices such as the normalized vegetation index (NDVI) for simple surface mapping in optical images" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere og anvende relevante metoder til overflade kortlægning udfra  optiske billeder, herunder principal komponent analyse, Kmeans, Gaussian mixture models, kvadratisk diskriminantanalyse, og kanonisk korrelationsanalyse    " />
+          <Txt Lang="en-GB" Txt="implement and apply relevant methods for surface mapping of optical images hereunder principal component analysis, Kmean, Gaussian mixture models, quadratic discriminant analysis, and  canonical correlation analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere billeder med henblik på forandringsdetektion ved hjælp af f.eks. kanonisk korrelationsanalyse og klassifisseringsteknikker" />
+          <Txt Lang="en-GB" Txt="analyse images with the purpose of change detection using canonical correlation analysis and classification techniques  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="arbejde med feature detektion, udledning og 'outlier rejection' metoder for billedbehandling" />
+          <Txt Lang="en-GB" Txt="work with feature detection, extraction and outlier rejection methods for image processing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive hvordan man generere digitale overflade modeller og ortofotos vha. direkte- eller indirekte georeferencering." />
+          <Txt Lang="en-GB" Txt="describe how to generate Digital Surface Models and Orthophotos using either direct- or indirect geo-referencing." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Photogrammetric and spectral techniques for semi-automatic mapping from imagery</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02547" />
+        <PreviousCourse CourseCode="02547" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:13.247" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

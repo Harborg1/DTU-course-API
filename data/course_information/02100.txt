@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02100" Volume="2026/2027" University="dtu" LastUpdated="2026-04-21+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Indledende programmering og softwareteknologi" />
+        <Title Lang="en-GB" Title="Introductory Programming and Software Technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="6524" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jørgen</GivenName>
+            <FamilyName>Villadsen</FamilyName>
+            <Email>jovi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53388" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Witt</FamilyName>
+            <Email>cawi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakterbedømmelsen fremkommer ved en helhedsvurdering på basis af de afleverede individualiserede opgaver samt den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grading is based on an overall assessment on the basis of the submitted individualized assignments and the written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Use of generative AI is not permitted during the exam." />
+            <Aid_Txt Lang="da-DK" Txt="Det er ikke tilladt at bruge generative AI under eksamen." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil introducere algoritmisk problemløsning og tænkning på en måde, der er stort set uafhængig af programmeringssproget. Der vil blive undervist i konkrete programmeringsparadigmer inden for objektorienteret og imperativ programmering samt i software-designmønstre primært i programmeringssproget Java. Desuden vil programmeringssproget Python blive introduceret.
+
+Følgende elementer vil blive dækket:
+
+grundlæggende programmeringskonstruktioner (løkker, forgreninger osv.); input og output; datatyper, primitive og refererede; bindinger; værdier, operatorer og udtryk; klasser, objekter, felter, metoder; design af klasser, hierarkier, nedarvning, refleksion; abstraktion (abstrakte og generiske klasser, interfaces); grundlæggende elementer af funktionsprogrammering (lambda-udtryk); rekursion; mental model for udførelse af programmeringssprog; begrundelse af korrekthed af programmer; brug af biblioteker; kommandolinjeskripter; fejl- og undtagelseshåndtering; fejlfinding, versionsstyring, dokumentation, enkle softwaredesignmønstre; grafiske brugergrænseflader; udvalgte avancerede emner.
+
+Endelig vil ca. et modul på 4 timer af kurset omhandle studierelaterede aktiviteter for de studerende på bacheloruddannelsen i softwareteknologi, der sikrer overgangen fra elev til studerende, for eksempel studieteknikker og studieplaner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser. Øvelserne omfatter løsningen af mindre opgaver, som laves i grupper.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er at formidle de grundlæggende begreber inden for programmering, herunder imperativ og objektorienteret programmering samt grundlæggende konstruktioner inden for funktionsprogrammering som for eksempel lambda-udtryk, og at sætte den studerende i stand til at anvende disse begreber med relevante softwareteknologier.</Course_Objectives>
+          <DTU_Remark>Kurset er forbeholdt civilbacheloruddannelserne i Softwareteknologi og Computer Engineering.</DTU_Remark>
+          <Remark>En del af kurset formidler kompetencer relateret til kernefagligheden i Softwareteknologi og dækker over elementer fra retningens tidligere kursustype "Ingeniørarbejde".</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will introduce algorithmic problem solving and thinking in a way that is mostly independent of the programming language. Concrete programming paradigms in object-oriented and imperative programming and software design patterns will be taught primarily in the Java programming language. Moreover, the Python programming language will be introduced.
+
+The following elements will be covered:
+
+basic programming constructs (loops, branching statements etc); input and output; data types, primitive and referenced; bindings; values, operators and expressions; classes, objects, fields, methods; design of classes, hierarchies, inheritance, reflection; abstraction (abstract and generic classes, interfaces); basic elements of functional programming (lambda-expressions); recursion; mental model of execution of programming languages; justification of correctness of programs; use of libraries; command-line scripts; error/exception handling; debugging, version control, documentation, simple software design patterns; graphical user interfaces; selected advanced topics. 
+
+Finally, roughly one 4-hour module of the course will deal with study-related activities for the students on the BSc Software Technology line that ensure the transition from pupil to student, for example study techniques and study plans.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises. The exercises include small assignments, which are solved in groups.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to convey the basic concepts of programming, including imperative and object-oriented programming as well as fundamental constructs of functional programming like lambda-expressions, and to enable the student to apply these concepts with relevant software technologies.</Course_Objectives>
+          <DTU_Remark>The course is reserved for the BSc educations in Software Technology and Computer Engineering.</DTU_Remark>
+          <Remark>Part of the course teaches core competences in Software Technology and covers elements from the former course type "Engineering works" on the study line.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende de grundlæggende begreber, der er fælles for alle imperative programmeringssprog " />
+          <Txt Lang="en-GB" Txt="Describe and apply the basic concepts that are common to all imperative programming languages " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Omdanne en uformel problembeskrivelse til en entydig specifikation, der kan implementeres i et programmeringssprog" />
+          <Txt Lang="en-GB" Txt="Transform an informal problem description into an unambiguous specification implementable in a programming language" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende begreberne procedurer, virkefelter og bindinger" />
+          <Txt Lang="en-GB" Txt="Explain and apply concepts of procedures, scopes and bindings" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende begreberne objektorienteret programmering, herunder for eksempel polymorfisme, nedarvning, indkapsling og refleksioner" />
+          <Txt Lang="en-GB" Txt="Explain and apply object-oriented programming concepts, including for example polymorphism, inheritance, encapsulation and reflections" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge, vurdere, anvende og designe egnede datatyper og datastrukturer" />
+          <Txt Lang="en-GB" Txt="Choose, evaluate, apply and design suitable data types and data structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne forskellige implementeringer og begrunde deres korrekthed" />
+          <Txt Lang="en-GB" Txt="Compare different implementations and justify their correctness" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende programmeringsteknikker, herunder rekursion, og relatere dem til deres eksekvering" />
+          <Txt Lang="en-GB" Txt="Explain and apply programming techniques, including recursion, and relate them to their execution" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende relevante softwareteknologier og værktøjer til udvikling, dokumentation, afprøvning og implementering af programmer" />
+          <Txt Lang="en-GB" Txt="Apply relevant software technologies and tools for the development, documentation, testing and deployment of programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende moderne programmeringsparadigmer som for eksempel begivenhedsdrevne og grafiske miljøer" />
+          <Txt Lang="en-GB" Txt="Describe and apply modern programming paradigms such as event-driven and graphical environments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende grundlæggende softwaredesignmønstre" />
+          <Txt Lang="en-GB" Txt="Explain and apply basic software design patterns" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe, implementere, dokumentere og evaluere en softwareløsning af moderat størrelse i samarbejde med andre" />
+          <Txt Lang="en-GB" Txt="Design, implement, document and evaluate a software solution of moderate size in collaboration with others" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende relevant faglitteratur på dansk og engelsk" />
+          <Txt Lang="en-GB" Txt="Use relevant technical literature in Danish and English" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02002/02003/02101/02102" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:34.59" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

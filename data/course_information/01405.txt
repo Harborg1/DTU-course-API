@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="01405" University="dtu" LastUpdated="2025-03-19+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Algebraiske Fejlrettende Koder" />
+        <Title Lang="en-GB" Title="Algebraic Error-Correcting Codes" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="123707" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Maria</GivenName>
+            <FamilyName>Montanucci</FamilyName>
+            <Email>marimo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="28452" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Beelen</FamilyName>
+            <Email>pabe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Projektet udføres i små grupper (2-3 studerende) med afsluttende rapport. Afsluttende, individuel mundtlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The project is carried out in small groups (2-3 students) with a written report. Individual oral examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The grade for the course will be based on an overall evaluation of the project and the oral exam." />
+            <Aid_Txt Lang="da-DK" Txt="Karakteren for kurset vil være en helhedsvurdering ud fra projektet og den mundtlige eksamen." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset forløber med forelæsninger og grupperegninger. Vi lægger ud med at introducere den matematiske model indenfor lineær algebra over endelige legemer, og vi undersøger de overordnede rammer indenfor den: Gilbert-Varshamov grænsen og eksponentialtids-afkodning. Dernæst introduceres væsentlige algebraiske koder, Reed-Solomon-koder, hvor univariate polynomier benyttes som algebraisk værktøj. Vi ser på en effektiv afkodningsalgoritme til disse koder, samt hvordan den kan implementeres i et computer-algebra-system. Dernæst generaliserer vi til Reed-Muller-koderne vha. multivariate polynomier. Dette motiverer brugen af algebraiske kurver som fører til Algebraiske-Geometri koder, hvor Bézouts sætning er et væsentligt værktøj til analyse. Til sidst vil vi studere en ny anvendelse af algebraiske koder i cloud lagring.</Contents>
+          <Teaching_And_Learning_Methods>Kurset består af forelæsninger, grupperegninger og projektarbejde i grupper.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebogen er elektronisk og gratis tilgængelig.</Course_Literature>
+          <Course_Objectives>Dette er et matematik-kursus der udspringer fra ingeniør-anvendelsen Fejlrettende Koder. De faglige værktøjer vi beskæftiger os med er diskret matematik, algebra og algebra. 
+
+Fejlrettende Koder handler ikke om programmering men derimod om repræsentation af digital information således at det bliver robust overfor fejl. Disse bliver brugt overalt: fx datalagring på din computer, eller sattelit-tv der stadig fungerer i stormvejr på trods af atmosfærisk støj, eller højhastigheds internet og mobiltelefoni. Det er ikke overdrevet at sige, at informationsalderen var umulig uden Fejlrettende Koder. 
+
+Mange af de bedste fejlrettende koder vi kender udspringer fra dybsindig algebra. Dette kursus er en introduktion til den fundamentale matematiske model i kodningsteori og til matematikken bag disse algebraiske koder. For at modtageren kan rette fejl der måtte opstå har han brug for effektive algoritmer til at jonglere med de algebraiske objekter; vi vil beskæftige os med både teoretisk algebra og med et computer-algebra system. 
+
+Kort sagt: vi vil bruge algebra og udvikle algebraiske værktøjer til at finde gode løsninger på matematiske problemstillinger, der er inspireret af anvendelser af Fejlrettende Koder.</Course_Objectives>
+          <Remark>Se også Algebra-forskningsgruppens hjemmeside: http://algebra.compute.dtu.dk</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course consists of lectures and exercise sessions. We start with introducing the mathematical model in the framework of linear algebra over finite fields, and we investigate the overall boundaries within it: Gilbert-Varshamov bound and exponential time decoding. Next important algebraic codes are introduced, Reed-Solomon codes, where univariate polynomials are used as an algebraic tool. We consider an efficient decoding algorithm for these codes and show how it can be implemented in a computer algebra system. After this we generalize to Reed-Muller codes using multivariate polynomials. This in turn motivates the usage of algebraic curves, leading to Algebraic Geometry codes, where Bézout's theorem is used as an essential tool for analysis. Finally we study a more recent application of algebraic codes in cloud storage.</Contents>
+          <Teaching_And_Learning_Methods>The course consists of lectures, exercises and project work in groups.</Teaching_And_Learning_Methods>
+          <Course_Literature>The teaching book is digital and accessible for free online.</Course_Literature>
+          <Course_Objectives>This is a course on mathematics focusing on the engineering application Error-Correcting Codes. The main fields we will be concerned with are discrete mathematics, linear algebra and algebra.
+
+Error-correcting codes is not about programming, but about representing digital information in ways that are resilient to noise. It is used everywhere: data storage on your computer, or a satellite-transmission which is understood through bad atmospheric disturbance in stormy weather, or in high-speed internet and in mobile phone conversations. Without exaggerating, the information era would have been impossible without Coding Theory.
+
+Many of the best error-correcting codes we know are based on ingenious algebraic methods. This course is an introduction to the fundamental mathematical model in coding theory and to the mathematics behind these algebraic codes. In order for the recipient to correct whatever errors appear, efficient algorithms will be needed for handling the algebraic objects; we will deal with this using both theoretical algebra and using a computer-algebra system.
+
+In a nutshell: we will use algebra and develop algebraic methods to find good solutions to mathematical problems inspired by applications of Error-correcting Codes.</Course_Objectives>
+          <Remark>See also the homepage of the Algebra research group: http://algebra.compute.dtu.dk</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Forståelse af grundbegreber fra algebra: lineær algebra, endelige legemer, kvotientringe, isomorfisætningen, polynomiumsringe. Lidt erfaring med programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Understanding of basic concepts from algebra: linear algebra, finite fields, quotient rings, the isomorphism theorem, polynomial rings. Some programming experience." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01018" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den matematiske model i fejlrettende koder og dens relevans i kommunikation." />
+          <Txt Lang="en-GB" Txt="Explain the mathematical model of error-correcting codes and its relevance in traditional communication." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede, med en konstruktiv metode, at der eksisterer koder med gode parametre." />
+          <Txt Lang="en-GB" Txt="Derive using a constructive method that there exist codes with good parameters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give en (eksponentialtids) algoritme til maximum likelihood afkodning." />
+          <Txt Lang="en-GB" Txt="Give an algorithm (with exponential running time) for maximum likelihood decoding. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere Reed-Solomon koder ved hjælp af polynomier i én variabel og udlede deres grundlæggende parametre." />
+          <Txt Lang="en-GB" Txt="Define Reed-Solomon codes using polynomials in one variable and derive their basic parameters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bevise matematisk korrektheden af en afkodningsalgoritme for Reed-Solomon-koder, og forstå hvordan man implementerer denne i et computer-algebra system." />
+          <Txt Lang="en-GB" Txt="Prove mathematically the correctness of a decoding algorithm for Reed-Solomon codes and understand how to implement this decoding algorithm in a computer algebra system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere hvorledes en transmission kan fejle og estimere sandsynligheden for disse hændelser i en simpel fejl-model." />
+          <Txt Lang="en-GB" Txt="Define the ways in which transmission can fail, and estimate for a simple error-model the probability of these events." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere Reed-Muller koder ved hjælp af polynomier i flere variable og udlede deres grundlæggende parametre." />
+          <Txt Lang="en-GB" Txt="Define Reed-Muller codes using polynomials in several variables and derive their basic parameters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bevise Bézouts sætning om skæringspunkter af algebraiske kurver, samt forklare dens rolle i Algebraisk Geometri-koder." />
+          <Txt Lang="en-GB" Txt="Prove Bézout's theorem concerning intersection points of algebraic curves and explain its role in Algebraic Geometry codes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere Algebraiske Geometri-koder ved hjælp af algebraiske kurver, udlede deres grundlæggende parametre, og beskrive en afkodningsalgoritme for dem." />
+          <Txt Lang="en-GB" Txt="Define Algebraic Geometry codes using algebraic curves, derive their basic parameters and describe a decoding algorithm for them." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre et projekt om algebraiske koder og evaluere deres effektivitet." />
+          <Txt Lang="en-GB" Txt="Execute a project on algebraic codes and evaluate their efficiency." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere lokalt gendannende koder og relatere dem til anvendelser i cloud lagring." />
+          <Txt Lang="en-GB" Txt="Define locally recoverable codes and relate them to applications in cloud storage." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en rapport om et emne i algebraiske fejlrettende koder." />
+          <Txt Lang="en-GB" Txt="Write a report on a subject within algebraic error-correcting codes." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Algebraic error-correcting codes for reliable communication and other applications.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="4" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:20.677" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62711" University="dtu" LastUpdated="2025-03-12+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Digitale systemer, design af" />
+        <Title Lang="en-GB" Title="Digital systems, design of" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="78867" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Schultz</FamilyName>
+            <Email>osch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Det er en forudsætning for at gå til eksamen, at laboratorie-journaler og multiple-choice er udført. Den afsluttende rapport dækkende tre kursusarbejder  indgår i debømmelsen ved en individuel mundtlig eksamen af ca. 10 min. varrighed&#xD;&#xA;Den endelige karakter gives på grundlag af en helhedsvurdering af overstående." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="It is a prerequisite for passing the exam that laboratory journals and assignments as well as multiple-choice have been completed.The final report covering three course works is included in the assessment in an individual oral exam of approx. 10 minutes duration&#xD;&#xA;The final grade is given on the basis of an overall assessment of the above." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The final report must be brought to the examination" />
+            <Aid_Txt Lang="da-DK" Txt="Den afsluttende rapport skal tages med til eksamen" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Hardware beskrivelsessprog (VHDL) til:
+
+• Specifikation
+• Simulering
+• Syntese 
+• Test
+• Alternativer til VHDL: Verilog og schematic capture
+• VHDL sammen med Verilog og schematic capture
+• Anvendelse af Cores og konfigurerbare byggeblokke
+• Principper for tidstro programmering
+• Orientering om de forskellige realiseringsmuligheder ved design af større digitale kredsløb
+• Standard logik kontra/sammen med microprocessorer
+• Diskussion af klokstrategier og signalsynkronisering
+• Synkron kontra asynkron design i programmerbare IC
+• Programmering, testfilosofi og indbygning af testbarhed
+• Planlægning og realisering af et større design ved brug af VHDL og programmerbare IC (FPGA)
+• Gruppearbejde, rapportering, fremlæggelse og kritik.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, e-læring og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er, at sætte den studerende i stand til at: 
+
+• Analysere en problemstilling med henblik på en digital realisation
+• Vælge beskrivelsesværktøjer, der sikrer at såvel rekvirent (kunde) som designer ved, hvad der skal realiseres (grundspecifikation)
+• Kunne anvende forskellige teknologier ved design af digitale systemer (mikroprocessorer og FPGA).</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektroteknologi: 4. semester
+
+Kurset er tilrettelagt med en teoridel og en projektdel. Teoridelen afholdes som e-læring, oversigtsforelæsninger og øvelser. Projektdelen udfylder resten af kursustiden.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Hardware description language(VHDL) for:
+
+Specification
+Simulation
+Synthesis
+Test
+Alternatives to VHDL: Verilog and schematic capture
+VHDL in combination with Verilog and schematic capture
+Application of softcores and configureable building blocks
+Principles of real time programming
+Briefing on various design options when designing larger digital circuits
+Standard logic versus and in combination with microprocessors
+Discussion of clock strategies and signal synchronization
+Synchronous versus asynchronous programmable integrated circuits design
+Programming, philosophy of testing and designing for verificability/testability in circuit design
+Planning and implementation of a larger design by application of VHDL og programmable ICs(FPGA)
+Teamwork, reporting, presentation and evaluation</Contents>
+          <Teaching_And_Learning_Methods>Class lectures, e-learning and project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to enable the student to be able to: 
+
+• Analyze problems as regards digital implementations
+• Choose the correct tools to describe the design task to ensure that the customer as well as the designer know what needs to be implemented (product specification)
+• Apply various technologies in the design of digital systems(microprocessors and FPGA).</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Electrotechnology: 4th semester
+
+The course includes a theory part and a project part. The theory is presented through e-learning, overview lectures and exercises in the laboratory in the first part of the course, while the project is carried out during the second part.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende. Kurset 30081 bør være bestået" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or simulary, 30081 should be passed" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30080 30081 30082 62734" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende forskellige repræsentationer af binære tal" />
+          <Txt Lang="en-GB" Txt="apply different representations of binary numbers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme og demonstrere brugen af basale binære mikrooperationer" />
+          <Txt Lang="en-GB" Txt="determine and demonstrate use of basic binary microoperations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere basale elementer i en mikroprocessorarkitektur (tilstandsmaskine, registrer, ALU, …)" />
+          <Txt Lang="en-GB" Txt="construct basic elements of the microprocessor architecture (state machines, registers, ALU, ...)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og forklare signaltilgang og styringssignaler i et mikroprocessorsystem" />
+          <Txt Lang="en-GB" Txt="analyze and explain signal flow as well as controlling signals in a  microprocessor system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og begrunde microprocessoren, dens datavej- og styringsenhed med diverse diagrammer" />
+          <Txt Lang="en-GB" Txt="describe and justify the microprocessor, its datapath and control unit with various diagrams" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive opbygning af en instruktion, typer af instruktioner og brugen af registre i forbindelse med adressering og data manipulation" />
+          <Txt Lang="en-GB" Txt="describe the structure of an instruction, types of instructions and the use of registers for addressing and data manipulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende VHDL og struktureret programmering i VHDL " />
+          <Txt Lang="en-GB" Txt="apply VHDL and structured programming in VHDL" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge syntese/implementering og simuleringsværktøj for at designe digitale systemer" />
+          <Txt Lang="en-GB" Txt="utilize synthesis/implementation and simulation tools for designing digital systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere i hardware og idriftsætte en simpel soft-mikroprocessor på en FPGA" />
+          <Txt Lang="en-GB" Txt="implement in hardware and operate a simple soft microprocessor core targeting an FPGA" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og realisere et simpelt mikrokode/assembler program i en mikroprocessor" />
+          <Txt Lang="en-GB" Txt="design and realize a simple microcode / assembler program for a microprocessor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kunne evaluere hinandens kursusarbejder gennem peer-review" />
+          <Txt Lang="en-GB" Txt="peer review among the students of their projects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive en teknisk rapport, inklusive kildehenvisninger og citationer." />
+          <Txt Lang="en-GB" Txt="write a technical report including references and citations." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Design og Implementation af IP core</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="92503.31028.30090" />
+        <PreviousCourse CourseCode="31028" />
+        <PreviousCourse CourseCode="30090" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="5" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="85" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="15" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:03.687" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

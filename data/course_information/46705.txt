@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46705" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Analyse af elforsyningsnet" />
+        <Title Lang="en-GB" Title="Power grid analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="202089" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Johanna</GivenName>
+            <FamilyName>Vorwerk</FamilyName>
+            <Email>vorjo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="104969" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Daniel</GivenName>
+            <FamilyName>Müller</FamilyName>
+            <Email>danmul@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen (50%) og afleveringsopgaver (50%). Hver af de to dele skal bestås for at bestå kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment based on written examination (50%) and hand-in assignments (50%). Each of the two parts has to be passed in order to pass the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Studerende som består kurset er i stand til at gennemføre mere specialiserede studier." />
+            <Supp_Txt Lang="en-GB" Txt="Passed students are able to undertake more specialized studies or undertake a career in the power industry." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>For at opfylde læringsmålene er læringsaktiviteterne opdelt i følgende tre moduler:
+ 
+1. Netanalyse.
+Dette modul indeholder forelæsninger, der dækker en introduktion til strømningsanalyse og hvordan den kan implementeres i et Python-program. Forelæsningerne giver den baggrundsteori og de metoder, som de studerende har brug for til at implementere og anvende i den første afleveringsopgave, hvor de studerende skal udvikle og implementere en lastflowalgoritme og verificere resultaterne i forhold til dem, der er opnået med et kommercielt værktøj til analyse af elsystemer. Øvelser vil understøtte læringsprocessen gennem hele modulet.
+ 
+2. Symmetrisk og usymmetrisk fejlanalyse.
+Dette modul indeholder forelæsninger, der introducerer fejlanalyse, herunder symmetrisk komponenttransformation og dens anvendelse til beregning af balancerede og ubalancerede fejl. Forelæsningerne giver den baggrundsteori og de metoder, som de studerende skal anvende og implementere i deres anden afleveringsopgave, hvor de udvider deres tidligere projekt udviklet i modul 1 til at udføre fejlanalyse for større net. Øvelser vil understøtte læringsprocessen gennem hele modulet.
+
+3. Beskyttelse, sikkerhedsvurdering og pålidelighed
+Dette modul introducerer grundlæggende principper for beskyttelse og pålidelighed af elsystemer samt begreber inden for sikkerhedsvurdering. De studerende lærer grundlæggende beskyttelsesprincipper, krav og relætyper samt hvordan man parametriserer enkle beskyttelsesskemaer. Begreber inden for pålidelighed, såsom redundans og N-1-kriterier, dækkes også sammen med metoder til vurdering af systemsikkerhed under uforudsete forhold. I den tredje afleveringsopgave udvider de studerende deres tidligere projekt, der blev udviklet i modul 1 og modul 2, og gennemfører beskyttelsesundersøgelser, sikkerhedsvurdering og pålidelighedsevaluering. Øvelser understøtter læringsprocessen gennem hele modulet.
+ 
+De studerende bruger Python og kommercielle softwareværktøjer til at løse afleveringsopgaverne, og derfor vil der blive arrangeret en introduktion til disse værktøjer for de studerende i begyndelsen af kurset.</Contents>
+          <Teaching_And_Learning_Methods>Kursusmaterialet er kategoriseret i tre hovedmoduler, hvor læringsaktiviteterne for hvert modul er planlagt i to faser:
+
+1. Klasseforelæsninger for at give et overblik over teori og metoder, suppleret med øvelser i klassen. 
+
+2. Afleveringsopgaver og projektarbejde, hvor du arbejder i grupper. 
+
+Underviseren vil være til stede for relevant vejledning, spørgsmål og diskussioner.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er at give de studerende den nødvendige baggrundsviden om de generelle metoder, der anvendes i statisk elnetanalyse, herunder effektflow og fejlanalyse. De studerende opnår evnen til at modellere og løse de grundlæggende driftsproblemer og analysere et elsystem under fejlbehæftede forhold.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>To meet the learning objectives, the learning activities are divided into the following three modules:
+
+1. Load Flow
+This module contains lectures that cover an introduction to power flow analysis and how it can be implemented in a Python program. The lectures provide the background theory and methods that students need to implement and apply in the first hand-in assignment, where students will develop and implement a load flow algorithm and verify the results against those obtained from a commercial power system analysis tool. Exercises will support the learning process throughout the module.
+ 
+2. Balanced and Unbalanced Fault Analysis
+This module contains lectures that introduce fault analysis, including symmetrical component transformation and its application to balanced and unbalanced fault calculations. The lectures provide the background theory and methods that students need to apply and implement in their second hand-in assignment, where students extend their previous project developed in Module 1 to perform fault analysis for larger grids. Exercises will support the learning process throughout the module.
+ 
+3. Protection, Security Assessment, and Reliability
+This module introduces the fundamentals of power system protection and reliability, as well as security assessment concepts. Students learn basic protection principles, requirements, and relay types, and how to parameterize simple protection schemes. Reliability concepts such as redundancy and N-1 criteria are also covered, together with methods for assessing system security under contingency conditions. In the third hand-in assignment, students will extend their previous project developed in Module 1 and Module 2 and conduct protection studies, security assessment, and reliability evaluation. Exercises will support the learning process throughout the module.
+ 
+The students will use Python for solving the hand-in assignments and therefore an introduction will be arranged for the students at the beginning of the course.</Contents>
+          <Teaching_And_Learning_Methods>The course material categorized into three main modules where for each module, the learning activities are scheduled in two phases:
+
+1. Classroom lectures to provide an overview of the theory and methods, supplemented with exercises. 
+
+2. Hand-in assignments and project work where you work in groups. 
+
+The teachers will be present for relevant guidance, questions, and discussions.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to give the students the necessary background knowledge of the general methods used in static power grid analysis including power flow and fault analysis. The students obtain the ability to model and solve the basic operational issues and analyze a power system under faulty conditions.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og implementere power flow-algoritmer på en computer og fortolke power flow-resultater." />
+          <Txt Lang="en-GB" Txt="Develop and implement a power flow algorithm in Python and interpret power flow results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de grundlæggende principper for vurdering af elsystemers sikkerhed og pålidelighed, herunder N-1-kriterier og redundans." />
+          <Txt Lang="en-GB" Txt="Describe the basic principles of power system security assessment and reliability, including N-1 criteria and redundancy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere steady state contingency-analyse." />
+          <Txt Lang="en-GB" Txt="Design and implement steady-state contingency analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare balancerede og ubalancerede fejltyper." />
+          <Txt Lang="en-GB" Txt="Explain balanced and unbalanced fault types and their impact on system operation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne kortslutningsstrømme for symmetriske fejl i små net." />
+          <Txt Lang="en-GB" Txt="Calculate short-circuit currents of symmetrical faults in small grids." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den symmetriske komponenttransformation og bestemme sekvensnetværk af belastninger, serieimpedanser, transmissionslinjer, roterende maskiner og transformere." />
+          <Txt Lang="en-GB" Txt="Explain the symmetrical component transformation and determine sequence networks of loads, series impedances, transmission lines, rotating machines, and transformers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende symmetriske komponenter og sekvensnetværk i små net og analysere usymmetriske (enkelt linje-til-jord, linje-til-linje og dobbelt linje-til-jord) fejl." />
+          <Txt Lang="en-GB" Txt="Apply symmetrical components and sequence networks to analyse unsymmetrical faults (single line-to-ground, line-to-line, and double line-to-ground)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlæggende beskyttelsesprincipper, krav og relætyper." />
+          <Txt Lang="en-GB" Txt="Describe basic protection principles, requirements, and relay types." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Parametrisere enkle beskyttelsesordninger for overstrøm, afstand og differentiel beskyttelse." />
+          <Txt Lang="en-GB" Txt="Parameterize simple protection schemes for overcurrent, distance and differential protection." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="31730/46700" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Power grid analysis</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="7" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31742" />
+        <PreviousCourse CourseCode="32230" />
+        <PreviousCourse CourseCode="31740/31742" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="85" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="15" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:45.47" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34600" University="dtu" LastUpdated="2025-03-19+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Elektriske kredsløb 1" />
+        <Title Lang="en-GB" Title="Electric circuits 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Laboratorieøvelser er placeret i skemagruppe E4A eller E3B." />
+          <Schedule_Txt Lang="en-GB" Txt="Laboratory exercises  take place in module E4A or E3B." />
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="4801" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Michael A. E.</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>maea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6050" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Michael Stübert</GivenName>
+            <FamilyName>Berger</FamilyName>
+            <Email>msbe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="I evalueringsformen indgår et antal delprøver, der bedømmes ud fra en helhedsvurdering. Delprøverne vil være i form af f.eks. hjemmeopgaver, quizzes og laboratorieøvelser.&#xD;&#xA;Godkendelse af de obligatoriske laboratorieøvelser er en forudsætning for at kunne bestå kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The form of evaluation includes a number of subtests (part-exams) that are assessed on the basis of an overall assessment. The subtests (part-exams) will be in the form of e.g. home assignments, quizzes and laboratory exercises.&#xD;&#xA;Approval of the mandatory laboratory exercises is a prerequisite for being able to pass this course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kirchhoffs love og systematiske kredsløbsberegninger. Thevenins sætning. Superpositionsprincippet. Modstande. kondensatorer og spoler, spændings- og strømkilder. Transiente forløb. Operationsforstærkere og komperatorer. Halvlederkomponenter og modelbeskrivelser. Forstærkertrin. Storsignal- og småsignalmodeller. Computeranalyse.</Contents>
+          <Teaching_And_Learning_Methods>Flipped classroom, online videoer, hjemmeopgaver, quizzes, opgaveregning og obligatoriske laboratorieøvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Allan R. Hambley: Electrical Engineering, Principles and Applications.
+Erik Bruun: CMOS Integrated Circuit Simulation with LTspice. https://bookboon.com/da/cmos-integrated-circuit-simulation-with-ltspice-ebook</Course_Literature>
+          <Course_Objectives>At indøve færdigheder i analyse og syntese af simple elektroniske kredsløb til behandling af analoge signaler</Course_Objectives>
+          <Remark>Kurset indgår på første semester af civilbachelor-programmet Elektroteknologi.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Kirchhoff's rules and circuit calculations. Thevenin's theorem. Superposition. Resistors, capacitors, and inductors, voltage sources and current sources. Transient behaviour. Operational amplifiers and comparators. Semiconductor components and model descriptions. Amplifier stages. Large signal and small signal models. Computer analysis.</Contents>
+          <Teaching_And_Learning_Methods>Flipped classroom, online videoes, home assignments, quizzes, problem solving hours, and mandatory laboratory exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Allan R. Hambley: Electrical Engineering, Principles and Applications.
+Erik Bruun: CMOS Integrated Circuit Simulation with LTspice. https://bookboon.com/da/cmos-integrated-circuit-simulation-with-ltspice-ebook</Course_Literature>
+          <Course_Objectives>To train skills in analyzing and synthesizing simple electronic circuits for processing of analog signals.</Course_Objectives>
+          <Remark>The course is a first semester constituent of the bachelor programme Electro Technology.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere spænding, strøm og effekt. Forklare uafhængige og afhængige ideelle spændings- og strømkilder. " />
+          <Txt Lang="en-GB" Txt="Define current, voltage, and power. Explain independent and dependent ideal voltage and current sources. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende grundlæggende kredsløbslove (Kirchhoff) og løse kredsløb ved systematiske knudepunkts- og maskemetoder" />
+          <Txt Lang="en-GB" Txt="State and apply basic circuit laws (Kirchhoff) and solve circuits by systematic node-voltage and mesh-current techniques. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse simple kredsløb med resistanser i serie eller parallel. Anvende formler for spændings- og strømdeling." />
+          <Txt Lang="en-GB" Txt="Solve simple circuits with resistances in series or parallel. Apply relaations for voltage dividers and current dividers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde og anvende Thévenin- og Norton-ækvivalenter. Anvende superpositionsprincippet." />
+          <Txt Lang="en-GB" Txt="Find and apply Thévenin and Norton equivalents. Apply the superposition principle." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende komponentrelationer for kapacitanser og induktanser. Finde DC-løsninger til kredsløb med resistanser, kapacitanser og induktanser. Løse 1. ordens RC og RL transientproblemer." />
+          <Txt Lang="en-GB" Txt="Explain and apply component relations for capacitances and inductances. Find DC-solutions for circuits with resistances, capacitances and inductances. Solve first-order RC and RL transient problems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende generelle forstærkermodeller og -begreber." />
+          <Txt Lang="en-GB" Txt="Explain and use generel amplifier models and amplifier concepts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den ideelle operationsforstærker og komperator. Analysere ideelle opamp-kredsløb med negativ tilbagekobling. Forklare og analysere standardkredsløb som spændingsfølger, inverterende og ikke-inverterende forstærker, integrator og differentiator. Analysere ideelle komperatorkredsløb." />
+          <Txt Lang="en-GB" Txt="Explain the ideal opamp and comparator. Analyze ideal opamp circuits with negative feedback. Explain and analyze standard opamp circuits, such as voltage follower, inverting and noninverting voltage amplifier, integrator, and differentiator. Analyze ideal comparator circuits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare diodemodeller og anvende den ideelle diodemodel og den stykkevist lineære model til løsning af kredsløb. Forklare forskellige ensretterkredsløb og et komplet ensrettersystem." />
+          <Txt Lang="en-GB" Txt="Explain diode models and use the ideal-diode model and piecewise-linear models to solve circuits. Explain various rectifier circuits and complete rectifier systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare virkemåden for transistorer (bipolære og/eller FET). Bruge storsignal-ækvivalentkredsløb til analyse af transistorkredsløb. Bruge småsignal-ækvivalentkredsløb til analyse af transistorkredsløb." />
+          <Txt Lang="en-GB" Txt="Explain the operation of transistors (bipolar and/or FET). Use large-signal equivalent circuits to analyze transistor circuits. Use small-signal equivalent circuits to analyze transistor circuits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre computersimuleringer af simple kredsløb ved hjælp af kredsløbssimuleringsprogram (pt. LTspice)." />
+          <Txt Lang="en-GB" Txt="Make computer simulations of simple circuits by the use of simulation programs (currently LTspice)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre laboratoriemålinger på simple kredsløb med almindeligt laboratorieudstyr." />
+          <Txt Lang="en-GB" Txt="Make laboratory measurements with standard laboratory equipment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå såvel dansk som engelsk grundlæggende elektroteknisk terminologi." />
+          <Txt Lang="en-GB" Txt="Understand Danish and English basic electro-technical terminology." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Indledende kursus i kredsløbsteori og elektronik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31001/31004/31510" />
+        <PreviousCourse CourseCode="31001" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="33" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="30" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="63" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="61" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="39" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:33.55" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34127" University="dtu" LastUpdated="2024-04-11+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Eksperimentel optik og fotonik" />
+        <Title Lang="en-GB" Title="Experimental optics and photonics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="59900" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Yiyu</GivenName>
+            <FamilyName>Ou</FamilyName>
+            <Email>yiyo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset indeholder forelæsninger om:
+
+• Diffraktion og interferens af lys
+• Fiberoptik
+• Fourieroptik
+• Lys emitterende dioder og laserdioder 
+• Polarisationsoptik
+• Stråleoptik og simple optiske instrumenter
+• Kohærens, interferens og Michelsons interferometer
+• Laser- og laboratoriesikkerhed
+• Usikkerheds- og fejlananlyse
+
+De eksperimentelle øvelser fokuserer på optiske måleinstrumenter og deres brug til karakterisering af forskellige optiske fænomener samt at benytte udstyr til at evaluere optiske systemers virkemåde indenfor forskellige ingeniørdiscipliner baseret på optik.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>B. E. A. Saleh and M. C. Teich, Fundamentals of Photonics, second edition (Wiley, 2007). ISBN: 978-0-471-35832-9.</Course_Literature>
+          <Course_Objectives>Dette kursus fokuserer på at introducere den studerende til en række optiske fænomener, forskelligt måleteknisk udstyr som er nødvendigt for at kunne karakterisere disse optiske fænomener, samt til at bruge udstyret til at evaluere optiske systemers virkemåde og undersøge fundamentale optiske fænomener.</Course_Objectives>
+          <Remark>Dette kursus er en del af BSc in Fysik og Nanoteknologi og leder op til kurset Anvendt Optik (34530).</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course contains lectures on 
+
+• Diffraction and interference of light
+• Fiber optics
+• Fourier optics 
+• Light-emitting diodes (LEDs) and laser diodes (LDs)
+• Polarization optics
+• Ray optics and simple optical instruments 
+• Coherence, interference and the Michelson interferometer
+• Laser and lab safety
+• Uncertainty and Error Analysis
+
+The experimental exercises focus on optics instrumentation and its use for characterization of various relevant optical phenomena, and on the use of optics instrumentation for the evaluation of the performance of optical systems within optics engineering.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and laboratory exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>B. E. A. Saleh and M. C. Teich, Fundamentals of Photonics, second edition (Wiley, 2007). ISBN: 978-0-471-35832-9.</Course_Literature>
+          <Course_Objectives>The focus of this course is to introduce the student to selected, important optical phenomena and practical optics instrumentation required for the investigation of these phenomena and characterization of optical systems.</Course_Objectives>
+          <Remark>This course is part of the BSc in Physics and Nanotechnology and leads up to the course Applied Photonics (34530).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Optik og fotonik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Optic and photonic" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34020/34021" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare forskellen mellem stråleoptik og bølgeoptik" />
+          <Txt Lang="en-GB" Txt="Explain the difference between ray optics and Gaussian beams" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå begreberne optisk diffraktion, interferens og polarisation" />
+          <Txt Lang="en-GB" Txt="Understand concept of optical diffraction, interference, polarization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere de optiske egenskaber af optiske fibre" />
+          <Txt Lang="en-GB" Txt="Characterize the properties of optical fibers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere de optiske egenskaber af LED og laserdioder" />
+          <Txt Lang="en-GB" Txt="Characterize the properties of light emitting diodes (LEDs) and laser diodes (LDs)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte Fourier optik til billedbehandling" />
+          <Txt Lang="en-GB" Txt="Perform Fourier optics manipulation of optical image" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge samt udføre et optisk eksperiment " />
+          <Txt Lang="en-GB" Txt="Plan, prepare and execute optical experiments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Betjene forskellige optiske instrumenter som f.eks. en optisk spektrumanalysator" />
+          <Txt Lang="en-GB" Txt="Operate different instrument in an optical experiment, such as Optical Spectrum Analyzer (OSA)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge, udføre, dokumentere, evaluere og rapportere eksperimentelt arbejde samt analysere støjkilder i det udførte eksperiment og kommentere mulige forbedringer" />
+          <Txt Lang="en-GB" Txt="Document, evaluate and report on experimental results; analyze error source in an experiment and comment on possible improvements" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="34033/34045/34046/34125 " />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:51" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02503" University="dtu" LastUpdated="2026-06-18+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Billedanalyse" />
+        <Title Lang="en-GB" Title="Image analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="9612" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Rasmus Reinhold</GivenName>
+            <FamilyName>Paulsen</FamilyName>
+            <Email>rapa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="29369" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tim Bjørn</GivenName>
+            <FamilyName>Dyrby</FamilyName>
+            <Email>tbdy@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No access to the internet and no AI usage allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Ingen adgang til internet. Brug af AI under eksamen er ikke tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Digitale billeder og datastrukturer, pin hole kameraet, medicinske modaliteter, billedformater, punkt processering, filtrering, morfologi, BLOB analyse, klassifikation, objektanalyse, pixelklassifikation, segmentering, geometriske transformationer, registrering, kantdetektion, linjedetektion, principal komponent analyse, linear diskriminant analyse, videoanalyser, formanalyse, confusion matricer og performancemål.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>En lærebog og der udleveres noter.</Course_Literature>
+          <Course_Objectives>De seneste år, har der været en drastisk udvikling i brugen af billedanalyse til selvkørende biler, analyser af klimaændringer, avanceret diagnostik, operationsplanlægning, ansigtsgenkendelse og mange andre applikationer.
+Dette kursus giver den studerende en solid forståelse for digitale billeder. Hvad er billeder, hvor kommer de fra og hvilke værktøjer og teknikker bruges til at udtrække informationer fra dem. Efter kurset, vil deltagerne kunne kombinere, implementere, bruge og evaluere performance af simple billedanalysesystemer.</Course_Objectives>
+          <DTU_Remark>Dette er bachelorversionen af billedanalyse</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Digital image and data structures, the pin hole camera, medical modalities, image file formats, point processing, filtering, morphology, BLOB analysis, classification, labelling and object analysis, pixel classification, segmentation, geometrical transforms, registration, boundary tracing, line detection, principal component analysis, linear discriminant analysis, video change detection, shape analysis, confusion matrices, and performance metrics.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>A book and notes.</Course_Literature>
+          <Course_Objectives>In recent years, there has been an explosion in the use of image analysis for self-driving cars, climate change monitoring, advanced diagnostics, treatment planning, face tracking and a wide variety of other applications. The objective of the course is to introduce image analysis including topics within medical image analysis.
+This course will give the student a solid understanding of digital images. Their nature, where they come from and which tools and techniques that can be used to extract information from them. After the course, the participant will be able to combine, implement, use and evaluate the performance of basic image analysis systems.</Course_Objectives>
+          <DTU_Remark>This is the bachelor level version of image analysis</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til sandsynlighedsregning eller statistik. Kendskab til linear algebra. Grundlæggende programmeringserfaring i for eksempel Matlab, Python, C, C#, C++ eller Java." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of probability theory or statistics. Basic course in linear algebra. Basic programming experience in for example Matlab, Python, C, C#, C++ or Java." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de fundamentale egenskaber ved digitale billeder inklusiv billeder fra den medicinske verden." />
+          <Txt Lang="en-GB" Txt="Explain the fundamental properties of digital images including medical images ." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive teknikker til optagelse af billeder. Herunder pin hole kameraet og medicinske modaliteter som Røntgen, CT scanning og MR scanning." />
+          <Txt Lang="en-GB" Txt="Describe principles for image acquisition including the pin hole camera and medical modalities like x-ray, computed tomography and magnetic resonance imaging.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og bruge basale teknikker til kodning og lagring af billeder." />
+          <Txt Lang="en-GB" Txt="Implement and use basic image coding for storing images." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og bruge billedanalysealgoritmer. Herunder punkt processering, filtrering, morfologi, BLOB analyse, pixelklassifikation, geometriske transformationer, registrering, klassifikation, kantdetektion, linjedetektion og segmentering." />
+          <Txt Lang="en-GB" Txt="Implement and apply image analysis algorithms, including point processing, filtering, morphology, BLOB analysis, pixel classification, geometrical transforms, registration, classification, boundary tracing, line detection and segmentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og bruge statistiske metoder så som principal komponent analyse til behandling af billeder og til udtrækning af signifikante information fra billeder. Implementere og teste generative modeller og formmodeller baseret på principal komponent analyse." />
+          <Txt Lang="en-GB" Txt="Implement and use statistical methods like principal component analysis for processing images and extraction of significant information from images. Implement and test generative image models based on principal component analysis. Describe and use shape and appearance models based on principal component analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og bruge klassifikationsalgoritmer baseret på billedkarakteristika." />
+          <Txt Lang="en-GB" Txt="Implement and apply change detection algorithms for video processing.." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre og evaluere feature baseret klassifikation ved brug af lineær diskriminant analyse." />
+          <Txt Lang="en-GB" Txt="Apply and evaluate feature-based classification using linear discriminant analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge og evaluere state-of-the-art 3D billedregistreringsalgoritmer." />
+          <Txt Lang="en-GB" Txt="Use and evaluate state-of-the-art methods for 3D medical image registration." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe en passende billedanalysealgoritme baseret på et sæt af eksempelbilleder og et givent mål." />
+          <Txt Lang="en-GB" Txt="Design an appropriate image analysis algorithm based on a set of example images and a given objective." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne performance af en billedanalysealgoritme givet et ground-truth datasæt." />
+          <Txt Lang="en-GB" Txt="Compute the performance of a given image analysis algorithm given a ground-truth data set." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forbedre og optimere billedanalysealgoritmer baseret på ground-truth data eller kliniske end-points." />
+          <Txt Lang="en-GB" Txt="Improve and optimize image algorithms based on ground truth data or clinical end-points." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge passende træningsdata og udvælge relevante karakteristika for billedbaserede klassifikationsalgoritmer." />
+          <Txt Lang="en-GB" Txt="Select appropriate training data and do feature selection for image based and pixelwise classification algorithms." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02502/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Effektiv udnyttelse af billedinformation ved tekniske problemstillinger</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02512/02502/02515" />
+        <PreviousCourse CourseCode="02512" />
+        <PreviousCourse CourseCode="02502" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-08-17" Time="15:14:26.69" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

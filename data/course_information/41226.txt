@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41226" University="dtu" LastUpdated="2026-02-17+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avanceret bølgehydrodynamik" />
+        <Title Lang="en-GB" Title="Advanced Wave Hydrodynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="349" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Erik Damgaard</GivenName>
+            <FamilyName>Christensen</FamilyName>
+            <Email>edch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9680" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>David R.</GivenName>
+            <FamilyName>Fuhrman</FamilyName>
+            <Email>drfu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="2 individualiserede gruppeopgaver/rapporter 30 %.&#xD;&#xA;Skriftlig eller mundtlig eksamen 70 %.&#xD;&#xA;Skiftlig eksamen ved mere end 40 studerende. Eksamensform bliver fastlagt i den første uge af semesteret. KArakter gives som en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="2 individualised group exercises/reports 30 %.&#xD;&#xA;Written or oral examination  70 %.&#xD;&#xA;Written exam in case of more than 40 participants. The type of exam will be announced in the first week of the semester. Grade is given as an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The oral exam takes place over 1-2 days depending on the number of students." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Mundtlig eksamen forløber over 1-2 dage afhængigt af antallet af studerende." />
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Lineære og ikke-lineære bølgeteorier for monokromatiske bølger på konstant dybde såsom højere ordens Stokes-teori, anden- og tredje-ordensteori for bølger. Cnoidal teori og solitær bølgeteori. Strømfunktionsmetoder. Lineær bølgestrøm-interaktion inklusiv Doppler-skift og blokering. Diffraktion, bølgespektre og Fourier-teknikker. Spektralgenerering og Fourier-analyse af den tilsvarende tidsserie. Bølge-instabiliteter på grund af kvartet- og kvintet-interaktioner. Introduktion til bølgemodelleringsteknikker i tids- og frekvensdomæne.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At lære fysikken og matematikken involveret i beskrivelsen af regelmæssige og uregelmæssige vandbølger. Denne viden indgår i detaljeret design og analyser af kyst- og marine konstruktioner/faciliteter.</Course_Objectives>
+          <Remark>Det forventes, at de studerende medbringer deres egen bærbare computer og har erfaring med at bruge værktøjer som Mathematica, MAPLE, MATLAB og/eller Python.</Remark>
+          <No_Credit_Points_With>Lineær og ikke-lineær bølgedynamik</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Linear and nonlinear wave theories for monochromatic waves on constant depth such as higher order Stokes theory, Second- and third-order theory for short-crested waves. Cnoidal theory and solitary wave theory. Streamfunction methods. Linear wave-current interaction including Doppler shift and blocking. Diffraction, Wave spectra and Fourier techniques. Spectral generation and Fourier analysis of the corresponding time series. Wave instabilities due to quartet-, and quintet- interactions. Introduction to wave modelling techniques in time and frequency domain.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To learn the physics and mathematics involved in the description of regular and irregular water waves. This knowledge is part of detailed design and analyses of coastal and marine structures/facilities.</Course_Objectives>
+          <Remark>It is expected that the students will bring along their own laptop and have experience in using tools like Mathematica, MAPLE, MATLAB, and/or Python.</Remark>
+          <No_Credit_Points_With>Linear and nonlinear wave dynamics</No_Credit_Points_With>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Strømningsmekanik 1 eller Fluid mekanik og Strømningsmekanik 2.&#xD;&#xA;Erfaring med at bruge værktøjer som Mathematica, MAPLE og/eller MATLAB." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Hydraulics in pipes and open channels or basic fluid mechanics and Hydrodynamics 2.&#xD;&#xA;Experience in using tools like Mathematica, MAPLE and/or MATLAB." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41102 or 41312 and 41111" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Stokes bølgeteori op til tredje orden for regelmæssige bølger på dybere vand." />
+          <Txt Lang="en-GB" Txt="Apply Stokes wave theory up to third order for regular waves in deeper water." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og beregne de fænomener, der er involveret i lineær og ikke lineær bølgestrøm-interaktion." />
+          <Txt Lang="en-GB" Txt="Explain and calculate the phenomena involved in linear and non-linear wave-current interaction." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede klassiske Boussinesq ligninger til beskrivelse af lange bølger og analysere deres lineære spredningsegenskaber" />
+          <Txt Lang="en-GB" Txt="Derive classical Boussinesq equations for describing long waves and analyze their linear dispersive characteristics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende cnoidal og solitær bølgeteori for regelmæssige bølger på lavt vand" />
+          <Txt Lang="en-GB" Txt="Explain and apply cnoidal and solitary wave theory for regular waves in shallow water." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende lineær teori for at forudsige bølgetransformation på grund af diffraktion." />
+          <Txt Lang="en-GB" Txt="Apply linear theory to predict wave transformation due to diffraction." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere de hydrodynamiske fænomener, der er involveret i bølgebrydning og bølgeinducerede strømme." />
+          <Txt Lang="en-GB" Txt="Estimate the hydrodynamic phenomena involved in wave breaking and wave induced currents." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende strømfunktionsmetoder til ikke-lineære bølger til at estimere overflade elevation og bølgekinematik." />
+          <Txt Lang="en-GB" Txt="Apply streamfunction methods for highly nonlinear waves to assess surface elevation and wave kinematics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og bestemme fænomenerne mellem kvartet- og kvintetinteraktion og de resulterende instabiliteter, der forekommer på dybt vand." />
+          <Txt Lang="en-GB" Txt="Explain and determine the phenomena of quartet and quintet interactions and the resulting instabilities occurring in deep water." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Generere og analysere syntetiske tidsserier af lineære uregelmæssige bølger ved hjælp af bølgespektre og Fourier-teknikker." />
+          <Txt Lang="en-GB" Txt="Generate and analyse synthetic time series of linear irregular waves using wave spectra and Fourier techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere brug af spektrale vindbølgemodellering og intra-bølge modellering til løsning af kyst- og marine problemer." />
+          <Txt Lang="en-GB" Txt="Evaluate the use of spectral wind wave modelling and intra wave modelling for solving coastal and marine problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="41223/41225/41224" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:43.727" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

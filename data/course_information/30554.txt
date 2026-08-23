@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30554" University="dtu" LastUpdated="2026-04-07+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Globale navigationssatellitsystemer" />
+        <Title Lang="en-GB" Title="Global Navigation Satellite Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="60105" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Daniel Haugård</GivenName>
+            <FamilyName>Olesen</FamilyName>
+            <Email>danole@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursets udgangspunkt er, at give de nødvendige forudsætninger for anvendelse af metoder til processering af GNSS data indenfor positionering og navigation.
+
+Gennem kursets øvelser implementeres en række rutiner og modeller, der ofte anvendes i praksis. Forelæsningerne gennemgår positioneringsteorien, og de bygges op, så de understøtter øvelserne.
+
+Der arbejdes med følgende elementer: Bestemmelse af positioner fra pseudoafstande og fasemålinger, modellering af urfejl og atmosfærisk påvirkning, bestemmelse af DOP-værdier, transformation af positioner og kovarianser. Endvidere gennemgås eksempler på brugen af Kalman filtrering til GNSS-positionering og udfordringer ved løsning af ambiguities ved fase observationer diskuteres.
+
+Øvelserne udføres i Matlab.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Nøjagtig og pålidelig positionering bliver i stigende grad vigtig indenfor navigation af biler, droner og autonome systemer. Globale satellitbaserede positioneringssystemer spiller en vigtig rolle i sikringen af dette.
+
+Kurset sigter mod at give et grundigt kendskab til globale navigationssatellitsystemer, deres funktioner og til beregning af nøjagtige positioner. Desuden giver kurset de studerende et godt kendskab til de matematiske modeller, der ligger til grund for både kode- og fasebaseret positionsbestemmelse med GNSS (GPS, Galileo eller Glonass), samt integrering af andre navigationssensorer.</Course_Objectives>
+          <DTU_Remark>Kurset dækker elementer fra de tidligere 30550 Satellitbaseret positionering samt mere avancerede emner inden for navigation.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The basis for the course is to provide the knowledge necessary to develop the methodologies for GNSS data processing for enhanced positioning and navigation.
+
+The course exercises are based on the implementation of a number of routines and models often used in practice. The lectures support the exercises and provide the necessary mathematical background.
+
+The following subjects will be dealt with: computation of positions from pseudoranges and carrier phase data, modelling of clock errors and atmospheric effects, computation of DOP-values, transformation of positions and covariances. Furthermore, examples of the use of Kalman filtering for GNSS positioning are discussed, including the challenges related resolution of ambiguities.
+
+Exercises are carried out using Matlab.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>Accurate and reliable positioning has become increasingly important for the navigation of vehicles, drones and autonomous systems. Global satellite-based positioning systems play a key role in fulfilling that need.
+
+The course aims to give a solid knowledge about global navigation satellite systems, how the systems work, and how accurate positions may be obtained. In addition, the course provides a good knowledge of the mathematical modelling principles used for both code and phase-based GNSS positioning (GPS, Galileo, or Glonass) and the integration with other types of navigation sensors.</Course_Objectives>
+          <DTU_Remark>The course covers elements from the former 30550 Satellite-based positioning and more advanced topics within navigation.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare betydningen af space-, jord- og bruger segmenter af Global Navigation Satellite Systems" />
+          <Txt Lang="en-GB" Txt="explain the role of space-, ground- and user segments of Global Navigation Satellite Systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare komponenterne i GNSS modtagere og det fundamentale for at udføre kode- og fasemåling" />
+          <Txt Lang="en-GB" Txt="explain the components of GNSS receivers and the fundamentals of code- and carrier tracking" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere 'baseband processing' algoritmer ved hjælp af en GNSS software modtager" />
+          <Txt Lang="en-GB" Txt="analyze baseband processing algorithms using a GNSS software receiver " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere en algoritme for positionsestimering ved hjælp af en ikke-lineær mindste kvadraters algoritme (Least Squares)" />
+          <Txt Lang="en-GB" Txt="formulate a nonlinear least squares adjustment algorithm for position estimation " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere GNSS fejlkilder, som eksempelvis ionosfære fejl, troposfære fejl og multipath" />
+          <Txt Lang="en-GB" Txt="analyze GNSS error-sources, such as ionospheric delay, tropospheric delay and multipath " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende filtrerings teknikker i GNSS for mere pålidelig estimering" />
+          <Txt Lang="en-GB" Txt="apply filtering techniques in GNSS for more reliable estimations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive andre navigationssensorer og strategier for integration med GNSS for at forbedre robusthed og tilgængelighed af løsninger" />
+          <Txt Lang="en-GB" Txt="describe other navigation sensors and strategies for integration with GNSS to improve the robustness and solution availability" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegør for positionsberegninger vha. relative fasemålinger for præcise applikationer" />
+          <Txt Lang="en-GB" Txt="review relative carrier phase position methods for precise positioning applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende RINEX filformatet til udveksling af GNSS målinger og satellit ephemeride parametre." />
+          <Txt Lang="en-GB" Txt="apply the RINEX file format to exchange of GNSS measurement and satellite ephemeris parameters" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="30552" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Lokalisering og navigation med GPS og Galileo (GNSS)</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="30550" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="25" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:15.63" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

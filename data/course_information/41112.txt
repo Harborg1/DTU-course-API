@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41112" University="dtu" LastUpdated="2025-03-21+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Strømningsmekanik - teknisk kursus" />
+        <Title Lang="en-GB" Title="Hydrodynamics - technical course" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="14331" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Stefan</GivenName>
+            <FamilyName>Carstensen</FamilyName>
+            <Email>scar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="60432" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Robert William</GivenName>
+            <FamilyName>Read</FamilyName>
+            <Email>rrea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der afleveres 1 individuel opgave/rapport." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One final individual  assignment/report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="No exam" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ingen eksamen i den ordinære eksamensperiode" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Der udføres forsøg i Vandbygningslaboratoriet, bygn. 114.
+
+Der arbejdes med en række forskellige forsøg, f.eks.:
+   ·  Impulsstråle
+   ·  Strømkræfter på omstrømmede konstruktioner
+   ·  Strømning over/under og krafter på overløb/stigbord
+   ·  Rørstrømning (Strømning gennem kølevandsindtag)
+
+Der kræves en stor del af selvstændighed i udførelsen af forsøgene for herved at opnå en fornemmelse af strømmende væskers dynamik.</Contents>
+          <Teaching_And_Learning_Methods>Udarbejdelse af program og opgave/rapport under vejledning</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere de studerende til den mere praktiske hydraulik og hydrodynamik, dels ved at udføre forsøg i en strømrende, dels ved at beregne strømningen teoretisk og sammenligne med egne målinger.</Course_Objectives>
+          <DTU_Remark>Kurset henvender sig fortrinsvist til studerende der i det foregående semester har fulgt de faglige forudsætninger</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Experiments are carried out in the Hydraulic Laboratory, bldg. 114.
+
+A number of different exercises are considered, e.g.:
+   ·  Impact of a jet
+   ·  Flow around and forces on vertical piles
+   ·  Flow over/under and forces on a weir/sluice gate
+   ·  Pipe flow (Flow through cooling water intake)
+
+A great deal of autonomy is required in carrying out experiments in order to obtain a feel for the dynamics of the water flows.</Contents>
+          <Teaching_And_Learning_Methods>Preparation of a program and assignment/report under supervision</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce students to the more practical hydraulic engineering and hydrodynamics, partly by carrying out experiments in a current flume, partly by calculating the flow theoretically and comparing with own measurements.</Course_Objectives>
+          <DTU_Remark>The course is primarily aimed at students who have followed the academic prerequisites in the previous semester</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Databehandling foregår typisk med Excel eller Python (Matlab)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Data analysis is typically done with Excel or Python (Matlab)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41102" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere samarbejde i mindre grupper ­(4-5 personer) " />
+          <Txt Lang="en-GB" Txt="Organize cooperation in minor groups  ­(4-5 people)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre simple laboratorieforsøg i strømrender" />
+          <Txt Lang="en-GB" Txt="Carry out simple laboratory experiments in flumes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Selvstændigt gennemskue hvad der bør måles for at beskrive en strømmende bevægelse." />
+          <Txt Lang="en-GB" Txt="Independently figure out what ought to be measured to describe a flow situation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive vandspejlsforløb, f.eks. i ikke-ensformige strømninger." />
+          <Txt Lang="en-GB" Txt="Measure pressure and calculate forces exerted by the flow" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Måle tryk og beregne strømkræfter." />
+          <Txt Lang="en-GB" Txt="Describe water level variations, e.g. in non-uniform flows." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive energiforholdene  i strømmende vand, f.eks. i et hydraulisk spring, rørsystemer." />
+          <Txt Lang="en-GB" Txt="Describe energy conditions in flowing water, e.g. in a hydraulic jump, pipe systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke og vurdere målinger" />
+          <Txt Lang="en-GB" Txt="Interpret and evaluate measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge og gennemføre projekter, herunder at formulere hypoteser og drage konklusioner." />
+          <Txt Lang="en-GB" Txt="Plan and carry out projects, including formulating hypotheses and draw conclusions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle egne resultater." />
+          <Txt Lang="en-GB" Txt="Disseminate own results." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="80" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="80" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="100" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="32" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:37.103" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

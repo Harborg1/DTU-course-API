@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02246" University="dtu" LastUpdated="2026-03-23+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">7.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Model tjek" />
+        <Title Lang="en-GB" Title="Model Checking" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="94040" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alberto Lluch</GivenName>
+            <FamilyName>Lafuente</FamilyName>
+            <Email>albl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="219203" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carlos Esteban</GivenName>
+            <FamilyName>Budde</FamilyName>
+            <Email>cesbu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Depending on the number of students it may be necessary also to decide on other days." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Afhængigt af antallet af studerende kan der være behov for også at aftale andre dage." />
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset dækker tre hovedemner:
+(1) Metoder til modellering af systemer med aspekter som non-determinism, probabilistiske / stokastiske aspekter og forskellige agenter/mål (spil): transition systemer, Markov modeller, og games.
+(2) Logiske formalismer til at udtrykke egenskaber relateret til korrekthed, sikkerhed og ydelse af systemer.
+(3) Validerings og verifikations værktøjer der kan afdække forholdet mellem modeller og egenskaber og dermed give stærke garantier relateret til korrekthed, sikkerhed eller ydelse.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, teoretiske øvelser og praktiske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Uddrag af relevante lærebøger, fx Baier &amp; Katoen: Principles of Model Checking, MIT Press.</Course_Literature>
+          <Course_Objectives>Modeltjek er modellering og analyse teknikker baseret, bl.a., på logik, graph-baseret modeller (automater, transistionssystemer, Markov chains,...), sandsynlighedsteori, constraint solving, kunstig intelligens og spil teori. De studerende vil lære at bruge modeltjek teknikker til modellering, specifikation og validering/verifikation for forskellige klasser af systemer (distribuerede/parallele systemer, schedulers, controllers, netværk, biologiske systemer, spil, osv.). De studerende vil også forstå, hvordan modelkontrol supplerer andre formelle metodeteknikker, og de vil forstå forbindelserne til andre områder såsom kunstig intelligens.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers three main topics: 
+(1) Methods for modeling systems with features such as non-determinism, probabilistic/stochastic aspects, and multiple agents/objectives: transition systems, Markov models, and games.
+(2) Logical formalisms for expressing properties related to the safety, security, and performance of systems. 
+(3) Validation and verification tools that determine the relationship between models and properties in order to establish strong guarantees related to safety, security, and performance.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, theoretical exercises, and practical exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Excerpts from relevant text books, e.g. Baier &amp; Katoen: Principles of Model Checking, MIT Press.</Course_Literature>
+          <Course_Objectives>Model checking is a set of modelling and analysis techniques combining logic, graph-based models of computation (automata, transitions systems, Markov chains,...), probabilities, statistics, constraint solving, artificial intelligence and game theory. Following this course the students will be able to apply model checking techniques for modelling, specification and validation/verification for various classes of systems (distributed/concurrent systems, schedulers, controllers, networks, biological systems, games, etc.). The students will also understand how model checking complements other formal methods techniques, and they will understand the connections to other fields such as artificial intelligence.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="De studerende forventes at kende til endelige automater og/eller transitionssystemer; denne baggrund kan fås i kursus 02141. De studerende forventes at have basal viden om logik og sandsynlighedsteori. De studerende skal kunne udtrykke sig i et programmeringssprog." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The students are expected to be familiar with finite automata and/or transition systems; this background can be obtained in the courses 02141/02143. The students are expected to have a basic knowledge about logic and probability theory. The students must be able to write programs in a programming language." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02141/02143" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de vigtigste karakteristika ved de behandlede systemer;" />
+          <Txt Lang="en-GB" Txt="explain the characteristic features of a given system;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de fundamentale begreber i den proces orienterede tilgang til modellering, specifikation og validering/verifikation af systemer;" />
+          <Txt Lang="en-GB" Txt="explain the basic concepts of the process oriented approach to modelling, specification and validation/verification of systems;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de behandlede proces orienterede sprog og anvende dem til at modellere systemer;" />
+          <Txt Lang="en-GB" Txt="explain the covered modelling formalisms and use them to model systems;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de behandlede logikker og bruge dem til at specificere egenskaber relateret til f.eks. robusthed, sikkerhed og ydelse;" />
+          <Txt Lang="en-GB" Txt="explain the covered logical specification formalisms and use them to specify properties related, e.g., to safety, security and performance;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende moderne værktøjer til validering af modeller og forklare den overordnede virkemåde for sådanne værktøjer;" />
+          <Txt Lang="en-GB" Txt="operate state-of-the-art verification tools and explain the overall workings of such tools;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere situationer hvor kursets teknikker er anvendelige;" />
+          <Txt Lang="en-GB" Txt="identify situations where the covered techniques apply;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="motivere og designe en valideringsproces, f.eks. en serie af værktøjsbasserede eksperimenter, og fortolke de opnåede resultater;" />
+          <Txt Lang="en-GB" Txt="motivate and design a series of experiments using verification tools and interpret the results obtained;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opnå disse resultater gennem en gruppe indsats, under opretholdelse af individuelt ansvar;" />
+          <Txt Lang="en-GB" Txt="achieve the above goals in a group effort while at the same time maintaining individual accountability; and" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere de opnåede resultater klart og præcist gennem en teknisk rapport i standard format." />
+          <Txt Lang="en-GB" Txt="communicate his/her results in a clear and precise manner using a standard form for technical reports." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02246" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Find mistakes before you code!</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:08.417" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="42015" University="dtu" LastUpdated="2026-04-12+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Energiøkonomi" />
+        <Title Lang="en-GB" Title="Energy Economics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Hver session er opdelt i to læringsblokke:&#xD;&#xA;Først en to-timers forelæsning i auditoriet efterfulgt af øvelser i mindre grupper i øvelseslokaler." />
+          <Schedule_Txt Lang="en-GB" Txt="Each session is divided in two learning blocks:&#xD;&#xA;First, a lecture in the auditorium lasting two hours, followed by exercises in small groups taking place in classrooms." />
+          <Schedule ScheduleKey="E3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="116068" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Claire Marie</GivenName>
+            <FamilyName>Bergaentzlé</FamilyName>
+            <Email>clberg@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="152209" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Dogan</GivenName>
+            <FamilyName>Keles</FamilyName>
+            <Email>dogke@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_And_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter vil være baseret på to eksamener:&#xD;&#xA;&#xD;&#xA;1. Gruppeplakat + mundtlig præsentation (tæller 30 % af den endelige karakter).&#xD;&#xA;Plakaten afleveres i uge 45 og udarbejdes i grupper ud fra foruddefinerede emner relateret til forelæsningerne. Opgaven skal demonstrere de studerendes dybdegående forståelse af emnet samt inddrage relevant energiøkonomisk teori og centrale begreber.&#xD;&#xA;&#xD;&#xA;2. Den afsluttende eksamen i form af en multiple-choice quiz (tæller 70% af den endelige karakter)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade will be based on two examinations:&#xD;&#xA;&#xD;&#xA;1. Oral presentation on group work - 30% of the final grade. You will work in a group on pre-defined topics related to the lectures. Each student will also write an assessment of her/his individual involvement within the group work. The oral presentation will illustrate the student’s in-depth understanding of the topic and relate to relevant energy economics theory and key concepts. &#xD;&#xA;2. The final exam is a multiple-choice quiz which counts 70% of the grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3B" />
+            <Schedule ScheduleKey="E3B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus tager udgangspunkt i mikroøkonomi for at analysere energisektoren, energimarkedernes adfærd og den nødvendige regulering. Kurset giver en generel introduktion til energisektoren på både nationalt og internationalt niveau. Hovedfokus ligger på energiforsyning og -efterspørgsel, prisdannelse med detaljerede analyser af forskellige typer energimarkeder (f.eks. el-spotmarkeder, CO₂-certifikater) samt energipolitik.
+
+Derudover omfatter kurset markedsdesign, markedsinteraktioner og potentielle markedsimperfektioner, som analyseres og diskuteres under hensyntagen til miljøafgifter og regulering. Politiske foranstaltninger til at håndtere disse aspekter under forskellige forhold vil også blive behandlet.
+
+Lærebogskapitler samt relevante videnskabelige artikler og afhandlinger vil blive introduceret og diskuteret.
+
+Kurset anvender en ligestillingspolitik uden diskrimination på baggrund af køn, alder, religiøs overbevisning eller handicap.</Contents>
+          <Teaching_And_Learning_Methods>Kurset i energiøkonomi er planlagt til 4 timer om ugen, fordelt på 2 timers forelæsninger i auditoriet og 2 timers øvelser og gruppearbejde. Derudover forventes de studerende at afsætte tid til yderligere forberedelse og arbejde uden for de skemalagte timer</Teaching_And_Learning_Methods>
+          <Course_Literature>For studerende, der ikke har nogen tidligere erfaring med mikroøkonomisk teori, bedes du se MIT-kursusmaterialet - Forelæsningsvideoer | Principles of Microeconomics | Economics | MIT Lecture 1-12
+
+https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2018/video_galleries/lecture-videos/ 
+
+Læsemateriale:
+- Handbook of Energy Economics and Policy - Fundamentals and Applications for Engineers and Energy Planners (2021). Redigeret af Alessandro Rubino Alessandro Sapio Massimo La Scala. Academic Press, Elsevier. ISBN: 978-0-12-814712-2 
+- Regulering af energimarkeder: Økonomiske mekanismer og politisk evaluering. Machiel Mulder Anden udgave, Springer.
+- Gregory Mankiw, Principles of Microeconomics, kapitel 6 - 10
+Studerende uden forudgående kendskab til elsystemøkonomi kan blive fortrolige med det ved hjælp af Weber, Fichtner, Möst, »Economics of Power Systems".</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at give de studerende en grundlæggende forståelse af energisektorens struktur og de dynamiske udfordringer, den står over for nationalt og internationalt. Fokus er på energiøkonomi, energimarkeder, energipolitik, regulering og ressourceforvaltning, med økonomisk teori som det teoretiske fundament. 
+Ydermere forventes de studerende at kunne relatere disse emner til bæredygtig udvikling og analysere miljøøkonomiske instrumenter i forhold til forskellige politiske mål og institutionelle rammer. Gennem kurset udvikler de studerende kompetencer til at fortolke, forklare og diskutere udfordringer i energisektoren, energipolitikken og energireguleringen ud fra et økonomisk perspektiv.</Course_Objectives>
+          <DTU_Remark>Bemærk venligst, at vi på grund af en meget høj deltagelse i energiøkonomi-kurset og den begrænsede mængde af store auditorier på DTU ikke kan garantere, at der er nok pladser til alle. Nogle studerende skal muligvis følge forelæsningerne på afstand.</DTU_Remark>
+          <Remark>Undervisningen er tilrettelagt i forhold til studerende på kandidatuddannelsen i bæredygtig energi</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course takes the approach of microeconomics to analyze the energy sector, how energy markets behave and the necessary regulation of markets.
+The course provides a general introduction to the energy sector both at the national and the international level. The main focus will be on energy supply and demand, price formation with deep dives into different types of energy markets (electricity spot markets, CO2 certificate emissions, etc.) and energy policy. It also encompasses market design, market interactions, and potential market imperfections. These subjects will be analyzed and discussed under consideration of environmental taxes and regulation. We discuss policy measures to address these aspects under different conditions.
+Textbook chapters, as well as scientific papers and articles dealing with the respective subject, will be introduced and discussed.
+
+The course applies an equality policy with no discrimination of gender, age, religious beliefs or disabilities.</Contents>
+          <Teaching_And_Learning_Methods>The energy economics course consists of a 4-hour weekly schedule, with 2 hours allocated to lectures in the auditorium and another 2 hours dedicated to exercises and group work. Additionally, students should anticipate further engagement beyond the designated course hours.</Teaching_And_Learning_Methods>
+          <Course_Literature>For students that have no previous experience regarding microeconomic theory, please watch the MIT courseware - Lecture Videos | Principles of Microeconomics | Economics | MIT Lecture 1-12
+
+https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2018/video_galleries/lecture-videos/ 
+
+Reading material:
+•	Handbook of Energy Economics and Policy - Fundamentals and Applications for Engineers and Energy Planners (2021). Edited by Alessandro Rubino Alessandro Sapio Massimo La Scala. Academic Press, Elsevier. ISBN: 978-0-12-814712-2 
+•	Regulation of Energy Markets: Economic Mechanisms and Policy Evaluation. Machiel Mulder Second Edition, Springer.
+•	Gregory Mankiw, Principles of Microeconomics, Chapter 6 – 10
+Students with no previous knowledge of power systems economics should can get familiar with it using Weber, Fichtner, Möst, "Economics of Power Systems”.</Course_Literature>
+          <Course_Objectives>With the point of departure in economic theory, the purpose is to provide the students with a fundamental understanding of the current situation and the dynamic challenges that lie ahead for the energy sector, both nationally and internationally. This includes understanding energy economics, markets, politics, regulation and resources. The theoretical basis of the course is the economic theories relevant to those topics. 
+Furthermore, the students are expected to relate these elements to the term sustainability. The energy policy instruments will be compared in relation to different policy objectives and institutional settings in the energy sector. The students are expected to develop competences in interpreting, explaining, and discussing the challenges of the energy sector, as well as policy and regulation from an economic perspective.</Course_Objectives>
+          <DTU_Remark>Please note that due to a very high participation rate in the energy economics course and the limited amount of large auditoriums at DTU we cannot guarantee that enough seats will be available to all. Some students may have to follow the lectures remotely.</DTU_Remark>
+          <Remark>Teaching activities and content are organised for students admitted to the MSc in Engineering (Sustainable Energy)</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om mikroøkonomi, teori om elmarkedet og liberalisering af energimarkederne er et plus.&#xD;&#xA;&#xD;&#xA;For studerende, der ikke har tidligere erfaring med mikroøkonomisk teori, anbefales det stærkt at læse Gregory Mankiw, &quot;Principles of Microeconomics&quot;, Chapter 6–10." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of microeconomics, power market theory, and energy market liberalisation is a plus.&#xD;&#xA;&#xD;&#xA;For students that have no previous experience regarding microeconomic theory, it is highly recommended to read Gregory Mankiw &quot;Principles of Microeconomics&quot;, Chapters 6–10." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01005. 42009" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend og kritisk evaluer mikroøkonomiske begreber (f.eks. profitmaksimering, udbud og efterspørgsel, marginale omkostningspriser og elasticiteter) i forbindelse med energimarkeder." />
+          <Txt Lang="en-GB" Txt="Apply and critically evaluate microeconomic concepts (e.g., profit maximization, supply and demand, marginal cost pricing, and elasticities) in the context of energy markets. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser og sammenlign strukturen og dynamikken i internationale energiråvaremarkeder (olie, gas og kul) og vurder deres implikationer for energisikkerhed." />
+          <Txt Lang="en-GB" Txt="Analyze and compare the structure and dynamics of international energy commodity markets (oil, gas, and coal), and assess their implications for energy security. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluer og fortolk nøgleindikatorer for energiforbrug (f.eks. energiintensitet) for at sammenligne landes energisystemer og økonomiske udviklingsstadier." />
+          <Txt Lang="en-GB" Txt="Evaluate and interpret key indicators of energy use (e.g., energy intensity) to compare countries’ energy systems and stages of economic development. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vantitativ analyse af energiefterspørgsel og elbelastningsmønstre og vurder deres implikationer for systemdrift, investeringsbeslutninger og markedsresultater." />
+          <Txt Lang="en-GB" Txt="Quantitatively analyze energy demand and electricity load patterns, and assess their implications for system operation, investment decisions, and market outcomes. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kritisk vurdere den økonomiske begrundelse og resultaterne af markedsliberalisering, deregulering og opdelingsreformer i energisektoren." />
+          <Txt Lang="en-GB" Txt="Critically assess the economic rationale and outcomes of market liberalization, deregulation, and unbundling reforms in the energy sector. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenlign og evaluer reguleringsrammer for netværksindustrier, herunder omkostningsdækningsmekanismer og deres virkninger på effektivitet, investeringsincitamenter og forbrugervelfærd." />
+          <Txt Lang="en-GB" Txt="Compare and evaluate regulatory frameworks for network industries, including cost recovery mechanisms and their effects on efficiency, investment incentives, and consumer welfare. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser og syntetiser strukturen og funktionen af ​​elmarkeder (f.eks. engros-, balancerings- og kapacitetsmarkeder) inden for den bredere energiværdikæde." />
+          <Txt Lang="en-GB" Txt="Analyze and synthesize the structure and function of electricity markets (e.g., wholesale, balancing, capacity markets) within the broader energy value chain. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluer og modeller mekanismer for prisfastsættelse af elektricitet (f.eks. marginalprissætning, pay-as-bid), herunder deres indvirkning på effektivitet i forsendelsen og markedspræstationen." />
+          <Txt Lang="en-GB" Txt="Evaluate and model electricity pricing mechanisms (e.g., marginal pricing, pay-as-bid), including their impact on dispatch efficiency and market performance. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere elmarkeder ved hjælp af belastningsvarighedskurver og vurdere omkostningsdækning for kraftværker" />
+          <Txt Lang="en-GB" Txt="Analyse power markets based on load duration curves, cost recovery of power plants" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser og evaluer forholdet mellem investeringsbeslutninger, produktionskapacitet og markedsdesign, herunder rollen og effektiviteten af ​​kapacitetsaflønningsmekanismer." />
+          <Txt Lang="en-GB" Txt="Analyze and evaluate the relationship between investment decisions, generation capacity, and market design, including the role and effectiveness of capacity remuneration mechanisms. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenlign og vurder kritisk miljøpolitiske instrumenter (f.eks. skatter, kvoter, emissionshandelssystemer såsom EU ETS) med hensyn til effektivitet, virkningsfuldhed og fordelingsmæssige konsekvenser." />
+          <Txt Lang="en-GB" Txt="Critically compare and assess environmental policy instruments (e.g., taxes, quotas, emissions trading systems such as EU ETS) in terms of efficiency, effectiveness, and distributional impacts. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluer og design støtteordninger for vedvarende energi (f.eks. feed-in-tariffer, auktioner, grønne certifikater) og vurder deres interaktion med elmarkeder og politiske mål." />
+          <Txt Lang="en-GB" Txt="Evaluate and design renewable energy support schemes (e.g., feed-in tariffs, auctions, green certificates) and assess their interaction with electricity markets and policy objectives. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Energy Economics</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="20" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="60" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:51.5" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

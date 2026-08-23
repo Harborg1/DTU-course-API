@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28451" University="dtu" LastUpdated="2026-04-22+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">7.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Optimerende drift af procesanlæg" />
+        <Title Lang="en-GB" Title="Optimising Plantwide Control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="21473" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jakob Kjøbsted</GivenName>
+            <FamilyName>Huusom</FamilyName>
+            <Email>jkh@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueringen er baseret på rapporter af 4 øvelser samt en større projektopgave. Løsning af øvelserne, projektrapporten og dens mundligt præsentation er en del af evalueringen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based on 4 minor reports of exercise solutions as well as a report for the main project assignment.  Solution of the exercises, the project report and its oral presentation forms part of the evaluation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Basis for kurset er procesanlæggets syntese og de deraf afledte driftsmål, herved illustreres at proces design og drift er to sider af samme grundlæggende problemstilling. Valg af aktuatorer og målinger til en regulatorstruktur gennemføres udfra en systematisk model analyse. I en efterfølgende syntese findes parring af aktuatorer og målinger til en basal regulatorstruktur for en proces. Hvorledes driftsmålene nås i praksis ved anvendelse af regulering illustreres i løbet af kurset på basis af udvalgte eksempler, der vil illustrere karakteristiske regulator strukturer</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, simuleringsøvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Et typisk produktionsanlæg i den kemiske industri har hundredvis af målinger og reguleringssløjfer. De indledende Reguleringskurser (28150, 28352) handlede om at styre en proces hvor arkitekturen af reguleringssystemet er givet og men udgangspunkt i en kontoleret variable. I dette tilfælde reduceres problemet til at designe en regulator (= control law) som er egnet til systemet, og til at optimere parametrene i denne regulator (= tuning). Hertil krævedes en forståelse af de valgte simple systemers dynamik, så regulatorerne kunne designes bedst muligt. Dette er dog kun en begyndelse. 
+Når der foreligger et design af et anlæg og et flowdiagram af processen, skal følgende problemer løses i praksis: i) Hvilke variabler skal reguleres?; ii) Hvilke variabler skal måles?; iii) Hvilke aktuatorer skal bruges?; iv) Hvordan skal disse variabler og aktuatorer kobles sammen? Der findes svar på denne type spørgsmål i kurset vha. en systematisk metode. Metoden er baseret på en systematisk nedbrydning af reguleringsproblemet og processforståelse. Reguleringssystemet til et procesanlæg designes i forskellige trin. Opnåelse af driftsmål og effektiviteten af systemet bliver evalueret vha. simuleringer med en dynamisk model af procesanlægget. 
+
+Kursets formål er: i) at håndtere design af et reguleringssystem til et kompliceret procesanlæg; ii) at forstå procesdynamikken vha. simuleringer; iii) at designe og implementere et reguleringssystem på basis af design kriterier (systemets stabilitet, optimeret økonomi og bæredygtighed af systemet, systemets begrænsninger); iv) evaluering af alternative løsninger. Resultatet af designet af reguleringssystemet er et kemisk eller biokemisk procesanlæg med højere effektivitet, økonomi, bæredygtighed og med forbedret sikkerhed.</Course_Objectives>
+          <Remark>Projektet omfatter ufledning af en plantwide regulering med brug af en systematisk tilgang og evalueringen ved hjælp af dynamiske simuleringer. Projektet omhandler analyse og styring af en typisk kemisk process enhed. En projekt rapport udarbejdes der kritisk diskutere og evaluere resultaterne af den plantwide regulering strategi.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course base is the synthesis of the plant and its derived operational goals which illustrate that process design and operation are two sides of the same fundamental problem. Selection of actuators and measurements for a basic control structure at the single variable layer is introduced from a systematic model analysis. In a subsequent synthesis step a pairing of actuators and measurements is selected. How the operational goals may be achieved in practice through control is illustrated for selected examples. These examples will also demonstrate characteristic control structures.</Contents>
+          <Teaching_And_Learning_Methods>Lectures &amp;  simulation exercises and project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Typical chemical plants may contain hundreds of measurements and control loops. Most control theories (those you have seen in the introduction to process control) assume that a control structure is already given at the start, which reduces the problem to tuning and calculation of a control law. In practice, however, given a plant design with its process flow diagram, a control engineer faces the following problems: i) which variables should be controlled, ii) which variables should be measured, iii) which inputs should be manipulated, and iv) which links should be established between them? These are the questions that the plantwide control course addresses. To this end, a systematic methodology based on hierarchical decomposition of the control problem into layers is used for designing a plantwide control structure based on process understanding. The performance of the control structure is then evaluated and further refined using dynamic simulations of the process in question in an iterative manner. 
+
+The goal of the course is thus to learn i) to manage the complicated task of designing a control strategy for the entire plant; ii) to understand process dynamics using dynamic simulations; iii) to develop and implement a control strategy that meets control design objectives (stabilize the system, optimize the economics, environmental sustainability and satisfy the constraints); and vi) evaluation of alternative solutions. Ultimately all these efforts are to  help develop and operate better, safer,  and optimal processes for chemical and biochemical industries.</Course_Objectives>
+          <Remark>The project includes derivation of a plantwide control strategy using a systematic approach and its evaluation using dynamic simulations. The plant in question is a typical processing unit in the kemical industry. A project report is prepared critically discussing and evaluating the performance of the plant wide control strategy.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et indledende kursus i procesregulering som 28352, 28150, 28155 eller tilsvarende. Basal erfaring med programmering i Matlab eller Python" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="An introductory course in chemical process control similar to 28352, 28150 or 28155.&#xD;&#xA;Basic completances in programming in Matlab/Simulink or Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="28351/28150/28864" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre en systematisk analyse af operation af kemiske og biotekniske procesanlæg" />
+          <Txt Lang="en-GB" Txt="Perform a systematic analysis of the operation of chemical and biochemical process plants" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede en regulator struktur på basis af en proces operations analyse" />
+          <Txt Lang="en-GB" Txt="Derive a control structure based upon the process analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestem det optimal operations punkt for styringen " />
+          <Txt Lang="en-GB" Txt="Calculate the optimal point of operation for the control system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede simple lineare modeller til regulerings design fra kompliceret proces anlæg" />
+          <Txt Lang="en-GB" Txt="Derive simple linear models for control design from complex process systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser obeserverbarhed og kontrolerbarhed af et dynamisk system " />
+          <Txt Lang="en-GB" Txt="Analyse observability and controlability of a dynamical system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design multivariable PID regulerings strukturer" />
+          <Txt Lang="en-GB" Txt="Design multivariable PID control structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og dimensionere model baseret flervariable regulatorer, herunder LQR, LQG og MPC" />
+          <Txt Lang="en-GB" Txt="Formulate and design model based multivariable controllers, incl. LQR, LQG and MPC" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere regulator performance gennem simulering med dynamiske process modeller" />
+          <Txt Lang="en-GB" Txt="Evaluate controller's performance using simulation and dynamic process model" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Model-baseret design af reguleringssystemer til procesanlæg.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:16.397" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

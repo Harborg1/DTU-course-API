@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="MA911" University="dtu" LastUpdated="2026-08-14+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Matematisk Analyse og Modellering" />
+        <Title Lang="en-GB" Title="Mathematical Analysis and Modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Undervisningen afholdes på MARTEC campus i Frederikshavn" />
+          <LocationTxt Lang="en-GB" Txt="The course takes place at MARTEC, campus Frederikshavn" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Der tilbydes undervisning i pensum til 13-uger periodens onlinetest i uge 34. Den resterende del af kurset finder sted i januar 2026." />
+          <Schedule_Txt Lang="en-GB" Txt="Teaching of the syllabus for the online test in the 13-week period is offered in week 34. The rest of the course takes place in January 2026." />
+          <Schedule ScheduleKey="E" SortID="0" />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="83" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="MARTEC" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="MARTEC" />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="83" />
+        <External_Course_Responsible Email="tbj@martec.dk" Name="Terkil Bak-Jensen" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="6718" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jakob Martin</GivenName>
+            <FamilyName>Pedersen</FamilyName>
+            <Email>jmpe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1968" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Michael</GivenName>
+            <FamilyName>Pedersen</FamilyName>
+            <Email>micp@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen og bedømmelse af opgave(r)&#xD;&#xA;I løbet af 13-ugers perioden afvikles en test digitalt, som skal være bestået inden en fastsat deadline for at kunne deltage i eksamen i 3-ugers perioden i januar. Eksamen består af daglige tests (samlet vægt 10%) og to modelleringsøvelser (hver med en vægt på 10%) i 3-ugers perioden samt skriftlig eksamen (vægt 70%). Der gives en helhedsbedømmelse. Særlige vilkår til eksamen: Vedrørende ekstra tid - kun ved den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="During the 13-week period a test takes place digitally and must be passed to qualify for the exam in the 3-week period in January. The exam consists of daily tests (total weight 10%) plus two modelling exercises (weight 10% each) during the 3-week period and a written exam (weight 70%). An overall assesssment is given.&#xD;&#xA;&#xD;&#xA;Special exam conditions: Regarding extra time - only in connection with the written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The written exam is divided into 2 hours with no aids allowed and 2 hours with all aids allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Den skriftlige eksamen er delt op i 2 timer uden hjælpemidler og 2 timer med alle hjælpemidler." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Komplekse tal, polynomier, differentialligninger af første og anden orden, Taylors formel for funktioner af én variabel, approksimation og numerisk løsning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, selvstændigt gruppearbejde og gruppearbejde under vejledning af klasselærer, daglige tests i Möbius samt modelleringsdage.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte de studerende i stand til selvstændigt at anvende fundamentale matematiske begreber og moderne computerværktøjer i forbindelse med løsning af klassiske ingeniørmæssige problemstillinger. Undervisningsformen understøtter gennemløb af modelleringscirklen med henblik på behandling af af fagligt relevante problemstillinger inden for de forskellige studielinjer. For at styrke de studerendes digitale dannelse og ”computational thinking” introduceres moderne beregningsværktøjer (pt. Maple) løbende i undervisningen, både som CAS-værktøj og numerisk løser. Undervisningen er bygget op over voksende taksonomiske niveauer, der leder naturligt frem mod det efterfølgende kursus 01922, Lineær Algebra og Modellering.</Course_Objectives>
+          <DTU_Remark>Obligatorisk kursus for alle diplomingeniørstuderende i Skibsteknik og maritimt design, Frederikshavn</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Complex numbers, polynomials, differential equations of order one and two, Taylor's formula for functions of one variable, approximation and numerical solution.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work with and without guidance of teaching assistants, daily tests in Möbius, and modelling days.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the students with the ability to apply fundamental mathematical concepts and modern computer tools solving classical problems of engineering. The scope and form of the course supports application of the modelling circle aiming at the treatment of relevant problems within the different study lines. To enhance the digital formation and "computational thinking" of the students, modern computational tools (currently Maple) are introduced continuously throughout the course as a CAS-tool as well as a numerical tool. The teaching is organised with increasing taxonomical levels leading up to the subsequent course, 01922, Linear Algebra and Modelling.</Course_Objectives>
+          <DTU_Remark>Mandatory course for all students enrolled in the Bachelor of Engineering in Naval Architecture and Maritime Engineering, Frederikshavn</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre beregninger med komplekse tal, herunder den komplekse eksponentialfunktion, både i hånden og vha. en computer." />
+          <Txt Lang="en-GB" Txt="Carry out calculations with complex numbers including the complex exponential function, both by hand and using a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte polynomier med reelle og komplekse rødder." />
+          <Txt Lang="en-GB" Txt="Use polynomials with real and complex roots." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre beregninger med polynomier, både i hånden og vha. en computer." />
+          <Txt Lang="en-GB" Txt="Do calculations with polynomials, both by hand and using a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse simple differentialligninger af første og anden orden, både i hånden og vha. en computer." />
+          <Txt Lang="en-GB" Txt="Solve simple differential equation of first and second order, both by hand and using a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte Taylorpolynomier til approksimation af funktioner af én variabel samt løsninger til differentialligninger." />
+          <Txt Lang="en-GB" Txt="Use Taylor polynomials to approximate functions in one variable and solutions to differential equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte matematik til at løse simple ingeniørmæssige problemstillinger." />
+          <Txt Lang="en-GB" Txt="Apply mathematics to solve simple engineering problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte det symbolske software-værktøj Maple til løsning og grafisk illustration af matematiske/ingeniørmæssige problemer." />
+          <Txt Lang="en-GB" Txt="Apply the symbolic software-tool Maple to solve and graphically display mathematical/engineering problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne mellem eksakt løsning, approksimeret løsning og numerisk løsning til differentialligninger samt vurdere og forstå simple fejlestimater." />
+          <Txt Lang="en-GB" Txt="Understand the difference between exact, approximated and numerical solution to differential equations and be able to evaluate and understand simple error estimates." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="01001.01003.01005.01006.01015.01016.01901.01910" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-08-14" Time="13:33:19.66" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

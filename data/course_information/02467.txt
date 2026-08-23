@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02467" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Social informatik" />
+        <Title Lang="en-GB" Title="Computational Social Science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset udbydes første gang i foråret 2021" />
+          <Schedule_Txt Lang="en-GB" Txt="The course is offered for the first time in spring 2021" />
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="113088" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Laura Maria</GivenName>
+            <FamilyName>Alessandretti</FamilyName>
+            <Email>lauale@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter er baseret på en samlet vurdering af tre komponenter: hjemmeopgaver (33 %), en skriftlig prøve (33 %) og en afsluttende projektrapport (34 %). Evalueringen af rapporterne baseres specifikt på individuelle vurderinger af gruppearbejder." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on an overall assessment of three components: exercises solved at home (33%), a written test (33%), and a final project report (34%). In particular, the evaluation of reports  is based on individualized assessments of group reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No aids are permitted during the written test." />
+            <Aid_Txt Lang="da-DK" Txt="Ingen hjælpemidler er tilladt ved den skriftlige prøve." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver mulighed for at analysere data baseret på online sociale netværk som fx Twitter, Wikipedia, og Reddit, samt arbejde med kvantitativ tekstanalyse og data visualisering. Kurset er struktureret omkring korte forelæsninger kombineret med praktiske øvelser, samt en høj grad af selvstændigt projektarbejde.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger samt gruppearbejde med projekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Studerende i dette kursus vil kunne anvende netværksmodellering på lokal, community og global skala. Kan anvende basal tekst-analyse af fx sociale medier. Har viden om privatliv/etik- muligheder/udfordringer ved anvendelse af AI i sociale medier, undervisningssektoren, sundhedssektoren etc.</Course_Objectives>
+          <DTU_Remark>Kurset er en del af bacheloruddannelsen Kunstig Intelligens og Data og er forbeholdt studerende fra denne uddannelse.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is based on analyzing data from social networks data collected online, as well as working with quantitative text analysis and data visualization. The course is structured around short lectures combined with exercises, as well as a high degree of independent project work.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work with projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Students in this class will be able to apply network science modelling on local, community, and global scale. Can apply basic text-analysis to text from e.g. social media. Has knowledge about privacy and ethics, as well as challenges of analysing data from social media, within teaching, health, etc</Course_Objectives>
+          <DTU_Remark>The course is part of the BSc programme Artificial Intelligence and Data and is reserved for students from this program.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå historien, metoderne og de grundlæggende principper for computerteknikker i samfundsvidenskabelig forskning. " />
+          <Txt Lang="en-GB" Txt="Understand the history, methodologies, and core principles of computational techniques in social science research." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende teknikker til indsamling af store datamængder fra nettet gennem webskrabning og API'er, og fortolk udfordringerne og implikationerne forbundet med forskellige datakilder. " />
+          <Txt Lang="en-GB" Txt="Apply techniques for collecting large-scale data from the web through web scraping and APIs, and interpret the challenges and implications associated with different data sources." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge state-of-the-art metoder til filtrering, rensning og forberedelse af komplekse og store datasæt til analyse i Python, hvilket sikrer robusthed og pålidelighed i analysen. " />
+          <Txt Lang="en-GB" Txt="Use state-of-the-art methods for filtering, cleaning, and preparing complex and large datasets for analysis in Python, ensuring robustness and reliability in the analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå karakteristika ved heavy-tailed fordelinger i samfundsvidenskabelige data og udvikle passende metoder til håndtering af sådanne data for at sikre en nøjagtig fortolkning af forskningsresultaterne. " />
+          <Txt Lang="en-GB" Txt="Understand the characteristics of heavy-tailed distributions in social science data, and develop appropriate methodologies for handling such data to ensure accurate interpretation of research findings." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge netværksanalyse til at modellere sociale relationer, opdage fællesskaber og anvende metrikker til at forstå netværksstrukturer inden for samfundsvidenskabelige data. " />
+          <Txt Lang="en-GB" Txt="Use network analysis to model social relations, detect communities, and apply metrics to understand network structures within social science data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende teknikker til at analysere tekstdata, herunder brug af NLTK til virkelige applikationer og udforskning af metoder som TF-IDF til at forstå karakteristika ved tekstdata. " />
+          <Txt Lang="en-GB" Txt="Apply techniques to analyze textual data, including utilizing NLTK for real-world applications and exploring methods like TF-IDF for understanding textual data characteristics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende tilfældige nulmodeller til kritisk at vurdere den statistiske signifikans af empiriske observationer i netværks- og tekstdataanalyser, hvilket sikrer en grundig evaluering af resultater fra forskning i samfundsvidenskabelig computerteknik. " />
+          <Txt Lang="en-GB" Txt="Employ random null models to critically assess the statistical significance of empirical observations in network and textual data analyses, ensuring rigorous evaluation of computational social science research findings." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og anvende overbevisende visualiseringer for både enkelt- og flervariable datasæt, hvilket forbedrer udforskningen og præsentationen af samfundsvidenskabelige data. " />
+          <Txt Lang="en-GB" Txt="Develop and employ compelling visualizations for both single and multiple variable data sets, enhancing the exploration and presentation of social science data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og adressere bekymringer relateret til databeskyttelse, bias og ansvarlig brug af computerteknikker i samfundsvidenskabelig forskning." />
+          <Txt Lang="en-GB" Txt="Identify and address concerns related to data privacy, bias, and the responsible use of computational methods in social science research." />
+        </DTU_ObjectiveKeyword>
+        <Mandatory_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450" />
+        </Mandatory_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02805 02806" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="70" Min="0" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:03.03" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

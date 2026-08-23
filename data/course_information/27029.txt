@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="27029" Volume="2026/2027" University="dtu" LastUpdated="2026-05-13+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Life science automatisering og robotteknologi" />
+        <Title Lang="en-GB" Title="Life science automation and robotics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="27" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="27" />
+        <Course_Responsible PersonKey="53158" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Rasmus John Normand</GivenName>
+            <FamilyName>Frandsen</FamilyName>
+            <Email>rasf@bio.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="97535" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Aske</GivenName>
+            <FamilyName>Unger</FamilyName>
+            <Email>askung@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="86502" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Vilhelm Krarup</GivenName>
+            <FamilyName>Møller</FamilyName>
+            <Email>vikmol@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="72017" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ahmad</GivenName>
+            <FamilyName>Zeidan</FamilyName>
+            <Email>azei@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig rapport om design challenge, video af OT-2 robot, der kører workflow, samt mundtlig fremlæggelse med eksamination. Evalueringen sker som en helhedsvurdering på baggrund af rapport, video og mundtlig præsentation/eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written report on design challenge, video of OT-2 robot running workflow, and oral presentation with examination. Grading will be based on an overall assessment of the report, video, and the oral presentation/examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="10 minutters mundtlig præsentation og 15 minutters eksamination (eksaminator ser video før eksamen)." />
+          <Duration Lang="en-GB" Txt="10 minutes oral presentation and 15 minutes examination (examinator views the video prior to the exam)." />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer de studerende til laboratorieautomation inden for biovidenskab med et stærkt fokus på praktisk implementering og brugen af pipetteringsrobotplatforme. Undervisningen er struktureret som et integreret forløb bestående af forelæsninger, case-baseret arbejde, laboratorieimplementering og plenumrefleksion.
+Forelæsningerne (videoer) introducerer det teoretiske grundlag for laboratorieautomation, herunder de grundlæggende principer for Opentrons OT-2-platformen, væskehåndtering (herunder væskeklasser), standardisering af arbejdsgange og grundlæggende Python-programmering til styring af robotter.
+Efter den teoretiske introduktion præsenteres de studerende for en konkret case (f.eks. serielle fortyndinger, PCR, ELISA, DNA-oprensning eller enzymanalyser). I mindre grupper analyserer de den eksperimentelle problemstilling og udvikler en teoretisk automatiseringstrategi, der oversætter en manuel laboratorieprotokol til et struktureret robotworkflow med fokus på begrænsninger, fleksibilitet og optimering.
+Efterfølgende implementerer og tester de studerende deres teoretiske løsninger i laboratoriet på OT-2-platformen. Denne praktiske fase giver de studerende erfaring med både robottekniske og biologiske udfordringer, der skal overkommes for effektivt at automatisere eksperimentelle arbejdsgange. Hvert modul afsluttes med en fælles opsamling i plenum, hvor resultater, udfordringer og designvalg diskuteres, og de centrale læringspointer sammenfattes.
+Kurset afsluttes med et eksamensprojekt, hvor studerende i mindre grupper, designer, implementerer og tester et nyt automatiseret workflow til OT-2-platformen, der integrerer de teoretiske og praktiske kompetencer, der er udviklet gennem hele kurset.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning og øvelser:
+
+Forberedelse: Læse litteratur og se videoforelæsninger, der introducerer det teoretiske grundlag for automatisering, standardisering, programmering af robotter og design af eksperimenter.
+
+Undervisning på DTU:
+1. Introduktion af case og designudfordring.
+2. Teoretiske øvelser: Design af eksperimenter, inkl. programmering af OT-2 robot.
+3. Laboratorieøvelser: Studerende implementerer, tester og fejlfinder robotbaserede eksperimenter.
+4. Plenaropsummering af læring.</Teaching_And_Learning_Methods>
+          <Course_Literature>Udvalgte reviews og original artikler samt manualen til Opentron OT-2 pipetteringsrobot.</Course_Literature>
+          <Course_Objectives>Kurset introducerer bioteknologistuderende til det teoretiske grundlag for laboratorieautomation samt udstyrer dem med de praktiske færdigheder, der kræves for at betjene Opentrons OT-2 pipetteringsrobotplatform. De studerende vil få indsigt i, hvordan robotsystemer kan bruges til at udføre biologiske laboratorieeksperimenter, samt hvordan automatisering kan forbedre reproducerbarheden, øge antallet af prøver og forbedre datakvaliteten. Kurset lægger vægt på tværfaglige kompetencer ved at integrere bioteknologi, programmering (Python) og systemtænkning, hvilket sikrer, at de studerende kan designe, implementere og optimere automatiserede eksperimentelle arbejdsgange.
+Efter afslutningen af kurset vil de studerende være i stand til at designe, dokumentere, implementere og evaluere simple automatiserede workflow, der udfører gængse biovidenskabelige eksperimenter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces students to laboratory automation in the life sciences, with a strong emphasis on practical implementation and the use of pipetting robotics platforms. The teaching is structured as an integrated sequence of lectures, case-based work, laboratory implementation, and plenary reflection.
+The video lectures introduce the theoretical foundation of laboratory automation, including the operating principles of the Opentrons OT-2 platform, liquid-handling concepts (e.g., liquid classes), workflow standardization, and the fundamentals of Python programming for robotic control.
+Following the theoretical introduction, students are presented with a concrete case (e.g., serial dilutions, PCR, ELISA, DNA purification, or enzyme assays). Working in small groups, they analyze the experimental objective and develop a theoretical automation strategy, e.g., translating a manual laboratory protocol into a structured robotic workflow while considering constraints, flexibility, and optimization.
+The proposed solutions are then implemented and tested in the laboratory using the OT-2 platform. This hands-on phase allows students to confront both the technical and biological challenges of automating experimental workflows. Each module concludes with a plenary session in which results, challenges, and design choices are discussed, and key learning points are synthesized.
+The course culminates in an exam project in which students, working in small teams, design, implement, and test a new automated workflow for the OT-2 platform, integrating the theoretical and practical competencies developed throughout the course.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises: 
+
+Preparation: Read literature and watch video lectures that introduce the theoretical basis for automation, standardization, programming of robots, and design of experiments.
+
+In class teaching: 
+1. Introduction of case and design challenge.
+2. Theoretical exercises: Design of experiments, incl. programming of OT-2 robot.
+3. Laboratory exercises: Students implement, test and troubleshoot robot-based experiments.
+4. Plenary summary regarding learnings.</Teaching_And_Learning_Methods>
+          <Course_Literature>Selected reviews and original articles, and the manual for the Opentron OT-2 pipetting robot.</Course_Literature>
+          <Course_Objectives>The course introduces biotechnology students to the theoretical foundations of laboratory automation and equips them with the practical skills required to operate Opentron's OT-2 pipetting robot platform. Students will gain insight into how robotic systems can be used to perform biological laboratory experiments and how automation can improve reproducibility, increase sample throughput, and improve data quality. The course emphasizes interdisciplinary skills by integrating biotechnology, programming (Python), and systems thinking, ensuring that students can design, implement, and optimize automated experimental workflows. Upon completion of the course, students will be able to design, document, implement, and evaluate simple automated workflows that perform common life science experiments.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Sikkerhed i kemi og biologilaboratorier." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Safety in chemistry and biology laboratories." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="27023/27027" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="1. Basal Python-programmering (essentielt). &#xD;&#xA;2. Praktisk erfaring med udførsel af eksperimentelt molekylærbiologisk arbejde via manuel pipettering samt en god teoretisk forståelse af de underliggende principper for PCR, ELISA og enzymkinetiske assays." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="1. Basic Python programming (essential). &#xD;&#xA;2. Practical experience with performing experimental molecular biology via manual pipetting, as well as a good theoretical understanding of the underlying principles of PCR, ELISA, and enzyme kinetic assays." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/27022/27027" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive det tekniske grundlag, fordele og begrænsninger ved automatisering af laboratorie-baserede life science-eksperimenter." />
+          <Txt Lang="en-GB" Txt="Describe the technical foundations, advantages, and limitations of automating laboratory-based life science experiments." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Betjene og bruge Opentron OT-2 pipetteringsrobotplatformen ved hjælp af eksisterende protokoller og scripts." />
+          <Txt Lang="en-GB" Txt="Operate the Opentron OT-2 pipetting robotics platforms using existing protocols and scripts. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere (Python) OT-2 platformen til at udfører nye automatiserede workflows samt tilpasse eksisterende workflows." />
+          <Txt Lang="en-GB" Txt="Use Python programming to implement and adapt automated workflows in a laboratory context. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Oversætte manuelle laboratorieforsøgsprotokol-ler til automatiserede arbejdsgange under hensyntagen til fleksibilitet, begrænsninger og optimering." />
+          <Txt Lang="en-GB" Txt="Translate manual laboratory experimental protocols into automated workflows, considering flexibility, constraints, and optimization. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kortlægge og evaluere ressourceudnyttelse for arbejdsgange (f.eks. pipettespidser, reagenser) samt identificere flaskehalse i workflows." />
+          <Txt Lang="en-GB" Txt="Map and evaluate resource utilization for work- flows (e.g. pipette tips, reagents), and identify bottlenecks. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere arbejdsgange for at minimere tids- og ressourceforbrug, samtidig med at reproducerbarhed og datakvalitet bevares." />
+          <Txt Lang="en-GB" Txt="Optimize workflows to minimize time and resource consumption while ensuring reproducibility and data quality. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere eksisterende arbejdsgange, modularisere dem til genanvendelige enhedsoperationer." />
+          <Txt Lang="en-GB" Txt="Evaluate existing workflows, modularize them into reusable unit operations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere, hvornår automatisering er gavnlig, og identificere strategier til at adressere trin, der er vanskeligt at automatisere." />
+          <Txt Lang="en-GB" Txt="Assess when automation is beneficial and identify strategies for addressing hard-to-automate steps. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Indsamle data fra roboteksperimenter og udfør grundlæggende analyser med det formål at forbedre workflows ydeevne. " />
+          <Txt Lang="en-GB" Txt="Capture the data output from robotics experiments and perform basic analysis aimed at improving the workflow’s performance.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere robotarbejdsgange i overensstemmelse med FAIR-principperne." />
+          <Txt Lang="en-GB" Txt="Document robotics workflows in compliance with the FAIR principles. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="30" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-18" Time="17:13:23.957" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

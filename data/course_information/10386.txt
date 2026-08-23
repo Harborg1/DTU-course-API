@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10386" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Eksperimentelle Teknikker i Kvanteteknologi" />
+        <Title Lang="en-GB" Title="Experimental Techniques in Quantum Technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="39887" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alexander</GivenName>
+            <FamilyName>Huck</FamilyName>
+            <Email>Alexander.Huck@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="159887" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Adnan Adil Ebrahim</GivenName>
+            <FamilyName>Hajomer</FamilyName>
+            <Email>aaeha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Individualiserert gruppeprojekt med præsentation af poster over det udførte arbejde samt rapport i form af eksperimentel logbog." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment. Individualized group project with poster presentation about the work and a report in form of a lab book." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver mulighed for at implementere og undersøge anvendelser af kvanteteknologi. De studerende vil i grupper udvælge en bestemt kvanteteknologi, undersøge teorien bag og planlægge implementeringen af denne under hensyntagen til relevante eksperimentelle imperfektioner. Efter en detaljeret karakterisering af de enkelte  komponenter gruppen vælger at inddrage, går de videre med implementeringen.
+
+Afhænging af hvilken teknologi gruppen vælger, vil de komme til at arbejde med:
+- enkelte fotoner genereret ved parametrisk nedkonvertering
+- enkeltfotondetektorer
+- coherent stater
+- homodyn detektion af kontinuerte variabler
+- Hong-Ou-Mandel effekt
+- Hanbury-Brown-Twiss opstilling
+- brud af Bells ulighed med entanglement
+- kvanteinterferometri
+- optisk detekteret magnetisk resonans (ODMR)
+
+Der vil være særligt fokus på de tekniske detaljer en eksperimentalist skal tage hensyn til i forbindelse med demonstration af teoretiske kvanteoptiske forudsigelser og implementering af disse i konkret praksis. Den studerende får således en indføring til de tekniske udfordringer en ingeniør møder i det praktiske arbejde med moderne kvanteteknologi.</Contents>
+          <Teaching_And_Learning_Methods>Projektorienteret eksperimentelt gruppearbejde. Hver gruppe vælger deres projekt fra en liste af givne problemstillinger relateret til eksperimentel kvanteteknologi.</Teaching_And_Learning_Methods>
+          <Course_Literature>Relevant litteratur vil blive inddraget i henhold til de enkelte projektgruppers behov. Der er ikke et fast pensum.</Course_Literature>
+          <Course_Objectives>Forskningsgennembrud har inden for de seneste årtier gjort kvanteeffekter som kvantesuperpositionstilstande og entanglement mere begribelige og kontrollerbare. Disse effekter udnyttes nu i udviklingen af nye kvanteteknologier, der fundamentalt adskiller sig fra de eksisterende. Denne udvikling vil bla. føre til kvantekryptografi-baseret kommunikationssikring, et paradigmeskifte inden for computervidenskaben (kvantecomputeren) og ekstremt følsomme sensorer baseret på f.eks defekter i diamant men atomlignende egenskaber.
+Der er således tale om en forestående teknologisk revolution, og erhvervslivet investerer massivt i udviklingen.
+
+Målet med dette kursus er at undersøge nogle af disse kvanteteknologier eksperimentelt, særligt med fokus på optiske teknologier. Dette inkluderer en forståelse af hvorledes kvantetilstande genereres, detekteres og karakteriseres og dens anvendelse i kommunikation og sensing. Der vil specielt være fokus på håndtering og eliminering af teknisk støj, der uundgåeligt er tilstede i ethvert eksperiment og udvasker de subtile kvanteeffekter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course offers to implement and investigate applications of quantum technology. Working in groups the students will pick a particular quantum technology, study the theory behind it and plan its implementation considering various imperfections. After a detailed characterization of the components that shall be used the group will finally implement it.
+
+Depending on the chosen technology the following topics may be studied:
+- Single photons from parametric down-conversion sources
+- Single photon detectors
+- Coherent states
+- Homodyne detection of continuous variables
+- Hong-Ou-Mandel experiment
+- Hanbury-Brown-Twiss experiment
+- Violation of Bell inequality with entanglement
+- Quantum interferometry
+- Optically detected magnetic resonance (ODMR)
+
+Special emphasis will be put on technical details an experimentalist has to deal with when demonstrating theoretical quantum optical predictions and when making use of those in practical measurement devices. The student is, thus, introduced to cutting-edge technological challenges faced by quantum engineers.</Contents>
+          <Teaching_And_Learning_Methods>Project oriented experimental group work. Project can be chosen from a list of topics related to quantum technology.</Teaching_And_Learning_Methods>
+          <Course_Literature>Relevant literature will be included according to the particular need of each individual project group. There is no fixed curriculum for the course.</Course_Literature>
+          <Course_Objectives>Quantum effects such as quantum superposition and entanglement are now being used to develop radically new technologies with far-reaching applications, including super-secure communication, a new paradigm for computing (quantum computing), and sensors with unprecedented sensitivity based e.g. on color centers in diamond. This is a true technological revolution and therefore also of commercial interest.
+
+The goal of this course is to experimentally explore some of these technologies with focus on quantum optical technology. This includes an understanding of the generation, the detection and the characterization of quantum states and its application in communication and sensing. A special focus will be put on how to deal with unavoidable technical noise sources, present in all implementations, which disturb quantum effects.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kvantemekanik (10102) er elementært, men et bedre udbytte af kurset vil opnås med forudgående kendskab til avanceret kvantemekanik fra videregående kvantemekanik (10112), kvanteinformation (10384) eller kvanteoptik (10380)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Bare minimum is quantum mechanics (10102), a more profound understanding of the technical side of quantum technologies will be gained with a background in advanced quantum mechanics (10112), quantum information (10384) or quantum optics (10380)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10102" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Transformere teoretisk kvantefysik til praktisk implementering" />
+          <Txt Lang="en-GB" Txt="Transform elements of quantum theory into practical quantum technology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diagnosticere og vurdere tekniske imperfektioner i eksperimentelle opstillinger" />
+          <Txt Lang="en-GB" Txt="Diagnose and evaluate technical imperfections in experiments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere, designe og implementere optimale strategier til dataanalyse" />
+          <Txt Lang="en-GB" Txt="Identify, design and implement optimal data analysis strategies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for forskellige anvendte teknikker i en bestemt kvanteteknologi" />
+          <Txt Lang="en-GB" Txt="Explain the different techniques used in a particular quantum technology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere kvanteoptiske eksperimenter" />
+          <Txt Lang="en-GB" Txt="Discuss experiments in quantum optics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere, planlægge og udføre fælles arbejde i en projektgruppe" />
+          <Txt Lang="en-GB" Txt="Organize, plan and carry out collaborative work in group projects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere og forsvare eksperimentelt arbejde" />
+          <Txt Lang="en-GB" Txt="Present and defend experimental work" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere eksperimentelt arbejde" />
+          <Txt Lang="en-GB" Txt="Document experimental lab work" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="5" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="5" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="60" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="60" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:17.093" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10037" University="dtu" LastUpdated="2026-04-20+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Kontinuumsfysik og modellering" />
+        <Title Lang="en-GB" Title="Continuum physics and modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="10027" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Bruus</FamilyName>
+            <Email>bruus@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2737" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jakob</GivenName>
+            <FamilyName>Schiøtz</FamilyName>
+            <Email>schiotz@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Alle samtaler om projekter i kurset skal bestås." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment. All feedback dialogues about the projects in the course must be passed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette er et kursus i klassisk feltteori for kontinuerte fysiske felter. Det omfatter diffussionsteori for felter der beskriver masse, impuls eller energi i væsker, gasser og faste stoffer; elastodynamik af deformerbare statiske eller vibrerende elastiske materialer, og fluiddynamik af strømmende væsker eller gasser. Modeller af kontinuumsfelterne opstilles ved brug af bevarelseslove og Gauss’ divergensteorem i form af styrende partielle differentialligninger med randbetingelser. De mest simple eksempler løses analytisk, mens mere realistiske anvendelser simuleres numerisk i Python.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning, numeriske simuleringsopgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningsnote ”Introduction to continuum physics and classical field theory” af Henrik Bruus, (DTU 2026).
+Forelæsningsnote ”Continuums physics: Modeling and numerical simulation in Python” af Jakob Schiøtz (DTU 2026).</Course_Literature>
+          <Course_Objectives>Med en syntese af fysiske bevarelseslove, matematisk vektoranalyse, og programmeringssproget Python, bibringes den studerende et grundlæggende kendskab til kontinuumsfysik, dets beskrivelse med klassisk feltteori, og opstilling samt løsning af udvalgte kontinuumsmodeller med numeriske simuleringer. Kurset giver en god baggrund for brugen af feltteori i senere kurser i elektromagnetisme og kvantemekanik.</Course_Objectives>
+          <DTU_Remark>Dette kursus er specifikt målrettet for studerende på BSc Fysik og Ingeniørvidenskab og BSc Geofysik og Rumforskning, og det er et centralt valgfrit kursus for studerende på disse bachelorstudieretninger. Det indgår i samtlige anbefalede studieforløb på disse to studieretninger.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This is a course in classical field theory of continuous physical fields. It includes diffusion theory for fields describing mass, momentum or energy in liquids, gases and solids; elastodynamics of deformable static or vibrating elastic materials, and fluid dynamics of flowing liquids or gases. Models of the continuum fields are set up using conservation laws and Gauss' divergence theorem in the form of governing partial differential equations with boundary conditions. The simplest examples are solved analytically, while more realistic applications are simulated numerically in Python.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, tutorials, and numerical simulation exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture note ”Introduction to continuum physics and classical field theory” by Henrik Bruus, (DTU 2026).
+Lecture note ”Continuums physics: Modeling and numerical simulation in Python” by Jakob Schiøtz (DTU 2026).</Course_Literature>
+          <Course_Objectives>With a synthesis of physical conservation laws, mathematical vector analysis, and the programming language Python, the student is given a basic knowledge of continuum physics, its description by classical field theory, and setting up and solving selected continuum models with numerical simulations. The course forms a good basis for the use of field theory in later course on electromagnetism and quantum mechanics.</Course_Objectives>
+          <DTU_Remark>This course is specifically targeted at students on the BSc Engineering Physics and the BSc Earth and Space Physics and Engineering educations. The course is a central elective course for students at these bachelor study programmes, and it is part of all recommended study lines in these programmes.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01001.01002.02002.10033.10034 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere et kontinuert fysisk felt ved brug af kontinuumshypotesen." />
+          <Txt Lang="en-GB" Txt="Define a continuous physical field using the continuum hypothesis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille de styrende ligninger for et givent kontinuumsfelt baseret på feltets fluxtæthed, bevarelseslove og Gauss’ divergensteorem. " />
+          <Txt Lang="en-GB" Txt="Set up the governing equations for a given continuum field based on the field's flux density, conservation laws, and Gauss' divergence theorem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende vektoranalyse (gradient, divergens, rotation, Gauss’ og Stokes’ teoremer) i kontinuumfysiske problemer i forskellige grene af fysikken" />
+          <Txt Lang="en-GB" Txt="Apply vector analysis (gradient, divergence, rotation, Gauss' and Stokes' theorems) in continuum physics problems in different branches of physics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille numeriske modeller af kontinuumsproblemer med styrende ligninger og randbetingelser, og finde løsninger ved numerisk simulering i Python." />
+          <Txt Lang="en-GB" Txt="Set up numerical models of continuum problems with governing equations and boundary conditions, and find solutions by numerical simulation in Python." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende diffusionsligningen til at beregne diffusion af masse, impuls og energi i forbindelse med molekylære koncentrationsfelter, temperaturfelter, neutronfordelinger i atomreaktorer, implantering af doteringsatomer i halvledere, fordeling af impuls i væskestrømninger." />
+          <Txt Lang="en-GB" Txt="Use the diffusion equation to calculate diffusion of mass, momentum, and energy in connection with molecular concentration fields, temperature fields, neutron distributions in nuclear reactors, implantation of dopant atoms in semiconductors, distribution of momentum in fluid flows." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende elastodynamik i form af Cauchy-ligningen til at beregne tøjning (strain) og spænding (stress) i statisk deformerede eller vibrerende elastiske materiale i simple konfigurationer, så som atomic force mikroskop (AFM), mikromembraner til ultralyd, mikroelektromekaniske systemer (MEMS)." />
+          <Txt Lang="en-GB" Txt="Apply elastodynamics in the form of the Cauchy equation to calculate strain and stress in statically deformed or vibrating elastic material in simple configurations, such as atomic force microscope (AFM), micromembranes for ultrasound, and micro-electromechanical systems (MEMS )." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende fluiddynamik i form af Navier-Stokes-ligningen til at beregne strømningsprofiler, tryk og hydraulisk modstand i simple eksempler på væskestrømning, så som lab-on-a-chip systemer, biologiske kredsløb, og lydudbredelse." />
+          <Txt Lang="en-GB" Txt="Apply fluid dynamics in the form of the Navier-Stokes equation to calculate flow profiles, pressure, and hydraulic resistance in simple examples of fluid flow, such as lab-on-a-chip systems, biological circuits, and sound propagation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende advektions-diffusions-ligningen med kildeled til at beregne transport af masse (molekylære opløsninger) og energi (varme) i væskestrømninger." />
+          <Txt Lang="en-GB" Txt="Apply the advection-diffusion equation with source terms to calculate transport of mass (molecular solutes) and energy (heat) in fluid flows." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:50.443" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

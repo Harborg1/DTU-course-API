@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28322" University="dtu" LastUpdated="2026-04-20+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Teknisk termodynamik" />
+        <Title Lang="en-GB" Title="Chemical Engineering Thermodynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="26" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="71381" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Xiaodong</GivenName>
+            <FamilyName>Liang</FamilyName>
+            <Email>xlia@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="10354" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Wei</GivenName>
+            <FamilyName>Yan</FamilyName>
+            <Email>weya@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Det er en forudsætning for deltagelse i mundtlig eksamen at alle rapporter og hjemmeopgaver er afleveret og godkendt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="It is a prerequisite for participation in the oral exam that all reports and assignments have been submitted and approved" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Anvendelse af tilstandsligninger til beregning af stofegenskaber, herunder residuale egenskaber, for rene fluider (e.g. CO2). Endvidere arbejdes med dimensionering af processer til køling og processer til fordråbning af luftarter. Endelig er den fysisk-kemiske modelbeskrivelse af væskeblandinger væsentlig for de fleste separationsprocesser. Kurset omhandler modeller for reale væskeblandinger og deres anvendelse til simple ligevægtsberegninger for damp-væske, væske-væske og væske-faststof systemer. Eksperimentelle data behandles med henblik på vurdering af modellernes anvendelighed.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning, projektarbejde, og udarbejdelse af rapporter</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dimensionering og optimering af kemisk procesudstyr (destillation, ekstraktion, kompression, køling m.v.) kræver et indgående kendskab til de fysisk-kemiske egenskaber af de stoffer og stofblandinger, der indgår i processen. Fysisk kemi giver den teoretiske ramme, som gør det muligt at beregne disse egenskaber ved anvendelse af approksimative modeller, selv om man kun har et begrænset eksperimentelt datamateriale til rådighed. Målet med kurset er ved beregning at kunne estimere fysisk-kemiske egenskaber for rene stoffer og stofblandinger med henblik på benyttelse af termodynamikken ved dimensionering og optimering af kemisk procesudstyr.</Course_Objectives>
+          <DTU_Remark>Dette kursus vil for det meste blive undervist på engelsk</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Application of equations of state to calculate thermodynamic properties, including residual properties, of pure fluids (e.g. CO2). Sizing and optimization for cooling and liquefaction processes. Physical chemical models applicable for the separation of most liquid solutions. Models for real liquid solutions and their use in equilibrium calculations of liquid-vapor, liquid-liquid, and solid-liquid systems. Experimental data is used to evaluate the models.</Contents>
+          <Teaching_And_Learning_Methods>Classroom lectures and tutorials, project work, and reporting</Teaching_And_Learning_Methods>
+          <Course_Objectives>Sizing and optimization of process units (distillation, extraction, compression, cooling etc.) requires thorough knowledge of the thermodynamic properties of the chemical species (pure/mixture) present. Physical chemistry provides the theoretical framework which makes the calculation of these properties possible with  approximate models, even with limited availability of experimental data. The goal of this course is to enable the participants to estimate thermodynamic properties of pure species and mixtures for application in sizing and optimization of process units.</Course_Objectives>
+          <DTU_Remark>This course will be mostly given in English</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="(28022 senest samtidig). Kendskab til regneark (MS Excel)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="(28022 concurrent). Spreadsheet knowledge (MS Excel)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="26271.28022" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende udvalgte tilstandsligninger til beregning af stofegenskaber for rene, reale fluider." />
+          <Txt Lang="en-GB" Txt="use selected equations of state to calculate properties of pure, real fluids." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fastsætte driftsbetingelser for køle- og fordråbningsprocesser." />
+          <Txt Lang="en-GB" Txt="determine the operating conditions for cooling and liquefaction processes. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme Henrys konstanter for en to-komponent blanding ud fra eksperimentelle data." />
+          <Txt Lang="en-GB" Txt="determine Henry's constants for two-component solutions, using experimental data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne partielle molære egenskaber for en to-komponent blanding ud fra eksperimentelle data." />
+          <Txt Lang="en-GB" Txt="calculate partial molar quantities for two-component solutions, based upon experimental data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne overskudsegenskaber for en to-komponent blanding ud fra eksperimentelle data." />
+          <Txt Lang="en-GB" Txt="calculate excess quantites for two-component solutions, using experimental data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende udvalgte aktivitetskoefficientmodeller til beregning af damp-væske og væske-væske faseligevægte for flerkomponentblandinger." />
+          <Txt Lang="en-GB" Txt="use selected models for activity coefficients to calculate vapor-liquid and liquid-liquid phase equilibrium for multi-component solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optegne og fortolke fasediagrammer for damp-væske og væske-væske ligevægte med henblik på anvendelser i separationsprocesser som destillation og ekstraktion. " />
+          <Txt Lang="en-GB" Txt="draw and interprete phase diagrams for vapor-liquid and liquid-liquid equilibrium with special emphasis on their use in separation processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optegne og fortolke fasediagrammer for væske-faststof og damp-faststof ligevægte, hvor komponenterne kan danne kemiske forbindelser og/eller fastfaseblandinger." />
+          <Txt Lang="en-GB" Txt="draw and interprete phase diagrams for solid-liquid and solid-vapor equilibrium, where the components can form compounds and/or solid-phase solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne kolligative egenskaber for binære blandinger." />
+          <Txt Lang="en-GB" Txt="calculate colligative properties for binary mixtures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende regneark til teknisk-kemiske beregninger. " />
+          <Txt Lang="en-GB" Txt="use spreadsheets for chemical engineering calculations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive en teknisk rapport." />
+          <Txt Lang="en-GB" Txt="write a technical report." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="28221/26222" />
+        <PreviousCourse CourseCode="28321" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:05.9" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

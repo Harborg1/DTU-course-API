@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62575" Volume="2026/2027" University="dtu" LastUpdated="2025-03-25+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Sikkerhed i indlejrede systemer" />
+        <Title Lang="en-GB" Title="Security in Embedded Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+          <Ass_Dep UID="1" Resources="0" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Course_Responsible PersonKey="78715" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Birger</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>birad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Experiments" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Notes can be taken to exam." />
+            <Aid_Txt Lang="da-DK" Txt="Noter må medbringes." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Additional days might be necessary." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ekstra dage kan forekomme." />
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Fundamentale egenskaber ved sikker kommunikation i indlejrede systemer:
+- Kryptologiske algoritmer og protokoller
+   (herunder nøglehåndtering og letvægtskryptografi)
+- Vigtige sikkerheds egenskaber
+   (herunder konfidentialitet, integritet, tilgængelighed, autenticitet og privathed)
+- Autentifikations mekanismer og protokoller
+- ”Trusted Computing”
+   (herunder begreber som Trusted Platform Modules og Trust Zones)
+- Signeret software
+   (herunder signaturvalidering og Public Key Infrastructures)
+- Fysisk sikkerhed og distribution af elementer i et indlejret system
+- Datasikkerhed
+   (herunder sikker lagring af data – lokalt og i skyen – samt sikker rapportering af data)
+- Bæredygtighed
+   (herunder fokus på minimalt ressourceforbrug)</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>At bibringe en grundlæggende forståelse af teori og praksis indenfor konstruktion af sikker kommunikation og integritet i indlejrede systemer.</Course_Objectives>
+          <DTU_Remark>Det primære undervisningssprog er dansk dog kan lektioner på engelsk forekomme.</DTU_Remark>
+          <Remark>Sektion for Energiteknologi og computer science
+Computer Engineering: 3. semester
+Valgfag: Softwareteknologi, Sundhedsteknologi, Elektroteknologi</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fundamental characteristics of secure communications in embedded systems:
+- Cryptographic Algorithms and Protocols
+   (including Key Management and Lightweight Cryptography)
+- Important Safety Properties
+   (including Confidentiality, Integrity, Availability, Authenticity and Privacy)
+- Authentication Mechanisms and Protocols
+- "Trusted Computing"
+   (including concepts such as Trusted Platform Modules and Trust Zones)
+- Signed Software
+   (including Signature Validation and Public Key Infrastructures)
+- Physical Security and Distribution of Elements in an Embedded System
+- Data Security
+   (including Secure Data Storage - locally and in the Cloud - as well as Secure Data Reporting)
+- Sustainability
+   (including a focus on minimal resource consumption)</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide a basic understanding of theory and practice in the construction of secure communication and integrity in embedded systems.</Course_Objectives>
+          <DTU_Remark>The primary language in the course is Danish however lectures in English kan occure.</DTU_Remark>
+          <Remark>Section of Energy Technology and Computer Science
+Computer Engineering: 3. semester
+Elective: Software Technology, Healthcare Technology, Electrical Engineering</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå hvordan arkitekturen af et indlejret system der består af flere komponenter er med til at bestemme hvilke sikkerhedskrav systemet skal opfylde." />
+          <Txt Lang="en-GB" Txt="Understand how the architecture of an embedded system consisting of several components influences the determination of the security demands the system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive vigtige karakteristika af kryptologiske algoritmer og protokoller og hvordan disse finder anvendelse i kommunikerende indlejrede systemer." />
+          <Txt Lang="en-GB" Txt="Describe important characteristics of cryptographic algorithms and protocols and their use when communicating between embedded systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de fundamentale sikkerhedsegenskaber: konfidentialitet, integritet og tilgængelighed, samt vigtigheden af disse i forskellige typer af kommunikerende indlejrede systemer." />
+          <Txt Lang="en-GB" Txt="Describe the fundamental safety characteristics: Confidentiality, Integrity and Availability, as well as the importance of these when communicating between embedded systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere forskellige klasser af mekanismer og protokoller til at autentificere kommunikerende elementer i et indlejret system." />
+          <Txt Lang="en-GB" Txt="Catagorize different classes of mechanisms and protocols to authenticate communication between elements in an embedded system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for mulige anvendelser af ”Trusted Computing” teknikker og teknologier i opbygningen af sikre indlejrede systemer." />
+          <Txt Lang="en-GB" Txt="Explain the possible uses of &quot;Trusted Computing&quot; techniques and technologies in the construction of secure embedded systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for betydningen af fysisk sikkerhed i et givet indlejret system med henblik på at identificere konsekvenser af fysisk distribution af systemets elementer." />
+          <Txt Lang="en-GB" Txt="Explain the importance of physical security in a given embedded system in order to identify the impact of physical distribution of the system's elements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere et indlejret system bestående af flere komponenter med henblik på at identificere risici, trusselsmodeller og angrebsmodeller." />
+          <Txt Lang="en-GB" Txt="Analyzing an embedded system consisting of several components, in order to identify risks, threat models and attack models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge et passende implementeringsparadigme, der opfylder givne designkrav til datasikkerhed i et indlejret system." />
+          <Txt Lang="en-GB" Txt="Choose an appropriate implementation paradigm to satisfy given design requirements for data security in an embedded system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle et overordnet design af en sikkerhedsarkitektur for et indlejret system ud fra valgte elementers interfaces og kommunikationsprotokoller." />
+          <Txt Lang="en-GB" Txt="Develop an overall design of a security architecture for an embedded system based on the interfaces and communication protocols of selected elements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle en delvis implementation af sikkerhedsarkitekturen for et indlejret system på basis af en uformel beskrivelse af dets funktion og formål." />
+          <Txt Lang="en-GB" Txt="Develop a partial implementation of the security architecture of an embedded system based on an informal description of the function and purpose of the system." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02325/62577/62443/62581" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Sikkerhed i indlejrede systemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="60" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:42.573" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

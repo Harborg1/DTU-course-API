@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10255" Volume="2026/2027" University="dtu" LastUpdated="2026-04-23+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avanceret 3D Røntgen imaging" />
+        <Title Lang="en-GB" Title="Advanced 3D X-ray imaging" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="85" KVL_Resources="100" />
+          <Ass_Dep UID="1" Resources="15" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="123335" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Rajmund</GivenName>
+            <FamilyName>Mokso</FamilyName>
+            <Email>rajmo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38403" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Henning Friis</GivenName>
+            <FamilyName>Poulsen</FamilyName>
+            <Email>hfpo@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="27111" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jakob Sauer</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>jakj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Kurset omfatter bl.a. 3 hjemmearbejdsopgaver hver af 6 timers nominel varighed. Hjemmearbejdsopgaverne vægter i alt 25% af eksamenskarakteren, og resten baseres på den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment. Among others the course comprise 3 homework assignments, each taking nominally 6 hours. The homework will count a total of 25% to the exam, the rest will be allocated based on an oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Undervisningen omfatter kortere forelæsninger, diskussioner af litteratur, som de studerende har læst, simuleringer og eksperimentelle demoer. Kurset omfatter også 3 hjemmearbejdsopgaver hver af 6 timers nominel varighed.
+
+Kurset introdurer de studerende til moderne koncepter indenfor imaging med Røntgenstråler genereret enten fra laboratorie baserede kilder eller fra internationale forskningsinfrastrukturer (synkrotroner). Udfra a priori viden om materialer/bio strukturer lærer den studerende diffraktion kontrast metoder og nær-felts billeddannelse. Matematikken bag tomografisk rekonstruktion og praktisk erfaring med  eksisterende værktøjer vil blive dækket. Forelæsningerne vil blive fulgt op med hands-on øvelser med det mål at etablere forbindelsen mellem teori og software implementering. 
+
+Forelæsninger og øvelser vil især fokusere på følgende emner:
+• Fysikken bag udbredelsen af Røntgen stråling i medier.  
+• Foton-materiale interaktion, attenuering, spredning og diffraktion i sammenhæng med imaging 
+• Billeddannelse i et Røntgen mikroskop. 
+• Diffraktions kontrast imaging (korn, defekter og spændinger i 3D).
+• Simuleringer af udbredelsen af kohærente bølgefronter
+• Rekonstruktion algoritmer og deres implementering  
+• Hands-on sessioner med simuleringer og 3D data rekonstruktioner</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning, simuleringer, eksperimenter</Teaching_And_Learning_Methods>
+          <Course_Literature>J. Als-Nielsen &amp; D. F. McMorrow, Elements of Modern X-ray Physics, John Wiley &amp; Sons, Ltd (2011)
+J. Goodman, Introduction  to Fourier Optics, W. H. Freeman (2004)
+P.C. Hansen, J.S. Jørgensen, and W. R. B. Lionheart, Computed Tomography: Algorithms, Insight, and Just Enough Theory, SIAM(2021)</Course_Literature>
+          <Course_Objectives>Røntgen-billeddannelse og mikroskopi benyttes i et meget bredt spektrum, fra hospitaler over  materialeforskning til museer og industri.  I de sidste 30  år er der sket en hurtig udvikling ved brug af både lab-kilder og synkrotron-kilder, med mange nye modaliteter og anvendelsesområder.  Der er stor variation, men alle metoder deler de samme underlæggende principper, som vil blive præsenteret i detaljer i dette kursus. 
+
+Kurset giver den studerende et omfattende blik på avancerede Røntgen-billeddannelsesmetoder, såsom fase- og diffraktions-kontrasttomografi og de nye kohærente mikroskopimetoder. Kurset sigter mod at etablere en forbindelse mellem en teoretisk beskrivelse af billeddannelse/ 3D-rekonstruktion og anvendelser af metoderne på tværs af materialvidenskab, biologi og andre domæner.  Den studerende vil blive bekendt med simuleringer af Røntgen-billeder og -film og selvstændigt kunne fortolke komplekse 3D-data. Den viden der opnås via kurset er relevant for at blive en ekspert indenfor R&amp;D i området indenfor den akademiske verden eller i den voksende Røntgen-industri.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will include shorter lectures, discussions of literature that the students have read, simulations and experimental demos.   It will also comprise 3 homework assignments, each taking nominally 6 hours.
+
+The course introduces the student to modern concepts of imaging with X-rays emerging from advanced laboratory based sources and large scale accelerator based X-ray sources. Building upon the a priori knowledge of materials/bio-structures the student learns the concepts of diffraction contrast and near-field image formation. The mathematics of tomographic reconstruction and practical experience using available tools will be covered. The lectures will include a hands-on simulations with the aim to establish the connection between the theory and software implementation. 
+
+The lectures and exercises will cover in particular the following topics:
+• The physics behind propagation of X-rays in media.
+• Photon-matter interactions, attenuation, scattering and diffraction in connection with imaging.
+• Image formation in an X-ray microscope.
+• Diffraction contrast imaging (grains, defects, and stress in 3D)
+• Simulations of propagation of coherent wavefronts
+• Tomographic reconstruction algorithms and their implementation
+• Hands-on sessions with simulations and 3D data reconstructions</Contents>
+          <Teaching_And_Learning_Methods>Lectures, homework, simulations, experiments</Teaching_And_Learning_Methods>
+          <Course_Literature>J. Als-Nielsen &amp; D. F. McMorrow, Elements of Modern X-ray Physics, John Wiley &amp; Sons, Ltd (2011)
+J. Goodman, Introduction  to Fourier Optics, W. H. Freeman (2004)
+P.C. Hansen, J.S. Jørgensen, and W. R. B. Lionheart, Computed Tomography: Algorithms, Insight, and Just Enough Theory, SIAM(2021)</Course_Literature>
+          <Course_Objectives>X-ray imaging and microscopy is utilized in all aspects of life, from hospitals through basic science to industry and museums.  In the  past 30  years we  witnessed  a  rapid development using both  synchrotrons and lab sources for X-ray imaging with many new modalities and application areas. The variety is large, but all methods share the same underlying principles, which will be presented in detail in the course. 
+
+The course will provide student with a comprehensive view of advanced x-ray imaging methods, such as phase and diffraction contrast tomographic and emerging coherent microscopy techniques. The course aims to establish a connection between the theoretical description of  image formation and the application of the methods across materials science,  biology and other domains. The students will become familiar with simulations of X-ray images and movies and independently interpret complex 3D data.  The know-how  obtained in this course is relevant for becoming an expert in R&amp;D in the area in academia or the rapidly growing x-ray industry.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10036  10209  10200 10303 01005  02631" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive egenskaberne bag kohærent og inkohærent billeddannelse. " />
+          <Txt Lang="en-GB" Txt="Describe the properties of coherently and incoherently formed images " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simulationer af interaktionen af partiel kohærente Røntgen bølger  med materialer" />
+          <Txt Lang="en-GB" Txt="Perform simulations of partially coherent X-ray waves interacting with materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede phase retreival metoder og anvende disse" />
+          <Txt Lang="en-GB" Txt="Derive and apply phase retrieval using established concepts" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende Fourieroptik" />
+          <Txt Lang="en-GB" Txt="Explain and apply Fourier optics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de matematiske principper bag 3D tomografi" />
+          <Txt Lang="en-GB" Txt="Explain the mathematical principles of tomographic reconstruction " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simulering af rekonstruktion metoder i Røntgen tomografi " />
+          <Txt Lang="en-GB" Txt="Perform simulations with tomographic and phase reconstruction tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlaget bag diffraktion kontrast tomografi" />
+          <Txt Lang="en-GB" Txt="Explain the principles of diffraction contrast tomography" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre diffraktion og fase kontrast tomografi forsøg og dataanalyse" />
+          <Txt Lang="en-GB" Txt="Perform diffraction and phase contrast tomography experiments and data analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende iterative rekonstruktions metoder der gør brug af koherænte kilder.  " />
+          <Txt Lang="en-GB" Txt="Explain and use iterative reconstruction methods exploiting coherent fields." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere teknikker inden for Røntgen imaging; identificere og anvende den optimale metode eller kombination af metoder til kvantificering af 3D-strukturen af materialer" />
+          <Txt Lang="en-GB" Txt="Evaluate x-ray imaging methods to identify and apply the most appropriate method or combination of methods to quantify the 3D structure of materials " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="24" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="25" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:01.013" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62752" Volume="2026/2027" University="dtu" LastUpdated="2026-03-23+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Måling og styring med mikroprocessorer" />
+        <Title Lang="en-GB" Title="Measurement and control using microprocessors" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="78867" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Schultz</FamilyName>
+            <Email>osch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Experiments" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="I løbet af semesteret afleverer grupperne et antal programmerings/kursusarbejder, som skal kunne godkendes før eksamen og det sidste kursusarbejde bedømmes og indgår i den endelige karakter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="During the semester hands-on programming assignments should be done and approved before the exam and the last course-lab is graded and is a part of the final grade" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="In case of large attendance more exam dates may be added" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ved store hold kan eksamen fordeles over flere dage" />
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Individuel mundtlig eksamen - 10 minutter per studerende inkl bedømmelse" />
+          <Duration Lang="en-GB" Txt="10 minuttes per student incl. evaluation" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>•       Indledende øvelsesarbejde med digital kredse
+•	Anvendelse af hardware-nær struktureret programudvikling i fx. C til en mikroprocessor på et udviklingsboard
+•	Anvendelse af programmering i fx C til at styre indbyggede perifere enheder, fx I/O porte, timere, tællere, , PWM-generering, A/D konvertering og power down
+•	Simpel programmering på registre, bit-level Boolean operators
+•	Interfacing til simple perifere enheder og effektelektronik
+•	Spændingsmåling
+•	PWM-generering: frekvens, duty factor, opløsning
+•	Polling og interrupts ved tidskritiske situationer
+•	Brug af mikroprocessorer til styring og overvågning af systemer relevant til elektrisk energiteknologi, fx. regulering af spænding og motorhastighed
+•	Systematiske metoder til programudvikling, test og dokumentation.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger med hands-on C-programmerings øvelser og projektarbejde i grupper 
+Før forelæsningerne er der Quiz'es, som forudsættes udført inden 
+forelæsningen. Igennem kurset arbejder grupper af 2-3 studerende med programmerings opgaver med tilhørende journal. Kurset afsluttes med et kursus-arbejde udført i grupper af 2-3 studerende - Rapporten over det afsluttende kursus arbejde indgår i karakteren sammen med en mundtlig eksamination i faget</Teaching_And_Learning_Methods>
+          <Course_Literature>MSP430 Microcontroller Basics, John H. Davies, Newnes Elsevier</Course_Literature>
+          <Course_Objectives>Mikroprocessorer og elektronik får en stadig større betydning for bæredygtige elektriske energisystemer i forbindelse med øget behov for styring og overvågning, ikke mindst på baggrund af udvikling af mere intelligente energisystemer. Kursets formål er at give de studerende grundlæggende viden om mikroprocessorer og deres anvendelse, herunder hardwaresiden i form af den fysiske opbygning og interfacing til eksterne enheder. Derudover lærer de studerende at udvikle og teste software til applikationer, der har relevans for elektrisk energisystemer.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektrisk Energiteknologi: 1. semester og 3. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>•      Introductions-labs using digital circuits
+•	Application of hardware-related structured programming in e.g. C for a microprocessor on a development board
+•	Application of programming in e.g. C to control in-built peripherals such as I/O ports, timers, counters, PWM-generation, A/D converters and power down
+•	Simple programming of registers, bit-level Boolean operators
+•	Interfacing to simple peripherals and to power electronic devices
+•	Voltage measurement
+•	PWM-generation: frequency, duty factor, resolution
+•	Polling and interrupts in time-critical situations
+•	Application of microprocessors to the control and monitoring of systems relevant to electrical energy technology, fx. voltage- and motor-regulation
+•	Systematic methods for programming, test and documentation</Contents>
+          <Teaching_And_Learning_Methods>Lectures with hands on exercises and project work in groups.
+Before each lecture quizes should be completed. During the course groups of 2 - 3 students works on assigments with reports. In the last part of the semester, a course-lab will be given and must be solved in groups of 2- 3 students. A report for this course-lap is part of the grade together with  an oral examination</Teaching_And_Learning_Methods>
+          <Course_Literature>MSP430 Microcontroller Basics, John H. Davies, Newnes Elsevier</Course_Literature>
+          <Course_Objectives>Microprocessors and electronics are increasingly important for the control and monitoring of sustainable electrical energy systems. The aim of the course is for the students to learn the basics about microprocessors and their applications, including the hardware aspects of the physical structure and interfacing with users and external units, as well as the development and test of software applications which are relevant to electrical energy systems.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektrisk Energiteknologi: 1. semester and 3. semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="62712 c programmering undervises parallelt med det anvendes i dette kursus" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="62712 C-programming is thought in parallel with it is used" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive en mikroprocessors/mikrokontrollers overordnede arkitektur og operation, herunder hukommelse, registrere og instruktioner" />
+          <Txt Lang="en-GB" Txt="Describe the basic architecture and operation of a microprocessor/microcontroller, including memory, registers and instructions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå programmering i fx. C til aktivering af indbyggede perifere enheder: fx I/O, timere, tællere, A/D konvertering, PWM-generering samt power down" />
+          <Txt Lang="en-GB" Txt="Understand the programming in e.g. C for the activation of in-built peripherals such as: I/O, timers, counters, A/D converters, PWM generation and power down" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et passende udviklingsmiljø til hardware-nær programmering i fx C" />
+          <Txt Lang="en-GB" Txt="Use a suitable development environment for hardware-related programming in e.g. C" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå forskellen mellem brug af polling og interrupts og deres anvendelse i passende i tidskritiske situationer" />
+          <Txt Lang="en-GB" Txt="Understand the difference between the use of polling and interrupts and their application in time-critical situations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre interfacing til effektelektronik, fx MOSFETs, måling af elektriske størrelser og generering af forskellige spændingssignaler" />
+          <Txt Lang="en-GB" Txt="Construct interfaces to power electronic devices such as MOSFETs, measure electrical parameters and generate signals" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere et struktureret program til et mindre mikroprocessorsystem til styring og overvågning af et system relevant for elektrisk energiteknologi, fx PWM-generering til konvertere eller motorer samt simpel regulering" />
+          <Txt Lang="en-GB" Txt="Design and implement a structured program for a small microprocessor system for control and monitoring of a system which is relevant to electrical energy technology, e.g. PWM generation for converters or motors as well as simple closed-loop control" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre verifikation og test på modul- og systemniveau ved brug af passende værktøjer" />
+          <Txt Lang="en-GB" Txt="Carry out verification and test at module- and system levels using appropriate tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere et program for et indlejret system" />
+          <Txt Lang="en-GB" Txt="Document a program for an embedded system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et oscilloskop og signalgenerator til måling på digitale systemer" />
+          <Txt Lang="en-GB" Txt="Use an Oscilloscope and signal generator for measurements on digital systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere samt verificere mindre digitale kredsløb" />
+          <Txt Lang="en-GB" Txt="Design, implement and verify small digital circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give pear feedback" />
+          <Txt Lang="en-GB" Txt="Give pear feedback" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:09.797" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

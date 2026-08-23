@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02413" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Statistisk kvalitetskontrol" />
+        <Title Lang="en-GB" Title="Statistical Quality Control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="33533" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Murat</GivenName>
+            <FamilyName>Külahci</FamilyName>
+            <Email>muku@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse foretages på baggrund af:&#xD;&#xA;1. En skriftlig midtvejsprove med fysisk fremmade.&#xD;&#xA;2. En Individuel rapport ved semesterafslutningen.&#xD;&#xA;&#xD;&#xA;Den samlede vurdering baseres på et ligeligt vægtet gennemsnit af de to dele." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation using:&#xD;&#xA;1. An In-person, mid-semester written exam.&#xD;&#xA;2. An Individual report at the end of the semester.&#xD;&#xA;&#xD;&#xA;Assessment is based on the equally weighted average of both." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="For the written exam, only the textbook is allowed.&#xD;&#xA;For the semester-end report, all aids are allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Til den skriftlig midtvejsprøve er kun lærebogen tilladt.&#xD;&#xA;Til rapporten ved semesterafslutningen er alle hjælpemidler tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Statistisk kvalitetskontrol ved stikprøveinspektion, herunder enkelt, dobbelt og sekventiel prøvning ved diskrete og kontinuerte stikprøvefordelinger. Anvendelse af standarder for stikprøveplaner. Statistisk proceskontrol ved kontrolkortmetoder, herunder Shewhart kontrolkort (X-R kort m.v.), eksponentiel udjævning (EWMA) og kumulativ sumkort (CUSUM).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte deltagerne i stand til at udvikle effektive metoder til statistisk kvalitetskontrol med henblik på anvendelse inden for eksempelvis tekniske eller miljømæssige områder, samt at give deltagerne et grundlæggende kendskab til standardmetoder for kvalitetssikring af produktionsprocesser. Der lægges vægt på, at deltagerne lærer at vurdere de forskellige metoders effektivitet og anvendelighed i de berørte problemstillinger</Course_Objectives>
+          <Remark>Kurset henvender sig til studerende, som følger eller agter at følge kurser med tilknytning til, eksempelvis, produktionsstyring, miljøkontrol og/eller kvalitetssikring.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Statistical procedures for acceptance sampling: Single, double and sequential sampling for discrete and continuous distributions. Application of international standards for acceptance sampling.  Statistical process control by control-chart methods: Shewhart control-charts (X-R charts etc.), exponential smoothing (EWMA) and  CUSUM-charts.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the participants the necessary tools for the development of efficient statistical methods for the control of quality, in e.g. technical or environmental relations, and to give the participants a basic knowledge of standard methods for statistical control of production processes. It is of major concern that the participants learn to assess the efficiency of various methods under consideration in relation to the specific field of application.</Course_Objectives>
+          <Remark>The course is aimed for students that attend or want to attend courses with relation to, for example, control of production, environmental surveillance and/or assurance.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller et lignende grundkursus i statistik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or a similar course in elementary statistics" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere et (det) relevante statistiske kontrol problem for en produktions- eller lignende proces." />
+          <Txt Lang="en-GB" Txt="Formulate an (the) adequate statistical control problem for a production or similar process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende alternative statistiske metoder til at løse proceskontrol problemet" />
+          <Txt Lang="en-GB" Txt="Use alternative statistical methods for solving the process control problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere generelle fordele og ulemper ved alternative proces kontrol metoder." />
+          <Txt Lang="en-GB" Txt="Assess general advantages and disadvantages for alternative process control methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne og sammenligne konkret (numerisk) alternative proceskontrol metoder." />
+          <Txt Lang="en-GB" Txt="Assess and compare alternative process control methods concretely (numerically)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte standardiserede metoder (ISO) til stikprøvevis kvalitetskontrol af varepartier." />
+          <Txt Lang="en-GB" Txt="Use standardised methods (ISO) for statistical quality control of lots by sampling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende stikprøvebaserede metoder for såvel diskrete data som for kontinuerte data." />
+          <Txt Lang="en-GB" Txt="Use sampling methods relating to attribute sampling as well as to sampling by variables." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere fordele og ulemper ved forskellige stikprøvevise metoder (enkelt, dobbelt, sekventiel)." />
+          <Txt Lang="en-GB" Txt="Assess advantages and disadvantages relating to the sampling strategy (single, double, sequential)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere og teste kvalitetsegenskaber generelt ved hjælp af moderne og relevante statistiske værkstøjer." />
+          <Txt Lang="en-GB" Txt="Estimate and test quality measures in general by means off modern and relevant statistical tools." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.imm.dtu.dk/courses/02413" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>SPC</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:41.69" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

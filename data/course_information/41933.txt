@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41933" University="dtu" LastUpdated="2026-05-01+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Konstruktionsbrandteknik" />
+        <Title Lang="en-GB" Title="Structural Fire Safety Design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Foråret 2028 ændres skemaplacering til F1B." />
+          <Schedule_Txt Lang="en-GB" Txt="In spring 2028, the schedule changes to F1B." />
+          <Schedule ScheduleKey="F3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="56650" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Luisa</GivenName>
+            <FamilyName>Giuliani</FamilyName>
+            <Email>lugi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Delkarakterer: &#xD;&#xA;Skriftlig eksamen (50%). &#xD;&#xA;2 mellemliggende tests (50% samlet)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Partial grades:&#xD;&#xA;Written examination (50%).&#xD;&#xA;2 intermediate tests (50% in total)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The two intermediate tests take place in course week 6 and 13." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="De to mellemliggende tests foregår i undervisningsugerne 6 og 13." />
+            <Schedule ScheduleKey="F3B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Mellemliggende tests har en varighed af 1 time hver" />
+          <Duration Lang="en-GB" Txt="The intermediate tests have a duration of 1 h each." />
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursusindholdet er opdelt i følgende 4 hoveddele:
+
+0. VARMEOVERFØRSEL OG DESIGNBRAND
+Stråling, konvektion, ledningsligninger. Flashover og brand- og ventilationskontrollerede brande.
+Karakteristiske brandparametre og udledning af parametrisk brand fra varmeligevægt.
+EN og DK parametrisk og standard brand. Brandklassificering og modstandsklasser.
+Mekaniske belastninger i brand og designmetoder.
+
+1. STÅLELEMENTDESIGN
+Termiske egenskaber af stål. Tværsnitsfaktor og Biot-nr. af stålprofiler. Klumpvarmekapacitetsanalysemetode og udledning af temperaturkurven af uisoleret stålelementer.
+Isoleringsmaterialer til brandsikring af stålelementer og udledning af temperaturkurven af beskyttet stålelementer.
+Reduktion af mekanisk egenskaber af varmvalset stål.
+Beregning af bæreevne (verifikation) og beregning af isoleringstykkelse af stålelementer under påførte mekaniske belastninger (design).
+Termisk udvidelse af stål og reduktion af kapaciteten af søjler med hindret termisk udvidelse.
+
+2. TRÆELEMENTDESIGN
+Træ som brændbart og byggemateriale. Ildstorme og bybrande.
+Forkulning af træ. Reduktion af mekaniske egenskaber. Tværsnitsreduktionsmetode og styrkereduktionsmetode.
+Beregning af bæreevnen af træbjælker og søjler til parametrisk og standardbrand (verifikation). Dimensionering af trætværsnit for påførte brand- og mekaniske belastninger (design) i simple tilfælde.
+Forbindelser af træelementer og beregningsmetoder for kapaciteten af træ-stålforbindelser i brand.
+
+3. BETONELEMENTDESIGN
+Betons termiske egenskaber. Betonbygningers kollapser. Varm og kold tilstand.
+Beton temp. til en- og to-vejopvarmning. Symmetrilinjer og tilsvarende fuldt eksponeret tværsnit.
+Reduktion af mekanisk egenskaber af beton og armeringsstål. Permanent skade og reststyrke. Skadefaktorer (zonemetode) og brug af CONFIRE.
+Beregning af bæreevne (verifikation) af beton elementer. Transient tøjninger og excentrisk belastede søjler.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppe-opgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningsnotater om "Termal Radiation for Structural Fire Safety Design" (delt på DTU Learn)
+Petterson &amp; al. 1976: Fire Engineering Design of Steel structure, Lund University (delt på DTU Learn)
+Forlæsningsnotater om "Fire Safety Design of Wood Structures" (delt på DTU Learn)
+Hertz,K.D.: Design of Fire-Resistant Concrete Structures, Inst of Civil Engineers Pub., 2019
+CONFIRE Program og User Guide (delt po DTU Learn) - obs.: virker kun på Window-based pc</Course_Literature>
+          <Course_Objectives>At deltagerne opbygger viden og færdigheder til at verificere of design bærende konstruktioner påvirket af høje temperaturer i form af fuldt udviklede brande og standard brande.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course content is divided in the following 4 main parts:
+
+0. HEAT TRANSFER AND DESIGN FIRES
+Radiation, convection, conduction equations. Flashover and fuel- and ventilation-controlled fires.
+Characteristic fire parameters and derivation of parametric fire equation from heat equilibrium.
+EN and DK parametric and standard fire. Fire rating and resistance classes. Mechanical loads in fire and design methods.
+
+1. STEEL ELEMENT DESIGN
+Thermal properties of steel. Section factor and Biot no. of steel profiles. Lumped heat capacity method of analysis for uninsulated steel and derivation of the steel heating temperature curve.
+Insulating materials for fire protection of steel elements. Derivation of design temp. of protected steel.
+Degradation of strength and  stiffness of hot-rolled steel.
+Calculation of load bearing capacity of unprotected and fire-protected steel elements (verification). Calculation of the insulation thickness of steel elements under given mechanical loads (design).
+Thermal expansion of steel and reduction of the capacity of columns with hindered thermal expansion.
+
+2. TIMBER ELEMENT DESIGN
+Timber as combustible and building material. Firestorms and city fires.
+Charring of wood. Degradation of timber mechanical properties. Cross-section reduction method and strength reduction method.
+Calculation of the load bearing capacity of timber elements for parametric and standard fire (verification). Dimensioning of the cross-sections for given fire and mechanical loads (design) in simple cases.
+Connections of timber elements and calculation methods for the capacity of wood-steel connections in fire.
+
+3. CONCRETE ELEMENT DESIGN
+Thermal properties of concrete. Type of concrete failures and examples of collapse. Hot and cold condition.
+Concrete temp. for mono- and bi-directional heating. Symmetry lines and equivalent fully exposed section. 
+Degradation of mechanical properties of concrete and reinforcing steel. Permanent damage and residual strength. Damage factors (zone method) and use of CONFIRE.
+Calculation of load bearing capacity (verification) of concrete elements. Transient strain and eccentrically loaded columns.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group-exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes on "Termal Radiation for Structural Fire Safety Design" (shared on DTU Learn)
+Petterson &amp; al. 1976: Fire Engineering Design of Steel structure, Lund University (shared on DTU Learn)
+Lecture notes on "Fire Safety Design of Wood Structures" (shared on DTU Learn)
+Hertz,K.D.: Design of Fire-Resistant Concrete Structures, Inst of Civil Engineers Pub., 2019
+CONFIRE Program og User Guide (delt i DTU Learn) - note: it runs only on Window-based pc</Course_Literature>
+          <Course_Objectives>The participants will build knowledge and skills to verify design and calculate load-bearing structures affected by high temperature in the form of  fully developed and standard fire.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="For at kunne følge med i kurset er det vigtigt at have grundkendskab til strukturel mekanik (statik, ligevægts- og kompatibilitetsligninger, elasticitet, ydre og indre kræfter, spændinger, tøjninger, forskydninger).&#xD;&#xA;&#xD;&#xA;Det anbefales også at kende det grundlæggende i design af stål- og betonelementer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="In order to be able to follow the course, it is important to possess ground knowledge of structural mechanics (statics, equilibrium and compatibility equations, elasticity, external and internal forces, stresses, strains, displacements).&#xD;&#xA;&#xD;&#xA;It is also recommended to master the basics of design of steel and concrete elements." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41203/41236/41953.41954.41956.41957" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan udtrykket af en post-flashover brandtemperatur kan udledes af termisk ligevægt og hvilke parametre brandkurven afhænger af." />
+          <Txt Lang="en-GB" Txt="Explain how the expression of a post-flashover fire temperature can be derived from thermal equilibrium and which parameters the fire curve depends on." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Angive forskellige designbrande baseret på denne model og forklare de vigtigste forskelle mellem nominelle brandkurver og parametriske brande." />
+          <Txt Lang="en-GB" Txt="List different design fires based on this model and explain the main differences between nominal fire curves and parametric fires." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne brandegenskaberne (brændstofbelastning, termisk inerti og åbningsfaktor) for et givet rum og udlede den tilsvarende parametriske brandkurve." />
+          <Txt Lang="en-GB" Txt="Calculate the fire characteristics (fuel load, thermal inertia, and opening factor) of any given compartment and derive the corresponding parametric fire curve." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forudse hvordan variationen af disse parametre påvirker brandens sværhedsgrad og varighed og desuden opvarmningstemperaturen og brandmodstanden for de strukturelle elementer." />
+          <Txt Lang="en-GB" Txt="Predict how the variation of the fire characteristics affects the severity and duration of the fire and, in turn, the heating temperature and fire resistance of the structural elements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne reduktioner af den mekaniske designbelastning ved brand, og hvordan de mekaniske belastninger påvirker den kritiske temperatur og brandmodstandsdygtigheden af brandudsatte konstruktionselementer." />
+          <Txt Lang="en-GB" Txt="Calculate the reduction of the mechanical design load in fire condition and explain how the mechanical loads influence the critical temperature and the fire resistance of fire-exposed structural elements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne reduktionen af de mekaniske egenskaber af stål, beton og træ ved høje temperaturer og efter kølet ned til 20 C." />
+          <Txt Lang="en-GB" Txt="Calculate the reduction of the mechanical properties of steel, concrete, and wood at high temperatures and after being cooled down to 20C." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre design eller verifikation af uisolerede og isolerede stålelementer, der udsættes for en parametrisk eller standardbrand." />
+          <Txt Lang="en-GB" Txt="Perform the design or verification of uninsulated and insulated steel elements subjected to a parametric or standard fire." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre eftervisning af træelementer udsat for parametrisk eller standardbrand." />
+          <Txt Lang="en-GB" Txt="Perform the verification of timber elements exposed to parametric or standard fire" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre eftervisning af betonelementer, der udsættes for en parametrisk eller standardbrand under og efter branden." />
+          <Txt Lang="en-GB" Txt="Perform the verification of concrete elemetnts subjected to a parametric or standard fire during and after the fire." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udpege mulige svagheder i den strukturelle brandrespons af en bygning og angive foranstaltninger for at forbedre dens brandmodstandsdygtighed." />
+          <Txt Lang="en-GB" Txt="Identify possible weaknesses in the structural fire response of a building elements and indicate measures to improve its fire resistance." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="11021/11023" />
+        <PreviousCourse CourseCode="11021/11023" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:21.36" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

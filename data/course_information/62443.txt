@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="62443" University="dtu" LastUpdated="2025-03-17+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Datakommunikation" />
+        <Title Lang="en-GB" Title="Data Communication" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="78715" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Birger</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>birad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Overblik: Netværk og Internettet
+Applikationslag: Almindeligt anvendte protokoller til WWW, e-mail, DNS, m.m., samt socket-begrebet
+Transportlag: TCP og UDP, service egenskaber
+Netværkslag: IPv4, IPv6, ICMP, NAT, routers og routingsalgoritmer
+Data-Link-lag: Ethernet, switche, error detection, error correction
+Trådløse net: WiFi, mobilnet
+Sikkerhed: Krypteringsprincipper, firewalls
+Bæredygtighed (energiforbrug)</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>James F. Kurose &amp; Keith W. Ross: Computer Networking, A Top-Down Approach Featuring the Internet</Course_Literature>
+          <Course_Objectives>At tilvejebringe en dybtgående forståelse af forskellige netværks principper for Internettet og lokalnettet og at indlære metoder til analyse af protokoller og etablering af kommunikation mellem maskiner og applikationer. Endvidere skal kurset give forudsætninger for selvstændige studier / videregående kurser af emner relateret til computer netværk.</Course_Objectives>
+          <DTU_Remark>Det primære undervisningssprog er dansk dog kan lektioner på engelsk forekomme.</DTU_Remark>
+          <Remark>Sektion for Energiteknologi og computer science
+IT og Økonomi: 4. semester
+Softwareteknologi: 4. semester
+IT og elektronik: 2. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Overview: Computer networks and the Internet
+Application Layer: Protocols for commonly used applications, such as WWW, email, DNS, etc. and the socket paradigm
+Transport Layer: TCP and UDP, service attributes
+Network Layer: IPv4, IPv6, ICMP, NAT, Routers and Routing Algorithms
+Data Link Layer: Ethernet, Switches, error detection and correction
+Wireless: WiFi, Cellular
+Security: Encryption principles, firewalls
+Sustainability (energy consumption)</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>James F. Kurose &amp; Keith W. Ross: Computer Networking, A Top-Down Approach Featuring the Internet</Course_Literature>
+          <Course_Objectives>To establish an in depth understanding of the internet and LANs network principles and to learn methods for protocol analyses and establishment of communication between machines and applications. The course gives the foundation for further studies/courses related to computer networks.</Course_Objectives>
+          <DTU_Remark>The primary language in the course is Danish however lectures in English kan occure.</DTU_Remark>
+          <Remark>Section of Energy Technology and Computer Science
+IT and Economics: 4. semester
+Software Technology: 4. semester
+Computer Engineering: 2. semester</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere begreber som protokol, protokolstak, congestion- og flowcontol, fragmentering, adressering og multipleksning/demultipleksning" />
+          <Txt Lang="en-GB" Txt="Define concepts like protocol, protocolstack, congestion and flow control, fragmentation, addressing forms and multiplexing /de-multiplexing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive almindeligt forekommende netværkskomponenter som routere, switche, access points, firewalls og deres anvendelse" />
+          <Txt Lang="en-GB" Txt="Describe mainstream network components like routers, switches, acces point, firewalls and their use" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive services tilvejebragt af de vigtigste protokoller og forklare sammenhængen til protokol/protokolheader samt relatere til tilgrænsende protokollags services" />
+          <Txt Lang="en-GB" Txt="Describe services provided by the key protocols and explain the connection to protocol / protocol header as well as relate to adjacent protocol layer services" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive trådløse net som WiFi og mobilnet" />
+          <Txt Lang="en-GB" Txt="Describe Wireless networks such as WiFi and Cellular" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende FSM-diagrammering og sekvensdiagrammer til at analysere en protokol" />
+          <Txt Lang="en-GB" Txt="Use FSM-diagrams and sequence diagrams to analyse a protocol" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv de vigtigste typer af kryptering for sikring af datakommunikation" />
+          <Txt Lang="en-GB" Txt="Describe the most important types of encryption for data communication security" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende værktøjer som wireshark mv til analyse af netværkstrafik" />
+          <Txt Lang="en-GB" Txt="Use tools like wireshark etc. for network traffic analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende basal socket-programmering" />
+          <Txt Lang="en-GB" Txt="Use fundamental socket-programming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere/vurdere anvendelsen af  a) addresseringsformer, b) forward error correction versus error detection, c) stabilitet af routningsalgoritmer, d) explicit og implicit congestion control, e) forekommende lokalnetstandarder (wired som wireless), f) implikationerne på højere protokollag af NAT-protokollen, g) IPv4 versus IPv6 og h) Push- versus Pull-teknologier" />
+          <Txt Lang="en-GB" Txt="Discus and evaluate the use of a) addressing forms, b) forward error correction versus error detection, c) stability of routing algorithms, d) explicit and implicit congestion control, e) available standards for local area networks (wired as wireless), f) implications on higher protocol layers of the NAT protocol, g)IP4 versus IP6 and h) Push versus Pull technologies" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Datakommunikation</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62577" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="60" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:33.033" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="47215" Volume="2026/2027" University="dtu" LastUpdated="2026-03-25+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Rationel design af en varmeveksler til solceller (online)" />
+        <Title Lang="en-GB" Title="Rational design of a heat exchanger for solar cells (online)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Fuldt digitalt kursus - foredrag og aktiviteter vil foregå online" />
+          <LocationTxt Lang="en-GB" Txt="Fully digital course - lectures and activities will be done online" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="47" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="47" />
+        <Course_Responsible PersonKey="99039" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Salvatore De</GivenName>
+            <FamilyName>Angelis</FamilyName>
+            <Email>sdea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Hver gruppe afleverer en rapport inden den mundtlige eksamen. Ved den mundtlige eksamen præsenterer de studerende det arbejde, der er udført i løbet af forløbet. Bestået/ikke bestået bedømmelsen gives på baggrund af en helhedsvurdering af projektrapporten og den mundtlige prøve." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Each group will hand in a report before the oral exam. At the oral exam, the students will present the work done during the course. The pass/not passed evaluation will be given based on an overall assessment of the project report and the oral examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus vil introducere koncepter i ingeniørprocessen og anvende nogle af principperne i et problembaseret miljø. Problemet, præsenteret af underviserne, vedrører design og evaluering af ydeevnen af en varmeveksler til at sænke driftstemperaturen af solceller. Holdene vil udvikle en projektplan for de forskellige aspekter af projektet, identificere underopgaverne og tidsplanen. Enheden vil blive designet i CAD-software ved at anvende de grundlæggende principper for varmeoverførsel, som læres i de indledende forelæsninger. CAD-designet vil blive importeret i COMSOL Multiphysics, og holdene vil opsætte og køre simuleringer, hvor modellen og grænsebetingelserne vil blive tilpasset til at afspejle virkelige forhold. Resultaterne af simuleringerne vil blive analyseret ved hjælp af brugerdefinerede Python- eller MatLab-scripts. Holdene vil præsentere de endelige resultater i en PowerPoint-præsentation, der viser både varmevekslerens ydeevne og mulige retninger for at forbedre den.</Contents>
+          <Course_Literature>Alle undervisningsmaterialer og al relevant litteratur vil blive stillet til rådighed af underviserne i digital form uden omkostninger.</Course_Literature>
+          <Course_Objectives>At blive fordybet i et problembaseret projekt og løse de relaterede opgaver ved at anvende grundlæggende begreber om varmeoverførsel. Blive fortrolig med ingeniørprocessen ved at designe en praktisk varmeveksler og simulere dens ydeevne. Blive motiveret til at arbejde i grupper.</Course_Objectives>
+          <DTU_Remark>I løbet af dette kursus vil du få fundamental viden om varmeoverførsel og fluidmekanik, samtidig med at du får praktisk erfaring med industriens simuleringssoftware. Deltag og lær uvurderlige designfærdigheder, som vil styrke dit CV som ingeniør inden for bæredygtig energi.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course will introduce concepts of the engineering process and apply some of the principles in a problem-based setting. The problem, presented by the instructors, relates to designing and evaluating the performance of a heat exchanger for lowering the operating temperature of solar cells. Teams will develop a project plan for the different aspects of the project, identifying the sub-tasks and the time plan. The device will be designed in CAD software applying the basic principles of heat transfer learned during the introductory lectures. The CAD design will be imported into COMSOL Multiphysics, and the teams will set up and run simulations, where the model and boundary conditions will be tuned to reflect real-world conditions. Simulations’ results will be analyzed using custom-made Python or MatLab scripts. The teams will present the final results in a PowerPoint presentation, showing both the heat exchanger's performance and possible guidelines to improve it.</Contents>
+          <Course_Literature>All learning materials and relevant literature will be provided by the teachers in digital form at no cost.</Course_Literature>
+          <Course_Objectives>To be immersed in a problem-based project and solve the related tasks by applying basic concepts of heat transfer. Become familiar with the engineering process of designing a practical heat exchanger and simulating its performance. Be motivated to work in teams.</Course_Objectives>
+          <DTU_Remark>During this course, you will acquire fundamental knowledge about heat transfer and fluid dynamics while gaining hands-on experience with industry-standard simulation software. Join us and learn invaluable design skills to boost your CV as an engineer in sustainable energy.</DTU_Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Programmeringsforudsætninger: grundlæggende kendskab til Python eller Matlab." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Programming prerequisites: basic knowledge of Python or Matlab." />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende koncepter inden for termodynamik og varmeoverførsel i et projekt" />
+          <Txt Lang="en-GB" Txt="Apply basic concepts of thermodynamics and heat transfer to a real-world project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe en 3D-model ved hjælp af CAD-software" />
+          <Txt Lang="en-GB" Txt="Design a 3D model using a CAD software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere en multifysisk model i COMSOL, importere geometrien, mesh og køre simuleringer" />
+          <Txt Lang="en-GB" Txt="Implement a multiphysics model in COMSOL, importing the geometry, meshing, and running simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere resultaterne af simuleringer ved at implementere simple Python-scripts til dataanalyse og visualisering" />
+          <Txt Lang="en-GB" Txt="Analyze the simulations’ results by implementing simple Python scripts for data analysis and visualization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå sammenhængen mellem simuleringer og virkeligheden. Koble modellens ligninger og grænsebetingelser sammen med de fysiske begrænsninger i problemet" />
+          <Txt Lang="en-GB" Txt="Evaluate the link between simulations and the real world. Connect the model’s equations and boundary conditions with the physical constraints of the problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tolke resultaterne af simuleringerne i forhold til enhedens ydeevne" />
+          <Txt Lang="en-GB" Txt="Interpret the simulations’ results in terms of the device’s performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå begrænsningerne ved modellen og simuleringerne" />
+          <Txt Lang="en-GB" Txt="Assess the limitations of the model and simulations  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle projektresultaterne skriftligt og/eller mundtligt" />
+          <Txt Lang="en-GB" Txt="Communicate the project results in written and oral form" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:05.093" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02157" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Funktionsprogrammering" />
+        <Title Lang="en-GB" Title="Functional Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="59879" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Sebastian Alexander</GivenName>
+            <FamilyName>Mödersheim</FamilyName>
+            <Email>samo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Funktionsprogrammering, herunder rekursive funktioner, rekursivt definerede datatyper, mønstre, højereordens funktioner, et stærkt typebegreb, og problemløsningsteknikker.
+
+Deklarativ modellering ved brug af et funktionsprogrammeringssprog med et stærkt typebegreb.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning og programmeringsøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne et begrebsmæssigt og praktisk grundlag for at modellere, analysere og konstruere systemer med udgangspunkt i en funktionel, deklarativ tilgang.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Functional programming, covering recursive functions, recursively defined detatypes, patterns, higher-order functions, a strong type system, and problem solving techniques. 
+
+Declarative modelling using a functional programming language with a strong type system.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and programming problems.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the participants with a conceptual and practical basis for modelling, analysis and construction of systems using a functional, declarative approach.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmering i et imperativt/objektorienteret sprog, diskret matematik (senest samtidigt)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Programming in an imperative/object-oriented language, discrete mathematics (latest at the same semester)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02002/02003/02100) . (01017)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beherske funktionelle tilgange til programmering" />
+          <Txt Lang="en-GB" Txt="master functional approaches to programming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beherske begrebet rekursiv funktion" />
+          <Txt Lang="en-GB" Txt="master the concept recursive function" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beherske anvendelse af funktionelle datatyper" />
+          <Txt Lang="en-GB" Txt="master application of functional data types" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende begrebet om funktioner som &quot;first-class citizens&quot;" />
+          <Txt Lang="en-GB" Txt="apply the concept of functions as &quot;first-class citizens&quot;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="aflede typer for funktionelle programmer" />
+          <Txt Lang="en-GB" Txt="derive types for functional programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere effekten af et program skrevet i et funktionelt sprog" />
+          <Txt Lang="en-GB" Txt="analyze the effect of a functional program" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gøre rede for ressourceforbruget for simple funktionelle programmer " />
+          <Txt Lang="en-GB" Txt="explain the resource demands of simple functional programs " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="etablere et funktionelt design for et givet problem, således at hovedbegreberne for problemet direkte kan spores i designet" />
+          <Txt Lang="en-GB" Txt="establish a functional design for a given problem, so that the main concepts of the problem directly are traceable in the design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere løsninger og analyser på en klar og præcis måde" />
+          <Txt Lang="en-GB" Txt="communicate solutions and analyses in a clear and precise manner" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02157" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Programmering i et deklarativt, funktionsorienteret sprog</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:49.5" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

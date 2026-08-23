@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34334" Volume="2026/2027" University="dtu" LastUpdated="2023-04-20+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Avancerede datanet og cybersikkerhed" />
+        <Title Lang="en-GB" Title="Advanced Data Networks and Cyber Security" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="5991" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Wessing</FamilyName>
+            <Email>hewe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering baseret på mundtlig eksamen og skriftligt arbejde." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Holistic assessment based on oral examination and written work during the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Oral examination without aids." />
+            <Aid_Txt Lang="da-DK" Txt="Mundtlig eksamen uden hjælpemidler" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Principper og ydeevne for L2 og L3 datanet, routingprincipper og protokoller, Quali-ty of Service og videregående metoder som MPLS, GMPLS, VLAN, SDN. Proto-koller til sikkerhed og kryptering fra klassiske krypteringssystemer til moderne pub-lic key systemer.Sikkerhedstrusler og modforanstaltninger.</Contents>
+          <Course_Objectives>At give de studerende et indgående kendskab til moderne datanet med fokus på ydeevne, pålidelighed og sikkerhed. At sætte de studerende i stand til at beregne og evaluere ydeevne og pålidelighed for kendte kommunikationsnetværk og principper. Herudover at sætte den studerende i stand til at identificere sikkerhedstrusler og anvende relevante sikkerhedsmetoder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Principles and efficiency of L2 and L3 data networks, routing principles and protocols, Quality of service and advanced concepts like MPLS, GMPLS, VLAN, SDN etc. Protocols for security and encryption from classic encryption architectures to modern public key systems. Security threaths and counter measures.</Contents>
+          <Course_Objectives>To provide the students a deep knowledge within modern data network with special focus on efficiency, reliability and security. To enable the students to calculate and evaluate efficiency and reliability of known communication networks and principles. In addition, to enable the student to identify security threats and apply relevant security methods.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan information kan repræsenteres og behandles i datanet" />
+          <Txt Lang="en-GB" Txt="Describe how information can be represented and processed in data networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og analysere generelle principper for overførsel af information" />
+          <Txt Lang="en-GB" Txt="Apply and analyse general principles for transmission of information" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne relevante protokollers betydning for ydeevnen af et netværk" />
+          <Txt Lang="en-GB" Txt="Calculate significance of relevant protocols and their impact on network efficiency" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive strukturen og arkitekturen af routere" />
+          <Txt Lang="en-GB" Txt="Describe structure and architectures of routers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare om de centrale routing-protokoller i Internettet herunder redegøre for forskelle på Interior Gateway Protocols og Exterior Gateway Protocols" />
+          <Txt Lang="en-GB" Txt="Explain central routing protocols in the Internet including elaboration of differences between Interior and Exterior Gateway Protocols" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konfigurere routere og implementere routingprotokoller" />
+          <Txt Lang="en-GB" Txt="Configure routers and implement routing protocols" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere sikkerhedsmæssige aspekter ved datakommunikation" />
+          <Txt Lang="en-GB" Txt="Analyze security aspects of cyber communication" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende intrusion detection og prevention systemer" />
+          <Txt Lang="en-GB" Txt="Apply intrusion detection and prevention systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for segmentering og opdeling af netværk samt Quality of Service" />
+          <Txt Lang="en-GB" Txt="Explain segmentation and participation of network as well as Quality of Service" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34313/34322.02101/02102/02002" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:12.837" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

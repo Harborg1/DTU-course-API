@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41417" Volume="2026/2027" University="dtu" LastUpdated="2026-02-25+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Digitalisering af Termiske Energiteknologier – Modellerings- og Simuleringsmetoder" />
+        <Title Lang="en-GB" Title="Digitalization of Thermal Energy Technologies – Modelling and Simulation Methods" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="36698" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jonas Kjær</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>jkjje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="117077" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Wiebke</GivenName>
+            <FamilyName>Meesenburg</FamilyName>
+            <Email>wmeese@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="1 individuel rapport og 1 individualiseret grupperapport. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="1 individual report and 1 individualised group report . Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer på anvendelsen af modellerings og simulerings systematik for at sikre udviklingen af modeller, der er konceptuelt, fysisk og matematisk konsistente. De studerende lærer at anvende en struktureret modellerings- og simuleringsproces til at udvikle modeller til forskellige applikationer (herunder digitale services) og vil yderligere lære at udvælge en passende modelkompleksitet.
+
+De studerende vil blive introduceret til principperne bag forskellige numeriske løsere som Newton-Raphson og Runge-Kutta og den praktiske anvendelse af disse. Yderligere får de studerende praktisk erfaring i brugen af simuleringsprogrammer, der er egnet til simulering af termiske energiteknologier. En introduktion vil blive givet til Engineering Equation Solver (EES) og Modelica samt programmer til at tilgå fluidegenskaber såsom CoolProp eller Refprop.
+
+Igennem den første del af kurset vil de studerende arbejde med systematisk udvikling af komponentmodeller af typiske komponenter i termiske energiteknologier f.eks.; volumetriske og dynamiske kompressions- og ekspansionsmaskiner, varmevekslere som fordampere og kondensatore samt beholder og ventiler. Dette arbejde skal dokumenteres med en individuel modelportefølje med både modelbeskrivelse og modelkode. 
+
+I anden del af kurset vil de studerende arbejde med et gruppeprojekt fokuserer på at definere en digital service og udvikle en passende model af en samlet energiteknologi bestående af flere komponenter. Denne model kobles til måledata for at opfylde det definerede simuleringsformål. Gruppeprojektet skal dokumenteres og analyseres i en teknisk grupperapport.</Contents>
+          <Teaching_And_Learning_Methods>Kurset undervises som et ”flipped class room” kursus, hvor den teoretiske viden, der er nødvendig for at gennerføre projektarbejdet, vil blive præsenteret i en række online instruktionsvideoer og skriftligt materiale, mens timerne bruges til øvelser, gruppearbejde og peer-feedback-sessioner</Teaching_And_Learning_Methods>
+          <Course_Objectives>Digitale løsninger som fx digitale tvillinger forventes at spille en central rolle i realiseringen af den fremtidige energisektor, i form fx ”smart grids” og ”smarte cities” såvel som i den industrielle sektor, med implementering af industri 4.0. Udviklingen af numeriske modeller, der er konceptuelt, fysisk og matematisk konsistente og skræddersyet til den specifikke anvendelse er en hjørnesten i den type digitalisering.
+
+Kursets formål er at give de studerende erfaring med at udvikle numeriske modeller af komplekse termiske energiteknologier såsom: varmepumper, organic Rankine cycles, kølesystemer, gasturbiner og industrielle procesanlæg. Yderligere, vil de studerende lære at anvende disse modeller til at simulere og analysere de pågældende teknologier. Yderligere vil de studerende lære at koble numeriske modeller med måledata for at levere digitale tjenester, såsom avanceret overvågning ved hjælp af virtuelle sensorer, fejldetektion eller predictiv vedligeholdelse.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course focuses on the application of modelling and simulation systematics to ensure the development of models that are conceptually, physically and mathematically consistent. The students will learn how to  apply a structured modelling and simulation process to develop models for various applications (including digital services) and will further learn to select the appropriate model complexity.
+
+The students will be introduced to the principles of different numerical solvers such as Newton-Raphson and Runge-Kutta and the practical applications of these. Further, the students will gain practical experience in the use of simulation software suitable for simulating thermal energy technologies. An introduction will be given to Engineering Equation Solver (EES) and Modelica as well as fluid properties software such as CoolProp or Refprop.
+
+During the first part of the course, students will work on the systematic development of component models of typical components in thermal energy technologies, e.g.; volumetric and dynamic compression and expansion machines, heat exchangers such as evaporators and condensers, as well as vessels and valves. This work will be documented with an individual model portfolio with both model description and model code.
+
+In the second part of the course, students will work on a group project focused on defining a digital service and developing a suitable model of a complete energy technology consisting of several components. This model is connected to measurement data to fulfill the defined simulation objective. The group project will be documented and analyzed in a technical group report.</Contents>
+          <Teaching_And_Learning_Methods>The course is taught as a flipped class room course where the theoretical background needed for completing the project work will be presented in a series of on-line instructional videos and written material, while course hours will be used for exercises, group work and peer-feedback sessions</Teaching_And_Learning_Methods>
+          <Course_Objectives>Digital solutions such as digital twins are expected to play a major role in the realization of the future energy sector i.e. smart grids and smart cities as well as the industrial sector i.e. industry 4.0. The backbone of such digitalization relies on the development of numerical models that are conceptually, physically and mathematically consistent and tailored to the specific objective of the application.
+
+The aim of the course is to give the students experience in developing numerical models of complex thermal energy technologies such as: heat pumps, organic Rankine cycles, refrigeration systems, gas turbines and industrial process facilities. Further, the students will learn to apply these models to simulate and analyze the technologies in question. Further, the students will learn to couple numeric models with measurement data to provide digital services, such as advanced monitoring using virtual sensors, fault detection or predictive maintenance.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forventes at de studerende har en baggrund indenfor anvendt termodynamik og kendskab til varmetransmission og fluid mekanik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The students are expected to have a background&#xD;&#xA;in engineering thermodynamics and have prior knowledge on heat transfer&#xD;&#xA;and fluid mechanics" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41401/41045.41814.41312 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle modeller af komplekse termiske energiteknologier ved at anvende en systematisk modeludviklingsproces" />
+          <Txt Lang="en-GB" Txt="develop models of complex thermal energy technologies by utilizing a systematic model development procedure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere den konceptuelle og numeriske validitet af de udviklede modeller" />
+          <Txt Lang="en-GB" Txt="assess the conceptual and numerical validity of the developed models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og evaluere termiske energiteknologier ved hjælp af simuleringer af de udviklede modeller" />
+          <Txt Lang="en-GB" Txt="design and assess thermal energy technologies by using simulations of the developed models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere et simuleringsformål og skitsere, hvordan modeller og data kan bruges til at opfylde formålet" />
+          <Txt Lang="en-GB" Txt="formulate a simulation objective and sketch how models and data can be used to fulfill the objective" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere forskellige modelkompleksiteter, såsom: design, drift og transiente modeller" />
+          <Txt Lang="en-GB" Txt="implement different model complexities i.e. design, operational and transient models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvælge den passende modelkompleksitet" />
+          <Txt Lang="en-GB" Txt="select the appropriate model complexity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere forskellige metoder til at modeller komponentkarakteristikker, dvs. empiriske eller ”first principle” og ”lumped” eller distribuerede modeller " />
+          <Txt Lang="en-GB" Txt="implement different approaches to model component characteristics i.e. empirical or first principle and lumped or distributed models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvælge en passende metode til at modelle komponentkarakteristika" />
+          <Txt Lang="en-GB" Txt="select the appropriate approach to model component characteristics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive numeriske metoder til løsning af ligningssystemer af algebraiske, differential- og differential-algebraiske ligninger" />
+          <Txt Lang="en-GB" Txt="describe numerical methods, for solving systems of algebraic, differential and differential-algebraic equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive funktionaliteten i en regulator og implementer PI-regulatorer i transiente modeller" />
+          <Txt Lang="en-GB" Txt="describe the functionality of a controller and implement PI controllers in transient models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge egnede simuleringsprogrammer til at simulere termiske energiteknologier" />
+          <Txt Lang="en-GB" Txt="utilize appropriate simulation software to simulate thermal energy technologies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="give konstruktiv tilbagemelding på medstuderendes rapporter og præsentationer" />
+          <Txt Lang="en-GB" Txt="provide constructive peer-feedback on reports and project presentations of fellow students  " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:03.663" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

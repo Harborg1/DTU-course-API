@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02619" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Model prædiktiv regulering" />
+        <Title Lang="en-GB" Title="Model Predictive Control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="32457" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>John Bagterp</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>jbjo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individual reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Modellering af dynamiske systemer
+Konvekse optimerings-algoritmer
+System identifikation
+Design og tuning af lineær MPC
+Implementering af lineær MPC
+Simulering og test af lineær MPC
+Ikke-lineær MPC (NMPC)
+SQP metoder til NMPC
+Numerisk ODE løsning og sensitiviteter
+Industrielle, biomedicinske og finansielle problemstillinger
+Implementering i MATLAB, Python eller Julia</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Anvendelse og udvikling af  prædiktive styringsmetoder til lineære og ikke-lineære dynamiske systemer med begrænsninger. Anvendelse af disse metoder på industrielle, biomedicinske, og finansielle problemstillinger. Der lægges vægt på implementerings- og beregningsaspekter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Modeling of dynamic systems
+Convex optimization algorithms
+System identification
+Design and tune linear MPC
+Implement linear MPC
+Simulation and test of linear MPC
+Nonlinear Model Predictive Control (NMPC)
+SQP optimization algorithms for NMPC
+Numerical compution of the solution and sensitivities of ODE systems
+Industrial, biomedical and financial problems.
+Implementation using MATLAB, Python, or Julia</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercies</Teaching_And_Learning_Methods>
+          <Course_Objectives>Application and development of predictive control for linear and non-linear dynamic systems with constraints. Application of linear and nonlinear MPC to industrial, biomedical, and financial problems. We emphasize implementational and computational aspects.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et kursus i optimering med bibetingelser" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A course in constrained optimization" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02612" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og beskrive MPC kontrol strukturer" />
+          <Txt Lang="en-GB" Txt="Analyze and describe MPC control structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge processer som kan kontrolleres med MPC" />
+          <Txt Lang="en-GB" Txt="Select processes that can be controlled by MPC" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende konveks optimering til estimering, regulering og system identifikation" />
+          <Txt Lang="en-GB" Txt="Apply convex optimization to estimation, control and system identification" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere en lineær model fra data" />
+          <Txt Lang="en-GB" Txt="Identify a linear model from data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og tune en lineær model baseret estimator og prædiktor" />
+          <Txt Lang="en-GB" Txt="Design and tune a linear model based estimator and predictor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og tune en regulator med begrænsninger" />
+          <Txt Lang="en-GB" Txt="Design and tune a constrained regulator" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Syntetisere og implementere model prædiktive styring systemer " />
+          <Txt Lang="en-GB" Txt="Synthesize and implement model predictive control systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Teste et linear MPC styringssystem ved simulering" />
+          <Txt Lang="en-GB" Txt="Test a linear model predictive control system by simulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere ikke-lineære model prædiktive regulatorer" />
+          <Txt Lang="en-GB" Txt="Implement Nonlinear Model Predictive Controllers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende SQP optimeringsmetoder til NMPC" />
+          <Txt Lang="en-GB" Txt="Use SQP optimization methods for NMPC" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne løsningen og sensitiviteterne i ikke-lineære ODE modeller" />
+          <Txt Lang="en-GB" Txt="Compute solutions and sensitivities in nonlinear ODE models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende MPC til løsning af industrielle, biomedicinske, og finansielle problemstillinger" />
+          <Txt Lang="en-GB" Txt="Apply MPC to industrial, biomedical, and financial problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Model prædiktiv regulering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:27.02" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

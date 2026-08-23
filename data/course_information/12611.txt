@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="12611" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Varme- og stoftransport i bygninger" />
+        <Title Lang="en-GB" Title="Heat and mass transfer in buildings" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="12" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="12" />
+        <Course_Responsible PersonKey="2185" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Rode</FamilyName>
+            <Email>crode@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="115924" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Menghao</GivenName>
+            <FamilyName>Qin</FamilyName>
+            <Email>menqin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En obligatorisk opgave skal være indleveret for at kunne deltage i den skriftlige eksamen og opgaven indgår i den samlede bedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A compulsory assignment must be submitted in order to participate in the written exam and the assignment is included in the overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil lære dig at projektere hygrotermisk korrekte og velfungerende bygningsdele og rum i bygninger samt at diagnosticere disse, når de ikke fungerer korrekt i hygrotermisk henseende. For at opnå dette, vil følgende emner blive behandlet:
+- kriterier for bygningsdeles bestandighed og god hygrotermisk tilstand af rum;
+- varme-, luft- og fugtbalancer; 
+- repetition af varmetransport (ledning, konvektion, stråling, advektion);
+- fugttransport (dampdiffusion, advektiv transport af damp, kapillær væsketransport);
+- lufttransport (luftdiffusion);
+- byggematerialer og deres hygrotermiske egenskaber (konstruktionsmaterialer, isolering, vindspærrer og dampspærrer);
+- matematiske metoder: ligningssystemer, ikke-linearitet, kontrolvolumenmetode;
+- strategier for problemløsning: konceptualisering, pålidelighed
+- betydningen af varme-, luft- og fugttransport når bygninger designes for energieffektivitet og bæredygtighed</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde, selvstudie og opgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>Digitale forelæsningsnoter/kursusbog: Heat and Mass Transfer in Buildings</Course_Literature>
+          <Course_Objectives>Kurset vil give dig indsigt og kompetence i at analysere varme-, luft- og fugtoverførsel i bygningsdele og rum i bygninger. Det vil muliggøre hygrotermisk projektering af nye bygningsdele og rum samt diagnose af hygrotermiske problemer i eksisterende bygningsdele og rum. Desuden vil kurset gøre dig i stand til at beherske de fornødne matematiske metoder og strategier for problemløsning.
+Kurset giver et fundamentalt grundlag for at analysere og designe bygninger, der er sunde, energieffektive og bæredygtige.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will teach you to design hygrothermally correct and to diagnose hygrothermally incorrect building components and whole buildings. To those aims, the following issues will be discussed:
+- criteria for building component durability and proper hygrothermal condition of building zones;
+- heat, air and moisture balances;
+- heat transfer revisited (conduction, convection, radiation, advection);
+- moisture transfer (vapour diffusion, advection of vapour, liquid capillary transfer);
+- air transfer (air diffusion);
+- building materials and their hygrothermal properties (structural materials, insulation, air barriers and vapour barriers);
+- mathematical methods (systems of equations, non-linearity, control-volume method);
+- problem solving approaches (conceptualization, reliability)
+- importance of heat, air and moisture transfer when designing buildings for energy efficiency and sustainability</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, self-study and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Digital lecture notes/course book: Heat and Mass Transfer in Buildings</Course_Literature>
+          <Course_Objectives>This course will give you insight and skills to analyse heat, air and moisture transfer in building components and building zones.  These will allow you to make hygrothermal designs for new building components and building zones, and to diagnose hygrothermal problems in existing building components and building zones. 
+Moreover, the course will give you proficiency in the required mathematical techniques and problem solving approaches.
+The course provides a fundamental basis for analyzing and designing buildings that are healthy, energy-efficient and sustainable.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset vil fokusere på stoftransport, medens varmetransportfænomener kun gennemgås som repetition, idet forudgående kendskab hertil forudsættes. Studerende uden denne viden kan deltage, men det vil være nødvendigt at de på egen hånd arbejder ekstra med varmelære." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course will focus on mass transfer, while only shortly revisiting heat transfer since prior knowledge of heat transfer in building components is assumed.  &#xD;&#xA;Students without this prior knowledge may participate, but will need to work extra on their own on heat transfer." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="12601/11121" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvorfor varme-, luft- og fugttransport er vigtige processer ved hygrotermisk design og diagnosticering af bygningsdele og rum i bygninger" />
+          <Txt Lang="en-GB" Txt="clarify why heat, air and moisture transfer are essential in the hygrothermal design and diagnosis of building components and building zones" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere varme-, luft- og fugtbalancer for analysen af hygrotermiske problemer" />
+          <Txt Lang="en-GB" Txt="formulate heat, air and moisture balances for the analysis of hygrothermal problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og anvende transportligningerne for varme, luft og fugt i bygningsdele og rum i bygninger" />
+          <Txt Lang="en-GB" Txt="explain and apply the transport equations for heat, air and moisture in building components and building zones" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende matematiske metoder og problemløsningsstrategier til hygrotermiske beregninger" />
+          <Txt Lang="en-GB" Txt="apply mathematical methods and problem solving approaches for hygrothermal calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere pålideligheden af de opnåede resultater" />
+          <Txt Lang="en-GB" Txt="assess the reliability of the obtained results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="klassificere bygningsmaterialer efter deres hygrotermiske egenskaber" />
+          <Txt Lang="en-GB" Txt="classify building materials concerning their hygrothermal properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere betydningen af materialeegenskaber for den almene hygrotermiske respons af bygningsdele og rum i bygninger" />
+          <Txt Lang="en-GB" Txt="evaluate the influences of material properties on the generic hygrothermal response of building components and building zones" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="projektere bygningsdele og rum i bygninger, der fungerer korrekt i hygrotermisk henseende" />
+          <Txt Lang="en-GB" Txt="design hygrothermally correct building components and building zones" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diagnosticere bygningsdele og rum i bygninger, der ikke fungerer korrekt i hygrotermisk henseende" />
+          <Txt Lang="en-GB" Txt="diagnose hygrothermally incorrect building components and building zones" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Videregående varme- og massetransport (fugt og luft) i bygninger</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="11122" />
+        <PreviousCourse CourseCode="11122" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:31.77" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="27200" Volume="2026/2027" University="dtu" LastUpdated="2026-04-30+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Datadrevet bioengineering" />
+        <Title Lang="en-GB" Title="Data-driven bioengineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="27" University="DTU" Resources="100" KVL_Resources="100" />
+          <Ass_Dep UID="29" Resources="0" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="27" />
+        <Course_Responsible PersonKey="36859" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mikael Lenz</GivenName>
+            <FamilyName>Strube</FamilyName>
+            <Email>milst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="114050" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Konstantinos</GivenName>
+            <FamilyName>Kalogeropoulos</FamilyName>
+            <Email>konka@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Aflevering af opgaver er obligatorisk for at kunne gå til eksamen. Midtvejs multiple choice tæller for 33% af den endelige karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Hand in of excercises are mandatory in order to qualify for the exam. Midterm multiple choice counts for 33% of final grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er struktureret i tre sammenhængende faser, der dækker systembiologi, generering af biologiske data og beregningsanalyse. Det begynder med biologiske fundamenter på systemniveau, herunder biologiske skalaer, repræsentation af biologiske systemer, regulatoriske interaktioner, netværkslogik, sekvens- og strukturprincipper, posttranslationelle modifikationer og eksperimentelt design med statistisk inferens. Studerende introduceres til, hvordan biologiske spørgsmål kan repræsenteres beregningsmæssigt som sekvenser, grafer, matricer og modelinput.
+
+Den anden del af kurset fokuserer på vigtige omics-teknologier og deres analytiske logik, herunder helgenomsekventering og 16S-profilering, metagenomik, transkriptomik, proteomik og metabolomik. Der lægges vægt på at forstå, hvad hver teknologi måler, strukturen af ​​almindelige biologiske dataformater, teknologiske begrænsninger, og hvordan måling former downstream-fortolkning.
+
+Den sidste del af kurset introducerer beregningsmodellering og moderne analytiske værktøjer, herunder grundlæggende maskinlæringskoncepter, skjulte Markov-modeller, supportvektormaskiner, neurale netværk, signalvejs- og netværksanalyse, vidensbaser, proteinsprogmodeller og multiomics-integration gennem latente repræsentationer og autoencoder-baserede koncepter. Gennem hele kurset arbejder de studerende med biologiske datasæt i guidede øvelser, anvender beregningsværktøjer, diskuterer begrænsninger ved modeller og teknologier og evaluerer kritisk AI-understøttede analyser. Et gruppeprojekt integrerer flere kursustemaer og afsluttes med mundtlige præsentationer.</Contents>
+          <Teaching_And_Learning_Methods>13-ugers kursus med ugentlige 4-timers sessioner, der kombinerer forelæsninger, aktiv læring, guidede gruppeøvelser og struktureret diskussion. I undervisningen bruges beregningsmæssige notebooks og biologiske datasæt. Studerende arbejder i grupper, afleverer opgaver og gennemfører en afsluttende projektpræsentation.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver et struktureret fundament for forståelse af biologiske systemer gennem data, modeller og beregning. Det introducerer de studerende til biologisk ræsonnement på systemniveau på tværs af molekylære, cellulære og organismiske skalaer og udvikler evnen til at forbinde biologiske spørgsmål med beregningsmæssige repræsentationer, måleteknologier og multi-omics analytiske tilgange. Kurset dækker biologisk regulering, sekvens- og strukturprincipper, eksperimentelt design, omics-teknologier, statistisk ræsonnement, maskinlæring og moderne AI-baserede analytiske værktøjer. Der lægges vægt på at genkende fælles analytiske principper på tværs af biologiske datatyper, forstå hvordan teknologier begrænser inferens, og kritisk evaluere modeller og beregningsmæssige output. Kurset er designet som et bredt kognitivt fundament, der forbereder de studerende til avancerede studier inden for bioingeniørvidenskab, systembiologi, beregningsbiologi og datadrevet bioteknologi.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is structured in three connected phases covering systems biology, biological data generation, and computational analysis. It begins with systems-level biological foundations, including biological scales, representation of biological systems, regulatory interactions, network logic, sequence and structure principles, post-translational modifications, and experimental design with statistical inference. Students are introduced to how biological questions can be represented computationally as sequences, graphs, matrices, and model inputs.
+
+The second part of the course focuses on major omics technologies and their analytical logic, including whole genome sequencing and 16S profiling, metagenomics, transcriptomics, proteomics, and metabolomics. Emphasis is placed on understanding what each technology measures, the structure of common biological data formats, technological limitations, and how measurement shapes downstream interpretation.
+
+The final part of the course introduces computational modeling and modern analytical tools, including basic machine learning concepts, hidden Markov models, support vector machines, neural networks, pathway and network analysis, knowledge bases, protein language models, and multiomics integration through latent representations and autoencoder-based concepts. Throughout the course, students work with biological datasets in guided exercises, apply computational tools, discuss limitations of models and technologies, and critically evaluate AI-supported analyses. A group project integrates multiple course themes and concludes with oral presentations.</Contents>
+          <Teaching_And_Learning_Methods>13-week course with weekly 4-hour sessions combining lectures, active learning, guided group exercises, and structured discussion. Teaching uses computational notebooks and biological datasets. Students work in groups, submit assignments, and complete a final project presentation.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course provides a structured foundation for understanding biological systems through data, models, and computation. It introduces students to systems-level biological reasoning across molecular, cellular, and organismal scales, and develops the ability to connect biological questions with computational representations, measurement technologies, and multi-omics analytical approaches. The course covers biological regulation, sequence and structure principles, experimental design, omics technologies, statistical reasoning, machine learning, and modern AI-based analytical tools. Emphasis is placed on recognizing common analytical principles across biological data types, understanding how technologies constrain inference, and critically evaluating models and computational outputs. The course is designed as a broad cognitive foundation, preparing students for advanced study in bioengineering, systems biology, computational biology, and data-driven biotechnology.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kompetencer i kodning og bioinformatik samt viden om molekylærbiologi er anbefalet" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Competences in coding and bioinformatics as well as knowledge of molecular biology is recommended" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke biologiske processer, interaktioner og organisering på tværs af molekylære, cellulære og systemskalaer." />
+          <Txt Lang="en-GB" Txt="Interpret biological processes, interactions, and organization across molecular, cellular, and systems scales." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere regulatoriske elementer, netværksmotiver og konnektivitetsprincipper, der ligger til grund for biologisk adfærd." />
+          <Txt Lang="en-GB" Txt="Identify regulatory elements, network motifs, and connectivity principles underlying biological behavior." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Oversætte biologiske spørgsmål til passende beregningsmæssige repræsentationer såsom sekvenser, matricer, grafer og indlejringer." />
+          <Txt Lang="en-GB" Txt="Translate biological questions into suitable computational representations such as sequences, matrices, graphs, and embeddings." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke almindelige biologiske datastrukturer og filformater, der anvendes i omics-analyser, og forklare, hvilke oplysninger de indeholder og udelader." />
+          <Txt Lang="en-GB" Txt="Interpret common biological data structures and file formats used in omics analyses and explain what information they contain and omit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende statistiske og maskinlæringsmetoder på biologiske datasæt og kritisk fortolke deres output." />
+          <Txt Lang="en-GB" Txt="Apply basic statistical and machine-learning methods to biological datasets and critically interpret their outputs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre og fortolke downstream-analyser, herunder berigelses-, pathway- og netværksbaseret analyse af biologiske datasæt." />
+          <Txt Lang="en-GB" Txt="Perform and interpret downstream analyses including enrichment, pathway, and network-based analysis of biological datasets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere antagelser, begrænsninger og risici ved statistiske, algoritmiske og neurale netværksmodeller, der anvendes i biologisk inferens." />
+          <Txt Lang="en-GB" Txt="Evaluate assumptions, limitations, and risks of statistical, algorithmic, and neural-network models used in biological inference." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne, hvordan forskellige omics-teknologier muliggør og begrænser biologisk fortolkning, og udtrække biologisk relevante konklusioner fra deres output." />
+          <Txt Lang="en-GB" Txt="Compare how different omics technologies enable and constrain biological interpretation, and extract biologically relevant conclusions from their outputs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere information på tværs af flere biologiske datatyper for at understøtte biologisk ræsonnement på systemniveau." />
+          <Txt Lang="en-GB" Txt="Integrate information across multiple biological data types to support systems-level biological reasoning." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge AI-værktøjer kritisk og ansvarligt gennem hurtigt design, outputvalidering og vurdering af analytisk relevans." />
+          <Txt Lang="en-GB" Txt="Use AI tools critically and responsibly through prompt design, output validation, and assessment of analytical relevance." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="15" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="150" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:33:18.94" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

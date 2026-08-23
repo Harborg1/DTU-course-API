@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02689" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående numeriske metoder til løsning af differentialligninger" />
+        <Title Lang="en-GB" Title="Advanced Numerical Methods for Differential Equations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="22171" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Allan Peter</GivenName>
+            <FamilyName>Engsig-Karup</FamilyName>
+            <Email>apek@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Tre rapporter lavet af hold på op til 2-3 personer.  Kort mundtlig eksamination i spørgsmål fra rapport-opgaverne. Karakteren fremkommer ved helhedsvurdering ved intern evaluering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Three reports made by groups of at most 2-3 persons.  Brief oral examination based on questions from the report assignments.  The mark is given by an overall assessment by internal evaluation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Emner der dækkes i kursus inkluderer:
+- Spektrale approksimations metoder
+- Fourier approksimations metoder (periodisk)
+- Polynomie approksimations metoder (ikke periodisk)
+- Tidsintegration og stabilitetsanalyse
+- Løsning af lineare og ikke-lineare PDE problemer
+- Numerisk løsning af dynamiske systemer
+- Konsistens og konvergensegenskaber for spektrale metoder
+- Numeriske integration
+- Udledning of analyse af avancerede algoritmer (fx. via projekter)</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og projektarbejde i databar</Teaching_And_Learning_Methods>
+          <Course_Literature>D. A. Kopriva. (2009) "Implementing Spectral Methods for Partial Differential Equations: Algorithms for scientists and Engineers". Springer.</Course_Literature>
+          <Course_Objectives>Brugen af model-baserede simuleringværktøjer på moderne computere bliver brugt stadigt mere i akademiske og industrielle miljøer til brug for forbedring af ingeniørmæssige designs og beslutningsstøtte.
+Formålet med kurset er at give deltagere i kurset et solidt kendskab til udviklingen i teori og praksis ved brug af videregående numeriske beregningsmetoder til effektiv løsning af differentialligninger og til prediktering i natur- og ingeniørvidenskaberne. Dette inkluderer at udvikle, analysere og anvende avancerede numeriske metoder og algoritmer til løsning af vilkårlige differential ligninger (fx. ODE/PDE/SDE). Vi vil udvikle og generalisere ideer fra Finite Difference metoder, Fourier metoder til brug for konstruktion af moderne fleksible multi-domain metoder som for eksempel Diskontinuerte Galerkin Finite Element Metoder og Spectral Element Metoder. Gennem kurset vil deltagerne opnå kendskab til og erfaring med brug af højere ordens Spektrale Metoder til numerisk løsning og prediktering og studie af matematiske problemer med analytiske løsninger der er svære at bestemme eller ikke er kendte. Metoderne er relevante for videnskabelige beregninger, high perrformance computing (HPC), herunder moderne usikkerhedsberegninger med fokus på kvantificering af usikkerhed (UQ) og data-dreven maskinlæring (SciML). Det sidste project i kurset kan defineres indenfor et videnskabeligt område der er relevant for deltageren.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Subjects that will be covered in the course includes:
+- Spektral approximation methods
+- Fourier approximations methods (periodic)
+- Polynomial approximation methods (non-periodic)
+- Time-integration and stability analysis
+- Solution of Linear and Nonlinear PDE problems
+- Numerical solution of dynamical systems
+- Consistency and convergence properties for spectral methods
+- Numerical integration
+- Derivation and analysis of advanced algorithms (fx. via projects)</Contents>
+          <Teaching_And_Learning_Methods>Lectures and assignment work in the Databar</Teaching_And_Learning_Methods>
+          <Course_Literature>D. A. Kopriva. (2009) "Implementing Spectral Methods for Partial Differential Equations: Algorithms for scientists and Engineers". Springer.</Course_Literature>
+          <Course_Objectives>The use of model-based simulation tools on modern computers are increasingly being used in academia and industry for improving engineering designs and decision support. 
+The course goal is to give a solid grounding in the developments of theory and practice in the use of advanced numerical computational methods for efficient solution of differential equations and for prediction in science and engineering. This includes development, analysis and application of advanced numerical methods and algorithms for the solution of any type of differential equations (fx. ODEs/PDEs/SDEs). We will develop and generalize ideas from finite difference methods, Fourier methods and extend them to modern and flexible multi-domain methods such as Discontinuous Galerkin Finite Element Methods and Spectral Element Methods. The experience gained in the course is useful for the numerical solution and prediction and study of mathematical problems where no analytical solutions exist or are readily obtainable. The methods are suitable for scientific computing, high performance computing (HPC) and is relevant for topics in modern Uncertainty Quantification (UQ) and data-driven Scientific Machine Learning (SciML). The last project in the course can be defined in a scientific area of relevance to the participant.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et kursus i numeriske metoder til løsning af differential ligninge eller tlisvarende scientific computing kursus for differentialligninger" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A course in numerical methods for solving differential equations or similar scientific computing course for differential equations" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02686 / 02687" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende basale principper for approksimation/diskretisering af spektrale metoder." />
+          <Txt Lang="en-GB" Txt="Apply basic principles for numerical approximation/discretization of spectral methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Fourier transformationer." />
+          <Txt Lang="en-GB" Txt="Apply the Fourier Transforms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere konvergens of stabilitetsegenskaber for spektrale metoder." />
+          <Txt Lang="en-GB" Txt="Analyze convergence and stability properties of spectral methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og løse randværdiproblemer for partielle differentialligninger." />
+          <Txt Lang="en-GB" Txt="Setup and solve boundary value problems for partial differential equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere metoder til tidsintegration til løsning af semi-diskrete ligningssystemer." />
+          <Txt Lang="en-GB" Txt="Implement methods for time integration of semi-discrete equation systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og anvende algoritmer til periodiske og ikke-periodiske problemer." />
+          <Txt Lang="en-GB" Txt="Implement and apply algorithms for periodic and non-periodic problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere spektrale approksimation af partielle afledede." />
+          <Txt Lang="en-GB" Txt="Construct spektral approximations for partial derivatives." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere spektrale metoder." />
+          <Txt Lang="en-GB" Txt="Implement spektral methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive rapporter og tydeligt kommunikere, diskutere og konkludere på baggrund af ideer og opnåede resultater." />
+          <Txt Lang="en-GB" Txt="Write reports and clearly communicate, discuss and draw conclusions based on main ideas and results." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Implementering og analyse af avancerede numeriske metoder</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:31.583" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

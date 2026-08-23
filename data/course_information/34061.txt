@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34061" Volume="2026/2027" University="dtu" LastUpdated="2024-04-11+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Optiske målemetoder og signal analyse" />
+        <Title Lang="en-GB" Title="Optical measurement methods and signal analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="38636" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Michael Linde</GivenName>
+            <FamilyName>Jakobsen</FamilyName>
+            <Email>mlja@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Godkendte rapporter dækker 40% og den mundtlige eksamen dækker 60% af den samlede vurdering" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Accepted reports cover 40% and the oral examination cover 60% of the final evaluation" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De følgende koncepter og fænomener, samt nogle af deres vigtigste anvendelser vil blive beskrevet: Gaussiske felter, komplex strålematricer, Doppler skift og Doppler baserede optiske målesystemer såsom Doppler LIDAR, laser og phase Doppler velocimetry, Huygens-Fresnel diffraktionsteoremet, Fresnel’s og Fraunhofer’s tilnærmelser, Fourier optik, frequens analyse af kohærente og inkohærente afbildningssystemer, statistisk optik, korrelationsoptik såsom Particle Image Velocimetry (PIV), speckle velocimetry og optiske billedbehandlings metoder. Øvelser vil inkludere spektralanalyser af interferometriske signaler og billeder, korrelationsanalyser af speckle dynamik, Fourier optik og rumlig filtrering.</Contents>
+          <Teaching_And_Learning_Methods>Foredrag, opgaver og øvelser i signal behandling</Teaching_And_Learning_Methods>
+          <Course_Literature>J.W. Goodman, Introduction to Fourier Optics, Roberts &amp; Company (2005)
+Udvalgte artikler</Course_Literature>
+          <Course_Objectives>Dette kursus underviser studerende i anvendt signal- og billedbehandling indenfor følgende områder: Interferometrisk bølgeoptik, Fourier optik og statistisk optik og kohærens. Kurset dækker spredning af lys fra partikler og flader, Doppler-baseret interferometri, Fourier optik, optisk processing og korrelationsoptik. Studenterne vil få et overblik over forskellige anvendelser af disse teknologier. Studenterne vil øve anvendt signal og billedbehandlings teknikker til eksperimentelle data fra forskellige relevante optiske målesystemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The following concepts and phenomena, and some of their most important applications will be described: Gaussian fields, complex ray-tracing matrices, Doppler shifts and Doppler based optical measurement systems such as Doppler LIDAR, laser and phase Doppler velocimetry, the Huygens-Fresnel diffraction theorem, Fresnel’s and Fraunhofer’s approximations, Fourier optics, frequency analysis of coherent and incoherent imaging system, statistical optics, correlation optics such as Particle Image Velocimetry (PIV), speckle velocimetry and optical processing methods. Exercises will include spectral analysis of interferometric signals, correlation analysis of speckle dynamics, Fourier optics and spatial filtering.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problems and exercises in signal analysis</Teaching_And_Learning_Methods>
+          <Course_Literature>J.W. Goodman, Introduction to Fourier Optics, Roberts &amp; Company (2005)
+Selected scientific papers</Course_Literature>
+          <Course_Objectives>This course teaches the students applied signal and image processing within the field of interferometric wave-optics, Fourier optics and statistical optics and coherence. The course teaches in scattering of light, Doppler-based interferometry, Fourier optics, optical processing and correlations optics. The students will get an overview of applications for these technologies. The student will practice applied signal and image processing techniques to experimental data from different relevant optical measurement systems.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne udbredelse af Gaussiske stråler og Gaussiske felter i gennem vilkårlige paraxiale optiske systemer." />
+          <Txt Lang="en-GB" Txt="Calculate propagation of Gaussian beams and Gaussian fields through arbitrary paraxial optical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn Doppler skift, analyser Doppler baserede interferometriske systemer og give eksempler på interferometriske måle teknologier." />
+          <Txt Lang="en-GB" Txt="Calculate Doppler shift, analyze Doppler based interferometric systems and give examples on interferometric measurement techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend spektral analyse metoder på interferometriske signaler og billeder til at bestemme frekvens, fase, amplitude og støj information." />
+          <Txt Lang="en-GB" Txt="Apply spectral analysis to interferometric signals to obtain frequency, phase, amplitude and noise information." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend faseplot og faseforskudte måleteknikker til interferometriske data " />
+          <Txt Lang="en-GB" Txt="Apply phasor plots and phase stepped methods to interferometric data " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive Huygens-Fresnel’s diffraktionsteorem og dens tilnærmelser." />
+          <Txt Lang="en-GB" Txt="Describe the Huygens-Fresnel’s diffractions theorem and its approximations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn Fresnel og Fraunhofer diffraktion til forskellige optiske systemer." />
+          <Txt Lang="en-GB" Txt="Calculate the Fresnel and Fraunhofer diffraction for different optical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn frekvens karakteristikker (MTF) for både kohærente og inkohærente afbildningssystemer." />
+          <Txt Lang="en-GB" Txt="Calculate the modulation transfer function (MTF) for both coherent and incoherent imaging systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend rumlig filtreringsteknikker til numerisk og optiske databehandling." />
+          <Txt Lang="en-GB" Txt="Apply spatial filtering techniques to numerical and optical data processing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter emnet statistisk optik og kohærens" />
+          <Txt Lang="en-GB" Txt="Discuss statistical optics and coherence" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn dynamik af specklebilleder for forskellige optiske målemetoder." />
+          <Txt Lang="en-GB" Txt="Calculate the dynamics of speckle images for various optical applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend korrelationsfunktioner til bestemmelse af dynamik i billeder af speckle-mønstre eller anden tilfældig struktur" />
+          <Txt Lang="en-GB" Txt="Apply correlation functions to images of speckle pattern and other random structures in order to measure dynamics of remote objects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give et overblik over anvendelser af optiske målemetoder til bestemmelse af hastighed, rotation, vibration mm." />
+          <Txt Lang="en-GB" Txt="Give an overview of applications for optical measurements methods for velocity, rotation, vibration and so on." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="(34020/34021).(30160/(22050.22051))" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Optiske målemetoder og signal analyse</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="22052" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:44.22" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

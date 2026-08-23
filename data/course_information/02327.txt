@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02327" Volume="2026/2027" University="dtu" LastUpdated="2026-05-04+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Indledende databaser og database programmering" />
+        <Title Lang="en-GB" Title="Introductory Databases and Database Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Normalt 2 x 45 minutters forelæsninger efterfulgt af øvelser" />
+          <Schedule_Txt Lang="en-GB" Txt="Normally two times 45 minutes lectures followed by exercises" />
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="853" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Anne Elisabeth</GivenName>
+            <FamilyName>Haxthausen</FamilyName>
+            <Email>aeha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="185080" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jens Kanstrup</GivenName>
+            <FamilyName>Larsen</FamilyName>
+            <Email>jekla@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Godkendelse af en gruppeopgave er en betingelse for at deltage i den skriftlige eksamen.&#xD;&#xA;Den endelige karakter er karakteren fra den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Approval of a group project is mandatory for participation in the written examination. The final mark is the mark from the written examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Is planned for E5B (and  F7 for the re-exam)" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Er planlagt til E5B (og F7 for re-eksamenen)" />
+            <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="F7" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Begrebsmæssig databasedesign:
+   - ER-modellering med ER diagrammer visende entiteter og deres relationer, nøgler, domæner og andre constraints
+• Logisk databasedesign, inklusiv:
+   - mapping fra ER-model til relationel model
+   - normalisering af relationel modeller til 3NF
+• Fysisk databasedesign, inklusiv:
+   - konvertering af en logisk models relationer til tabeller
+   - definition af constraints
+• Implementering af et fysisk database design i SQL
+• Structured Query Language, SQL:
+      -  SQL kommandoer til at definere, manipulere og forespørge databaser
+      -  Avancerede SQL sprogkonstruktioner så som triggere, lagrede procedurer og views</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser samt et projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at sætte den studerende i stand til at kunne designe og implementere persistens vha. en relationel database.</Course_Objectives>
+          <Remark>Ved overtegning har diplomstuderende fortrinsret.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Conceptual database design:
+      - ER-modelling with ER-diagrams showing entities and their relationships, keys, domains and other constraints.
+• Logical database design, including:
+      - mapping from ER-model to relational model 
+      - normalisation of relational models to 3NF
+• Physical database design, including:
+      - conversion of a logical model's relations to tables
+      - definition of constraints
+• Implementation of a physical database design in SQL
+• Structured Query Language, SQL:
+      -  SQL Commands for defining, manipulating and querying databases
+      -  Advanced SQL language constructs such as triggers, stored procedures and views</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises and a project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aims and objectives of the course is to make the student able to design and implement  persistence using a relational database.</Course_Objectives>
+          <Remark>In case of overbooking, diplom students shall be preferred.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Deltagerne forventes at tage kurserne 01904 og 02312 senest samme semester som dette kursus, eller at have ækvivalente kundskaber om:&#xD;&#xA;(1) diskret matematik: mængdelære og logiske operatorer,&#xD;&#xA;(2) programmering" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Participants are expected to take courses 01904 and 02312  at the latest in the same semester as this course, or to have equivalent knowledge about&#xD;&#xA;(1) discrete mathematics: set theory and logical operators,&#xD;&#xA;(2) programming" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udarbejde en begrebsmæssig (konceptuel) datamodel for en given problembeskrivelse" />
+          <Txt Lang="en-GB" Txt="develop a conceptual data model for a given problem description" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere en logisk datamodel for en relationel database ud fra en begrebsmæssige datamodel " />
+          <Txt Lang="en-GB" Txt="create a logical data model for a relational database from a conceptual data model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage normalisering til 3. normalform af en relationel model" />
+          <Txt Lang="en-GB" Txt="transform a relational model to 3rd normal form " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre et fysisk databasedesign  " />
+          <Txt Lang="en-GB" Txt="carry out a physical database design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende et relationelt databasesprog til implementering af et fysisk databasedesign" />
+          <Txt Lang="en-GB" Txt="use a relational database language for implementing a physical database design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge et relationelt databasesprog til at oprette en relationel database" />
+          <Txt Lang="en-GB" Txt="use a relational database language for creating relational databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge et relationelt databasesprog til at forspørge en relationel database" />
+          <Txt Lang="en-GB" Txt="use a relational database language for querying relational databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge et relationelt databasesprog til at opdatere en relationel database" />
+          <Txt Lang="en-GB" Txt="use a relational database language for manipulating relational databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>En introduktion til databaser, fundamentale database begreber og brugen af databaser med Java</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02170" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="62" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="38" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-18" Time="16:40:24.493" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

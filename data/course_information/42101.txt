@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42101" University="dtu" LastUpdated="2026-08-19+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Operationsanalyse" />
+        <Title Lang="en-GB" Title="Operations Research" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="23631" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Stefan</GivenName>
+            <FamilyName>Røpke</FamilyName>
+            <Email>ropke@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6509" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Thomas Jacob Riis</GivenName>
+            <FamilyName>Stidsen</FamilyName>
+            <Email>thst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="228413" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Anneke Laurel</GivenName>
+            <FamilyName>Claypool</FamilyName>
+            <Email>alacl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der stilles en projektopgave på kurset. Opgaven skal godkendes for at kunne deltage i den skriftlige eksamen. En opgave godkendes hvis minimum 50 % af delspørgsmålene er besvaret korrekt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course involves one project assignment. The assignment must be approved in order to attend the written exam. An assignment is approved if at least 50% of the sub-tasks in the assignment are answered correctly." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Lineær programmering: formulering, simplexmetoden, teori, dualitet, følsomhedsanalyse og andre algoritmer. Transportproblemet: formulering og løsning. Assignmentproblemet. Heltalsprogrammering, ikke-lineær optimering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegning</Teaching_And_Learning_Methods>
+          <Course_Literature>Hillier &amp; Lieberman: Introduction to Operations Research, seneste udgave.</Course_Literature>
+          <Course_Objectives>Operationsanalyse (OR) omhandler anvendelse af matematiske modeller for at hjælpe beslutningstagere. Kurset tilstræber at give deltagerne en generel orientering om metoder i OR, så man bliver i stand til at vurdere mulighederne for at anvende OR i en konkret problemstilling, samt at man opnår et godt udgangspunkt for videre studier.
+Desuden tilstræber kurset at sætte deltagerne i stand til at bruge enklere OR-metoder ved behandling af beslutningsproblemer; her lægges særlig vægt på optimering af lineære modeller (Lineær Programmering og heltals programmering).
+Kurset giver en nyttig baggrund for at arbejde med matematiske modeller inden for en lang række ingeniørvidenskabelige områder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Linear programming: model formulation, the Simplex method, theory, duality, sensitivity analysis, and other algorithms. The transportation problem: model formulation and solution. The assignment problem. Integer programming, non-linear optimization.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Hillier &amp; Lieberman: Introduction to Operations Research, latest edition.</Course_Literature>
+          <Course_Objectives>Operations research (OR) is about applying mathematical models to help decision makers. The course aims to give a general orientation about OR methods, enabling students to evaluate the possibility of using OR in a given problem setting, and to lay a firm foundation for further studies. Also, the course aims to enable students to use some OR methods on decision problems; optimization of linear models (Linear Programming and integer linear programming) is emphasized. The course yields a useful background for working with mathematical models in most areas of engineering science.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til lineær algebra." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of linear algebra." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere LP modeller" />
+          <Txt Lang="en-GB" Txt="Formulate LP models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse LP modeller med simplex-metoden" />
+          <Txt Lang="en-GB" Txt="Solve LP models with Simplex" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende fundamentalindsigten og kende simplex på matrix form" />
+          <Txt Lang="en-GB" Txt="Apply the fundamental insight and know simplex in the matrix form" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere det primale problem til det duale, og udføre følsomhedsanalyser" />
+          <Txt Lang="en-GB" Txt="Relate primal and dual problems, and perform sensitivity analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte dual simplex" />
+          <Txt Lang="en-GB" Txt="Apply dual Simplex" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og løse transport- og assignment-problemer" />
+          <Txt Lang="en-GB" Txt="Formulate and solve transportation and assignment problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere heltalsmodeller" />
+          <Txt Lang="en-GB" Txt="Formulate integer programming models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende totalt unimodulære matricer og kende deres betydning i forbindelse med LP modeller" />
+          <Txt Lang="en-GB" Txt="Know total unimodular matrices and know their their connection to linear programming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Illustrere hvordan branch-and-bound algoritmen kan løse heltalsmodeller" />
+          <Txt Lang="en-GB" Txt="Illustrate how the branch and bound algorithm can solve integer programming models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simple grådige algoritmer" />
+          <Txt Lang="en-GB" Txt="Apply simple greedy algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende softwarepakker til at løse LP og heltalsmodeller" />
+          <Txt Lang="en-GB" Txt="Use solvers to solve LP and integer programming models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse simple ikke-lineære optimeringsproblemer" />
+          <Txt Lang="en-GB" Txt="Solve simple non-linear optimization problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Operationsanalyse - for dem der vil videre end bare machine learning og AI</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="66" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="34" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-08-19" Time="13:38:13.407" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

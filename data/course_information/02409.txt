@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02409" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Multivariat statistik" />
+        <Title Lang="en-GB" Title="Multivariate Statistics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="41999" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Stockmarr</FamilyName>
+            <Email>anst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Multiple-choice. Ved multiple choice eksamen kan det forekomme at karakteren 10 gives ved blot én fejl eller manglende besvarelse. Sommereksamen er mundtlig" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Judged as a whole. Multiple-choice. In a multiple-choice exam it may happen that the grade 10 is given even if only one answer is wrong or missing. Summer exam is oral" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil dække et bredt udvalg af følgende flerdimensionale modeller: flerdimensionale fordelinger, multipel og partiel korrelation. Den generelle lineære model: estimation og testning, geometrisk fortolkning, Regressionsanalyse: estimation og testning, bestemmelse af bedste ligninger, residualundersøgelser, prediktionsintervaller, ikke lineære analyser m.v. Flerdimensionale variansanalyser. Klassifikation: Bayesianske klassifikationsmetoder, lineær og kvadratisk diskriminantanalyse, kanonisk diskriminantanalyse. Kanonisk analyse: kanoniske korrelationer, principale komponenter, faktoranalyse.  Korrelationsmodeller: Modeller for stokastiske fænomener, der varierer i tid og rum. Anvendelse af R i de ovennævnte emner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne en dybere indføring i statistiske metoder til at afdække strukturen i et mangedimensionalt datamateriale. Deltagerne forventes at blive i stand til at vurdere flerdimensionale (lineære og ulineære) sammenhænge og bestemme bedste prediktorer, at belyse relativt komplicerede forsøgsomstændigheders indflydelse på (evt. flerdimensionale) måleresultater, at vurdere, om et mangedimensionalt datamateriale kan reduceres til væsentligt færre dimensioner,  om variationer ved en række egenskaber i en population kan beskrives ved få "faktorer", og man kan skelne mellem forskellige populationer ved hjælp af simple (lineære) funktioner af målinger af forskellige egenskaber ved de enkelte individer,  at vurdere strukturen i og sammenhænge mellem målinger af fænomener, der varierer med tiden.  Endeligt lægges der vægt på at kunne anvende et statistisk programmeringssprog, fortolke output herfra og relatere det til kursets indhold.</Course_Objectives>
+          <DTU_Remark>Kurset er lige nu under omstrukturering, dog med essentielt samme indhold. SAS programmering har tidligere været benyttet, det er nu erstattet af R.</DTU_Remark>
+          <Remark>Kurset er et alment metodekursus, som henvender sig til studerende, der interesserer sig for analyse af flerdimensionale data eller som ønsker et mere afrundet billede af nogle af de mest anvendte statistiske metoder.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>We will cover a large fraction of the following multidimensional models: Multidimensional distributions, multiple and partial correlation.  The general linear model: Estimation and testing, geometric interpretation.  Regression analysis: Estimation and testing, determination of best regression equations, analysis of residuals, prediction intervals, non-linear analysis etc. Multidimensional analysis of variance. Classification: Bayesian classifiers, linear and quadratic discriminant analysis, canonical discriminant analysis.  Canonical analysis: Canonical correlation, principal components, factor analysis.   Correlation models: Models for random phenomena which vary in time and space. Applications of R in the above areas.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, tutorials, and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the participants a more thorough understanding of statistical methods with special emphasis on revealing the structure of multidimensional data. The participants are expected to learn to assess multidimensional (linear and non-linear) relations and estimate best predictors, to analyze the influence of complicated experimental designs on (uni- or multi-dimensional) measurements, to assess whether multidimensional data can be reduced to lower dimensionality and in doing this, to assess whether a number of features in a population can be described with a few "factors", to discriminate between different populations using simple (linear) functions of measurements of different features of the single individuals, to assess the structure of and relations between phenomena which vary in time. Lastly to be able to use a standard statistical computer program , and be able to interpret the output and relate it to the course curriculum.</Course_Objectives>
+          <DTU_Remark>The course is currently under reconstruction, while essentially maintaining the contents. SAS programming has earlier been used, it is now replaced by R.</DTU_Remark>
+          <Remark>The course is a general methodological course aimed at students interested in the analysis of multidimensional data or in achieving an overview over a number of the most common statistical methods.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller et lignende grundkursus i statistik.&#xD;&#xA;kendskab til lineær algebra." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or another introductory course in statistics.&#xD;&#xA;knowledge of linear algebra." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402/02403/02323" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare strukturen af multivariate data, samt beregne strukturen af linearkombinationer af sådanne data" />
+          <Txt Lang="en-GB" Txt="Explain structure of multivariate data, and calculate the structure of linear combinations of such data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende den multivariate normalfordeling til beskrivelse af multivariate data, samt bedømme dens egnethed i givne tilfælde" />
+          <Txt Lang="en-GB" Txt="Apply the multivariate normal distribution to describe multivariate data, and assess it's relevance in a given case" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere relevante fordelinger afledt af normalfordelingen, samt anvende disse i konklusioner af foretagne analyser" />
+          <Txt Lang="en-GB" Txt="Identify relevant distributions derived from the normal distribution, and apply those in conclusions of performed analyses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke multivariate data baseret på egenværdianalyser af korrelations- og dispersions-strukturer" />
+          <Txt Lang="en-GB" Txt="Interpret multivariate data based on eigenvalue analyses of correlation- and variance-covariance-structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille relevante modeller med både univariate og multiple respons variable, samt bedømme modellens egnethed i et givent tilfælde" />
+          <Txt Lang="en-GB" Txt="Construct relevant models with both univariate and multivariate respons variables, and evaluate the model quality in a given case" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foreslå en analyse til et givent sæt data, samt bestemme indgående parametre og andre relevante størrelser" />
+          <Txt Lang="en-GB" Txt="Suggest an analysis for a given set of data, and find the parameters and other relevant quantities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge det statistiske programsystem R, herunder specificere modeller, identificere relevante størrelser i programoutput samt fortolke dette." />
+          <Txt Lang="en-GB" Txt="Able to use the statistical software package R, including model specification, identifying relevant quantities in program output and interpreting this." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere formler og begreber fra kurset med de relevante størrelser i R" />
+          <Txt Lang="en-GB" Txt="Relate formulas and concepts from the course with the relevant quantities R" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>The course introduces methods for multivariate data analysis.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:40.097" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

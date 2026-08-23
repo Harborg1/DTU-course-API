@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02955" Volume="2026/2027" University="dtu" LastUpdated="2024-06-19+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Study_Board Study_BoardKey="DTU_Compute" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Pseudodifferentielle operatorer for randværdiproblemer" />
+        <Title Lang="en-GB" Title="Pseudodifferential operators for boundary value problems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="20347" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mirza</GivenName>
+            <FamilyName>Karamehmedovic</FamilyName>
+            <Email>mika@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Hver studerende vælger, udfører og dokumenterer et projekt indenfor kursets pensum. Projektet vil typisk indeholde en detaljeret og uddybende gennemgang af et af de underviste emner, med beviser der komplementerer eller yderligere klargør materialet," Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Each student chooses, executes and documents a project within the curriculum. The project typically comprises a detailed and in-depth treatment of a topic, with proofs complementing or further clarifying the considered literature." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Rapportskrivning i 1 til 2 uger." />
+          <Duration Lang="en-GB" Txt="The final report is written over 1 to 2 weeks." />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Klasser af glatte symboler: definition, sammensætning og adjungering. Fourier integral-repræsentation og Schwartz-kerner af ps.d.o. Afbildningsegenskaber af standard-ps.d.o. Parametricer af elliptiske ps.d.o. Essential support, wavefront set og microlocal regularity. Layer potentials. Transformation ved diffeomorfier og nul-udvidelse.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, hvor hovedresultaterne præsenteres, bevises og sættes i perspektiv.</Teaching_And_Learning_Methods>
+          <Course_Literature>Noter samt uddrag fra lærebøger forberedt af underviseren. Bl.a. vil der blive gennemgået dele af Michael E. Taylor, "Partial Differential Equations II", Springer, 2011, samt af Lars Hörmander, "The Analysis of Linear Partial Differential Operators III", Springer, 1985.</Course_Literature>
+          <Course_Objectives>Den moderne analyse af randværdiproblemer for partielle differentialligninger (PDE) anvender pseudodifferentielle operatorer. Udover at lokalt etablere eksistens, entydighed og regularitet af løsninger af en stor klasse af elliptiske PDE problemer, kan denne analyse forbindes med værktøjer fra topologi, differentialgeometri samt mikrolokalanalyse til at give yderligere grundlæggende indsigt i egenskaber og opførsel af løsninger. I visse tilfælde kan denne indsigt forbedre den matematiske modellering, den fysiske forståelse, samt den numeriske løsningseffektivitet og -stabilitet for et givet randværdiproblem. Formålet med dette kursus er at undervise i standard-pseudodifferentialoperatorer med glatte symboler, inkl. formel definition, afbildningsegenskaber, symbol-kalkyle, og konstruktion af parametrix. Dette anvendes i kurset til analyse af udvalgte randværdiproblemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Smooth symbol classes: definition, results regarding compounds and adjoints. Fourier integral representation and Schwartz kernels of ps.d.o. Mapping properties of standard pseudodifferential operators. Parametrices of elliptic ps.d.o. Essential support, wavefront sets and microlocal regularity. Layer potentials. Transformation using local diffeomorphic charts and extension by zero.</Contents>
+          <Teaching_And_Learning_Methods>Lectures presenting, proving and contextualizing the main results.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes and excerpts from textbooks prepared by the lecturer. Among other material, parts will be covered of Michael E. Taylor, "Partial Differential Equations II", Springer, 2011, and Lars Hörmander, "The Analysis of Linear Partial Differential Operators III", Springer, 1985.</Course_Literature>
+          <Course_Objectives>Modern analysis of boundary value problems for partial differential equations (PDE) relies on the theory of pseudodifferential operators. In addition to establishing locally the existence, uniqueness and regularity of solutions of rather general elliptic PDE problems, this analysis can be linked with well-developed tools from topology, differential geometry and microlocal analysis to allow additional fundamental insight into the properties and behavior of solutions. In certain cases this additional insight can improve the mathematical modelling, the physical understanding, and the numerical solution efficiency and stability for the given boundary value problem. The purpose of this course is to teach the theory of standard pseudodifferential operators with smooth symbols, including the rigorous definition, continuity properties, symbol calculus and parametrix construction. This is then applied in the analysis of selected boundary value problems.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gøre rede for relevans og grundegenskaber af symboler af standard-pseudodifferentialoperatorer." />
+          <Txt Lang="en-GB" Txt="Explain the relevance and the fundamental properties of symbols of standard pseudodifferential operators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vise egenskaber af samt anvende kalkylen af symboler af standard-pseudodifferentialoperatorer." />
+          <Txt Lang="en-GB" Txt="Prove the properties of and use the algebra of symbols of standard pseudodifferential operators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere symboler af sammensatte og adjungerede standard-pseudodifferentialoperatorer." />
+          <Txt Lang="en-GB" Txt="Construct symbols of compounds and adjoints of standard pseudodifferential operators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vise afbildningsegenskaber af standard-ps.d.o." />
+          <Txt Lang="en-GB" Txt="Prove mapping properties of standard ps.d.o." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere symboler for parametrices af elliptiske ps.d.o." />
+          <Txt Lang="en-GB" Txt="Construct symbols of parametrices of elliptic ps.d.o." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere og vise resultater vedr. symboler ved lokalisering af randværdiproblemer via diffeomorfier." />
+          <Txt Lang="en-GB" Txt="Construct and prove results regarding symbols in localization of boundary problems via diffeomorphic charts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende ps.d.o. i analysen af lokale elliptiske randværdiproblemer." />
+          <Txt Lang="en-GB" Txt="Use ps.d.o. for the analysis of local elliptic boundary problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vise resultater vedr. samspillet mellem Essential Support af ps.d.o. og Wavefront Sets af distributioner." />
+          <Txt Lang="en-GB" Txt="Prove results relating Essential Support of ps.d.o. and Wavefront Sets of distributions." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01715" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Partielle Differentialligninger </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:41.867" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

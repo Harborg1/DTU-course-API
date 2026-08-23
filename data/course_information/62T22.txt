@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62T22" Volume="2026/2027" University="dtu" LastUpdated="2025-07-01+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Anvendt Machine Learning og Big Data" />
+        <Title Lang="en-GB" Title="Applied Machine Learning and Big Data" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Undervisning én aften om ugen kl. 17.00-20.30 over 14 uger. Opstart: Se hjemmesiden." />
+          <Schedule_Txt Lang="en-GB" Txt="14 lessons, once a week from 5 pm - 8:30 pm. Start: Look at the home page." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="78833" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lynn</GivenName>
+            <FamilyName>Eriksen</FamilyName>
+            <Email>lyka@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="197929" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lei</GivenName>
+            <FamilyName>You</FamilyName>
+            <Email>leiyo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Individuel mundtlig prøve kombineret med skriftlig projektopgave. Opgavens omfang: 1 studerende: Minimum 10 normalsider og maksimum 20 sider inkl. grafiske afsnit, 2 studerende: Minimum 15 normalsider og maksimum 25 sider inkl. grafiske afsnit og 3 studerende: Minimum 20 normalsider og maksimum 30 sider inkl. grafiske afsnit." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Individual oral exam combined with written project assignment. Scope of the assignment: 1 student: Minimum 10 standard pages and maximum 20 pages incl. graphic sections, 2 students: Minimum 15 standard pages and maximum 25 pages incl. graphic sections and 3 students: Minimum 20 standard pages and maximum 30 pages incl. graphic sections." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Provided by DTU Learn for Life" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Eksamen planlægges af sekretariatet på DTU Learn for Life." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="Ca. 3 uger før kursusstart" />
+            <DeadLineTxt Lang="en-GB" Txt="App. 3 weeks before teaching starts." />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="https://lifelonglearning.dtu.dk/engineering-technology/diplom/anvendt-machine-learning-og-big-data/" />
+            <Supp_Txt Lang="en-GB" Txt="https://lifelonglearning.dtu.dk/engineering-technology/diplom/anvendt-machine-learning-og-big-data/" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Matematiske grundlag for maskinlæring.
+- Lineær regression, ridge regression.
+- Logistisk regression, perceptron og flerlagsperceptron til klassifikationer.
+- Clustering algoritmer, såsom K-middel og Spectral clustering.
+- Dyb læring, f.eks. dybt neuralt netværk og backpropagation, convolutional neuralt netværk.
+- Resampling metoder, herunder krydsvalidering, bias-variance trade-off og bootstrap.
+- Avancerede emner såsom kernemetoder, ensemblemodeller.
+- Analytisk validering, a/b test, modelforklarlighed.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning, gruppeøvelser og -diskussioner, egne cases, eksperimenter og kobling til egen ledelsespraksis.</Teaching_And_Learning_Methods>
+          <Course_Literature>https://www.polyteknisk.dk/home/akademi/cv</Course_Literature>
+          <Course_Objectives>At sætte deltagerne i stand til at anvende machine learning værktøjer og metoder til dataanalyse og håndtering af store datamængder - og kunne reflektere over grundlaget
+for etablering af et Big Data distribueret analysemiljø i egen organisation.</Course_Objectives>
+          <Remark>DTU Engineering Technology efteruddannelse
+Valgmodul (Vf15), IT-Diplomuddannelsen
+AI, Matematik og software</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Mathematical foundations of machine learning.
+- Linear regression, regularization.
+- Logistic Regression, perceptron, and multilayer perceptron for classifications.
+- Clustering algorithms, such as K-means and Spectral clustering.
+- Deep learning, e.g. deep neural network and backpropagation, convolutional neural network.
+- Resampling methods, including cross-validation, bias-variance trade-off, and bootstrap.
+- Advanced topics such as kernel methods, ensemble models.
+- Analytic validation, a/b testing, model explainability.</Contents>
+          <Teaching_And_Learning_Methods>Teaching with lectures, group exercises and discussions, own cases, experiments and connection to own management practice.</Teaching_And_Learning_Methods>
+          <Course_Literature>https://www.polyteknisk.dk/home/akademi/cv</Course_Literature>
+          <Course_Objectives>Enable participants to use machine learning tools and methods for data analysis and handling of large data volumes - and to reflect on the basis for establishing a Big Data distributed analytics environment within their own organization.</Course_Objectives>
+          <Remark>DTU Engineering Technology Continuing Education
+Elective (Vf15), Diploma of IT
+AI, Mathematics and Software</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Optagelse på IT-Diplomuddannelsen forudsætter:  &#xD;&#xA;- At ansøger har gennemført en relevant adgangsgivende uddannelse min. på niveau med en erhvervsakademiuddannelse eller en relevant videregående voksenuddannelse.  &#xD;&#xA;- At ansøger har mindst to års erhvervserfaring efter gennemført adgangsgivende uddannelse." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Admission requirements: &#xD;&#xA;- That the applicant has a relevant qualifying examination minimum at the level of an academy education or relevant further adult education. &#xD;&#xA;- That the applicant has at least two years’ of work experience after qualifying examination.&#xD;&#xA;- That the applicant has basic knowledge about Linear Algebra (such as vector/matrix multiplication/inverse, eigenvalues/eigenvectors) and Probability Theory (such as probability density function, probability distributions, central limit theorem, bayes theorem)." />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Få viden om og forståelse af terminologien for maskinlæring og moderne kunstig intelligens." />
+          <Txt Lang="en-GB" Txt="Obtain knowledge and understanding of the terminology of machine learning and modern artificial intelligence." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Have viden om relevante open source programmeringssprog og statistikprogrammer og kunne reflektere over implikationerne af valg af disse." />
+          <Txt Lang="en-GB" Txt="Obtain knowledge of relevant open source programming languages and statistical programs and reflect on the implications of choosing specific languages." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Få viden om grundlaget for machine learning samt hvordan maskinlæringsmodellerne implementeres fra bunden." />
+          <Txt Lang="en-GB" Txt="Obtain knowledge of the foundations of machine learning as well as how the machine learning models are implemented from scratch." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Have forståelse af dataselektering og funktionsberegning." />
+          <Txt Lang="en-GB" Txt="Understand data selection and computing using functions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over grundlaget for etablering af et Big Data distribueret analysemiljø." />
+          <Txt Lang="en-GB" Txt="Reflect on the foundation for establishing a Big Data distributed analysis environment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Begrunde, vælge, konfigurere og validere et eller flere machine learning værktøjer til analyse og visualisering." />
+          <Txt Lang="en-GB" Txt="Justify, select, configure and validate one or more machine learning tools for analysis and visualization." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende relevant open source programmeringssprog til analyse og visualisering af enorme mængder af data. " />
+          <Txt Lang="en-GB" Txt="Apply relevant open source programming languages for analysis and visualization of very large data sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage systematisk indsamling, oprensning, lagring, analyse og rapportering af en virksomheds store heterogene datamængder herunder ikke komplette data-frames." />
+          <Txt Lang="en-GB" Txt="Demonstrate systematically data acquisition, data cleaning, storage, analysis and reporting of very large data sets of a business including non-complete data-frames." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="På et begrundet valg anvende en dataselekterings- og funktionsmodel og tilhørende værktøjer på egne data. " />
+          <Txt Lang="en-GB" Txt="Justify and demonstrate a data selecting- and  functional model and the associated tools on the participant's own data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Viden om konfigurering af eget miljø til distribueret analyse af store datamængder." />
+          <Txt Lang="en-GB" Txt="Obtain knowledge about configuration of a system for distributed big data analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Begrunde og bidrage til transformation af egen virksomhedsinformation baseret på systematisk indhentning, rensning, analyse og rapportering af virksomhedsdatasæt." />
+          <Txt Lang="en-GB" Txt="Justify and contribute to the transformation of own business information based on systematic acquisition, cleaning, analysis and reporting of business  data sets." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://lifelonglearning.dtu.dk/engineering-technology/diplom/anvendt-machine-learning-og-big-data/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="62527.  62533" />
+        <PreviousCourse CourseCode="62T33" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="49" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="49" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="3" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="54673" PersonUniversity="dtu" Date="2026-04-16" Time="10:37:29.363" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

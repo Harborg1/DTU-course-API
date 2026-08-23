@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62150" Volume="2026/2027" University="dtu" LastUpdated="2026-03-10+01:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Grundlæggende matematik" />
+        <Title Lang="en-GB" Title="Basic Mathematics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="145690" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Iver Mølgaard</GivenName>
+            <FamilyName>Ottosen</FamilyName>
+            <Email>ivot@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="3786" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bo</GivenName>
+            <FamilyName>Gervang</FamilyName>
+            <Email>boge@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Matematisk analyse og dens anvendelser.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning med opgaveregning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at gøre de studerende fortrolige med begreber, metoder og tankegange inden for grundlæggende ingeniørmatematik, især brugen af matematisk analyse i forbindelse med studiet af matematiske modeller. Virkelighedsnære problemer, fra en bred vifte af videnskabelige, teknologiske og økonomiske emner, er centrale elementer i kurset.</Course_Objectives>
+          <Remark>Sektion for Mekanisk teknologi
+Global Business og Teknologi: 1. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Elements of calculus and its applications.</Contents>
+          <Teaching_And_Learning_Methods>Class room teaching with exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to provide the students with concepts, methods, and way of thinking in the areas of basic applied mathematics (primarily calculus). This especially involves the application of mathematical analysis in the study of mathematical models. Real-world problems, drawn from a wide variety of scientific, technological, and economic subjects, are central to the course.</Course_Objectives>
+          <Remark>Section of Mechanical Technology
+Global Business and Technology: 1. semester</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forholde sig til – og manipulere – matematiske udtryk (i form af ligninger, funktioner og parametriseringer)" />
+          <Txt Lang="en-GB" Txt="Address and manipulate mathematical expressions (in the form of equations, functions, and parameterizations)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Håndtere trigonometriske funktioner og radianbegrebet" />
+          <Txt Lang="en-GB" Txt="Handle trigonometric functions and the radian measure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre differentiation og anvende de afledede af funktioner, udføre integration og anvende stamfunktioner og bestemte integraler" />
+          <Txt Lang="en-GB" Txt="Perform differentiation and apply derivatives, perform integration and apply antiderivatives and definite integrals" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende elementære metoder baseret på håndtering af afledede (Taylors formel af første og anden orden, Newtons metode i én variabel)" />
+          <Txt Lang="en-GB" Txt="Apply elementary methods based on the manipulation of derivatives (Taylor’s formula of first and second order, Newton’s method in one variable)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og håndtere simple infinitesimale modeller, løse elemtære optimeringsopgaver" />
+          <Txt Lang="en-GB" Txt="Set up and manipulate simple infinitesimal models, solve elementary optimization problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og karakterisere differentialligninger, dels ved brug af felter af linjeelementer, dels ved forholdet mellem fuldstændige og partikulære løsninger" />
+          <Txt Lang="en-GB" Txt="Analyze and characterize differential equations by means of fields of line elements and by studying the relationships between complete and partial solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse lineære første-ordens differentialligninger og første-ordens differentialligninger med separabel højreside ad algebraisk vej" />
+          <Txt Lang="en-GB" Txt="Solve first order linear differential equations and first order differential equations with a separable right hand side by algebraic means" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse anden-ordens lineære differentialligninger med konstante koefficienter ad algebraisk vej" />
+          <Txt Lang="en-GB" Txt="Solve second order linear differential equations with constant coefficients by algebraic means" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende numeriske metoder til løsning af sædvanlige differentialligninger" />
+          <Txt Lang="en-GB" Txt="Apply numerical methods for ordinary differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Have elementært kendskab til vektorer og vektorfunktioner i 2D og 3D" />
+          <Txt Lang="en-GB" Txt="Have elementary knowledge of vectors and vector functions in 2D and 3D" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og anvende matematiske modeller i flere variable, bestemme partielle afledede for funktioner af flere variable" />
+          <Txt Lang="en-GB" Txt="Set up and apply multivariable mathematical models, determine derivatives of multivariable functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Have grundlæggende kendskab til normalfordelingen" />
+          <Txt Lang="en-GB" Txt="Have basic knowledge of the normal distribution" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="62151/62153/62154/62155/62156/62157/62168/62169" />
+        <PreviousCourse CourseCode="62168" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:52.94" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

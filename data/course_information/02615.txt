@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02615" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Optimering og datafitting" />
+        <Title Lang="en-GB" Title="Optimization and Data Fitting" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="81852" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Yiqiu</GivenName>
+            <FamilyName>Dong</FamilyName>
+            <Email>yido@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="78666" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Martin Skovgaard</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>mskan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Projekter/opgaver udføres i små grupper (2-3 studerende) med grupperapporter/hjemmeopgaver. Grupperapporter/hjemmeopgaver skal individualiseres. Karakteren for kurset vil være en helhedsvurdering ud fra grupperapporter/hjemmeopgaver og den skriftlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The projects and exercises are carried out in small groups (2-3 students) with group reports/assignments that are subjected to individualization. The grade for the course will be based on an overall evaluation of reports/assignments and the written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Metoder til at finde minimumspunkter for en glat funktion (bl.a. steepest descent, Newton og quasi-Newton metoder, trust region, conjugate gradient). Specielle metoder for mindste kvadraters datafitting (bl.a. Levenberg-Marquardt algoritmen) og ikke-glatte problemer.
+Stoffet belyses med eksempler af hovedsagelig teknisk oprindelse og med demonstration af tilgængelige biblioteksrutiner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og løsning af projektopgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>Nocedal &amp; Wright: Numerical Optimization, 2nd Edition
+
+Notes</Course_Literature>
+          <Course_Objectives>En ingeniør kommer ofte ud for at skulle bestemme optimale værdier for parametrene i en matematisk model af et fysisk eller teknisk problem. Problemet kan fx være at bestemme parametre i et funktionsudtryk, så den tilsvarende kurve passer bedst muligt med et forelagt datamateriale. Andre eksempler er matematiske formler, som udtrykker de samlede omkostninger ved at fremstille en vare eller udføre en transportopgave. Her gælder det om at vælge værdier for de frie parametre, så omkostningerne bliver mindst. 
+Kuset behandler effektive numeriske metoder til at bestemme optimale værdier for parametrene i en matematisk model. Deltagerne vil dels få et indblik i tilgængelige biblioteksrutiners virkemåde, dels blive i stand til selv at udvikle programmer.</Course_Objectives>
+          <Remark>Forudsætning for kursus 02611 "Optimering til datavidenskab" og 02612 "Optimering med bibetingelser"</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Methods for finding minimum points of a smooth function (e.g. steepest descent, Newton's and quasi-Newton methods, trust regions, conjugate gradient). Special methods for least-squares data fitting (e.g., the Levenberg-Marquardt algorithm) and non smooth problems. The course content is taught using technical case studies and available numerical libraries.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Nocedal &amp; Wright: Numerical Optimization, 2nd Edition
+
+Notes</Course_Literature>
+          <Course_Objectives>An engineer is often faced with the problem of having to determine optimal values of the parameters in a mathematical model of a physical or technical problem. The problem is eg to find the parameters in a function so that the corresponding curve is a best fit to a given set of data points, or you may be given a mathematical formula that expresses the cost of producing a commodity or perform a transportation job.  Here you have to choose values for the free parameters so that the cost is minimized.
+The course deals with efficient methods for computing optimal values for the parameters in a mathematical model.  The students will study and use available software libraries and learn how to construct their own programs.</Course_Objectives>
+          <Remark>Prerequisite for course 02611 "Optimization for Data Science" and 02612 "Constrained Optimization"</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundkursus i numeriske algoritmer, grundkursus i statistik, og erfaring med programmering i Python. Kursus i lineær algebra (f.eks. 01020) anbefales." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introductory numerical algorithms, introductory statistics, and experience with programming in Python. Coursework in linear algebra (e.g. 01020) is recommended." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02601.02402.(01020)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive basale begreber i kontinuert optimering: gradient, Hessian, konveksitet, descent retninger og metoder, betingelser for optimalitet" />
+          <Txt Lang="en-GB" Txt="describe basic concepts in continuous optimization: gradient, Hessian, convexity, descent directions and methods, optimality conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for basale metoder til optimering uden bibetingelser, fx steepest descent og Newtons metode" />
+          <Txt Lang="en-GB" Txt="explain basic methods for unconstrained optimization, eg the steepest descent and Newton's methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for grundelementer i optimeringsalgoritmer: liniesøgning og  trust region" />
+          <Txt Lang="en-GB" Txt="explain the basic design paradigms for optimization algorithms:  line search and trust regions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere simple optimeringsalgoritmer i Python" />
+          <Txt Lang="en-GB" Txt="implement simple optimization algorithms in Python" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende færdige Python programmer ved løsning af et foreliggende problem" />
+          <Txt Lang="en-GB" Txt="apply existing Python programs to the solution of a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere en matematisk model til brug ved datafitting" />
+          <Txt Lang="en-GB" Txt="formulate a mathematical model to use in data fitting" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge mellem alternative metoder til bestemmelse af modellens parametre: mindste kvadrater, L1, Huber estimering, og andre regressionsmetoder" />
+          <Txt Lang="en-GB" Txt="choose between alternative methods for determining the model parameters: least squares, L1, Huber estimation, and other regression methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende og implementere Steepest Descent, Newton og Quasi-Newton metoder for optimering uden begrænsninger" />
+          <Txt Lang="en-GB" Txt="apply and implement Newton and Quasi-Newton methods for unconstrained optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere derivative-free metoder" />
+          <Txt Lang="en-GB" Txt="implement derivative-free methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende conjugate gradient metoder for large-scale optimering uden  begrænsnigner" />
+          <Txt Lang="en-GB" Txt="apply conjugate gradient methods for large-scale unconstrained optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede og anvende KKT optimalitetsbetingelserne for optimering med bibetingelser" />
+          <Txt Lang="en-GB" Txt="derive and use the KKT optimality condition for constrained optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende surrogatmetoder til ikke-glatte optimering" />
+          <Txt Lang="en-GB" Txt="apply surrogate methods for non smooth optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Unconstrained Optimization</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02610" />
+        <PreviousCourse CourseCode="02610" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="62" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="38" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:25.357" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

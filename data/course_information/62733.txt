@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62733" University="dtu" LastUpdated="2026-04-12+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Projektarbejde i elektroteknik" />
+        <Title Lang="en-GB" Title="Project Work in Electrotechnics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="78867" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Schultz</FamilyName>
+            <Email>osch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der skal afleveres del-rapporter undervejs i forløbet for at komme til eksamen og til slut en Poster - som danner udgangspunkt for en mundtlig indviduel eksamen. Karakteren gives på grundlag af en helhedsvurdering af poster, og mundtlig præsentation" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A number of reports must be handed in during the course, which must be approved in order to take the exam. Final hand-in is Poster presentation of the project. The grade is given based upon an overall assessment of the poster and oral presentation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="It can be necessary with an extra exam-day" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ved store hold kan det være nødvendigt med ekstra dag til eksamen" />
+            <Schedule ScheduleKey="E4B" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Design og implementering af et elektronisk system, der bl.a. består af en
+ kombination af analog og digital elektronik.
+- samarbejde i en gruppe om løsning af opgaven.
+- Dokumentation, præsentation og rapportskrivning.
+
+Elektronikbaserede systemer er oftest en primær teknologi-driver i bæredygtighedsudviklingen, hvor disse bidrager til logistikhåndtering af bæredygtige ressourcer i en social, en økonomisk og en miljømæssig dimension. Denne bæredygtighedsvinkel medtages implicit i kursets læringsmål.</Contents>
+          <Teaching_And_Learning_Methods>Projektarbejde:
+Der gennemføres over 13 uger et større fælles laboratorieprojekt der kombinerer analog og digital elektronik, gymnasiematematik og programmering.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte den studerende i stand til at kombinere analog og digitalteknik til opbygning af et elektronisk kredsløb. Endvidere at indøve systematiske metoder til opstilling og anvendelse af kravspecifikationer under design, test og dokumentation af delelementer og det samlede kredsløb.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektroteknologi: 1. semester
+
+62733 dækker den praktiske del af fagområderne elektroteknik og digitalelektronik. Disse fagområder dækkes teoretisk på langs af semesteret af 30032 og 62712 . Resultater fra de teoretiske kurser anvendes direkte eller indirekte til løsning af projektopgave i 62733.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Design and implementation of an electronic system, containing a combination of analog and digital electronics.
+- cooperate in a group to solve the task. 
+- Documentation, presentation and report writing.
+
+Electronics-based systems are most often a primary technology driver in the sustainability development, where these contribute to the logistics management of sustainable resources in a social, an economic and an environmental dimension. This sustainability angle is included implicitly in the learning objectives of the course.</Contents>
+          <Teaching_And_Learning_Methods>Project work.
+A larger  lab project during 13 weeks is made that combines analog and digital electronics, mathematics, and  programming.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To make the student able to combine analog and digital techniques in the design of an electronic circuit. Additionally, to practice use of requirement specifications in the design, test, and documentation of circuit elements as well as the combined circuit.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektrisk Energiteknologi: 1. semester
+Elektroteknologi: 1. semester
+
+62733 covers the practical part of the fields of electrical engineering and digital electronics. These subject areas are theoretically covered by the courses 30032, 62712. Results from the theoretical courses are used directly or indirectly to solve a project assignment in 62733.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende. Kurserne 30032 og 62712 kører parallelt med dette" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="eller tilsvarende courses : 30032 62712 is running in paralllel" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30032 62712" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere og formulere funktionskrav i en kravspecifikation" />
+          <Txt Lang="en-GB" Txt="identify and compile functional requirements into a requirement specification" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="afkode funktionskrav til kredsløbet ud fra systemets forventede anvendelse" />
+          <Txt Lang="en-GB" Txt="paraphrase functional requrements from the expected real world usage of the circuit" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="undersøge løsningsmuligheder til et samlet kredsløb der opfylder funktionskrav" />
+          <Txt Lang="en-GB" Txt="investigate design possibilities for a circuit that fulfils the requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en analog forstærker med specifikke krav til offset, forstærkning og spændingsområde" />
+          <Txt Lang="en-GB" Txt="design an analogue amplifier that fulfils specific requirements to offset, gain and voltage intervals" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et kombinatorisk kredsløb med tællere, simpel logik og A/D converter" />
+          <Txt Lang="en-GB" Txt="design a combinatoric circuit using counters, simple logic and A/D converter" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og implementere et simpelt PCB" />
+          <Txt Lang="en-GB" Txt="design and implement a simple PCB" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere og fejlfinde det designede kredsløb" />
+          <Txt Lang="en-GB" Txt="implement and debug the designed circuit" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende måleinstrumenter til at undersøge et kredsløbs funktion" />
+          <Txt Lang="en-GB" Txt="use measurement instruments to investigate circuit functionality" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fortolke udførte målinger i relation til kredsløbets funktionskrav" />
+          <Txt Lang="en-GB" Txt="explain measurements in relation to circuit function and function requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare funktion og virkemåde af opbyggede kredsløb skriftligt" />
+          <Txt Lang="en-GB" Txt="explain the circuit purpose and function in writing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="relatere opnåede resultater til kravspecifikation - skriftligt" />
+          <Txt Lang="en-GB" Txt="relate the achieved results to the requirement specification - in writing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere de opnåede resultater i poster" />
+          <Txt Lang="en-GB" Txt="Present the project results in poster" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:05.937" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

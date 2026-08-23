@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34343" Volume="2026/2027" University="dtu" LastUpdated="2026-04-29+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Mobile backhaul networks" />
+        <Title Lang="en-GB" Title="Mobile backhaul networks" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset er baseret på høj grad af selvstudie som ved specialkurser, med 4-6 seminarer fordelt over semesteret (dag og tid kan flyttes efter aftale mellem underviser og studerende)." />
+          <Schedule_Txt Lang="en-GB" Txt="Course is based on a large degree of selfstudy as for specialcourses, with 4-6 seminars distributed over the semester (day and time can be moved by agreement between teacher and student)" />
+          <Schedule ScheduleKey="F7" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="5643" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Dittmann</FamilyName>
+            <Email>ladit@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen (20 min) uden forberedelse, hvor den studerende dels trækker et emne som skal afdækkes og dels et konkret problem, hvor en løsning skal beskrives.  &#xD;&#xA;Obligatoriske rapport (vægt: 30%) og eksamen i emner og problemløsninger (vægt: 70%) (begge dele skal indivuduelt beståes). Aflevering af rapport før eksamen er obligatorisk for at kunne gå til eksamen:" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral examination (20 min) without preparation time, where the student will draw both a topic to be covered and a specific problem, where a solution must be outlined. &#xD;&#xA;Mandatory report (weight: 30%) and exam based on topics and problems from course (weight: 70%) (both part must be passed to pass the course).&#xD;&#xA;Submission of report is mandatory in order to go for the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Mobile backhaul net: 
+Topologier, trådløse- og trådede backhaul teknologier, kapacitet, belastning og dimensionering, fronthaul og backhaul, mobile access- og aggregation net, synkronisering, pålidelighed, Quality of service, sikkerhed. Protokoller, protokolstakke og protokol overhead. 
+LTE/LTE-A/5G mobil radio access (5G multi RIT):
+Dækning og kapacitet. Macro/micro/pico/femto celler. Specielle antenner, remote radio heads, cloud-RAN og open-RAN. Teknikker til at minimere interferens.</Contents>
+          <Teaching_And_Learning_Methods>6 workshops med forelæsninger og problem opgaver. Projektarbejde med obligatorisk rapport aflevering og mundtlig fremlæggelse/eksamen ved kursets afslutning, hvor både rapport og et antal problemløsninger vil indgå i bedømmelsen.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende en detaljeret viden om mobile kommunikationssystemer. Dette kursus bygger på den viden, der er opnået i kurset 34330 “Introduktion til mobilkommunikation”, men fokus her er på backhaul nettet, altså, det net, der forbinder basestationer med backbone- og Internettet. Desuden vil videregående emner i mobil radio access blive behandlet.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Mobile backhaul networks: 
+Topologies, wire-less and wire-line backhaul technologies, capacity, load and dimensioning, fronthaul and backhaul, mobile access and aggregation networks, synchronization, resilience, Quality of service, security. Protocols, protocol stacks and protocol overheads. 
+LTE/LTE-A/5G mobile network radio access (5G multi RIT):
+Providing coverage and capacity. Macro/micro/pico/femto cells. Special antennas, remote radio heads, cloud-RAN and open-RAN. Interference mitigation techniques.</Contents>
+          <Teaching_And_Learning_Methods>6 workshops with lectures and problem solvings. Projectwork with report and oral presentation/exam by the end of the course, where both report work  and a number of problemsolving (questions in curriculum) with be included in the assessment</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the students a detailed knowledge of modern mobile communication systems. This course builds on the knowledge acquired in 34330 “Introduction to mobile communication”, but the focus here is on the backhaul network, i.e., the network connecting the base stations to the core network and the Internet. Also more advanced topics in the radio access network will be covered.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere krav til mobile backhaul net og vurdere backhauls indflydelse på dækning og kapacitet " />
+          <Txt Lang="en-GB" Txt="Evaluate requirements to mobile backhaul networks and assess the backhaul’s impact on coverage and capacity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille designkriterier i forbindelse med udrulning af mobile net " />
+          <Txt Lang="en-GB" Txt="Define design criteria for mobile network deployments " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe backhaul net (dimensionereing og valg af teknologi)" />
+          <Txt Lang="en-GB" Txt="Design backhaul networks (dimensioning and choice of technology)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere belastnings- og kapacitetskrav i mobile net og udføre dimensionering of mobile backhaul net på basis heraf " />
+          <Txt Lang="en-GB" Txt="Estimate load and capacity requirements in mobile networks and based upon this carry out dimensioning of mobile backhaul" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille krav til synkronisering, pålidelighed og security " />
+          <Txt Lang="en-GB" Txt="Define requirements to synchronization, resilience and security " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for hvordan protokoller, kapacitet and teknologier har indflydelse på mobile applikationer " />
+          <Txt Lang="en-GB" Txt="Explain how protocols, capacity and technologies impact mobile applications " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe backhaul til specielle anvendelser, f.eks. small-cells, relays, intercelle-koordinering og Cloud-RAN" />
+          <Txt Lang="en-GB" Txt=" Design backhaul for special applications, e.g., small-cells, relays, inter cell coordination and Cloud-RAN" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Følge med i videregående litteratur indenfor mobilkommunikation " />
+          <Txt Lang="en-GB" Txt="Comprehend advanced literature in the field of mobile communication" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34330" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Backhaul networks for mobile communication systems</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:14.187" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

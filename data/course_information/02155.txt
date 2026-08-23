@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02155" University="dtu" LastUpdated="2026-03-23+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Computerarkitektur" />
+        <Title Lang="en-GB" Title="Computer Architecture and Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="16242" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Matthias Bo</GivenName>
+            <FamilyName>Stuart</FamilyName>
+            <Email>mbst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Godkendelse af obligatorisk opgave(r) og rapporte(r) er en forudsætning for deltagelse i eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Approval of mandatory assignment(s) and report(s) is a prerequisite for examination" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion af maskinstruktur og instruktionssæt. Intern struktur af processoren i en moderne RISC-computer (kontrolenhed, beregningsenhed og pipelining). Samspil mellem maskinstruktur og instruktionssæt. Lagerhierarkier og lageradministration (cache teknikker og virtual memory teknikker). Orientering om bussystemer og ydre enheder. Orientering om nye arkitekturer, som i dag typisk udnytter flere former for parallelisme. 
+ 
+Sideløbende med forelæsningerne arbejdes den med opgaver og øvelser og der udføres an afsluttende projektopgave. Projektopgaven kan f.eks. bestå i at analysere og optimere et programs køretid under hensyntagen til processorens pipelinestruktur og lagerhierarki ved hjælp af simuleringsværktøjer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektopgave</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne en dyberegående hardwarenær viden om og forståelse af en computers funktion og interne struktur, en tilhørende viden om og forståelse af de forhold som påvirker køretiden for programmer samt en forståelse for samspillet mellem hardware og software. Da processorer i dag indgår i alle former for elektronisk udstyr, er kurset relevant for såvel softwareudviklere som (elektro)ingeniører, der designer såkaldte indlejrede systemer, hvor det ofte er vigtigt at udnytte processorernes ressourcer bedst muligt for at optimere pris, hastighed eller energiforbrug.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Computer organization: Introduction to computer organization and instruction sets. Organization of the processor in a modern RISC-computer (control unit, data path, pipelining). The relationship between processor organization and instruction set. Buses and I/O units and between processor organization and operating systems. Memory hierarchies, cache memories and virtual memory. New architectures which exploit different forms of parallelism.
+
+In parallel with the lectures students work on problems and  exercises and towards the end of the course students work on a final small project. The project can for example be to analyze and optimize the runtime of a given program by considering the processors pipeline structure and memory hierarchy using a simulator.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the participants with in depth knowledge on computer organization, and an associated understanding of issues which influence the run-time of programs as well as an understanding of the interplay between hardware and software.
+
+Today processors are used in all forms of electronic equipment and hence the course is relevant for software developers as well as (electrical) engineers designing embedded systems where it is often important to make efficient use of the resources of the processor in order to optimize performance, cost or energy consumption</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til programmering og digitalelektronik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic skills in programming and digital electronics" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02132/02135/02139.(02100/02002/02003)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den interne struktur af en processor, herunder pipeline, cache lager, lagerhierarki, virtuelt lager, busser, etc." />
+          <Txt Lang="en-GB" Txt="Describe the internal structure of a processor, including pipeline, cache memory, memory hierarchy, virtual memory, buses, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare disse elementers funktion og forklare hvorledes de influerer på køretiden for programmer, og kompleksiteten (areal, hastighed, energiforbrug) af den underliggende hardware." />
+          <Txt Lang="en-GB" Txt="Explain the function of these elements and explain how they influence the runtime of programs, and the complexity of the underlying hardware (area, speed and energy)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende denne forståelse til at beregne og optimere køretiden af programmer; dels små specifikke programstumper og dels større programmer for hvilke der er fastlagt væsentlige nøgleparametre som, f.eks. cash-miss rates etc." />
+          <Txt Lang="en-GB" Txt="Apply this knowledge to calculate and optimize the run-time of programs; both small program fragments and large programs for which key parameters like cache-miss rates have been established." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare parametrene throughput og latenstid, og forklare deres indbyrdes sammenhæng." />
+          <Txt Lang="en-GB" Txt="Explain the parameters throughput and latency, and explain the relationship between these parameters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for hvorledes hardware (bl.a. teknologi og arkitektur) og software (bl.a. instruktionssæt, compiler og operativsystem) udgør et hele, og at interfacet mellem de to er et centralt element i ethvert system." />
+          <Txt Lang="en-GB" Txt="Explain how hardware (e.g. technology and architecture) and software (i.g. instruction set, compiler and operating system) forms a whole, and that the interface between the two is a key element in all systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give eksempler på tradeoffs og optimeringer der involverer både software og hardware." />
+          <Txt Lang="en-GB" Txt="Give examples of trade-off and optimizations involving both hardware and software " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for instruktionssæt-arkitekturen af en typisk processor. " />
+          <Txt Lang="en-GB" Txt="Explain the instruction set architecture of a typical processor. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere projektarbejde i form af en teknisk rapport, som henvender sig til en udenforstående fagfælle, og som overholder sædvanlige krav til form og indhold/abstraktionsniveau." />
+          <Txt Lang="en-GB" Txt="Document project work in the form of a technical report addressing engineers in the field. The report must conform to usual requirements to form, content and level of abstraction." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02155" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Computer Architecture Engineering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="02151" />
+        <PreviousCourse CourseCode="02200" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:47.96" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="MA263" Volume="2026/2027" University="dtu" LastUpdated="2026-08-14+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Eksperimentel og numerisk bestemmelse af skibsmodstand og fremdrivning" />
+        <Title Lang="en-GB" Title="Experimental and numerical methods for ship resistance and propulsion" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Undervisning udbydes på MARTEC, campus Frederikshavn, delvist via streaming" />
+          <LocationTxt Lang="en-GB" Txt="The course i taught at MARTEC, campus Frederikshavn, partially via streaming" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="83" University="DTU" Resources="10" KVL_Resources="100" />
+          <Ass_Dep UID="41" Resources="90" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="83" />
+        <Course_Responsible PersonKey="6371" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Harry Bradford</GivenName>
+            <FamilyName>Bingham</FamilyName>
+            <Email>hbbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="60432" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Robert William</GivenName>
+            <FamilyName>Read</FamilyName>
+            <Email>rrea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="71827" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mostafa</GivenName>
+            <FamilyName>Amini-Afshar</FamilyName>
+            <Email>maaf@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af en grupperapport og individuel mundtlig eksamen. Helhedsvurdering. Mundtlig eksamen sidste dag i kursusperioden." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of a group report and an individual oral exam. Overall assessment. Oral exam on the last day of the course period." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Eksperimentel og numerisk bestemmelse af modstand og fremdrivning i stille vand. Froude-skalering. Modelforsøg (ITTC-1978) til optimering af bulbstævn. Udarbejdelse af effektprognose på basis af modelforsøgene og bestemmelse af optimal kombination af motor og propeller (B-serie). Ved forsøgene lægges der vægt på, at de studerende er med i planlægnings-, opstillings-, udførelses- og analysefasen.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde, modelforsøg, simulering på computer.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte deltagerne i stand til at forudsige et skibs hydrodynamiske modstand ved brug af 
+modelforsøg, empiriske beregningsmetoder og numeriske simuleringer, samt at bruge disse forudsigelser til at specificere en optimal bulbstævn og et højeffektivt fremdriftssystem til skibet.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Experimental and computational methods to predict resistance and propulsion in calm water. Froude scaling. Resistance model tests (ITTC-1978) with optimization of a bulbous bow. Power prognosis on the basis of the model tests, and calculation of the optimum combination of main engine and propeller (B-series). It is emphasised that the students must take an active part in the planning, preparation, testing, and analysis of the model tests.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, model tests, computer simulations</Teaching_And_Learning_Methods>
+          <Course_Objectives>To train the participants to predict the hydrodynamic resistance of a ship using model tests, empirical calculation methods, and numerical simulations, and to use these predictions to specify an optimal bulbous bow and a highly-efficient propulsion system for the ship.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for de forudsætninger, der ligger til grund for modeller og beregninger i forbindelse med modstand og fremdrivning af skibe" />
+          <Txt Lang="en-GB" Txt="describe the assumptions associated with theoretical models and calculation methods associated with the resistance and propulsion of ships" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive teorien ved modelforsøg for modstand og fremdrivning (Froude-skalering)" />
+          <Txt Lang="en-GB" Txt="explain the theory behind model testing for resistance and propulsion (Froude scaling)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge og udføre modstandsforsøg med skibsmodeller" />
+          <Txt Lang="en-GB" Txt="organize and execute a series of ship model tests" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre omregning fra model- til fuldskala efter ITTC-1978 eller tilsvarende metode" />
+          <Txt Lang="en-GB" Txt="perform calculations that transform data from model to full scale by ITTC-1978 or a similar procedure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne og vurdere strømningen, inklusiv bølgedannelse, omkring et skib ved brug af kommerciel software" />
+          <Txt Lang="en-GB" Txt="calculate and assess the flow, including the generated wave system, around the ship with commercial software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive virkemåden af skibspropellere og forklare brugen af propellerdiagrammer for f. eks. B-serie-propellerne" />
+          <Txt Lang="en-GB" Txt="describe the function of ship propellers, and explain the use of propeller diagrams (for instance the B-series propellers)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende propellerdiagrammer i beregninger og herved udtage en optimal propeller" />
+          <Txt Lang="en-GB" Txt="apply propeller diagrams to identify an optimum propeller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gøre rede for vekselvirkningen mellem skib, propeller og hovedmotor" />
+          <Txt Lang="en-GB" Txt="explain the interaction between ship, propeller, and main engine" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme hovedmotoren, der passer bedst til skibet og propellen" />
+          <Txt Lang="en-GB" Txt="specify the propulsive main engine that performs best with the ship and its propeller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="samle forsøgs- og beregningsresultater i en teknisk rapport" />
+          <Txt Lang="en-GB" Txt="collect experimental and numerical results in a high-quality technical report " />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41201/41107" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Lære at beregne og måle skibsmodstand og fremdrivning</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41263" />
+        <PreviousCourse CourseCode="41263" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-08-14" Time="13:43:21.503" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

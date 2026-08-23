@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42586" Volume="2026/2027" University="dtu" LastUpdated="2026-05-06+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Beslutninger under usikkerhed" />
+        <Title Lang="en-GB" Title="Decisions under uncertainty" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="220916" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Fabricio</GivenName>
+            <FamilyName>Oliveira</FamilyName>
+            <Email>fabol@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6509" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Thomas Jacob Riis</GivenName>
+            <FamilyName>Stidsen</FamilyName>
+            <Email>thst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren er baseret på en skriftelig eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is given based on the evaluation of a written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Studerende vil blive introduceret til kvantitative metoder til beslutnings støtte for problemer med usikre data. Disse metoder inkludere beslutnings analyse, markov kæder, simulering og stokastisk programmering</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>kursus noter, slides, øvelser og diverse udleverede noter.</Course_Literature>
+          <Course_Objectives>At give den studerende både teoretisk og praktisk forståelse for hvordan beslutnings problemer med usikre data kan håndterers.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Students will be introduced to different quantitative methods for decision problems characterised by uncertain information. These methods include decision analysis, Markov chains, simulation, and stochastic programming.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>course notes, slides, exercises, and selected references provided.</Course_Literature>
+          <Course_Objectives>To provide students with both a theoretical and practical understanding of how to deal with decision problems characterized by uncertain information.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="-" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Introduction to Operations Research (42101); Introduction to Statistics (02402). A critical prerequisite to the course is basic programming skills (preferably in Julia language)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42101/02402" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="-" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Computer Programming (02002)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere et beslutnings problem, identificere usikre data og forstå hvilken effekt det har på beslutningstagningen" />
+          <Txt Lang="en-GB" Txt="Analyse a decision problem to point out uncertainties and understand what effect these uncertainties have on the decision-making" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan forskellige metoder til at håndtere usikre data kan anvendes" />
+          <Txt Lang="en-GB" Txt="Describe the procedure in each of the presented methods for decision making based on uncertain information" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere de beskrevne metoder og anvende dem" />
+          <Txt Lang="en-GB" Txt="Design and utilise computational tools to employ the presented methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe computer experimenter til at validere model valg for et beslutnings problem med usikkerhed " />
+          <Txt Lang="en-GB" Txt="Design computational experiments for validating modelling choices for the decision making problem and relevant uncertainties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende de beskrevne metoder på specifikke beslutning problemer med usikre data" />
+          <Txt Lang="en-GB" Txt="Apply the presented methods on a specific decision problem characterised by uncertain information" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan de forskellige metoder kan komplementere hinanden" />
+          <Txt Lang="en-GB" Txt="Explain how the different methods can complement one another to gain further insight" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne de forskellige metoder indenfor beslutningstagning baseret på usikre data fra et kvantitativt synspunkt" />
+          <Txt Lang="en-GB" Txt="Contrast alternative methods for representing uncertainty in decision making from a quantitative standpoint" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anbefale, med argumenter, hvilken metode der bedst kan bruges til beslutnings støtte for et problem med usikre data " />
+          <Txt Lang="en-GB" Txt="Deduce recommendation based on the application of the presented methods for decision problems characterised by uncertain information" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>beslutningstagning under usikkerhed</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-18" Time="16:36:22.597" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

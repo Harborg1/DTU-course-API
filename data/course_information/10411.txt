@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10411" Volume="2026/2027" University="dtu" LastUpdated="2026-04-23+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Atomreaktorfysik" />
+        <Title Lang="en-GB" Title="Nuclear reactor physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="38572" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Bent</GivenName>
+            <FamilyName>Lauritzen</FamilyName>
+            <Email>blau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="142307" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Amalia</GivenName>
+            <FamilyName>Chambon</FamilyName>
+            <Email>amacha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen, opgaver og rapporter.&#xD;&#xA;Helhedsvurdering baseret på skriftlig eksamen (ca. 80%) og evaluering af rapporter, fremlæggelser og opgaver (ca. 20%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination, assignments and reports.&#xD;&#xA;Overall assessment based on written exam (approx. 80%), and evaluation of reports, presentations and assignments (approx. 20%)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Relevant formulas will be provided" />
+            <Aid_Txt Lang="da-DK" Txt="Relevante formler vil blive udleveret" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kernemodeller, kernereaktioner og energiforhold, radioaktivitet, strålingstransport og -vekselvirkning, fissionsreaktorer, reaktordynamik og kontrol, reaktorfysikberegninger, kraftreaktorer, Monte Carlo-simulering af simpel reaktormodel.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, regneøvelser, journal club, Monte Carlo simulering af atomreaktormodel</Teaching_And_Learning_Methods>
+          <Course_Literature>Fundamentals of Nuclear Science and Engineering (J. Kenneth Shultis and Richard E. Faw, 2007: Ch. 3, 4, 5, 6, 7, 9, 10, 11) supplemented by notes on neutron transport theory.</Course_Literature>
+          <Course_Objectives>Kurset giver en introduktion til reaktorfysik og atomkraftteknologi. Kurset giver det teoretiske grundlag for reaktordynamik og kontrol og inkluderer Monte Carlo-simulering af en simpel reaktormodel. Vi diskuterer eksisterende og næste generation atomkraftreaktorer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Nuclear models, energetics and reactions, radioactivity, radiation transport and interactions, principles of nuclear reactors, reactor dynamics and control, reactor physics calculations, nuclear power reactors, Monte Carlo simulation of a simplified reactor model.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, journal club, Monte Carlo simulations of a nuclear reactor model</Teaching_And_Learning_Methods>
+          <Course_Literature>Fundamentals of Nuclear Science and Engineering (J. Kenneth Shultis and Richard E. Faw, 2007: Ch. 3, 4, 5, 6, 7, 9, 10, 11) samt noter om neutrontransportteori.</Course_Literature>
+          <Course_Objectives>The course aims at introducing the student to the fundamentals of nuclear reactor physics and nuclear power generation. The course provides the theoretical foundation for understanding nuclear reactor dynamics and control and includes Monte Carlo simulation of a simplified reactor model. We discuss current and the next generation of nuclear power reactors.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Basale kvantemekaniske koncepter og/eller atommodellen, f.eks. fra kursus 10080 eller ækvivalente kurser. Som et alternativ vil kapitel 1 og 2 i Fundamentals of Nuclear Science and Engineering (J. Kenneth Shultis and Richard E. Faw, 2007) give et godt grundlag for kurset." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic quantum mechanics concepts and/or the atomic model, e.g. from course 10080 or equivalent. As an alternative, Chapters 1 and 2 in Fundamentals of Nuclear Science and Engineering (J. Kenneth Shultis and Richard E. Faw, 2007) will provide a good basis for the course." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive ”liquid drop” modellen og skalmodellen for atomkerner" />
+          <Txt Lang="en-GB" Txt="Describe the nuclear liquid drop and nuclear shell models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare nukleare energiforhold og bindingsenergier" />
+          <Txt Lang="en-GB" Txt="Explain nuclear energetics and nuclear binding energies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive neutronvekselvirkninger og fissionsprocesser" />
+          <Txt Lang="en-GB" Txt="Describe neutron interactions and the fission process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare neutroners livscyklus i fissionsreaktorer" />
+          <Txt Lang="en-GB" Txt="Explain neutron life cycles in fission reactors " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere grundlæggende principper og design af fissionsreaktorer" />
+          <Txt Lang="en-GB" Txt="Analyze basic fission reactor principles and design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for seks-faktor formlen og betydningen af forsinkede neutroner" />
+          <Txt Lang="en-GB" Txt="Account for the six-factor formula and the role of delayed neutrons" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for feedbackmekanismer for reaktivitet" />
+          <Txt Lang="en-GB" Txt="Account for reactivity feedback mechanisms " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere effekten af neutrongifte på kernereaktorers dynamik" />
+          <Txt Lang="en-GB" Txt="Analyze the effect of neutron poisons on reactor dynamics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede og løse neutrondiffusionsligninger for fissile medier" />
+          <Txt Lang="en-GB" Txt="Derive and solve neutron diffusion equations for fissile media" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Monte Carlo metoder til simulering af en stationær reaktor" />
+          <Txt Lang="en-GB" Txt="Apply Monte Carlo techniques to a steady state reactor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for 3. og 4. generations kraftreaktorer" />
+          <Txt Lang="en-GB" Txt="Account for Generation III and IV nuclear power reactors" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:21.677" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

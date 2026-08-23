@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62237" Volume="2026/2027" University="dtu" LastUpdated="2026-05-28+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Industriel Programmering" />
+        <Title Lang="en-GB" Title="Industrial Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="178698" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mehdi</GivenName>
+            <FamilyName>Savaghebi</FamilyName>
+            <Email>medi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="213063" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Gökçe</GivenName>
+            <FamilyName>Aydos</FamilyName>
+            <Email>gokay@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen afholdes i grupper og er baseret på video demonstration, præsentation og rapport.&#xD;&#xA;&#xD;&#xA;Afleveringer af opgaver er obligatoriske for eksamensadgang." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The oral exam is conducted in groups and is based on a video demonstration, a presentation, and the report.&#xD;&#xA;&#xD;&#xA;Submission of assignments are mandatory for exam admission." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Værktøjer: Du bruger VS Code / JetBrains Rider til at udvikle dine programmer samt GitLab til at føre en dagbog over din kode, dele dit arbejde med andre og organisere dit projekt med issue boards.
+• Metoder til at specificere og afgrænse et produkt: as-is/to-be analyse, in-scope/out-of-scope, use cases, flowcharts, UML, brugergrænsefladeskitser.
+• Python Programstruktur, syntaks, variabler, datatyper, operatorer: Du lærer, hvordan et program er opbygget, og hvordan du arbejder med data og beregninger.
+• Programkontrol: Du vælger kontrolstrukturer som `if-else`, `switch` og `for`/ while` løkker til at lade programmet tage beslutninger og gentage processer.
+• Funktioner: Du genbruger kode uden copy-paste og skriver kode der beregner eller behandler data forskelligt afhængigt af hvad du sender ind, fx en funktion der beregner arealet af forskellige former.
+• Arrays: Du samler data af samme type, fx en liste af temperaturer eller karakterer, i stedet for at bruge en variabel per værdi.
+• Objektorienteret programmering (OOP): Du lærer hvordan du organiserer kode i klasser og objekter, som samarbejder om at løse en opgave.
+• Databaser: Industrielle procesdata lagres ofte i databaser, hvorfra den kan hentes, behandles og analyseres i andre dele af virksomhedens systemer, fx til overvågning og rapportering.
+• Brugergrænsefladeprogrammering: Du laver grafiske desktop-brugerflader til dine programmer med fx Qt.
+• Robotarmprogrammering: Du programmerer en Universal Robot cobot for at automatisere en industriel opgave.
+• AI-assisteret programmering: Efter du har lært det fundamentale, prøver du at udvikle med AI som hjælper. Du specificerer krav og skriver tests og gentager processen indtil kravene er opfyldt.</Contents>
+          <Teaching_And_Learning_Methods>Du arbejder med problemer og opgaver, som bliver bygningsstenene til dit gruppeprojekt og din rapport. Teorien forbereder du hjemmefra og udvikler videre i selve undervisningen.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Ud fra analyse og forståelse af et praktisk problems kontekst og domæne, kan du formulere krav til softwareløsninger for industriel automation samt anvende grundlæggende programmeringsprincipper og AI-understøttede udviklingsværktøjer til at beskrive, tilpasse og teste løsningen.</Course_Objectives>
+          <Remark>Energy Technology and Computer Science 
+Global business og teknologi:  5. Semester
+
+En del af undervisningen kan foregå på engelsk.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Tools: You use VS Code / JetBrains Rider to develop your programs, and GitLab to maintain a log of your code, share your work with others and organise your project using issue boards.
+• Methods for specifying and delimiting a product: as‑is/to‑be analysis, in‑scope/out‑of‑scope, use cases, flowcharts, UML and user interface sketches.
+• Python program structure, syntax, variables, data types and operators: You learn how a program is constructed and how to work with data and calculations.
+• Program control: You choose control structures such as if‑else, switch, and for/while loops to enable the program to make decisions and repeat processes.
+• Functions: You reuse code without copy‑paste and write code that calculates or processes data differently depending on the input, e.g., a function that calculates the area of different shapes.
+• Arrays: You collect data of the same type, for example a list of temperatures or grades, instead of using one variable per value.
+• Object‑oriented programming (OOP): You learn how to organise code into classes and objects that collaborate to solve a task.
+• Databases: Industrial process data is often stored in databases, from which it can be retrieved, processed and analysed in other parts of the company’s systems, e.g., for monitoring and reporting.
+• User interface programming: You create graphical desktop user interfaces for your programs using, e.g., Qt.
+• Robot arm programming: You program a Universal Robot cobot to automate an industrial task.
+• AI‑assisted programming: After learning the fundamentals, you begin developing with AI as your assistant. You specify requirements, write tests and iterate until the requirements are met.</Contents>
+          <Teaching_And_Learning_Methods>You work with problems and assignments that become the building blocks for your group project and report. You prepare the theory at home and further develop it during the lessons.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Based on the analysis and understanding of the context and domain of a practical problem, you can formulate requirements for software solutions in industrial automation and apply fundamental programming principles and AI‑assisted development tools to describe, adapt and test the solution.</Course_Objectives>
+          <Remark>Energy Technology and Computer Science 
+Global business og teknologi:  5. Semester
+
+Part of the teaching may be in English.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og afgrænse en praktisk og fysisk proces, med henblik på implementering af en løsning ved brug af industriel automation." />
+          <Txt Lang="en-GB" Txt="Identify and delimit a practical and physical process with the purpose of implementing a solution using industrial automation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe, udvikle og demonstrere en samlet løsning på en praktisk industriel opgave ved at kombinere programmering med relevante teknologier inden for industriel automation." />
+          <Txt Lang="en-GB" Txt="Design, develop and demonstrate a complete solution to a practical industrial task by combining programming with relevant technologies within industrial automation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsætte og anvende et relevant udviklingsmiljø." />
+          <Txt Lang="en-GB" Txt="Set up and use an appropriate development environment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere kode i et Git-repository og anvende grundlæggende arbejdsgange som init, add og commit." />
+          <Txt Lang="en-GB" Txt="Organise code in a Git repository and use basic workflows such as init, add and commit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualisere programlogik og relation mellem forskellige softwarekomponenter med diagrammer for at planlægge en løsning." />
+          <Txt Lang="en-GB" Txt="Visualise program logic and relationships between software components using diagrams to plan a solution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og forklare grundlæggende programmeringskoncepter, herunder programstruktur, syntaks, datatyper, variabler, operatorer." />
+          <Txt Lang="en-GB" Txt="Identify and explain fundamental programming concepts, including program structure, syntax, data types, variables and operators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende programmeringsprincipper til at strukturere, tilpasse og videreudvikle softwarekomponenter." />
+          <Txt Lang="en-GB" Txt="Apply fundamental programming principles to structure, adapt and further develop software components." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende debugging-værktøjer til at analysere og fejlfinde fejl i industriel software." />
+          <Txt Lang="en-GB" Txt="Use debugging tools to analyse and troubleshoot errors in industrial software." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende en database for at gemme og hente industrielle procesdata." />
+          <Txt Lang="en-GB" Txt="Use a database to store and retrieve industrial process data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere et grundlæggende kontrolprogram for en industriel robot ." />
+          <Txt Lang="en-GB" Txt="Implement a basic control program for an industrial robot." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende aspekter som menneskecentreret automation, massetilpasning, dataopsamling, brugervenlighed, cyber-, person-, datasikkerhed (fortrolighed) og robusthed, som ofte forbindes med Industry 4.0 og 5.0." />
+          <Txt Lang="en-GB" Txt="Apply aspects such as human‑centred automation, mass customisation, data collection, usability, cyber‑, personal‑ and data security (confidentiality), and robustness, which are often associated with Industry 4.0 and 5.0." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende AI-understøttede udviklingsværktøjer til at generere, vurdere og tilpasse kode på baggrund af krav og test." />
+          <Txt Lang="en-GB" Txt="Use AI‑assisted development tools to generate, evaluate and adapt code based on requirements and tests." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://industrial-programming.aydos.de" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Industriel Programmering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="62236" />
+        <PreviousCourse CourseCode="62234" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-29" Time="09:15:26.533" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42189" Volume="2026/2027" University="dtu" LastUpdated="2026-03-23+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Analyse af transportsystemer" />
+        <Title Lang="en-GB" Title="Transport System Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="134225" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Carlos M. Lima</GivenName>
+            <FamilyName>Azevedo</FamilyName>
+            <Email>climaz@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="31592" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Thomas Kjær</GivenName>
+            <FamilyName>Rasmussen</FamilyName>
+            <Email>tkra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="157085" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ravi</GivenName>
+            <FamilyName>Seshadri</FamilyName>
+            <Email>ravse@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="23491" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Stefan Eriksen</GivenName>
+            <FamilyName>Mabit</FamilyName>
+            <Email>smab@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Tre gruppeopgaver afleveres og evalueres i løbet af kurset. En mundtlig eksamen vurderer den enkelte studerendes forståelse af øvelserne og kursets indhold. Opgaverne og den mundtlige eksamen skal være godkendt for at kunne opnå en endelig karakter. Afslutningsvis gives en samlet karakter på baggrund af både opgaverne og den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Three hand-in group assignments are evaluated throughout the course. An oral exam tests each student's understanding of the exercises and course content. Assignments and Oral Exam must be approved as a condition for receiving a final grade. An overall grade is given based on the assignments and the oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset dækker kvantitative metoder, der kan anvendes til at løse problemer inden for transportmodellering, og er bygget op omkring tre indbyrdes forbundne moduler: efterspørgsel, udbud og interaktioner mellem disse. Inden for efterspørgselsmodellering fokuserer kurset på statistiske og matematiske metoder, især regression, diskrete valgmodeller, iterativ proportional fitting til matrixestimering samt gravitationsmodeller.
+I relation til udbud fokuseres der på transportsystemets ydeevne, beskrivelse af trafikstrømme (traffic flow theory), netværksmodellering og køteori. I forhold til interaktioner fokuseres på ligevægtsmodeller og beregning af trafikmængder. Ud over at introducere grundlæggende principper, anvendes adskillige case-studier. Undervisningen foretages på en interaktiv måde med en blanding af forelæsninger og praktiske øvelser, der anvender et interaktivt notebook-miljø. Kendskab til kodning er ikke et krav, selvom nogle øvelser vil anvende Python.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelsestimer, læsning af litteratur og problemløsning.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kapitler fra:
+Victor Knoop (2018). Introduction to Traffic Flow Theory – An introduction with exercises. TUDelft, ISBN: 978-94-6366-062-4. Kan downloades fra https://victorknoop.eu/research/book/Knoop_Intro_traffic_flow_theory_edition2.pdf 
+Yosef Sheffi (1985). Urban Transportation Networks - Equilibrium Analysis with Mathematical Programming Methods. Prentice Hall, Inc, Englewood Cliffs, NJ. Kan downloades fra http://web.mit.edu/sheffi/www/selectedMedia/sheffi_urban_trans_networks.pdf
+Rich, J. and Mabit, S. (2021) Transport Models – From Theory to Practice.
+
+Yderligere materiale (f.eks. noter eller kapitler fra øvrige bøger) deles på DTU Learn.</Course_Literature>
+          <Course_Objectives>Kurset handler om at forstå og analysere transportsystemer. Undervisningen dækker centrale matematiske metoder, der bruges til at modellere efterspørgsel og udbud i komplekse mobilitetssystemer. Anvendelser og opgaver omhandler et bredt spektrum af både traditionelle og nye transportformer både fra et erhvervs- og samfundsmæssigt perspektiv.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers quantitative methods that can be used to solve problems within transport modelling, and is built around 3 interconnected modules: demand (D), supply (S) and DS interactions. Related to demand modelling, the course focuses on statistical and mathematical methods, especially regression, discrete choice models, iterative proportional fitting in matrix estimation, and gravitation models.
+Related to supply we focus on the performance of transport networks, traffic flow theory, network modelling and queueing. Finally, within demand-supply interactions we will focus on equilibrium analysis and traffic assignment. In addition to introducing the underlying fundamentals, the course will include numerous case-studies from different transportation settings. The classes are taught in an interactive manner, with theoretical parts combined with hands-on exercises using an interactive notebook environment. Knowledge of coding is not a must, although some exercises will be presented in Python.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercise classes, reading the literature, and problem solving.</Teaching_And_Learning_Methods>
+          <Course_Literature>Chapters from:
+Victor Knoop (2018). Introduction to Traffic Flow Theory – An introduction with exercises. TUDelft, ISBN: 978-94-6366-062-4. Can be downloaded from https://victorknoop.eu/research/book/Knoop_Intro_traffic_flow_theory_edition2.pdf 
+Yosef Sheffi (1985). Urban Transportation Networks - Equilibrium Analysis with Mathematical Programming Methods. Prentice Hall, Inc, Englewood Cliffs, NJ. Can be downloaded from http://web.mit.edu/sheffi/www/selectedMedia/sheffi_urban_trans_networks.pdf
+Rich, J. and Mabit, S. (2021) Transport Models – From Theory to Practice.
+
+Additional material (e.g.: notes or chapters from other books) will be shared on DTU Learn for selected lectures.</Course_Literature>
+          <Course_Objectives>This course is about understanding and being able to analyse transport systems. Students will gain knowledge on key mathematical methods used to model travel demand and supply in complex mobility systems. 
+Applications encompass a wide range of traditional and emerging modes of transport, covering both private and public perspectives.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Basal statistik/sandssynlighedsregning; basal calculus (02323 / 02402 / 02403 eller lignende; 01901 / 01920 eller lignende)" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Basic statistics/probability theory.; Basic calculus (02323 / 02402 / 02403 or similar courses; 01901/01920 or similar courses)" />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de grundlæggende teknikker og aggregeringsniveauer, der anvendes til modellering af transportsystemer" />
+          <Txt Lang="en-GB" Txt="Describe fundamental techniques and aggregation levels for modelling transport systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende turgenerations- og turfordelingsmodeller" />
+          <Txt Lang="en-GB" Txt="Formulate and apply models for generation and distribution of travel" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere transportmiddelvalg ved hjælp af logit- og nestede logit-modeller" />
+          <Txt Lang="en-GB" Txt="Analyse travel mode choice using logit and nested logit models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og validere en efterspørgselsmodel til at analysere transportsystemer" />
+          <Txt Lang="en-GB" Txt="Apply and validate a demand model for transport analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og vurdere forskellige modeller brugt til at evaluere transportsystemers ydeevne" />
+          <Txt Lang="en-GB" Txt="Apply and assess different models to evaluate the performance of transport systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere, analysere og argumentere for styrker og svagheder ved forskellige modelleringsmetoder og algoritmer til assignment af trafik" />
+          <Txt Lang="en-GB" Txt="Implement, analyse and argue the strengths and weaknesses of different modelling and solution methods to solve traffic assignment problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare strukturen af transportmodeller samt diskutere diverse feedbackmekanismer" />
+          <Txt Lang="en-GB" Txt="Explain the structure of transport models and discuss feedback mechanisms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende en transportmodel til at vurdere effekterne af nye projekter" />
+          <Txt Lang="en-GB" Txt="Formulate and apply a combined transport model to evaluate the impacts of potential policies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge matematisk software til at analysere transportsystemer og -netværk" />
+          <Txt Lang="en-GB" Txt="Use mathematical software for the analysis of transport systems and network performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fremlægge fokuserede og koncise analyser af transportsystemer skriftligt" />
+          <Txt Lang="en-GB" Txt="Present focused and concise transport system analyses in writing" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til modellering af transportsystemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="10" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:59.003" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

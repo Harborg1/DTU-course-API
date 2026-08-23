@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30970" University="dtu" LastUpdated="2025-03-27+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Space" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Videregående mikrobølge og højhastighed integreret kredsløb" />
+        <Title Lang="en-GB" Title="Advanced microwave and high-speed integrated circuits" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="6153" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Tom Keinicke</GivenName>
+            <FamilyName>Johansen</FamilyName>
+            <Email>tkj@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="The evaluation will be based on the review (accept/reject) of a scientic article undergoing an internal review process." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation will be based on the review (accept/reject) of a scientic article undergoing an internal review process." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_PROFESSOR" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>The content of the course is covering the following areas: physical structure and operation of high-frequency semiconductor devices, large-signal and small-signal semiconductor device modelling, nonlinear circuit analysis, passive and active integrated devices, microwave monolithic integrated circuit design, large-signal operation of amplifiers, oscillators, multipliers and mixers for millimeter-wave and terahertz systems.</Contents>
+          <Teaching_And_Learning_Methods>The course is organized around special problems to be solved by the participants. Appropriate lectures on the fundamentals will be given. The participants of the course report on their results at regular meetings with all other participants. To pass the course the participants should dissiminate their results in the form of a scientific article subject to an internal review process.</Teaching_And_Learning_Methods>
+          <Course_Literature>Helpful but not mandatory literature is: 
+1. S. Marsh, Practical MMIC Design, Artech House, 2006.
+2. S. Maas, Nonlinear Microwave and RF circuits, Artech House, 2nd Edition.
+3. S. M. Sze and Kwok K. Ng, Physics of Semiconductor Devices, Wiley Interscience, 3rd Edition, 2007.
+4. S. Voinignescu, High Frequency Integrated Circuits, Wiley, 2013
+
+Further material will be provided in Form of scientific articles and monographs.</Course_Literature>
+          <Course_Objectives>The aim of the course is to present to participants recent advances in the field of high-speed, microwave, and terahertz integrated electronics. The course will enable the participants to evaluate current limitations in high-frequency semiconductor devices and to develop or refine large-signal and small-signal circuits operating up to terahertz frequencies. The participants of the course will be introduced to advanced design techniques for Monolithic Microwave Integrated Circuits (MMICs) based on nonlinear circuit analysis and electromagnetic simulations. Furthermore, the participants will also be introduced to high-speed integrated circuit design for optical communication receivers. Finally, the participants will improve their scientific dissimination skills by giving presentations and preparing scientific articles.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The content of the course is covering the following areas: physical structure and operation of high-frequency semiconductor devices, large-signal and small-signal semiconductor device modelling, nonlinear circuit analysis, passive and active integrated devices, microwave monolithic integrated circuit design, large-signal operation of amplifiers, oscillators, multipliers and mixers for millimeter-wave and terahertz systems.</Contents>
+          <Teaching_And_Learning_Methods>The course is organized around special problems to be solved by the participants. Appropriate lectures on the fundamentals will be given. The participants of the course report on their results at regular meetings with all other participants. To pass the course the participants should dissiminate their results in the form of a scientific article subject to an internal review process.</Teaching_And_Learning_Methods>
+          <Course_Literature>Helpful but not mandatory literature is: 
+1. S. Marsh, Practical MMIC Design, Artech House, 2006.
+2. S. Maas, Nonlinear Microwave and RF circuits, Artech House, 2nd Edition.
+3. S. M. Sze and Kwok K. Ng, Physics of Semiconductor Devices, Wiley Interscience, 3rd Edition, 2007.
+4. S. Voinignescu, High Frequency Integrated Circuits, Wiley, 2013
+
+Further material will be provided in Form of scientific articles and monographs.</Course_Literature>
+          <Course_Objectives>The aim of the course is to present to participants recent advances in the field of high-speed, microwave, and terahertz integrated electronics. The course will enable the participants to evaluate current limitations in high-frequency semiconductor devices and to develop or refine large-signal and small-signal circuits operating up to terahertz frequencies. The participants of the course will be introduced to advanced design techniques for Monolithic Microwave Integrated Circuits (MMICs) based on nonlinear circuit analysis and electromagnetic simulations. Furthermore, the participants will also be introduced to high-speed integrated circuit design for optical communication receivers. Finally, the participants will improve their scientific dissimination skills by giving presentations and preparing scientific articles.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="This course is for PhD students or late Master students with a confirmed interest in specializing in the field of high-frequency integrated circuits. It assumes an extensive knowledge in microwave technologies and RF circuit design. Furthermore, it is assumed that participants are familiar with basic concepts from electromagnetics. The course also assumes basic knowledge in the physics of semiconductor devices." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="This course is for PhD students or late Master students with a confirmed interest in specializing in the field of high-frequency integrated circuits. It assumes an extensive knowledge in microwave technologies and RF circuit design. Furthermore, it is assumed that participants are familiar with basic concepts from electromagnetics. The course also assumes basic knowledge in the physics of semiconductor devices." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30421" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze semiconductor device models in Si and III-V technologies" />
+          <Txt Lang="en-GB" Txt="Analyze semiconductor device models in Si and III-V technologies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Extract small-signal model parameters of modern high-frequency devices" />
+          <Txt Lang="en-GB" Txt="Extract small-signal model parameters of modern high-frequency devices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Develop and/or refine large-signal models incl. thermal effects" />
+          <Txt Lang="en-GB" Txt="Develop and/or refine large-signal models incl. thermal effects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Develop equivalent circuit models for circuit discontinuities using electromagnetic simulation" />
+          <Txt Lang="en-GB" Txt="Develop equivalent circuit models for circuit discontinuities using electromagnetic simulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Use de-embedding techniques for electromagnetic simulations" />
+          <Txt Lang="en-GB" Txt="Use de-embedding techniques for electromagnetic simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze nonlinear circuits using harmonic-balance and analytical techniques" />
+          <Txt Lang="en-GB" Txt="Analyze nonlinear circuits using harmonic-balance and analytical techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design MMIC power amplifiers, oscillators, multipliers, and mixers" />
+          <Txt Lang="en-GB" Txt="Design of MMIC power amplifiers, oscillators, multipliers, and mixers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design broadband transimpedance amplifiers and laser drivers" />
+          <Txt Lang="en-GB" Txt="Design broadband transimpedance amplifiers and laser drivers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Prepare articles of state-of-the-art in relevant scientific areas" />
+          <Txt Lang="en-GB" Txt="Prepare articles of state-of-the-art in relevant scientific areas" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="31470" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="8" Min="2" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:30.447" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

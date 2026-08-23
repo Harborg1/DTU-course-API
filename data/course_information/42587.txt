@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42587" Volume="2026/2027" University="dtu" LastUpdated="2026-03-23+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Operations og Supply Chain Management" />
+        <Title Lang="en-GB" Title="Operations and Supply Chain Management" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="2787" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Allan</GivenName>
+            <FamilyName>Larsen</FamilyName>
+            <Email>alar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="219999" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lara</GivenName>
+            <FamilyName>Schilling</FamilyName>
+            <Email>larasc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="I løbet af kurset afleveres to-tre skriftlige gruppeopgaver, som alle skal godkendes for at den studerende kan deltage i den skriftlige eksamen. Den endelige karakter er baseret på den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="During the course, two to three written group assignments are given. These must all be approved in order for the student to participate in the written exam. The final grade is based on the written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Use of generative AI during the written exam is not allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Brug af generativ AI under den skriftlige eksamen er ikke tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Gennem kurset gennemgås de enkelte faglige problemstillinger og tilhørende løsningsmetoder inden for virksomhedernes primære aktiviteter. 
+Dette omfatter:
+-	Forsyningskæder og operations management eksemplificeret gennem læringsspillet ”The Beer Game” 
+-	Produktionsprocesser, layout af produktionssystemer og Business Process Management
+-	Kvalitets- og kapacitetsstyring
+-	Styring af indkøb
+-	Logistik
+-	Forecasting
+-	Sales and Operations Planning
+-	Lagerstyring
+-	Produktionsplanlægning
+
+Såvel de ugentlige øvelsesopgaver som de obligatoriske gruppeopgaver vil blive gennemført i regnearkssoftwaren Microsoft Excel og vil omfatte såvel grundlæggende datahåndtering som simple formeludtryk, visualisering (grafer og figurer) samt løsning af simple optimeringsproblemer ved hjælp af Microsoft Excel Solver.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Den primære litteratur er den nyeste udgave af bogen Bozarth &amp; Handfield: "Introduction to Operations &amp; Supply Chain Management", Pearson.</Course_Literature>
+          <Course_Objectives>Kursets mål er at introducere de studerende til de vigtigste planlægningsproblemer, som en virksomhed møder på tværs af forsyningskæden. Problemstillingerne og løsningsmetoderne omfatter såvel det strategiske, det taktiske som det operationelle planlægningsniveau. Kurset giver de studerende en introduktion til styring og ledelse af forsyningskæder (supply chain management) og til produktionsplanlægning. Kvantitative metoder baseret på f.eks. deskriptiv statistik og på matematisk optimering introduceres gennem øvelser, der løses ved brug af regneark. Kurset giver dermed de studerende den første berøring med business intelligence-begrebet og motiverer hermed senere kurser inden for business analytics.</Course_Objectives>
+          <DTU_Remark>Kurset udbydes ikke i efteråret 2026.</DTU_Remark>
+          <Remark>Kurset er tilrettelagt som et 1. semesterskursus særligt udviklet til de studerende på bachelorretningen ”data science og management”. Kurset er dog også velegnet som introduktion til fagområderne, ”industrial engineering”, ”operations management”, ”produktionsstyring” og ”supply chain management” for studerende på DTU's øvrige bachelorretninger.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>During the course, the planning problems and corresponding solution methods seen within the primary activities of a company will be discussed. These includes:
+- Supply chain management (SCM) and operations management (OM) are exemplified through the learning game "The Beer Game"
+- Production processes, the layout of production systems, and Business Process Management
+- Quality and capacity management
+- Management of supplies 
+- Logistics
+- Forecasting
+- Sales and Operations Planning
+- Inventory management
+- Production Planning
+
+The weekly exercises and the mandatory group assignments will be carried out using the Microsoft Excel spreadsheet software. These include basic data management and simple formula expressions, visualization (graphs and figures), and solving simple optimization problems using Microsoft Excel Solver.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Primary literature is the newest version of the text book by Bozarth &amp; Handfield: "Introduction to Operations &amp; Supply Chain Management", Pearson.</Course_Literature>
+          <Course_Objectives>The course aims to introduce the students to the most important planning problems that a company meets across the supply chain. The issues and solution methods treat the strategic, tactical, and operational planning levels. The course provides the students with an introduction to the management and management of supply chains and production planning. Quantitative methods based on e.g., descriptive statistics and mathematical optimization are introduced through exercises that are solved using spreadsheets. Thus, the course provides the students with the first touch of "business intelligence" concepts and motivates later studies within "business analytics."</Course_Objectives>
+          <DTU_Remark>The course will not be offered in Fall 2026.</DTU_Remark>
+          <Remark>The course is designed as a first-semester course specially developed for the students enrolled in the BSc program "data science and management". However, the course is also suitable as an introduction to the subject areas; "industrial engineering", "operations management", "production management" and "supply chain management" for students enrolled in DTU's other BSc programs.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og beskrive begreberne værdikæder, styring og ledelse af forsyningskæder (supply chain management) og ”operations management”" />
+          <Txt Lang="en-GB" Txt="Explain and describe the concepts of value chains, supply chain management and operations management" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og beskrive proces-begrebet i kontekst af produktionsplanlægning samt benytte metoder til business process mapping til at kortlægge processerne i en produktion med henblik på at forbedre effektiviteten" />
+          <Txt Lang="en-GB" Txt="Explain and describe the concept of processes in the context of production planning and use methods for business process mapping to map the processes in a production in order to improve efficiency" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begrebet kvalitet og benytte kvantitative metoder til kvalitetsstyring" />
+          <Txt Lang="en-GB" Txt="Explain the concept of quality and use quantitative methods of quality management" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begrebet kapacitet og benytte beslutningstræer til analyse" />
+          <Txt Lang="en-GB" Txt="Explain the concept of capacity and use decision trees for analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begrebet styring af indkøb og benytte basale metoder til analyse af mulige leverandører" />
+          <Txt Lang="en-GB" Txt="Explain the concept of management of supplies and use basic methods for analyzing possible suppliers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begrebet logistik og logistikkens rolle i en forsyningskæde samt at kunne løse simple lokaliseringsproblemer ved matematisk optimering" />
+          <Txt Lang="en-GB" Txt="Explain the concept of logistics and the role of logistics in a supply chain and to be able to solve simple localization problems by mathematical optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive begrebet forecasting og de mest gængse kvalitative forecasting-metoder samt kunne benytte tidsrækkebaserede såvel som kausale metoder til forecasting " />
+          <Txt Lang="en-GB" Txt="Describe the concept of forecasting and the most common qualitative forecasting methods and be able to use time series based as well as causal forecasting methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begrebet ”sales and operations planning” og kunne forklare de tre planlægningsniveauer (strategisk, taktisk og operationel planlægning) og forskellen på disse" />
+          <Txt Lang="en-GB" Txt="Explain the concept of &quot;sales and operations planning&quot; and be able to explain the three levels of planning (strategic, tactical and operational planning) and the difference between these" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive begrebet lagerstyring og benytte de mest gængse kvantitative metoder til lagerstyring" />
+          <Txt Lang="en-GB" Txt="Describe the concept of inventory management and use the most common quantitative methods for inventory management" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende begreberne ”master schedule record”, ”materials requirement planning” (MRP), ”production activity control” (PAC) og vendor order management inden for produktionsplanlægning" />
+          <Txt Lang="en-GB" Txt="Explain and make use of the concepts &quot;master schedule record&quot;, &quot;material requirement planning&quot; (MRP), &quot;production activity control&quot; (PAC) and vendor order management within production planning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Indtaste, redigere og formatere data samt konstruere og redigere formler og figurer i den anvendte regnearkssoftware, samt at kunne løse simple optimeringsproblemer i denne software" />
+          <Txt Lang="en-GB" Txt="Enter, edit and format data as well as construct and edit formulas and figures/charts in the spreadsheet software used, and solve simple optimization problems in this software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde en kortfattet teknisk rapport, der beskriver hvordan kvalitative såvel som kvantitative metoder kan benyttes til løse problemstillinger inden for operations og supply chain management  " />
+          <Txt Lang="en-GB" Txt="Prepare a concise technical report that describes how qualitative as well as quantitative methods can be used for solving problems within operations and supply chain management" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Forsyningskæder og driftsteknik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="22" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="3" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:14.95" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

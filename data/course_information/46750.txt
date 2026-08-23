@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46750" Volume="2026/2027" University="dtu" LastUpdated="2026-04-23+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Optimering i moderne power systemer" />
+        <Title Lang="en-GB" Title="Optimization in modern power systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Hybrid: videooptagelse og fysisk optagelse." />
+          <LocationTxt Lang="en-GB" Txt="Hybrid: video recording and in-person." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="103606" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lesia</GivenName>
+            <FamilyName>Mitridati</FamilyName>
+            <Email>lemitri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="103136" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jalal</GivenName>
+            <FamilyName>Kazempour</FamilyName>
+            <Email>jalal@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Samlet vurdering baseret på:&#xD;&#xA;i) To gruppeopgaver (leverancer inkluderer rapporter, projektkode og individuelle bidragstabeller);&#xD;&#xA;ii) Mundtlig eksamen med præsentation og individuelle spørgsmål til opgaver og pensum;&#xD;&#xA;iii) bonus for deltagelse i valgfrie aktiviteter, herunder ugentlige øvelser, datavisualisering og Kahoot-udfordringer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment based on:&#xD;&#xA;i) Two group assignments (deliverables include reports, project code, and individual contribution tables);&#xD;&#xA;ii) Oral exam involving presentation and individual questions on assignments and course curriculum;&#xD;&#xA;iii) bonuses for participation in optional activities, including weekly exercises, data visualization, and Kahoot challenges." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="AI use is permitted to support, not replace, students' own reasoning. Transparent use and full accountability are expected." />
+            <Aid_Txt Lang="da-DK" Txt="AI må understøtte, ikke erstatte, elevernes egen argumentation. Gennemsigtig brug og fuldt ansvar forventes." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Studerende vil lære at formulere, løse og kritisk analysere optimeringsmodeller til virkelige beslutningsproblemer i moderne elsystemer. Kurset dækker konveks optimering, dualitetsteori, komplementaritetsmodellering og optimering under usikkerhed, anvendt på en bred vifte af problemer, herunder: drift og planlægning af elsystemer, værdiorienteret prognoser, elmarkeder og efterspørgselsrespons.</Contents>
+          <Teaching_And_Learning_Methods>i) Forberedelse til udvalgte emner med omvendt undervisning, herunder korte videoer, læsematerialer og selvevalueringsquizzer; 
+ii) Interaktive forelæsninger, herunder traditionel undervisning, individuelle og gruppeøvelser, brætspil og gruppediskussioner;
+iii) Ugentlige (valgfrie) øvelser i matematisk modellering, videnskabelig kodning og kritisk resultatanalyse.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Drift af et komplekst system som elnettet kræver, at man træffer informerede beslutninger under usikkerhed og risiko, uanset om det drejer sig om at definere optimal markedsclearing for elektricitet og hjælpetjenester, identificere strategiske budstrategier for producenter eller fastlægge langsigtede investeringer for netoperatører. I hvert tilfælde skal beslutningstagere spørge: Hvad er det bedst mulige resultat? Hvilke handlinger fører til det? Hvad er afvejningerne og begrænsningerne?
+
+Dette kursus udstyrer de studerende med værktøjerne til at besvare disse spørgsmål ved at introducere de grundlæggende principper for optimeringsteknikker med fokus på deres anvendelse på virkelige beslutningsproblemer i moderne elsystemer.
+
+Kurset kombinerer traditionel undervisning med praktiske aktiviteter for at understrege beregningsmæssig tænkning og modelbaseret ræsonnement som grundlæggende færdigheder til at formulere og løse beslutningsproblemer ved hjælp af matematisk optimering. Gennem disse aktiviteter lærer de studerende, hvordan man identificerer og beskriver strukturen af ​​virkelige beslutningsproblemer i elsystemer, oversætter dem til veldefinerede matematiske optimeringsmodeller, løser disse modeller ved hjælp af beregningsværktøjer, kritisk evaluerer deres løsninger og udleder og kommunikerer værdifuld indsigt til at understøtte drifts- og planlægningsbeslutninger.
+
+Selvom fokus er på energisystemer, er de teknikker og den tankegang, der udvikles gennem hele kurset, bredt anvendelige på forskellige områder såsom finans, transport og logistik.</Course_Objectives>
+          <Remark>Dette kursus er blevet redesignet som en del af DigiWind-projektet for at fremme avancerede digitale færdigheder inden for vind- og energisystemteknik. Læringsmålene, aktiviteterne og evalueringsmetoderne er blevet omstruktureret for at understrege beregningstænkning, modelbaseret ræsonnement og matematiske programmeringsfærdigheder. En række digitale værktøjer er integreret for at understøtte aktiv og differentieret læring.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Students will learn to formulate, solve, and critically analyze optimization models for real-world decision-making problems in modern power systems. The course covers convex optimization, duality theory, complementarity modelling, and optimization under uncertainty, applied to a broad range of problems, including: power system operation and planning, value-oriented forecasting, electricity markets, and demand response.</Contents>
+          <Teaching_And_Learning_Methods>i) Flipped classroom preparation for selected topics, including short videos, reading materials, and self-assessment quizzes;
+ii) Interactive lectures, including traditional instruction, individual and group exercises, board games, and group discussions;
+iii) Weekly (optional) exercises in mathematical modeling, scientific coding, and critical result analysis.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Operating a complex system such as the power grid requires making informed decisions under uncertainty and risk, whether defining optimal market clearing for electricity and ancillary services, identifying strategic bidding strategies for producers, or determining long-term investments for grid operators. In each case, decision-makers must ask: What is the best possible outcome? What actions lead to it? What are the trade-offs and constraints?
+
+This course equips students with the tools to answer these questions by introducing the fundamental principles of optimization techniques, with a focus on their application to real-world decision-making problems in modern power systems. 
+
+The course combines traditional instruction with hands-on activities to emphasize computational thinking and model-based reasoning as foundational skills for formulating and solving decision-making problems using mathematical optimization. Through these activities, the students will learn how to identify and describe the structure of real-world decision-making problems in power systems, translate them into well-defined mathematical optimization models, solve these models using computational tools, critically evaluate their solutions, and derive and communicate valuable insights to support operational and planning decisions.
+
+While the focus is on power systems, the techniques and mindset developed throughout the course are broadly applicable to diverse domains such as finance, transportation, and logistics.</Course_Objectives>
+          <Remark>This course has been redesigned as part of the DigiWind project to foster advanced digital skills in wind and energy systems engineering. The learning objectives, activities, and evaluation methods have been restructured to emphasize computational thinking, model-based reasoning, and mathematical programming skills. A variety of digital tools are integrated to support active and differentiated learning.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende. Der forventes solide programmeringsevner (Python, Julia eller lignende), da programmering er en væsentlig del af kursets opgaver. Det anbefales stærkt, at de studerende er fortrolige med de grundlæggende principper for modellering og drift af elektriske strømsystemer, herunder balancerede trefasede kredsløb, modellering af strømsystemkomponenter og strømstrømsligninger og organisering af elmarkeder." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent. Solid programming skills (Python, Julia or similar) are expected, since programming is an essential part of the course assignments. It is highly recommended that students are familiar with the fundamentals of electric power systems modelling and operation, including balanced three-phase circuits, power system components modelling, and power flow equations, and electricity markets organization." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46700/46705/02402/42112/42101" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv de grundlæggende principper for konveks optimering og lineær programmering, herunder problemstruktur, gennemførlighed, optimalitet og beregningskompleksitet." />
+          <Txt Lang="en-GB" Txt="Describe the fundamental principles of convex optimization and linear programming, including problem structure, feasibility, optimality, and computational complexity." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar og sammenlign metoder til optimering under usikkerhed, undersøg deres problemstruktur, underliggende antagelser og beregningsmæssige afvejninger." />
+          <Txt Lang="en-GB" Txt="Explain and compare methods for optimization under uncertainty, examining their problem structure, underlying assumptions, and computational trade-offs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler og analyser dualitets- og optimalitetsbetingelserne for konvekse optimeringsproblemer." />
+          <Txt Lang="en-GB" Txt="Formulate and analyze the dual and optimality conditions of convex optimization problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke de geometriske og teknoøkonomiske implikationer af de duale og optimale betingelser for optimeringsproblemer i elsystemer ved at forbinde dem med marginalomkostninger, ressourceværdiansættelser og driftsmæssige begrænsninger." />
+          <Txt Lang="en-GB" Txt="Interpret the geometric and techno-economic implications of the dual and optimality conditions of optimization problems in power systems, by linking them to marginal costs, resource valuations, and operational constraints." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Oversæt virkelige beslutningsproblemer i elsystemer fra naturligt sprog til veldefinerede matematiske optimeringsmodeller, identificer mål, beslutningsvariabler, begrænsninger og inputdata." />
+          <Txt Lang="en-GB" Txt="Translate real-life decision-making problems in power systems from natural language into well-defined mathematical optimization models, identifying objectives, decision variables, constraints, and input data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kritisk evaluere løsningerne fra optimeringsmodeller ved at analysere, hvordan modelleringsvalg påvirker gennemførlighed, optimalitet og beregningsmæssig kompleksitet, og udtrække brugbar indsigt til operationelle eller planlægningsbeslutninger." />
+          <Txt Lang="en-GB" Txt="Critically evaluate the solutions of optimization models by analyzing how modeling choices affect feasibility, optimality, and computational complexity, and extract actionable insights for operational or planning decisions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og implementer i fællesskab videnskabelig kode for at løse virkelige optimeringsproblemer inden for energisystemer, integrere bidrag på tværs af gruppemedlemmer og dokumentere arbejdsgange tydeligt." />
+          <Txt Lang="en-GB" Txt="Collaboratively design and implement scientific code to solve real-life power systems optimization problems, integrating contributions across group members and documenting workflows clearly." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Effektivt kommunikere løsninger på komplekse beslutningsproblemer i elsystemer til et bredt publikum gennem klare og overbevisende fortællinger og visualiseringshjælpemidler." />
+          <Txt Lang="en-GB" Txt="Effectively communicate the solutions of complex decision-making problems in power systems to a broad audience through clear and compelling narratives and visualization aids." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommuniker formuleringen, løsningsprocessen og indsigten i komplekse optimeringsproblemer til et bredt publikum gennem klar skriftlig analyse, overbevisende fortællinger og visualiseringshjælpemidler." />
+          <Txt Lang="en-GB" Txt="Communicate the formulation, solution process, and insights of complex optimization problems to a broad audience through clear written analysis, compelling narratives, and visualization aids." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Programme specific course (MSc) Sustainable Energy; </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31765" />
+        <PreviousCourse CourseCode="31765" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:51.857" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34190" University="dtu" LastUpdated="2022-03-16+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Fotonik" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Ph.d.-kursus - Digitale modtagere for optisk kommunikation" />
+        <Title Lang="en-GB" Title="PhD Course - Digital Optical Communication Receivers" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="The course is not following DTU's normal schedule. Exact schedule to be agreed with the course responsible" />
+          <Schedule_Txt Lang="en-GB" Txt="The course is not following DTU's normal schedule. Exact schedule to be agreed with the course responsible" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <External_Course_Responsible Email="majmar@fotonik.dtu.dk" Name="Majken Martinsen" IsContact="true" SortID="1" />
+        <Course_Responsible PersonKey="20251" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Darko</GivenName>
+            <FamilyName>Zibar</FamilyName>
+            <Email>dazi@fotonik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Usually written homework/presentation to be handed in 1 month after completion of the course." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Usually written homework/presentation to be handed in 1 month after completion of the course." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>The main topics are:
+- Digital demodulation
+- Clock recovery
+- Phase recovery
+- Frequency estimation
+- Synchronization algorithms
+- Channel estimation and equalization
+
+The course is conducted as a reading and discussion meeting with the teachers. Assignments will be handed out to each student and discussed every course meeting. The assignments will be based on the book: Digital Communication Receivers: Synchronization, Channel Estimation, and Signal Processing by H. Meyr et al. The assignments will be chosen according to the students' needs and interests.</Contents>
+          <Teaching_And_Learning_Methods>Seminars, group work and presentations by participants.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Understand and apply digital signal processing algorithms for optical communication receivers with advanced modulation formats.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The main topics are:
+- Digital demodulation
+- Clock recovery
+- Phase recovery
+- Frequency estimation
+- Synchronization algorithms
+- Channel estimation and equalization
+
+The course is conducted as a reading and discussion meeting with the teachers. Assignments will be handed out to each student and discussed every course meeting. The assignments will be based on the book: Digital Communication Receivers: Synchronization, Channel Estimation, and Signal Processing by H. Meyr et al. The assignments will be chosen according to the students' needs and interests.</Contents>
+          <Teaching_And_Learning_Methods>Seminars, group work and presentations by participants.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Understand and apply digital signal processing algorithms for optical communication receivers with advanced modulation formats.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Principles of digital communications, Introduction to digital signal processing, Matlab programming&#xD;&#xA;Optical communications" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Principles of digital communications, Introduction to digital signal processing, Matlab programming&#xD;&#xA;Optical communications" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze and implement algorithms for digital demodulation" />
+          <Txt Lang="en-GB" Txt="Analyze and implement algorithms for digital demodulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze and implement algorithms for clock recovery" />
+          <Txt Lang="en-GB" Txt="Analyze and implement algorithms for clock recovery" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze and implement algorithms for synchronization" />
+          <Txt Lang="en-GB" Txt="Analyze and implement algorithms for synchronization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze and implement algorithms for phase and frequency estimation" />
+          <Txt Lang="en-GB" Txt="Analyze and implement algorithms for phase and frequency estimation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyze and implement algorithms for channel equalization" />
+          <Txt Lang="en-GB" Txt="Analyze and implement algorithms for channel equalization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Understand the relation between the algorithms and the physical realization of the optical links" />
+          <Txt Lang="en-GB" Txt="Understand the relation between the algorithms and the physical realization of the optical links" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Knowledge of efficient implementations to be used in actual systems" />
+          <Txt Lang="en-GB" Txt="Knowledge of efficient implementations to be used in actual systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Apply digital signal algorithms specifically related to the participant's ph.d. project" />
+          <Txt Lang="en-GB" Txt="Apply digital signal processing algorithms specifically related to the participant's ph.d. project" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Digitale modtagere for optisk kommunikation</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:54.94" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

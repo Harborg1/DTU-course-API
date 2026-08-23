@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02612" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Optimering med bibetingelser" />
+        <Title Lang="en-GB" Title="Constrained Optimization" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="32457" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>John Bagterp</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>jbjo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Første og anden-ordens optimalitetsbetingelser (KKT betingelser). Aktiv-sæt og indre-punkts algoritmer til lineær programmering (LP) og konveks kvadratisk programmering (QP). Metoder til ikke-lineær programmering (NLP): Sekvential kvadratisk programmerings (SQP) algoritmer og augmented Lagrange algoritmer.  Udvikling af simple numeriske algoritmer og anvendelse af eksisterende software-bibliotekter til optimering med bibetingelser (LP, QP, NLP). Anvendelse af konveks optimering (SOCP, SDP). Optimering af dynamiske systemer og optimal kontrol. Stoffet belyses med eksempler af teknisk og økonomisk oprindelse.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og løsning af projektopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Ved modellering af  tekniske og økonomiske sammenhænge kommer man ofte frem til at værdier for de frie parametre skal bestemmes som løsning til et optimeringsproblem med bibetingelser, som lægger visse bånd på løsningen.  For eksempel kan det bagvedliggende fysiske problem kræve,  at parametrene skal være positive eller ligge visse intervaller.
+I dette kursus lærer den studerende om effektive algoritmer til løsning af sådanne problemer.  Den studerende bliver både i stand til at udvikle algoritmer og til at anvende eksisterende software til numerisk løsning af optimeringsproblemer med bibetingelser. Kurset beskæftiger sig med algoritmer til lineær programmering (LP), konveks kvadratisk programmering (QP), konveks optimering og ikke-lineær programmering (NLP).</Course_Objectives>
+          <Remark>Kurset leder op til 02619 "Model Prædiktiv Regulering" og et eksamensprojekt .</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>First and second order optimalitty conditions (KKT conditions. Active set and interior point algorithms for linear programming (LP) and convex quadratic programming (QP).   Methods for nonlinear programming (NLP): Sequential quadratic programming (SQP) algorithms and augmented Lagrange algorithms.  Development of simple numerical algorithms and use of existing  software libraries for constrained optimization  (LP, QP, NLP). Apply convex optimization (SOCP, SDP). Optimization of dynamic systems and optimal control. Application examples  from Engineering and Finance.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>When modelling a technical or economical problem it often happens that free parameters are determined by the solution to an optimization problem subject to some constraints on the solution.  The simplest example is that the parameters must be positive or lie in certain intervals due to   physical constraints in the underlying physical problem.
+In this course the participant learns about efficient algorithms for constrained optimization.  The student will be able both to develop algorithms and to use existing software for numerical solution of optimization problems with constraints. The course concerns numerical algorithms for linear programming (LP), convex quadratic programming (QP), convex optimization, and non-linear programming (NLP).</Course_Objectives>
+          <Remark>The course may be followed by 02619 "Model Predictive Control", and a master thesis project.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et indledende optimeringskursus, Matlab, Python eller Julia programmeringserfaring og introduktion til numeriske algoritmer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="An introductory optimization course, experience with Matlab, Python, or Julia programming, and an introduction to numerical algorithms," />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02610.(02002/02631/02633).02601" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede og redegøre for KKT optimalitetsbetingelserne for optimering med bibetingelser" />
+          <Txt Lang="en-GB" Txt="derive and explain the KKT optimality conditions for constrained optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende KKT betingelserne til konstruktion af aktiv-sæt og indre-punkts algoritmer" />
+          <Txt Lang="en-GB" Txt="use the KKT conditions to construct active set and interior point algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede, implementere og anvende indre-punkts algoritmer til LP, QP, og NLP problemer" />
+          <Txt Lang="en-GB" Txt="derive, implement and use interior-point algorithms for LP, QP and NLP problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede, implementere og anvende indre-punkts algoritmer til konveks optimering" />
+          <Txt Lang="en-GB" Txt="derive, implement and use interior-point algorithms for convex optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede, implementere og anvende aktiv-sæt og indre-punkts algoritmer for konveks kvadratisk programmering (QP) og lineær programmering (LP)" />
+          <Txt Lang="en-GB" Txt="derive, implement and use active set and interior point algorithms for convex quadratic programming (QP) and linear programming (LP)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for principperne i SQP-algoritmen til løsning af ikke-lineære optimeringsproblemer med bibetingelser" />
+          <Txt Lang="en-GB" Txt="explain the principles of the SQP algorithm for nonlinear, constrained optimization problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammensætte LP- og QP-algoritmerne til en SQP algoritme" />
+          <Txt Lang="en-GB" Txt="combine the LP and QP algorithms into an SQP algorithm" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle, teste og sammenligne forskellige optimeringsalgoritmer i Matlab til løsning af et forelagt problem." />
+          <Txt Lang="en-GB" Txt="develop, test and compare alternative optimization algorithms in Matlab for the solution of a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende eksisterende softwarebibliotekter i Matlab til numerisk løsning af optimeringsproblemer med bibetingelser" />
+          <Txt Lang="en-GB" Txt="use existing Matlab software libraries for constrained optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende optimeringsalgoritmer til løsning af tekniske  og økonomiske problemstillinger" />
+          <Txt Lang="en-GB" Txt="use optimization algorithms for the solution of problems from engineering and finance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende konveks optimering" />
+          <Txt Lang="en-GB" Txt="apply convex optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende optimeringsalgoritmer til numerisk løsning af optimeringsproblemer for dynamiske systemer og optimal kontrol " />
+          <Txt Lang="en-GB" Txt="apply optimization algorithms to numerically solve dynamic optimization problems and optimal control problems" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.compute.dtu.dk/courses/02612" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Constrained Optimization</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:23.14" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

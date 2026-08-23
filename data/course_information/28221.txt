@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28221" University="dtu" LastUpdated="2024-04-25+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="28" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Teknisk Termodynamik" />
+        <Title Lang="en-GB" Title="Chemical Engineering Thermodynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="10353" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Nicolas von</GivenName>
+            <FamilyName>Solms</FamilyName>
+            <Email>nvs@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af opgaver udført i semesteret og en quiz" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Based on reports made during the semester and an individual quiz" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No aid is allowed for the quiz" />
+            <Aid_Txt Lang="da-DK" Txt="Ingen hjælpemidler til quizzen" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Ved anvendelse af regneark udvikles redskaber til beregning af stofegenskaber, herunder residuale egenskaber, fra tilstandsligninger og fra generaliserede metoder. Endvidere arbejdes med dimensionering af processer til køling og processer til fordråbning af luftarter. Endelig er den fysisk-kemiske modelbeskrivelse af væskeblandinger væsentlig for de fleste separationsprocesser. Kurset omhandler modeller for overskudsegenskaber for væskefasen og deres anvendelse til simple ligevægtsberegninger for gas-væske, væske-væske og væske-faststof systemer.</Contents>
+          <Teaching_And_Learning_Methods>Computerbaseret problemløsning ved anvendelse af regneark, hvor udleverede og selvudviklede moduler sammensættes til simulering af større enheder. Der arbejdes i hold af 2-3 studerende. Der suppleres med oversigtsforelæsninger.</Teaching_And_Learning_Methods>
+          <Course_Literature>Hæfte (kompendium): Michael L. Michelsen, "Chemical Engineering Thermodynamics" fås på Institut for Kemiteknik
+
+Nyttig reference: J.Richard Elliott, Carl T. Lira, "Introductory Chemical Engineering Thermodynamics, 2nd ed."</Course_Literature>
+          <Course_Objectives>Kurset har som overordnet mål at sætte de studerende i stand til at anvende teknisk termodynamik ved løsning af praktiske problemstillinger, også bæredygtighed</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Tools for calculation of physical properties, including residual properties, from Equations of State and from generalized method are developed by means of spreadsheets. These tools are used for designing processes for cooling and for liquefaction of gasses. Finally, the physico-chemical model description of fluid mixtures is essential for most separation processes. The course deals with models for the excess properties of the liquid phase and their application for simple phase equilibrium calculations for gas-liquid, liquid-liquid and liquid-solid systems.</Contents>
+          <Teaching_And_Learning_Methods>Computer based problem solution by means of spreadsheets where user developed or pre-developed modules are combined for simulation of larger units. Teamwork involving groups of 2 or 3 students. Supplementary overview lectures.</Teaching_And_Learning_Methods>
+          <Course_Literature>Required text: Michael L. Michelsen, "Chemical Engineering Thermodynamics" available from the Department of Chemical Engineering
+
+Supplementary reference: J.Richard Elliott, Carl T. Lira, "Introductory Chemical Engineering Thermodynamics, 2nd ed."</Course_Literature>
+          <Course_Objectives>The overall objective is to enable the students to apply chemical engineering thermodynamics in the solution of practical, industrial problems, including addressing sustainability</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte en tilstandsligning til beregning af PVT-egenskaber for et rent stof" />
+          <Txt Lang="en-GB" Txt="Use an Equation of State to calculate PVT-properties for a pure compound" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede udtryk for fugacitet, enthalpi og entropi fra en tilstandsligning" />
+          <Txt Lang="en-GB" Txt="Derive expressions for fugacity, enthalpy and entropy from an Equation of State" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage procesberegninger på køle- og fordråbningsanlæg" />
+          <Txt Lang="en-GB" Txt="Perform process calculations for refrigeration units and liquefaction plants" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere en kompressorkaskade" />
+          <Txt Lang="en-GB" Txt="Optimize a multistage compression process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Parameterisere damptryksligninger o.l. fra eksperimentelle data" />
+          <Txt Lang="en-GB" Txt="Parameterize a vapour pressure equation and similar from experimental data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende, og redegøre for, de krav og begrænsninger, termodynamikkens hovedsætninger sætter for en given proces" />
+          <Txt Lang="en-GB" Txt="Use, and account for, the requirements and limitations the fundamental laws of thermodynamics impose on a given proces." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge termodynamiske modeller for væske- og gasblandinger med henblik på beregning af ligevægtsforhold" />
+          <Txt Lang="en-GB" Txt="Choose thermodynamic models for liquid- and vapour mixtures with  the aim of calculating phase equilibrium  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de forudsætninger, der ligger til grund for modelvalget." />
+          <Txt Lang="en-GB" Txt="Account for the assumptions behind the choice of models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage simple damp-væske ligevægtsberegninger for flerkomponentblandinger ved anvendelse af såvel tilstandsligninger som aktivitetsmodeller" />
+          <Txt Lang="en-GB" Txt="Perform simple vapour-liquid equilibrium calculations for multicomponent mixtures using activity coefficient models, as well as equations   of state" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage modelvalg med henblik på beregning af væske-væske ligevægt og faststof-væskeligevægt, og udføre sådanne beregninger" />
+          <Txt Lang="en-GB" Txt="Choose models for calculation of liquid-liquid and liquid-solid equilibria and perform such calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme modelparametre i termodynamiske modeller på basis af eksperimentelle ligevægtsdata" />
+          <Txt Lang="en-GB" Txt="To determine model parameters by regression of experimental equilibrium data for mixtures." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.kt.dtu.dk" />
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="26222" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Teknisk termodynamik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="28322" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:22:59.63" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

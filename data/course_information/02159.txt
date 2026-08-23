@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02159" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Operativsystemer" />
+        <Title Lang="en-GB" Title="Operating Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="65890" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Xenofon</GivenName>
+            <FamilyName>Fafoutis</FamilyName>
+            <Email>xefa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="230570" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Roberto</GivenName>
+            <FamilyName>Morabito</FamilyName>
+            <Email>romor@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Samlet vurdering baseret på den afsluttende skriftlige eksamen og det individualiserede gruppeprojekt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment based on the final written examination and the individualized group project." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Operativsystemer: Processer, tråde, skedulering. Systemkald. Understøttelse af synkronisering og kommunikation. Operativsystemers opbygning. Drivprogrammer. Virtuel hukommelse. Filsystemer. Datasikkerhedsaspekter.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppeprojekt og eksperimenter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Operativsystemer leverer den fornødne funktionalitet til at afvikle computerprogrammer. Deres anvendelse spænder fra små, indlejrede systemer til store server installationer. Selvom disse systemer kræver forskelligartede operativsystemer har deres grundlæggende funktionalitet mange fællestræk. I dette kursus får du en mulighed for at stifte bekendskab med operativsystemer og for at udforske deres implementering og virkemåde.</Course_Objectives>
+          <Remark>Kurset er et specialiseringskursus i gruppen af teknologiske linjefag for bachelorlinjen Softwareteknologi.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Operating systems: Processes, threads, scheduling. System calls. Support for synchronization and communication. Operating system organizations. Device drivers. Virtual memory. File systems. Security aspects.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group project and experiments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Operating systems provide computer programs with the necessary execution environment. They are used in computer systems ranging from very small embedded systems to large scale server installations. Although these different systems require different forms of operating systems, the services provided are very similar. In this course, you will be able to explore operating systems and also investigate their implementation and function.</Course_Objectives>
+          <Remark>The course is a specialization course within the software technology bachelor line.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med sekventiel programmering; grundlæggende kendskab til edb-system organisation erfaring med C programmeringssprog." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience in sequential programming; basic knowledge of computer systems organisation; experience with the C programming language." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02100/02101/02102).02105.(02132/02112) " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare operativsystemets rolle og afvikling af computerprogrammer." />
+          <Txt Lang="en-GB" Txt="explain the role of the operating system and how computer programs are executed." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="definere grundlæggende operativsystem-begreber med egne ord." />
+          <Txt Lang="en-GB" Txt="define in own words basic operating system concepts such as processes, threads and scheduling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere strategier for kommunikation og synkronisering blandt forskellige programmer." />
+          <Txt Lang="en-GB" Txt="identify strategies for communication and synchronisation among different programs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="programmere mod operativsystemets grænseflade." />
+          <Txt Lang="en-GB" Txt="program at the operating system interface." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og implementere operativsystem-dele såsom en scheduler eller en drivrutine." />
+          <Txt Lang="en-GB" Txt="design and implement parts of operating systems, such as schedulers or device drivers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foreslå og designe strategier til implementation af operativsystemer til multi-processor systemer." />
+          <Txt Lang="en-GB" Txt="propose and design strategies for implementing operating systems for multi-processor systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere fordele og ulemper ved forskellige tilgange og anvende dem til virkelige situationer" />
+          <Txt Lang="en-GB" Txt="evaluate the advantages and disadvantages of different approaches and apply them to real-world situations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kritisk analysere et operativsystem, identificere præstationsbehov og forsvare implementeringsstrategier." />
+          <Txt Lang="en-GB" Txt="critically analyse an operating system, identify performance requirements, and defend implementation strategies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere parallelle aktiviteter effektivt ved brug af tasks, tråde og processer" />
+          <Txt Lang="en-GB" Txt="implement concurrent activities efficiently using tasks, threads and processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gøre rede for virkemåden af samtidighedsmekanismer til synkronisering og kommunikation og bruge dem til kortfattet problemanalyse" />
+          <Txt Lang="en-GB" Txt="explain the workings of concurency mechanisms for synchronisation and communication and use them for concise problem analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Operativsystemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62588" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:50.213" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

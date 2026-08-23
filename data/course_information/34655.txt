@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34655" Volume="2026/2027" University="dtu" LastUpdated="2026-04-09+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Integreret analog elektronik 2" />
+        <Title Lang="en-GB" Title="Integrated analog electronics 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="78881" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Per</GivenName>
+            <FamilyName>Lynggaard</FamilyName>
+            <Email>plyn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Poster-sessioner og/eller præsentationer, afleveringer.&#xD;&#xA;Karakteren baseres på en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Poster sessions and/or presentations, hand-ins.&#xD;&#xA;The grade is based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>CMOS operationsforstærkere, analog til digital konvertere, digital til analog konvertere, kredsløbssimulering, industrielle anvendelseseksempler.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning og computerøvelser. Poster-sessioner og/eller præsentationer, afleveringer, Quizzes</Teaching_And_Learning_Methods>
+          <Course_Literature>T.C. Carusone, D.A. Johns &amp; K. Martin: Analog Integrated Circuit Design.</Course_Literature>
+          <Course_Objectives>At sætte den studerende i stand til at analysere og konstruere analoge elektroniske kredsløb med hovedvægten på integrerede forstærkerkredsløb og datakonvertere mv. i CMOS teknologi.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>CMOS opamps, analog to digital converters, digital to analog converters, circuit simulation, industrial application examples.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work and computer exercises. Poster sessions and/or presentations, hand-ins, quizzes</Teaching_And_Learning_Methods>
+          <Course_Literature>T.C. Carusone, D.A. Johns &amp; K. Martin: Analog Integrated Circuit Design.</Course_Literature>
+          <Course_Objectives>To enable the student to analyze and design analog circuits with an emphasis on integrated amplifiers and data converters etc. in CMOS technology</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til MOS transistormodeller og grundlæggende CMOS forstærkerkoblinger. Kendskab til tidskontinuert og tidsdiskret signalbehandling." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge about MOS transistor models and basic CMOS amplifier circuits. Knowledge about signal processing in continuous time and discrete time." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34630/34636. 31631. 31606" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere forskellige grundtyper af CMOS opamps (foldet kaskode opamp, strømspejls opamp, to-trins opamp) " />
+          <Txt Lang="en-GB" Txt="Analyze different basic types of CMOS opamps (folded cascode opamp, current mirror opamp, two-stage opamp)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere frekvensgang i operationsforstærkere" />
+          <Txt Lang="en-GB" Txt="Analyze the frequency response of CMOS opamps" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere frekvenskompensation til operationsforstærkere med modkobling" />
+          <Txt Lang="en-GB" Txt="Design the frequency compensation for opamps with feedback" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende støjmodeller for transistorer og modstande" />
+          <Txt Lang="en-GB" Txt="Apply noise models for transistors and resistors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere lay-out af simple transistorkredsløb" />
+          <Txt Lang="en-GB" Txt="Analyze lay-out of simple transistor circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundtyper og –egenskaber af datakonvertere til omsætning mellem digital og analog signalrepræsentation (A/D konvertere og D/A konvertere) " />
+          <Txt Lang="en-GB" Txt="Describe basic types and properties of data converters (A/D converters and D/A converters)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere forskellige typer af Nyquist D/A konvertere" />
+          <Txt Lang="en-GB" Txt="Analyze different types of Nyquist D/A converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere forskellige typer af Nyquist A/D konvertere" />
+          <Txt Lang="en-GB" Txt="Analyze different types of Nyquist A/D converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage simuleringer på simple transistorkredsløb i MOS teknologi " />
+          <Txt Lang="en-GB" Txt="Make simulations of simple transistor circuits in MOS technology" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Integreret kredsløbsdesign i CMOS</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31632/31630" />
+        <PreviousCourse CourseCode="31632" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="25" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:42.607" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

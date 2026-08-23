@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="01621" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Perturbationsteori for differentialligninger" />
+        <Title Lang="en-GB" Title="Perturbation theory for differential equations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="17660" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kristian Uldall</GivenName>
+            <FamilyName>Kristiansen</FamilyName>
+            <Email>krkri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="290" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Morten</GivenName>
+            <FamilyName>Brøns</FamilyName>
+            <Email>mobr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="3435" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Henriksen</FamilyName>
+            <Email>chrh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individualiserede grupperapporter og/eller individuelle rapporter og/eller mundtlig eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment of individualised group reports and/or individual reports and/or oral exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Perturbationsteori for differentialligninger, Melnikov-teori, chaotic dynamics, averaging, WKB, geometrisk singulær perturbationsteori, blowup</Contents>
+          <Course_Objectives>Differentialligninger er fundamentale i modeleringen af tidsafhængige systemer i ingeniørvidenskaben, og optræder i alt fra kontrolsystemer til fluid dynamik. Det er dog ofte umuligt at løse ligningerne eksakt. Heldigvis kan mange realistiske systemer beskrives som små afvigelser (perturbationer) fra simplere systemer, som man lettere kan løse og forstå. Perturbationsteori er et kraftfuldt værktøj til at approksimere og forstå de mere komplekse systemer udfra de simplere udgaver. Denne teori har været succesfuld i mange grene af den anvendte videnskab. Vi afdækker forskellige udgaver af perturbationsteori, inkluderende averaging, Melnikov teori, WKB approksimation, og (geometrisk) singulær perturbationsteori. Mere bredt, så er målsætningen med kurset at give studerende en teoretisk forståelse (vha dynamisk systemteori) for perturbationsteknikker baseret på udvikling i en lille parameter. Derudover, vil vi demonstrere brugen af perturbationsmetoder på tværs af forskellige felter, inklusiv fysik, mekanik, kemi og biologi.</Course_Objectives>
+          <Remark>Kurset kan tages parallelt med 01622.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Perturbation theory of differential equations, Melnikov theory, chaotic dynamics, averaging, WKB, geometric singular perturbation theory, blowup</Contents>
+          <Course_Objectives>Differential equations are fundamental to modeling time-varying systems in engineering, appearing in everything from control systems to fluid dynamics. However, solving them exactly is often challenging or even impossible. Fortunately, many real-world systems are only slight variations—perturbations—of simpler systems that we can analyze more easily. Perturbation theory provides a powerful framework to approximate and understand these more complex systems in terms of their simpler counterparts, offering valuable insights that have been successfully applied across numerous engineering disciplines. We will study various variants of perturbation theory, including averaging, Melnikov theory, WKB approximation, and (geometric) singular perturbation theory. More broadly, the course provides a theoretical foundation (based upon dynamical systems theory) of perturbation techniques that involve expansions in small parameters. In addition, we will demonstrate the application of these perturbation methods across diverse fields, including physics, mechanics, chemistry, and biology.</Course_Objectives>
+          <Remark>The course can be followed in parallel with 01622.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til ikke-lineære differentialligninger, faseportrætter, lokale mangfoldigheder og lokale bifurkationer. En vis matematisk modenhed (f.eks. opnået via 01125) vil være gavnligt, men er ikke en nødvendighed. Tilsvarende praksis erfaring (f.eks. gennem 3-ugers kurset 01257) kan også være nyttigt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of ordinary differential equations, phase portraits, (local) invariant (stable/unstable/center) manifolds and local bifurcations. Some mathematical maturity (e.g. through 01125) is useful, but not essential. Practical experience (e.g. through 01257, say) is also good, but not required." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01617" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere lav-dimensionelle Hamiltoniske systemer" />
+          <Txt Lang="en-GB" Txt="Analyze low-dimensional Hamiltonian systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Melnikov-teori til at studere regulære perturbationer af Hamiltoniske systemer" />
+          <Txt Lang="en-GB" Txt="Apply Melnikov theory to study regular perturbations of Hamiltonian systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere eksistens af kaos vha Melnikov-teori" />
+          <Txt Lang="en-GB" Txt="Demonstrate existence of chaos using Melnikov theory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Poincaré-afbildninger til at studere lav-dimensionel dynamik" />
+          <Txt Lang="en-GB" Txt="Use Poincaré maps to study low-dimensional dynamics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere langsomt variende tidsperiodiske systemer vha averaging" />
+          <Txt Lang="en-GB" Txt="Analyze slowly-varying time periodic systems using averaging" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende WKB i simple problemer" />
+          <Txt Lang="en-GB" Txt="Apply WKB in simple problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere singulære perturbations problemer ved brug af Geometrisk Singulær Perturbations-Teori (GSPT)" />
+          <Txt Lang="en-GB" Txt="Analyze singular perturbed problems using Geometric Singular Perturbation Theory (GSPT)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende blowup-metoder til at studere simple problemer med flere skaleringer" />
+          <Txt Lang="en-GB" Txt="Apply blowup to study simple model problems with multiple scales" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende perturbationsteori i forskellige anvendte samhænge (e.g. fysik, mekanik, kemi eller biology)" />
+          <Txt Lang="en-GB" Txt="Apply perturbation theory in different applied contexts (e.g. physics, mechanics, chemistry or biology)" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="01618" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:25.67" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

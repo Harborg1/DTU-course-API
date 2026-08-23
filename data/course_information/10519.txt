@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10519" Volume="2026/2027" University="dtu" LastUpdated="2026-04-23+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Avanceret elektronmikroskopifysik" />
+        <Title Lang="en-GB" Title="Advanced electron microscopy physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset afvikles som et tre-ugers kursus i uge 2-4 i januar." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is a three-week course running in weeks 2-4 in January." />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="59" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Fysik" />
+        <Course_Responsible PersonKey="151931" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Stig</GivenName>
+            <FamilyName>Helveg</FamilyName>
+            <Email>stig@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="45473" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Joerg R.</GivenName>
+            <FamilyName>Jinschek</FamilyName>
+            <Email>jojin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Hver studerende vil udforske et selvvalgt problem i atomar opløsnings-elektronmikroskopi ved hjælp af simuleringer. Projekterne præsenteres i plenum. Hver studerendes aktive deltagelse og projektfremlægning vurderes af underviserne." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Each student will explore a self-chosen problem in atomic-resolution electron microscopy using simulations. The projects are presented in plenum. The active participation and project presentation for each student are evaluated by the teachers." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil dække elektron-stof-interaktioner, aberrationskorrigeret elektronoptik, kontrastoverførselsfunktioner, partiel kohærens, høj-opløsnings-transmissions-elektronmikroskopi (HRTEM), scanning-transmissions-elektronmikroskopi (STEM), elektron-bølge-funktioner, billeddannelsesmekanisme, elektrondetektion og opløsningsgrænser. Emnerne vil blive introduceret i forelæsninger og udforsket i computerøvelser baseret på den python-baserede pakke abTEM</Contents>
+          <Teaching_And_Learning_Methods>Emnerne vil blive introduceret i forelæsninger og udforsket i computerøvelser baseret på den python-baserede pakke abTEM.</Teaching_And_Learning_Methods>
+          <Course_Literature>E. Kirkland, Advanced computing in electron microscopy (3rd edition, Springer)</Course_Literature>
+          <Course_Objectives>At udvikle en grundlæggende fysisk forståelse af elektronmikroskopi og simuleringsevner til at designe, analysere og fortolke elektronmikroskopi af stof på atomart niveau.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will cover electron-matter interactions, aberration-corrected electron optics, contrast transfer functions, partial coherence, high-resolution transmission electron microscopy (HRTEM), scanning transmission electron microscopy (STEM), electron exit-wave functions, image formation mechanism, electron detection and resolution limits. The topics will be introduced in lectures and explored in computer exercises based on the python-based package abTEM</Contents>
+          <Teaching_And_Learning_Methods>The topics will be introduced in lectures and explored in computer exercises based on the python-based package abTEM.</Teaching_And_Learning_Methods>
+          <Course_Literature>E. Kirkland, Advanced computing in electron microscopy (3rd edition, Springer)</Course_Literature>
+          <Course_Objectives>To develop a fundamental physical understanding of electron microscopy and simulation skills to design, analyze and interpret electron microscopy of matter at the atomic level.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="22602 Visualisering af mikro- og nanostrukturer eller ækvivalent introduktion til transmissions-elektronmikroskopi, 10303 Faststoffysik og nanoskala materialefysik eller ækvivalent baggrund i krystallografi og faststoffysik. Erfaring med python scripting (Jupyter notebooks)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="22602 Visualization of micro- and nanostructures or equivalent introduction to transmission electron microscopy, 10303 Condensed Matter Physics and Nanoscale Materials Physics or equivalent background in crystallography and solid state physics. Experience with python scripting (Jupyter notebooks)." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive fysikken i elektronspredning på stof" />
+          <Txt Lang="en-GB" Txt="Describe the physics in electron scattering on matter" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriev fysikken i elektronoptik, kontrastoverførselsfunktion og partiel kohærens" />
+          <Txt Lang="en-GB" Txt="Describe the physics in electron optics, contrast transfer function and partial coherence " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare opløsningsgrænser og sampling-kriterier" />
+          <Txt Lang="en-GB" Txt="Explain resolution limits and sampling criteria" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare billeddannelsesmekanismer med parallel og fokuseret elektron-stråle " />
+          <Txt Lang="en-GB" Txt="Explain image formation mechanisms in broad-beam and focused electron-beam modes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere elektronmikroskopi billeder oprettet ved hjælp af høj-opløsnings-transmissions-elektron-mikroskopi og scanning-transmissions-elektron-mikroskopi" />
+          <Txt Lang="en-GB" Txt="Simulate electron microscopy images created using high-resolution transmission electron microscopy and scanning transmission electron microscopy modes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere simulerede elektronmikroskopibilleder for strukturelle motiver med atomopløsning" />
+          <Txt Lang="en-GB" Txt="Analyze simulated electron microscopy images for atomic-resolution structural motifs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udforske indvirkningen af elektronoptik og elektron-stof-interaktioner på billedformationer" />
+          <Txt Lang="en-GB" Txt="Explore impact of electron optics and electron-matter interactions on image formations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe et elektronmikroskopieksperiment for at observe en foruddefineret atomar struktur" />
+          <Txt Lang="en-GB" Txt="Design an electron microscopy experiment to retrieve a pre-defined atomic structure" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="15" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:30.1" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46030" Volume="2026/2027" University="dtu" LastUpdated="2026-07-14+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Elektriske energisystemer" />
+        <Title Lang="en-GB" Title="Electrical energy systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="916" FUniversity="DTU" SortID="0" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Joachim</GivenName>
+            <FamilyName>Holbøll</FamilyName>
+            <Email>johol@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="111353" FUniversity="DTU" SortID="1" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jan</GivenName>
+            <FamilyName>Engelhardt</FamilyName>
+            <Email>janen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="101834" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Magnus Fich</GivenName>
+            <FamilyName>Rabjerg</FamilyName>
+            <Email>magrab@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="208164" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mattia</GivenName>
+            <FamilyName>Pecile</FamilyName>
+            <Email>mapeci@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Alle obligatoriske afleveringer skal være godkendt for at kunne bestå eksamen." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• AC spændinger og strømme, kompleks notation 
+• Impedanser og AC-kredsløb
+• Kompleks effekt
+• Transport af elektrisk energi fra producent til forbruger
+• Distributionssystemer og 3-fasede net 
+• Dioder og transistorer i kraftelektroniske systemer
+• Konverterstrukturer og modelleringsmetoder
+• El-biler, batteridesign og opladningsprincipper</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, obligatoriske opgaver og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets overordnede mål er at sætte de studerende i stand til at forstå de grundlæggende sammenhænge i elektriske energisystemer og udføre beregninger i simplificerede delsystemer som findes i net med energiproducerende, transmitterende og konverterende enheder som vindkraft, kabler, konvertere og elbiler.
+De studerende opnår kompetencer, som er nødvendige for at kunne arbejde videre med elektriske energisystemer, uanset om man senere vil specialisere sig i digitale løsninger, energiteknologier eller energisystemer.
+Teorien omsættes til praksis i et nyt læringsmiljø, hvor de vigtigste sammenhænge kan afprøves, samtidigt med at de studerende lærer at begå sig i laboratorier og at benytte relevant måle- og testudstyr.</Course_Objectives>
+          <DTU_Remark>I tilfælde af et overtegnet kursus har studerende på bacheloruddannelsen Bæredygtigt Energidesign første prioritet.
+Kurset er ikke relateret til diplomkurset 62768, som har næsten samme titel.</DTU_Remark>
+          <No_Credit_Points_With>31735 Elektriske energisystemer</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• AC voltages and currents, complex representation
+• Impedances and AC circuits
+• Complex power
+• Transport of electrical energy from producer to consumer
+• Distribution systems and 3-phase grids
+• Diodes and transistors in power electronic systems
+• Converter structures and modelling approaches
+• Electric vehicles, battery design and charging principles</Contents>
+          <Teaching_And_Learning_Methods>Lectures, mandatory assignments and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The main goal of the course is to enable the students to understand the basic relations in electrical energy systems and to perform calculations i simplified subsystems being found in grids with energy producing, transmitting and converting units like wind power, cables, converters and electric vehicles.
+The students achieve competences, which are necessary for further work with electrical energy systems, independent of the later specialisation in either digital solutions, energy techologies or energy systems.
+Theory is transferred to practical applications in a newly established learning environment, where the most important relations can be tested, while the students learn to work in laboratories and use relevant measuring and test equipment.</Course_Objectives>
+          <No_Credit_Points_With>31735 Electrical energy systems</No_Credit_Points_With>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kredsløbsteori, helt basal viden om elektriske og magnetiske felter" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Kredsløbsteori, helt basal viden om elektriske og magnetiske felter" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46020.10060" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive elektriske energisystemer" />
+          <Txt Lang="en-GB" Txt="Describe electrical energy systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne strøm, spænding, effekt og energi i simple elektriske vekselspændingskredsløb" />
+          <Txt Lang="en-GB" Txt="Calculate current, voltage, power and energy in simple electric AC circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende komplekse beregningsmetoder på vekselspændingssystemer" />
+          <Txt Lang="en-GB" Txt="Apply complex calculation methods to AC systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for principperne bag konvertering mellem mekanisk og elektrisk energi" />
+          <Txt Lang="en-GB" Txt="Describe principles behind energy conversion between mechanical and electrical energy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende elektriske principper til analyse af smart opladning af elbiler " />
+          <Txt Lang="en-GB" Txt="Apply principles to analyze smart charging of electric vehicles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere belastningsenheders indflydelse på systemets performance" />
+          <Txt Lang="en-GB" Txt="Consider the influence of various loads on system performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser simple kredsløb med dioder" />
+          <Txt Lang="en-GB" Txt="Analyse simple circuits with diodes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende eksperimentelle metoder til afdækning af simple elektriske sammenhænge" />
+          <Txt Lang="en-GB" Txt="Apply experimental methods to illustrate simple electrical relations" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31735" />
+        <PreviousCourse CourseCode="31735" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="46" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-07-21" Time="09:08:10.843" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

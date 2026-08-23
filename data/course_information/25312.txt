@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="25312" University="dtu" LastUpdated="2026-05-04+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Fiskerisystemer – forvaltning og modellering" />
+        <Title Lang="en-GB" Title="Fisheries systems – management and modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Campus Hirtshals &amp; Campus Lyngby (Fysisk undervisning fra begge campusser)" />
+          <LocationTxt Lang="en-GB" Txt="Campus Hirtshals &amp; Campus Lyngby (Physical teaching from both campi)" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="25" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="25" />
+        <Course_Responsible PersonKey="39849" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>J. Rasmus</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>rn@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="116099" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tobias</GivenName>
+            <FamilyName>Mildenberger</FamilyName>
+            <Email>tobm@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Se engelsk beskrivelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Continuous assessment: presentation followed by oral exam for each of the three course parts (i.e. 3 assessments weighted 33% each)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Continuous assessments: All aids permitted &#xD;&#xA;Oral examination: No Aid" />
+            <Aid_Txt Lang="da-DK" Txt="Se engelsk beskrivelse." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="January" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Januar" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se engelsk beskrivelse</Contents>
+          <Teaching_And_Learning_Methods>Se engelsk beskrivelse.</Teaching_And_Learning_Methods>
+          <Course_Literature>Se engelsk beskrivelse.</Course_Literature>
+          <Course_Objectives>Se engelsk beskrivelse.</Course_Objectives>
+          <DTU_Remark>Se engelsk beskrivelse.</DTU_Remark>
+          <Remark>Se engelsk beskrivelse.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces principles and practice in modern fisheries management, with focus on quantitative evaluation methods and their role in scientific management advice. It begins with an overview of international fisheries and ecosystem-based management systems including their foundations, institutional frameworks, data sources, advisory processes, governance structures, and decision-making under multiple ecological and socio-economic objectives and risks. The remaining course is structured into the following three main parts: 
+
+Part 1: Single-species management advice
+Hands-on training in application of two advanced single-stock assessment models used by the ICES advisory framework: a stochastic surplus production model (SPiCT) and a stochastic age-structured stochastic model (SAM). Students learn to estimate stock size, fishing mortality, and stock status relative to maximum sustainable yield (MSY) reference points using time series of catch and survey data. Model diagnostics, uncertainty quantification, and best practices for validating assessments are key in the training, and will conclude with an application of MSE also used in the next course parts. 
+  
+Part 2: Multi-species and mixed fisheries management advice 
+Introduction to biological interactions between stocks involving a stochastic multi-species assessment model (SMS) and broader MSY reference point ranges accounting for trade-offs in exploitation of several species in the same fisheries. It also introduce simple and advanced methods (TEMAS, FCUBE) integrating the complexity of technical interactions in mixed fisheries and multi-fleet dynamics. Students will define and analyse interactions between target and bycatch species fishing mortality by fleet using data on effort, selectivity, and behavior also covering recreational fisheries. 
+
+Part 3: Holistic fisheries system and ecosystem management advice
+Practical training in spatially explicit bio-economic and vessel-based MSE tools (e.g. VMS-Logbook-Tools, DISPLACE) combining logbook and VMS (satellite tracking) data for tactic management advice for several fisheries. These simulation models assess impacts of maritime spatial planning scenarios, e.g. windfarm closures, on fishing fleets, target stocks, and the seabed according to ecological and economic sustainability. Further, students evaluate output from advanced ecosystem-models integrating biological interactions, environmental forcing (e.g., climate change, eutrophication), and fisheries dynamics enabling strategic long-term management advice. This allows to explore broader ecological and socio-economic implications of management strategies before implementation. 
+
+Students work with both simple and advanced models in data-rich and data-poor contexts, developing the ability to critically evaluate trade-offs, risks, and sustainability of alternative management strategies.</Contents>
+          <Teaching_And_Learning_Methods>Lectures as well as group and individual assignments and exercises including modeling.</Teaching_And_Learning_Methods>
+          <Course_Literature>Course materials include model tutorials and relevant peer-reviewed scientific articles.  Supplementary secondary literature is recommended for further voluntary reading.</Course_Literature>
+          <Course_Objectives>Fisheries systems are complex socio-ecological systems integrating biological resources, fishing activities, economic drivers, and management. Understanding and modelling these systems is necessary for sustainable fisheries management and for balancing ecological, economic, and social objectives. Quantitative models are central for assessing resource status, evaluating management options, and supporting evidence-based decision-making.
+
+Single-stock assessment models are the foundation of fisheries management advice globally. Management decisions rely on robust, well-documented assessments of stock status to provide catch advice and evaluate outcomes of management strategies. In part 1 of the course, students gain hands-on experience with two internationally recognised single-stock assessment models and learn to validate and interpret results according to best practices.
+
+Effective fisheries management must also address complexity of real-world systems beyond single-stock approaches. In course part 2, students explore biological and technical interactions in multi-species and mixed fisheries dynamics with multiple target and bycatch species exploited simultaneously by different fisheries. Tools are introduced accounting for species and fisheries interactions, fleet behavior, and data limitations. 
+
+Part 3 of the course considers fisheries systems holistically through ecosystem-based and integrated approaches. Students engage with models incorporating ecological, economic and social dimensions, i.e. fisheries bio-economic and broader ecosystem models being spatial explicit. 
+
+The course introduces methods for analysing current system status, projecting future dynamics, and conducting Management Strategy Evaluation (MSE) of different options. Students obtain skills to analyse stock, fisheries, and ecosystem dynamics, evaluate management scenarios, assess uncertainty and risks, and analyse the ecological, technical, and socio-economic complexities in fisheries systems.</Course_Objectives>
+          <DTU_Remark>Programme specific course (MSc), Sustainable Fisheries and Aquaculture 
+Technological specialization course (MSc), Sustainable Fisheries and Aquaculture
+Programme specific course (MSc), Ocean Engineering</DTU_Remark>
+          <Remark>This course provides students with competences relevant to UN SDGs, particularly #8 (Decent work and economic growth), #12 (Responsible consumption and production), #13 (Climate action), and #14 (Life below water).
+The intention is to allow the critical and creative use of generative AI in the teaching process both by students and teachers.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Se engelsk beskrivelse." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="are recommended but not required.  Prior experience with R is recommended. Preparatory materials will be made available in advance of the course to allow students to assess and, if necessary, improve their R skills." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="25318/25345/25349" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk beskrivelse" />
+          <Txt Lang="en-GB" Txt="Describe the development and increasing complexity of fisheries and ecosystem-based management, including advisory processes, quantitative methods, and institutional frameworks. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk beskrivelse" />
+          <Txt Lang="en-GB" Txt="Implement single-species stock assessment models used in ICES advisory processes to evaluate stock status, population dynamics, and associated uncertainty." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk beskrivelse" />
+          <Txt Lang="en-GB" Txt="Analyse biological interactions, including species-specific natural mortality, adapting quantitative multi-species models. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk beskrivelse" />
+          <Txt Lang="en-GB" Txt="Apply quantitative mixed fisheries models to analyse technical interactions, including fleet- and stock-specific fishing patterns across target and by-catch species." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk beskrivelse" />
+          <Txt Lang="en-GB" Txt="Evaluate spatially explicit bio-economic and vessel-based management strategies to model the impacts of maritime spatial planning on fleets, fish stocks, and seabed habitats." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk beskrivelse" />
+          <Txt Lang="en-GB" Txt="Interpret the results from advanced ecosystem models to support strategic fisheries advice, including the integrated impacts of fishing, environmental drivers, and species interactions, and socio-economic dimensions on resource dynamics. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk beskrivelse" />
+          <Txt Lang="en-GB" Txt="Predict future stock dynamics and fishery yields under alternative harvest control rules and management scenarios according MSY-based targets using Management Strategy Evaluation (MSE) across single-species, multi-species, mixed fisheries and ecosystem contexts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="-" />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Rådgivning og modellering i forbindelse med fiskeriforvaltning</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="1" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="80" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="80" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-18" Time="17:03:51.34" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

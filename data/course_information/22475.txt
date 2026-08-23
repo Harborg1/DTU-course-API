@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22475" Volume="2026/2027" University="dtu" LastUpdated="2026-02-18+01:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Vævs- og bevægeapparatets biomekanik DTU" />
+        <Title Lang="en-GB" Title="Tissue and movement biomechanics DTU" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Der udføres en laboratorie-øvelse på Panum Instituttet." />
+          <LocationTxt Lang="en-GB" Txt="A lab exercise is conducted at the Panum Institute." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="148864" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>René Brüggebusch</GivenName>
+            <FamilyName>Svensson</FamilyName>
+            <Email>rensve@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1066" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jørgen Arendt</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>jaje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Or_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen ved ≤36 tilmeldte, ellers skriftlig. Desuden løbende evaluering i form af 3 hjemmeopgaver og 3 grupperapporter (eksamensforudsætning). Der gives en samlet karakter hvor eksamen vægtes ca. 2/3 og den løbende evaluering ca. 1/3." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam if ≤36 students, otherwise written. Additionally, ongoing tests in the form of 3 homework exercises and 3 group reports (exam prerequisite). An overall grade is assigned with the exam weighing ca. 2/3 and the ongoing tests ca. 1/3." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Oral examination will usually take place over two days" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Mundtlig eksamen vil som regel forløbe over to dage" />
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Hvis mundtlig eksamen: 20 minutter uden forberedelse" />
+          <Duration Lang="en-GB" Txt="If oral exam: 20 minutes without preparation" />
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I kurset gennemgår vi den nødvendige del af vektor- og tensoranalysen, der anvendes i undersøgelsen af biomekaniske problemstillinger. Den matematiske formalisme anvendes efterfølgende til at formulere de grundlæggende bevarelseslove og forskellige typer af konstitutive ligninger. Tilsammen danner disse principper basis for al biomekanisk analyse og modellering. Eksempler inkluderer elastiske, visko-elastiske og hyperelastiske vævsmaterialer. Desuden gennemgås anatomien og fysiologien af menneskets hofteled, store sener og karvæggen i arterier/vener.
+Vi vil læse og diskutere videnskabelige artikler, der beskriver biomekaniske problemstillinger for at give dig indsigt i hvorledes forskning udføres inden for disse områder. Der vil desuden være gæsteforelæsninger fra eksterne forskere der arbejder med forskellige aspekter af biomekanik.
+Endelig omfatter kurset eksperimentelt arbejde, hvor du skal bearbejde data til at analysere en given biomekanisk problemstilling. På Panum Instituttet vil der blive demonstreret metoder til opsamling af biomekanisk data. Gennem kurset vil du få tid til at opstille finite element modeller til at analysere biomekaniske problemstillinger ud fra eksperimentelle data. Du skal aflevere skriftlige rapporter for øvelserne, som beskriver dine resultater og konsekvensen af disse.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, artikellæsning (journal club), opgaveregning, "finite element" modellering, hjemmeopgaver og rapporter</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusmaterialet er primært uddrag fra e-bøger tilgængelige via DTU FindIt:
+1) J. D. Humphrey, S. L. O'Rourke: An Introduction to Biomechanics - solids and fluids, analysis and design, 2nd edition. Springer, 2015
+2) F. Irgens: Continuum Mechanics. Springer, 2008
+3) S. C. Cowin, S. B. Doty: Tissue Mechanics. Springer, 2007
+4) J. D. Humphrey: Cardiovascular Solid Mechanics - cells, tissues and organs. Springer, 2002</Course_Literature>
+          <Course_Objectives>Målet med kurset er at give en grundig introduktion til fænomenologien og fundamentale principper i inden for mekanik, med fokus på vævsbiomekanik. Vi vil særligt arbejde med menneskets hofteled, store sener samt karvæggen i arterier/vener. Der undervises både i anatomien og fysiologien såvel som modellering af den mekaniske opførsel i de nævnte strukturer.
+Som studerende skal du skrive 3 grupperapporter (3-4 studerende per gruppe), som beskriver øvelser/modeller udført i kurset. Rapporterne skal skrives så det fremgår hvilket gruppemedlem der primært har bidraget til et givent afsnit/element i rapporten (individualisering). Rapporter afleveres løbende igennem kurset. Du skal desuden aflevere 3 mindre hjemmeopgaver.
+ Rapporter og hjemmeopgaver er obligatoriske og skal afleveres for adgang til eksamen (eksamensforudsætning), de udgør desuden en "løbende evaluering" og indgår sammen med den endelige eksamen i den samlede bedømmelse, hvor hovedvægten vil ligge på eksamenen.
+Der vil også være en "journal club" hvor du får lejlighed til at præsentere en videnskabelig artikel (i grupper), denne indgår på ingen måde i den samlede bedømmelse.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>In this course we will go through the necessary mathematics of vector and tensor analysis used for solving biomechanical problems. This mathematical formalism is subsequently used to formulate the fundamental conservation laws and different types of constitutive equations. Together these principles form the basis of all biomechanical modeling. Examples include elastic, visco-elastic, and hyper elastic tissue materials. In addition, the anatomy and physiology of the human hip joint, large tendons and the blood vessel wall of arteries/veins will be covered.
+We will read and discuss scientific papers describing various biomechanical problems to provide you with insight into how research is performed within these areas. Furthermore, there will be guest lectures by external researchers working with various aspects of biomechanics.
+The course also incorporates experimental work, where you will work with data to analyze a given biomechanical problem. Demonstrations of biomechanical data collection will take place at the Panum Institute. During the course you will be given time to perform finite element modeling of biomechanical problems based on experimental data. You must hand in written reports describing your findings and the implications of the model results.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, reading papers (journal club), problem solving, finite element modelling, homework problems and reports</Teaching_And_Learning_Methods>
+          <Course_Literature>The course material is primary parts taken from e-books available via DTU FindIt:
+1) J. D. Humphrey, S. L. O'Rourke: An Introduction to Biomechanics - solids and fluids, analysis and design, 2nd edition. Springer, 2015
+2) F. Irgens: Continuum Mechanics. Springer, 2008
+3) S. C. Cowin, S. B. Doty: Tissue Mechanics. Springer, 2007
+4) J. D. Humphrey: Cardiovascular Solid Mechanics - cells, tissues and organs. Springer, 2002</Course_Literature>
+          <Course_Objectives>The objective of the course is to give a thorough introduction to the phenomenology and fundamental principles of mechanics, with focus on tissue biomechanics. We will particularly be investigating the human hip joint, large tendons, and blood vessel walls of arteries/veins. Both the anatomy and physiology as well as modeling of the mechanical behavior of these structures will be taught.
+As a student, you will write 3 group reports (3-4 students per group) describing exercises/models performed as part of the course. The reports must be written to indicate which group member mainly contributed to a given section/element in the report (individualization). Reports are handed in throughout the course. Further, you have to submit 3 smaller homework assignments.
+The reports and homework assignments are mandatory and must be handed in to qualify for the exam (exam prerequisite). They also constitute "ongoing tests" and contribute together with the final exam to the overall evaluation, where the primary weight is on the exam.
+There will also be a "journal club" where you will have the opportunity to present a scientific paper (in groups). The journal club does not contribute to the evaluation in any way.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Styrkelære, mekanik, vektoranalyse" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Strength of materials, mechanics, vector analysis" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41501" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opskrive de grundlæggende mekaniske bevarelseslove." />
+          <Txt Lang="en-GB" Txt="List the fundamental mechanical conservation laws." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende vektor og tensor matematik til at løse et biomekanisk problem." />
+          <Txt Lang="en-GB" Txt="Use basic vector and tensor calculus to solve a biomechanical problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende argumenter for symmetri til at bestemme materiale-parametre for et givent væv." />
+          <Txt Lang="en-GB" Txt="Use arguments of symmetry to determine material parameters for a given tissue." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den fysiske betydning af konstitutive ligninger." />
+          <Txt Lang="en-GB" Txt="Explain the physical significance of constitutive equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere biomekaniske modeller for forskellige vævstyper." />
+          <Txt Lang="en-GB" Txt="Formulate biomechanical models for various types of tissues." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive anatomien og fysiologien af menneskets hofteled, store sener og arterier/vener." />
+          <Txt Lang="en-GB" Txt="Describe the anatomy and physiology of the human hip joint, large tendons, and arteries/veins." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende eksperimentel data som randbetingelser i en biomekanisk model." />
+          <Txt Lang="en-GB" Txt="Use experimental data as boundary conditions for a biomechanical model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse et biomekanisk problem ved hjælp af finite element modellering." />
+          <Txt Lang="en-GB" Txt="Solve a biomechanical problem using finite element modelling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsummere og evaluere betydningen af modelresultater." />
+          <Txt Lang="en-GB" Txt="Summarize and evaluate the implications of model results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive rapporter som opfylder grundlæggende krav til videnskablig kommunikation." />
+          <Txt Lang="en-GB" Txt="Write reports fulfilling the basic requirements for scientific communication." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere en videnskabelig artikel indenfor et afgrænset biomekanisk emne for medstuderende." />
+          <Txt Lang="en-GB" Txt="Present a scientific paper on a limited biomechanical topic to fellow students." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og kritisk evaluere generativ AI som hjælpemiddel ved design af et biomekanisk eksperiment." />
+          <Txt Lang="en-GB" Txt="Use and critically evaluate generative AI as an aid in designing a biomechanical experiment." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:44.973" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

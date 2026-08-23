@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02214" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Hardware/Software Codesign" />
+        <Title Lang="en-GB" Title="Hardware/Software Codesign" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="16242" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Matthias Bo</GivenName>
+            <FamilyName>Stuart</FamilyName>
+            <Email>mbst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="228430" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Gustaf Jerker</GivenName>
+            <FamilyName>Hammarberg</FamilyName>
+            <Email>gjeha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives på baggrund af en helhedsvurdering af individualiserede grupperapporter og en skriftlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on an overall assessment of individualized group reports and a written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver en overordnet introduktion til emner indenfor hardware/software codesign og elementerne i en codesign proces. Det teoretiske fundament og praktisk implementering af maskinlæringsmodeller på enheder med begrænsede ressourcer (ofte benævnt "indlejret AI", engelsk "embedded AI") udforskes gennem forelæsninger, øvelser og projektarbejde. Gennem en serie forelæsninger og praktiske øvelser forventes de studerende at lære at træne, evaluere og implementere en maskinlæringsmodel på et microcontrollerbaseret system, når kurset er gennemført. Metoder til at udforske afvejninger mellem rene softwareløsninger og løsninger der gør brug af hardwareacceleratorer udforskes, herunder multiparametrisk optimering for at tage højde for forskellige mål, herunder nøjagtighed, latenstid, hukommelsesforbrug og energiforbrug.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Studerende vil lære de fundamentale emner og begreber indenfor hardware/software codesign og det teoretiske fundament samt praktisk erfaring med maskinlæring for indlejrede systemer. Der gives et overblik over emner indenfor codesign. Specifikke emner inden for codesign og maskinlæring for indlejrede systemer udforskes gennem øvelser. Kursusprojektet lader studerende bygge på det teoretiske fundament og gennemføre alle trin fra at træne til at implementere en maskinlæringsmodel på et indlejret system.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course gives a high-level introduction to topics in hardware/software codesign and the elements of a codesign process. The theoretical foundations and practical implementation of machine learning models on resource constrained devices (commonly denoted embedded AI) are explored with lectures, hands-on exercises, and project work. Through a series of lectures and hands-on exercises, students are expected to be able to train, evaluate, and deploy a machine learning model to a microcontroller-based system at the end of the course. Methods for exploring trade-offs in pure software vs hardware-accelerated implementations are explored including multi-parametric optimization to account for various metrics including accuracy, inference latency, memory use, and energy consumption.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Students will learn the fundamentals of hardware/software codesign and a theoretical foundation and practical experience with machine learning for embedded devices. An overview of topics in codesign is given. Exercises explore specific topics of co-design and machine learning for embedded devices. The course project allows students to build on the theoretical foundation and perform all steps from training to deployment of a machine learning model on an embedded system.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Dette kursus forudsætter at studerende har en god baggrund i programmering i Python og C. Erfaring med microcontrollers og maskinlæring samt kendskab til digital design og computerarkitektur er fordelagtigt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students are expected to have prior knowledge in Python and C-programming. Microcontroller and machine learning experience is preferable. Knowledge of digital design and computer architecture is also preferable." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive principperne og elementer i HW/SW codesign" />
+          <Txt Lang="en-GB" Txt="Describe the principles and elements of HW/SW codesign" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive arbejdsgangen fra specifikation til implementering af maskinlæring for indlejrede systemer" />
+          <Txt Lang="en-GB" Txt="Describe the workflow from specification to deployment of machine learning for embedded devices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive fundmentale koncepter indenfor neurale netværksarkitekturer og træning af neurale netværk til indlejrede systemer" />
+          <Txt Lang="en-GB" Txt="Describe the fundamentals of neural network architectures and training for embedded devices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne forskellige software- and hardwareløsninger til implementering af maskinlæringsmodeller i indlejrede systemer" />
+          <Txt Lang="en-GB" Txt="Compare various software and hardware options for deployment of machine learning models in embedded systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe et indlejret system til maskinlæringsapplikationer" />
+          <Txt Lang="en-GB" Txt="Design an embedded system for machine learning applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Træne og evaluere maskinlæringsmodeller til microcontrollerbaserede indlejrede systemer" />
+          <Txt Lang="en-GB" Txt="Train and evaluate machine learning models for microcontroller based embedded systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere maskinlæringsmodeller på microcontrollerbaserede indlejrede systemer" />
+          <Txt Lang="en-GB" Txt="Deploy machine learning models on microcontroller based embedded systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere fordele og ulemper ved forskellige designs ved brug af multiparametrisk optimering" />
+          <Txt Lang="en-GB" Txt="Analyze trade-offs between different designs using multi-parametric optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere maskinlæringsapplikationer til indlejrede systemer" />
+          <Txt Lang="en-GB" Txt="Optimize machine learning applications for embedded systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>HW/SW Codesign</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:01.593" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

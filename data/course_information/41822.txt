@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41822" University="dtu" LastUpdated="2026-02-20+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Eksperimentel fluid mekanik" />
+        <Title Lang="en-GB" Title="Experimental fluid mechanics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="67" KVL_Resources="100" />
+          <Ass_Dep UID="46" Resources="33" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="1621" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Knud Erik</GivenName>
+            <FamilyName>Meyer</FamilyName>
+            <Email>keme@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2719" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Robert Flemming</GivenName>
+            <FamilyName>Mikkelsen</FamilyName>
+            <Email>rfmi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Godkendelse af resultater fra 4 mindre øvelser/eksperimenter, aflevering af video fra visualiseringseksperiment (gruppe af 2-3 studerende), skriftlig posteraflevering af to større eksperimenter (gruppe af 2-3 studerende). Individualiseret mundtlig poster præsentation i uge 2. Mundtlig individualiseret præsentation (gruppe af 4) af et eksperiment den sidste kursusdag, med diskussion i plenum. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Approvement of results from four small exercises/experiments,  hand-in of video from visualization experiment (group of 2-3 students), written hand-in as poster for two larger experiments (group of 2-3 students). Individualized oral presentation of one poster in the second week. Oral presentation (group of four, all parcipants have a part) of one experiment at the last day of the course with discussion in plenum. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="poster presentation week 2. Oral presentation of one experiment on the last day of the course" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Poster præsentation i uge 2. Mundtlig fremlæggelse af et eksperiment på kursets sidste dag" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Transducere og målesystemer til at bestemme tryk, hastighed, flow og temperatur. Flow visualisering. Signalanalyse. Dataopsamling og -behandling. Fejlteori. Med baggrund i teorien udfører de studerende  laboratoriearbejde forskellige opstillinger, hvor typiske fluid mekaniske målesystemer som hot-wire anemometre og laser baserede måleteknikker bruges.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og eksperimenter i laboratoriet.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give en introduktion til måleteknikker til bestemmelse af hastighed, flow, tryk, temperatur mm. for væsker og luftarter under både stationære og instationære forhold. Kurset behandler grundlæggende måleteori og giver eksempler på, hvordan måling kan tolkes fysisk. Endelig giver kurset praktisk erfaring i laboratoriearbejde.</Course_Objectives>
+          <Remark>En undervisningsdag foregår på Risø campus. Deltagere skal være fysisk tilstede under tildelt tid til udførelse af eksperimenter i laboratoriet. Dette inkluderer første undervisningsdag, hvor et indledende eksperiment udføres.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Transducers and systems for determining of pressure, velocity, flow and temperature. Flow visualization. Signal analysis. Data recording and processing. Error theory. The theoretical basis is illustrated through two experiments in which typical fluid mechanical measuring systems are used, such as a hot-wire anemometer and laser based methods.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and experiments in the laboratory.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give an introduction to  measuring techniques for determining velocity, flow, pressure, temperature etc. for fluids under stationary as well as nonstationary conditions. The course gives basic measurement theory and gives examples of physical interpretation of measurements. The course will give practical laboratory experience.</Course_Objectives>
+          <Remark>One day will take place at Risø Campus. Participants must be physically present during assigned time for experiments in the laboratory.This includes the first day of the course, when an initial experiment is conducted.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til grundlæggende fluid mekanik og erfaring i brug af Python (eller lignende programmeringsredskab)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of basic fluid mechanics and experience with Python (or similar programming tool)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41312.(02002/02631)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og anvende almindelige fluidmekaniske målemetoder og måleudstyr til tryk, temperatur, flow og lokale hastigheder" />
+          <Txt Lang="en-GB" Txt="describe and apply common fluid mechanical measuring methods and devices for pressure, temperature, flow and local velocity." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere relevante målemetoder for et strømningsproblem" />
+          <Txt Lang="en-GB" Txt="identify relevant measuring techniques  for a given flow problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge og udføre et forsøg i laboratoriet " />
+          <Txt Lang="en-GB" Txt="plan and execute an experiment in the laboratory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere signalanalytiske problemer og tolke resultater af analysen" />
+          <Txt Lang="en-GB" Txt="identify signal analysis problems and interpret results of the analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre visualisering af en strømning" />
+          <Txt Lang="en-GB" Txt="make a visualization of a flow" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for mulige fejlkilder i eksperimenter og estimere en måleusikkerhed" />
+          <Txt Lang="en-GB" Txt="account for possible error sources in experiments and estimate an measurement uncertainty" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="behandle måledata statistisk og tolke resultaterne i fluidmekanisk sammenhæng" />
+          <Txt Lang="en-GB" Txt="process measurement data statistically and interpret results in a fluid mechanical context" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="rapportere et forsøg skriftlig efter videnskabelige principper med alle nødvendige informationer for en gentagelse af forsøget." />
+          <Txt Lang="en-GB" Txt="report an experiments in writing using scientific principles with all relevant information for a repetition of the experiment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="præsentere et forsøg på mundtlig form" />
+          <Txt Lang="en-GB" Txt="present an experiment orally" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Brug af eksperimentelle målemetoder i strømninger</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="34" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="18" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="36" Min="4" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:03.973" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

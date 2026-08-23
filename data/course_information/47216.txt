@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="47216" Volume="2026/2027" University="dtu" LastUpdated="2025-05-23+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="47" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="AI-orkestrerede selvkørende laboratorier (Online)" />
+        <Title Lang="en-GB" Title="AI-orchestrated self-driving labs (Online)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_online" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="47" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="119810" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jinhyun</GivenName>
+            <FamilyName>Chang</FamilyName>
+            <Email>jchang@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="62570" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ivano Eligio</GivenName>
+            <FamilyName>Castelli</FamilyName>
+            <Email>ivca@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Et 3-ugers kursus, med fokus på at lære de metoder og værktøjer, som er nødvendige for AI-orkestrerede selvkørende laboratorier, hvor de studerende vil deltage i forelæsninger, høre indslag fra industrien, udføre computerøvelser og lave eksperimenter.
+
+Følgende tre hovedområder bliver gennemgået på kurset:
+
+1) Datadreven materialeopdagelse (forelæsninger og øvelser)
+Database og API værktøjer, FAIR data og high-throughput screening-strategier
+
+2) Machine/deep learning-metoder til autonom materialeopdagelse (forelæsninger, eksempler og øvelser).
+Overvågede/​uovervågede metoder, fingeraftryk, Bayesianske metoder (generative algoritmer)
+
+3) Autonome eksperimenter (teori, simuleringer og eksperimenter)
+Introduktion til nødvendig software og hardware
+Orkestrering af et brugerdefineret Arduino-baseret hardware setup baseret på data fra eksperimentelle og teoretiske databaser.
+Realtidsanalyse af behandlet data</Contents>
+          <Teaching_And_Learning_Methods>Kurset vil bestå af forelæsninger, praktiske øvelser og autonome roboteksperimenter.</Teaching_And_Learning_Methods>
+          <Course_Literature>1) Alán Aspuru-Guzik, Kristin Persson, Daniel Tabor, Tejs Vegge, et al, Materials Acceleration Platform - Accelerating Advanced Energy Materials Discovery by Integrating High Throughput Methods with Artificial Intelligence; http:/​/​mission-innovation.net/​wp-content/​uploads/​2018/​01/​Mission-Innovation-IC6-Report-Materials-Acceleration-Platform-Jan-2018.pdf
+2) Goodfellow, Bengio and Courville. Deep Learning, MIT Press, SBN: 9780262035613 (2016); https:/​/​findit.dtu.dk/​en/​catalog/​2350961954; http:/​/​www.deeplearningbook.org/​
+3) Gutierrez, Folkmann, Tribukait, and Roch. How to Accelerate R&amp;D and Optimize Experiment Planning with Machine Learning and Data Science; Chimia, Vol. 77, Issue 1-2, 2023: https:/​/​findit.dtu.dk/​en/​catalog/​6417ca74642ed13abb19cf6b
+4) Kandasamy et al. Tuning Hyperparameters without Grad Students: Scalable and Robust Bayesian Optimisation with Dragonfly; arXiv:1903.06694 (2019); https:/​/​findit.dtu.dk/​en/​catalog/​5c8f88a3d9001d018b0b0cd5
+5) Computational Screening of Light-Absorbing Materials for Photoelectrochemical Water Splitting, I. E. Castelli, K. Kuhar, M. Pandey, and K. W. Jacobsen, in Advances in Photoelectrochemical Water Splitting, ed. D. Tilley, S. Lany and R, van de Krol, RSC Editor, February 2018; https:/​/​findit.dtu.dk/​en/​catalog/​2434296929
+Den foreslåede litteratur er frit tilgængelig for studerende gennem DTU Bibliotek.</Course_Literature>
+          <Course_Objectives>De studerende vil opnå praktisk erfaring med selvkørende eksperimenter og machine learning-baseret orkestrerings- og optimeringssoftware. De studerende vil implementere software, der er i stand til at omdanne et brugerdefineret Arduino-baseret setup udstyret med pumper og farvesensorer til et selvkørende aboratorium, som kan blande væske med ønskede optiske egenskaber.
+
+De studerende vil få indsigt i computationelle værktøjer og fremgangsmåder, som kan accelerere opdagelse af nye grønne energimaterialer som f.eks. batterier, nanokatalysatorer, brændselsceller og solceller.
+
+Herudover vil studerende opnå ekspertise i at arbejde med open-source databaser, data-API’er og FAIR-principper.</Course_Objectives>
+          <DTU_Remark>Kurset er udelukkende åbent for studerende på bacheloruddannelsen Teknologi - digital uddannelse. Studerende fra andre studieretninger, der er interesserede i at deltage, skal kontakte kursusansvarlig inden tilmelding.
+AI-orkestrerede selvkørende laboratorier til at accelerere opdagelse af nye energimaterialer.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>A 3-week course focusing on learning the methods and tools necessary for AI-orchestrated self-driving labs consists of several components: lectures on theory, a guest lecture from industry, performing computer exercises and orchestrate experiments.
+
+Three main scientific areas are involved in this course:
+
+1) Data-driven materials discovery (lectures and exercises)
+Database and API tools, FAIR data, high-throughput screening approaches
+
+2) Machine/deep learning techniques for autonomous materials discovery (lectures, examples and exercises)
+Supervised/unsupervised methods, fingerprinting, Bayesian methods (generative algorithms)
+
+3) Autonomous experiments (theory, simulations, and experiments)
+Introduction to the required software and hardware
+Orchestrate and direct a custom Arduino-based hardware based on data from experimental and theoretical databases.
+On-the-fly analysis of the output</Contents>
+          <Teaching_And_Learning_Methods>The course will be based on lectures, practical exercises and autonomous robotic experiments.</Teaching_And_Learning_Methods>
+          <Course_Literature>1) Alán Aspuru-Guzik, Kristin Persson, Daniel Tabor, Tejs Vegge, et al, Materials Acceleration Platform - Accelerating Advanced Energy Materials Discovery by Integrating High Throughput Methods with Artificial Intelligence; http:/​/​mission-innovation.net/​wp-content/​uploads/​2018/​01/​Mission-Innovation-IC6-Report-Materials-Acceleration-Platform-Jan-2018.pdf
+2) Goodfellow, Bengio and Courville. Deep Learning, MIT Press, SBN: 9780262035613 (2016); https:/​/​findit.dtu.dk/​en/​catalog/​2350961954; http:/​/​www.deeplearningbook.org/​
+3) Gutierrez, Folkmann, Tribukait, and Roch. How to Accelerate R&amp;D and Optimize Experiment Planning with Machine Learning and Data Science; Chimia, Vol. 77, Issue 1-2, 2023: https:/​/​findit.dtu.dk/​en/​catalog/​6417ca74642ed13abb19cf6b
+4) Kandasamy et al. Tuning Hyperparameters without Grad Students: Scalable and Robust Bayesian Optimisation with Dragonfly; arXiv:1903.06694 (2019); https:/​/​findit.dtu.dk/​en/​catalog/​5c8f88a3d9001d018b0b0cd5
+5) Computational Screening of Light-Absorbing Materials for Photoelectrochemical Water Splitting, I. E. Castelli, K. Kuhar, M. Pandey, and K. W. Jacobsen, in Advances in Photoelectrochemical Water Splitting, ed. D. Tilley, S. Lany and R, van de Krol, RSC Editor, February 2018; https:/​/​findit.dtu.dk/​en/​catalog/​2434296929
+All the suggested literature is freely available for the students at the DTU Library.</Course_Literature>
+          <Course_Objectives>The students will obtain hands-on experience with self-driving experiments and machine learning-based orchestration and optimization software. The students will implement software capable of turning a custom Arduino-based setup equipped with pumps and colour sensors into an autonomous laboratory that is able to mix liquids toward targeted optical properties.
+
+The students will also get insight into computational tools and approaches to accelerate the discovery of clean energy materials, e.g. batteries, nano-catalysts, fuel cells, and photovoltaics.
+
+Moreover, the students will acquire expertise in working with open-source databases, data API, and FAIR-principles.</Course_Objectives>
+          <DTU_Remark>This course is open exclusively to students enrolled in the BSc General Engineering - taught in Danish. Students from other study lines who are interested in participating must contact the course responsible before registering.
+AI-orchestrated self-driving laboratories to accelerate the discovery of new energy materials.</DTU_Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om fysisk kemi, faststoffysik og/eller datalogi er påkrævet for at tage dette kursus. Basale programmeringsfærdigheder (f.eks. Python) er også påkrævet." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Basic concepts from physical chemistry, condensed matter physics and/or computer science are needed for this course. Basic programming skills (e.g., Python) are also required." />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende machine learning- og deep learning-metoder til at analysere materialedata og guide til opdagelse af nye materialer" />
+          <Txt Lang="en-GB" Txt="Understand and apply machine and deep learning approaches to analyze materials data and guide materials discovery" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og analysere computationelle og eksperimentelle databaser til opdagelse af materialer" />
+          <Txt Lang="en-GB" Txt="Understand and analyze computational and experimental databases for materials discovery" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Bayesiansk optimering og andre machine learning-teknikker til at optimere udvalgte materialeegenskaber" />
+          <Txt Lang="en-GB" Txt="Apply Bayesian optimization and other machine learning techniques to optimize target materials properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere software til at udføre autonome roboteksperimenter" />
+          <Txt Lang="en-GB" Txt="Implement software for running autonomous robotic experiments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende relevant software til at analysere, fortolke og evaluere eksperimentelle resultater" />
+          <Txt Lang="en-GB" Txt="Apply relevant software tools to analyze, interpret and evaluate experimental results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå hvordan man arbejder med open-source databaser, data API'er og FAIR-principper." />
+          <Txt Lang="en-GB" Txt="Understand how to work with open-source databases, data API, and FAIR-principles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå tilstedeværelsen af støj i eksperimentelle data og strategier til at tage højde for dem." />
+          <Txt Lang="en-GB" Txt="Understand the presence of noise in the experimental data and strategies to account for them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere resultaterne i en kortfattet mundtlig præsentation foran et publikum af eksperter" />
+          <Txt Lang="en-GB" Txt="Present results in a concise oral presentation to an expert audience" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:05.99" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

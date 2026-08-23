@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02820" Volume="2026/2027" University="dtu" LastUpdated="2026-04-30+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Forklarbar kunstig intelligens og UX" />
+        <Title Lang="en-GB" Title="Explainable AI and user experience" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="142917" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Aasa</GivenName>
+            <FamilyName>Feragen</FamilyName>
+            <Email>afhar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="73371" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Per</GivenName>
+            <FamilyName>Bækgaard</FamilyName>
+            <Email>pgba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="167228" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lenka</GivenName>
+            <FamilyName>Tetková</FamilyName>
+            <Email>lenhy@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="21803" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tommy Sonne</GivenName>
+            <FamilyName>Alstrøm</FamilyName>
+            <Email>tsal@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset har to obligatoriske afleveringer.  Afleveringerne skal godkendes for at bestå kurset. Den endelige karakter bliver givet baseret på en helhedsvurdering baseret på rapporterne og den mundtlige eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course has two mandatory reports. The reports must be approved as a prerequisite for passing the course. The final grade is based on an overall assessment of the reports and the oral exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Forskellige typer af XAI-metoder: Feature attribution metoder (LIME, SHAP, gradient-baserede metoder, LRP); visualisering af latente rum (f eks t-SNE, UMAP), repræsentations-alignment (f eks CCA, CKA).
+- Evaluering af XAI forklaringer, både kvalitet (hvor godt forklarer de modellen) og fra brugerperspektiv (hvor godt bliver informationen kommunikeret)
+- Menneske-centrerede designprincipper, discoverability, design af brugergrænseflader og heuristisk evaluering.
+- Design og evaluering af resultater af bruger-eksperimenter
+- Dataetik og human alignment.</Contents>
+          <Teaching_And_Learning_Methods>Kurset vil bestå af forelæsninger, diskussioner, praktiske øvelser og projekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At forstå moderne metoder til XAI, at kunne anvende og evaluere dem, samt at effektivt kunne kommunikere outcomes til brugere -- og at kunne eksperimentelt evaluere hvorvidt brugen af XAI er effektiv.
+
+En studerende, der fuldt ud har opfyldt kursets mål, vil kunne:</Course_Objectives>
+          <DTU_Remark>Kurset er kun for bachelor studerende i Kunstig intelligens og data</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Different types of XAI methods: feature-attribution methods (LIME, SHAP, gradient-based methods, LRP); visualization of latent spaces (e.g., t-SNE, UMAP), representational alignment (e.g., CCA, CKA).
+- Evaluation of the explanations, both the quality (how well they explain the model), and from the user’s perspective (how well they communicate the information).
+- Human-centered design principles, discoverability, user interface design and heuristic evaluation. - Designing and evaluating the outcome of user experiments.
+- Data ethics and human alignment.</Contents>
+          <Teaching_And_Learning_Methods>The course will consist of lectures, discussions, practical exercises and projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Understand modern XAI methods, apply/evaluate them, and effectively communicate the outcomes to users.
+
+A student who has met the objectives of the course will be able to:</Course_Objectives>
+          <DTU_Remark>This course is only for bachelor students in Artificial intelligence and data.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurser: 01001/01002, 02002, 02451, (02462 or experience with deep learning). 02462 kan tages sideløbende med 02820&#xD;&#xA;Emner: Lineær algebra, analyse, basal kundskab indenfor sandsynlighedsteori og statistik, samt programmering i Python. Studerende bør være i stand til at implementere og træne maskinlæringmodeller fra ikke-standard datasæt, inkluderet deep learning modeller." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Courses: 01001/01002, 02002, 02451, (02462 or experience with deep learning) 02462 can be taken concurrently with 02820.&#xD;&#xA;Topics: linear algebra and calculus, basic knowledge of probability theory/statistics, and programming in Python. Students should be able to implement and train machine learning models from custom datasets, including deep learning models." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01001/01002 . 02002 . 02451/02452 . 02462" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå og forklare motivationer der ligger bag brug af XAI: Samfundsmæssige, etiske, regulatoriske og praktiske;" />
+          <Txt Lang="en-GB" Txt="explain the motivations behind XAI: societal, ethical, regulatory, and practical;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende XAI-værktøjer for maskinlæringsmodeller (f eks LIME, SHAP, LRP, CAV); " />
+          <Txt Lang="en-GB" Txt="apply explainability tools for machine learning models (e.g., LIME, SHAP, LRP, CAV);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere XAI-forklaringer kvantitativt og kvalitativt (fidelity, stability, plausibility, comprehensability); " />
+          <Txt Lang="en-GB" Txt="evaluate explanations quantitatively and qualitatively (fidelity, stability, plausibility, comprehensibility);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kritisk vurdere begrænsninger og potentielt misledende aspekter af XAI-metoder;" />
+          <Txt Lang="en-GB" Txt="critically assess the limitations and potential misleading aspects of explainability methods;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenligne forskellige forklaringsmetoder for den samme model og datasæt, og identificere forskelle i fidelity og nytteværdi;" />
+          <Txt Lang="en-GB" Txt="compare multiple explanation methods for the same model and dataset, identifying differences in fidelity and usefulness;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="effektivt kommunikere XAI-forklaringer til ikke-tekniske publikum (f eks business, policy eller medicinske stakeholders)" />
+          <Txt Lang="en-GB" Txt="communicate explanations effectively to non-technical audiences (e.g., business, policy, or medical stakeholders);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe, udføre og evaluere et eksperiment for at vurdere XAI og interaktion med slutbrugere." />
+          <Txt Lang="en-GB" Txt="design, execute and evaluate an experiment to assess XAI and interactions with target users;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere deres resultater både skriftligt, ved mundtlig præsentation, samt kritisk diskussion." />
+          <Txt Lang="en-GB" Txt="communicate their results through both writing, oral presentation and critical discussion." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:33:00.713" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

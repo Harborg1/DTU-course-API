@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62643" Volume="2026/2027" University="dtu" LastUpdated="2024-03-20+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Svingningslære" />
+        <Title Lang="en-GB" Title="Mechanical Vibrations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="23707" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jens Michael</GivenName>
+            <FamilyName>Bertelsen</FamilyName>
+            <Email>miber@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter vil blive baseret på de 4 assignments og projektet samt en fire-timers skriftlig eksamen. Både eksamen og projektet med de 4 assignments skal bestås individuelt. Projektet og de 4 assignments vægtes med 30 % i den samlede bedømmelse af karakteren." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade will be based on 4 assignments, a project and a four hours written exam. Both the written exam and the project with 4 assignments have to be passed separately. 30 % of the grade will be based on the 4 assignments and the project." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Internal censorship for both written exams and CDIO reports." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Intern censur for både skriftlig eksamen og CDIO-rapporter." />
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Bevægelsesligninger med begyndelses betingelser.
+
+Svingninger af lineære systemer med en og to frihedsgrad, herunder frie og tvungne svingninger for translatorisk og rotation med og uden dæmpning.
+
+Isolatorer.
+
+Penduler og masse inertimomenter.
+  
+Svingninger af kontinuerte systemer: Bevægelsesligninger for strenge, stave and bjælker. Randbetingelser og begyndelses betingelser. Fourier rækker, ortogonalitet, egenfunktioner, egenvektorer og egenværdier. Roterende aksler og Dunkerley’s formel. Rayleigh’s metode og Rayleigh-Ritz metode.
+
+Finite Element Metode: Masse- and Stivheds matricer og bevægelsesligninger for stave og bjælker formuleret på matrix form.
+
+Introduktion til ulineære svingninger.
+
+Software “DAMA” bruges som animations-værktøj til at forøge de studerendes forståelse af bevægelserne for svingende mekaniske systemer.</Contents>
+          <Teaching_And_Learning_Methods>Undervisningen er både projektorienteret og problembaseret. Der er både lektioner og opgaveregning. Det obligatoriske projekt er baseret på eksperimenter med en Frequency Analyzer samt simulationer i MATLAB og COMSOL.</Teaching_And_Learning_Methods>
+          <Course_Literature>Dynamics and Vibration: An Introduction, ISBN-13: 978-0-470-72300-5, by Magd Abdel Wahab, Wiley 2008.
+- Lektions noter på DTU Learn.</Course_Literature>
+          <Course_Objectives>At give de studerende et teoretisk og praktisk grundlag i at løse svingningsproblemer inden for konstruktioner og maskiner ved brug af analytiske og numeriske metoder samt give forudsætninger for at studere avanceret dynamik og svingningslære.</Course_Objectives>
+          <Remark>Sektion for Mekanisk teknologi
+Valgfag</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Equations of motion with initial conditions.
+
+Vibrations of linear single and two degree-of-freedom systems, including free and forced vibrations for translation and rotation with damping and without damping.
+
+Vibration isolators.
+ 
+Pendulums and mass moment of inertia.
+
+Vibrations of continuous systems: Equations of motion for strings, bars and beams. Boundary and initial conditions. Fourier series, orthogonality, eigenfunctions, eigenvectors and eigenvalues. Whirling shafts and Dunkerley’s formula. Rayleigh’s method and Rayleigh-Ritz method.
+
+Finite Element Methods: Mass and Stiffness matrices and equations of motion for bars and beams expressed in Matrix form.
+
+Introduction to non-linear vibration.
+
+The software “DAMA” will be used as an animation tool, in order to enhance the students’ understanding of the motion and vibration of mechanical systems.</Contents>
+          <Teaching_And_Learning_Methods>The teaching is both project-oriented and problem-based. There are both lectures and exercises. The mandatory project is bases upon experiments with a Frequency Analyzer as well as MATLAB and COMSOL simulations.</Teaching_And_Learning_Methods>
+          <Course_Literature>Dynamics and Vibration: An Introduction, ISBN-13: 978-0-470-72300-5, by Magd Abdel Wahab, Wiley 2008.
+- Lecture notes on DTU Learn.</Course_Literature>
+          <Course_Objectives>To provide the students with a theoretical and practical foundation for solving vibration problems related to structures and machines, using analytical and numerical methods. To give the basis for advanced studies in dynamics and vibrations.</Course_Objectives>
+          <Remark>Section of Mechanical Technology
+Valgfag</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere masse, stivhed, energitab og eksterne kræfter i standardiserede mekaniske systemer." />
+          <Txt Lang="en-GB" Txt="Identify masses, stiffness, energy-dissipation and external forces in some standard mechanical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Newton's anden lov, frit legeme diagram og energimetoden til at udlede bevægelsesligninger for mekaniske systemer med et endeligt og uendelig antal af frihedsgrader." />
+          <Txt Lang="en-GB" Txt="Use Newton's second law, free body diagrams and the energy method to derive the equations of motion (scalar or matrix-vector form) for simple models of mechanical systems with a finite or infinite number of degrees of freedom." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme den naturlige egenfrekvens for mekaniske systemer med et endeligt og uendelig antal af frihedsgrader." />
+          <Txt Lang="en-GB" Txt="Determine the natural frequencies for mechanical systems with a finite or infinite number of degrees of freedom." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende analytiske og numeriske metoder til at løse bevægelsesligninger for mekaniske systemer." />
+          <Txt Lang="en-GB" Txt="Use analytical and numerical methods to solve equations of motion for mechanical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og forklare egenfunktioner, egenvektorer og egenværdier." />
+          <Txt Lang="en-GB" Txt="Understand and explain eigenfunctions, eigenvectors and eigenvalues." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere resonansproblemer for både dæmpede og udæmpede svingende mekaniske systemer." />
+          <Txt Lang="en-GB" Txt="Identify resonance problems for both damped and undamped vibrating mechanical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begrænsninger i de anvendte modeller og metoder og forudsige mulige konsekvenser ved at bruge simple antagelser især lineariseringer og begrænsninger i antallet af frihedsgrader." />
+          <Txt Lang="en-GB" Txt="Account for the limitations in the models and methods used, and predict the possible consequences of making simplified assumptions, especially linearization and limitation of the number of degrees of freedom." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende approksimative metoder til at bestemme egenfrekvenser." />
+          <Txt Lang="en-GB" Txt="Use approximate methods to determine natural frequencies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive tekniske rapporter med korrekt beskrivelse af teoretiske og eksperimentale procedurer, på en klar måde ved at bruge tekniske termer med fysiske fortolkninger og vurderinger af resultater." />
+          <Txt Lang="en-GB" Txt="Write technical reports with correct description of theoretical and experimental procedures, in a clear way, using technical terms, giving physical interpretations and evaluations of results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende computer software DAMA and MATLAB til at løse svingningsproblemer." />
+          <Txt Lang="en-GB" Txt="Use the computer software DAMA and MATLAB for solving vibration problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give de studerende en baggrund i avanceret studie af dynamik og svingningslære." />
+          <Txt Lang="en-GB" Txt="To give the students a basic background for advanced studies in dynamics and vibrations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Læse litteratur om mekaniske svingninger." />
+          <Txt Lang="en-GB" Txt="Read engineering literature on mechanical vibrations." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="62675 and 62694" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Machine design</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="ME-MEV-U1" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:52.953" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

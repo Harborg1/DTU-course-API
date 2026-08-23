@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="01415" University="dtu" LastUpdated="2026-03-25+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computational Discrete Mathematics" />
+        <Title Lang="en-GB" Title="Computational Discrete Mathematics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="28452" FUniversity="DTU" SortID="0" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Beelen</FamilyName>
+            <Email>pabe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="123707" FUniversity="DTU" SortID="1" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Maria</GivenName>
+            <FamilyName>Montanucci</FamilyName>
+            <Email>marimo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Eksakt algebraisk beregning. Aritmetik i endelige legemer, med polynomier over endelige legemer samt med matricer over endelige legemer og heltal. Hurtige algoritmer til multiplikation. Idealer i Noeterske ringe, især multivariate polynomiumsringe, Gröbner baser og Buchbergers algoritme.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, hjemmeopgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>A standard reference is J. von zur Gathen, J. Gerhard, Modern Computer Algebra, 3rd ed.</Course_Literature>
+          <Course_Objectives>Dette kursus handler om opfindsomme og effektive metoder til at løse algebraiske spørgsmål, såsom at finde den største fælles divisor af polynomier med koefficienter i et endeligt legeme, eller at finde fælles nulpunkter af givne multivariate polynomier. Vi arbejder i en diskret og eksakt verden: heltal, brøker, endelige legemer og polynomier, og vi søger algoritmer der er hurtige for tilpas store input.
+
+Hvis du er vild med diskret matematik og algebra så vil du kunne lide dette kursus, fordi vi dykker dybt ned i smukke og overraskende algebraiske egenskaber, der leder til konkrete opskrifter på at løse beregningsmæssige spørgsmål. Abstrakt algebra vil blive konkret og "hands-on" ved at forstå, hvordan man faktisk regner med objekterne.
+
+Kurset har en matematisk stringent tilgang med beviser af algebraiske sætninger, af algoritmers korrekthed og af deres asymptotiske køretid. Til dette mix tilsætter vi eksperimentering med et computer-algebra-system.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Exact algebraic computation. Arithmetic in finite fields, with polynomials over finite fields, and with matrices over finite fields and over integers. Fast algorithms for multiplication. Ideals in Noetherian rings, especially multivariate polynomial rings, Gröbner bases and Buchberger's algorithm.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, homework assignments</Teaching_And_Learning_Methods>
+          <Course_Literature>A standard reference is J. von zur Gathen, J. Gerhard, Modern Computer Algebra, 3rd ed.</Course_Literature>
+          <Course_Objectives>This is a course about ingenious methods for solving algebraic questions, such as finding the greatest common divisor of polynomials over a finite field, or finding simultaneous roots to several multivariate polynomials. We are in a discrete and exact arena: integers, fractions, finite fields and polynomials, and our main concern will be to study algorithms that are fast for very large input.
+
+If you like discrete mathematics and algebra, you will like this course because we will dig deep into beautiful and surprising algebraic properties that can be turned into concrete recipes for solving problems. Abstract algebra will become concrete and hands-on by understanding how to actually solve algebraic questions.
+
+We will take a mathematically stringent approach with proofs of algebraic theorems, algorithms' correctness and their complexity. We will mix this with experimentation with a computer-algebra program.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Forståelse af begreber fra abstrakt algebra: lineær algebra, ringe, idealer, kvotientringe, isomorfisætningen, endelige legemer. Lidt erfaring med programmering og algoritmer.&#xD;&#xA;Studerende der ikke har taget 01018 men har 01017 og 01426 burde kunne følge kurset med, men skal forvente at læse ekstra op på ovenstående algebra." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Understanding of concepts from abstract algebra: linear algebra, rings, ideals, quotient rings, the isomorphism theorem, finite fields. Some experience with programming and algorithms.&#xD;&#xA;Students that have not taken 01018 but have 01017 and 01426 should be able to follow the course but should expect reading up on the mentioned algebra." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01018" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan man repræsenterer og regner med endelige legemer og med polynomier over endelige legemer." />
+          <Txt Lang="en-GB" Txt="Explain how to explicitly represent and compute with very large integers, finite fields, and with polynomials over finite fields." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hurtig multiplikation og anvendelser til andre beregninger." />
+          <Txt Lang="en-GB" Txt="Describe a fast multiplication algorithm and applications for other computations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende modulære metoder og den kinesiske restklasse-sætning til algebraiske beregninger." />
+          <Txt Lang="en-GB" Txt="Apply modular methods and chinese remaindering to algebraic computations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre multivariat polynomiumsdivision med rest og beskrive hvilken rolle monomiums-ordenen har." />
+          <Txt Lang="en-GB" Txt="Perform multivariate polynomial division with remainder and describe the role of monomial orders." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne en Gröbner-basis og beskrive dens relevans for at afgøre medlemsskab i et ideal, samt relaterede problemer." />
+          <Txt Lang="en-GB" Txt="Compute a Gröbner basis and describe its relevance for ideal membership and related problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Repræsentere et praktisk problem som ikke-lineære polynomiumsligninger og relationen til idealer af multivariate polynomiumsringe." />
+          <Txt Lang="en-GB" Txt="Represent real-world problems as non-linear equations and the relation to ideals of multivariate polynomial rings." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge et computer-algebra-system til eksperimentelt at arbejde med algebraiske problemer." />
+          <Txt Lang="en-GB" Txt="Use a computer algebra system to experimentally work with algebraic problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere den asymptotiske køretid af en algoritme til algebraiske problemer i en realistisk beregningsmodel." />
+          <Txt Lang="en-GB" Txt="Determine the asymptotic complexity of algorithm for algebraic problems in a realistic computational model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bevise korrektheden af en algebraisk algoritme." />
+          <Txt Lang="en-GB" Txt="Prove the correctness of algebraic algorithms." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Beregningsmæssig diskret matematik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="2" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:21.457" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

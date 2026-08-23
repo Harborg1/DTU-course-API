@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41528" University="dtu" LastUpdated="2024-02-22+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Videregående materialemekanik" />
+        <Title Lang="en-GB" Title="Advanced mechanics of materials" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="9529" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Brian Nyvang</GivenName>
+            <FamilyName>Legarth</FamilyName>
+            <Email>bnle@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6575" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian Frithiof Niord</GivenName>
+            <FamilyName>Niordson</FamilyName>
+            <Email>cfni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Or_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Ved mindre end 20 kursustilmeldte kan der afholdes mundtlig eksamen - ellers er eksamen skriftlig. Evalueringsformen meddeles i første uge af semesteret." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="If less than 20 course participants the exam is potentially oral - otherwise a written exam is given. Evaluation form will be decided in the first week of the semester." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Store deformationer. Ikke-linear elasticitets teori. Deformations- og inkrementalteorier for elastisk-plastiske materialer. Konveksitet og normalitet. Ligevægtsligninger og ekstremalprincipper. Visko-plasticitetsteori, herunder plastisk deformations afhængighed af tøjningshastighed og krybning ved høje temperaturer. Moderne numeriske beregningsmetoder.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaveregning</Teaching_And_Learning_Methods>
+          <Course_Literature>Bog: V. Tvergaard: "Plasticity and Creep In Structural Materials" (købes i DTU's boghandel)
+Bog: A. F. Bower: "Applied Mechanics of Solids"</Course_Literature>
+          <Course_Objectives>At give baggrunden for at karakterisere spændinger som følge af store elastiske (reversible)  deformationer samt plastisk materialeopførsel (irreversibel), herunder krybning ved høje temperaturer. At give indsigt i og indøve brugen af modeller til bestemmelse af materialers styrkeforhold, både ved elastisk og plastisk deformationer. Dette inkluderer modeller for ikke-lineær elasticitet samt isotrop og anisotrop plasticitet. At bestemme deformationsmekanismer som er relevante for styrkeforholdene i materialer og konstruktioner.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Large deformations. Non-linear elasticity theory. Deformation and incremental theories for elastic-plastic materials. Convexity and normality. Equilibrium equations and extremum principles. Viscoplasticity with dependence of plastic deformation on strain rates and high temperature creep. Modern numerical methods.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem solving</Teaching_And_Learning_Methods>
+          <Course_Literature>Book: V. Tvergaard: "Plasticity and Creep In Structural Materials" (to be bought in the DTU's bookstore).
+Book: A. F. Bower: "Applied Mechanics of Solids"</Course_Literature>
+          <Course_Objectives>To explain the background for stresses resulting from large elastic (reversible) deformations as well as plastic (irreversible) material behaviour, including creep at high temperatures. To give insight and to practice the application of models for the strength of materials, for elastic and plastic deformations. This includes models for non-linear elasticity as well as isotropic and anisotropic plasticity. To determine deformation mechanisms, which are relevant for the strength of materials and structures.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Generel lineær elastisk kontinuumsmekanik. Kendskab til tensorer samt lineær finite element teori anbefales." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Linear elastic continuum mechanics. Knowledge of tensors and linear finite element theory is recommended." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41502 / 41534 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte inkrementalteorier til bestemmelse af plastiske deformationer." />
+          <Txt Lang="en-GB" Txt="Use incremental theories for determining plastic deformations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne plastiske deformationer under isotrop eller kinematisk hærdning." />
+          <Txt Lang="en-GB" Txt="Calculate plastic deformations for isotropic and kinematic hardening." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne anisotrope plastiske deformationer." />
+          <Txt Lang="en-GB" Txt="Calculate anisotropic plastic deformations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere viskose effekter under tidsafhængig deformation." />
+          <Txt Lang="en-GB" Txt="Analyse viscous effects for time-dependent deformations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere krybning i metaller." />
+          <Txt Lang="en-GB" Txt="Analyse creep in metals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udregne grænselast på baggrund af extremalprincipper for bjælker og plader." />
+          <Txt Lang="en-GB" Txt="Calculate limit loads of beams and plates based on extremum principles. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage inkrementelle numeriske analyser." />
+          <Txt Lang="en-GB" Txt="Characterize large deformations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere store deformationer." />
+          <Txt Lang="en-GB" Txt="Perform incremental numerical analyses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere spændinger under store deformationer.." />
+          <Txt Lang="en-GB" Txt="Characterize stresses for large deformations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere store elastiske deformationer vha. hyperelastiske materialemodeller." />
+          <Txt Lang="en-GB" Txt="Analyse large elastic deformations by means of hyper-elasticity models." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Ulineære materialemodeller med henblik på computerberegninger</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41527" />
+        <PreviousCourse CourseCode="41527" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:24.62" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

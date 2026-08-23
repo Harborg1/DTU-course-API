@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="01527" University="dtu" LastUpdated="2026-03-05+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Videregående grafteori" />
+        <Title Lang="en-GB" Title="Graph Theory II" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E" SortID="0" />
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Compute" />
+        <Course_Responsible PersonKey="2460" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Thomassen</FamilyName>
+            <Email>ctho@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Løbende projekter vil tælle som del af eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Projects will be part of the exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="First Monday after last class, or by separate agreement." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Første mandag efter sidste undervisning, eller efter aftale." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="10 minuter" />
+          <Duration Lang="en-GB" Txt="10 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>1.Frembringerfunktioner, Catalan-tallene.
+2.Tutte’s 1-faktorsætning. Petersen’s sætning.
+3.Sætningerne af Ramsey og Turan.
+4.Jordan’s kurvesætning.
+5.Kuratowski’s sætning om plane grafer.
+6.Hamilton kredse.  Dirac’s sætning og Grinberg-kriteriet.
+7.Antal hamilton kredse (Smith’s sætning) samt kromatisk tal og maksimalvalens (Brooks’ sætning).
+8.Vizing’s sætning om kantfarvning.
+9.Liste-farvning. 
+10.Kromatisk polynomium.
+11.Orienterede grafer.
+12.Grafer med stort kromatisk tal og ingen små kredse.</Contents>
+          <Teaching_And_Learning_Methods>To timers forelæsning efterfulgt af to timers grupperegning</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset vil indeholde en række klassiske grafteoretiske resultater, såsom sætningerne af Tutte, Ramsey, Turan, Kuratowski,
+Brooks, Dirac, Smith, Vizing, Roy-Gallai, Camion og Robbins samt Jordan's kurvesætning. Desuden vil mere moderne problemstillinger, såsom liste-farvninger, blive gennemgået.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>1.Generating functions,  the Catalan numbers.
+2.Tutte’s 1-factor theorem. Petersen’s theorem.
+3.The theorems of Ramsey og Turan.
+4.The Jordan Curve Theorem.
+5.Kuratowski’s theorem on planar graphs.
+6.Hamilton cycles. Dirac’s theorem and the  Grinberg criterion.
+7.The number of hamilton cycles (Smith’s theorem) , chromatic number and maximum degree (Brooks’ theorem).
+8.Vizing’s theorem on chromatic index.
+9.List-coloring
+10.Chromatic polynomial.
+11.Directed graphs.
+12.Graphs of large chromatic number and large girth.</Contents>
+          <Teaching_And_Learning_Methods>Two hours of lectures followed by two hours of group work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course includes a number of classical results such as the theorems of Tutte, Ramsey, Turan, Kuratowski, Brooks, Dirac, Smith, and Vizing, respectively, and also the Jordan Curve Theorem. The course also includes more recent themes, for example list-colorings.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende frembringerfunktioner." />
+          <Txt Lang="en-GB" Txt="Apply generating functions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende tælleteknik, illustreret med Ramsey's sætning." />
+          <Txt Lang="en-GB" Txt="Apply counting technique illustrated by Ramsey's theorem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlaget for plane grafer: Jordan's kurvesætning." />
+          <Txt Lang="en-GB" Txt="Apply the foundation for planar graphs: The Jordan Curve Theorem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Kuratowski 's planaritetssætning." />
+          <Txt Lang="en-GB" Txt="Apply the Kuratowski Planarity Criterion." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beherske de klassiske sætninger af  Turan, Brooks, Dirac, Smith, Vizing, Roy-Gallai, Camion og Robbins." />
+          <Txt Lang="en-GB" Txt="Understand and apply the classical  theorems by Turan, Brooks, Dirac, Smith, Vizing, Roy-Gallai, Camion and Robbins." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende liste-farvningsmetoden." />
+          <Txt Lang="en-GB" Txt="Apply list-color method." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt=" Anvende algebraiske metoder illustreret ved det kromatiske polynomium." />
+          <Txt Lang="en-GB" Txt="Apply algebraic methods illustrated by the chromatic polynomial." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå den probabilistiske metode illustreret med grafer med stort kromatisk tal og uden korte kredse." />
+          <Txt Lang="en-GB" Txt="Understand the probabilistic method illustrated by graphs with large chromatic number and large girth." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01227" />
+        </Qualified_Prerequisites>
+        <Mandatory_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01227" />
+        </Mandatory_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Videregående grafteori og anvendelser</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <Restrictions Max="100" Min="6" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:24.223" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

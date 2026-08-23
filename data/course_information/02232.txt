@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02232" University="dtu" LastUpdated="2026-03-20+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Anvendt Kryptografi" />
+        <Title Lang="en-GB" Title="Applied Cryptography" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="86800" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Tyge</GivenName>
+            <FamilyName>Tiessen</FamilyName>
+            <Email>tyti@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="190664" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Baum</FamilyName>
+            <Email>cabau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der gives en samlet karakter for kurset på baggrund af en mundtlig eksamen og en skriftlig projektrapport." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One overall mark is given for the course based on an oral exam and a written project report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Grundlæggende algoritmer til implementering af kryptografi, brug af kryptografiske biblioteker, effektivitetsovervejelser i implementeringer af kryptografi, lækage i kryptografiske implementeringer, avanceret kryptografi såsom autentificeringsordninger, blockchains og private set-intersection.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, studenterseminarer og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Deltagerne vil lære om den konkrete implementering af kryptografi til praktisk brug og brugen af effektive kryptografiske teknikker til at konstruere komplekse løsninger.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fundamental algorithms to implement cryptography, use of cryptographic libraries, efficiency considerations in deployments of cryptography, leakage in cryptographic implementations, advanced cryptography such as authentication schemes, blockchains, and private set-intersection.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, student seminars and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>Participants will learn about the concrete implementation of cryptography for practical use and the use of efficient cryptographic techniques to construct complex solutions.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Forståelse af de grundlæggende elementer i kryptografi: RSA, Diffie-Hellman, block ciphers, kryptografiske hash-funktioner. Kendskab til programmering, ideelt set i et systemprogrammeringssprog som C, C++, Rust." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Understanding of the fundamentals of cryptography: RSA, Diffie-Hellman, block ciphers, cryptographic hash functions. Familiarity with programming, ideally in a systems programming language such as C, C++, Rust." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02231/01410" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og implementere grundlæggende komponenter i symmetriske kryptografiske algoritmer" />
+          <Txt Lang="en-GB" Txt="Explain and implement fundamental components of symmetric cryptographic algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og implementere optimerede algoritmer, der kræves til asymmetriske kryptografiske algoritmer" />
+          <Txt Lang="en-GB" Txt="Explain and implement optimized algorithms required for asymmetric cryptographic algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og implementere symmetriske kryptografiske primitiver" />
+          <Txt Lang="en-GB" Txt="Explain and implement symmetric cryptographic primitives" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og implementere kryptografiske algoritmer med offentlig nøgle" />
+          <Txt Lang="en-GB" Txt="Explain and implement public-key cryptographic algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og implementere angreb på praktisk kryptografi" />
+          <Txt Lang="en-GB" Txt="Analyze and implement attacks on practical cryptography" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter effektiviteten af konkret anvendt kryptografi" />
+          <Txt Lang="en-GB" Txt="Discuss the efficiency of concretely deployed cryptography" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar avanceret praktisk anvendt kryptografi, der i øjeblikket er implementeret eller bliver implementeret" />
+          <Txt Lang="en-GB" Txt="Explain advanced practically used cryptography that is currently deployed or being deployed" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle praktisk viden om kryptografiske algoritmer og protokoller " />
+          <Txt Lang="en-GB" Txt="Disseminate practical knowledge about cryptographic algorithms and protocols " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Udvikling af kryptografiske sikkerhedsløsninger</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:04.707" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

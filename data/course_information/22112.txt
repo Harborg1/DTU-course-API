@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22112" Volume="2026/2027" University="dtu" LastUpdated="2026-04-13+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="High Performance Computing i Life Science" />
+        <Title Lang="en-GB" Title="High Performance Computing in Life Science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="816" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Peter Wad</GivenName>
+            <FamilyName>Sackett</FamilyName>
+            <Email>pwsa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Experiments" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Det er en forudsætning for at kunne deltage i eksamen, at obligatoriske øvelser er afleveret, og at peer-evaluering er gennemført i mindst 11 af 13 tilfælde for hver del. Den ordinære eksamen afholdes som en 2-timers multiple choice-eksamen, mens re-eksamen er en 4-timers skriftlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A prerequisite for participation in the examination is that the compulsory exercises have been submitted and that peer evaluation has been completed in at least 11 out of 13 cases for each part. The ordinary examination is conducted as a 2‑hour multiple‑choice exam, while the re‑examination is a 4‑hour written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The exam is a digital MCQ.  Aids are powerpoints, exercises, etc. Use of AI is not allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Eksamen er en digital MCQ. Hjælp er powerpoints, øvelser, osv. Brug af AI er ikke tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset løfter den studerende fra at være den eneste bruger på en enkelt computer til at være en af mange brugere på en supercomputer. Det gøres ved forelæsninger og øvelser i emner som computerarkitektur, køsystemer, parallel programmering, algoritmedesign, programoptimering, database-design og anvendelse i teori og praksis. Der anvendes forskellige life science problemstillinger i undervisningen.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Løfter den studerende fra at udvikle programmer på en personlig computer til design og implementation af life science projekter på supercomputerclustre.</Course_Objectives>
+          <Remark>Kurset anvender blandt andet et computer cluster som øvelsesplatform.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course empowers the student from being the only user on a single computer to be one of many users on a supercomputer. This is done by lectures and exercises on topics such as computer architecture, queueing systems, parallel programming, algorithm design, program optimization, database design and application in theory and practice. Different life science cases are used in the teaching.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>Empowering the student from developing software on a personal computer to designing and implementing life science projects on super computer clusters.</Course_Objectives>
+          <Remark>The course uses a computer cluster among others as a platform for the exercises.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="For at kunne være i stand til at deltage i kurset skal man være vant til at programmere i Python og anvende Unix. Kurset tager udgangspunkt i Life Science og viden om forskellige biologiske filformater er nødvendig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="To be able to participate in the course you must be very comfortable with programming in Python and use Unix. The course is based in Life Science and knowledge of various biological file formats is necessary." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="22113/22163/22118/22168" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forbedre performance af et program ved at anvende tilegnet viden om hvordan en PC og en supercomputer virker fra et hardwaremæssigt perspektiv (ligheder og forskelle)." />
+          <Txt Lang="en-GB" Txt="Improve performance of a program by applying acquired knowledge of how a PC and a supercomputer works from a hardware perspective (similarities and differences)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe programmer og programforløb som anvender et køsystem effektivt på varierende måder." />
+          <Txt Lang="en-GB" Txt="Design programs and pipelines which use a queuing system efficiently in various ways." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere effektiviteten af et program eller programforløb ved analyse af anvendelsen af IO og hukommelse. " />
+          <Txt Lang="en-GB" Txt="Evaluate the efficiency of a program or pipeline by analyzing the use of IO and memory." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge og implementere triviel parallel programudførsel på en node/computer." />
+          <Txt Lang="en-GB" Txt="Implement trivial parallel program execution on a node/computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende 'Divide and Conquer' paradigmet i konkret sammenhæng med Branch&amp;Bound kombinatorisk optimering." />
+          <Txt Lang="en-GB" Txt="Apply the 'Divide and Conquer' paradigm in a concrete case of Branch&amp;Bound combinatoric optimization. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere om binære og/eller probabilistiske datastrukturer kan øge performance af programmer, samt implementere disse." />
+          <Txt Lang="en-GB" Txt="Evaluate if binary and/or probabilistic data structures can increase program performance and implement these data structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe en database ud fra virkelige data og/eller modeller." />
+          <Txt Lang="en-GB" Txt="Design a database from real data and/or models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende SQL til at forespørge og manipulere en database." />
+          <Txt Lang="en-GB" Txt="Use SQL to query and manipulate a database." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere mod en relationel database i Python." />
+          <Txt Lang="en-GB" Txt="Program against a relational database in Python." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere et projekt således at vejen fra rådata til resultat er tydelig og gentagelig." />
+          <Txt Lang="en-GB" Txt="Organize a project such that the road from raw data to result is clear and reproducible." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende strategier for brug af GAI til at understøtte kodeudvikling, samtidig med at selvstændig problemløsning opretholdes og egen forståelse af underliggende programmeringskoncepter demonstreres." />
+          <Txt Lang="en-GB" Txt="Apply strategies for using GAI to support code development while maintaining independent problem-solving and demonstrating their own understanding of underlying programming concepts." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://teaching.healthtech.dtu.dk/22112/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>High Performance Computing in Life Science</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="36612" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="60" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:06.713" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

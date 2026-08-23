@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34865" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Numerisk Akustik" />
+        <Title Lang="en-GB" Title="Numerical Acoustics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="5829" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Vicente Cutanda</GivenName>
+            <FamilyName>Henriquez</FamilyName>
+            <Email>vcuhe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="150863" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Frieder</GivenName>
+            <FamilyName>Lucklum</FamilyName>
+            <Email>fluc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The oral exams can be placed on two different days if the number of students requires it." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="De mundtlige prøver kan afholdes på to forskellige dage, hvis antallet af studerende kræver det." />
+            <Schedule ScheduleKey="F3A" />
+            <Schedule ScheduleKey="F3B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er opbygget omkring teori forelæsninger combineret med computer øvelser baseret på Matlab. I øvelserne vil blive anvendt og implementeret kode i Matlab. Comsol FEM software må også blive benyttet. FEM og BEM formuleringerne vil blive udviklet og brugt på relevante akustiske problemer. Koblingen mellem den akustiske del og andre systemer som f.eks. mekaniske dele vil blive introduceret. 
+Mindre øvelser bruges til at illustrere teorien. Derudover vil der være en større simuleringsopgave som vil være en del af mundtlige eksamen.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computer øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>N. Atalla and F. Sgard, “Finite Element and Boundary Methods in Structural Acoustics and Vibration”, CRC Press, 2015.</Course_Literature>
+          <Course_Objectives>At introducere numeriske metoder til akustiske beregninger: Finite Element Metoden (FEM) og Boundary Element Metoden (BEM). At sætte de studerende istand til at define og generere numeriske modeller af akustiske elementer og systemer, at koble dem til mekaniske modeller, samt at uddrage konklusioner fra resultater.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course focuses on theoretical lectures combined with computer exercises using Matlab programming. The students will use and adapt existing BEM and FEM code in Matlab. The Comsol FEM package may also be used.
+The formulation of the FEM and BEM in acoustics will be examined and developed with practical programming examples related with acoustical problems. There will be short exercises in connection with the theory, plus a larger assignment during the course that will be evaluated in the oral exam.
+The coupling of the acoustic model with other elements in the setup defined in different physical terms, such as mechanical systems, will be outlined.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>N. Atalla and F. Sgard, “Finite Element and Boundary Methods in Structural Acoustics and Vibration”, CRC Press, 2015.</Course_Literature>
+          <Course_Objectives>Introduce numerical methods used in Acoustics: Finite Element Method (FEM) and Boundary Element Method (BEM). Enable the students to define and create numerical models of acoustical devices and setups, couple them to mechanical models, and draw conclusions from the results.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="34940 Grundkursus i akustik og støj, programmering færdigheder" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="34840 Fundamentals of Acoustics and Noise Control. A programming background is expected." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34840" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge den passende numeriske beregning til et givet problem: FEM, BEM eller en kombination" />
+          <Txt Lang="en-GB" Txt="Select the appropriate numerical tool for any given acoustic problem: FEM, BEM or a combination of them." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere modellen til at indeholde alle relevante karakteristika og udelade unødvendige detaljer" />
+          <Txt Lang="en-GB" Txt="Define the model to contain the relevant features, excluding unnecessary details." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og konstruere akustiske numeriske simuleringer med BEM og FEM" />
+          <Txt Lang="en-GB" Txt="Formulate and construct numerical simulations in acoustics using FEM and BEM." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere randbetingelser og definere koblingsegenskaber hvor der er relevant" />
+          <Txt Lang="en-GB" Txt="Identify the boundary conditions and, if appropriate, define the coupling properties." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge en FEM model baseret på vægtede residualer, Galerkin’s metode" />
+          <Txt Lang="en-GB" Txt="Assemble a FEM model based on weighted residuals, Galerkin’s method." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere de særlige egenskaber den direkte colokation BEM formulering, såsom nær-singulære integraler" />
+          <Txt Lang="en-GB" Txt="Evaluate the particularities of the BEM direct collocation formulation, such as singular and near-singular integrals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse FEM modeller for multidomæne problemer" />
+          <Txt Lang="en-GB" Txt="Define and solve multidomain problems in BEM." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse koblede FEM/BEM modeller" />
+          <Txt Lang="en-GB" Txt="Define and solve FEM/BEM coupling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere simuleringsresultater og drage konklusion baseret på disse" />
+          <Txt Lang="en-GB" Txt="Analyze simulation results and draw conclusions from them." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå avancerede begreber såsom vibroakustik optimering og analyse af periodiske strukturer (metamaterialer)." />
+          <Txt Lang="en-GB" Txt="Understand advanced concepts such as vibroacoustics optimization and analysis of periodic structures (metamaterials)." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>An introduction to numerical methods (FEM/BEM) for acoustics with practical examples, and including guest speakers from industry</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31265" />
+        <PreviousCourse CourseCode="31265" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:06.713" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

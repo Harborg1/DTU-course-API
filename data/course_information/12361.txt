@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="12361" University="dtu" LastUpdated="2026-03-20+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Ventilation og klimateknik" />
+        <Title Lang="en-GB" Title="Ventilation and Climatic Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="12" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="12" />
+        <Course_Responsible PersonKey="2504" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jørn</GivenName>
+            <FamilyName>Toftum</FamilyName>
+            <Email>jtof@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="68861" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mariya Petrova</GivenName>
+            <FamilyName>Bivolarova</FamilyName>
+            <Email>mbiv@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen 30%. Rapport 70%.&#xD;&#xA;&#xD;&#xA;Det er en forudsætning for at bestå kurset, at både den mundtlige eksamen og den afsluttende rapport bedømmes med bestået." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral examination 30%. Report 70%.&#xD;&#xA;&#xD;&#xA;To pass the course, both the oral exam and the final report must be passed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kriterier for komfortabelt indeklima. Belastningsberegninger. Processer i klimaanlæg. Komponenter og anlægstyper. Energianalyse. Strategi for regulering og styring. Numerisk simulering af klimaanlæg, indeklima og energiforbrug. Ventilationsprincipper og -systemer. Isoterme og ikke-isoterme luftstrømninger i rum og deres modellering. Luftstrømninger omkring personer. Varmetransport fra en person. CFD-modellering. Komfortventilation. Naturlig ventilation. Hybrid ventilation. Infiltration. Måleinstrumenter. Måling af luftbevægelser i rum. Sporgasmåling.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde, øvelser, eksperimentelt arbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>At anvende standarders kriterier og metoder til at dimensionere og designe ventilations- og klimasystemer og at foreslå strategier for styring af systemerne, som giver et komfortabelt indeklima ved et lavt energiforbrug. At evaluere designet gennem avancerede numeriske og eksperimentelle simuleringer med vægt på luftstrømninger i rum.</Course_Objectives>
+          <Remark>De studerende skal i grupper dimensionere et klimaanlæg til et lokale, hvor der er opstillet en række krav til indeklimaet. Ved hjælp af numeriske simuleringer dokumenteres, at anlægget kan overholde de opstillede funktionskrav ved et acceptabelt energiforbrug. For den opstillede geometri undersøges luftstrømninger i lokalet og ventilationssystemets effektivitet med avancerede CFD-simuleringer og målinger i fuldskala model i et klimakammer.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Criteria to comfortable indoor environments. Load calculations. Psychrometrics in climatic systems. Components and types of system. Analysis of energy use. Strategies for operation and control. Numerical simulation of climatic systems, indoor environment and energy use. Ventilation principles and systems. Theory and modeling of isothermal and non-isothermal airflow in spaces. Airflow near humans. CFD-modeling. Comfort ventilation. Natural ventilation. Hybrid ventilation. Infiltration. Measurement instruments. Measurement of airflow in spaces. Tracer gas measurements.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, exercises, experimental work</Teaching_And_Learning_Methods>
+          <Course_Objectives>To apply standard criteria and methods to design ventilation- and climatic systems that satisfy human requirements and to suggest strategies for control of such systems to achieve low energy use. To evaluate the design by advanced numerical and experimental methods with emphasis on characterization of air distribution in spaces.</Course_Objectives>
+          <Remark>The students will design a climatic system for a building that has well-defined requirements to the indoor environment. By simulation, it will be tested whether the system meets the energy requirements. CFD-simulation and full-scale  measurements with advanced methods will be performed to test the validity of the design.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forudsættes, at deltagerne har et grundlæggende kendskab til fluid mekanik, varme-, ventilations-, og klimateknik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Participants should have fundamental knowledge of fluid mechanics, heating, air-conditioning and ventilation principles." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41814/41815" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende standarder og professionel litteratur til at beskrive kriterier for indeklima og beregne køle-, varme- og forureningsbelastninger" />
+          <Txt Lang="en-GB" Txt="Use standards and professional literature to specify criteria to the indoor environment and quantify cooling, heating and pollution loads" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge et ventilationsprincip og designe et ventilationssystem på baggrund af krav til indeklima, energiforbrug, rumgeometri og -anvendelse." />
+          <Txt Lang="en-GB" Txt="Select a ventilation principle and design a ventilation system based on requirements to the indoor environment, energy use, and space geometry and usage" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive psykrometriske tilstande og processer i klimasystemer, herunder varmegenvinding, opvarmning, køling, befugtning og affugtning af ventilationsluft" />
+          <Txt Lang="en-GB" Txt="Describe psychrometric states and processes in climatic systems, including heat recovery, heating, cooling, humidification and dehumidification of ventilation air" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare fysikken bag og metoder til beregning af luftstrømninger i rum og i kanaler" />
+          <Txt Lang="en-GB" Txt="Explain the physics of airflow in spaces and ducts " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive betydningen for luftfordeling af de aerodynamiske egenskaber af indblæsningsenheder" />
+          <Txt Lang="en-GB" Txt="Describe the aerodynamic characteristics of air terminal devices which are commonly used for room air distribution and their selection procedures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre og kritisk vurdere resultater af numeriske simuleringer af luftstrømninger i rum (CFD) og af bygningers indeklima og energiforbrug; anvende resultaterne til at optimere ventilationsdesign" />
+          <Txt Lang="en-GB" Txt="Carry out simulations of air distribution, indoor environment and energy use by Computational Fluid Dynamics (CFD) and other numerical tools and critically evaluate the output; apply the solutions to predict and describe the indoor environment and energy use and to optimize the ventilation design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge og gennemføre en større måleopgave i en fuldskala model, herunder anvende udstyr til at måle luftskifte, ventilationseffektivitet, lufthastighed og -temperatur" />
+          <Txt Lang="en-GB" Txt="Plan and execute a larger experimental task in a full-scale mock-up including use of instrumentation for the measurement of air change, ventilation effectiveness, air speed and temperature" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og sammenligne indeklimaparametre bestemt ved eksperimentelle og numeriske metoder" />
+          <Txt Lang="en-GB" Txt="Analyze and evaluate indoor environmental quality parameters from experimental data and simulation output" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive energiøkonomiske drifts- og styrestrategier for ventilations- og klimaanlæg" />
+          <Txt Lang="en-GB" Txt="Describe energy efficient operation and control strategies for ventilation and climatic systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre et større projektarbejde i grupper med 3-4 deltagere og redegøre for det udførte arbejde i en rapport og ved mundtlig fremlæggelse" />
+          <Txt Lang="en-GB" Txt="Carry out a larger, coherent design project in groups of 3-4 students and present the work in written and oral form" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Design af ventilation og indeklima</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="11221" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="80" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="10" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:16.66" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

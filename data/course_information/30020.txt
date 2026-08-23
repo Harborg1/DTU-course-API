@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30020" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Elektronisk måling og instrumentering" />
+        <Title Lang="en-GB" Title="Electronic Measurements and Instrumentation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset afholdes primært i F4A. Ved mere end 45 tilmeldte vil det desuden blive udbudt i F3A, så øvelserne kan gennemføres i laboratoriet. Ønsker til skemaplacering imødekommes så vidt muligt." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is primarily held in F4A. If more than 45 students are enrolled, it will also be offered in F3A to ensure that the exercises can be carried out in the laboratory. Requests for schedule placement will be attempted as far as possible." />
+          <Schedule ScheduleKey="F4A" SortID="0" />
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="2766" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Brauer</FamilyName>
+            <Email>brau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omhandler generelle instrumenteringssystemer og udvalgte sensorer såsom termistorer og sensorer baseret på resistive, induktive, kapacitive og piezoelektriske effekter, samt nogle af de elektroniske principper som anvendes til omdannelse af sensorsignalerne til mere praktiske analoge signaler.
+
+Laboratorieøvelserne giver den studerende praktisk erfaring med anvendelsen af forskellige sensorer og elektroniske komponenter.</Contents>
+          <Teaching_And_Learning_Methods>Obligatoriske laboratorieøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At skabe fortrolighed med væsentlige dele af de metoder, som anvendes ved elektroniske målinger af fysiske størrelser.  Gennem laboratorieøvelser opnås erfaring med en række principper for omsætning af en fysisk størrelse til et elektrisk målesignal, samt den indledende analoge behandling af signalet, der ofte skal adskilles fra forstyrrende støjsignaler.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers instrumentation systems and selected sensors, such as thermistors and sensors based on resistive, inductive, capacitive, and piezoelectric effects. It also introduces electronic principles used to convert sensor signals into more practical analog signals.
+
+The laboratory exercises provide students with practical experience in using a range of sensors and electronic components.</Contents>
+          <Teaching_And_Learning_Methods>Compulsory laboratory exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give a basic foundation in essential methods used in electronic measurements of physical quantities. Laboratory exercises will provide the student experience with a number of principles used to convert a physical parameter into an electrical signal and the first analogue processing of the often noisy signal.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til elektroniske kredse og komponenter samt programmering via Python eller Matlab." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A basic understanding of electronic circuits and components as well as Matlab or Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30015/34600/30032.10036/30400/34120" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opbygge mindre kredsløb og foretage fejlfinding på disse" />
+          <Txt Lang="en-GB" Txt="build and debug small electronic circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende digitaloscilloskop og signalgenerator til at gennemføre laboratoriemålinger" />
+          <Txt Lang="en-GB" Txt="apply a digital oscilloscope and signal generator to perform and analyze laboratory measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere en sensor og frontend elektronik for følsomhed og linearitet" />
+          <Txt Lang="en-GB" Txt="analyze a sensor and its front-end electronics in terms of sensitivity and linearity." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare princippet bag instrument- og sensorkalibrering" />
+          <Txt Lang="en-GB" Txt="explain the principle of instrument and sensor calibration" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvælge sensorer til temperaturmåling og anvende disse i mindre målesystemer" />
+          <Txt Lang="en-GB" Txt="select sensors for temperature measurements and apply these in small measurement systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende straingauges og princippet bag Wheatstonebroen i mindre målesystemer " />
+          <Txt Lang="en-GB" Txt="apply strain gauges and the principles of the Wheatstone bridge in small-scale measurement systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende den piezoelektriske effekt i mindre målesystemer " />
+          <Txt Lang="en-GB" Txt="apply the piezoelectric effect in small measurement systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvælge sensorer til måling af vibration og anvende disse i mindre målesystemer" />
+          <Txt Lang="en-GB" Txt="select sensors for vibration measurements and apply these in small measurement systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende kredsløbsblokke i mindre målesystemer." />
+          <Txt Lang="en-GB" Txt="apply circuit blocks in small measurement systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til sensorer, deres front-end elektronik samt kalibrering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="30" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="70" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:44.967" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

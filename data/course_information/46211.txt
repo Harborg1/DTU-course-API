@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="46211" University="dtu" LastUpdated="2026-03-30+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Offshore vindenergi" />
+        <Title Lang="en-GB" Title="Offshore Wind Energy" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="6374" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Bredmose</FamilyName>
+            <Email>hbre@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="75737" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Fabio</GivenName>
+            <FamilyName>Pierella</FamilyName>
+            <Email>fabpi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den skriftlige eksamen består af A) multiple choice spørgsmål plus B) beregningsopgaver baseret på anvendelse/modificering af Matlab/Python programmer udviklet under kurset. Aflevering af alle fem rapporter er et krav for at tage den skriftlige eksamen. Karakteren gives på basis af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The written exam consists of A) multiple choice questions plus B) calculation tasks based on application/moderation of Matlab/Python scripts developed during the course. Handing in all five reports is a prerequisite to take the written exam. One combined grade is given (overall assessment)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Designnormer for bundfaste offshorevindmøller. Designbasis for wind and wave climate. Ekstremværdibestemmelse ved hjælp af fittede fordelinger. 
+
+Fundamentstyper for offshore vindmøller. Designprincipper for monopæle.
+
+Hydrodynamiske laster fra lineære uregelmæssige bølger. Bølgekinematik og Morison-ligningen. Wheeler stretching og MacCamy Fuchs diffraktionsteori. Simpel vindlastmodel.
+
+1P og 3P frekvensernes samspil med den strukturelle dynamik og basale metoder til udmattelsesberegninger.
+
+Wake aerodynamik og hvirvelstrukturer bag vindmøllerotoren. 1D momentum teori for wakes. Wake interaktion i vindmølleparker. Metoder til numerisk beregning af wakes i vindparker.
+
+Introduktion til planlægning og miljømæssige beslutninger for offshore vindparker. Introduktion til drift og vedligeholdesesstrategier for offshore vindparker.
+
+Grundkoncepterne for flydende vindmøller og beregning af fortøjningskræfter. Lineariserede bevægelsesligninger for flydende vindmøller. Dynamisk stabilitet og kontrol for flydende vindmøller.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og rapportarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At blive i stand til at beregne hydrodynamiske og aerodynamiske laster og tilhørende respons for offshorevindmøller.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Design codes for bottom fixed offshore wind turbines. Design basis for wind and wave climate. Extreme value prediction by fitted distributions. 
+
+Substructure types for offshore wind turbines. Design principles for monopiles.
+
+Hydrodynamic loads from linear irregular waves. Wave kinematics and the Morison equation. Wheeler stretching and the MacCamy Fuchs diffraction theory. Simplified aerodynamic load model.
+
+The 1P and 3P dynamic criteria and basic technique for fatigue calculation.
+
+Wake aerodynamics and vortex structures behind a wind turbine rotor. 1D momentum theory for wakes. Wake interaction in wind farms. Methods for computation of wakes in wind farms.
+
+Introduction to planning and environmental decisions for offshore wind farms. Introduction to operation and maintenance management for offshore wind farms.
+
+Basic concepts for floating wind turbines and calculation of mooring forces. Linearised equations of motion for floating wind turbines. Dynamic stability and control of floating wind turbines.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work on reports.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To be able to calculate hydrodynamic and aerodynamic loads and the associated response for offshore wind turbines.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Matlab eller Python svarende til kursus 02002/46120. Dette niveau af Matlab/Python er centralt for at kunne udføre kursets rapporter. 46300 kan med en øget indsats tages samtidigt.&#xD;&#xA;&#xD;&#xA;Yderliere anbefalede forudsætninger: Fluid Mekanik svarende til kursus 41312- eller 41102. Numerisk analyse svarende til kursus 02601. Laster på marine konstruktioner svarende til kursus 41107 vil være en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Matlab or Python skills equivalent to course 02002/46120. This level of Matlab/Python skills is essential to carry out the course reports. 46300 can with some effort be taken concurrently.&#xD;&#xA;&#xD;&#xA;Further qualified prerequisites: Fluid Mechanics equivalent to course 41312 or 41102. Numerical Analysis equivalent to course 02601. Loads on offshore structures equivalent to course 41107 will be an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002. 46300." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de typiske fundamenttyper for bundfaste offshorevindmøller og give et resume af IEC 61400-3-1 design normen" />
+          <Txt Lang="en-GB" Txt="Describe the typical foundation types for bottom-fixed offshore wind turbines and summarize the content of the IEC 61400-3-1 design norm" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende elementerne i en design basis og bestemme f.eks. et 50 års bølgeklima ud fra statistiske data" />
+          <Txt Lang="en-GB" Txt="Apply the elements of a design basis and use statistical data to determine e.g. a 50-year sea state" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne en krafttidsserie fra lineære uregelmæssige bølger og kunne bestemme hvilke kræfter der dominerer" />
+          <Txt Lang="en-GB" Txt="Calculate a force time series from linear irregular waves and determine which forces that dominate" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den basale dynamik for bundfaste offshore vindmøller, og benytte standardmetoder for udmattelsesberegning" />
+          <Txt Lang="en-GB" Txt="Explain the basic dynamics of bottom fixed offshore wind turbines and apply standard techniques for fatigue calculation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende 1D momentum teori til at analysere wake-effekter for vindmøller" />
+          <Txt Lang="en-GB" Txt="Apply 1D momentum theory for analysis of wind turbine wakes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere simple wake modeller i Matlab/Python" />
+          <Txt Lang="en-GB" Txt="Implement closed-form wake models in Matlab" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere produktionen i en række af vindmøller ved anvendelse af simple wake modeller og bestemme den optimale afstand mellem møllerne" />
+          <Txt Lang="en-GB" Txt="Analyse the production in rows of wind turbines with application of closed-form wake models and determine the optimal spacing between the wind turbines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive processen for planlægning af en offshore vindmøllepark og interaktionen mellem aktørene" />
+          <Txt Lang="en-GB" Txt="Describe the basic process in planning an offshore wind farm and the interaction between the involved parties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og foreslå simple strategier for drift og vedligehold" />
+          <Txt Lang="en-GB" Txt="Understand and suggest simple strategies for operation and maintenance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille bevægelsesligninger for typiske flydende vindmøllekonfigurationer" />
+          <Txt Lang="en-GB" Txt="Derive the equations of motion for typical floating wind turbine configurations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implemenentere tidsdomænemodeller for dynamik af flydende vindmøller med vind- og bølgelaster" />
+          <Txt Lang="en-GB" Txt="Implement time domain models for the dynamics of floating wind turbines subject to wind and wave forcing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere den dynamiske stabilitet af flydende vindmøller og foreslå ændringer af kontrolsystemet til forbedring af stabiliteten" />
+          <Txt Lang="en-GB" Txt="Analyse the dynamic stability of floating wind turbines and propose modifications of the control system to improve stability" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Bølgelaster, wake effekter, mv for bundfaste og flydende vindmøller</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="7" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:33.52" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

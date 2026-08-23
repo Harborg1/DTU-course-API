@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62452" Volume="2026/2027" University="dtu" LastUpdated="2026-04-01+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Medicoteknik 2" />
+        <Title Lang="en-GB" Title="Bio-medical electronics 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="227196" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Morten Bak</GivenName>
+            <FamilyName>Kristoffersen</FamilyName>
+            <Email>mobkr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="227923" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Deren Y.</GivenName>
+            <FamilyName>Barsakcioglu</FamilyName>
+            <Email>dyuba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evaluering af øvelser, prøver og opgaver. Godkendelse af de foreslåede øvelser, opgaver og prøver er en forudsætning for at bestå kurset. Der foretages en samlet vurdering af alle de indsendte besvarelser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of exercises, tests, and assignments. Approval of the proposed exercises, assignments, and tests is a prerequisite for passing the course. An overall assessment is made of all the answers submitted." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="All activities are held within the 13-weeks period." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Alle aktiviteter afholdes i 13-ugers perioden." />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Kondensatorer og spoler
+• Frekvensanalyse og filtre 
+• Operationsforstærkere 
+• Biopotentialforstærker 
+• Medicinsk måleteknik 
+• Den fysiologiske grænseflade 
+• Måletekniske specifikationer 
+• Måletekniske fejlkilder 
+• Målbare fysiologiske størrelser
+• Elektrisk sikkerhed</Contents>
+          <Teaching_And_Learning_Methods>Teoriundervisning med skriftlig test én gang per uge, samt opgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>Alt kursusmateriale og supplerende litteratur vil blive udleveret under kurset.</Course_Literature>
+          <Course_Objectives>De overordnede mål er at give den studerende en indføring i problemstillinger ved omsætning af fysiologiske parametre til registrerbare elektriske målinger og brugbare signaler.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Sundhedsteknologi: 2. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Capacitors and inductors
+• Frequency analysis and filters 
+• Operational amplifiers 
+• Biopotential amplifier 
+• Medical measurement techniques 
+• The physiological interface 
+• Metrological specifications 
+• Metrological sources of error 
+• Measurable physiological parameters
+• Electrical safety</Contents>
+          <Teaching_And_Learning_Methods>Theory teaching with written test once a week and assignments.</Teaching_And_Learning_Methods>
+          <Course_Literature>All course materials and supplementary literature will be provided during the course.</Course_Literature>
+          <Course_Objectives>The overall objectives are to provide the students with an introduction to issues regarding transformation of physiological parameters to detectable and usable electrical measurements and signals.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Sundhedsteknologi: 2. semester</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende korrekt terminologi" />
+          <Txt Lang="en-GB" Txt="Use correct terminology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere resistive kredsløb" />
+          <Txt Lang="en-GB" Txt="Analyse resistive circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for og analysere kredsløb med kondensatorer og spoler" />
+          <Txt Lang="en-GB" Txt="Explain and analyse circuits with capacitors and inductors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne overføringsfunktion for simple dynamiske kredsløb" />
+          <Txt Lang="en-GB" Txt="Calculate the transfer function of simple dynamic circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for den ideelle operationsforstærker" />
+          <Txt Lang="en-GB" Txt="Describe the ideal operational amplifier" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere kredsløb med ideelle operationsforstærkere" />
+          <Txt Lang="en-GB" Txt="Analyse circuits with ideal operational amplifiers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge et elektronisk kredsløb til måling af en fysiologisk parameter" />
+          <Txt Lang="en-GB" Txt="Build an electronic circuit for measuring a physiological parameter" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille elektriske ækvivalens diagrammer for simple fysiologiske parametre" />
+          <Txt Lang="en-GB" Txt="Establish electrical equivalency circuits for simple physiological parameters" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="-" />
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01901/62422" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="SU-MET2-U1" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:34.43" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

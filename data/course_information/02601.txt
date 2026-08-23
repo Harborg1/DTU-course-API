@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02601" University="dtu" LastUpdated="2026-03-23+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til numeriske algoritmer" />
+        <Title Lang="en-GB" Title="Introduction to Numerical Algorithms" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" Secondary_LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset udbydes på dansk om foråret og på engelsk om efteråret." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is given in Danish in the spring and in English in the fall." />
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="81852" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Yiqiu</GivenName>
+            <FamilyName>Dong</FamilyName>
+            <Email>yido@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="20347" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mirza</GivenName>
+            <FamilyName>Karamehmedovic</FamilyName>
+            <Email>mika@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2210" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Røgen</FamilyName>
+            <Email>prog@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En portefølje af beståede individuelle opgavesæt-besvarelser er obligatorisk for at kunne deltage i den skriftlige eksamen. Mindst 3 af de 4 individuelle opgavesæt skal godkendes." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="To be admitted to the written exam its mandatory to pass 3 out of the 4 individual hand-in assignment sets." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Approksimationer og afrundingsfejl. Numeriske algoritmer til løsning af lineære ligningssystemer, interpolation, numerisk kvadratur, bestemmelse af nulpunkter for funktioner, lineær datafitting og løsning af sædvanlige differentialligninger. Implementering og brug af udvalgte numeriske algoritmer i Python.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og arbejde i databar.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: Ward Cheney &amp; David Kincaid, Numerical Mathematics and Computing, 7. udgave, Brooks/Cole.</Course_Literature>
+          <Course_Objectives>Når en teknisk-matematisk beregning som fx beregning af et integral eller løsning af en differentialligning skal foretages på en computer, bruger man numeriske algoritmer som beskriver hvorledes beregningen udføres. I kurset er der fokus på hvordan dette gøres mest effektivt og nøjagtigt. Numeriske algoritmer udgør derfor de basale "byggeklodser" i de fleste tekniske computer-beregninger, uanset om man bruger Python, Matlab, C eller andre sprog. Dette kursus giver en introduktion til området, med vægt på samspillet mellem den matematiske formulering af beregningsproblemet og den praktiske computer-implementering (konkret: i Python). Målet er at give en basal forståelse af hvorledes man udfører matematiske beregninger på computeren. Bemærk, at kurset IKKE er et programmeringskursus -- vores fokus er primært på de numeriske algoritmer, og ikke på et bestemt programmeringssprog.</Course_Objectives>
+          <DTU_Remark>Obligatorisk teknologisk linjefag, Anvendt Matematik.
+Kurset udbydes på dansk om foråret og på engelsk om efteråret.</DTU_Remark>
+          <Remark>Kurset giver en generel introduktion til numeriske algoritmer. Det er forudsætning for følgende videregående kurser fra scientific computing gruppen på DTU Compute:  02526 - Matematisk modellering, 02610 Optimering og datafitting, 02623 Elementmetoden for partielle differentialligninger, 02624 - Inverse Problemer og Billeddannelse, 02686 - Scientific Computing for differentialligninger 1.
+
+Information om re-eksamen: hjemmeopgaverne kan kun genbruges ved den første efterfølgende reeksamination.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Approximations and rounding errors. Numerical algorithms for solving systems of linear equations, interpolation, numerical integration, roots in functions, linear data fitting, and ordinary differential equations. Implementation and use of selected numerical algorithms in Python.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises in the databar.</Teaching_And_Learning_Methods>
+          <Course_Literature>Textbook: Ward Cheney &amp; David Kincaid, Numerical Mathematics and Computing, 7'th edition, Brooks/Cole.</Course_Literature>
+          <Course_Objectives>To perform a technical/mathematical computation (such as evaluation of an integral or solution of a differential equation) on a computer, one must use numerical algorithms that define how the computations are performed efficiently and accurately.  Hence, numerical algorithms are the fundamental "building blocks" in most technical computations - whether they are done in Python, Matlab, C, or other languages.
+This course gives an introduction to the field of numerical algorithms, with focus on the interplay between the mathematical formulation of the computational problem and the practical implementation on a computers (specifically: in Python). The aim is to give the student a basic understanding of how to perform mathematical computations on a computer. Note that this is NOT a programming course -- our focus is on numerical algorithms, and not on a particular programming language.</Course_Objectives>
+          <DTU_Remark>Mandatory course for Applied Mathematics.
+The course is given in Danish in the spring and in English in the fall.</DTU_Remark>
+          <Remark>The course gives a general introduction to numerical algorithms.  It is a prerequisite for the following courses given by the scientific computing group at DTU Compute:  02526 - Mathematical Modeling, 02615 Optimization and Data Fitting, 02623 The Finite Element Method for Partial Differential Equations,  02624 - Inverse Problems and Imaging, 02686 - Scientific Computing for differential equations 1.
+
+Information regarding re-exam: the homework can only be re-used for the first subsequent re-exam.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Taylors formel, rødder for polynomier, elementære sædvanlige differentialligninger, lineær algebra. Disse emner er dækket af kursus 01005 Matematik 1, hvis andet semester skal tages senest samtidig. Elementær programmering med Python som programmeringssprog." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Taylor's formula, roots of polynomials, ordinary differential equations and linear algebra. These subjects are covered by 01005/01006 Mathematics 1 whos second semester has to be taken at least at the same semester. Elementary programming in Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02002/02631/02632/02633/02525).(01002/01004/01005/01006/01015/01016)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og anvende grundlæggende begreber som iteration og konvergens" />
+          <Txt Lang="en-GB" Txt="explain and apply basic notions such as iteration and convergence " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diskutere betydningen af trunkerings- og afrundingsfejl" />
+          <Txt Lang="en-GB" Txt="discuss the effect of truncation and rounding errors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kritisk sammenligne alternative metoder mht. effektivitet og nøjagtighed" />
+          <Txt Lang="en-GB" Txt="critically compare alternative methods regarding efficiency and accuracy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende numeriske algoritmer på konkrete (simple) problemer" />
+          <Txt Lang="en-GB" Txt="apply numerical algorithms to actual (simple) problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere simple numeriske algoritmer i Python" />
+          <Txt Lang="en-GB" Txt="implement simple numerical algorithms in Python" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende færdige Python-programmer ved løsning af et foreliggende problem" />
+          <Txt Lang="en-GB" Txt="apply existing Python programs in the solution of a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre følsomhedsanalyse for et simpelt problem" />
+          <Txt Lang="en-GB" Txt="perform sensitivity analysis of a simple problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere, og i visse tilfælde udlede, estimater af nøjagtigheden af den beregnede løsning " />
+          <Txt Lang="en-GB" Txt="estimate and in some cases derive estimates of the accuracy of the computed solution" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formidle kursets emner og føre faglig diskussioner i et letforståeligt teknisk sprog" />
+          <Txt Lang="en-GB" Txt="convey and discuss the topics of the course in a clear technical language" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle testproblemer og beregningsmetoder således at metoderne først afprøves på velvalgte testproblemer" />
+          <Txt Lang="en-GB" Txt="develop computational methods in such that they are first tested and evaluated on selected test problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduction to numerical algorithms</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="40" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="60" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:21.47" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

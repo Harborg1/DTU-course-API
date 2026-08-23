@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62444" Volume="2026/2027" University="dtu" LastUpdated="2026-01-16+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Data visualisering og analyse - projekt" />
+        <Title Lang="en-GB" Title="Data visualization and analysis - project" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="197929" FUniversity="DTU" SortID="0" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lei</GivenName>
+            <FamilyName>You</FamilyName>
+            <Email>leiyo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="78715" FUniversity="DTU" SortID="1" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Birger</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>birad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Identificere problemstilling der anvender data visualiserings og/eller analyse værktøjer. Identificere datatyper. Identificere visualiserings/analyse værktøjer. Specificere, designe, implementere og validere løsning. Identificere processer, der kræves af et system til normal drift af løsning.
+Dokumentere systemet i LaTeX og præsentere systemet i LaTeX Beamer.</Contents>
+          <Teaching_And_Learning_Methods>Kursussessioner, projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Open source litteratur tilpasset det valgte projekt.</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at anvende open source data opsamlings- og analyse værktøjer på et givet problem og demonstrere samt dokumentere en konkret anvendelse pr. projektgruppe. Eksempler på problem områder kan være analyse af dataflow fra socialt medie, fra sensor målinger fx indhentet via Arduino processor, off-line analyse af data, m.m.
+På kursets første dag dannes projektgrupper omkring et antal projekter, der besluttes i en indledende fælles kursussession med alle deltagere. I løbet af 3-ugers kurset præsenterer projektgrupperne derefter projektstatus i projekt seminarer. Kurset afsluttes med et seminar hvor hver projektgruppes projekt præsenteres og indleveres.
+
+De anvendte værktøjer vil typisk være R, RStudio, RStudioCloud, Python, Google CoLab, LaTeX og Beamer (LaTeX præsentationsværktøj) i et laptop eller cloud miljø.
+Projektseminarerne vil bliver præsenteret via Beamer og den afsluttende projektdokumentation vil blive udført i LaTeX.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+
+Mobilitet, Transport og Logistik: 4. semester
+
+Valgfag: IT og Økonomi
+Valgfag: IT-elektronik
+Valgfag: Proces og Innovation
+Valgfag: Produktion
+Valgfag: Softwareteknologi
+Valgfag: Sundhedsteknologi</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Identify problem area, which apply data visualization and/or analysis tools. Identify datatypes. Identify visualization/analysis tools. Specify, design, implement and validate solution. Identify processes, required by a system in normal operation.
+Documentation of system in LaTeX and present the system using LaTeX Beamer.</Contents>
+          <Teaching_And_Learning_Methods>Course sessions and project Work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Open source references according to the project selected.</Course_Literature>
+          <Course_Objectives>The course objective is the application of open source data acquisition and analysis tools on a given problem and demonstrate and document a practical application per project group. Examples on problem areas might be analysis of dataflow from social media, from sensor measurements e.g. captured via Arduino processor, off-line analysis of data, etc.
+At the first course session, with all project participants, project groups are formed where each group is focusing on a specific problem. The set of problems addressed is selected at the first course session with all participants. During the 3-weeks projekt period the groups present project status at project seminars. The course is finalized with a seminar where the project group projects are presented and the handed in.
+
+The tools typically applied are R, RStudio, RStudioCloud, Python, Google CoLab, LaTeX and Beamer (LaTeX tool for presentations) in a laptop or cloud environment.
+The project seminars will be using Beamer and the final project documentation will be carried out using LaTeX.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+The course is an optional course, delivered in English.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere et problemområde som bruger open source data visualiserings og/eller analyse værktøjer under anvendelse af mindst et værktøj til klyngeanalyse eller et værktøj til klassifikation af data." />
+          <Txt Lang="en-GB" Txt="Identify a problem area which uses open source data visualization and/or analysis tools using at least a data clustering or classifications tool." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere, forstå og forklare én videnskabelig artikel om metode(r) til klyngeanalyse eller klassifikation af data af relevans for problemområdet." />
+          <Txt Lang="en-GB" Txt="Identify, understand, and explain one scientific paper, on a clustering or classification method of relevance to the problem at hand." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og forklare mindst tre relevante visualiserings/analyse modeller for det valgte problemområde og sammenligne deres forventede egenskaber i forhold til det valgte problemområde, herunder sammenligne deres forventede krav til beregnings- og lagrings ressourcer." />
+          <Txt Lang="en-GB" Txt="Identify at least three relevant visualization/analysis models for the problem at hand, and compare their expected properties in relation to the problem at hand, including their required computational and storage resources." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere de nødvendige visualiserings/analyse værktøjer af relevans for de valgte modeller." />
+          <Txt Lang="en-GB" Txt="Identify the necessary visualization/analysis tools of relevance to the problem at hand." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Specificere og designe et visualiserings/analyse system under anvendelse af én af de identificerede modeller." />
+          <Txt Lang="en-GB" Txt="Specify and design a visualization/analysis system using one of the models identified." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere et visualiserings/analyse system, hovedsageligt ved anvendelse af R og/eller Python i et laptop eller cloud miljø." />
+          <Txt Lang="en-GB" Txt="Implement the visualization/analysis system solution preferably targeting the R language and/or Python in a laptop or cloud environment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Verificere og demonstrere visualiserings/analyse systemet." />
+          <Txt Lang="en-GB" Txt="Verify and demonstrate the visualization/analysis system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og forklare de processer, der er nødvendige for at anvende visualiserings/​analysesystemet i en produktionsproces for det relevante problemområde." />
+          <Txt Lang="en-GB" Txt="Identify and describe the processes needed for a visualization/analysis system applied in routine operation for the problem at hand." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere det udviklede system i en rapport ved anvendelse af LaTeX og præsentere rapporten ved et afsluttende seminar under anvendelse af LaTeX Beamer." />
+          <Txt Lang="en-GB" Txt="Document the system in a report using LaTeX and prepare and present the report at the concluding seminar using laTeX Beamer." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="62518/62533/62669" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="6" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:33.74" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

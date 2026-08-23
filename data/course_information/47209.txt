@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="47209" Volume="2026/2027" University="dtu" LastUpdated="2026-04-28+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="3D imaging og analyse" />
+        <Title Lang="en-GB" Title="3D imaging and analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="47" University="DTU" Resources="80" KVL_Resources="100" />
+          <Ass_Dep UID="10" Resources="20" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="47" />
+        <Course_Responsible PersonKey="37097" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Søren Bredmose</GivenName>
+            <FamilyName>Simonsen</FamilyName>
+            <Email>sobrs@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="48089" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Gundlach</FamilyName>
+            <Email>cagu@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="21358" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter Stanley</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>psjq@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Hver gruppe afleverer en rapport før den mundtlige eksamen. Karakterer bliver givet ud fra en samlet vurdering af rapporten og den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Each group will hand in a report before the oral exam. Grades will be given based on an overall assessment of the project report and the oral examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er baseret på projektorienteret læring. Gennem kurset vil de studerende arbejde i grupper. Hver gruppe får et materiale, som de skal arbejde med. I grupperne skal de studerende beslutte, hvilken information de vil forsøge at trække ud af 3D strukturerne i deres materiale, og hvilkentype modellering de vil anvende. I laboratorierne skal grupperne arbejde med en røntgen CT scanner til at optage billeder af materialet. Grupperne skal rekonstruere billederne til et 3D datasæt, som de skal segmentere og analysere. Den sidste del af dataanalysen vil være at anvende modellering af nogle af de fysiske egenskaber for materialet i 3D. For at understøtte den projektorienterede læring vil der blive givet forelæsninger, online materiale som f.eks. videoer og små øvelser. Forelæsningerne og videoerne vil beskrive principperne bag de enkelte praktiske trin (røntgeneksperimenter, rekonstruktion, segmentering, analyse, modellering). Kurset giver de studerende en basal forståelse for og evne til at kunne bruge røntgen CT scannere og relevant software til rekonstruktion og analyse. De studerende vil få erfaring med dataanalyse. De studerende vil samarbejde på tværs af grupperne ved at give mundtlige præsentationer og feedback.</Contents>
+          <Teaching_And_Learning_Methods>Projektorienteret læring. Forelæsninger, mundtlige præsentationer, gruppearbejde, laboratoriearbejde, computerøvelser. 
+Relevante sikkerhedsprocedurer vil blive gennemgået i løbet af kurset.</Teaching_And_Learning_Methods>
+          <Course_Literature>Alt undervisningsmateriale er gratis og online tilgængeligt.</Course_Literature>
+          <Course_Objectives>I dag er CT-scannere blevet et vigtigt redskab til at afbilde 3D strukturer af mange forskellige materialer. Eksempler er kvalitetssikring af byggematerialer, af fødevarer eller af et komplekst 3D design, måske noget som er 3D printet. Inden for sundhedsområdet bliver CT scanninger oftest brugt til diagnosticering, men nye redskaber og lægemidler scannes også hvis deres 3D strukturer er vigtige. Mikro- og nano-CT scannere bruges i stadig højere grad inden for forskning og udvikling af nye materialer. 3D billedanalyse er desuden et interessant felt inden for matematik og programmering, som er i hastig udvikling.
+
+Dette kursus er en introduktion til alle, som ønsker at arbejde med denne teknologi, dvs. med 3D imaging og analyse af 3D data. Kurset vil uddanne brugere af avanceret 3D røntgenmetoder og klæde de studerende på til at kunne arbejde med 3D data. 
+
+De studerende skal i grupper arbejde med at scanne og analysere et materiale. I dette arbejde vil grupperne blive guidet gennem følgende arbejdsproces: dataopsamling i laboratoriet, rekonstruktion af data, analyse af 3D data og modellering af fysiske egenskaber. På den måde får de studerende et godt indblik i arbejdsprocesser med 3D imaging og i hvilken type information, der kan trækkes ud af 3D data og hvordan. 
+
+Kurset giver basis for senere arbejde med 3D analyser i individuelle projekter (BSc, MSc eller ph.d.) inden for den retning, den studerende ønsker at specialisere sig i.</Course_Objectives>
+          <DTU_Remark>Her er kurset for dig, som vil lære at bruge en CT-scanner til at lave 3D billeder og analyse af materialers indre.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is based on project-organized learning. Throughout the course, the students will work in groups. Each group is given a material which they will work with. In the groups, the students decide which information is relevant to extract from the 3D structure of their material, and what kind of modelling they would like to perform. In the lab, the groups will use an x-ray CT scanner to record data that they reconstruct, segment, and analyze. The last part of the analysis will be to apply modelling of physical properties of a material in 3D. To support the project-organized learning, theoretical lectures, online material such as videos and small exercises will be given. The lectures and videos will describe the principles behind each practical step (x-ray experiment, reconstruction, segmentation, analysis, modelling). The course provides students with a basic understanding of and skills to operate x-ray CT scanners as well as relevant software for reconstruction and analysis. The students will exercise their skills in data analysis. Across the groups, the students will interact by giving oral presentations and feedback.</Contents>
+          <Teaching_And_Learning_Methods>Project-organized learning. Lectures, oral presentations, group work, lab exercises, computer exercises. 
+Relevant safety procedures will be introduced during the course.</Teaching_And_Learning_Methods>
+          <Course_Literature>All teaching material is free and online available.</Course_Literature>
+          <Course_Objectives>CT scanners have become an important tool for imaging of 3D structures in many different materials. Examples are quality assurance of building materials, of food, or of complex 3D design, for example produced by a 3D printer. In the health sector, CT scanners are often used for diagnosing, but new tools and drugs are also scanned when their 3D structures are important. Micro- or nano-CT scanners are more and more used within research and development of new materials. 3D image analysis is also an interesting field under rapid development for applied mathematics and programming. 
+
+This course is an introduction to anyone who would like to work with this technology, i.e. with 3D imaging and analysis of 3D data. The course will educate users of advanced 3D x-ray imaging methods and prepare students to work with 3D data.
+
+The students will in groups work with scanning and analyzing a material. In this work the groups will be guided through the following process: data acquisition in the lab, reconstruction of the acquired data, analysis of 3D data and modelling of physical properties. In this way, the students will achieve knowledge on the type of information that can be extracted from 3D data and how it is done in practice. 
+
+The course will provide a basis for later individual project work (BSc, MSc, PhD) with 3D analysis in the direction in which the student is specializing.</Course_Objectives>
+          <DTU_Remark>This course is for any student who would like to use CT scanners for 3D imaging and analysis of the internal parts of materials.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Basalt kendskab til programmering i Python" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic programming skills in Python" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/02003/02100/02631/02632/02633/02634/02101/02102" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare princippet bag røntgen CT" />
+          <Txt Lang="en-GB" Txt="Explain the principle behind x-ray CT" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge og udføre et projekt om 3D strukturer i et materiale" />
+          <Txt Lang="en-GB" Txt="Plan and execute a project on 3D structures in a given material" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive det eksperimentelle setup til røntgen CT" />
+          <Txt Lang="en-GB" Txt="Describe the experimental set-up for 3D x-ray imaging" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan røntgenstråler vekselvirker med materialer" />
+          <Txt Lang="en-GB" Txt="Explain how x-rays interact with materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre røntgen CT eksperimenter" />
+          <Txt Lang="en-GB" Txt="Perform x-ray CT experiments " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne bag rekonstruktionsmetoder" />
+          <Txt Lang="en-GB" Txt="Explain principles of reconstruction methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende rekonstruktionsalgoritmer til at konvertere 2D billeder til et 3D datasæt" />
+          <Txt Lang="en-GB" Txt="Apply reconstruction algorithms to convert 2D images into a 3D dataset " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualisere, croppe og binne et 3D datasæt" />
+          <Txt Lang="en-GB" Txt="Visualize, crop, bin a 3D dataset" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Filtrere og segmentere et 3D datasæt" />
+          <Txt Lang="en-GB" Txt="Perform filtering and segmentation of 3D data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og udvælge relevante parametre, som kan måles i et 3D datasæt" />
+          <Txt Lang="en-GB" Txt="Identify and select relevant parameters to measure in a 3D dataset" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre kvantitative målinger i et 3D datasæt" />
+          <Txt Lang="en-GB" Txt="Perform quantitative measurements in a 3D dataset" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Rapportere og præsentere resultater i en klar og kortfattet form" />
+          <Txt Lang="en-GB" Txt="Report and communicate research results in a clear and concise manner" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til røntgen CT og 3D analyse</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="32" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:00.977" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

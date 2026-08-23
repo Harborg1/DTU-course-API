@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34763" Volume="2026/2027" University="dtu" LastUpdated="2025-04-10+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Autonome marine robotter" />
+        <Title Lang="en-GB" Title="Autonomous Marine Robotics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="70" KVL_Resources="100" />
+          <Ass_Dep UID="25" Resources="30" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Course_Responsible PersonKey="34110" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Roberto</GivenName>
+            <FamilyName>Galeazzi</FamilyName>
+            <Email>roga@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="39819" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Patrizio</GivenName>
+            <FamilyName>Mariani</FamilyName>
+            <Email>pat@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Gruppepræsentation af poster med projektarbejde om autonom marine robotteknologi; Multiple choice spørgeskema om kursets emner." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Group presentation of a poster about project work on autonomous marine robotics; Multiple choice questionnaire on the topics of the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dynamiske modeller for overflade- og undervandsfartøjer; Path planning metoder; Tuning af PID regulatorer til marine operationer; Sensorteknologier til køretøjernes navigation og opfattelse af det marine miljø; Situationsbevidsthed; Mission planning; Eksperimentel undervandsrobotik</Contents>
+          <Teaching_And_Learning_Methods>Foredrag og gruppearbejde i undervandsrobotlaboratoriet</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningsnotater; Udvalgte videnskabelige artikler; Bogkapitler</Course_Literature>
+          <Course_Objectives>Kurset sigter på at give metoder og værktøjer til analyse, design og evaluering af robot- og højautomationsløsninger til observation, udforskning og udnyttelse af marine miljøer. Kurset tilbyder et slutbrugerperspektiv til designudfordringen af autonome marine robot-systemer og udsætter studerende for de teknologier, der er nødvendige for at bygge og betjene komplekse robotiske systemer til havobservation.</Course_Objectives>
+          <Remark>Lærere:
+
+Roberto Galeazzi, Associate Professor, DTU Electro
+Patrizio Mariani, Professor, DTU Aqua
+Fletcher Thompson, Researcher, DTU Aqua</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Dynamical models for surface and underwater vehicles; Path planning methods; Tuning of PID controllers for marine operations; Sensor technologies for vehicle navigation and perception of marine environment; Situational awareness; Mission planning; Experimental marine robotics.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work in the underwater robotics laboratory</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes; Selected scientific articles; Book chapters</Course_Literature>
+          <Course_Objectives>The course aims at providing methods and tools for the analysis, designing and evaluation of robotic and high-automation solutions for observation, exploration and exploitation of marine environments. The course offers an end-user prospective to the design challenge of autonomous marine robotic systems, and exposes the students to the technologies needed to build and operate complex robotic systems for ocean observation.</Course_Objectives>
+          <Remark>Teachers:
+
+Roberto Galeazzi, Associate Professor, DTU Electro
+Patrizio Mariani, Professor, DTU Aqua
+Fletcher Thompson, Researcher, DTU Aqua</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Knowledge of and practical experience with programming languages such as C/C++ and Python, as well as operating systems such as Linux and ROS" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of and practical experience with programming languages such as C/C++ and Python, as well as operating systems such as Linux and ROS" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar, hvad en autonomt marine system er, og beskriv dets byggesten og tilknyttede funktioner" />
+          <Txt Lang="en-GB" Txt="Explain what is an autonomous marine system and describe its building blocks associated functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tolke matematiske modeller for marine fartøjer og forklare de vigtigste dynamiske forskelle på modeller for overflade- og undervandsapplikationer" />
+          <Txt Lang="en-GB" Txt="Interpret mathematical models for marine vehicles and explain the key dynamical differences of models for surface and underwater applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere et path planning problem i 2D og 3D og kode state-of-the-art path planning algoritmer" />
+          <Txt Lang="en-GB" Txt="Formulate a path planning problem in 2D and 3D, and code state-of-the-art path planning algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Illustrere grundlæggende kontrolfunktionaliteter for overflade- og undervandsoperationer og anvende optimeringsteori til at justere basale kontrolloops" />
+          <Txt Lang="en-GB" Txt="Illustrate fundamental control functionalities for surface and underwater operations, and apply optimization theory to tune basic control loops" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige sensorteknologier til intern og ekstern situation awareness og forklare kerneprincipperne i multimodal sensor fusion" />
+          <Txt Lang="en-GB" Txt="Describe the different sensing technologies for internal and external situational awareness, and explain the core principles of multimodal sensor fusion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Betjene state-of-the-art mission planners, opsætte en mission i et sådant system og undersøge den designede mission" />
+          <Txt Lang="en-GB" Txt="Operate state-of-the-art mission planners, set up a mission in one such system and examine the designed mission" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arkitekt autonomt marine systemer til et givet havobservationsproblem" />
+          <Txt Lang="en-GB" Txt="Architect autonomous marine systems for a given ocean observation problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere byggestenene af et autonomt marine system i en fungerende løsning og udføre eksperimentelle kampagner for at teste og verificere de nødvendige funktionaliteter" />
+          <Txt Lang="en-GB" Txt="Integrate the building blocks of an autonomous marine system into a working solution, and perform experimental campaigns to test and verify the needed functionalities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere komplekse udviklingsløsninger for autonome marine systemer for et kvalificeret publikum" />
+          <Txt Lang="en-GB" Txt="Present complex development solutions for autonomous marine systems in front of a qualified audience" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Autonomous Marine Robotics</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:58.053" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02407" University="dtu" LastUpdated="2026-04-22+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Stokastiske processer - Sandsynlighedsregning 2" />
+        <Title Lang="en-GB" Title="Stochastic Processes - Probability 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="1742" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Bo Friis</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>bfni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Afløsningsopgave. Udføres typisk af to studerende med en supplerende kort mundtlig overhøring. Opgaven kan udføres enkeltvis." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Take home exam. Is typically done by teams of two students with an additional short oral rehearsal. The take home exam can be made individually." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Gennemgang af nogle få, men meget generelle modeller til sandsynlighedsteoretisk beskrivelse af simple systemer, som er underkastet tilfældige påvirkninger. Stokastiske processer af denne type anvendes specielt i teletrafikteorien til dimensionering af data- og kommunikationssystemer, i byplanlægning ved dimensionering og udformning af trafikanlæg og  i pålidelighedsteori. Udover disse anvendes processer af denne type i en lang række andre tekniske og videnskabelige discipliner som fx medicin, lagerstyring og biologi.
+Følgende emner behandles: Bernoulliprocessen, Poissonprocessen, Markovkæder med diskret og kontinuert parameter, renewal processer, simple køsystemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning og edb-øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>(Generelt) At lære at formulere og analysere relativt simple dynamiske sandsynlighedsteoretiske modeller. (Specielt) At stifte bekendtskab med nogle modeller af denne type, som har vist deres praktiske anvendelighed.</Course_Objectives>
+          <Remark>Kurset er et godt supplement til kurser i matematisk statistik, operationsanalyse, tidsrækkeanalyse, billedanalyse og regulering.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The topics are: Markov chains in discrete and continous time, renewal and Markov renewal processes.</Contents>
+          <Teaching_And_Learning_Methods>Lecture, exercises and computer work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>(Generally) To learn to formulate and analyse relatively simple dynamic probabilistic models. (Especially) To be acquainted with some models of this type which have proved practically usable.</Course_Objectives>
+          <Remark>The course is a good supplement for courses in statistics, operations research, time series analysis, image analysis, and control theory.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende sandsynlighedsregning og statistik. Fordelings- og frekvensfunktioner, momenter.  (Fx 02402/02403+02405)&#xD;&#xA;Basalt kendskab til programmering; fx i Matlab." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of probability and statistics. Distribution function, moments.  (E.g. 02402/02403+02405)&#xD;&#xA;Knowledge of programming, e.g. Matlab." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02405.(02402/02403)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne mellem forskellige typer af stokastiske processer, og vurdere hvilken modelklasse der kan være relevant for et givet dynamisk fænomen." />
+          <Txt Lang="en-GB" Txt="Differentiate between different types of stochastic processes, and determine which model class that is most relevant for a certain dynamic phenomenon" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere realisationer af en given Markov- eller renewal-process" />
+          <Txt Lang="en-GB" Txt="Simulate realizations of a Markov- or renewal process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Klassificere en given Markov-proces og dens tilstande med hensyn til periodicitet og persistens." />
+          <Txt Lang="en-GB" Txt="Classify states of a Markov process and the process itself" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme stationære fordelinger i en Markov-process, og vurdere hvornår stationaritet er en rimelig approksimation." />
+          <Txt Lang="en-GB" Txt="Determine invariant distributions in Markov processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme den transiente dynamik af overgangssandsynlighederne i en Markov-process, og identificere karakteristiske tidsskalaer." />
+          <Txt Lang="en-GB" Txt="Determine simple time varying transition probabilities in Markov processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse ligninger for sandsynligheden for,  eller den forventede tid til, absorption i en Markov-kæde." />
+          <Txt Lang="en-GB" Txt="Formulate and solve equations for time to absorption or expected time to absorption in Markov chains." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme tidsdiskrete Markov-process der opstår ved forskellige typer sampling af en tidskontinuert process." />
+          <Txt Lang="en-GB" Txt="Formulate discrete time Markov processes, which arise from different sampling techniques in continuous time processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Genkende og analysere specielle typer af Markov-processer, såsom fødsels-dødsprocesser og køprocesser." />
+          <Txt Lang="en-GB" Txt="Identify and analyze important special cases of Markov processes, e.g. birth and death processes and fundamental queueing systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage beregninger i modeller baseret på Brownsk bevægelse" />
+          <Txt Lang="en-GB" Txt="Perform calculations in models based on Brownian motion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Blive i stand til at benytte forskellige former for sandsynlighedsgenerende funktioner" />
+          <Txt Lang="en-GB" Txt="Working knowledge of different probability generatingfunctions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Hvis tiden tillader det opnå kendskab til martingaler" />
+          <Txt Lang="en-GB" Txt="If time allows get some knowledge on martingales" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.imm.dtu.dk/courses/02407" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Dynamiske processer med diskrete tilstande til brug for eg. kø- og lagerstyring</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:39.33" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

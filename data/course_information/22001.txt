@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22001" Volume="2026/2027" University="dtu" LastUpdated="2026-04-28+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Akustisk signalbehandling" />
+        <Title Lang="en-GB" Title="Acoustic signal processing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="70" KVL_Resources="100" />
+          <Ass_Dep UID="31" Resources="30" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="81529" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tobias</GivenName>
+            <FamilyName>May</FamilyName>
+            <Email>tobmay@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="For at deltage i eksamen kræves det, at kursets tre opgaver er afleverede. Opgaverne indgår ikke i den endelige bedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Submission of three assignments are a prerequisite for admission to the exam. The assignments are not part of the final evaluation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Exams may be spread across multiple days depending on the number of students" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Eksamen kan fordeles på tværs af flere dage afhængig af antallet af studerende" />
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="25 minutter" />
+          <Duration Lang="en-GB" Txt="25 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Som akustikingeniør har man ofte behov for anvende signalbehandlingsteknikker for at opnå den ønskede funktion i en teknisk løsning. Dette kursus giver basalt kendskab til de digitale signalbehandlingsmetoder, som er relevante indenfor moderne akustisk teknologi og hørevidenskab. Kurset indeholder følgende emner: 
+•	Sampling i tid og rum 
+•	Fourier-analyse 
+•	Vinduesinddeling og nulpolstring
+•	Analyse af lineære systemer
+•	Filtre og filterbanker
+•	Auto- og kryds-korrelation samt kohærens 
+•	Støj og statistiske momenter
+ 
+Udover forelæsninger vil kurset indeholde 3 praktiske moduler, som fokuserer på 1) måling af impulsresponser, 2) binaural efterklangsreduktion og 3) måling af overføringsfunktion.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning, Matlab-øvelser, laboratorieøvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>J.G. Proakis and D.G. Manolakis: Digital Signal Processing - Principles, Algorithms and Applications, Prentice Hall</Course_Literature>
+          <Course_Objectives>Kursets overordnede mål er at introducere teori, analyse og syntesemetoder for signaler og systemer i diskret tid, som anvendes i moderne akustik og høreforskning. De studerende vil foretage kvantitative estimater og detaljerede udregninger. Tekniske anvendelser af metoderne indenfor akustik vil blive behandlet i Matlab-simuleringer og laboratorieøvelser. Studerende vil få formativ feedback på obligatoriske rapportafleveringer og den korrekte og ukorrekte anvendelse af generativ AI vil blive diskuteret kritisk som en del af arbejdet med afleveringerne.</Course_Objectives>
+          <Remark>E-learning anvendes i form af chatrum, diskussionsforum/blog eller internetbaserede værktøjer.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>As an acoustical engineer you often need to apply signal processing techniques to obtain the desired function in a technological solution. This course provides the fundamental knowledge in digital signal processing techniques relevant in (but not limited to) modern acoustical engineering and hearing science. The following topics will be covered:
+•	Sampling in time and space
+•	Fourier analysis
+•	Windowing and zero-padding
+•	Linear system analysis
+•	Filters and filter banks
+•	Auto- and cross-correlation and coherence 
+•	Noise and statistical moments
+
+In addition to lectures, the course contains three practical modules with a focus on: 1) impulse response measurements, 2) binaural dereverberation and 3) transfer function measurements.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, Matlab exercises, laboratory exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>J.G. Proakis and D.G. Manolakis: Digital Signal Processing - Principles, Algorithms and Applications, Prentice Hall</Course_Literature>
+          <Course_Objectives>The general goal of the course is to introduce theory, analysis, and synthesis of discrete-time signals and systems, which are used in modern acoustics and hearing science. The students will make quantitative estimations and detailed written calculations. Technical applications in the field of acoustics will be examined in exercises and Matlab simulations. Formative feedback will be given on submitted assignments and the use and misuse of generative AI will be critically discussed.</Course_Objectives>
+          <Remark>E-learning is used in the form of chat room, discussion board/blog, or web-based tools.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Matlab bruges ekstensivt i kurset hver uge. Forhåndskendskab  vil være en fordel, men supplerende materiale vil blive givet, hvis det er nødvendigt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Matlab will be used extensively in the course on a weekly basis. Prior knowledge would be beneficial, but additional material will be provided if required." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(31605/22050)/(31606/22051)/22052730160" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare principperne for sampling af kontinuerte signaler." />
+          <Txt Lang="en-GB" Txt="explain the principles of sampling of continuous-time signals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere signaler i frekvensdomænet i en og to dimensioner ved hjælp af Fourier-transformationen." />
+          <Txt Lang="en-GB" Txt="use a Fourier transform to analyze signals in the frequency domain in one and two dimensions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere, modificere og syntetisere signaler ved hjælp at den diskrete korttids-Fourier-transformation og andre filterbank-metoder." />
+          <Txt Lang="en-GB" Txt="analyze, modify and synthesize signals using the short-time discrete Fourier transform and other filter banks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende teori for lineær systemer til at simulere signalbehandling i akustiske systemer." />
+          <Txt Lang="en-GB" Txt="apply linear system theory to simulate processing of signals through acoustic systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og karakterisere stokastiske signaler og systemer ved hjælp af spektral effekttæthed, kohærens og kryds- og autospektrumanalyse." />
+          <Txt Lang="en-GB" Txt="analyze and characterize stochastic signals and systems through power-spectral density, coherence and auto- and cross spectral analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og udføre impulsresponsmålinger til at karakterisere et akustisk system." />
+          <Txt Lang="en-GB" Txt="design and perform impulse response measurements to characterize an acoustic system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og udføre overføringsfunktionsmålinger til at karakterisere et akustisk system." />
+          <Txt Lang="en-GB" Txt="design and perform transfer function measurements to characterize an acoustic system. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere signalbehandlingsalgoritmer og visualisere resultater i Matlab." />
+          <Txt Lang="en-GB" Txt="implement signal processing algorithms and visualize results using Matlab." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="reflektere over anvendelsen af AI‑genererede forklaringer i de praktiske opgaver." />
+          <Txt Lang="en-GB" Txt="reflect over the use of AI in the practical assignments." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="31210" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:51.063" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

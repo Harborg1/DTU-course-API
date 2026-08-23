@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28934" Volume="2026/2027" University="dtu" LastUpdated="2026-05-07+02:00">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Automation and Control of Fermentation" />
+        <Title Lang="en-GB" Title="Automation and Control of Fermentation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="DTU Lyngby Campus, Building 228A" />
+          <LocationTxt Lang="en-GB" Txt="DTU Lyngby Campus, Building 228A" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="5 days (3 days teaching + 2 days homework)&#xD;&#xA;The course will be a mix of lectures, exercises in the lecture room and a homework assignment. &#xD;&#xA;The course is organised once a year, and will be held 27 April - 1 May 2026." />
+          <Schedule_Txt Lang="en-GB" Txt="5 days (3 days teaching + 2 days homework)&#xD;&#xA;The course will be a mix of lectures, exercises in the lecture room and a homework assignment. &#xD;&#xA;The course is organised once a year, and will be held 27 April - 1 May 2026." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Kemiteknik" />
+        <Course_Responsible PersonKey="10316" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Krist V.</GivenName>
+            <FamilyName>Gernaey</FamilyName>
+            <Email>kvg@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="81610" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carina Loureiro da Costa Lira</GivenName>
+            <FamilyName>Gargalo</FamilyName>
+            <Email>carlour@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="81385" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Pedram</GivenName>
+            <FamilyName>Ramin</FamilyName>
+            <Email>pear@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="119965" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>José Luis Martinez</GivenName>
+            <FamilyName>Ruiz</FamilyName>
+            <Email>jlmr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="65483" FUniversity="DTU" SortID="4" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Elham</GivenName>
+            <FamilyName>Ramin</FamilyName>
+            <Email>elhr@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Short report documenting the solution of a homework assignment" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Short report documenting the solution of a homework assignment" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Report to be submitted about two weeks after ending the last lecture" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Report to be submitted about two weeks after ending the last lecture" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Report to be submitted latest two weeks after ending the last lecture" />
+          <Duration Lang="en-GB" Txt="Report to be submitted latest two weeks after ending the last lecture" />
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="N/A" />
+            <DeadLineTxt Lang="en-GB" Txt="N/A" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_PROFESSOR" />
+            <Supp_Txt Lang="da-DK" Txt="Sign up at kvg@kt.dtu.dk" />
+            <Supp_Txt Lang="en-GB" Txt="Sign up at kvg@kt.dtu.dk" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>See Annex 1</Contents>
+          <Teaching_And_Learning_Methods>The course will be a mix of lectures, exercises in the lecture room and a homework assignment. Exercises are based on Python. Some examples in Matlab are also provided.</Teaching_And_Learning_Methods>
+          <Course_Literature>N/A</Course_Literature>
+          <Course_Objectives>This course aims to provide participants with an understanding of the theory and skills needed to make decisions related to on-line sensor selection in view of establishing closed-loop control on a model fermentation process (yeast). Participants will be introduced to the theory of process control, and will learn how to use model simulations to study the effect of applying control to a bioreactor. On-line sensor concepts will be introduced, and the participants will learn how to work with on-line data, first in terms of detecting outliers and replacing missing values, and then for classification.</Course_Objectives>
+          <DTU_Remark>The course is part of the Aim-Bio course portfolio developed at DTU Bioengineering and DTU Chemical Engineering.</DTU_Remark>
+          <No_Credit_Points_With>Some basic knowledge of Matlab or Python is an advantage but not a must</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>See Annex 1</Contents>
+          <Teaching_And_Learning_Methods>The course will be a mix of lectures, exercises in the lecture room and a homework assignment. Exercises are based on Python. Some examples in Matlab are also provided.</Teaching_And_Learning_Methods>
+          <Course_Literature>N/A</Course_Literature>
+          <Course_Objectives>This course aims to provide participants with an understanding of the theory and skills needed to make decisions related to on-line sensor selection in view of establishing closed-loop control on a model fermentation process (yeast). Participants will be introduced to the theory of process control, and will learn how to use model simulations to study the effect of applying control to a bioreactor. On-line sensor concepts will be introduced, and the participants will learn how to work with on-line data, first in terms of detecting outliers and replacing missing values, and then for classification.</Course_Objectives>
+          <DTU_Remark>The course is part of the Aim-Bio course portfolio developed at DTU Bioengineering and DTU Chemical Engineering.</DTU_Remark>
+          <No_Credit_Points_With>Some basic knowledge of Matlab or Python is an advantage but not a must</No_Credit_Points_With>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="N/A" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="N/A" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="N/A" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="N/A" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="N/A" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="N/A" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="- Implementation of a system of coupled differential equations on a yeast fermentation process" />
+          <Txt Lang="en-GB" Txt="- Implementation of a system of coupled differential equations on a yeast fermentation process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="- Simulation of a system of coupled differential equations on a yeast fermentation process" />
+          <Txt Lang="en-GB" Txt="- Simulation of a system of coupled differential equations on a yeast fermentation process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="- Gain knowledge about standard and advanced sensors" />
+          <Txt Lang="en-GB" Txt="- Gain knowledge about standard and advanced sensors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="- Apply control to a yeast fermentation process (in a simulation model)" />
+          <Txt Lang="en-GB" Txt="- Apply control to a yeast fermentation process (in a simulation model)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="- Local sensitivity analysis" />
+          <Txt Lang="en-GB" Txt="- Local sensitivity analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="- Missing value replacement and outlier detection in on-line data" />
+          <Txt Lang="en-GB" Txt="- Missing value replacement and outlier detection in on-line data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="- Classification of datasets" />
+          <Txt Lang="en-GB" Txt="- Classification of datasets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="- Gain knowledge about standard and advanced sensors" />
+          <Txt Lang="en-GB" Txt="- Gain knowledge about standard and advanced sensors" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="www.kt.dtu.dk" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Automation and control of yeast fermentation</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="N/A" />
+        <PreviousCourse CourseCode="N/A" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="68" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="30" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-03" Time="14:44:43.23" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

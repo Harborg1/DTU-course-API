@@ -99,6 +99,15 @@ python -m importer.cli --academic-year 2026-2027 --retry-failed
 
 # Hele kataloget
 python -m importer.cli --academic-year 2026-2027
+
+# Hent kun alle publicerede kursusnumre (ét nummer pr. linje)
+python scripts/get_all_course_numbers.py --catalog-version 2026/2027
+
+# Gem kursusnumrene i en fil
+python scripts/get_all_course_numbers.py --catalog-version 2026/2027 > course_numbers.txt
+
+# Gem GetCourse XML for hvert kursus i data/course_information/
+python scripts/get_all_course_information.py --year-group 2026/2027
 ```
 
 I Docker køres kommandoerne sådan:

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42577" Volume="2026/2027" University="dtu" LastUpdated="2026-04-10+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Introduktion til Business Analytics" />
+        <Title Lang="en-GB" Title="Introduction to Business Analytics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="113350" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Filipe</GivenName>
+            <FamilyName>Rodrigues</FamilyName>
+            <Email>rodr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="157085" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ravi</GivenName>
+            <FamilyName>Seshadri</FamilyName>
+            <Email>ravse@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="166288" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Guido</GivenName>
+            <FamilyName>Cantelmo</FamilyName>
+            <Email>guica@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueringen baseres på en skriftlig prøve (50% af den samlede karakter) samt et gruppeprojekt (med gruppestørrelse mellem 3-6) med individuel rapport (50% af den samlede karakter)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based on a written test (50% of total grade) and one group project (with group size of 3-6) with individualized report (50% of total grade)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Undervisningen foregår på en interaktiv måde, hvor teoretiske elementer kombineres med praktisk arbejde ved brug af Jupyter Notebooks.
+
+Hovedemnerne er datavisualisering, prognose- og regressionsmodeller, klassifikation, clustering, dimensionalitetsreduktion og tidsserieanalyse. Metoderne vil blive eksemplificeret gennem forskellige cases, f.eks. inden for transport og ledelse.
+
+Introduktion til Python-programmering og Pandas som supplerende materiale (krav til kurset/selvstudium)</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og praktiske laboratorier (f.eks. med iPython notesbog).</Teaching_And_Learning_Methods>
+          <Course_Literature>Hver forelæsning har sine egne anbefalede tekster, som vil være offentligt tilgængelige online. For den studerende, der er interesseret i at følge en bog, anbefaler vi "The elements of statistical learning" af Trevor Hastie, Robert Tibshirani og Jerome H. Friedman samt "Python for Data Analysis" af Wes McKinney</Course_Literature>
+          <Course_Objectives>Business Analytics handler om at udforske og analysere data for at få indsigt i tidligere forretningsresultater med henblik på at styre den fremtidige forretningsplanlægning.
+ 
+Dette kursus introducerer den portefølje af datavidenskabelige opgaver og teknikker, der er nødvendige for at udforske, manipulere, visualisere og analysere data (deskriptiv analyse) samt opbygge forudsigelsesmodeller ved hjælp af maskinlæring (prædiktiv analyse), som kan bruges til at opnå indsigt og understøtte beslutninger (præskriptiv analyse). Kurset er designet med henblik på studerende inden for Business Analytics (dvs. der kræves en vis Python programmeringsbaggrund), især - men ikke udelukkende - studerende med relation til studier inden for mobilitet, logistik og virksomhedsanalyse. Derfor indeholder kurset en stærk praktisk komponent med konkrete cases fra den virkelige verden, primært inden for mobilitet og transport.
+ 
+Kurset omfatter også en introduktion til databehandling, problemformulering og den grundlæggende pakke af maskinlæringsalgoritmer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The classes are taught in an interactive manner, with theoretical parts, intermingled with practice with Jupyter Notebooks. 
+
+Main topics are: data visualisation, forecasting and regression models, classification, clustering, dimensionality reduction and time-series. The methods will be exemplified through different cases within e.g. transportation and management.
+
+Introduction to Python programming and Pandas is provided as supplementary material (requirement of the course/self learning)</Contents>
+          <Teaching_And_Learning_Methods>Lectures and practical laboratories (e.g. with iPython notebook).</Teaching_And_Learning_Methods>
+          <Course_Literature>Each lecture has its own recommended texts, that will be available publicly online. For the student interested in a book to follow, we recommend "The elements of statistical learning", Trevor Hastie, Robert Tibshirani and Jerome H. Friedman "Python for Data Analysis", Wes McKinney</Course_Literature>
+          <Course_Objectives>Business Analytics is about exploring and analysing data to gain insight into past business performance in order to guide future business planning.
+
+This course introduces the portfolio of data science tasks and techniques necessary for exploring, manipulating, visualizing and analysing data (descriptive analytics), as well as for building prediction models using machine learning (predictive analytics) that can be used to gain insights and support decisions (prescriptive analytics). It is designed with Business Analytics students in mind (i.e. some Python programming background is required), particularly – but not exclusively - those related to studies on mobility and logistics and business analytics. Therefore, it contains a strong hands-on component, with specific real-world cases coming mainly from mobility and transportation.
+
+The course also includes an introduction to data wrangling, problem formulation, and the basic suite of machine learning algorithms.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Programmering i Python. Der skal tages minimum 10 ECTS blandt de 8 programmeringskurser: 02002/02003/02105/02110/02614/02635." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Programming in Python. A minimum of 10 ECTS must be taken among the 8 programming courses: 02002/02003/02105/02110/02614/02635." />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Indledende kurser i statistik er meget vigtige." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introductory courses in statistics are very important." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402/02403/02105" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere Python-baserede dataanalyse-workflows med fokus på reproducerbarhed og effektivitet" />
+          <Txt Lang="en-GB" Txt="Design and implement Python-based data analysis workflows, ensuring reproducibility and efficiency" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og operationalisere forretningsrelaterede problemstillinger som datadrevne analytiske opgaver" />
+          <Txt Lang="en-GB" Txt="Formulate and operationalize business-related problems as data-driven analytical tasks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge og anvende relevante datastrukturer, algoritmer og analytiske metoder til at adressere komplekse forretningsproblemstillinger" />
+          <Txt Lang="en-GB" Txt="Select and apply appropriate data structures, algorithms, and analytical techniques to address complex business problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, fortolke og syntetisere resultater fra deskriptive og prædiktive modeller til handlingsorienterede forretningsindsigter og anbefalinger" />
+          <Txt Lang="en-GB" Txt="Analyse, interpret, and synthesize results from descriptive and predictive models into actionable business insights and recommendations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og evaluere visualiseringer, der afdækker komplekse temporale og spatiale mønstre til brug for beslutningstagning" />
+          <Txt Lang="en-GB" Txt="Develop and evaluate visualizations that reveal complex temporal and spatial patterns for decision-making" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe, træne og validere statistiske modeller og machine learning-modeller ved anvendelse af relevante evalueringsstrategier" />
+          <Txt Lang="en-GB" Txt="Design, train, and validate statistical and machine learning models using appropriate evaluation strategies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kritisk vurdere data science-metoder, modelperformance og underliggende antagelser, herunder bias, varians og overfitting" />
+          <Txt Lang="en-GB" Txt="Critically assess data science methodologies, model performance, and underlying assumptions, including bias, variance, and overfitting" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og kritisk reflektere over centrale begreber inden for data mining og machine learning i praktiske og forretningsmæssige kontekster" />
+          <Txt Lang="en-GB" Txt="Explain and critically reflect on key data mining and machine learning concepts in practical and business contexts" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Exploring and analysing data to gain insight into past business performance in order to guide future business planning.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="42184. 42585" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:11.143" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

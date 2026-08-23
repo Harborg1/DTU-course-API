@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34657" Volume="2026/2027" University="dtu" LastUpdated="2026-04-09+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Integreret kredsløbsdesign på systemniveau" />
+        <Title Lang="en-GB" Title="System level integrated circuit design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="78881" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Per</GivenName>
+            <FamilyName>Lynggaard</FamilyName>
+            <Email>plyn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The last day of the course, the report must be handed in." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Skriftlig report afleveres sidste kursusdag." />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset udføres, som et projekt hvor de studerende arbejde som et hold af integereret kredsløbsdesignere, som har fået givet en fælles opgave af at designe et helt integereret kredsløb. 
+
+Hele det integrerede kredsløb består af flere avancerede integreret kredsløbsdele og hver studerende er individuelt ansvarlig for designet af hver del. De studerende vil, igennem litteraturstudie, undersøge state-of-the-art af deres kredsløb, bestemme sig for en passende kredsløbstopologi for givne specifikationer, designe deres kredsløbsdel på schematic-niveau, simulere kredsløbet over globale og lokale proceshjørner, lave layout af kredsløbet, ekstrahere parasitiske komponenter fra layout, verificere post-layout performance og sammenligne denne med state of the art. 
+
+De studerende skal samarbejde med resten af holdet for at finde specifikationerne for deres kredsløbsdel og forsikre sig, at deres kredsløb fungerer sammen.
+
+Der vil under projektet være status og review-møder, hvor de studerende kan opdatere holdet, dele deres designudfordringer og hjælpe hinanden.
+
+Der vil blive holdt forelæsninger om avancerede integrerede kredsløbsblokke, chiparkitektur og andre udvalgte emner."</Contents>
+          <Teaching_And_Learning_Methods>Individuelt projektarbejde, gruppearbejde, status og review-møder og forelæsninger.</Teaching_And_Learning_Methods>
+          <Course_Literature>[1] T.C. Carusone, D.A. Johns &amp; K. Martin, "Analog Integrated Circuit Design"</Course_Literature>
+          <Course_Objectives>At sætte den studerende i stand til at designe og lave layout af et avanceret integreret kredsløb, som er en del af et helt integreret kredsløb, og kunne samarbejde med andre designere for at sikre at hele det integrerede kredsløb fungerer på systemniveau.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is conducted as a project where the students work as a team of integrated circuit designers that have a common task of designing a full integrated circuit (IC).
+
+The full IC contains several advanced IC blocks and each of the students is individually responsible for the design of one of them. The students will perform a state of the art literature search of their block, decide on an adequate circuit topology for the given specifications, design their block on schematic level, simulate it across global and local variations, layout the circuit, extract the parasitics, verify its post-extraction performance and compare it to state of the art.
+
+The students have to collaborate with the team to find the specifications for their blocks and ensure that the blocks can interface each other.
+
+During the project, there will be status and review meeting where the students can update the team, share the challenges they are facing and help each other.
+
+There will be lectures given on advanced integrated circuit blocks, chip architecture and other selected topics.</Contents>
+          <Teaching_And_Learning_Methods>Individual project work, collaboration work, status and review meetings and lectures.</Teaching_And_Learning_Methods>
+          <Course_Literature>[1] T.C. Carusone, D.A. Johns &amp; K. Martin, "Analog Integrated Circuit Design"</Course_Literature>
+          <Course_Objectives>Enable the student to design and layout an advanced integrated circuit block that is part of a full integrated circuit (IC) and to work in collaboration with other designers to ensure that the full IC operates at a system level.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende kurser, som dækker alt materiale fra 31631/34630, 31632/34655 og 31633/34656." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses that cover all the material from 31631/34630, 31632/34655 and 31633/34656." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="31631/34630/34636  / 31632/34655 / 31633/34656" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare funktionalitet og designudfordringer af et avanceret integreret kredsløb." />
+          <Txt Lang="en-GB" Txt="Explain the functionality and design challenges of an advanced integrated circuit block." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere &quot;state-of-the-art&quot; af et integreret kredsløb igennem literaturestudie og præsentere dette." />
+          <Txt Lang="en-GB" Txt="Identify the current state-of-the-art of an integrated circuit block with a literature research and present it." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og udlede designkrav til det integrerede kredsløb sammen med sit hold." />
+          <Txt Lang="en-GB" Txt="Analyse and derive the requirements for the integrated circuit block together with the IC design team." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge den mest passende topologi for et integreret kredsløb, som følge af kredsløbsspecifikationer." />
+          <Txt Lang="en-GB" Txt="Select the most adequate topology of an integrated circuit block according to the specifications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og modellere et integreret kredsløb med et behavioural language." />
+          <Txt Lang="en-GB" Txt="Implement an integrated circuit block with a behavioural language." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og simulere et integreret kredsløb på transistorniveau, som en del af et helt integreret kredsløb." />
+          <Txt Lang="en-GB" Txt="Design and simulate an integrated circuit block at a transistor level as part of a full integrated circuit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lave layout af det designede integrerede kredsløb og ekstrahere parasitiske komponenter." />
+          <Txt Lang="en-GB" Txt="Layout the designed integrated circuit block and extract the parasitics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere performance af det designede integrerede kredsløb med parasitiske komponenter over globale og lokale process variationer." />
+          <Txt Lang="en-GB" Txt="Evaluate the performance of the designed integrated circuit block with extracted parasitics across global and local variations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde som et hold på at designe et helt integereret kredsløb." />
+          <Txt Lang="en-GB" Txt="Work as part of a team designing a full integrated circuit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere arbejdet i en afsluttende rapport." />
+          <Txt Lang="en-GB" Txt="Document the work in a written report." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>avanceret integreret kredsløbsdesign</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:44.007" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

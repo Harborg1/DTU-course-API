@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02211" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Forskningsemner i computerarkitektur" />
+        <Title Lang="en-GB" Title="Research Topics in Computer Architecture" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="34674" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Paul</GivenName>
+            <FamilyName>Pop</FamilyName>
+            <Email>paupo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="220909" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Richter</FamilyName>
+            <Email>ojuri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="den endelige karakter baseres på en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="the final grade is based on an overall assessment (&quot;helhedsvurdering&quot;)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Dette års kursus vil fokusere på emner inden for computerarkitektur på lavt niveau, herunder design af asynkrone kredsløb, og i den sidste del på datacentrerede/datadrevne computerarkitekturer." />
+            <Supp_Txt Lang="en-GB" Txt="This year's course will focus on the low-level computer architecture topics of asynchronous circuit design and, in its final weeks data-centric/data-driven computer architectures." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De emner, der behandles på dette kursus, vil variere fra år til år. Typiske emner kan inkludere instruktionsniveau-parallelisme, asynkrone kredsløb, chip-multiprocessing, network-on-chip, tidsforudsigelige computerarkitekturer, AI-acceleratorer, hardware til sikkerhed og approximate computing.  Emnerne for 2027 er design af asynkrone kredsløb og arkitekturer samt datacentrerede arkitekturer. Det konkrete program for året vil blive meddelt kursusdeltagerne via e-mail, inden kurset starter.</Contents>
+          <Teaching_And_Learning_Methods>Kurset består af forelæsninger, øvelser og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursuslitteraturen består af et sæt bogkapitler (Jens Sparsø,
+Introduction to Asynchronous Circuit Design) og forskningsartikler. Læselisten vil blive annonceret via en DTU Learn til kursusdeltagerne.</Course_Literature>
+          <Course_Objectives>Kurset vil behandle udvalgte moderne problemer inden for kredsløbs- og arkitekturdesign ud fra et usædvanligt lavt niveau: asynkront kredsløbs- og systemdesign. Kurset har til formål at lære de studerende at tænke anderledes og nytænkende om digitale arkitekturer og hukommelsesarkitekturer. Det indledes med grundlæggende principper i asynkront design og fortsætter derefter med udvalgte væsentlige arkitekturudfordringer og hvordan man kan tænke anderledes om dem ved hjælp af en datacentreret og datadrevet tilgang til computerarkitektur.
+
+Computerarkitektur, kunsten og videnskaben at designe hardware, er et spændende og hurtigt skiftende forsknings- og udviklingsfelt. Deltagerne forventes at arbejde på et projekt med en mundtlig præsentation med passende præsentationsmateriale i løbet af den 13-ugers periode og aflevere en afsluttende rapport.</Course_Objectives>
+          <Remark>De studerende vil arbejde i grupper på to eller tre med øvelser/laboratorieopgaver og opgaver for at øve sig i nogle af de emner, der er blevet gennemgået i forelæsningerne. Desuden skal de studerende udarbejde et afsluttende projekt/laboratorieopgave, som de vælger fra en liste over mulige emner, der bygger videre på de emner, der er blevet gennemgået på kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The topics considered in this course will change from year to year. Typical topics could include instruction-level parallelism, asynchronous circuits, chip-multiprocessing, network-on-chip, time-predictable computer architectures, AI accelerators, hardware for security, and approximate computing. The 2026/2027 topics are asynchronous circuit and architecture design and data-centric architectures. The specific plan for the year will be announced via an email to the course participants before the course starts.</Contents>
+          <Teaching_And_Learning_Methods>The course consists of lectures, exercises, and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>The course literature consists of a set of book chapters from "Jens Sparsø,
+Introduction to Asynchronous Circuit Design" and research papers. The reading list will be announced via DTU Learn to the course participants.</Course_Literature>
+          <Course_Objectives>The course will approach selected modern circuit and architecture design problems from an unusual low level perspective: Asynchronous circuit and system design. This course intends to teach the students to think different and out-of the box about digital and memory architectures. It will start off with the basics in asynchronous design and then follow up with selected major architecture challenges and how to think about them differently with a data-centric and data-driven computer architecture approach.
+
+Computer architecture, the art and science of designing hardware, is an exciting and fast-changing research and development field. Participants are expected to work on a project with an oral presentation with appropriate presentation material during the 13-week period and deliver a final report.</Course_Objectives>
+          <Remark>Students will work in groups of two or three on exercises/labs and problems to practice some topics covered in the lectures. Further students will prepare a final project/lab selected from a catalog of possible topics building on top of the topics covered in the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Viden om grundlæggende Computerarkitektur, Digital elektronik 1 eller Design af Digitale Systemer" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic computer architecture knowledge, Digital Electronics 1 or Design of Digital Systems" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02155 / 02138 / 02203" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere og redegøre om der med fordel kan anvendes asynkrone kredsløb i forbindelse med realiseringen af et digitalt kredsløb til en given applikation – herunder hvilken betydning det får for kredsløbets egenskaber (energi, hastighed, areal, etc.)." />
+          <Txt Lang="en-GB" Txt="Evaluate and explain whether it is advantageous to use asynchronous circuits when implementing a digital circuit for a given application, and assess the effect on the properties of the circuit (energy, speed, area, etc.)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de problemer (metastabilitet og synkronisering) der er forbundet med at kommunikere mellem flere klok domæner, anvise mulige løsninger, og ræsonnere om disses ydeevne og pålidelighed." />
+          <Txt Lang="en-GB" Txt="Identify and explain the problems (synchronization and metastability) related to communicating between several clock domains, devise possible solutions and reason about the performance and reliability of these." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser og forklar, hvornår datacentrerede arkitekturer har fordele i forhold til beregningscentrerede arkitekturer, ved hjælp af konkrete eksempler." />
+          <Txt Lang="en-GB" Txt="Analyse and explain when data-centric architectures are advantages over compute-centric architectures on practical examples." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere hvilken handshakeprotokol det vil være mest hensigtsmæssig at anvende i en given situation." />
+          <Txt Lang="en-GB" Txt="Assess which handshake protocol is most appropriate to use in a given situation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne synkrone og asynkrone designstrategier samt clocking-teknikker" />
+          <Txt Lang="en-GB" Txt="Analyze performance and power trade-offs in modern computer architectures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere performance- og strømforbrugs-trade-offs i moderne computerarkitekturer" />
+          <Txt Lang="en-GB" Txt="Design and implement designs in an asynchronous hardware description language." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurder strømforbruget og latenstiden ud fra datakommunikationsafstanden, og udled de arkitektoniske konsekvenser af denne vurdering." />
+          <Txt Lang="en-GB" Txt="Evaluate the power consumption/latency based on data communication distance and deduce architectural implications out of the evaluation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give en sammenhængende mundtlig præsentation af et udvalgt emne" />
+          <Txt Lang="en-GB" Txt="Give a coherent oral presentation of a chosen topic, based on a project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere kursets designprojekt i form af en konferenceartikel." />
+          <Txt Lang="en-GB" Txt="Prepare a conference-style paper (report)" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02211" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Advanced computer architecture</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:00.5" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

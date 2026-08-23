@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41934" University="dtu" LastUpdated="2026-03-03+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående Bygnings Informations Modellering (BIM)" />
+        <Title Lang="en-GB" Title="Advanced Building Information Modeling (BIM)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="136125" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Tim Pat</GivenName>
+            <FamilyName>McGinley</FamilyName>
+            <Email>timmc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="5 individualiserede grupperapporter. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="5 individualized group reports. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset Advanced Building Information Modeling (BIM) giver mulighed for at udvikle færdigheder i OpenBIM, der specifikt tiltaler dig. Måske vil du identificere en rolle eller udfordring, som du ønsker at udforske i dit speciale? Kurset er opdelt i 4 dele:
+
+# Lær af BIM
+Et kernekoncept i kurset er at navigere og forstå IFC (Industry Foundation Classes) interoperable datamodel i AEC-industrien. Udtrække data fra IFC-formatet. Skrive regler for at kontrollere dataene i IFC ved hjælp af Python og IfcOpenShell.
+
+# OpenBIM Modeler eller OpenBIM Analysis Tool Developer
+Bygge et OpenBIM værktøj eller workflow. 
+
+# OpenBIM Manager eller OpenBIM Ontologist
+Ontologier. Linkede bygningsdata.
+
+# OpenBIM Guru</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Videregående BIM gør dig i stand til at få den information, du har brug for til at analysere og designe byggesystemer i dit faglige speciale. Dette kræver interoperabilitet og standardisering; derfor fokuserer dette kursus på Open BIM data og standarder. Kurset har tre hovedprincipper: 1) Tænke i 'IFC, FAIR data og åbne standarder', 2) Understøtte cirkulariteten af data, viden, processer, modeller og værktøjer, 3) Byg (arkitekt) OpenBIM-værktøjer til specifikke use cases, der anvender domæneekspertise.</Course_Objectives>
+          <Remark>Det anbefales, at du sætter dig ind i Python, før du tager dette kursus.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course "Advanced Building Information Modeling (BIM)" provides the opportunity to develop skills in OpenBIM that specifically appeal to you. Perhaps you will identify a role or challenge that you wish to explore in your specialization? The course is divided into 4 parts:
+
+# Learning From BIM
+A core concept of the course is to navigate and understand the interoperable data model, Industry Foundation Classes (IFC), in the AEC industry. Extract data from the IFC format. Write rules to validate the data in IFC using Python and IfcOpenShell.
+
+# OpenBIM Modeler or OpenBIM Analysis Tool Developer
+Build an OpenBIM tool or workflow.
+
+# OpenBIM Manager or OpenBIM Ontologist
+Ontologies. Linked building data.
+
+# OpenBIM Guru</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Advanced BIM enables you to obtain the information you need to analyze and design building systems in your professional specialization. This requires interoperability and standardization, which is why this course focuses on Open BIM data and standards. The course has three main principles: 1) Thinking in terms of 'IFC, FAIR data, and open standards', 2) Supporting the circularity of data, knowledge, processes, models, and tools, 3) Building (architect) Open BIM tools for specific use cases, applying domain expertise.</Course_Objectives>
+          <Remark>It is recommended that you familiarise yourself with Python before taking this course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="41927 eller tilsvarende. Det ville også være en fordel, at have færdigheder i programmering med Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="41927 or equivalent. Also it would be helpful to have Python skills." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="11031/41927" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Oprette og administrere en BIM-udførelsesplan baseret på OpenBIM-standarden ISO 19650" />
+          <Txt Lang="en-GB" Txt="Create and manage a BIM Execution Plan based on the OpenBIM standard ISO 19650" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere, lokalisere og udtrække information fra en IFC-model i OpenBIM-værktøjer" />
+          <Txt Lang="en-GB" Txt="Identify, locate and extract information from an IFC model in OpenBIM tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende passende OpenBIM standarder og retningslinjer for at understøtte åbne og FAIR data, værktøjer og processer" />
+          <Txt Lang="en-GB" Txt="Apply appropriate OpenBIM standards and guidelines to support open and FAIR data, tools and processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give professionel disciplinær vejledning baseret på OpenBIM-analyse " />
+          <Txt Lang="en-GB" Txt="Provide professional disciplinary guidance based on OpenBIM analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende domænespecifikke linkede dataontologier" />
+          <Txt Lang="en-GB" Txt="Apply domain specific linked data ontologies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Oprette, forgrene, og samarbejde om udviklingen af et OpenBIM-værktøj i Python med peers i et kodelager" />
+          <Txt Lang="en-GB" Txt="Create, fork, branch and collaborate on the development of an OpenBIM tool in Python with peers in a code repository." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere BIM-udfordringer ved at analysere OpenBIM-data" />
+          <Txt Lang="en-GB" Txt="Identify BIM challenges by analysing OpenBIM data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommunikere et avanceret BIM-koncept, du har lært på kurset over for dine medstuderende, og reflekter over peer-feedback herom." />
+          <Txt Lang="en-GB" Txt="Teach an advanced BIM concept you have learned in the course to your peers and reflect on peer feedback on this." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og modellere et BIM-case-studie baseret på BIM-udfordringer identificeret fra analyse af et OpenBIM projekt i BPMN." />
+          <Txt Lang="en-GB" Txt="Identify and model a BIM use case based on the BIM challenges identified from analysis of an OpenBIM project in BPMN." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere en passende udviklingsmetodologi for et OpenBIM-værktøj eller -model for forskellige use cases" />
+          <Txt Lang="en-GB" Txt="Identify an appropriate development methodology for an OpenBIM tool or model to different use cases." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og forbedre programmeringsfærdigheder i Python for at udvikle et OpenBIM-værktøj eller modelleringsfærdigheder i OpenBIM ved at bruge din ingeniørdomæneekspertise." />
+          <Txt Lang="en-GB" Txt="Apply and improve programming skills in Python to develop an OpenBIM tool or modelling skills in OpenBIM using your engineering domain expertise." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere softwarelicensens egnethed og implikationer for det OpenBIM-værktøj, du udvikler eller modelleringsværktøj, du bruger." />
+          <Txt Lang="en-GB" Txt="Evaluate software licensing suitability and implications for the OpenBIM tool you develop or modelling tool you use." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Videregående kursus i anvendelsen af BIM/VDC i byggeriets processer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="11033/11034" />
+        <PreviousCourse CourseCode="11033/11034" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="55" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="5" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:22.077" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34024" Volume="2026/2027" University="dtu" LastUpdated="2023-05-24+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Materialernes optiske egenskaber" />
+        <Title Lang="en-GB" Title="Optical properties of materials" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="40208" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Radu</GivenName>
+            <FamilyName>Malureanu</FamilyName>
+            <Email>rmal@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9383" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Andrei</GivenName>
+            <FamilyName>Laurynenka</FamilyName>
+            <Email>alav@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Experiments" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Vi præsenterer følgende begreber og fænomener:
+- Lysstråle udbredelse
+- Billedbehandling principper med linser og spejle, hvordan og hvorfor et billede kan 
+   forstørres/formindskes med linser
+- Matematik for vektoroperatorer (kryds- og skalarprodukt), nabla (∇) operator og 
+   betydningen af gradient, rotation  og divergens
+- Maxwells ligninger og bølgeligninger
+- Elektromagnetiske/optiske egenskaber af materialer
+- Fri-elektron gas model til modellering af rigtige metaller
+- Elektriske og magnetiske felters randbetingelser
+- Effektiv medium tilnærmelse og dets begrænsninger
+- Bølgeudbredelse i forskellige bulk og strukturerede materialer
+- Indvirkning af fabrikationsteknikker og dets indflydelse på smarte nanomaterialers 
+  egenskaber.</Contents>
+          <Teaching_And_Learning_Methods>Foredragene er delt mellem ”standard” (whiteboard), laboratorieøvelser, hvor de studerende måler og beregner materialernes optiske egenskaber og foredrag, hvor de studerende beskriver deres resultater. Via laboratorieøvelser, vil de studerende blive i stand til at designe simple strukturer, der opfører sig som materialer med de ønskede optiske egenskaber.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver en grundlæggende introduktion til optik og fotonik, og der sigtes mod at gøre de studerende fortrolige med begrebet lys som stråle og elektromagnetiske bølger, samt dets interaktion med materialer i et bredt frekvensområde. 
+Vi starter med simple geometriske koncepter, hvor vi beskriver lysstrålens opførsel mens den bevæger sig fra et til et andet materiale (linser, spejler, prismer). Derefter, bruger vi mere avanceret bølgekoncepter (bølgelængde, lys hastighed, frekvens) og præsenterer materialernes egenskaber, der definerer lysets udbredelse. Vi bruger disse engskaber til at klassificere materialerne (metaler, dielektrikum, halvledere) og definere udbredelsen i disse materialer (transmission), og hvad der, sker når lyset skifter fra et til et andet materiale (afspejling, brydning). Vi slutter kurset med at introducere konceptet af smarte kunstige materialer (metamaterialer, metaoverflader) og undersøger deres design principper og anvendelser. Vi fokuserer på state-of-the-art af avancerede kunstige materialer. Kurset præsenterer også muligheder og udfordringer med at fabrikere smarte nanomaterialer til det optiske spektrum.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The following concepts and phenomena will be discussed:
+- The light rays propagation
+- Imaging principles with lenses and mirrors, how and why an image can be 
+   enlarged/reduced using lens
+- Mathematics of vector operations (cross and dot products), the nabla (∇) operator 
+   and the meaning of gradient, curl and divergence
+- Maxwell’s equations and wave equation
+- Electromagnetic/optical properties of materials 
+- The free electron gas model in modeling of real metals 
+- Electric and magnetic fields boundary conditions
+- Effective medium approximation and its limitations
+- Propagation of the waves in various bulk and structured materials 
+- Basic nano-fabrication techniques and their limitations
+- Influence of the fabrication possibilities on the properties of the smart nanomaterials</Contents>
+          <Teaching_And_Learning_Methods>The lectures are divided into standard (whiteboard) classes, lab exercises where the students will measure and simulate optical properties of materials and presentations where the students will present their results. During the simulation lab exercises, the students will be able to design structures behaving like materials with desired optical properties.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course delivers an introduction to the basics of optics and photonics aiming to familiarise the students with the concept of light as a ray and as an electromagnetic wave, and its interaction with materials in a broad range of frequencies. We will start with simple geometrical concepts, describing behavior of light rays when moving from one media to another (lens, mirrors, prisms). Afterwards, we will use more advanced wave concepts (wavelength, speed of light, frequency) and, introduce material properties, defining light propagation. We will use these properties to classify various media (metals, dielectrics, semiconductors) and discuss the propagation of light in these media (transmission) as well as what happens when light passes from one medium to another (reflection, refraction). We conclude the course by introducing the concept of smart artificial materials (metamaterials, metasurfaces) and consider their design principles and applications. We focus on the current trends in developing of advanced artificial materials. The course will also discuss the possibilities and challenges in fabrication of smart nanomaterials for the optical spectra.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller andre kurser med grundlæggende viden om optik og elektromagnetisme" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or any other courses with basic knowledge of optics and electromagnetism" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34020 or 10041" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvorfor et materiale kan blive klassificeret som metal, havleder eller dielektrisk fra et klassik- og et kvanteperspektiv" />
+          <Txt Lang="en-GB" Txt="Describe why a material can be classified as metal, semiconductor or dielectric on on classical and quantum levels" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de vigtigste forskelle af lys som stråle og bølge" />
+          <Txt Lang="en-GB" Txt="Describe the principal difference in light behavior as a ray and as a wave" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den fysiske fortolkning af Maxwells ligninger" />
+          <Txt Lang="en-GB" Txt="Describe the physical meaning of Maxwell’s equations " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede bølgeligning fra Maxwells ligninger, finde og forklare dens simpleste løsning i forskellige materialer" />
+          <Txt Lang="en-GB" Txt="Derive the wave equation and find and explain its simplest solutions in different media " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare konceptet permittivitet og permeabilitet i et standardmateriale, og bølgeudbredelse i dette materiale" />
+          <Txt Lang="en-GB" Txt="Explain the concept of permittivity and permeability in a standard material as well as describe wave propagation in that material" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvad der sker, når lyset udbreder sig fra et til et andet materiale og bruge randbetingelser til at kvantificere dets overgang" />
+          <Txt Lang="en-GB" Txt="Describe what happens when light reaches the interface between two materials and quantify this transition" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan smarte kunstige materialer kan designes" />
+          <Txt Lang="en-GB" Txt="Describe the principles of designing smart optical materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive fabrikationsmuligheder for smarte nanomaterialer samt forudsige deres egenskaber" />
+          <Txt Lang="en-GB" Txt="Describe the fabrication possibilities for smart nanomaterials and predict their properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere fabrikationsbegrænsninger og deres indflydelse på struktureret materialers egenskaber" />
+          <Txt Lang="en-GB" Txt="Discuss the fabrication limitations and their influence on the properties of the structured materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>General introduction in optics and electromagnetism with applications for sub-wavelength structures</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34022" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:34.52" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

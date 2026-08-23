@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="27827" Volume="2026/2027" University="dtu" LastUpdated="2026-06-16+02:00">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Hands-On Data Analysis and Automation: Better Decision-Making with Bash and Python Basics" />
+        <Title Lang="en-GB" Title="Hands-On Data Analysis and Automation: Better Decision-Making with Bash and Python Basics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="ServiceCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Augumn: 8-11 September 2026&#xD;&#xA;Four days of interactive teaching, 9:00-16:00, followed by project work period (max. 6 weeks)" />
+          <Schedule_Txt Lang="en-GB" Txt="Augumn: 8-11 September 2026&#xD;&#xA;Four days of interactive teaching, 9:00-16:00, followed by project work period (max. 6 weeks)" />
+          <Schedule ScheduleKey="F" SortID="0" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="27" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Bioengineering" />
+        <Course_Responsible PersonKey="101881" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Kai</GivenName>
+            <FamilyName>Blin</FamilyName>
+            <Email>kblin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="The students will apply the learned skills to a project of their own choosing. To pass they will have to hand in a report (in the form of a git repository that contains code and data in the form of Jupyter notebooks, scripts etc.) that demonstrates the application of relevant tools and methods covered in the course no later than 6 weeks after the practical course. Students will be assisted in their project work." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The students will apply the learned skills to a project of their own choosing. To pass they will have to hand in a report (in the form of a git repository that contains code and data in the form of Jupyter notebooks, scripts etc.) that demonstrates the application of relevant tools and methods covered in the course no later than 6 weeks after the practical course. Students will be assisted in their project work." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="6 weeks after practical course concluded." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="6 weeks after practical course concluded." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="The registration period for autumn: 8/7-5/8 and the registration period for spring: 5/12-1/3" />
+            <DeadLineTxt Lang="en-GB" Txt="The registration period for autumn: 8/7-5/8 and the registration period for spring: 5/12-1/3" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="DTU PhD students must register for this course through the Study Planner.&#xD;&#xA;&#xD;&#xA;PhDs from other universities must register as a guest student through:&#xD;&#xA;https://www.dtu.dk/english/education/phd/intro/guest-phd/guest_courses/registration_form&#xD;&#xA;&#xD;&#xA;Academia and industry employees must register through Learn for Life: https://lifelonglearning.dtu.dk/en/biotech/" />
+            <Supp_Txt Lang="en-GB" Txt="DTU PhD students must register for this course through the Study Planner.&#xD;&#xA;&#xD;&#xA;PhDs from other universities must register as a guest student through:&#xD;&#xA;https://www.dtu.dk/english/education/phd/intro/guest-phd/guest_courses/registration_form&#xD;&#xA;&#xD;&#xA;Academia and industry employees must register through Learn for Life: https://lifelonglearning.dtu.dk/en/biotech/" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>With data generation and genetic engineering becoming evermore easy in biology, life scientists and bioengineers are increasingly facing challenges in processing and analyzing data and automating experimental workflows in their line of work. For example, simple tasks (such as designing primers) can become a huge drain on scientists’ time as they repetitively copy and paste information into web interfaces instead of running batch operations. 
+Furthermore, qualifications demanded of biotechnologists in the industry are shifting away from pipetting towards the analysis of data and automation of workflows. Therefore, it is essential that life science and biotechnology PhD students are trained in the computational tools needed for data analysis and task/lab automation. 
+
+This PhD course aims to get programming novices (little to no experience) off the ground with adopting Python (instead of Excel and Word) in their daily work. In contrast to many existing Python courses targeting computer scientists and software engineers, this course is specifically tailored towards Biotechnology. It focuses primarily on Python as a tool for data analysis and automation, deemphasizing parts that are relevant to software development only. Furthermore, participants are provided with knowledge about data analytics and relevant machine learning methods, including best practice approaches, troubleshooting and avoiding common pitfalls.
+
+This course is based on the Software and Data Carpentry curricula (https://carpentries.org) and style of teaching (live coding, hands-on exercise etc.). Since 1998, Software Carpentry has been teaching basic lab skills for research computing to scientists and engineers and course materials have continuously been adapted and tailored to their problems and needs.  The course materials for this course have been tailored extensively by us towards life science and biotech related problems that can be solved with Python and specifically target life science and biotech PhD students.
+
+The course is 100% interactive and relies on the proven approach of teachers conveying the knowledge through live coding while the participants follow along (supported by teaching assistants). Furthermore, live coding is frequently interrupted by hands-on exercises in which the participants develop programming solutions to appropriate tasks on their own (with the help of the teachers and teaching assistants).
+
+This course will provide you with theoretical and practical knowledge about:
+
+* Obtain a working knowledge of Python basics and fundamentals relevant to data analysis and automation.
+* Adopt a modern development and reporting environment for Python in the form of Jupyter notebooks.
+* Obtain a good overview of key Python libraries covering data analysis and statistics (Pandas), machine learning (scikit-learn), and visualisation (matplotlib, altair).</Contents>
+          <Teaching_And_Learning_Methods>24 hours interactive computer exercises, 8 hours reading prior and during the course, 40 hours individual project (application of learned skills to data set/automation task to be picked by the student and teacher together) and preparation of report.</Teaching_And_Learning_Methods>
+          <Course_Literature>https://software-carpentry.org/lessons/
+https://datacarpentry.org/lessons/</Course_Literature>
+          <Course_Objectives>Get students to adopt Python in their research.</Course_Objectives>
+          <DTU_Remark>The course is part of the DTU Biotech Lifelong Learning portfolio.</DTU_Remark>
+          <Remark>Course fee
+1) This course is free for PhD students registered at a Danish university.
+2) The course fee for PhDs registered at international institutions is DKK 10,600 (for non-EU/EEA citizens there will be a tuition fee as well).
+3) The course fee for academia is DKK 15,750.
+4) The course fee for industry participants is DKK 21,000.
+
+Payment:
+All PhD students here: https://lifelonglearning.dtu.dk/en/bioengineering/course/introduction-to-python-for-data-analysis-and-automation-in-biology-phd-course/
+
+Academia and Industry here:https://lifelonglearning.dtu.dk/en/biotech/
+
+Morning coffee is included.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>With data generation and genetic engineering becoming evermore easy in biology, life scientists and bioengineers are increasingly facing challenges in processing and analyzing data and automating experimental workflows in their line of work. For example, simple tasks (such as designing primers) can become a huge drain on scientists’ time as they repetitively copy and paste information into web interfaces instead of running batch operations. 
+Furthermore, qualifications demanded of biotechnologists in the industry are shifting away from pipetting towards the analysis of data and automation of workflows. Therefore, it is essential that life science and biotechnology PhD students are trained in the computational tools needed for data analysis and task/lab automation. 
+
+This PhD course aims to get programming novices (little to no experience) off the ground with adopting Python (instead of Excel and Word) in their daily work. In contrast to many existing Python courses targeting computer scientists and software engineers, this course is specifically tailored towards Biotechnology. It focuses primarily on Python as a tool for data analysis and automation, deemphasizing parts that are relevant to software development only. Furthermore, participants are provided with knowledge about data analytics and relevant machine learning methods, including best practice approaches, troubleshooting and avoiding common pitfalls.
+
+This course is based on the Software and Data Carpentry curricula (https://carpentries.org) and style of teaching (live coding, hands-on exercise etc.). Since 1998, Software Carpentry has been teaching basic lab skills for research computing to scientists and engineers and course materials have continuously been adapted and tailored to their problems and needs.  The course materials for this course have been tailored extensively by us towards life science and biotech related problems that can be solved with Python and specifically target life science and biotech PhD students.
+
+The course is 100% interactive and relies on the proven approach of teachers conveying the knowledge through live coding while the participants follow along (supported by teaching assistants). Furthermore, live coding is frequently interrupted by hands-on exercises in which the participants develop programming solutions to appropriate tasks on their own (with the help of the teachers and teaching assistants).
+
+This course will provide you with theoretical and practical knowledge about:
+
+* Obtain a working knowledge of Python basics and fundamentals relevant to data analysis and automation.
+* Adopt a modern development and reporting environment for Python in the form of Jupyter notebooks.
+* Obtain a good overview of key Python libraries covering data analysis and statistics (Pandas), machine learning (scikit-learn), and visualisation (matplotlib, altair).</Contents>
+          <Teaching_And_Learning_Methods>24 hours interactive computer exercises, 8 hours reading prior and during the course, 40 hours individual project (application of learned skills to data set/automation task to be picked by the student and teacher together) and preparation of report.</Teaching_And_Learning_Methods>
+          <Course_Literature>https://software-carpentry.org/lessons/
+https://datacarpentry.org/lessons/</Course_Literature>
+          <Course_Objectives>Get students to adopt Python in their research.</Course_Objectives>
+          <DTU_Remark>The course is part of the DTU Biotech Lifelong Learning portfolio.</DTU_Remark>
+          <Remark>Course fee
+1) This course is free for PhD students registered at a Danish university.
+2) The course fee for PhDs registered at international institutions is DKK 10,600 (for non-EU/EEA citizens there will be a tuition fee as well).
+3) The course fee for academia is DKK 15,750.
+4) The course fee for industry participants is DKK 21,000.
+
+Payment:
+All PhD students here: https://lifelonglearning.dtu.dk/en/bioengineering/course/introduction-to-python-for-data-analysis-and-automation-in-biology-phd-course/
+
+Academia and Industry here:https://lifelonglearning.dtu.dk/en/biotech/
+
+Morning coffee is included.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="To use the Unix shell for working with files and directories, pipes and filters, loops, shell scripts, and searching." />
+          <Txt Lang="en-GB" Txt="To use the Unix shell for working with files and directories, pipes and filters, loops, shell scripts, and searching." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Use Python for data analysis and task automation, including the import of libraries, reading and plotting of data, selection and filtering of data, writing of conditional statements and functions, and debugging." />
+          <Txt Lang="en-GB" Txt="Use Python for data analysis and task automation, including the import of libraries, reading and plotting of data, selection and filtering of data, writing of conditional statements and functions, and debugging." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Utilize basic version control of data and programming code with Git." />
+          <Txt Lang="en-GB" Txt="Utilize basic version control of data and programming code with Git." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Adopt a modern development and reporting environment for Python in the form of Jupyter notebooks." />
+          <Txt Lang="en-GB" Txt="Adopt a modern development and reporting environment for Python in the form of Jupyter notebooks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Clean, filter, transform and summarize tabular data with Pandas" />
+          <Txt Lang="en-GB" Txt="Clean, filter, transform and summarize tabular data with Pandas" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualize data using the Python plotting libraries matplotlib and altair" />
+          <Txt Lang="en-GB" Txt="Visualize data using the Python plotting libraries matplotlib and altair" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Apply scikit-learn for basic Machine Learning such as classification, regression, clustering, PCA etc." />
+          <Txt Lang="en-GB" Txt="Apply scikit-learn for basic Machine Learning such as classification, regression, clustering, PCA etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Get started building a first project in Python for the hand-in" />
+          <Txt Lang="en-GB" Txt="Get started building a first project in Python for the hand-in" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="29905" />
+        <PreviousCourse CourseCode="29905" />
+        <Restrictions Max="20" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="3935" PersonUniversity="dtu" Date="2026-08-05" Time="14:53:31.977" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

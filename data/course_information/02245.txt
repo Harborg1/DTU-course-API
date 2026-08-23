@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02245" University="dtu" LastUpdated="2025-03-26+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">7.5</Point>
+        <Title Lang="da-DK" Title="Programverifikation" />
+        <Title Lang="en-GB" Title="Program Verification" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_online" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="166034" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christoph</GivenName>
+            <FamilyName>Matheja</FamilyName>
+            <Email>chmat@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="94040" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Alberto Lluch</GivenName>
+            <FamilyName>Lafuente</FamilyName>
+            <Email>albl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En eller to rapporter danner grundlag for den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One or two written reports are the basis for an oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Depending on the number of students it may be necessary also to decide on other days." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Afhængigt af antallet af studerende kan der være behov for også at aftale andre dage." />
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset dækker over de udledningsprincipper, teknologier og designvalg, der underbygger  automatiske deduktive verifikationsværktøjer.
+(1) Programlogikker til at skrive formelle korrekthedsbeviser (for eksempel svageste forudsætning og separationslogik)
+(2) SMT solvers (for eksempel Z3) til at automatisere udledningen af logiske formler,
+(3) Mellemliggende verifikationssprog (for eksempel Viper) til indkodning af
+verifikationsmetodologier, og
+(4) Kildekodeverifikationsværktøjer til håndtering af funktionsrige programmeringssprog.
+Kurset vil blande teknisk og praktisk indhold.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Udvalgte bogkapitler og forskningsartikler ud over slides og forelæsningsnoter. Det relevante materiale vil blive gjort tilgængeligt online.</Course_Literature>
+          <Course_Objectives>Dette kursus tilbyder en praktisk introduktion til brug og konstruktion af automatiske og deduktive programverifikationsværktøjer samt til teorien bag disse. Den studerende skal erhverve de nødvendige færdigheder for at kunne anvende og udvide værktøjssupporterede metodologier til udvikling af beviseligt korrekt software.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers reasoning principles, technologies, and design decisions underlying automated deductive verification tools. In particular, it introduces
+(1) program logics for writing formal correctness proofs (for example weakest preconditions and separation logic);
+(2) SMT solvers (for example Z3) for automating reasoning about logical formulas;
+(3) intermediate verification languages (for example Viper) for encoding verification methodologies; and
+(4) source code verifiers for handling feature-rich programming languages.
+The course will intermix technical content with hands-on experience.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Selected book chapters and research papers in addition to slides and lecture notes; the relevant material will be made available online.</Course_Literature>
+          <Course_Objectives>This course offers a hands-on introduction to the usage, construction, and theory of automated deductive program verifiers. Students should acquire the skills to apply and extend tool-supported methodologies for developing proven-correct software.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til programsemantik og prædikatlogik er forventet. Den nødvendige viden kan opnås i 02141. Den studerende skal beherske mindst ét objekt-orienteret eller funktionelt programmeringssprog. Kurser i matematisk logik, f.eks. 02156, er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic familiarity with program semantics and predicate logic is expected; the necessary background can be obtained in the course 02141. Students must be fluent in at least one object-oriented or functional programming language. Courses involving mathematical logic, for example 02156, are an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02141" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="specificere de funktionelle korrekthedsegenskaber af et funktionsrigt imperativt program;" />
+          <Txt Lang="en-GB" Txt="specify functional correctness properties of imperative programs;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge automatiserede verifikationsværktøjer til at udvikle formelt verificeret software;" />
+          <Txt Lang="en-GB" Txt="use automated verification tools to develop formally verified software;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="begrunde om et program følger sin specifikation, baseret på sunde udledningsprincipper;" />
+          <Txt Lang="en-GB" Txt="justify why a program meets its specification based on sound reasoning principles;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvert lag i den teknologistak, som er involveret i opbygningen af automatiske verifikationsværktøjer;" />
+          <Txt Lang="en-GB" Txt="explain the technology stack involved in building automated verification tools;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenligne deduktiv programverifikation med andre metoder der forsøger at øge tilliden til softwares korrekthed;" />
+          <Txt Lang="en-GB" Txt="compare deductive program verification to other methods aiming at increasing confidence in software correctness;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="indkode verifikationsrelaterede beslutningsproblemer i SMT (satisfiability modulo theories);" />
+          <Txt Lang="en-GB" Txt="encode verification-related decision problems to SMT (satisfiability modulo theories);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere potentielle flaskehalse i en eksisterende SMT-indkodning;" />
+          <Txt Lang="en-GB" Txt="identify potential bottlenecks in existing SMT encodings;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere sunde metodologier til løsning af programverifikationsproblemer, og automatisere disse ved hjælp af SMT-indkodninger, samt kunne argumentere for de trufne designvalg;" />
+          <Txt Lang="en-GB" Txt="construct sound methodologies for program verification problems, automate these methodologies via encodings to SMT, and justify the involved design decisions;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opnå ovenstående i grupper, mens man også er individuelt ansvarlig; og" />
+          <Txt Lang="en-GB" Txt="achieve the above goals in a group effort while at the same time maintaining individual accountability; and" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere løsninger til programverifikationsproblemer på en klar og præcis måde." />
+          <Txt Lang="en-GB" Txt="communicate solutions to problems in a clear and precise manner." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02245/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Take your code to the highest level of assurance!</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:07.65" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34092" University="dtu" LastUpdated="2025-07-28+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Ph.d.-kursus - Nano-optik" />
+        <Title Lang="en-GB" Title="PhD Course - Nano-optics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Fotonik" />
+        <Course_Responsible PersonKey="24208" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Niels</GivenName>
+            <FamilyName>Gregersen</FamilyName>
+            <Email>ngre@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="161522" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Battulga</GivenName>
+            <FamilyName>Munkhbat</FamilyName>
+            <Email>bamunk@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="97827" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Martin Arentoft</GivenName>
+            <FamilyName>Jacobsen</FamilyName>
+            <Email>maaja@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Maxwell’s ligninger, optisk Greens funktion, lokal tilstandstæthed, kvantelyskilde, dipol approksimation, vekselvirknings Hamiltonoperator, dipol udsendelse, spontant henfald, klassiske levetider, fjerntfeltsudsendelse, kvantiserede lyskilder, optiske antenner, kavitetskvanteelektrodynamik, simulationsteknikker baserede på en modal metode og en Greensfunktion integreret lignings metode.
+
+Lærebogen "Principles of Nano-optics" af Lukas Novotny og Bernt Hecht og derudover undervisningsnoter og artikler vil blive anvendt. Pensum er på ca. 250 sider.
+
+Kurset vil bestå af en indledende forelæsning efterfulgt af diskussion af pensum i et studiegruppeformat med præsentationer af de studerende og Matlab øvelser.
+
+Evaluering af kurset: Mundtlig eksamen i pensum.</Contents>
+          <Teaching_And_Learning_Methods>Grundlæggende optik på kandidatniveau.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At etablere en teoretisk forståelse af den semiklassiske lysstofvekselvirkning i nanofotoniske strukturer og af designudviklingen af optiske egenskaber i disse strukturer. Da lysstofvekselvirkningen er styret af de fotoniske omgivelser, kræver korrekt design af nanofotoniske komponenter en detaljeret forståelse af mulighederne for at skræddersy det optiske felt for at opnå den ønskede funktionalitet. Pensummet vil blive baseret på tekstbogsmateriale og derudover på den seneste forskning på DTU Electro.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Maxwell’s equations, optical Green’s function, local density of states, quantum emitter, dipole approximation, interaction Hamiltonian, dipole radiation, spontaneous decay, classical lifetimes, far field emission, quantum light emitters, optical antennas, cavity quantum electrodynamics, simulation techniques based on modal and on Green’s function integral equation methods.
+
+The textbook "Principles of Nano-optics" by Lukas Novotny and Bernt Hecht as well as lecture notes and articles will be used. Curriculum is approx. 250 pages.
+
+The course will consist of an introductory lecture after which the curriculum will be discussed in a study group format with student presentations and Matlab exercises.
+
+For evaluation: Oral exam in curriculum.</Contents>
+          <Teaching_And_Learning_Methods>Fundamental optics on M.Sc. level.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To establish a theoretical understanding of the semi-classical light-matter interaction in nanophotonic structures and of the engineering of the optical properties of these devices. Since the light-matter interaction is governed by the photonic environment, proper engineering of nanophotonic components requires a detailed understanding of the possibilities for tailoring the optical field to obtain the desired functionality. The curriculum will be based on textbook material as well as the latest DTU Electro research.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til elektromagnetisme og Maxwells ligninger." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of electromagnetism and Maxwell's equations." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive det elektromagnetiske felt ved hjælp af den dyadiske Greens funktion" />
+          <Txt Lang="en-GB" Txt="relate the electromagnetic field using the dyadic Green's function" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive væsentlige optiske nærfeltsmikroskopi-teknikker" />
+          <Txt Lang="en-GB" Txt="describe major near-field optical microscopy techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare lysstofvekselvirkningen i det svage koblingsregime ved hjælp af den lokale tilstandstæthed" />
+          <Txt Lang="en-GB" Txt="explain the light-matter interaction in the weak coupling regime using the local density of states" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skelne mellem forskellige typer af henfaldsrater i homogene og inhomogene omgivelser og estimere dem" />
+          <Txt Lang="en-GB" Txt="distinguish between different types of quantum emitter decay rates in homogeneous and non-homogeneous environments and estimate them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne lysudsendelsen fra en dipolkilde i en simpel geometri (et interface)" />
+          <Txt Lang="en-GB" Txt="compute the light emission of a dipole emitter in a simple geometry (an interface)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne kraften udøvet af det elektromagnetiske felt gennem Maxwell’s stress tensor" />
+          <Txt Lang="en-GB" Txt="determine the net force on an object exerted by the electromagnetic field using the Maxwell stress tensor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne spredning af lys i 2D geometrier ved hjælp af en modal metode og en Greensfunktion integreret lignings metode" />
+          <Txt Lang="en-GB" Txt="compute scattering of light for 2D geometries using the modal method and the Green’s function integral equation method" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive de svage og stærke koblingsregimer i kavitetskvanteelektrodynamikvæsentlige " />
+          <Txt Lang="en-GB" Txt="describe the weak and strong coupling regimes in cavity quantum electrodynamics " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Teoretiske og numeriske metoder i moderne nano-optik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:47.25" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

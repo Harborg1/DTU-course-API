@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34373" Volume="2026/2027" University="dtu" LastUpdated="2025-03-07+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Introduktion til mikrokontroller-programmering til IoT med embedded C" />
+        <Title Lang="en-GB" Title="Introduction to microcontroller development for IoT using embedded C" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="19827" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Martin Nordal</GivenName>
+            <FamilyName>Petersen</FamilyName>
+            <Email>mnpe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evaluation of report" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Formålet med dette kursus er at introducere den studerende til avancerede metoder til udvikling af firmware på ARM-Cortex MCU'er til IoT-formål. Der vil især være fokus på opsætning af MCU'en, for eksempel konfiguration af GPIO'er, UART, interrupts og timere, SPI og I2C kommunikation og analog-digital (ADC/DAC) funktionalitet.
+Der vil være en, Arduino-fri, embedded-tilgang til udvikling af mikrocontrollers firmware og det vil give den studerende en forståelse af mulighederne i et embedded system i relation til Internet of Things. Den studerende vil berøre emnet Real-time operating system (RTOS) og  kort blive introduceret til hvordan man afvikler flere tråde i ARM-processoren.
+Kurset er bygget op omkring forelæsninger og øvelser, hvor den studerende får praktisk erfaring inden for MCU firmware programmering, primært ved brug af STMCubeIDE og STMCubeMX. I løbet af øvelserne vil den studerende lære at konfigurere UART/SPI eller I2C seriel interfaces for at kommunikere med digitale sensorer/moduler. Den studerende vil også lære at konfigurere og anvende den interne analoge-til-digitale konverter (ADC) for at aflæse og digitalisere analoge sensor data.
+
+Kurset vil have fokus på IoT således, at low-power kommunikation, f.eks. LPWAN kommunikationsteknologier (eksempelvis Lora/LoraWAN, SigFox eller NBIoT/LTE-M) og/eller BLE vil blive brugt til trådløs datatransmission under kurset og projektarbejdet.
+Den studerende forventes at have forudgående viden om C/C++.
+
+I løbet af kurset vil de studerende planlægge og udvikle deres egne projekter i grupper og evalueret ud fra en præsentation og/eller rapport.
+
+Kursus nøgleord: Embedded systemer, Low-power embedded firmware udvikling til IoT, bare-metal programmering, STM32, Nucleo, Bluepill, CubeIDE, CubeMX, FreeRTOS,  tasks and semaphores, no-Arduino.</Contents>
+          <Course_Objectives>Dette kursus fokuserer på embedded programmering og udvikling af mikrocontrollere til low-power Internet of Things (IoT) enheder. Dette gøres ved hjælp af embedded C firmwareprogrammering på en STM32 mikrokontroller. Formålet med dette kursus er at introducere den studerende til avancerede metoder til udvikling af firmware på ARM-Cortex mikrocontrollere (MCU'er), specielt til IoT-formål, som for eksempel interfacing med digitale og analoge sensorer og trådløs kommunikationsmoduler. Den studerende skal arbejde med lav-niveau MCU-konfigurering og firmwareudvikling for at konfigurere og anvende timere, interrupts, analog-til-digital-konvertering og forskellige seriel kommunikationsprotokoller. Der vil også være mulighed for at arbejde med trådløs kommunikationsteknologier såsom eksempelvis Lora/LoraWAN, BLE og NBIoT/LTE-M. Arduino IDE vil ikke blive brugt i dette kursus.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The purpose of this course is to introduce the student to advanced methods of developing firmware on ARM-Cortex MCUs for IoT purposes. In particular, focus will be on setting up the MCU, for example configuring the GPIOs, UART, interrupts and timers, SPI and I2C communication and analog-digital (ADC/DAC) functionality. 
+The, Arduino-free, embedded approach to microcontroller firmware development will provide the student with an understanding of the capabilities of an embedded system for Internet of Things. The students will touch upon the topic of Real-time operating system (RTOS) environment and briefly be introduced to running multiple threads on the ARM processor. 
+The course is structured around lectures and exercises where the student will gain hands-on experience within MCU firmware programming, primarily using STMCubeIDE and STMCubeMX. During the exercises, the student will learn to configure UART/SPI or I2C peripherals to communicate with digital sensors / modules. The student will also learn to configure and use the internal analog-to-digital converter (ADC) to read and digitize analog sensor data.
+
+The course will have a focus on IoT such that low-power communication, e.g. LPWAN communication technologies (Lora/LoraWAN, SigFox or NBIoT/LTE-M) and/or BLE will be utilized for wireless data transmission during the course and project work.
+The student is expected to have prior knowledge about C/C++. 
+
+During the course, the students will be planning and developing their own projects in groups and evaluated from a presentation and/or report.
+
+Course keywords: Embedded systems, Low-power embedded firmware development for IoT, bare-metal programming, STM32, Nucleo, Bluepill, CubeIDE, CubeMX, FreeRTOS, tasks and semaphores, no-Arduino.</Contents>
+          <Course_Objectives>This course will focus on embedded hardware development for low-power Internet of Things (IoT) using embedded C  firmware programming on the STM32 microcontroller. The purpose of this course is to introduce the student to advanced methods of developing firmware on ARM-Cortex microcontrollers (MCUs), specifically for IoT purposes, for example interfacing with digital and analog sensors and wireless communication modules. The student will be working with low-level MCU configuration and firmware development to configure and apply timers, interrupts, analog-to-digital-conversion and various serial communication protocols. It will be possible to work with wireless communication technologies such as for example Lora/LoraWAN, BLE and NBIoT/LTE-M. The Arduino IDE will not be used in this course.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="C programming experience / Embedded systems / Electronics / Arduino / IoT" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="C programming experience / Embedded systems / Electronics / Arduino / IoT" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34315 / 34346 / 34365 / 34338" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive essensen af - og udfordringerne i Internet of Things." />
+          <Txt Lang="en-GB" Txt="Describe the essence and challenges of Internet of Things." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og planlægge ifht. en optimal implementering af kommunikationsteknologi " />
+          <Txt Lang="en-GB" Txt="Analyse and plan for implementation of optimal networking technology." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere embedded C kode i en ARM Cortex-baseret MCU" />
+          <Txt Lang="en-GB" Txt="Implement embedded C code in an ARM Cortex based MCU." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konfigurere MCU clock'en samt peripherals (interfaces) på et STM32 evalueringsboard " />
+          <Txt Lang="en-GB" Txt="Configure clock and peripherals in a STM32 evaluation board." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konfigurere GPIOs til seriel kommunikation i en ARM-baseret mikrocontroller (UART, I2C, SPI)" />
+          <Txt Lang="en-GB" Txt="Set and configure up the GPIOs of an ARM Cortex based microcontroller for serial communication (UART, I2C, SPI)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konfigurere GPIOs og anvende ADC/DAC i en ARM Cortex-baseret MCU" />
+          <Txt Lang="en-GB" Txt="Set up the GPIOs of an ARM-based microcontroller for ADC/DAC." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle embedded firmware der kan sende/modtage data " />
+          <Txt Lang="en-GB" Txt="Develop embedded programs to transmit/receive data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere UART/SPI/I2C kommunikation i MCU firmware." />
+          <Txt Lang="en-GB" Txt="Implement UART/SPI/I2C communication protocols in firmware." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive koncepterne bag RTOS og multi-threading" />
+          <Txt Lang="en-GB" Txt="Describe concepts of RTOS and multi-threading in an embedded system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Selvstændig analysere og implementere embedded firmware der løser en IoT udfordring" />
+          <Txt Lang="en-GB" Txt="Independently analyse and implement solution to an embedded implementation problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Færdiggøre og showcase et selv-udviklet IoT projekt" />
+          <Txt Lang="en-GB" Txt="Deploy and showcase a developed IoT system and application." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere projektarbejde i rapport" />
+          <Txt Lang="en-GB" Txt="Document project work in report." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Microcontroller development for advanced IoT using embedded C</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:21.863" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

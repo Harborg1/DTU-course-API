@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41955" University="dtu" LastUpdated="2026-02-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Bærende konstruktioner 3: Ramme- og pladekonstruktioner" />
+        <Title Lang="en-GB" Title="Structural engineering 3: Frame and Plate Structures" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="3049" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Peter Noe</GivenName>
+            <FamilyName>Poulsen</FamilyName>
+            <Email>pnpo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="40297" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sebastian</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>seba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="2 hours with written aids and a calculator and a 2 hours with all aid without access to the internet" />
+            <Aid_Txt Lang="da-DK" Txt="2 timer med skriftlige hjælpemidler og lommeregner og 2 timer med alle hjælpemidler uden adgang til internettet" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Stabilitetsanalyse for plane elastiske rammer ved deformationsmetoden. Plastisk analyse af rammekonstruktioner ved brug af nedre-og øvre-værdimetoder.  
+Grundlæggende pladeteori, herunder momenter, forskydningskræfter, hjørnekræfter og virtuelt arbejde. Stabilitetsberegninger af plader.
+Introduktion til elementmetoden for plader på baggrund af det virtuelle arbejdes princip.
+Beregninger af en plades bæreevne baseret på flydelinjemetoden.
+Indledende teori for tyndvæggede bjælker.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaveregning</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: "Bærende Konstruktioner 3 - Lineær, stabilitets- og plastisk analyse af rammer og plader",  John Forbes Olesen og Peter Noe Poulsen, Polyteknisk Forlag. "Bærende Konstruktioners Numeriske Modellering - Elementmetoden", Jens Henrik Nielsen, John Forbes Olesen og Peter Noe Poulsen, Note fra Polyteknisk boghandel.</Course_Literature>
+          <Course_Objectives>At sætte deltagerne i stand til at modellere og beregne bygningskonstruktioner opbygget af rammer og plader, baseret på hhv. lineær, stabilitets- og plastisk analyse.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Stability analysis for two-dimensional elastic frames by the deformation method. Plastic analysis of frame structures using lower and upper bound methods.
+Basic plate theory including moments, shear forces, corner forces and virtual work.
+Stability analysis of plates.
+Introduction to the finite element method for plates based on the principle of virtual work.
+Calculation of load carrying capacity in plate bending plasticity based on the yield line method. Introductory theory for thinwalled beams.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem solving</Teaching_And_Learning_Methods>
+          <Course_Literature>Text book: "Bærende Konstruktioner 3 - Lineær, stabilitets- og plastisk analyse af rammer og plader",  John Forbes Olesen og Peter Noe Poulsen, Polyteknisk Forlag. "Bærende Konstruktioners Numeriske Modellering - Elementmetoden", Jens Henrik Nielsen, John Forbes Olesen og Peter Noe Poulsen, Note from Polyteknisk boghandel.</Course_Literature>
+          <Course_Objectives>To teach the participants modelling and analysis of structures made of frames and plates, based on linear, stability and plastic analysis, respectively.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre en stabilitetsanalyse for simple rammekonstruktioner til bestemmelse af stabilitetslasten." />
+          <Txt Lang="en-GB" Txt="Perform a stability analysis for simple frame structures and determine the buckling load." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme den plastiske kollapslast for simple rammekonstruktioner ved øvreværdimetoden." />
+          <Txt Lang="en-GB" Txt="Determine the critical load for plastic collapse of simple frame structures by upper limit methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme den plastiske kollapslast for simple rammekonstruktioner ved nedreværdimetoden." />
+          <Txt Lang="en-GB" Txt="Determine the critical load for plastic collapse of simple frame structures by lower limit methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Teori for tynde plader" />
+          <Txt Lang="en-GB" Txt="Theory for thin plates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage manuelle beregninger af plader" />
+          <Txt Lang="en-GB" Txt="Perform manual calculations of plates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille elementmetodeligningerne for plader på basis af det virtuelle arbejdes princip." />
+          <Txt Lang="en-GB" Txt="Establish the Finite Element Method equations for plates based on the principle of virtual work." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage manuelle stabilitetsberegninger af plader" />
+          <Txt Lang="en-GB" Txt="Calculate the stability of plates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage håndberegninger af en plades bæreevne baseret på flydelinjemetoden" />
+          <Txt Lang="en-GB" Txt="Perform hand calculations of load carrying capacity in plate bending plasticity based on the yield line method" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41954(11342)/41203.02002" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="11309/11512/41206/11343" />
+        <PreviousCourse CourseCode="11343" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:34.73" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

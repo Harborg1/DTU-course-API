@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="12936" University="dtu" LastUpdated="2026-03-31+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Numeriske beregningsmetoder i bygningsenergiteknik" />
+        <Title Lang="en-GB" Title="Numerical Methods for Building Energy Technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="En anden tidsplan og varighed af kurset kan aftales med den kursusansvarlige, så længe arbejdsomfanget forbliver tilsvarende." />
+          <Schedule_Txt Lang="en-GB" Txt="A different schedule and duration of the course can be agreed with the course leader, as long as the scope of work remains similar." />
+          <Schedule ScheduleKey="E3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="12" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Miljø" />
+        <Course_Responsible PersonKey="2185" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Rode</FamilyName>
+            <Email>crode@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af 4 faste og en selvdefineret afløsningsopgave i skriftlig form og med udviklede modelkoder." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of 4 predefined and one self-defined assignments in written form, and with code for the developed models." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I kurset behandles numeriske beregningsmetoder til beregning af følgende emner:
+- flerdimensional og instationær varmeledning i konstruktioner med varmeoverførsel i grænsefladerne i form af solstråling, varmestråling og konvektion.
+- varmetransport og varmelagring samt temperaturforhold i solvarmeanlæg eller andre tekniske installationer, hvor væske eller luft strømmer i rør, kanaler eller beholdere, og hvor der forekommer varmetransmission ved stråling.
+- massestrømme såsom fugttransport eller luftstrømninger i bygningsdele mm. under instationære temperatur- og fugtforhold.
+Et væsentligt element i kurset er de studerendes egen afprøvning ved opbygning af programmer baseret på numeriske metoder.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser.
+Den samlede arbejdsbelastning modsvarer 140 timer.
+Kurset kan tages delvist per korrespondance, og i andre perioder end skemamodul E3B, men der kræves fremmøde ved mindst fem konsultationer med kursusvejlederen.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusnoter og udvalgte noter fra literaturen</Course_Literature>
+          <Course_Objectives>At sætte deltagerne i stand til at formulere nogle af de i bygningsenergiteknikken forekommende beregningsopgaver vedrørende temperaturforhold, varmestrømme og fugtforhold med henblik på løsning vha. numeriske beregningsmetoder. Desuden er kursusmålet at gøre deltagerne fortrolige med gængse numeriske beregningsmetoder og at udarbejde computerprogrammer i forbindelse hermed. Relevante bygningsenergitekniske emner omfatter bl.a. bestemmelse af temperatur- og fugtforhold samt varmestrømme i bygninger og solvarmeanlæg. Som led heri skal indlæres beregning af ikke-lineære problemer.
+Teknologier, der undervisres i i dette kursus, skal give et grundlag for at analysere og designe bæredygtig energiteknologi for bygninger.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course treats numerical methods for calculation of the following subjects:
+- multidimensional and transient heat conduction in structures such as building components and fenestration systems with interfacial heat transmission in the form of solar radiation, thermal radiation, and convection.
+- thermal processes in solar heating and other technical systems with liquid or gas flows in tubes, ducts and tanks, and with radiation heat transfer.
+- mass flows such as moisture transport or air flow in building components under transient hygrothermal conditions.
+An important element of the course is the students' own making of computational models based on numerical methods.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.
+Total work load equivalent to 140 hours. 
+The course can be taken partly by distance learning, and in other periods than E3B, but requires attendance for at least five consultations with the course instructor.</Teaching_And_Learning_Methods>
+          <Course_Literature>Course notes and selected notes from the literature</Course_Literature>
+          <Course_Objectives>To enable the participants to conceive some of the computational tasks occurring in building energy technology on temperature, heat flow, and moisture conditions with the aim to obtain solutions using numerical calculation methods. It is the objective to make the participants acquainted with common numerical calculation methods and to enable the development of associated computer programs. Relevant topics of building energy technology comprise among other things the determination of temperature and moisture conditions, and heat flows in buildings and solar heating systems. Solving of non-linear problems will also be taught.
+Technologies taught in this course shall give a foundation for analyzing and designing sustainable building energy technology.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende numeriske metoder til løsning af typisk forekommende problemstillinger i bygningsenergiteknikken" />
+          <Txt Lang="en-GB" Txt="employ numerical methods to solve some of the problems that typically occur in building energy technology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for og i egne programmer kunne anvende, differens- og kontrolvolumen-metoder til instationære og flerdimensionelle problemer" />
+          <Txt Lang="en-GB" Txt="explain the finite difference and control volume methods and use these methods in own computational models of transient and multidimensional problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opbygge en numerisk model for et diffusivt problem, fx varmeledning, ud fra de indlærte beregningsmetoder" />
+          <Txt Lang="en-GB" Txt="use the methods taught to develop a numerical model for a problem of the diffusion type, e.g. heat conduction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for opstilling af og numeriske udfordringer med beregning af konvektive problemer" />
+          <Txt Lang="en-GB" Txt="explain about how to set up a numerical model to calculate convective flows, and which problems it incurs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og i egne programmer bruge Newton-Raphsons metode til ikke-lineære problemer" />
+          <Txt Lang="en-GB" Txt="explain and in own programs use Newton-Raphson’s method for non-linear problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opstille de numeriske algoritmer i et programmeringsværktøj eller -sprog" />
+          <Txt Lang="en-GB" Txt="set up the numerical algorithms in a programming toolbox or by writing in a computer language" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for typiske kilder til fejl i numeriske beregningsmetoder" />
+          <Txt Lang="en-GB" Txt="explain about typical causes of error in numerical calculation methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenholde og kritisk vurdere numeriske beregningsresultater med analytiske resultater" />
+          <Txt Lang="en-GB" Txt="compare and critically evaluate numerical calculation results against analytical solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere et praktisk anvendeligt problem om varme- og massestrøm i en bygningsdel eller installation, så det kan beregnes med en numerisk metode" />
+          <Txt Lang="en-GB" Txt="formulate a practical problem concerning heat or mass flow in a building component or in a technical system so it can be calculated using a numerical method" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="12601/11121/02601/02002/02003" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>På kurset indlæres udvikling af numeriske modeller efter kontrolvolumenmetoden</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="11627" />
+        <PreviousCourse CourseCode="11627" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:45.033" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

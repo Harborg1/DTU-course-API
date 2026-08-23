@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41237" University="dtu" LastUpdated="2026-02-25+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Konstruktioners dynamik: Teori og analyse" />
+        <Title Lang="en-GB" Title="Dynamics of structures: theory and analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="14148" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jan Becker</GivenName>
+            <FamilyName>Høgsberg</FamilyName>
+            <Email>jahog@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2470" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jon Juel</GivenName>
+            <FamilyName>Thomsen</FamilyName>
+            <Email>jjth@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kursets første rapport afleveres individuelt, mens de resterende to rapporter udarbejdes i grupper af to eller tre studerende, afhængigt af antal kursusdeltagere. Den mundtlige eksamen afholdes som gruppeeksamen. Kursets karakter beror på en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The first report of the course is handed in individually, while the remaining two reports are prepared in groups of two or three students, depending on the number of course participants. The oral exam is conducted as an oral group exam. The course grade is based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="During the oral exam, students may use their own notes." />
+            <Aid_Txt Lang="da-DK" Txt="Ved den mundtlige eksamen må studerende benytte egne noter." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Oral exam may be conducted over several days, depending on the number of exam participants." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Mundtlig eksamen kan afholdes over flere dage, afhængig af antal eksamensdeltagere." />
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Gruppeeksamen: 12 min gange antal studerende i gruppen." />
+          <Duration Lang="en-GB" Txt="Group exam: 12 min times number of students in the group." />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dynamikkens grundbegreber indføres ved simple systemer med én frihedsgrad, hvorigennem begreber som egenfrekvenser, dæmpning og resonans introduceres ved at bestemme systemets frie svingninger og dets tvungne respons fra harmonisk og transient last.
+
+Grundlaget for fleksible konstruktioners dynamik beskrives efterfølgende ved teorien for bjælkers frie svingninger, mens sammenhængen mellem det kontinuerte element og dets tilhørende diskrete konstruktionsmodel illustreres ved at benytte elementmetoden til at løse den partielle differentialligning. Den dynamiske analyse for diskrete konstruktioner med flere frihedsgrader udføres efterfølgende ved brug af modalanalyse, der baserer sig på en udvikling i konstruktionens svingningsformer. Herunder behandles betydningen af lastens frekvensindhold og dens rumlige fordeling, samt potentialet i kvasistatiske systemreduktionsmetoder.
+
+For fleksible konstruktioner er systemets dæmpning afgørende for størrelsen på det dynamiske respons, hvorfor forskellige naturligt forekommende dæmpningsmekanismer gennemgås. Desuden behandles virkningen af eksterne dæmpere på konstruktioner, herunder brugen af tunede massedæmpere. For fleksible konstruktioner med lokale dæmpere eller avancerede belastninger løses de dynamiske ligninger ved direkte numerisk integration ved anvendelse af Newmark-metoden.
+
+Kursets teoretiske emner illustreres ved simple forsøg og behandles i øvelser, der kan løses i Python. Rapporterne indgår i kursets samlede bedømmelsesgrundlag. Den første rapport afleveres individuelt, mens de efterfølgende to rapporter udarbejdes i grupper.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser med numerisk analyse. Rapporter udarbejdes individuelt eller i grupper med enten to eller tre studerende, afhængig af antal kursusdeltagere.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dynamiske påvirkninger af bygningskonstruktioner forekommer typisk i forbindelse med naturlaster som vind, bølger og jordskælv, samt ved trafiklast, kollisioner og eksplosioner. Kursets formål er at give en forståelse af dynamiske effekter i store konstruktioner og at sætte den studerende i stand til at foretage dynamiske analyser af konstruktioner med en eller flere frihedsgrader med såvel analytiske som numeriske metoder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The fundamental concepts of dynamics are introduced for simple systems with a single degree of freedom. Hereby, aspects such as natural frequencies, damping and resonance are introduced by determining the system’s free vibrations and its forced response to harmonic and transient loading.
+
+The foundation of the dynamics of flexible structures is subsequently described by the theory for free beam vibrations, while the connection between this continuous element and its corresponding discrete structural model is illustrated by applying the finite element method to solve the partial differential equation. The dynamic analysis of discrete structures with multiple degrees of freedom is then conducted by modal analysis, based on a series representation by the vibration forms of the structure. Hereby, the influence of the load’s frequency content and its spatial distribution is considered, together with the potential of quasi-static system reduction techniques.
+
+For flexible structures, the damping of the system is crucial for the magnitude of the dynamic response, why various naturally occurring damping mechanisms are scrutinized. Furthermore, the effect of external dampers on flexible structures is treated, including the use of tuned mass dampers. For flexible structures with local dampers or advanced loading, the dynamic equations are solved by direct time integration using the Newmark method.
+
+The theoretical content of the course is illustrated by simple experiments and treated in exercises, which can be solved in Python. The reports constitute a part of the total course assessment. The first report is handed in individually, while the subsequent two reports are prepared in groups.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises including numerical work. Reports are prepared individually or in groups of either two or three students, depending on the number of course participants.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The dynamic excitation of civil engineering structures often occurs due to environmental forces from wind, waves and earthquakes, or from traffic loading, collisions and explosions. The aim of this course is to provide an understanding of dynamic effects in large structures and enable students to perform dynamic analysis of structures with a single or multiple degrees of freedom, using analytical as well as numerical methods.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende bygningsmekanik eller styrkelære: Statisk analyse af konstruktioner og bjælker ved analytiske og elementbaserede metoder. Programmering: Kendskab til et  programmeringssprog og dets principper, da kurset gør brug af Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Fundamental structural mechanics or strength of materials: Static analysis of structures and beams by analytical and finite element methods. Programming: Knowledge about a programming language and its principles, as the course makes use of Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41501/41203/(41204.41954)/41236/(11341.11342)/(41953.41954).41958/41815.02002/02003" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille bevægelsesligninger for dynamiske konstruktioner og systemer." />
+          <Txt Lang="en-GB" Txt="Formulate the equation of motion for dynamic structures and systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme løsningen for frie og tvungne svingninger af systemer med én frihedsgrad, og forklare betydningen af en egenfrekvens, et dæmpningsforhold og resonans." />
+          <Txt Lang="en-GB" Txt="Determine the solution for free and forced vibrations of systems with a single degree of freedom, and explain the meaning of a natural frequency, damping ratio and resonance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende separation af de variable og elementmetoden til at løse bevægelsesligningerne for svingninger af bjælker." />
+          <Txt Lang="en-GB" Txt="Apply separation of variables and the finite element method to solve the equation of motion for vibrating beams." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme egenfrekvenser og svingningsformer for systemer med flere frihedsgrader." />
+          <Txt Lang="en-GB" Txt="Determine natural frequencies and vibration forms for systems with multiple degrees of freedom." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende modalanalyse til at beregne det dynamiske respons af systemer med flere frihedsgrader." />
+          <Txt Lang="en-GB" Txt="Apply modal analysis to compute the dynamic response of systems with multiple degrees of freedom." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare kvasistatiske systemreduktionsmetoder, der minimerer beregningsomkostninger i dynamiske analyser." />
+          <Txt Lang="en-GB" Txt="Explain quasi-static system reduction methods that minimize computational costs in dynamic analyses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte Newmark-baserede tidsintegrationsmetoder til at beregne det dynamiske respons af systemer med flere frihedsgrader." />
+          <Txt Lang="en-GB" Txt="Use Newmark-based time integration methods to compute the dynamic response of systems with multiple degrees of freedom." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare virkningen af de hyppigst forekommende dæmpningsmekanismer." />
+          <Txt Lang="en-GB" Txt="Explain the effect of the most common types of damping mechanisms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere de styrende parametre for viskose dæmpere og tunede massedæmpere (TMDere) på fleksible konstruktioner." />
+          <Txt Lang="en-GB" Txt="Design the governing parameters of viscous dampers and tuned mass dampers (TMDs) on flexible structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre dynamiske analyser og beskrive resultaterne i skriftlige rapporter." />
+          <Txt Lang="en-GB" Txt="Conduct a dynamic analysis and describe the results in written reports." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="41214/41560/41564" />
+        <PreviousCourse CourseCode="41214" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:45.283" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

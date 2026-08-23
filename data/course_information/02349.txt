@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02349" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Programmering af Parallelle Computere" />
+        <Title Lang="en-GB" Title="Programming for Parallel Computers" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="41921" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sven</GivenName>
+            <FamilyName>Karlsson</FamilyName>
+            <Email>svea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6158" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Edward Alexandru</GivenName>
+            <FamilyName>Todirica</FamilyName>
+            <Email>eato@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Pocket calculators are not allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Lommeregner er ikke tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Computer systemer: multi-core systemer; distribuerede systemer; cache og
+ hukommelseshierarki effekter; måling af ydeevne.
+
+Programmeringsparadigmer: "message passing"; delt hukommelse.
+
+Tråd og proces synkronisering: asynkron og synkron "message passing";  
+ interproceskommunikation; gensidig udelukkelse; kapløb(race conditions).
+
+Programeringsmønstre: fork-join; leader-follower.
+
+Programmeringssystemer: MPI, OpenMP.</Contents>
+          <Teaching_And_Learning_Methods>Gruppeaktiviteter, opgaver og programmeringsøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus udstyrer studerende med de væsentligste færdigheder til effektivt at skrive programmer til parallelle computere. Med nogle få undtagelser er langt størstedelen af ​​alle computersystemer parallelle. Mange applikationer mangler at udnytte den tilgængelige processorkraft på grund af ineffektive programmer.
+
+Kurset giver en bred introduktion til distribueret og parallel programmering med fokus på praktisk anvendelig viden. I kurset vil industristandarder for parallelprogrammering, såsom OpenMP, blive introduceret.
+
+Kurset er praktisk med mange små programmeringsøvelser. Fundamental og praktisk teori vil blive studeret. Studerende vil også blive i stand til at måle ydeevnen af parallelle systemer.
+
+Et af kursets mål er at studerende vil blive i stand til at løse simple parallelle programmeringsopgaver, såsom at lave et program race free og tage små dele af et sekventiel program og gøre det parallelt ved brug af industristandard parallelle programmeringssystemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Computer systems: multi-core systems; distributed systems; cache and
+memory hierarchy effects; performance measurements.
+
+Programming paradigms: message passing; shared memory.
+
+Thread and process synchronization: asynchronous and synchronous
+message passing; inter-process communication; mutual exclusion; race
+conditions.
+
+Programming patterns: fork-join; leader-follower.
+
+Programming systems:MPI, OpenMP.</Contents>
+          <Teaching_And_Learning_Methods>Group activities, exercises and programming laboratories.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course equips students with the essential skills to effectively write programs for parallel computers. With notable exceptions, the vast majority of all computer systems are parallel. Many applications fall short of utilizing the available processing power due to a lack of knowledge in implementing efficient programs.
+
+The course provides a broad introduction to parallel programming with a focus on practically applicable knowledge. Within the course, industry standards for parallel programming such OpenMP and MPI are introduced.
+
+The course is practical with many small programming exercises. Fundamental and practical theory is studied. Students will also be able to measure performance of parallel systems.
+
+One goal of the course is that students will be able to solve smaller parallel programming tasks such as making a program race free and take a small part of a sequential program and turn it parallel using a industry standard parallel programming system.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det antages at de studerende er erfarne med programmering i lavniveau programmeringssprog, især C. Studerende skal have erfaring med tråde og processer, samt schedulering på processorer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is assumed students are well experienced with programming low-level programs, in particular in the C language. Students are required to have experience with theads and processes as well as their scheduling onto processors." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02312.(02311/02324).02326.02322.02335" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive små distribuerede- og parallelprogrammer ved hjælp af industristandard parallelprogrammeringssystemer." />
+          <Txt Lang="en-GB" Txt="write small distributed and parallel programs using industry standard parallel programming systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udnytte samspillet mellem hardware (CPU, hukommelseshierarki og I/O) og softwarekomponenter (biblioteker) til at forbedre programmernes ydeevne." />
+          <Txt Lang="en-GB" Txt="utilize the interplay of hardware (CPU, memory hierarchy and I/O) and software (programs, libraries) to improve the performance of programs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge synkroniseringsmekanismer til at skrive race-free programmer." />
+          <Txt Lang="en-GB" Txt="use synchronization mechanisms to write race-free programs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de grundlæggende ydeevneaspekter af moderne parallelle computersystemer." />
+          <Txt Lang="en-GB" Txt="explain the fundamental performance aspects of modern parallel computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="måle ydeevnen af parallele programmer og computersystemer." />
+          <Txt Lang="en-GB" Txt="measure the performance of parallel programs and computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare performance-påvirkningen af hukommelseshierarkiet." />
+          <Txt Lang="en-GB" Txt="explain the performance impact of the memory hierarchy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvilke dele af et computersystem, der påvirker ydeevnen for et givent program." />
+          <Txt Lang="en-GB" Txt="explain what parts of a computer systems affects performance for a given progam." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere for et givet program flaskehalse for ydeevne i et computersystem." />
+          <Txt Lang="en-GB" Txt="identify for a given program performance bottlenecks in a computer system." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02258 02346" />
+        <PreviousCourse CourseCode="02346" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:34.99" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28455" Volume="2026/2027" University="dtu" LastUpdated="2026-05-01+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Procesadaptering i Fermenteringsbaseret Bioproduktion" />
+        <Title Lang="en-GB" Title="Process adaptation in Fermentation Based Biomanufacturing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="10316" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Krist V.</GivenName>
+            <FamilyName>Gernaey</FamilyName>
+            <Email>kvg@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="81610" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carina Loureiro da Costa Lira</GivenName>
+            <FamilyName>Gargalo</FamilyName>
+            <Email>carlour@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="81385" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Pedram</GivenName>
+            <FamilyName>Ramin</FamilyName>
+            <Email>pear@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• reaktordesign (hardware)
+• reaktorens driftstilstande
+• massebalancer relateret til de forskellige driftsformer
+• suspenderede vækstsystemer kontra immobiliserede vækstsystemer (biofilmer)
+• miniaturiserede reaktorsystemer til high throughput fermentering
+• opskalering og nedskalering af en proces
+• online sensorer (både traditionelle og nye systemer) og biosensorer
+• grundlæggende bioreaktor reguleringskoncepter
+• online procesregulering
+• introduktion til computational fluid dynamics (CFD) og kompartmentmodeller
+• data (typer data, online versus off-line), korrekt håndtering af data
+• forskellige måder at bruge de tilgængelige data på (estimere parametre i en mekanistisk model,  procesviden)
+• grundlæggende begreber af kunstig intelligens anvendt på gæringsdata</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, problemregning, simuleringsøvelser (Python og Matlab/Simulink)</Teaching_And_Learning_Methods>
+          <Course_Objectives>Hovedformålet med dette kursus er at introducere de studerende til de metoder og værktøjer, der bruges, når man overfører en celle fra et laboratorium eller et forskningsmiljø til pilot og i fuld skala. Den studerende, der følger dette kursus, skal derfor tilegne sig en bedre forståelse af samspillet mellem cellerne og hardware (reaktoren) og vil lære, hvordan man sigter mod optimale forhold for cellerne til at vokse i stor skala.
+Forelæsningerne vil blive afholdt af erfarne DTU-lærere kombineret med gæstelærere fra industrien. Kurset inkluderer besøg på pilotanlægget i DTU kemiteknik og hos industrien (f.eks. Pilot plant miljø).</Course_Objectives>
+          <DTU_Remark>Kurset tilbydes hovedsageligt for studerende i MSc Chemical and Biochemical Engineering og MSc Bioteknologi.
+Kurset er obligatorisk for de fermentation based biomanufacturing studielinjer i hver MSc-uddannelse.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• reactor designs (the hardware) 
+• reactor operating modes
+• mass balances related to the different operating modes
+• suspended growth systems vs. immobilized growth systems (biofilms)
+• miniaturized reactor systems for high throughput fermentation
+• scale-up and scale-down of a process
+• on-line sensors (both traditional and novel systems) and biosensors
+• basic bioreactor control concepts
+• on-line process control
+• introduction to computational fluid dynamics and compartment models 
+• data (types of data, on-line versus off-line), proper handling of data
+• different ways to use the available data (estimate parameters in a mechanistic model, extract process knowledge) 
+• basic concepts of artificial intelligence applied to fermentation data</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem solving, simulation exercises (Python and Matlab/Simulink)</Teaching_And_Learning_Methods>
+          <Course_Objectives>The main purpose of this course is to introduce students to the methods and tools that are used when transferring a cell from a lab or research environment to pilot and full scale. The student following this course should therefore acquire a better understanding of the interactions between the cells and the hardware (the reactor), and will learn how to aim for optimal conditions for the cells to grow in large scale.
+The lectures will be given by experienced DTU teachers, combined with guest teachers from industry. The course includes visits to the pilot plant of DTU Chemical Engineering and to industry (e.g. pilot plant environment).</Course_Objectives>
+          <DTU_Remark>The course is mainly offered for MSc Chemical and Biochemical Engineering and MSc Biotechnology students.
+The course is mandatory for the fermentation based biomanufacturing study lines in each MSc education.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="28345&#xD;&#xA;Grundlæggende viden om brugen af ​​Python eller MATLAB i starten af ​​kurset er en fordel, men ikke en nødvendighed." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="28345&#xD;&#xA;Basic knowledge on the use of Python or MATLAB at the start of the course is an advantage, but not a necessity." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille en massebalance for forskellige bioreaktor driftsformer" />
+          <Txt Lang="en-GB" Txt="Set up a mass balance for different bioreactor operating modes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere forskellige reaktordriftstilstande, og fortolke simuleringsresultaterne" />
+          <Txt Lang="en-GB" Txt="Simulate different reactor operating modes and interpret the simulation results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive virkningen af ​​at indføre grundlæggende processtyring på en proces i en bioreaktor" />
+          <Txt Lang="en-GB" Txt="Describe the effect of introducing basic process control on a process in a bioreactor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de væsentlige udfordringer i forbindelse med faststoffermenteringer og fermenteringsprocesser på basis af gasformige substrater" />
+          <Txt Lang="en-GB" Txt="Describe the essential challenges related to solid state fermentations and fermentation processes using gaseous substrates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge et passende sæt online målinger til en fermenteringsproces, samt skelne mellem fordele og ulemper ved specifikke basale og avancerede sensorenheder" />
+          <Txt Lang="en-GB" Txt="Select a suitable set of on-line measurements for a cultivation process, as well as distinguish between pros and cons of specific basic and advanced sensor devices " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive effekten af ​​skalaen på en mikroorganismes ydeevne samt fordele og ulemper ved forskellige metoder til matematisk at beskrive eller simulere effekter af reaktorskala" />
+          <Txt Lang="en-GB" Txt="Describe the effect of scale on the performance of a microorganism, as well as pros and cons of different methods to mathematically describe or simulate effects of scale" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle procesbaserede strategier for at optimere produktdannelse i en fermenteringsproces" />
+          <Txt Lang="en-GB" Txt="Develop process based strategies to optimize product formation in a fermentation process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne mellem forskellige downstream enhedsoperationer, og evaluere fordele og ulemper ved at indføre in situ produktfjernelse (ISPR) på en bestemt proces" />
+          <Txt Lang="en-GB" Txt="Distinguish between different downstream unit operations and evaluate the pros and cons of introducing in situ product removal (ISPR) on a specific process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe mulige måder at overføre en konstrueret cellefabrik til pilot og / eller i fuld skala" />
+          <Txt Lang="en-GB" Txt="Design possible ways to transfer an engineered cell factory to pilot and/or full-scale." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere en grundlæggende strategi for indsamling og håndtering af data om en gæringsproces" />
+          <Txt Lang="en-GB" Txt="Design and implement a basic strategy for collection and handling of data on a fermentation process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne mellem grundlæggende AI-værktøjer til fermenteringsdatabehandling " />
+          <Txt Lang="en-GB" Txt="Distinguish between basic AI tools for fermentation data processing" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+        </OfferedAsACourseOfTypes>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:17.313" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

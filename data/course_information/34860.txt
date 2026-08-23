@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34860" University="dtu" LastUpdated="2026-04-23+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående akustik" />
+        <Title Lang="en-GB" Title="Advanced acoustics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="104831" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Samuel Arturo Verburg</GivenName>
+            <FamilyName>Riezu</FamilyName>
+            <Email>saveri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="34686" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Efren Fernandez</GivenName>
+            <FamilyName>Grande</FamilyName>
+            <Email>efgr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="157685" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Gerstoft</FamilyName>
+            <Email>pegers@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Lydudbredelse i rør og kanaler (plane bølger og bølger af højere orden).  Bølgeteoretisk og statistisk rumakustik. Måletekniske anvendelser af efterklangsrum. Måling af akustisk effekt og intensitet. Numerisk akustik (finite element og boundary element). Lydudstråling fra punktkilder samt plane, cylindriske og sfæriske kilder. Spredning af lyd fra faste legemer. Introduktion til akustisk holografi og "beamforming".  Spatial sound, lydreproduktions teknikker med højttalere arrays, maskinlæringsmetoder i akustik.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning, projektarbejde i grupper (eksperimentelle øvelser, MATLAB/Python-simuleringsopgaver samt finite element-beregninger).</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne indsigt i teorier og metoder til beregning af lydfelter, samt at sætte dem i stand til at vurdere hvilken metode der vil være den mest hensigtsmæssige for at løse et givet akustisk problem. At introducere avanceret akustisk måleteknik og akustisk signalbehandling metoder.
+
+På dette kursus studerer vi lydfelter i rum (med modale, statistiske, og numeriske metoder), rør (lyddæmpere, musikinstrumenter, hovedtelefoner) og udendørs. Vi undersøger udstråling fra akustiske kilder og avancerede målemetoder med mikrofon-arrays (f.eks. beamforming og akustisk holografi -som gør det muligt at visualisere lydfelter og studere akustiske kilder), lydreproduktions samt anvendelse af machine learning i akustik. Kurset vil give en fysisk forståelse af disse akustiske fænomener og analysemetoder.
+ 
+Kurset har en teoretisk og eksperimentel fokus; fænomenerne studeres teoretisk, og med simulering / laboratoriemålinger. Der er også en række af gæsteforelæsninger fra forskere, ph.d. studerende og industrien.</Course_Objectives>
+          <DTU_Remark>Undervisningen i foråret 2027 vil blive afholdt på campus</DTU_Remark>
+          <Remark>Kurset danner en naturlig introduktion til eksamensprojekter.
+
+E-læring anvendes i form af videooptagelser, webbaserede værktøjer og andre online ressourcer.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Plane waves and higher-order modes in ducts. The modal theory of room acoustics; statistical room acoustics. Measurement of sound intensity flows. Numerical acoustics (finite element and boundary element methods). Radiation of sound from acoustic sources. Scattering of sound. Introduction to acoustic holography and beamforming. Spatial sound, sound field reproduction with loudspeaker arrays and machine learning in acoustics.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem solving, project work (laboratory exercises, MATLAB/Python simulations and finite element calculations).</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course objective is to enable the student to analyze complex sound fields using analytical, numerical and experimental tools, as well as signal processing methods in acoustics.
+
+We study sound fields in rooms (modal, statistical, and numerical approaches), wave guides (ducts, musical instruments, headphones) and sound radiation from acoustic sources. We also study microphone array measurements and signal processing (beamforming and acoustic holography), spatial sound, sound field reproduction, and machine learning in acoustics. The course aims at providing a deep understanding of acoustic phenomena and methods that are central to modern acoustic engineering.
+ 
+The course combines analytical and hands-on experimental activities, with weekly laboratory measurement sessions. There are also a number of guest lectures from researchers, PhDs and industry.</Course_Objectives>
+          <DTU_Remark>The teaching in Spring 2027 will be held on campus</DTU_Remark>
+          <Remark>The course is a natural introduction to master thesis work.
+
+E-learning is used in the form of video recordings, web-based tools and other on-line resources.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundkursus i akustik og støj&#xD;&#xA;Grundlæggende signalbehandling" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Fundamentals of acoustics and noise control&#xD;&#xA;Basic signal processing" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34840" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere lydfelter i rør og bølgeledere ved lave frekvenser. Beregning af lydtransmission i systemer af koblede rør; designe og analysere lyddæmpersystemer samt karakterisere lydudbredelse i bølgeledere såsom hovedtelefoner og musikinstrumenter" />
+          <Txt Lang="en-GB" Txt="Analyze the sound field inside a duct at low frequencies, design silencer systems and characterize sound in waveguides, such as headphones or music instruments." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke lydfeltet i et rør, udlede Greens funktion og forklare de bølgeudbredelsesfænomener som forekommer" />
+          <Txt Lang="en-GB" Txt="Examine the sound field inside a duct, derive the Green's function and explain the propagation of sound inside it." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke lydfeltet i et rum og udlede Green's funktion i et rum; beskrive og forklare de relevante akustiske processer for foregår." />
+          <Txt Lang="en-GB" Txt="Analyze the sound field in a room based on the modal theory. Derive the Green's function in a room and use it to explain the central acoustic processes that occur in a room." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og forklare den statistiske model for lydfeltet i et rum, og hvordan den gør det muligt at forudsige de akustiske egenskaber i rummet" />
+          <Txt Lang="en-GB" Txt="Examine the sound field in a room based on statistical wave models, and how these methods are used in practical applications of room acoustics. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og fortolke lydens hendøen i et rum, baseret på enten statistisk eller modal rumakustisk teori" />
+          <Txt Lang="en-GB" Txt="Analyze and interpret the decay of sound in a room, based on the modal and statistical theories." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for anvendeligheden og begrænsningerne af energibetragtninger i akustikken, aktive og reaktive lydfelter og måling af lydintensitet" />
+          <Txt Lang="en-GB" Txt="Examine a sound field based on its active and reactive intensity, and evaluate the usefulness and limitations of intensity measurement." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for udstrålingen fra punktkilder og for hvordan kohærente kilder påvirker hinanden" />
+          <Txt Lang="en-GB" Txt="Describe the radiation from point sources, and how coherent sources affect each other." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og fortolke udtrykket for lydfeltet fremkaldt af en generel sfærisk kilde" />
+          <Txt Lang="en-GB" Txt="Interpret the expression for the sound field radiated by a spherical source. Illustrate the use of spherical harmonic expansions for sound radiation and scattering." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede og fortolke et udtryk for lydfeltet frembragt af en plan kilde, både i rummet og i bølgetalsdomænet" />
+          <Txt Lang="en-GB" Txt="Analyze the sound field radiated by a planar source, using space domain and wave number domain formulations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den grundlæggende koncepter for akustisk beamforming og akustisk holografi" />
+          <Txt Lang="en-GB" Txt="Illustrate the fundamentals of microphone array methods (beamforming and acoustic holography). Describe how these methods are used to analyze sound fields." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend machine learning til problemer inden for akustik" />
+          <Txt Lang="en-GB" Txt="Apply machine learning models to problems in acoustics." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Videregående kursus om lydfelter, avanceret akustisk måleteknik og signalbehandling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="10" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:05.893" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

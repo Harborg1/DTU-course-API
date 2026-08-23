@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02105" University="dtu" LastUpdated="2026-03-11+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Algoritmer og datastrukturer 1" />
+        <Title Lang="en-GB" Title="Algorithms and Data Structures 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="53341" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Philip</GivenName>
+            <FamilyName>Bille</FamilyName>
+            <Email>phbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="33225" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Inge Li</GivenName>
+            <FamilyName>Gørtz</FamilyName>
+            <Email>inge@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til algoritmer, datastrukturer, asymptotisk analyse og notation, grafer og andre kombinatoriske strukturer, modellering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegninger. Undervisningen udbydes parallelt på både engelsk og dansk såvidt muligt.</Teaching_And_Learning_Methods>
+          <Course_Literature>"Introduction to Algorithms" af Cormen, Leierson, Rivest og Stein.</Course_Literature>
+          <Course_Objectives>Kurset introducerer fundamentale koncepter og teknikker til konstruktion og analyse af effektive algoritmer og datastrukturer. At kunne anvende, evaluere og kombinere basale algoritmer og datastrukturer. At kunne anvende asymptotisk analyse og notation. At kunne modellere problemer ved hjælpe af algoritmiske teknikker.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to algorithms, data structures, asymptotic analysis and notation, graphs and other combinatorial structures, and modelling.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises. Teaching will be available in both English and Danish as far as possible.</Teaching_And_Learning_Methods>
+          <Course_Literature>"Introduction to Algorithms" by Cormen, Leierson, Rivest, and Stein.</Course_Literature>
+          <Course_Objectives>The course introduces fundamental concepts and techniques for the construction and analysis of efficient algorithms and data structures. To be able to apply, evaluate, and combine basic algorithms and data structures. To apply asymptotic analysis and notation. To model problems using algorithmic techniques.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et kursus i indledende programmering + et indledende kursus i diskret matematik. Eller tilsvarende kompetencer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="An introductory course in programming + an introductory course in discrete mathematics. Or similar competences." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02002/02003/02100/02101/02102).(01017/01019)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende asymptotisk analyse og notation." />
+          <Txt Lang="en-GB" Txt="Apply asymptotic analysis and notation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og analysere basale algoritmer, som sortering og søgning." />
+          <Txt Lang="en-GB" Txt="Apply and analyze basic algorithms, such as sorting and searching." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og analysere basale grafalgoritmer, som DFS, BFS og Dijsktra's algoritme." />
+          <Txt Lang="en-GB" Txt="Apply and analyze basic graph algorithms, such as DFS, BFS, and Dijkstra's algorithms. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og analysere basale datastrukturer, som stakke, køer, hobe og binære søgetræer." />
+          <Txt Lang="en-GB" Txt="Apply and analyze basic data structures such as stacks, queues, heap, and binary search trees. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere det underliggende algoritmiske koncept i et givet problem." />
+          <Txt Lang="en-GB" Txt="Identify the underlying algorithmic concept in a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grafer til at modellere et givet problem." />
+          <Txt Lang="en-GB" Txt="Use graphs to model a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modificere kendte algoritmer og data strukturer til effektivt at løse et givet problem." />
+          <Txt Lang="en-GB" Txt="Modify known algorithms and data structures to efficiently solve a given problem. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne algoritmer og datastrukturer og bruge det til at vælge en passende og effektiv løsning til et givet problem. " />
+          <Txt Lang="en-GB" Txt="Compare algorithms and data structures and use this to select an appropriate, efficient solution to a given problem. " />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02105/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til effektive algoritmer og datastrukturer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02326" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="20" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="60" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:36.1" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

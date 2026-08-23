@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02312" University="dtu" LastUpdated="2025-03-26+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Indledende programmering" />
+        <Title Lang="en-GB" Title="Introductory Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="153309" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Alceste</GivenName>
+            <FamilyName>Scalas</FamilyName>
+            <Email>alcsc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Planlægningsmetoder for programmer.
+• Primitive datatyper (heltal, boolske værdier, flydende tal og tekststrenge).
+• Referencetyper.
+• Data strukturer (arrays).
+• Værdier, operatorer og udtryk.
+• Variable og tildelingssætninger.
+• Kontrolsætninger (for-, if- og while sætninger, løkker i flere niveauer).
+• Klasser og objekter (herunder attributter og metoder).
+• Nedarvning (udvidelse af klasser med attributter og metoder).
+• Indlæsning/​udskrivning (fra/til skærm, tastatur, filer).
+• Basal fejlhåndtering.
+• Anvendelse af en IDE.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og laboratorier.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet med dette kursus er at lære den studerende at bruge de grundlæggende begreber og teknikker i et imperativt- og objektorienteret programmeringsprog. Kurset vil benytte et programmeringssprog, som anvendes i industrien (i øjeblikket Java). Kurset har som overordnet mål at sætte den studerende i stand til at designe og implementere mindre programmer.</Course_Objectives>
+          <No_Credit_Points_With>Dette kursus erstatter og udvider det gamle kursus 02314. Det behandler lignende emner med yderligere programmeringsopgaver og laboratoriearbejde.</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Planning methods for programs.
+• Primitive data types (integers, booleans, floating points, and strings).
+• Reference types.
+• Data structures (arrays).
+• Values, operators and expressions.
+• Variable and assignments.
+• Control statements (for, if and while statements, nested loops).
+• Classes and objects (incl. attributes and methods).
+• Inheritance (extension of classes with attributes and methods).
+• Input/output (from/to monitor, keyboard, files).
+• Simple exception handling.
+• Use of an IDE.</Contents>
+          <Teaching_And_Learning_Methods>Lecture, exercises and laboratories.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The goal of the course is to make the student able to use the basic concepts and techniques in an imperative- and object oriented programming language. The course will use a programming language that is used in industry (currently Java). The main purpose of the course is to make the student able to design and implement smaller programs.</Course_Objectives>
+          <No_Credit_Points_With>This course replaces and extends the old course 02314. It addresses similar topics with additional programming assignments and lab work.</No_Credit_Points_With>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende primitive datatyper og reference typer." />
+          <Txt Lang="en-GB" Txt="Use primitive datatypes and reference types." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende arrays." />
+          <Txt Lang="en-GB" Txt="Use arrays." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende typiske sætningskonstruktioner fra imperative programmeringssprog, f.eks. løkker og forgreninger." />
+          <Txt Lang="en-GB" Txt="Use typical constructs from imperative programming languages, e.g. loops and branching." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere og anvende metoder med/uden parametre og med/uden retur værdi." />
+          <Txt Lang="en-GB" Txt="Define and apply methods with/without parameters and with/without return value." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå klassers og objekters anatomi. " />
+          <Txt Lang="en-GB" Txt="Understand the anatomy of classes and objects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere og anvende klasser og objekter i et objektorienteret program." />
+          <Txt Lang="en-GB" Txt="Define and apply classes and objects in an object oriented program." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende nedarvning." />
+          <Txt Lang="en-GB" Txt="Use inheritance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simple I/O operationer." />
+          <Txt Lang="en-GB" Txt="Use simple I/O operations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere og håndtere fejl. " />
+          <Txt Lang="en-GB" Txt=" Define and handle exceptions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Find og ret programmeringsfejl ved at anvende grundlæggende test- og fejlfindingsteknikker." />
+          <Txt Lang="en-GB" Txt="Find and fix programming mistakes by applying basic testing and debugging techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02101/02102/02100/02314/02318" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="60" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:24.913" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

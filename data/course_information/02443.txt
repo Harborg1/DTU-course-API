@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02443" University="dtu" LastUpdated="2026-04-24+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Stokastisk simulation" />
+        <Title Lang="en-GB" Title="Stochastic Simulation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="1742" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Bo Friis</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>bfni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Opgaver og rapport udarbejdes under kurset. Der skal være elementer af rapporterne, hvor det fremgår, hvilken del de enkelte studerende har ansvar for." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Coursework and report are written during the course. Responsibility of elements of the reports needs to be assigned to individual course participants." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De første 6-7 dage indeholder gennemgang af teori og eksempler. Der er mødepligt til denne del af kurset.
+Kurset er i høj grad baseret på arbejde med praktiske problemer. Følgende emner gennemgås i forelæsninger: Modelopbygning. Generering af tilfældige tal. Tests for tilfældighed. Tilfældige tal fra statistiske fordelinger. 
+Introduktion til diskret simulation (fx. systemer) og variansreducerende metoder, bootstrap, Markov chain Monte Carlo teknikken samt simulated annealing. Simulationssprog. Statistisk analyse af simulationsresultater. En række problemer diskuteres i forbindelse med praktiske eksempler.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og kursusarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Simulation, Sheldon M. Ross, Elsevier, 2013.
+Simulation Modeling and Analysis, Averill M. Law, McGraw-Hill, 2015.
+Introducing Monte Carlo Methods with R, C.P. Robert and G. Casella, Springer, 2010 (pdf available from DTU electronic library).</Course_Literature>
+          <Course_Objectives>Ligesom fysikere analyserer naturen ved at udføre målinger på en forsøgsopstilling, og teknikere analyserer komplicerede konstruktioner ved at studere skalamodeller, kan matematikere og operationsanalytikere betjene sig af simulation til at analysere problemstillinger, der er så indviklede, at en rent teoretisk behandling i praksis er umulig. Simulation kan karakteriseres som en art numeriske eksperimenter. Modeller opbygges i form af programmer til en datamaskine, og eksperimentet består i at køre disse programmer med forskellige sæt af inddata. Som for eksperimenter består kunsten dels i at opbygge en god model, dels i at kunne analysere måleresultaterne. Kurset behandler især sådanne problemstillinger, hvor tilfældigheder spiller en afgørende rolle. De tilsvarende simulationsmetoder bliver ofte benævnt "Monte Carlo metoder". Det er kursets formål at give en indføring i opbygningen af simulationsmodeller og i vurdering af simulationsresultater</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The first six to seven days deals with theory and exercises, followed by a case-study during the remaining part of the last two weeks. Attendance is mandatory for the first period of the course.
+ Theory: The modelling process, methods of solution, random number generation, sampling from statistical distributions.  Discrete simulation: Time-true simulation, event-by-event principle, variance reduction. Case-studies: Operations research real-life problems, e.g. performance of data- and telecommunication systems, production planning, inventory control, optimal stochastic control etc.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Simulation, Sheldon M. Ross, Elsevier, 2013.
+Simulation Modeling and Analysis, Averill M. Law, McGraw-Hill, 2015.
+Introducing Monte Carlo Methods with R, C.P. Robert and G. Casella, Springer, 2010 (pdf available from DTU electronic library).</Course_Literature>
+          <Course_Objectives>Numerical simulation is used for solving problems which are so complex that a theoretical model of the system cannot be solved by analytical methods. The goal is to enable the student to formulate a model of a real-life problem, implement and validate this model on a computer, and perform experiments with the computer model. Emphasis is put upon models involving stochastic elements, which are simulated by so-called Monte Carlo methods.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller et lignende grundkursus i statistik. Kendskab til programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or a similar course in elementary statistics. Basic programming skills." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende tilfældighedsgeneratorer indbyggede i software-pakker" />
+          <Txt Lang="en-GB" Txt="Apply build-in random number generators in various software products " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere algoritmer til simulering af tilfældige tal fra en given fordeling" />
+          <Txt Lang="en-GB" Txt="Implent algorithms for random number generation from various distributions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simple statistiske analyser af simulerede data" />
+          <Txt Lang="en-GB" Txt="Perform simple statistical analysis of simulated data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simulationsbaserede statistiske metoder, som  Markov Chain Monte Carlo og Bootstrap, pï¿½ simple problemer." />
+          <Txt Lang="en-GB" Txt="Apply simulation based statistical techniques like bootstrap and Markov Chain Monte Carlo" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Simuleret Udglødning til at løse mindre, diskrete optimeringsproblemer." />
+          <Txt Lang="en-GB" Txt="Apply simulated annealing as a heuristic method for minor optimization problems with discrete variables" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende event-by-event princippet til at designe en simulationsmodel for et givet teknisk system" />
+          <Txt Lang="en-GB" Txt="Develop and implement simulation procedures for simple technical systems using the event by event principle" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Verficere programmel til simulation." />
+          <Txt Lang="en-GB" Txt="Perform verification of a programme for simulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Validere en simulationsmodel " />
+          <Txt Lang="en-GB" Txt="Perform validation of a simulation model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilrettelægge og gennemføre et simulationsstudie med henblik på en" />
+          <Txt Lang="en-GB" Txt="Plan and execute a simulation study for a specific part or function of some (technical) system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne anvende variansreducerende teknikker i simulationsstudier" />
+          <Txt Lang="en-GB" Txt="Apply techniques for variance reduction in a simulation study" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere resultaterne af et simulationsstudie skriftligt eller mundtligt" />
+          <Txt Lang="en-GB" Txt="Present the results of a simulation study writtenly or verbally" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.imm.dtu.dk/courses/02443" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Simulering af dynamiske komplekse processer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="28" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="28" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="56" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="40" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:51.5" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

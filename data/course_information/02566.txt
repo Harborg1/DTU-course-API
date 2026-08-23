@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02566" Volume="2026/2027" University="dtu" LastUpdated="2026-04-14+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Modellering af digitale visuelle oplevelser" />
+        <Title Lang="en-GB" Title="Creating Digital Visual Experiences" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="IHK" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="42623" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Hans Martin</GivenName>
+            <FamilyName>Kjer</FamilyName>
+            <Email>hmkj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="98197" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mark Bo</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>mboje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Studerende skal aflevere ugentlige individuelle øvelser i den første halvdel af kurset og en gruppeopgave ved kursets afslutning. Bedømmelsen vil være baseret på en helhedsvurdering af disse opgaver. Den endelige rapport skal individualiseres ved at angive hver enkelt studerendes bidrag i rapporten." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Students will submit weekly individual exercises during the first half of the course, and a group report at the end of the course. The assessment is based on a overall assessment of these. The final report has to be individualized by noting the contributions from each student in the report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Indhentning af fysiske omgivelser ved hjælp af fotogrammetri. Simulering af materialers overflade med teksturer, shaders, og forskellige renderingsteknikker , interaktionsmetoder i xR ved hjælp af controllere, accelerometre, touch, headsets til xR, teknologier til AR med håndholdte enheder, Unity3D eller lignende værktøjer til VR-oplevelser. Blender til skabelse af digitalt indhold og billedbehandling med python.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektopgaver</Teaching_And_Learning_Methods>
+          <Course_Objectives>I dette kursus vil studerende lære at modellere oplevelser for virtual reality, augmented reality, mixed reality osv. (samlet under xR). Studerende vil lære essentielle metoder og teknologier til at erhverve geometri, materialers udseende og belysning. Blandt andet dækker kurset xR-teknologier, 3D-indholdsmodelleringsteknikker, rigging, animationsprincipper og gode praksisser for datavisualisering. De visualiserede scener vil typisk være i enten menneskelig skala og fyldt med erhvervede eller 3D-modellerede objekter, eller scener bestående af 3D-billeddata, som er erhvervet ved hjælp af CT eller MR. Fælles for begge er at indlevelse har stor betydning. Studerende vil deltage i et praktisk projekt for at designe og udvikle deres egen xR-oplevelse, hvor de fremviser deres arbejde under en live demo-dag ved semesterets afslutning. En stor del af kurset er dedikeret til projekt-arbejdet i grupper. Som udgangspunkt ligger kurset derfor op til fysisk deltagelse for at sikre et godt samarbejde, and kan kræve en vis portion projekt-styring.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Environment capture using photogrammetry. Simulating material appearance using textures, shaders, and different rendering techniques, interaction methods in xR using controllers, accelerometers, touch, headsets for xR, technologies for AR with handheld devices, Unity3D or similar tools for VR experiences. Blender for digital content creation, and image processing in python.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>In this course, students will learn how to model experiences for virtual reality, augmented reality, mixed reality, etc (collectively xR). The students will learn essential methods and technologies for acquiring geometry, material appearance, and illumination. Among other things, the course covers xR technologies, 3D content modeling techniques, rigging, animation principles, and good practices for data visualization. The scenes that we visualize in the course are typically either at the human scale and filled with acquired or 3D modelled objects or the scenes consist of 3D imaging data which has been acquired using CT or MR. In both settings, immersion is of great importance. Students will engage in a hands-on project to design and develop their own xR experience, showcasing their work during a live demo day at the end of the semester. A substantial portion of the course is dedicated to this project-based group work. By default this places a natural emphasis on physical attendance to support effective collaboration, and can require a level of project management throughout the development process.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Indledende kurser i computergrafik og computer vision. Basal erfaring med Python programmering eller lignende sprog." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introductory courses in computer graphics and computer vision. Basic experience with Python programming or similar language." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02561.02504" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage optagelser af et miljø for hvad angår lys og geometri " />
+          <Txt Lang="en-GB" Txt="capture light and geometry of an environment, e.g. in the form of light fields" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge passende teknologier til xR oplevelser" />
+          <Txt Lang="en-GB" Txt="choose appropriate technologies for xR experiences" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="måle et objekts overfladeegenskaber for hvad angår lys" />
+          <Txt Lang="en-GB" Txt="capture appearance of real objects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge indhentet indhold til 3D scener" />
+          <Txt Lang="en-GB" Txt="use acquired content in 3D scenes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="belyse og shade en virtuel scene" />
+          <Txt Lang="en-GB" Txt="light and shade a virtual environment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og implementere xR oplevelser og interaktion" />
+          <Txt Lang="en-GB" Txt="design and implement xR experiences and interaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="modellere indhold med 3D modelleringsredskaber" />
+          <Txt Lang="en-GB" Txt="model content using 3D content creation tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenlign forskellige typer renderingsteknikker til volumetriske data" />
+          <Txt Lang="en-GB" Txt="contrast various types of rendering techniques for volumetric data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvend billedbehandlingsmetoder til at udtrække kvantitative oplysninger fra volumetriske data" />
+          <Txt Lang="en-GB" Txt="apply image processing methods to extract quantitative information from volumetric data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave og bearbejde overflademodeller fra segmenterede volumetrisk data" />
+          <Txt Lang="en-GB" Txt="generate and process surface models from segmented volumes" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:17.97" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10400" University="dtu" LastUpdated="2026-04-27+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Plasmafysik" />
+        <Title Lang="en-GB" Title="Plasma Physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="41928" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mirko</GivenName>
+            <FamilyName>Salewski</FamilyName>
+            <Email>msal@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38439" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Anders Henry</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>ahnie@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Grundlæggende bevægelsesligninger for populationer af ladede partikler i elektromagnetiske felter inklusive selvgenererede felter. Magnetohydrodynamik, kontinuum og kinetiske beskrivelser. Plasma ligevægtstilstande og stabilitetskriterier. Kollisioner. Bølgefænomener i plasma. Resonans og total refleksion. Elementære dielektriske effekter i termiske plasmaer. Plasma i rummet og laboratoriet, fusionsplasmaer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Mirko Salewski, Lecture notes in Plasma Physics</Course_Literature>
+          <Course_Objectives>Målet er at give den studerende forståelse af hvad et plasma er, hvordan det opfører sig, og hvilke videnskabelige og industrielle sammenhænge plasmaer indgår i. Kurset vil give den studerende forståelse af plasmadynamik, hvordan denne modelleres matematisk og numerisk og gøre den studerende i stand til selv at beregne grundlæggende plasmafænomener. Tilegnet viden fra dette kursus giver basis for videregående studier af fusionsplasmaer, astrofysiske plasmaer og procesplasmaer, der blandt andet anvendes til en bred vifte af industrielle processer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fundamental equations of motion for populations of charged particles in electromagnetic fields including self-generated fields.  Magnetohydrodynamic, continuum and kinetic descriptions. Plasma equilibrium states and criteria for stability. Collisions. Wave phenomena in plasma. Resonance and total reflection. Elementary dielectric effects in thermal plasmas. Plasma in space and laboratory, fusion plasma.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Mirko Salewski, Lecture notes in Plasma Physics</Course_Literature>
+          <Course_Objectives>The objective is to give the students an understanding of what a plasma is, how it behaves, which scientific and industrial contexts plasmas appear in. The course will give the student insight into how the dynamics in plasma is modeled mathematically and numerically, and on the basis of simplified models give the student the ability to model fundamental plasma phenomena. Acquired knowledge from this course provides a foundation for advanced studies of fusion plasmas, astrophysical plasmas and process plasmas that are applied in a broad range of industrial processes.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10033.10034. 10036." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de generelle karakteristika for et plasma og hvor plasma findes/anvendes " />
+          <Txt Lang="en-GB" Txt="Describe the general characteristics of a plasma, its application and occurrence " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne ladede partiklers bevægelser i elektriske og magnetiske felter " />
+          <Txt Lang="en-GB" Txt="Compute charged particle trajectories in electric and magnetic fields" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlæggende elementer af tokamaks og stellaratorer" />
+          <Txt Lang="en-GB" Txt="Describe basic elements of tokamaks and stellarators" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne effekter af kollisioner i et plasma" />
+          <Txt Lang="en-GB" Txt="Compute the effects of collisions in plasmas" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Deducere kontinuum bevægelsesligningerne for et plasma " />
+          <Txt Lang="en-GB" Txt="Deduce the continuum equations of motion for plasmas " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Deducere magnetohydrodynamiske bevægelsesligninger for et plasma" />
+          <Txt Lang="en-GB" Txt="Deduce the magnetohydrodynamic equations of motion for plasmas" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Deducere kinetiske bevægelsesligningerne for et plamsa" />
+          <Txt Lang="en-GB" Txt="Deduce the kinetic equations of motion for plasmas" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlæggende bølgefænomener i plasmaer " />
+          <Txt Lang="en-GB" Txt="Describe fundamental wave phenomena in plasmas" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for udvekslingen af energi mellem bølger og partikler " />
+          <Txt Lang="en-GB" Txt="Account for the exchange of energy between waves and particles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere hvilke modeller der bør anvendes i beskrivelsen af et givet plasmafænomen " />
+          <Txt Lang="en-GB" Txt="Assess which models should be used in describing a given plasma phenomenon" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive plasmaligevægtstilstande og tilhørende elektriske og magnetiske felter " />
+          <Txt Lang="en-GB" Txt="Describe plasma equilibrium states and associated electric and magnetic fields" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne stabilitet af plasmaer" />
+          <Txt Lang="en-GB" Txt="Calculate the stability of plasmas" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Plasma Physics </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:18.54" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

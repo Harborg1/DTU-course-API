@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34290" University="dtu" LastUpdated="2024-10-28+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Fotonik" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Ph.d.-kursus - Informationsteori" />
+        <Title Lang="en-GB" Title="PhD Course - Information Theory" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="I forårssemesteret efter aftale med den kursusansvarlige." />
+          <Schedule_Txt Lang="en-GB" Txt="Spring term at a time to be agreed with the course responsible" />
+          <Schedule ScheduleKey="F" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="575" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Søren Otto</GivenName>
+            <FamilyName>Forchhammer</FamilyName>
+            <Email>sofo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="No exam" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ingen eksamen i den ordinære eksamensperiode" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="Januar" />
+            <DeadLineTxt Lang="en-GB" Txt="January" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omfatter fundamentale resultater i informationsteorien: 
+Entropi for forskellige kildetyper inklusiv, 2-D, kryds-entropi, kanalkapacitet  og kodningssætninger for informationskanaler, kodningssætninger for datakompression. Aktuelle emner vil blive udvalgt efter deltagernes interesser.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, seminarer og deltagernes egne præsentationer.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere informationsteorien og dens anvendelser på forskningsniveau for ph.d. studerende.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers fundamental results in information theory: 
+Entropies for various classes of sources including 2-D, cross-entropy, divergence, channel capacity and coding theorems for information channels, coding theorems for data compression. Some recent results will be selected depending on the interests of the participants.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, seminars, presentations by participants.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To allow Ph.D. students to use methods from information theory in their research e.g. in communication systems.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme entropien af hukommelsesfri kilder og Markov kilder" />
+          <Txt Lang="en-GB" Txt="Calculate the entropy of memoryless sources and Markov sources" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne gensidig information, divergens, kryds-entropi og kanalkapacitet for  korrelerede signaler, fx simple kanaler" />
+          <Txt Lang="en-GB" Txt="Calculate the mutual information, divergence, cross entropry and channel capacity for correlated signals, e.g. simple channels" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Huffman kodning og andre enkle kildekodningsmetoder" />
+          <Txt Lang="en-GB" Txt="Apply Huffman coding and other simple source coding methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne fejlkorrigerede egenskaber for lineære koder inkl. grænser for fejlsandsynligheder" />
+          <Txt Lang="en-GB" Txt="Determine error-correcting capability of linear codes and bounds for their performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde parametre for almindelige koder, fx Hamming og Reed-Solomon koder samt produktkoder" />
+          <Txt Lang="en-GB" Txt="Find parameters of some well-known codes, e.g. Hamming, Reed-Solomon and product codes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne og analysere adaptive kodelængder" />
+          <Txt Lang="en-GB" Txt="Calculate and analyze adaptive code lengths in source coding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar grundlæggende elementer i to-dimensionel informationsteori" />
+          <Txt Lang="en-GB" Txt="Explain basic elements in two-dimensional information theory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende metoder fra informationsteori på problemstillinger i ph.d. projektet" />
+          <Txt Lang="en-GB" Txt="Apply methods from information theory to problems related to their ph.d. project" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Informationsteori</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:06.11" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

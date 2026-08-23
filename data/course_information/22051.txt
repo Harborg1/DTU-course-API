@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22051" University="dtu" LastUpdated="2026-02-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Signaler og lineære systemer i diskret tid" />
+        <Title Lang="en-GB" Title="Signals and linear systems in discrete time" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="72172" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Bastian</GivenName>
+            <FamilyName>Epp</FamilyName>
+            <Email>bepp@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen er baseret på individuelle- og gruppeafleveringer. Afleveringerne anses som delprøve og skal bestås som forudsætning for at indgå i det endelige bedømmelse. Karakteren gives som helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assessment is based on individual- and group assignments. Successful completion of the assignments is mandatory in order to be considered for the final assessment. The final grade will be given as an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Submission deadlines are distributed over the semester." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Afleveringsdatoerne er fordelt hen over semestret." />
+            <Schedule ScheduleKey="E1B" />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Som en fortsættelse af kurset 31605/22050 Signaler og lineære systemer, introducerer dette kursus signaler og lineære systemer i diskret tid, digitale filtre og adaptive lineære neurale netværk fra et teknisk perspektiv. Metoderne bliver anvendt i forskellige områder af digital signalbehandling: akustik, telekommunikation, medikoteknik, regulering. Kurset indeholder følgende emner:
+- Tidsdomæneanalyse og differensligninger,
+- Samplingsætningen,
+- Diskret-tid Fouriertransformation (DTFT),
+- Hurtig fouriertransformation (FFT),
+- z-transformation,
+- IIR og FIR digitale filtre,
+- Kort-tids fouriertransformation
+- Effektspektret af et stokastisk signal
+- Støjreduktion</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppediskussioner, online materialer, computerøvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Anbefalet:
+
+[1]  T. Holton, Digital Signal Processing - Principles and Applications, Cambridge University Press.
+Desuden udleveret materiale.
+
+Det er ikke nødvendigt at have bogen for at kunne følge kurset. Andre bøger som dækker over samme emne kan også anvendes. Notationen i kursets materiale følger dog [1].</Course_Literature>
+          <Course_Objectives>Kurset har som overordnet mål at introducere studerende til teorier, analyse- og syntesemetoder for signaler og systemer i diskret tid. Der skal foretages kvalitative og kvantitative vurderinger såvel som detaljerede skriftlige beregninger. Eksempler og applikationer af digital signalbehandling med Matlab/PYTHON vil blive gennemgået. Der gives uddybende feedback til de afleverede opgaver.</Course_Objectives>
+          <Remark>Kurserne 22050, 22051 og 22052 udgør et specialiseringsforløb inden for signalbehandling og bør tages i nævnte rækkefølge.
+
+Der bruges Matlab/PYTHON i kurset. 
+
+E-learning anvendes i form af podcast foredrag, on-line quiz (hjemmeopgaver), chat room, diskussionsforum/blog, elektronisk baseret opgaverettelse, web-baserede værktøjer og digital whiteboard.
+
+Generativt AI bruges som hjælpemiddel til opgaveløsning.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>As an extension of course 31605/22050, Continuous-Time Signals and Linear Systems, this course introduces linear discrete-time signals and systems, digital filters and adaptive linear neural networks from a technical perspective. The algorithms can be applied to various fields of linear digital signal processing: acoustics, telecommunication, biomedical engineering, control theory. The following topics will be covered:
+- Time-domain analysis and difference equations,
+- Sampling theorem, 
+- Discrete-time Fourier transform (DTFT), 
+- Fast Fourier transforms (FFT), 
+- z-transform,
+- IIR and FIR digital filters,
+- Short-time Fourier transform
+- Spectral density of a stochastic signal
+- Noise reduction</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group discussions, online material, computer exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Recommended:
+
+[1]  T. Holton, Digital Signal Processing - Principles and Applications, Cambridge University Press.
+In addition supplements will be provided if necessary.
+
+It is not required to have to book in order to follow the course. Other books on the same topic can be used as well. The notations in the course material follow, however, [1].</Course_Literature>
+          <Course_Objectives>The general goal of the course is to introduce theory, analysis, and synthesis of discrete-time signals and systems, as they are used and needed for a broad variety of computer-based DSP applications. The students will make quantitative estimations as well as detailed written calculations. Exemplary technical applications will be examined in exercises and in Matlab/PYTHON simulations. Formative feedback will be given on submitted assignments.</Course_Objectives>
+          <Remark>The courses 22050, 22051, and 22052 constitute a specialization track in signal processing and should be taken in said order.
+
+Matlab/PYTHON will be utilized in the course. 
+
+E-learning is used in the form of podcast lectures, on-line quiz (home assignments), chat room, discussion board/blog, electronic correction system, web-based tools and digital whiteboard.
+
+Generative AI is used as supporting tool for exercises.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset er en fortsættelse af kursus 22050 (tidligere 31605). Tilsvarende studieaktiviteter forudsættes.&#xD;&#xA;Forudgående kendskab til et programmeringssprog (eks. MATLAB, C, Python, Julia) er en fordel, men ikke strengt nødvendigt. Supplerende materiale vil blive givet, hvis det er nødvendigt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is a continuation of course 22050 (previously 31605). Equivalent knowledge is expected for participation.&#xD;&#xA;Prior knowledge in a programming language (e.g. MATLAB, C, Pyhton, Julia) is beneficial, but not a necessity. Additional material will be provided if required." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="31605/22050" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare principperne for sampling af signaler i kontinuert tid." />
+          <Txt Lang="en-GB" Txt="explain the principles of sampling of continuous-time signals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for sammenhænge og forskelle mellem fouriertransformationen, den tidsdiskrete fouriertransformation og den diskrete fouriertransformation." />
+          <Txt Lang="en-GB" Txt="explain the connections and differences between the Fourier transform, the time-discrete Fourier transform and the discrete Fourier transform." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere algoritmer til beregning af rekursive og ikke-rekursive digitale filtre." />
+          <Txt Lang="en-GB" Txt="implement algorithms for the calculation of recursive and non-recursive filters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konvertere kontinuert-tids filtre til diskret-tids filtre ved brug af den bilineære transformation." />
+          <Txt Lang="en-GB" Txt="convert continuous-time filters into discrete-time filters using the bilinear transform." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte et spektrogram til at analysere tids/frekvens indholdet af et signal og beregne effektspektret at et stokastisk signal." />
+          <Txt Lang="en-GB" Txt="use a spectrogram to analyse the time/frequency content of a signal and calculate the spectral density of a stochastic signal." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende AI som sparringspartner i løsning af åbne problemstillinger med tilhørende dokumenttion" />
+          <Txt Lang="en-GB" Txt="apply AI as a sparring partner in the solution of open problems with proper documentation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere diskret-tids signaler og diskret-tids systemer i tids-, frekvens- og z-domænet." />
+          <Txt Lang="en-GB" Txt="analyse discrete-time signals and discrete-time systems in the time-, frequency- and z-domain." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe rekursive og ikke-rekursive digitale filtre." />
+          <Txt Lang="en-GB" Txt="design recursive and non-recursive digital filters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere hvilken samplingsfrekvens, kvantisering og filtertype, der er nødvendig for at opfylde en simpel problemspecifikation." />
+          <Txt Lang="en-GB" Txt="judge which sampling frequency, quantization depth and filter type is necessary to fulfill a simple problem specification." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere computerprogrammer og visualisere resultater." />
+          <Txt Lang="en-GB" Txt="implement computer programs and visualise results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende engelsk sprogbrug indenfor digital signalbehandling og udarbejde opgaverne på engelsk." />
+          <Txt Lang="en-GB" Txt="apply English terminology in digital signal processing and write reports in English." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="indsamle og benytte information fra forskellige litterære kilder." />
+          <Txt Lang="en-GB" Txt="extract and combine information from different literatary sources." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Digital Signalbehandling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="30160." />
+        <PreviousCourse CourseCode="31606" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="3" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:56.64" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

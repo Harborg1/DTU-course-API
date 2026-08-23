@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="47335" Volume="2026/2027" University="dtu" LastUpdated="2026-03-12+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Atomar-skala modellering af materialer til energiapplikationer (online)" />
+        <Title Lang="en-GB" Title="Atomic-scale modelling of energy materials (online)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Alle aktiviteter foregår både fysisk på DTU Lyngby campus og online." />
+          <LocationTxt Lang="en-GB" Txt="All activities are both physically at DTU Lyngby campus and online." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset er et e-læringskursus, der består af forelæsninger, øvelser samt et afsluttende projekt. Tidspunkter for individuelt/gruppe arbejde er fleksibelt." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is an e-learning course composed of lectures, exercises, and a final project. Time for individual/group work is flexible." />
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="47" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="47" />
+        <Course_Responsible PersonKey="62570" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ivano Eligio</GivenName>
+            <FamilyName>Castelli</FamilyName>
+            <Email>ivca@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="129358" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Piotr de</GivenName>
+            <FamilyName>Silva</FamilyName>
+            <Email>pdes@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen bestående af spørgsmål om projektrapport og kursusindholdet." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral examination consisting of questions on the project report and course curriculum." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The exam is expected to be with physical attendance for DTU students; however it can be online for external students." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Eksamen forventes at være fysisk for DTU studerende, men kan blive afholdt online for eksterne studerende." />
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="20 minutter" />
+          <Duration Lang="en-GB" Txt="20 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til faststoffysik og -kemi.
+Begreber inden for om atomar modellering.
+Fysisk-kemiske processer, der understøtter energiteknologier
+Grundlæggende egenskaber om den atomare og elektroniske struktur af materialer.
+Density Functional Theory (nøglebegreber og begrænsninger).
+Praktisk brug af Linux maskiner, scripting, ASE- og GPAW-pakkerne.
+Hvad kan vi beregne med DFT? Hovedapplikationer og eksempler.
+Grundlæggende og avancerede øvelser på energimaterialer (ved hjælp af ASE- og GPAW-pakkerne).
+Screeningsmetoder med høj kapacitet og autonome arbejdsgange (eksempler og øvelser).
+
+To opgaver:
+1) Videopræsentation i grupper af en videnskabelig forskningsartikel.
+2) Grupperapport som opsummerer kursets endelige projekt
+Der gives ikke karakterer for opgaverne, men aflevering og præsentation er en forudsætning for at tage den mundtlige eksamen.</Contents>
+          <Teaching_And_Learning_Methods>Kurset kombinerer forelæsninger med tutorials og computerøvelser. Eksemplerne givet i kurset vil dække forskellige applikationer i energikonvertering og -lagringsudfordringer.
+
+Den planlagte undervisning består af online forelæsninger og tutorials. Der vil også være mulighed for direkte vejledning enten online eller fysisk med hjælpelærere. Tidspunkter for individuelt/gruppe arbejde er fleksibelt.</Teaching_And_Learning_Methods>
+          <Course_Literature>1. Density Functional Theory: A Practical Introduction by David S. Sholl, Steckel Janice A.
+2. Reviews in Computational Chemistry by Abby L. Parrill and Kenny B. Lipkowitz.
+ISBN: 978-1-119-10393-6
+3. Computational Approaches to Energy Materials by Richard Catlow, Alexey Sokol, Aron Walsh. ISBN: 978-1-119-95093-6.
+Materialet er tilgængeligt for DTU studerende gennem DTU Bibliotek.</Course_Literature>
+          <Course_Objectives>I dette kursus får den studerende en introduktion til Density Functional Theory (DFT) som er et af de mest anvendte beregningsværktøjer til at studere grundlæggende processer i materialer til energikonvertering og -lagring (batterier, nanokatalysatorer, brændselsceller, solceller osv.). I den første halvdel af kurset lærer de studerende det grundlæggende i den atomistiske beskrivelse af materialer samt den elektroniske struktur og fundamentet i DFT. Den anden del er mere praktisk, og de studerende lærer først, hvilke egenskaber der kan beregnes ved hjælp af DFT, og hvordan man kan bygge bro mellem disse størrelser og de målte egenskaber fra eksperimenter, samt hvordan man implementerer metoder til at automatisere og fremskynde designet af nye materialer. Kurset fokuserer på anvendelse af DFT gennem dedikerede øvelser med begrænsede tekniske detaljer om den anvendte metode.</Course_Objectives>
+          <DTU_Remark>Kurset henvender sig til (a) studerende med teoretiske interesser, der gerne vil forbedre deres viden om atomskalamodellering og lære at designe nye materialer til energiapplikationer samt (b) studerende med eksperimentelle interesser, som gerne vil lære hvordan atomskalamodellering kan bruges til at forklare og understøtte eksperimentelle resultater. E-læringsmetoden har fordelen ved fleksibilitet med hensyn til, hvor de studerende vælger at deltage i forelæsningerne.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to solid-state physics and chemistry.
+Concepts of atomistic modelling.
+Physicochemical processes underpinning energy technologies.
+Fundamentals of the atomistic and electronic structure of materials.
+Density Functional Theory (key concepts and limitations).
+Practical use of Linux machines, scripting, ASE and GPAW packages.
+Basic and advanced exercises applied to energy materials (using ASE and GPAW).
+High-throughput screening approaches and autonomous workflows (examples and exercises).
+
+Two assignments:
+1) video group presentation of an assigned research paper. 
+2) short written group report summarising the final project.
+Assignments are not graded, but delivering them is a prerequisite for admission to the oral examination.</Contents>
+          <Teaching_And_Learning_Methods>The course combines lectures with tutorials and computational exercises. The examples will cover different applications within energy conversion and storage challenges.
+
+The organised teaching activities comprise online streamed lectures and tutorials. The students also have the possibility to attend dedicated online and/or in-presence consultations with teaching assistants. Time for individual/group work is flexible.</Teaching_And_Learning_Methods>
+          <Course_Literature>1. Density Functional Theory: A Practical Introduction by David S. Sholl, Steckel Janice A.
+2. Reviews in Computational Chemistry by Abby L. Parrill and Kenny B. Lipkowitz.
+ISBN: 978-1-119-10393-6
+3. Computational Approaches to Energy Materials by Richard Catlow, Alexey Sokol, Aron Walsh. ISBN: 978-1-119-95093-6.
+The literature is available for DTU students through the DTU Library.</Course_Literature>
+          <Course_Objectives>In this course, the student will get an introduction to Density Functional Theory (DFT) as one of the most used computational tools to study fundamental processes in materials for energy conversion and storage (batteries, nanocatalysts, fuel cells, photovoltaics, etc.). In the first half of the course, the students will learn the basics of the atomistic description of materials and electronic structure and the fundamentals of DFT. The second part is more practical. The students will first learn which properties can be calculated using DFT, how to bridge these quantities with the measured properties from experiments, and how to implement methodologies to automate and accelerate the design of novel materials. The course focuses on applying DFT through dedicated exercises, with limited technical details about the methodology used.</Course_Objectives>
+          <DTU_Remark>The course is addressed to (a) students with theoretical interests who would like to improve their knowledge about atomic-scale modelling and learn how to design novel energy materials as well as (b) students with experimental interests who would like to learn how atomic-scale modelling can be used to explain and support experimental findings. The e-learning method has the advantage of flexibility in attending lectures and exercises at any location.</DTU_Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende koncepter fra fysisk og kemi." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Basic concepts from physics and chemistry." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01005/01006/10018/10020/10022/10024).(26000/26020/26021/26022/26026/26027/26028/26050/26171)" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Ingen tidligere kodningserfaring (python) er påkrævet, men det vil være fordelagtigt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="No previous coding (python) experience is required, although it is advantageous." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlaget for computersimuleringer med focus på Density Functional Theory og de størrelser, der kan beregnes" />
+          <Txt Lang="en-GB" Txt="Describe the basics of computer simulations with a focus on Density Functional Theory and the quantities that can be calculated" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive fysikken bag nøgleapplikationer til energimaterialer" />
+          <Txt Lang="en-GB" Txt="Describe the physics behind key applications for energy materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke og tilpasse computerkode til beregning af materialers fysiske egenskaber" />
+          <Txt Lang="en-GB" Txt="Interpret and adapt computer scripts for calculating physical properties of materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere deskriptorer for en fremskyndet tilgang til at opdage materialer" />
+          <Txt Lang="en-GB" Txt="Identify descriptors for an accelerated materials discovery approach" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere links mellem eksperimentelle resultater og simuleringer" />
+          <Txt Lang="en-GB" Txt="Create links between experimental results and simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende høj-effektive teknikker på et givent datasæt for at finde nye materialer" />
+          <Txt Lang="en-GB" Txt="Apply high-throughput techniques to a given data set to find novel materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre atomar-skala computersimuleringer af identificerede materialer til energiapplikationer" />
+          <Txt Lang="en-GB" Txt="Perform atomic scale computer simulations of identified materials for energy applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere problemer og løsninger relateret til computersimuleringer og opdagelse af materialer" />
+          <Txt Lang="en-GB" Txt="Identify problems and solutions related with computer simulations and materials discovery" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="10302" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+        </OfferedAsACourseOfTypes>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:17.773" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

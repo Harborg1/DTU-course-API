@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02205" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="VLSI Design" />
+        <Title Lang="en-GB" Title="VLSI Design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="2340" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Flemming</GivenName>
+            <FamilyName>Stassen</FamilyName>
+            <Email>flst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="220909" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Richter</FamilyName>
+            <Email>ojuri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter gives på baggrund af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="VLSI: Very-large-scale integration" />
+            <Supp_Txt Lang="en-GB" Txt="VLSI: Very-large-scale integration " />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Oversigt over fremstillingsprocesser for MOS kredsløb (masker, designregler og elektriske parametre) og grundlæggende komponenter i MOS kredsløb (MOSFET transistor, modstande, kondensatorer og switche). Skalering af fremstillingsteknologien.
+Klokkesystemer og effektforbrug for kombinatoriske og sekventielle kredsløb.
+Design flow: abstraktionsniveauer, ASIC design forløb.
+Design opgaver: simulering, syntese, placering og ledningsføring.
+Højniveau, register-niveau og port-niveau teknikker for konstruktion af lav-effekt kredsløb.
+Statisk, dynamisk og flash hukommelser.
+Overvejelser på system-niveau: distribution af klokke, pakketeknologi, signal integritet.</Contents>
+          <Course_Objectives>At sætte de studerende i stand til at forstå grundlaget for MOS teknologien, herunder MOS felt effekt transistoren, og kunne foretage valg af en egnet fremstillingsteknologi under hensyntagen til tekniske og økonomiske aspekter. At give de studerende en komplet forståelse af designprocessen for digitale systemer. At gøre de studerende i stand til at udforske det omfattende designrum ved hjælp af model-evaluering. At give de studerende kendskab til teknikker og strategier rettet mod både laveffekt- og højhastigheds-design. At formidle en forståelse af kompromisløsninger og forskellige designmetodikker for forskellige teknologier såsom ASIC, FPGA og SoC.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Overview on MOS technology (masks, design rules and electrical parameters) and basic components of MOS circuits (MOSFETs, resistors, capacitors, switches).
+Technology scaling.
+Timing and power dissipation of combinational and sequential components.
+Design flow: levels of abstraction, design flow for ASICs.
+Design tasks: simulation, synthesys, place&amp;route.
+Design for low-power: high-level, RT-level and gate-level techniques.
+Memory families (static, dynamic, flash).
+System level issues: clock distribution, packaging, signal integrity.</Contents>
+          <Course_Objectives>To enable the students to understand the basis of MOS technology, including the MOS field effect transistor, and to choose a proper production technology with due consideration of technical and economical terms. To provide the students with complete understanding of the design process for digital systems. To enable students to a comprehensive design space exploration based on models evaluation. To provide techniques and strategies aiming at both low power and high speed design.
+To understand design tradeoffs and different design approaches for different technologies: ASICs, FPGAs, and SoCs.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundkursus om digitale systemer" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic course in digital systems" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02138.02139" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og forklare grundlaget for MOS teknologi, herunder MOS felt-effekt transistoren." />
+          <Txt Lang="en-GB" Txt="Describe and explain the basis of MOS technology, including the MOS field-effect transistor." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og forklare grundlæggende metoder og forhold i design af digitale integrerede kredsløb." />
+          <Txt Lang="en-GB" Txt="Describe and explain basic methods and concepts in digital integrated circuit design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive kombinatoriske og sekventielle digitale systemer og kunne liste deres egenskaber og karakteristika (tidsegenskaber, arealforbrug, effektforbrug)." />
+          <Txt Lang="en-GB" Txt="Describe combinational and sequential digital systems and list their properties and characteristics (timing, area, power dissipation)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, konstruere og analysere dele af et digitalt system, herunder forbindelsesstrukturer, under hensyntagen til tekniske og økonomiske forhold." />
+          <Txt Lang="en-GB" Txt="Explain, construct and analyze parts of a digital system, including interconnections, with due consideration of technical and economic terms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Illustrere de primære opgaver, der er involveret i designet af et digitalt system: simulering, logiksyntese og place-and-route." />
+          <Txt Lang="en-GB" Txt="Illustrate the main tasks to be performed in the design of a digital system: simulation, logic synthesis and place and route." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende passende teknikker til design af højhastighedssystemer og laveffektsystemer." />
+          <Txt Lang="en-GB" Txt="Apply suitable techniques to the design of systems for high-speed and low-power." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe et digitalt integreret system ud fra givne specifikationer og de lærte metoder." />
+          <Txt Lang="en-GB" Txt="Design a digital system, or part of it, based on given specifications and the methods learned in the course." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere det designede system, sammenligne resultater med et referencedesign og derudfra evaluere systemets ydeevne." />
+          <Txt Lang="en-GB" Txt="Analyze the system designed, compare the results with some reference design and evaluate the system's performance." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02205/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>VLSI system design</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:58.423" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

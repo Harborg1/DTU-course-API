@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02807" Volume="2026/2027" University="dtu" LastUpdated="2026-03-30+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Beregningsmæssige Værktøjer til Datavidenskab" />
+        <Title Lang="en-GB" Title="Computational Tools for Data Science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E7" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="126613" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>David Earl</GivenName>
+            <FamilyName>Roberson</FamilyName>
+            <Email>dero@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="136214" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Karl Magnus</GivenName>
+            <FamilyName>Heuer</FamilyName>
+            <Email>karheu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen af rapporter er baseret på individualiserede grupperapporter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment of reports is based on individualized group reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E7" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Beregningsmæssige værktøjer og teknikker til at håndtere massive data mængder.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Mining of Massive Datasets;
+    Jure Leskovec, Anand Rajaraman,  Jeffrey David Ullman;
+    Cambridge University Press, 2020; 3rd. edt.;
+    isbn: 9781108476348.
+    Online: http://www.mmds.org/</Course_Literature>
+          <Course_Objectives>Dette kursus giver en kort og intensiv introduktion til beregningsberegningsmæssige værktøjer og teknikker til at håndtere store datamængder. Fokus er på praktisk erfaring.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>State of the art computational tools and techniques for massive data sets.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Mining of Massive Datasets;
+    Jure Leskovec, Anand Rajaraman,  Jeffrey David Ullman;
+    Cambridge University Press, 2020; 3rd. edt.;
+    isbn: 9781108476348.
+    Online at http://www.mmds.org/</Course_Literature>
+          <Course_Objectives>This course will give a short and intensive introduction to state of the art computational tools and techniques for massive data sets. The focus is on practical hand-on experience.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Solid programmeringserfaring. Minimum et kursus i programmering plus  yderligere erfaring fra et andet kursus eller programmeringsprojekt. Kurset bruger Python. Der forventes, at deltagerne har (basal) kendskab til Python. Tutorials findes på nettet, for eksempel https://docs.python.org/3/tutorial/. Der er kun en kort brush-up i starten." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Solid programming experience. At minimum a course in programming plus additional experience from another course or programming project. The course uses Python.&#xD;&#xA;The participants are expected to at least have basic experience&#xD;&#xA;in Python. Tutorials are available on the net, e.g.,&#xD;&#xA;https://docs.python.org/3/tutorial/. Only a short brush-up will be provided." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge eller udvikle algoritmer til specifikke data science  anvendelser." />
+          <Txt Lang="en-GB" Txt="Select or design algorithms for specific data science applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne, evaluere og anvende teknologier for parallelle og distribuerede algoritmer." />
+          <Txt Lang="en-GB" Txt="Compare, evaluate, and apply technologies for parallel and distributed applications. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere algoritmer for data science og anvende dem på problemer fra den virkelige verden." />
+          <Txt Lang="en-GB" Txt="Implement algorithms for data science and apply them to real world problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne, evaluere og anvende beregningsberegningsmæssige værktøjer og teknikker for massive datamængder." />
+          <Txt Lang="en-GB" Txt="Compare, evaluate, and apply computational tools and techniques for massive data sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde, undersøge og evaluere relevant teknologier og litteratur relateret til beregningsmæssige værktøjer og teknikker for massive datamængder." />
+          <Txt Lang="en-GB" Txt="Lookup, explore, and evaluate relevant technologies and literature related to computational tools and techniques for massive data sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombinere beregningsmæssige værktøjer og teknikker for massive datamængder." />
+          <Txt Lang="en-GB" Txt="Combine computational tools and techniques for massive data sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere skalerbarhed af beregningsmæssige værktøjer og teknikker for massive datamængder." />
+          <Txt Lang="en-GB" Txt="Analyze scalability of computational tools and techniques for massive data sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere klart for valg i forbindelse med design og udvikling af løsninger.  " />
+          <Txt Lang="en-GB" Txt="Argue clearly for the choices made when designing and developing solutions. " />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02807/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Computational Tools for Big Data</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="20" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:33.757" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

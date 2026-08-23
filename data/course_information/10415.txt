@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10415" Volume="2026/2027" University="dtu" LastUpdated="2026-04-22+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Atomkraftteknologi" />
+        <Title Lang="en-GB" Title="Nuclear Reactor Technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="55" KVL_Resources="100" />
+          <Ass_Dep UID="47" Resources="45" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="142307" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Amalia</GivenName>
+            <FamilyName>Chambon</FamilyName>
+            <Email>amacha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="211524" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Dimitris Payton</GivenName>
+            <FamilyName>Killinger</FamilyName>
+            <Email>dpaki@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38572" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bent</GivenName>
+            <FamilyName>Lauritzen</FamilyName>
+            <Email>blau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Delprøver: Skriftlig eksamen (85%) og quizzer i undervisningen (15%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Part exams: written exam (85%) and quizzes in class (15%)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Almindelige design og karakteristika ved kommercielle atomkraftreaktorer, konversion af termisk energi til elektricitet, reaktorkontrol og -drift, kobling af de nukleare og konventionelle anlæg i et atomkraftværk, analyse af reaktor transienter, sikkerhedssystemer, tekniske og politiske aspekter ved brændselscyklus inkl. uran ressourcer, brændselsfremstilling, oparbejdning og behandling af radioaktivt affald.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, regneøvelser, journal club</Teaching_And_Learning_Methods>
+          <Course_Literature>S. Marguet, “The Technology of Pressurized Water Reactors”, Springer, 2022, I. Crossland, Nuclear fuel cycle science and engineering, Woodhead Publishing, 2012 and lecture notes.</Course_Literature>
+          <Course_Objectives>Kurset sigter mod at bibringe den studerende et overblik over reaktordesigns og deres karakteristika. I kurset vil vi behandle såvel eksisterende som den næste generation atomkraftsystemer, men med et fokus på design og drift af letvandsreaktorer, der er den mest udbredte reaktortype i dag. Kurset behandler varmeproduktion, nuklear termohydraulik og termodynamisk konversion til elektricitet, og vi diskuterer principperne for reaktorsikkerhed. I kurset diskuterer vi de forskellige trin i brændselscyklus.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Survey of commercial reactor types and common design characteristics, conversion of thermal energy to electricity, control and operation of reactor, coupling of the nuclear and the conventional islands of a power plant, reactor transient analysis, nuclear safety design, technical and policy aspects of the fuel cycle covering uranium supply, fuel fabrication, reprocessing and waste disposal.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, journal club</Teaching_And_Learning_Methods>
+          <Course_Literature>S. Marguet, “The Technology of Pressurized Water Reactors”, Springer, 2022, I. Crossland, Nuclear fuel cycle science and engineering, Woodhead Publishing, 2012 and lecture notes.</Course_Literature>
+          <Course_Objectives>The course aims to provide the student with an overview of different nuclear reactor designs and their characteristics. The course discusses the current and the next generations of nuclear energy systems but focuses on the design and operation of Light Water Reactors, the most common type of commercial nuclear reactors operated today. We cover nuclear heat production, nuclear thermal-hydraulics, and thermodynamic conversion to electricity. The course introduces the principles of nuclear reactor safety and covers the various steps of the nuclear fuel cycle.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det anbefales at have taget kursus 10411 eller tilsvarende, samt polyteknisk grundlag kurser." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is recommended to take 10411 or equivalent prior to the nuclear reactor technology course, as well as Polytechnical Foundation courses." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de vigtigste reaktortyper og reaktorbrændsler fro eksisterende og næste generation atomkraft." />
+          <Txt Lang="en-GB" Txt="Describe the main types of nuclear reactors and nuclear fuels, including future systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive letvandsreaktorteknologi og -drift (dampkredse, sikkerhedssystemer, instrumentering og kontrolsystemer)." />
+          <Txt Lang="en-GB" Txt="Describe the systems and operation of a Light Water Reactor (steam supply system, safety system, instrumentation and control systems). " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere design og driftsforhold for reaktorkernen." />
+          <Txt Lang="en-GB" Txt=" Analyze reactor core designs and reactor core management. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt=" Vurdere risici ved brændselspille-brændselsrør vekselvirkning baseret på lineær effekt beregninger." />
+          <Txt Lang="en-GB" Txt="Evaluate the risk of Pellet-Clad interaction based on linear power calculations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere reaktivitets balance." />
+          <Txt Lang="en-GB" Txt="Evaluate reactivity balance terms. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere, analysere og løse simple termohydrauliske problemer." />
+          <Txt Lang="en-GB" Txt="Formulate, analyze, and solve simple thermal-hydraulics problems.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre varmetransport beregninger." />
+          <Txt Lang="en-GB" Txt="Perform heat transfer calculations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over materialepåvirkninger under hensyn til termisk stress og bestråling." />
+          <Txt Lang="en-GB" Txt="Reflect on reactor material degradation under thermal stress and irradiation. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de basale principper ved reaktorsikkerhed." />
+          <Txt Lang="en-GB" Txt="Explain the basic principles of nuclear reactor safety.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive brændselscyklus." />
+          <Txt Lang="en-GB" Txt="Describe the nuclear fuel cycle, including the front and back end.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:54.32" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

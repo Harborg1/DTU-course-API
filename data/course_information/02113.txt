@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02113" Volume="2026/2027" University="dtu" LastUpdated="2026-05-20+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Projekt i Design af Digitale Systemer" />
+        <Title Lang="en-GB" Title="Digital Systems Design Project" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="74954" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Luca</GivenName>
+            <FamilyName>Pezzarossa</FamilyName>
+            <Email>lpez@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter gives på baggrund af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is given based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kombinations- og sekventiel logik, FPGA-arkitektur og design-flow, FPGA implementering af grundlæggende digitale kredsløb, state machine med datapath design.</Contents>
+          <Teaching_And_Learning_Methods>Gruppebaseret projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus giver de studerende praktisk erfaring med design af digital elektronik ved hjælp af FPGA-teknologi. Kurset vil uddybe forståelsen af state machines med datapath.
+
+Kurset er et tre-ugers projekt, hvor de studerende skal designe og implementere et computerspil i hardware baseret på state machines med datapath, der viser grafik på en VGA-skærm.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Combinational and sequential logic, FPGA architecture and design flow, FPGA implementation of basic digital circuits, state machine with datapath design.</Contents>
+          <Teaching_And_Learning_Methods>Group-based project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course will provide students with hands-on experience in digital electronics design using FPGA technology. The course will deepen the understanding of state machines with data path. 
+
+The course is a three-week project in which students will design and implement a computer game in hardware based on state machines with datapath displaying graphics on a VGA monitor.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende færdigheder i digitalt design i Chisel (eller VHDL) (eller Verilog)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic skills in digital design in Chisel (or VHDL) (or Verilog)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02139" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definer kravene og strukturen for implementering af et mellemstort kredsløb på FPGA." />
+          <Txt Lang="en-GB" Txt="Define the requirements and the structure for implementing a medium-sized circuit on FPGA." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementér mellemstore kredsløb til input/output, grundlæggende beregninger og grafisk visning baseret på modellen for state machine with datapath (FSMD)." />
+          <Txt Lang="en-GB" Txt="Implementing medium-sized circuits for input/output, basic computation, and graphics display based on the state machine with datapath (FSMD) model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend Hardwarebeskrivelsessprog (HDL'er) og FPGA-værktøjersflows til at udvikle digitale kredsløb på FPGA'er." />
+          <Txt Lang="en-GB" Txt="Utilize Hardware Description Languages (HDLs) and FPGA tool-flows to develop digital circuits on FPGAs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer fejl inden for digitale designs for effektiv debugging og korrigering af problemer ved brug af simulering og test." />
+          <Txt Lang="en-GB" Txt="Identify errors or malfunctions within digital designs to effectively debug and rectify issues by using simulation and testing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilegn grundlæggende projektstyringsstrategier til planlægning, organisering og gennemførelse af et mellemstort hardware-designprojekt." />
+          <Txt Lang="en-GB" Txt="Acquire basic project management strategies for planning, organizing, and executing a medium-sized hardware design project." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udforsk teknikker til at optimere ressourceudnyttelsen inden for FPGA'en ved implementering af mellemstore kredsløb, idet der tages hensyn til faktorer som areal og ydeevne." />
+          <Txt Lang="en-GB" Txt="Explore techniques to optimize resource utilization within the FPGA while implementing medium-sized circuits, considering factors such as area and performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurder ydelsen for de implementerede FPGA-baserede kredsløb, herunder hastighed, gennemløb og latenstid, for at sikre, at de opfylder de specificerede krav." />
+          <Txt Lang="en-GB" Txt="Assess the performance metrics of the implemented FPGA-based circuits, including speed, throughput, and latency, to ensure they meet the specified requirements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumenter designprocesserne, metoderne og beslutningerne truffet i løbet af udviklingen af mellemstore FPGA-kredsløb for at sikre en omfattende forståelse og fremtidig reference." />
+          <Txt Lang="en-GB" Txt="Document the design processes, methodologies, and decisions made throughout the development of medium-sized FPGA circuits, ensuring comprehensive understanding and future reference." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-21" Time="09:03:36.933" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

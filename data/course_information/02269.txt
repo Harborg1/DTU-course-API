@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02269" Volume="2026/2027" University="dtu" LastUpdated="2026-04-14+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Process Mining" />
+        <Title Lang="en-GB" Title="Process Mining" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="123622" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Andrea</GivenName>
+            <FamilyName>Burattin</FamilyName>
+            <Email>andbur@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen er baseret på gruppearbejdet (præsentation og rapport), skriftlige spørgsmål og mellemliggende øvelser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on group work (presentation and report), written questions, and intermediate exercises." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset består af forelæsninger og tutorials/opgaver. 
+
+Kurset indeholder følgende emner: 
+  ▪  Formalisering og grafisk repræsentation af forretningsprocesser 
+  ▪  Uddrag af data til process mining formål
+  ▪  Simulering af procesmodeller til process mining formål 
+  ▪  Algoritmer til control-flow discovery 
+  ▪  4 kvalitets-dimensionsioner for process mining 
+  ▪  Algoritmer til conformance checking</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde og studenterpræsentationer.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset har til formål, at deltagerne bliver gode til at forstå og at skabe formel repræsentation af forretningsprocesser (f.eks. Petri net), og at forstå process minings formål og potentiale. De studerende vil blive gode til at forstå og analysere forskellene mellem forskellige state-of-the-art process mining teknikker, samt deres ideele anvendelsesbetingelser. Derudover, vil de studerende blive i stand til at stille relevante og meningsfulde spørgsmål, som skal bruges til at analysere procesopførsel og til at teste hypoteser om event logs. Til sidst vil deltagerne blive i stand til at uddrage og analysere event logs med brug af kommercielle og open-source process mining værktøjer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course consists of lectures and tutorials/exercises. All theoretical aspects will be supported by practical sessions consisting of both exercises and software tests.
+
+The topics presented are:
+  ▪  Formalizations and graphical representations of business processes
+  ▪  Extraction of data for process mining purposes
+  ▪  Simulation of models for process mining purposes
+  ▪  Algorithms for control-flow discovery
+  ▪  4 quality dimensions of process mining
+  ▪  Algorithms for conformance checking</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work and student presentations.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to enable the students to understand and create formal representation of business processes (e.g., Petri net) and to understand the purpose and potential of process mining. The students will be able to understand and analyze the differences among the state-of-the-art process mining techniques and which are the ideal application conditions for each of them. Additionally, the students will be able to formulate relevant and meaningful questions, useful to analyze behavioral aspect of the process and to test these hypotheses on event logs. Finally, students will be able to independently extract and analyze event logs with commercial and open-source process mining tools available in order to answer process-related questions and test hypotheses.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Forståelse af algoritmer og grundlæggende datastrukturer, samt generel kendskab til computer science modellering. Erfaring med concurrent programming er også ønskelig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Understanding of algorithms and basic data structures, together with some general computer science modeling knowledge. Experience with notions of concurrent programming is also advisable." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02105.02141" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare et Petri nets opførsel (f.eks. &quot;token game&quot;) og dens grundlæggende egenskaber (f.eks. deadlock-free, bounded)" />
+          <Txt Lang="en-GB" Txt="Explain the behavior of a Petri net (e.g., &quot;token game&quot;) and corresponding basic properties (e.g., deadlock-free, bounded)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere en givet forretningsproces ved rigtig brug af Petri nets (eller andre formelle notationer)" />
+          <Txt Lang="en-GB" Txt="Model a given business process using Petri nets (or other formal notations) in a correct way" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne forskellige familier af process mining teknikker (f.eks. control-flow discovery og conformance checking) og vælge den rigtig for et givet scenarium" />
+          <Txt Lang="en-GB" Txt="Compare the different process mining family of techniques (e.g., control-flow discovery and conformance checking) and select which fits given scenarios" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke kvalitetskriterier ved at vurdere process mining resultater, især vedrørende control-flow discovery algoritmer" />
+          <Txt Lang="en-GB" Txt="Interpret the quality criteria for evaluating process mining outcomes, in particular concerning control-flow discovery algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne tilgængelige process mining algoritmer og værktøjer, og anvende de rigtige for et givet problem" />
+          <Txt Lang="en-GB" Txt="Compare the available algorithms and tools for process mining techniques and determine which fits given problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge state-of-the-art tilgængelige teknologier, både kommercielle og open-source" />
+          <Txt Lang="en-GB" Txt="Utilize the state-of-the-art of available technologies, both commercial products and open source tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bygge event logs fra raw data recordings eller fra simulering af procesmodeller, (som bevarer visse egenskaber og som skal bruges i et styret miljø)" />
+          <Txt Lang="en-GB" Txt="Construct event logs starting from raw data recordings or as simulations of process models preserving certain properties (to be used in controlled environments)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Uddrage aktiviteters control-flow, som er registreret i en event log, ved hjælp af kommercielle og open-source værktøjer" />
+          <Txt Lang="en-GB" Txt="Extract the control-flow of the activities recorded in an event log with commercial and open source tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne conformance af en event log med hensyn til en givet procesmodel" />
+          <Txt Lang="en-GB" Txt="Calculate the conformance of an event log with respect to a given reference process model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere (forretnings-) relaterede spørgsmål ved brug af process mining teknikker" />
+          <Txt Lang="en-GB" Txt="Assess (business) related questions using process mining techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare aktuelle tendenser i process mining forskning" />
+          <Txt Lang="en-GB" Txt="Explain the current trends in process mining research" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Process mining</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:15.03" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

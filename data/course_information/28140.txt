@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28140" University="dtu" LastUpdated="2026-03-18+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til reaktionsteknik" />
+        <Title Lang="en-GB" Title="Introduction to Chemical Reaction Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="1020" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Anker Degn</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>aj@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering på basis af eksamen og 12 hjemmeopgavesæt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall evaluation on the basis of written exam and 12 homework problems." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset behandler: Gas- og væskefasereaktioner i ideale reaktorer, herunder reaktorkæder og recirkulationsreaktorer. Katalytiske reaktioner og samspillet med fysisk transport og kemisk reaktion i katalysatorpartikler. Bioreaktionskinetik og reaktorer. Multiple reaktioner og valg af reaktortype/procesbetingelser. Kobling af energibalance og massebalance for reaktorer.
+
+Opgaver og eksempler illustrerer bl.a. anvendelsen til kemisk, biokemisk og farmaceutisk produktion samt miljøteknik. Kursets indhold har især betydning for bæredygtig produktion (høj udnyttelse af råmaterialer, lav mængde spildprodukter) med lav miljøpåvirkning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, hjemmeopgaver, computersimuleringer</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: H.S. Fogler, Elements of Chemical Reaction Engineering, Prentice Hall, 2022, 6. udgave. Global edition</Course_Literature>
+          <Course_Objectives>At give den studerende et grundlæggende kendskab til kobling mellem kemisk kinetik og design af kemiske reaktorer, således at han/hun bliver i stand til at udføre beregningsmæssige løsninger for reaktionstekniske problemer. Herudover at give kendskab til de vigtigste reaktortyper til homogene, heterogene og bioteknologiske reaktioner og deres anvendelse i industrien.</Course_Objectives>
+          <Remark>Kurset er et af tre helt nødvendige kemitekniske forudsætningskurser (28020, 28140, 28160) for et kandidatstudium på retningen Kemisk og Biokemisk Teknologi. Det anbefales endvidere, at et bachelorstudium på linjen Kemi og Teknologi derudover indeholder kurserne 28221, 28121/28125 og 28150.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course treats: Gas- and liquid phase reactions in ideal reactors, including reactor chains and recirculation reactors. Catalytic reactions in combination with physical transport inside catalyst pellets. Bioreaction kinetics and reactors. Multiple reactions and choice of reactor type and proces conditions for optimal production. Coupling of the energy and mass balance for reactors.
+
+The exercises illustrate mainly the applications within chemical, biochemical and pharmaceutical production and environmental technology. The course content is especially relevant for sustainable production (efficient use of raw materials, low waste production) and low environmental impact.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem solving, computer simulations</Teaching_And_Learning_Methods>
+          <Course_Literature>Text book: H.S. Fogler, Elements of Chemical Reaction Engineering, Prentice Hall, 2022, 6. edition. Global edition</Course_Literature>
+          <Course_Objectives>To give the student basic knowledge of the coupling between chemical kinetics and the design of chemical reactors. The student will be able to design and optimize chemical and biochemical reactors. It is further the purpose to give knowledge of the most important reactors for homogeneous, heterogeneous and biochemical reactors and their use in the industry.</Course_Objectives>
+          <Remark>The course is one of three highly recommended chemical engineering prerequisites (28020, 28140, 28160) for admission to MSc-studies in Chemical and Biochemical Engineering. Bachelor studies in Chemical Engineering should additionally preferably include the following courses: 28221, 28121/28125 and 28150.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til et simuleringsværktøj som Maple, Matlab eller Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of simulation software such as Maple, Matlab or Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="28020.28160" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for forskellen mellem hastighedsudtryk for elementarreaktioner og ikke-elementarreaktioner, og kunne opskrive hastighedsudtrykket for elementarreaktioner" />
+          <Txt Lang="en-GB" Txt="Explain the difference between rate expressions for elementary reactions and non-elementary reactions, and write down the rate expression for elementary reactions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare virkemåden af de ideale reaktorer: Stempelstrømningsreaktor, kontinuert tankreaktor og ideelt omrørt batchreaktor" />
+          <Txt Lang="en-GB" Txt="Explain the principles of the ideal reactor models: plug flow reactor, continuously stirred tank reactor, ideally stirred batch reactor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse matematiske modeller for de ideale reaktortyper under isoterme forhold for en enkelt reaktion og for multiple reaktioner" />
+          <Txt Lang="en-GB" Txt="Set up and solve mathematical models for the ideal reactors under isothermal conditions for a single reaction, for multiple reactions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse molbalancer for andre reagerende systemer end de tre ideale reaktortyper" />
+          <Txt Lang="en-GB" Txt="Set up and solve mole balances for other reacting systems than the three ideal reactor types" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse massebalancer for bio-reaktorer" />
+          <Txt Lang="en-GB" Txt="Set up and solvemass balances for bio-reactors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille energibalancen for reagerende systemer for en enkelt og for multiple reaktioner med og uden køling" />
+          <Txt Lang="en-GB" Txt="Set up the energy balance for reacting systems for single and multiple reactions with and without cooling" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne ligevægtsomsætningsgrader for reaktioner i isoterme og non-isoterme reaktorer" />
+          <Txt Lang="en-GB" Txt="Calculate the equilibrium conversions for multiple reactions for isothermal and non-isothermal reactions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for tilstedeværelsen af multiple stationære tilstande i omrørte reaktorer" />
+          <Txt Lang="en-GB" Txt="Explain how multiple steady states occur in stirred reactors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe reaktorer for optimal og sikker drift" />
+          <Txt Lang="en-GB" Txt="Design reactors for optimum and safe operation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse matematiske modeller for samspillet mellem diffusion og reaktion i porøse katalysatorpiller, herunder beregne effektivitetsfaktor for 1. ordens reaktion" />
+          <Txt Lang="en-GB" Txt="Set  up and solve mathematical models for diffusion and reaction in porous catalyst pellets and calculate the effectiveness factor for a 1st order reaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe optimal reaktorkonfiguration for reaktorkæder" />
+          <Txt Lang="en-GB" Txt="Design optimal reactor konfiguration for reactor chains" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til kemisk reaktionsteknik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="28342.28145" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:22:51.533" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34338" Volume="2026/2027" University="dtu" LastUpdated="2024-04-12+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Telekommunikations programmerings projekter med Arduino" />
+        <Title Lang="en-GB" Title="Telecommunication programming projects with Arduino" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="19827" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Martin Nordal</GivenName>
+            <FamilyName>Petersen</FamilyName>
+            <Email>mnpe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Written reports and oral presentation" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written reports and oral presentation" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Basic C programming, Version control system and code documentation, Tutorials and exercises, Introduction to Arduino, System design, Wired and wireless communication protocols (eks. wifi, Bluetooth, Lora, RF, Ethernet), Sensors and devices, IoT server/backbone.
+Project examples:  Temperature control, Alarm system with motion detection and notification, Wireless serial RF communication between two Arduino units, Unit control via GSM SMS messaging , Security, code generation, PIN recognition, SMS confirmation.
+
+De studerende forventes at købe deres eget IoT kit (ca. kr. 300-400.-), men ingen udgifter til bøger. Projektarbejde i grupper. Vejledning kan udføres delvist online.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, project work.
+Mandatory project presentation.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the participants a basic knowledge of C programming, code documentation, interfacing to the Arduino platform and communication protocols.</Course_Objectives>
+          <Remark>This course offers hands-on project work. Group work encouraged. Own laptop required.
+NB: Maximum number of participants is 20.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Basic C programming, Version control system and code documentation, Tutorials and exercises, Introduction to Arduino, System design, Wired and wireless communication protocols (e.g. wifi, Bluetooth, Lora, RF, Ethernet), Sensors and devices, IoT server/backbone.
+Project examples:  Temperature control, Alarm system with motion detection and notification, Wireless serial RF communication between two Arduino units, Unit control via GSM SMS messaging , Security, code generation, PIN recognition, SMS confirmation.
+
+Students are expected buy their own IoT kit (approx. kr. 300-400.-), but no expenses for books. IoT project development in groups. Part of the supervision may be carried out online.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, project work.
+Mandatory project presentation.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the participants a basic knowledge of C programming, code documentation, interfacing to the Arduino platform and communication protocols.</Course_Objectives>
+          <Remark>This course offers hands-on project work. Group work encouraged. Own laptop required.
+NB: Maximum number of participants is 20.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Basic programming skills" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic programming skills" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Apply the special characteristics of C code for Arduino" />
+          <Txt Lang="en-GB" Txt="Apply the special characteristics of C code for Arduino" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain the steps needed to successfully execute C code on an Arduino platform" />
+          <Txt Lang="en-GB" Txt="Explain the steps needed to successfully execute C code on an Arduino platform" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Plan and document a system design" />
+          <Txt Lang="en-GB" Txt="Plan and document a system design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluate pros and cons of different wired and wireless communication technologies" />
+          <Txt Lang="en-GB" Txt="Evaluate pros and cons of different wired and wireless communication technologies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluate code and components for low power optimized devices" />
+          <Txt Lang="en-GB" Txt="Evaluate code and components for low power optimized devices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Use simple circuitry for interconnecting components" />
+          <Txt Lang="en-GB" Txt="Use simple circuitry for interconnecting components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Document code using a version control system" />
+          <Txt Lang="en-GB" Txt="Document code using a version control system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Present and demonstrate own project work" />
+          <Txt Lang="en-GB" Txt="Present and demonstrate own project work" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Telecommunication programming projects with Arduino</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34315/34325/34346/34365" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:13.523" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

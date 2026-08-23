@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="01418" University="dtu" LastUpdated="2025-03-24+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Introduktion til partielle differentialligninger" />
+        <Title Lang="en-GB" Title="Introduction to Partial Differential Equations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="20347" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mirza</GivenName>
+            <FamilyName>Karamehmedovic</FamilyName>
+            <Email>mika@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Lineære partielle differentialligninger (PDE). Semilineære og kvasilineære ligninger. Bølgeligningen. Varme- og diffusionsligningen. Laplace og Poisson ligningen. Inhomogeniteter/kilder. Begyndelses- og randværdiproblemer. Udvikling af løsninger via orthonormale rækker. Faktorisering af operatorer. Karakteristikker. Fouriertransformationen med relevante funktionsrum. Indledende distributionsteori. Udbredelse af singulariteter i løsninger. Energibevarelse i løsninger. Maksimumsprincipper for løsninger. Svage formuleringer og svage løsninger af differentialligningsproblemer. Poisson kernel og heat kernel.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er at sætte deltagerne i stand til at opstille, studere og løse problemer med partielle differentialligninger ved brug af metoder og værktøjer fra den matematiske analyse.</Course_Objectives>
+          <DTU_Remark>.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Linear Partial Differential Equations (PDE). Semilinear and quasilinear equations. The wave equation. Diffusion and heat equations. Laplace's equation and Poisson's equation. Inhomogeneities/sources. Initial and boundary value problems. Expansion of solutions in orthonormal series. Operator factoring. Method of characteristics. The Fourier transform and relevant function spaces. Basic distribution theory. Propagation of singularities in solutions. Energy conservation and maximum principles. Weak formulation and weak solution of differential equation problems. The Poisson kernel and the heat kernel.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The purpose of the course is to enable the students to pose, study, and solve problems in partial differential equations by using methods and tools from mathematical analysis.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Lineære sædvanlige differentialligninger; konvergens af uendelige rækker; Fourierrækker" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Linear Ordinary Differential Equations (ODE); convergence of infinite series; Fourier series" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01025/01034/01035/01037" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere simple problemstillinger ved brug af partielle differentialligninger" />
+          <Txt Lang="en-GB" Txt="Model simple problems using partial differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse begyndelses-/randværdiproblemer for diffusionsligningen i simple geometrier" />
+          <Txt Lang="en-GB" Txt="Solve initial/boundary value problems for the diffusion equation in simple geometries" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse begyndelses-/randværdiproblemer for bølgeligningen i simple geometrier" />
+          <Txt Lang="en-GB" Txt="Solve initial/boundary value problems for the wave equation in simple geometries" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse randværdiproblemer for Laplaces ligning i simple geometrier" />
+          <Txt Lang="en-GB" Txt="Solve boundary value problems for Laplace's equation in simple geometries" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende karakteristiske kurver til løsning af førsteordens skalære semilineære og kvasilineære differentialligningsproblemer" />
+          <Txt Lang="en-GB" Txt="Solve first order scalar semilinear and quasilinear equations using the method of characteristics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende separation af de variable til at transformere et partielt differentialligningsproblem i en simpel geometri til et sæt af sædvanlige differentialligningsproblemer" />
+          <Txt Lang="en-GB" Txt="Use separation of variables to transform a partial differential equation problem to a set of ordinary differential equation problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende operator-faktorisering til løsning af begyndelsesværdiproblemer for andenordens lineære hyperbolske differentialligninger i to dimensioner" />
+          <Txt Lang="en-GB" Txt="Use operator factoring to solve initial value problems for second-order linear hyperbolic differential equations in dimension two" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Fourierrækker til løsning af partielle differentialligningsproblemer" />
+          <Txt Lang="en-GB" Txt="Apply Fourier series to solve problems in partial differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere partielle differentialligningsproblemer og uddrage kvalitativ information om løsningernes opførsel" />
+          <Txt Lang="en-GB" Txt="Analyze PDE problems and retrieve qualitative information about solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for grundlæggende distributionsteoretiske begreber og fakta" />
+          <Txt Lang="en-GB" Txt="Explain basic notions and facts from the theory of distributions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse svage formuleringer af udvalgte PDE problemer" />
+          <Txt Lang="en-GB" Txt="Set up and solve weak formulations of selected PDE problems" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://portalen.dtu.dk/Institutter/DTU_Matematik/Kurser/01418.aspx" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Løsning af konkrete problemer indenfor lineære partielle differentialligninger</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="62" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="38" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:22.157" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

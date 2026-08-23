@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41832" University="dtu" LastUpdated="2026-05-01+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Eksperimentel strukturel mekanik" />
+        <Title Lang="en-GB" Title="Experimental Structural Mechanics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="43652" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Hans Holger Hundborg</GivenName>
+            <FamilyName>Koss</FamilyName>
+            <Email>hoko@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="7217" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Berggreen</FamilyName>
+            <Email>cber@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="4 individualiserede grupperapporter. Helhedsvurdering" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="4 individualized group reports. Overall Assessment" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>At måle elastiske og mekaniske egenskaber af forskellige materialer i træk, tryk of torsionsforsøg. Anvendelse af tøjnings-, accelerometer  og flytningsmåler. At måle reaktion af en stålkonstruktion under belastning og bestemme konstruktionens dynamiske parameter. Udfør en vindtunneltest for at simulerer en dynamisk belastningsproces.</Contents>
+          <Course_Objectives>At give indsigt og erfaring på forskellige eksperimentelle metoder som bliver brugt til undersøgelse af konstruktionernes virkemåde og materialegenskaber, simulere dynamisk belastning og for at vurdere konstruktionens respons på belastning. Fortolkning af de forskellige teknikker og resultater med hensyn til metoder i konstruktionsdesign som for eksempel Eurocode bygger på.</Course_Objectives>
+          <DTU_Remark>Arbejde i laboratorium/forsøgshallen. 3 uger i januar.</DTU_Remark>
+          <Remark>Studerede optaget på Kandidatretningerne Byggeteknologi, Bygningsdesign samt Konstruktion og Mekanik har fortrinsret til kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Measuring elastic and mechanical material properties for different materials with a tensile, compression and torsional testing machines.  Application of strain gauges, accelerometers and displacement sensors. Measuring structural response of a steel structure and determination of mechanical vibration characteristics. Performance of a wind tunnel test to simulate dynamic structural loading.</Contents>
+          <Course_Objectives>To provide experience on a large variety of experimental techniques used to investigate material and structural properties, simulate dynamic loading and predict overall structural response. Interpretation of the applied techniques and results with respect to methods in structural design, for example the Eurocodes.</Course_Objectives>
+          <DTU_Remark>Work in laboratory. 3 weeks in January</DTU_Remark>
+          <Remark>Primarily for students enrolled in the MSc programs in Civil Engineering, Architectural Engineering, and Mechanical Engineering.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere formålet med eksperimentelle undersøgelser indenfor konstruktionsmekanik." />
+          <Txt Lang="en-GB" Txt="Identify the purpose of experimental investigation in structural mechanics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere valg af metoder for eksperimentelle forsøg, deres styrker og svagheder og vurdering af resultaternes kvalitet." />
+          <Txt Lang="en-GB" Txt="Relating the choice of methods for experimental testing, their strengths and shortcomings and the evaluation of the result quality." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne eksperimentelle observationer med teoretiske forudsigelser og fremsætte forklaringer eller hypoteser for afvigelser mellem disse." />
+          <Txt Lang="en-GB" Txt="Compare experimental observations with theoretical predictions, and provide explanations or hypotheses for deviations among these." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Selvstænding forberedelse af belastningsforsøg, sensorkalibrering, etablering af målekæden, gennemførelse af forsøget, dataopsamling og analyse.  " />
+          <Txt Lang="en-GB" Txt="Self-guided test preparation, sensor calibration, establishment of acquisition chain, conduction of experiment, data recording and analysis.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og beskrive princippet for konvertering af signaler fra analog til digital samt betydningen af signalforstærkning og kvantificeringen og effekten af målefrekvensen på registrering af dynamiske processer. " />
+          <Txt Lang="en-GB" Txt="Evaluate and describe the principle of converting signals from analogue to digital, as well as the influence of signal amplification and quantization and the effect of sample frequency on the recording of dynamic processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive formålet med et specifikt eksperiment, og konkludere resultaterne rationelt og objektivt." />
+          <Txt Lang="en-GB" Txt="Describe the purpose of specific experiments, and conclude rationally and balanced on the results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre eksperimenter i samarbejde med andre og samle kerneinformation om forsøgene (f.eks. fotos, noter, opstillings afmålinger, data) for analyse og rapportering." />
+          <Txt Lang="en-GB" Txt="Collaborate with others on carrying out experiments and collect key information of the experiments (e.g. photos, notes, setup dimensions, data) for analysis and reporting." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Producere skriftlige eksperimentelle reporter som er vel strukturerede, gennemførte, tydelige og kortfattede, kritisk vurderet/konkluderet og som lever op til en accepteret standard for skriftlig præsentation i det omfattede emne." />
+          <Txt Lang="en-GB" Txt="Produce written experimental reports that are well structured, complete, clear and concise, critically assessing / concluding, and otherwise confirming to accepted standards for written presentation in the subject area." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41204" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="41811/11331/41808" />
+        <PreviousCourse CourseCode="11331" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="2" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="60" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="36" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:04.767" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

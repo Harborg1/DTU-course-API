@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41563" University="dtu" LastUpdated="2026-02-20+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Fluid Power &amp; Motion Control" />
+        <Title Lang="en-GB" Title="Fluid Power &amp; Motion Control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="17478" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Casper Schousboe</GivenName>
+            <FamilyName>Andreasen</FamilyName>
+            <Email>csan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9550" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ilmar Ferreira</GivenName>
+            <FamilyName>Santos</FamilyName>
+            <Email>ilsa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="To rapporter. Vægtet karaktergivning: Individualiseret grupperapport 1/3 samt individuel rapport 2/3" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Two reports. Weighted grading: Individualized group report 1/3 and individual report 2/3" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Matematisk modellering, analyse, syntese og konstruktion af fluid power systemer med hovedvægt på oliehydrauliske systemer.  Integration i mekatroniske systemer, digital data processering, systemintegration og bevægelsesstyring. Numerisk simulering.
+
+Statiske og dynamiske egenskaber vedr. hydrauliske pumper, motorer, ventiler, flowstyring, trykstyring, retningsstyring og servostyring.
+Principielle hydrauliske systemer. Hydrauliske drev og aktuatorer. Loadsensing systemer. Hydrauliske servomekanismer. Stationære og mobile hydrostatiske transmissioner. Hydrauliske pumpestationer og akkumulatorer.
+
+Praktiske eksempler på hydraulisk styrede maskinsystemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, projektarbejde, computersimuleringer og eksperimenter</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte den studerende i stand til at analysere og bruge matematisk modellering til at vurdere og konstruere hydrauliske komponenter og systemer, integrere dem med strukturer og maskiner, designe regulatorer og give et helhedsindtryk af det mekatroniske system.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Mathematical modelling, analysis, synthesis and design of fluid power systems, in particular oil hydraulic systems. Integration in mechatronic systems, digital data processing, system integration and motion control. Numerical simulation. 
+
+Static and dynamic properties of hydraulic pumps, motors, valves, flow control, pressure control, direction control and servo control. 
+Basic hydraulic systems. Hydraulic drives and actuators. Load sensing systems. Hydraulic servo mechanisms. Stationary and mobile hydrostatic transmissions. Hydraulic power supply and accumulators. 
+
+Practical examples of hydraulically controlled systems.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, project work, computer simulation and experiments</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable the student to analyse and use mathematical modelling to evaluate and design hydraulic components and systems, integrate them with structures and machines, design feedback controllers, and build a holistic view of the mechatronic system.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Hydrostatik, rørstrømninger, tabsfaktorer, bevarelsessætninger (kontrolvolumen)&#xD;&#xA;Dynamisk karakteristik af enkeltfrihedsgradssystemer, egenfrekvens og dæmpning." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Hydrostatics, pipe flows, loss coefficients, conservation equations (control volume)&#xD;&#xA;Dynamic characteristics of single degree of freedom systems, eigenfrequency and damping." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41312.62643/41564" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge fluider til hydrauliske systemer ud fra systemkrav." />
+          <Txt Lang="en-GB" Txt="Select fluids for hydraulic systems according to the required specifications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og vælge komponenter til hydrauliske systemer ud fra systemkrav." />
+          <Txt Lang="en-GB" Txt="Describe and select fluid power components for hydraulic systems according to the required specifications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille matematiske modeller for stationær og dynamisk opførsel af hydrauliske komponenter og systemer og integrere dem med strukturelle og maskindynamiske modeller." />
+          <Txt Lang="en-GB" Txt="Derive mathematical models of steady-state and dynamic behavior of hydraulic components and systems and integrate them with structural and machine dynamic models. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og designe hydrauliske systemer ved brug af numeriske værktøjer fx Matlab/Simulink." />
+          <Txt Lang="en-GB" Txt="Analyse and design hydraulic systems by use of numerical tools such as Matlab/Simulink." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde og anvende styretekniske blokdiagrammer." />
+          <Txt Lang="en-GB" Txt="Prepare and apply control block diagrams," />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde og anvende tilstandsmodeller af hydrauliske systemer og regulatorer" />
+          <Txt Lang="en-GB" Txt="Prepare and apply state-space models of fluid power systems and controllers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre linearisering af de ulineære funktioner der beskriver multivariable maskinsystemer." />
+          <Txt Lang="en-GB" Txt="Apply linearization to the nonlinear functions that describe multivariable machine systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere dynamisk og stationær performance og stabilitet ved brug af transient og stationær analyse samt frekvensanalyse." />
+          <Txt Lang="en-GB" Txt="Analyze dynamic and steady-state performance and stability utilizing transient and steady-state analysis as well as frequency-domain analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og tilpasse regulatorer for integrerede mekatroniske systemer" />
+          <Txt Lang="en-GB" Txt="Design and tune feedback controllers for integrated mechatronic systems " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Analyse, dimensionering og simulering af hydrauliksystemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41562" />
+        <PreviousCourse CourseCode="41562" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:27.55" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

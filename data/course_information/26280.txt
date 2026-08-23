@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="26280" Volume="2026/2027" University="dtu" LastUpdated="2026-04-30+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kemi og fysik i CO2-lagring" />
+        <Title Lang="en-GB" Title="Chemistry and Physics in CO2 Storage" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="26" University="DTU" Resources="67" KVL_Resources="100" />
+          <Ass_Dep UID="28" Resources="33" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="26" />
+        <Course_Responsible PersonKey="10354" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Wei</GivenName>
+            <FamilyName>Yan</FamilyName>
+            <Email>weya@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="3687" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Alexander</GivenName>
+            <FamilyName>Shapiro</FamilyName>
+            <Email>ASH@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset dækker termodynamik og reaktioner mellem CO2 og andre flydende og faste faser i CO2-lagringsstedet, herunder termodynamiske modeller for forskellige faseligevægte, modellering af væsentlige termofysiske egenskaber og grundlæggende geokemi. Fra den ingeniørmæssige vinkel dækker kurset det grundlæggende omkring lagerreservoiret, væske- og stenegenskaber, samt flerfasestrømning i porøse medier. Ydermere dækker det den numeriske simulering af CO2-lagring, herunder de styrende ligninger, numerisk løsning af de styrende ligninger og simuleringsanalyse ved brug af en numerisk simulator.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, projekter</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver den grundlæggende viden i fysik og kemi, der er nødvendig for CO2-lagring i stor skala, samt basal ingeniørviden og matematisk grundlag til numerisk simulering af CO2-lagring. Det udstyrer den studerende med den fundamentale viden inden for det tværfaglige område af CO2-lagring, og fungerer som et springbræt til yderligere specialisering inden for et bestemt område i CO2-lagring eller til udvikling af nye lagringsprocesser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers the thermodynamics and reactions between CO2 and other fluid and solid phases in the CO2 storage site, including thermodynamic models for various phase equilibria, modeling of essential thermophysical properties, and basic geochemistry. In the engineering aspect, it covers the basics of the storage reservoir, fluid and rock properties, and multiphase flow in porous media. Furthermore, it covers the numerical simulation of CO2 storage, including the governing equations, the numerical solution of the governing equations, and simulation analysis using a numerical simulator.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, projects</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course provides fundamental physics and chemistry essential to large-scale CO2 storage and basic engineering knowledge and mathematics for numerical CO2 storage simulation. It equips the student with fundamental knowledge in the multidisciplinary area of CO2 storage, serving as a stepping stone for further specialization in a particular area of CO2 storage or for developing novel storage processes.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden i fysisk kemi, kemiteknik og matematik forudsættes" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Fundamental knowledge in physical chemistry, chemical engineering and mathematics is a prerequisite" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="26200/26201.26220/26222.28322/28020/47334.01001/01003.01002/01004" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå CO2-lagringens rolle i hele CCS-kæden og dens betydning for reduktion af CO2-emission." />
+          <Txt Lang="en-GB" Txt="Understand the role of CO2 storage in the whole CCS chain and its importance to CO2 emission reduction." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de vigtigste CO2-lagringsmuligheder og de vigtigste mekanismer involveret i hver mulighed." />
+          <Txt Lang="en-GB" Txt="Describe major CO2 storage options and the main mechanisms involved in each option." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå den grundlæggende fysik og kemi for CO2-lagring, herunder termodynamiske egenskaber og faseligevægt, kinetiske reaktioner og flerfaseflow." />
+          <Txt Lang="en-GB" Txt="Understand the fundamental physics and chemistry for CO2 storage, including thermodynamic properties and phase equilibrium, kinetic reactions, and multiphase flow." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og kvantificere faseligevægten og termodynamiske egenskaber i CO2-lagring." />
+          <Txt Lang="en-GB" Txt="Describe and quantify the phase equilibrium and thermodynamic properties in CO2 storage." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå det grundlæggende reservoirtekniske grundlag for CO2-lagring." />
+          <Txt Lang="en-GB" Txt="Understand the reservoir engineering basics needed for CO2 storage." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå den grundlæggende geokemi og beskrive større geokemiske reaktioner i CO2-lagring." />
+          <Txt Lang="en-GB" Txt="Understand the basics of geochemistry and describe major geochemical reactions in CO2 storage." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og definere hovedprocessen under CO2-lagring." />
+          <Txt Lang="en-GB" Txt="Identify and define the major process during CO2 storage." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de styrende ligninger, der udgør grundlaget for simulering af CO2-lagring" />
+          <Txt Lang="en-GB" Txt="Describe the governing equations underlying CO2 storage simulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de numeriske grundprincipper, som skaber grundlaget for simulering af CO2-lagring." />
+          <Txt Lang="en-GB" Txt="Understand the numerical fundamentals underlying CO2 storage simulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simulering af CO2-lagring og analysere lagringsprocessen på en kvantitativ måde." />
+          <Txt Lang="en-GB" Txt="Perform CO2 storage simulation and analyze the storage process in a quantitative manner." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Termodynamiske og kemitekniske aspekter af CO2 lagring</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="85" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="15" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+        </OfferedAsACourseOfTypes>
+        <Restrictions Max="50" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:21:52.67" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

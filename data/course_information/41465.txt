@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41465" University="dtu" LastUpdated="2026-02-18+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computational Fluid Dynamics vedrørende bygninger" />
+        <Title Lang="en-GB" Title="Computational Fluid Dynamics for Buildings" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="28199" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jianhua</GivenName>
+            <FamilyName>Fan</FamilyName>
+            <Email>jifa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="To afleveringer af individualiserede grupperapporter i løbet af semesteret. Helhedsbedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Two submissions of individualized group reports during the semester. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Opbygning af geometri og netinddeling i 2 og 3 dimensioner. Styring af Fluent ligningsløser. Turbulent flow og turbulensmodeller. Modeller for varmetransport ved hjælp af Fluent. Analyser og præsentation af beregningsresultater. Vurdering af pålidelighed af resultater opnået med CFD beregninger. Afløsningsopgave inden for et af områderne: Termiske forhold for bygninger, termisk komfort, indendørs luftbevægelser og ventilation, vindforhold omkring bygninger og udendørs komfort, brandmodellering og brandsikkerhed, energieffektive bygningsinstallationer inklusiv solvarmeanlæg, bygningskomponenter, optimal udformning af klimaskærm og bygningskonstruktioner osv.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaver og projektarbejde med præsentation af rapport i sidste forelæsning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At opbygge simuleringsmodeller baseret på CFD programmet Fluent til undersøgelse af varme og massestrømme i rum og bygninger, i klimaskærm, i bygningsinstallationer eller i solvarmeanlæg. Formålet er at deltagerne bliver fortrolige med brugen af CFD indenfor mindst et af følgende områder: Termiske forhold for bygninger, termisk komfort, indendørs luftbevægelser og ventilation, vindforhold omkring bygninger og udendørs komfort, brandmodellering og brandsikkerhed, energieffektive bygningsinstallationer inklusiv solvarmeanlæg, bygningskomponenter, optimal udformning af klimaskærm og bygningskonstruktioner osv.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Geometry and mesh creation in 2D and 3D dimensions; Solver settings and solution strategy using Fluent; Turbulent flow and turbulent modeling; Heat transfer modeling using Fluent; Analysis and presentation of calculation results; Evaluation of reliability of results from CFD calculations; Assignment in one of the following fields: Thermal conditions of buildings and comfort; Indoor air flow and ventilation; Wind around buildings and pedestrian comfort; Fire modeling and safety; Building components and building services including solar heating systems; Optimization design of building envelops and building structures, etc.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work with oral presentation in the last lecture.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To create simulation models within the CFD code Fluent for heat and fluid flow investigations in rooms and buildings, in building envelopes, in building services or in solar heating systems. It is the objective to make the participants familiar with the use of CFD in at least one of the following fields: Thermal conditions of buildings and comfort; Indoor air flow and ventilation; Wind around buildings and pedestrian comfort; Fire modeling and safety; Energy efficiency of building components and building services including solar heating systems; Optimal design of building envelops and building structures, etc.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Viden om grundlæggende varmetransportteori og om bygningsinstallationer eller fluid dynamik/strømningsmekanik eller vindteknik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge on basic heat transfer and building services or fluid dynamics/mechanics or wind engineering" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for principperne for CFD beregninger" />
+          <Txt Lang="en-GB" Txt="Explain the principles of CFD calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere et CFD projekt vedrørende termiske forhold for bygninger, vindforhold omkring bygninger, bygningsinstallationer eller et andet relevant område" />
+          <Txt Lang="en-GB" Txt="Formulate a CFD project on thermal conditions of buildings or wind around buildings or building services or another relevant field" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme området, der tages i beregning med en CFD simulering, under hensyntagen til tidsforbrug og nøjagtighed" />
+          <Txt Lang="en-GB" Txt="Determine the modelling goals and the scope of the CFD simulation, in consideration of time consumption and accuracy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge en geometri og netinddeling i 2 eller 3 dimensioner" />
+          <Txt Lang="en-GB" Txt="Create a geometry and mesh in 2 or 3 dimensions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte Fluent ligningsløser til at bestemme massestrømme og temperaturforhold" />
+          <Txt Lang="en-GB" Txt="Use Fluent equation solver to determine fluid flow and heat transfer" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere og benytte turbulensmodeller og modeller for varmetransport" />
+          <Txt Lang="en-GB" Txt="Evaluate and use turbulence models and models for heat transfer" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme varme- og massestrømsforhold vedrørende bygninger eller bygningsinstallationer ved hjælp af CFD beregninger" />
+          <Txt Lang="en-GB" Txt="Determine heat transfer and fluid flows on buildings or building services by means of CFD calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme om CFD beregninger har opnået konvergens" />
+          <Txt Lang="en-GB" Txt="Determine if CFD calculations have obtained convergence" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og præsentere beregningsresultater" />
+          <Txt Lang="en-GB" Txt="Analyse and present calculation results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere pålideligheden af varmestrømme og temperaturforhold beregnet med CFD modeller" />
+          <Txt Lang="en-GB" Txt="Evaluate the reliability of heat transfer and fluid flows calculated with CFD models" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="11124" />
+        <PreviousCourse CourseCode="11124" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="30" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:12.313" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

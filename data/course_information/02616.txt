@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02616" University="dtu" LastUpdated="2026-03-09+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Storskala modellering" />
+        <Title Lang="en-GB" Title="Large-scale Modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="449" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Bernd</GivenName>
+            <FamilyName>Dammann</FamilyName>
+            <Email>beda@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="To rapporter lavet af hold på 2-3 personer.  Kort eksamination i spørgsmål fra rapport-opgaverne. Karakteren fremkommer ved helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Two reports made by groups of 2-3 persons.  Brief examination based on questions from the report assignments.  The mark is given by an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til højtydende computere med vægt på de aspekter der bestemmer computerens ydeevne ved numeriske beregninger på store datasæt/stor-skala problemer.
+Brug af message passing paradigmet (MPI) i Python: point-to-point og kollektiv kommunikation, non-blocking kommunikation, kommunikatorer, virtuelle topologier og one-sided kommunikation.
+Hands-on og eksperimenter til at lokalisere beregnings- og kommunikationsflaskehalse.
+Numeriske metoder for stor-skala beregninger, fx hvordan man finder en optimal opdeling til data.
+Anvendelse af ovenstående på relevante modeller der kræver mange computerressourcer, som fx hukommelse, beregningstid, osv.  Bemærk: metoderne der bruges i dette kursus er generelt ikke anvendelige på ML/AI problemer!</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning, computerøvelser i og computerprojekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Python kan være et kraftfuldt sprog til at tackle store beregningsproblemer inden for scientific computing og relaterede domæner, når det kombineres med specialiserede moduler, såsom NumPy til numeriske og videnskabelige beregninger og MPI4Py til at skalere ud til klynger af computere. Det er dog ikke trivielt at forstå, hvordan man får god performance, når man bruger disse moduler. Dette kursus sigter mod at udvikle de nødvendige færdigheder til at udnytte den potentielle processorkraft på moderne computerklynger og -arkitekturer.
+Dette kursus bygger på de færdigheder fra kurserne 02613 eller 02614. Det giver et overblik over eksisterende software, metoder og værktøjer til stor-skala modellering, og sætter de studerende i stand til at arbejde med stor-skala problemer i Scientific Computing, samt  deres implementering på moderne computerklynger.
+Den opnåede viden skal bruges i projektarbejde til at modellere store systemer i form af nogle udvalgte eksempler.</Course_Objectives>
+          <Remark>Implementering af programmer i Python, samt anvendelse af HPC systemer, udgør en væsentlig del af kurset. Kontakt venligst den kursusansvarlige for at høre mere om forudsætninger.  
+Undervisningsmaterialet består af udleverede noter.
+Kurset omhandler modellering og samspillet mellem modellen og metoderne indenfor HPC.
+Kurset henvender sig til studerende fra alle master programmer.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to high-performance computing techniques, emphasizing those aspects that are important in connection with numerical computations on large data sets/large-scale problems.
+Usage of message passing paradigm (MPI) in Python: point-to-point and collective communications, non-blocking communications, communicators, virtual topologies and one-sided communication. 
+Hands-on and experiments, to locate and solve computational and communication bottlenecks.
+Numerical methods for large-scale computations, including how to efficiently determine an optimal data partitioning scheme.
+Application of the topics above on relevant models that require many hardware resources, e.g. memory, CPU time, etc.  Note: the methods used in this course are in general not applicable to ML/AI problems!</Contents>
+          <Teaching_And_Learning_Methods>Lectures, computer exercises and computer projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Python can be a powerful language to tackle large-scale computational problems within scientific computing and related domains, when combined with specialized modules, like NumPy for numerical and scientific computations, and MPI4Py to scale out to clusters of computers.  However, understanding how to get good performance when using those modules is nontrivial. This course aims at developing the necessary skills to exploit the potential processing power on modern compute clusters and architectures.
+This course builds upon the skills acquired in the courses 02613 or 02614.  It gives an overview of existing software, methods and tools for large-scale modelling, and enables the students to work with large-scale problems in Scientific Computing and their implementation on modern compute clusters.
+The obtained knowledge will be applied in project work to model examples of large systems.</Course_Objectives>
+          <Remark>Implementation of programs in Python,  as well as the usage of HPC systems,  is an essential part of the course. Contact the responsible course teacher about the prerequisites.
+The course material consists of notes handed out by the lecturers.
+The course covers modelling and the interplay between the model and methods in HPC.
+The course is aimed at students from all master programs.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med numeriske beregninger.  Den studerende skal være kyndig i Python (specielt brug af klasser). Kendskab til Linux/Unix kommandolinjen og kodning af shell-scripts er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience with numerical computations. A student should be proficient in Python (especially class constructs).  Knowledge of the Linux/Unix command line, and programming of shell-scripts is an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02613/02614" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere performance af Scientific Computing problemer" />
+          <Txt Lang="en-GB" Txt="analyze the performance of Scientific Computing problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle parallelle programmer med MPI og Python" />
+          <Txt Lang="en-GB" Txt="develop parallel programs with MPI and Python" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og skrive parallelle koder for Scientific Computing problemer" />
+          <Txt Lang="en-GB" Txt="design and write parallel codes in Python for Scientific Computing problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende HPC metoder i modellering af store systemer" />
+          <Txt Lang="en-GB" Txt="apply HPC methods on large scale models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge værktøjer og biblioteker for at løse et problem" />
+          <Txt Lang="en-GB" Txt="make use of the right tools and libraries for a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="finde strategier til at gå fra små til store problemer" />
+          <Txt Lang="en-GB" Txt="find strategies when going from small to large problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe, udføre og evaluere computereksperimenter" />
+          <Txt Lang="en-GB" Txt="design, carry out and evaluate computational experiments " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende validerings teknikker" />
+          <Txt Lang="en-GB" Txt="apply validation techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="12" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:26.31" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

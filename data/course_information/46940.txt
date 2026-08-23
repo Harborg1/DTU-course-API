@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46940" Volume="2026/2027" University="dtu" LastUpdated="2026-03-16+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Avancerede energistyringssystemer for elbilflåder" />
+        <Title Lang="en-GB" Title="Advanced Energy Management Systems for EV Fleets" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Riso">
+          <LocationTxt Lang="da-DK" Txt="B330" />
+          <LocationTxt Lang="en-GB" Txt="B330" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="June 29 - July 3 2026 (week 27)" />
+          <Schedule_Txt Lang="en-GB" Txt="June 29 - July 3 2026 (week 27)" />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Vind" />
+        <Course_Responsible PersonKey="76711" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mattia</GivenName>
+            <FamilyName>Marinelli</FamilyName>
+            <Email>matm@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="202424" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Leoni</GivenName>
+            <FamilyName>Winschermann</FamilyName>
+            <Email>lewin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Documentation of experiments and final presentation" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Final presentation on last course day." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Afsluttende præsentation på kursets sidste dag." />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="01/06/2026" />
+            <DeadLineTxt Lang="en-GB" Txt="01/06/2026" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus omfatter design og styring af Energy Management Systems (EMS) for elbilflåder, fra kommunikation på lader‑niveau til storskala optimering.
+
+De studerende lærer om prognoser, fleksibilitetskarakterisering og avancerede EMS‑algoritmer understøttet af laboratorieeksperimenter.
+
+Kurset kombinerer teoretiske metoder med tværfagligt teamwork for at vurdere og præsentere elbilflåders påvirkning af elsystemet.</Contents>
+          <Teaching_And_Learning_Methods>a) Forberedelse: Læsestof forud for kurset samt korte quizzer.
+b) Forelæsninger: Gennemgang af teoretiske koncepter for energistyring af elbilflåder.
+c) Gruppearbejde/Laboratoriearbejde: Strukturerede eksperimenter med elbilladere på Risø i små grupper.
+d) Afsluttende præsentation: Fremlæggelse af resultater på kursets sidste dag.</Teaching_And_Learning_Methods>
+          <Course_Literature>De studerende vil få udleveret relevant forberedelsesmateriale og forventes at afsætte cirka én uges fuldtidsarbejde inden kursusstart.</Course_Literature>
+          <Course_Objectives>Overgangen til elektrisk mobilitet kræver avancerede styringsstrategier for at håndtere samspillet mellem elbilflåder og elsystemet.
+
+Dette kursus giver ph.d.-studerende det teoretiske fundament og de praktiske værktøjer, der er nødvendige for at designe, implementere og analysere Energy Management Systems (EMS) til aggregering af elbiler.
+
+Ved kursets afslutning vil de studerende kunne bevæge sig fra styring på lader‑niveau til optimering af hele flåden, under hensyntagen til netbegrænsninger, økonomiske faktorer og brugeradfærd.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course covers the design and control of Energy Management Systems for electric vehicle fleets, from charger‑level communication to large‑scale optimization. 
+
+Students learn forecasting, flexibility characterization, and advanced EMS algorithms supported by laboratory experimentation. 
+
+The course combines theoretical methods with interdisciplinary teamwork to assess and present the impact of EV fleets on the power system.</Contents>
+          <Teaching_And_Learning_Methods>a) Preparation: Reading up-front and quizzes.
+b) Lectures: Review of theoretical concepts of energy management for EV fleets
+c) Group/Lab work: Structured experiments with EV chargers at Risø in small groups.
+d) Final presentation of results.</Teaching_And_Learning_Methods>
+          <Course_Literature>Students will be provided with relevant preparatory material and are expected to dedicate approximately one week of full‑time effort prior to the start of the course.</Course_Literature>
+          <Course_Objectives>The transition to electric mobility requires sophisticated control strategies to manage the interaction between EV fleets and the power grid. 
+
+This course provides PhD students with the theoretical framework and practical tools necessary to design, implement, and analyze Energy Management Systems (EMS) for EV aggregation. 
+
+By the end of the course, students will be able to transition from low-level charger control to high-level fleet optimization, considering grid constraints, economic factors, and user behavior.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere de tekniske specifikationer og kommunikationsprotokoller, der kræves for aktiv styring af ladeinfrastruktur til elbiler." />
+          <Txt Lang="en-GB" Txt="Analyze the technical specifications and communication protocols required for active control of EV charging infrastructure." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere energistyringsteknikker til aggregering af elbilflåder, herunder estimering af State‑of‑Charge (SoC) og karakterisering af fleksibilitet." />
+          <Txt Lang="en-GB" Txt="Design and implement energy management techniques for EV fleet aggregation, including state-of-charge (SoC) estimation and flexibility characterization." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere elbilflåders påvirkning af distributionsnettet, f.eks. i forhold til flaskehalsstyring, prisoptimering og integration af vedvarende energi." />
+          <Txt Lang="en-GB" Txt="Evaluate the impact of EV fleet operations on the distribution grid (e.g., congestion management, price optimization, renewable tracking)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre eksperimentel test af EMS‑algoritmer i et laboratoriemiljø." />
+          <Txt Lang="en-GB" Txt="Conduct experimental testing of EMS algorithms in a laboratory environment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Syntetisere forskningsresultater i en teknisk præsentation og kritisk diskutere trade‑offs mellem forskellige styringsstrategier." />
+          <Txt Lang="en-GB" Txt="Synthesize research findings into a technical presentation and critically discuss the trade-offs between different management strategies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejde effektivt i tværfaglige teams om design og evaluering af EMS‑strategier." />
+          <Txt Lang="en-GB" Txt="Collaborate effectively in interdisciplinary teams to design and evaluate EMS strategies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og validere prædiktive modeller for elbilflåders adfærd." />
+          <Txt Lang="en-GB" Txt="Develop and validate predictive models for EV fleet behavior" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og løse avancerede optimeringsproblemer for storskala styring af elbilflåder." />
+          <Txt Lang="en-GB" Txt="Formulate and solve advanced optimization problems for large-scale EV fleet management" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="8" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-30" Time="09:48:52.24" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

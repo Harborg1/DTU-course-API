@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02611" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Optimering til datavidenskab" />
+        <Title Lang="en-GB" Title="Optimization for Data Science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="78666" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Martin Skovgaard</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>mskan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="81852" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Yiqiu</GivenName>
+            <FamilyName>Dong</FamilyName>
+            <Email>yido@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Opgaver udføres i små grupper (2-3 studerende) med en individuel komponent. Den endelige karakter baseres på en samlet evaluering af rapporter/opgaver og den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assignments are carried out in small groups (2-3 students) with an individual component. The final grade is based on an overall evaluation of reports/assignments and the written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Optimeringens rolle i datavidenskab (modelantagelser, afvejning mellem approksimations-, estimerings- og optimeringsfejl, reguleringsteknikker). Optimeringsteori (globale og lokale optimeringsmetoder, surrogatmodeller, optimalitetsbetingelser), konveks analyse (konvekse mængder og funktioner, konjugeret funktion, subdifferentiale) og problemtransformationer. Optimeringsproblemer og deres egenskaber (lineære/konvekse/ikke-lineære, glatte/ikke-glatte, kontinuerte/diskrete, ubegrænsede/begrænsede). Surrogatmodeller og lempelsesteknikker. Optimeringsalgoritmer (metoder af første orden, proximal-operator, quasi-Newton metoder, Newtons metode, stokastiske metoder, Bayesiansk optimering) og konvergensanalyse. Randomiseret numerisk lineær algebra og implementering af skalerbare løsningsmetoder til specifikke optimeringsproblemer inden for datavidenskab.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>Hansson &amp; Andersen, "Optimization for Learning and Control," Wiley, 2023. ISBN: 9781119809135.
+Wright &amp; Ma, "High-Dimensional Data Analysis with Low-Dimensional Models:
+Principles, Computation, and Applications," Cambridge University Press, 2022. ISBN: 9781108489737.</Course_Literature>
+          <Course_Objectives>Matematisk optimering anvendes til en bred vifte af opgaver inden for datavidenskab, såsom statistisk estimering, dimensionsreduktion, klyngedannelse, hyperparameter-bestemmelse og modeltræning. Dette kursus giver en dyb forståelse af den underliggende matematiske optimeringsteori, der spænder fra grundlæggende principper til state-of-the-art metoder og skalerbare løsningsteknikker, som er anvendelige på en række af optimeringsproblemer, der opstår inden for datavidenskab. Studerende vil endvidere opnå en forståelse af samspillet mellem optimering og datavidenskab samt evnen til at forstå og analysere de indre mekanismer i forskellige optimeringsalgoritmer, hvilket gør den studerende i stand til at skelne mellem styrker og svagheder ved forskellige problemformuleringer og løsningsmetoder.</Course_Objectives>
+          <Remark>Selv om optimering præsenteres her i en data science-kontekst, er dette primært et teoretisk fokuseret kursus. Vægten ligger på det matematiske grundlag, analyse af algoritmer og forståelse af principperne bag moderne optimeringsmetoder frem for anvendt programmering eller case-studier. Studerende bør være forberedt på en matematisk krævende behandling af emnet.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The role of optimization in data science (model assumptions, approximation-estimation-optimization trade-off, regularization techniques). Optimization theory (global and local optimizers, surrogate models, optimality conditions), convex analysis (convex sets and functions, conjugate function, subdifferential), and problem transformations. Optimization problems and their properties (linear/convex/nonlinear, smooth/nonsmooth, continuous/discrete, unconstrained/constrained). Surrogation and relaxation techniques. Optimization algorithms (first-order methods, proximal operator, quasi-Newton methods, Newton’s method, stochastic methods, Bayesian optimization) and convergence analysis. Randomized numerical linear algebra and implementation of scalable solution approaches for specific optimization problems encountered in data science.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and assignments</Teaching_And_Learning_Methods>
+          <Course_Literature>Hansson &amp; Andersen, "Optimization for Learning and Control," Wiley, 2023. ISBN: 9781119809135.
+Wright &amp; Ma, "High-Dimensional Data Analysis with Low-Dimensional Models:
+Principles, Computation, and Applications," Cambridge University Press, 2022. ISBN: 9781108489737.</Course_Literature>
+          <Course_Objectives>Mathematical optimization is used for a wide range of tasks within data science such as statistical estimation, dimensionality reduction, clustering, hyperparameter tuning, and model training. This course provides an in-depth understanding of the underlying mathematical optimization theory, ranging from foundational principles to state-of-the-art methods and scalable solution techniques that are applicable to a wide range of optimization problems that arise in the field of data science. The students will gain an understanding of the interplay between optimization and data science as well as the ability to understand and analyze the inner workings of different optimization algorithms, enabling them to discern the strengths and weaknesses of different problem formulations and solution methods.</Course_Objectives>
+          <Remark>Although optimization is presented here in the context of data science applications, this is primarily a theory-focused course. The emphasis is on mathematical foundations, analysis of algorithms, and understanding the principles behind modern optimization methods rather than on applied programming or case studies. Students should be prepared for a mathematically intensive treatment of the subject.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="kursus i lineær algebra og differential -og integralregning (f.eks. 01005/01006/01020 and 01025/01034/01035/01037), statistik (f.eks. 02402/02403), numeriske algoritmer (f.eks. 02601), og matematisk optimering (f.eks. 02610/02615). Godt kendskab til et højniveau-programmeringssprog som f.eks. Python, Julia eller MATLAB forventes. Kursus i sandsynlighedsteori (f.eks. 02405) anbefales men er ikke strengt nødvendigt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="coursework in calculus and linear algebra (e.g., 01005/01006/01020 and 01025/01034/01035/01037), statistics (e.g., 02402/02403), numerical algorithms (e.g., 02601), and mathematical optimization (e.g., 02610/02615). Proficiency in a high-level programming language such as Python, Julia, or MATLAB is expected. Coursework in probability theory (e.g., 02405) is recommended but not essential." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01005/01006/01020.01025/01034/01035/01037.02402/02403.02601.02610/02615" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare grundlæggende koncepter inden for konveks analyse, herunder konvekse mængder og funktioner, konjugerede funktioner og subdifferentierbarhed" />
+          <Txt Lang="en-GB" Txt="explain fundamental concepts in convex analysis, including convex sets and functions, conjugate functions, and subdifferentiability" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="karakterisere optimeringsproblemer baseret på deres matematiske egenskaber (f.eks. glatte/ikke-glatte, konvekse/ikke-konvekse, kontinuerte/diskrete, ubegrænsede/begrænsede) og genkende konsekvenserne af disse egenskaber for løsningsmetode" />
+          <Txt Lang="en-GB" Txt="characterize optimization problems based on their mathematical properties (e.g., smooth/nonsmooth, convex/nonconvex, continuous/discrete, unconstrained/constrained) and recognize the implications of these properties on problem-solving approaches" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulére optimeringsproblemer og udlede optimalitetsbetingelser og Lagrange-dualproblem" />
+          <Txt Lang="en-GB" Txt="formulate optimization problems and derive optimality conditions and Lagrange dual problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvordan ændringer i bibetingelser påvirker den optimale løsning" />
+          <Txt Lang="en-GB" Txt="explain how changes in constraints impact the optimal solution" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende surrogatmodeller" />
+          <Txt Lang="en-GB" Txt="apply surrogate models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare eksplicitte og implicitte reguleringsteknikker" />
+          <Txt Lang="en-GB" Txt="explain explicit and implicit regularization techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og anvende stokastiske optimeringsmetoder" />
+          <Txt Lang="en-GB" Txt="analyze and apply stochastic optimization methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere skalerbare algoritmer til at løse optimeringsproblemer inden for datavidenskab" />
+          <Txt Lang="en-GB" Txt="implement scalable algorithms for solving optimization problems within data science" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende strategier til bestemmelse af hyperparametre" />
+          <Txt Lang="en-GB" Txt="apply hyperparameter tuning strategies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenligne forskellige optimeringsalgoritmer og vurdere afvejninger med hensyn til konvergenshastighed, robusthed og skalerbarhed" />
+          <Txt Lang="en-GB" Txt="compare various optimization algorithms and evaluate trade-offs in terms of convergence speed, robustness, and scalability" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Optimization Techniques for Data Scientists</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="60" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:22.35" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

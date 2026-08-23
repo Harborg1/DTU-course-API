@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22053" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Principper for hjerne-computer interface" />
+        <Title Lang="en-GB" Title="Principles of Brain Computer Interface" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="58827" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Sadasivan Puthusserypady</GivenName>
+            <FamilyName>Kumaran</FamilyName>
+            <Email>sapu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter er baseret på en helhedsvurdering af tre komponenter:&#xD;&#xA;(i) Afsluttende mundtlig eksamen - 40% vægt&#xD;&#xA;(ii) Gruppeprojekt (maks. 2 studerende) med en endelig rapport og præsentation - 40% vægt&#xD;&#xA;(iii) Seminar/Præsentation af forskningsartikler - 20% vægt" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on an overall assessment of three components:&#xD;&#xA;(i) Final oral examination - 40% weight&#xD;&#xA;(ii) Group project (2 students max) with a final report and presentation - 40% weight&#xD;&#xA;(iii) Seminar/paper presentation - 20% weight" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Hjerne-Computer Interface, baseret på forskellige typer af EEG, vil blive gennemgået i form af forelæsninger, diskussioner samt praktiske og teoretiske læringsmetoder. De studerende vil blive bedt om at præsentere en videnskabelig artikel. Et BCI-design gruppeprojekt (grupper på 2), baseret på tilgængelige BCI data eller nye data, vil afsluttes med en endelig rapport og en præsentation.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger
+Øvelser
+Studerendes præsentationer af videnskabelige artikler
+Gruppearbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet er at opnå en grundlæggende forståelse for Hjerne-Computer Interface (BCI: Computer-baserede systemer, der registrerer, afkoder og oversætter målbare neurofysiologiske signaler til kommandoer til outputenheder for at udføre en handling uden nogen muskulær aktivering). Dette opnås ved at inkorporere realtid signalbehandlingsmetoder til udtræk af relevante karakteristika (feature extraction) og klassificering i EEG (elektroencefalografi)-baserede BCI'er.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Brain-Computer Interface based on different types of EEGs will be covered in the form of lectures, discussions, practical and theoretical learning methods.  The students will be asked to present a scientific article. A BCI design group project (group of 2) using the available BCI data or new data will be completed with a final report and a presentation.</Contents>
+          <Teaching_And_Learning_Methods>Lectures
+Exercises
+Student presentation of scientific articles
+Group project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The objective is to obtain basic understanding of Brain Computer Interface (BCI: Computer-based systems that record, decode and translate measurable neurophysiological signals into commands for output devices to perform an action without any muscular activation). This is achieved by incorporating real-time signal processing methods for the feature extraction and classification in EEG (electroencephalography)-based BCIs.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Karakterisere neurofysiologiske EEG-markører for mental aktivitet, herunder sensorimotoriske rytmer (Mu/Beta), P300-potentialer og steady-state visuelt evokerede potentialer (SSVEP)." />
+          <Txt Lang="en-GB" Txt="Characterize neurophysiological EEG markers of mental activity, including sensorimotor rhythms (Mu/Beta), P300 potentials, and steady-state visual evoked potentials (SSVEP)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere arkitekturen af forskellige BCI-systemer og neurale proteser, samt sammenligne signalopsamlingsmetoder og deres anvendelse til genopretning af motorik og kommunikation." />
+          <Txt Lang="en-GB" Txt="Evaluate the architecture of various BCI systems and neural prostheses, comparing signal acquisition methods and their application in motor and communication restoration." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende signalbehandlingsteknikker til konditionering af EEG-data ved hjælp af tidsfiltre og spatiale forbedringsmetoder for at mindske okulære og myogene artefakter." />
+          <Txt Lang="en-GB" Txt="Apply signal processing techniques to condition EEG data, utilizing temporal filters and spatial enhancement methods to mitigate ocular and myogenic artifacts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere robuste pipelines til feature-ekstraktion ved brug af metoder som Common Spatial Patterns (CSP), estimering af båndeffekt og tid-frekvens-analyse." />
+          <Txt Lang="en-GB" Txt="Engineer robust feature extraction pipelines using methods such as Common Spatial Patterns (CSP), band power estimation, and time-frequency analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og validere machine learning-arkitekturer til klassifikation af mentale tilstande og motorisk intention ud fra højdimensionelle, ikke-stationære neurale data." />
+          <Txt Lang="en-GB" Txt="Implement and validate machine learning architectures to classify mental states and motor intent from high-dimensional, non-stationary neural data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere realtids-dataopsamling, online-processering og kontrollogik til at opbygge et funktionelt, lukket-sløjfe (closed-loop) brain-computer interface-system." />
+          <Txt Lang="en-GB" Txt="Integrate real-time data acquisition, online processing, and control logic to build a functional, closed-loop brain-computer interface system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Syntetisere state-of-the-art forskning kritisk gennem gennemgang og præsentation af peer-reviewede videnskabelige artikler om nye BCI-paradigmer." />
+          <Txt Lang="en-GB" Txt="Critically synthesize state-of-the-art research by reviewing and presenting peer-reviewed scientific articles on emerging BCI paradigms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere BCI-teknologiens udvikling med fokus på etiske overvejelser, langsigtet stabilitet og overgangen fra laboratorie- til kliniske miljøer." />
+          <Txt Lang="en-GB" Txt="Discuss the trajectory of BCI technology, focusing on ethical considerations, long-term stability, and the transition from laboratory to clinical environments." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte GenAI til at designe og optimere neurale klassifikationsmodeller, samt validere AI-modeller mod de specifikke fysiologiske begrænsninger og signal-støj-forhold i BCI-data." />
+          <Txt Lang="en-GB" Txt="Utilize GenAI to architect and optimize neural classifiers, validating AI models against the specific physiological and signal-to-noise constraints of BCI data." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="22052.02450.02460" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Medicine and Technology</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="31567" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:58.337" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

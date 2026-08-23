@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34752" Volume="2026/2027" University="dtu" LastUpdated="2026-04-07+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Bio-inspireret styring af robotter" />
+        <Title Lang="en-GB" Title="Bio-inspired control for robots" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="102697" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Silvia</GivenName>
+            <FamilyName>Tolu</FamilyName>
+            <Email>stolu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Studerende skal aflevere to noter baseret på øvelser udført i løbet af den første og anden uge. Noterne er en forudsætning for at bestå kurset.&#xD;&#xA;&#xD;&#xA;Derudover skal de arbejde på et projekt, hvis endelige resultater inkluderer en poster og en demo. Den endelige evaluering tager udgangspunkt i den mundtlige præsentation af poster og demo på kursets sidste dag.&#xD;&#xA;&#xD;&#xA;Hvis en studerende ikke deltager i projektet, skal de aflevere en individuel rapport, som vurderes sammen med de to noter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Students have to submit two notes based on exercises completed during the first and second weeks. The notes are a prerequisite to passing the course.&#xD;&#xA;Additionally, they will work on a project whose outcomes include a poster and a demo. Final assessment will consider the oral presentation of the poster and demo on the final day of the course.&#xD;&#xA;&#xD;&#xA;If a student does not participate in the project, they are required to submit an individual report that will be assessed together with the two notes." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til neuro-robotics og anvendelser. Dette kursus betragter tre grundlæggende emner og deres sammenspil:
+1. Neuralvidenskab
+Hjernedele og deres funktioner
+Motorisk hierarki i kontrollerede bevægelser
+Grundlæggende om neurale netværk
+Motorisk kontrol
+2. Neural databehandling og AI
+Elektrisk signaloverførsel i og imellem neuroner
+Biologiske og kunstige neuronmodeller
+Grundlæggende om neurale netværk
+3. Regulering
+Bio-inspirerede reguleringsprincipper
+Bio-efterlignende reguleringsblokke til robotter
+Lillehjerne-lignende reguleringsmodeller
+Bio-inspirerede anvendelser til robotter</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppeopgaver og øvelser (Python, brug af en fysisk modulær robot) og poster præsentationer.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus er for viderekomne som er tilrettelagt for at undersøge banebrydende problemer indenfor robotteknologi og biologi. Kurses præsenterer principper fra forskellige forskningsområder: robotteknik, AI, biologi og computationel neurovidenskab. Målet er at 1. fremme forståelsen af koncepter, metoder og værktøjer anvendt indenfor feltet neuro-robotics, 2. muliggøre analyse af simple hjernebaserede modeller til regulering af robotsystemer, og 3. lette anvendelsen af værktøjer til regulering af robotsystemers dynamiske respons. Efter endt kursus vil studerende være i stand til at fremlægge et forskningsproblem, beskrive det, samt udtrykke idéer og løsninger.</Course_Objectives>
+          <Remark>Kurset er et relevant teknologisk specialiseringskursus.
+E-læring anvendes i form af f.eks. online quizzer, online diskussioner eller blogs.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course regards three main core areas and its intersection: 
+1. Neural science
+Brain areas and their functions
+Motor hierarchy for voluntary movements
+Principles of neural networks
+Motor control
+2. Neural processing
+Electrical signal transmission in neurons and between neurons
+Neuronal biological and artificial models
+Neural Network computing
+3. Control 
+Bio-inspired control principles
+Biomimetic control blocks for robots 
+Cerebellar control models
+Bio-inspired robotic applications</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group assignment and exercises (coding in Python, use of a physical modular robot), and poster presentations.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course is designed to investigate cutting-edge problems in brain-inspired intelligent robotics. It presents principles from different fields: robotics, AI, biology, and computational neuroscience. 
+
+The aim is to facilitate the:
+1. Understanding of concepts, methods, and tools used in the field of Neuro-robotics,
+2. Analysis of simple brain-based models for control of robotic systems, and 
+3. Use of traditional and bio-inspired tools to control the dynamic behavior of robotic systems.
+
+By the end of the course, the students will be able to propose a research problem, to describe it, and promote their ideas and solutions.</Course_Objectives>
+          <Remark>The course is a relevant technological specialisation course.
+E-learning is used in the form of e.g., on-line quiz, online discussions, or blogs.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Python-programmering og grundlæggende maskinlæring" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Python programming and basics of Machine Learning" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(34721/34722/34745).34753.(02631/02632/02633)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere opdelingen og funktionen af det motoriske hierarki;" />
+          <Txt Lang="en-GB" Txt="Relate the organization and function of the motor hierarchy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende matematiske modeller og analysere den neurologiske databehandling;" />
+          <Txt Lang="en-GB" Txt="Use a mathematical model and analyze the information processing by neurons" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare lillehjernens rolle i kontrollerede bevægelser" />
+          <Txt Lang="en-GB" Txt="Explain the role of the cerebellum to voluntary movements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge viden fra lillehjerne-relateret reguleringsteori til evaluering af en robotopgave" />
+          <Txt Lang="en-GB" Txt="Utilize knowledge from cerebellar control theory in the assessment of robotics tasks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og bygge simple neurale netværk" />
+          <Txt Lang="en-GB" Txt="Design and build simple neural networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende matematiske modeller og data til at designe og bygge simple neurale netværk" />
+          <Txt Lang="en-GB" Txt="Determine the bio-inspired control loop to be implemented for a specific case-study" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere bio-inspireret regulering til robotter" />
+          <Txt Lang="en-GB" Txt="Design and implement basic bio-inspired control loops for robots" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv et forskningsproblem, fremme idéer og teknologiske løsninger" />
+          <Txt Lang="en-GB" Txt="Describe a research problem, promote ideas and technological solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31377" />
+        <PreviousCourse CourseCode="31377" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="20" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="60" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="30" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="75" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:53.547" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

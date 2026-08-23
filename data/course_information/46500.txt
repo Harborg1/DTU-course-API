@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46500" Volume="2026/2027" University="dtu" LastUpdated="2026-04-20+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Probabilistiske Metoder i Vindenergi" />
+        <Title Lang="en-GB" Title="Probabilistic Methods in Wind Energy" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="26205" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Nikolay</GivenName>
+            <FamilyName>Dimitrov</FamilyName>
+            <Email>nkdi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="49874" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mark C.</GivenName>
+            <FamilyName>Kelly</FamilyName>
+            <Email>mkel@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="170661" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Moritz Johann</GivenName>
+            <FamilyName>Gräfe</FamilyName>
+            <Email>mograf@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="79485" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tuhfe</GivenName>
+            <FamilyName>Göçmen</FamilyName>
+            <Email>tuhf@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Alle opgaver skal være afleveret &amp; bestået. Karakteren for kurset er baseret på den mundtlige eksamen, endelige projektrapport og en øvelse (helhedsvurdering).&#xD;&#xA;Mundtlig eksamen består af en kort præsentation af endelige rapport &amp; besvarelse af spørgsmål." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="All assignments must be handed in and passed. The grade of the course is based on the oral exam, final project report and one selected exercise (overall assessment).&#xD;&#xA;Oral exam consists of a short presentation of final report and answering of questions." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Kort mundtlig præsentation af eksamensprojekt og svar på spørgsmål (ca. 20min)" />
+          <Duration Lang="en-GB" Txt="Short oral presentation of final project and answering questions (about 20min)" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>1) Introduktion til statistik og sandsynlighedsteori i vindenergi fagområdet igennem praktisk applikation af målte data.
+- Stikprøve statistikker. Students t-fordeling. Central grænseværdi sætning. Konfidensintervaller. Bootstrapping metode.
+- Statistiske fordelinger: egenskaber, estimering af parametre. Multivariate fordelinger. 
+- Fordeling af ekstremer. Statistisk ekstrapolation - eksempel med ekstrapolering af ekstreme vindhastigheder og ekstreme laster.
+2) Introduktion til data modellering:
+- Introduktion til machine learning. Regressionmodeller med usikkerhed. Estimering af modelparametre: mindste kvadrater og max-likelihood metoder. Bayesiansk opdatering. Øvelse med machine learning for modeller for estimering af laster. 
+- Generering af data. Design af statistiske eksperimenter samt Monte Carlo-metoden.
+- Usikkerhedskvantificering (UQ) og formering. Variansbaseret sensitivitetsanalyse. Øvelser om UQ.
+- Vindmølle SCADA data eksempel - filtrering og muligheder for data-drevet analyse.
+3) Strukturpålidelighed og probabilistisk design
+- Grænseværdier. Koncept for strukturel pålidelighedsanalyse. Øvelser med FORM og Monte Carlo metoderne.
+4) Risikoanalyse, beslutningsteori og deres brug til at evaluere præstationen af machine learning værktøj.
+5) Data science - slutprojekt
+- Arbejde selvstændigt på et data-science projekt. Projektets emne kan vælges imellem flere foruddefinerede valgmuligheder, eller ny specielt emne kan defineres.
+- Præsentation af de studerendes endelige projekter. Peer diskussioner og forslag til forbedringer.
+
+Kurset begynder med en introduktion til den grundlæggende teori inclusiv øvelser. Klasseaktiviteterne er suppleret med digitale ressourcer som videoer og Python-notebooks. Øvelserne involverer Python-coding. De studerende får støtte til at opsætte deres programmeringsmiljøer, herunder anbefalinger til AI-assisteret kodningspraksis. De studerende bliver også introduceret til kravene til det endelige projekt og får adgang til projekter fra tidligere år. I løbet af de første uger fokuserer det praktiske arbejde på en række relaterede øvelser der fremhæver processen af probabilistisk design. Resultaterne fra disse øvelser afleveres som en kort rapport, og de studerende vil modtage løbende feedback. Bagefter begynder arbejdet på projektopgaven, individuelt eller i grupper på 2 til 3. Disse opgaver sigter mod løsninger af virkelige tekniske udfordringer ved brug af data science og andre værktøj introduceret i kurset. Emnet for opgaven kan vælges imellem flere foruddefinerede eksempler, men de studerende kan også definere deres eget emne så længe det er relateret til kursets indhold. Derefter presenteres projektemnerne for de andre kursusdeltagere. Under resten af kurset deltager de studerende sideløbende i forelæsninger og arbejder på deres egne projekter. Ved afslutningen af kurset vil de studerende lave en præsentation af resultaterne af deres projekt, og aflevere en rapport som indholder deres opgaver.</Contents>
+          <Teaching_And_Learning_Methods>Lektier, øvelser og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Ding, Yu, Data Science for Wind Energy, Chapman &amp; Hall / CRC (2020)
+
+Madsen H.O., Krenk, S., Lind, N. C., Methods of Structural Safety, Dover Publications Inc., Mineola, New York (2006)</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at lære de grundlæggende principper i statistisk modellering og dataanalyse i forbindelse med vindenergi. De studerende anvender probabilistiske metoder og machine learning værktøjer til forskellige problemstillinger fra vindenergi.</Course_Objectives>
+          <Remark>Der anbefales, at kurset tages i det tredje semester af kandidatstudiet.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>1) Introduction to statistics and probability theory in the context of wind engineering using hands-on applications on measured data:
+- Sample statistics. Student’s T-distribution. Central limit theorem. Confidence intervals. Bootstrapping. Application on measured wind speed data.
+- Probability distributions: properties, estimation of parameters. Multivariate distributions. 
+- Distribution of extremes. Statistical extrapolation - applications on extreme wind speeds and extreme loads.
+2) Introduction to data modelling:
+- Machine learning basics. Introduction to regression models with uncertainty. Estimation of model parameters: least-squares and maximum-likelihood methods. Introduction to Bayesian updating. Exercise on machine learning for training load surrogate models.  
+- Data generation: design of experiments and the Monte Carlo method
+- Uncertainty Quantification and propagation. Variance-based sensitivity analysis. Exercises on UQ. 
+- Wind turbine SCADA data example - filtering and data-driven analysis possibilities.
+3) Structural reliability and probabilistic design
+- Limit states. Concept of reliability analysis. Exercises with FORM and Monte Carlo methods.
+4) Engineering risk analysis. Decision theory and its use to evaluate the performance of machine learning applications. 
+5) Data science final project
+- Work independently on a data science project. The project topic can be freely selected from several predefined options or a new special topic can be defined.
+- Presentation of the students' projects. Peer discussions and suggestions for improvements.
+
+The course begins with lectures and exercises introducing the basic concepts. The lectures are supplemented with digital learning resources such as videos and Python notebooks. The exercises consist of dedicated Python programming sessions. The students get support in setting up their programming environments, including recommendations on AI-assisted coding practices. Students are also introduced to the requirements for the final project and are given access to student projects from previous years. During the first several weeks, the hands-on work focuses on completing a series of interconnected exercises that showcase parts in the process of probabilistic design. The results from these exercises are submitted as a short report and students will receive ongoing feedback. Afterwards, the students will begin working on a project assignment, individually or in groups of 2 to 3 students. These assignments aim at solving actual engineering challenges using data science and other tools introduced during the course. The topic of the assignment can be selected out of several predefined examples, but the students are also encouraged to specify their own topic related to the course contents. At the end of the course, the students will make a presentation of the results of their project, and submit a report containing their assignments.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Ding, Yu, Data Science for Wind Energy, Chapman &amp; Hall / CRC (2020)
+
+Madsen H.O., Krenk, S., Lind, N. C., Methods of Structural Safety, Dover Publications Inc., Mineola, New York (2006)</Course_Literature>
+          <Course_Objectives>The purpose of the course is to learn the basics of statistical modeling and data analysis in the context of wind engineering and structural engineering design applications. The students are provided with the opportunity to apply probabilistic methods and machine learning to different examples from wind energy.</Course_Objectives>
+          <Remark>It is recommended that the course is taken during the third semester of the M.Sc. study.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Baggrundsviden i statistik og sandsynlighedsteori anbefales, svarende til indholdet af kurserne 02402 og 02406. Det antages også, at de studerende er bekendt med grundlæggende vindenergi emner svarende til kurset 46300, og er i stand til at bruge programmeringssproget Python. På baggrund af disse forudsætninger, der anbefales at kurset tages i løbet af det andet år i kandidatstudierne." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Background knowledge in statistics and probability is recommended, similar to the content of the courses 02402 and 02406. It is also assumed that the students are already familiar with basic wind energy topics as the ones taught in course 46300, and are able to use the Python programming language. Based on these requirements, it is recommended that the course is taken during the second year of M.Sc. studies." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46300" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre statistisk analyse af målte vindhastighed tidsserier og data fra SCADA (supervisory control and data acquisition) systemer" />
+          <Txt Lang="en-GB" Txt="Carry out statistical analysis of measured wind speed time series and SCADA (supervisory control and data acquisition) system data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende sandsynlighedsfordelinger og stokastiske variable ved løsningen af  ingeniørmæssige problemer" />
+          <Txt Lang="en-GB" Txt="Apply probability distributions and random variables in structural engineering problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere, kalibrere, og på systematisk vis vurdere statistiske modeller ved hjælp af simple machine learning værktøj." />
+          <Txt Lang="en-GB" Txt="Formulate, calibrate and systematically evaluate statistical engineering models using basic machine learning tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre usikkerheds-kvantificering og opformering ved almindeligt anvendte probabilistiske modeller" />
+          <Txt Lang="en-GB" Txt="Apply uncertainty quantification and propagation on commonly used probabilistic models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare konceptet af risikoanalyse og udføre simple risikobaserede beslutningsanalyser" />
+          <Txt Lang="en-GB" Txt="Explain the concept of engineering risk and apply simple risk-based decision analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Uddrag nyttige indsigter fra data ved at anvende maskinindlæring og beslutningsmodelleringsværktøjer" />
+          <Txt Lang="en-GB" Txt="Extract useful insights from data using machine learning and decision modeling tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan information om usikkerheder samt probabilistiske modeller kan anvendes ved design af vindmøller" />
+          <Txt Lang="en-GB" Txt="Explain how information about uncertainty and probabilistic modelling techniques can be utilized in wind turbine design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udforsk AI(LLM)-assisteret kodning i udvalgte datadrevne vindenergiapplikationer og forklar dens anvendelse i kodegenerering, validering og dokumentation" />
+          <Txt Lang="en-GB" Txt="Explore AI(LLM)-assisted coding in selected data-driven wind energy applications and explain its use in code generation, validation and documentation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend de metoder, der er dækket i kurset, på relevante vindenergiproblemer såsom pålidelighedsanalyse, anomalidetektion, tidsserieanalyse og prognoser." />
+          <Txt Lang="en-GB" Txt="Apply the methodologies covered in the course on relevant wind energy problems such as reliability analysis, anomaly detection, time series analysis and forecasting." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør realistisk problemløsning i en selvstændig måde: at identificere og beskrive et relevant problem, finde passende metoder, udføre og demonstrere løsningens holdbarhed." />
+          <Txt Lang="en-GB" Txt="Independently carry out the process of real-world problem solving: identifying and describing a relevant problem, finding appropriate methods, executing, and demonstrating the viability of the solution" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til statistiske metoder anvendt i vindenergi</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="48" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:41.713" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>
