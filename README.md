@@ -22,7 +22,7 @@ Kursusdata hentes som struktureret XML, valideres og gemmes lokalt. API-laget br
 
 ## Officiel datakilde
 
-Kursusnumre og kursusdata hentes fra DTU Kursusbasens officielle `CourseWebServiceV2`. `GetCourse` leverer de årgangsspecifikke kursusdata som XML, som gemmes uden HTML-parsing. Felter markeret med `Lang="da-DK"` og `Lang="en-GB"` importeres som separate rækker i `course_translations`. Ingen uofficiel database bruges.
+Kursusnumre og kursusdata hentes fra DTU Kursusbasens officielle `CourseWebServiceV2`. `GetCourse` leverer de årgangsspecifikke kursusdata som XML, som gemmes uden HTML-parsing. Felter markeret med `Lang="da-DK"` og `Lang="en-GB"` importeres som separate rækker i `course_translations`, mens kursusnumrene fra `DTU_CoursesTxt` gemmes struktureret i `recommended_prerequisite_course_numbers`. Ingen uofficiel database bruges.
 
 ## Hurtig start med Docker
 

@@ -52,6 +52,9 @@ class Course(Base):
     responsible_people: Mapped[list[dict]] = mapped_column(StructuredJson, nullable=False, default=list)
     examinations: Mapped[list[dict]] = mapped_column(StructuredJson, nullable=False, default=list)
     no_credit_with: Mapped[list[str]] = mapped_column(StructuredJson, nullable=False, default=list)
+    recommended_prerequisite_course_numbers: Mapped[list[str]] = mapped_column(
+        StructuredJson, nullable=False, default=list
+    )
     source_url: Mapped[str] = mapped_column(Text, nullable=False)
     source_last_updated: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     imported_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), nullable=False)

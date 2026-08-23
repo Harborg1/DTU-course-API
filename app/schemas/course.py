@@ -61,6 +61,7 @@ class CourseData(BaseModel):
     responsible_people: list[dict] = Field(default_factory=list)
     examinations: list[dict] = Field(default_factory=list)
     no_credit_with: list[str] = Field(default_factory=list)
+    recommended_prerequisite_course_numbers: list[str] = Field(default_factory=list)
     source_url: str
     source_last_updated: datetime | None = None
 
@@ -159,6 +160,9 @@ class CourseDetail(ApiModel):
     responsible_people: list[dict] = Field(alias="responsiblePeople")
     examinations: list[dict]
     no_credit_with: list[str] = Field(alias="noCreditWith")
+    recommended_prerequisite_course_numbers: list[str] = Field(
+        alias="recommendedPrerequisiteCourseNumbers"
+    )
     source_url: str = Field(alias="sourceUrl")
     source_last_updated: datetime | None = Field(default=None, alias="sourceLastUpdated")
     imported_at: datetime = Field(alias="importedAt")

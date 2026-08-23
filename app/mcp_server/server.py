@@ -229,6 +229,9 @@ def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
             "schedule": course.schedule,
             "campus": course.campus,
             "prerequisites": localized_prerequisites,
+            "recommended_prerequisite_course_numbers": (
+                course.recommended_prerequisite_course_numbers
+            ),
             "mandatory_prerequisites": course.mandatory_prerequisites,
             "exam": course.exam,
             "evaluation": course.evaluation,

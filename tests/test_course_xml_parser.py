@@ -26,6 +26,12 @@ def test_parses_bilingual_course_xml():
     assert course.learning_objectives_en == "Evaluate machine-learning models."
     assert course.prerequisites_da == "Lineær algebra og Python."
     assert course.prerequisites_en == "Linear algebra and Python."
+    assert course.recommended_prerequisite_course_numbers == [
+        "01017",
+        "02101",
+        "02105",
+        "02180",
+    ]
 
 
 def test_parses_structured_course_metadata():
@@ -37,6 +43,12 @@ def test_parses_structured_course_metadata():
     assert course.responsible_people[0]["name"] == "Georgios Arvanitidis"
     assert course.examinations[0]["assessment_key"] == "Written_Exam_And_Exercises"
     assert course.no_credit_with == ["02450", "02451"]
+    assert course.recommended_prerequisite_course_numbers == [
+        "01017",
+        "02101",
+        "02105",
+        "02180",
+    ]
     assert course.source_last_updated.isoformat() == "2026-03-26T00:00:00+01:00"
 
 
@@ -65,3 +77,9 @@ def test_imports_saved_xml_idempotently(db_session, tmp_path):
     assert second.courses_unchanged == 1
     assert course.content_da == "Struktureret datamodellering og beslutningstræer."
     assert course.content_en == "Structured data modelling and decision trees."
+    assert course.recommended_prerequisite_course_numbers == [
+        "01017",
+        "02101",
+        "02105",
+        "02180",
+    ]

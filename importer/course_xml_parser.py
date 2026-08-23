@@ -7,6 +7,7 @@ from app.schemas.course import CourseData
 
 
 SPACE_RE = re.compile(r"\s+")
+COURSE_NUMBER_RE = re.compile(r"(?<![A-Z0-9])([A-Z0-9]{5})(?![A-Z0-9])")
 LANGUAGES = {"da-DK": "da", "en-GB": "en"}
 LEVELS = {
     "DTU_BSC": ("BSc", "Bachelor"),
@@ -94,6 +95,18 @@ def _objective_keywords(course: ElementTree.Element) -> dict[str, str]:
 
 def _localized_prerequisites(course: ElementTree.Element, tag: str) -> dict[str, str]:
     return _localized_attributes(course, tag, "Txt")
+
+
+def _recommended_prerequisite_course_numbers(course: ElementTree.Element) -> list[str]:
+    numbers: list[str] = []
+    seen: set[str] = set()
+    for element in _elements(course, "DTU_CoursesTxt"):
+        expression = (element.get("Txt") or "").upper()
+        for number in COURSE_NUMBER_RE.findall(expression):
+            if number not in seen:
+                numbers.append(number)
+                seen.add(number)
+    return numbers
 
 
 def _parse_last_updated(value: str | None) -> datetime | None:
@@ -297,6 +310,9 @@ def parse_course_xml(content: bytes | str) -> CourseData:
         responsible_people=people,
         examinations=examinations,
         no_credit_with=_no_credit_with(course),
+        recommended_prerequisite_course_numbers=(
+            _recommended_prerequisite_course_numbers(course)
+        ),
         source_url=f"https://kurser.dtu.dk/course/{academic_year}/{course_number}",
         source_last_updated=_parse_last_updated(course.get("LastUpdated")),
     )

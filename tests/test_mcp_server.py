@@ -239,6 +239,7 @@ def test_get_course_handler_includes_responsible_people_without_http(db_session)
                 {"name": "Georgios Arvanitidis", "email": "gear@dtu.dk", "primary": True},
                 {"name": "Morten Mørup", "email": "mmor@dtu.dk", "primary": False},
             ],
+            recommended_prerequisite_course_numbers=["01017", "02101", "02105", "02180"],
         )
     )
     db_session.commit()
@@ -256,6 +257,12 @@ def test_get_course_handler_includes_responsible_people_without_http(db_session)
     assert content["course_responsible"] == "Georgios Arvanitidis"
     assert content["teachers"] == "Georgios Arvanitidis, Morten Mørup"
     assert content["responsible_people"][1]["email"] == "mmor@dtu.dk"
+    assert content["recommended_prerequisite_course_numbers"] == [
+        "01017",
+        "02101",
+        "02105",
+        "02180",
+    ]
 
 
 def test_get_course_not_found_returns_error(test_client):
