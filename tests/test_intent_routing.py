@@ -2,7 +2,7 @@
 
 import pytest
 
-from app.models.course import Course
+from app.models.course import Course, CourseTranslation
 from app.models.study_plan import StudyProgram
 from app.services.intent_service import (
     CourseQAIntent,
@@ -211,8 +211,6 @@ class TestRecommendCoursesIntentRouting:
             Course(
                 course_number="02450",
                 academic_year="2026-2027",
-                title="Introduction to Machine Learning",
-                title_en="Introduction to Machine Learning",
                 ects=5,
                 level="MSc",
                 course_type="MSc",
@@ -221,10 +219,16 @@ class TestRecommendCoursesIntentRouting:
                 period="E",
                 schedule="E2A",
                 campus="Campus Lyngby",
-                description="Supervised learning",
-                content="machine learning",
                 source_url="https://kurser.dtu.dk/course/2026-2027/02450",
                 content_hash="a" * 64,
+                translations=[
+                    CourseTranslation(
+                        language_code="en-GB",
+                        title="Introduction to Machine Learning",
+                        description="Supervised learning",
+                        content="Machine learning",
+                    )
+                ],
             ),
         ])
         db_session.commit()

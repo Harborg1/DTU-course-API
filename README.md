@@ -18,11 +18,11 @@ Web-chat MCP  Beskyttet REST API
         Groq    Copilot Studio
 ```
 
-Kursusdata hentes som struktureret XML, valideres og gemmes lokalt. API-laget bruger services og dependency-injected SQLAlchemy-sessions. PostgreSQLs genererede `tsvector` vægter titler som A, beskrivelse og indhold som B samt læringsmål og forudsætninger som C.
+Kursusdata hentes som struktureret XML, valideres og gemmes lokalt. API-laget bruger services og dependency-injected SQLAlchemy-sessions. `courses` indeholder kun sprogneutrale metadata, mens `course_translations` har én række per kursus og sprog. Hver oversættelse har et sprogtilpasset `tsvector`-indeks, så en dansk forespørgsel kun søger i danske kursustekster og en engelsk forespørgsel kun i engelske.
 
 ## Officiel datakilde
 
-Kursusnumre og kursusdata hentes fra DTU Kursusbasens officielle `CourseWebServiceV2`. `GetCourse` leverer de årgangsspecifikke kursusdata som XML, som gemmes uden HTML-parsing. Ingen uofficiel database bruges.
+Kursusnumre og kursusdata hentes fra DTU Kursusbasens officielle `CourseWebServiceV2`. `GetCourse` leverer de årgangsspecifikke kursusdata som XML, som gemmes uden HTML-parsing. Felter markeret med `Lang="da-DK"` og `Lang="en-GB"` importeres som separate rækker i `course_translations`. Ingen uofficiel database bruges.
 
 ## Hurtig start med Docker
 
@@ -94,8 +94,12 @@ python scripts/get_all_course_numbers.py --catalog-version 2026/2027
 # Gem kursusnumrene i en fil
 python scripts/get_all_course_numbers.py --catalog-version 2026/2027 > course_numbers.txt
 
-# Gem GetCourse XML for hvert kursus i data/course_information/
+# Gem GetCourse XML for hvert kursus i app/data/course_information/
 python scripts/get_all_course_information.py --year-group 2026/2027
+
+# Opret/opgradér courses-tabellen og importér de gemte XML-filer
+alembic upgrade head
+python -m importer.course_xml_cli --academic-year 2026-2027
 ```
 
 ### Studieplaner
@@ -127,7 +131,7 @@ Chatten genkender derefter spørgsmål som “Jeg studerer Anvendt Matematik –
 opbygget, og hvilke kurser er obligatoriske?” og returnerer både en forklaring og et struktureret
 `studyPlan`-objekt.
 
-Slutrapporten viser discovered, imported, updated, unchanged og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
+Kursusimportens slutrapport viser discovered, imported, updated, unchanged og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
 
 ## API
 
@@ -144,12 +148,13 @@ Alle `/api/v1`-endpoints kræver `X-API-Key`. `/health` er offentlig. Pagination
 | `GET /api/v1/courses/{course_number}` | Komplet kursus for valgt årgang |
 | `GET /api/v1/import/status` | Kursusantal, seneste import og fejlantal |
 
-Search understøtter `q`, `academic_year`, `ects`, `level`, `period`, `schedule`, `department`, `language`, `campus`, `limit` og `offset`. Niveau normaliseres til blandt andet `BSc`, `MSc` og `PhD`; sprog normaliseres til blandt andet `Danish` og `English`.
+Search understøtter `q`, `academic_year`, `search_language`, `ects`, `level`, `period`, `schedule`, `department`, `language`, `campus`, `limit` og `offset`. `search_language` er `da` eller `en` og vælger det tilsvarende full-text-indeks; uden parameteren detekteres sproget fra `q`. `language` er fortsat et separat filter for undervisningssproget.
 
 ```bash
 curl -G http://localhost:8000/api/v1/courses/search \
   -H "X-API-Key: $API_KEY" \
   --data-urlencode "q=machine learning" \
+  --data-urlencode "search_language=en" \
   --data-urlencode "academic_year=2026-2027" \
   --data-urlencode "ects=5" \
   --data-urlencode "period=E"
@@ -162,14 +167,14 @@ Søgeresultater indeholder kun kompakte felter, højst 500 tegn af beskrivelsen,
 
 ## Tests
 
-Tests bruger gemte, reducerede HTML-fixtures baseret på verificerede bachelor- og kandidatsider for
+Tests bruger gemte, reducerede XML-fixtures til kurser og HTML-fixtures til studieplaner for
 2026/2027 og laver ingen live requests:
 
 ```bash
 pytest -q
 ```
 
-De dækker parservariationer, manglende valgfrie felter, forkert studieår, søgning, filtre, pagination, detailvisning, 404, API-key, UPSERT, dubletter og importfejl.
+De dækker blandt andet tosproget XML-parsing, sprogopdelt søgning, manglende valgfrie felter, forkert studieår, filtre, pagination, detailvisning, 404, API-key, UPSERT, dubletter og importfejl.
 
 ## Copilot Studio og Custom Connector
 

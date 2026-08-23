@@ -28,6 +28,7 @@
         "parameters": [
           {"name": "q", "in": "query", "type": "string", "description": "Topic or keywords, for example machine learning or optimization."},
           {"name": "academic_year", "in": "query", "type": "string", "default": "2026-2027", "description": "Academic year in YYYY-YYYY form."},
+          {"name": "search_language", "in": "query", "type": "string", "enum": ["da", "en"], "description": "Language of the search terms. Selects the Danish or English course-text index."},
           {"name": "ects", "in": "query", "type": "number", "format": "double", "description": "Exact ECTS points."},
           {"name": "level", "in": "query", "type": "string", "description": "Course level such as Bachelor or MSc."},
           {"name": "period", "in": "query", "type": "string", "description": "Teaching period, for example E, F or J."},
@@ -113,4 +114,3 @@
     }
   }
 }
-

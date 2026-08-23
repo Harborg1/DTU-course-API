@@ -5,7 +5,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from app.config import get_settings
-from app.models.course import Course
+from app.models.course import Course, CourseTranslation
 from app.services.course_qa_service import CourseQAError, _detect_language, answer_course_question
 from app.services.recommendation_service import _extract_course_number, recommend_courses
 
@@ -54,7 +54,6 @@ def test_answer_course_question_returns_string():
     course = Course(
         course_number="02450",
         academic_year="2026-2027",
-        title="Introduction to Machine Learning",
         ects=5,
         level="MSc",
         schedule="E2A",
@@ -64,6 +63,9 @@ def test_answer_course_question_returns_string():
         content_hash="a" * 64,
         imported_at=datetime.now(UTC),
         updated_at=datetime.now(UTC),
+        translations=[
+            CourseTranslation(language_code="en-GB", title="Introduction to Machine Learning")
+        ],
     )
 
     mock_response = MagicMock()
@@ -90,7 +92,6 @@ def test_answer_course_question_without_api_key():
     course = Course(
         course_number="02450",
         academic_year="2026-2027",
-        title="Introduction to Machine Learning",
         ects=5,
         level="MSc",
         schedule="E2A",
@@ -100,6 +101,9 @@ def test_answer_course_question_without_api_key():
         content_hash="a" * 64,
         imported_at=datetime.now(UTC),
         updated_at=datetime.now(UTC),
+        translations=[
+            CourseTranslation(language_code="en-GB", title="Introduction to Machine Learning")
+        ],
     )
 
     with pytest.raises(CourseQAError, match="GROQ_API_KEY"):

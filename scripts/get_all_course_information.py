@@ -12,7 +12,7 @@ import httpx
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = REPOSITORY_ROOT / "course_numbers.txt"
-DEFAULT_OUTPUT_DIRECTORY = REPOSITORY_ROOT / "data" / "course_information"
+DEFAULT_OUTPUT_DIRECTORY = REPOSITORY_ROOT / "app" / "data" / "course_information"
 DEFAULT_BASE_URL = "https://kurser.dtu.dk/coursewebservicev2/course.asmx"
 COURSE_NUMBER_PATTERN = re.compile(r"^[A-Z0-9][A-Z0-9-]{3,15}$")
 YEAR_GROUP_PATTERN = re.compile(r"^(\d{4})[/-](\d{4})$")

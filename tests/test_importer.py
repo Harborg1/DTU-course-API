@@ -1,6 +1,7 @@
 from sqlalchemy import func, select
 
 from app.models.course import Course
+from app.models.course import CourseTranslation
 from app.models.import_failure import ImportFailure
 from app.schemas.course import CourseData
 from importer.importer import clear_failure, record_failure, upsert_course
@@ -21,11 +22,15 @@ def test_database_upsert_and_unchanged_detection(db_session):
     assert upsert_course(db_session, data) == "imported"
     db_session.commit()
     assert upsert_course(db_session, data) == "unchanged"
-    changed = data.model_copy(update={"title": "Changed official title"})
+    changed = data.model_copy(
+        update={"title": "Changed official title", "title_en": "Changed official title"}
+    )
     assert upsert_course(db_session, changed) == "updated"
     db_session.commit()
     assert db_session.scalar(select(func.count()).select_from(Course)) == 1
-    assert db_session.scalar(select(Course.title)) == "Changed official title"
+    assert db_session.scalar(
+        select(CourseTranslation.title).where(CourseTranslation.language_code == "en-GB")
+    ) == "Changed official title"
 
 
 def test_duplicate_constraint_is_backed_by_upsert(db_session):

@@ -129,6 +129,7 @@ def test_discovery_search_courses_schema(test_client):
     assert "academic_year" in search_tool["inputSchema"]["required"]
     assert "level" in search_tool["inputSchema"]["properties"]
     assert "ects" in search_tool["inputSchema"]["properties"]
+    assert "search_language" in search_tool["inputSchema"]["required"]
 
 
 def test_discovery_get_study_plan_schema(test_client):
@@ -146,7 +147,7 @@ def test_discovery_get_study_plan_schema(test_client):
 
 
 def _make_course(course_number="02450", academic_year="2026-2027", **kwargs):
-    from app.models.course import Course
+    from app.models.course import Course, CourseTranslation
     from datetime import datetime, timezone
 
     defaults = {
@@ -162,16 +163,32 @@ def _make_course(course_number="02450", academic_year="2026-2027", **kwargs):
         "schedule": "E2A",
         "campus": "Campus Lyngby",
         "description": "Supervised learning and model evaluation",
+        "description_da": "Datamodellering med beslutningstræer",
+        "description_en": "Supervised learning and decision trees",
         "content": "machine learning algorithms",
+        "content_da": "Maskinlæringsalgoritmer",
+        "content_en": "Machine learning algorithms",
         "source_url": f"https://kurser.dtu.dk/course/{academic_year}/{course_number}",
         "content_hash": "a" * 64,
         "imported_at": datetime.now(timezone.utc),
         "updated_at": datetime.now(timezone.utc),
     }
     defaults.update(kwargs)
+    translated_fields = (
+        "title", "description", "content", "learning_objectives", "prerequisites",
+        "mandatory_prerequisites", "teaching_methods", "literature", "remarks",
+    )
+    translations = {"da": {"language_code": "da-DK"}, "en": {"language_code": "en-GB"}}
+    for field in translated_fields:
+        generic = defaults.pop(field, None)
+        translations["da"][field] = defaults.pop(f"{field}_da", None) or generic
+        translations["en"][field] = defaults.pop(f"{field}_en", None) or generic
     defaults["course_number"] = course_number
     defaults["academic_year"] = academic_year
-    return Course(**defaults)
+    return Course(
+        **defaults,
+        translations=[CourseTranslation(**values) for values in translations.values()],
+    )
 
 
 def test_get_course_valid_returns_course_json(test_client, db_session):
@@ -252,6 +269,7 @@ def test_search_courses_returns_results(test_client, db_session):
         "arguments": {
             "q": "machine learning",
             "academic_year": "2026-2027",
+            "search_language": "en",
         },
     })
     assert response.status_code == 200
@@ -266,6 +284,7 @@ def test_search_courses_limits_results(test_client):
         "arguments": {
             "q": "",
             "academic_year": "2026-2027",
+            "search_language": "en",
             "limit": 100,
         },
     })
@@ -284,6 +303,7 @@ def test_search_courses_with_level_filter(test_client, db_session):
         "arguments": {
             "q": "",
             "academic_year": "2026-2027",
+            "search_language": "en",
             "level": "MSc",
         },
     })
@@ -292,6 +312,24 @@ def test_search_courses_with_level_filter(test_client, db_session):
     content = json.loads(body["result"]["content"][0]["text"])
     for course_item in content["courses"]:
         assert course_item["level"] == "MSc"
+
+
+def test_search_courses_uses_requested_danish_text(test_client, db_session):
+    db_session.add(_make_course("02450", "2026-2027"))
+    db_session.commit()
+
+    response = _send_jsonrpc(test_client, "tools/call", {
+        "name": "search_courses",
+        "arguments": {
+            "q": "beslutningstræer",
+            "academic_year": "2026-2027",
+            "search_language": "da",
+        },
+    })
+
+    content = json.loads(response.json()["result"]["content"][0]["text"])
+    assert content["search_language"] == "da"
+    assert content["courses"][0]["title"] == "Introduktion til Machine Learning"
 
 
 # ---------------------------------------------------------------------------

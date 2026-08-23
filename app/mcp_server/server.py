@@ -57,6 +57,11 @@ _GET_COURSE_SCHEMA: dict[str, Any] = {
             "description": "Academic year filter (e.g. '2026-2027')",
             "pattern": "^[0-9]{4}-[0-9]{4}$",
         },
+        "response_language": {
+            "type": "string",
+            "description": "Preferred response language; use 'da' for Danish and 'en' for English",
+            "enum": ["da", "en"],
+        },
     },
     "required": ["course_number", "academic_year"],
 }
@@ -72,6 +77,11 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
             "type": "string",
             "description": "Academic year filter (e.g. '2026-2027')",
             "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+        "search_language": {
+            "type": "string",
+            "description": "Language of the user's query; use 'da' for Danish and 'en' for English",
+            "enum": ["da", "en"],
         },
         "level": {
             "type": "string",
@@ -90,7 +100,7 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
             "maximum": 20,
         },
     },
-    "required": ["q", "academic_year"],
+    "required": ["q", "academic_year", "search_language"],
 }
 
 _GET_STUDY_PLAN_SCHEMA: dict[str, Any] = {
@@ -132,7 +142,9 @@ _SEARCH_COURSES_TOOL = Tool(
     name="search_courses",
     description=(
         "Search for DTU courses by keyword and optional filters. "
-        "Returns a list of matching courses with their details."
+        "Searches only the Danish course text when search_language is 'da' and "
+        "only the English course text when search_language is 'en'. "
+        "Returns a list of matching courses with localized titles and descriptions."
     ),
     inputSchema=_SEARCH_COURSES_SCHEMA,
 )
@@ -189,9 +201,23 @@ def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
         if not course:
             return {"error": f"Course {course_number} not found in {academic_year}"}
 
+        response_language = arguments.get("response_language")
+        if response_language == "da":
+            localized_title = course.title_da or course.title_en or course.title
+            localized_description = course.description_da or course.description_en or course.description
+            localized_content = course.content_da or course.content_en or course.content
+            localized_objectives = course.learning_objectives_da or course.learning_objectives_en or course.learning_objectives
+            localized_prerequisites = course.prerequisites_da or course.prerequisites_en or course.prerequisites
+        else:
+            localized_title = course.title_en or course.title_da or course.title
+            localized_description = course.description_en or course.description_da or course.description
+            localized_content = course.content_en or course.content_da or course.content
+            localized_objectives = course.learning_objectives_en or course.learning_objectives_da or course.learning_objectives
+            localized_prerequisites = course.prerequisites_en or course.prerequisites_da or course.prerequisites
+
         return {
             "course_number": course.course_number,
-            "title": course.title,
+            "title": localized_title,
             "title_da": course.title_da,
             "title_en": course.title_en,
             "ects": float(course.ects) if course.ects else None,
@@ -202,13 +228,13 @@ def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
             "period": course.period,
             "schedule": course.schedule,
             "campus": course.campus,
-            "prerequisites": course.prerequisites,
+            "prerequisites": localized_prerequisites,
             "mandatory_prerequisites": course.mandatory_prerequisites,
             "exam": course.exam,
             "evaluation": course.evaluation,
-            "description": course.description,
-            "content": course.content,
-            "learning_objectives": course.learning_objectives,
+            "description": localized_description,
+            "content": localized_content,
+            "learning_objectives": localized_objectives,
             "source_url": course.source_url,
         }
     finally:
@@ -221,6 +247,9 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
     if academic_year is None:
         return {"error": "academic_year must contain consecutive years, e.g. 2026-2027"}
     level = arguments.get("level")
+    search_language = arguments.get("search_language")
+    if search_language not in {"da", "en"}:
+        return {"error": "search_language must be 'da' or 'en'"}
     try:
         limit = max(1, min(int(arguments.get("limit", 10)), 20))
     except (TypeError, ValueError):
@@ -245,6 +274,7 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             level=level,
             period=None,
             language=None,
+            search_language=search_language,
             limit=limit,
             offset=0,
         )
@@ -252,7 +282,16 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
         courses = [
             {
                 "course_number": course.course_number,
-                "title": course.title,
+                "title": (
+                    course.title_da or course.title_en or course.title
+                    if search_language == "da"
+                    else course.title_en or course.title_da or course.title
+                ),
+                "description": (
+                    course.description_da or course.description_en or course.description
+                    if search_language == "da"
+                    else course.description_en or course.description_da or course.description
+                ),
                 "ects": float(course.ects) if course.ects else None,
                 "level": course.level,
                 "source_url": course.source_url,
@@ -262,6 +301,7 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
 
         return {
             "query": query,
+            "search_language": search_language,
             "count": result.count,
             "returned": len(courses),
             "courses": courses,

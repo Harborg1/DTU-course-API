@@ -8,32 +8,19 @@ directly via Streamable HTTP.
 
 import logging
 
-from langdetect import detect
-
 from app.config import get_settings
 from app.models.course import Course
+from app.services.language_service import detect_user_language
 
 
 logger = logging.getLogger(__name__)
-
-_LANG_NAMES = {
-    "da": "dansk",
-    "en": "engelsk",
-}
-
 
 class CourseQAError(RuntimeError):
     """Raised when a course answer cannot be obtained from Groq."""
 
 
 def _detect_language(text: str) -> str:
-    try:
-        lang = detect(text)
-        if lang in _LANG_NAMES:
-            return lang
-        return "en"
-    except Exception:
-        return "en"
+    return detect_user_language(text)
 
 
 # ---------------------------------------------------------------------------
@@ -55,6 +42,8 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         f"{lang_instruction}.\n\n"
         "Du har adgang til databasen via værktøjer, der automatisk kaldes når nødvendigt.\n"
         f"Brug studieåret {academic_year}, medmindre brugeren udtrykkeligt angiver et andet.\n"
+        f"Når du kalder search_courses, skal search_language være '{language}'.\n"
+        f"Når du kalder get_course, skal response_language være '{language}'.\n"
         "Brug altid værktøjerne til at hente fakta fra databasen — gæt aldrig data.\n"
         "Besvar kun på baggrund af data fra værktøjerne.\n"
         "Hvis et værktøj returnerer en fejl, forklar det kort til brugeren.\n"

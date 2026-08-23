@@ -2,9 +2,51 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="02452" University="dtu" Volume="2026/2027">
+      <Course CourseCode="02452" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Machine learning" />
         <Title Lang="en-GB" Title="Machine Learning" />
+        <Teaching_Language LangCode="en-GB" />
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule>
+          <Schedule ScheduleKey="E4A" />
+        </Class_Schedule>
+        <Departments><Main_Dep UID="1" /></Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="111385" SortID="0" Primary="true">
+          <Description>
+            <GivenName>Georgios</GivenName>
+            <FamilyName>Arvanitidis</FamilyName>
+            <Email>gear@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment><Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" /></Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" />
+          <DurationKey Key="4H" />
+        </Examination>
+        <Txt Lang="da-DK">
+          <Contents>Struktureret datamodellering og beslutningstræer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser i Python.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Anvende machine learning på virkelige data.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Structured data modelling and decision trees.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and Python exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Apply machine learning to real-world data.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Lineær algebra og Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Linear algebra and Python." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword>
+          <Txt Lang="da-DK" Txt="Evaluere machine learning-modeller." />
+          <Txt Lang="en-GB" Txt="Evaluate machine-learning models." />
+        </DTU_ObjectiveKeyword>
+        <No_Credit_Points_With CourseCode="02450/02451" />
       </Course>
     </CourseXml>
   </CoursePublished>

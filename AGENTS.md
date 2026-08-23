@@ -13,7 +13,7 @@
 - `alembic upgrade head` updates a locally configured database schema.
 - `uvicorn app.main:app --reload` runs the API with live reload.
 - `pytest -q` runs the complete offline test suite.
-- `python -m importer.cli --academic-year 2026-2027 --limit 20` performs a small importer smoke test after migrations.
+- `python -m importer.course_xml_cli --academic-year 2026-2027 --limit 20` performs a small XML importer smoke test after migrations.
 
 ## Coding Style & Naming Conventions
 

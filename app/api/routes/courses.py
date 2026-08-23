@@ -21,13 +21,18 @@ from app.services.search_service import search_courses
 router = APIRouter(prefix="/api/v1", dependencies=[Depends(require_api_key)])
 
 
-def _summary(course: Course, score: float | None) -> CourseSummary:
-    description = course.description
+def _summary(course: Course, score: float | None, search_language: str) -> CourseSummary:
+    if search_language == "da":
+        title = course.title_da or course.title_en or course.title
+        description = course.description_da or course.description_en or course.description
+    else:
+        title = course.title_en or course.title_da or course.title
+        description = course.description_en or course.description_da or course.description
     if description and len(description) > 500:
         description = description[:497].rstrip() + "..."
     return CourseSummary(
         courseNumber=course.course_number,
-        title=course.title,
+        title=title,
         ects=course.ects,
         level=course.level,
         period=course.period,
@@ -52,17 +57,22 @@ def _search(
     department: str | None,
     language: str | None,
     campus: str | None,
+    search_language: str | None,
     limit: int,
     offset: int,
 ) -> CourseSearchResponse:
     result = search_courses(
         session, q=q, academic_year=academic_year, ects=ects, level=level, period=period,
         schedule=schedule, department=department, language=language, campus=campus,
+        search_language=search_language,
         limit=limit, offset=offset,
     )
     return CourseSearchResponse(
         count=result.count, limit=limit, offset=offset,
-        courses=[_summary(course, score if q else None) for course, score in result.courses],
+        courses=[
+            _summary(course, score if q else None, result.search_language)
+            for course, score in result.courses
+        ],
     )
 
 
@@ -83,10 +93,14 @@ def search(
     department: str | None = None,
     language: str | None = None,
     campus: str | None = None,
+    search_language: Annotated[str | None, Query(pattern=r"^(da|en)$")] = None,
     limit: Annotated[int, Query(ge=1, le=50)] = 20,
     offset: Annotated[int, Query(ge=0)] = 0,
 ) -> CourseSearchResponse:
-    return _search(session, q, academic_year, ects, level, period, schedule, department, language, campus, limit, offset)
+    return _search(
+        session, q, academic_year, ects, level, period, schedule, department,
+        language, campus, search_language, limit, offset,
+    )
 
 
 @router.get("/courses", response_model=CourseListResponse, response_model_by_alias=True, summary="List DTU courses")
@@ -100,10 +114,14 @@ def list_courses(
     department: str | None = None,
     language: str | None = None,
     campus: str | None = None,
+    search_language: Annotated[str | None, Query(pattern=r"^(da|en)$")] = None,
     limit: Annotated[int, Query(ge=1, le=50)] = 20,
     offset: Annotated[int, Query(ge=0)] = 0,
 ) -> CourseListResponse:
-    return _search(session, None, academic_year, ects, level, period, schedule, department, language, campus, limit, offset)
+    return _search(
+        session, None, academic_year, ects, level, period, schedule, department,
+        language, campus, search_language, limit, offset,
+    )
 
 
 @router.get("/courses/{course_number}", response_model=CourseDetail, response_model_by_alias=True, summary="Get one DTU course")

@@ -4,7 +4,7 @@ import json
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models.course import Course
+from app.models.course import Course, CourseTranslation
 from app.models.import_failure import ImportFailure
 from app.schemas.course import CourseData
 
@@ -12,6 +12,42 @@ from app.schemas.course import CourseData
 def course_content_hash(data: CourseData) -> str:
     payload = data.model_dump(mode="json")
     return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
+TRANSLATED_FIELDS = (
+    "title",
+    "description",
+    "content",
+    "learning_objectives",
+    "prerequisites",
+    "mandatory_prerequisites",
+    "teaching_methods",
+    "literature",
+    "remarks",
+)
+
+
+def course_values(data: CourseData) -> dict:
+    values = data.model_dump()
+    for field in TRANSLATED_FIELDS:
+        values.pop(field, None)
+        values.pop(f"{field}_da", None)
+        values.pop(f"{field}_en", None)
+    values.pop("title_da", None)
+    values.pop("title_en", None)
+    return values
+
+
+def course_translation_values(data: CourseData, language: str) -> dict:
+    suffix, language_code = ("da", "da-DK") if language == "da" else ("en", "en-GB")
+    fallback_suffix = "en" if suffix == "da" else "da"
+    values = {"language_code": language_code}
+    for field in TRANSLATED_FIELDS:
+        value = getattr(data, f"{field}_{suffix}", None)
+        if field == "title" and not value:
+            value = getattr(data, f"title_{fallback_suffix}", None) or data.title
+        values[field] = value
+    return values
 
 
 def upsert_course(session: Session, data: CourseData) -> str:
@@ -22,15 +58,31 @@ def upsert_course(session: Session, data: CourseData) -> str:
         )
     )
     digest = course_content_hash(data)
-    values = data.model_dump()
+    values = course_values(data)
+    translations = [
+        CourseTranslation(**course_translation_values(data, language))
+        for language in ("da", "en")
+    ]
     if existing is None:
-        session.add(Course(**values, content_hash=digest))
+        session.add(Course(**values, content_hash=digest, translations=translations))
         session.flush()
         return "imported"
     if existing.content_hash == digest:
         return "unchanged"
     for key, value in values.items():
         setattr(existing, key, value)
+    translations_by_language = {
+        translation.language_code: translation
+        for translation in existing.translations
+    }
+    for new_values in (course_translation_values(data, "da"), course_translation_values(data, "en")):
+        language_code = new_values["language_code"]
+        translation = translations_by_language.get(language_code)
+        if translation is None:
+            existing.translations.append(CourseTranslation(**new_values))
+        else:
+            for key, value in new_values.items():
+                setattr(translation, key, value)
     existing.content_hash = digest
     session.flush()
     return "updated"

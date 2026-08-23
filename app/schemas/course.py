@@ -11,6 +11,11 @@ class ApiModel(BaseModel):
 class CourseData(BaseModel):
     course_number: str
     academic_year: str
+    university: str = "dtu"
+    programme_level_code: str | None = None
+    teaching_language_code: str | None = None
+    location_code: str | None = None
+    study_board_code: str | None = None
     title: str
     title_da: str | None = None
     title_en: str | None = None
@@ -24,16 +29,38 @@ class CourseData(BaseModel):
     schedule: str | None = None
     campus: str | None = None
     prerequisites: str | None = None
+    prerequisites_da: str | None = None
+    prerequisites_en: str | None = None
     mandatory_prerequisites: str | None = None
+    mandatory_prerequisites_da: str | None = None
+    mandatory_prerequisites_en: str | None = None
     exam: str | None = None
     evaluation: str | None = None
     description: str | None = None
+    description_da: str | None = None
+    description_en: str | None = None
     content: str | None = None
+    content_da: str | None = None
+    content_en: str | None = None
     learning_objectives: str | None = None
+    learning_objectives_da: str | None = None
+    learning_objectives_en: str | None = None
+    teaching_methods: str | None = None
+    teaching_methods_da: str | None = None
+    teaching_methods_en: str | None = None
+    literature: str | None = None
+    literature_da: str | None = None
+    literature_en: str | None = None
     course_responsible: str | None = None
     teachers: str | None = None
     registration_requirements: str | None = None
     remarks: str | None = None
+    remarks_da: str | None = None
+    remarks_en: str | None = None
+    schedules: list[str] = Field(default_factory=list)
+    responsible_people: list[dict] = Field(default_factory=list)
+    examinations: list[dict] = Field(default_factory=list)
+    no_credit_with: list[str] = Field(default_factory=list)
     source_url: str
     source_last_updated: datetime | None = None
 
@@ -102,16 +129,36 @@ class CourseDetail(ApiModel):
     schedule: str | None = None
     campus: str | None = None
     prerequisites: str | None = None
+    prerequisites_da: str | None = Field(default=None, alias="prerequisitesDa")
+    prerequisites_en: str | None = Field(default=None, alias="prerequisitesEn")
     mandatory_prerequisites: str | None = Field(default=None, alias="mandatoryPrerequisites")
+    mandatory_prerequisites_da: str | None = Field(default=None, alias="mandatoryPrerequisitesDa")
+    mandatory_prerequisites_en: str | None = Field(default=None, alias="mandatoryPrerequisitesEn")
     exam: str | None = None
     evaluation: str | None = None
     description: str | None = None
+    description_da: str | None = Field(default=None, alias="descriptionDa")
+    description_en: str | None = Field(default=None, alias="descriptionEn")
     content: str | None = None
+    content_da: str | None = Field(default=None, alias="contentDa")
+    content_en: str | None = Field(default=None, alias="contentEn")
     learning_objectives: str | None = Field(default=None, alias="learningObjectives")
+    learning_objectives_da: str | None = Field(default=None, alias="learningObjectivesDa")
+    learning_objectives_en: str | None = Field(default=None, alias="learningObjectivesEn")
+    teaching_methods_da: str | None = Field(default=None, alias="teachingMethodsDa")
+    teaching_methods_en: str | None = Field(default=None, alias="teachingMethodsEn")
+    literature_da: str | None = Field(default=None, alias="literatureDa")
+    literature_en: str | None = Field(default=None, alias="literatureEn")
     course_responsible: str | None = Field(default=None, alias="courseResponsible")
     teachers: str | None = None
     registration_requirements: str | None = Field(default=None, alias="registrationRequirements")
     remarks: str | None = None
+    remarks_da: str | None = Field(default=None, alias="remarksDa")
+    remarks_en: str | None = Field(default=None, alias="remarksEn")
+    schedules: list[str]
+    responsible_people: list[dict] = Field(alias="responsiblePeople")
+    examinations: list[dict]
+    no_credit_with: list[str] = Field(alias="noCreditWith")
     source_url: str = Field(alias="sourceUrl")
     source_last_updated: datetime | None = Field(default=None, alias="sourceLastUpdated")
     imported_at: datetime = Field(alias="importedAt")
