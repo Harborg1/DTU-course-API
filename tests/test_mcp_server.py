@@ -192,7 +192,18 @@ def _make_course(course_number="02450", academic_year="2026-2027", **kwargs):
 
 
 def test_get_course_valid_returns_course_json(test_client, db_session):
-    db_session.add(_make_course("02450", "2026-2027"))
+    db_session.add(
+        _make_course(
+            "02450",
+            "2026-2027",
+            course_responsible="Ada Lovelace",
+            teachers="Ada Lovelace, Alan Turing",
+            responsible_people=[
+                {"name": "Ada Lovelace", "email": "ada@example.com", "primary": True},
+                {"name": "Alan Turing", "email": "alan@example.com", "primary": False},
+            ],
+        )
+    )
     db_session.commit()
 
     response = _send_jsonrpc(test_client, "tools/call", {
@@ -208,6 +219,43 @@ def test_get_course_valid_returns_course_json(test_client, db_session):
     assert content["course_number"] == "02450"
     assert "title" in content
     assert content["ects"] is not None
+    assert content["course_responsible"] == "Ada Lovelace"
+    assert content["teachers"] == "Ada Lovelace, Alan Turing"
+    assert content["responsible_people"][0]["email"] == "ada@example.com"
+
+
+def test_get_course_handler_includes_responsible_people_without_http(db_session):
+    from sqlalchemy.orm import sessionmaker
+
+    from app.mcp_server.server import _handle_get_course
+
+    db_session.add(
+        _make_course(
+            "02452",
+            "2026-2027",
+            course_responsible="Georgios Arvanitidis",
+            teachers="Georgios Arvanitidis, Morten Mørup",
+            responsible_people=[
+                {"name": "Georgios Arvanitidis", "email": "gear@dtu.dk", "primary": True},
+                {"name": "Morten Mørup", "email": "mmor@dtu.dk", "primary": False},
+            ],
+        )
+    )
+    db_session.commit()
+    factory = sessionmaker(bind=db_session.get_bind(), expire_on_commit=False)
+
+    with patch("app.database.SessionLocal", factory):
+        content = _handle_get_course(
+            {
+                "course_number": "02452",
+                "academic_year": "2026-2027",
+                "response_language": "da",
+            }
+        )
+
+    assert content["course_responsible"] == "Georgios Arvanitidis"
+    assert content["teachers"] == "Georgios Arvanitidis, Morten Mørup"
+    assert content["responsible_people"][1]["email"] == "mmor@dtu.dk"
 
 
 def test_get_course_not_found_returns_error(test_client):

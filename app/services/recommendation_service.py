@@ -491,9 +491,12 @@ def recommend_courses(
     academic_year: str,
 ) -> ChatResponse:
     conversation = " ".join(messages)
+    latest_user_message = messages[-1] if messages else ""
 
-    # Intent-based routing
-    intent = classify_intent(conversation)
+    # Route from the latest request so an earlier course number cannot
+    # override a new study-plan or recommendation question. The full
+    # conversation is still passed to Groq and used for programme matching.
+    intent = classify_intent(latest_user_message)
 
     # 1. Course Q&A — 5-digit course number → Groq via remote MCP
     if isinstance(intent, CourseQAIntent):
@@ -537,7 +540,11 @@ def recommend_courses(
                 academicYear=academic_year,
             )
         try:
-            reply = answer_with_remote_mcp(conversation, academic_year)
+            study_plan_question = (
+                f"{latest_user_message}\n\n"
+                f"Identificeret studieprogram: {program.name} ({program.degree_type})."
+            )
+            reply = answer_with_remote_mcp(study_plan_question, academic_year)
             return ChatResponse(
                 reply=reply,
                 understood=UnderstoodContext(topic="study plan qa", level=program.degree_type, program=program.name),

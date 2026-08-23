@@ -240,6 +240,45 @@ class TestRecommendCoursesIntentRouting:
         assert isinstance(intent, CourseQAIntent)
         assert intent.course_number == "02450"
 
+    def test_latest_message_can_switch_from_course_to_study_plan(self, db_session):
+        """An earlier course number must not override the latest explicit intent."""
+        from unittest.mock import patch
+
+        from app.services.recommendation_service import recommend_courses
+
+        program = StudyProgram(
+            slug="computer-science-and-engineering",
+            name="Computer Science and Engineering",
+            degree_type="Master",
+            academic_year="2026-2027",
+            source_url="https://student.dtu.dk/studieordninger",
+            content_hash="b" * 64,
+        )
+        db_session.add(program)
+        db_session.commit()
+
+        with patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="Her er studieplanen.",
+        ) as answer:
+            response = recommend_courses(
+                db_session,
+                messages=[
+                    "Hvem underviser i kurset 02452?",
+                    "Studieplan computer science and engineering",
+                ],
+                academic_year="2026-2027",
+            )
+
+        assert response.is_direct_answer is True
+        assert response.understood.topic == "study plan qa"
+        assert response.understood.program == "Computer Science and Engineering"
+        answer.assert_called_once_with(
+            "Studieplan computer science and engineering\n\n"
+            "Identificeret studieprogram: Computer Science and Engineering (Master).",
+            "2026-2027",
+        )
+
     def test_study_plan_intent(self, client, db_session):
         """Test that study plan intent is correctly classified."""
         from app.services.intent_service import classify_intent

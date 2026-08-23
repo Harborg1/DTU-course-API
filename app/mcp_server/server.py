@@ -235,6 +235,9 @@ def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
             "description": localized_description,
             "content": localized_content,
             "learning_objectives": localized_objectives,
+            "course_responsible": course.course_responsible,
+            "teachers": course.teachers,
+            "responsible_people": course.responsible_people,
             "source_url": course.source_url,
         }
     finally:

@@ -17,6 +17,17 @@ def test_detects_danish_from_real_question():
     assert _detect_language("Jeg vil gerne vide hvem der underviser i kurset 02421") == "da"
 
 
+@pytest.mark.parametrize(
+    "question",
+    [
+        "Hvem underviser i kurset 02452?",
+        "Studieplan computer science and engineering",
+    ],
+)
+def test_detects_danish_in_short_mixed_course_questions(question):
+    assert _detect_language(question) == "da"
+
+
 def test_detects_english_from_real_question():
     assert _detect_language("Who teaches course 02421?") == "en"
 
