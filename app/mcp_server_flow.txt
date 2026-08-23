@@ -1,0 +1,14 @@
+Groq
+  │
+  │ POST /mcp
+  │ Authorization: Bearer <MCP_TOKEN>
+  ▼
+MCP-server på Vercel
+  │
+  │ Validerer token og argumenter
+  ▼
+Foruddefineret MCP-tool
+  │
+  │ SQLAlchemy SELECT
+  ▼
+Supabase
