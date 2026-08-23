@@ -18,11 +18,11 @@ Web-chat MCP  Beskyttet REST API
         Groq    Copilot Studio
 ```
 
-Importeren er opdelt i HTTP-hentning, HTML-parsing, validering og databaseoperationer. API-laget bruger services og dependency-injected SQLAlchemy-sessions. PostgreSQLs genererede `tsvector` vægter titler som A, beskrivelse og indhold som B samt læringsmål og forudsætninger som C.
+Kursusdata hentes som struktureret XML, valideres og gemmes lokalt. API-laget bruger services og dependency-injected SQLAlchemy-sessions. PostgreSQLs genererede `tsvector` vægter titler som A, beskrivelse og indhold som B samt læringsmål og forudsætninger som C.
 
 ## Officiel datakilde
 
-Kun [DTU Kursusbasens officielle kursusliste](https://kurser.dtu.dk/CourseList/list/) og årgangsspecifikke sider som `https://kurser.dtu.dk/course/2026-2027/01001` bruges. Kursuslisten er server-renderet HTML. Importeren læser den aktuelle institutliste fra `select[name=department]`, henter `/courselist/courselist.aspx?volume=2026/2027&department=...` for hvert institut og deduplikerer numrene. Kursussider parses fra `#pagecontents`, metadata-rækker med `<label>` og indholdssektioner med `.bar`. Ingen uofficiel database bruges, og manglende værdier gemmes som `NULL`.
+Kursusnumre og kursusdata hentes fra DTU Kursusbasens officielle `CourseWebServiceV2`. `GetCourse` leverer de årgangsspecifikke kursusdata som XML, som gemmes uden HTML-parsing. Ingen uofficiel database bruges.
 
 ## Hurtig start med Docker
 
@@ -85,21 +85,9 @@ adgang til `GROQ_API_KEY` eller `MCP_TOKEN`.
 
 ## Import
 
-Kør migrations først. Importeren bruger timeout, fire forsøg med eksponentiel backoff, konservativ sekventiel hentning, et tydeligt User-Agent, HTTP-statusvalidering og én transaktion pr. kursus. En fejlet side stopper ikke resten; fejlen gemmes i `import_failures`.
+Hjælpescripterne bruger timeout, genforsøg med eksponentiel backoff, begrænset parallelitet, et tydeligt User-Agent og validering af XML-svarene.
 
 ```bash
-# Ét kursus
-python -m importer.cli --academic-year 2026-2027 --course 01001
-
-# De første 20 som test
-python -m importer.cli --academic-year 2026-2027 --limit 20
-
-# Genforsøg kun tidligere fejl
-python -m importer.cli --academic-year 2026-2027 --retry-failed
-
-# Hele kataloget
-python -m importer.cli --academic-year 2026-2027
-
 # Hent kun alle publicerede kursusnumre (ét nummer pr. linje)
 python scripts/get_all_course_numbers.py --catalog-version 2026/2027
 
@@ -108,13 +96,6 @@ python scripts/get_all_course_numbers.py --catalog-version 2026/2027 > course_nu
 
 # Gem GetCourse XML for hvert kursus i data/course_information/
 python scripts/get_all_course_information.py --year-group 2026/2027
-```
-
-I Docker køres kommandoerne sådan:
-
-```bash
-docker compose exec api python -m importer.cli --academic-year 2026-2027 --limit 20
-docker compose exec api python -m importer.cli --academic-year 2026-2027
 ```
 
 ### Studieplaner

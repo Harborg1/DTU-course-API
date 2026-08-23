@@ -1,18 +1,18 @@
-from pathlib import Path
-
 from sqlalchemy import func, select
 
 from app.models.course import Course
 from app.models.import_failure import ImportFailure
-from importer.course_parser import parse_course_page
+from app.schemas.course import CourseData
 from importer.importer import clear_failure, record_failure, upsert_course
 
-FIXTURES = Path(__file__).parent / "fixtures"
 
-
-def course_data():
-    return parse_course_page(
-        (FIXTURES / "course_01017.html").read_text(), "01017", "2026-2027"
+def course_data() -> CourseData:
+    return CourseData(
+        course_number="01017",
+        academic_year="2026-2027",
+        title="Discrete Mathematics",
+        ects=5,
+        source_url="https://kurser.dtu.dk/course/2026-2027/01017",
     )
 
 
@@ -48,4 +48,3 @@ def test_failed_import_is_recorded_incremented_and_cleared(db_session):
     clear_failure(db_session, "01017", "2026-2027")
     db_session.commit()
     assert db_session.scalar(select(ImportFailure)) is None
-
