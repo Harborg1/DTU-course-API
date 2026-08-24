@@ -212,6 +212,20 @@ def _requested_degree_type(text: str) -> str | None:
     return {"MSc": "Master", "BSc": "Bachelor"}.get(_extract_level(_normalise(text)))
 
 
+def _asks_general_msc_ects(text: str) -> bool:
+    normalized = _normalise(text)
+    mentions_msc = re.search(
+        r"\b(msc|master(?:'s)?|kandidat(?:en|uddannelse[nr]?)?|civilingeniør)\b",
+        normalized,
+    )
+    asks_for_total = re.search(
+        r"\b(hvor mange|gennemføre|afslutte|fuldføre|bestå|i alt|kræver|kræves|"
+        r"how many|complete|finish|graduate|total|required)\b",
+        normalized,
+    )
+    return "ects" in normalized and mentions_msc is not None and asks_for_total is not None
+
+
 def _program_aliases(program: StudyProgram) -> dict[str, int]:
     aliases: dict[str, int] = {}
 
@@ -707,6 +721,23 @@ def recommend_courses(
     if isinstance(intent, StudyPlanIntent):
         program = _matching_study_program(session, conversation)
         if program is None:
+            if _asks_general_msc_ects(latest_user_message):
+                return ChatResponse(
+                    reply=(
+                        "En ordinær toårig kandidatuddannelse (MSc) på DTU er på 120 ECTS. "
+                        "De er normalt fordelt på 10 ECTS polyteknisk grundlag, 50 ECTS "
+                        "retningsspecifikke kurser, 30 ECTS valgfrie kurser og et "
+                        "kandidatspeciale på 30 ECTS."
+                    ),
+                    understood=UnderstoodContext(
+                        topic="MSc degree requirements",
+                        level="Master",
+                        ects=120,
+                    ),
+                    recommendations=[],
+                    academicYear=academic_year,
+                    isDirectAnswer=True,
+                )
             return ChatResponse(
                 reply=(
                     "Jeg kan forklare studieplanen, men jeg kan ikke identificere uddannelsen entydigt. "

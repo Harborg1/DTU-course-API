@@ -304,6 +304,29 @@ def test_chat_uses_degree_context_to_resolve_bilingual_program_names(client, db_
     assert bachelor_response.json()["understood"]["level"] == "Bachelor"
 
 
+def test_chat_answers_general_msc_ects_without_program_name(client):
+    response = client.post(
+        "/api/chat",
+        json={
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "Hvor mange ECTS skal man have for at gennemføre en kandidat på DTU?",
+                }
+            ]
+        },
+    )
+
+    assert response.status_code == 200
+    body = response.json()
+    assert body["reply"].startswith("En ordinær toårig kandidatuddannelse (MSc) på DTU er på 120 ECTS.")
+    assert "kandidatspeciale på 30 ECTS" in body["reply"]
+    assert body["understood"]["topic"] == "MSc degree requirements"
+    assert body["understood"]["level"] == "Master"
+    assert body["understood"]["ects"] == 120
+    assert body["isDirectAnswer"] is True
+
+
 def test_chat_remembers_program_context_and_tolerates_a_spelling_error(client, db_session):
     curriculum_html = (
         _msc_curriculum_html()
