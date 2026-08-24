@@ -151,6 +151,31 @@ def test_chat_lists_program_specializations_and_explains_course_requirements(db_
     assert "02249 Computationally Hard Problems" in detail.reply
 
 
+def test_chat_matches_danish_specialization_alias_in_ects_question(db_session):
+    program = _program("computer-science-and-engineering", "Computer Science and Engineering")
+    db_session.add(program)
+    db_session.commit()
+    upsert_specialization(
+        db_session,
+        parse_specialization_page(_fixture("specialization_ai_algorithms.html"), CSE_URL)[0],
+    )
+    db_session.commit()
+
+    response = recommend_courses(
+        db_session,
+        messages=[
+            "Hvor mange ECTS skal man have for at opnå en specialisering i f.eks. "
+            "kunstig intelligens og algoritmer på computer science and engineering?"
+        ],
+        academic_year="2026-2027",
+    )
+
+    assert response.specializations[0].name == "Artificial Intelligence and Algorithms"
+    assert response.specializations[0].requirements[0].required_ects == 25
+    assert response.reply.startswith("For specialiseringen Artificial Intelligence and Algorithms")
+    assert "mindst 25 ECTS" in response.reply
+
+
 def test_exact_specialization_name_wins_over_fuzzy_program_match(db_session):
     db_session.add_all(
         [

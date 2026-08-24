@@ -38,6 +38,7 @@ from app.services.intent_service import (
     extract_course_number,
 )
 from app.services.search_service import SearchResult, search_courses
+from app.services.specialization_aliases import SPECIALIZATION_ALIASES
 from app.services.study_program_aliases import PROGRAM_ALIASES
 
 
@@ -296,7 +297,7 @@ def _matching_specialization(
     normalized_key = _program_key(text)
     padded_text = f" {normalized_key} "
     text_tokens = normalized_key.split()
-    statement = select(StudySpecialization)
+    statement = select(StudySpecialization).options(selectinload(StudySpecialization.program))
     if program is not None:
         statement = statement.where(StudySpecialization.program_id == program.id)
     specializations = list(session.scalars(statement))
@@ -306,6 +307,13 @@ def _matching_specialization(
             _program_key(specialization.name),
             _program_key(specialization.slug.replace("-", " ")),
         }
+        aliases.update(
+            _program_key(alias)
+            for alias in SPECIALIZATION_ALIASES.get(specialization.program.slug, {}).get(
+                specialization.slug,
+                (),
+            )
+        )
         for alias in aliases:
             if not alias:
                 continue
