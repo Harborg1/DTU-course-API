@@ -19,7 +19,7 @@ def test_api_info_route_describes_the_service_without_authentication():
 def test_homepage_is_public_html(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert "Kurskompas" in response.text
+    assert "Course Compass" in response.text
     assert response.headers["content-type"].startswith("text/html")
 
 
