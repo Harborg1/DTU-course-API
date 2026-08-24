@@ -45,6 +45,7 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         f"Når du kalder search_courses, skal search_language være '{language}'.\n"
         f"Når du kalder get_course, skal response_language være '{language}'.\n"
         "Brug altid værktøjerne til at hente fakta fra databasen — gæt aldrig data.\n"
+        "Brug get_specializations til spørgsmål om specialiseringer og deres kursuskrav.\n"
         "Besvar kun på baggrund af data fra værktøjerne.\n"
         "Hvis et værktøj returnerer en fejl, forklar det kort til brugeren.\n"
         "Svar kort og præcist — højst 3 sætninger.\n"
@@ -90,8 +91,8 @@ def answer_with_remote_mcp(question: str, academic_year: str | None = None) -> s
             "server_label": "dtu_courses",
             "server_url": endpoint,
             "headers": {"Authorization": f"Bearer {settings.mcp_token}"},
-            "server_description": "Read-only access to official DTU courses and study plans.",
-            "allowed_tools": ["get_course", "search_courses", "get_study_plan"],
+            "server_description": "Read-only access to official DTU courses, study plans, and specializations.",
+            "allowed_tools": ["get_course", "search_courses", "get_study_plan", "get_specializations"],
             "require_approval": "never",
         }
     ]

@@ -40,6 +40,9 @@ class StudyProgram(Base):
     requirements: Mapped[list["StudyPlanRequirement"]] = relationship(
         back_populates="program"
     )
+    specializations: Mapped[list["StudySpecialization"]] = relationship(
+        back_populates="program", cascade="all, delete-orphan", order_by="StudySpecialization.position"
+    )
 
 
 class StudyPlanSection(Base):

@@ -207,6 +207,80 @@ function addStudyPlan(plan) {
   scrollToLatest();
 }
 
+function specializationCourseLabel(course) {
+  const number = course.courseNumber ? `${course.courseNumber} · ` : "";
+  const ects = course.ects != null ? ` (${course.ects} ECTS)` : "";
+  const historical = course.isTerminated ? " · udgået" : "";
+  return `${number}${course.title}${ects}${historical}`;
+}
+
+function specializationRuleDescription(rule) {
+  if (rule.requirementType === "min_ects" && rule.requiredEcts != null) {
+    return `Vælg mindst ${rule.requiredEcts} ECTS fra denne kursuspulje.`;
+  }
+  if (rule.requirementType === "one_of") return "Vælg ét af kurserne nedenfor.";
+  if (rule.requirementType === "min_count" && rule.requiredCount != null) {
+    return `Vælg mindst ${rule.requiredCount} kurser fra denne gruppe.`;
+  }
+  if (rule.requirementType === "all_of") return "Alle kurserne nedenfor er obligatoriske.";
+  if (rule.requirementType === "recommended") return "Anbefalede kurser, som ikke er obligatoriske.";
+  if (rule.requirementType === "historical") return "Udgåede kurser, som DTU angiver stadig tæller.";
+  return rule.description;
+}
+
+function addSpecializations(specializations) {
+  if (!specializations?.length) return;
+  const overview = document.createElement("section");
+  overview.className = "study-plan";
+  overview.setAttribute("aria-label", `Specialiseringer for ${specializations[0].programName}`);
+
+  const heading = document.createElement("div");
+  heading.className = "study-plan-head";
+  const title = document.createElement("h2");
+  title.textContent = `Specialiseringer · ${specializations[0].programName}`;
+  heading.append(title);
+  overview.append(heading);
+
+  specializations.forEach((specialization) => {
+    const card = document.createElement("article");
+    card.className = "study-plan-section";
+    const name = document.createElement("h3");
+    name.textContent = specialization.name;
+    card.append(name);
+    if (specialization.description) {
+      const description = document.createElement("p");
+      description.textContent = specialization.description;
+      card.append(description);
+    }
+    specialization.requirements.forEach((rule) => {
+      const block = document.createElement("div");
+      block.className = "study-plan-rule";
+      const description = document.createElement("p");
+      description.textContent = specializationRuleDescription(rule);
+      block.append(description);
+      if (rule.courses.length) {
+        const choices = document.createElement("p");
+        choices.className = "study-plan-choices";
+        choices.textContent = rule.courses.map(specializationCourseLabel).join(" · ");
+        block.append(choices);
+      }
+      card.append(block);
+    });
+    const url = safeSourceUrl(specialization.sourceUrl);
+    if (url) {
+      const link = document.createElement("a");
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      link.textContent = "Se specialiseringen hos DTU ↗";
+      card.append(link);
+    }
+    overview.append(card);
+  });
+  conversation.append(overview);
+  scrollToLatest();
+}
+
 function safeSourceUrl(value) {
   try {
     const url = new URL(value);
@@ -299,6 +373,7 @@ async function submitMessage(text) {
     addMessage("assistant", result.reply);
     addContextTags(result.understood);
     addStudyPlan(result.studyPlan);
+    addSpecializations(result.specializations);
     addRecommendations(result.recommendations);
   } catch (error) {
     document.querySelector("#typingRow")?.remove();

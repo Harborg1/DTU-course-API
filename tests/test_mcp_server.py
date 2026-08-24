@@ -3,7 +3,7 @@
 Covers:
 - Authentication (401/403, Bearer token)
 - Tool discovery (POST JSON-RPC tools/list)
-- Tool calls: get_course, search_courses, get_study_plan
+- Tool calls: get_course, search_courses, get_study_plan, get_specializations
 - Input validation (missing fields, invalid course numbers, caps)
 - Groq configuration (missing MCP_TOKEN / MCP_SERVER_URL raises CourseQAError)
 """
@@ -101,14 +101,14 @@ def test_mcp_with_valid_token_succeeds(test_client):
 # ---------------------------------------------------------------------------
 
 
-def test_discovery_returns_three_tools(test_client):
+def test_discovery_returns_four_tools(test_client):
     response = _send_jsonrpc(test_client, "tools/list")
     assert response.status_code == 200
 
     body = response.json()
     tools = body["result"]["tools"]
     tool_names = {t["name"] for t in tools}
-    assert tool_names == {"get_course", "search_courses", "get_study_plan"}
+    assert tool_names == {"get_course", "search_courses", "get_study_plan", "get_specializations"}
 
 
 def test_discovery_get_course_schema(test_client):
@@ -139,6 +139,16 @@ def test_discovery_get_study_plan_schema(test_client):
     plan_tool = next(t for t in tools if t["name"] == "get_study_plan")
     assert "program_name" in plan_tool["inputSchema"]["required"]
     assert "academic_year" in plan_tool["inputSchema"]["required"]
+
+
+def test_discovery_get_specializations_schema(test_client):
+    response = _send_jsonrpc(test_client, "tools/list")
+    body = response.json()
+    tools = body["result"]["tools"]
+    specialization_tool = next(t for t in tools if t["name"] == "get_specializations")
+    assert "program_name" in specialization_tool["inputSchema"]["required"]
+    assert "academic_year" in specialization_tool["inputSchema"]["required"]
+    assert "specialization_name" in specialization_tool["inputSchema"]["properties"]
 
 
 # ---------------------------------------------------------------------------
@@ -519,7 +529,12 @@ def test_remote_mcp_uses_correct_groq_headers():
         assert tools[0]["server_label"] == "dtu_courses"
         assert tools[0]["server_url"] == mcp_server_url + "/mcp"
         assert tools[0]["headers"]["Authorization"] == f"Bearer {mcp_token}"
-        assert tools[0]["allowed_tools"] == ["get_course", "search_courses", "get_study_plan"]
+        assert tools[0]["allowed_tools"] == [
+            "get_course",
+            "search_courses",
+            "get_study_plan",
+            "get_specializations",
+        ]
         assert call_kwargs["max_output_tokens"] == 1000
         assert call_kwargs["max_tool_calls"] == 3
         assert "2026-2027" in call_kwargs["instructions"]

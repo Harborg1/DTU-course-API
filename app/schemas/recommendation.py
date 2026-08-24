@@ -84,6 +84,40 @@ class StudyPlanOverview(BaseModel):
     sections: list[StudyPlanSectionInfo]
 
 
+class SpecializationCourseInfo(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    course_number: str | None = Field(default=None, alias="courseNumber")
+    title: str
+    ects: float | None = None
+    schedule: str | None = None
+    role: str
+    is_terminated: bool = Field(default=False, alias="isTerminated")
+    source_url: str | None = Field(default=None, alias="sourceUrl")
+
+
+class SpecializationRequirementInfo(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    requirement_type: str = Field(alias="requirementType")
+    description: str
+    required_ects: float | None = Field(default=None, alias="requiredEcts")
+    required_count: int | None = Field(default=None, alias="requiredCount")
+    courses: list[SpecializationCourseInfo] = Field(default_factory=list)
+
+
+class SpecializationInfo(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    program_name: str = Field(alias="programName")
+    name: str
+    slug: str
+    description: str | None = None
+    source_url: str = Field(alias="sourceUrl")
+    requirements: list[SpecializationRequirementInfo] = Field(default_factory=list)
+    courses: list[SpecializationCourseInfo] = Field(default_factory=list)
+
+
 class ChatResponse(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
@@ -91,5 +125,6 @@ class ChatResponse(BaseModel):
     understood: UnderstoodContext
     recommendations: list[RecommendedCourse] = Field(default_factory=list)
     study_plan: StudyPlanOverview | None = Field(default=None, alias="studyPlan")
+    specializations: list[SpecializationInfo] = Field(default_factory=list)
     academic_year: str = Field(alias="academicYear")
     is_direct_answer: bool = Field(default=False, alias="isDirectAnswer")

@@ -131,6 +131,25 @@ Chatten genkender derefter spørgsmål som “Jeg studerer Anvendt Matematik –
 opbygget, og hvilke kurser er obligatoriske?” og returnerer både en forklaring og et struktureret
 `studyPlan`-objekt.
 
+### Specialiseringer
+
+Specialiseringer gemmes som børn af de importerede kandidatprogrammer. Kursuskrav bevarer forskellen
+mellem obligatoriske kurser, “vælg ét”, minimum antal kurser, minimum ECTS, anbefalede kurser og
+udgåede kurser, som fortsat tæller. Importér derfor studieprogrammerne først og derefter
+specialiseringerne:
+
+```bash
+alembic upgrade head
+python -m importer.study_plan_cli --urls-file app/data/program_urls.txt
+python -m importer.specialization_cli --urls-file app/data/specializations_urls.txt
+```
+
+En mindre smoke-test kan køres med `--limit 5`. Importen er idempotent og springer sider over, hvis
+det strukturerede indhold er uændret. Chatten kan derefter besvare spørgsmål som “Hvilke
+specialiseringer har Computer Science and Engineering?” og “Hvilke kurser kræver Artificial
+Intelligence and Algorithms-specialiseringen?”. Svaret indeholder også et struktureret
+`specializations`-felt med krav, kurser og officielle DTU-kilder.
+
 Kursusimportens slutrapport viser discovered, imported, updated, unchanged og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
 
 ## API

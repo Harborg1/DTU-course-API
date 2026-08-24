@@ -1,8 +1,8 @@
 """
 Remote MCP server with Streamable HTTP transport.
 
-Exposes three read-only database tools (get_course, search_courses,
-get_study_plan) at the /mcp endpoint on the FastAPI application.
+Exposes four read-only database tools (get_course, search_courses,
+get_study_plan, get_specializations) at the /mcp endpoint on the FastAPI application.
 All tools use the existing SQLAlchemy session factory and always
 require an academic_year parameter.
 
@@ -124,6 +124,26 @@ _GET_STUDY_PLAN_SCHEMA: dict[str, Any] = {
     "required": ["program_name", "academic_year"],
 }
 
+_GET_SPECIALIZATIONS_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "program_name": {
+            "type": "string",
+            "description": "Name of the MSc study program (e.g. 'Computer Science and Engineering')",
+        },
+        "specialization_name": {
+            "type": "string",
+            "description": "Optional specialization name; omit it to list every specialization for the program",
+        },
+        "academic_year": {
+            "type": "string",
+            "description": "Academic year used to select the imported study program (e.g. '2026-2027')",
+            "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+    },
+    "required": ["program_name", "academic_year"],
+}
+
 # ---------------------------------------------------------------------------
 # Tool definitions
 # ---------------------------------------------------------------------------
@@ -158,10 +178,20 @@ _GET_STUDY_PLAN_TOOL = Tool(
     inputSchema=_GET_STUDY_PLAN_SCHEMA,
 )
 
+_GET_SPECIALIZATIONS_TOOL = Tool(
+    name="get_specializations",
+    description=(
+        "List official DTU specializations for an MSc program, or get the structured course requirements "
+        "for one named specialization. Distinguishes mandatory, choice, recommended, and historical courses."
+    ),
+    inputSchema=_GET_SPECIALIZATIONS_SCHEMA,
+)
+
 ALL_TOOLS: list[Tool] = [
     _COURSE_TOOL,
     _SEARCH_COURSES_TOOL,
     _GET_STUDY_PLAN_TOOL,
+    _GET_SPECIALIZATIONS_TOOL,
 ]
 
 # ---------------------------------------------------------------------------
@@ -417,10 +447,130 @@ def _handle_get_study_plan(arguments: dict[str, Any]) -> dict[str, Any]:
         session.close()
 
 
+def _handle_get_specializations(arguments: dict[str, Any]) -> dict[str, Any]:
+    program_name = str(arguments.get("program_name", "")).strip()
+    if not program_name:
+        return {"error": "program_name is required"}
+    academic_year = _academic_year(arguments)
+    if academic_year is None:
+        return {"error": "academic_year must contain consecutive years, e.g. 2026-2027"}
+    specialization_name = str(arguments.get("specialization_name", "")).strip()
+
+    from app.database import SessionLocal
+    from app.models.specialization import (
+        SpecializationRequirement,
+        SpecializationRequirementCourse,
+        StudySpecialization,
+    )
+    from app.models.study_plan import StudyProgram
+    from sqlalchemy import and_, func, or_, select
+    from sqlalchemy.orm import selectinload
+
+    session = SessionLocal()
+    try:
+        start_year = int(academic_year[:4])
+        year_filter = or_(
+            StudyProgram.academic_year == academic_year,
+            and_(
+                StudyProgram.academic_year.is_(None),
+                or_(StudyProgram.valid_from_year.is_(None), StudyProgram.valid_from_year <= start_year),
+                or_(StudyProgram.valid_to_year.is_(None), StudyProgram.valid_to_year >= start_year),
+            ),
+        )
+        programs = list(
+            session.scalars(
+                select(StudyProgram).where(
+                    year_filter,
+                    StudyProgram.degree_type == "Master",
+                    func.lower(StudyProgram.name) == program_name.casefold(),
+                )
+            )
+        )
+        if not programs:
+            programs = list(
+                session.scalars(
+                    select(StudyProgram)
+                    .where(
+                        year_filter,
+                        StudyProgram.degree_type == "Master",
+                        StudyProgram.name.ilike(f"%{program_name}%"),
+                    )
+                    .limit(3)
+                )
+            )
+        if len(programs) > 1:
+            return {"error": "Study program name is ambiguous", "matches": [item.name for item in programs]}
+        if not programs:
+            return {"error": "Study program not found"}
+        program = programs[0]
+
+        filters = [StudySpecialization.program_id == program.id]
+        if specialization_name:
+            filters.append(StudySpecialization.name.ilike(f"%{specialization_name}%"))
+        options = (
+            selectinload(StudySpecialization.courses),
+            selectinload(StudySpecialization.requirements)
+            .selectinload(SpecializationRequirement.course_links)
+            .selectinload(SpecializationRequirementCourse.course),
+        )
+        specializations = list(
+            session.scalars(
+                select(StudySpecialization)
+                .where(*filters)
+                .options(*options)
+                .order_by(StudySpecialization.position)
+            ).unique()
+        )
+        if specialization_name and not specializations:
+            return {"error": "Specialization not found", "program_name": program.name}
+
+        return {
+            "program_name": program.name,
+            "academic_year": program.academic_year or academic_year,
+            "specializations": [
+                {
+                    "name": specialization.name,
+                    "slug": specialization.slug,
+                    "description": specialization.description,
+                    "source_url": specialization.source_url,
+                    "requirements": [
+                        {
+                            "requirement_type": requirement.requirement_type,
+                            "description": requirement.description,
+                            "required_ects": (
+                                float(requirement.required_ects)
+                                if requirement.required_ects is not None
+                                else None
+                            ),
+                            "required_count": requirement.required_count,
+                            "courses": [
+                                {
+                                    "course_number": link.course.course_number,
+                                    "title": link.course.title,
+                                    "ects": float(link.course.ects) if link.course.ects is not None else None,
+                                    "role": link.course.role,
+                                    "is_terminated": link.course.is_terminated,
+                                }
+                                for link in sorted(
+                                    requirement.course_links, key=lambda item: item.course.position
+                                )
+                            ],
+                        }
+                        for requirement in specialization.requirements
+                    ],
+                }
+                for specialization in specializations
+            ],
+        }
+    finally:
+        session.close()
+
+
 _TOOL_HANDLERS: dict[str, Callable[[dict[str, Any]], dict[str, Any]]] = {
     "get_course": _handle_get_course,
     "search_courses": _handle_search_courses,
     "get_study_plan": _handle_get_study_plan,
+    "get_specializations": _handle_get_specializations,
 }
 
 

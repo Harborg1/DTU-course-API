@@ -27,6 +27,11 @@ class StudyPlanIntent(Intent):
 
 
 @dataclass
+class SpecializationIntent(Intent):
+    type: str = "specialization_qa"
+
+
+@dataclass
 class RecommendationIntent(Intent):
     type: str = "course_recommendation"
     topic: str = ""
@@ -103,6 +108,19 @@ _STUDY_PLAN_INDICATORS = [
     "hvordan er optagelseskrav",
     "what are the admission requirements",
 ]
+
+_SPECIALIZATION_INDICATORS = (
+    "specialisering",
+    "specialiseringer",
+    "specialisation",
+    "specialisations",
+    "specialization",
+    "specializations",
+    "study track",
+    "study tracks",
+    "studieretning",
+    "studieretninger",
+)
 
 _INTENT_KEYWORDS = {
     "ects": {
@@ -258,17 +276,27 @@ def is_study_plan_related(text: str) -> bool:
     return any(indicator in normalized for indicator in _STUDY_PLAN_INDICATORS)
 
 
+def is_specialization_related(text: str) -> bool:
+    """Check if text asks about a programme specialization or study track."""
+    normalized = text.casefold()
+    return any(indicator in normalized for indicator in _SPECIALIZATION_INDICATORS)
+
+
 def classify_intent(text: str) -> Intent:
     """Classify user's intent based on their question.
 
     Priority order:
-    1. Course Q&A — 5-digit course number
-    2. Study Plan Q&A — study program rules/requirements
-    3. Course Recommendation — topic/level/ects search
-    4. Open Question — general question
+    1. Specialization Q&A — specialization names and requirements
+    2. Course Q&A — 5-digit course number
+    3. Study Plan Q&A — study program rules/requirements
+    4. Course Recommendation — topic/level/ects search
+    5. Open Question — general question
     """
     course_number = extract_course_number(text)
     keywords = extract_intent_keywords(text)
+
+    if is_specialization_related(text):
+        return SpecializationIntent(confidence=0.9)
 
     if course_number:
         return CourseQAIntent(confidence=1.0, course_number=course_number)

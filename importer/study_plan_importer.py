@@ -87,19 +87,23 @@ def study_plan_content_hash(data: StudyProgramData) -> str:
     return hashlib.sha256(payload.encode()).hexdigest()
 
 
-def _make_program(data: StudyProgramData, digest: str) -> StudyProgram:
-    program = StudyProgram(
-        slug=data.slug,
-        name=data.name,
-        degree_type=data.degree_type,
-        aliases=data.aliases,
-        academic_year=data.academic_year,
-        valid_from_year=data.valid_from_year,
-        valid_to_year=data.valid_to_year,
-        introduction=data.introduction,
-        source_url=data.source_url,
-        content_hash=digest,
-    )
+def _make_program(
+    data: StudyProgramData,
+    digest: str,
+    program: StudyProgram | None = None,
+) -> StudyProgram:
+    if program is None:
+        program = StudyProgram()
+    program.slug = data.slug
+    program.name = data.name
+    program.degree_type = data.degree_type
+    program.aliases = data.aliases
+    program.academic_year = data.academic_year
+    program.valid_from_year = data.valid_from_year
+    program.valid_to_year = data.valid_to_year
+    program.introduction = data.introduction
+    program.source_url = data.source_url
+    program.content_hash = digest
     requirements_by_key: dict[str, StudyPlanRequirement] = {}
     pending_parents: list[tuple[StudyPlanRequirement, str]] = []
 
@@ -156,9 +160,13 @@ def upsert_study_plan(session: Session, data: StudyProgramData) -> str:
         return "unchanged"
     action = "imported" if existing is None else "updated"
     if existing is not None:
-        session.delete(existing)
+        # Keep the StudyProgram row stable so child data imported from other
+        # sources, such as specializations, survives a curriculum refresh.
+        existing.sections.clear()
         session.flush()
-    session.add(_make_program(data, digest))
+        _make_program(data, digest, existing)
+    else:
+        session.add(_make_program(data, digest))
     session.flush()
     return action
 

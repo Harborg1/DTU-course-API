@@ -8,11 +8,19 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session, selectinload
 
 from app.models.course import Course
+from app.models.specialization import (
+    SpecializationRequirement,
+    SpecializationRequirementCourse,
+    StudySpecialization,
+)
 from app.models.study_plan import StudyPlanRequirement, StudyPlanRequirementCourse, StudyPlanSection, StudyProgram
 from app.services.course_service import get_course
 from app.schemas.recommendation import (
     ChatResponse,
     RecommendedCourse,
+    SpecializationCourseInfo,
+    SpecializationInfo,
+    SpecializationRequirementInfo,
     StudyPlanCourseInfo,
     StudyPlanOverview,
     StudyPlanRequirementInfo,
@@ -24,6 +32,7 @@ from app.services.intent_service import (
     CourseQAIntent,
     OpenQuestionIntent,
     RecommendationIntent,
+    SpecializationIntent,
     StudyPlanIntent,
     classify_intent,
     extract_course_number,
@@ -269,8 +278,145 @@ def _matching_study_program(session: Session, text: str) -> StudyProgram | None:
         .selectinload(StudyPlanSection.requirements)
         .selectinload(StudyPlanRequirement.course_links)
         .selectinload(StudyPlanRequirementCourse.course),
+        selectinload(StudyProgram.specializations).selectinload(StudySpecialization.courses),
+        selectinload(StudyProgram.specializations)
+        .selectinload(StudySpecialization.requirements)
+        .selectinload(SpecializationRequirement.course_links)
+        .selectinload(SpecializationRequirementCourse.course),
     )
     return session.scalar(statement)
+
+
+def _matching_specialization(
+    session: Session,
+    text: str,
+    *,
+    program: StudyProgram | None = None,
+) -> StudySpecialization | None:
+    normalized_key = _program_key(text)
+    padded_text = f" {normalized_key} "
+    text_tokens = normalized_key.split()
+    statement = select(StudySpecialization)
+    if program is not None:
+        statement = statement.where(StudySpecialization.program_id == program.id)
+    specializations = list(session.scalars(statement))
+    candidates: list[tuple[int, float, int, StudySpecialization]] = []
+    for specialization in specializations:
+        aliases = {
+            _program_key(specialization.name),
+            _program_key(specialization.slug.replace("-", " ")),
+        }
+        for alias in aliases:
+            if not alias:
+                continue
+            if f" {alias} " in padded_text:
+                candidates.append((2, 1.0, len(alias), specialization))
+                continue
+            similarity = _alias_similarity(alias, text_tokens)
+            if similarity >= (0.9 if len(alias.split()) == 1 else 0.86):
+                candidates.append((1, similarity, len(alias), specialization))
+    if not candidates:
+        return None
+    candidates.sort(key=lambda item: item[:3], reverse=True)
+    best = candidates[0]
+    distinct_matches = {item[3].id for item in candidates if item[:3] == best[:3]}
+    if len(distinct_matches) > 1:
+        return None
+    options = (
+        selectinload(StudySpecialization.program),
+        selectinload(StudySpecialization.courses),
+        selectinload(StudySpecialization.requirements)
+        .selectinload(SpecializationRequirement.course_links)
+        .selectinload(SpecializationRequirementCourse.course),
+    )
+    return session.scalar(select(StudySpecialization).where(StudySpecialization.id == best[3].id).options(*options))
+
+
+def _specialization_course_info(course) -> SpecializationCourseInfo:
+    return SpecializationCourseInfo(
+        courseNumber=course.course_number,
+        title=course.title,
+        ects=float(course.ects) if course.ects is not None else None,
+        schedule=course.schedule,
+        role=course.role,
+        isTerminated=course.is_terminated,
+        sourceUrl=course.source_url,
+    )
+
+
+def _specialization_info(specialization: StudySpecialization) -> SpecializationInfo:
+    requirements = []
+    for requirement in specialization.requirements:
+        linked_courses = sorted(
+            (link.course for link in requirement.course_links), key=lambda course: course.position
+        )
+        requirements.append(
+            SpecializationRequirementInfo(
+                requirementType=requirement.requirement_type,
+                description=requirement.description,
+                requiredEcts=(float(requirement.required_ects) if requirement.required_ects is not None else None),
+                requiredCount=requirement.required_count,
+                courses=[_specialization_course_info(course) for course in linked_courses],
+            )
+        )
+    return SpecializationInfo(
+        programName=specialization.program.name,
+        name=specialization.name,
+        slug=specialization.slug,
+        description=specialization.description,
+        sourceUrl=specialization.source_url,
+        requirements=requirements,
+        courses=[_specialization_course_info(course) for course in specialization.courses],
+    )
+
+
+def _specialization_requirement_text(requirement: SpecializationRequirement) -> str:
+    course_labels = ", ".join(
+        f"{link.course.course_number} {link.course.title}" if link.course.course_number else link.course.title
+        for link in sorted(requirement.course_links, key=lambda link: link.course.position)
+    )
+    if requirement.requirement_type == "min_ects" and requirement.required_ects is not None:
+        lead = f"Vælg mindst {_format_ects(requirement.required_ects)} ECTS"
+    elif requirement.requirement_type == "one_of":
+        lead = "Vælg ét kursus"
+    elif requirement.requirement_type == "min_count" and requirement.required_count is not None:
+        lead = f"Vælg mindst {requirement.required_count} kurser"
+    elif requirement.requirement_type == "all_of":
+        lead = "Tag alle følgende kurser"
+    elif requirement.requirement_type == "recommended":
+        lead = "Anbefalede kurser"
+    elif requirement.requirement_type == "historical":
+        lead = "Udgåede kurser, der stadig tæller"
+    else:
+        lead = requirement.description
+    return f"{lead}: {course_labels}." if course_labels else f"{lead}."
+
+
+def _answer_specializations(
+    program: StudyProgram,
+    specialization: StudySpecialization | None,
+    *,
+    academic_year: str,
+) -> ChatResponse:
+    if specialization is None:
+        specializations = list(program.specializations)
+        if not specializations:
+            reply = f"Jeg har ingen importerede officielle specialiseringer for {program.name}."
+        else:
+            names = ", ".join(item.name for item in specializations)
+            reply = f"{program.name} har følgende importerede specialiseringer: {names}."
+    else:
+        specializations = [specialization]
+        details = " ".join(_specialization_requirement_text(rule) for rule in specialization.requirements)
+        reply = f"For specialiseringen {specialization.name} på {program.name}: {details}".strip()
+    return ChatResponse(
+        reply=reply,
+        understood=UnderstoodContext(topic="specialization", level=program.degree_type, program=program.name),
+        recommendations=[],
+        specializations=[_specialization_info(item) for item in specializations],
+        academicYear=program.academic_year or academic_year,
+        isDirectAnswer=True,
+    )
 
 
 def _study_plan_course_info(course) -> StudyPlanCourseInfo:
@@ -498,7 +644,30 @@ def recommend_courses(
     # conversation is still passed to Groq and used for programme matching.
     intent = classify_intent(latest_user_message)
 
-    # 1. Course Q&A — 5-digit course number → Groq via remote MCP
+    # 1. Specialization Q&A — deterministic database answer with structured requirements
+    if isinstance(intent, SpecializationIntent):
+        program = _matching_study_program(session, conversation)
+        specialization = _matching_specialization(session, conversation, program=program)
+        if specialization is None:
+            global_specialization = _matching_specialization(session, conversation)
+            if global_specialization is not None:
+                specialization = global_specialization
+                program = global_specialization.program
+        elif program is None:
+            program = specialization.program
+        if program is None:
+            return ChatResponse(
+                reply=(
+                    "Jeg kan forklare specialiseringerne, men jeg kan ikke identificere studieprogrammet eller "
+                    "specialiseringen entydigt. Skriv for eksempel 'specialiseringer på Computer Science and Engineering'."
+                ),
+                understood=UnderstoodContext(topic="specialization"),
+                recommendations=[],
+                academicYear=academic_year,
+            )
+        return _answer_specializations(program, specialization, academic_year=academic_year)
+
+    # 2. Course Q&A — 5-digit course number → Groq via remote MCP
     if isinstance(intent, CourseQAIntent):
         course = get_course(session, intent.course_number, academic_year)
         if course:
@@ -526,7 +695,7 @@ def recommend_courses(
             academicYear=academic_year,
         )
 
-    # 2. Study Plan Q&A — Groq via remote MCP, fallback to static plan
+    # 3. Study Plan Q&A — Groq via remote MCP, fallback to static plan
     if isinstance(intent, StudyPlanIntent):
         program = _matching_study_program(session, conversation)
         if program is None:
@@ -557,7 +726,7 @@ def recommend_courses(
             logger.exception("Groq/MCP could not answer a study plan question — falling back to static plan")
             return _answer_study_plan(program, academic_year=academic_year)
 
-    # 3. Course Recommendation — Groq via remote MCP
+    # 4. Course Recommendation — Groq via remote MCP
     if isinstance(intent, RecommendationIntent):
         try:
             reply = answer_with_remote_mcp(conversation, academic_year)
@@ -572,7 +741,7 @@ def recommend_courses(
             logger.exception("Groq/MCP could not answer a recommendation request")
             pass  # fall through to regex search
 
-    # 4. Open Question — Groq (no DB)
+    # 5. Open Question — Groq (no DB)
     if isinstance(intent, OpenQuestionIntent):
         try:
             reply = answer_with_remote_mcp(conversation, academic_year)
