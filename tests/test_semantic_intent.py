@@ -10,6 +10,7 @@ from app.services.semantic_intent_service import (
     intent_from_query_plan,
 )
 from app.services.intent_service import StudyPlanIntent
+from app.services.search_service import SearchResult
 
 
 def _settings(**overrides):
@@ -33,6 +34,7 @@ def _program_overview_plan(**overrides) -> SemanticQueryPlan:
         "specialization_mention": None,
         "course_number": None,
         "topic": None,
+        "topics": [],
         "result_mode": "summary",
         "language": "en",
         "confidence": 0.97,
@@ -133,3 +135,65 @@ def test_semantic_program_overview_is_database_backed_and_marks_specializations_
         "Software Engineering",
     ]
     assert all(item.is_optional for item in response.specializations)
+
+
+def test_all_course_search_unions_topics_deduplicates_and_bypasses_mcp(db_session, sample_courses):
+    plan = SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic="artificial intelligence and machine learning",
+        topics=["artificial intelligence", "machine learning"],
+        result_mode="all",
+        language="en",
+        confidence=1,
+    )
+    machine_learning_course = sample_courses[0]
+    artificial_intelligence_course = sample_courses[1]
+
+    def search_result(*_args, **kwargs):
+        if kwargs["q"] == "artificial intelligence":
+            return SearchResult(
+                count=1,
+                courses=[(artificial_intelligence_course, 0.8)],
+                search_language="en",
+            )
+        return SearchResult(
+            count=2,
+            courses=[
+                (machine_learning_course, 0.9),
+                (artificial_intelligence_course, 0.4),
+            ],
+            search_language="en",
+        )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=plan,
+        ),
+        patch(
+            "app.services.recommendation_service.search_courses",
+            side_effect=search_result,
+        ) as course_search,
+        patch("app.services.recommendation_service.answer_with_remote_mcp") as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["Find all courses about artificial intelligence and machine learning"],
+            academic_year="2026-2027",
+        )
+
+    remote_answer.assert_not_called()
+    assert [call.kwargs["q"] for call in course_search.call_args_list] == [
+        "artificial intelligence",
+        "machine learning",
+    ]
+    assert all(call.kwargs["limit"] == 10_000 for call in course_search.call_args_list)
+    assert [course.course_number for course in response.recommendations] == ["02450", "01418"]
+    assert response.reply.startswith(
+        "I found 2 unique courses for artificial intelligence and machine learning."
+    )
+    assert response.reply.count("01418") == 1

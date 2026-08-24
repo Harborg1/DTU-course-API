@@ -47,6 +47,7 @@ class SemanticQueryPlan(BaseModel):
     specialization_mention: str | None
     course_number: str | None = Field(pattern=r"^\d{5}$")
     topic: str | None
+    topics: list[str]
     result_mode: Literal["summary", "all", "page", "single"]
     language: Literal["da", "en"]
     confidence: float = Field(ge=0, le=1)
@@ -70,7 +71,11 @@ def classify_query_semantically(
         "names. A guide, study guide, curriculum introduction, or general description of a named programme "
         "is study_program/overview. Questions about programme construction or required credits are "
         "study_program/requirements. Questions about a specialization or its courses use the specialization "
-        "domain. Course discovery by subject uses course/search or course/recommend. Use general only for "
+        "domain. Course discovery by subject uses course/search or course/recommend. For course discovery, "
+        "put each distinct requested subject in topics, splitting coordinated subjects while preserving "
+        "multiword subjects such as 'artificial intelligence' and 'machine learning'; otherwise use an empty "
+        "topics list. Use result_mode=all when the user asks for all, every, the complete list, or equivalent. "
+        "Use general only for "
         "requests unrelated to these domains, and use clarify when the intended action is genuinely ambiguous. "
         "The latest request determines the operation; earlier conversation may only resolve omitted context."
     )

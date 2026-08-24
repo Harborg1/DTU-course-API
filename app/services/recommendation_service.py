@@ -232,6 +232,14 @@ def _asks_general_msc_ects(text: str) -> bool:
     return "ects" in normalized and mentions_msc is not None and asks_for_total is not None
 
 
+def _asks_for_all_results(text: str) -> bool:
+    normalized = _normalise(text)
+    return re.search(
+        r"\b(all|every|entire|complete|full list|list them all|alle|samtlige|hele listen|vis dem alle)\b",
+        normalized,
+    ) is not None
+
+
 def _program_aliases(program: StudyProgram) -> dict[str, int]:
     aliases: dict[str, int] = {}
 
@@ -750,6 +758,104 @@ def _answer_program_overview(
     )
 
 
+def _answer_all_course_matches(
+    session: Session,
+    *,
+    plan: SemanticQueryPlan,
+    messages: list[str],
+    academic_year: str,
+) -> ChatResponse:
+    """Return the complete, deduplicated union for every requested course topic."""
+    topics = list(dict.fromkeys(topic.strip() for topic in plan.topics if topic.strip()))
+    if not topics and plan.topic:
+        topics = [plan.topic.strip()]
+
+    context = understand_context(messages)
+    matches: dict[str, tuple[Course, float, set[str]]] = {}
+    for topic in topics:
+        result = search_courses(
+            session,
+            q=topic,
+            academic_year=academic_year,
+            ects=context.ects,
+            level=context.level,
+            period=context.period,
+            language=context.language,
+            search_language=plan.language,
+            limit=10_000,
+            offset=0,
+        )
+        for course, score in result.courses:
+            existing = matches.get(course.course_number)
+            if existing is None:
+                matches[course.course_number] = (course, score, {topic})
+            else:
+                existing[2].add(topic)
+                if score > existing[1]:
+                    matches[course.course_number] = (course, score, existing[2])
+
+    ranked_matches = sorted(
+        matches.values(),
+        key=lambda item: (-item[1], item[0].course_number),
+    )
+    recommendations = [
+        RecommendedCourse(
+            courseNumber=course.course_number,
+            title=course.translated_value("title", plan.language) or course.title,
+            ects=float(course.ects) if course.ects is not None else None,
+            level=course.level,
+            period=course.period,
+            schedule=course.schedule,
+            language=course.language,
+            department=course.department,
+            description=_short_description(course.translated_value("description", plan.language)),
+            reason=(
+                "Matcher databasesøgningen for: "
+                if plan.language == "da"
+                else "Matches the database search for: "
+            )
+            + ", ".join(sorted(matched_topics))
+            + ".",
+            sourceUrl=course.source_url,
+        )
+        for course, _score, matched_topics in ranked_matches
+    ]
+
+    topic_label = plan.topic or " and ".join(topics)
+    if plan.language == "da":
+        heading = f"Jeg fandt {len(recommendations)} unikke kurser for {topic_label}."
+    else:
+        heading = f"I found {len(recommendations)} unique courses for {topic_label}."
+    course_lines = [
+        "- "
+        + f"{course.course_number} — {course.translated_value('title', plan.language) or course.title}"
+        + (f" ({float(course.ects):g} ECTS)" if course.ects is not None else "")
+        for course, _score, _matched_topics in ranked_matches
+    ]
+    if not course_lines:
+        reply = (
+            f"{heading} Prøv et andet eller mere konkret emne."
+            if plan.language == "da"
+            else f"{heading} Try another or more specific topic."
+        )
+    else:
+        reply = heading + "\n\n" + "\n".join(course_lines)
+
+    return ChatResponse(
+        reply=reply,
+        understood=UnderstoodContext(
+            topic=topic_label,
+            level=context.level,
+            ects=float(context.ects) if context.ects is not None else None,
+            language=context.language,
+            period=context.period,
+        ),
+        recommendations=recommendations,
+        academicYear=academic_year,
+        isDirectAnswer=True,
+    )
+
+
 def _run_search(session: Session, context: RecommendationContext, academic_year: str) -> SearchResult:
     kwargs = {
         "q": None if context.topic == "DTU courses" else context.topic,
@@ -782,6 +888,12 @@ def _reason(course: Course, context: RecommendationContext) -> str:
     return ", og ".join(reasons) + "."
 
 
+def _short_description(description: str | None) -> str | None:
+    if description and len(description) > 360:
+        return description[:357].rstrip() + "..."
+    return description
+
+
 def recommend_courses(
     session: Session,
     *,
@@ -796,7 +908,7 @@ def recommend_courses(
     # conversation is still passed to Groq and used for programme matching.
     intent = classify_intent(latest_user_message)
     semantic_plan: SemanticQueryPlan | None = None
-    if isinstance(intent, OpenQuestionIntent):
+    if isinstance(intent, OpenQuestionIntent) or _asks_for_all_results(latest_user_message):
         semantic_plan = classify_query_semantically(
             latest_user_message,
             conversation=conversation,
@@ -928,6 +1040,19 @@ def recommend_courses(
 
     # 4. Course Recommendation — Groq via remote MCP
     if isinstance(intent, RecommendationIntent):
+        if (
+            semantic_plan is not None
+            and semantic_plan.domain == "course"
+            and semantic_plan.operation in {"search", "list", "recommend"}
+            and semantic_plan.result_mode == "all"
+            and bool(semantic_plan.topics or semantic_plan.topic)
+        ):
+            return _answer_all_course_matches(
+                session,
+                plan=semantic_plan,
+                messages=messages,
+                academic_year=academic_year,
+            )
         try:
             reply = answer_with_remote_mcp(conversation, academic_year)
             return ChatResponse(
@@ -973,9 +1098,7 @@ def recommend_courses(
             schedule=course.schedule,
             language=course.language,
             department=course.department,
-            description=(course.description[:357].rstrip() + "...")
-            if course.description and len(course.description) > 360
-            else course.description,
+            description=_short_description(course.description),
             reason=_reason(course, context),
             sourceUrl=course.source_url,
         )
