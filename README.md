@@ -79,6 +79,9 @@ uvicorn app.main:app --reload
 | `SEMANTIC_RESOLUTION_ENABLED` | Slår valideret semantisk program- og specialiseringsmatching til eller fra |
 | `SEMANTIC_RESOLUTION_MIN_CONFIDENCE` | Minimum confidence for at acceptere et semantisk match; standard er `0.85` |
 | `SEMANTIC_RESOLUTION_TIMEOUT` | Timeout i sekunder for den semantiske fallback; standard er `10` |
+| `SEMANTIC_INTENT_ENABLED` | Slår struktureret semantisk hensigtsklassifikation til for spørgsmål, som keyword-routeren ikke forstår |
+| `SEMANTIC_INTENT_MIN_CONFIDENCE` | Minimum confidence for at acceptere en semantisk hensigt; standard er `0.85` |
+| `SEMANTIC_INTENT_TIMEOUT` | Timeout i sekunder for hensigtsklassifikationen; standard er `10` |
 | `MCP_TOKEN` | Lang, tilfældig bearer token, der beskytter `/mcp` |
 | `MCP_SERVER_URL` | Offentlig HTTPS-base-URL, fx `https://app.example.com` |
 
@@ -91,6 +94,9 @@ aliaser og stavefejlstolerant sammenligning. Hvis det ikke giver et entydigt mat
 kan Groq vælge semantisk mellem de faktiske databasekandidater. Modellens svar er
 struktureret og accepteres kun, når kandidat-ID'et findes i databasen og confidence
 opfylder den konfigurerede grænse; ellers beder chatten fortsat om præcisering.
+Spørgsmål, som keyword-routeren ikke genkender, klassificeres desuden til en
+valideret, struktureret hensigt. Eksempelvis routes “computer science study guide”
+til en databasebaseret programoversigt i stedet for et frit generelt AI-svar.
 
 ## Import
 

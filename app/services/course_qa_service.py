@@ -46,6 +46,8 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         f"Når du kalder get_course, skal response_language være '{language}'.\n"
         "Brug altid værktøjerne til at hente fakta fra databasen — gæt aldrig data.\n"
         "Brug get_specializations til spørgsmål om specialiseringer og deres kursuskrav.\n"
+        "Specialiseringer er valgfrie studieveje. Beskriv aldrig en specialiserings kursuspulje som "
+        "obligatorisk for alle på programmet; respekter de returnerede requirement-roller.\n"
         "Besvar kun på baggrund af data fra værktøjerne.\n"
         "Hvis et værktøj returnerer en fejl, forklar det kort til brugeren.\n"
         "Svar kort og præcist — højst 3 sætninger.\n"

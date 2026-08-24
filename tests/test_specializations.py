@@ -139,6 +139,7 @@ def test_chat_lists_program_specializations_and_explains_course_requirements(db_
         academic_year="2026-2027",
     )
     assert overview.specializations[0].name == "Artificial Intelligence and Algorithms"
+    assert overview.specializations[0].is_optional is True
     assert "følgende importerede specialiseringer" in overview.reply
 
     detail = recommend_courses(
@@ -230,6 +231,8 @@ def test_mcp_specialization_handler_returns_structured_requirements(db_session):
         )
 
     specialization = result["specializations"][0]
+    assert result["specializations_are_optional"] is True
+    assert specialization["is_optional"] is True
     assert specialization["requirements"][0]["required_ects"] == 25
     assert specialization["requirements"][0]["courses"][0]["course_number"] == "02249"
 

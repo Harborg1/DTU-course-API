@@ -181,8 +181,10 @@ _GET_STUDY_PLAN_TOOL = Tool(
 _GET_SPECIALIZATIONS_TOOL = Tool(
     name="get_specializations",
     description=(
-        "List official DTU specializations for an MSc program, or get the structured course requirements "
-        "for one named specialization. Distinguishes mandatory, choice, recommended, and historical courses."
+        "List optional official DTU specialization paths for an MSc program, or get the structured course "
+        "requirements for one named specialization. A specialization's requirements are not automatically "
+        "mandatory for every student in the programme. Distinguishes mandatory, choice, recommended, and "
+        "historical courses."
     ),
     inputSchema=_GET_SPECIALIZATIONS_SCHEMA,
 )
@@ -527,10 +529,12 @@ def _handle_get_specializations(arguments: dict[str, Any]) -> dict[str, Any]:
         return {
             "program_name": program.name,
             "academic_year": program.academic_year or academic_year,
+            "specializations_are_optional": True,
             "specializations": [
                 {
                     "name": specialization.name,
                     "slug": specialization.slug,
+                    "is_optional": True,
                     "description": specialization.description,
                     "source_url": specialization.source_url,
                     "requirements": [

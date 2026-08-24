@@ -21,6 +21,9 @@ class Settings(BaseSettings):
     semantic_resolution_enabled: bool = True
     semantic_resolution_min_confidence: float = Field(default=0.85, ge=0, le=1)
     semantic_resolution_timeout: float = Field(default=10.0, gt=0, le=30)
+    semantic_intent_enabled: bool = True
+    semantic_intent_min_confidence: float = Field(default=0.85, ge=0, le=1)
+    semantic_intent_timeout: float = Field(default=10.0, gt=0, le=30)
     mcp_token: str = ""
     mcp_server_url: str = ""
 

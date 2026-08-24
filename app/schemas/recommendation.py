@@ -112,6 +112,7 @@ class SpecializationInfo(BaseModel):
     program_name: str = Field(alias="programName")
     name: str
     slug: str
+    is_optional: bool = Field(default=True, alias="isOptional")
     description: str | None = None
     source_url: str = Field(alias="sourceUrl")
     requirements: list[SpecializationRequirementInfo] = Field(default_factory=list)

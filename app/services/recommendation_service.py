@@ -39,6 +39,11 @@ from app.services.intent_service import (
 )
 from app.services.search_service import SearchResult, search_courses
 from app.services.semantic_resolver import SemanticCandidate, resolve_semantic_candidate
+from app.services.semantic_intent_service import (
+    SemanticQueryPlan,
+    classify_query_semantically,
+    intent_from_query_plan,
+)
 from app.services.specialization_aliases import SPECIALIZATION_ALIASES
 from app.services.study_program_aliases import PROGRAM_ALIASES
 
@@ -439,6 +444,7 @@ def _specialization_info(specialization: StudySpecialization) -> SpecializationI
         programName=specialization.program.name,
         name=specialization.name,
         slug=specialization.slug,
+        isOptional=True,
         description=specialization.description,
         sourceUrl=specialization.source_url,
         requirements=requirements,
@@ -674,6 +680,76 @@ def _answer_study_plan(
     )
 
 
+def _answer_program_overview(
+    program: StudyProgram,
+    *,
+    academic_year: str,
+    language: str,
+) -> ChatResponse:
+    """Render a database-backed overview without asking the LLM to infer requirements."""
+    specializations = list(program.specializations)
+    specialization_names = ", ".join(item.name for item in specializations)
+
+    if language == "da":
+        opening = f"{program.name} er en {program.degree_type}-uddannelse"
+        if program.degree_type == "Master":
+            structure = (
+                "Den ordinære MSc er på 120 ECTS: mindst 10 ECTS polyteknisk grundlag, "
+                "mindst 50 ECTS retningsspecifikke kurser, 30 ECTS kandidatspeciale og "
+                "valgfrie kurser op til de 120 ECTS."
+            )
+        else:
+            section_names = ", ".join(section.name for section in program.sections)
+            structure = (
+                f"Den importerede studieplan er opdelt i: {section_names}."
+                if section_names
+                else "Den strukturerede studieplan fremgår nedenfor."
+            )
+        specialization_text = (
+            f"Programmet tilbyder følgende valgfrie specialiseringsmuligheder: {specialization_names}. "
+            "Kurser under en specialisering er krav for at få den pågældende specialisering, "
+            "men de er ikke automatisk obligatoriske for alle studerende på programmet."
+            if specialization_names
+            else "Der er ingen importerede specialiseringer for programmet."
+        )
+    else:
+        opening = f"{program.name} is a {program.degree_type} programme"
+        if program.degree_type == "Master":
+            structure = (
+                "The standard MSc totals 120 ECTS: at least 10 ECTS of polytechnical foundation, "
+                "at least 50 ECTS of programme-specific courses, a 30 ECTS master's thesis, and "
+                "electives completing the 120 ECTS total."
+            )
+        else:
+            section_names = ", ".join(section.name for section in program.sections)
+            structure = (
+                f"The imported study plan is divided into: {section_names}."
+                if section_names
+                else "The structured study plan is included below."
+            )
+        specialization_text = (
+            f"The programme offers these optional specialization paths: {specialization_names}. "
+            "Courses under a specialization are requirements for earning that specialization; "
+            "they are not automatically mandatory for every student in the programme."
+            if specialization_names
+            else "No specializations have been imported for this programme."
+        )
+
+    return ChatResponse(
+        reply=f"{opening}. {structure} {specialization_text}",
+        understood=UnderstoodContext(
+            topic="program overview",
+            level=program.degree_type,
+            program=program.name,
+        ),
+        recommendations=[],
+        studyPlan=_study_plan_overview(program),
+        specializations=[_specialization_info(item) for item in specializations],
+        academicYear=program.academic_year or academic_year,
+        isDirectAnswer=True,
+    )
+
+
 def _run_search(session: Session, context: RecommendationContext, academic_year: str) -> SearchResult:
     kwargs = {
         "q": None if context.topic == "DTU courses" else context.topic,
@@ -719,13 +795,33 @@ def recommend_courses(
     # override a new study-plan or recommendation question. The full
     # conversation is still passed to Groq and used for programme matching.
     intent = classify_intent(latest_user_message)
+    semantic_plan: SemanticQueryPlan | None = None
+    if isinstance(intent, OpenQuestionIntent):
+        semantic_plan = classify_query_semantically(
+            latest_user_message,
+            conversation=conversation,
+        )
+        if semantic_plan is not None:
+            semantic_intent = intent_from_query_plan(semantic_plan)
+            if semantic_intent is not None:
+                intent = semantic_intent
+
+    resolution_text = conversation
+    if semantic_plan is not None:
+        extracted_mentions = [
+            semantic_plan.program_mention,
+            semantic_plan.specialization_mention,
+        ]
+        resolution_text = " ".join(
+            [conversation, *(mention for mention in extracted_mentions if mention)]
+        )
 
     # 1. Specialization Q&A — deterministic database answer with structured requirements
     if isinstance(intent, SpecializationIntent):
-        program = _matching_study_program(session, conversation)
-        specialization = _matching_specialization(session, conversation, program=program)
+        program = _matching_study_program(session, resolution_text)
+        specialization = _matching_specialization(session, resolution_text, program=program)
         if specialization is None:
-            global_specialization = _matching_specialization(session, conversation)
+            global_specialization = _matching_specialization(session, resolution_text)
             if global_specialization is not None:
                 specialization = global_specialization
                 program = global_specialization.program
@@ -790,7 +886,7 @@ def recommend_courses(
                 academicYear=academic_year,
                 isDirectAnswer=True,
             )
-        program = _matching_study_program(session, conversation)
+        program = _matching_study_program(session, resolution_text)
         if program is None:
             return ChatResponse(
                 reply=(
@@ -800,6 +896,16 @@ def recommend_courses(
                 understood=UnderstoodContext(topic="study plan"),
                 recommendations=[],
                 academicYear=academic_year,
+            )
+        if (
+            semantic_plan is not None
+            and semantic_plan.domain == "study_program"
+            and semantic_plan.operation == "overview"
+        ):
+            return _answer_program_overview(
+                program,
+                academic_year=academic_year,
+                language=semantic_plan.language,
             )
         try:
             study_plan_question = (
