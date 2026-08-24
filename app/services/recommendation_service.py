@@ -820,7 +820,8 @@ def recommend_courses(
     if isinstance(intent, SpecializationIntent):
         program = _matching_study_program(session, resolution_text)
         specialization = _matching_specialization(session, resolution_text, program=program)
-        if specialization is None:
+        asks_for_overview = _asks_for_specialization_overview(resolution_text)
+        if specialization is None and not (program is not None and asks_for_overview):
             global_specialization = _matching_specialization(session, resolution_text)
             if global_specialization is not None:
                 specialization = global_specialization
