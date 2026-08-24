@@ -50,6 +50,11 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         "obligatorisk for alle på programmet; respekter de returnerede requirement-roller.\n"
         "Besvar kun på baggrund af data fra værktøjerne.\n"
         "Hvis et værktøj returnerer en fejl, forklar det kort til brugeren.\n"
+        "Never format course results as Markdown tables.\n"
+        "Present courses as a readable bullet list.\n"
+        "Put the course number and title on the first line and ECTS and level on the following line.\n"
+        "Do not place multiple courses on the same line.\n"
+        "The sentence limit applies to prose, not to individual course-list entries.\n"
         "Svar kort og præcist — højst 3 sætninger.\n"
     )
 
