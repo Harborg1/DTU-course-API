@@ -92,6 +92,27 @@ button { color: inherit; }
 
 .header-actions { display: flex; align-items: center; gap: 18px; }
 
+.language-toggle {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.42);
+}
+
+.language-toggle button {
+  padding: 5px 8px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: .68rem;
+  font-weight: 750;
+}
+
+.language-toggle button[aria-pressed="true"] { color: white; background: var(--ink); }
+
 .status {
   display: inline-flex;
   align-items: center;
@@ -396,6 +417,7 @@ footer a { color: inherit; text-underline-offset: 3px; }
   .site-header, main, footer { width: min(100% - 24px, 1060px); }
   .site-header { padding-top: 15px; }
   .status { display: none; }
+  .header-actions { gap: 8px; }
   main { margin-top: 26px; }
   .hero { margin-bottom: 30px; }
   h1 { font-size: clamp(2.75rem, 13vw, 4.5rem); }

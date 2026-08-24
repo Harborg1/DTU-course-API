@@ -5,6 +5,48 @@ const conversation = document.querySelector("#conversation");
 const resetButton = document.querySelector("#resetButton");
 const suggestions = document.querySelector("#suggestions");
 
+const translations = {
+  en: {
+    title: "Course Compass — find your next DTU course", description: "Get personal recommendations from DTU's official course catalogue.",
+    brand: "Course Compass", brandLabel: "Course Compass home", status: "Official DTU data", languageLabel: "Choose language", reset: "New chat",
+    eyebrow: "Your personal course guide", heroTitle: "From curiosity to<br><em>the right course.</em>", heroCopy: "Tell us what you study and what you want to learn. We will explain your study plan or find relevant courses in DTU's official catalogue.",
+    chatLabel: "Course recommender", guideName: "Course guide", guideState: "Ready to help · Academic year 2026/2027",
+    welcome: "Hi! Describe your study programme and interests, and I will help you find a good starting point.", hint: "You can also mention level, ECTS, teaching period, or language.", examplesLabel: "Examples",
+    suggestionPlan: "My study plan", suggestionPlanMeta: "Applied Mathematics · BSc", inputLabel: "Tell us what you are looking for in a course", placeholder: "E.g. I study MSc Computer Science and am interested in machine learning…", sendLabel: "Send message",
+    disclaimer: "Recommendations are for guidance only. Always check the course description and prerequisites at DTU.", builtFrom: "Built with data from", courseDatabase: "DTU's course database", apiDocs: "API documentation",
+    promptPlan: "I study Applied Mathematics and am unsure how the programme is structured and which courses are mandatory.", promptMachineLearning: "I study Computer Science and Engineering at MSc level and am looking for courses in machine learning.", promptOptimization: "I am a BSc student looking for a 5 ECTS course about optimization."
+  },
+  da: {
+    title: "Kurskompas — find dit næste DTU-kursus", description: "Få personlige anbefalinger blandt officielle DTU-kurser.",
+    brand: "Kurskompas", brandLabel: "Kurskompas forside", status: "Officielle DTU-data", languageLabel: "Vælg sprog", reset: "Ny samtale",
+    eyebrow: "Din personlige kursusguide", heroTitle: "Fra interesse til<br><em>det rigtige kursus.</em>", heroCopy: "Fortæl hvad du læser, og hvad du gerne vil vide. Så forklarer vi din studieplan eller finder relevante kurser i DTU's officielle katalog.",
+    chatLabel: "Kursusanbefaler", guideName: "Kursusguiden", guideState: "Klar til at hjælpe · Studieår 2026/2027",
+    welcome: "Hej! Beskriv din studieretning og dine interesser, så finder jeg et godt udgangspunkt.", hint: "Du kan også nævne niveau, ECTS, periode eller undervisningssprog.", examplesLabel: "Eksempler",
+    suggestionPlan: "Min studieplan", suggestionPlanMeta: "Anvendt Matematik · Bachelor", inputLabel: "Fortæl om dine kursusønsker", placeholder: "Fx: Jeg læser MSc Computer Science og interesserer mig for machine learning…", sendLabel: "Send besked",
+    disclaimer: "Anbefalingerne er vejledende. Tjek altid kursusbeskrivelsen og forudsætningerne hos DTU.", builtFrom: "Bygget på data fra", courseDatabase: "DTU Kursusbasen", apiDocs: "API-dokumentation",
+    promptPlan: "Jeg studerer Anvendt Matematik og er i tvivl om, hvordan studiet er opbygget, og hvilke kurser der er obligatoriske.", promptMachineLearning: "Jeg læser Computer Science and Engineering på MSc-niveau og søger kurser inden for machine learning.", promptOptimization: "Jeg er BSc-studerende og vil gerne finde et kursus på 5 ECTS om optimization."
+  }
+};
+
+let currentLanguage = "en";
+
+function setLanguage(language) {
+  currentLanguage = language;
+  const copy = translations[language];
+  document.documentElement.lang = language;
+  document.title = copy.title;
+  document.querySelectorAll("[data-i18n]").forEach((element) => { element.textContent = copy[element.dataset.i18n]; });
+  document.querySelectorAll("[data-i18n-html]").forEach((element) => { element.innerHTML = copy[element.dataset.i18nHtml]; });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => { element.setAttribute("aria-label", copy[element.dataset.i18nAriaLabel]); });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => { element.placeholder = copy[element.dataset.i18nPlaceholder]; });
+  document.querySelectorAll("[data-i18n-content]").forEach((element) => { element.content = copy[element.dataset.i18nContent]; });
+  document.querySelectorAll("[data-language]").forEach((button) => { button.setAttribute("aria-pressed", String(button.dataset.language === language)); });
+}
+
+document.querySelectorAll("[data-language]").forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.language));
+});
+
 let messages = [];
 let busy = false;
 
@@ -399,8 +441,8 @@ input.addEventListener("keydown", (event) => {
   }
 });
 
-document.querySelectorAll("[data-prompt]").forEach((button) => {
-  button.addEventListener("click", () => submitMessage(button.dataset.prompt));
+document.querySelectorAll("[data-prompt-key]").forEach((button) => {
+  button.addEventListener("click", () => submitMessage(translations[currentLanguage][button.dataset.promptKey]));
 });
 
 resetButton.addEventListener("click", () => window.location.reload());

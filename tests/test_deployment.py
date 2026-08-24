@@ -23,6 +23,15 @@ def test_homepage_is_public_html(client):
     assert response.headers["content-type"].startswith("text/html")
 
 
+def test_homepage_defaults_to_english_and_has_language_toggle(client):
+    response = client.get("/")
+
+    assert '<html lang="en">' in response.text
+    assert "Your personal course guide" in response.text
+    assert 'data-language="en" aria-pressed="true"' in response.text
+    assert 'data-language="da" aria-pressed="false"' in response.text
+
+
 def test_python_runtime_is_pinned_to_312():
     assert (PROJECT_ROOT / ".python-version").read_text().strip() == "3.12"
 

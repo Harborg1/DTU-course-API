@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="da">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Få personlige anbefalinger blandt officielle DTU-kurser.">
-    <title>Kurskompas — find dit næste DTU-kursus</title>
+    <meta name="description" content="Get personal recommendations from DTU's official course catalogue." data-i18n-content="description">
+    <title>Course Compass — find your next DTU course</title>
     <link rel="stylesheet" href="/static/styles.css">
     <script src="/static/app.js" defer></script>
   </head>
@@ -13,34 +13,35 @@
     <div class="ambient ambient-two" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Kurskompas forside">
+      <a class="brand" href="/" aria-label="Course Compass home" data-i18n-aria-label="brandLabel">
         <span class="brand-mark" aria-hidden="true">
           <span></span><span></span><span></span>
         </span>
-        <span>Kurskompas</span>
+        <span data-i18n="brand">Course Compass</span>
       </a>
       <div class="header-actions">
-        <span class="status"><i></i> Officielle DTU-data</span>
-        <button class="reset-button" id="resetButton" type="button">Ny samtale</button>
+        <span class="status"><i></i> <span data-i18n="status">Official DTU data</span></span>
+        <div class="language-toggle" role="group" aria-label="Choose language" data-i18n-aria-label="languageLabel">
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+          <button type="button" data-language="da" aria-pressed="false">DA</button>
+        </div>
+        <button class="reset-button" id="resetButton" type="button" data-i18n="reset">New chat</button>
       </div>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="heroTitle">
-        <p class="eyebrow">Din personlige kursusguide</p>
-        <h1 id="heroTitle">Fra interesse til<br><em>det rigtige kursus.</em></h1>
-        <p class="hero-copy">
-          Fortæl hvad du læser, og hvad du gerne vil vide. Så forklarer vi din
-          studieplan eller finder relevante kurser i DTU's officielle katalog.
-        </p>
+        <p class="eyebrow" data-i18n="eyebrow">Your personal course guide</p>
+        <h1 id="heroTitle" data-i18n-html="heroTitle">From curiosity to<br><em>the right course.</em></h1>
+        <p class="hero-copy" data-i18n="heroCopy">Tell us what you study and what you want to learn. We will explain your study plan or find relevant courses in DTU's official catalogue.</p>
       </section>
 
-      <section class="chat-shell" aria-label="Kursusanbefaler">
+      <section class="chat-shell" aria-label="Course recommender" data-i18n-aria-label="chatLabel">
         <div class="chat-topbar">
           <div class="guide-avatar" aria-hidden="true">K</div>
           <div>
-            <p class="guide-name">Kursusguiden</p>
-            <p class="guide-state">Klar til at hjælpe · Studieår 2026/2027</p>
+            <p class="guide-name" data-i18n="guideName">Course guide</p>
+            <p class="guide-state" data-i18n="guideState">Ready to help · Academic year 2026/2027</p>
           </div>
         </div>
 
@@ -48,47 +49,48 @@
           <article class="message-row assistant-row">
             <div class="message-avatar" aria-hidden="true">K</div>
             <div class="message assistant-message">
-              <p>Hej! Beskriv din studieretning og dine interesser, så finder jeg et godt udgangspunkt.</p>
-              <p class="message-hint">Du kan også nævne niveau, ECTS, periode eller undervisningssprog.</p>
+              <p data-i18n="welcome">Hi! Describe your study programme and interests, and I will help you find a good starting point.</p>
+              <p class="message-hint" data-i18n="hint">You can also mention level, ECTS, teaching period, or language.</p>
             </div>
           </article>
 
-          <div class="suggestions" id="suggestions" aria-label="Eksempler">
-            <button type="button" data-prompt="Jeg studerer Anvendt Matematik og er i tvivl om, hvordan studiet er opbygget, og hvilke kurser der er obligatoriske.">
-              <span>Min studieplan</span><small>Anvendt Matematik · Bachelor</small>
+          <div class="suggestions" id="suggestions" aria-label="Examples" data-i18n-aria-label="examplesLabel">
+            <button type="button" data-prompt-key="promptPlan">
+              <span data-i18n="suggestionPlan">My study plan</span><small data-i18n="suggestionPlanMeta">Applied Mathematics · BSc</small>
             </button>
-            <button type="button" data-prompt="Jeg læser Computer Science and Engineering på MSc-niveau og søger kurser inden for machine learning.">
+            <button type="button" data-prompt-key="promptMachineLearning">
               <span>Machine learning</span><small>MSc · Computer Science</small>
             </button>
-            <button type="button" data-prompt="Jeg er BSc-studerende og vil gerne finde et kursus på 5 ECTS om optimization.">
+            <button type="button" data-prompt-key="promptOptimization">
               <span>Optimization</span><small>BSc · 5 ECTS</small>
             </button>
           </div>
         </div>
 
         <form class="composer" id="chatForm">
-          <label class="sr-only" for="messageInput">Fortæl om dine kursusønsker</label>
+          <label class="sr-only" for="messageInput" data-i18n="inputLabel">Tell us what you are looking for in a course</label>
           <textarea
             id="messageInput"
             name="message"
             rows="1"
             maxlength="800"
-            placeholder="Fx: Jeg læser MSc Computer Science og interesserer mig for machine learning…"
+            placeholder="E.g. I study MSc Computer Science and am interested in machine learning…"
+            data-i18n-placeholder="placeholder"
             required
           ></textarea>
-          <button class="send-button" id="sendButton" type="submit" aria-label="Send besked">
+          <button class="send-button" id="sendButton" type="submit" aria-label="Send message" data-i18n-aria-label="sendLabel">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
         </form>
-        <p class="disclaimer">Anbefalingerne er vejledende. Tjek altid kursusbeskrivelsen og forudsætningerne hos DTU.</p>
+        <p class="disclaimer" data-i18n="disclaimer">Recommendations are for guidance only. Always check the course description and prerequisites at DTU.</p>
       </section>
     </main>
 
     <footer>
-      <p>Bygget på data fra <a href="https://kurser.dtu.dk" target="_blank" rel="noreferrer">DTU Kursusbasen</a></p>
-      <a href="/docs">API-dokumentation</a>
+      <p><span data-i18n="builtFrom">Built with data from</span> <a href="https://kurser.dtu.dk" target="_blank" rel="noreferrer" data-i18n="courseDatabase">DTU's course database</a></p>
+      <a href="/docs" data-i18n="apiDocs">API documentation</a>
     </footer>
   </body>
 </html>
