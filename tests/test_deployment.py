@@ -32,6 +32,12 @@ def test_homepage_defaults_to_english_and_has_language_toggle(client):
     assert 'data-language="da" aria-pressed="false"' in response.text
 
 
+def test_chat_message_styles_preserve_model_line_breaks():
+    styles = (PROJECT_ROOT / "app" / "web" / "static" / "styles.css").read_text()
+
+    assert ".message p { margin: 0; white-space: pre-wrap; }" in styles
+
+
 def test_python_runtime_is_pinned_to_312():
     assert (PROJECT_ROOT / ".python-version").read_text().strip() == "3.12"
 

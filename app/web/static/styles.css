@@ -231,7 +231,7 @@ h1 em { color: var(--accent); font-weight: 500; }
   line-height: 1.55;
 }
 
-.message p { margin: 0; }
+.message p { margin: 0; white-space: pre-wrap; }
 .message p + p { margin-top: 8px; }
 .assistant-message { background: #edf2ee; }
 .user-message { color: white; background: var(--ink); border-radius: 17px 4px 17px 17px; }
