@@ -18,6 +18,9 @@ class Settings(BaseSettings):
     groq_model: str = Field(default="openai/gpt-oss-120b")
     groq_base_url: str = Field(default="https://api.groq.com/openai/v1")
     groq_temperature: float = Field(default=0.0)
+    semantic_resolution_enabled: bool = True
+    semantic_resolution_min_confidence: float = Field(default=0.85, ge=0, le=1)
+    semantic_resolution_timeout: float = Field(default=10.0, gt=0, le=30)
     mcp_token: str = ""
     mcp_server_url: str = ""
 

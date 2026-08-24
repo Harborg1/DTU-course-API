@@ -76,12 +76,21 @@ uvicorn app.main:app --reload
 | `LOG_LEVEL` | Fx `INFO` eller `DEBUG` |
 | `GROQ_API_KEY` | Groq API-nøgle til chatten |
 | `GROQ_MODEL` | Groq-model; standard er `openai/gpt-oss-120b` |
+| `SEMANTIC_RESOLUTION_ENABLED` | Slår valideret semantisk program- og specialiseringsmatching til eller fra |
+| `SEMANTIC_RESOLUTION_MIN_CONFIDENCE` | Minimum confidence for at acceptere et semantisk match; standard er `0.85` |
+| `SEMANTIC_RESOLUTION_TIMEOUT` | Timeout i sekunder for den semantiske fallback; standard er `10` |
 | `MCP_TOKEN` | Lang, tilfældig bearer token, der beskytter `/mcp` |
 | `MCP_SERVER_URL` | Offentlig HTTPS-base-URL, fx `https://app.example.com` |
 
 Chatten bruger Groqs Responses API. Groq kalder de skrivebeskyttede MCP-tools
 `get_course`, `search_courses` og `get_study_plan` på `/mcp`; browseren får aldrig
 adgang til `GROQ_API_KEY` eller `MCP_TOKEN`.
+
+Programmer og specialiseringer matches først deterministisk med officielle navne,
+aliaser og stavefejlstolerant sammenligning. Hvis det ikke giver et entydigt match,
+kan Groq vælge semantisk mellem de faktiske databasekandidater. Modellens svar er
+struktureret og accepteres kun, når kandidat-ID'et findes i databasen og confidence
+opfylder den konfigurerede grænse; ellers beder chatten fortsat om præcisering.
 
 ## Import
 

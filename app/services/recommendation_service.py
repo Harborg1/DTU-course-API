@@ -38,6 +38,7 @@ from app.services.intent_service import (
     extract_course_number,
 )
 from app.services.search_service import SearchResult, search_courses
+from app.services.semantic_resolver import SemanticCandidate, resolve_semantic_candidate
 from app.services.specialization_aliases import SPECIALIZATION_ALIASES
 from app.services.study_program_aliases import PROGRAM_ALIASES
 
@@ -261,12 +262,14 @@ def _matching_study_program(session: Session, text: str) -> StudyProgram | None:
     padded_text = f" {normalized_key} "
     text_tokens = normalized_key.split()
     requested_degree = _requested_degree_type(text)
-    programs = list(session.scalars(select(StudyProgram)))
+    programs = [
+        program
+        for program in session.scalars(select(StudyProgram))
+        if requested_degree is None or program.degree_type == requested_degree
+    ]
     candidates: list[tuple[int, float, int, int, StudyProgram]] = []
 
     for program in programs:
-        if requested_degree and program.degree_type != requested_degree:
-            continue
         for alias, priority in _program_aliases(program).items():
             if f" {alias} " in padded_text:
                 candidates.append((2, 1.0, priority, len(alias), program))
@@ -276,18 +279,38 @@ def _matching_study_program(session: Session, text: str) -> StudyProgram | None:
             if similarity >= threshold:
                 candidates.append((1, similarity, priority, len(alias), program))
 
-    if not candidates:
-        return None
-    candidates.sort(key=lambda item: item[:4], reverse=True)
-    best = candidates[0]
-    competing = next((item for item in candidates[1:] if item[4].id != best[4].id), None)
-    if competing is not None:
-        if best[0] == competing[0] == 2 and best[1:4] == competing[1:4]:
-            return None
-        if best[0] == competing[0] == 1 and best[1] - competing[1] < 0.04:
-            return None
+    matched_program: StudyProgram | None = None
+    if candidates:
+        candidates.sort(key=lambda item: item[:4], reverse=True)
+        best = candidates[0]
+        competing = next((item for item in candidates[1:] if item[4].id != best[4].id), None)
+        ambiguous = competing is not None and (
+            (best[0] == competing[0] == 2 and best[1:4] == competing[1:4])
+            or (best[0] == competing[0] == 1 and best[1] - competing[1] < 0.04)
+        )
+        if not ambiguous:
+            matched_program = best[4]
 
-    statement = select(StudyProgram).where(StudyProgram.id == best[4].id).options(
+    if matched_program is None:
+        semantic_id = resolve_semantic_candidate(
+            text,
+            [
+                SemanticCandidate(
+                    id=str(program.id),
+                    name=f"{program.name} ({program.degree_type})",
+                    aliases=tuple(_program_aliases(program)),
+                )
+                for program in programs
+            ],
+            entity_type="DTU study programme",
+            context=(f"The requested degree type is {requested_degree}." if requested_degree else None),
+        )
+        matched_program = next((program for program in programs if str(program.id) == semantic_id), None)
+
+    if matched_program is None:
+        return None
+
+    statement = select(StudyProgram).where(StudyProgram.id == matched_program.id).options(
         selectinload(StudyProgram.sections).selectinload(StudyPlanSection.courses),
         selectinload(StudyProgram.sections)
         .selectinload(StudyPlanSection.requirements)
@@ -300,6 +323,26 @@ def _matching_study_program(session: Session, text: str) -> StudyProgram | None:
         .selectinload(SpecializationRequirementCourse.course),
     )
     return session.scalar(statement)
+
+
+def _specialization_aliases(specialization: StudySpecialization) -> set[str]:
+    aliases = {
+        _program_key(specialization.name),
+        _program_key(specialization.slug.replace("-", " ")),
+    }
+    aliases.update(
+        _program_key(alias)
+        for alias in SPECIALIZATION_ALIASES.get(specialization.program.slug, {}).get(
+            specialization.slug,
+            (),
+        )
+    )
+    return {alias for alias in aliases if alias}
+
+
+def _asks_for_specialization_overview(text: str) -> bool:
+    tokens = set(_program_key(text).split())
+    return bool(tokens & {"specialiseringer", "specializations", "specialisations"})
 
 
 def _matching_specialization(
@@ -317,32 +360,41 @@ def _matching_specialization(
     specializations = list(session.scalars(statement))
     candidates: list[tuple[int, float, int, StudySpecialization]] = []
     for specialization in specializations:
-        aliases = {
-            _program_key(specialization.name),
-            _program_key(specialization.slug.replace("-", " ")),
-        }
-        aliases.update(
-            _program_key(alias)
-            for alias in SPECIALIZATION_ALIASES.get(specialization.program.slug, {}).get(
-                specialization.slug,
-                (),
-            )
-        )
-        for alias in aliases:
-            if not alias:
-                continue
+        for alias in _specialization_aliases(specialization):
             if f" {alias} " in padded_text:
                 candidates.append((2, 1.0, len(alias), specialization))
                 continue
             similarity = _alias_similarity(alias, text_tokens)
             if similarity >= (0.9 if len(alias.split()) == 1 else 0.86):
                 candidates.append((1, similarity, len(alias), specialization))
-    if not candidates:
-        return None
-    candidates.sort(key=lambda item: item[:3], reverse=True)
-    best = candidates[0]
-    distinct_matches = {item[3].id for item in candidates if item[:3] == best[:3]}
-    if len(distinct_matches) > 1:
+    matched_specialization: StudySpecialization | None = None
+    if candidates:
+        candidates.sort(key=lambda item: item[:3], reverse=True)
+        best = candidates[0]
+        distinct_matches = {item[3].id for item in candidates if item[:3] == best[:3]}
+        if len(distinct_matches) == 1:
+            matched_specialization = best[3]
+
+    if matched_specialization is None and not _asks_for_specialization_overview(text):
+        semantic_id = resolve_semantic_candidate(
+            text,
+            [
+                SemanticCandidate(
+                    id=str(specialization.id),
+                    name=specialization.name,
+                    aliases=tuple(_specialization_aliases(specialization)),
+                )
+                for specialization in specializations
+            ],
+            entity_type="DTU study specialization",
+            context=(f"The study programme is {program.name}." if program else None),
+        )
+        matched_specialization = next(
+            (specialization for specialization in specializations if str(specialization.id) == semantic_id),
+            None,
+        )
+
+    if matched_specialization is None:
         return None
     options = (
         selectinload(StudySpecialization.program),
@@ -351,7 +403,9 @@ def _matching_specialization(
         .selectinload(SpecializationRequirement.course_links)
         .selectinload(SpecializationRequirementCourse.course),
     )
-    return session.scalar(select(StudySpecialization).where(StudySpecialization.id == best[3].id).options(*options))
+    return session.scalar(
+        select(StudySpecialization).where(StudySpecialization.id == matched_specialization.id).options(*options)
+    )
 
 
 def _specialization_course_info(course) -> SpecializationCourseInfo:
@@ -719,25 +773,25 @@ def recommend_courses(
 
     # 3. Study Plan Q&A — Groq via remote MCP, fallback to static plan
     if isinstance(intent, StudyPlanIntent):
+        if _asks_general_msc_ects(latest_user_message):
+            return ChatResponse(
+                reply=(
+                    "En ordinær toårig kandidatuddannelse (MSc) på DTU er på 120 ECTS. "
+                    "De er normalt fordelt på 10 ECTS polyteknisk grundlag, 50 ECTS "
+                    "retningsspecifikke kurser, 30 ECTS valgfrie kurser og et "
+                    "kandidatspeciale på 30 ECTS."
+                ),
+                understood=UnderstoodContext(
+                    topic="MSc degree requirements",
+                    level="Master",
+                    ects=120,
+                ),
+                recommendations=[],
+                academicYear=academic_year,
+                isDirectAnswer=True,
+            )
         program = _matching_study_program(session, conversation)
         if program is None:
-            if _asks_general_msc_ects(latest_user_message):
-                return ChatResponse(
-                    reply=(
-                        "En ordinær toårig kandidatuddannelse (MSc) på DTU er på 120 ECTS. "
-                        "De er normalt fordelt på 10 ECTS polyteknisk grundlag, 50 ECTS "
-                        "retningsspecifikke kurser, 30 ECTS valgfrie kurser og et "
-                        "kandidatspeciale på 30 ECTS."
-                    ),
-                    understood=UnderstoodContext(
-                        topic="MSc degree requirements",
-                        level="Master",
-                        ects=120,
-                    ),
-                    recommendations=[],
-                    academicYear=academic_year,
-                    isDirectAnswer=True,
-                )
             return ChatResponse(
                 reply=(
                     "Jeg kan forklare studieplanen, men jeg kan ikke identificere uddannelsen entydigt. "
