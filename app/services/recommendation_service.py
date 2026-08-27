@@ -782,6 +782,7 @@ def _answer_all_course_matches(
             period=context.period,
             language=context.language,
             search_language=plan.language,
+            search_all_languages=True,
             limit=10_000,
             offset=0,
         )
@@ -866,6 +867,7 @@ def _run_search(session: Session, context: RecommendationContext, academic_year:
         "language": context.language,
         "limit": 5,
         "offset": 0,
+        "search_all_languages": True,
     }
     result = search_courses(session, **kwargs)
     if result.count == 0 and context.level:

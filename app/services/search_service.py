@@ -28,6 +28,7 @@ def search_courses(
     language: str | None = None,
     campus: str | None = None,
     search_language: str | None = None,
+    search_all_languages: bool = False,
     limit: int = 20,
     offset: int = 0,
 ) -> SearchResult:
@@ -37,21 +38,21 @@ def search_courses(
         else detect_user_language(q or "")
     )
     dialect = session.get_bind().dialect.name
-    filters = [Course.academic_year == academic_year]
+    course_filters = [Course.academic_year == academic_year]
     if ects is not None:
-        filters.append(Course.ects == ects)
+        course_filters.append(Course.ects == ects)
     if level:
-        filters.append(func.lower(Course.level) == level.casefold())
+        course_filters.append(func.lower(Course.level) == level.casefold())
     if period:
-        filters.append(Course.period.ilike(f"%{period}%"))
+        course_filters.append(Course.period.ilike(f"%{period}%"))
     if schedule:
-        filters.append(Course.schedule.ilike(f"%{schedule}%"))
+        course_filters.append(Course.schedule.ilike(f"%{schedule}%"))
     if department:
-        filters.append(Course.department.ilike(f"%{department}%"))
+        course_filters.append(Course.department.ilike(f"%{department}%"))
     if language:
-        filters.append(func.lower(Course.language) == language.casefold())
+        course_filters.append(func.lower(Course.language) == language.casefold())
     if campus:
-        filters.append(Course.campus.ilike(f"%{campus}%"))
+        course_filters.append(Course.campus.ilike(f"%{campus}%"))
 
     if selected_language == "da":
         search_config = "danish"
@@ -60,7 +61,7 @@ def search_courses(
         search_config = "english"
         language_code = "en-GB"
 
-    searchable = [
+    searchable_columns = [
         CourseTranslation.title,
         CourseTranslation.description,
         CourseTranslation.content,
@@ -71,30 +72,52 @@ def search_courses(
         CourseTranslation.literature,
         CourseTranslation.remarks,
     ]
-    filters.append(CourseTranslation.language_code == language_code)
 
-    if q and dialect == "postgresql":
-        query = func.websearch_to_tsquery(search_config, q)
-        filters.append(CourseTranslation.search_vector.op("@@")(query))
-        rank = func.ts_rank_cd(CourseTranslation.search_vector, query, 32).label("relevance_score")
-    elif q:
-        pattern = f"%{q}%"
-        filters.append(or_(*(column.ilike(pattern) for column in searchable)))
-        # SQLite is used only by isolated tests; deterministic ordering matters more than a synthetic score.
-        rank = literal(1.0).label("relevance_score")
-    else:
-        rank = literal(0.0).label("relevance_score")
+    def language_statement(selected_code: str, selected_config: str):
+        filters = [*course_filters, CourseTranslation.language_code == selected_code]
+        if q and dialect == "postgresql":
+            query = func.websearch_to_tsquery(selected_config, q)
+            filters.append(CourseTranslation.search_vector.op("@@")(query))
+            rank = func.ts_rank_cd(CourseTranslation.search_vector, query, 32).label(
+                "relevance_score"
+            )
+        elif q:
+            pattern = f"%{q}%"
+            filters.append(or_(*(column.ilike(pattern) for column in searchable_columns)))
+            # SQLite is used only by isolated tests; deterministic ordering matters more than a synthetic score.
+            rank = literal(1.0).label("relevance_score")
+        else:
+            rank = literal(0.0).label("relevance_score")
+        condition = and_(*filters)
+        statement = select(Course, rank).join(CourseTranslation).where(condition)
+        if q:
+            statement = statement.order_by(rank.desc(), Course.course_number)
+        else:
+            statement = statement.order_by(Course.course_number)
+        return statement, condition
 
-    condition = and_(*filters)
-    count = session.scalar(
-        select(func.count()).select_from(Course).join(CourseTranslation).where(condition)
-    ) or 0
-    statement = select(Course, rank).join(CourseTranslation).where(condition)
-    if q:
-        statement = statement.order_by(rank.desc(), Course.course_number)
+    if search_all_languages and q:
+        merged: dict[int, tuple[Course, float]] = {}
+        for selected_code, selected_config in (("da-DK", "danish"), ("en-GB", "english")):
+            statement, _condition = language_statement(selected_code, selected_config)
+            for course, score in session.execute(statement).all():
+                numeric_score = float(score or 0.0)
+                existing = merged.get(course.id)
+                if existing is None or numeric_score > existing[1]:
+                    merged[course.id] = (course, numeric_score)
+        merged_rows = sorted(
+            merged.values(),
+            key=lambda item: (-item[1], item[0].course_number),
+        )
+        count = len(merged_rows)
+        rows = merged_rows[offset : offset + limit]
     else:
-        statement = statement.order_by(Course.course_number)
-    rows = session.execute(statement.limit(limit).offset(offset)).all()
+        statement, condition = language_statement(language_code, search_config)
+        count = session.scalar(
+            select(func.count()).select_from(Course).join(CourseTranslation).where(condition)
+        ) or 0
+        rows = session.execute(statement.limit(limit).offset(offset)).all()
+
     return SearchResult(
         count=count,
         courses=[(course, float(score or 0.0)) for course, score in rows],

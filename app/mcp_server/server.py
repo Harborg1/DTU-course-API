@@ -80,7 +80,7 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
         },
         "search_language": {
             "type": "string",
-            "description": "Language of the user's query; use 'da' for Danish and 'en' for English",
+            "description": "Language for returned titles and descriptions; use 'da' or 'en'",
             "enum": ["da", "en"],
         },
         "level": {
@@ -162,8 +162,8 @@ _SEARCH_COURSES_TOOL = Tool(
     name="search_courses",
     description=(
         "Search for DTU courses by keyword and optional filters. "
-        "Searches only the Danish course text when search_language is 'da' and "
-        "only the English course text when search_language is 'en'. "
+        "Searches both Danish and English course text, merges duplicate courses, and uses "
+        "search_language only to select the language of returned titles and descriptions. "
         "Returns the selected matching courses in ascending course-number order, "
         "with localized titles and descriptions."
     ),
@@ -314,6 +314,7 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             period=None,
             language=None,
             search_language=search_language,
+            search_all_languages=True,
             limit=limit,
             offset=0,
         )

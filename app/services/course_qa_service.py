@@ -43,6 +43,8 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         "Du har adgang til databasen via værktøjer, der automatisk kaldes når nødvendigt.\n"
         f"Brug studieåret {academic_year}, medmindre brugeren udtrykkeligt angiver et andet.\n"
         f"Når du kalder search_courses, skal search_language være '{language}'.\n"
+        "Når du kalder search_courses, skal q være et kort, kanonisk engelsk emne; oversæt brugerens "
+        "søgeemne til engelsk, mens search_language kun styrer sproget i de returnerede tekster.\n"
         f"Når du kalder get_course, skal response_language være '{language}'.\n"
         "Brug altid værktøjerne til at hente fakta fra databasen — gæt aldrig data.\n"
         "Brug get_specializations til spørgsmål om specialiseringer og deres kursuskrav.\n"

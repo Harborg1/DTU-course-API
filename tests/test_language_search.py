@@ -33,6 +33,30 @@ def _bilingual_course() -> Course:
     )
 
 
+def _quantum_course() -> Course:
+    now = datetime.now(UTC)
+    return Course(
+        course_number="02195",
+        academic_year="2026-2027",
+        source_url="https://kurser.dtu.dk/course/2026-2027/02195",
+        content_hash="b" * 64,
+        imported_at=now,
+        updated_at=now,
+        translations=[
+            CourseTranslation(
+                language_code="da-DK",
+                title="Kvantealgoritmer og maskinlæring",
+                description="Kvanteberegning og lineær algebra",
+            ),
+            CourseTranslation(
+                language_code="en-GB",
+                title="Quantum Algorithms and Machine Learning",
+                description="Quantum computing and linear algebra",
+            ),
+        ],
+    )
+
+
 def test_search_service_keeps_danish_and_english_text_separate(db_session):
     db_session.add(_bilingual_course())
     db_session.commit()
@@ -61,6 +85,48 @@ def test_search_service_keeps_danish_and_english_text_separate(db_session):
     assert [course.course_number for course, _ in english.courses] == ["02452"]
 
 
+def test_bilingual_search_returns_same_course_ids_for_both_presentation_languages(db_session):
+    db_session.add_all([_bilingual_course(), _quantum_course()])
+    db_session.commit()
+
+    danish = search_courses(
+        db_session,
+        q="quantum",
+        academic_year="2026-2027",
+        search_language="da",
+        search_all_languages=True,
+    )
+    english = search_courses(
+        db_session,
+        q="quantum",
+        academic_year="2026-2027",
+        search_language="en",
+        search_all_languages=True,
+    )
+
+    assert danish.count == english.count == 1
+    assert [course.course_number for course, _ in danish.courses] == ["02195"]
+    assert [course.course_number for course, _ in english.courses] == ["02195"]
+    assert danish.courses[0][0].title_da == "Kvantealgoritmer og maskinlæring"
+    assert english.courses[0][0].title_en == "Quantum Algorithms and Machine Learning"
+
+
+def test_bilingual_search_deduplicates_courses_matching_both_translations(db_session):
+    db_session.add(_bilingual_course())
+    db_session.commit()
+
+    result = search_courses(
+        db_session,
+        q="machine learning",
+        academic_year="2026-2027",
+        search_language="en",
+        search_all_languages=True,
+    )
+
+    assert result.count == 1
+    assert [course.course_number for course, _ in result.courses] == ["02452"]
+
+
 def test_mcp_search_requires_and_returns_search_language(db_session):
     db_session.add(_bilingual_course())
     db_session.commit()
@@ -86,6 +152,7 @@ def test_chat_prompt_passes_detected_language_to_mcp_tools():
 
     assert "search_language være 'da'" in prompt
     assert "response_language være 'da'" in prompt
+    assert "q være et kort, kanonisk engelsk emne" in prompt
 
 
 def test_chat_prompt_formats_course_results_as_multiline_bullet_lists():
