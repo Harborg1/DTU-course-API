@@ -54,6 +54,7 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         "Present courses as a readable bullet list.\n"
         "Put the course number and title on the first line and ECTS and level on the following line.\n"
         "Do not place multiple courses on the same line.\n"
+        "Always sort every course list by course number in ascending order before presenting it.\n"
         "The sentence limit applies to prose, not to individual course-list entries.\n"
         "Svar kort og præcist — højst 3 sætninger.\n"
     )

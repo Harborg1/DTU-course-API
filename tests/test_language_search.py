@@ -96,3 +96,4 @@ def test_chat_prompt_formats_course_results_as_multiline_bullet_lists():
     assert "course number and title on the first line" in prompt
     assert "ECTS and level on the following line" in prompt
     assert "Do not place multiple courses on the same line." in prompt
+    assert "sort every course list by course number in ascending order" in prompt

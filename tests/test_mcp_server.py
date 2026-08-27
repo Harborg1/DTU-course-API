@@ -359,6 +359,31 @@ def test_search_courses_limits_results(test_client):
     assert content["returned"] <= 20
 
 
+def test_search_courses_returns_selected_results_in_ascending_course_number_order(
+    test_client,
+    db_session,
+):
+    db_session.add_all(
+        [
+            _make_course("02450", "2026-2027", title="Machine Learning"),
+            _make_course("01418", "2026-2027", title="Applied Mathematics"),
+        ]
+    )
+    db_session.commit()
+
+    response = _send_jsonrpc(test_client, "tools/call", {
+        "name": "search_courses",
+        "arguments": {
+            "q": "",
+            "academic_year": "2026-2027",
+            "search_language": "en",
+        },
+    })
+
+    content = json.loads(response.json()["result"]["content"][0]["text"])
+    assert [course["course_number"] for course in content["courses"]] == ["01418", "02450"]
+
+
 def test_search_courses_with_level_filter(test_client, db_session):
     db_session.add(_make_course("02450", "2026-2027"))
     db_session.commit()

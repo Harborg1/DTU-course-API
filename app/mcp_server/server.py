@@ -164,7 +164,8 @@ _SEARCH_COURSES_TOOL = Tool(
         "Search for DTU courses by keyword and optional filters. "
         "Searches only the Danish course text when search_language is 'da' and "
         "only the English course text when search_language is 'en'. "
-        "Returns a list of matching courses with localized titles and descriptions."
+        "Returns the selected matching courses in ascending course-number order, "
+        "with localized titles and descriptions."
     ),
     inputSchema=_SEARCH_COURSES_SCHEMA,
 )
@@ -317,6 +318,10 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             offset=0,
         )
 
+        selected_courses = sorted(
+            result.courses[:limit],
+            key=lambda item: item[0].course_number.casefold(),
+        )
         courses = [
             {
                 "course_number": course.course_number,
@@ -334,7 +339,7 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
                 "level": course.level,
                 "source_url": course.source_url,
             }
-            for course, _score in result.courses[:limit]
+            for course, _score in selected_courses
         ]
 
         return {

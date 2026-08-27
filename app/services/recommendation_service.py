@@ -794,9 +794,9 @@ def _answer_all_course_matches(
                 if score > existing[1]:
                     matches[course.course_number] = (course, score, existing[2])
 
-    ranked_matches = sorted(
+    sorted_matches = sorted(
         matches.values(),
-        key=lambda item: (-item[1], item[0].course_number),
+        key=lambda item: item[0].course_number.casefold(),
     )
     recommendations = [
         RecommendedCourse(
@@ -818,7 +818,7 @@ def _answer_all_course_matches(
             + ".",
             sourceUrl=course.source_url,
         )
-        for course, _score, matched_topics in ranked_matches
+        for course, _score, matched_topics in sorted_matches
     ]
 
     topic_label = plan.topic or " and ".join(topics)
@@ -830,7 +830,7 @@ def _answer_all_course_matches(
         "- "
         + f"{course.course_number} — {course.translated_value('title', plan.language) or course.title}"
         + (f" ({float(course.ects):g} ECTS)" if course.ects is not None else "")
-        for course, _score, _matched_topics in ranked_matches
+        for course, _score, _matched_topics in sorted_matches
     ]
     if not course_lines:
         reply = (
@@ -1088,6 +1088,7 @@ def recommend_courses(
     if ranked_courses and ranked_courses[0][1] > 0:
         minimum_score = ranked_courses[0][1] * 0.4
         ranked_courses = [item for item in ranked_courses if item[1] >= minimum_score]
+    ranked_courses.sort(key=lambda item: item[0].course_number.casefold())
     courses = [
         RecommendedCourse(
             courseNumber=course.course_number,

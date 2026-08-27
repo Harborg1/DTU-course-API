@@ -192,8 +192,9 @@ def test_all_course_search_unions_topics_deduplicates_and_bypasses_mcp(db_sessio
         "machine learning",
     ]
     assert all(call.kwargs["limit"] == 10_000 for call in course_search.call_args_list)
-    assert [course.course_number for course in response.recommendations] == ["02450", "01418"]
+    assert [course.course_number for course in response.recommendations] == ["01418", "02450"]
     assert response.reply.startswith(
         "I found 2 unique courses for artificial intelligence and machine learning."
     )
+    assert response.reply.index("01418") < response.reply.index("02450")
     assert response.reply.count("01418") == 1
