@@ -403,10 +403,16 @@ async function submitMessage(text) {
   addTyping();
 
   try {
+    // The API only uses user messages for conversational context. Assistant
+    // replies can contain complete course lists and exceed the 800-character
+    // input limit, so do not submit those replies again on the next turn.
+    const requestMessages = messages
+      .filter((message) => message.role === "user")
+      .slice(-12);
     const response = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages: messages.slice(-12), academicYear: "2026-2027" }),
+      body: JSON.stringify({ messages: requestMessages, academicYear: "2026-2027" }),
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const result = await response.json();

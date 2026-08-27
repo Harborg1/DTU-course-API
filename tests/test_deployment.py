@@ -38,6 +38,13 @@ def test_chat_message_styles_preserve_model_line_breaks():
     assert ".message p { margin: 0; white-space: pre-wrap; }" in styles
 
 
+def test_chat_only_resubmits_user_messages_to_the_api():
+    script = (PROJECT_ROOT / "app" / "web" / "static" / "app.js").read_text()
+
+    assert '.filter((message) => message.role === "user")' in script
+    assert "JSON.stringify({ messages: requestMessages" in script
+
+
 def test_python_runtime_is_pinned_to_312():
     assert (PROJECT_ROOT / ".python-version").read_text().strip() == "3.12"
 
