@@ -7,6 +7,10 @@ from sqlalchemy.orm import Session
 from app.models.course import Course, CourseTranslation
 from app.models.import_failure import ImportFailure
 from app.schemas.course import CourseData
+from app.services.embedding_service import (
+    course_embedding_text_hash,
+    embedding_document_from_values,
+)
 
 
 def course_content_hash(data: CourseData) -> str:
@@ -50,6 +54,13 @@ def course_translation_values(data: CourseData, language: str) -> dict:
     return values
 
 
+def invalidate_translation_embedding(translation: CourseTranslation) -> None:
+    translation.embedding = None
+    translation.embedding_text_hash = None
+    translation.embedding_model = None
+    translation.embedding_updated_at = None
+
+
 def upsert_course(session: Session, data: CourseData) -> str:
     existing = session.scalar(
         select(Course).where(
@@ -81,6 +92,11 @@ def upsert_course(session: Session, data: CourseData) -> str:
         if translation is None:
             existing.translations.append(CourseTranslation(**new_values))
         else:
+            source_hash = course_embedding_text_hash(
+                embedding_document_from_values(data.course_number, new_values)
+            )
+            if translation.embedding_text_hash != source_hash:
+                invalidate_translation_embedding(translation)
             for key, value in new_values.items():
                 setattr(translation, key, value)
     existing.content_hash = digest

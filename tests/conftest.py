@@ -12,6 +12,7 @@ os.environ["DATABASE_URL"] = "sqlite://"
 os.environ["MCP_TOKEN"] = "test-mcp-token"
 os.environ["SEMANTIC_RESOLUTION_ENABLED"] = "false"
 os.environ["SEMANTIC_INTENT_ENABLED"] = "false"
+os.environ["SEMANTIC_COURSE_SEARCH_ENABLED"] = "false"
 
 from app.config import get_settings  # noqa: E402
 get_settings.cache_clear()

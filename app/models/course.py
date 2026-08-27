@@ -1,6 +1,7 @@
 from datetime import datetime
 from decimal import Decimal
 
+from pgvector.sqlalchemy import Vector
 from sqlalchemy import JSON, DateTime, FetchedValue, ForeignKey, Index, Numeric, String, Text, UniqueConstraint, func
 from sqlalchemy.dialects.postgresql import JSONB, TSVECTOR
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -10,6 +11,7 @@ from app.database import Base
 
 SearchVector = Text().with_variant(TSVECTOR(), "postgresql")
 StructuredJson = JSON().with_variant(JSONB(), "postgresql")
+EmbeddingVector = Vector(1536).with_variant(JSON(), "sqlite")
 
 
 class Course(Base):
@@ -218,5 +220,9 @@ class CourseTranslation(Base):
         server_default=FetchedValue(),
         server_onupdate=FetchedValue(),
     )
+    embedding: Mapped[list[float] | None] = mapped_column(EmbeddingVector)
+    embedding_text_hash: Mapped[str | None] = mapped_column(String(64))
+    embedding_model: Mapped[str | None] = mapped_column(String(100))
+    embedding_updated_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
     course: Mapped[Course] = relationship(back_populates="translations")

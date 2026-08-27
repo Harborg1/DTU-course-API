@@ -11,11 +11,16 @@ from app.models.course import Course, CourseTranslation
 from app.models.import_failure import ImportFailure
 from app.models.import_run import ImportRun
 from app.schemas.course import CourseData
+from app.services.embedding_service import (
+    course_embedding_text_hash,
+    embedding_document_from_values,
+)
 from importer.course_xml_parser import parse_course_xml
 from importer.importer import (
     course_content_hash,
     course_translation_values,
     course_values,
+    invalidate_translation_embedding,
     record_failure,
     upsert_course,
 )
@@ -173,6 +178,34 @@ def _bulk_upsert_postgresql(
                     **course_translation_values(course, language),
                 }
             )
+
+    changed_course_ids = {row["course_id"] for row in translation_rows}
+    course_numbers_by_id = {
+        course_id: course_number
+        for (course_number, _academic_year), course_id in course_ids.items()
+    }
+    existing_translations = {
+        (translation.course_id, translation.language_code): translation
+        for translation in session.scalars(
+            select(CourseTranslation).where(
+                CourseTranslation.course_id.in_(changed_course_ids)
+            )
+        )
+    }
+    for values in translation_rows:
+        translation = existing_translations.get(
+            (values["course_id"], values["language_code"])
+        )
+        if translation is None:
+            continue
+        source_hash = course_embedding_text_hash(
+            embedding_document_from_values(
+                course_numbers_by_id[values["course_id"]],
+                values,
+            )
+        )
+        if translation.embedding_text_hash != source_hash:
+            invalidate_translation_embedding(translation)
 
     for offset in range(0, len(translation_rows), batch_size):
         batch = translation_rows[offset : offset + batch_size]

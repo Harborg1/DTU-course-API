@@ -18,7 +18,7 @@ Web-chat MCP  Beskyttet REST API
         Groq    Copilot Studio
 ```
 
-Kursusdata hentes som struktureret XML, valideres og gemmes lokalt. API-laget bruger services og dependency-injected SQLAlchemy-sessions. `courses` indeholder kun sprogneutrale metadata, mens `course_translations` har én række per kursus og sprog. Hver oversættelse har et sprogtilpasset `tsvector`-indeks, så en dansk forespørgsel kun søger i danske kursustekster og en engelsk forespørgsel kun i engelske.
+Kursusdata hentes som struktureret XML, valideres og gemmes lokalt. API-laget bruger services og dependency-injected SQLAlchemy-sessions. `courses` indeholder kun sprogneutrale metadata, mens `course_translations` har én række per kursus og sprog. Hver oversættelse har et sprogtilpasset `tsvector`-indeks og en OpenAI-embedding i pgvector. Kursussøgning kombinerer præcise tekstmatch med cosine similarity, så både danske og engelske formuleringer samt semantisk beslægtede kursustekster kan findes.
 
 ## Officiel datakilde
 
@@ -76,6 +76,12 @@ uvicorn app.main:app --reload
 | `LOG_LEVEL` | Fx `INFO` eller `DEBUG` |
 | `GROQ_API_KEY` | Groq API-nøgle til chatten |
 | `GROQ_MODEL` | Groq-model; standard er `openai/gpt-oss-120b` |
+| `EMBEDDING_API_KEY` | Separat OpenAI API-nøgle til kursus- og query-embeddings |
+| `EMBEDDING_MODEL` | Embeddingmodel; standard er `text-embedding-3-small` |
+| `EMBEDDING_DIMENSIONS` | Vektordimension; databaseskemaet bruger `1536` |
+| `EMBEDDING_BATCH_SIZE` | Antal kursustekster per backfill-request; standard er `50` |
+| `SEMANTIC_COURSE_SEARCH_ENABLED` | Slår hybrid cosine similarity-søgning til eller fra |
+| `SEMANTIC_COURSE_MIN_SIMILARITY` | Nedre relevansgrænse for semantiske kandidater; standard er `0.35` |
 | `SEMANTIC_RESOLUTION_ENABLED` | Slår valideret semantisk program- og specialiseringsmatching til eller fra |
 | `SEMANTIC_RESOLUTION_MIN_CONFIDENCE` | Minimum confidence for at acceptere et semantisk match; standard er `0.85` |
 | `SEMANTIC_RESOLUTION_TIMEOUT` | Timeout i sekunder for den semantiske fallback; standard er `10` |
@@ -115,7 +121,15 @@ python scripts/get_all_course_information.py --year-group 2026/2027
 # Opret/opgradér courses-tabellen og importér de gemte XML-filer
 alembic upgrade head
 python -m importer.course_xml_cli --academic-year 2026-2027
+
+# Generér kun manglende eller ændrede embeddings efter kursusimporten
+python -m importer.course_embedding_cli --academic-year 2026-2027
 ```
+
+Embedding-jobbet er genoptageligt og committer per batch. Brug `--dry-run` til at se antallet af
+manglende eller forældede embeddings uden at kalde OpenAI. Ved senere kursusimporter sammenlignes
+en SHA-256-hash af titel, beskrivelse, indhold og læringsmål, så kun nye eller ændrede tekster skal
+genereres igen. Jobbet skal køres lokalt eller som et separat worker-job, ikke fra en Vercel-request.
 
 ### Studieplaner
 
@@ -238,7 +252,7 @@ Vercel kører FastAPI-applikationen fra `app.main:app` som én Python Function i
    vercel link
    ```
 
-2. Tilføj `DATABASE_URL`, `API_KEY`, `DEFAULT_ACADEMIC_YEAR`, `DTU_BASE_URL`, `LOG_LEVEL`, `GROQ_API_KEY`, `GROQ_MODEL`, `MCP_TOKEN` og `MCP_SERVER_URL` som Preview environment variables i Vercel. `MCP_SERVER_URL` skal være deploymentets offentlige HTTPS-base-URL, og `MCP_TOKEN` skal være en separat lang, tilfældig secret. Brug Supabases transaction pooler på port 6543 til `DATABASE_URL`. Tilføj ikke `MIGRATION_DATABASE_URL` til Vercel.
+2. Tilføj `DATABASE_URL`, `API_KEY`, `DEFAULT_ACADEMIC_YEAR`, `DTU_BASE_URL`, `LOG_LEVEL`, `GROQ_API_KEY`, `GROQ_MODEL`, `EMBEDDING_API_KEY`, `MCP_TOKEN` og `MCP_SERVER_URL` som Preview environment variables i Vercel. `MCP_SERVER_URL` skal være deploymentets offentlige HTTPS-base-URL, og `MCP_TOKEN` skal være en separat lang, tilfældig secret. Brug Supabases transaction pooler på port 6543 til `DATABASE_URL`. Tilføj ikke `MIGRATION_DATABASE_URL` til Vercel.
 3. Kontrollér konfigurationen lokalt med `vercel dev`.
 4. Opret preview med `vercel deploy` og verificér `/`, `/health`, et autentificeret søgekald og et MCP-kald med `Authorization: Bearer $MCP_TOKEN`.
 5. Tilføj de samme nødvendige variabler til Production og kør først `vercel deploy --prod`, når previewet er godkendt.
