@@ -28,6 +28,65 @@ const translations = {
   }
 };
 
+const responseTranslations = {
+  en: {
+    studyPlanAria: (program) => `Study plan for ${program}`,
+    admittedFrom: (year) => `Admission from ${year}`,
+    blockRequirement: (ects) => `Requirement for this block: ${ects} ECTS in total.`,
+    mandatoryCourses: "Mandatory courses",
+    chooseOne: (ects) => `Choose one course${ects} from the options below.`,
+    chooseAlternative: (ects, primary, alternatives) =>
+      `Choose one course${ects}. Normally, choose one of ${primary}. ` +
+      `If you have advanced innovation competencies, you may instead choose one of ${alternatives}.`,
+    chooseExactCount: (count) => `Choose exactly ${count} courses from the options below.`,
+    chooseMinimumCount: (count) => `Choose at least ${count} courses from the options below.`,
+    chooseGroupEcts: (ects) => `Choose ${ects} ECTS from the pool below.`,
+    remainderPool: (count) =>
+      `Choose the remaining ECTS in the programme-specific block from the pool below (${count} courses).`,
+    preapprovedCourses: (count) =>
+      `${count} pre-approved MSc courses in the imported study plan.`,
+    studyPlanLink: "View the official study plan at DTU ↗",
+    specializationsAria: (program) => `Specializations for ${program}`,
+    specializationsTitle: (program) => `Specializations · ${program}`,
+    minimumSpecializationEcts: (ects) => `Choose at least ${ects} ECTS from this course pool.`,
+    chooseOneSpecializationCourse: "Choose one of the courses below.",
+    chooseMinimumSpecializationCourses: (count) => `Choose at least ${count} courses from this group.`,
+    allSpecializationCourses: "All courses below are mandatory.",
+    recommendedSpecializationCourses: "Recommended courses that are not mandatory.",
+    historicalSpecializationCourses: "Discontinued courses that DTU states still count.",
+    historicalCourseSuffix: " · discontinued",
+    specializationLink: "View the specialization at DTU ↗",
+  },
+  da: {
+    studyPlanAria: (program) => `Studieplan for ${program}`,
+    admittedFrom: (year) => `Optag fra ${year}`,
+    blockRequirement: (ects) => `Krav for denne blok: ${ects} ECTS i alt.`,
+    mandatoryCourses: "Obligatoriske kurser",
+    chooseOne: (ects) => `Vælg ét kursus${ects} blandt mulighederne nedenfor.`,
+    chooseAlternative: (ects, primary, alternatives) =>
+      `Vælg ét kursus${ects}. Normalt vælges ét af ${primary}. ` +
+      `Hvis du har avancerede innovationskompetencer, kan du i stedet vælge ét af ${alternatives}.`,
+    chooseExactCount: (count) => `Vælg præcis ${count} kurser blandt mulighederne nedenfor.`,
+    chooseMinimumCount: (count) => `Vælg mindst ${count} kurser blandt mulighederne nedenfor.`,
+    chooseGroupEcts: (ects) => `Vælg ${ects} ECTS fra puljen nedenfor.`,
+    remainderPool: (count) =>
+      `De resterende ECTS i den programspecifikke blok vælges fra puljen nedenfor (${count} kurser).`,
+    preapprovedCourses: (count) =>
+      `${count} forhåndsgodkendte kandidatkurser i den importerede studieplan.`,
+    studyPlanLink: "Se den officielle studieplan hos DTU ↗",
+    specializationsAria: (program) => `Specialiseringer for ${program}`,
+    specializationsTitle: (program) => `Specialiseringer · ${program}`,
+    minimumSpecializationEcts: (ects) => `Vælg mindst ${ects} ECTS fra denne kursuspulje.`,
+    chooseOneSpecializationCourse: "Vælg ét af kurserne nedenfor.",
+    chooseMinimumSpecializationCourses: (count) => `Vælg mindst ${count} kurser fra denne gruppe.`,
+    allSpecializationCourses: "Alle kurserne nedenfor er obligatoriske.",
+    recommendedSpecializationCourses: "Anbefalede kurser, som ikke er obligatoriske.",
+    historicalSpecializationCourses: "Udgåede kurser, som DTU angiver stadig tæller.",
+    historicalCourseSuffix: " · udgået",
+    specializationLink: "Se specialiseringen hos DTU ↗",
+  },
+};
+
 let currentLanguage = "en";
 
 function setLanguage(language) {
@@ -118,9 +177,10 @@ function commonCourseEcts(courses) {
   return values.length === 1 ? values[0] : null;
 }
 
-function studyRuleDescription(rule) {
+function studyRuleDescription(rule, language) {
+  const copy = responseTranslations[language];
   const ects = commonCourseEcts(rule.courses);
-  const ectsPhrase = ects == null ? "" : ` på ${ects} ECTS`;
+  const ectsPhrase = ects == null ? "" : language === "da" ? ` på ${ects} ECTS` : ` worth ${ects} ECTS`;
 
   if (rule.requirementType === "one_of") {
     const alternativeMatch = rule.description.match(/alternative to\s+([0-9/\s]+)/i);
@@ -129,46 +189,50 @@ function studyRuleDescription(rule) {
       const alternativeNumbers = rule.courses
         .map((course) => course.courseNumber)
         .filter((number) => number && !primaryNumbers.includes(number));
-      return (
-        `Vælg ét kursus${ectsPhrase}. Normalt vælges ét af ${primaryNumbers.join(", ")}. ` +
-        `Hvis du har avancerede innovationskompetencer, kan du i stedet vælge ét af ${alternativeNumbers.join(", ")}.`
+      return copy.chooseAlternative(
+        ectsPhrase,
+        primaryNumbers.join(", "),
+        alternativeNumbers.join(", "),
       );
     }
-    return `Vælg ét kursus${ectsPhrase} blandt mulighederne nedenfor.`;
+    return copy.chooseOne(ectsPhrase);
   }
   if (rule.requirementType === "exact_count" && rule.requiredCount != null) {
-    return `Vælg præcis ${rule.requiredCount} kurser blandt mulighederne nedenfor.`;
+    return copy.chooseExactCount(rule.requiredCount);
   }
   if (rule.requirementType === "min_count" && rule.requiredCount != null) {
-    return `Vælg mindst ${rule.requiredCount} kurser blandt mulighederne nedenfor.`;
+    return copy.chooseMinimumCount(rule.requiredCount);
   }
   if (rule.requirementType === "group_ects" && rule.requiredEcts != null) {
-    return `Vælg ${rule.requiredEcts} ECTS fra puljen nedenfor.`;
+    return copy.chooseGroupEcts(rule.requiredEcts);
   }
   if (rule.requirementType === "remainder_pool") {
-    return `De resterende ECTS i den programspecifikke blok vælges fra puljen nedenfor (${rule.courses.length} kurser).`;
+    return copy.remainderPool(rule.courses.length);
   }
   return rule.description;
 }
 
-function sectionEctsSummary(section) {
+function sectionEctsSummary(section, language) {
   const opening = section.description?.slice(0, section.name.length + 80) || "";
   const match = opening.match(/\((\d+(?:[.,]\d+)?)\s*ECTS(?:\s*points?)?\)/i);
-  return match ? `Krav for denne blok: ${match[1].replace(",", ".")} ECTS i alt.` : null;
+  return match ? responseTranslations[language].blockRequirement(match[1].replace(",", ".")) : null;
 }
 
-function addStudyPlan(plan) {
+function addStudyPlan(plan, language) {
   if (!plan) return;
+  const copy = responseTranslations[language];
   const overview = document.createElement("section");
   overview.className = "study-plan";
-  overview.setAttribute("aria-label", `Studieplan for ${plan.programName}`);
+  overview.setAttribute("aria-label", copy.studyPlanAria(plan.programName));
 
   const heading = document.createElement("div");
   heading.className = "study-plan-head";
   const title = document.createElement("h2");
   title.textContent = plan.programName;
   const meta = document.createElement("span");
-  meta.textContent = plan.validFromYear ? `${plan.degreeType} · Optag fra ${plan.validFromYear}` : plan.degreeType;
+  meta.textContent = plan.validFromYear
+    ? `${plan.degreeType} · ${copy.admittedFrom(plan.validFromYear)}`
+    : plan.degreeType;
   heading.append(title, meta);
   overview.append(heading);
 
@@ -179,7 +243,7 @@ function addStudyPlan(plan) {
     sectionTitle.textContent = section.name;
     card.append(sectionTitle);
 
-    const ectsSummary = sectionEctsSummary(section);
+    const ectsSummary = sectionEctsSummary(section, language);
     if (ectsSummary) {
       const summary = document.createElement("p");
       summary.className = "study-plan-label";
@@ -191,7 +255,7 @@ function addStudyPlan(plan) {
     if (mandatory.length) {
       const label = document.createElement("p");
       label.className = "study-plan-label";
-      label.textContent = "Obligatoriske kurser";
+      label.textContent = copy.mandatoryCourses;
       const list = document.createElement("ul");
       mandatory.forEach((course) => {
         const item = document.createElement("li");
@@ -210,7 +274,7 @@ function addStudyPlan(plan) {
       const block = document.createElement("div");
       block.className = `study-plan-rule${rule.isSubrequirement ? " subrule" : ""}`;
       const description = document.createElement("p");
-      description.textContent = studyRuleDescription(rule);
+      description.textContent = studyRuleDescription(rule, language);
       block.append(description);
       if (rule.courses.length) {
         const choices = document.createElement("p");
@@ -230,7 +294,7 @@ function addStudyPlan(plan) {
     const sectionName = section.name.toLowerCase();
     if (sectionName === "forhåndsgodkendte kandidatkurser" || (sectionName.includes("pre-approved") && sectionName.includes("msc"))) {
       const count = document.createElement("p");
-      count.textContent = `${section.courses.length} forhåndsgodkendte kandidatkurser i den importerede studieplan.`;
+      count.textContent = copy.preapprovedCourses(section.courses.length);
       card.append(count);
     }
     overview.append(card);
@@ -242,44 +306,46 @@ function addStudyPlan(plan) {
     link.href = url;
     link.target = "_blank";
     link.rel = "noreferrer";
-    link.textContent = "Se den officielle studieplan hos DTU ↗";
+    link.textContent = copy.studyPlanLink;
     overview.append(link);
   }
   conversation.append(overview);
   scrollToLatest();
 }
 
-function specializationCourseLabel(course) {
+function specializationCourseLabel(course, language) {
   const number = course.courseNumber ? `${course.courseNumber} · ` : "";
   const ects = course.ects != null ? ` (${course.ects} ECTS)` : "";
-  const historical = course.isTerminated ? " · udgået" : "";
+  const historical = course.isTerminated ? responseTranslations[language].historicalCourseSuffix : "";
   return `${number}${course.title}${ects}${historical}`;
 }
 
-function specializationRuleDescription(rule) {
+function specializationRuleDescription(rule, language) {
+  const copy = responseTranslations[language];
   if (rule.requirementType === "min_ects" && rule.requiredEcts != null) {
-    return `Vælg mindst ${rule.requiredEcts} ECTS fra denne kursuspulje.`;
+    return copy.minimumSpecializationEcts(rule.requiredEcts);
   }
-  if (rule.requirementType === "one_of") return "Vælg ét af kurserne nedenfor.";
+  if (rule.requirementType === "one_of") return copy.chooseOneSpecializationCourse;
   if (rule.requirementType === "min_count" && rule.requiredCount != null) {
-    return `Vælg mindst ${rule.requiredCount} kurser fra denne gruppe.`;
+    return copy.chooseMinimumSpecializationCourses(rule.requiredCount);
   }
-  if (rule.requirementType === "all_of") return "Alle kurserne nedenfor er obligatoriske.";
-  if (rule.requirementType === "recommended") return "Anbefalede kurser, som ikke er obligatoriske.";
-  if (rule.requirementType === "historical") return "Udgåede kurser, som DTU angiver stadig tæller.";
+  if (rule.requirementType === "all_of") return copy.allSpecializationCourses;
+  if (rule.requirementType === "recommended") return copy.recommendedSpecializationCourses;
+  if (rule.requirementType === "historical") return copy.historicalSpecializationCourses;
   return rule.description;
 }
 
-function addSpecializations(specializations) {
+function addSpecializations(specializations, language) {
   if (!specializations?.length) return;
+  const copy = responseTranslations[language];
   const overview = document.createElement("section");
   overview.className = "study-plan";
-  overview.setAttribute("aria-label", `Specialiseringer for ${specializations[0].programName}`);
+  overview.setAttribute("aria-label", copy.specializationsAria(specializations[0].programName));
 
   const heading = document.createElement("div");
   heading.className = "study-plan-head";
   const title = document.createElement("h2");
-  title.textContent = `Specialiseringer · ${specializations[0].programName}`;
+  title.textContent = copy.specializationsTitle(specializations[0].programName);
   heading.append(title);
   overview.append(heading);
 
@@ -298,12 +364,12 @@ function addSpecializations(specializations) {
       const block = document.createElement("div");
       block.className = "study-plan-rule";
       const description = document.createElement("p");
-      description.textContent = specializationRuleDescription(rule);
+      description.textContent = specializationRuleDescription(rule, language);
       block.append(description);
       if (rule.courses.length) {
         const choices = document.createElement("p");
         choices.className = "study-plan-choices";
-        choices.textContent = rule.courses.map(specializationCourseLabel).join(" · ");
+        choices.textContent = rule.courses.map((course) => specializationCourseLabel(course, language)).join(" · ");
         block.append(choices);
       }
       card.append(block);
@@ -314,7 +380,7 @@ function addSpecializations(specializations) {
       link.href = url;
       link.target = "_blank";
       link.rel = "noreferrer";
-      link.textContent = "Se specialiseringen hos DTU ↗";
+      link.textContent = copy.specializationLink;
       card.append(link);
     }
     overview.append(card);
@@ -420,8 +486,9 @@ async function submitMessage(text) {
     messages.push({ role: "assistant", content: result.reply });
     addMessage("assistant", result.reply);
     addContextTags(result.understood);
-    addStudyPlan(result.studyPlan);
-    addSpecializations(result.specializations);
+    const responseLanguage = result.responseLanguage || currentLanguage;
+    addStudyPlan(result.studyPlan, responseLanguage);
+    addSpecializations(result.specializations, responseLanguage);
     addRecommendations(result.recommendations);
   } catch (error) {
     document.querySelector("#typingRow")?.remove();

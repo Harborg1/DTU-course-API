@@ -6,6 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from app.mcp_server.server import _SEARCH_COURSES_SCHEMA, _handle_search_courses
 from app.models.course import Course, CourseTranslation
 from app.services.course_qa_service import _build_system_prompt
+from app.services.language_service import detect_user_language
 from app.services.search_service import search_courses
 
 
@@ -164,3 +165,10 @@ def test_chat_prompt_formats_course_results_as_multiline_bullet_lists():
     assert "ECTS and level on the following line" in prompt
     assert "Do not place multiple courses on the same line." in prompt
     assert "sort every course list by course number in ascending order" in prompt
+
+
+def test_response_language_follows_study_guide_wording():
+    assert detect_user_language("Computer Science and Engineering study plan") == "en"
+    assert detect_user_language("Computer Science and Engineering studieplan") == "da"
+    assert detect_user_language("Computer Science and Engineering specialities") == "en"
+    assert detect_user_language("Computer Science and Engineering specialiseringer") == "da"

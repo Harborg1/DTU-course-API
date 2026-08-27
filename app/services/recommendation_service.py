@@ -37,6 +37,7 @@ from app.services.intent_service import (
     classify_intent,
     extract_course_number,
 )
+from app.services.language_service import detect_user_language
 from app.services.search_service import SearchResult, search_courses
 from app.services.semantic_resolver import SemanticCandidate, resolve_semantic_candidate
 from app.services.semantic_intent_service import (
@@ -355,7 +356,16 @@ def _specialization_aliases(specialization: StudySpecialization) -> set[str]:
 
 def _asks_for_specialization_overview(text: str) -> bool:
     tokens = set(_program_key(text).split())
-    return bool(tokens & {"specialiseringer", "specializations", "specialisations"})
+    return bool(
+        tokens
+        & {
+            "specialiseringer",
+            "specialisations",
+            "specialities",
+            "specializations",
+            "specialties",
+        }
+    )
 
 
 def _matching_specialization(
@@ -460,23 +470,35 @@ def _specialization_info(specialization: StudySpecialization) -> SpecializationI
     )
 
 
-def _specialization_requirement_text(requirement: SpecializationRequirement) -> str:
+def _specialization_requirement_text(requirement: SpecializationRequirement, language: str) -> str:
     course_labels = ", ".join(
         f"{link.course.course_number} {link.course.title}" if link.course.course_number else link.course.title
         for link in sorted(requirement.course_links, key=lambda link: link.course.position)
     )
     if requirement.requirement_type == "min_ects" and requirement.required_ects is not None:
-        lead = f"Vælg mindst {_format_ects(requirement.required_ects)} ECTS"
+        lead = (
+            f"Vælg mindst {_format_ects(requirement.required_ects)} ECTS"
+            if language == "da"
+            else f"Choose at least {_format_ects(requirement.required_ects)} ECTS"
+        )
     elif requirement.requirement_type == "one_of":
-        lead = "Vælg ét kursus"
+        lead = "Vælg ét kursus" if language == "da" else "Choose one course"
     elif requirement.requirement_type == "min_count" and requirement.required_count is not None:
-        lead = f"Vælg mindst {requirement.required_count} kurser"
+        lead = (
+            f"Vælg mindst {requirement.required_count} kurser"
+            if language == "da"
+            else f"Choose at least {requirement.required_count} courses"
+        )
     elif requirement.requirement_type == "all_of":
-        lead = "Tag alle følgende kurser"
+        lead = "Tag alle følgende kurser" if language == "da" else "Take all of the following courses"
     elif requirement.requirement_type == "recommended":
-        lead = "Anbefalede kurser"
+        lead = "Anbefalede kurser" if language == "da" else "Recommended courses"
     elif requirement.requirement_type == "historical":
-        lead = "Udgåede kurser, der stadig tæller"
+        lead = (
+            "Udgåede kurser, der stadig tæller"
+            if language == "da"
+            else "Discontinued courses that still count"
+        )
     else:
         lead = requirement.description
     return f"{lead}: {course_labels}." if course_labels else f"{lead}."
@@ -487,24 +509,40 @@ def _answer_specializations(
     specialization: StudySpecialization | None,
     *,
     academic_year: str,
+    language: str,
 ) -> ChatResponse:
     if specialization is None:
         specializations = list(program.specializations)
         if not specializations:
-            reply = f"Jeg har ingen importerede officielle specialiseringer for {program.name}."
+            reply = (
+                f"Jeg har ingen importerede officielle specialiseringer for {program.name}."
+                if language == "da"
+                else f"I have no imported official specializations for {program.name}."
+            )
         else:
             names = ", ".join(item.name for item in specializations)
-            reply = f"{program.name} har følgende importerede specialiseringer: {names}."
+            reply = (
+                f"{program.name} har følgende importerede specialiseringer: {names}."
+                if language == "da"
+                else f"{program.name} has the following imported specializations: {names}."
+            )
     else:
         specializations = [specialization]
-        details = " ".join(_specialization_requirement_text(rule) for rule in specialization.requirements)
-        reply = f"For specialiseringen {specialization.name} på {program.name}: {details}".strip()
+        details = " ".join(
+            _specialization_requirement_text(rule, language) for rule in specialization.requirements
+        )
+        reply = (
+            f"For specialiseringen {specialization.name} på {program.name}: {details}"
+            if language == "da"
+            else f"For the {specialization.name} specialization in {program.name}: {details}"
+        ).strip()
     return ChatResponse(
         reply=reply,
         understood=UnderstoodContext(topic="specialization", level=program.degree_type, program=program.name),
         recommendations=[],
         specializations=[_specialization_info(item) for item in specializations],
         academicYear=program.academic_year or academic_year,
+        responseLanguage=language,
         isDirectAnswer=True,
     )
 
@@ -569,7 +607,7 @@ def _format_ects(value: Decimal) -> str:
     return f"{float(value):g}"
 
 
-def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
+def _choice_requirement_detail(requirement: StudyPlanRequirement, language: str) -> str | None:
     courses = sorted((link.course for link in requirement.course_links), key=lambda course: course.position)
     if not courses:
         return None
@@ -577,7 +615,13 @@ def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
     labels = _course_labels(requirement)
     ects_values = {course.ects for course in courses if course.ects is not None}
     common_ects = next(iter(ects_values)) if len(ects_values) == 1 else None
-    ects_phrase = f" på {_format_ects(common_ects)} ECTS" if common_ects is not None else ""
+    ects_phrase = ""
+    if common_ects is not None:
+        ects_phrase = (
+            f" på {_format_ects(common_ects)} ECTS"
+            if language == "da"
+            else f" worth {_format_ects(common_ects)} ECTS"
+        )
 
     if requirement.requirement_type == "one_of":
         alternative_match = re.search(
@@ -596,12 +640,22 @@ def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
                     f"{course.course_number} {course.title}" if course.course_number else course.title
                     for course in alternatives
                 )
+                if language == "da":
+                    return (
+                        f"Vælg ét kursus{ects_phrase}: normalt ét blandt {primary_labels}. "
+                        "Hvis du har avancerede innovationskompetencer, kan du i stedet vælge ét blandt "
+                        f"{alternative_labels}."
+                    )
                 return (
-                    f"Vælg ét kursus{ects_phrase}: normalt ét blandt {primary_labels}. "
-                    "Hvis du har avancerede innovationskompetencer, kan du i stedet vælge ét blandt "
+                    f"Choose one course{ects_phrase}: normally one of {primary_labels}. "
+                    "If you have advanced innovation competencies, you may instead choose one of "
                     f"{alternative_labels}."
                 )
-        return f"Vælg ét kursus{ects_phrase} blandt: {labels}."
+        return (
+            f"Vælg ét kursus{ects_phrase} blandt: {labels}."
+            if language == "da"
+            else f"Choose one course{ects_phrase} from: {labels}."
+        )
 
     if requirement.requirement_type == "exact_count" and requirement.required_count is not None:
         note = ""
@@ -610,28 +664,50 @@ def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
                 r"core competence courses", requirement.description, maxsplit=1, flags=re.IGNORECASE
             )[0].strip()
             if leading_text:
-                note = f"Bemærk: {leading_text} "
-        return f"{note}Vælg præcis {requirement.required_count} kurser blandt: {labels}."
+                note = f"Bemærk: {leading_text} " if language == "da" else f"Note: {leading_text} "
+        return (
+            f"{note}Vælg præcis {requirement.required_count} kurser blandt: {labels}."
+            if language == "da"
+            else f"{note}Choose exactly {requirement.required_count} courses from: {labels}."
+        )
 
     if requirement.requirement_type == "min_count" and requirement.required_count is not None:
-        return f"Vælg mindst {requirement.required_count} kurser blandt: {labels}."
+        return (
+            f"Vælg mindst {requirement.required_count} kurser blandt: {labels}."
+            if language == "da"
+            else f"Choose at least {requirement.required_count} courses from: {labels}."
+        )
 
     if requirement.requirement_type == "group_ects" and requirement.required_ects is not None:
-        return f"Vælg {_format_ects(requirement.required_ects)} ECTS fra denne pulje: {labels}."
+        return (
+            f"Vælg {_format_ects(requirement.required_ects)} ECTS fra denne pulje: {labels}."
+            if language == "da"
+            else f"Choose {_format_ects(requirement.required_ects)} ECTS from this pool: {labels}."
+        )
 
     if requirement.requirement_type == "remainder_pool":
+        if language == "da":
+            return (
+                "De resterende ECTS i den programspecifikke blok skal vælges fra "
+                f"den brede pulje med {len(courses)} kurser. Den fulde kursusliste vises "
+                "i studieplansoversigten nedenfor."
+            )
         return (
-            "De resterende ECTS i den programspecifikke blok skal vælges fra "
-            f"den brede pulje med {len(courses)} kurser. Den fulde kursusliste vises "
-            "i studieplansoversigten nedenfor."
+            "Choose the remaining ECTS in the programme-specific block from "
+            f"the broad pool of {len(courses)} courses. The complete course list is shown "
+            "in the study plan overview below."
         )
 
     return None
 
 
-def _study_plan_reply(program: StudyProgram) -> str:
-    validity = f" for studerende optaget fra {program.valid_from_year}" if program.valid_from_year else ""
-    lines = [f"Her er opbygningen af {program.name}{validity}:"]
+def _study_plan_reply(program: StudyProgram, language: str) -> str:
+    if language == "da":
+        validity = f" for studerende optaget fra {program.valid_from_year}" if program.valid_from_year else ""
+        lines = [f"Her er opbygningen af {program.name}{validity}:"]
+    else:
+        validity = f" for students admitted from {program.valid_from_year}" if program.valid_from_year else ""
+        lines = [f"Here is the structure of {program.name}{validity}:"]
     for section in program.sections:
         details: list[str] = []
         seen_requirement_descriptions: set[str] = set()
@@ -641,11 +717,15 @@ def _study_plan_reply(program: StudyProgram) -> str:
                 f"{course.course_number} {course.title}" if course.course_number else course.title
                 for course in mandatory
             )
-            details.append(f"Obligatoriske kurser: {labels}.")
+            details.append(
+                f"Obligatoriske kurser: {labels}."
+                if language == "da"
+                else f"Mandatory courses: {labels}."
+            )
         for requirement in section.requirements:
             if requirement.requirement_type == "all_of":
                 continue
-            typed_detail = _choice_requirement_detail(requirement)
+            typed_detail = _choice_requirement_detail(requirement, language)
             if typed_detail:
                 details.append(typed_detail)
                 continue
@@ -657,7 +737,7 @@ def _study_plan_reply(program: StudyProgram) -> str:
             if section.description:
                 details.append(section.description)
             details.append(
-                "Projekter: "
+                ("Projekter: " if language == "da" else "Projects: ")
                 + ", ".join(
                     f"{course.course_number} {course.title}" if course.course_number else course.title
                     for course in section.courses
@@ -667,10 +747,18 @@ def _study_plan_reply(program: StudyProgram) -> str:
         if section.name.casefold() == "forhåndsgodkendte kandidatkurser" or (
             "pre-approved" in section.name.casefold() and "msc" in section.name.casefold()
         ):
-            details.append(f"Listen indeholder {len(section.courses)} forhåndsgodkendte kandidatkurser.")
+            details.append(
+                f"Listen indeholder {len(section.courses)} forhåndsgodkendte kandidatkurser."
+                if language == "da"
+                else f"The list contains {len(section.courses)} pre-approved MSc courses."
+            )
         if details:
             lines.append(f"{section.name}: {' '.join(details)}")
-    lines.append("Kurser i underkrav tæller samtidig med i den overordnede ECTS-pulje; de tælles ikke dobbelt.")
+    lines.append(
+        "Kurser i underkrav tæller samtidig med i den overordnede ECTS-pulje; de tælles ikke dobbelt."
+        if language == "da"
+        else "Courses in subrequirements also count toward the overall ECTS pool; they are not counted twice."
+    )
     return "\n\n".join(lines)
 
 
@@ -678,13 +766,15 @@ def _answer_study_plan(
     program: StudyProgram,
     *,
     academic_year: str,
+    language: str,
 ) -> ChatResponse:
     return ChatResponse(
-        reply=_study_plan_reply(program),
+        reply=_study_plan_reply(program, language),
         understood=UnderstoodContext(topic="study plan", level=program.degree_type, program=program.name),
         recommendations=[],
         studyPlan=_study_plan_overview(program),
         academicYear=program.academic_year or academic_year,
+        responseLanguage=language,
     )
 
 
@@ -754,6 +844,7 @@ def _answer_program_overview(
         studyPlan=_study_plan_overview(program),
         specializations=[_specialization_info(item) for item in specializations],
         academicYear=program.academic_year or academic_year,
+        responseLanguage=language,
         isDirectAnswer=True,
     )
 
@@ -904,6 +995,7 @@ def recommend_courses(
 ) -> ChatResponse:
     conversation = " ".join(messages)
     latest_user_message = messages[-1] if messages else ""
+    response_language = detect_user_language(latest_user_message)
 
     # Route from the latest request so an earlier course number cannot
     # override a new study-plan or recommendation question. The full
@@ -947,12 +1039,22 @@ def recommend_courses(
                 reply=(
                     "Jeg kan forklare specialiseringerne, men jeg kan ikke identificere studieprogrammet eller "
                     "specialiseringen entydigt. Skriv for eksempel 'specialiseringer på Computer Science and Engineering'."
+                    if response_language == "da"
+                    else "I can explain the specializations, but I cannot identify the study programme or "
+                    "specialization unambiguously. For example, write "
+                    "'specializations in Computer Science and Engineering'."
                 ),
                 understood=UnderstoodContext(topic="specialization"),
                 recommendations=[],
                 academicYear=academic_year,
+                responseLanguage=response_language,
             )
-        return _answer_specializations(program, specialization, academic_year=academic_year)
+        return _answer_specializations(
+            program,
+            specialization,
+            academic_year=academic_year,
+            language=response_language,
+        )
 
     # 2. Course Q&A — 5-digit course number → Groq via remote MCP
     if isinstance(intent, CourseQAIntent):
@@ -991,6 +1093,11 @@ def recommend_courses(
                     "De er normalt fordelt på 10 ECTS polyteknisk grundlag, 50 ECTS "
                     "retningsspecifikke kurser, 30 ECTS valgfrie kurser og et "
                     "kandidatspeciale på 30 ECTS."
+                    if response_language == "da"
+                    else "A standard two-year MSc programme at DTU totals 120 ECTS. "
+                    "It normally consists of 10 ECTS of polytechnical foundation courses, "
+                    "50 ECTS of programme-specific courses, 30 ECTS of electives, and a "
+                    "30 ECTS master's thesis."
                 ),
                 understood=UnderstoodContext(
                     topic="MSc degree requirements",
@@ -999,6 +1106,7 @@ def recommend_courses(
                 ),
                 recommendations=[],
                 academicYear=academic_year,
+                responseLanguage=response_language,
                 isDirectAnswer=True,
             )
         program = _matching_study_program(session, resolution_text)
@@ -1007,10 +1115,15 @@ def recommend_courses(
                 reply=(
                     "Jeg kan forklare studieplanen, men jeg kan ikke identificere uddannelsen entydigt. "
                     "Skriv både uddannelsens navn og niveau, for eksempel 'Jeg læser Bioteknologi på kandidaten'."
+                    if response_language == "da"
+                    else "I can explain the study plan, but I cannot identify the programme unambiguously. "
+                    "Include both the programme name and level, for example "
+                    "'I study Biotechnology at master's level'."
                 ),
                 understood=UnderstoodContext(topic="study plan"),
                 recommendations=[],
                 academicYear=academic_year,
+                responseLanguage=response_language,
             )
         if (
             semantic_plan is not None
@@ -1020,12 +1133,17 @@ def recommend_courses(
             return _answer_program_overview(
                 program,
                 academic_year=academic_year,
-                language=semantic_plan.language,
+                language=response_language,
             )
         try:
+            identified_program = (
+                f"Identificeret studieprogram: {program.name} ({program.degree_type})."
+                if response_language == "da"
+                else f"Identified study programme: {program.name} ({program.degree_type})."
+            )
             study_plan_question = (
                 f"{latest_user_message}\n\n"
-                f"Identificeret studieprogram: {program.name} ({program.degree_type})."
+                f"{identified_program}"
             )
             reply = answer_with_remote_mcp(study_plan_question, academic_year)
             return ChatResponse(
@@ -1034,11 +1152,16 @@ def recommend_courses(
                 recommendations=[],
                 studyPlan=_study_plan_overview(program),
                 academicYear=program.academic_year or academic_year,
+                responseLanguage=response_language,
                 isDirectAnswer=True,
             )
         except CourseQAError:
             logger.exception("Groq/MCP could not answer a study plan question — falling back to static plan")
-            return _answer_study_plan(program, academic_year=academic_year)
+            return _answer_study_plan(
+                program,
+                academic_year=academic_year,
+                language=response_language,
+            )
 
     # 4. Course Recommendation — Groq via remote MCP
     if isinstance(intent, RecommendationIntent):

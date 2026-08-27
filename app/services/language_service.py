@@ -18,6 +18,8 @@ _DANISH_MARKERS = {
     "studerer": 2,
     "studieordning": 2,
     "studieplan": 2,
+    "specialisering": 2,
+    "specialiseringer": 2,
     "underviser": 2,
 }
 
@@ -28,6 +30,14 @@ _ENGLISH_MARKERS = {
     "recommend": 2,
     "student": 2,
     "study": 1,
+    "specialisation": 2,
+    "specialisations": 2,
+    "specialities": 2,
+    "speciality": 2,
+    "specialization": 2,
+    "specializations": 2,
+    "specialties": 2,
+    "specialty": 2,
     "teaches": 2,
     "what": 2,
     "when": 2,

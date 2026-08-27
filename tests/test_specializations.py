@@ -151,6 +151,14 @@ def test_chat_lists_program_specializations_and_explains_course_requirements(db_
     assert "mindst 25 ECTS" in detail.reply
     assert "02249 Computationally Hard Problems" in detail.reply
 
+    english_overview = recommend_courses(
+        db_session,
+        messages=["Computer Science and Engineering specialities"],
+        academic_year="2026-2027",
+    )
+    assert english_overview.response_language == "en"
+    assert "has the following imported specializations" in english_overview.reply
+
 
 def test_chat_matches_danish_specialization_alias_in_ects_question(db_session):
     program = _program("computer-science-and-engineering", "Computer Science and Engineering")

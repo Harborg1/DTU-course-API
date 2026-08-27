@@ -1,6 +1,10 @@
+from unittest.mock import patch
+
 from sqlalchemy import func, select
 
 from app.models.study_plan import StudyPlanCourse, StudyPlanRequirement, StudyProgram
+from app.services.course_qa_service import CourseQAError
+from app.services.recommendation_service import recommend_courses
 from importer.study_plan_importer import upsert_study_plan
 from importer.study_plan_parser import parse_study_plan_page
 
@@ -242,6 +246,7 @@ def test_chat_explains_applied_mathematics_study_structure(client, db_session):
     assert response.status_code == 200
     body = response.json()
     assert body["recommendations"] == []
+    assert body["responseLanguage"] == "da"
     assert body["understood"]["program"] == "Anvendt Matematik"
     assert body["studyPlan"]["validFromYear"] == 2023
     directional = next(
@@ -252,6 +257,26 @@ def test_chat_explains_applied_mathematics_study_structure(client, db_session):
     assert any(rule["requiredEcts"] == 20 and len(rule["courses"]) == 9 for rule in directional["requirements"])
     assert sum(rule["isSubrequirement"] for rule in directional["requirements"]) == 3
     assert "tælles ikke dobbelt" in body["reply"]
+
+
+def test_english_study_plan_prompt_uses_english_fallback(db_session):
+    upsert_study_plan(db_session, parse_study_plan_page(_msc_curriculum_html(), MSC_SOURCE_URL))
+    db_session.commit()
+
+    with patch(
+        "app.services.recommendation_service.answer_with_remote_mcp",
+        side_effect=CourseQAError("offline"),
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["Applied Chemistry study plan"],
+            academic_year="2026-2027",
+        )
+
+    assert response.response_language == "en"
+    assert response.reply.startswith("Here is the structure of Applied Chemistry")
+    assert "Choose one course" in response.reply
+    assert "Vælg" not in response.reply
 
 
 def test_chat_uses_degree_context_to_resolve_bilingual_program_names(client, db_session):

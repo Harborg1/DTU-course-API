@@ -128,4 +128,5 @@ class ChatResponse(BaseModel):
     study_plan: StudyPlanOverview | None = Field(default=None, alias="studyPlan")
     specializations: list[SpecializationInfo] = Field(default_factory=list)
     academic_year: str = Field(alias="academicYear")
+    response_language: Literal["da", "en"] = Field(default="en", alias="responseLanguage")
     is_direct_answer: bool = Field(default=False, alias="isDirectAnswer")

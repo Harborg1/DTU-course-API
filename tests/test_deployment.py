@@ -45,6 +45,15 @@ def test_chat_only_resubmits_user_messages_to_the_api():
     assert "JSON.stringify({ messages: requestMessages" in script
 
 
+def test_structured_chat_results_follow_the_response_language():
+    script = (PROJECT_ROOT / "app" / "web" / "static" / "app.js").read_text()
+
+    assert 'studyPlanLink: "View the official study plan at DTU ↗"' in script
+    assert 'specializationLink: "View the specialization at DTU ↗"' in script
+    assert "addStudyPlan(result.studyPlan, responseLanguage)" in script
+    assert "addSpecializations(result.specializations, responseLanguage)" in script
+
+
 def test_python_runtime_is_pinned_to_312():
     assert (PROJECT_ROOT / ".python-version").read_text().strip() == "3.12"
 
