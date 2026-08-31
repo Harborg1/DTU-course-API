@@ -74,6 +74,23 @@ def test_ambiguous_interest_asks_courses_or_programmes_without_calling_model(db_
     assert "‘studier’ eller ‘kurser’" in response.reply
     assert response.study_programs == []
     assert response.recommendations == []
+    assert response.understood.topic == "matematik"
+
+
+def test_standalone_programme_choice_without_previous_topic_does_not_repeat_clarification(db_session):
+    with patch("app.services.recommendation_service.answer_with_remote_mcp") as remote_answer:
+        response = recommend_courses(
+            db_session,
+            messages=["Kan du anbefale noget?", "studier"],
+            academic_year="2026-2027",
+        )
+
+    remote_answer.assert_not_called()
+    assert response.reply == (
+        "Hvilket emne interesserer dig, og leder du efter en bachelor- eller kandidatuddannelse?"
+    )
+    assert "studieprogrammer eller kurser" not in response.reply
+    assert response.understood.topic == ""
 
 
 def test_programme_follow_up_reuses_topic_from_previous_user_message(db_session):

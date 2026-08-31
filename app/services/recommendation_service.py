@@ -1012,6 +1012,27 @@ def _previous_recommendation_topic(messages: list[str]) -> str:
     return ""
 
 
+def _is_standalone_recommendation_choice(text: str, *, target: str) -> bool:
+    normalized = re.sub(r"[^a-zæøå]+", " ", text.casefold()).strip()
+    choices = {
+        "programme": {
+            "studie",
+            "studier",
+            "studieprogram",
+            "studieprogrammer",
+            "uddannelse",
+            "uddannelser",
+            "program",
+            "programmer",
+            "programme",
+            "programmes",
+        },
+        "course": {"kursus", "kurser", "course", "courses"},
+    }
+    polite_suffixes = {"", " tak", " please"}
+    return any(normalized == choice + suffix for choice in choices[target] for suffix in polite_suffixes)
+
+
 def _answer_study_program_recommendations(
     session: Session,
     *,
@@ -1028,7 +1049,7 @@ def _answer_study_program_recommendations(
         )
         return ChatResponse(
             reply=reply,
-            understood=UnderstoodContext(topic="study programme recommendation"),
+            understood=UnderstoodContext(topic=""),
             academicYear=academic_year,
             responseLanguage=language,
             isDirectAnswer=True,
@@ -1107,7 +1128,7 @@ def _answer_recommendation_clarification(
         )
     return ChatResponse(
         reply=reply,
-        understood=UnderstoodContext(topic=topic or "recommendation clarification"),
+        understood=UnderstoodContext(topic=topic),
         academicYear=academic_year,
         responseLanguage=language,
         isDirectAnswer=True,
@@ -1130,12 +1151,18 @@ def recommend_courses(
     intent = classify_intent(latest_user_message)
     if isinstance(intent, OpenQuestionIntent) and len(messages) > 1:
         previous_topic = _previous_recommendation_topic(messages)
-        if previous_topic and is_study_program_target(latest_user_message):
+        if is_study_program_target(latest_user_message) and (
+            previous_topic
+            or _is_standalone_recommendation_choice(latest_user_message, target="programme")
+        ):
             intent = StudyProgramRecommendationIntent(
                 confidence=0.95,
                 topic=previous_topic,
             )
-        elif previous_topic and is_course_target(latest_user_message):
+        elif is_course_target(latest_user_message) and (
+            previous_topic
+            or _is_standalone_recommendation_choice(latest_user_message, target="course")
+        ):
             intent = RecommendationIntent(
                 confidence=0.95,
                 topic=previous_topic,
