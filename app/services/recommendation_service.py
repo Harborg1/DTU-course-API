@@ -122,14 +122,20 @@ _STOP_WORDS = {
 
 def _answer_with_llm(course: Course, messages: list[str], academic_year: str) -> ChatResponse:
     latest_user_message = messages[-1] if messages else "Hvad kan du fortælle om dette kursus?"
+    response_language = detect_user_language(latest_user_message)
 
-    answer = answer_with_remote_mcp(latest_user_message, academic_year)
+    answer = answer_with_remote_mcp(
+        latest_user_message,
+        academic_year,
+        response_language=response_language,
+    )
 
     return ChatResponse(
         reply=answer,
         understood=UnderstoodContext(topic=f"course {course.course_number}", level=course.level),
         recommendations=[],
         academicYear=academic_year,
+        responseLanguage=response_language,
         isDirectAnswer=True,
     )
 
@@ -1146,7 +1152,11 @@ def recommend_courses(
                 f"{latest_user_message}\n\n"
                 f"{identified_program}"
             )
-            reply = answer_with_remote_mcp(study_plan_question, academic_year)
+            reply = answer_with_remote_mcp(
+                study_plan_question,
+                academic_year,
+                response_language=response_language,
+            )
             return ChatResponse(
                 reply=reply,
                 understood=UnderstoodContext(topic="study plan qa", level=program.degree_type, program=program.name),
@@ -1180,12 +1190,17 @@ def recommend_courses(
                 academic_year=academic_year,
             )
         try:
-            reply = answer_with_remote_mcp(conversation, academic_year)
+            reply = answer_with_remote_mcp(
+                conversation,
+                academic_year,
+                response_language=response_language,
+            )
             return ChatResponse(
                 reply=reply,
                 understood=UnderstoodContext(topic=intent.topic, level=intent.level or None),
                 recommendations=[],
                 academicYear=academic_year,
+                responseLanguage=response_language,
                 isDirectAnswer=True,
             )
         except CourseQAError:
@@ -1195,12 +1210,17 @@ def recommend_courses(
     # 5. Open Question — Groq (no DB)
     if isinstance(intent, OpenQuestionIntent):
         try:
-            reply = answer_with_remote_mcp(conversation, academic_year)
+            reply = answer_with_remote_mcp(
+                conversation,
+                academic_year,
+                response_language=response_language,
+            )
             return ChatResponse(
                 reply=reply,
                 understood=UnderstoodContext(topic="general question"),
                 recommendations=[],
                 academicYear=academic_year,
+                responseLanguage=response_language,
                 isDirectAnswer=True,
             )
         except CourseQAError:

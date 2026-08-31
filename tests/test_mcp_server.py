@@ -580,6 +580,27 @@ def test_remote_mcp_returns_final_text():
     assert answer == "The answer is 42."
 
 
+def test_remote_mcp_uses_explicit_danish_response_language():
+    from app.services.course_qa_service import answer_with_remote_mcp
+
+    mock_response = MagicMock()
+    mock_response.output = [MagicMock(content=[MagicMock(text="Et dansk svar.")])]
+
+    with patch("openai.OpenAI") as MockClient:
+        instance = MockClient.return_value
+        instance.responses.create.return_value = mock_response
+
+        answer = answer_with_remote_mcp(
+            "Sammenlign de to engelske programnavne",
+            response_language="da",
+        )
+
+    instructions = instance.responses.create.call_args.kwargs["instructions"]
+    assert "SVARE UDELUKKENDE PÅ DANSK" in instructions
+    assert "forklaringer, overskrifter og overgange på dansk" in instructions
+    assert answer == "Et dansk svar."
+
+
 def test_remote_mcp_empty_output_raises():
     from app.services.course_qa_service import CourseQAError, answer_with_remote_mcp
 

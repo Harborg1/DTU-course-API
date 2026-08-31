@@ -1,5 +1,5 @@
 from types import SimpleNamespace
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock, call, patch
 
 from app.models.specialization import StudySpecialization
 from app.models.study_plan import StudyProgram
@@ -9,7 +9,7 @@ from app.services.semantic_intent_service import (
     classify_query_semantically,
     intent_from_query_plan,
 )
-from app.services.intent_service import StudyPlanIntent
+from app.services.intent_service import OpenQuestionIntent, StudyPlanIntent
 from app.services.search_service import SearchResult
 
 
@@ -59,6 +59,54 @@ def test_semantic_classifier_returns_validated_query_plan():
     assert request["text_format"] is SemanticQueryPlan
     assert "study_program/overview" in request["instructions"]
     assert isinstance(intent_from_query_plan(plan), StudyPlanIntent)
+
+
+def test_semantic_comparison_stays_in_open_question_mcp_flow(db_session):
+    plan = SemanticQueryPlan(
+        domain="specialization",
+        operation="compare",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=None,
+        topics=[],
+        result_mode="summary",
+        language="da",
+        confidence=1.0,
+    )
+
+    assert isinstance(intent_from_query_plan(plan), OpenQuestionIntent)
+
+    prompts = [
+        "Sammenlign computer science and engineering og wind energy",
+        "Kan du sammenligne computer science and engineering og wind energy",
+    ]
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=plan,
+        ),
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="Computer Science and Engineering og Wind Energy har forskellige faglige fokus.",
+        ) as remote_answer,
+    ):
+        responses = [
+            recommend_courses(
+                db_session,
+                messages=[prompt],
+                academic_year="2026-2027",
+            )
+            for prompt in prompts
+        ]
+
+    assert remote_answer.call_args_list == [
+        call(prompt, "2026-2027", response_language="da") for prompt in prompts
+    ]
+    assert all(response.understood.topic == "general question" for response in responses)
+    assert all(response.response_language == "da" for response in responses)
+    assert all(response.specializations == [] for response in responses)
 
 
 def test_semantic_classifier_rejects_low_confidence_and_skips_without_key():

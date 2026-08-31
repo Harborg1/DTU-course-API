@@ -277,6 +277,7 @@ class TestRecommendCoursesIntentRouting:
             "Studieplan computer science and engineering\n\n"
             "Identificeret studieprogram: Computer Science and Engineering (Master).",
             "2026-2027",
+            response_language="da",
         )
 
     def test_study_plan_intent(self, client, db_session):

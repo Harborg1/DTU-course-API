@@ -141,7 +141,11 @@ def test_course_question_triggers_llm(client, sample_courses):
             },
         )
 
-    answer.assert_called_once_with("hvad er skemagruppen for 02450?", "2026-2027")
+    answer.assert_called_once_with(
+        "hvad er skemagruppen for 02450?",
+        "2026-2027",
+        response_language="da",
+    )
 
     assert response.status_code == 200
     body = response.json()
@@ -182,7 +186,11 @@ def test_recommend_courses_with_course_number_uses_llm(db_session, sample_course
             academic_year="2026-2027",
         )
 
-    answer.assert_called_once_with("hvad er eksamen for 02450?", "2026-2027")
+    answer.assert_called_once_with(
+        "hvad er eksamen for 02450?",
+        "2026-2027",
+        response_language="da",
+    )
 
     assert result.is_direct_answer is True
     assert result.reply == "Eksamen er mundtlig."

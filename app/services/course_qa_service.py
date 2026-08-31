@@ -31,7 +31,10 @@ def _detect_language(text: str) -> str:
 def _build_system_prompt(language: str, academic_year: str) -> str:
     """Build system prompt for Groq with language instruction."""
     if language == "da":
-        lang_instruction = "DU SKAL SVARE PÅ DANSK"
+        lang_instruction = (
+            "DU SKAL SVARE UDELUKKENDE PÅ DANSK. Bevar officielle engelske kursus- og "
+            "studieprogramnavne, men skriv alle forklaringer, overskrifter og overgange på dansk"
+        )
     elif language == "en":
         lang_instruction = "DU SKAL SVARE PÅ ENGLSK"
     else:
@@ -62,7 +65,12 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
     )
 
 
-def answer_with_remote_mcp(question: str, academic_year: str | None = None) -> str:
+def answer_with_remote_mcp(
+    question: str,
+    academic_year: str | None = None,
+    *,
+    response_language: str | None = None,
+) -> str:
     """Answer using Groq Responses API with remote MCP tools.
 
     Groq decides which tool to call, the MCP server executes it via
@@ -81,7 +89,7 @@ def answer_with_remote_mcp(question: str, academic_year: str | None = None) -> s
 
     from openai import OpenAI, OpenAIError
 
-    language = _detect_language(question)
+    language = response_language if response_language in {"da", "en"} else _detect_language(question)
     selected_academic_year = academic_year or settings.default_academic_year
     endpoint = settings.mcp_server_url.rstrip("/")
     if not endpoint.endswith("/mcp"):

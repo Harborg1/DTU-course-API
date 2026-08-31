@@ -9,6 +9,7 @@ from app.config import get_settings
 from app.services.intent_service import (
     CourseQAIntent,
     Intent,
+    OpenQuestionIntent,
     RecommendationIntent,
     SpecializationIntent,
     StudyPlanIntent,
@@ -71,7 +72,9 @@ def classify_query_semantically(
         "names. A guide, study guide, curriculum introduction, or general description of a named programme "
         "is study_program/overview. Questions about programme construction or required credits are "
         "study_program/requirements. Questions about a specialization or its courses use the specialization "
-        "domain. Course discovery by subject uses course/search or course/recommend. For course discovery, "
+        "domain. A comparison between two named study programmes is study_program/compare, even when a "
+        "programme has the same name as a specialization elsewhere. Course discovery by subject uses "
+        "course/search or course/recommend. For course discovery, "
         "put each distinct requested subject in topics, splitting coordinated subjects while preserving "
         "multiword subjects such as 'artificial intelligence' and 'machine learning'; otherwise use an empty "
         "topics list. Always express course-search topics as canonical English subject phrases, regardless of "
@@ -115,6 +118,12 @@ def classify_query_semantically(
 
 def intent_from_query_plan(plan: SemanticQueryPlan) -> Intent | None:
     """Map a semantic plan onto the application's existing routing intents."""
+    if plan.operation == "compare":
+        # Comparisons can involve multiple entities, while the deterministic
+        # study-plan and specialization flows resolve exactly one. Keep the
+        # request in the open-question MCP flow so every named entity can be
+        # fetched and compared.
+        return OpenQuestionIntent(confidence=plan.confidence)
     if plan.domain == "specialization":
         return SpecializationIntent(confidence=plan.confidence)
     if plan.domain in {"study_program", "degree", "admission"}:
