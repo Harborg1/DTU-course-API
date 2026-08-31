@@ -262,6 +262,42 @@ def test_specialization_overview_keeps_program_when_global_specialization_has_sa
     assert all(item.program_name == "Wind Energy" for item in response.specializations)
 
 
+def test_definite_plural_specialization_overview_keeps_matching_program(db_session):
+    wind_program = _program("wind-energy", "Wind Energy")
+    wind_program.specializations = [
+        StudySpecialization(
+            slug="offshore-wind-energy",
+            name="Offshore Wind Energy",
+            source_url="https://www.dtu.dk/wind-energy/offshore-wind-energy",
+            content_hash="c" * 64,
+        )
+    ]
+    sustainable_energy = _program(
+        "sustainable-energy-technologies",
+        "Sustainable Energy Technologies",
+    )
+    sustainable_energy.specializations = [
+        StudySpecialization(
+            slug="wind-energy",
+            name="Wind Energy",
+            source_url="https://www.dtu.dk/sustainable-energy-technologies/wind-energy",
+            content_hash="e" * 64,
+        )
+    ]
+    db_session.add_all([wind_program, sustainable_energy])
+    db_session.commit()
+
+    response = recommend_courses(
+        db_session,
+        messages=["Hvad er specialiseringerne i wind energy msc"],
+        academic_year="2026-2027",
+    )
+
+    assert response.understood.program == "Wind Energy"
+    assert [item.name for item in response.specializations] == ["Offshore Wind Energy"]
+    assert response.specializations[0].program_name == "Wind Energy"
+
+
 def test_mcp_specialization_handler_returns_structured_requirements(db_session):
     from app.mcp_server.server import _handle_get_specializations
 

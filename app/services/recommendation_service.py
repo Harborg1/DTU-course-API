@@ -360,6 +360,7 @@ def _asks_for_specialization_overview(text: str) -> bool:
         tokens
         & {
             "specialiseringer",
+            "specialiseringerne",
             "specialisations",
             "specialities",
             "specializations",
