@@ -16,7 +16,7 @@ router = APIRouter(prefix="/api", tags=["Recommendations"])
     "/chat",
     response_model=ChatResponse,
     response_model_by_alias=True,
-    summary="Recommend official DTU courses from student context",
+    summary="Recommend official DTU courses and study programmes from student context",
 )
 def chat(request: ChatRequest, session: Annotated[Session, Depends(get_db)]) -> ChatResponse:
     user_messages = [message.content for message in request.messages if message.role == "user"]

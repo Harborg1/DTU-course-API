@@ -42,6 +42,19 @@ class RecommendationIntent(Intent):
 
 
 @dataclass
+class StudyProgramRecommendationIntent(Intent):
+    type: str = "study_program_recommendation"
+    topic: str = ""
+    degree_type: str = ""
+
+
+@dataclass
+class ClarificationIntent(Intent):
+    type: str = "recommendation_clarification"
+    topic: str = ""
+
+
+@dataclass
 class OpenQuestionIntent(Intent):
     type: str = "open_question"
 
@@ -242,6 +255,76 @@ _INTENT_KEYWORDS = {
 
 _COURSE_NUMBER_PATTERN = r"\b(\d{5})\b"
 
+_PROGRAM_TARGET_INDICATORS = (
+    "studie",
+    "studier",
+    "studieprogram",
+    "studieprogrammer",
+    "uddannelse",
+    "uddannelser",
+    "hvad kan jeg læse",
+    "hvad skal jeg læse",
+    "degree",
+    "degree programme",
+    "degree programmes",
+    "degree program",
+    "degree programs",
+    "degrees",
+    "programme",
+    "program",
+    "study programme",
+    "study programmes",
+    "study program",
+    "study programs",
+    "what should i study",
+)
+
+_COURSE_TARGET_INDICATORS = (
+    "kursus",
+    "kurser",
+    "course",
+    "courses",
+)
+
+_PROGRAM_RECOMMENDATION_INDICATORS = (
+    "anbefal",
+    "hvad kan jeg læse",
+    "hvad skal jeg læse",
+    "hvilket studie passer",
+    "hvilken uddannelse passer",
+    "hvilke uddannelser passer",
+    "hvilket studie skal jeg vælge",
+    "hvilken uddannelse skal jeg vælge",
+    "recommend",
+    "what should i study",
+    "which degree suits",
+    "which programme suits",
+    "which program suits",
+    "which degree should i choose",
+    "which programme should i choose",
+    "which program should i choose",
+)
+
+_INTEREST_INDICATORS = (
+    "kan godt lide",
+    "kan lide",
+    "glad for",
+    "interesserer mig for",
+    "interesseret i",
+    "interesse for",
+    "i like",
+    "i enjoy",
+    "interested in",
+    "interest in",
+)
+
+_CURRENT_STUDY_INDICATORS = (
+    "jeg læser",
+    "jeg studerer",
+    "i study",
+    "i am studying",
+)
+
 
 def extract_course_number(text: str) -> str | None:
     """Extract 5-digit course number from text."""
@@ -272,6 +355,63 @@ def extract_topic(text: str) -> str:
         if topic in normalized
     ]
     return max(matches)[1] if matches else ""
+
+
+def extract_recommendation_topic(text: str) -> str:
+    """Extract a stated interest for course or study-programme recommendations."""
+    known_topic = extract_topic(text)
+    if known_topic:
+        return known_topic
+
+    normalized = re.sub(r"\s+", " ", text.casefold()).strip()
+    patterns = (
+        r"(?:kan godt lide|kan lide|glad for|interesserer mig for|interesseret i|interesse for)\s+([^.!?,;]+)",
+        r"(?:i like|i enjoy|interested in|interest in)\s+([^.!?,;]+)",
+        r"(?:inden for|relateret til|related to|about)\s+([^.!?,;]+)",
+    )
+    for pattern in patterns:
+        match = re.search(pattern, normalized)
+        if match:
+            topic = match.group(1).strip(" -")
+            topic = re.split(
+                r"\b(?:på|at)\s+(?:bsc|msc|bachelor|master|kandidat)(?:-niveau)?\b",
+                topic,
+                maxsplit=1,
+            )[0].strip()
+            if topic:
+                return topic
+    return ""
+
+
+def is_study_program_target(text: str) -> bool:
+    normalized = text.casefold()
+    return any(re.search(rf"\b{re.escape(indicator)}\b", normalized) for indicator in _PROGRAM_TARGET_INDICATORS)
+
+
+def is_course_target(text: str) -> bool:
+    normalized = text.casefold()
+    return any(re.search(rf"\b{re.escape(indicator)}\b", normalized) for indicator in _COURSE_TARGET_INDICATORS)
+
+
+def is_study_program_recommendation(text: str) -> bool:
+    normalized = text.casefold()
+    has_program_target = is_study_program_target(text)
+    has_recommendation_request = any(indicator in normalized for indicator in _PROGRAM_RECOMMENDATION_INDICATORS)
+    return has_program_target and has_recommendation_request and not is_course_target(text)
+
+
+def is_ambiguous_interest_request(text: str) -> bool:
+    """Return true when an interest is stated without choosing courses or programmes."""
+    normalized = text.casefold()
+    has_interest = any(indicator in normalized for indicator in _INTEREST_INDICATORS)
+    has_current_study = any(indicator in normalized for indicator in _CURRENT_STUDY_INDICATORS)
+    return (
+        has_interest
+        and bool(extract_recommendation_topic(text))
+        and not has_current_study
+        and not is_course_target(text)
+        and not is_study_program_target(text)
+    )
 
 
 def is_study_plan_related(text: str) -> bool:
@@ -305,6 +445,13 @@ def classify_intent(text: str) -> Intent:
     if course_number:
         return CourseQAIntent(confidence=1.0, course_number=course_number)
 
+    if is_study_program_recommendation(text):
+        return StudyProgramRecommendationIntent(
+            confidence=0.95,
+            topic=extract_recommendation_topic(text),
+            degree_type="Master" if "master" in keywords else "Bachelor" if "bachelor" in keywords else "",
+        )
+
     if is_study_plan_related(text):
         requires_ects = any(kw in keywords for kw in ["ects", "point", "credit"])
         requires_course_count = any(kw in keywords for kw in ["mandatory", "elective"])
@@ -316,6 +463,12 @@ def classify_intent(text: str) -> Intent:
             requires_ects_calculation=requires_ects,
             requires_course_count=requires_course_count,
             requires_section_info=requires_section,
+        )
+
+    if is_ambiguous_interest_request(text):
+        return ClarificationIntent(
+            confidence=0.9,
+            topic=extract_recommendation_topic(text),
         )
 
     if keywords:

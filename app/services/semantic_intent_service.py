@@ -7,11 +7,13 @@ from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
 from app.config import get_settings
 from app.services.intent_service import (
+    ClarificationIntent,
     CourseQAIntent,
     Intent,
     OpenQuestionIntent,
     RecommendationIntent,
     SpecializationIntent,
+    StudyProgramRecommendationIntent,
     StudyPlanIntent,
 )
 
@@ -73,7 +75,10 @@ def classify_query_semantically(
         "is study_program/overview. Questions about programme construction or required credits are "
         "study_program/requirements. Questions about a specialization or its courses use the specialization "
         "domain. A comparison between two named study programmes is study_program/compare, even when a "
-        "programme has the same name as a specialization elsewhere. Course discovery by subject uses "
+        "programme has the same name as a specialization elsewhere. Requests for suitable degree or study "
+        "programmes based on an interest use study_program/recommend and put the interest in topic. "
+        "A stated interest without a clear choice between courses and study programmes uses general/clarify. "
+        "Course discovery by subject uses "
         "course/search or course/recommend. For course discovery, "
         "put each distinct requested subject in topics, splitting coordinated subjects while preserving "
         "multiword subjects such as 'artificial intelligence' and 'machine learning'; otherwise use an empty "
@@ -124,6 +129,16 @@ def intent_from_query_plan(plan: SemanticQueryPlan) -> Intent | None:
         # request in the open-question MCP flow so every named entity can be
         # fetched and compared.
         return OpenQuestionIntent(confidence=plan.confidence)
+    if plan.domain == "study_program" and plan.operation == "recommend":
+        return StudyProgramRecommendationIntent(
+            confidence=plan.confidence,
+            topic=plan.topic or "",
+        )
+    if plan.operation == "clarify":
+        return ClarificationIntent(
+            confidence=plan.confidence,
+            topic=plan.topic or "",
+        )
     if plan.domain == "specialization":
         return SpecializationIntent(confidence=plan.confidence)
     if plan.domain in {"study_program", "degree", "admission"}:

@@ -9,7 +9,12 @@ from app.services.semantic_intent_service import (
     classify_query_semantically,
     intent_from_query_plan,
 )
-from app.services.intent_service import OpenQuestionIntent, StudyPlanIntent
+from app.services.intent_service import (
+    ClarificationIntent,
+    OpenQuestionIntent,
+    StudyPlanIntent,
+    StudyProgramRecommendationIntent,
+)
 from app.services.search_service import SearchResult
 
 
@@ -129,6 +134,26 @@ def test_semantic_classifier_rejects_low_confidence_and_skips_without_key():
         assert classify_query_semantically("computer science study guide") is None
 
     openai_client.assert_not_called()
+
+
+def test_semantic_programme_recommendation_and_clarification_map_to_dedicated_intents():
+    recommendation_plan = _program_overview_plan(
+        operation="recommend",
+        topic="renewable energy",
+    )
+    clarification_plan = _program_overview_plan(
+        domain="general",
+        operation="clarify",
+        topic="renewable energy",
+    )
+
+    recommendation_intent = intent_from_query_plan(recommendation_plan)
+    clarification_intent = intent_from_query_plan(clarification_plan)
+
+    assert isinstance(recommendation_intent, StudyProgramRecommendationIntent)
+    assert recommendation_intent.topic == "renewable energy"
+    assert isinstance(clarification_intent, ClarificationIntent)
+    assert clarification_intent.topic == "renewable energy"
 
 
 def test_semantic_program_overview_is_database_backed_and_marks_specializations_optional(db_session):

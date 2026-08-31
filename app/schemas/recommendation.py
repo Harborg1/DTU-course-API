@@ -42,6 +42,16 @@ class RecommendedCourse(BaseModel):
     source_url: str = Field(alias="sourceUrl")
 
 
+class RecommendedStudyProgram(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
+    name: str
+    degree_type: str = Field(alias="degreeType")
+    description: str | None = None
+    reason: str
+    source_url: str = Field(alias="sourceUrl")
+
+
 class StudyPlanCourseInfo(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
@@ -125,6 +135,7 @@ class ChatResponse(BaseModel):
     reply: str
     understood: UnderstoodContext
     recommendations: list[RecommendedCourse] = Field(default_factory=list)
+    study_programs: list[RecommendedStudyProgram] = Field(default_factory=list, alias="studyPrograms")
     study_plan: StudyPlanOverview | None = Field(default=None, alias="studyPlan")
     specializations: list[SpecializationInfo] = Field(default_factory=list)
     academic_year: str = Field(alias="academicYear")

@@ -64,6 +64,8 @@ const responseTranslations = {
     historicalSpecializationCourses: "Discontinued courses that DTU states still count.",
     historicalCourseSuffix: " · discontinued",
     specializationLink: "View the specialization at DTU ↗",
+    studyProgramsAria: "Recommended study programmes",
+    studyProgramLink: "View the official programme at DTU ↗",
   },
   da: {
     studyPlanAria: (program) => `Studieplan for ${program}`,
@@ -92,6 +94,8 @@ const responseTranslations = {
     historicalSpecializationCourses: "Udgåede kurser, som DTU angiver stadig tæller.",
     historicalCourseSuffix: " · udgået",
     specializationLink: "Se specialiseringen hos DTU ↗",
+    studyProgramsAria: "Anbefalede studieprogrammer",
+    studyProgramLink: "Se det officielle studieprogram hos DTU ↗",
   },
 };
 
@@ -421,6 +425,55 @@ function safeSourceUrl(value) {
   }
 }
 
+function addStudyPrograms(programs, language) {
+  if (!programs?.length) return;
+  const copy = responseTranslations[language];
+  const list = document.createElement("section");
+  list.className = "recommendations study-program-recommendations";
+  list.setAttribute("aria-label", copy.studyProgramsAria);
+
+  programs.forEach((program) => {
+    const card = document.createElement("article");
+    card.className = "course-card study-program-card";
+
+    const head = document.createElement("div");
+    head.className = "course-card-head";
+    const type = document.createElement("span");
+    type.className = "course-number";
+    type.textContent = program.degreeType;
+    head.append(type);
+
+    const title = document.createElement("h2");
+    title.textContent = program.name;
+    card.append(head, title);
+
+    if (program.description) {
+      const description = document.createElement("p");
+      description.className = "course-description study-program-description";
+      description.textContent = program.description;
+      card.append(description);
+    }
+
+    const reason = document.createElement("p");
+    reason.className = "course-reason";
+    reason.textContent = program.reason;
+    card.append(reason);
+
+    const url = safeSourceUrl(program.sourceUrl);
+    if (url) {
+      const link = document.createElement("a");
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      link.textContent = copy.studyProgramLink;
+      card.append(link);
+    }
+    list.append(card);
+  });
+  conversation.append(list);
+  scrollToLatest();
+}
+
 function addRecommendations(courses) {
   if (!courses.length) return;
   const list = document.createElement("section");
@@ -510,6 +563,7 @@ async function submitMessage(text) {
     addMessage("assistant", result.reply);
     addContextTags(result.understood);
     const responseLanguage = result.responseLanguage || currentLanguage;
+    addStudyPrograms(result.studyPrograms, responseLanguage);
     addStudyPlan(result.studyPlan, responseLanguage);
     addSpecializations(result.specializations, responseLanguage);
     addRecommendations(result.recommendations);

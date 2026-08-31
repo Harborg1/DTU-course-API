@@ -67,6 +67,9 @@ def test_structured_chat_results_follow_the_response_language():
 
     assert 'studyPlanLink: "View the official study plan at DTU ↗"' in script
     assert 'specializationLink: "View the specialization at DTU ↗"' in script
+    assert 'studyProgramLink: "View the official programme at DTU ↗"' in script
+    assert 'studyProgramLink: "Se det officielle studieprogram hos DTU ↗"' in script
+    assert "addStudyPrograms(result.studyPrograms, responseLanguage)" in script
     assert "addStudyPlan(result.studyPlan, responseLanguage)" in script
     assert "addSpecializations(result.specializations, responseLanguage)" in script
 

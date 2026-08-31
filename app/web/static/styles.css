@@ -314,6 +314,7 @@ h1 em { color: var(--accent); font-weight: 500; }
 .course-reason { margin: 0 0 13px; padding: 9px 10px; color: #315c4d; border-radius: 9px; background: #eef7f2; font-size: .7rem; line-height: 1.45; }
 .course-card a { display: inline-flex; align-items: center; gap: 5px; color: var(--ink); text-decoration: none; font-size: .71rem; font-weight: 750; }
 .course-card a:hover { color: var(--accent-dark); }
+.study-program-description { display: block; overflow: visible; -webkit-line-clamp: unset; }
 
 .study-plan {
   display: grid;

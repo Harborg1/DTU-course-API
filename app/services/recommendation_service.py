@@ -18,6 +18,7 @@ from app.services.course_service import get_course
 from app.schemas.recommendation import (
     ChatResponse,
     RecommendedCourse,
+    RecommendedStudyProgram,
     SpecializationCourseInfo,
     SpecializationInfo,
     SpecializationRequirementInfo,
@@ -29,13 +30,18 @@ from app.schemas.recommendation import (
 )
 from app.services.course_qa_service import CourseQAError, answer_with_remote_mcp
 from app.services.intent_service import (
+    ClarificationIntent,
     CourseQAIntent,
     OpenQuestionIntent,
     RecommendationIntent,
     SpecializationIntent,
+    StudyProgramRecommendationIntent,
     StudyPlanIntent,
     classify_intent,
     extract_course_number,
+    extract_recommendation_topic,
+    is_course_target,
+    is_study_program_target,
 )
 from app.services.language_service import detect_user_language
 from app.services.search_service import SearchResult, search_courses
@@ -47,6 +53,10 @@ from app.services.semantic_intent_service import (
 )
 from app.services.specialization_aliases import SPECIALIZATION_ALIASES
 from app.services.study_program_aliases import PROGRAM_ALIASES
+from app.services.study_program_recommendation_service import (
+    recommend_study_programs,
+    study_program_description,
+)
 
 
 logger = logging.getLogger(__name__)
@@ -994,6 +1004,116 @@ def _short_description(description: str | None) -> str | None:
     return description
 
 
+def _previous_recommendation_topic(messages: list[str]) -> str:
+    for message in reversed(messages[:-1]):
+        topic = extract_recommendation_topic(message)
+        if topic:
+            return topic
+    return ""
+
+
+def _answer_study_program_recommendations(
+    session: Session,
+    *,
+    intent: StudyProgramRecommendationIntent,
+    academic_year: str,
+    language: str,
+) -> ChatResponse:
+    topic = intent.topic.strip()
+    if not topic:
+        reply = (
+            "Hvilket emne interesserer dig, og leder du efter en bachelor- eller kandidatuddannelse?"
+            if language == "da"
+            else "What subject interests you, and are you looking for a bachelor's or master's programme?"
+        )
+        return ChatResponse(
+            reply=reply,
+            understood=UnderstoodContext(topic="study programme recommendation"),
+            academicYear=academic_year,
+            responseLanguage=language,
+            isDirectAnswer=True,
+        )
+
+    matches = recommend_study_programs(
+        session,
+        topic=topic,
+        academic_year=academic_year,
+        degree_type=intent.degree_type or None,
+        language=language,
+    )
+    recommendations = [
+        RecommendedStudyProgram(
+            name=match.program.name,
+            degreeType=match.program.degree_type,
+            description=study_program_description(match.program),
+            reason=match.reason,
+            sourceUrl=match.program.source_url,
+        )
+        for match in matches
+    ]
+
+    if language == "da":
+        level = (
+            f" på {intent.degree_type}-niveau"
+            if intent.degree_type
+            else " på både bachelor- og kandidatniveau"
+        )
+        reply = (
+            f"Jeg fandt {len(recommendations)} importerede studieprogrammer{level}, der matcher din "
+            f"interesse for {topic}. Se hvorfor de matcher nedenfor."
+            if recommendations
+            else f"Jeg kunne ikke finde importerede studieprogrammer, der matcher {topic}."
+        )
+    else:
+        level = f" at {intent.degree_type} level" if intent.degree_type else " across bachelor's and master's levels"
+        reply = (
+            f"I found {len(recommendations)} imported study programmes{level} matching your interest in "
+            f"{topic}. See why they match below."
+            if recommendations
+            else f"I could not find imported study programmes matching {topic}."
+        )
+
+    return ChatResponse(
+        reply=reply,
+        understood=UnderstoodContext(
+            topic=topic,
+            level=intent.degree_type or None,
+        ),
+        studyPrograms=recommendations,
+        academicYear=academic_year,
+        responseLanguage=language,
+        isDirectAnswer=True,
+    )
+
+
+def _answer_recommendation_clarification(
+    *,
+    intent: ClarificationIntent,
+    academic_year: str,
+    language: str,
+) -> ChatResponse:
+    topic = intent.topic.strip()
+    if language == "da":
+        subject = f" inden for {topic}" if topic else ""
+        reply = (
+            f"Leder du efter forslag til studieprogrammer eller kurser{subject}? "
+            "Svar for eksempel ‘studier’ eller ‘kurser’."
+        )
+    else:
+        subject = f" related to {topic}" if topic else ""
+        reply = (
+            f"Are you looking for study programme or course recommendations{subject}? "
+            "Reply with, for example, ‘programmes’ or ‘courses’."
+        )
+    return ChatResponse(
+        reply=reply,
+        understood=UnderstoodContext(topic=topic or "recommendation clarification"),
+        academicYear=academic_year,
+        responseLanguage=language,
+        isDirectAnswer=True,
+    )
+
+
 def recommend_courses(
     session: Session,
     *,
@@ -1008,6 +1128,18 @@ def recommend_courses(
     # override a new study-plan or recommendation question. The full
     # conversation is still passed to Groq and used for programme matching.
     intent = classify_intent(latest_user_message)
+    if isinstance(intent, OpenQuestionIntent) and len(messages) > 1:
+        previous_topic = _previous_recommendation_topic(messages)
+        if previous_topic and is_study_program_target(latest_user_message):
+            intent = StudyProgramRecommendationIntent(
+                confidence=0.95,
+                topic=previous_topic,
+            )
+        elif previous_topic and is_course_target(latest_user_message):
+            intent = RecommendationIntent(
+                confidence=0.95,
+                topic=previous_topic,
+            )
     semantic_plan: SemanticQueryPlan | None = None
     if isinstance(intent, OpenQuestionIntent) or _asks_for_all_results(latest_user_message):
         semantic_plan = classify_query_semantically(
@@ -1029,7 +1161,25 @@ def recommend_courses(
             [conversation, *(mention for mention in extracted_mentions if mention)]
         )
 
-    # 1. Specialization Q&A — deterministic database answer with structured requirements
+    # 1. Study programme recommendation — deterministic ranking over imported programme data
+    if isinstance(intent, StudyProgramRecommendationIntent):
+        if not intent.topic and semantic_plan is not None and semantic_plan.topic:
+            intent.topic = semantic_plan.topic
+        return _answer_study_program_recommendations(
+            session,
+            intent=intent,
+            academic_year=academic_year,
+            language=response_language,
+        )
+
+    if isinstance(intent, ClarificationIntent):
+        return _answer_recommendation_clarification(
+            intent=intent,
+            academic_year=academic_year,
+            language=response_language,
+        )
+
+    # 2. Specialization Q&A — deterministic database answer with structured requirements
     if isinstance(intent, SpecializationIntent):
         program = _matching_study_program(session, resolution_text)
         specialization = _matching_specialization(session, resolution_text, program=program)

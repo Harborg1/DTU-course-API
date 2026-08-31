@@ -42,7 +42,7 @@ curl -H "X-API-Key: $API_KEY" http://localhost:8000/api/v1/import/status
 
 API-dokumentation findes på `/docs`, `/redoc` og `/openapi.json`.
 
-Hjemmesiden findes på `/`. Den sender brugerens samtalekontekst til `POST /api/chat`, hvor emne, niveau, ECTS, periode og sprog udledes, og der søges direkte i de officielle kursusdata. Browseren modtager aldrig den interne `API_KEY`.
+Hjemmesiden findes på `/`. Den sender brugerens samtalekontekst til `POST /api/chat`, hvor emne, niveau, ECTS, periode og sprog udledes, og der søges direkte i de officielle kursus- og studieprogramdata. Studieprogramanbefalinger returneres særskilt i `studyPrograms`; tvetydige interesseforespørgsler beder brugeren vælge mellem studier og kurser. Browseren modtager aldrig den interne `API_KEY`.
 
 ## Lokal Python-installation
 
@@ -190,7 +190,7 @@ Alle `/api/v1`-endpoints kræver `X-API-Key`. `/health` er offentlig. Pagination
 | `GET /` | Offentlig chat-hjemmeside |
 | `GET /health` | API- og databasekontrol |
 | `GET /api/info` | Offentlig serviceinformation |
-| `POST /api/chat` | Offentlige, kildehenviste kursusanbefalinger |
+| `POST /api/chat` | Offentlige, kildehenviste kursus- og studieprogramanbefalinger |
 | `GET /api/v1/courses/search` | Full-text-søgning og filtre |
 | `GET /api/v1/courses` | Sideinddelt liste med strukturerede filtre |
 | `GET /api/v1/courses/{course_number}` | Komplet kursus for valgt årgang |

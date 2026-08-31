@@ -5,9 +5,11 @@ import pytest
 from app.models.course import Course, CourseTranslation
 from app.models.study_plan import StudyProgram
 from app.services.intent_service import (
+    ClarificationIntent,
     CourseQAIntent,
     OpenQuestionIntent,
     RecommendationIntent,
+    StudyProgramRecommendationIntent,
     StudyPlanIntent,
     classify_intent,
     extract_intent_keywords,
@@ -79,6 +81,34 @@ class TestClassifyIntent:
         intent = classify_intent("bachelor kurser i optimering")
         assert isinstance(intent, RecommendationIntent)
         assert intent.level == "BSc"
+
+    @pytest.mark.parametrize(
+        ("prompt", "topic"),
+        [
+            ("Jeg kan godt lide matematik. Hvilke studier kan du anbefale?", "matematik"),
+            ("Hvad kan jeg læse, hvis jeg interesserer mig for kemi?", "kemi"),
+            ("Hvilken uddannelse passer til mig, hvis jeg kan lide kemi?", "kemi"),
+            ("Which degree programme would you recommend if I like physics?", "physics"),
+            ("Which degree should I choose if I enjoy software?", "software"),
+        ],
+    )
+    def test_study_program_recommendation_intent(self, prompt, topic):
+        intent = classify_intent(prompt)
+
+        assert isinstance(intent, StudyProgramRecommendationIntent)
+        assert intent.topic == topic
+
+    def test_interest_without_course_or_programme_target_requires_clarification(self):
+        intent = classify_intent("Jeg kan godt lide matematik")
+
+        assert isinstance(intent, ClarificationIntent)
+        assert intent.topic == "matematik"
+
+    def test_explicit_course_target_keeps_course_recommendation(self):
+        intent = classify_intent("Jeg kan godt lide matematik. Hvilke kurser kan du anbefale?")
+
+        assert isinstance(intent, RecommendationIntent)
+        assert intent.topic == "matematik"
 
     def test_open_question(self):
         intent = classify_intent("hej, hvem er du?")
