@@ -130,7 +130,7 @@ button { color: inherit; }
   box-shadow: 0 0 0 4px rgba(40, 163, 111, .1);
 }
 
-.reset-button {
+.reset-button, .how-it-works-button {
   padding: 9px 14px;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -141,7 +141,13 @@ button { color: inherit; }
   transition: background .2s, transform .2s;
 }
 
-.reset-button:hover { background: white; transform: translateY(-1px); }
+.reset-button:hover, .how-it-works-button:hover { background: white; transform: translateY(-1px); }
+
+.how-it-works-button {
+  color: var(--green);
+  border-color: rgba(31, 110, 85, .22);
+  background: rgba(220, 239, 229, .48);
+}
 
 main {
   width: min(1060px, calc(100% - 40px));
@@ -390,6 +396,49 @@ textarea::placeholder { color: #919a96; }
 
 .disclaimer { margin: 11px 20px 16px; color: #89928e; text-align: center; font-size: .63rem; }
 
+.how-it-works-dialog {
+  width: min(760px, calc(100% - 32px));
+  max-height: min(820px, calc(100vh - 32px));
+  padding: 0;
+  overflow: auto;
+  color: var(--ink);
+  border: 1px solid rgba(20, 35, 31, .12);
+  border-radius: 24px;
+  background: rgba(250, 249, 245, .98);
+  box-shadow: 0 35px 100px rgba(20, 35, 31, .28);
+}
+
+.how-it-works-dialog::backdrop {
+  background: rgba(20, 35, 31, .48);
+  backdrop-filter: blur(5px);
+}
+
+.how-it-works-dialog[open] { animation: enter .22s ease both; }
+.how-it-works-card { padding: 30px; }
+.how-it-works-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.how-it-works-head .eyebrow { margin-bottom: 8px; }
+.how-it-works-head h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.65rem, 4vw, 2.25rem); font-weight: 500; letter-spacing: -.035em; }
+.dialog-close { width: 38px; height: 38px; display: grid; place-items: center; padding: 0 0 3px; cursor: pointer; color: var(--muted); border: 1px solid var(--line); border-radius: 50%; background: white; font-size: 1.55rem; line-height: 1; }
+.dialog-close:hover { color: var(--ink); border-color: rgba(20, 35, 31, .28); }
+.how-intro { max-width: 650px; margin: 17px 0 23px; color: var(--muted); font-size: .93rem; line-height: 1.6; }
+
+.how-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.how-steps li { min-width: 0; padding: 15px; border: 1px solid var(--line); border-radius: 15px; background: white; }
+.how-steps li > span { width: 25px; height: 25px; display: grid; place-items: center; margin-bottom: 12px; color: white; border-radius: 8px; background: var(--green); font-size: .7rem; font-weight: 800; }
+.how-steps h3 { margin: 0 0 6px; font-size: .8rem; }
+.how-steps p { margin: 0; color: var(--muted); font-size: .72rem; line-height: 1.5; }
+
+.prompt-guide { margin-top: 24px; padding-top: 21px; border-top: 1px solid var(--line); }
+.prompt-guide-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 12px; }
+.prompt-guide-heading h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.2rem; font-weight: 500; }
+.prompt-guide-heading p { margin: 0; color: var(--muted); font-size: .7rem; }
+.prompt-templates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.prompt-templates button { min-width: 0; padding: 13px 14px; display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; cursor: pointer; text-align: left; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, .76); transition: border-color .2s, background .2s, transform .2s; }
+.prompt-templates button:hover { transform: translateY(-1px); border-color: rgba(227, 74, 50, .38); background: white; }
+.prompt-templates span { overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .7rem; line-height: 1.5; }
+.prompt-templates small { flex: 0 0 auto; color: var(--accent-dark); font-size: .62rem; font-weight: 750; white-space: nowrap; }
+.how-note { margin: 17px 0 0; color: #89928e; font-size: .65rem; line-height: 1.5; }
+
 .typing { display: flex; gap: 4px; align-items: center; min-height: 22px; }
 .typing i { width: 6px; height: 6px; border-radius: 50%; background: #73817b; animation: pulse 1s infinite ease-in-out; }
 .typing i:nth-child(2) { animation-delay: .15s; }
@@ -417,7 +466,8 @@ footer a { color: inherit; text-underline-offset: 3px; }
   .site-header, main, footer { width: min(100% - 24px, 1060px); }
   .site-header { padding-top: 15px; }
   .status { display: none; }
-  .header-actions { gap: 8px; }
+  .header-actions { gap: 6px; }
+  .reset-button, .how-it-works-button { padding: 8px 10px; font-size: .7rem; }
   main { margin-top: 26px; }
   .hero { margin-bottom: 30px; }
   h1 { font-size: clamp(2.75rem, 13vw, 4.5rem); }
@@ -429,7 +479,16 @@ footer a { color: inherit; text-underline-offset: 3px; }
   .study-plan { margin-left: 0; }
   .context-tags { margin-left: 40px; }
   .composer { margin: 0 12px; }
+  .how-it-works-card { padding: 22px 18px; }
+  .how-steps, .prompt-templates { grid-template-columns: 1fr; }
+  .prompt-guide-heading { display: block; }
+  .prompt-guide-heading p { margin-top: 5px; }
   footer { flex-direction: column; gap: 8px; }
+}
+
+@media (max-width: 520px) {
+  .site-header { flex-wrap: wrap; gap: 12px; }
+  .header-actions { width: 100%; justify-content: flex-end; }
 }
 
 @media (prefers-reduced-motion: reduce) {

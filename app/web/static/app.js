@@ -4,26 +4,34 @@ const sendButton = document.querySelector("#sendButton");
 const conversation = document.querySelector("#conversation");
 const resetButton = document.querySelector("#resetButton");
 const suggestions = document.querySelector("#suggestions");
+const howItWorksButton = document.querySelector("#howItWorksButton");
+const howItWorksDialog = document.querySelector("#howItWorksDialog");
 
 const translations = {
   en: {
     title: "Course Compass — find your next DTU course", description: "Get personal recommendations from DTU's official course catalogue.",
-    brand: "Course Compass", brandLabel: "Course Compass home", status: "Official DTU data", languageLabel: "Choose language", reset: "New chat",
+    brand: "Course Compass", brandLabel: "Course Compass home", status: "Official DTU data", languageLabel: "Choose language", reset: "New chat", howItWorks: "How it works",
     eyebrow: "Your personal course guide", heroTitle: "From curiosity to<br><em>the right course.</em>", heroCopy: "Tell us what you study and what you want to learn. We will explain your study plan or find relevant courses in DTU's official catalogue.",
     chatLabel: "Course recommender", guideName: "Course guide", guideState: "Ready to help · Academic year 2026/2027",
     welcome: "Hi! Describe your study programme and interests, and I will help you find a good starting point.", hint: "You can also mention level, ECTS, teaching period, or language.", examplesLabel: "Examples",
     suggestionPlan: "My study plan", suggestionPlanMeta: "Applied Mathematics · BSc", inputLabel: "Tell us what you are looking for in a course", placeholder: "E.g. I study MSc Computer Science and am interested in machine learning…", sendLabel: "Send message",
     disclaimer: "Recommendations are for guidance only. Always check the course description and prerequisites at DTU.", builtFrom: "Built with data from", courseDatabase: "DTU's course database", apiDocs: "API documentation",
+    howEyebrow: "A quick guide", howTitle: "How Course Compass works", howCloseLabel: "Close guide", howIntro: "Ask in your own words. Include the study programme, course, or topic you mean, and add details such as level or ECTS when they matter.",
+    howStepOneTitle: "Give context", howStepOneText: "Name your study programme, study level, or course number.", howStepTwoTitle: "Say what you need", howStepTwoText: "Ask for a study plan, comparison, specialization, or course recommendation.", howStepThreeTitle: "Refine the answer", howStepThreeText: "Follow up with constraints such as ECTS, teaching period, or subject.",
+    howExamplesTitle: "Prompt templates", howExamplesHint: "Replace the text in angle brackets with your own details.", howUseTemplate: "Use template", howPromptCompare: "Compare <study programme 1> and <study programme 2>", howPromptPlan: "Show me the study plan for <study programme>", howPromptSpecializations: "Which specializations are available in <MSc programme>?", howPromptCourses: "Find <ECTS> ECTS courses about <topic> at <study level>", howPromptCourseDetails: "What are the prerequisites and exam format for course <course number>?", howNote: "Course Compass uses imported official DTU data. Always confirm final choices in DTU's current course and study information.",
     promptPlan: "I study Applied Mathematics and am unsure how the programme is structured and which courses are mandatory.", promptMachineLearning: "I study Computer Science and Engineering at MSc level and am looking for courses in machine learning.", promptOptimization: "I am a BSc student looking for a 5 ECTS course about optimization."
   },
   da: {
     title: "Kurskompas — find dit næste DTU-kursus", description: "Få personlige anbefalinger blandt officielle DTU-kurser.",
-    brand: "Kurskompas", brandLabel: "Kurskompas forside", status: "Officielle DTU-data", languageLabel: "Vælg sprog", reset: "Ny samtale",
+    brand: "Kurskompas", brandLabel: "Kurskompas forside", status: "Officielle DTU-data", languageLabel: "Vælg sprog", reset: "Ny samtale", howItWorks: "Sådan virker det",
     eyebrow: "Din personlige kursusguide", heroTitle: "Fra interesse til<br><em>det rigtige kursus.</em>", heroCopy: "Fortæl hvad du læser, og hvad du gerne vil vide. Så forklarer vi din studieplan eller finder relevante kurser i DTU's officielle katalog.",
     chatLabel: "Kursusanbefaler", guideName: "Kursusguiden", guideState: "Klar til at hjælpe · Studieår 2026/2027",
     welcome: "Hej! Beskriv din studieretning og dine interesser, så finder jeg et godt udgangspunkt.", hint: "Du kan også nævne niveau, ECTS, periode eller undervisningssprog.", examplesLabel: "Eksempler",
     suggestionPlan: "Min studieplan", suggestionPlanMeta: "Anvendt Matematik · Bachelor", inputLabel: "Fortæl om dine kursusønsker", placeholder: "Fx: Jeg læser MSc Computer Science og interesserer mig for machine learning…", sendLabel: "Send besked",
     disclaimer: "Anbefalingerne er vejledende. Tjek altid kursusbeskrivelsen og forudsætningerne hos DTU.", builtFrom: "Bygget på data fra", courseDatabase: "DTU Kursusbasen", apiDocs: "API-dokumentation",
+    howEyebrow: "En hurtig guide", howTitle: "Sådan virker Kurskompas", howCloseLabel: "Luk guide", howIntro: "Spørg med dine egne ord. Nævn den studieretning, det kursus eller det emne, du mener, og tilføj oplysninger som niveau eller ECTS, når de er relevante.",
+    howStepOneTitle: "Giv kontekst", howStepOneText: "Nævn din studieretning, dit studieniveau eller et kursusnummer.", howStepTwoTitle: "Fortæl, hvad du søger", howStepTwoText: "Spørg efter en studieplan, sammenligning, specialisering eller kursusanbefaling.", howStepThreeTitle: "Afgræns svaret", howStepThreeText: "Følg op med krav som ECTS, undervisningsperiode eller fagområde.",
+    howExamplesTitle: "Promptskabeloner", howExamplesHint: "Erstat teksten i vinkelparenteser med dine egne oplysninger.", howUseTemplate: "Brug skabelon", howPromptCompare: "Sammenlign <studieretning 1> og <studieretning 2>", howPromptPlan: "Vis mig studieplanen for <studieretning>", howPromptSpecializations: "Hvilke specialiseringer findes på <kandidatretning>?", howPromptCourses: "Find kurser på <ECTS> ECTS om <emne> på <studieniveau>", howPromptCourseDetails: "Hvad er forudsætningerne og eksamensformen for kursus <kursusnummer>?", howNote: "Kurskompas bruger importerede officielle DTU-data. Bekræft altid dine endelige valg i DTU's aktuelle kursus- og studieinformation.",
     promptPlan: "Jeg studerer Anvendt Matematik og er i tvivl om, hvordan studiet er opbygget, og hvilke kurser der er obligatoriske.", promptMachineLearning: "Jeg læser Computer Science and Engineering på MSc-niveau og søger kurser inden for machine learning.", promptOptimization: "Jeg er BSc-studerende og vil gerne finde et kursus på 5 ECTS om optimization."
   }
 };
@@ -104,6 +112,21 @@ function setLanguage(language) {
 
 document.querySelectorAll("[data-language]").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.language));
+});
+
+howItWorksButton.addEventListener("click", () => howItWorksDialog.showModal());
+
+howItWorksDialog.addEventListener("click", (event) => {
+  if (event.target === howItWorksDialog) howItWorksDialog.close();
+});
+
+document.querySelectorAll("[data-template-key]").forEach((button) => {
+  button.addEventListener("click", () => {
+    input.value = translations[currentLanguage][button.dataset.templateKey];
+    resizeInput();
+    howItWorksDialog.close();
+    input.focus();
+  });
 });
 
 let messages = [];

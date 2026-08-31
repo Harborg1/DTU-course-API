@@ -32,6 +32,20 @@ def test_homepage_defaults_to_english_and_has_language_toggle(client):
     assert 'data-language="da" aria-pressed="false"' in response.text
 
 
+def test_homepage_has_localized_how_it_works_guide_with_generic_prompts():
+    homepage = (PROJECT_ROOT / "app" / "web" / "index.html").read_text()
+    script = (PROJECT_ROOT / "app" / "web" / "static" / "app.js").read_text()
+
+    assert 'id="howItWorksButton"' in homepage
+    assert 'id="howItWorksDialog"' in homepage
+    assert "Compare &lt;study programme 1&gt; and &lt;study programme 2&gt;" in homepage
+    assert 'howItWorks: "How it works"' in script
+    assert 'howItWorks: "Sådan virker det"' in script
+    assert 'howPromptCompare: "Sammenlign <studieretning 1> og <studieretning 2>"' in script
+    assert "howItWorksDialog.showModal()" in script
+    assert "input.value = translations[currentLanguage][button.dataset.templateKey]" in script
+
+
 def test_chat_message_styles_preserve_model_line_breaks():
     styles = (PROJECT_ROOT / "app" / "web" / "static" / "styles.css").read_text()
 

@@ -21,6 +21,13 @@
       </a>
       <div class="header-actions">
         <span class="status"><i></i> <span data-i18n="status">Official DTU data</span></span>
+        <button
+          class="how-it-works-button"
+          id="howItWorksButton"
+          type="button"
+          aria-haspopup="dialog"
+          data-i18n="howItWorks"
+        >How it works</button>
         <div class="language-toggle" role="group" aria-label="Choose language" data-i18n-aria-label="languageLabel">
           <button type="button" data-language="en" aria-pressed="true">EN</button>
           <button type="button" data-language="da" aria-pressed="false">DA</button>
@@ -87,6 +94,68 @@
         <p class="disclaimer" data-i18n="disclaimer">Recommendations are for guidance only. Always check the course description and prerequisites at DTU.</p>
       </section>
     </main>
+
+    <dialog class="how-it-works-dialog" id="howItWorksDialog" aria-labelledby="howItWorksTitle">
+      <div class="how-it-works-card">
+        <div class="how-it-works-head">
+          <div>
+            <p class="eyebrow" data-i18n="howEyebrow">A quick guide</p>
+            <h2 id="howItWorksTitle" data-i18n="howTitle">How Course Compass works</h2>
+          </div>
+          <form method="dialog">
+            <button class="dialog-close" type="submit" aria-label="Close guide" data-i18n-aria-label="howCloseLabel">×</button>
+          </form>
+        </div>
+
+        <p class="how-intro" data-i18n="howIntro">Ask in your own words. Include the study programme, course, or topic you mean, and add details such as level or ECTS when they matter.</p>
+
+        <ol class="how-steps">
+          <li>
+            <span>1</span>
+            <div><h3 data-i18n="howStepOneTitle">Give context</h3><p data-i18n="howStepOneText">Name your study programme, study level, or course number.</p></div>
+          </li>
+          <li>
+            <span>2</span>
+            <div><h3 data-i18n="howStepTwoTitle">Say what you need</h3><p data-i18n="howStepTwoText">Ask for a study plan, comparison, specialization, or course recommendation.</p></div>
+          </li>
+          <li>
+            <span>3</span>
+            <div><h3 data-i18n="howStepThreeTitle">Refine the answer</h3><p data-i18n="howStepThreeText">Follow up with constraints such as ECTS, teaching period, or subject.</p></div>
+          </li>
+        </ol>
+
+        <section class="prompt-guide" aria-labelledby="promptGuideTitle">
+          <div class="prompt-guide-heading">
+            <h3 id="promptGuideTitle" data-i18n="howExamplesTitle">Prompt templates</h3>
+            <p data-i18n="howExamplesHint">Replace the text in angle brackets with your own details.</p>
+          </div>
+          <div class="prompt-templates">
+            <button type="button" data-template-key="howPromptCompare">
+              <span data-i18n="howPromptCompare">Compare &lt;study programme 1&gt; and &lt;study programme 2&gt;</span>
+              <small data-i18n="howUseTemplate">Use template</small>
+            </button>
+            <button type="button" data-template-key="howPromptPlan">
+              <span data-i18n="howPromptPlan">Show me the study plan for &lt;study programme&gt;</span>
+              <small data-i18n="howUseTemplate">Use template</small>
+            </button>
+            <button type="button" data-template-key="howPromptSpecializations">
+              <span data-i18n="howPromptSpecializations">Which specializations are available in &lt;MSc programme&gt;?</span>
+              <small data-i18n="howUseTemplate">Use template</small>
+            </button>
+            <button type="button" data-template-key="howPromptCourses">
+              <span data-i18n="howPromptCourses">Find &lt;ECTS&gt; ECTS courses about &lt;topic&gt; at &lt;study level&gt;</span>
+              <small data-i18n="howUseTemplate">Use template</small>
+            </button>
+            <button type="button" data-template-key="howPromptCourseDetails">
+              <span data-i18n="howPromptCourseDetails">What are the prerequisites and exam format for course &lt;course number&gt;?</span>
+              <small data-i18n="howUseTemplate">Use template</small>
+            </button>
+          </div>
+        </section>
+
+        <p class="how-note" data-i18n="howNote">Course Compass uses imported official DTU data. Always confirm final choices in DTU's current course and study information.</p>
+      </div>
+    </dialog>
 
     <footer>
       <p><span data-i18n="builtFrom">Built with data from</span> <a href="https://kurser.dtu.dk" target="_blank" rel="noreferrer" data-i18n="courseDatabase">DTU's course database</a></p>
