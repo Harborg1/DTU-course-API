@@ -54,6 +54,11 @@ class SemanticQueryPlan(BaseModel):
     result_mode: Literal["summary", "all", "page", "single"]
     language: Literal["da", "en"]
     confidence: float = Field(ge=0, le=1)
+    level: Literal["BSc", "MSc", "PhD"] | None = None
+    ects: float | None = Field(default=None, gt=0, le=120)
+    teaching_language: Literal["English", "Danish"] | None = None
+    period: str | None = None
+    referenced_turn_indexes: list[int] = Field(default_factory=list)
 
 
 def classify_query_semantically(
@@ -70,8 +75,11 @@ def classify_query_semantically(
         "Classify the user's latest request for a DTU course and study-guide application. "
         "Return only the structured query plan and do not answer the request. Infer intent from semantic "
         "meaning, including short phrases, abbreviations, translations, and spelling mistakes. Extract only "
-        "entities actually mentioned by the user; never invent programme, specialization, course, or topic "
-        "names. A guide, study guide, curriculum introduction, or general description of a named programme "
+        "entities mentioned in the latest request or in explicitly supplied completed turns; never invent "
+        "programme, specialization, course, or topic names. Completed turns are already answered and may only "
+        "supply omitted context or resolve an explicit reference. Put the zero-based indexes of any completed "
+        "turns actually used in referenced_turn_indexes. The latest request always determines the operation. "
+        "A guide, study guide, curriculum introduction, or general description of a named programme "
         "is study_program/overview. Questions about programme construction or required credits are "
         "study_program/requirements. Questions about a specialization or its courses use the specialization "
         "domain. A comparison between two named study programmes is study_program/compare, even when a "
@@ -87,7 +95,7 @@ def classify_query_semantically(
         "equivalent. "
         "Use general only for "
         "requests unrelated to these domains, and use clarify when the intended action is genuinely ambiguous. "
-        "The latest request determines the operation; earlier conversation may only resolve omitted context."
+        "Extract level, ECTS, teaching language, and period when relevant to course discovery."
     )
     prompt = f"Latest user request:\n{latest_user_message}"
     if conversation and conversation.strip() != latest_user_message.strip():
@@ -146,5 +154,14 @@ def intent_from_query_plan(plan: SemanticQueryPlan) -> Intent | None:
     if plan.domain == "course" and plan.course_number:
         return CourseQAIntent(confidence=plan.confidence, course_number=plan.course_number)
     if plan.domain == "course" and plan.operation in {"search", "recommend", "list", "count"}:
-        return RecommendationIntent(confidence=plan.confidence, topic=plan.topic or "")
+        return RecommendationIntent(
+            confidence=plan.confidence,
+            topic=plan.topic or "",
+            level=plan.level or "",
+            ects=plan.ects or 0,
+            language=plan.teaching_language or "",
+            period=plan.period or "",
+        )
+    if plan.domain == "course" and plan.operation == "detail":
+        return OpenQuestionIntent(confidence=plan.confidence)
     return None

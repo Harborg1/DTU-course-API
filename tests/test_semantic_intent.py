@@ -2,7 +2,9 @@ from types import SimpleNamespace
 from unittest.mock import MagicMock, call, patch
 
 from app.models.specialization import StudySpecialization
+from app.models.course import Course, CourseTranslation
 from app.models.study_plan import StudyProgram
+from app.schemas.recommendation import CompletedTurnState
 from app.services.recommendation_service import recommend_courses
 from app.services.semantic_intent_service import (
     SemanticQueryPlan,
@@ -112,6 +114,40 @@ def test_semantic_comparison_stays_in_open_question_mcp_flow(db_session):
     assert all(response.understood.topic == "general question" for response in responses)
     assert all(response.response_language == "da" for response in responses)
     assert all(response.specializations == [] for response in responses)
+
+
+def test_how_it_works_comparison_uses_semantic_operation_not_subject_keywords(db_session):
+    """Programme names such as Applied Mathematics must not turn a comparison into course search."""
+    prompt = "Compare Applied Mathematics and Computer Science and Engineering"
+    plan = _program_overview_plan(
+        operation="compare",
+        program_mention=None,
+        topics=[],
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=plan,
+        ) as classifier,
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="The programmes have different structures and subject focus.",
+        ) as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=[prompt],
+            academic_year="2026-2027",
+        )
+
+    classifier.assert_called_once_with(prompt, conversation=prompt)
+    remote_answer.assert_called_once_with(
+        prompt,
+        "2026-2027",
+        response_language="en",
+    )
+    assert response.understood.topic == "general question"
 
 
 def test_semantic_classifier_rejects_low_confidence_and_skips_without_key():
@@ -272,3 +308,108 @@ def test_all_course_search_unions_topics_deduplicates_and_bypasses_mcp(db_sessio
     )
     assert response.reply.index("01418") < response.reply.index("02450")
     assert response.reply.count("01418") == 1
+
+
+def test_all_course_search_never_falls_back_to_five_when_semantic_planner_is_unavailable(
+    db_session,
+):
+    courses = [
+        Course(
+            course_number=f"10{index:03d}",
+            academic_year="2026-2027",
+            ects=5,
+            level="MSc",
+            language="English",
+            source_url=f"https://kurser.dtu.dk/course/2026-2027/10{index:03d}",
+            content_hash=str(index) * 64,
+            translations=[
+                CourseTranslation(
+                    language_code="en-GB",
+                    title=f"Artificial Intelligence {index}",
+                    description="Artificial intelligence methods.",
+                )
+            ],
+        )
+        for index in range(7)
+    ]
+    search_result = SearchResult(
+        count=len(courses),
+        courses=[(course, 1.0) for course in courses],
+        search_language="en",
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=None,
+        ),
+        patch(
+            "app.services.recommendation_service.search_courses",
+            return_value=search_result,
+        ) as course_search,
+        patch("app.services.recommendation_service.answer_with_remote_mcp") as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["Find all 5 ECTS courses about artificial intelligence at MSc level"],
+            academic_year="2026-2027",
+        )
+
+    remote_answer.assert_not_called()
+    assert len(response.recommendations) == 7
+    assert course_search.call_args.kwargs["limit"] == 10_000
+    assert course_search.call_args.kwargs["ects"] == 5
+    assert course_search.call_args.kwargs["level"] == "MSc"
+
+
+def test_completed_turn_facts_do_not_replay_old_request_as_an_instruction(db_session):
+    old_request = "Give me courses in artificial intelligence"
+    current_request = "Who teaches Artificial Intelligence and Multi-Agent Systems?"
+    completed_turn = CompletedTurnState(
+        request=old_request,
+        operation="course_search",
+        topic="artificial intelligence",
+        courseNumbers=["02285"],
+    )
+    plan = SemanticQueryPlan(
+        domain="course",
+        operation="detail",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic="Artificial Intelligence and Multi-Agent Systems",
+        topics=[],
+        result_mode="single",
+        language="en",
+        confidence=1,
+        referenced_turn_indexes=[],
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=plan,
+        ) as classifier,
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="The course is taught by the listed course coordinators.",
+        ) as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=[current_request],
+            academic_year="2026-2027",
+            completed_turns=[completed_turn],
+        )
+
+    classifier_context = classifier.call_args.kwargs["conversation"]
+    model_input = remote_answer.call_args.args[0]
+    assert old_request not in classifier_context
+    assert old_request not in model_input
+    assert '"operation":"course_search"' in classifier_context
+    assert '"topic":"artificial intelligence"' in classifier_context
+    assert model_input.startswith(
+        "Current user request (answer this request only):\n" + current_request
+    )
+    assert response.recommendations == []
+    assert response.understood.topic == "general question"

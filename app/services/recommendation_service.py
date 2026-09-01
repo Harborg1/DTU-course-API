@@ -17,6 +17,7 @@ from app.models.study_plan import StudyPlanRequirement, StudyPlanRequirementCour
 from app.services.course_service import get_course
 from app.schemas.recommendation import (
     ChatResponse,
+    CompletedTurnState,
     RecommendedCourse,
     RecommendedStudyProgram,
     SpecializationCourseInfo,
@@ -28,6 +29,7 @@ from app.schemas.recommendation import (
     StudyPlanSectionInfo,
     UnderstoodContext,
 )
+from app.services.conversation_state_service import completed_turns_context, model_question
 from app.services.course_qa_service import CourseQAError, answer_with_remote_mcp
 from app.services.intent_service import (
     ClarificationIntent,
@@ -130,12 +132,15 @@ _STOP_WORDS = {
 }
 
 
-def _answer_with_llm(course: Course, messages: list[str], academic_year: str) -> ChatResponse:
-    latest_user_message = messages[-1] if messages else "Hvad kan du fortælle om dette kursus?"
-    response_language = detect_user_language(latest_user_message)
-
+def _answer_with_llm(
+    course: Course,
+    question: str,
+    academic_year: str,
+    *,
+    response_language: str,
+) -> ChatResponse:
     answer = answer_with_remote_mcp(
-        latest_user_message,
+        question,
         academic_year,
         response_language=response_language,
     )
@@ -224,6 +229,24 @@ def understand_context(messages: list[str]) -> RecommendationContext:
         ects=_extract_ects(text),
         language=_extract_language(text),
         period=_extract_period(text),
+    )
+
+
+def _context_from_plan(
+    latest_user_message: str,
+    plan: SemanticQueryPlan | None,
+) -> RecommendationContext:
+    """Combine deterministic extraction with validated fields from the current plan."""
+    context = understand_context([latest_user_message])
+    if plan is None:
+        return context
+    topic = plan.topic or (" and ".join(plan.topics) if plan.topics else None) or context.topic
+    return RecommendationContext(
+        topic=topic,
+        level=plan.level or context.level,
+        ects=Decimal(str(plan.ects)) if plan.ects is not None else context.ects,
+        language=plan.teaching_language or context.language,
+        period=plan.period or context.period,
     )
 
 
@@ -872,13 +895,14 @@ def _answer_all_course_matches(
     plan: SemanticQueryPlan,
     messages: list[str],
     academic_year: str,
+    context: RecommendationContext | None = None,
 ) -> ChatResponse:
     """Return the complete, deduplicated union for every requested course topic."""
     topics = list(dict.fromkeys(topic.strip() for topic in plan.topics if topic.strip()))
     if not topics and plan.topic:
         topics = [plan.topic.strip()]
 
-    context = understand_context(messages)
+    context = context or understand_context(messages)
     matches: dict[str, tuple[Course, float, set[str]]] = {}
     for topic in topics:
         result = search_courses(
@@ -1012,6 +1036,79 @@ def _previous_recommendation_topic(messages: list[str]) -> str:
     return ""
 
 
+def _previous_state_topic(turns: list[CompletedTurnState]) -> str:
+    for turn in reversed(turns):
+        if turn.topic and turn.topic not in {
+            "general question",
+            "specialization",
+            "study plan",
+            "study plan qa",
+        }:
+            return turn.topic
+    return ""
+
+
+def _referenced_state_text(
+    latest_user_message: str,
+    plan: SemanticQueryPlan | None,
+    turns: list[CompletedTurnState],
+) -> str:
+    """Build entity-resolution text without treating every old request as current."""
+    parts = [latest_user_message]
+    if plan is not None:
+        parts.extend(
+            mention
+            for mention in (plan.program_mention, plan.specialization_mention)
+            if mention
+        )
+        for index in plan.referenced_turn_indexes:
+            if 0 <= index < len(turns):
+                turn = turns[index]
+                parts.extend(
+                    value
+                    for value in (
+                        turn.program,
+                        *turn.study_program_names,
+                        *turn.specialization_names,
+                    )
+                    if value
+                )
+    return " ".join(parts)
+
+
+def _all_results_plan(
+    latest_user_message: str,
+    response_language: str,
+    semantic_plan: SemanticQueryPlan | None,
+) -> SemanticQueryPlan:
+    """Guarantee that an explicit request for all results never uses the five-item path."""
+    if (
+        semantic_plan is not None
+        and semantic_plan.domain == "course"
+        and semantic_plan.operation in {"search", "list", "recommend", "count"}
+    ):
+        return semantic_plan.model_copy(update={"result_mode": "all"})
+
+    context = understand_context([latest_user_message])
+    topic = None if context.topic == "DTU courses" else context.topic
+    return SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=topic,
+        topics=[topic] if topic else [],
+        result_mode="all",
+        language=response_language,
+        confidence=1.0,
+        level=context.level,
+        ects=float(context.ects) if context.ects is not None else None,
+        teaching_language=context.language,
+        period=context.period,
+    )
+
+
 def _is_standalone_recommendation_choice(text: str, *, target: str) -> bool:
     normalized = re.sub(r"[^a-zæøå]+", " ", text.casefold()).strip()
     choices = {
@@ -1140,17 +1237,21 @@ def recommend_courses(
     *,
     messages: list[str],
     academic_year: str,
+    completed_turns: list[CompletedTurnState] | None = None,
 ) -> ChatResponse:
+    turns = completed_turns or []
     conversation = " ".join(messages)
     latest_user_message = messages[-1] if messages else ""
     response_language = detect_user_language(latest_user_message)
+    structured_context = completed_turns_context(turns)
+    remote_question = model_question(latest_user_message, turns) if turns else conversation
 
-    # Route from the latest request so an earlier course number cannot
-    # override a new study-plan or recommendation question. The full
-    # conversation is still passed to Groq and used for programme matching.
+    # Route from the latest request so an earlier operation cannot override a
+    # new one. Structured clients provide earlier facts separately; legacy API
+    # callers can still send their user-message history.
     intent = classify_intent(latest_user_message)
-    if isinstance(intent, OpenQuestionIntent) and len(messages) > 1:
-        previous_topic = _previous_recommendation_topic(messages)
+    if isinstance(intent, OpenQuestionIntent) and (len(messages) > 1 or turns):
+        previous_topic = _previous_state_topic(turns) if turns else _previous_recommendation_topic(messages)
         if is_study_program_target(latest_user_message) and (
             previous_topic
             or _is_standalone_recommendation_choice(latest_user_message, target="programme")
@@ -1167,19 +1268,25 @@ def recommend_courses(
                 confidence=0.95,
                 topic=previous_topic,
             )
-    semantic_plan: SemanticQueryPlan | None = None
-    if isinstance(intent, OpenQuestionIntent) or _asks_for_all_results(latest_user_message):
-        semantic_plan = classify_query_semantically(
-            latest_user_message,
-            conversation=conversation,
-        )
-        if semantic_plan is not None:
-            semantic_intent = intent_from_query_plan(semantic_plan)
-            if semantic_intent is not None:
-                intent = semantic_intent
-
-    resolution_text = conversation
+    # The semantic plan is the general operation boundary. Keyword routing is
+    # retained as an offline fallback, but it cannot reliably distinguish, for
+    # example, a comparison from a course search when programme names contain
+    # subject words.
+    semantic_plan = classify_query_semantically(
+        latest_user_message,
+        conversation=structured_context or conversation,
+    )
     if semantic_plan is not None:
+        semantic_intent = intent_from_query_plan(semantic_plan)
+        if semantic_intent is not None:
+            intent = semantic_intent
+
+    resolution_text = (
+        _referenced_state_text(latest_user_message, semantic_plan, turns)
+        if turns
+        else conversation
+    )
+    if semantic_plan is not None and not turns:
         extracted_mentions = [
             semantic_plan.program_mention,
             semantic_plan.specialization_mention,
@@ -1245,7 +1352,12 @@ def recommend_courses(
         course = get_course(session, intent.course_number, academic_year)
         if course:
             try:
-                return _answer_with_llm(course, messages, academic_year)
+                return _answer_with_llm(
+                    course,
+                    remote_question if turns else latest_user_message,
+                    academic_year,
+                    response_language=response_language,
+                )
             except CourseQAError:
                 logger.exception("Groq could not answer a question about course %s", intent.course_number)
                 return ChatResponse(
@@ -1353,28 +1465,47 @@ def recommend_courses(
 
     # 4. Course Recommendation — Groq via remote MCP
     if isinstance(intent, RecommendationIntent):
-        if (
+        recommendation_context = (
+            _context_from_plan(latest_user_message, semantic_plan)
+            if turns or semantic_plan is not None
+            else understand_context(messages)
+        )
+        if _asks_for_all_results(latest_user_message) or (
             semantic_plan is not None
             and semantic_plan.domain == "course"
-            and semantic_plan.operation in {"search", "list", "recommend"}
             and semantic_plan.result_mode == "all"
-            and bool(semantic_plan.topics or semantic_plan.topic)
         ):
+            all_results_plan = _all_results_plan(
+                latest_user_message,
+                response_language,
+                semantic_plan,
+            )
             return _answer_all_course_matches(
                 session,
-                plan=semantic_plan,
+                plan=all_results_plan,
                 messages=messages,
                 academic_year=academic_year,
+                context=recommendation_context,
             )
         try:
             reply = answer_with_remote_mcp(
-                conversation,
+                remote_question,
                 academic_year,
                 response_language=response_language,
             )
             return ChatResponse(
                 reply=reply,
-                understood=UnderstoodContext(topic=intent.topic, level=intent.level or None),
+                understood=UnderstoodContext(
+                    topic=intent.topic or recommendation_context.topic,
+                    level=recommendation_context.level,
+                    ects=(
+                        float(recommendation_context.ects)
+                        if recommendation_context.ects is not None
+                        else None
+                    ),
+                    language=recommendation_context.language,
+                    period=recommendation_context.period,
+                ),
                 recommendations=[],
                 academicYear=academic_year,
                 responseLanguage=response_language,
@@ -1388,7 +1519,7 @@ def recommend_courses(
     if isinstance(intent, OpenQuestionIntent):
         try:
             reply = answer_with_remote_mcp(
-                conversation,
+                remote_question,
                 academic_year,
                 response_language=response_language,
             )
@@ -1405,7 +1536,7 @@ def recommend_courses(
             pass  # fall through to regex search
 
     # Fallback — regex-based search (unchanged)
-    context = understand_context(messages)
+    context = _context_from_plan(latest_user_message, semantic_plan) if turns else understand_context(messages)
     result = _run_search(session, context, academic_year)
     ranked_courses = result.courses
     if ranked_courses and ranked_courses[0][1] > 0:

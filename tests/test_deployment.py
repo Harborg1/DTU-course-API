@@ -56,11 +56,12 @@ def test_chat_message_styles_preserve_model_line_breaks():
     assert ".message p { margin: 0; white-space: pre-wrap; }" in styles
 
 
-def test_chat_only_resubmits_user_messages_to_the_api():
+def test_chat_submits_current_request_with_completed_turn_state():
     script = (PROJECT_ROOT / "app" / "web" / "static" / "app.js").read_text()
 
-    assert '.filter((message) => message.role === "user")' in script
-    assert "JSON.stringify({ messages: requestMessages" in script
+    assert 'const requestMessages = [{ role: "user", content: cleaned }]' in script
+    assert "completedTurns: completedTurns.slice(-11)" in script
+    assert "if (result.turnState) completedTurns.push(result.turnState)" in script
 
 
 def test_structured_chat_results_follow_the_response_language():

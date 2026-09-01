@@ -8,13 +8,6 @@ class ChatMessage(BaseModel):
     content: str = Field(min_length=1, max_length=800)
 
 
-class ChatRequest(BaseModel):
-    messages: list[ChatMessage] = Field(min_length=1, max_length=12)
-    academic_year: str | None = Field(default=None, pattern=r"^\d{4}-\d{4}$", alias="academicYear")
-
-    model_config = ConfigDict(populate_by_name=True)
-
-
 class UnderstoodContext(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
@@ -24,6 +17,45 @@ class UnderstoodContext(BaseModel):
     language: str | None = None
     period: str | None = None
     program: str | None = None
+
+
+TurnOperation = Literal[
+    "course_search",
+    "course_detail",
+    "study_program_recommendation",
+    "study_plan",
+    "specialization",
+    "comparison",
+    "clarification",
+    "general",
+]
+
+
+class CompletedTurnState(BaseModel):
+    """Compact facts from a completed turn; previous prose is deliberately excluded."""
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    status: Literal["completed"] = "completed"
+    request: str = Field(min_length=1, max_length=800)
+    operation: TurnOperation
+    topic: str | None = Field(default=None, max_length=200)
+    level: str | None = Field(default=None, max_length=100)
+    ects: float | None = None
+    language: str | None = Field(default=None, max_length=100)
+    period: str | None = Field(default=None, max_length=100)
+    program: str | None = Field(default=None, max_length=200)
+    course_numbers: list[str] = Field(default_factory=list, max_length=200, alias="courseNumbers")
+    study_program_names: list[str] = Field(default_factory=list, max_length=50, alias="studyProgramNames")
+    specialization_names: list[str] = Field(default_factory=list, max_length=50, alias="specializationNames")
+
+
+class ChatRequest(BaseModel):
+    messages: list[ChatMessage] = Field(min_length=1, max_length=12)
+    completed_turns: list[CompletedTurnState] = Field(default_factory=list, max_length=11, alias="completedTurns")
+    academic_year: str | None = Field(default=None, pattern=r"^\d{4}-\d{4}$", alias="academicYear")
+
+    model_config = ConfigDict(populate_by_name=True)
 
 
 class RecommendedCourse(BaseModel):
@@ -141,3 +173,4 @@ class ChatResponse(BaseModel):
     academic_year: str = Field(alias="academicYear")
     response_language: Literal["da", "en"] = Field(default="en", alias="responseLanguage")
     is_direct_answer: bool = Field(default=False, alias="isDirectAnswer")
+    turn_state: CompletedTurnState | None = Field(default=None, alias="turnState")

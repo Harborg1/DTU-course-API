@@ -134,6 +134,7 @@ document.querySelectorAll("[data-template-key]").forEach((button) => {
 });
 
 let messages = [];
+let completedTurns = [];
 let busy = false;
 
 function scrollToLatest() {
@@ -545,21 +546,23 @@ async function submitMessage(text) {
   addTyping();
 
   try {
-    // The API only uses user messages for conversational context. Assistant
-    // replies can contain complete course lists and exceed the 800-character
-    // input limit, so do not submit those replies again on the next turn.
-    const requestMessages = messages
-      .filter((message) => message.role === "user")
-      .slice(-12);
+    // Previous replies are represented by compact completed-turn state. This
+    // keeps old requests available as context without replaying them as active instructions.
+    const requestMessages = [{ role: "user", content: cleaned }];
     const response = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages: requestMessages, academicYear: "2026-2027" }),
+      body: JSON.stringify({
+        messages: requestMessages,
+        completedTurns: completedTurns.slice(-11),
+        academicYear: "2026-2027",
+      }),
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const result = await response.json();
     document.querySelector("#typingRow")?.remove();
     messages.push({ role: "assistant", content: result.reply });
+    if (result.turnState) completedTurns.push(result.turnState);
     addMessage("assistant", result.reply);
     addContextTags(result.understood);
     const responseLanguage = result.responseLanguage || currentLanguage;
