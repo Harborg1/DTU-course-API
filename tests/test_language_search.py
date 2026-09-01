@@ -172,3 +172,12 @@ def test_response_language_follows_study_guide_wording():
     assert detect_user_language("Computer Science and Engineering studieplan") == "da"
     assert detect_user_language("Computer Science and Engineering specialities") == "en"
     assert detect_user_language("Computer Science and Engineering specialiseringer") == "da"
+
+
+def test_short_greetings_and_programme_choices_have_stable_languages():
+    assert detect_user_language("Hej") == "da"
+    assert detect_user_language("HEJ") == "da"
+    assert detect_user_language("Hello") == "en"
+    assert detect_user_language("HELLO") == "en"
+    assert detect_user_language("Programmes") == "en"
+    assert detect_user_language("programmes") == "en"

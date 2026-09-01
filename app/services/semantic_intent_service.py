@@ -79,6 +79,9 @@ def classify_query_semantically(
         "programme, specialization, course, or topic names. Completed turns are already answered and may only "
         "supply omitted context or resolve an explicit reference. Put the zero-based indexes of any completed "
         "turns actually used in referenced_turn_indexes. The latest request always determines the operation. "
+        "Greetings in any language and questions about what the application can do are general/overview, not "
+        "general/clarify. Use general/clarify only when the user has stated a concrete interest or request but "
+        "has not chosen between course and study-programme recommendations; put that interest in topic. "
         "A guide, study guide, curriculum introduction, or general description of a named programme "
         "is study_program/overview. Questions about programme construction or required credits are "
         "study_program/requirements. Questions about a specialization or its courses use the specialization "
@@ -137,16 +140,22 @@ def intent_from_query_plan(plan: SemanticQueryPlan) -> Intent | None:
         # request in the open-question MCP flow so every named entity can be
         # fetched and compared.
         return OpenQuestionIntent(confidence=plan.confidence)
-    if plan.domain == "study_program" and plan.operation == "recommend":
+    if plan.domain == "study_program" and (
+        plan.operation in {"recommend", "list"} or not plan.program_mention
+    ):
         return StudyProgramRecommendationIntent(
             confidence=plan.confidence,
             topic=plan.topic or "",
         )
     if plan.operation == "clarify":
+        if not plan.topic:
+            return OpenQuestionIntent(confidence=plan.confidence)
         return ClarificationIntent(
             confidence=plan.confidence,
             topic=plan.topic or "",
         )
+    if plan.domain == "general":
+        return OpenQuestionIntent(confidence=plan.confidence)
     if plan.domain == "specialization":
         return SpecializationIntent(confidence=plan.confidence)
     if plan.domain in {"study_program", "degree", "admission"}:

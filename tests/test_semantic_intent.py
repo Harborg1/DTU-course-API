@@ -192,6 +192,79 @@ def test_semantic_programme_recommendation_and_clarification_map_to_dedicated_in
     assert clarification_intent.topic == "renewable energy"
 
 
+def test_semantic_greetings_and_capability_questions_stay_general_questions(db_session):
+    greeting_plan = _program_overview_plan(
+        domain="general",
+        operation="overview",
+        program_mention=None,
+        topic=None,
+        language="da",
+    )
+
+    assert isinstance(intent_from_query_plan(greeting_plan), OpenQuestionIntent)
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=greeting_plan,
+        ),
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="Hej! Jeg kan hjælpe med kurser og studieprogrammer.",
+        ) as remote_answer,
+    ):
+        responses = [
+            recommend_courses(
+                db_session,
+                messages=[prompt],
+                academic_year="2026-2027",
+            )
+            for prompt in ("Hej", "Hej hvad kan du hjælpe med?")
+        ]
+
+    assert all(response.understood.topic == "general question" for response in responses)
+    assert all(response.response_language == "da" for response in responses)
+    assert remote_answer.call_count == 2
+
+
+def test_semantic_clarification_without_topic_cannot_override_general_question():
+    plan = _program_overview_plan(
+        domain="general",
+        operation="clarify",
+        program_mention=None,
+        topic=None,
+    )
+
+    assert isinstance(intent_from_query_plan(plan), OpenQuestionIntent)
+
+
+def test_unnamed_programme_request_does_not_become_study_plan(db_session):
+    plan = _program_overview_plan(
+        operation="overview",
+        program_mention=None,
+        topic=None,
+    )
+
+    intent = intent_from_query_plan(plan)
+    assert isinstance(intent, StudyProgramRecommendationIntent)
+    assert intent.topic == ""
+
+    with patch(
+        "app.services.recommendation_service.classify_query_semantically",
+        return_value=plan,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["Programmes"],
+            academic_year="2026-2027",
+        )
+
+    assert response.understood.topic == ""
+    assert response.response_language == "en"
+    assert response.reply.startswith("What subject interests you")
+    assert "identify the programme" not in response.reply
+
+
 def test_semantic_program_overview_is_database_backed_and_marks_specializations_optional(db_session):
     program = StudyProgram(
         slug="computer-science-and-engineering",

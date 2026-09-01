@@ -8,6 +8,7 @@ SUPPORTED_LANGUAGES = {"da", "en"}
 _DANISH_MARKERS = {
     "anbefal": 2,
     "anbefale": 2,
+    "hej": 2,
     "hvad": 2,
     "hvem": 2,
     "hvordan": 2,
@@ -35,8 +36,11 @@ _DANISH_MARKERS = {
 _ENGLISH_MARKERS = {
     "course": 2,
     "courses": 2,
+    "hello": 2,
     "how": 2,
     "recommend": 2,
+    "programme": 2,
+    "programmes": 2,
     "student": 2,
     "study": 1,
     "specialisation": 2,
