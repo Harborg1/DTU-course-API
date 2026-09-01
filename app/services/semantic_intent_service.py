@@ -51,7 +51,7 @@ class SemanticQueryPlan(BaseModel):
     course_number: str | None = Field(pattern=r"^\d{5}$")
     topic: str | None
     topics: list[str]
-    result_mode: Literal["summary", "all", "page", "single"]
+    result_mode: Literal["summary", "all", "page", "single"] | None = None
     language: Literal["da", "en"]
     confidence: float = Field(ge=0, le=1)
     level: Literal["BSc", "MSc", "PhD"] | None = None
@@ -95,7 +95,10 @@ def classify_query_semantically(
         "'English courses', 'period E', or 'show all' continues the most recent compatible completed "
         "course_search turn. Keep course/search as the operation, put that turn's index in "
         "referenced_turn_indexes, and extract only filters explicitly stated in the latest request; the "
-        "application will merge omitted search fields from the referenced turn. A self-contained new course "
+        "application will merge omitted search fields from the referenced turn. Set result_mode to null when "
+        "a follow-up does not explicitly change the result scope, so the application can preserve the referenced "
+        "turn's mode. Use result_mode=summary only when the latest request explicitly asks for a short selection. "
+        "A self-contained new course "
         "search must use an empty referenced_turn_indexes list. "
         "put each distinct requested subject in topics, splitting coordinated subjects while preserving "
         "multiword subjects such as 'artificial intelligence' and 'machine learning'; otherwise use an empty "

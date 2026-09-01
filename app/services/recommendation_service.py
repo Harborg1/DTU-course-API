@@ -18,6 +18,7 @@ from app.services.course_service import get_course
 from app.schemas.recommendation import (
     ChatResponse,
     CompletedTurnState,
+    CourseResultMode,
     RecommendedCourse,
     RecommendedStudyProgram,
     SpecializationCourseInfo,
@@ -162,6 +163,7 @@ class RecommendationContext:
     ects: Decimal | None
     language: str | None
     period: str | None
+    result_mode: CourseResultMode
 
 
 def _normalise(text: str) -> str:
@@ -229,6 +231,7 @@ def understand_context(messages: list[str]) -> RecommendationContext:
         ects=_extract_ects(text),
         language=_extract_language(text),
         period=_extract_period(text),
+        result_mode="all" if _asks_for_all_results(text) else "summary",
     )
 
 
@@ -250,6 +253,14 @@ def _context_from_plan(
         or (referenced_turn.topic if referenced_turn else None)
         or context.topic
     )
+    if _asks_for_all_results(latest_user_message) or plan.result_mode == "all":
+        result_mode: CourseResultMode = "all"
+    elif plan.result_mode is not None:
+        result_mode = "summary"
+    elif referenced_turn is not None and referenced_turn.result_mode is not None:
+        result_mode = referenced_turn.result_mode
+    else:
+        result_mode = "summary"
     return RecommendationContext(
         topic=topic,
         level=plan.level or context.level or (referenced_turn.level if referenced_turn else None),
@@ -269,6 +280,7 @@ def _context_from_plan(
             or (referenced_turn.language if referenced_turn else None)
         ),
         period=plan.period or context.period or (referenced_turn.period if referenced_turn else None),
+        result_mode=result_mode,
     )
 
 
@@ -1027,7 +1039,9 @@ def _answer_all_course_matches(
         ),
         recommendations=recommendations,
         academicYear=academic_year,
+        responseLanguage=plan.language,
         isDirectAnswer=True,
+        resultMode="all",
     )
 
 
@@ -1513,11 +1527,7 @@ def recommend_courses(
             else understand_context(messages)
         )
         is_contextual_refinement = _referenced_course_search(semantic_plan, turns) is not None
-        if _asks_for_all_results(latest_user_message) or (
-            semantic_plan is not None
-            and semantic_plan.domain == "course"
-            and semantic_plan.result_mode == "all"
-        ):
+        if recommendation_context.result_mode == "all":
             all_results_plan = _all_results_plan(
                 latest_user_message,
                 response_language,
@@ -1554,6 +1564,7 @@ def recommend_courses(
                     academicYear=academic_year,
                     responseLanguage=response_language,
                     isDirectAnswer=True,
+                    resultMode="summary",
                 )
             except CourseQAError:
                 logger.exception("Groq/MCP could not answer a recommendation request")
@@ -1634,4 +1645,5 @@ def recommend_courses(
         recommendations=courses,
         academicYear=academic_year,
         responseLanguage=response_language,
+        resultMode="summary",
     )

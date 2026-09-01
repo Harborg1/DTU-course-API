@@ -29,6 +29,7 @@ TurnOperation = Literal[
     "clarification",
     "general",
 ]
+CourseResultMode = Literal["summary", "all"]
 
 
 class CompletedTurnState(BaseModel):
@@ -44,6 +45,7 @@ class CompletedTurnState(BaseModel):
     ects: float | None = None
     language: str | None = Field(default=None, max_length=100)
     period: str | None = Field(default=None, max_length=100)
+    result_mode: CourseResultMode | None = Field(default=None, alias="resultMode")
     program: str | None = Field(default=None, max_length=200)
     course_numbers: list[str] = Field(default_factory=list, max_length=200, alias="courseNumbers")
     study_program_names: list[str] = Field(default_factory=list, max_length=50, alias="studyProgramNames")
@@ -173,4 +175,5 @@ class ChatResponse(BaseModel):
     academic_year: str = Field(alias="academicYear")
     response_language: Literal["da", "en"] = Field(default="en", alias="responseLanguage")
     is_direct_answer: bool = Field(default=False, alias="isDirectAnswer")
+    result_mode: CourseResultMode | None = Field(default=None, alias="resultMode")
     turn_state: CompletedTurnState | None = Field(default=None, alias="turnState")

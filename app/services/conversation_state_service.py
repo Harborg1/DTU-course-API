@@ -88,6 +88,7 @@ def build_completed_turn(request: str, response: ChatResponse) -> CompletedTurnS
         ects=response.understood.ects,
         language=response.understood.language,
         period=response.understood.period,
+        resultMode=response.result_mode,
         program=response.understood.program,
         courseNumbers=course_numbers,
         studyProgramNames=[program.name for program in response.study_programs],

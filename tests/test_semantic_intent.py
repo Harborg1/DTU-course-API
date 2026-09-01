@@ -5,6 +5,7 @@ from app.models.specialization import StudySpecialization
 from app.models.course import Course, CourseTranslation
 from app.models.study_plan import StudyProgram
 from app.schemas.recommendation import CompletedTurnState
+from app.services.conversation_state_service import build_completed_turn
 from app.services.recommendation_service import _context_from_plan, recommend_courses
 from app.services.semantic_intent_service import (
     SemanticQueryPlan,
@@ -78,7 +79,7 @@ def test_semantic_comparison_stays_in_open_question_mcp_flow(db_session):
         course_number=None,
         topic=None,
         topics=[],
-        result_mode="summary",
+        result_mode=None,
         language="da",
         confidence=1.0,
     )
@@ -507,7 +508,7 @@ def test_filter_only_follow_up_merges_referenced_course_search_context(db_sessio
         course_number=None,
         topic=None,
         topics=[],
-        result_mode="summary",
+        result_mode=None,
         language="da",
         confidence=1,
         level="MSc",
@@ -669,7 +670,7 @@ def test_referenced_search_merges_each_filter_and_allows_explicit_topic_override
         course_number=None,
         topic=None,
         topics=[],
-        result_mode="summary",
+        result_mode=None,
         language="da",
         confidence=1,
         level="MSc",
@@ -690,3 +691,121 @@ def test_referenced_search_merges_each_filter_and_allows_explicit_topic_override
     assert float(context.ects) == 5
     assert context.language == "English"
     assert context.period == "E"
+
+
+def test_all_result_mode_survives_filter_only_follow_up(db_session):
+    courses = [
+        Course(
+            course_number=f"20{index:03d}",
+            academic_year="2026-2027",
+            ects=5,
+            level="MSc",
+            language="English",
+            source_url=f"https://kurser.dtu.dk/course/2026-2027/20{index:03d}",
+            content_hash=str(index) * 64,
+            translations=[
+                CourseTranslation(
+                    language_code="en-GB",
+                    title=f"Artificial Intelligence {index}",
+                )
+            ],
+        )
+        for index in range(7)
+    ]
+    all_plan = SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic="artificial intelligence",
+        topics=["artificial intelligence"],
+        result_mode="all",
+        language="da",
+        confidence=1,
+    )
+    refinement_plan = SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=None,
+        topics=[],
+        result_mode=None,
+        language="da",
+        confidence=1,
+        level="MSc",
+        referenced_turn_indexes=[0],
+    )
+    search_result = SearchResult(
+        count=len(courses),
+        courses=[(course, 1.0) for course in courses],
+        search_language="da",
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            side_effect=[all_plan, refinement_plan],
+        ),
+        patch(
+            "app.services.recommendation_service.search_courses",
+            return_value=search_result,
+        ) as course_search,
+        patch("app.services.recommendation_service.answer_with_remote_mcp") as remote_answer,
+    ):
+        first_request = "Find alle kurser i kunstig intelligens"
+        first_response = recommend_courses(
+            db_session,
+            messages=[first_request],
+            academic_year="2026-2027",
+        )
+        completed_turn = build_completed_turn(first_request, first_response)
+        second_response = recommend_courses(
+            db_session,
+            messages=["Kun MSc-kurser"],
+            academic_year="2026-2027",
+            completed_turns=[completed_turn],
+        )
+
+    remote_answer.assert_not_called()
+    assert first_response.result_mode == "all"
+    assert completed_turn.result_mode == "all"
+    assert completed_turn.model_dump(by_alias=True)["resultMode"] == "all"
+    assert second_response.result_mode == "all"
+    assert len(second_response.recommendations) == 7
+    assert [item.kwargs["limit"] for item in course_search.call_args_list] == [10_000, 10_000]
+    assert course_search.call_args_list[1].kwargs["q"] == "artificial intelligence"
+    assert course_search.call_args_list[1].kwargs["level"] == "MSc"
+
+
+def test_explicit_summary_mode_can_override_inherited_all_mode():
+    completed_turn = CompletedTurnState(
+        request="Find all courses in artificial intelligence",
+        operation="course_search",
+        topic="artificial intelligence",
+        resultMode="all",
+    )
+    plan = SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=None,
+        topics=[],
+        result_mode="summary",
+        language="en",
+        confidence=1,
+        referenced_turn_indexes=[0],
+    )
+
+    context = _context_from_plan(
+        "Show me a short selection instead",
+        plan,
+        [completed_turn],
+    )
+
+    assert context.topic == "artificial intelligence"
+    assert context.result_mode == "summary"
