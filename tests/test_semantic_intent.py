@@ -5,7 +5,7 @@ from app.models.specialization import StudySpecialization
 from app.models.course import Course, CourseTranslation
 from app.models.study_plan import StudyProgram
 from app.schemas.recommendation import CompletedTurnState
-from app.services.recommendation_service import recommend_courses
+from app.services.recommendation_service import _context_from_plan, recommend_courses
 from app.services.semantic_intent_service import (
     SemanticQueryPlan,
     classify_query_semantically,
@@ -65,6 +65,7 @@ def test_semantic_classifier_returns_validated_query_plan():
     assert "computer science study guide" in request["input"]
     assert request["text_format"] is SemanticQueryPlan
     assert "study_program/overview" in request["instructions"]
+    assert "filter-only or result-scope follow-up" in request["instructions"]
     assert isinstance(intent_from_query_plan(plan), StudyPlanIntent)
 
 
@@ -486,3 +487,206 @@ def test_completed_turn_facts_do_not_replay_old_request_as_an_instruction(db_ses
     )
     assert response.recommendations == []
     assert response.understood.topic == "general question"
+
+
+def test_filter_only_follow_up_merges_referenced_course_search_context(db_session, sample_courses):
+    completed_turn = CompletedTurnState(
+        request="Find kurser i kunstig intelligens",
+        operation="course_search",
+        topic="artificial intelligence",
+        level="BSc",
+        ects=5,
+        language="English",
+        period="E",
+    )
+    plan = SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=None,
+        topics=[],
+        result_mode="summary",
+        language="da",
+        confidence=1,
+        level="MSc",
+        referenced_turn_indexes=[0],
+    )
+    search_result = SearchResult(
+        count=1,
+        courses=[(sample_courses[0], 1.0)],
+        search_language="da",
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=plan,
+        ),
+        patch(
+            "app.services.recommendation_service.search_courses",
+            return_value=search_result,
+        ) as course_search,
+        patch("app.services.recommendation_service.answer_with_remote_mcp") as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["Kun MSc-kurser"],
+            academic_year="2026-2027",
+            completed_turns=[completed_turn],
+        )
+
+    remote_answer.assert_not_called()
+    search = course_search.call_args.kwargs
+    assert search["q"] == "artificial intelligence"
+    assert search["level"] == "MSc"
+    assert float(search["ects"]) == 5
+    assert search["language"] == "English"
+    assert search["period"] == "E"
+    assert search["limit"] == 5
+    assert response.understood.topic == "artificial intelligence"
+    assert response.understood.level == "MSc"
+    assert response.understood.ects == 5
+    assert response.understood.language == "English"
+    assert response.understood.period == "E"
+    assert response.response_language == "da"
+    assert [course.course_number for course in response.recommendations] == ["02450"]
+
+
+def test_show_all_follow_up_reuses_referenced_course_topic(db_session, sample_courses):
+    completed_turn = CompletedTurnState(
+        request="Find courses in artificial intelligence",
+        operation="course_search",
+        topic="artificial intelligence",
+        level="MSc",
+    )
+    plan = SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=None,
+        topics=[],
+        result_mode="all",
+        language="en",
+        confidence=1,
+        referenced_turn_indexes=[0],
+    )
+    search_result = SearchResult(
+        count=1,
+        courses=[(sample_courses[0], 1.0)],
+        search_language="en",
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=plan,
+        ),
+        patch(
+            "app.services.recommendation_service.search_courses",
+            return_value=search_result,
+        ) as course_search,
+        patch("app.services.recommendation_service.answer_with_remote_mcp") as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["Show all"],
+            academic_year="2026-2027",
+            completed_turns=[completed_turn],
+        )
+
+    remote_answer.assert_not_called()
+    assert course_search.call_args.kwargs["q"] == "artificial intelligence"
+    assert course_search.call_args.kwargs["level"] == "MSc"
+    assert course_search.call_args.kwargs["limit"] == 10_000
+    assert response.understood.topic == "artificial intelligence"
+    assert response.reply.startswith("I found 1 unique courses for artificial intelligence.")
+
+
+def test_self_contained_course_search_does_not_inherit_unreferenced_topic(db_session):
+    completed_turn = CompletedTurnState(
+        request="Find courses in artificial intelligence",
+        operation="course_search",
+        topic="artificial intelligence",
+    )
+    plan = SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=None,
+        topics=[],
+        result_mode="summary",
+        language="en",
+        confidence=1,
+        level="MSc",
+        referenced_turn_indexes=[],
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=plan,
+        ),
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="Here are MSc courses across DTU.",
+        ) as remote_answer,
+        patch("app.services.recommendation_service.search_courses") as course_search,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["Find MSc courses"],
+            academic_year="2026-2027",
+            completed_turns=[completed_turn],
+        )
+
+    remote_answer.assert_called_once()
+    course_search.assert_not_called()
+    assert response.understood.topic == "DTU courses"
+    assert response.understood.level == "MSc"
+
+
+def test_referenced_search_merges_each_filter_and_allows_explicit_topic_override():
+    completed_turn = CompletedTurnState(
+        request="Find BSc courses in artificial intelligence",
+        operation="course_search",
+        topic="artificial intelligence",
+        level="BSc",
+        ects=10,
+        language="Danish",
+        period="F",
+    )
+    plan = SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=None,
+        topics=[],
+        result_mode="summary",
+        language="da",
+        confidence=1,
+        level="MSc",
+        ects=5,
+        teaching_language="English",
+        period="E",
+        referenced_turn_indexes=[0],
+    )
+
+    context = _context_from_plan(
+        "Kun engelske MSc-kurser på 5 ECTS i periode E om robotics",
+        plan,
+        [completed_turn],
+    )
+
+    assert context.topic == "robotics"
+    assert context.level == "MSc"
+    assert float(context.ects) == 5
+    assert context.language == "English"
+    assert context.period == "E"

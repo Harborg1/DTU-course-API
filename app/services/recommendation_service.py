@@ -235,19 +235,59 @@ def understand_context(messages: list[str]) -> RecommendationContext:
 def _context_from_plan(
     latest_user_message: str,
     plan: SemanticQueryPlan | None,
+    completed_turns: list[CompletedTurnState] | None = None,
 ) -> RecommendationContext:
-    """Combine deterministic extraction with validated fields from the current plan."""
+    """Overlay the latest explicit filters on a referenced completed course search."""
     context = understand_context([latest_user_message])
     if plan is None:
         return context
-    topic = plan.topic or (" and ".join(plan.topics) if plan.topics else None) or context.topic
+    referenced_turn = _referenced_course_search(plan, completed_turns or [])
+    planned_topic = plan.topic or (" and ".join(plan.topics) if plan.topics else None)
+    explicit_topic = extract_recommendation_topic(latest_user_message)
+    topic = (
+        planned_topic
+        or explicit_topic
+        or (referenced_turn.topic if referenced_turn else None)
+        or context.topic
+    )
     return RecommendationContext(
         topic=topic,
-        level=plan.level or context.level,
-        ects=Decimal(str(plan.ects)) if plan.ects is not None else context.ects,
-        language=plan.teaching_language or context.language,
-        period=plan.period or context.period,
+        level=plan.level or context.level or (referenced_turn.level if referenced_turn else None),
+        ects=(
+            Decimal(str(plan.ects))
+            if plan.ects is not None
+            else context.ects
+            or (
+                Decimal(str(referenced_turn.ects))
+                if referenced_turn is not None and referenced_turn.ects is not None
+                else None
+            )
+        ),
+        language=(
+            plan.teaching_language
+            or context.language
+            or (referenced_turn.language if referenced_turn else None)
+        ),
+        period=plan.period or context.period or (referenced_turn.period if referenced_turn else None),
     )
+
+
+def _referenced_course_search(
+    plan: SemanticQueryPlan | None,
+    turns: list[CompletedTurnState],
+) -> CompletedTurnState | None:
+    """Return the most recent valid course-search turn explicitly referenced by the plan."""
+    if plan is None:
+        return None
+    valid_indexes = sorted(
+        {
+            index
+            for index in plan.referenced_turn_indexes
+            if 0 <= index < len(turns) and turns[index].operation == "course_search"
+        },
+        reverse=True,
+    )
+    return turns[valid_indexes[0]] if valid_indexes else None
 
 
 def _program_key(value: str) -> str:
@@ -898,11 +938,13 @@ def _answer_all_course_matches(
     context: RecommendationContext | None = None,
 ) -> ChatResponse:
     """Return the complete, deduplicated union for every requested course topic."""
+    context = context or understand_context(messages)
     topics = list(dict.fromkeys(topic.strip() for topic in plan.topics if topic.strip()))
     if not topics and plan.topic:
         topics = [plan.topic.strip()]
+    if not topics and context.topic != "DTU courses":
+        topics = [context.topic]
 
-    context = context or understand_context(messages)
     matches: dict[str, tuple[Course, float, set[str]]] = {}
     for topic in topics:
         result = search_courses(
@@ -1466,10 +1508,11 @@ def recommend_courses(
     # 4. Course Recommendation — Groq via remote MCP
     if isinstance(intent, RecommendationIntent):
         recommendation_context = (
-            _context_from_plan(latest_user_message, semantic_plan)
+            _context_from_plan(latest_user_message, semantic_plan, turns)
             if turns or semantic_plan is not None
             else understand_context(messages)
         )
+        is_contextual_refinement = _referenced_course_search(semantic_plan, turns) is not None
         if _asks_for_all_results(latest_user_message) or (
             semantic_plan is not None
             and semantic_plan.domain == "course"
@@ -1487,33 +1530,34 @@ def recommend_courses(
                 academic_year=academic_year,
                 context=recommendation_context,
             )
-        try:
-            reply = answer_with_remote_mcp(
-                remote_question,
-                academic_year,
-                response_language=response_language,
-            )
-            return ChatResponse(
-                reply=reply,
-                understood=UnderstoodContext(
-                    topic=intent.topic or recommendation_context.topic,
-                    level=recommendation_context.level,
-                    ects=(
-                        float(recommendation_context.ects)
-                        if recommendation_context.ects is not None
-                        else None
+        if not is_contextual_refinement:
+            try:
+                reply = answer_with_remote_mcp(
+                    remote_question,
+                    academic_year,
+                    response_language=response_language,
+                )
+                return ChatResponse(
+                    reply=reply,
+                    understood=UnderstoodContext(
+                        topic=intent.topic or recommendation_context.topic,
+                        level=recommendation_context.level,
+                        ects=(
+                            float(recommendation_context.ects)
+                            if recommendation_context.ects is not None
+                            else None
+                        ),
+                        language=recommendation_context.language,
+                        period=recommendation_context.period,
                     ),
-                    language=recommendation_context.language,
-                    period=recommendation_context.period,
-                ),
-                recommendations=[],
-                academicYear=academic_year,
-                responseLanguage=response_language,
-                isDirectAnswer=True,
-            )
-        except CourseQAError:
-            logger.exception("Groq/MCP could not answer a recommendation request")
-            pass  # fall through to regex search
+                    recommendations=[],
+                    academicYear=academic_year,
+                    responseLanguage=response_language,
+                    isDirectAnswer=True,
+                )
+            except CourseQAError:
+                logger.exception("Groq/MCP could not answer a recommendation request")
+                pass  # fall through to deterministic search
 
     # 5. Open Question — Groq (no DB)
     if isinstance(intent, OpenQuestionIntent):
@@ -1536,7 +1580,11 @@ def recommend_courses(
             pass  # fall through to regex search
 
     # Fallback — regex-based search (unchanged)
-    context = _context_from_plan(latest_user_message, semantic_plan) if turns else understand_context(messages)
+    context = (
+        _context_from_plan(latest_user_message, semantic_plan, turns)
+        if turns
+        else understand_context(messages)
+    )
     result = _run_search(session, context, academic_year)
     ranked_courses = result.courses
     if ranked_courses and ranked_courses[0][1] > 0:
@@ -1585,4 +1633,5 @@ def recommend_courses(
         understood=understood,
         recommendations=courses,
         academicYear=academic_year,
+        responseLanguage=response_language,
     )
