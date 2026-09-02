@@ -145,6 +145,8 @@ Chatspørgsmålet “Hvilke kurser er nye?” sammenligner den valgte årgang me
 umiddelbart foregående. Et kursus er nyt, når kursusnummeret ikke findes i den
 foregående årgang. DTU-feltet `PreviousCourse` bruges til særskilt at markere de
 kurser, der blot har fået et nyt kursusnummer.
+Spørgsmålet kan afgrænses med BSc, MSc eller PhD, eksempelvis “Hvilke nye
+kurser er der på BSc?”.
 
 Embedding-jobbet er genoptageligt og committer per batch. Brug `--dry-run` til at se antallet af
 manglende eller forældede embeddings uden at kalde OpenAI. Ved senere kursusimporter sammenlignes

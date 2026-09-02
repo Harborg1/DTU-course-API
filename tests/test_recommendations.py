@@ -80,5 +80,34 @@ def test_chat_lists_courses_new_since_previous_catalogue(db_session, sample_cour
     )
 
     assert [course.course_number for course in response.recommendations] == ["01418"]
-    assert "1 nye kurser" in response.reply
+    assert "1 nyt kursus" in response.reply
     assert "2025-2026" in response.recommendations[0].reason
+
+
+def test_chat_filters_new_courses_by_level(db_session, sample_courses):
+    from app.services.recommendation_service import recommend_courses
+
+    response = recommend_courses(
+        db_session,
+        messages=["Hvilke nye kurser er der på BSc?"],
+        academic_year="2026-2027",
+    )
+
+    assert [course.course_number for course in response.recommendations] == ["01418"]
+    assert response.understood.level == "BSc"
+    assert "på BSc-niveau" in response.reply
+
+
+def test_chat_filters_new_courses_by_level_in_english(db_session, sample_courses):
+    from app.services.recommendation_service import recommend_courses
+
+    response = recommend_courses(
+        db_session,
+        messages=["Which BSc courses are new?"],
+        academic_year="2026-2027",
+    )
+
+    assert [course.course_number for course in response.recommendations] == ["01418"]
+    assert response.understood.level == "BSc"
+    assert "1 new course at BSc level" in response.reply
+    assert "1 is newly created" in response.reply

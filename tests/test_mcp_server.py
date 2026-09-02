@@ -145,6 +145,7 @@ def test_discovery_get_new_courses_schema():
     assert "academic_year" in change_tool.input_schema["required"]
     assert "response_language" in change_tool.input_schema["required"]
     assert "previous_academic_year" in change_tool.input_schema["properties"]
+    assert change_tool.input_schema["properties"]["level"]["enum"] == ["BSc", "MSc", "PhD"]
 
 
 def test_discovery_get_study_plan_schema(test_client):
@@ -478,6 +479,36 @@ def test_get_new_courses_distinguishes_created_and_renumbered(db_session, monkey
     assert content["renumbered_count"] == 1
     assert [course["course_number"] for course in content["courses"]] == ["01003", "01004"]
     assert content["courses"][1]["previous_course_numbers"] == ["01002"]
+
+
+def test_get_new_courses_filters_by_level(db_session, monkeypatch):
+    import app.database
+    from app.mcp_server.server import _handle_get_new_courses
+
+    db_session.add_all(
+        [
+            _make_course("01001", "2025-2026", level="BSc"),
+            _make_course("01003", "2026-2027", level="BSc"),
+            _make_course("01004", "2026-2027", level="MSc"),
+        ]
+    )
+    db_session.commit()
+    monkeypatch.setattr(
+        app.database,
+        "SessionLocal",
+        sessionmaker(bind=db_session.get_bind(), expire_on_commit=False),
+    )
+
+    content = _handle_get_new_courses(
+        {
+            "academic_year": "2026-2027",
+            "response_language": "en",
+            "level": "BSc",
+        }
+    )
+
+    assert content["level"] == "BSc"
+    assert [course["course_number"] for course in content["courses"]] == ["01003"]
 
 
 # ---------------------------------------------------------------------------

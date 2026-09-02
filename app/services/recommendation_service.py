@@ -1377,7 +1377,11 @@ def recommend_courses(
 
     if isinstance(intent, NewCoursesIntent):
         try:
-            changes = get_new_courses(session, academic_year)
+            changes = get_new_courses(
+                session,
+                academic_year,
+                level=intent.level or None,
+            )
         except CatalogComparisonError:
             comparison_year = f"{int(academic_year[:4]) - 1}-{academic_year[:4]}"
             return ChatResponse(
@@ -1432,16 +1436,24 @@ def recommend_courses(
                 )
             )
 
+        total = len(changes.courses)
+        level_da = f" på {intent.level}-niveau" if intent.level else ""
+        level_en = f" at {intent.level} level" if intent.level else ""
+        course_label_da = "nyt kursus" if total == 1 else "nye kurser"
+        course_label_en = "new course" if total == 1 else "new courses"
+        created_verb_en = "is" if changes.created_count == 1 else "are"
+        renumbered_verb_en = "has" if changes.renumbered_count == 1 else "have"
         reply = (
-            f"Jeg fandt {len(changes.courses)} nye kurser i {academic_year}: "
+            f"Jeg fandt {total} {course_label_da}{level_da} i {academic_year}: "
             f"{changes.created_count} er nyoprettede, og {changes.renumbered_count} har fået nyt kursusnummer."
             if response_language == "da"
-            else f"I found {len(changes.courses)} new courses in {academic_year}: "
-            f"{changes.created_count} are newly created and {changes.renumbered_count} have a new course number."
+            else f"I found {total} {course_label_en}{level_en} in {academic_year}: "
+            f"{changes.created_count} {created_verb_en} newly created and "
+            f"{changes.renumbered_count} {renumbered_verb_en} a new course number."
         )
         return ChatResponse(
             reply=reply,
-            understood=UnderstoodContext(topic="new courses"),
+            understood=UnderstoodContext(topic="new courses", level=intent.level or None),
             recommendations=recommendations,
             academicYear=academic_year,
             responseLanguage=response_language,

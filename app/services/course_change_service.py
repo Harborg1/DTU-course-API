@@ -23,6 +23,7 @@ class NewCoursesResult:
     academic_year: str
     previous_academic_year: str
     courses: tuple[NewCourse, ...]
+    level: str | None = None
 
     @property
     def created_count(self) -> int:
@@ -48,6 +49,8 @@ def get_new_courses(
     session: Session,
     academic_year: str,
     previous_academic_year: str | None = None,
+    *,
+    level: str | None = None,
 ) -> NewCoursesResult:
     """Return courses absent by number from the preceding catalogue.
 
@@ -66,15 +69,23 @@ def get_new_courses(
             f"No course data is imported for comparison year {comparison_year}"
         )
 
+    current_query = (
+        select(Course)
+        .options(selectinload(Course.translations))
+        .where(Course.academic_year == academic_year)
+        .order_by(Course.course_number)
+    )
+    if level:
+        current_query = current_query.where(Course.level == level)
     current_courses = tuple(
         session.scalars(
-            select(Course)
-            .options(selectinload(Course.translations))
-            .where(Course.academic_year == academic_year)
-            .order_by(Course.course_number)
+            current_query
         )
     )
-    if not current_courses:
+    current_catalogue_exists = session.scalar(
+        select(Course.id).where(Course.academic_year == academic_year).limit(1)
+    )
+    if current_catalogue_exists is None:
         raise CatalogComparisonError(
             f"No course data is imported for academic year {academic_year}"
         )
@@ -98,4 +109,5 @@ def get_new_courses(
         academic_year=academic_year,
         previous_academic_year=comparison_year,
         courses=tuple(new_courses),
+        level=level,
     )

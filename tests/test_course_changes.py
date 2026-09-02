@@ -15,6 +15,7 @@ def _course(
     year: str,
     *,
     previous_course_numbers: list[str] | None = None,
+    level: str | None = None,
 ) -> Course:
     now = datetime.now(UTC)
     return Course(
@@ -25,6 +26,7 @@ def _course(
         imported_at=now,
         updated_at=now,
         previous_course_numbers=previous_course_numbers or [],
+        level=level,
         translations=[
             CourseTranslation(language_code="da-DK", title=f"Dansk {number}"),
             CourseTranslation(language_code="en-GB", title=f"English {number}"),
@@ -63,3 +65,30 @@ def test_refuses_comparison_when_previous_catalogue_is_missing(db_session):
 
     with pytest.raises(CatalogComparisonError, match="2025-2026"):
         get_new_courses(db_session, "2026-2027")
+
+
+@pytest.mark.parametrize(
+    ("level", "expected_numbers"),
+    [
+        ("BSc", ["01003"]),
+        ("MSc", ["01004"]),
+        ("PhD", ["01005"]),
+    ],
+)
+def test_filters_new_courses_by_level(db_session, level, expected_numbers):
+    db_session.add_all(
+        [
+            _course("01001", "2025-2026", level="BSc"),
+            _course("01002", "2025-2026", level="MSc"),
+            _course("01001", "2026-2027", level="BSc"),
+            _course("01003", "2026-2027", level="BSc"),
+            _course("01004", "2026-2027", level="MSc"),
+            _course("01005", "2026-2027", level="PhD"),
+        ]
+    )
+    db_session.commit()
+
+    result = get_new_courses(db_session, "2026-2027", level=level)
+
+    assert [item.course.course_number for item in result.courses] == expected_numbers
+    assert result.level == level

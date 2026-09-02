@@ -121,6 +121,11 @@ _GET_NEW_COURSES_SCHEMA: dict[str, Any] = {
             "description": "Language for returned titles; use 'da' or 'en'",
             "enum": ["da", "en"],
         },
+        "level": {
+            "type": "string",
+            "description": "Optional course level filter",
+            "enum": ["BSc", "MSc", "PhD"],
+        },
         "limit": {
             "type": "integer",
             "description": "Maximum number of course entries to return (max 200)",
@@ -401,6 +406,9 @@ def _handle_get_new_courses(arguments: dict[str, Any]) -> dict[str, Any]:
     response_language = arguments.get("response_language")
     if response_language not in {"da", "en"}:
         return {"error": "response_language must be 'da' or 'en'"}
+    level = arguments.get("level")
+    if level not in {None, "BSc", "MSc", "PhD"}:
+        return {"error": "level must be BSc, MSc, or PhD"}
     previous_academic_year = None
     if arguments.get("previous_academic_year") is not None:
         previous_academic_year = _academic_year(
@@ -421,7 +429,12 @@ def _handle_get_new_courses(arguments: dict[str, Any]) -> dict[str, Any]:
     session = SessionLocal()
     try:
         try:
-            result = get_new_courses(session, academic_year, previous_academic_year)
+            result = get_new_courses(
+                session,
+                academic_year,
+                previous_academic_year,
+                level=level,
+            )
         except CatalogComparisonError as exc:
             return {"error": str(exc)}
 
@@ -447,6 +460,7 @@ def _handle_get_new_courses(arguments: dict[str, Any]) -> dict[str, Any]:
         return {
             "academic_year": result.academic_year,
             "previous_academic_year": result.previous_academic_year,
+            "level": result.level,
             "total": len(result.courses),
             "created_count": result.created_count,
             "renumbered_count": result.renumbered_count,

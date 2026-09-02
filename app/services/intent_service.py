@@ -62,6 +62,7 @@ class OpenQuestionIntent(Intent):
 @dataclass
 class NewCoursesIntent(Intent):
     type: str = "new_courses"
+    level: str = ""
 
 
 _STUDY_PLAN_INDICATORS = [
@@ -331,10 +332,16 @@ _CURRENT_STUDY_INDICATORS = (
 )
 
 _NEW_COURSES_PATTERNS = (
-    r"\b(?:nyt|nye)\s+(?:kursus|kurser)\b",
+    r"\b(?:nyt|nye)\s+(?:(?:bsc|msc|ph\.?d\.?|bachelor|kandidat)[\s-]*)?(?:kursus|kurser)\b",
     r"\b(?:kursus|kurser)\s+(?:er|der er)\s+(?:nyt|nye)\b",
-    r"\bnew\s+courses?\b",
+    r"\bnew\s+(?:(?:bsc|msc|ph\.?d\.?|bachelor|master)[\s-]*)?courses?\b",
     r"\bcourses?\s+(?:are|is)\s+new\b",
+)
+
+_COURSE_LEVEL_PATTERNS = (
+    ("PhD", r"\b(?:ph\.?d\.?)\b"),
+    ("MSc", r"\b(?:msc|master|kandidat(?:niveau|kursus|kurser)?)\b"),
+    ("BSc", r"\b(?:bsc|bachelor(?:niveau|kursus|kurser)?)\b"),
 )
 
 
@@ -437,6 +444,14 @@ def is_new_courses_related(text: str) -> bool:
     return any(re.search(pattern, normalized) for pattern in _NEW_COURSES_PATTERNS)
 
 
+def extract_course_level(text: str) -> str:
+    normalized = text.casefold()
+    return next(
+        (level for level, pattern in _COURSE_LEVEL_PATTERNS if re.search(pattern, normalized)),
+        "",
+    )
+
+
 def is_specialization_related(text: str) -> bool:
     """Check if text asks about a programme specialization or study track."""
     normalized = text.casefold()
@@ -463,7 +478,7 @@ def classify_intent(text: str) -> Intent:
         return CourseQAIntent(confidence=1.0, course_number=course_number)
 
     if is_new_courses_related(text):
-        return NewCoursesIntent(confidence=0.95)
+        return NewCoursesIntent(confidence=0.95, level=extract_course_level(text))
 
     if is_study_program_recommendation(text):
         return StudyProgramRecommendationIntent(
