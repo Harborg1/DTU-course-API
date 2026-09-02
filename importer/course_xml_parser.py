@@ -197,6 +197,14 @@ def _no_credit_with(course: ElementTree.Element) -> list[str]:
     return sorted(values)
 
 
+def _previous_course_numbers(course: ElementTree.Element) -> list[str]:
+    numbers: set[str] = set()
+    for element in _elements(course, "PreviousCourse"):
+        expression = (element.get("CourseCode") or "").upper()
+        numbers.update(COURSE_NUMBER_RE.findall(expression))
+    return sorted(numbers)
+
+
 def parse_course_xml(content: bytes | str) -> CourseData:
     root = ElementTree.fromstring(content)
     course = _first(root, "Course")
@@ -310,6 +318,7 @@ def parse_course_xml(content: bytes | str) -> CourseData:
         responsible_people=people,
         examinations=examinations,
         no_credit_with=_no_credit_with(course),
+        previous_course_numbers=_previous_course_numbers(course),
         recommended_prerequisite_course_numbers=(
             _recommended_prerequisite_course_numbers(course)
         ),

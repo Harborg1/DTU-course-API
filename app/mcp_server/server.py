@@ -1,8 +1,8 @@
 """
 Remote MCP server with Streamable HTTP transport.
 
-Exposes four read-only database tools (get_course, search_courses,
-get_study_plan, get_specializations) at the /mcp endpoint on the FastAPI application.
+Exposes read-only database tools for courses, catalogue changes, study plans,
+and specializations at the /mcp endpoint on the FastAPI application.
 All tools use the existing SQLAlchemy session factory and always
 require an academic_year parameter.
 
@@ -103,6 +103,34 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
     "required": ["q", "academic_year", "search_language"],
 }
 
+_GET_NEW_COURSES_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "academic_year": {
+            "type": "string",
+            "description": "The newer academic year to inspect (e.g. '2026-2027')",
+            "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+        "previous_academic_year": {
+            "type": "string",
+            "description": "Optional comparison year; defaults to the immediately preceding academic year",
+            "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+        "response_language": {
+            "type": "string",
+            "description": "Language for returned titles; use 'da' or 'en'",
+            "enum": ["da", "en"],
+        },
+        "limit": {
+            "type": "integer",
+            "description": "Maximum number of course entries to return (max 200)",
+            "minimum": 1,
+            "maximum": 200,
+        },
+    },
+    "required": ["academic_year", "response_language"],
+}
+
 _GET_STUDY_PLAN_SCHEMA: dict[str, Any] = {
     "type": "object",
     "properties": {
@@ -170,6 +198,16 @@ _SEARCH_COURSES_TOOL = Tool(
     inputSchema=_SEARCH_COURSES_SCHEMA,
 )
 
+_GET_NEW_COURSES_TOOL = Tool(
+    name="get_new_courses",
+    description=(
+        "Compare two imported DTU course catalogues and list courses whose number is absent "
+        "from the previous year. Uses DTU PreviousCourse metadata to distinguish courses that "
+        "received a new number from courses that were newly created."
+    ),
+    inputSchema=_GET_NEW_COURSES_SCHEMA,
+)
+
 _GET_STUDY_PLAN_TOOL = Tool(
     name="get_study_plan",
     description=(
@@ -193,6 +231,7 @@ _GET_SPECIALIZATIONS_TOOL = Tool(
 ALL_TOOLS: list[Tool] = [
     _COURSE_TOOL,
     _SEARCH_COURSES_TOOL,
+    _GET_NEW_COURSES_TOOL,
     _GET_STUDY_PLAN_TOOL,
     _GET_SPECIALIZATIONS_TOOL,
 ]
@@ -274,6 +313,7 @@ def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
             "course_responsible": course.course_responsible,
             "teachers": course.teachers,
             "responsible_people": course.responsible_people,
+            "previous_course_numbers": course.previous_course_numbers,
             "source_url": course.source_url,
         }
     finally:
@@ -347,6 +387,69 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             "query": query,
             "search_language": search_language,
             "count": result.count,
+            "returned": len(courses),
+            "courses": courses,
+        }
+    finally:
+        session.close()
+
+
+def _handle_get_new_courses(arguments: dict[str, Any]) -> dict[str, Any]:
+    academic_year = _academic_year(arguments)
+    if academic_year is None:
+        return {"error": "academic_year must contain consecutive years, e.g. 2026-2027"}
+    response_language = arguments.get("response_language")
+    if response_language not in {"da", "en"}:
+        return {"error": "response_language must be 'da' or 'en'"}
+    previous_academic_year = None
+    if arguments.get("previous_academic_year") is not None:
+        previous_academic_year = _academic_year(
+            {"academic_year": arguments["previous_academic_year"]}
+        )
+        if previous_academic_year is None:
+            return {
+                "error": "previous_academic_year must contain consecutive years, e.g. 2025-2026"
+            }
+    try:
+        limit = max(1, min(int(arguments.get("limit", 200)), 200))
+    except (TypeError, ValueError):
+        return {"error": "limit must be an integer between 1 and 200"}
+
+    from app.database import SessionLocal
+    from app.services.course_change_service import CatalogComparisonError, get_new_courses
+
+    session = SessionLocal()
+    try:
+        try:
+            result = get_new_courses(session, academic_year, previous_academic_year)
+        except CatalogComparisonError as exc:
+            return {"error": str(exc)}
+
+        courses = []
+        for item in result.courses[:limit]:
+            course = item.course
+            title = (
+                course.title_da or course.title_en or course.title
+                if response_language == "da"
+                else course.title_en or course.title_da or course.title
+            )
+            courses.append(
+                {
+                    "course_number": course.course_number,
+                    "title": title,
+                    "ects": float(course.ects) if course.ects is not None else None,
+                    "level": course.level,
+                    "classification": item.classification,
+                    "previous_course_numbers": list(item.previous_course_numbers),
+                    "source_url": course.source_url,
+                }
+            )
+        return {
+            "academic_year": result.academic_year,
+            "previous_academic_year": result.previous_academic_year,
+            "total": len(result.courses),
+            "created_count": result.created_count,
+            "renumbered_count": result.renumbered_count,
             "returned": len(courses),
             "courses": courses,
         }
@@ -579,6 +682,7 @@ def _handle_get_specializations(arguments: dict[str, Any]) -> dict[str, Any]:
 _TOOL_HANDLERS: dict[str, Callable[[dict[str, Any]], dict[str, Any]]] = {
     "get_course": _handle_get_course,
     "search_courses": _handle_search_courses,
+    "get_new_courses": _handle_get_new_courses,
     "get_study_plan": _handle_get_study_plan,
     "get_specializations": _handle_get_specializations,
 }

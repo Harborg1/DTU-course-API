@@ -3,6 +3,7 @@ import re
 import sys
 import time
 from collections.abc import Callable
+from pathlib import Path
 from xml.etree import ElementTree
 
 import httpx
@@ -123,6 +124,11 @@ def build_parser() -> argparse.ArgumentParser:
         default=0.25,
         help="Seconds to wait between requests (default: 0.25)",
     )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="Optional output file; course numbers are printed to stdout when omitted",
+    )
     return parser
 
 
@@ -137,7 +143,12 @@ def main() -> None:
     except (ValueError, ElementTree.ParseError, httpx.HTTPError) as exc:
         raise SystemExit(f"Could not fetch DTU course numbers: {exc}") from exc
 
-    print("\n".join(numbers))
+    output = "\n".join(numbers) + "\n"
+    if args.output is None:
+        print(output, end="")
+    else:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(output)
     print(f"Found {len(numbers)} unique course numbers.", file=sys.stderr)
 
 

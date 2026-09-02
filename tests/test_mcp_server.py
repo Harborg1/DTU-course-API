@@ -101,14 +101,20 @@ def test_mcp_with_valid_token_succeeds(test_client):
 # ---------------------------------------------------------------------------
 
 
-def test_discovery_returns_four_tools(test_client):
+def test_discovery_returns_course_and_study_tools(test_client):
     response = _send_jsonrpc(test_client, "tools/list")
     assert response.status_code == 200
 
     body = response.json()
     tools = body["result"]["tools"]
     tool_names = {t["name"] for t in tools}
-    assert tool_names == {"get_course", "search_courses", "get_study_plan", "get_specializations"}
+    assert tool_names == {
+        "get_course",
+        "search_courses",
+        "get_new_courses",
+        "get_study_plan",
+        "get_specializations",
+    }
 
 
 def test_discovery_get_course_schema(test_client):
@@ -130,6 +136,15 @@ def test_discovery_search_courses_schema(test_client):
     assert "level" in search_tool["inputSchema"]["properties"]
     assert "ects" in search_tool["inputSchema"]["properties"]
     assert "search_language" in search_tool["inputSchema"]["required"]
+
+
+def test_discovery_get_new_courses_schema():
+    from app.mcp_server.server import ALL_TOOLS
+
+    change_tool = next(tool for tool in ALL_TOOLS if tool.name == "get_new_courses")
+    assert "academic_year" in change_tool.input_schema["required"]
+    assert "response_language" in change_tool.input_schema["required"]
+    assert "previous_academic_year" in change_tool.input_schema["properties"]
 
 
 def test_discovery_get_study_plan_schema(test_client):
@@ -423,6 +438,49 @@ def test_search_courses_uses_requested_danish_text(test_client, db_session):
 
 
 # ---------------------------------------------------------------------------
+# get_new_courses tool
+# ---------------------------------------------------------------------------
+
+
+def test_get_new_courses_distinguishes_created_and_renumbered(db_session, monkeypatch):
+    import app.database
+    from app.mcp_server.server import _handle_get_new_courses
+
+    db_session.add_all(
+        [
+            _make_course("01001", "2025-2026"),
+            _make_course("01002", "2025-2026"),
+            _make_course("01001", "2026-2027"),
+            _make_course("01003", "2026-2027"),
+            _make_course(
+                "01004",
+                "2026-2027",
+                previous_course_numbers=["01002"],
+            ),
+        ]
+    )
+    db_session.commit()
+    monkeypatch.setattr(
+        app.database,
+        "SessionLocal",
+        sessionmaker(bind=db_session.get_bind(), expire_on_commit=False),
+    )
+
+    content = _handle_get_new_courses(
+        {
+            "academic_year": "2026-2027",
+            "response_language": "en",
+        }
+    )
+
+    assert content["total"] == 2
+    assert content["created_count"] == 1
+    assert content["renumbered_count"] == 1
+    assert [course["course_number"] for course in content["courses"]] == ["01003", "01004"]
+    assert content["courses"][1]["previous_course_numbers"] == ["01002"]
+
+
+# ---------------------------------------------------------------------------
 # get_study_plan tool
 # ---------------------------------------------------------------------------
 
@@ -557,6 +615,7 @@ def test_remote_mcp_uses_correct_groq_headers():
         assert tools[0]["allowed_tools"] == [
             "get_course",
             "search_courses",
+            "get_new_courses",
             "get_study_plan",
             "get_specializations",
         ]

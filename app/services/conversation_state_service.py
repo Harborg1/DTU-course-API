@@ -4,6 +4,7 @@ from app.schemas.recommendation import ChatResponse, CompletedTurnState, TurnOpe
 from app.services.intent_service import (
     ClarificationIntent,
     CourseQAIntent,
+    NewCoursesIntent,
     RecommendationIntent,
     SpecializationIntent,
     StudyProgramRecommendationIntent,
@@ -62,6 +63,8 @@ def _operation_for_response(request: str, response: ChatResponse) -> TurnOperati
     if isinstance(intent, CourseQAIntent):
         return "course_detail"
     if isinstance(intent, RecommendationIntent):
+        return "course_search"
+    if isinstance(intent, NewCoursesIntent):
         return "course_search"
     if isinstance(intent, StudyProgramRecommendationIntent):
         return "study_program_recommendation"

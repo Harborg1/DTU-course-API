@@ -7,6 +7,7 @@ from app.models.study_plan import StudyProgram
 from app.services.intent_service import (
     ClarificationIntent,
     CourseQAIntent,
+    NewCoursesIntent,
     OpenQuestionIntent,
     RecommendationIntent,
     StudyProgramRecommendationIntent,
@@ -117,6 +118,19 @@ class TestClassifyIntent:
     def test_open_question_general(self):
         intent = classify_intent("hvad kan du hjælpe med?")
         assert isinstance(intent, OpenQuestionIntent)
+
+    @pytest.mark.parametrize(
+        "prompt",
+        [
+            "Hvilke kurser er nye?",
+            "Vis de nye kurser",
+            "Er der et nyt kursus?",
+            "Which courses are new?",
+            "Show me the new courses",
+        ],
+    )
+    def test_new_courses_intent(self, prompt):
+        assert isinstance(classify_intent(prompt), NewCoursesIntent)
 
     def test_study_plan_with_english_keywords(self):
         intent = classify_intent("how is my degree structured?")

@@ -68,3 +68,17 @@ def test_chat_returns_clear_empty_result(client):
     assert response.status_code == 200
     assert response.json()["recommendations"] == []
     assert "ikke finde" in response.json()["reply"]
+
+
+def test_chat_lists_courses_new_since_previous_catalogue(db_session, sample_courses):
+    from app.services.recommendation_service import recommend_courses
+
+    response = recommend_courses(
+        db_session,
+        messages=["Hvilke kurser er nye?"],
+        academic_year="2026-2027",
+    )
+
+    assert [course.course_number for course in response.recommendations] == ["01418"]
+    assert "1 nye kurser" in response.reply
+    assert "2025-2026" in response.recommendations[0].reason

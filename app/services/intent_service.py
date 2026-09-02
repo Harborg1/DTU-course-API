@@ -59,6 +59,11 @@ class OpenQuestionIntent(Intent):
     type: str = "open_question"
 
 
+@dataclass
+class NewCoursesIntent(Intent):
+    type: str = "new_courses"
+
+
 _STUDY_PLAN_INDICATORS = [
     "obligatorisk",
     "adgangskrav",
@@ -325,6 +330,13 @@ _CURRENT_STUDY_INDICATORS = (
     "i am studying",
 )
 
+_NEW_COURSES_PATTERNS = (
+    r"\b(?:nyt|nye)\s+(?:kursus|kurser)\b",
+    r"\b(?:kursus|kurser)\s+(?:er|der er)\s+(?:nyt|nye)\b",
+    r"\bnew\s+courses?\b",
+    r"\bcourses?\s+(?:are|is)\s+new\b",
+)
+
 
 def extract_course_number(text: str) -> str | None:
     """Extract 5-digit course number from text."""
@@ -420,6 +432,11 @@ def is_study_plan_related(text: str) -> bool:
     return any(indicator in normalized for indicator in _STUDY_PLAN_INDICATORS)
 
 
+def is_new_courses_related(text: str) -> bool:
+    normalized = text.casefold()
+    return any(re.search(pattern, normalized) for pattern in _NEW_COURSES_PATTERNS)
+
+
 def is_specialization_related(text: str) -> bool:
     """Check if text asks about a programme specialization or study track."""
     normalized = text.casefold()
@@ -444,6 +461,9 @@ def classify_intent(text: str) -> Intent:
 
     if course_number:
         return CourseQAIntent(confidence=1.0, course_number=course_number)
+
+    if is_new_courses_related(text):
+        return NewCoursesIntent(confidence=0.95)
 
     if is_study_program_recommendation(text):
         return StudyProgramRecommendationIntent(

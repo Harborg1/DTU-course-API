@@ -1,6 +1,6 @@
 # DTU Course API
 
-Produktionsorienteret kursusanbefaler, importer og REST API til det officielle DTU-kursuskatalog. Projektet henter kurser for 2026/2027 fra DTU, gemmer dem i PostgreSQL 17 og giver studerende anbefalinger gennem en responsiv chat-hjemmeside. Det eksisterende API kan også bruges fra Microsoft Copilot Studio.
+Produktionsorienteret kursusanbefaler, importer og REST API til det officielle DTU-kursuskatalog. Projektet henter årgangsspecifikke kurser fra DTU, gemmer dem i PostgreSQL 17 og giver studerende anbefalinger gennem en responsiv chat-hjemmeside. Det eksisterende API kan også bruges fra Microsoft Copilot Studio.
 
 ## Arkitektur
 
@@ -125,6 +125,26 @@ python -m importer.course_xml_cli --academic-year 2026-2027
 # Generér kun manglende eller ændrede embeddings efter kursusimporten
 python -m importer.course_embedding_cli --academic-year 2026-2027
 ```
+
+Gem hver årgang i sin egen mappe, når kataloger skal sammenlignes:
+
+```bash
+python scripts/get_all_course_numbers.py \
+  --catalog-version 2025/2026 \
+  --output app/data/course_numbers/2025-2026.txt
+python scripts/get_all_course_information.py \
+  --input app/data/course_numbers/2025-2026.txt \
+  --output-dir app/data/course_information/2025-2026 \
+  --year-group 2025/2026
+python -m importer.course_xml_cli \
+  --directory app/data/course_information/2025-2026 \
+  --academic-year 2025-2026
+```
+
+Chatspørgsmålet “Hvilke kurser er nye?” sammenligner den valgte årgang med den
+umiddelbart foregående. Et kursus er nyt, når kursusnummeret ikke findes i den
+foregående årgang. DTU-feltet `PreviousCourse` bruges til særskilt at markere de
+kurser, der blot har fået et nyt kursusnummer.
 
 Embedding-jobbet er genoptageligt og committer per batch. Brug `--dry-run` til at se antallet af
 manglende eller forældede embeddings uden at kalde OpenAI. Ved senere kursusimporter sammenlignes

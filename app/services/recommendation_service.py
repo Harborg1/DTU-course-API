@@ -15,6 +15,7 @@ from app.models.specialization import (
 )
 from app.models.study_plan import StudyPlanRequirement, StudyPlanRequirementCourse, StudyPlanSection, StudyProgram
 from app.services.course_service import get_course
+from app.services.course_change_service import CatalogComparisonError, get_new_courses
 from app.schemas.recommendation import (
     ChatResponse,
     CompletedTurnState,
@@ -35,6 +36,7 @@ from app.services.course_qa_service import CourseQAError, answer_with_remote_mcp
 from app.services.intent_service import (
     ClarificationIntent,
     CourseQAIntent,
+    NewCoursesIntent,
     OpenQuestionIntent,
     RecommendationIntent,
     SpecializationIntent,
@@ -1328,9 +1330,13 @@ def recommend_courses(
     # retained as an offline fallback, but it cannot reliably distinguish, for
     # example, a comparison from a course search when programme names contain
     # subject words.
-    semantic_plan = classify_query_semantically(
-        latest_user_message,
-        conversation=structured_context or conversation,
+    semantic_plan = (
+        None
+        if isinstance(intent, NewCoursesIntent)
+        else classify_query_semantically(
+            latest_user_message,
+            conversation=structured_context or conversation,
+        )
     )
     if semantic_plan is not None:
         semantic_intent = intent_from_query_plan(semantic_plan)
@@ -1367,6 +1373,80 @@ def recommend_courses(
             intent=intent,
             academic_year=academic_year,
             language=response_language,
+        )
+
+    if isinstance(intent, NewCoursesIntent):
+        try:
+            changes = get_new_courses(session, academic_year)
+        except CatalogComparisonError:
+            comparison_year = f"{int(academic_year[:4]) - 1}-{academic_year[:4]}"
+            return ChatResponse(
+                reply=(
+                    f"Jeg kan ikke sammenligne kursuskatalogerne endnu, fordi data for "
+                    f"{comparison_year} eller {academic_year} mangler."
+                    if response_language == "da"
+                    else f"I cannot compare the course catalogues yet because data for "
+                    f"{comparison_year} or {academic_year} is missing."
+                ),
+                understood=UnderstoodContext(topic="new courses"),
+                academicYear=academic_year,
+                responseLanguage=response_language,
+                isDirectAnswer=True,
+                resultMode="all",
+            )
+
+        recommendations = []
+        for item in changes.courses:
+            course = item.course
+            if item.classification == "renumbered":
+                old_numbers = ", ".join(item.previous_course_numbers)
+                reason = (
+                    f"Nyt kursusnummer; erstatter {old_numbers}."
+                    if response_language == "da"
+                    else f"New course number; replaces {old_numbers}."
+                )
+            else:
+                reason = (
+                    f"Findes ikke i kursuskataloget for {changes.previous_academic_year}."
+                    if response_language == "da"
+                    else f"Does not appear in the {changes.previous_academic_year} course catalogue."
+                )
+            title = (
+                course.title_da or course.title_en or course.title
+                if response_language == "da"
+                else course.title_en or course.title_da or course.title
+            )
+            recommendations.append(
+                RecommendedCourse(
+                    courseNumber=course.course_number,
+                    title=title,
+                    ects=float(course.ects) if course.ects is not None else None,
+                    level=course.level,
+                    period=course.period,
+                    schedule=course.schedule,
+                    language=course.language,
+                    department=course.department,
+                    description=_short_description(course.description),
+                    reason=reason,
+                    sourceUrl=course.source_url,
+                )
+            )
+
+        reply = (
+            f"Jeg fandt {len(changes.courses)} nye kurser i {academic_year}: "
+            f"{changes.created_count} er nyoprettede, og {changes.renumbered_count} har fået nyt kursusnummer."
+            if response_language == "da"
+            else f"I found {len(changes.courses)} new courses in {academic_year}: "
+            f"{changes.created_count} are newly created and {changes.renumbered_count} have a new course number."
+        )
+        return ChatResponse(
+            reply=reply,
+            understood=UnderstoodContext(topic="new courses"),
+            recommendations=recommendations,
+            academicYear=academic_year,
+            responseLanguage=response_language,
+            isDirectAnswer=True,
+            resultMode="all",
         )
 
     # 2. Specialization Q&A — deterministic database answer with structured requirements
