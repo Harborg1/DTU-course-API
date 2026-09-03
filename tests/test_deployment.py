@@ -45,6 +45,8 @@ def test_homepage_has_localized_how_it_works_guide_with_generic_prompts():
     assert 'howPromptProgrammeRecommendation: "Jeg interesserer mig for <emne>. Hvilke studier kan du anbefale?"' in script
     assert 'howPromptCourses: "Find kurser på <ECTS> ECTS om <emne> på <studieniveau>"' in script
     assert 'howPromptAllCourses: "Find alle kurser på <ECTS> ECTS om <emne> på <studieniveau>"' in script
+    assert "Find new courses about &lt;topic&gt;" in homepage
+    assert 'howPromptNewCourses: "Find nye kurser om <emne>"' in script
     assert 'howAllResultsText: "Tilføj “alle” for at få samtlige matchende kurser' in script
     assert "howItWorksDialog.showModal()" in script
     assert "input.value = translations[currentLanguage][button.dataset.templateKey]" in script
