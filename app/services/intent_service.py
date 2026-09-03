@@ -63,6 +63,8 @@ class OpenQuestionIntent(Intent):
 class NewCoursesIntent(Intent):
     type: str = "new_courses"
     level: str = ""
+    topic: str = ""
+    ects: Decimal | None = None
 
 
 _STUDY_PLAN_INDICATORS = [
@@ -332,9 +334,11 @@ _CURRENT_STUDY_INDICATORS = (
 )
 
 _NEW_COURSES_PATTERNS = (
-    r"\b(?:nyt|nye)\s+(?:(?:bsc|msc|ph\.?d\.?|bachelor|kandidat)[\s-]*)?(?:kursus|kurser)\b",
+    r"\b(?:nyt|nye)\s+(?:(?:bsc|msc|ph\.?d\.?|bachelor|kandidat)[\s-]*)?"
+    r"(?:(?:\d{1,3}(?:[.,]\d+)?)\s*ects[\s-]*)?(?:kursus|kurser)\b",
     r"\b(?:kursus|kurser)\s+(?:er|der er)\s+(?:nyt|nye)\b",
-    r"\bnew\s+(?:(?:bsc|msc|ph\.?d\.?|bachelor|master)[\s-]*)?courses?\b",
+    r"\bnew\s+(?:(?:bsc|msc|ph\.?d\.?|bachelor|master)[\s-]*)?"
+    r"(?:(?:\d{1,3}(?:[.,]\d+)?)\s*ects[\s-]*)?courses?\b",
     r"\bcourses?\s+(?:are|is)\s+new\b",
 )
 
@@ -386,7 +390,7 @@ def extract_recommendation_topic(text: str) -> str:
     patterns = (
         r"(?:kan godt lide|kan lide|glad for|interesserer mig for|interesseret i|interesse for)\s+([^.!?,;]+)",
         r"(?:i like|i enjoy|interested in|interest in)\s+([^.!?,;]+)",
-        r"(?:inden for|relateret til|related to|about)\s+([^.!?,;]+)",
+        r"(?:inden for|relateret til|related to|om|about)\s+([^.!?,;]+)",
     )
     for pattern in patterns:
         match = re.search(pattern, normalized)
@@ -394,6 +398,16 @@ def extract_recommendation_topic(text: str) -> str:
             topic = match.group(1).strip(" -")
             topic = re.split(
                 r"\b(?:på|at)\s+(?:bsc|msc|bachelor|master|kandidat)(?:-niveau)?\b",
+                topic,
+                maxsplit=1,
+            )[0].strip()
+            topic = re.split(
+                r"\s+(?:på|at|with|worth)\s+\d{1,3}(?:[.,]\d+)?\s*ects\b",
+                topic,
+                maxsplit=1,
+            )[0].strip()
+            topic = re.split(
+                r"\s+(?:og|and)\s+\d{1,3}(?:[.,]\d+)?\s*ects\b",
                 topic,
                 maxsplit=1,
             )[0].strip()
@@ -452,6 +466,18 @@ def extract_course_level(text: str) -> str:
     )
 
 
+def extract_course_ects(text: str) -> Decimal | None:
+    """Extract an exact, valid ECTS value from a course request."""
+    match = re.search(r"\b(\d{1,3}(?:[.,]\d+)?)\s*ects\b", text.casefold())
+    if match is None:
+        return None
+    try:
+        value = Decimal(match.group(1).replace(",", "."))
+    except (ValueError, ArithmeticError):
+        return None
+    return value if Decimal("0") < value <= Decimal("120") else None
+
+
 def is_specialization_related(text: str) -> bool:
     """Check if text asks about a programme specialization or study track."""
     normalized = text.casefold()
@@ -478,7 +504,12 @@ def classify_intent(text: str) -> Intent:
         return CourseQAIntent(confidence=1.0, course_number=course_number)
 
     if is_new_courses_related(text):
-        return NewCoursesIntent(confidence=0.95, level=extract_course_level(text))
+        return NewCoursesIntent(
+            confidence=0.95,
+            level=extract_course_level(text),
+            topic=extract_recommendation_topic(text),
+            ects=extract_course_ects(text),
+        )
 
     if is_study_program_recommendation(text):
         return StudyProgramRecommendationIntent(

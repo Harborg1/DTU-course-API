@@ -1,10 +1,12 @@
 from dataclasses import dataclass
+from decimal import Decimal
 from typing import Literal
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session, selectinload
 
 from app.models.course import Course
+from app.services.search_service import search_courses
 
 
 class CatalogComparisonError(ValueError):
@@ -24,6 +26,8 @@ class NewCoursesResult:
     previous_academic_year: str
     courses: tuple[NewCourse, ...]
     level: str | None = None
+    topic: str | None = None
+    ects: Decimal | None = None
 
     @property
     def created_count(self) -> int:
@@ -51,6 +55,8 @@ def get_new_courses(
     previous_academic_year: str | None = None,
     *,
     level: str | None = None,
+    topic: str | None = None,
+    ects: Decimal | None = None,
 ) -> NewCoursesResult:
     """Return courses absent by number from the preceding catalogue.
 
@@ -69,19 +75,6 @@ def get_new_courses(
             f"No course data is imported for comparison year {comparison_year}"
         )
 
-    current_query = (
-        select(Course)
-        .options(selectinload(Course.translations))
-        .where(Course.academic_year == academic_year)
-        .order_by(Course.course_number)
-    )
-    if level:
-        current_query = current_query.where(Course.level == level)
-    current_courses = tuple(
-        session.scalars(
-            current_query
-        )
-    )
     current_catalogue_exists = session.scalar(
         select(Course.id).where(Course.academic_year == academic_year).limit(1)
     )
@@ -89,6 +82,37 @@ def get_new_courses(
         raise CatalogComparisonError(
             f"No course data is imported for academic year {academic_year}"
         )
+
+    normalized_topic = topic.strip() if topic else None
+    if normalized_topic:
+        matches = search_courses(
+            session,
+            q=normalized_topic,
+            academic_year=academic_year,
+            ects=ects,
+            level=level,
+            search_all_languages=True,
+            limit=100_000,
+        )
+        current_courses = tuple(
+            course
+            for course, _score in sorted(
+                matches.courses,
+                key=lambda item: item[0].course_number.casefold(),
+            )
+        )
+    else:
+        current_query = (
+            select(Course)
+            .options(selectinload(Course.translations))
+            .where(Course.academic_year == academic_year)
+            .order_by(Course.course_number)
+        )
+        if level:
+            current_query = current_query.where(Course.level == level)
+        if ects is not None:
+            current_query = current_query.where(Course.ects == ects)
+        current_courses = tuple(session.scalars(current_query))
 
     new_courses = []
     for course in current_courses:
@@ -110,4 +134,6 @@ def get_new_courses(
         previous_academic_year=comparison_year,
         courses=tuple(new_courses),
         level=level,
+        topic=normalized_topic,
+        ects=ects,
     )

@@ -149,6 +149,21 @@ class TestClassifyIntent:
         assert isinstance(intent, NewCoursesIntent)
         assert intent.level == level
 
+    @pytest.mark.parametrize(
+        ("prompt", "topic", "ects"),
+        [
+            ("Hvilke nye kurser er der om machine learning på 5 ECTS?", "machine learning", 5),
+            ("Vis nye 7,5 ECTS kurser om kunstig intelligens", "kunstig intelligens", 7.5),
+            ("Show new courses about artificial intelligence worth 10 ECTS", "artificial intelligence", 10),
+        ],
+    )
+    def test_new_courses_intent_extracts_topic_and_ects(self, prompt, topic, ects):
+        intent = classify_intent(prompt)
+
+        assert isinstance(intent, NewCoursesIntent)
+        assert intent.topic == topic
+        assert float(intent.ects) == ects
+
     def test_study_plan_with_english_keywords(self):
         intent = classify_intent("how is my degree structured?")
         assert isinstance(intent, StudyPlanIntent)

@@ -1381,6 +1381,8 @@ def recommend_courses(
                 session,
                 academic_year,
                 level=intent.level or None,
+                topic=intent.topic or None,
+                ects=intent.ects,
             )
         except CatalogComparisonError:
             comparison_year = f"{int(academic_year[:4]) - 1}-{academic_year[:4]}"
@@ -1437,6 +1439,15 @@ def recommend_courses(
             )
 
         total = len(changes.courses)
+        topic_da = f" om {intent.topic}" if intent.topic else ""
+        topic_en = f" about {intent.topic}" if intent.topic else ""
+        ects_text = (
+            format(intent.ects.normalize(), "f")
+            if intent.ects is not None
+            else ""
+        )
+        ects_da = f" på {ects_text} ECTS" if ects_text else ""
+        ects_en = f" worth {ects_text} ECTS" if ects_text else ""
         level_da = f" på {intent.level}-niveau" if intent.level else ""
         level_en = f" at {intent.level} level" if intent.level else ""
         course_label_da = "nyt kursus" if total == 1 else "nye kurser"
@@ -1444,16 +1455,20 @@ def recommend_courses(
         created_verb_en = "is" if changes.created_count == 1 else "are"
         renumbered_verb_en = "has" if changes.renumbered_count == 1 else "have"
         reply = (
-            f"Jeg fandt {total} {course_label_da}{level_da} i {academic_year}: "
+            f"Jeg fandt {total} {course_label_da}{topic_da}{ects_da}{level_da} i {academic_year}: "
             f"{changes.created_count} er nyoprettede, og {changes.renumbered_count} har fået nyt kursusnummer."
             if response_language == "da"
-            else f"I found {total} {course_label_en}{level_en} in {academic_year}: "
+            else f"I found {total} {course_label_en}{topic_en}{ects_en}{level_en} in {academic_year}: "
             f"{changes.created_count} {created_verb_en} newly created and "
             f"{changes.renumbered_count} {renumbered_verb_en} a new course number."
         )
         return ChatResponse(
             reply=reply,
-            understood=UnderstoodContext(topic="new courses", level=intent.level or None),
+            understood=UnderstoodContext(
+                topic=intent.topic or "new courses",
+                level=intent.level or None,
+                ects=float(intent.ects) if intent.ects is not None else None,
+            ),
             recommendations=recommendations,
             academicYear=academic_year,
             responseLanguage=response_language,

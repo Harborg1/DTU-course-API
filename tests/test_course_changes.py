@@ -1,4 +1,5 @@
 from datetime import UTC, datetime
+from decimal import Decimal
 
 import pytest
 
@@ -16,6 +17,8 @@ def _course(
     *,
     previous_course_numbers: list[str] | None = None,
     level: str | None = None,
+    ects: Decimal | int | float | None = None,
+    topic: str | None = None,
 ) -> Course:
     now = datetime.now(UTC)
     return Course(
@@ -27,9 +30,18 @@ def _course(
         updated_at=now,
         previous_course_numbers=previous_course_numbers or [],
         level=level,
+        ects=ects,
         translations=[
-            CourseTranslation(language_code="da-DK", title=f"Dansk {number}"),
-            CourseTranslation(language_code="en-GB", title=f"English {number}"),
+            CourseTranslation(
+                language_code="da-DK",
+                title=f"Dansk {number}",
+                description=topic,
+            ),
+            CourseTranslation(
+                language_code="en-GB",
+                title=f"English {number}",
+                description=topic,
+            ),
         ],
     )
 
@@ -92,3 +104,52 @@ def test_filters_new_courses_by_level(db_session, level, expected_numbers):
 
     assert [item.course.course_number for item in result.courses] == expected_numbers
     assert result.level == level
+
+
+@pytest.mark.parametrize(
+    ("ects", "expected_numbers"),
+    [
+        (Decimal("5"), ["01003"]),
+        (Decimal("7.5"), ["01004"]),
+        (Decimal("10"), ["01005"]),
+    ],
+)
+def test_filters_new_courses_by_exact_ects(db_session, ects, expected_numbers):
+    db_session.add_all(
+        [
+            _course("01001", "2025-2026"),
+            _course("01003", "2026-2027", ects=5),
+            _course("01004", "2026-2027", ects=Decimal("7.5")),
+            _course("01005", "2026-2027", ects=10),
+        ]
+    )
+    db_session.commit()
+
+    result = get_new_courses(db_session, "2026-2027", ects=ects)
+
+    assert [item.course.course_number for item in result.courses] == expected_numbers
+    assert result.ects == ects
+
+
+def test_filters_new_courses_by_topic_ects_and_level(db_session):
+    db_session.add_all(
+        [
+            _course("01001", "2025-2026"),
+            _course("01003", "2026-2027", level="MSc", ects=5, topic="machine learning"),
+            _course("01004", "2026-2027", level="MSc", ects=10, topic="machine learning"),
+            _course("01005", "2026-2027", level="BSc", ects=5, topic="machine learning"),
+            _course("01006", "2026-2027", level="MSc", ects=5, topic="artificial intelligence"),
+        ]
+    )
+    db_session.commit()
+
+    result = get_new_courses(
+        db_session,
+        "2026-2027",
+        level="MSc",
+        topic="machine learning",
+        ects=Decimal("5"),
+    )
+
+    assert [item.course.course_number for item in result.courses] == ["01003"]
+    assert result.topic == "machine learning"

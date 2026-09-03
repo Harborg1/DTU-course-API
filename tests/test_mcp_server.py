@@ -146,6 +146,8 @@ def test_discovery_get_new_courses_schema():
     assert "response_language" in change_tool.input_schema["required"]
     assert "previous_academic_year" in change_tool.input_schema["properties"]
     assert change_tool.input_schema["properties"]["level"]["enum"] == ["BSc", "MSc", "PhD"]
+    assert "q" in change_tool.input_schema["properties"]
+    assert "ects" in change_tool.input_schema["properties"]
 
 
 def test_discovery_get_study_plan_schema(test_client):
@@ -508,6 +510,49 @@ def test_get_new_courses_filters_by_level(db_session, monkeypatch):
     )
 
     assert content["level"] == "BSc"
+    assert [course["course_number"] for course in content["courses"]] == ["01003"]
+
+
+def test_get_new_courses_filters_by_topic_and_ects(db_session, monkeypatch):
+    import app.database
+    from app.mcp_server.server import _handle_get_new_courses
+
+    db_session.add_all(
+        [
+            _make_course("01001", "2025-2026"),
+            _make_course("01003", "2026-2027", ects=7.5),
+            _make_course("01004", "2026-2027", ects=5),
+            _make_course(
+                "01005",
+                "2026-2027",
+                ects=7.5,
+                title="Introduction to Physics",
+                title_da="Introduktion til fysik",
+                title_en="Introduction to Physics",
+                content="wave equations",
+                content_da="bølgeligninger",
+                content_en="wave equations",
+            ),
+        ]
+    )
+    db_session.commit()
+    monkeypatch.setattr(
+        app.database,
+        "SessionLocal",
+        sessionmaker(bind=db_session.get_bind(), expire_on_commit=False),
+    )
+
+    content = _handle_get_new_courses(
+        {
+            "academic_year": "2026-2027",
+            "response_language": "en",
+            "q": "machine learning",
+            "ects": 7.5,
+        }
+    )
+
+    assert content["query"] == "machine learning"
+    assert content["ects"] == 7.5
     assert [course["course_number"] for course in content["courses"]] == ["01003"]
 
 

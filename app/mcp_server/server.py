@@ -126,6 +126,16 @@ _GET_NEW_COURSES_SCHEMA: dict[str, Any] = {
             "description": "Optional course level filter",
             "enum": ["BSc", "MSc", "PhD"],
         },
+        "q": {
+            "type": "string",
+            "description": "Optional subject keyword or phrase, preferably canonical English",
+        },
+        "ects": {
+            "type": "number",
+            "description": "Optional exact ECTS filter (e.g. 5, 7.5, 10)",
+            "exclusiveMinimum": 0,
+            "maximum": 120,
+        },
         "limit": {
             "type": "integer",
             "description": "Maximum number of course entries to return (max 200)",
@@ -208,7 +218,8 @@ _GET_NEW_COURSES_TOOL = Tool(
     description=(
         "Compare two imported DTU course catalogues and list courses whose number is absent "
         "from the previous year. Uses DTU PreviousCourse metadata to distinguish courses that "
-        "received a new number from courses that were newly created."
+        "received a new number from courses that were newly created. Can filter the result by "
+        "subject keyword, exact ECTS credits, and course level."
     ),
     inputSchema=_GET_NEW_COURSES_SCHEMA,
 )
@@ -409,6 +420,13 @@ def _handle_get_new_courses(arguments: dict[str, Any]) -> dict[str, Any]:
     level = arguments.get("level")
     if level not in {None, "BSc", "MSc", "PhD"}:
         return {"error": "level must be BSc, MSc, or PhD"}
+    query = str(arguments.get("q") or "").strip()
+    try:
+        ects = Decimal(str(arguments["ects"])) if arguments.get("ects") is not None else None
+    except (InvalidOperation, ValueError):
+        return {"error": "ects must be a number"}
+    if ects is not None and not Decimal("0") < ects <= Decimal("120"):
+        return {"error": "ects must be greater than 0 and at most 120"}
     previous_academic_year = None
     if arguments.get("previous_academic_year") is not None:
         previous_academic_year = _academic_year(
@@ -434,6 +452,8 @@ def _handle_get_new_courses(arguments: dict[str, Any]) -> dict[str, Any]:
                 academic_year,
                 previous_academic_year,
                 level=level,
+                topic=query or None,
+                ects=ects,
             )
         except CatalogComparisonError as exc:
             return {"error": str(exc)}
@@ -461,6 +481,8 @@ def _handle_get_new_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             "academic_year": result.academic_year,
             "previous_academic_year": result.previous_academic_year,
             "level": result.level,
+            "query": result.topic,
+            "ects": float(result.ects) if result.ects is not None else None,
             "total": len(result.courses),
             "created_count": result.created_count,
             "renumbered_count": result.renumbered_count,
