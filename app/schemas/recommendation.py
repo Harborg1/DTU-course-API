@@ -50,6 +50,7 @@ class CompletedTurnState(BaseModel):
     course_numbers: list[str] = Field(default_factory=list, max_length=200, alias="courseNumbers")
     study_program_names: list[str] = Field(default_factory=list, max_length=50, alias="studyProgramNames")
     specialization_names: list[str] = Field(default_factory=list, max_length=50, alias="specializationNames")
+    response_language: Literal["da", "en"] | None = Field(default=None, alias="responseLanguage")
 
 
 class ChatRequest(BaseModel):

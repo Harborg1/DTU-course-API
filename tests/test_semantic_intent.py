@@ -174,6 +174,71 @@ def test_semantic_classifier_rejects_low_confidence_and_skips_without_key():
     openai_client.assert_not_called()
 
 
+def test_semantic_classifier_cannot_override_explicit_course_number(db_session, sample_courses):
+    incorrect_plan = _program_overview_plan()
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=incorrect_plan,
+        ) as classifier,
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="The course is taught by the listed teachers.",
+        ) as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["Who teaches course 02450?"],
+            academic_year="2026-2027",
+        )
+
+    classifier.assert_not_called()
+    remote_answer.assert_called_once_with(
+        "Who teaches course 02450?",
+        "2026-2027",
+        response_language="en",
+    )
+    assert response.understood.topic == "course 02450"
+
+
+def test_semantic_language_controls_neutral_request_without_language_history(db_session):
+    plan = SemanticQueryPlan(
+        domain="general",
+        operation="overview",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=None,
+        topics=[],
+        language="da",
+        confidence=1,
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=plan,
+        ),
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="Jeg kan hjælpe med DTU-kurser og studieprogrammer.",
+        ) as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["DTU"],
+            academic_year="2026-2027",
+        )
+
+    remote_answer.assert_called_once_with(
+        "DTU",
+        "2026-2027",
+        response_language="da",
+    )
+    assert response.response_language == "da"
+
+
 def test_semantic_programme_recommendation_and_clarification_map_to_dedicated_intents():
     recommendation_plan = _program_overview_plan(
         operation="recommend",
@@ -319,6 +384,91 @@ def test_semantic_program_overview_is_database_backed_and_marks_specializations_
         "Software Engineering",
     ]
     assert all(item.is_optional for item in response.specializations)
+
+
+def test_explicit_studieplan_cannot_become_programme_recommendations(db_session):
+    program = StudyProgram(
+        slug="computer-science-and-engineering",
+        name="Computer Science and Engineering",
+        degree_type="Master",
+        aliases=[],
+        academic_year="2026-2027",
+        source_url="https://student.dtu.dk/cse",
+        content_hash="d" * 64,
+    )
+    db_session.add(program)
+    db_session.commit()
+    incorrect_recommendation_plan = _program_overview_plan(
+        operation="list",
+        program_mention=None,
+        topic="computer science",
+        language="da",
+    )
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=incorrect_recommendation_plan,
+        ) as classifier,
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            return_value="Her er studieplanen for Computer Science and Engineering.",
+        ) as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["computer science studieplan"],
+            academic_year="2026-2027",
+        )
+
+    classifier.assert_not_called()
+    remote_answer.assert_called_once_with(
+        "computer science studieplan\n\n"
+        "Identificeret studieprogram: Computer Science and Engineering (Master).",
+        "2026-2027",
+        response_language="da",
+    )
+    assert response.understood.topic == "study plan qa"
+    assert response.understood.program == "Computer Science and Engineering"
+    assert response.study_programs == []
+    assert response.study_plan is not None
+    assert response.response_language == "da"
+
+
+def test_danish_studieguide_remains_a_programme_overview(db_session):
+    program = StudyProgram(
+        slug="computer-science-and-engineering",
+        name="Computer Science and Engineering",
+        degree_type="Master",
+        aliases=[],
+        academic_year="2026-2027",
+        introduction="En kandidatuddannelse i datalogi og softwareudvikling.",
+        source_url="https://student.dtu.dk/cse",
+        content_hash="e" * 64,
+    )
+    db_session.add(program)
+    db_session.commit()
+    overview_plan = _program_overview_plan(language="da")
+
+    with (
+        patch(
+            "app.services.recommendation_service.classify_query_semantically",
+            return_value=overview_plan,
+        ) as classifier,
+        patch("app.services.recommendation_service.answer_with_remote_mcp") as remote_answer,
+    ):
+        response = recommend_courses(
+            db_session,
+            messages=["computer science studieguide"],
+            academic_year="2026-2027",
+        )
+
+    classifier.assert_called_once()
+    remote_answer.assert_not_called()
+    assert response.understood.topic == "program overview"
+    assert response.understood.program == "Computer Science and Engineering"
+    assert response.study_programs == []
+    assert response.response_language == "da"
 
 
 def test_all_course_search_unions_topics_deduplicates_and_bypasses_mcp(db_session, sample_courses):

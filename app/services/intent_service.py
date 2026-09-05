@@ -524,7 +524,7 @@ def classify_intent(text: str) -> Intent:
         requires_section = any(kw in keywords for kw in ["programme-specific", "project", "bachelor", "master"])
 
         return StudyPlanIntent(
-            confidence=0.8,
+            confidence=0.9,
             query_keywords=keywords,
             requires_ects_calculation=requires_ects,
             requires_course_count=requires_course_count,

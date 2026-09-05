@@ -96,4 +96,5 @@ def build_completed_turn(request: str, response: ChatResponse) -> CompletedTurnS
         courseNumbers=course_numbers,
         studyProgramNames=[program.name for program in response.study_programs],
         specializationNames=[item.name for item in response.specializations],
+        responseLanguage=response.response_language,
     )

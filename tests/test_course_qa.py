@@ -175,6 +175,53 @@ def test_course_question_nonexistent_course(client, sample_courses):
     assert "ikke finde" in body["reply"] or "kunne ikke" in body["reply"]
 
 
+def test_english_course_question_has_english_not_found_answer(client, sample_courses):
+    response = client.post(
+        "/api/chat",
+        json={
+            "messages": [
+                {
+                    "role": "user",
+                    "content": "Who teaches course 99999?",
+                }
+            ]
+        },
+    )
+
+    assert response.status_code == 200
+    body = response.json()
+    assert body["responseLanguage"] == "en"
+    assert body["reply"].startswith("I could not find course 99999")
+
+
+def test_neutral_follow_up_reuses_completed_turn_response_language(client, sample_courses):
+    with patch(
+        "app.services.recommendation_service.answer_with_remote_mcp",
+        return_value="Her er flere oplysninger om kurset.",
+    ) as answer:
+        response = client.post(
+            "/api/chat",
+            json={
+                "messages": [{"role": "user", "content": "02450"}],
+                "completedTurns": [
+                    {
+                        "request": "Hvilke kurser handler om machine learning?",
+                        "operation": "course_search",
+                        "topic": "machine learning",
+                        "responseLanguage": "da",
+                    }
+                ],
+            },
+        )
+
+    assert response.status_code == 200
+    body = response.json()
+    assert body["responseLanguage"] == "da"
+    assert body["turnState"]["responseLanguage"] == "da"
+    assert body["reply"] == "Her er flere oplysninger om kurset."
+    assert answer.call_args.kwargs["response_language"] == "da"
+
+
 def test_recommend_courses_with_course_number_uses_llm(db_session, sample_courses):
     with patch(
         "app.services.recommendation_service.answer_with_remote_mcp",
@@ -214,3 +261,57 @@ def test_recommend_courses_without_llm_key_returns_clear_unavailable_answer(db_s
     assert result.is_direct_answer is True
     assert result.understood.topic == "course 02450"
     assert "AI-svaret kunne ikke hentes" in result.reply
+
+
+def test_english_course_failure_returns_localized_unavailable_answer(db_session, sample_courses):
+    with patch(
+        "app.services.recommendation_service.answer_with_remote_mcp",
+        side_effect=CourseQAError("unavailable"),
+    ):
+        result = recommend_courses(
+            db_session,
+            messages=["Who teaches course 02450?"],
+            academic_year="2026-2027",
+        )
+
+    assert result.response_language == "en"
+    assert result.reply.startswith("I found course 02450")
+    assert "currently unavailable" in result.reply
+
+
+def test_open_question_failure_does_not_fall_through_to_course_search(db_session):
+    with (
+        patch(
+            "app.services.recommendation_service.answer_with_remote_mcp",
+            side_effect=CourseQAError("unavailable"),
+        ),
+        patch("app.services.recommendation_service.search_courses") as course_search,
+    ):
+        result = recommend_courses(
+            db_session,
+            messages=["Tell me what this application can do"],
+            academic_year="2026-2027",
+        )
+
+    course_search.assert_not_called()
+    assert result.response_language == "en"
+    assert result.understood.topic == "general question"
+    assert result.reply.startswith("I could not retrieve the AI answer")
+    assert result.recommendations == []
+
+
+def test_english_recommendation_fallback_is_fully_localized(db_session, sample_courses):
+    with patch(
+        "app.services.recommendation_service.answer_with_remote_mcp",
+        side_effect=CourseQAError("unavailable"),
+    ):
+        result = recommend_courses(
+            db_session,
+            messages=["Recommend machine learning courses"],
+            academic_year="2026-2027",
+        )
+
+    assert result.response_language == "en"
+    assert result.reply.startswith("I found 1 relevant courses")
+    assert result.recommendations[0].title == "Introduction to Machine Learning"
+    assert result.recommendations[0].reason.startswith("The course content matches")

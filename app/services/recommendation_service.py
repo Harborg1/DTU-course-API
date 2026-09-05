@@ -48,7 +48,7 @@ from app.services.intent_service import (
     is_course_target,
     is_study_program_target,
 )
-from app.services.language_service import detect_user_language
+from app.services.language_service import resolve_response_language
 from app.services.search_service import SearchResult, search_courses
 from app.services.semantic_resolver import SemanticCandidate, resolve_semantic_candidate
 from app.services.semantic_intent_service import (
@@ -1069,15 +1069,25 @@ def _run_search(session: Session, context: RecommendationContext, academic_year:
     return result
 
 
-def _reason(course: Course, context: RecommendationContext) -> str:
-    reasons = [f"Kursets indhold matcher emnet {context.topic}"]
+def _reason(course: Course, context: RecommendationContext, language: str) -> str:
+    if language == "da":
+        reasons = [f"Kursets indhold matcher emnet {context.topic}"]
+        if context.level and course.level and context.level.casefold() in course.level.casefold():
+            reasons.append(f"det er angivet på {course.level}-niveau")
+        if context.ects is not None and course.ects == context.ects:
+            reasons.append(f"det giver {float(course.ects):g} ECTS")
+        if context.language and course.language == context.language:
+            reasons.append(f"undervisningssproget er {course.language}")
+        return ", og ".join(reasons) + "."
+
+    reasons = [f"The course content matches the topic {context.topic}"]
     if context.level and course.level and context.level.casefold() in course.level.casefold():
-        reasons.append(f"det er angivet på {course.level}-niveau")
+        reasons.append(f"it is listed at {course.level} level")
     if context.ects is not None and course.ects == context.ects:
-        reasons.append(f"det giver {float(course.ects):g} ECTS")
+        reasons.append(f"it is worth {float(course.ects):g} ECTS")
     if context.language and course.language == context.language:
-        reasons.append(f"undervisningssproget er {course.language}")
-    return ", og ".join(reasons) + "."
+        reasons.append(f"the teaching language is {course.language}")
+    return ", and ".join(reasons) + "."
 
 
 def _short_description(description: str | None) -> str | None:
@@ -1300,7 +1310,6 @@ def recommend_courses(
     turns = completed_turns or []
     conversation = " ".join(messages)
     latest_user_message = messages[-1] if messages else ""
-    response_language = detect_user_language(latest_user_message)
     structured_context = completed_turns_context(turns)
     remote_question = model_question(latest_user_message, turns) if turns else conversation
 
@@ -1326,13 +1335,12 @@ def recommend_courses(
                 confidence=0.95,
                 topic=previous_topic,
             )
-    # The semantic plan is the general operation boundary. Keyword routing is
-    # retained as an offline fallback, but it cannot reliably distinguish, for
-    # example, a comparison from a course search when programme names contain
-    # subject words.
+    # Semantic routing is a fallback for intents that the deterministic router
+    # could not identify with high confidence. This prevents a model guess from
+    # replacing explicit signals such as a five-digit course number.
     semantic_plan = (
         None
-        if isinstance(intent, NewCoursesIntent)
+        if intent.confidence >= 0.9
         else classify_query_semantically(
             latest_user_message,
             conversation=structured_context or conversation,
@@ -1342,6 +1350,13 @@ def recommend_courses(
         semantic_intent = intent_from_query_plan(semantic_plan)
         if semantic_intent is not None:
             intent = semantic_intent
+
+    response_language = resolve_response_language(
+        latest_user_message,
+        previous_messages=messages[:-1],
+        previous_languages=[turn.response_language for turn in turns],
+        inferred_language=semantic_plan.language if semantic_plan is not None else None,
+    )
 
     resolution_text = (
         _referenced_state_text(latest_user_message, semantic_plan, turns)
@@ -1527,20 +1542,28 @@ def recommend_courses(
                     reply=(
                         f"Jeg fandt kursus {intent.course_number}, men AI-svaret kunne ikke hentes lige nu. "
                         "Prøv igen om et øjeblik."
+                        if response_language == "da"
+                        else f"I found course {intent.course_number}, but the AI answer is currently unavailable. "
+                        "Please try again in a moment."
                     ),
                     understood=UnderstoodContext(topic=f"course {course.course_number}", level=course.level),
                     recommendations=[],
                     academicYear=academic_year,
+                    responseLanguage=response_language,
                     isDirectAnswer=True,
                 )
         return ChatResponse(
             reply=(
                 f"Jeg kunne ikke finde kursus {intent.course_number}. "
                 "Tjek venligst at du har skrevet et 5-cifret kursusnummer."
+                if response_language == "da"
+                else f"I could not find course {intent.course_number}. "
+                "Please check that you entered a five-digit course number."
             ),
             understood=UnderstoodContext(topic="course not found"),
             recommendations=[],
             academicYear=academic_year,
+            responseLanguage=response_language,
         )
 
     # 3. Study Plan Q&A — Groq via remote MCP, fallback to static plan
@@ -1695,7 +1718,18 @@ def recommend_courses(
             )
         except CourseQAError:
             logger.exception("Groq could not answer an open question")
-            pass  # fall through to regex search
+            return ChatResponse(
+                reply=(
+                    "Jeg kunne ikke hente AI-svaret lige nu. Prøv igen om et øjeblik."
+                    if response_language == "da"
+                    else "I could not retrieve the AI answer right now. Please try again in a moment."
+                ),
+                understood=UnderstoodContext(topic="general question"),
+                recommendations=[],
+                academicYear=academic_year,
+                responseLanguage=response_language,
+                isDirectAnswer=True,
+            )
 
     # Fallback — regex-based search (unchanged)
     context = (
@@ -1712,15 +1746,15 @@ def recommend_courses(
     courses = [
         RecommendedCourse(
             courseNumber=course.course_number,
-            title=course.title,
+            title=course.translated_value("title", response_language) or course.title,
             ects=float(course.ects) if course.ects is not None else None,
             level=course.level,
             period=course.period,
             schedule=course.schedule,
             language=course.language,
             department=course.department,
-            description=_short_description(course.description),
-            reason=_reason(course, context),
+            description=_short_description(course.translated_value("description", response_language)),
+            reason=_reason(course, context, response_language),
             sourceUrl=course.source_url,
         )
         for course, _score in ranked_courses
@@ -1735,16 +1769,25 @@ def recommend_courses(
     if courses:
         qualifiers = [context.topic]
         if context.level:
-            qualifiers.append(f"{context.level}-niveau")
+            qualifiers.append(
+                f"{context.level}-niveau" if response_language == "da" else f"{context.level} level"
+            )
         reply = (
             f"Jeg fandt {len(courses)} relevante kurser til "
             f"{', '.join(qualifiers)}. Se anbefalingerne nedenfor, og kontrollér altid "
             "forudsætninger og den aktuelle kursusbeskrivelse via DTU-linket."
+            if response_language == "da"
+            else f"I found {len(courses)} relevant courses for "
+            f"{', '.join(qualifiers)}. See the recommendations below, and always check "
+            "the prerequisites and current course description via the DTU link."
         )
     else:
         reply = (
             "Jeg kunne ikke finde kurser, der matcher det endnu. Prøv at skrive et mere konkret "
             "emne, eksempelvis machine learning, optimization eller computer vision."
+            if response_language == "da"
+            else "I could not find any matching courses yet. Try a more specific topic, "
+            "such as machine learning, optimization, or computer vision."
         )
     return ChatResponse(
         reply=reply,
