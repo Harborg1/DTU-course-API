@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="47333" Volume="2026/2027" University="dtu" LastUpdated="2025-03-25+01:00">
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
-        <Study_Board Study_BoardKey="47" />
+      <Course CourseCode="47333" Volume="2026/2027" University="dtu" LastUpdated="2026-09-04+02:00">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Elektronmikroskopi til materialeforskning" />
         <Title Lang="en-GB" Title="Electron microscopy for materials science" />
         <Description_Language Lang="da-DK" />
@@ -22,6 +21,7 @@
           <Main_Dep UID="47" University="DTU" Resources="66" KVL_Resources="100" />
           <Ass_Dep UID="59" Resources="34" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
         </Departments>
+        <Study_Board Study_BoardKey="47" />
         <Course_Responsible PersonKey="37097" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
             <GivenName>Søren Bredmose</GivenName>
@@ -54,6 +54,7 @@
           <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E3A" />
+            <Schedule ScheduleKey="F3A" />
           </Date_Of_Exam>
           <Duration Lang="da-DK" Txt="30 minutter" />
           <Duration Lang="en-GB" Txt="30 minutter" />
@@ -175,7 +176,7 @@ SEM: scanning electron microscopy, TEM: transmission electron microscopy, STEM: 
         </TeacherTypesDistribuition>
         <Restrictions Max="32" Min="10" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:16.027" />
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-09-04" Time="10:39:39.253" />
         </Record_Info>
       </Course>
     </CourseXml>
