@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="62218" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+      <Course CourseCode="62218" Volume="2026/2027" University="dtu" LastUpdated="2026-09-07+02:00">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
         <Title Lang="da-DK" Title="Grundlæggende Naturvidenskab" />
@@ -28,6 +28,13 @@
             <Email>halo@dtu.dk</Email>
           </Description>
         </Course_Responsible>
+        <Course_Responsible PersonKey="54573" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Toke Lynæs</GivenName>
+            <FamilyName>Larsen</FamilyName>
+            <Email>tll@adk.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
           <Evaluation EvaluationKey="GLOB_EXTERN" />
           <Assessment>
@@ -38,6 +45,7 @@
           <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
           </Date_Of_Exam>
         </Examination>
         <Sign_Up>
@@ -165,7 +173,7 @@ Mandatory course, Global Business Engineering 1. semester</Remark>
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:00.4" />
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-09-07" Time="10:19:55.277" />
         </Record_Info>
       </Course>
     </CourseXml>

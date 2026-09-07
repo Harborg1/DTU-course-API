@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="46711" University="dtu" LastUpdated="2024-06-19+02:00" Volume="2026/2027">
-        <Study_Board Study_BoardKey="46" />
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+      <Course CourseCode="46711" University="dtu" LastUpdated="2026-09-04+02:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Stabilitet og kontrol i elforsyningssystemer" />
         <Title Lang="en-GB" Title="Stability and control in electric power systems" />
         <Description_Language Lang="da-DK" />
@@ -22,6 +21,7 @@
         <Departments>
           <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="46" />
         <Course_Responsible PersonKey="86696" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
             <GivenName>Oscar</GivenName>
@@ -47,6 +47,7 @@
           <Aid AidKey="NO_AID" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="F5B" />
           </Date_Of_Exam>
           <DurationKey Key="3H" />
         </Examination>
@@ -123,7 +124,7 @@ For the assignments, students must work in groups of max. 4.</Teaching_And_Learn
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:46.217" />
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-09-04" Time="08:07:58.69" />
         </Record_Info>
       </Course>
     </CourseXml>
