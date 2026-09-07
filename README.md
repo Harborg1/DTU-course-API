@@ -120,7 +120,10 @@ python scripts/get_all_course_information.py --year-group 2026/2027
 
 # Opret/opgradér courses-tabellen og importér de gemte XML-filer
 alembic upgrade head
-python -m importer.course_xml_cli --academic-year 2026-2027
+python -m importer.course_xml_cli \
+  --academic-year 2026-2027 \
+  --prune \
+  --course-numbers course_numbers.txt
 
 # Generér kun manglende eller ændrede embeddings efter kursusimporten
 python -m importer.course_embedding_cli --academic-year 2026-2027
@@ -201,7 +204,10 @@ specialiseringer har Computer Science and Engineering?” og “Hvilke kurser kr
 Intelligence and Algorithms-specialiseringen?”. Svaret indeholder også et struktureret
 `specializations`-felt med krav, kurser og officielle DTU-kilder.
 
-Kursusimportens slutrapport viser discovered, imported, updated, unchanged og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
+Kursusimportens slutrapport viser discovered, imported, updated, unchanged, deleted og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
+`--prune` sletter kurser for den valgte årgang, som ikke findes i det komplette snapshot.
+Af sikkerhedshensyn kræver funktionen en kursusnummerfil, der matcher XML-mappen nøjagtigt,
+og den sletter ikke noget, hvis en XML-fil ikke kan parses.
 
 ## API
 

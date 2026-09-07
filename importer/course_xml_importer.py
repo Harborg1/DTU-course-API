@@ -35,6 +35,7 @@ class CourseXmlImportSummary:
     courses_imported: int = 0
     courses_updated: int = 0
     courses_unchanged: int = 0
+    courses_deleted: int = 0
     courses_failed: int = 0
 
 
@@ -44,8 +45,24 @@ def import_course_xml_directory(
     *,
     academic_year: str | None = None,
     limit: int | None = None,
+    prune: bool = False,
+    snapshot_course_numbers: set[str] | None = None,
 ) -> CourseXmlImportSummary:
     paths = sorted(directory.glob("*.txt"))
+    path_course_numbers = {path.stem.upper() for path in paths}
+    if prune and academic_year is None:
+        raise ValueError("pruning requires an explicit academic year")
+    if prune and limit is not None:
+        raise ValueError("pruning is not allowed for a limited import")
+    if prune and snapshot_course_numbers is None:
+        raise ValueError("pruning requires a complete course-number snapshot")
+    if prune and path_course_numbers != snapshot_course_numbers:
+        missing_xml = sorted(snapshot_course_numbers - path_course_numbers)
+        unlisted_xml = sorted(path_course_numbers - snapshot_course_numbers)
+        raise ValueError(
+            "course-number snapshot does not match the XML directory: "
+            f"missing XML={missing_xml}, unlisted XML={unlisted_xml}"
+        )
     if limit is not None:
         paths = paths[:limit]
     if not paths:
@@ -87,6 +104,27 @@ def import_course_xml_directory(
             action = upsert_course(session, data)
             setattr(summary, f"courses_{action}", getattr(summary, f"courses_{action}") + 1)
             logger.info("[%d/%d] %s: %s", index, len(parsed), data.course_number, action)
+
+    if prune and not failures:
+        stale_courses = list(
+            session.scalars(
+                select(Course).where(
+                    Course.academic_year == academic_year,
+                    Course.course_number.not_in(snapshot_course_numbers),
+                )
+            )
+        )
+        for course in stale_courses:
+            session.delete(course)
+        summary.courses_deleted = len(stale_courses)
+        if stale_courses:
+            logger.info(
+                "Deleted %d courses absent from the complete %s snapshot",
+                len(stale_courses),
+                academic_year,
+            )
+    elif prune:
+        logger.warning("Skipped pruning because %d XML files failed to parse", len(failures))
 
     successful_numbers = [data.course_number for data in parsed]
     if successful_numbers:

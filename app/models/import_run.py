@@ -19,4 +19,5 @@ class ImportRun(Base):
     courses_imported: Mapped[int] = mapped_column(default=0, nullable=False)
     courses_updated: Mapped[int] = mapped_column(default=0, nullable=False)
     courses_unchanged: Mapped[int] = mapped_column(default=0, nullable=False)
+    courses_deleted: Mapped[int] = mapped_column(default=0, nullable=False)
     courses_failed: Mapped[int] = mapped_column(default=0, nullable=False)
