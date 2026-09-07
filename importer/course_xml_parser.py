@@ -249,7 +249,7 @@ def parse_course_xml(content: bytes | str) -> CourseData:
     prerequisites = _localized_prerequisites(course, "Qualified_Prerequisites_Txt")
     mandatory_prerequisites = _localized_prerequisites(course, "Mandatory_Prerequisites_Txt")
     learning_objectives = _objective_keywords(course)
-
+    
     main_department = _first(course, "Main_Dep")
     study_board = _first(course, "Study_Board")
     sign_up = _first(course, "Sign_Up")

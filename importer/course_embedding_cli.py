@@ -16,7 +16,6 @@ from app.services.embedding_service import (
     embedding_document_from_translation,
 )
 
-
 logger = logging.getLogger(__name__)
 
 

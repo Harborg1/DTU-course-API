@@ -1,0 +1,127 @@
+name: Refresh DTU course data
+
+on:
+  workflow_dispatch:
+    inputs:
+      catalog_version:
+        description: DTU catalog version (YYYY/YYYY)
+        required: true
+        default: "2026/2027"
+        type: string
+  schedule:
+    - cron: "17 4 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-dtu-course-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Download and compare course data
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      CATALOG_VERSION: ${{ inputs.catalog_version || vars.DTU_CATALOG_VERSION || '2026/2027' }}
+      UPDATE_BRANCH: automation/refresh-dtu-course-data
+      BASE_BRANCH: ${{ github.event.repository.default_branch }}
+
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Download a fresh DTU snapshot
+        env:
+          FRESH_ROOT: ${{ runner.temp }}/dtu-course-data
+        run: |
+          ACADEMIC_YEAR="${CATALOG_VERSION/\//-}"
+          mkdir -p "$FRESH_ROOT/course_information"
+          python scripts/get_all_course_numbers.py \
+            --catalog-version "$CATALOG_VERSION" \
+            --output "$FRESH_ROOT/course_numbers.txt"
+          python scripts/get_all_course_information.py \
+            --input "$FRESH_ROOT/course_numbers.txt" \
+            --output-dir "$FRESH_ROOT/course_information" \
+            --year-group "$CATALOG_VERSION"
+          echo "ACADEMIC_YEAR=$ACADEMIC_YEAR" >> "$GITHUB_ENV"
+
+      - name: Compare and apply the fresh snapshot
+        id: comparison
+        env:
+          FRESH_ROOT: ${{ runner.temp }}/dtu-course-data
+          REPORT_PATH: ${{ runner.temp }}/course-data-report.md
+        run: |
+          python github_actions/course_data_refresh.py \
+            --fresh-numbers "$FRESH_ROOT/course_numbers.txt" \
+            --fresh-course-directory "$FRESH_ROOT/course_information" \
+            --catalog-version "$CATALOG_VERSION" \
+            --report "$REPORT_PATH" \
+            --apply
+          git status --porcelain -- \
+            course_numbers.txt app/data/course_information \
+            > "$RUNNER_TEMP/course-data-status.txt"
+          if test -s "$RUNNER_TEMP/course-data-status.txt"; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run the offline test suite
+        if: steps.comparison.outputs.changed == 'true'
+        run: pytest -q
+
+      - name: Commit the refreshed snapshot
+        if: steps.comparison.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add course_numbers.txt app/data/course_information
+          git commit -m "chore(data): refresh DTU course catalog $ACADEMIC_YEAR"
+          git push --force origin "HEAD:refs/heads/$UPDATE_BRANCH"
+
+      - name: Open a pull request
+        if: steps.comparison.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPORT_PATH: ${{ runner.temp }}/course-data-report.md
+        run: |
+          if gh pr list \
+            --repo "$GITHUB_REPOSITORY" \
+            --base "$BASE_BRANCH" \
+            --head "$UPDATE_BRANCH" \
+            --state open \
+            --json number \
+            --jq 'length > 0' | grep -qx true; then
+            echo "An open refresh pull request already exists and has been updated."
+          else
+            gh pr create \
+              --repo "$GITHUB_REPOSITORY" \
+              --base "$BASE_BRANCH" \
+              --head "$UPDATE_BRANCH" \
+              --title "chore(data): refresh DTU course catalog $ACADEMIC_YEAR" \
+              --body-file "$REPORT_PATH"
+          fi
+
+      - name: Upload comparison report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dtu-course-data-report
+          path: ${{ runner.temp }}/course-data-report.md
+          if-no-files-found: ignore
+          retention-days: 30
