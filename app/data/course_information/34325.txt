@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34325" Volume="2026/2027" University="dtu" LastUpdated="2024-04-12+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Kommunikationsteknologier og anvendelsesmuligheder til Internet of Things (IoT)" />
+        <Title Lang="en-GB" Title="Communication technologies and application development for Internet-of-Things (IoT)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="19827" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Martin Nordal</GivenName>
+            <FamilyName>Petersen</FamilyName>
+            <Email>mnpe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til arkitekturer, protokoller og udfordringer inden for IoT-området. Low-Power-Wire-Area-Network (LPWAN) netværksteknologier såsom LoRa, LoRaWAN, SigFox og simple device-to-device RF-forbindelser. Prototyping af enheder baseret på Arduino eller lignende enheder, samt sensorer, som for eksempel temperatursensor, lyssensor, vibrationssensor, afstandssensorer, GPS mv. Den studerende skal planlægge og udvikle deres egne projekter i grupper og arbejdet evalueres udfra en rapport samt en præsentation for holdet . Eksempelemner: Geolocation, EHealth, Medicinsk parameter-overvågning og automatisering. Der vil primært udvikles via C-programmering på Arduino IDE platformen og derved opnå simpel dataindsamling og kommunikation med eksempelvis Bluetooth Low Energy (BLE), RFID eller Lora/LoraWAN. Datakommunikationsprotokoller som MQTT, UDP og HTTP mv vil blive anvendt. Provisioning, device authentication og netværkssikkerhed vil blive anvendt men ikke beskrives i indgående detaljer. IoT-Cloud services som Amazon AWS, Google Cloud eller Microsoft Azure kan anvendes til at behandle, analysere og gemme data fra IoT-enheden. Evaluering er en samlet evaluering baseret på rapport, øvelser og præsentation af prototype-projektet .
+
+Studerende forventes at have grundlæggende viden om kommunikationsteknologier og -protokoller samt grundlæggende Arduinoviden eller erfaring. Der kræves ingen udgifter til bøger, men studerende forventes at investere i et Arduino sensorsæt (~300 DKK)
+
+Bemærk at dette kursus er tiltænkt bachelor studerende på BSc Cyberteknologi.
+Kurset undervises på Engelsk.</Contents>
+          <Teaching_And_Learning_Methods>Lab work / Lectures</Teaching_And_Learning_Methods>
+          <Course_Objectives>Bemærk: Dette kursus er tiltænkt bachelor studerende på BSc Cyberteknologi.
+
+I kurset vil de studerende opnå dybdegående viden om Internet of Things, herunder arkitektur, protokoller og generelle problemstillinger. Hertil full-stack hands-on erfaringer om embedded hardwareudvikling, applikationsudvikling og implementering. Der vil i kurset vil fokus på netværksteknologier, der er relevante for IoT-applikationer, og hvordan man vælger og evaluerer en passende kommunikationsplatform til et specifikt projekt. Device-to-device kommunikation og ad-hoc netværk vil blive diskuteret. Kurset vil give et indblik i state-of-the-art open source og kommercielle hardware og cloudløsningsværktøjer til at bygge innovative IoT-applikationer/tjenester, relevante for at øge energieffektiviteten, forbedre livskvaliteten og/eller øge produktiviteten.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to architectures, protocol principles, and challenges of IoT. Low Power Wire Area Network (LPWAN) networking technologies such as LoRa, LoRaWAN, NBIoT, LTE-M, SigFox, and simple device-device RF connections. Circuit board prototyping using Arduino with sensor devices, including temperature sensor, light sensor, vibration sensor, forcing sensor, geolocation etc. The students will be planning and developing their own projects in groups and evaluated from a report documenting. Example topics: Geolocation, EHealth, Medical parameter monitoring and automation. C programming on Arduino IDE to implement simple data collection, loop control, and data communication with MQTT, Bluetooth Low Energy, Smart, etc. Device authorization and network security. IoT cloud services such as Amazon AWS or Microsoft Azure to process, analyze and store the data from the IoT device, with network security. Evaluation is done as an overall evaluation based on report, exercises and presentation of prototype. 
+
+Students are expected to have basic knowledge about communication technologies, and -protocols, as well as basic Arduino knowledge or experience. No expenses are needed for books but students are expected to invest in an Arduino sensor kit (~300 DKK)
+
+Note that this course is intended for students at BSc Cybertechnology.
+The course is taught in English.</Contents>
+          <Teaching_And_Learning_Methods>Lab work / Lectures</Teaching_And_Learning_Methods>
+          <Course_Objectives>Note that this course is intended for students at BSc Cybertechnology.
+
+The course will let students obtain in-depth knowledge of Internet of Things, including architecture, protocols, and challenges, and gain valuable full-stack hands-on experiences on embedded hardware development, application development and service deployment. Focus will be on networking technologies relevant for IoT applications and how to select and evaluate a suitable communication platform for a specific project. Device to device communication and ad-hoc networking will be discussed. The course will provide students with state-of-the-art open-source hardware and cloud service tools to build innovative IoT applications/services aiming at increasing energy efficiency, improving quality of life, and/or increasing productivity.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv kerneemner og udfordringerne ved Internet of Things." />
+          <Txt Lang="en-GB" Txt="Describe the essence and challenges of Internet of Things." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere netværksprotokoller til forskellige IoT-applikationer." />
+          <Txt Lang="en-GB" Txt="Evaluate networking protocols for different IoT applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer device-to-device kommunikation." />
+          <Txt Lang="en-GB" Txt="Implement device-device communication." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og planlægge implementering af optimal netværksteknologi." />
+          <Txt Lang="en-GB" Txt="Analyse and plan for implementation of optimal networking technology." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle hardware prototype." />
+          <Txt Lang="en-GB" Txt="Develop hardware prototype." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle embeddede programmer til at sende/modtage data til/fra IoT-enheden." />
+          <Txt Lang="en-GB" Txt="Develop embedded programs to transmit/receive data to/from the IoT device." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere state-of-the-art cloud-tjenester." />
+          <Txt Lang="en-GB" Txt="Implement state-of-the-art cloud services in own project." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge cloud-tjenester til at behandle, analysere og gemme IoT-data." />
+          <Txt Lang="en-GB" Txt="Use cloud services to process, analyze and store IoT data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere, demonstrere og præsentere det udviklede IoT-system og applikation." />
+          <Txt Lang="en-GB" Txt="Deploy and showcase the developed IoT system and application." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere projektarbejde i passende dokumentform." />
+          <Txt Lang="en-GB" Txt="Document project work in scientific paper format." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34315 / 34338 / 34322" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="34346" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:10.22" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

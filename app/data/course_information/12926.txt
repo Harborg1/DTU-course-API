@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="12926" Volume="2026/2027" University="dtu" LastUpdated="2026-06-12+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="International Summer School in Non-Targeted Metabolomics Data Mining for Exposomics and Natural Products Research" />
+        <Title Lang="en-GB" Title="International Summer School in Non-Targeted Metabolomics Data Mining for Exposomics and Natural Products Research" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Colorado, US" />
+          <LocationTxt Lang="en-GB" Txt="Colorado, US" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="12" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="27" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Miljø" />
+        <External_Course_Responsible Email="salja@dtu.dk" Name="Scott Alexander Jarmusch" IsContact="true" SortID="1" />
+        <Course_Responsible PersonKey="214599" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Martin</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>marthan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="The day will be concluded with short presentations, where students present their findings from the workshop in groups." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The day will be concluded with short presentations, where students present their findings from the workshop in groups." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="All tools, e.g. computers and internet, are allowed." />
+            <Aid_Txt Lang="da-DK" Txt="All tools, e.g. computers and internet, are allowed." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Day 1: Half a day on basic principles of metabolomics and high-resolution mass spectrometry are introduced. We will focus on data pre-processing the remainder of the time. After a brief overview of available pre-processing methods, participants will be introduced to MZmine and will work on their own or study data. Day 1 is concluded with a social event.
+Day 2: Focus on (pre)-processing will be continued working more with MZmine. Data library annotation, data evaluation and data integration via FERMO.
+Day 3: Focus on metabolite identification and advanced metabolome mining tools, including molecular networking through GNPS and in silico molecular structure annotation through Sirius+CSI:FingerID. Participants will test different metabolite annotation strategies on their own or study data at a nearly full-day workshop. The day will be concluded with a social event to allow for further networking.
+Day 4: Basic statistical methods for metabolomics data analysis, e.g. differential abundance analysis and Principal Component’s Analysis (PCA). FBmn stats guide will be utilized to facilitate online-statistical software. The participants will get hands-on experience from working on their own or study data in a nearly full-day workshop.
+Day 5: Focus on data visualization. We will introduce Cytoscape, for comprehensive network visualization for metabolomics data, including integration of metabolite annotation and statistics results. The participants will conclude the full analysis pipeline from metabolomics preprocessing to metabolite annotation and visualization of results.</Contents>
+          <Teaching_And_Learning_Methods>5 days of lectures, exercises, and workshops (40 h)</Teaching_And_Learning_Methods>
+          <Course_Literature>Schmid R., Heuckeroth S. et al., Integrative analysis of multimodal mass spectrometry data in MZmine 3, Nature Biotechnology (2023).
+
+Nothias, L. F. et al. Feature-based molecular networking in the GNPS analysis environment. Nat. Methods 17, 905–908 (2020).
+
+Dührkop, K., Fleischauer, M., Ludwig, M. et al. SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information. Nat Methods 16, 299–302 (2019).
+
+Huber F., et al. matchms - processing and similarity evaluation of mass spectrometry data, Journal of Open Source Software 52, 2411 (2020).
+
+De Jonge N., et al. MS2Query: reliable and scalable MS2 mass spectra-based analogue search, Nature Communications 14, 1752 (2023).
+
+Ernst, M.; Kang, K.B.; Caraballo-Rodríguez, A.M.; Nothias, L.-F.; Wandy, J.; Chen, C.; Wang, M.; Rogers, S.; Medema, M.H.; Dorrestein, P.C.; van der Hooft, J.J.J. MolNetEnhancer: Enhanced Molecular Networks by Integrating Metabolome Mining and Annotation Tools. Metabolites 2019, 9, 144.
+
+Wang, M et al. Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking. Nature Biotechnology 34, 828-837.</Course_Literature>
+          <Course_Objectives>The teaching will be carried out as lectures, exercises, workshops, and participant presentations. During the workshops, participants will form small groups and carry out various data analyses with their own data set or provided study data sets. Participants will meet daily in small groups(2-4 people) and accomplish tasks which culminate into a final hand-in presentation. Furthermore, a number of visiting expert researchers are intensively involved in the course to communicate the most recent advances in the field of metabolomics.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Day 1: Half a day on basic principles of metabolomics and high-resolution mass spectrometry are introduced. We will focus on data pre-processing the remainder of the time. After a brief overview of available pre-processing methods, participants will be introduced to MZmine and will work on their own or study data. Day 1 is concluded with a social event.
+Day 2: Focus on (pre)-processing will be continued working more with MZmine. Data library annotation, data evaluation and data integration via FERMO.
+Day 3: Focus on metabolite identification and advanced metabolome mining tools, including molecular networking through GNPS and in silico molecular structure annotation through Sirius+CSI:FingerID. Participants will test different metabolite annotation strategies on their own or study data at a nearly full-day workshop. The day will be concluded with a social event to allow for further networking.
+Day 4: Basic statistical methods for metabolomics data analysis, e.g. differential abundance analysis and Principal Component’s Analysis (PCA). FBmn stats guide will be utilized to facilitate online-statistical software. The participants will get hands-on experience from working on their own or study data in a nearly full-day workshop.
+Day 5: Focus on data visualization. We will introduce Cytoscape, for comprehensive network visualization for metabolomics data, including integration of metabolite annotation and statistics results. The participants will conclude the full analysis pipeline from metabolomics preprocessing to metabolite annotation and visualization of results.</Contents>
+          <Teaching_And_Learning_Methods>5 days of lectures, exercises, and workshops (40 h)</Teaching_And_Learning_Methods>
+          <Course_Literature>Schmid R., Heuckeroth S. et al., Integrative analysis of multimodal mass spectrometry data in MZmine 3, Nature Biotechnology (2023).
+
+Nothias, L. F. et al. Feature-based molecular networking in the GNPS analysis environment. Nat. Methods 17, 905–908 (2020).
+
+Dührkop, K., Fleischauer, M., Ludwig, M. et al. SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information. Nat Methods 16, 299–302 (2019).
+
+Huber F., et al. matchms - processing and similarity evaluation of mass spectrometry data, Journal of Open Source Software 52, 2411 (2020).
+
+De Jonge N., et al. MS2Query: reliable and scalable MS2 mass spectra-based analogue search, Nature Communications 14, 1752 (2023).
+
+Ernst, M.; Kang, K.B.; Caraballo-Rodríguez, A.M.; Nothias, L.-F.; Wandy, J.; Chen, C.; Wang, M.; Rogers, S.; Medema, M.H.; Dorrestein, P.C.; van der Hooft, J.J.J. MolNetEnhancer: Enhanced Molecular Networks by Integrating Metabolome Mining and Annotation Tools. Metabolites 2019, 9, 144.
+
+Wang, M et al. Sharing and community curation of mass spectrometry data with Global Natural Products Social Molecular Networking. Nature Biotechnology 34, 828-837.</Course_Literature>
+          <Course_Objectives>The teaching will be carried out as lectures, exercises, workshops, and participant presentations. During the workshops, participants will form small groups and carry out various data analyses with their own data set or provided study data sets. Participants will meet daily in small groups(2-4 people) and accomplish tasks which culminate into a final hand-in presentation. Furthermore, a number of visiting expert researchers are intensively involved in the course to communicate the most recent advances in the field of metabolomics.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Describe the basic principles of high-resolution tandem mass spectrometry" />
+          <Txt Lang="en-GB" Txt="Describe the basic principles of high-resolution tandem mass spectrometry" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Understand typical mass spectrometry data formats" />
+          <Txt Lang="en-GB" Txt="Understand typical mass spectrometry data formats" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Carry out data pre-processing using MZmine" />
+          <Txt Lang="en-GB" Txt="Carry out data pre-processing using MZmine" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Understand and apply metabolite identification confidence levels" />
+          <Txt Lang="en-GB" Txt="Understand and apply metabolite identification confidence levels" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Use and understand tools for advanced metabolite identification (e.g. GNPS, FERMO and Sirius+CSI:FingerID)" />
+          <Txt Lang="en-GB" Txt="Use and understand tools for advanced metabolite identification (e.g. GNPS, FERMO and Sirius+CSI:FingerID)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Understand and use basic multi- and univariate statistical methods, e.g. PCA, and differential analysis" />
+          <Txt Lang="en-GB" Txt="Understand and use basic multi- and univariate statistical methods, e.g. PCA, and differential analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Perform a full workflow for basic analysis of a non-targeted metabolomics experiment, including data preprocessing, metabolite annotation, statistical analysis, and biological interpretation" />
+          <Txt Lang="en-GB" Txt="Perform a full workflow for basic analysis of a non-targeted metabolomics experiment, including data preprocessing, metabolite annotation, statistical analysis, and biological interpretation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Understand quality control and quality assurance in metabolomics and exposomics" />
+          <Txt Lang="en-GB" Txt="Understand quality control and quality assurance in metabolomics and exposomics" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <Restrictions Max="100" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-30" Time="09:46:56.603" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

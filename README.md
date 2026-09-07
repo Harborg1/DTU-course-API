@@ -1,6 +1,6 @@
 # DTU Course API
 
-Produktionsorienteret kursusanbefaler, importer og REST API til det officielle DTU-kursuskatalog. Projektet henter kurser for 2026/2027 fra DTU, gemmer dem i PostgreSQL 17 og giver studerende anbefalinger gennem en responsiv chat-hjemmeside. Det eksisterende API kan også bruges fra Microsoft Copilot Studio.
+Produktionsorienteret kursusanbefaler, importer og REST API til det officielle DTU-kursuskatalog. Projektet henter årgangsspecifikke kurser fra DTU, gemmer dem i PostgreSQL 17 og giver studerende anbefalinger gennem en responsiv chat-hjemmeside. Det eksisterende API kan også bruges fra Microsoft Copilot Studio.
 
 ## Arkitektur
 
@@ -18,11 +18,11 @@ Web-chat MCP  Beskyttet REST API
         Groq    Copilot Studio
 ```
 
-Importeren er opdelt i HTTP-hentning, HTML-parsing, validering og databaseoperationer. API-laget bruger services og dependency-injected SQLAlchemy-sessions. PostgreSQLs genererede `tsvector` vægter titler som A, beskrivelse og indhold som B samt læringsmål og forudsætninger som C.
+Kursusdata hentes som struktureret XML, valideres og gemmes lokalt. API-laget bruger services og dependency-injected SQLAlchemy-sessions. `courses` indeholder kun sprogneutrale metadata, mens `course_translations` har én række per kursus og sprog. Hver oversættelse har et sprogtilpasset `tsvector`-indeks og en OpenAI-embedding i pgvector. Kursussøgning kombinerer præcise tekstmatch med cosine similarity, så både danske og engelske formuleringer samt semantisk beslægtede kursustekster kan findes.
 
 ## Officiel datakilde
 
-Kun [DTU Kursusbasens officielle kursusliste](https://kurser.dtu.dk/CourseList/list/) og årgangsspecifikke sider som `https://kurser.dtu.dk/course/2026-2027/01001` bruges. Kursuslisten er server-renderet HTML. Importeren læser den aktuelle institutliste fra `select[name=department]`, henter `/courselist/courselist.aspx?volume=2026/2027&department=...` for hvert institut og deduplikerer numrene. Kursussider parses fra `#pagecontents`, metadata-rækker med `<label>` og indholdssektioner med `.bar`. Ingen uofficiel database bruges, og manglende værdier gemmes som `NULL`.
+Kursusnumre og kursusdata hentes fra DTU Kursusbasens officielle `CourseWebServiceV2`. `GetCourse` leverer de årgangsspecifikke kursusdata som XML, som gemmes uden HTML-parsing. Felter markeret med `Lang="da-DK"` og `Lang="en-GB"` importeres som separate rækker i `course_translations`, mens kursusnumrene fra `DTU_CoursesTxt` gemmes struktureret i `recommended_prerequisite_course_numbers`. Ingen uofficiel database bruges.
 
 ## Hurtig start med Docker
 
@@ -42,7 +42,7 @@ curl -H "X-API-Key: $API_KEY" http://localhost:8000/api/v1/import/status
 
 API-dokumentation findes på `/docs`, `/redoc` og `/openapi.json`.
 
-Hjemmesiden findes på `/`. Den sender brugerens samtalekontekst til `POST /api/chat`, hvor emne, niveau, ECTS, periode og sprog udledes, og der søges direkte i de officielle kursusdata. Browseren modtager aldrig den interne `API_KEY`.
+Hjemmesiden findes på `/`. Den sender brugerens samtalekontekst til `POST /api/chat`, hvor emne, niveau, ECTS, periode og sprog udledes, og der søges direkte i de officielle kursus- og studieprogramdata. Studieprogramanbefalinger returneres særskilt i `studyPrograms`; tvetydige interesseforespørgsler beder brugeren vælge mellem studier og kurser. Browseren modtager aldrig den interne `API_KEY`.
 
 ## Lokal Python-installation
 
@@ -76,6 +76,18 @@ uvicorn app.main:app --reload
 | `LOG_LEVEL` | Fx `INFO` eller `DEBUG` |
 | `GROQ_API_KEY` | Groq API-nøgle til chatten |
 | `GROQ_MODEL` | Groq-model; standard er `openai/gpt-oss-120b` |
+| `EMBEDDING_API_KEY` | Separat OpenAI API-nøgle til kursus- og query-embeddings |
+| `EMBEDDING_MODEL` | Embeddingmodel; standard er `text-embedding-3-small` |
+| `EMBEDDING_DIMENSIONS` | Vektordimension; databaseskemaet bruger `1536` |
+| `EMBEDDING_BATCH_SIZE` | Antal kursustekster per backfill-request; standard er `50` |
+| `SEMANTIC_COURSE_SEARCH_ENABLED` | Slår hybrid cosine similarity-søgning til eller fra |
+| `SEMANTIC_COURSE_MIN_SIMILARITY` | Nedre relevansgrænse for semantiske kandidater; standard er `0.35` |
+| `SEMANTIC_RESOLUTION_ENABLED` | Slår valideret semantisk program- og specialiseringsmatching til eller fra |
+| `SEMANTIC_RESOLUTION_MIN_CONFIDENCE` | Minimum confidence for at acceptere et semantisk match; standard er `0.85` |
+| `SEMANTIC_RESOLUTION_TIMEOUT` | Timeout i sekunder for den semantiske fallback; standard er `10` |
+| `SEMANTIC_INTENT_ENABLED` | Slår struktureret semantisk hensigtsklassifikation til for spørgsmål, som keyword-routeren ikke forstår |
+| `SEMANTIC_INTENT_MIN_CONFIDENCE` | Minimum confidence for at acceptere en semantisk hensigt; standard er `0.85` |
+| `SEMANTIC_INTENT_TIMEOUT` | Timeout i sekunder for hensigtsklassifikationen; standard er `10` |
 | `MCP_TOKEN` | Lang, tilfældig bearer token, der beskytter `/mcp` |
 | `MCP_SERVER_URL` | Offentlig HTTPS-base-URL, fx `https://app.example.com` |
 
@@ -83,30 +95,63 @@ Chatten bruger Groqs Responses API. Groq kalder de skrivebeskyttede MCP-tools
 `get_course`, `search_courses` og `get_study_plan` på `/mcp`; browseren får aldrig
 adgang til `GROQ_API_KEY` eller `MCP_TOKEN`.
 
+Programmer og specialiseringer matches først deterministisk med officielle navne,
+aliaser og stavefejlstolerant sammenligning. Hvis det ikke giver et entydigt match,
+kan Groq vælge semantisk mellem de faktiske databasekandidater. Modellens svar er
+struktureret og accepteres kun, når kandidat-ID'et findes i databasen og confidence
+opfylder den konfigurerede grænse; ellers beder chatten fortsat om præcisering.
+Spørgsmål, som keyword-routeren ikke genkender, klassificeres desuden til en
+valideret, struktureret hensigt. Eksempelvis routes “computer science study guide”
+til en databasebaseret programoversigt i stedet for et frit generelt AI-svar.
+
 ## Import
 
-Kør migrations først. Importeren bruger timeout, fire forsøg med eksponentiel backoff, konservativ sekventiel hentning, et tydeligt User-Agent, HTTP-statusvalidering og én transaktion pr. kursus. En fejlet side stopper ikke resten; fejlen gemmes i `import_failures`.
+Hjælpescripterne bruger timeout, genforsøg med eksponentiel backoff, begrænset parallelitet, et tydeligt User-Agent og validering af XML-svarene.
 
 ```bash
-# Ét kursus
-python -m importer.cli --academic-year 2026-2027 --course 01001
+# Hent kun alle publicerede kursusnumre (ét nummer pr. linje)
+python scripts/get_all_course_numbers.py --catalog-version 2026/2027
 
-# De første 20 som test
-python -m importer.cli --academic-year 2026-2027 --limit 20
+# Gem kursusnumrene i en fil
+python scripts/get_all_course_numbers.py --catalog-version 2026/2027 > course_numbers.txt
 
-# Genforsøg kun tidligere fejl
-python -m importer.cli --academic-year 2026-2027 --retry-failed
+# Gem GetCourse XML for hvert kursus i app/data/course_information/
+python scripts/get_all_course_information.py --year-group 2026/2027
 
-# Hele kataloget
-python -m importer.cli --academic-year 2026-2027
+# Opret/opgradér courses-tabellen og importér de gemte XML-filer
+alembic upgrade head
+python -m importer.course_xml_cli --academic-year 2026-2027
+
+# Generér kun manglende eller ændrede embeddings efter kursusimporten
+python -m importer.course_embedding_cli --academic-year 2026-2027
 ```
 
-I Docker køres kommandoerne sådan:
+Gem hver årgang i sin egen mappe, når kataloger skal sammenlignes:
 
 ```bash
-docker compose exec api python -m importer.cli --academic-year 2026-2027 --limit 20
-docker compose exec api python -m importer.cli --academic-year 2026-2027
+python scripts/get_all_course_numbers.py \
+  --catalog-version 2025/2026 \
+  --output app/data/course_numbers/2025-2026.txt
+python scripts/get_all_course_information.py \
+  --input app/data/course_numbers/2025-2026.txt \
+  --output-dir app/data/course_information/2025-2026 \
+  --year-group 2025/2026
+python -m importer.course_xml_cli \
+  --directory app/data/course_information/2025-2026 \
+  --academic-year 2025-2026
 ```
+
+Chatspørgsmålet “Hvilke kurser er nye?” sammenligner den valgte årgang med den
+umiddelbart foregående. Et kursus er nyt, når kursusnummeret ikke findes i den
+foregående årgang. DTU-feltet `PreviousCourse` bruges til særskilt at markere de
+kurser, der blot har fået et nyt kursusnummer.
+Spørgsmålet kan afgrænses med BSc, MSc eller PhD, eksempelvis “Hvilke nye
+kurser er der på BSc?”.
+
+Embedding-jobbet er genoptageligt og committer per batch. Brug `--dry-run` til at se antallet af
+manglende eller forældede embeddings uden at kalde OpenAI. Ved senere kursusimporter sammenlignes
+en SHA-256-hash af titel, beskrivelse, indhold og læringsmål, så kun nye eller ændrede tekster skal
+genereres igen. Jobbet skal køres lokalt eller som et separat worker-job, ikke fra en Vercel-request.
 
 ### Studieplaner
 
@@ -137,7 +182,26 @@ Chatten genkender derefter spørgsmål som “Jeg studerer Anvendt Matematik –
 opbygget, og hvilke kurser er obligatoriske?” og returnerer både en forklaring og et struktureret
 `studyPlan`-objekt.
 
-Slutrapporten viser discovered, imported, updated, unchanged og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
+### Specialiseringer
+
+Specialiseringer gemmes som børn af de importerede kandidatprogrammer. Kursuskrav bevarer forskellen
+mellem obligatoriske kurser, “vælg ét”, minimum antal kurser, minimum ECTS, anbefalede kurser og
+udgåede kurser, som fortsat tæller. Importér derfor studieprogrammerne først og derefter
+specialiseringerne:
+
+```bash
+alembic upgrade head
+python -m importer.study_plan_cli --urls-file app/data/program_urls.txt
+python -m importer.specialization_cli --urls-file app/data/specializations_urls.txt
+```
+
+En mindre smoke-test kan køres med `--limit 5`. Importen er idempotent og springer sider over, hvis
+det strukturerede indhold er uændret. Chatten kan derefter besvare spørgsmål som “Hvilke
+specialiseringer har Computer Science and Engineering?” og “Hvilke kurser kræver Artificial
+Intelligence and Algorithms-specialiseringen?”. Svaret indeholder også et struktureret
+`specializations`-felt med krav, kurser og officielle DTU-kilder.
+
+Kursusimportens slutrapport viser discovered, imported, updated, unchanged og failed og gemmes i audit-tabellen `import_runs`. UPSERT-nøglen er `(course_number, academic_year)`, så en senere årgang ikke overskriver tidligere data. For et nyt år bruges blot fx. `--academic-year 2027-2028`, når den officielle DTU-liste findes.
 
 ## API
 
@@ -148,18 +212,19 @@ Alle `/api/v1`-endpoints kræver `X-API-Key`. `/health` er offentlig. Pagination
 | `GET /` | Offentlig chat-hjemmeside |
 | `GET /health` | API- og databasekontrol |
 | `GET /api/info` | Offentlig serviceinformation |
-| `POST /api/chat` | Offentlige, kildehenviste kursusanbefalinger |
+| `POST /api/chat` | Offentlige, kildehenviste kursus- og studieprogramanbefalinger |
 | `GET /api/v1/courses/search` | Full-text-søgning og filtre |
 | `GET /api/v1/courses` | Sideinddelt liste med strukturerede filtre |
 | `GET /api/v1/courses/{course_number}` | Komplet kursus for valgt årgang |
 | `GET /api/v1/import/status` | Kursusantal, seneste import og fejlantal |
 
-Search understøtter `q`, `academic_year`, `ects`, `level`, `period`, `schedule`, `department`, `language`, `campus`, `limit` og `offset`. Niveau normaliseres til blandt andet `BSc`, `MSc` og `PhD`; sprog normaliseres til blandt andet `Danish` og `English`.
+Search understøtter `q`, `academic_year`, `search_language`, `ects`, `level`, `period`, `schedule`, `department`, `language`, `campus`, `limit` og `offset`. `search_language` er `da` eller `en` og vælger det tilsvarende full-text-indeks; uden parameteren detekteres sproget fra `q`. `language` er fortsat et separat filter for undervisningssproget.
 
 ```bash
 curl -G http://localhost:8000/api/v1/courses/search \
   -H "X-API-Key: $API_KEY" \
   --data-urlencode "q=machine learning" \
+  --data-urlencode "search_language=en" \
   --data-urlencode "academic_year=2026-2027" \
   --data-urlencode "ects=5" \
   --data-urlencode "period=E"
@@ -172,14 +237,14 @@ Søgeresultater indeholder kun kompakte felter, højst 500 tegn af beskrivelsen,
 
 ## Tests
 
-Tests bruger gemte, reducerede HTML-fixtures baseret på verificerede bachelor- og kandidatsider for
+Tests bruger gemte, reducerede XML-fixtures til kurser og HTML-fixtures til studieplaner for
 2026/2027 og laver ingen live requests:
 
 ```bash
 pytest -q
 ```
 
-De dækker parservariationer, manglende valgfrie felter, forkert studieår, søgning, filtre, pagination, detailvisning, 404, API-key, UPSERT, dubletter og importfejl.
+De dækker blandt andet tosproget XML-parsing, sprogopdelt søgning, manglende valgfrie felter, forkert studieår, filtre, pagination, detailvisning, 404, API-key, UPSERT, dubletter og importfejl.
 
 ## Copilot Studio og Custom Connector
 
@@ -209,7 +274,7 @@ Vercel kører FastAPI-applikationen fra `app.main:app` som én Python Function i
    vercel link
    ```
 
-2. Tilføj `DATABASE_URL`, `API_KEY`, `DEFAULT_ACADEMIC_YEAR`, `DTU_BASE_URL`, `LOG_LEVEL`, `GROQ_API_KEY`, `GROQ_MODEL`, `MCP_TOKEN` og `MCP_SERVER_URL` som Preview environment variables i Vercel. `MCP_SERVER_URL` skal være deploymentets offentlige HTTPS-base-URL, og `MCP_TOKEN` skal være en separat lang, tilfældig secret. Brug Supabases transaction pooler på port 6543 til `DATABASE_URL`. Tilføj ikke `MIGRATION_DATABASE_URL` til Vercel.
+2. Tilføj `DATABASE_URL`, `API_KEY`, `DEFAULT_ACADEMIC_YEAR`, `DTU_BASE_URL`, `LOG_LEVEL`, `GROQ_API_KEY`, `GROQ_MODEL`, `EMBEDDING_API_KEY`, `MCP_TOKEN` og `MCP_SERVER_URL` som Preview environment variables i Vercel. `MCP_SERVER_URL` skal være deploymentets offentlige HTTPS-base-URL, og `MCP_TOKEN` skal være en separat lang, tilfældig secret. Brug Supabases transaction pooler på port 6543 til `DATABASE_URL`. Tilføj ikke `MIGRATION_DATABASE_URL` til Vercel.
 3. Kontrollér konfigurationen lokalt med `vercel dev`.
 4. Opret preview med `vercel deploy` og verificér `/`, `/health`, et autentificeret søgekald og et MCP-kald med `Authorization: Bearer $MCP_TOKEN`.
 5. Tilføj de samme nødvendige variabler til Production og kør først `vercel deploy --prod`, når previewet er godkendt.

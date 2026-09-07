@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="25328" Volume="2026/2027" University="dtu" LastUpdated="2026-04-16+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Matematisk økologisk modellering" />
+        <Title Lang="en-GB" Title="Mathematical models in ecology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Undervisningen vil foregå ved Campus Hirtshals om tirsdagen, og ved Campus Lyngby om torsdagen med remote classroom for de studerende i Hirtshals.. &#xD;&#xA;- Remote Classroom - DTU Aqua" />
+          <LocationTxt Lang="en-GB" Txt="Teaching is held in Campus Hirtshals on Tuesdays (13-17) and in Campus Lyngby on  Thursdays (13-17), with remote classroom for the students in Hirtshals. &#xD;&#xA;- Remote Classroom - DTU Aqua" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="25" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="25" />
+        <Course_Responsible PersonKey="3692" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Asbjørn</GivenName>
+            <FamilyName>Christensen</FamilyName>
+            <Email>asc@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="4625" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ken Haste</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>kha@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="71264" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Nicolas Azaña</GivenName>
+            <FamilyName>Schnedler-Meyer</FamilyName>
+            <Email>niaz@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen er baseret primært (80 %) på skriftlig eksamen og i mindre grad (20 %) på en poster omhandlende et mindre afsluttende projekt. Godkendelse af ugentlige afleveringsopgaver er en forudsætning for at gå til den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based mainly (80%) on a written examination and partly (20%) on a poster of the final project. Approval of weekly submitted exercises is a prerequisite for the written examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er en introduktion til matematiske modeller af levende organismers bestandsdynamikker, fra bakterier til hvaler. Fokus er på konceptuelle modeller baseret på differential- og differensligninger, som illustrerer grundlæggende koncepter i bestandsmodellering. Et vigtigt mål er at sætte deltagerne i stand til at knytte en biologisk situation sammen med en abstrakt matematisk model, dvs. udvikle en forståelse af de biologiske antagelser, der ligger til grund for modellen, og af de økologiske konsekvenser af dens resultater. Hovedemnerne er enkeltartsmodeller af populationer (logistisk vækst), flerartsmodeller (konkurrence og predator-prey relationer), funktionelle responser, udnyttelse af levende systemer, årlige successioner, epidemiologiske modeller og rumlig populationsdynamik. Yderligere grundlæggende begreber fra evolutionær dynamik introduceres. Halvdelen af sessionerne anvendes til at træne grundlæggende modelprogrammering baseret på eksempler på biologiske systemer. Kurset lægger nogen vægt på at udvikle og evaluere deltagernes evner til at fremlægge fagligt materiale. I kursets sidste del udvikler de studerende deres egne projekter, som bliver evalueret ved en poster session.</Contents>
+          <Teaching_And_Learning_Methods>Kurset er baseret på korte forelæsninger og længere numeriske (computer) øvelser. Resultaterne af øvelserne præsenteres af de studerende og diskuteres i plenum.</Teaching_And_Learning_Methods>
+          <Course_Literature>Mathematical Biology”, volume 1: “An introduction” by James D. Murray (E-bog er tilgængelig på DTU bibliotek)</Course_Literature>
+          <Course_Objectives>Kurset er en introduktion til matematiske modeller for biologiske systemer. Det vil sætte den studerende i stand til at evaluere, udvikle og anvende simple dynamiske populationsmodeller. Kurset vil introducere den nødvendige matematiske baggrund og programmeringsteknik.</Course_Objectives>
+          <DTU_Remark>Undervisningen vil foregå ved Campus Hirtshals om tirsdagen, og ved Campus Lyngby om torsdagen med remote classroom for de studerende i Hirtshals.. 
+- Remote Classroom - DTU Aqua
+ 
+Kurset er en udvidet version af kursus 25303 med en redskabsdel for studerende med begrænsede programmeringsmæssige og matematiske forudsætninger. Tirsdagssessioner er fokuseret på at træne matematiske/programmeringsmæssige forudsætninger for at udføre analyse og simulering af biologiske systemer.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is an introduction to mathematical modelling of population dynamics of living organisms, from bacteria to whales. Focus is on conceptual models based on differential and difference equations that illustrate basic concepts in population modelling. An important goal is to develop the ability to connect a biological context to an abstract mathematical model, i.e., to develop an understanding of the biological assumptions underlying the model and the ecological consequences of its results. The main topics are single-species population models (logistic growth), multi-species models (competition and predator-prey relations), functional responses, exploitation of living systems, seasonal succession, epidemiological models, and spatial population dynamics. Further basic concepts from evolutionary dynamics are introduced. Half of the sessions are used to train basic model programming based on examples of biological systems. Some emphasis is on the development and evaluation of the presentation skills of the students. In the last part of the course, the students develop their own projects, which are evaluated in a poster session.</Contents>
+          <Teaching_And_Learning_Methods>Short lectures and longer numerical (computer) exercises. The results of the exercises are presented by the students and discussed in plenum.</Teaching_And_Learning_Methods>
+          <Course_Literature>Mathematical Biology”, volume 1: “An introduction” by James D. Murray (Ebook available at DTU library)</Course_Literature>
+          <Course_Objectives>The course is an introduction to mathematical modelling of biological systems. It will enable the student to evaluate, develop and apply simple dynamical population models. The course will introduce the necessary mathematical background and programming techniques.</Course_Objectives>
+          <DTU_Remark>Teaching is held in Campus Hirtshals on Tuesdays (13-17) and in Campus Lyngby on  Thursdays (13-17), with remote classroom for the students in Hirtshals. 
+- Remote Classroom - DTU Aqua
+ 
+The course is an extended version of course 25303 for students with limited programming experience and mathematical background skills, where Tuesday sessions are focused on learning basic programming skills and mathematical techniques required for modelling of biological systems.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere og diskutere en matematisk model for et publikum på samme niveau." />
+          <Txt Lang="en-GB" Txt="Present and discuss a mathematical model for an audience of peers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle, diskutere og løse numerisk differential- og differensligninger, der optræder i matematisk biologi." />
+          <Txt Lang="en-GB" Txt="Develop, discuss, and solve numerically differential and difference equation models occurring in mathematical biology." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for størrelsen af parametre som fertilitet, dødelighed og migrationsrater i faktiske populationer, og deres betydning i modeller." />
+          <Txt Lang="en-GB" Txt="Use general arguments to assess the fertility, mortality, and migration in real populations, and their importance in models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere karakteristiske størrelser og skalaer i populationsdynamiske modeller." />
+          <Txt Lang="en-GB" Txt="Assess characteristic levels and time scales in population dynamic models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for valg af parameterværdier i en model anvendt i en specifik biologisk kontekst." />
+          <Txt Lang="en-GB" Txt="Argue for choice of parameter values in a model applied in a specific biological context." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre stabilitetsanalyse af ligevægtspunkter og identificere bifurkationer." />
+          <Txt Lang="en-GB" Txt="Determine the stability of steady states and identify bifurcations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Afgøre hvilken modelstruktur, der er passende til at besvare et givent spørgsmål i forbindelse med f.eks. forvaltning af ressourcer eller risikovurdering." />
+          <Txt Lang="en-GB" Txt="Determine which model structure is appropriate to answer a given question related to, e.g., resource management or risk assessment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte populationsmodeller til at besvare sådanne spørgsmål." />
+          <Txt Lang="en-GB" Txt="Utilize population models to answer such questions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualisere dynamikken i biologiske systemer ved hjælp af softwarepakker." />
+          <Txt Lang="en-GB" Txt="Visualize the dynamics of biological systems using modelling toolboxes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende gode programmeringsteknikker og vaner for modeller af biologiske systemer." />
+          <Txt Lang="en-GB" Txt="Apply good programming practices for models of biological systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere simple matematiske modeller for bæredygtig udnyttelse af marine ressourcer og naturbevarelse, der understøtter FNs bæredygtighedsmål 14 (liv i havet) og 15 (liv på landjorden)." />
+          <Txt Lang="en-GB" Txt="Discuss simple mathematical models for sustainable use of marine resources and ocean conservation, in support for UN sustainable development goal 14 (life below water) and goal 15 (life on land)." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Brugen af matematiske modeller til at beskrive biologiske systemers dynamik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="1" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="01003 / 01005 / 01006 / 01015 / 01016 / 25303" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:20:59.42" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30081" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Digitalteknik" />
+        <Title Lang="en-GB" Title="Digital Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="2766" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Brauer</FamilyName>
+            <Email>brau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Programmering af digitale kredse. Herunder repetition af kombinatorisk logik, registre, tællere, skifteregistre, synkrone netværk og tilstandsmaskiner. Introduktion til syntetiserbar VHDL-programmering. Hierarkisk opdeling af digitale systemer. Grundlæggende opbygning af FPGA-chip og deres virkemåde. Metoder til instantiering af multipliere og block RAM i en FPGA. Timing-analyse ved bestemmelse af kritisk vej igennem et synkron netværk samt fanout og gate delay i kombinatorisk logik. I kurset er der inkluderet et mindre midtvejsprojekt som afsluttes med en rapport</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde og projektopgave.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte den studerende i stand til at udvikle simple digitale systemer, der indeholder programmerbare digitale kredse.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Programming of digital circuits. Including repetition of combinatorial logic, registers, counters, shift registers, synchronous networks and state machines. Introduction to synthesizable VHDL programming. Hierarchical division of digital systems. Basic structure of FPGA chip and their operation. Methods for instantiating multiply and block RAM in an FPGA. Timing analysis when determining the critical path through a synchronous network, as well as fanout and gate delay in combinatorial logic. The course includes a small mid-term project, which concludes with a report</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, and project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable students to develop simple digital systems incorporating programmable digital circuits.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende et hardware beskrivelsessprog (VHDL) til programmering af digitale kredse" />
+          <Txt Lang="en-GB" Txt="apply a hardware description language (VHDL) to program digital chips" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende standardregistre og kombinatorisk logik til at konstruere simple synkrone netværk" />
+          <Txt Lang="en-GB" Txt="apply standard registers and combinatorial logic to construct simple synchronous networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe synkrone netværk (på RTL-niveau), som inkluderer tilstandsmaskiner til mindre opgaver" />
+          <Txt Lang="en-GB" Txt="design synchronous digital systems at the register-transfer level (RTL), including finite state machines for small-scale applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="demonstrere funktionen af et digitalt system v.h.a. simulering" />
+          <Txt Lang="en-GB" Txt="demonstrate the function of a digital system by simulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dokumentere funktionalitet og design af et mindre digitalt system" />
+          <Txt Lang="en-GB" Txt="document design and functionality of a smaller digital system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive princippet bag en FPGA-chip" />
+          <Txt Lang="en-GB" Txt="describe the principle of an FPGA-chip" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende nogle af FPGA-chippens ekstra blokke (Multiplier, Block RAM, mm.)" />
+          <Txt Lang="en-GB" Txt="apply some of the building blocks (multiplier, Block RAM..) of the FPGA chip" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive principper til design af større digitale systemer, der involverer flere klok-domæner." />
+          <Txt Lang="en-GB" Txt="describe principles in digital design of larger digital systems that involve more clock-domains." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="30032.62733.62712.62733" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Synkrone netværk og deres beskrivelse i VHDL </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="30" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:48.113" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62427" Volume="2026/2027" University="dtu" LastUpdated="2026-08-10+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Netværksforsvar og angrebshåndtering" />
+        <Title Lang="en-GB" Title="Network Defense and attack handling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Undervisning:&#xD;&#xA;Kun efterår&#xD;&#xA;Onsdage  17.00-20.30 (kursusperiode:6 uger)&#xD;&#xA;Start: Se hjemmesiden https://lifelonglearning.dtu.dk/en...ebshaandtering/" />
+          <Schedule_Txt Lang="en-GB" Txt="Lectures:&#xD;&#xA;Only autumn&#xD;&#xA;Wednesdays 17.00-20.30 (course period: 6 weeks)&#xD;&#xA;Start: Look at the home page https://lifelonglearning.dtu.dk/en...ebshaandtering/" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="78757" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Tange</FamilyName>
+            <Email>htan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• IDS
+• IPS 
+• Metasploit 
+• Firewalls</Contents>
+          <Course_Objectives>På kurset gennemgås principperne i defence / attacks med udgangspunkt i forskellige NIST (National Institute of Standards and Technology) anvisninger.  Derudover har kurset en gennemgang af lovgivning samt implementering af vision/mission med relation til kurset Cyber defence og ledelsesansvar
+På kurset ses der på trusler og sårbarheder, malware og anbefalede kryptografiske løsninger med reference til kurset Valg af kryptografiske løsninger
+Kurset behandler ligeledes sikkerhedsmæssige retningslinier for data under transport, opbevaring og processering. Der introduceres til Intrusion Preventing Systems (IPS) samt metasploit, ligesom der arbejdes med Intrusion Detection Systems (IDS) og opsætning af firewalls. Endeligt introduceres der til principperne omkring genopretning af data samt sikkerhedsaudit og evaluering.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Valgfag: IT-elektronik</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• IDS
+• IPS 
+• Metasploit 
+• Firewalls</Contents>
+          <Course_Objectives>The course covers the principles of defense / attacks based on various NIST (National Institute of Standards and Technology) directions. In addition, the course has a review of legislation and implementation of the vision / mission related to the course Cyber defense and management responsibilities
+The course also covers threats and vulnerabilities, malware and recommended cryptographic solutions with reference to the course "selection of cryptographic solutions"
+The course also addresses safety guidelines for data during transport, storage and processing. Intrusion Preventing System (IPS) and Metasploit are introduced as well as Intrusion Detection Systems (IDS) and setting up firewalls. Finally, principles around the recovery of data and security audit and evaluation are introduced.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Valgfag: IT-elektronik</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende lovgivningen på sikkerhedsområdet" />
+          <Txt Lang="en-GB" Txt="know the legislation in cyber security" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå og forklare trusler mod et system" />
+          <Txt Lang="en-GB" Txt="know, understand, and explain the threats to a system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå, forklare og anvende anti-malware" />
+          <Txt Lang="en-GB" Txt="know, understand, explain, and apply anti-malware" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå og forklare de mest benyttede kryptografiske algoritmer" />
+          <Txt Lang="en-GB" Txt="know, understand, explain, and apply the most common used cryptographic algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå og anvende IDS" />
+          <Txt Lang="en-GB" Txt="know, understand, and apply IDS" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere sikkerhedsrisici i et system" />
+          <Txt Lang="en-GB" Txt="be able to identify security risks in a system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå og anvende IPS" />
+          <Txt Lang="en-GB" Txt="know, understand, and apply IPS" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med en firewall i drift" />
+          <Txt Lang="en-GB" Txt="work with a firewall in operation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foreslå metoder til genopretning af data og foretage sikkerhedsaudit" />
+          <Txt Lang="en-GB" Txt="suggest methods for the recovery of data and perform security audit" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Cybersecurity</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="24" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="24" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-08-11" Time="13:34:12.747" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

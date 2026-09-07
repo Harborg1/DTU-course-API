@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41501" University="dtu" LastUpdated="2026-02-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Styrkelære 1" />
+        <Title Lang="en-GB" Title="Strength of materials 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="6575" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christian Frithiof</GivenName>
+            <FamilyName>Niordson</FamilyName>
+            <Email>cfni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2278" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Sigmund</FamilyName>
+            <Email>olsi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kræfter, momenter og kraftsystemer. Statikkens hovedsætning. Belastninger, reaktioner og snitkræfter. Statisk bestemte og statisk ubestemte konstruktioner. Den énaksede trækprøve. Hookes lov for énakset spændingstilstand og ren tværspænding. Udbøjning af simple, elastiske bjælker. Materialevalg. Valg af bjælketværsnit. Elementartilfælde og superpositionsprincippet. Eulers søjletilfælde. Vridning af stænger og rør med cirkulært tværsnit. Simple sammensatte konstruktioner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaveregning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere styrkelærens grundlæggende begreber og metoder. At sætte den studerende i stand til at behandle nogle elementære problemer vedrørende maskinkonstruktioners styrke- og deformationsforhold.</Course_Objectives>
+          <Remark>Kurset er teknologisk liniefag på civil-bachelorlinien Produktion og Konstruktion.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Forces, moments and force systems. The fundamental principle of statics. Loadings, reactions and sectional forces. Statically determinate and indeterminate structures. Uniaxial tensile testing. Hooke’s law for uniaxial loading and shearing. Deflection of simple elastic beams. Material selection. Selection of cross-sections. Elementary beam solutions and the principle of superposition. Euler buckling. Torsion of bars and tubes with circular cross-section. Simple combined beam structures.</Contents>
+          <Teaching_And_Learning_Methods>1 module, lectures, problem solving</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce the basic concepts and methods of strength of materials. To enable the student to deal with elementary problems concerning strength of structures.</Course_Objectives>
+          <Remark>The course is part of the Mechanical Engineering basic studies.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="10022 senest samtidig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="10022 at latest at the same time." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01020/01021/01002/01003/01005). (10002/10010/10011/10001/ 10022) " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte statik til at beregne reaktioner og kraftforløb i konstruktioner." />
+          <Txt Lang="en-GB" Txt="Use statics to determine reactions and forces in structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udregne snitkræfter og snitmomenter i bjælker vha. fritlegemediagrammer." />
+          <Txt Lang="en-GB" Txt="Calculate bending moments, shear forces and normal forces in beams by the use of free body diagrams." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme spændingsfordeling i bjælker, herunder maksima og minima." />
+          <Txt Lang="en-GB" Txt="Determine the stress distributions in beams, including maxima and minima." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte bjælkedifferentialligningen til at beregne udbøjninger." />
+          <Txt Lang="en-GB" Txt="Use the beam differential equation to compute deflections." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse bjælke- og rammeproblemer, statisk bestemte eller ubestemte, vha. elementartilfælde og superpositionsprincippet." />
+          <Txt Lang="en-GB" Txt="Solve beam- and frame problems, statically determinate or indeterminate, by using elementary beam solutions and the superposition principle." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme inertimomenter og bøjningsstivheder." />
+          <Txt Lang="en-GB" Txt="Determine the moment of inertia and the bending stiffness." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre materialevalg, samt valg af bjælketværsnit." />
+          <Txt Lang="en-GB" Txt="Carry out material selection as well as selection of cross sections." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte Euler søjler ved dimensionering af konstruktioner." />
+          <Txt Lang="en-GB" Txt="Use Euler columns in the dimensioning of structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne spændinger og deformationer ved vridning af runde stænger." />
+          <Txt Lang="en-GB" Txt="Calculate stresses and deformations in torsion of round bars." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme tværspændinger paa bjælketværsnit." />
+          <Txt Lang="en-GB" Txt="Determine shear stresses on the cross-sections of beams." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundlæggende styrkelære med henblik på maskinteknik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="70101. 41533. 41571" />
+        <PreviousCourse CourseCode="70101" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:16.683" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

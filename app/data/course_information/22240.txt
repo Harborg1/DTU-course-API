@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22240" Volume="2026/2027" University="dtu" LastUpdated="2026-06-16+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="CRISPR modificering af mammale celler" />
+        <Title Lang="en-GB" Title="CRISPR engineering of mammalian cells" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Celle kultur lab i 3. kvadrant, og undervisning i 2. og 3. kvadrant." />
+          <LocationTxt Lang="en-GB" Txt="Cell culture teaching labs in quadrant 3, and teaching in quadrant 2 or 3." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="110330" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kristoffer Haurum</GivenName>
+            <FamilyName>Johansen</FamilyName>
+            <Email>krisha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="99903" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sine Reker</GivenName>
+            <FamilyName>Hadrup</FamilyName>
+            <Email>sirha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="121988" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Raphael</GivenName>
+            <FamilyName>Ferreira</FamilyName>
+            <Email>rapfer@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueringsform: &#xD;&#xA;Individuel skriftlig eksamen (2 timer, 50%) og en gruppe rapport (50%). &#xD;&#xA;&#xD;&#xA;Helhedsvurdering:&#xD;&#xA;Den individuelle skriftlige eksamen vægter 50 % af den endelige karakter. Den gruppe-baserede rapport, som dækker laboratoriearbejdet og det terapeutiske designprojekt, vægter 50 % af karakteren. Alle hjælpemidler er tilladt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Type of assessment: &#xD;&#xA;One individual written examination (2 hours, 50%) and one group-based report (50%). &#xD;&#xA;&#xD;&#xA;Assessment: &#xD;&#xA;The individual written examination counts for 50% of the final grade. The group-based report, covering the laboratory work and the Therapeutic Design Project, counts for the remaining 50%. All aids are allowed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="All aids are allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Alle hjælpemidler er tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er struktureret i 3 forbundne dele som bygger fra teori til praktisk håndtering til selvstændigt design. 
+I den første del af kurset bliver studerende introduceret til det teoretiske fundament af præcisions-genteknologi i mammale systemer, med fokus på CRISPR gene editing. Studerende bliver introduceret til nukleaser og precisions editing, inklusiv gene knockout, homology-directed repair, base editing, og prime editing. Kurset vil også adressere DNA-reparations pathways, off-target effekter, midlertidig genregulering og levering af editing systemer til mammale celler med fokus på biotek og medicin.  
+
+I den anden del af kurset får de studerende mulighed for selv at afprøve modificering af cellekulturer med CRISPR i labbet. De studerende udfører co-transfektion for at lave genetiske edits og vil derefter analysere det fænotypiske og genotypiske outcome. Det inkluderer DNA-ekstraktion, PCR-amplicering, flowcytometri og integrering af Sanger-sekventeringsdata til at kvantificere editing-effektiviteten og reparationsraten. 
+
+I den tredje del af kurset, sideløbende med undervisningsmodulerne og laboratoriearbejdet, vil der køre et semesterlangt 'Therapeutic Design Project'. Dette kræver, at de studerende selvstændigt modellerer en genetisk intervention for en defineret monogenetisk sygdom. De studerende skal integrere domænespecifikke machine learning-modeller (f.eks. inDelphi, AlphaFold) for at forudsige udfaldet af DNA-reparation og i proteinstrukturen. 
+
+Efter kurset vil de studerende være rustede til uafhængigt at designe, udføre, og kritisk evaluere CRISPR-baserede genetiske engineeringstrategier i mammale celler, med bro mellem laboratorie-eksperimenter og terapi.</Contents>
+          <Teaching_And_Learning_Methods>Målet er for de studerende at tilegne sig praktisk og teoretisk viden indenfor mammal celle engineering. Kurset integrerer CRISPR/Cas, gene editing og analyse, samt genetisk validering for at drive terapeutisk problemløsning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet med kurset er at lære studerende om praktisk og teoretisk viden samt kompetencer inden for state-of-the-art mammalian celle engineering. Kurset integrerer CRISPR-Cas-modaliteter, gene editing design og analyse samt fænotypisk/genotypisk validering med kompetencer til terapeutisk problemløsning.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is structured into three interconnected parts that build progressively from theory to hands-on application to autonomous design.
+In the first part of the course, students are introduced to the theoretical foundations of genetic engineering in mammalian cells. This covers nuclease systems and precision editing strategies, including gene knockout, homology-directed repair, base editing, and prime editing. Topics also include DNA repair pathways, off-target effects, transient gene regulation, and delivery systems for mammalian cells, with emphasis on their relevance in biotechnology and medicine.
+ 
+In the second part of the course, students gain hands-on experience with a mammalian cell editing workflow. Using a cultured cell model, students perform co-transfection experiments to generate targeted genomic changes and analyse the outcomes at both phenotypic and genotypic levels. This includes genomic DNA extraction, target amplification, flow cytometry, and interpretation of Sanger sequencing data using sequence deconvolution tools to quantify editing efficiency and repair outcomes.
+ 
+In the third part of the course, running in parallel with the taught modules and laboratory work, students undertake a semester-long Therapeutic Design Project. This problem-based learning initiative requires students to autonomously model a genetic intervention for a defined monogenic pathology, integrating domain-specific predictive machine learning models (e.g., inDelphi, AlphaFold) to forecast DNA repair outcomes and protein structural alterations.
+ 
+By the end of the course, students will be equipped to independently design, execute, and critically evaluate CRISPR-based genetic engineering strategies in mammalian cells, bridging the gap between laboratory experimentation and therapeutic application.</Contents>
+          <Teaching_And_Learning_Methods>The goal is to provide students with practical and theoretical knowledge and competencies in state-of-the-art mammalian cell engineering. The course integrates advanced CRISPR/Cas modalities, gene editing design and analysis, and phenotypic/genotypic validation to foster autonomous therapeutic problem-solving.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The goal is to provide students with practical and theoretical knowledge and competencies in state-of-the-art mammalian cell engineering. The course integrates advanced CRISPR-Cas modalities, gene editing design and analysis, and phenotypic/genotypic validation to foster autonomous therapeutic problem-solving.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundkurser i life science/biologi, forståelse for cellebiologi, tidligere lab arbejde og håndtering af pipetter." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic courses in life science/biology, understanding of cell biology, earlier experimental work and handling of pipettes." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="27026.27430/27030.27020/27002" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluering og udvælgelse af præcision gene engineering modaliteter (f.eks. Hi-Fi Cas9, Base editors, Prime editing) til genetiske sygdomme." />
+          <Txt Lang="en-GB" Txt="Evaluate and select appropriate precision genetic engineering modalities (e.g., high-fidelity Cas9, Base Editing, Prime Editing) for disease correction." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design af in silico guide RNAs og homology-directed repair (HDR) templates, med off-targets og PAM-begrænsninger i minde. " />
+          <Txt Lang="en-GB" Txt="Design in silico guide RNAs and homology-directed repair (HDR) templates, mitigating off-target effects and PAM constraints." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benyt machine-learning-algoritmer (f.eks. DeepSpCas9, inDelphi) til at forudse DNA-reparation og modifikationer som følge af gene editing. " />
+          <Txt Lang="en-GB" Txt="Apply domain-specific machine learning algorithms (e.g., DeepSpCas9, inDelphi, AlphaFold) to predict DNA repair outcomes and protein structural alterations, critically evaluating the computational predictions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre cotransfektionsprotokoller i mammale cellekulturer for at inducere målrettede genomiske ændringer. " />
+          <Txt Lang="en-GB" Txt="Execute co-transfection protocols in mammalian cell cultures to induce targeted genomic alterations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificering af fænotypiske ændringer vha. flow cytometri og analyse deraf." />
+          <Txt Lang="en-GB" Txt="Quantify phenotypic shifts using flow cytometry and establish gating strategies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Isolering af genomisk DNA, amplifikation, og analyse af Sanger sekventering (ICE/TIDE/CRISPResso) for at kvantificere editing frekvens." />
+          <Txt Lang="en-GB" Txt="Isolate genomic DNA, execute target amplification, and deconvolute Sanger sequencing chromatograms using algorithmic tools (ICE/TIDE/CRISPResso) to quantify editing frequencies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler vævs-specifik leverings-strategier (AAVs, LNPs) med payload og immunogenicitet i minde." />
+          <Txt Lang="en-GB" Txt="Formulate tissue-specific delivery strategies (AAV, Lipid Nanoparticles) considering payload constraints and immunogenicity." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Navigere regulatoriske frameworks (EMA/FDA) for Advanced Therapy Medicinal Products (ATMPs)." />
+          <Txt Lang="en-GB" Txt="Navigate regulatory frameworks (EMA/FDA) for Advanced Therapy Medicinal Products (ATMPs)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kritisk analysere uoverensstemmelser mellem in vitro laboratorie og teoretiske terapeutiske designs." />
+          <Txt Lang="en-GB" Txt="Critically analyse discrepancies between in vitro laboratory proxies and theoretical therapeutic designs." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="30" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="32" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-06-16" Time="12:16:33.993" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

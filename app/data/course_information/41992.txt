@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41992" Volume="2026/2027" University="dtu" LastUpdated="2025-03-03+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Study_Board Study_BoardKey="DTU_Mekanik" />
+        <Point PointType="ECTS">2.5</Point>
+        <Title Lang="da-DK" Title="Design-orienteret numerisk modellering af armerede betonkonstruktioner" />
+        <Title Lang="en-GB" Title="Design-Oriented Numerical Modelling of Reinforced Concrete Structures" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kursets varighed er 1 uge. Kursus afholdes i august i ulige år. I 2025 afholdes kurset: 18-22 august." />
+          <Schedule_Txt Lang="en-GB" Txt="The duration of the course is 1 week. The course takes place i august in uneven years. In 2025 the course takes place: 18-22 August." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <External_Course_Responsible Email="miguel.fernandezruiz@upm.es" Name="Miguel Fernández Ruiz" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="905" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Linh Cao</GivenName>
+            <FamilyName>Hoang</FamilyName>
+            <Email>linho@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="3049" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter Noe</GivenName>
+            <FamilyName>Poulsen</FamilyName>
+            <Email>pnpo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af øvelsesopgaver og mundtlige præsentationer af disse" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Elevation of exercises and oral presentations of these" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="15 juni" />
+            <DeadLineTxt Lang="en-GB" Txt="June 15th" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er bygget op omkring forelæsninger og praktiske øvelser, der dækker både den analytiske og den numeriske tilgang. I øvelserne vil de studerende dels arbejde med analytiske modeller, dels med kodning af små MATLAB programmer, samt gøre brug af eksisterende beregningsprogrammer. Forelæsningerne vil dække emner som: 
+•	Grænsetilstandsdesign og sikkerhedsformat
+•	Plasticitetsteori og det teoretiske grundlag for numerisk modellering af betonkonstruktioner.
+•	Konvekse optimeringsmetoder og beskrivelse af den tilhørende FEM-formulering til at maksimere den beregningsmæssige brudlast. 
+•	Energiprincipper for elastiske konstruktioner og beskrivelse af den tilhørende optimeringsbaserede FEM-formulering til at analysere konstruktionsrespons i anvendelsesgrænsetilstanden  
+•	Ikke-lineær brudmekanik og opførsel af revnet armeret beton 
+•	Flytningsbaserede FEM- formuleringer og anvendelse på fuldt revnede betonkonstruktioner.
+•	Designhensyn og designkrav i anvendelsesgrænsetilstanden og revnedannelser i betonkonstruktioner
+•	Pålidelighedskoncepter og deres anvendelse indenfor rammerne af grænsetilstandsdesign
+Forelæsningerne holdes af eksperter fra DTU.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusnoter; forskningsartikler samt udvalgte bogkapitler.</Course_Literature>
+          <Course_Objectives>Kurset introducerer relevant state-of-the-art forskning og bedste praksis indenfor design og modellering af armerede betonkonstruktioner, med det mål at de studerende udvikler kompetencer til at foretage design og bæreevnevurdering af betonkonstruktioner. Kurset dækker flere emner i designprocessen, lige fra principperne for konceptuelt design til avanceret numerisk modellering.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is structured around lectures and practical exercises covering both analytical and numerical approaches. 
+In the exercises, students will work with analytical models, MATLAB code and existing software programs, focusing on the design and assessment of practical cases. 
+The lectures will cover topics such as: 
+•	Concepts of limit state design and safety.  
+•	The theory of plasticity and the fundamental theoretical basis for the formulation of numerical modelling of concrete structures. 
+•	Convex optimization methods and description of the corresponding FEM formulation to optimize the collapse load. 
+•	Energy principles for elastic structures and description of the corresponding optimization-based FEM formulation for service limit state analysis 
+•	Non-linear fracture mechanics and behaviour of cracked structural concrete 
+•	Displacement-based FEM formulations and the application to fully cracked concrete structures.
+•	Considerations on serviceability limit state and cracking of structures
+•	Reliability concepts and application within the frame of limit analysis
+The lectures will be given by experts from DTU.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes, research papers and chapters from selected textbooks.</Course_Literature>
+          <Course_Objectives>The scope is to present relevant state-of-the-art research and best practices within the field of structural concrete, with the aim that students develop sound and refined design and assessment capabilities. The course covers several topics ranging from the main principles in conceptual design of reinforced concrete to advanced numerical modelling.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset er tilrettelagt til PhD studerende, kandidatstuderende i det afsluttende studieår samt konstruktionsingeniører fra industrien med en forståelse af bærende konstruktioners mekanik, herunder elasticitets- og plasticitetsteori samt hovedprincipper i elementmetoden." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is designed for PhD students, final year graduate students and practitioners from industry with an understanding of structural mechanics, including theory of elasticity, plasticity and the principles of finite element modelling." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="En studerende, som har opfyldt kursets mål, vil:  Forstå konceptet grænsetilstandsdesign" />
+          <Txt Lang="en-GB" Txt="A student who has met the objectives of the course will:  Understand the concept of limit state design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Have en indsigt i forudsætningerne for en sikker og forsvarlig anvendelse af plasticitetsbaserede metoder til beregning af betonkonstruktioner" />
+          <Txt Lang="en-GB" Txt="Have an insight into the prerequisites for a safe and sound application of plasticity-based approaches to structural concrete" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå vigtigheden og betydningen af materialers og konstruktioners deformationskapacitet" />
+          <Txt Lang="en-GB" Txt="Understand the importance and implications of the deformation capacity of materials and structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende Finite Element Limit Analysis (FELA) til at designe, analysere og verificere betonkonstruktioner" />
+          <Txt Lang="en-GB" Txt="Understand and apply the concept of Finite Element Limit Analysis (FELA) to design, analysis and verification of concrete structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå ekstremumsætningerne og dualiteten mellem de svage øvre- og nedre værdiløsninger i forhold til FELA" />
+          <Txt Lang="en-GB" Txt="Understand the extremum theorems and the duality in weak upper- and lower-bound solutions with respect to FELA" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende Finite Element Serviceability Analysis (FESA) til at analysere og evaluere armerede betonkonstruktioners opførsel i anvendelsesgrænsetilstanden" />
+          <Txt Lang="en-GB" Txt="Understand and apply the concept of Finite Element Serviceability Analysis (FESA) to analyze and to evaluate the serviceability behaviour of reinforced concrete structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende Elasto-Plastic Stress Fields (EPSF) til at designe og vurdere konstruktioners opførsel" />
+          <Txt Lang="en-GB" Txt="Understand and apply the concept of Elastic-Plastic Stress Fields (EPSF) for design and assessment of structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og være i stand til at anvende sikkerhedsformatet i grænsetilstandsdesign i en numerisk modelleringssammenhæng" />
+          <Txt Lang="en-GB" Txt="Understand and be capable of applying the limit state safety format in a numerical modelling context" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Design-Oriented Numerical Modelling of Reinforced Concrete Structures</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="36" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="36" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:43.233" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

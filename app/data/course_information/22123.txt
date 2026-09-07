@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22123" University="dtu" LastUpdated="2026-04-23+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computational Precision medicine" />
+        <Title Lang="en-GB" Title="Computational Precision Medicine" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="72988" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Parvaneh</GivenName>
+            <FamilyName>Ebrahimi</FamilyName>
+            <Email>pareb@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="5094" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Lund</FamilyName>
+            <Email>olund@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_And_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen og multiple choice-prøve&#xD;&#xA;Eksamen består af to dele: en times multiple choice-test uden hjælpemidler og en mundtlig gruppepræsentation af projektet. Et præcisionsmedicinsk projekt udarbejdes i grupper. Aktiv deltagelse i gruppearbejdet og rettidig aflevering af projektet er forudsætninger for at kunne deltage i eksamen. Hver studerende får en karakter baseret projektet og den mundtlige gruppeeksamen. Den endelige karakter baseres på multiple choice-testen og den mundtlige eksamination af projektet, hvor multiple choice-testen vægter cirka 50 %, og gruppepræsentationen vægter cirka 50 %." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral examination and multiple choice ´&#xD;&#xA;The exam consists of two parts: a one-hour multiple choice test without aids and an oral group presentation of the project in groups. A precision medicine project is prepared in groups. Active participation in the group work and handing in the project on time are prerequisites for attending the exam. Each student will receive a grade based on the project and oral group presentation. The final grade will be based on the multiple choice test and the oral examination of the project with the multiple choice test accounting for approximately 50% and the group presentation accounting for approximately 50%." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I dette kursus vil de studerende blive introduceret til bioinformatiske metoder indenfor præcisionsmedicin. De studerende vil lære, hvordan transcriptomics data fra microarrays eller RNA sekventering kan bruges til diagnostik og patientstratificering, når optimale behandlingsformer skal vælges. De studerende vil også lære princripperne i præcisions- og personlig behandling ved analyse af RNA og DNA sekventeringsdata.
+
+Hver forelæsning består af en introduktion til et klinisk problem, efterfulgt af en introduktion til hvordan problemet kan løses bioinformatisk, efterfulgt af praktiske øvelser. De to sidstnævnte vil foregår i programmeringssproget R.
+
+Evalueringen er baseret på et hands-on gruppeprojekt, hvori et præcisionsmedicinsk problem skal løses. De studerende kan enten vælge et prædefineret projekt eller finde på deres eget.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, computerøvelser og gruppearbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Litteratur til dette kursus består af forskningsartikler. Læselisten opdateres årligt og vil være at finde på kursets hjemmeside mindst 3 uger før kursusstart.</Course_Literature>
+          <Course_Objectives>Det overordnede mål med dette kursus er at gøre de studerende i stand til at anvende datalogiske værktøjer indenfor præcisionsmedicin. I kurset lægges der særligt fokus på emner indenfor præcisionsdiagnostik såsom patientstratificering ud fra genekspressionsprofilering, og præcisionsbehandling, herunder særligt identifikation og evaluering af targets til cancer immunterapi.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>In this course, the students will be introduced to bioinformatics methods in precision medicine. The students will learn how transcriptomics data from microarrays or RNA sequencing can be used for diagnostics and patient stratification for selecting optimal treatments. The students will also learn the principles of precision and personalized therapeutics by analyzing RNA and DNA sequencing data.
+
+Each lecture consists of an introduction to a clinical problem, followed by an introduction to how to solve the problem bioinformatically, followed by hands on exercises. The latter two will be based on the programming language R.
+
+The evaluation is based on hands on group projects, in which a precision medicine problem is solved. The students can either choose a predefined project or come up with their own.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, computer exercises, and group work</Teaching_And_Learning_Methods>
+          <Course_Literature>The curriculum for this course will consist of primary research articles. This list will be updated yearly and will appear on the course website at least 3 weeks before the course starts.</Course_Literature>
+          <Course_Objectives>The aim of this course is to enable the students to apply a range of computational tools for precision medicine. In this course, we emphasize topics in precision diagnostics, such as patient stratification using gene expression profiling, as well as precision therapeutics, with a focus on identification and evaluation of targets for cancer immunotherapy.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset antager, at den studerende har erfaring med programmering i R, da alle øvelser og gruppearbejde vil foregå i dette programmeringssprog. En grundlæggende forståelse for next generation sequencing og god forståelse for statistik er stærkt anbefalet." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course assumes that the student has basic experience in R programming, as all exercises and group assignments will be based on this language. A basic understanding of next generation sequencing and a good understanding of statistics are highly recommended." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402.22110.22100.22126.(27002/27008)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare koncepterne bag anvendt præcisionsmedicin." />
+          <Txt Lang="en-GB" Txt="explain the concepts of applied precision medicine." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare koncepterne bag behandlingsstratificering af cancerpatienter og beskrive styrker og svagheder ved brugen af bulk genekspressionsprofilering." />
+          <Txt Lang="en-GB" Txt="explain the concepts of treatment stratification of cancer patients and describe strengths and weaknesses of using bulk gene expression profiling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare koncepterne bag cancer immunterapi og beskrive udfordringerne forbundet med valg af targets." />
+          <Txt Lang="en-GB" Txt="explain the concepts of cancer immunotherapy and discuss the challenges of target selection." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende grundlæggende metoder til usuperviseret clustering baseret på genekspression." />
+          <Txt Lang="en-GB" Txt="apply basic methods for unsupervised clustering based on gene expression." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende grundlæggende metoder til klassifikation af prøver baseret på genekspression." />
+          <Txt Lang="en-GB" Txt="apply basic methods for sample classification based on gene expression." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende differentiel genekspressionsanalyse til at finde potentielle tumorassocierede antigener." />
+          <Txt Lang="en-GB" Txt="apply differential gene expression analysis to find potential tumor associated antigens." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere isoform switches til at finde potentielle cellemembranantigener." />
+          <Txt Lang="en-GB" Txt="analyze isoform switches to identify potential cell membrane antigens." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="producere bioinformatiske workflows til diagnostik, prognostik, og antigen identifikation." />
+          <Txt Lang="en-GB" Txt="create bioinformatics workflows for diagnostics, prognostics, and antigen identification." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere korrektheden, begrænsningerne, validiteten, reproducerbarheden og den biologiske relevans af resultater produceret af AI i relation til de emner, der undervises i på kurset." />
+          <Txt Lang="en-GB" Txt="judge the correctness, limitations, validity, reproducibility, and biological relevance of results produced by AI, in relation to the subjects taught in the course" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Bioinformatik til præcisionsmedicin med særligt fokus på diagnostike og terapeutiske anvendelser inden for kræftområdet</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="6" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:10.65" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

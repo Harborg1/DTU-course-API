@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41113" University="dtu" LastUpdated="2025-02-25+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Computer modellering af marine og kystnære problemer" />
+        <Title Lang="en-GB" Title="Computer modelling for marine and coastal engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Kurset forventes gennemført hos DHI i Hørsholm" />
+          <LocationTxt Lang="en-GB" Txt="The course is expected to take place at DHI in Hørsholm" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="DHI Water &amp; Environment" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="DHI Water &amp; Environment" />
+          </Extern_Dep>
+        </Departments>
+        <Course_Responsible PersonKey="349" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Erik Damgaard</GivenName>
+            <FamilyName>Christensen</FamilyName>
+            <Email>edch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Grupperapport efterfulgt af mundtlig gruppepræsentation. Helhedsvurdering baseret på grupperapport og individuel mundtlig eksamination i forbindelse med præsentationen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Group report followed by an oral group presentation. Overall assessment based on the group report and the individual oral examination in connection with the presentation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The presentation takes place during the final class day." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Præsentation sidste dag i 3 ugers perioden." />
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus arbejder videre med den grundlæggende strømningsmekanik og bøldgedynamik som er tilegnet i kursus 41111. De studerende vil få en introduktion til de mest anvendte moduler i DHI MIKE software pakken såsom hydrodynamik (HD), spektrale bølger (SW), boussinesq bølgemodel (BW), sandtransport (ST) og mudder transport (MT). Den sidste halvdel af kurset består af gruppearbejde hvori de studerende selv skal etablere en kompleks model til at løse en realistisk rådgivningsopgave inden for det marine eller kystnære område. Sådanne opgaver kan eksempelvis være at: i) beregne bølge- og strømklimaer med henblik på at bestemme designparametre til for eksempel en offshore vindmøllepark, ii) Spredning af forurening i kystmiljøet, iii)  Sedimenttransport og kystlinjeudvikling i nærheden af en havn.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger samt gruppearbejde i små grupper. I slutningen af kurset præsenteres gruppearbejdet mundtligt af de studerende.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere de studerende til numeriske metoder indenfor hydraulisk modellering. I dette kursus løses en række typiske problemstillinger indenfor kyst og offshore engineering. Løsningerne opnås ved anvendelse af et kommercielt software program (MIKE 21 of DHI).</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>In this course the fundamental hydrodynamics and wave dynamics obtained as part of course 41111 will be applied. The students will recieve an introduction to the most relevant modules in the DHI MIKE software package such as the hydrodynamic (HD), spectral wave (SW), boussinesq wave model (BW), sand transport (ST) and mud transport (MT). During the last half of the course the students will work in groups to establish their own complex models to solve a realistic engineering problem. Such problems could be: i) Flow and wave simulations to provide design conditions for a potential offshore wind turbine farm, ii) Dispersion of contaminants in a coastal environment and, iii) Sediment transport and coastline evolution around a harbour.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group-work in smaller groups. At the end of the course the students will make an oral presentation of their work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce students to the use of numerical methods in hydraulics. In this course the solution to various coastal and offshore engineering problems will be obtained by using a commercial numerical modelling software (MIKE 21 of DHI). The course will focus on typical applications encountered in marine and coastal environments.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til lineær bølgedynamik og grundlæggende hydraulik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of linear wave dynamics and basic hydraulics." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41111" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille et hydraulisk modelkompleks for et kystnært område ved brug af DHI's kommercielle MIKE 21 software pakke." />
+          <Txt Lang="en-GB" Txt="Establish a nearshore hydraulic modelling complex based on the MIKE 21 software package." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Etablere MIKE 21 model-input inklusiv bathymetri, vindfelter, bølgefelter, sediment maps og tidevandskræfter." />
+          <Txt Lang="en-GB" Txt="Establish MIKE 21 model input including bathymetry, wind, wave and sediment maps and tidal forcing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse de dybdeintegrerede strømningsligninger, spektrale bølgeligninger samt den kombinerede bølge/strøm sediment transport vha. det etablerede MIKE 21 numeriske model kompleks." />
+          <Txt Lang="en-GB" Txt="Solve the depth-integrated flow equations, spectral wave equations and the combined wave-current sediment transport using the MIKE 21 numerical modelling complex." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende numeriske metoder herunder diskretiseringsteknikker og redegøre for deres betydning for løsningen." />
+          <Txt Lang="en-GB" Txt="Apply numerical methods including meshing of domains  and account for its impacts on the solution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give praktisk anvendelige vurderinger og fortolkninger af de numeriske resultater fra MIKE 21." />
+          <Txt Lang="en-GB" Txt="Provide practical assessments and interpretations of the MIKE 21 numerical solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificere komplekse offshore og kystnære fænomener i MIKE 21." />
+          <Txt Lang="en-GB" Txt="Interpret complex surf zone and offshore processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse en større opgave som anvender modelkomplekset på en realistisk problemstilling." />
+          <Txt Lang="en-GB" Txt="Solve a major and realistic exercise problem using the established MIKE 21 modelling complex." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere resultater fra de numeriske beregninger i en anvendelig og letforståelig form." />
+          <Txt Lang="en-GB" Txt="Present results of numerical calculations in a transparent, easily accessible and applicable form." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde en struktureret og fyldestgørende hydraulisk rapport med kildehenvisninger og referencer." />
+          <Txt Lang="en-GB" Txt="Write up a well-structured hydraulic report on the assignment upon the completion of course." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="10" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="90" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="24" Min="4" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:37.887" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

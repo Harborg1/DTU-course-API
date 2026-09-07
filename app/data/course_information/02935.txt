@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02935" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Introduktion til anvendt statistik og R for Ph.d. studerende" />
+        <Title Lang="en-GB" Title="Introduction to applied statistics and R for PhD students" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="ServiceCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset i Juni 2026 starter den 4. juni 2024, og varer 3 uger." />
+          <Schedule_Txt Lang="en-GB" Txt="The course in June 2026 starts on the 4th of June and lasts three weeks." />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Compute" />
+        <Course_Responsible PersonKey="41999" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Stockmarr</FamilyName>
+            <Email>anst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Report" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="De deltagende ph.d.-studerende får to uger til at analysere egne data og aflevere en rapport, som skal kunne læses af personer uden en statistisk baggrund. Hvis der er deltagere, der ikke har egne data vil de få udleveret et datasæt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The participants will get two weeks to analyse their own data and hand in a report. The report should describe the analyses and results for persons without a statistical background. Data will be provided to participants, who do not have their own." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="the use of generative artificial intelligence is not permitted for the report writing. Control measures will be applied." />
+            <Aid_Txt Lang="da-DK" Txt="Brug af generativ kunstig intelligens er ikke tilladt ved rapportskrivningen. Kontrolformer vil finde anvendelse." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Hvis der er flere tilmeldte end 30, vil der blive trukket lod om pladserne. Ph.d.-studerende  har fortrinsret." />
+            <Supp_Txt Lang="en-GB" Txt="If there are more than 30 registered then places will be allocated by a random draw (preference given to PhD students)." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Der vil blive undervist i basale statistiske metoder og begreber for ph.d.-studerende med vægt på anvendelser og fortolkning af resultater. Specifikke emner er statistisk inferens og t-tests, simpel og multipel lineær regression, en- og to-sidet varians analyse, kovarians analyse og lineære modeller, kategoriske data, logistisk regression, principal komponent analyse, statistisk rapport skrivning og et yderligere emne. Der indgår en større praktisk opgave, som tager udgangspunkt i den ph.d.-studerendes eget projekt og består i planlægning, udførsel og afrapportering af en statistisk analyse.</Contents>
+          <Teaching_And_Learning_Methods>Kurset har to dele. Først er der en uge med forelæsninger og øvelser. Derefter en periode på to uger hvor deltagererne analyserer egne data under supervision og afslutter med en rapport. I projektperioden vil der være gruppemøder med en vejleder. Inden den egentlige kursusstart vil der være en dag med introduktion til den statistiske programpakke R.</Teaching_And_Learning_Methods>
+          <Course_Literature>Michael Crawley. (2015)  Statistics An introduction using R. 2nd edition, Wiley. Bogen er supplementerende læsning, og forelæsningsmaterialet er udarbejdet uafhængigt af denne.</Course_Literature>
+          <Course_Objectives>At gøre deltagererne i stand til at lave en sædvanlig statistisk analyse af egne data og relatere resultaterne til en praktisk problemstilling. Deltagererne vil være i stand til at udføre statistiske analyser ved hjælp af den statistiske programpakke R.</Course_Objectives>
+          <DTU_Remark>Vær opmærksom på, at dette er et meget populært kursus, så der trækkes lod om pladserne blandt de tilmeldte. Fremmødekrav til forelæsninger i statistik: Minimum 4 ud af 5 dage, her medregnes introduktionsdagen ikke.</DTU_Remark>
+          <Remark>Fremmødekrav til forelæsninger i statistik: Minimum 4 ud af 5 dage, her medregnes introduktionsdagen ikke.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Basic statistical methods and ideas will be taught with emphasis on applications and the interpretation of results and their relationship to the applications. Specific content is Statistical inference and t-tests, simple and multiple linear regression, one- and two-way analysis of variance, analysis of covariance and linear models, categorical data, logistic regression, principal components analysis, statistical report writing and an optional topic. There will be a practical project based on the participants' own data consisting of planning, performing and presenting a statistical analysis.</Contents>
+          <Teaching_And_Learning_Methods>The course has two parts. First there will be a week of class room teaching with lectures and exercises. This will be followed by a two week period where a project is completed under supervision, preferably based on the participants' own data. During the project period there will be group sessions with a supervisor. Before the start of the main course one day will be given with an introduction to the statistical program R.</Teaching_And_Learning_Methods>
+          <Course_Literature>Michael Crawley. (2015)  Statistics An introduction using R. 2nd edition, Wiley, The book is supplementary, and lectures will be given as stand alone material.</Course_Literature>
+          <Course_Objectives>Make the participants able to perform a standard statistical analysis of their own data and relate the results to the practical application. The participants will be able to carry out statistical analyses using the statistical package R.</Course_Objectives>
+          <DTU_Remark>Please notice, that this is a very popular course. We will draw lots among the students registered for the course in order to determine who gets to participate. Mandatory presence for lectures in statistics: Minimum 4 out of 5 days, not counting the introduduction.</DTU_Remark>
+          <Remark>Mandatory presence for lectures in statistics: Minimum 4 out of 5 days, not counting the introduduction.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset henvender sig til ph.d. studerende, som har haft et statistikkursus i løbet af deres studietid, men som ikke har haft brug for det og derfor behøver at få statistik genopfrisket fra bunden.&#xD;&#xA;Det vil være en fordel (men ikke et krav) at have haft et introducerende programmeringskursus." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is aimed at PhD students, who have taken a statistics course during their studies, but have not used it and therefore need statistics refreshed from scratch.&#xD;&#xA;It will be an advantage (but not a requirement) to have taken a basic programming course." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre deskriptive analyser, herunder deskriptive figurer, til at beskrive data. " />
+          <Txt Lang="en-GB" Txt="Perform descriptive analyses, including descriptive plots, to describe data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Generere en statistisk hypotese på baggrund af en praktisk problemstilling. " />
+          <Txt Lang="en-GB" Txt="Generate a statistical hypothesis based on a practical problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Differentiere mellem statistiske metodevalg." />
+          <Txt Lang="en-GB" Txt="Differentiate between the choice of different statistical methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og anvende hyppigt anvendte statistiske regressionsmodeller." />
+          <Txt Lang="en-GB" Txt="Formulate and apply common statistical regression models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre modelkontrol." />
+          <Txt Lang="en-GB" Txt="Perform statistical model check." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre estimation og hypotesetest ved brug af hyppigt anvendte statistiske modeller." />
+          <Txt Lang="en-GB" Txt="Perform estimation and hypothesis test in commonly used statistical models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke resultaterne fra hyppigt anvendte statistiske modeller, og relatere dem til problemstillingen." />
+          <Txt Lang="en-GB" Txt="Interpret the results from commonly used statistical models and relate the results to the practical application." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simple statistiske analyser ved brug af R." />
+          <Txt Lang="en-GB" Txt="Perform simple statistical analyses using R." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke output fra analyser i R." />
+          <Txt Lang="en-GB" Txt="Interpret output from analyses using R." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forholde sig kritisk til resultater fra statistiske analyser." />
+          <Txt Lang="en-GB" Txt="Critical assessment of results from statistical analyses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere og præsentere resultater i en skriftlig rapport til personer uden statistisk baggrund." />
+          <Txt Lang="en-GB" Txt="Document and present results in a written report to persons without a statistical background." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge, udføre og afrapportere en simpel statistisk analyse." />
+          <Txt Lang="en-GB" Txt="Plan, perform and present a simple statistical analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Anvendt statistik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="36" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="36" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="6" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="30" Min="6" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:39.33" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

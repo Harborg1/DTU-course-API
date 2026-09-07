@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02613" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Python og High-Performance Computing" />
+        <Title Lang="en-GB" Title="Python and High-Performance Computing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="16242" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Matthias Bo</GivenName>
+            <FamilyName>Stuart</FamilyName>
+            <Email>mbst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="41921" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sven</GivenName>
+            <FamilyName>Karlsson</FamilyName>
+            <Email>svea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="449" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bernd</GivenName>
+            <FamilyName>Dammann</FamilyName>
+            <Email>beda@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Det er en forudsætning for at gå til eksamen, at man har fået godkendt en vis del af de obligatoriske opgaver. Disse opgaver indgår ikke i den endelige eksamensbedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="It is a requirement for participating in the exam that a certain part of the mandatory assignments are approved. These assignments are not part of the final exam assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til high-performance computere med vægt på de aspekter, der er vigtige i forbindelse med store beregningstunge problemer.
+Multi-core computere og GPU'er: introduktion til arkitektur med vægt på anvendeligheden fra et high-level sprog som Python.
+Værktøjer til at måle performance.
+Brug af Python og relevante moduler.
+Performance-udfordringer ved brug af Python-sproget.
+Effektive numeriske beregninger med NumPy.
+Parallel programmering med Python og optimerende sprogudvidelser.
+GPU-programmering med Python.
+Design af effektive arbejdsgange til at løse problemer på forskellige platforme.
+Brug af  moderne HPC-installationer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus udstyrer studerende med de væsentligste færdigheder til effektivt at håndtere omfattende beregningsproblemer inden for videnskabelig databehandling og beslægtede områder ved brug af Python-programmeringssproget. Python er særligt kraftfuld, når det kombineres med specialiserede moduler som NumPy til numeriske og videnskabelige beregninger, men det at forstå, hvordan man udnytter dets potentiale for højtydende databehandling (HPC), er ikke altid ligetil. I mange anvendelser udnyttes den tilgængelige regnekraft ikke fuldt ud på grund af manglende viden om implementering af effektive programmer og arbejdsgange. Dette kursus adresserer dette ved at give studerende en introduktion til HPC-metoder inden for Python, hvilket gør det muligt for dem at implementere og udrulle effektive løsninger på forskellig hardware fra personlige computere til større HPC-installationer. Gennem dette kursus vil studerende lære at udnytte Python og moderne computerarkitekturers fulde potentiale til effektivt at tackle komplekse beregningsmæssige udfordringer.</Course_Objectives>
+          <Remark>Programmering og implementering af Python-kode samt brug af Linux-kommandolinjen er en væsentlig del af kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to high-performance computers with an emphasis on important aspects when dealing with large, computationally demanding problems.
+Multi-core computers and GPUs: introduction to architecture with an emphasis on usability from a high-level language like Python.
+Tools to measure performance.
+Usage of Python and relevant modules.
+Performance challenges when using the Python language.
+Efficient numerical calculations with NumPy.
+Parallel programming with Python and optimizing language extensions.
+GPU programming with Python.
+Design of efficient workflows to solve problems on different platforms. 
+Usage of modern HPC installations.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course equips students with the essential skills to effectively tackle substantial computational problems within scientific computing and related domains using the Python programming language. Python is particularly powerful when combined with specialized modules like NumPy for numerical and scientific computations, but understanding how to leverage its potential for high-performance computing (HPC) is nontrivial. Many applications fall short of utilizing the available processing power due to a lack of knowledge in implementing efficient programs and workflows. This course bridges that gap by providing students with an introduction to HPC methods within Python, enabling them to efficiently implement and deploy solutions on a spectrum of hardware, from personal laptops to larger HPC installations. Through this course, students will learn to harness the full potential of Python and modern computing architectures to tackle complex computational challenges effectively.</Course_Objectives>
+          <Remark>Programming and implementation of Python code, as well as using the Linux command line, is an essential part of the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende erfaring med programmering i Python er påkrævet. Kendskab til Linux-kommandolinjen og programmering af shell-scripts." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent experience with programming in Python is required. Knowledge of the Linux command line, and programming of shell-scripts." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/02003" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare fundamentale performance-aspekterne af moderne multi-core computersystemer og GPU'er" />
+          <Txt Lang="en-GB" Txt="explain the fundamental performance aspects of modern multi-core computer systems and GPUs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udnytte samspillet mellem hardware (CPU, GPU, hukommelseshierarki og I/O) og softwarekomponenter (Python-kode, biblioteker)" />
+          <Txt Lang="en-GB" Txt="utilize the interplay of hardware (CPU, GPU,  memory hierarchy and I/O) and software components (Python code, libraries)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere scientific computing problemer og implementere effektive løsninger" />
+          <Txt Lang="en-GB" Txt="analyze scientific computing problems and implement efficient solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gøre brug af forskellige beregningsressourcer" />
+          <Txt Lang="en-GB" Txt="make use of different computational resources" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere performance-flaskehalse i Python-programmer" />
+          <Txt Lang="en-GB" Txt="identify performance bottlenecks in Python programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forbedre performance af Python-programmer" />
+          <Txt Lang="en-GB" Txt="improve performance of Python programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende paralleliseringsteknikker ved hjælp af Python" />
+          <Txt Lang="en-GB" Txt="apply parallelization techniques using Python" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre og dokumentere computereksperimenter (performance målinger)" />
+          <Txt Lang="en-GB" Txt="conduct and document computer experiments (performance measurements)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere performance og skalerbarhed af parallele programmer" />
+          <Txt Lang="en-GB" Txt="evaluate the performance and scalability of parallel programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge etablerede analytiske evalueringsmodeller, såsom modeller for ressourceforbrug" />
+          <Txt Lang="en-GB" Txt="use established analytical evaluation models, such as models for resource usage" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:23.923" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02516" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Introduktion til Deep Learning i Computer Vision" />
+        <Title Lang="en-GB" Title="Introduction to Deep Learning in Computer Vision" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="94795" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Dimitrios</GivenName>
+            <FamilyName>Papadopoulos</FamilyName>
+            <Email>dimp@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="219202" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Theodora</GivenName>
+            <FamilyName>Kontogianni</FamilyName>
+            <Email>thekon@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen og rapporter.&#xD;&#xA;Godkendte rapporter er et krav for at bestå kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination and reports.&#xD;&#xA;Approval of reports is a prerequisite for passing the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No electronic devices permitted.&#xD;&#xA;You can bring 2 A4 sheets of handwritten notes." />
+            <Aid_Txt Lang="da-DK" Txt="Ingen elektroniske enheder tilladt.&#xD;&#xA;Du kan medbringe 2 A4 ark med håndskrevne noter." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset indeholder forelæsninger og øvelser om neurale netværk for computer vision. Øvelserne tager den studerende fra en konkret problemstilling indenfor computer vision til en løsning baseret på neurale netværk. Der dækkes emner indenfor billedgenkendelse og -forståelse så som billedklassifikation, objektgenkendelse og semantisk segmentering.</Contents>
+          <Teaching_And_Learning_Methods>Kurset består af forelæsninger, praktiske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Mange computer vision opgaver, som traditionelt har været løst med algoritmer baseret på designede features bliver nu løst med brug af deep learning. Dette inkluderer opgaver som objektdetektion, segmentering og klassifikation. I dette kursus vil den studerende lære om disse opgaver, og hvordan de løses med deep learning. Det vil gøre de studerende i stand til at identificere og beskrive et problem indenfor computer vision, løse det med brug af en relevant neutralt netværksarkitektur og analysere kvaliteten af løsningen.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course contains lectures and exercises about neural networks for computer vision. The exercises takes the student from a concrete problem within computer vision to a solution based on neural networks. Topics covered include image recognition and understanding tasks such as image classification, object detection and semantic segmentation.</Contents>
+          <Teaching_And_Learning_Methods>The course consists of lectures, practical exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Many computer vision tasks were traditionally solved based on hand-crafted features, but are now solved using deep learning. Examples of such tasks include object detection, segmentation and classification. In this course the student will learn about some of these tasks and how to solve them with deep learning. This will enable the student to identify and describe a problem within computer vision, solve it using a suitable neural network architecture and analyze the performance of the solution.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="02450" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="02450" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere hvad deep learning er og forklare forskellen mellem deep learning modeller og traditionelle machine learning modeller baseret på hånd-designede features for computer vision." />
+          <Txt Lang="en-GB" Txt="Define what is deep learning and explain the difference between deep learning models and traditional machine learning based on hand-crafted features in computer vision." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge og implementere en passende convolutional neural netværksarkitektur for klassifikation, lokalisering og segmentering." />
+          <Txt Lang="en-GB" Txt="Select and implement suitable convolutional neural network architectures for classification, localization and segmentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke og illustrere interne repræsentationer i et convolutional neuralt netværk" />
+          <Txt Lang="en-GB" Txt="Interpret and illustrate the internal representations of a convolutional neural network" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere kendskab til og brug af populære teknikker brugt til træning af neurale netværk." />
+          <Txt Lang="en-GB" Txt="Demonstrate knowledge of and use of popular techniques used for training neural networks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde passende træningsdata for et givent problem samt anvende relevant data augmentation." />
+          <Txt Lang="en-GB" Txt="Find appropriate training data for a given problem as well as apply relevant data augmentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sætte convolutional neurale netværk op til at træne med brugerdefineret data på en remote server." />
+          <Txt Lang="en-GB" Txt="Setting up convolutional neural networks to be trained with a custom dataloader on a remote server" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme og analysere hvor godt et convolutional neuralt netværk virker." />
+          <Txt Lang="en-GB" Txt="Assess and analyze the performance of convolutional neural networks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere og implementere adverserielle angreb for at fremhæve ustabilitet i neurale netværk" />
+          <Txt Lang="en-GB" Txt="Define and implement adversarial attacks to highlight instabilities in neural networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere, implementere og diskutere attributions-baserede metoder fra forklarbar kunstig intelligens" />
+          <Txt Lang="en-GB" Txt="Define, implement and discuss attribution methods from explainable AI" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="66" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="34" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:11.017" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

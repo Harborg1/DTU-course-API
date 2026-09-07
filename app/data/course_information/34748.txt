@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34748" University="dtu" LastUpdated="2025-04-10+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Modellering for drift og overvågning af komplekse industrielle processer" />
+        <Title Lang="en-GB" Title="Modelling for operation of complex industrial plants" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="54033" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Xinxin</GivenName>
+            <FamilyName>Zhang</FamilyName>
+            <Email>xinz@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Studerendes karakter bedømmes ud fra deres individuelle bidrag til gruppens øvelser og rapporter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The student's grade is evaluated based on their individual contribution to the group exercises and reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="13 uger" />
+          <Duration Lang="en-GB" Txt="13 weeks" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursets primære mål er, er at introducere den studerende til en metode for funktions modellering og analyse af styrings og overvågningsproblemer i komplekse industrielle systemer. Generelt sker alle modellerings-aktiviteter i to trin. Det første trin er "Fortolkning", når modellen tilegner sig viden og principper for det emne; og det andet trin er "Repræsentation", når modellerne rekonstruerer viden på et foruddefineret modelleringssprog. Kurset vil følge disse to trin. For det første introducerer kurset egenskaberne ved de komplekse systemer og udfordringerne i deres daglige drift. 
+Studerende skal lære at analysere design og kontrol af systemer og specificere driftsmål og funktioner. Kurset introducerer derefter teorien og metoden for funktionel modellering og dens anvendelse (videnbaserede systemer) til støtte for kompleks drift af anlægget. Studerende skal lære at opbygge funktionsmodeller og bruge modellen til at analysere driftsscenarier for anlæg.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og gruppearbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets formål er at introducere den studerende til en metode (Multilevel Flow Modelling) for funktions modellering og analyse af styrings og overvågningsproblemer i komplekse industrielle systemer, herunder også diagnose og support til operatørbeslutninger. Kurset demonstrerer industrielle anvendelser af videnbaserede systemer til overordnet diagnose, planlægning og anlægsdesign.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The primary goal of the course is for students to learn a modelling method that has the potential to support complex system operation. On the generic level, all form of modelling activities happens in two steps. The first step is "Interpretation", when the modeller acquires knowledge and principles of the modelled subject; and the second step is "Representation", when the modeller reconstructs the knowledge in a pre-defined formal language, i.e. to build a “model” that mimic the behaviour of the modelled subject. The course will be conducted following this general modelling framework, by firstly introducing the features of the complex engineered systems and the challenges in their daily operation. The students shall learn to analyze the design and control of these systems and specify the operation goals and functions. The course will then introduce the theory and method of functional modelling and its application (implementation of knowledge systems) to support complex plant operation. The students shall learn to build function models and use the model to analyze plant operation scenarios.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and group work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The purpose of this course is to introduce students to a function modelling methodology (Multilevel Flow Modelling) to analyze operational problems in complex industrial plants including diagnosis and decision support. The course demonstrates knowledge based systems for diagnosis, planning and design from a plant-wide perspective.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Viden om objektorienteret analyse og programmering. &#xD;&#xA;Grundlæggende forståelse af styrings og reguleringssystemer samt modellering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of object oriented analysis and programming&#xD;&#xA;Basic understanding of control systems and modelling" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere komplekse automations systemer" />
+          <Txt Lang="en-GB" Txt="Analyze the design of a complex automation system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Nedbryde automations og kontrol hierarkier" />
+          <Txt Lang="en-GB" Txt="Decompose automation and control hierarchies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Specificere mål og midler for systemets drift" />
+          <Txt Lang="en-GB" Txt="Specify goals and means of plant operation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Specificere styrings- og overvågningsopgaver samt driftsprocedurer" />
+          <Txt Lang="en-GB" Txt="Specify control tasks and operation procedures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle Multilevel Flow Modeller (MFM) til løsning af industrielle problemstillinger" />
+          <Txt Lang="en-GB" Txt="Develop Multilevel Flow Models (MFM) for industrial problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende MFM modeller til løsning af industrielle problemer" />
+          <Txt Lang="en-GB" Txt="Apply MFM models for diagnosis and action planning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge og gennemføre projekter" />
+          <Txt Lang="en-GB" Txt="Plan and execute projects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en teknisk rapport, inklusive kildehenvisninger og citation" />
+          <Txt Lang="en-GB" Txt="Write a technical report, including references and citations" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Automatisering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:52.78" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

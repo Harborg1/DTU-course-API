@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62421" Volume="2026/2027" University="dtu" LastUpdated="2026-02-28+01:00">
+        <Point PointType="ECTS">7.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Informationsteknologi 1" />
+        <Title Lang="en-GB" Title="Information Technology 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Undervisningen finder sted hver mandag og cirka hver anden torsdag formiddag.&#xD;&#xA;De præcise datoer vil blive annonceret via kalenderen i DTU Learn." />
+          <Schedule_Txt Lang="en-GB" Txt="Lessons take place every Monday and approximately every second Thursday morning.&#xD;&#xA;The exact dates will be announced via the calendar in DTU Learn." />
+          <Schedule ScheduleKey="E1A" SortID="0" />
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="225220" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Daniel</GivenName>
+            <FamilyName>Zielasko</FamilyName>
+            <Email>danzi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen består af en individuel mundtlig eksamen.&#xD;&#xA;&#xD;&#xA;Gennemførelse og aflevering af et obligatorisk individuelt projekt, herunder en projektrapport, er en forudsætning for at kunne deltage i eksamen. Projektet skal være godkendt for, at den studerende kan indstilles til den mundtlige eksamen.&#xD;&#xA;&#xD;&#xA;Den mundtlige eksamen tager udgangspunkt i både kursets faglige indhold og den studerendes individuelle projektarbejde, herunder implementering, designbeslutninger og anvendte udviklingspraksisser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assessment consists of an individual oral examination.&#xD;&#xA;&#xD;&#xA;Completion and submission of a mandatory individual project, including a project report, is a prerequisite for taking the examination. The project must be approved in order for the student to be admitted to the oral examination.&#xD;&#xA;&#xD;&#xA;The oral examination is based on both the course content and the student’s individual project work, including implementation, design decisions, and applied development practices." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="2 modules - same as lesson modules (E1A &amp; E2B)" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="2 moduler - følger skemaplacering (E1A &amp; E2B)" />
+            <Schedule ScheduleKey="E1A" />
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Programmering:
+- Grundlæggende programmeringsbegreber, herunder variable, datatyper, udtryk og operatorer.
+- Kontrolstrukturer (selektion og iteration).
+- Funktioner og struktureret, proceduralt programdesign.
+- Samlinger og simple datastrukturer.
+- Filhåndtering og struktureret dataserialisering.
+- Principper for udvikling af interaktive og hændelsesbaserede applikationer.
+- Grundlæggende metoder til fejlsøgning, test og forbedring af programkvalitet.
+
+Softwareudvikling:
+- Introduktion til iterative softwareudviklingsprocesser og projektarbejdsgange.
+- Anvendelse af udviklingsmiljøer og versionsstyringssystemer til struktureret håndtering af kode.
+- Dokumentation og organisering af kode.
+- Introduktion til ansvarlig anvendelse af AI-baserede udviklingsværktøjer i programmerings- og fejlsøgningsarbejde.
+
+Modellering:
+- Teknikker til modellering af programlogik, arbejdsgange og brugerinteraktion ved hjælp af diagrammatiske repræsentationer.
+
+Grundlæggende begreber:
+- Basale koncepter inden for computerhardware, hukommelsesorganisering og programafvikling.
+- Digital repræsentation af information og logisk tænkning i beregningsmæssig problemløsning.</Contents>
+          <Teaching_And_Learning_Methods>Samtaleforedrag, øvelser og projektbaserede opgaveafleveringer.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende et solidt fundament i struktureret programmering og beregningsmæssig problemløsning inden for sundhedsteknologiske anvendelser. Kurset har fokus på forståelse af, hvordan programmer afvikles, udvikling af mindre interaktive softwareapplikationer samt anvendelse af professionelle udviklingsværktøjer og -praksisser, herunder versionsstyring, fejlsøgning, test og ansvarlig brug af AI-baserede udviklingsværktøjer.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Sundhedsteknologi: 1. semester
+
+Kurset giver en introduktion til informationsteknologi - med fokus på sundhedsvidenskabelige anvendelser.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Programming:
+- Fundamental programming concepts including variables, data types, expressions, and operators.
+- Control structures (selection and iteration).
+- Functions and structured procedural program organization.
+- Collections and basic data structures.
+- File handling and structured data serialization.
+- Principles of developing interactive and event-driven applications.
+- Basic techniques for debugging, testing, and improving program quality.
+
+Software development:
+- Introduction to iterative software development processes and project workflows.
+- Use of development environments and version control systems for structured code management.
+- Documentation and code organization practices.
+- Introduction to responsible use of AI-assisted development tools in programming and debugging tasks.
+
+Modelling:
+- Techniques for modelling program logic, workflows, and user interaction using diagrammatic representations.
+
+Fundamentals:
+- Basic concepts of computer hardware, memory organization, and program execution.
+- Digital representation of information and logical reasoning in computational problem-solving.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, classroom discussions, exercises and project based assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide students with a solid foundation in programming and computational problem-solving for domain-specific healthcare applications. The course focuses on structured procedural programming, understanding program execution, and developing small interactive software applications. It introduces professional development tools and practices, including version control, debugging, testing, and responsible use of AI-assisted development tools.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Sundhedsteknologi: 1. semester
+
+The course provides an introduction to information technology – focusing on healthcare applications.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Dokumenteret viden svarende til uddannelsens optagelseskrav." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Documented knowledge corresponding to the admission requirements for the Healthcare Technology Engineer study programme." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlæggende begreber inden for computerarkitektur, datarepræsentation og hukommelsesorganisering med relevans for programafvikling." />
+          <Txt Lang="en-GB" Txt="Explain fundamental concepts of computer architecture, data representation, and memory organization relevant to program execution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere strukturerede, procedurale programmer ved anvendelse af variable, kontrolstrukturer, funktioner og samlinger." />
+          <Txt Lang="en-GB" Txt="Design and implement structured procedural programs using variables, control structures, functions, and collections." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende beregningsmæssig tænkning og logiske udtryk til at formulere og løse problemer algoritmisk." />
+          <Txt Lang="en-GB" Txt="Apply computational reasoning and logical expressions to formulate and solve problems algorithmically." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle mindre interaktive applikationer ved anvendelse af hændelsesbaserede programmeringsprincipper." />
+          <Txt Lang="en-GB" Txt="Develop small interactive applications using event-driven programming principles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere filhåndtering og struktureret dataserialisering til lagring og indlæsning af applikationsdata." />
+          <Txt Lang="en-GB" Txt="Implement file handling and structured data serialization for storing and loading application data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere simpel programlogik og brugerinteraktion ved hjælp af egnede diagrammatiske repræsentationer." />
+          <Txt Lang="en-GB" Txt="Model simple program logic and user interaction using appropriate diagrammatic representations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende udviklingsmiljøer og versionsstyringssystemer til struktureret håndtering, dokumentation og aflevering af kode." />
+          <Txt Lang="en-GB" Txt="Use development environments and version control systems to manage, document, and submit code in a structured manner." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende systematiske metoder til fejlsøgning og grundlæggende test med henblik på at forbedre korrekthed og robusthed af programmer." />
+          <Txt Lang="en-GB" Txt="Apply systematic debugging and basic testing strategies to improve program correctness and reliability." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for hovedfaserne i en iterativ softwareudviklingsproces og relatere disse til eget projektarbejde." />
+          <Txt Lang="en-GB" Txt="Describe the main phases of an iterative software development lifecycle and relate them to their own project work." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende AI-baserede udviklingsværktøjer på en reflekteret og ansvarlig måde til understøttelse af programmering, fejlsøgning og dokumentation." />
+          <Txt Lang="en-GB" Txt="Use AI-assisted development tools in a reflective and responsible manner to support programming, debugging, and documentation tasks." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="SU-IT1-U1" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="78" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="78" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:48.217" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

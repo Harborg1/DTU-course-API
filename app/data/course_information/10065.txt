@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10065" University="dtu" LastUpdated="2026-04-23+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Fysik (Polyteknisk grundlag)" />
+        <Title Lang="en-GB" Title="Physics (Polytechnical Foundation)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P12M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="3949" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Knudsen</FamilyName>
+            <Email>cakn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter er en helhedsvurdering. Skriftlig eksamen (50%) og løbende skriftlige opgaver (50%) hvor der skal modtages feedback i undervisningen for at de tæller.&#xD;&#xA;Den afsluttende skriftlige fire-timers eksamen er i eksamensperioden om vinteren." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on an overall assessment. Written exam (50%) and homework (50%) where you must receive feedback during teaching for them to count. &#xD;&#xA;The final written four-hour exam is in the exam period in the Winter." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No internet access." />
+            <Aid_Txt Lang="da-DK" Txt="Ingen internetadgang." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F7" />
+            <Schedule ScheduleKey="E7" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Bevægelse i 1+2+3 dimensioner. Newtons love. Arbejde og kinetisk energi. Potentiel energi og energibevarelse. Impuls og stød. Stive legemers rotation. Stive legemers bevægelse. Gravitation. Temperatur og varme. Stofs termiske egenskaber. Termodynamikkens første og anden hovedsætninger. Elektromagnetisme.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegninger.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebogen er University Physics fra OpenStax, der er gratis tilgængelig på https://openstax.org/details/books/university-physics-volume-1 og https://openstax.org/details/books/university-physics-volume-2.</Course_Literature>
+          <Course_Objectives>At introducere den studerende til mekanikken, termodynamikken og elektromagnetismens grundbegreber samt at sætte den studerende i stand til at løse idealiserede mekaniske, termodynamiske, elektromagnetiske og tekniske problemer. Desuden trænes den studerende i at benytte idealiserede modeller til beskrivelse af virkelige systemer gennem projektarbejde. Gennem hele kurset benyttes programmeringssproget Python.</Course_Objectives>
+          <DTU_Remark>Online version af Fysik er kun for studerende på Bachelor i Teknologi.</DTU_Remark>
+          <Remark>Som et forsøg kører kurset pt. uden de tre bæredygtighedsmoduler.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Motion in 1+2+3 dimensions. Newton's laws. Work and kinetic energy. Potential energy and energy conservation. Momentum and collisions. Rotation of rigid bodies. Dynamics of rotational motion. Temperature and heat. Thermal properties of matter. The first and second law of thermodynamics. Electromagnetism.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and practicals.</Teaching_And_Learning_Methods>
+          <Course_Literature>The textbooks is University Physics from OpenStax, that is freely available from https://openstax.org/details/books/university-physics-volume-1 and https://openstax.org/details/books/university-physics-volume-2.</Course_Literature>
+          <Course_Objectives>To introduce the student to the basic concepts of mechanics, thermodynamics, and electromagnetism, and enable the student to solve idealized mechanical, thermodynamical, electromagnetic, and technical problems. Furthermore, the student receives practice in using idealized models to describe real systems through cases. Throughout the course the programming language Python is applied.</Course_Objectives>
+          <DTU_Remark>Online version of Physics is only for students following Bachelor in Technology.</DTU_Remark>
+          <Remark>As an experiment, the course does currently not include the three sustainability modules.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere kinematikken af systemer vha. kinematiske relationer, data, grafer, tabeller, bevægelsesdiagrammer, og funktioner." />
+          <Txt Lang="en-GB" Txt="analyse the kinematics through use of kinematic relations, data, graphs, tables, motion diagrams, and functions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere bevægelse af systemer bestående af partikler og stive legemer vha. kraftanalyse med kraftdiagrammer, Newtons love, impulsmomentsætningen og geometriske bånd." />
+          <Txt Lang="en-GB" Txt="analyse motion of systems consisting of particles and rigid bodies through application of force analyses with free-body diagrams, Newton's laws of motion for translation and rotation, and geometric constraints." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere systemers opførsel vha. arbejde, potentiel og kinetisk energi samt arbejdssætningen og bevarelse af mekanisk energi. " />
+          <Txt Lang="en-GB" Txt="analyse system behaviour through work, potential and kinetic energy, the work-energy theorem, and conservation of energy. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere systemers opførsel under anvendelse af bevarelsessætningerne for energi, impuls og impulsmoment." />
+          <Txt Lang="en-GB" Txt="analyse system behaviour through the application of conservation laws for energy, momentum, and angular momentum." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kombinere forskellige analyser af systemers opførsel samt anvende analytiske og/eller numeriske løsninger. " />
+          <Txt Lang="en-GB" Txt="combine different analyses of system behaviour and apply analytical and/or numerical solutions. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende fysiske begreber i forbindelse med energiomsætninger mellem mekaniske, termodynamiske og elektromagnetiske systemer. " />
+          <Txt Lang="en-GB" Txt="apply physical concepts in connection with energy transformations between mechanical, thermodynamical, and electromagnetic systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende idealgasligningen og udføre simple beregninger af mikroskopiske egenskaber af molekyler, samt kunne forklare og anvende termodynamikkens første og anden hovedsætning." />
+          <Txt Lang="en-GB" Txt="apply the ideal gas equation, carry out calculations of microscopic properties of molecules, and explain and apply the first and second laws of thermodynamics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="genkende simple termodynamiske processer (isochore, isobare, isoterme og adiabatiske processer) og beregne udført arbejde og varmetilførsel under processer (herunder kredsprocesser) sammensat af disse og andre processer." />
+          <Txt Lang="en-GB" Txt="recognize simple thermodynamic processes (isochoric, isobaric, isothermal, and adiabatic processes) and calculate work done and heat transfer during the processes (including cyclic processes) composed of these and other processes. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende begreberne ladning, elektrisk felt og potentialer samt magnetfelt og Lorentz kraft til at analysere simple elektriske og/eller elektromagnetiske systemer. " />
+          <Txt Lang="en-GB" Txt="apply the concepts of electric charge, electric field, electric potential, magnetic field, and the Lorentz force to analyse simple electric and/or eletromagnetic systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Faradays induktionslov med begrebet magnetisk flux til analyse af simple systemer og beregne elektriske og magnetiske kræfter på en bevæget ladning samt anvende det til analyse af simple systemer.   " />
+          <Txt Lang="en-GB" Txt="apply Faraday's law of induction with the concept of magnetic flux to analyse simple systems and calculate eletric and magnetic forces on a moving electric charge and apply it to analyse simple systems.   " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende programmeringssproget Python til at importere, analysere og visualisere data, vurdere usikkerheder og anvende fejlophobning, samt anvende symbolske og numeriske metoder til at løse ligninger, herunder differentialligningssystemer." />
+          <Txt Lang="en-GB" Txt="apply the programming language Python to import, analyse, and visualize data, estimate uncertainties and apply error propagation and apply symbolic and numerical methods to solve equations including systems of ordinary differential equationss." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="10001/10002/10004/10010/10011/10012/10018/10020/10022/10024/10026/10028/10033/10050/10052/10054/41015/10060/10063" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:52.113" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

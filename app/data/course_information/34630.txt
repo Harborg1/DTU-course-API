@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34630" University="dtu" LastUpdated="2026-04-09+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Integreret analog elektronik 1" />
+        <Title Lang="en-GB" Title="Integrated analog electronics 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Anbefales på 5. semester af E-bachelor uddannelsen" />
+          <Schedule_Txt Lang="en-GB" Txt="Recommended at 5th semester in the E-bachelor programme" />
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="78881" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Per</GivenName>
+            <FamilyName>Lynggaard</FamilyName>
+            <Email>plyn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Afleveringer" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Hand-ins" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Forstærkertrin, operationsforstærkere, modkobling</Contents>
+          <Teaching_And_Learning_Methods>Oversigtsforelæsninger, grupperegning, projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Erik Bruun: CMOS Analog IC Design: Fundamentals. Kan hentes gratis på: https://bookboon.com/dk/cmos-analog-ic-design-fundamentals-ebook
+
+I kurset bruges også LT Spice. Gratis User Gudie:
+http://bookboon.com/dk/cmos-integrated-circuit-simulation-with-ltspice-ebook</Course_Literature>
+          <Course_Objectives>At sætte den studerende i stand til at analysere og konstruere analoge forstærker kredsløb med hovedvægten på integrerede kredsløb i CMOS teknologi.</Course_Objectives>
+          <No_Credit_Points_With>Integreret analog elektronik</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Amplifier stages, opamps, feedback</Contents>
+          <Teaching_And_Learning_Methods>Overview lectures, group work, project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Erik Bruun: CMOS Analog IC Design: Fundamentals. Available for free at https://bookboon.com/dk/cmos-analog-ic-design-fundamentals-ebook
+
+In the course LT Spice is also used. Free User Guide:
+http://bookboon.com/dk/cmos-integrated-circuit-simulation-with-ltspice-ebook</Course_Literature>
+          <Course_Objectives>To enable the student to analyze and design analog amplifiers with an emphasis on integrated circuits in CMOS technology</Course_Objectives>
+          <No_Credit_Points_With>Integreret analog elektronik</No_Credit_Points_With>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til elektronik og kredsløbsteori (34601/31003)&#xD;&#xA;eller&#xD;&#xA;Analog Elektronik (62732)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of electronics and circuit theory (34601/31003)&#xD;&#xA;or&#xD;&#xA;Analog Electronics (62732)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34601/31003/62732" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende storsignal- og småsignalmodeller for MOS transistorer og benytte disse modeller ved kredsløbsberegninger." />
+          <Txt Lang="en-GB" Txt="Know large signal models and small signal models for MOS transistors and use the models for circuit analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere single-transistor forstærkertrin opbygget vha. MOS transistorer" />
+          <Txt Lang="en-GB" Txt="Analyze single-transistor amplifier stages realized with MOS transistors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere differenstrin opbygget vha. MOS transistorer" />
+          <Txt Lang="en-GB" Txt="Analyze differential stages realized with MOS transistors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere flertrins forstærkere opbygget vha. MOS transistorer" />
+          <Txt Lang="en-GB" Txt="Analyze multistage amplifiers realized with MOS transistors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere kredsløb med modkobling" />
+          <Txt Lang="en-GB" Txt="Analyze circuits with negative feedback" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere simpel to-trins operationsforstærker opbygget med MOS transistorer" />
+          <Txt Lang="en-GB" Txt="Design a simple two-stage operational amplifier realized with MOS transistors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere simple kredsløb til generering af bias strømme og -spændinger" />
+          <Txt Lang="en-GB" Txt="Design simple circuits for the generation of bias currents and bias voltages" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere CMOS integrerede kredsløb vha. LTspice" />
+          <Txt Lang="en-GB" Txt="Simulate CMOS integrated circuits using LTspice" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende såvel dansk som engelsk elektroteknisk terminologi" />
+          <Txt Lang="en-GB" Txt="Apply  Danish as well as English electro-technical terminology" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Design af integreret elektronik med hovedvægten på CMOS forstærkere</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31631/31630/34636" />
+        <PreviousCourse CourseCode="31631" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:38.59" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

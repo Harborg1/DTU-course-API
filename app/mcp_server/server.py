@@ -1,8 +1,8 @@
 """
 Remote MCP server with Streamable HTTP transport.
 
-Exposes three read-only database tools (get_course, search_courses,
-get_study_plan) at the /mcp endpoint on the FastAPI application.
+Exposes read-only database tools for courses, catalogue changes, study plans,
+and specializations at the /mcp endpoint on the FastAPI application.
 All tools use the existing SQLAlchemy session factory and always
 require an academic_year parameter.
 
@@ -57,6 +57,11 @@ _GET_COURSE_SCHEMA: dict[str, Any] = {
             "description": "Academic year filter (e.g. '2026-2027')",
             "pattern": "^[0-9]{4}-[0-9]{4}$",
         },
+        "response_language": {
+            "type": "string",
+            "description": "Preferred response language; use 'da' for Danish and 'en' for English",
+            "enum": ["da", "en"],
+        },
     },
     "required": ["course_number", "academic_year"],
 }
@@ -72,6 +77,11 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
             "type": "string",
             "description": "Academic year filter (e.g. '2026-2027')",
             "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+        "search_language": {
+            "type": "string",
+            "description": "Language for returned titles and descriptions; use 'da' or 'en'",
+            "enum": ["da", "en"],
         },
         "level": {
             "type": "string",
@@ -90,7 +100,50 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
             "maximum": 20,
         },
     },
-    "required": ["q", "academic_year"],
+    "required": ["q", "academic_year", "search_language"],
+}
+
+_GET_NEW_COURSES_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "academic_year": {
+            "type": "string",
+            "description": "The newer academic year to inspect (e.g. '2026-2027')",
+            "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+        "previous_academic_year": {
+            "type": "string",
+            "description": "Optional comparison year; defaults to the immediately preceding academic year",
+            "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+        "response_language": {
+            "type": "string",
+            "description": "Language for returned titles; use 'da' or 'en'",
+            "enum": ["da", "en"],
+        },
+        "level": {
+            "type": "string",
+            "description": "Optional course level filter",
+            "enum": ["BSc", "MSc", "PhD"],
+        },
+        "q": {
+            "type": "string",
+            "description": "Optional subject keyword or phrase, preferably canonical English",
+        },
+        "ects": {
+            "type": "number",
+            "description": "Optional exact ECTS filter (e.g. 5, 7.5, 10)",
+            "exclusiveMinimum": 0,
+            "maximum": 120,
+        },
+        "limit": {
+            "type": "integer",
+            "description": "Maximum number of course entries to return (max 200)",
+            "minimum": 1,
+            "maximum": 200,
+        },
+    },
+    "required": ["academic_year", "response_language"],
 }
 
 _GET_STUDY_PLAN_SCHEMA: dict[str, Any] = {
@@ -114,6 +167,26 @@ _GET_STUDY_PLAN_SCHEMA: dict[str, Any] = {
     "required": ["program_name", "academic_year"],
 }
 
+_GET_SPECIALIZATIONS_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "program_name": {
+            "type": "string",
+            "description": "Name of the MSc study program (e.g. 'Computer Science and Engineering')",
+        },
+        "specialization_name": {
+            "type": "string",
+            "description": "Optional specialization name; omit it to list every specialization for the program",
+        },
+        "academic_year": {
+            "type": "string",
+            "description": "Academic year used to select the imported study program (e.g. '2026-2027')",
+            "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+    },
+    "required": ["program_name", "academic_year"],
+}
+
 # ---------------------------------------------------------------------------
 # Tool definitions
 # ---------------------------------------------------------------------------
@@ -132,9 +205,23 @@ _SEARCH_COURSES_TOOL = Tool(
     name="search_courses",
     description=(
         "Search for DTU courses by keyword and optional filters. "
-        "Returns a list of matching courses with their details."
+        "Searches both Danish and English course text, merges duplicate courses, and uses "
+        "search_language only to select the language of returned titles and descriptions. "
+        "Returns the selected matching courses in ascending course-number order, "
+        "with localized titles and descriptions."
     ),
     inputSchema=_SEARCH_COURSES_SCHEMA,
+)
+
+_GET_NEW_COURSES_TOOL = Tool(
+    name="get_new_courses",
+    description=(
+        "Compare two imported DTU course catalogues and list courses whose number is absent "
+        "from the previous year. Uses DTU PreviousCourse metadata to distinguish courses that "
+        "received a new number from courses that were newly created. Can filter the result by "
+        "subject keyword, exact ECTS credits, and course level."
+    ),
+    inputSchema=_GET_NEW_COURSES_SCHEMA,
 )
 
 _GET_STUDY_PLAN_TOOL = Tool(
@@ -146,10 +233,23 @@ _GET_STUDY_PLAN_TOOL = Tool(
     inputSchema=_GET_STUDY_PLAN_SCHEMA,
 )
 
+_GET_SPECIALIZATIONS_TOOL = Tool(
+    name="get_specializations",
+    description=(
+        "List optional official DTU specialization paths for an MSc program, or get the structured course "
+        "requirements for one named specialization. A specialization's requirements are not automatically "
+        "mandatory for every student in the programme. Distinguishes mandatory, choice, recommended, and "
+        "historical courses."
+    ),
+    inputSchema=_GET_SPECIALIZATIONS_SCHEMA,
+)
+
 ALL_TOOLS: list[Tool] = [
     _COURSE_TOOL,
     _SEARCH_COURSES_TOOL,
+    _GET_NEW_COURSES_TOOL,
     _GET_STUDY_PLAN_TOOL,
+    _GET_SPECIALIZATIONS_TOOL,
 ]
 
 # ---------------------------------------------------------------------------
@@ -189,9 +289,23 @@ def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
         if not course:
             return {"error": f"Course {course_number} not found in {academic_year}"}
 
+        response_language = arguments.get("response_language")
+        if response_language == "da":
+            localized_title = course.title_da or course.title_en or course.title
+            localized_description = course.description_da or course.description_en or course.description
+            localized_content = course.content_da or course.content_en or course.content
+            localized_objectives = course.learning_objectives_da or course.learning_objectives_en or course.learning_objectives
+            localized_prerequisites = course.prerequisites_da or course.prerequisites_en or course.prerequisites
+        else:
+            localized_title = course.title_en or course.title_da or course.title
+            localized_description = course.description_en or course.description_da or course.description
+            localized_content = course.content_en or course.content_da or course.content
+            localized_objectives = course.learning_objectives_en or course.learning_objectives_da or course.learning_objectives
+            localized_prerequisites = course.prerequisites_en or course.prerequisites_da or course.prerequisites
+
         return {
             "course_number": course.course_number,
-            "title": course.title,
+            "title": localized_title,
             "title_da": course.title_da,
             "title_en": course.title_en,
             "ects": float(course.ects) if course.ects else None,
@@ -202,13 +316,20 @@ def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
             "period": course.period,
             "schedule": course.schedule,
             "campus": course.campus,
-            "prerequisites": course.prerequisites,
+            "prerequisites": localized_prerequisites,
+            "recommended_prerequisite_course_numbers": (
+                course.recommended_prerequisite_course_numbers
+            ),
             "mandatory_prerequisites": course.mandatory_prerequisites,
             "exam": course.exam,
             "evaluation": course.evaluation,
-            "description": course.description,
-            "content": course.content,
-            "learning_objectives": course.learning_objectives,
+            "description": localized_description,
+            "content": localized_content,
+            "learning_objectives": localized_objectives,
+            "course_responsible": course.course_responsible,
+            "teachers": course.teachers,
+            "responsible_people": course.responsible_people,
+            "previous_course_numbers": course.previous_course_numbers,
             "source_url": course.source_url,
         }
     finally:
@@ -221,6 +342,9 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
     if academic_year is None:
         return {"error": "academic_year must contain consecutive years, e.g. 2026-2027"}
     level = arguments.get("level")
+    search_language = arguments.get("search_language")
+    if search_language not in {"da", "en"}:
+        return {"error": "search_language must be 'da' or 'en'"}
     try:
         limit = max(1, min(int(arguments.get("limit", 10)), 20))
     except (TypeError, ValueError):
@@ -245,24 +369,123 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             level=level,
             period=None,
             language=None,
+            search_language=search_language,
+            search_all_languages=True,
             limit=limit,
             offset=0,
         )
 
+        selected_courses = sorted(
+            result.courses[:limit],
+            key=lambda item: item[0].course_number.casefold(),
+        )
         courses = [
             {
                 "course_number": course.course_number,
-                "title": course.title,
+                "title": (
+                    course.title_da or course.title_en or course.title
+                    if search_language == "da"
+                    else course.title_en or course.title_da or course.title
+                ),
+                "description": (
+                    course.description_da or course.description_en or course.description
+                    if search_language == "da"
+                    else course.description_en or course.description_da or course.description
+                ),
                 "ects": float(course.ects) if course.ects else None,
                 "level": course.level,
                 "source_url": course.source_url,
             }
-            for course, _score in result.courses[:limit]
+            for course, _score in selected_courses
         ]
 
         return {
             "query": query,
+            "search_language": search_language,
             "count": result.count,
+            "returned": len(courses),
+            "courses": courses,
+        }
+    finally:
+        session.close()
+
+
+def _handle_get_new_courses(arguments: dict[str, Any]) -> dict[str, Any]:
+    academic_year = _academic_year(arguments)
+    if academic_year is None:
+        return {"error": "academic_year must contain consecutive years, e.g. 2026-2027"}
+    response_language = arguments.get("response_language")
+    if response_language not in {"da", "en"}:
+        return {"error": "response_language must be 'da' or 'en'"}
+    level = arguments.get("level")
+    if level not in {None, "BSc", "MSc", "PhD"}:
+        return {"error": "level must be BSc, MSc, or PhD"}
+    query = str(arguments.get("q") or "").strip()
+    try:
+        ects = Decimal(str(arguments["ects"])) if arguments.get("ects") is not None else None
+    except (InvalidOperation, ValueError):
+        return {"error": "ects must be a number"}
+    if ects is not None and not Decimal("0") < ects <= Decimal("120"):
+        return {"error": "ects must be greater than 0 and at most 120"}
+    previous_academic_year = None
+    if arguments.get("previous_academic_year") is not None:
+        previous_academic_year = _academic_year(
+            {"academic_year": arguments["previous_academic_year"]}
+        )
+        if previous_academic_year is None:
+            return {
+                "error": "previous_academic_year must contain consecutive years, e.g. 2025-2026"
+            }
+    try:
+        limit = max(1, min(int(arguments.get("limit", 200)), 200))
+    except (TypeError, ValueError):
+        return {"error": "limit must be an integer between 1 and 200"}
+
+    from app.database import SessionLocal
+    from app.services.course_change_service import CatalogComparisonError, get_new_courses
+
+    session = SessionLocal()
+    try:
+        try:
+            result = get_new_courses(
+                session,
+                academic_year,
+                previous_academic_year,
+                level=level,
+                topic=query or None,
+                ects=ects,
+            )
+        except CatalogComparisonError as exc:
+            return {"error": str(exc)}
+
+        courses = []
+        for item in result.courses[:limit]:
+            course = item.course
+            title = (
+                course.title_da or course.title_en or course.title
+                if response_language == "da"
+                else course.title_en or course.title_da or course.title
+            )
+            courses.append(
+                {
+                    "course_number": course.course_number,
+                    "title": title,
+                    "ects": float(course.ects) if course.ects is not None else None,
+                    "level": course.level,
+                    "classification": item.classification,
+                    "previous_course_numbers": list(item.previous_course_numbers),
+                    "source_url": course.source_url,
+                }
+            )
+        return {
+            "academic_year": result.academic_year,
+            "previous_academic_year": result.previous_academic_year,
+            "level": result.level,
+            "query": result.topic,
+            "ects": float(result.ects) if result.ects is not None else None,
+            "total": len(result.courses),
+            "created_count": result.created_count,
+            "renumbered_count": result.renumbered_count,
             "returned": len(courses),
             "courses": courses,
         }
@@ -371,10 +594,133 @@ def _handle_get_study_plan(arguments: dict[str, Any]) -> dict[str, Any]:
         session.close()
 
 
+def _handle_get_specializations(arguments: dict[str, Any]) -> dict[str, Any]:
+    program_name = str(arguments.get("program_name", "")).strip()
+    if not program_name:
+        return {"error": "program_name is required"}
+    academic_year = _academic_year(arguments)
+    if academic_year is None:
+        return {"error": "academic_year must contain consecutive years, e.g. 2026-2027"}
+    specialization_name = str(arguments.get("specialization_name", "")).strip()
+
+    from app.database import SessionLocal
+    from app.models.specialization import (
+        SpecializationRequirement,
+        SpecializationRequirementCourse,
+        StudySpecialization,
+    )
+    from app.models.study_plan import StudyProgram
+    from sqlalchemy import and_, func, or_, select
+    from sqlalchemy.orm import selectinload
+
+    session = SessionLocal()
+    try:
+        start_year = int(academic_year[:4])
+        year_filter = or_(
+            StudyProgram.academic_year == academic_year,
+            and_(
+                StudyProgram.academic_year.is_(None),
+                or_(StudyProgram.valid_from_year.is_(None), StudyProgram.valid_from_year <= start_year),
+                or_(StudyProgram.valid_to_year.is_(None), StudyProgram.valid_to_year >= start_year),
+            ),
+        )
+        programs = list(
+            session.scalars(
+                select(StudyProgram).where(
+                    year_filter,
+                    StudyProgram.degree_type == "Master",
+                    func.lower(StudyProgram.name) == program_name.casefold(),
+                )
+            )
+        )
+        if not programs:
+            programs = list(
+                session.scalars(
+                    select(StudyProgram)
+                    .where(
+                        year_filter,
+                        StudyProgram.degree_type == "Master",
+                        StudyProgram.name.ilike(f"%{program_name}%"),
+                    )
+                    .limit(3)
+                )
+            )
+        if len(programs) > 1:
+            return {"error": "Study program name is ambiguous", "matches": [item.name for item in programs]}
+        if not programs:
+            return {"error": "Study program not found"}
+        program = programs[0]
+
+        filters = [StudySpecialization.program_id == program.id]
+        if specialization_name:
+            filters.append(StudySpecialization.name.ilike(f"%{specialization_name}%"))
+        options = (
+            selectinload(StudySpecialization.courses),
+            selectinload(StudySpecialization.requirements)
+            .selectinload(SpecializationRequirement.course_links)
+            .selectinload(SpecializationRequirementCourse.course),
+        )
+        specializations = list(
+            session.scalars(
+                select(StudySpecialization)
+                .where(*filters)
+                .options(*options)
+                .order_by(StudySpecialization.position)
+            ).unique()
+        )
+        if specialization_name and not specializations:
+            return {"error": "Specialization not found", "program_name": program.name}
+
+        return {
+            "program_name": program.name,
+            "academic_year": program.academic_year or academic_year,
+            "specializations_are_optional": True,
+            "specializations": [
+                {
+                    "name": specialization.name,
+                    "slug": specialization.slug,
+                    "is_optional": True,
+                    "description": specialization.description,
+                    "source_url": specialization.source_url,
+                    "requirements": [
+                        {
+                            "requirement_type": requirement.requirement_type,
+                            "description": requirement.description,
+                            "required_ects": (
+                                float(requirement.required_ects)
+                                if requirement.required_ects is not None
+                                else None
+                            ),
+                            "required_count": requirement.required_count,
+                            "courses": [
+                                {
+                                    "course_number": link.course.course_number,
+                                    "title": link.course.title,
+                                    "ects": float(link.course.ects) if link.course.ects is not None else None,
+                                    "role": link.course.role,
+                                    "is_terminated": link.course.is_terminated,
+                                }
+                                for link in sorted(
+                                    requirement.course_links, key=lambda item: item.course.position
+                                )
+                            ],
+                        }
+                        for requirement in specialization.requirements
+                    ],
+                }
+                for specialization in specializations
+            ],
+        }
+    finally:
+        session.close()
+
+
 _TOOL_HANDLERS: dict[str, Callable[[dict[str, Any]], dict[str, Any]]] = {
     "get_course": _handle_get_course,
     "search_courses": _handle_search_courses,
+    "get_new_courses": _handle_get_new_courses,
     "get_study_plan": _handle_get_study_plan,
+    "get_specializations": _handle_get_specializations,
 }
 
 

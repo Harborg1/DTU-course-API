@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41402" University="dtu" LastUpdated="2026-02-19+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Simulering af termiske energisystemer" />
+        <Title Lang="en-GB" Title="Simulation of thermal energy systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="16044" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lasse Røngaard</GivenName>
+            <FamilyName>Clausen</FamilyName>
+            <Email>lacl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="36698" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jonas Kjær</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>jkjje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig fremlæggelse og bedømmelse af 3 grupperapporter. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral presentation and approval of 3 group reports. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver en omfattende oversigt inden for modellering og simuleringsteknikker for termiske energisystemer. Praktisk erfaring med simulering af energisystemer opnås ved at arbejde på flere projekter igennem kurset. Projekterne dækker arbejde med termodynamiske modeller for at definere design af systemer og komponenter og analysere deres funktion.
+
+De relevante faser af et modelleringsprojekt diskuteres og gennemføres startende med definition af ​​opgaven, videnindsamling og kvalitativ beskrivelse af opgaven. Dette fortsættes ved definition af ​​de matematiske ligninger og metodevalg og værktøjet til numerisk løsning af ligningssystemet. Endelig udvikles en grafisk brugergrænseflade (GUI) for at afspejle simuleringsformålene med den numeriske model.
+
+Modellerings- og simuleringsprogrammet Engineering Equation Solver (EES) bruges i kurset. Andre simuleringsværktøjer (DNA og Open Modelica) vil blive introduceret efter behov.
+
+Projekterne dækker arbejde med modeller på kredsproces-, system- og komponentniveau og med modeller til design og off-design drift af anlæg.</Contents>
+          <Teaching_And_Learning_Methods>Vekselvirkning mellem lærerindlæg, eget studium, øvelser, løsning af opgaver i grupper og præsentation af gruppearbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er at tilegne sig viden og erfaring inden for numerisk modellering til simulering af termiske energisystemer. Fokus er på udviklingen af ​​fysisk, matematisk og numerisk konsistente modeller inden for køling, varmepumper og kraftproducerende anlæg. De studerende vil arbejde på selvvalgte projekter relateret til emnet, fx skibsmotorer, forbrændingsmotorer, store varmepumper til fjernvarme og geotermisk eller soldreven kraftproduktion med organic Rankine cycle.
+
+Studerende vil opnå indsigt i styrken og anvendeligheden af ​​numeriske simuleringer i ingeniørmæssigt design på både system- og komponentniveau.
+
+Efter kurset vil de studerende være forberedt på at anvende simuleringsværktøjer, analysere simuleringsresultaterne kritisk og dokumentere modelbaserede projekter.
+
+Kurset dækker anvendelse af termodynamiske principper, metodologisk modeludvikling og numerisk analyse til beskrivelse, simulering og optimering af energisystemer.
+
+Efter afslutningen af ​​kurset vil den studerende være forberedt på at bruge simuleringsværktøjer, der er relevante for yderligere studier og projekter inden for termisk energi.</Course_Objectives>
+          <Remark>Ud over de beskrevne kursusmål opnås også erfaring i anvendelse af IT-værktøjer.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course provides a comprehensive overview in the field of modeling and simulation techniques of thermal energy systems. Practical experience in simulation of energy systems is gained by working on several projects throughout the course. The projects cover work with thermodynamic models to define the design of systems and components and analyse their operation. 
+
+The relevant stages of a modeling project are discussed and completed, starting with the definition of the task, knowledge gathering and qualitative description of the task. This is continued by the definition of the mathematical equations and the choices of the method and the tool for numerically solving these equations. Finally, a graphical user interface (GUI) is developed is order to reflect the simulation purposes of the numerical model. 
+
+The modeling and simulation program Engineering Equation Solver (EES) is used in the course.  Other simulation tools (DNA and Open Modelica) will be introduced as needed.
+
+The projects cover work with models on cycle, system and component level, and with models for design and off-design operation of plants.</Contents>
+          <Teaching_And_Learning_Methods>Alternating use of lectures, studies, exercises, and problem sessions and presentation of project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim with the course is to acquire knowledge and experience in numerical modelling for  simulating thermal energy systems. The focus is on the development of physically, mathematically, and numerically consistent models in the field of refrigeration, heat pumps and power generation plants. The students will work on individual chosen projects related to the topic, for example shio machinery, internal combustion engines, large-scale heat pumps for district heating and geothermal or solar-driven power cycles using organic Rankine cycles.
+
+Students will develop awareness of the power and utility of numerical simulations in engineering design, at both the system and the component detail level. 
+
+After completion of the course, the students will be prepared for using simulation tools, analysing the simulation results critically and writing documentation for model-based projects.
+
+The course covers application of thermodynamic principles, methodological model development and numerical analysis for the description, simulation, and optimization of energy systems.
+
+After completion of the course the student will be prepared for using simulation tools which are relevant for further studies and projects in thermal energy.</Course_Objectives>
+          <Remark>Experience is also acquired in the use of IT techniques.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive virkemåde køleanlæg, varmepumper og kraftproducerende processer, samt forskelle og ligheder imellem disse" />
+          <Txt Lang="en-GB" Txt="Describe operational principles of refrigeration systems, heat pumps and power plants, as well as differences and similarities between them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og analysere de kredsprocesser for køleanlæg, varmepumper og kraftproducerende processer" />
+          <Txt Lang="en-GB" Txt="Describe and analyse thermodynamic cycles of refrigeration systems, heat pumps and power production" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og analysere de praktiske anvendelser af kredsprocesanalyse i køle-/varmepumpeteknik og kraftproduktion" />
+          <Txt Lang="en-GB" Txt="Describe and analyze the practical applications of cycle analysis for refrigeration, heat pumping and power production" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simuleringsværktøjer systematisk og metodisk for analyse af komponenter og systemer" />
+          <Txt Lang="en-GB" Txt="Apply simulation tools systematically and methodologically for analysis of components and systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende modelleringsprocessen for gennemførelse og dokumentation af projekter som involverer modellering og simulering" />
+          <Txt Lang="en-GB" Txt="Use the modelling process for completion and documentation of projects which involve modelling and simulation " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere, gennemføre og dokumentere projekter som involverer simulering af termiske processer" />
+          <Txt Lang="en-GB" Txt="Formulate, conduct and document projects which involve simulation of thermal systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simuleringsværktøjet EES til implementering af modeller og udførelse af simuleringer" />
+          <Txt Lang="en-GB" Txt="Use the simulation tool EES for implementation of model and simulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for virkemåde af numeriske metoder for løsning af algebraiske ligninger, differentialligninger og differential-algebraiske ligninger" />
+          <Txt Lang="en-GB" Txt="Explain the principles of numerical methods for solution of algebraic equations, differential equations and differential-algebraic equations" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41401/41045/41431/47201/62604" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Anvendelse af computermodeller for analyse af energianlæg såsom køle- og kraftprocesser</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="7" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:02.183" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02112" Volume="2026/2027" University="dtu" LastUpdated="2026-04-22+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Programmering af Indlejrede Systemer" />
+        <Title Lang="en-GB" Title="Embedded Systems Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="59001" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Martin</GivenName>
+            <FamilyName>Schoeberl</FamilyName>
+            <Email>masca@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="78023" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Emad Jacob</GivenName>
+            <FamilyName>Maroun</FamilyName>
+            <Email>ejama@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I kurset vil vi studere de grundlæggende elementer i indlejrede systemer og den grundlæggende arkitektur i en mikrocontroller, dens funktioner, og hvordan vi kan programmere den ved hjælp af C-programmeringssproget. Til dette vil vi studere de grundlæggende principper i C-programmeringssproget, men også mere avancerede funktioner som hukommelsesstyring, som er nyttige i forhold til mikrocontroller-programmering.
+Vi vil anvende de lærte færdigheder i et projekt med 3-4 studerende.
+
+Kurset starter med forelæsninger om C programmeringssproget med øvelser. Så indtroducere vi microcontrolleren and forskellige komponenter og hvordan de interagere med microcontrollere forklares. Forelæsningerne varer den første uge, hvorefter gruppeprojektet vil komme i fokus. Grupper skal bygge et indlejret system og iterere på det for at øge dets evner og udnyttelse af kursuselementerne.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og projekt</Teaching_And_Learning_Methods>
+          <Course_Objectives>Indlejrede systemer udgør en stor del af moderne computer systemer. I dette kursus vil vi udforske grundlæggende elementer af indlejrede systemer baseret på mikrocontrollere ved at studere deres arkitektur, og hvordan man programmerer dem. Vi vil arbejde med et praktisk projekt for at anvende og evaluere kursets læringsmål og demonstrere potentialet af mikrocontrollere.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>In the course, we will study the fundamental elements of embedded systems, electrical and electronic components, and the basic architecture of a microcontroller, its features, and how we can program it using the C programming language. To this end we will study the basic principles of C programming language but also more advanced features like memory management which are useful towards microcontroller programming. 
+We will apply the studied skills in a group project of 3-4 students.
+
+The course starts with lectures on the C programming language with excercises. Then the microcontroller is introduced and various components and how they interact with the microcontroller are explained. Lectures will last for the first week, after which the group project will be in focus. Groups must build an embedded system and iterate on it to successively increase its capability and utilization of course elements.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project</Teaching_And_Learning_Methods>
+          <Course_Objectives>Embedded systems constitute a large part of modern computing systems. In this course, we will explore the fundamental elements of embedded systems based on microcontrollers by studying their architecture and how to program them. We will work on a hands-on project to apply and evaluate the course learning objectives and to demonstrate the potential of microcontrollers.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Viden om mindst et andet programmeringssprog forventes (f.eks. Java, Python)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of at least one other programming language is expected (e.g., Java, Python)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02100" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemgå og analysere de grundlæggende elementer i en mikrocontrollers arkitektur " />
+          <Txt Lang="en-GB" Txt="list and analyze the basic elements of a microcontroller's architecture " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive, hvordan forskellige typer input- og output-enheder i indlejrede systemer fungerer, og hvordan de forbindes til en mikrocontroller" />
+          <Txt Lang="en-GB" Txt="describe how different types of inputs and outputs for an embedded system work and how to connect them to a microcontroller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe indlejret software ved at udnytte I/O-enheder og kommunikationsprotokoller (UART, I2C, SPI) " />
+          <Txt Lang="en-GB" Txt="design embedded software by utilizing the I/O peripherals and the communication protocols (UART, I2C, SPI) " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle programmer ved hjælp af grundlæggende principper i C-programmeringssproget (datatyper, flowkontrol, funktioner)" />
+          <Txt Lang="en-GB" Txt="create programs using basic principles of the C programming language (data types, flow control, functions)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle programmer baseret på avancerede C-funktioner (pointers, strukturer, unioner, hukommelsesstyring malloc/free) " />
+          <Txt Lang="en-GB" Txt="create programs based on advanced C features (pointers, structs, unions, memory management malloc/free)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende C-sprog og struktureret programmering til programmering af en mikrocontroller " />
+          <Txt Lang="en-GB" Txt="apply C and structured programming to program a microcontroller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle, oversætte, debugge, udføre og analysere programmer ved hjælp af programmeringssproget C, med fokus på små/resursebegrænsede systemer " />
+          <Txt Lang="en-GB" Txt="develop, compile, debug, execute and analyse programs using the C programming language targeting small/resource-constrained systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bygge et system baseret på en mikrocontroller med eksterne enheder" />
+          <Txt Lang="en-GB" Txt="build a system based on a microcontroller and its peripherals" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="60" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:37.773" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

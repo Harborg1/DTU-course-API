@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62414" Volume="2026/2027" University="dtu" LastUpdated="2026-04-26+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Videregående mobilapplikationsudvikling" />
+        <Title Lang="en-GB" Title="Advanced Mobile Application Development" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="225220" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Daniel</GivenName>
+            <FamilyName>Zielasko</FamilyName>
+            <Email>danzi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="98197" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mark Bo</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>mboje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Vurderingen er baseret på et gruppeprojekt og dets præsentation, en individuel projektrapport samt den enkelte studerendes deltagelse i kurset.&#xD;&#xA;&#xD;&#xA;Gruppeprojektet vurderes på baggrund af den implementerede løsning, kvaliteten af præsentationen samt evnen til at formidle designbeslutninger og tekniske overvejelser. Den individuelle projektrapport vurderes på den studerendes evne til at reflektere over udviklingsprocessen, begrunde metodiske og tekniske valg samt kritisk diskutere den endelige løsning og mulige forbedringer. Derudover indgår den enkelte studerendes aktive deltagelse, bidrag til diskussioner og engagement gennem hele kurset i den individuelle vurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assessment is based on a group project and its presentation, an individual project report, as well as the individual student’s participation in the course.&#xD;&#xA;&#xD;&#xA;The group project is evaluated on the basis of the implemented solution, the quality of the presentation, and the ability to communicate design decisions and technical considerations. The individual project report is evaluated on the student’s ability to reflect on the development process, justify methodological and technical choices, and critically discuss the final solution and possible improvements. In addition, the individual assessment takes into account each student’s active participation, contribution to discussions, and engagement throughout the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="additional days might be necessary." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="ekstra dage kan forekomme." />
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Menneskecentreret design:
+- Menneskecentrerede designprincipper for touch-baserede mobile platforme.
+- Gestus- og touch-baserede interaktioner samt principper for deres implementering.
+- Kontekstbevidste og gennemgribende interaktionskoncepter (lokation, sensorer, adaptiv adfærd).
+- Visuelt og interaktionsdesign, herunder grafik, animationer og feedback for reaktive og brugbare grænseflader.
+
+Mobiludvikling og backend-integration:
+- Prototyping og brug af Backend-as-a-Service (BaaS) eller cloud-backends.
+- Netværkskommunikation, cachingstrategier og håndtering af ustabil forbindelse.
+
+Evaluering og kvalitetssikring:
+- Evaluering af applikationer, herunder brugervenlighedstest, empiriske metoder, spørgeskemaer og analyse.
+- Kvalitetssikring, herunder teststrategier, overvågning af drift og iterativ forbedring.
+
+Valgfrie emner (baseret på de studerendes interesser):
+- Sikkerhed på mobile platforme.
+- XR / fordybende interaktionsteknikker.
+- Avanceret optimering og effektivisering af mobile applikationer.</Contents>
+          <Teaching_And_Learning_Methods>Kurset består af forelæsninger, litteraturbaserede diskussioner, gruppeøvelser og projektarbejde. Undervisningen omfatter præsentation af teoretiske begreber, kritisk diskussion af udvalgt forskningslitteratur samt praktiske øvelser i samarbejdsbaserede rammer. De studerende arbejder i grupper med design- og udviklingsopgaver gennem hele kurset med løbende vejledning og formativ feedback.</Teaching_And_Learning_Methods>
+          <Course_Literature>Egne noter</Course_Literature>
+          <Course_Objectives>Give de studerende de nødvendig kompetencer til at udvikle og implementere mobile applikationer, der opfylder aktuelle tekniske standarder og leverer brugercentrerede oplevelser af høj kvalitet, herunder evaluering og inddragelse af nye teknologier.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Valgfag : Eksport og Teknologi
+Valgfag : IT og Økonomi
+Valgfag : Softwareteknologi
+Valgfag : Sundhedsteknologi
+
+Eksempler fra native Android nyttes som eksempler.
+Den udviklede applikation skal adressere bæredygtighed, hvor det er relevant.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Human-centered design:
+- Human-centered design guidelines for touch-based mobile platforms.
+- Gesture- and touch-based interactions and implementation principles.
+- Context-aware and ubiquitous interaction concepts (location, sensors, adaptive behavior).
+- Visual and interaction design, including graphics, animations, and feedback for smooth and usable interfaces.
+
+Mobile development and backend integration:
+- Prototyping and the use of Backend-as-a-Service (BaaS) or cloud backends.
+- Network communication, caching strategies, and handling intermittent connectivity.
+
+Evaluation and quality assurance:
+- Application evaluation, including usability testing, empirical methods, surveys, and analytics.
+- Quality assurance, including testing strategies, crash monitoring, and iterative improvement.
+
+Optional topics (based on student interests):
+- Security on mobile platforms.
+- XR / immersive interaction techniques.
+- Advanced mobile optimization and performance techniques.</Contents>
+          <Teaching_And_Learning_Methods>The course consists of lectures, literature-based discussions, group exercises, and project work. Teaching activities include presentations of theoretical concepts, critical discussion of selected research literature, and practical exercises in collaborative settings. Students work in groups on design and development tasks throughout the course, supported by supervision and formative feedback.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes</Course_Literature>
+          <Course_Objectives>Equip students with the skills to develop and deploy mobile applications that meet current technical standards and provide high-quality, user-centered experiences, including evaluation and emerging technologies.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Valgfag : Eksport og Teknologi
+Valgfag : IT og Økonomi
+Valgfag : Softwareteknologi
+Valgfag : Sundhedsteknologi
+
+Native Android is used for exemplification.
+The application developed should address sustainability where appropriate.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med udvikling af software til mobile enheder" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience with mobile software development" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62550" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og evaluere design af mobile applikationer ved at identificere funktionelle og ikke-funktionelle krav med fokus på brugervenlighed, tilgængelighed og brugeroplevelse." />
+          <Txt Lang="en-GB" Txt="Analyze and evaluate mobile application designs, identifying functional and non-functional requirements with attention to usability, accessibility, and user experience." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende menneskecentrerede interaktionsprincipper, herunder touch-, gestus- og kontekstafhængige interaktioner, til design og implementering af mobile applikationer." />
+          <Txt Lang="en-GB" Txt="Apply human-centered interaction principles, including touch, gesture, and context-aware interactions, in the design and implementation of mobile applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere effektive arkitekturer for mobile applikationer, der understøtter ydeevne, skalerbarhed og sikker kommunikation med backend-tjenester." />
+          <Txt Lang="en-GB" Txt="Design and implement effective mobile application architectures that support performance, scalability, and secure communication with backend services." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere cloud-baserede eller tredjeparts-backendløsninger og håndtere netværkskommunikation, caching og offline-funktionalitet." />
+          <Txt Lang="en-GB" Txt="Integrate cloud-based or third-party backend solutions, and manage network communication, caching, and offline functionality." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skabe responsive, visuelt engagerende og brugervenlige mobile brugergrænseflader gennem anvendelse af principper for interaktion, animation og feedback." />
+          <Txt Lang="en-GB" Txt="Create responsive, visually engaging, and user-friendly mobile interfaces through the application of interaction, animation, and feedback principles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende empiriske evalueringsmetoder — såsom brugertests, spørgeskemaer eller analyseværktøjer — til at vurdere brugervenlighed og informere iterative designforbedringer." />
+          <Txt Lang="en-GB" Txt="Apply empirical evaluation methods—such as user testing, surveys, or analytics—to assess usability and inform iterative design improvements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere mobile applikationer for ydeevne, responsivitet og energieffektivitet i virkelige brugs­kontekster." />
+          <Txt Lang="en-GB" Txt="Optimize mobile applications for performance, responsiveness, and energy efficiency in real-world usage contexts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udrulle og vedligeholde mobile applikationer, overvåge brug og nedbrud samt anvende praksisser for kvalitets­sikring." />
+          <Txt Lang="en-GB" Txt="Deploy and maintain mobile applications, monitor usage and crashes, and apply quality assurance practices." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og håndtere udfordringer relateret til nye mobile teknologier, herunder XR, kontekstbevidst databehandling og gennemgribende interaktion." />
+          <Txt Lang="en-GB" Txt="Understand and address challenges related to emerging mobile technologies, including XR, context-aware computing, and ubiquitous interaction." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Videregående udvikling af mobile applikationer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="62563" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:33:11.67" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34430" University="dtu" LastUpdated="2024-03-26+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Introduktion til biofotonik" />
+        <Title Lang="en-GB" Title="Introduction to biophotonics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="2683" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Tidemand-Lichtenberg</FamilyName>
+            <Email>ptli@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9160" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lars René</GivenName>
+            <FamilyName>Lindvold</FamilyName>
+            <Email>lali@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Forelæsningerne vil dække den biologiske baggrund for lys vekselvirkning mellem lys og materiale (celler, celler i suspension, eller væv), fotobiologi og grundlæggende spektroskopiske teknikker. Principper for bio-imaging vil blive drøftet. Desuden vil lasere / lyskilder blive omfattet, herunder de grundlæggende principper, forskellige lasersystemer og deres potentiale / relevans for biofotonik. Gennem hele kurset vil praktiske eksempler og demonstrationer blive brugt i videst muligt omfang.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Interessen for anvendelser af kohærent lys og optiske sensorer inden for biologi og medicin har været stigende de senere år. Dette skyldes til dels udviklingen af nye lasersystemer, dels udviklingen i avancerede optiske systemer og fremskridt inden for non-invasiv diagnostik og analyse af biologiske og medicinske processer. Kurset dækker grundlæggende biokemi i celler, grundlæggende lys-stof vekselvirkninger, grundlæggende principper for lyskilder relevante for biofotonik, fotobiologi, og grundlæggende principper for bio-imaging teknikker.</Course_Objectives>
+          <Remark>Forelæsere fra DTU Fotonik, DTU Health Tech, DTU NanoLab samt eksterne forelæsere fra private firmaer underviser på kurset.
+
+
+På grund af kursets tværfaglige natur kan der ikke undgås et mindre overlap til kurserne
+22512/34455 Optiske biosensorer og 22511/34550 Biomedicinsk optik</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The lectures will cover the biological background for light interaction between light and soft matter (cells, cells in suspension, or tissue), photobiology and basic spectroscopic techniques. Principles of bio-imaging will be discussed. Furthermore, lasers/light sources will be covered, including basic principles of operation, various laser systems and their potential/relevance for biophotonics. Throughout the course practical examples and demonstrations will be used
+whenever possible.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The interest for applications of coherent light and optical sensing in biology and medicine has been increasing the past years. This is partly due to the development of new laser systems, partly the development in advanced optical systems and advances non-invasive diagnostics and analysis of biological and medical processes. The course covers the basics of the biochemistry of cells, basic light-matter interactions, basic principles of light sources relevant for biophotonics, photobiology, and basic principles of bio-imaging techniques.</Course_Objectives>
+          <Remark>Lecturers from DTU Fotonik, DTU Health Tech, DTU NanoLab, and a number of invited external lectures from private industry.
+
+
+Due to the interdisciplinary content of this course, a slight overlap to the courses 22512/34455 Optical Biosensors and 22511/34550 Biomedical Optics is inevitable</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kurser i matematik og fysik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic courses in mathematics and physics" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de grundlæggende principper for lasere og lyskilder og deres forskellige driftsformer, herunder kohærens, pulserende drift, og principperne for frekvenskonvertering" />
+          <Txt Lang="en-GB" Txt="Understand the basic principles of lasers and light sources and their different modes of operation, including coherence, pulsed operation, and principles of frequency conversion." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere forskellige lys-stof vekselvirkninger, dvs forstå fotobiologi, og være i stand til at relatere disse vekselvirkninger til lyskildens karakteristika" />
+          <Txt Lang="en-GB" Txt="Analyze different light-matter interactions, i.e., understanding photobiology, and be able to relate these interactions to the characteristics of the light source." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende begreber i bio-imaging teknikker" />
+          <Txt Lang="en-GB" Txt="Apply basic concepts of bio-imaging techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de grundlæggende begreber i spektroskopi og beskrive relevante effekter, såsom absorption, Raman spektroskopi og fluorescens spektroskopi" />
+          <Txt Lang="en-GB" Txt="Understand the basic concepts in spectroscopy and describe relevant effects, such as absorption spectroscopy, Raman spectroscopy and fluorescence spectroscopy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende de grundlæggende principper af optiske biosensorer og knytte disse til forskellige spektroskopiske teknikker" />
+          <Txt Lang="en-GB" Txt="Apply the basic principles of optical biosensing and link these to various spectroscopic techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere øvelser inden for de emner dækket af kurset og diskutere de opnåede resultater både mundtligt og skriftligt" />
+          <Txt Lang="en-GB" Txt="Analyze simple exercises within the topics covered in the lectures and discuss the obtained results both orally and in writing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere basale optiske principper som kohærens, interferens og diffraktion, samt at kunne bestemme afbildning af simple stråler i sfæriske linser og spejle" />
+          <Txt Lang="en-GB" Txt="Analyze simple optical principles like coherence, interference and diffraction, and determine imaging properties of simple rays in spherical lenses and mirrors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere forskellige vekselvirkningsformer mellem lys og væv, eksempelvis: fotokemisk, termisk, fotoinduceret plasma og fotoablation, samt være i stand til at relatere disse vekselvirkninger til lyskildes egenskaber" />
+          <Txt Lang="en-GB" Txt="Evaluate different light tissue interactions, e.g.: Photochemical, thermal, photo induced plasma and photo ablation, and be able to relate these interactions to the characteristics of the light source" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Introduktion to biofotonik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="22511" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:23.467" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

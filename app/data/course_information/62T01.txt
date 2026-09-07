@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62T01" Volume="2026/2027" University="dtu" LastUpdated="2025-04-29+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Grundlæggende Objektorienteret Programmering" />
+        <Title Lang="en-GB" Title="Basic Object-Oriented Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Undervisning én aften om ugen kl. 17.00-20.30 over 14 uger. Opstart: Se hjemmesiden." />
+          <Schedule_Txt Lang="en-GB" Txt="14 lessons, once a week from 5 pm - 8:30 pm. Start : Look at the home page." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="78757" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Tange</FamilyName>
+            <Email>htan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="78833" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lynn</GivenName>
+            <FamilyName>Eriksen</FamilyName>
+            <Email>lyka@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig prøve kombineret med skriftlig projektopgave. Opgaven kan udføres individuelt eller i en gruppe på 2-3 studerende. Opgavens omfang: 1 studerende: max 5 sider ekskl. grafiske afsnit, 2 studerende: max 7 sider ekskl. grafiske afsnit og 3 studerende: max 9 sider ekskl. grafiske afsnit." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam combined with written project assignment. The assignment can be performed individually or in a group of 2-3 students. Scope of the assignment: 1 student: max 5 pages excl. graphic sections, 2 students: max 7 pages excl. graphic sections and 3 students: max 9 pages excl. graphic sections." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Provided by DTU Learn for Life" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Eksamen planlægges af sekretariatet på DTU Learn for Life." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="-" />
+          <Duration Lang="en-GB" Txt="-" />
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="Ca. 3 uger før kursusstart" />
+            <DeadLineTxt Lang="en-GB" Txt="App. 3 weeks before teaching starts." />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Læringsmål: (fortsat)
+Færdigheder:
+• Skal kunne implementere en applikation med vinduer
+• Skal kunne opdele en applikation i en logikdel og en visningsdel
+• Skal kunne implementere en applikation efter objektorienterede principper
+• Skal kunne vurdere en applikations funktionalitet
+
+Kompetencer:
+• Skal kunne udvikle mindre objektorienterede applikationer med brug af vinduer
+• Skal kunne opbygge applikationer med et fornuftigt valg af relevante klasser
+• Skal kunne dokumentere en applikations funktionalitet gennem test
+
+Indhold:
+• Den objektorienterede udviklingsmodel, klasser, interfaces, arv, polymorfi og håndtering af undtagelser
+• Brugen af metoder, synlighed og indkapsling, opdeling af kode i en logikdel og en visningsdel
+• Filhåndtering, serialisering samt opbygning af applikationer med vinduer
+• Kollektioner og generiske klasser samt introduktion til tråde
+• Introduktion til klassediagrammer og UML</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning, gruppeøvelser og -diskussioner, egne cases, eksperimenter og kobling til egen ledelsespraksis.</Teaching_And_Learning_Methods>
+          <Course_Literature>https://www.polyteknisk.dk/home/akademi/cv</Course_Literature>
+          <Course_Objectives>Formålet med modulet er:
+• At give den studerende kompetencer til at udvikle mindre applikationer
+• At give den studerende indsigt i og forståelse for det objektorienterede paradigme</Course_Objectives>
+          <Remark>DTU Engineering Technology Efteruddannelse
+Obligatorisk modul (Ob1), IT-Diplomuddannelsen
+Faggruppe: AI, matematik og software</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Learning Objectives: (continued)
+Skills:
+• Must be able to implement an application with windows
+• Must be able to split an application into a logic section and a display section
+• Must be able to implement an application based on object-oriented principles
+• Must be able to assess an application's functionality
+
+Competencies:
+• Must be able to develop smaller object-oriented applications using windows
+• Must be able to build applications with a sensible choice of relevant classes
+• Must be able to document application functionality through testing
+
+Contents:
+• The object-oriented development model, classes, interfaces, inheritance, polymorphism and handling of exceptions
+• The use of methods, visibility and encapsulation, division of code into a logic section and a display section
+• File management, serialization and building applications with windows
+• Collections and generic classes as well as introduction to threads
+• Introduction to class diagrams and UML</Contents>
+          <Teaching_And_Learning_Methods>Teaching with lectures, group exercises and discussions, own cases, experiments and connection to own management practice.</Teaching_And_Learning_Methods>
+          <Course_Literature>https://www.polyteknisk.dk/home/akademi/cv</Course_Literature>
+          <Course_Objectives>The purpose of this module is:
+• To provide the student with skills to develop smaller applications
+• To give the student insight and understanding of the object-oriented paradigm</Course_Objectives>
+          <Remark>DTU Engineering Technology Continuing Education
+Mandatory course (Ob1), Diploma of IT
+Section: AI, Mathematics and Software</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Optagelse på IT-Diplomuddannelsen forudsætter:  &#xD;&#xA;- At ansøger har gennemført en relevant adgangsgivende uddannelse min. på niveau med en erhvervsakademiuddannelse eller en relevant videregående voksenuddannelse.  &#xD;&#xA;- At ansøger har mindst to års erhvervserfaring efter gennemført adgangsgivende uddannelse." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Admission requirements: &#xD;&#xA;- That the applicant has a relevant qualifying examination minimum at the level of an academy education or relevant further adult education. &#xD;&#xA;- That the applicant has at least two years' of work experience after qualifying examination." />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere viden om de mest almindelige baseklassebiblioteker (Viden og forståelse)" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding and knowledge of the most common class libraries " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere viden om brugen af metoder, synlighed og indkapsling (Viden og forståelse)" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding and knowledge of the use of methods, visibility and encapsulation " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere viden om objektorienterede konstruktioner (Viden og forståelse)" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding and knowledge of object-oriented constructions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere viden om programmering med vinduer (Viden og forståelse)" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding and knowledge of programming with windows " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere kendskab til klassediagrammer og grundlæggende UML (Viden og forståelse)" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding and knowledge of class diagrams and basic UML " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere kendskab til programmering med kollektioner og generiske klasser (Viden og forståelse)" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding and knowledge of programming with collections and generic classes " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere kendskab til filhåndtering (Viden og forståelse)" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding and knowledge of file management " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere kendskab til videnskabsteori og metoder (Viden og forståelse)" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding and knowledge of science theory and methods " />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://lifelonglearning.dtu.dk/engineering-technology/diplom/grundlaeggende-objektorienteret-programmering/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="49" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="49" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="3" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="54673" PersonUniversity="dtu" Date="2026-04-29" Time="14:44:03.463" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

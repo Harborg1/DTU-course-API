@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="28761" University="dtu" LastUpdated="2024-08-19+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="28" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Matematisk modellering til industrielle anvendelser" />
+        <Title Lang="en-GB" Title="Mathematical modeling for industrial applications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="campus_kalundborg" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="3 uger i oktober" />
+          <Schedule_Txt Lang="en-GB" Txt="3 weeks in October" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="3687" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alexander</GivenName>
+            <FamilyName>Shapiro</FamilyName>
+            <Email>ASH@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af opgaver, samt en kort eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of the assignments, combined with the short examination" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="1/2 time" />
+          <Duration Lang="en-GB" Txt="1/2 hour" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Undervisningen er bygget op omkring en række modeleksempler, som bredt beskriver problemstillingerne med det kemiske og biokemiske indhold. Problemerne løses numerisk ved at anvende programmering som et værktøj. De mulige modeleksempler er (valget kan være forskelligt i de forskellige år):
+
+Modellering af de enzymatiske hydrolyser
+
+Modellering af de kromatografiske processer
+
+Modellering af diffusionen gennem belægningen
+
+Modellering af adsorptionsseparationer
+
+Modellering af filtreringen af vand indeholdende faste partikler</Contents>
+          <Teaching_And_Learning_Methods>"Learn by doing". Opgaver, korte forelæsninger.</Teaching_And_Learning_Methods>
+          <Course_Literature>Undervisningsmaterialerne til kurset er noter og yderligere materialer uploadet til kursushjemmesiden (DTU Inside/DTU Learn).</Course_Literature>
+          <Course_Objectives>Kursets læringsmål er at forberede en studerende til udvikling af de matematiske modeller til industrielt vigtige anvendelser og til at analysere sådanne modeller analytisk og numerisk.</Course_Objectives>
+          <DTU_Remark>Kurset gives kun i efterår ulige år</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Teaching is built around a number of model examples, which broadly describe the statements of the problems with the chemical- and biochemical contents. The problems are solved numerically, applying programming as a tool. The possible model examples are (the choice may be different in the different years):
+
+Modelling of the enzymatic hydrolyses
+
+Modeling the chromatographic processes
+
+Modeling of the diffusion through the coating
+
+Modeling of adsorption separations
+
+Modeling of the filtration of water containing solid particles</Contents>
+          <Teaching_And_Learning_Methods>“Learn by doing”. Assignments, short lectures.</Teaching_And_Learning_Methods>
+          <Course_Literature>The teaching materials for the course are notes and additional materials uploaded to the course website (DTU Inside/DTU Learn).</Course_Literature>
+          <Course_Objectives>The learning objective of the course is to prepare a student for development of the mathematical models for industrially important applications, and for analyzing such models analytically and numerically.</Course_Objectives>
+          <DTU_Remark>The course in only given in autumn odd years</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurser i matematisk analyse, differentialligninger og grundlaggende partielle differentialligninger. Indledende kendskab til programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Courses on mathematical analysis, ordinary differential equations and basics of partial differential equations. Initial knowledge of programming." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At producere en matematisk model til beskrivelse af de industrielle processer, der udvikler sig i rum og tid, og som involverer transport af stof og energi ved konvektion og diffusion, samt kemiske reaktioner;" />
+          <Txt Lang="en-GB" Txt="To produce a mathematical model for description of the industrial processes, developing in space and time, and involving transport of matter and energy by convection and diffusion, as well as chemical reactions;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At formulere begyndelses- og randbetingelser for den matematiske model, på grundlag af fysiske betragtninger." />
+          <Txt Lang="en-GB" Txt="To formulate initial and boundary conditions for a mathematical problem applying relevant physical considerations;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At lære og at kunne arbejde med differentialbalancerne. At formulere matematiske problemer for de systemer, der involverer sådanne balancer. At vælge løsningsmetoder til disse problemer;" />
+          <Txt Lang="en-GB" Txt="To learn and to be able of working with the differential balances. To formulate mathematical problems for the systems involving such balances. To select the solution methods for these problems;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At udvikle algoritmerne til løsning af systemerne med almindelige differentialligninger baseret på standard biblioteksprocedurer;" />
+          <Txt Lang="en-GB" Txt="To develop the algorithms for solution of the systems of ordinary differential equations based on the standard library procedures;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At implementere sådanne algoritmer i computerkoderne på moderne programmeringssprog;" />
+          <Txt Lang="en-GB" Txt="To implement such algorithms into the computer codes on modern programming languages;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At anvende metoderne til kvalitativ analyse og numerisk løsning af de koblede systemer af differentialligninger, herunder stive problemer;" />
+          <Txt Lang="en-GB" Txt="To apply the methods for qualitative analysis and numerical solution of the coupled systems of differential equations, including stiff problems;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At analysere de opnåede løsninger i forhold til systemernes dimensionsløse parametre;" />
+          <Txt Lang="en-GB" Txt="To analyze the obtained solutions in terms of the dimensionless parameters of the systems;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At kontrollere systemernes stabilitet og finde værdierne for de kritiske parametre." />
+          <Txt Lang="en-GB" Txt="To check stability of the systems and find the values of the critical parameters." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modern modeling methods for chemical engineers</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:26.757" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

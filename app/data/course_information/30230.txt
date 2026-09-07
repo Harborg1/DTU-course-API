@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30230" University="dtu" LastUpdated="2026-07-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Dataanalyse og -modellering i rum- og geofysik" />
+        <Title Lang="en-GB" Title="Data Analysis and Modeling in Geoscience and Astrophysics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="38306" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Nils</GivenName>
+            <FamilyName>Olsen</FamilyName>
+            <Email>nio@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="105574" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Clemens</GivenName>
+            <FamilyName>Kloss</FamilyName>
+            <Email>ancklo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset behandler metoder til repræsentation og kvalitetsvurdering af data, parametrisering af fysiske systemer, beskrivelse af empiriske og analytiske sammenhænge mellem data og modelparametre, stokastisk beskrivelse af usikkerheder og støj, samt stokastisk og deterministisk kvantificering af forhåndsviden om et fysisk system. 
+
+Der præsenteres en række analytiske/numeriske metoder til løsning af lineære og ikke-lineære inverse problemer. Målestøjens forplantning til usikkerhed på løsningerne er et væsentligt tema i kurset.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, regneøvelser, computerøvelser og mindre projekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende indsigt i den matematiske beskrivelse af målinger (laboratorie-, observatorie-, satellit- og feltdata) og deres anvendelse i studiet af astrofysiske og geofysiske systemer.</Course_Objectives>
+          <DTU_Remark>Kurset bliver udbudt for sidste gang som efterårskursus i E26. Derefter bliver det udbudt i forårssemesteret, første gang i F28.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course deals with methods for data representation and quality assessment, parameterization of physical systems, description of empirical and analytical relationships between data and model parameters, stochastic description of uncertainties and noise, and stochastic and deterministic quantification of prior knowledge about a physical system. 
+
+A number of analytical/numerical methods for solving linear and nonlinear inverse problems are presented. The propagation of noise in the data to uncertainty of the solutions is a major theme in the course.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and small projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the students insight into the mathematical description of measurements (laboratory, observatory, satellite and field data) and their application to the study of astrophysical and geophysical systems.</Course_Objectives>
+          <DTU_Remark>The course will be offered for the last time as a Fall course in E26. From then on, it will be offered in the Spring semester, for the first time in F28.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="finde egnede repræsentationer/parametriseringer af data og modeller" />
+          <Txt Lang="en-GB" Txt="find suitable representations/parametrizations of data and models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse lineære inverse problemer med analytiske metoder" />
+          <Txt Lang="en-GB" Txt="classify inverse problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere de forskellige inverse problemer" />
+          <Txt Lang="en-GB" Txt="solve linear inverse problems with analytical methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="undersøge, hvordan støj på data forårsager usikkerhed på beregnede modeller" />
+          <Txt Lang="en-GB" Txt="examine how noise on the data propagates into uncertainty on the solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge a priori information ved løsning af et inverst problem" />
+          <Txt Lang="en-GB" Txt="use prior information in solving an inverse problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kunne anvende metoder til at undgå instabilitet i numeriske løsningsmetoder" />
+          <Txt Lang="en-GB" Txt="use methods to avoid instability in numerical solution methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave en Fourier-analyse af en tidsserie med huller " />
+          <Txt Lang="en-GB" Txt="perform a Fourier analysis of data that are non-uniform distributed" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse svagt ikke-lineære problemer med iterative metoder baseret på linearisering." />
+          <Txt Lang="en-GB" Txt="solve weakly non-linear problems with iterative methods based on linearization." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02631/02632/02633).01035" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Dataanalyse og inverse metoder</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02671" />
+        <PreviousCourse CourseCode="02671" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="12" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-07-30" Time="09:04:04.1" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

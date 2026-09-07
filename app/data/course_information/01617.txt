@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="01617" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Introduktion til Dynamiske Systemer" />
+        <Title Lang="en-GB" Title="Introduction to Dynamical Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="2425" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mads Peter</GivenName>
+            <FamilyName>Sørensen</FamilyName>
+            <Email>mpso@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="3435" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Henriksen</FamilyName>
+            <Email>chrh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="290" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Morten</GivenName>
+            <FamilyName>Brøns</FamilyName>
+            <Email>mobr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17660" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Kristian Uldall</GivenName>
+            <FamilyName>Kristiansen</FamilyName>
+            <Email>krkri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Afleveringsopgaver i løbet af semestret og skriftlig eksamen med multiple-choice opgaver" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written assignments during the semester and written examination with mutiple-choice quizzes" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Multiple-choice opgaver" />
+          <Duration Lang="en-GB" Txt="Mutiple-choice quizzes" />
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Faseportrætter af lineære systemer. Stabile, ustabile og center mangfoldigheder. Lokal bifurkationsanalyse. Stabilitetsanalyse inklusiv Hartman-Grobman Sætningen. Teori om plane dynamiske systemer, herunder Poincaré-Bendixons sætning. De matematiske teknikker vil løbende blive anvendt på problemstillinger fra kemi, fysik og biologi.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppeøvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte de studerende i stand til at analysere ikke-lineære dynamiske systemer samt forstå disse systemers kompleksitet. Mange modeller i naturvidenskab og ingeniørvidenskaberne beskrives vha differentialligninger og tidsligt afhængige variable. I teorien for dynamiske systemer studerer man disse problemer og forsøger at besvare spørgsmål som: Hvordan opfører systemet sig efter lang tid? Hvordan afhænger systemet af parametre? Det er eksempler på vigtige spørgsmål i anvendelserne, og teorien for dynamiske systemer er derfor vigtig for de anvendte videnskaber. Dynamisk systemer er også et fascinerende matematisk emne, der kombinerer de fleste hjørnesten i matematikken, specielt analyse og geometri. 
+
+Dette kursus ville lægge det matematiske fundament for de mere avancerede kurser:  01257 Videregående modelling - Anvendt matematik, hvor de studerende får muligheden for at anvende dynamisk system teori på konkrete problemstillinger i modellering
+01621 Perturbationsteori for differentialligninger
+01622 Videregående Dynamiske Systemer med teknologiske anvendelser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Phase portraits of linear systems. Stability analysis including the Hartman-Grobman theorem. Stable, unstable and center manifolds. Local bifurcation theory. Theory of planar systems including Poincaré-Bendixon theorem.  The mathematical techniques will be applied to problems from physics, chemistry, and biology.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and classes.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To be able to analyze nonlinear dynamical systems and understand their complexity. Many models in science and engineering are differential equations describing the evolution of some variables. Dynamical systems theory is the study of such evolution aiming to answer questions like: What is the long term dynamics? How does the system depend on parameters? These are very important questions in applications and hence dynamical systems theory is a very important topic in science and engineering. Dynamical systems is also a fascinating field of mathematics as it combines most of the core mathematical disciplines, in particular, analysis and geometry.
+The course will lay the mathematical foundation for the following more advanced courses: 01257 Advanced Modelling - Applied Mathematics, where the students get to apply dynamical systems theory to concrete problems in modelling
+01621 Perturbations theory for differential equations
+01622 Advanced Dynamical Systems with Applications in Science and Engineering</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til lineær algebra og lineære differentialligninger" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of linear algebra and linear differential equations" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01025/01034/01035/01037" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme faseportrætter af lineære ordinære differentialligningssystemer." />
+          <Txt Lang="en-GB" Txt="Determine phase portraits for linear ordinary differential equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere stabilitet af systemer." />
+          <Txt Lang="en-GB" Txt="Analyze stability in systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme og udnytte hyperbolicitet i analyse af ligevægtspunkter." />
+          <Txt Lang="en-GB" Txt="Determine and exploit hyperbolicity in the analysis of equilibrium points." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Operere med stabile mangfoldigheder, ustabile mangfoldigheder og centermangfoldigheder i studiet af ligevægtspunkter." />
+          <Txt Lang="en-GB" Txt="Operate with stable, unstable and center manifolds. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Topologisk ækvivalens og indeks teori." />
+          <Txt Lang="en-GB" Txt="Topological equivalence and index theory." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Poincaré-Bendixon sætnigen og andre teknikker til at afgøre eksistens af grænsecyckler." />
+          <Txt Lang="en-GB" Txt="Apply Poincaré-Bendixon theorem and other results to decide the existence of limit cycles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Klassificere lokale bifurkationer og bestemme de mulige lokale bifurkationer i konkrete tilfælde." />
+          <Txt Lang="en-GB" Txt="Classify local bifurcations in general and find the possible local bifurcations in a specific system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Hartman-Grobman sætningen om linearisering til at give kvalitativ beskrivelse af dynamik i nærheden af et hyperbolsk ligevægtspunkt." />
+          <Txt Lang="en-GB" Txt="Apply Hartman-Grobman theorem about linearisation to give a qualitative description of the dynamics in a vicinity of a hyperbolic equilibrium." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombinere de ovenstående punkter til at give et globalt faseportræt af visse dynamiske systemer." />
+          <Txt Lang="en-GB" Txt="Combine the aforementioned points to give a global phase portrait of certain dynamical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Poincaré afbildninger og kaos" />
+          <Txt Lang="en-GB" Txt="Poincaré maps and chaos." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Advanced introduction to the mathematics of dynamical systems</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="01625" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:24.89" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

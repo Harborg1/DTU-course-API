@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30350" University="dtu" LastUpdated="2026-03-17+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Telemåling" />
+        <Title Lang="en-GB" Title="Remote Sensing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="34292" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>John Peter Merryman</GivenName>
+            <FamilyName>Boncori</FamilyName>
+            <Email>jpmb@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Rapport over projektarbejde vægtes med 1/3 og mundtlig eksamen med 2/3. Rapporten udarbejdes i grupper med efterfølgende individuelt mundtligt forsvar." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Weight for report for project work is 1/3 and for oral exam 2/3. The report is written in groups, followed by an individual defence." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="A presentation may be prepared for each exam question in advance and used." />
+            <Aid_Txt Lang="da-DK" Txt="En præsentation for hvert eksamensspørgsmål må laves på forhånd og medbringes." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omfatter gennemgang og eksempler på anvendelser af sensorer som: Side looking radar, syntetisk apertur radar (SAR), radarhøjdemåler, vindskatterometer, og radiometer. Anvendelserne ligger i det væsentlige inden for disciplinerne: Oceanografi inkl. havforurening, glaciologi inkl. havis, kortlægning samt skov- og landbrug. Kurset indeholder for hver af de nævnte sensorer en gennemgang af teknikken og de relevante anvendelser med eksempler, og desuden en diskussion af de databehandlings- og fortolkningsmetoder, der er nødvendige.  
+
+Undervisningen er direkte relateret til den telemålingsforskning der gennem 30 år er opbygget ved DTU Space, og bidrager til UN SDGs, især #13 (Climate Action) og #15 (Life on land).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Radar- og radiometersystemer anvendes fra satellitter og fly til måling og overvågning af Jordens overflade, herunder landjorden, oceanerne, og atmosfæren. Dette kaldes telemåling eller jordobservation og udgør en helt afgørende del af overvågningen af Jordens miljø og klima.  
+
+Det overordnede mål med kurset er at give de studerende en indføring i de radar- og radiometerteknikker og -systemer, der anvendes til telemåling, med vægt på at beskrive deres virkemåde, samt i disse teknikkers anvendelse i måling og overvågning af egenskaber ved Jordens overflade, herunder også at få kendskab til de nødvendige databehandlingsteknikker.</Course_Objectives>
+          <Remark>Kurset har nær sammenhæng med 30340 Radar- og Radiometersystemer.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course includes a survey with application examples of sensors like side-looking radar, radar altimeter, wind scatterometer, and radiometer. Applications are primarily within oceanography, including sea pollution, glaciology, including sea ice, mapping, farming, and forestry. The course includes a description of the techniques for each of the above-mentioned sensors, the relevant applications with examples, and discussions about the necessary data processing and interpretation methods.  
+
+The course is directly related to the remote sensing research developed at DTU Space through more than 30 years, and provides students with competencies relevant to UN SDGs, particularly #13 (Climate Action) and #15 (Life on land).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, and project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Radar and radiometer systems are used from satellites and aircrafts to measure and monitor the surface of the Earth, including the land surfaces, the oceans and the atmosphere.  This is called remote sensing or Earth observation and is of utmost importance for monitoring the Earth’s environment and climate.  
+
+The general course objectives are to provide the students with an understanding of those radar and radiometer techniques and systems that are used for remote sensing, with a special emphasis on the technical description of the sensors and the application of these techniques for measuring and monitoring of properties of the surface of the Earth.  This also includes knowledge about the necessary data processing techniques.</Course_Objectives>
+          <Remark>The course is closely related to 30340 Radar and Radiometer Systems.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Elektromagnetiske bølger, polarisation. Kendskab til programmering, gerne MATLAB." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Electromagnetic Waves,  Polarisation. Knowledge of programming, e.g. MATLAB." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere elektromagnetiske bølgers interaktion med overflade- og volumenspredere" />
+          <Txt Lang="en-GB" Txt="analyse the interaction of electromagnetic waves with surface and volume scatterers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere syntetisk apertur radar (SAR) teknikken og diskutere anvendelser heraf" />
+          <Txt Lang="en-GB" Txt="analyse the synthetic aperture radar (SAR) technique and discuss its applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere interferometrisk SAR teknikken og diskutere anvendelser heraf" />
+          <Txt Lang="en-GB" Txt="analyse the interferometric SAR technique and discuss its applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive polarimetrisk SAR interferometriteknikken" />
+          <Txt Lang="en-GB" Txt="describe the polarimetric SAR interferometry technique" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere radarhøjdemåler og vindskatterometerteknikkerne og diskutere deres oceanografiske anvendelser" />
+          <Txt Lang="en-GB" Txt="analyse the radar altimeter and wind scatterometer techniques and discuss their ocean applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og sammenligne mikobølgeradiometerteknikker" />
+          <Txt Lang="en-GB" Txt="analyse and compare microwave radiometer techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diskutere anvendelser af mikrobølgeradiometre herunder til bestemmelse af  saltholdighed og jordfugtighed og overvågning af havis" />
+          <Txt Lang="en-GB" Txt="discuss applications of microwave radiometers including the estimation of ocean salinity and soil moisture, and the monitoring of sea ice" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en databehandlingsmetode og fortolke resultaterne af den" />
+          <Txt Lang="en-GB" Txt="implement a data processing method and interpret the results " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge og gennemføre projektarbejde" />
+          <Txt Lang="en-GB" Txt="plan and perform project work" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udarbejde en teknisk rapport." />
+          <Txt Lang="en-GB" Txt="write a technical report." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Satellitovervågning og kortlægning med radar og radiometer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31425/30425" />
+        <PreviousCourse CourseCode="31425" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="70" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="70" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="8" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:04.787" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

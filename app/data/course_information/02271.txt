@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02271" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avanceret cybersikkerhed" />
+        <Title Lang="en-GB" Title="Advanced Cybersecurity" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="177140" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Emmanouil</GivenName>
+            <FamilyName>Vasilomanolakis</FamilyName>
+            <Email>emmva@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="190664" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Baum</FamilyName>
+            <Email>cabau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen er baseret på en afsluttende skriftlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is based on a final written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Netværkssikkerhed og autentifikation i netværkssystemer (TLS, Kerberos, NIST’s digitale autentifikationsmodel); sikkerhed og angreb mod Wi-Fi-netværk (WPS, WPA2, WPA3); forebyggelse og detektion af trusler (firewalls, indtrængningsdetekteringssystemer, cyberbedrag); private kommunikationsteknologier (TOR, Signal), sikkerhed og angreb mod IoT-netværk; web-sikkerhed og angreb; OT-sikkerhed.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At opnå fortrolighed med netværkssikkerhed ud fra både en teoretisk og en praktisk synsvinkel.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Network security and authentication in networked systems (TLS, Kerberos, NIST digital authentication model); Security and attacks against Wi-Fi networks (WPS, WPA2, WPA3); threat prevention and detection (firewalls, intrusion detection systems, cyber-deception); private communication technologies (TOR, Signal), security and attacks against IoT networks; web security and attacks; OT security</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide a working knowledge of network security in theory and practice.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forudsættes, at deltagere har kendskab til almindeligt forekommende protokoller til kommunikation i datanet og deres virkemåde." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is assumed that participants know a variety of commonly-used protocols for communication in data networks, and how they work." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02270 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Liste almindeligt forekommende trusler, der opstår gennem brugen af bestemte netværksprotokoller." />
+          <Txt Lang="en-GB" Txt="List commonly-seen threats arising from the use of particular protocols in networked computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udnytte og vide hvordan du løser almindelige sårbarheder og angreb mod servere og andre netværksbaserede computersystemer." />
+          <Txt Lang="en-GB" Txt="Exploit and know how to fix common vulnerabilities and attacks against servers and other networked computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare fælles problemer med trådløse netværk og mekanismer, der bruges til at sikre dem." />
+          <Txt Lang="en-GB" Txt="Explain common vulnerabilities of wireless networks and mechanisms used to secure them." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de grundlæggende mekanismer, der bruges til opdage indtrængningsforsøg i computersystemer." />
+          <Txt Lang="en-GB" Txt="Explain the basic mechanisms used for the detection of intrusion attempts in computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre en netværksscanning og sårbarhedsanalyse af et computer netværk." />
+          <Txt Lang="en-GB" Txt="Perform a network scanning and a vulnerability assessment against a computer network." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lave passende firewallregler, udtrykt i et gængsregelsprog, for at implementere en given firewallsikkerhedspolitik." />
+          <Txt Lang="en-GB" Txt="Select appropriate firewall rules expressed in a commonly-used rule language in order to implement a given firewall security policy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge passende mekanismer til at beskytte et computersystem i et netværk mod udvalgte risici." />
+          <Txt Lang="en-GB" Txt="Select appropriate mechanisms to protect a networked computer system against given risks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå det grundlæggende omkring moderne IoT-sikkerhed og IoT-protokoller" />
+          <Txt Lang="en-GB" Txt="Understand the basics around modern IoT security and IoT protocols" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge passende værktøjer til privat kommunikation på internettet." />
+          <Txt Lang="en-GB" Txt="Select appropriate tools for communicating privately on the Internet." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Teori og praksis</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02233" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:16.64" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

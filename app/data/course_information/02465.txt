@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02465" Volume="2026/2027" University="dtu" LastUpdated="2026-03-25+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til reinforcement learning og kontrol" />
+        <Title Lang="en-GB" Title="Introduction to reinforcement learning and control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="43504" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tue</GivenName>
+            <FamilyName>Herlau</FamilyName>
+            <Email>tuhe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1559" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Madsen</FamilyName>
+            <Email>hmad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="16497" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Morten</GivenName>
+            <FamilyName>Mørup</FamilyName>
+            <Email>mmor@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="792" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lars Kai</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>lkai@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen og bedømmelse af rapport(er)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written exam and evaluation of report(s)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>1)	Dynamisk programmerings-algoritmen til eksakt planlægning
+2)	Open/closed loop kontrol
+3)	Simulering og diskretisering af kontrolproblemet, 
+4)	Kontrolmetoder såsom LQR-kontrol, PID-control
+5)	Kontrol af ikke-linaere dynamiske systemer via linearisering
+6)	Bandit-algoritmer og deres anvendelse til exploration/exploitation dilemmaet
+7)	Markov decision processes (MDPs) og modelbaseret reinforcement learning, herunder value og policy iteration
+8)	Tabulære metoder til reinforcement learning såsom Q-læring, Sarsa og Monte-Carlo metoder,
+9)	Eligibility traces,
+10)	Reinforcement learning med ikke-linære og linære funktionsapproksimatorer 
+11)	deep-Q learning
+12)	Implementation og evaluering af metoderne i Python</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Sutton, R.S. and Barto, A.G., 2018. Reinforcement learning: An introduction. MIT press.
+Herlau, T. Undervisningsnoter. All material available through: https://www2.compute.dtu.dk/courses/02465</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at give studerende en introduktion til reinforcement-learning og kontrolteori. Kurset vil tilgå begge emner fra et machine-learning perspektiv med vægt på ligheden i problemformulering og typiske løsningsmetoder. Kurset sætter studerende i stand til at forstå de situationer hvor reinforcemnet learning og kontrolteori er anvendelige, formulere og simulere relevante problemer, og forstår og implementere ud udvalg af de mest anvendte metoder.</Course_Objectives>
+          <DTU_Remark>Hvis du er interesseret i at tage kurset kan du læse mere her: https://www2.compute.dtu.dk/courses/02465/information/about.html</DTU_Remark>
+          <Remark>Forelæsninger og det skrevne materiale er på Engelsk. Opgaver kan afleverse på både dansk og Engelsk.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>1)	The dynamical programming problem and algorithm for exact planning
+2)	Open/closed loop control
+3)	simulation and discretization of control problems,
+4)	Control methods including LQR control, linearization, PID control
+5)	Control of non-linear systems via linearization
+6)	Bandit problems and algorithms for exploration/exploitation
+7)	Markov Decision Processes (MDPs) and model-based reinforcement learning including value iteration and policy iteration.
+8)	Tabular methods including Q-learning, Sarsa and Monte-Carlo methods 
+9)	Eligibility traces,
+10)	Reinforcement learning with non-linear and linear function approximators
+11)	deep-Q learning
+12)	Implementation and evaluation of methods in python</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and project work</Teaching_And_Learning_Methods>
+          <Course_Literature>Sutton, R.S. and Barto, A.G., 2018. Reinforcement learning: An introduction. MIT press.
+Herlau, T. Lecture notes. All material available through: https://www2.compute.dtu.dk/courses/02465</Course_Literature>
+          <Course_Objectives>The objective of the course is to give students an introduction to reinforcement learning and control theory. The course will approach both subjects from a machine-learning perspective and emphasize their commonality in terms of problem formulations and methods. A student who completes the course will have an understanding of the problems where control theory or reinforcement learning are applicable, be able to formulate and simulate problems relevant to both methods and understand and implement a selection of the most popular methods.</Course_Objectives>
+          <DTU_Remark>If you are interested in enrolling in the course you can find additional information at: https://www2.compute.dtu.dk/courses/02465/information/about.html</DTU_Remark>
+          <Remark>The lectures and written material are in English. Assignments can be handed in using either English or Danish.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Introduktion til Machine Learning og Data Mining. Introduktion til matematisk statistik (eller andet kursus som giver en introduktion til sandsynlighedsregning). Erfaring med programmeringssproget Python" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introduction to Machine Learning and Data Mining. Introduction to mathematical statistics (or another course that provides a general knowledge of probability theory). Experience with the python programming language" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450.02403.(02002/02631/02632/02633) " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive relevante aspekter af kontrolproblemet såsom open/closed loop kontrol" />
+          <Txt Lang="en-GB" Txt="Describe the main aspects of the control problem such as open/closed loop control" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende dynamisk programmering til eksakt planlægning" />
+          <Txt Lang="en-GB" Txt="Formulate and apply dynamic programming for exact planning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere, simulere og kontrollere dynamiske systemer" />
+          <Txt Lang="en-GB" Txt="Formulate, simulate and control dynamical systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende linearisering af ikke-lineære kontrolproblemer" />
+          <Txt Lang="en-GB" Txt="Apply linearization of non-linear control problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og implementere praktiske kontrolmetoder herunder LQR og PID-kontrol" />
+          <Txt Lang="en-GB" Txt="Understand and implement practical control methods such as LQR and PID-control" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå vigtige definitioner fra reinforcement-learning såsom on/off policy metoder og rollen af value/action-value funktionerne" />
+          <Txt Lang="en-GB" Txt="Understand key terms in reinforcement learning such as on/off policy methods and the role of value/action-value functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå Bandit-algoritmer og deres relation til exploration/exploitation dilemmaet" />
+          <Txt Lang="en-GB" Txt="Understand Bandit-algorithms and their relationship to the exploration/exploitation dilemma" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå motivationen og fordele/ulemper ved de vigtigste tabulære metoder såsom Q-læring, Sarsa og Monte-Carlo metoder samt deres relation til dynamisk programmering" />
+          <Txt Lang="en-GB" Txt="Understand the motivation and benefits/drawbacks between major tabular methods such as Q-learning, Sarsa and Monte-Carlo methods, including their relationship to dynamical programming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende lineære og ikke-lineære funktionsapproximatorer i reinforcement learning" />
+          <Txt Lang="en-GB" Txt="Apply linear and non-linear function approximators to reinforcement learning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere metoderne og foretage analyse i Python." />
+          <Txt Lang="en-GB" Txt="Implement methods and perform analysis in the python programming-language" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://www2.compute.dtu.dk/courses/02465/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:01.45" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34656" University="dtu" LastUpdated="2026-04-09+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Design og layout af integreret CMOS kredsløb" />
+        <Title Lang="en-GB" Title="Design and layout of integrated CMOS circuits" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="78881" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Per</GivenName>
+            <FamilyName>Lynggaard</FamilyName>
+            <Email>plyn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Afleveringer af rapport&#xD;&#xA;Karakteren baseres på et helhedsindtryk." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Report hand-in&#xD;&#xA;The grade is based on an overall impression." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset gennemføres som et projekt hvor de studerende arbejder i grupper. I løbet af kurset afholdes der status- og reviewmøder, hvor de studerende udveksler erfaringer og hjælper hinanden med diverse udfordringer og problemer. Der gives løbende forelæsninger i udvalgte emner.
+
+Kurset omhandler analoge kredsløb, schematic design, layout, computersimuleringer (DC; AC, transient), design rule check (DRC), layout versus schematic (LVS)</Contents>
+          <Teaching_And_Learning_Methods>Individuelt projektarbejde, status- og reviewmøder samt forelæsninger.</Teaching_And_Learning_Methods>
+          <Course_Literature>T.C. Carusone, D.A. Johns &amp; K. Martin: Analog Integrated Circuit Design.</Course_Literature>
+          <Course_Objectives>At sætte den studerende i stand til at færdiggøre et design af et kredsløb integreret i en CMOS teknologi baseret på en given specifikation gennem schematic design og simuleringer til produktionsklart layout.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is conducted as a project where the students work in groups. During the project status and review meeting will be held where the students exchange experiences and help each other with various challenges and problems. During the project lectures will be given in selected topics.
+
+The course treats analog circuits, schematic design, layout, computer simulations (DC; AC, transient), design rule check (DRC), layout versus schematic (LVS)</Contents>
+          <Teaching_And_Learning_Methods>Individual project work, status and review meetings and lectures.</Teaching_And_Learning_Methods>
+          <Course_Literature>T.C. Carusone, D.A. Johns &amp; K. Martin: Analog Integrated Circuit Design.</Course_Literature>
+          <Course_Objectives>To enable the student to conduct a complete design of integrated analog circuitry from a given specification through schematic design and analysis to a layout ready for manufacturing.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kursus 31630/34636 eller Kursus 34630/31631 og 34655/31632 eller kursus med tilsvarende indhold" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Course 31630 or course 34630/31631 and 34655/31632 or courses with a similar content" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Syntetisere en operationsforstærker i henhold til en given specifikation i en CMOS proces" />
+          <Txt Lang="en-GB" Txt="Synthesize an operational amplifier according to a certain specification in a CMOS process " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge en shematic editor og et simuleringsværktøj til design og analyse af analoge kredsløb" />
+          <Txt Lang="en-GB" Txt="Use a schematic editor and a simulation environment for design and analysis of analog circuitry" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere performance af det designede kredsløb i alle proceshjørner" />
+          <Txt Lang="en-GB" Txt="Analyze the performance of the design circuit in all process corners" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Korrelere simuleringsresultater med resultater baseret på beregninger af small signal diagram for operationsforstærkeren" />
+          <Txt Lang="en-GB" Txt="Correlate simulated results with calculated values based on a small signal equivalent of the operational amplifier" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge en layout editor til at lave layout af analoge kredsløb" />
+          <Txt Lang="en-GB" Txt="Use a layout editor for making layout of analog circuitry" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere de dele af kredsløbet der er kritisk med hensyn til matching og lave layout der sikre god matching" />
+          <Txt Lang="en-GB" Txt="Identify the parts of the design critical to matching and make layout that ensures good matching for these parts" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge et DRC værktøj (Design Rule Checking) til at sikre at designet overholder designreglerne" />
+          <Txt Lang="en-GB" Txt="Use a DRC tool (Design Rule Checking) to ensure the design fulfills the design rules" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge et LVS værktøj (Layout Versus Schematic) til at sikre at layoutet matcher schematic designet" />
+          <Txt Lang="en-GB" Txt="Use a LVS tool (Layout Versus Schematic) to ensure the layout matches the schematic design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe en simpel padring på schematic level" />
+          <Txt Lang="en-GB" Txt="Design a simple padring for the design at schematic level" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere arbejdet i en afsluttende rapport" />
+          <Txt Lang="en-GB" Txt="Document the work in a final report" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Design and Layout of an integrated CMOS circuits</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31633" />
+        <PreviousCourse CourseCode="31633" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="30" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="30" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="40" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:43.32" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41111" University="dtu" LastUpdated="2025-02-18+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Strømningsmekanik 2" />
+        <Title Lang="en-GB" Title="Hydrodynamics 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="9680" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>David R.</GivenName>
+            <FamilyName>Fuhrman</FamilyName>
+            <Email>drfu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En enkelt individualiseret grupperapport afleveres i løbet af kurset. Kurset afsluttes med en skriftlig (digital) eksamen. En enkelt karakter gives baseret på en samlet vurdering af disse to elementer (helhedsvurdering)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A single individualized group report is handed in during the course.  The course finishes with a written (digital) examination. A single mark is given, based on an overall assessment of these two elements." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Potentialstrømninger, grundlaget for beskrivelse af tabsfrie strømninger.
+
+Vandbølger på vilkårlige vanddybder. Vandringshastighed, inducerede hastigheder og tryk. Energi- og impulsforhold i bølger. Transformation af vandbølger: refraktion og shoaling. Set-up og bølgedrevne strømme.
+
+Grænselagsstrømninger. Strømningsligninger for grænselag. Laminare og turbulente grænselag. Affine grænselag.
+
+Turbulente strømninger. Instabilitet af laminare strømninger. Reynoldsmidling. Turbulent energi samt energiomsætning i turbulente strømninger. Lukningsproblemet, turbulensmodeller.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Fredsøe, J. 2008 Hydrodynamics. (Bog tilgængelig gratis som PDF fil)</Course_Literature>
+          <Course_Objectives>At give de studerende grundlaget for at behandle en række strømningsformer, som optræder inden for bygningsingeniørens fagområde, for eksempel i forbindelse med projekter i floder, på kyster eller i havet.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Potential flow, the basis for description of ideal flows without energy loss.
+
+Water waves over an arbitrary depth. Wave celerity, wave-induced velocities and pressure. Energy and momentum associated with water waves. Transformation of water waves: refraction and shoaling. Set-up and wave-driven currents.
+
+Boundary layer flow. The flow equations for boundary layers. Laminar and turbulent boundary layers. Similarity and affine boundary layers.
+
+Turbulent flow. Instabiliy of laminar flows. Reynolds averaging. Turbulent energy and transformation of energy in turbulent flows. The problem of closure, models for turbulence.</Contents>
+          <Teaching_And_Learning_Methods>lectures, exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Fredsøe, J. 2008 Hydrodynamics.  (Book provided freely as a PDF file)</Course_Literature>
+          <Course_Objectives>To give students the basis for treatment of a number of hydrodynamic and hydraulic problems encountered in civil engineering, for example in relation to projects in rivers, on coasts or offshore.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de fundamentale hydrodynamiske ligninger og koncepter (Navier-Stokes ligninger, Euler ligninger, vorticity vektor) og udlede løsninger for simple laminære problemer." />
+          <Txt Lang="en-GB" Txt="Describe the fundamental hydrodynamic equations and concepts (Navier-Stokes equations, Euler equations, vorticity vector), and derive solutions for various examples of laminar flow." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de fundamentale ligninger og antagelser i lineær bølgeteori for vand bølger (Laplace ligning, Bernoulli ligning, randbetingelser), og for basale fænomener (dispersions relation, hastigheds kinematik, Tryk fordeling, partikel baner)" />
+          <Txt Lang="en-GB" Txt="Describe the fundamental equations and assumptions in linear wave theory for water waves (Laplace equation, Bernoulli equation, boundary conditions), and the basic concepts (dispersion relation, velocity kinematics, pressure field, particle traj" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for og anvende koncepter som potential og kinetisk energi, energiflux, gruppe hastighed, lineær superposition). " />
+          <Txt Lang="en-GB" Txt="Describe and apply the concepts of potential and kinetic wave energy, wave energy flux, group velocity and linear superposition." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for og anvende lineær shoaling og refraktion af bølger på variabel vanddybde." />
+          <Txt Lang="en-GB" Txt="Describe and apply the concepts of linear shoaling and refraction (Snel’s law)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for og beregne fænomener involveret i bølgebrydning i kystzonen (radiation stress, bølgehøjde variation, variation af middelvandstand, bølgeinduceret strøm). " />
+          <Txt Lang="en-GB" Txt="Describe and calculate the phenomena involved in wave breaking in the surf zone (Radiation stress, wave height decay, set-up/set-down, wave induced currents). " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for laminære grænselags processer, samt de laminære grænselags ligninger." />
+          <Txt Lang="en-GB" Txt="Describe laminar boundary layer processes, including the boundary layer equations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for turbulente strømningsprocesser, såsom turbulent grænselag (i kanalstrømninger, rør osv.) og overgangen fra laminær til turbulent grænselag." />
+          <Txt Lang="en-GB" Txt="Describe turbulent flow processes, such as turbulent boundary layers (in open channels, in pipes, etc.) including laminar-to-turbulent transition in boundary layers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de grundlægende ligninger for turbulente strømninger (Reynolds spændinger og blandingslængde modellen)." />
+          <Txt Lang="en-GB" Txt="Describe the basic equations for turbulent flows (including Reynolds equations, and mixing length turbulence modelling).  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med opgaver relateret til turbulente strømninger i hold af 2-3 personer." />
+          <Txt Lang="en-GB" Txt="Undertake exercises/assignments on problems related to turbulent flows in “hands-on” problem sessions (in 2-3 person groups)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde rapporter over de udførte opgaver." />
+          <Txt Lang="en-GB" Txt="Write up reports on the assignment upon the completion of each exercise." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opnå en basal viden indenfor hydrodynamik, der vil sætte den studerende i stand til at tage videre gående kurser indenfor vandbygning og hydrodynamik udbudt af MEK, 41121, 41126, 41129, 41114, 41224 og 41225." />
+          <Txt Lang="en-GB" Txt="Be geared up with a full body of basic knowledge in Hydrodynamics which will enable him/her to take on further courses in Coastal and Hydraulic Engineering offered by MEK such as 41121, 41126, 41129, 41114, 41224, and 41225." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41101/41102/41312" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>water waves, advanced hydrodynamics</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41110. 12520. 57105" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:36.177" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

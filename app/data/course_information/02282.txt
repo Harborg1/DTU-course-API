@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02282" University="dtu" LastUpdated="2024-02-10+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">7.5</Point>
+        <Title Lang="da-DK" Title="Algoritmer for store datamængder" />
+        <Title Lang="en-GB" Title="Algorithms for Massive Data Sets" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="33225" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Inge Li</GivenName>
+            <FamilyName>Gørtz</FamilyName>
+            <Email>inge@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53341" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Philip</GivenName>
+            <FamilyName>Bille</FamilyName>
+            <Email>phbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Studerende udenfor DTU kan kontakte den kursusansvarlige for tilmelding." />
+            <Supp_Txt Lang="en-GB" Txt="Students outside of DTU may contact the course responsible for signing up." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>State-of-the-art algoritmiske teknikker og modeller for store datamængder. Herunder avancerede datastrukturer og approksimationsalgoritmer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegninger.</Teaching_And_Learning_Methods>
+          <Course_Literature>Litteraturen i kurset består hovedsageligt af videnskabelige artikler.</Course_Literature>
+          <Course_Objectives>At kende, anvende, analysere og designe algoritmer for store data mængder vha. state-of-the-art algoritmiske teknikker indenfor området.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>State-of-the-art algorithmic techniques and models for massive data sets. Including advanced data structures and approximation algorithms.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>The course literature consists mainly of scientific articles.</Course_Literature>
+          <Course_Objectives>To know, apply, analyze, and design algorithms for massive data sets using state-of-the-art algorithmic techniques in the area.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kurser i algoritmik og datastrukturer (svarende til 02105 + 02110). Matematisk modenhed." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic courses in algorithms and data structures (comparable to 02105 + 02110). Mathematical maturity." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02105/02326).02110" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive en algoritme på forståelig vis, dvs., præcist, kortfattet og utvetydigt." />
+          <Txt Lang="en-GB" Txt="Describe an algorithm in a comprehensible manner, i.e., accurately, concise, and unambiguous." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bevise korrekthed af algoritmer." />
+          <Txt Lang="en-GB" Txt="Prove correctness of algorithms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, evaluere og sammenligne effektiviteten af algoritmer i modeller relevante for for store datamængder." />
+          <Txt Lang="en-GB" Txt="Analyze, evaluate, and compare the performance of algorithms in models of computation relevant to massive data sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, evaluere og sammenligne kvaliteten og pålideligheden af løsninger." />
+          <Txt Lang="en-GB" Txt="Analyze, evaluate, and compare the quality and reliability of solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og videreudvikle algoritmiske teknikker for store datamængder." />
+          <Txt Lang="en-GB" Txt="Apply and extend relevant algorithmic techniques for massive data sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe algoritmer for problemer relaterede til store datamængder." />
+          <Txt Lang="en-GB" Txt="Design algorithms for problems related to massive data sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde og anvende relevant forskningslitteratur for problemer relaterede til store datamængder." />
+          <Txt Lang="en-GB" Txt="Lookup and apply relevant research literature for problems related to massive data sets. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Systematisk identificere og analysere problemer og træffe kvalificerede valg for at løse problemerne baseret på analysen." />
+          <Txt Lang="en-GB" Txt="Systematically identify and analyze problems and make informed choices for solving the problems based on the analysis. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere tydeligt for trufne valg i forbindelse med løsningen af et problem." />
+          <Txt Lang="en-GB" Txt="Argue clearly for the choices made when solving a problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere sig skriftligt på et videnskabeligt niveau. " />
+          <Txt Lang="en-GB" Txt="Express oneself in writing at a scientific level." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www2.compute.dtu.dk/courses/02282/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>State-of-the-art algorithmic techniques and models for massive data sets.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="39" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:20.277" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

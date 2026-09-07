@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41316" Volume="2026/2027" University="dtu" LastUpdated="2026-02-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående CFD" />
+        <Title Lang="en-GB" Title="Advanced CFD" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="80" KVL_Resources="100" />
+          <Ass_Dep UID="47" Resources="20" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="7646" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jens Honore</GivenName>
+            <FamilyName>Walther</FamilyName>
+            <Email>jhwa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="143032" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Arash</GivenName>
+            <FamilyName>Nemati</FamilyName>
+            <Email>arnem@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="3 individuelle rapporter. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="3 individual reports. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til numerisk beregninger af komplekse strømningsfænomener. Udlede numeriske metoder til ustruktureret net. Generering af net i komplekse geometrier. Introduktion til overset/Chimera og morphing mesh teknikker. Stærk og svag kobling i fluid mekaniske problemer med fluid-struktur interaktion; adjoint optimering; introduktion til numerisk modellering af multi-fase strømninger; avanceret pre- og postprocessering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og databar-øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Kurset benytter CFD programmet STAR-CCM+ og dennes manual; desuden følgende litteratur:
+1)  Lesley Lamport. LATEX. A Document Preparation System. User’s Guide and Reference Manual. Addison-Wesley Publishing Company, 2 edition, 1994.
+2)  Thierry Poinsot and Denis Veynante. Theoretical and Numerical Combustion. R. T. Edwards, 2 edition, 2005.
+3)  H. W. Liepmann and A. Roshko. Elements of Gasdynamics. Dover Publication Inc., 1957.</Course_Literature>
+          <Course_Objectives>At sætte den studerende i stand til at udføre simuleringer og analysere komplekse flow fænomener ved hjælp af kommercielt computational fluid dynamics (CFD) software.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to numerical simulation of complex flow phenonema. Derivation of numerical schemes for
+unstructured meshes and mesh generation of complex geometries. Introduction to
+overset/chimera and morphing mesh techniques. Weak and strong coupling of
+fluid-structure interaction problems; adjoint optimization; introduction to
+numerical modelling of multiphase flows; advanced pre- and post processing</Contents>
+          <Teaching_And_Learning_Methods>Lectures and databar exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>The course uses the CFD program STAR-CCM+ and will use the Users manual; Additional literature:
+1)  Lesley Lamport. LATEX. A Document Preparation System. User’s Guide and Reference Manual. Addison-Wesley Publishing Company, 2 edition, 1994.
+2)  Thierry Poinsot and Denis Veynante. Theoretical and Numerical Combustion. R. T. Edwards, 2 edition, 2005.
+3)  H. W. Liepmann and A. Roshko. Elements of Gasdynamics. Dover Publication Inc., 1957.</Course_Literature>
+          <Course_Objectives>To enable the student to perform simulations and analyse complex flow phenomena
+using commercial computational fluid dynamics (CFD) software.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Desuden anbefales 41321." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Also recommended 41321." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41315.41320" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="generere komplekse beregningsnet i STAR-CCM+" />
+          <Txt Lang="en-GB" Txt="perform complex mesh generation using STAR-CCM+" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge passende modeller til numeriske beregninger af fluid-struktur interaktion" />
+          <Txt Lang="en-GB" Txt="choose appropriate numerical models for the simulation of fluid-structure interaction " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare principperne for adjoint optimering og anvende denne på strømninger" />
+          <Txt Lang="en-GB" Txt="explain the principles of adjoint optimization and apply the technique on flow problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge og anvende passende modeller til numeriske beregninger af blandbare og ikke-blandbare fluider" />
+          <Txt Lang="en-GB" Txt="select and apply appropriate models for numerical simulation of miscible and immiscible fluids " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge og anvende passende modeller til numeriske beregninger af fluider med partikler" />
+          <Txt Lang="en-GB" Txt="select and apply appropriate models for numerical simulation of dispersed multiphase flow " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge og anvende passende modeller til numeriske beregninger af strømninger med kemiske reaktioner" />
+          <Txt Lang="en-GB" Txt="select and apply appropriate models for numerical simulation of flow with chemical reactions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udfærdige scripts til post processering" />
+          <Txt Lang="en-GB" Txt="create script for post processing " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udfærdige og benytte job scripts til high performance computing (hpc) køsystemer" />
+          <Txt Lang="en-GB" Txt="create and use job script for high performance computing (hpc) queuing systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive tekniske rapporter i LaTeX og udfærdige litteraturliste i BiBTeX" />
+          <Txt Lang="en-GB" Txt="write technical reports using LaTeX and create a bibliography using BiBTeX " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Advanced CFD using STAR+CCM+</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:53.03" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

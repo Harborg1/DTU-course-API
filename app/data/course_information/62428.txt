@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62428" Volume="2026/2027" University="dtu" LastUpdated="2025-04-29+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Sikker implementation af systemer" />
+        <Title Lang="en-GB" Title="Secure implementation of systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Undervisning Torsdage 17.00-20.30 (kursusperiode: 6 uger)&#xD;&#xA;Efterår: 1. undervisningsgang meddeles senere" />
+          <Schedule_Txt Lang="en-GB" Txt="Lectures Thursdays 17.00-20.30  (course period: 6 weeks)&#xD;&#xA;Fall:" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="78757" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Tange</FamilyName>
+            <Email>htan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Sikkert systemdesign
+- Cyber Security Framework (NIST)
+- Cyber risiko og modsvar 
+- Sikkerhedsdokumentation</Contents>
+          <Course_Objectives>Når virksomheden skal sikre data under transport og opbevaring, er det vigtigt at vælge en sikker og tilstrækkelig hurtig kryptografisk algoritme. For at kunne træffe et fornuftigt valg er det nødvendigt at kende de mest brugte algoritmer. Det er ligeledes vigtigt at sikre en sikker opbygning af netværk og databaser. 
+Det er ligeledes nødvendigt at arbejde med strategisk planlægning indenfor cybersecurity. 
+Kurset giver et overblik over sikker netværksopbygning og dataopbevaring samt de mest brugte sikkerhedsalgoritmer. Kurset har introduktion til symmetriske og asymmetriske algoritmer samt ECC (Elliptic Curve Cryptography). Derudover har kurset en gennemgang HASH algoritmer samt brug af digitale signaturer. På kurset gennemgås de mest brugte sikkerhedsprotokoller (Diffie-Hellman nøgledistribution, Kereberos, X.509, PgP, SSL/TLS). På kurset arbejdes der ligeledes med implementation af backup systemer og brug af honeypots.
+På kurset benyttes Cybersecurity Framework fra NIST. Dette framework benyttes til at identificere sikkerhedsrisici og skabe beskyttelsesstrategier samt strategier til at kunne opdage cybersecurity hændelser i systemet.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Valgfag: IT og Økonomi</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Secure system design
+- Cyber Security Framework (NIST)
+- Cyber riscs and response
+- Documentation of security</Contents>
+          <Course_Objectives>When the company must secure data in transit and storage, it is important to choose a safe and sufficiently fast cryptographic algorithm. In order to make a sensible choice, it is necessary to know the most commonly used algorithms. It is also important to create a secure network and databases.
+It is also necessary to work with strategic planning in cyber security.
+The course provides an overview of secure network architecture and data storage as well as the most commonly used security algorithms. The course introduces to symmetric and asymmetric algorithms and ECC (Elliptic Curve Cryptography). In addition, the course reviews HASH algorithms and the use of digital signatures. The course covers the most commonly used security protocols (Diffie-Hellman key distribution, Kereberos, X.509, PgP SSL/TLS). The course also contains implementation of backup systems and use of honeypots.
+The course uses Cybersecurity Framework from NIST. This framework is used to identify security risks and create protection strategies as well as strategies to detect cyber security events in the system.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Valgfag: IT og Økonomi</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe et sikkert system" />
+          <Txt Lang="en-GB" Txt="Design  a secure system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere sikkerheden i et system" />
+          <Txt Lang="en-GB" Txt="Document  the secuirty in the system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå, forklare og anvende Cyber Security framework (NIST)" />
+          <Txt Lang="en-GB" Txt="Know, understand, explain, and apply the Cyber Security framework (NIST)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå og forklare de mest benyttede kryptografiske algoritmer" />
+          <Txt Lang="en-GB" Txt="Know, understand, and explain the most used cryptographic algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over anvendte kryptografiske algoritmer i et system" />
+          <Txt Lang="en-GB" Txt="Reflect on the cryptographic algorithms used in a system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere sikkerhedsrisici i et system" />
+          <Txt Lang="en-GB" Txt="Identify security risks in a system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive metoder til sikring af netværk og databaser" />
+          <Txt Lang="en-GB" Txt="Describe methods for securing networks and databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for valg af beskyttelsesstrategier " />
+          <Txt Lang="en-GB" Txt="Argue for the choice of protective strategies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over hvordan et modsvar (response) vil være mod en given sikkerhedshændelse" />
+          <Txt Lang="en-GB" Txt="Reflect on how to respond on a given security incident" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Cybersecurity</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="24" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="24" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="80" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:32.423" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02411" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Statistisk forsøgsplanlægning" />
+        <Title Lang="en-GB" Title="Statistical Design and Analysis of Experiments" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="33533" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Murat</GivenName>
+            <FamilyName>Külahci</FamilyName>
+            <Email>muku@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Hovedprincipperne i forsøgsplanlægning: randomisering og blokning. Balancerede forsøg, kvadratforsøg, en eller flere blokvariable. Balancerede ufuldstændige blokforsøg. Faktorforsøg, blokning af disse, brudne faktorforsøg og konfundering.  Multipel regressionsanalyse og analyse af forsøg med kovariat.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegning</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende kendskab til planlægning af eksperimenter og udviklingsarbejde på baggrund af effektive statistiske metoder. Derved tilstræbes nøjagtige og pålidelige data samtidig med at forsøgsarbejdet begrænses mest muligt. Der lægges særlig vægt på metoder til reduktion af støjkilders indflydelse på forsøgsresultater og på at begrænse forsøgsarbejdet i eksperimenter.</Course_Objectives>
+          <Remark>Kurset henvender sig især til studerende, som skal planlægge forsøg og/eller analysere eksperimentelle data, men dets generelle metodeindhold er også egnet til opøvelse af konstruktiv kritisk sans i forbindelse med eksperimentelt arbejde, metode-udvikling og empirisk modellering.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Main principles in experimental design: Randomisation and blocking. Balanced designs, square-designs, one or more blocking variables. Balanced incomplete block designs. Factorial designs, blocking in factorial designs, fractional factorial designs and confounding. Multiple regression analysis and analysis of covariance.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and tutorials.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To acquaint the students with efficient statistical methods that may serve as basis for the planning of experiments and research activities. The methods aim at providing precise and reliable data and moreover to reduce the experimental work as much as possible. Methods for reduction of the influence from noise factors on experimental results are presented.</Course_Objectives>
+          <Remark>The course is primarily aimed at students that are going to design experiments and/or analyse experimental data, but the general methods presented are also suited for sharpening the critical sense in experimental work, method development and empirical model building.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller et lignende grundkursus i statistik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or a similar course in elementary statistics" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opstille en hensigtsmæssig forsøgsplan for et eksperiment i laboratoriet eller under lignende helt eller delvist kontrollerede omstændigheder." />
+          <Txt Lang="en-GB" Txt="formulate an adequate experimental design for an experiment in the laboratory or under similar more or less controlled conditions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere fordele og ulemper ved alternative forsøgsplaner, for eksempel med hensyn til randomisering og/eller balancering." />
+          <Txt Lang="en-GB" Txt="assess advantages and disadvantages of alternative experimental designs, for example with respect to randomization and/or blocking." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere en korrekt matematisk model for data  opnået ved en given forsøgsplan." />
+          <Txt Lang="en-GB" Txt="formulate a correct mathematical model for data  obtained froma given experimental design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="teste og estimere effekterne i modeller for forsøg med såvel deterministiske som tilfældige effekter." />
+          <Txt Lang="en-GB" Txt="test and estimate the effects in models for experiments with both deterministic and random effects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage detailanalyser af faktoreffekter ved hjælp af hensigtsmæssige kontraster og/eller grupperingsmetoder for middelresponser." />
+          <Txt Lang="en-GB" Txt="do detailed analyses of factorial effects by means of adequate contrasts and/or methods for grouping of mean responses. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere forsøgsplaner for faktorforsøg med mange faktorer hver på få (typisk to) niveauer ved anvendelse af blokkonfundering og reduktion gennem effektkonfundering." />
+          <Txt Lang="en-GB" Txt="to construct experimental designs for factorial experiments with many factors each at (most often) two levels by means of block confounding and reduction through effect confounding." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende særlige metoder for statistisk analyse af data fra blokkonfunderede og/eller reducerede mangefaktorforsøg." />
+          <Txt Lang="en-GB" Txt="use special methods for statistical analysis of data from block confounded and/or reduced many-factor designs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte og foretage statistisk analyse af forsøg med målelige støjkilder (kovariater). " />
+          <Txt Lang="en-GB" Txt="use and carry out the statistical analysis of data from experiments with measurable sources of experimental noise (covariates)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere et simpelt forsøg mht. nødvendigt antal målinger." />
+          <Txt Lang="en-GB" Txt="determine the necessary number of measurements in simple designs." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.imm.dtu.dk/courses/02411" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>DOE</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:40.963" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

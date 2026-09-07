@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34621" Volume="2026/2027" University="dtu" LastUpdated="2024-04-22+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Elektromagnetiske sensorer og digital signalbehandling" />
+        <Title Lang="en-GB" Title="Electromagnetic sensors and digital signal processing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Campus Lyngby og Campus Ballerup" />
+          <LocationTxt Lang="en-GB" Txt="Campus Lyngby and Campus Ballerup" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="78881" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Per Barner</GivenName>
+            <FamilyName>Lynggaard</FamilyName>
+            <Email>plyn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Nogle dage er planlagt med obligatorisk aktivitet, f.eks. forelæsning, præsentation og demonstration for andre grupper mv. Til slut af afleveres rapport.  Karakteren baseres på et helhedsindtryk." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Some days have planned mandatory activity like lessons, presentations and demonstration for other groups etc.&#xD;&#xA;A final report is handed in. The grade is based on an overall impression." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Der arbejdes ud fra en bunden opgave (udleveres ved kursets start).
+Der opstilles en endelig specifikation og designet implementeres vha et digitalt signalbehandlingssystem indeholdende en eller flere sensorer f.eks. i form af et mikroprocessor system (gerne en dedikeret dsp) med tilhørende elektromagnetiske/kapacitive/trådløse sensorer.
+Sensorernes fysiske opbygning og virkemåde beskrives, analyseres og dokumenteres.
+Signalbehandlingssystemets virkemåde beskrives, analyseres og dokumenteres.
+Den samlede løsning dokumenteres.
+
+Elektronikbaserede systemer er oftest en primær teknologi-driver i bæredygtighedsudviklingen, hvor disse bidrager til logistikhåndtering af bæredygtige ressourcer i en social, en økonomisk og en miljømæssig dimension. Denne bæredygtighedsvinkel medtages implicit i kursets læringsmål.</Contents>
+          <Teaching_And_Learning_Methods>Praktisk design med høj grad af selv-motivering.
+Der arbejdes i grupper af 2-3 studerende.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte den studerende i stand til at 
+- specificere og designe et elektronisk sensor system indeholdende en eller flere sensorer
+- implementere og anvende et elektronisk sensor system, hvor signaler fra sensorer efterbehandles i et digitalt processor system</Course_Objectives>
+          <DTU_Remark>Obligatorisk kursus for diplomingeniør i elektroteknologi</DTU_Remark>
+          <Remark>Elektroteknologi: 3. semester
+
+Der arbejdes i mindre grupper</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The assignment consists of a predefines problem (provided at the beginning of the course). 
+Develop the neded specification and implement the design using a digital signal processing system comprising one or more sensors, i.e. in the form of a microprocessor system (possibly a dedicated dsp) associated with electromagnetic / capacitive / wireless sensors. 
+The physical structure and function of the sensors are described, analyzed and documented. 
+The signal processing function of the system is described, analyzed and documented. 
+The total solution documented.
+
+Electronics-based systems are most often a primary technology driver in the sustainability development, where these contribute to the logistics management of sustainable resources in a social, an economic and an environmental dimension. This sustainability angle is included implicitly in the learning objectives of the course.</Contents>
+          <Teaching_And_Learning_Methods>Practical design with a high degree of self-motivation.
+The work is carried out in groups of 2-3 students.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The student must be able to
+- specify and design an electronic senso rsystem comprising one or more sensors
+- implement and use an electronic sensor system where signal from sensors are processed in a digital processor system.</Course_Objectives>
+          <DTU_Remark>Mandatory course for bach. engineering in electronics</DTU_Remark>
+          <Remark>Electrotechnologi: 3. semester
+
+The project is performed in mall groups</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Viden om elektriske og magnetiske felter (svarende til del-elemeter i kursus 30035 eller 62774) samt grundlæggende elektronik inkl. forstærker design.&#xD;&#xA;Viden om lineær og digital signalbehandling incl filterdesign, spectrum analyser etc.&#xD;&#xA;&#xD;&#xA;Den studerende skal være i besiddelse af og fortrolig med anvendelse af eget processor-kit fra kursets start - f.eks. fra tidligere kursus i digital teknik og programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of electric and magnetic fields (corresponding to sub-elements in course 30035) or 62774), basic electronics including amplifier design.&#xD;&#xA;Knowledge of linear and digital signal processing incl. filter design, spectrum analysis etc..&#xD;&#xA;&#xD;&#xA;The student must be in possession of and confident in using his own processor-kit from the very beginning of the course - i.e. obtained in an earlier course within digital technique and programming." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34601  30035  62743 eller tilsvarende" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende begreber, teori og metoder indenfor det elektromagnetiske emneområde såsom: feltstørrelserne i magnetostatik, Biot-Savarts lov, Gauss’ lov, magnetiske felter  omkring ledere og de tilsvarende grænsebetingelser (svarende til del-elemeter i kursus 30035)  " />
+          <Txt Lang="en-GB" Txt="Apply concepts, theory and methods within the electromagnetic area such as: magnetostatic field quantities, Biot-Savart's law, Gauss' law, magnetic fields around conductors, and the corresponding boundary conditions (corresponding to sub-elemeters in course 30035)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende begreber, teori og metoder indenfor digital signal behandlings emneområdet, såsom: nødvendig samplingsfrekvens,anti-aliasing filter, diskret Fourier transformation og design af digitale filtre (svarende til del-elementer i kursus 62743)" />
+          <Txt Lang="en-GB" Txt="Apply concepts, theory, and methods within the digital signal processing area such as: necessary sampling rate, anti-aliasing filter, discrete Fourier transformation, and design of digital filters (corresponding to sub-elements of course 62743)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille, beskrive, udvikle og anvende modeller for de metoder og komponenter, som anvendes i kurset." />
+          <Txt Lang="en-GB" Txt="Define, describe, develop and apply models for the methods and components used within the course." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Specificere, designe, implementere, teste og dokumentere digital signal processing applikationer og programmer" />
+          <Txt Lang="en-GB" Txt="Specify, design, implement, test and document digital signal processing ppograms and applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Specificere, designe, beregne, analysere, modellere, simulere, konstruere, teste og dokumentere hardware" />
+          <Txt Lang="en-GB" Txt="Specify, design, calculate, analyze, model, simulate, construct, test and document the hardware" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejde i grupper om løsning af fælles opgaver" />
+          <Txt Lang="en-GB" Txt="Cooperation in groups to address common tasks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge, specificere, samarbejde, dokumentere and anvende relevant ingeniørmæssige terminologi og sprogbrug." />
+          <Txt Lang="en-GB" Txt="Planning, specifying, collaborating, documenting and applying relevant engineering terminology." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere mellem specifikationer, beregninger, simuleringer og målinger samt drage klare og revelante konklusioner" />
+          <Txt Lang="en-GB" Txt="Relate the specifications, calculations, simulations and measurements   and draw clear and relevant conclusions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Begrunde årsager og forskelle mellem beregnede, simulerede og målte resultater." />
+          <Txt Lang="en-GB" Txt="Explain the causes and differences between the calculated, simulated and measured results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere forskelle i forhold til relevant teori, simulationer og tests." />
+          <Txt Lang="en-GB" Txt="Discuss the differences to relevant theory, simulations and tests." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle gruppens planlægningsproces og opnåede mål" />
+          <Txt Lang="en-GB" Txt="Communicate group planning process and objectives achieved" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62739" />
+        <PreviousCourse CourseCode="62739" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="120" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="120" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:37.823" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30032" University="dtu" LastUpdated="2024-04-04+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="30" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Elektroteknik" />
+        <Title Lang="en-GB" Title="Electrotechnics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="2955" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Sten Schmidl</GivenName>
+            <FamilyName>Søbjærg</FamilyName>
+            <Email>ssso@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="De til kurset tilhørende laboratorieøvelser skal være godkendte, for at studerende kan deltage i eksamen.&#xD;&#xA;Reeksamen i maj vil typisk være mundtlig." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course's lab exercises must be approved before participation in the final examination.&#xD;&#xA;Re-examination in May will typically be oral." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• DC: Beskrivelse af kredsløb opbygget af lineære komponenter
+• Maske og knudepunktsligninger
+• Seriel og parallel netværk for enporte
+• Styrede kilder
+• Ideel operationsforstærker
+• At anvende grundlæggende elektriske målemetoder
+• Diode, zenerdiode
+• Bipolær transistor, DC karakteristikfelter, storsignalmodeller
+• Boolsk algebra, sandhedstabeller, Karnaughs metode, talsystemer, binær aritmetik, koder
+• Multiplekser, dekoder, indkoder, komparator, adder, flipflops, synkrone tilstandsmaskiner, tæller
+• Design og implementering af mindre systemer, der består af en kombination af analoge og digitale komponenter
+• Dokumentation og rapportskrivning.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning, gruppearbejde og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At gøre den studerende i stand til at kombinere analog og digitalteknik til et mindre elektronisk kredsløb ved at:
+
+• anvende systematiske metoder til analyse af lineære elektriske kredsløb
+• forstå dioders og transistorers virkemåder
+• anvende og konstruere kombinatoriske kredsløb, tællere og andre simple synkrone sekvensnetværk
+• implementere et design ved hjælp af diskrete logik kredse.</Course_Objectives>
+          <Remark>Der afholdes to frivillige standpunktsprøver undervejs i kursusforløbet. Disse prøveresultater tæller ikke med i karakteren.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• DC: Characterisation of circuits with linear components
+• Mesh-current and node-voltage analysis
+• Thevenin and Norton equivalents
+• Controlled sources
+• Ideal operational amplifier
+• Fundamental measurement techniques
+• The diode, the zener diode
+• The bipolar transistor, DC characteristics, large-signal models
+• Boolean algebra, truth tables, Karnaugh mapping, number systems, binary arithmetics, codes
+• Multiplexer, decoder, encoder, comparator, adder, flip-flops, synchronous state machines, counter
+• Design and implementation of small systems containing a combination of analogue and digital components
+• Documentation and report writing.</Contents>
+          <Teaching_And_Learning_Methods>Class lectures, group work, and lab-work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable the student to combine analogue and digital techniques in the design of a small electronic circuit by:
+
+• applying systematic methods for analysis of linear electronic circuits
+• understanding functions of diodes and transistors.
+• applying and constructing combinatorial circuits, counters and other simple synchronous sequential networks.
+• implementing a design using discrete logic circuits.</Course_Objectives>
+          <Remark>There will be two voluntary tests during the course. The grades from these tests do not count in the final grade for the course.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage analyser på kredsløb indeholdende modstande og kilder ved hjælp af systematiske metoder" />
+          <Txt Lang="en-GB" Txt="analyse circuits containing resistors and sources using systematical methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme Thevenin- og Nortonækvivalenter samt anvende kildetransformationer" />
+          <Txt Lang="en-GB" Txt="determine Thevenin and Norton equivalent circuits and perform source transformations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne op- og afladningsforløb for kondensatorer samt spoler og beskrive begreberne steady state og transient response" />
+          <Txt Lang="en-GB" Txt="calculate the charge and discharge behaviour of capacitors and inductors and describe the concepts of transient and steady-state responses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne strømme og spændinger i kredsløb indeholdende ideelle operationsforstærkere" />
+          <Txt Lang="en-GB" Txt="calculate currents and voltages in circuits containing ideal operational amplifiers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende dioder og bipolare transistorer i simple kredsløb" />
+          <Txt Lang="en-GB" Txt="apply diodes and bipolar transistors in simple circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende talsystemer, binær aritmetik og koder" />
+          <Txt Lang="en-GB" Txt="apply number systems binary arithmetic and codes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Boolsk algebra og Karnaughs metode til konstruktion af simple logiske kredsløb" />
+          <Txt Lang="en-GB" Txt="apply Boolean algebra and Karnaugh mapping in construction of simple logic circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og konstruere synkrone tilstandsmaskiner" />
+          <Txt Lang="en-GB" Txt="analyse and construct synchronous state machines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende datablade for diskrete digitale komponenter og beregne strømme og spændinger i digitale kredsløb" />
+          <Txt Lang="en-GB" Txt="apply datasheets for discrete digital components and calculate the currents and voltages in digital circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende målemetoder og standard laboratorieudstyr til gennemførelse af målinger på simple analoge og digitale kredsløb." />
+          <Txt Lang="en-GB" Txt="apply measurement methods and standard laboratory equipment to perform measurements on simple analogue and digital circuits." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundlæggende analog- og digitalteknik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02138.31001.31020.31032" />
+        <PreviousCourse CourseCode="31032" />
+        <PreviousCourse CourseCode="31020" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="80" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="120" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:46.537" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

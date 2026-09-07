@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34250" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avanceret billed- og videokodning" />
+        <Title Lang="en-GB" Title="Advanced image and video coding" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="575" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Søren Otto</GivenName>
+            <FamilyName>Forchhammer</FamilyName>
+            <Email>sofo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig præsentation af emne eller projekt (20%). Rapport (80%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral presentation of subject or report (20%). Report (80%)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset behandler bl.a. nye metoder til optimering af entropikodning, cross-entropy, machine learning i billedkodning, wavelet og multi-opløsnings kodning af multi-dimensionelle billeddata, samspil mellem kommunikations-netværk og billed-/videokodning, avanceret video kodning, høj billed- og video-farvekvalitet, distribueret kodning, 3D og multiview kodning.</Contents>
+          <Teaching_And_Learning_Methods>Seminarer, gruppearbejde og projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere nye tendenser indenfor billed- og videokodning og kommunikation.</Course_Objectives>
+          <Remark>Dette kursus er også egnet som Ph.D. kursus.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The topics covered are new methods for optimization of entropy coding, cross-entropy, machine learning in image coding, wavelet and multi-resolution coding of multi-dimensional image data, interplay between communication networks and image/video coding, advanced video coding, high image and video color quality, distributed coding, multi camera and multiview coding.</Contents>
+          <Teaching_And_Learning_Methods>Seminars, group work and project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim is to introduce new trends in the areas of image and video coding and communication.</Course_Objectives>
+          <Remark>This course is also suitable as part of a Ph.D. study plan</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller kendskab til billed- eller videokodning" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or knowledge of image or video coding" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34240/34241" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere billedkodningsmodeller" />
+          <Txt Lang="en-GB" Txt="analyse image coding models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare multi-opløsningskodning af billeder" />
+          <Txt Lang="en-GB" Txt="explain multi-resolution coding of images" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare avanceret bevægelseskompensation og rate-kontrol i video-kodning" />
+          <Txt Lang="en-GB" Txt="explain advanced motion compensation and rate-control in video coding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare interaktion mellem kommunikations-netværk og billed- og videokodning" />
+          <Txt Lang="en-GB" Txt="explain interaction between communication networks and image and video coding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle avancerede billed- og videokodningsteknikker" />
+          <Txt Lang="en-GB" Txt="develop advanced image and video coding techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="simulere billed - eller videokodning" />
+          <Txt Lang="en-GB" Txt="simulate image or video coding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende nye billed- og videokodningsmetoder, fx for multi-kamera video" />
+          <Txt Lang="en-GB" Txt="apply new image and video coding methods, e.g. for multi camera video" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere billed- og videokodningsmetoder" />
+          <Txt Lang="en-GB" Txt="optimize image and video coding methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende machine learning i billed- og videokodning" />
+          <Txt Lang="en-GB" Txt="apply machine learning in image and video coding" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Avancerede metoder i billed- og videokodning</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:04.09" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

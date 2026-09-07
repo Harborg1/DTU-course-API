@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34620" University="dtu" LastUpdated="2026-04-07+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Grundlæggende effektelektronik i energisystemer" />
+        <Title Lang="en-GB" Title="Basic power electronics in energy systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="online muligt (især den første halvdel af kurset)" />
+          <LocationTxt Lang="en-GB" Txt="online possible (especially the first half of the course)" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Det er muligt, at obligatoriske øvelser ligger udenfor skemaplacering.&#xD;&#xA;Desuden er der en del selvorganiseret gruppearbejde." />
+          <Schedule_Txt Lang="en-GB" Txt="Mandatory exercises might be scheduled outside of schedule.&#xD;&#xA;Furthermore, there is a self-organised group work." />
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="37925" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Arnold</GivenName>
+            <FamilyName>Knott</FamilyName>
+            <Email>knott@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset vurderes ved en helhedsvurdering. Der er ingen afsluttende eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course is evaluated based on overall assessment. There is no final exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Overblik over effektelektronik
+Passive komponenter: kondensatorer og spoler
+Signaler: effektivværdi og middelværdi
+Aktive komponenter: dioder og MOSFETs som switch
+Ensretterkredsløb
+Uisolerede omformer: buck, boost og buck-boost regulatorer
+Egenskaber, tilstande og supplerende kredsløb til omformer
+Isolerede omformer: enfasede transformatorer, forward og flyback omformere
+Single- og tre-phase PWM inverter og rectifiers 
+Modulation strategier (PWM)
+Tre-phase V/Hz control of AC machines 
+Single-/multiple-quadrant operation
+Switch-mode motorforsyninger og audio forstærker.
+Simple reguleringssystemer med motorer.
+Menneskelig samarbejde i et effektelektronik miljø</Contents>
+          <Teaching_And_Learning_Methods>Undervisningsmaterialet består af: Video and quizzes, chat-baseret kommunikation, kunstig intelligens, peer-reviewing, opgaveregning og laboratoriearbejde, øvelser.
+Undervisning er baseret på flipped classroom.
+Læring fremmes ved samskabelse med gruppen og klassen.</Teaching_And_Learning_Methods>
+          <Course_Literature>Mohan, Ned. Power electronics: a first course. Wiley
+Literatur er på engelsk</Course_Literature>
+          <Course_Objectives>Det overordnede formål for kurset er at give den studerende en grundlæggende forståelse for strømforsyninger (uisolerede og isolerede) i jævnspændings- og vekselspændingsomformere samt en-fase og tre-fase kredsløb. Desuden indeholder kurset et grundlæggende kendskab til anvendelsen af switch mode effektelektronik i simple, regulerede systemer f.x. i motorstyringer, vedvarende energisystemer og forstærkere.</Course_Objectives>
+          <DTU_Remark>Der indgår et antal opgaver i kurset, som er fordelt over hele semesteret. Den teoretiske del af kurset kan tages online.
+Alle studieretninger er velkomne, så længe du bringer lysten til at lære kursets indhold.</DTU_Remark>
+          <Remark>Der indgår et antal øvelser/opgaver i kurset, som er fordelt over hele semesteret.
+E-learning: Teori-delen (cirka den første halvdel af kurset) kan i høj grad være "self-paced" learning (baseret på videoer og quizzes med hjælp igennem chat).
+Kursets opsætning afspejler i høj grad betingelserne på en ingeniørarbejdsplads.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Overview of power electronics
+Passiv components: capacitors and inductors
+Signals: RMS value and average value
+Active components: diodes and MOSETs as switches
+Rectifier circuits
+Nonisolated converters: buck, boost and buck-boost converters
+Properties, states and supporting circuits of power converters
+Isolated converters: single phase tranformers, forward and flyback converters
+Single- and three-phase PWM inverters and rectifiers 
+Modulation strategies (PWM)
+Three-phase V/Hz control of AC machines 
+Single-/multiple-quadrant operation
+Switch mode drives and audio amplifiers
+Simple feedback systems
+Human cooperation in a power electronics environment</Contents>
+          <Teaching_And_Learning_Methods>Offered teaching material through videos and quizzes, chat-based communication, artificial intelligens, peer-review, problem solving and lab work, exercises.
+The teaching is based on flipped classroom.
+Learning is encouraged as co-creation with group and class members.</Teaching_And_Learning_Methods>
+          <Course_Literature>Mohan, Ned. Power electronics: a first course. Wiley
+Literature is in English language.</Course_Literature>
+          <Course_Objectives>The overall purpose of the course is to provide the student with a basic understanding of power supplies (uninsulated and insulated) in DC and AC converters as well as one-phase and three-phase circuits. In addition, courses include a basic knowledge of the use of switch mode power electronics in simple, regulated systems, eg in motor drives, renewable energy systems and amplifiers.</Course_Objectives>
+          <DTU_Remark>A number of exercises are part of the course. Those are distributed throughout the semester. The theoretical part of the course can be taken online.
+All study lines are welcome, as long as you bring the desire to learn the content of the course.</DTU_Remark>
+          <Remark>A number of exercises/problems are part of the course. Those are distributed throughout the semester.
+E-learning: The theory part (approximately the first half part of the course) can be taken "self-paced" to a high extend (based on videos, quizzes and chat-based help).
+The setup of the course highly reflects working conditions for a practicing engineer.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Elektriske komponenter og Ohms lov &amp; Kirchhoffs regler, såsom:&#xD;&#xA;Elektriske kredsløb 1 &amp; 2 eller&#xD;&#xA;Elektroteknik &amp; Analog elektronik eller&#xD;&#xA;Indledende elektronik &amp; kredsløbsteori 2 eller&#xD;&#xA;tilsvarende&#xD;&#xA;Desuden anbefalet: grundlæggende forståelse af Maxwells ligninger, såsom:&#xD;&#xA;Elektromagnetisme eller Elektrofysik og Materialer&#xD;&#xA;Signaler og systemer, såsom: Lineare systemer og signaler.&#xD;&#xA;(Hvis du er i tvivl, så skriv til den kursusansvarlige!)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Electrical components and Ohm's Law &amp; Kirchhoff's rules, such as:&#xD;&#xA;Electrical circuits 1 &amp; 2 or&#xD;&#xA;Electrical Engineering &amp; Analog Electronics or&#xD;&#xA;Introducing Electronics &amp; Circuit Theory 2 or&#xD;&#xA;corresponding&#xD;&#xA;Furthermore recommended: basic understanding of Maxwell's equations, such as:&#xD;&#xA;Electromagnetism or Electrophysics and Materials&#xD;&#xA;Signals and systems, such as:&#xD;&#xA;Linear systems and signals.&#xD;&#xA;(If in doubt, contact to the course responsible!)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og beregne begreberne effektivværdi, middelværdi og power faktor" />
+          <Txt Lang="en-GB" Txt="describe and calculate the concepts of efficiency, mean value and power factor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="klassificere omformer typer og pulsebrede modulation" />
+          <Txt Lang="en-GB" Txt="classify converter types and pulse-width modulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare afgørende egenskaber af passive og aktive komponenter i forhold til effekt omformere" />
+          <Txt Lang="en-GB" Txt="explain crucial properties of passive and active components in relation to power converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme tidsforløbet af spændinger og strømme for de grundlæggende converter topologier (buck, boost og buck-boost) og afledte heraf" />
+          <Txt Lang="en-GB" Txt="determine the time course of voltages and currents for the basic converter topologies (buck, boost and buck-boost) and derivatives thereof" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede overføringsfunktionen for såvel de grundlæggende topologier samt afledte heraf" />
+          <Txt Lang="en-GB" Txt="derive the transfer function for both the basic topologies and derivatives thereof" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme grundlæggende parametre, signaler og effekttab i effektelektronikkredsløb ud fra simuleringer" />
+          <Txt Lang="en-GB" Txt="determine basic parameters, signals and power losses in power electronics circuits based on simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="design transformatorer i galvanisk adskilte topologier (f.x. forward og flyback, push-pull, half-bridge, full-bridge)" />
+          <Txt Lang="en-GB" Txt="design transformers in galvanically separated topologies (f.x. forward, flyback, push-pull, half-bridge, full-bridge)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme grundlæggende parametre i switch mode kredsløb ud fra målinger på disse" />
+          <Txt Lang="en-GB" Txt="determine basic parameters in switch mode circuits based on measurements on these" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="specificere effekt omformere og deres komponenter under brug af engelsk fagsprog under realistiske arbejdsbetingelser for ingeniører" />
+          <Txt Lang="en-GB" Txt="specify power converters and their components using English technical language under realistic working conditions for practicing engineers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="klarlægge virkemåden af en-fasede og tre-fasede pulsebrede modulerede vekselretter og pulsebrede modulerede ensretter" />
+          <Txt Lang="en-GB" Txt="clarify the operation of single-phase and three-phase pulse-width modulated inverters and pulse-width modulated rectifiers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare afgørende egenskaber af V/Hz styring af tre-faset AC maskiner og frekvensomformere" />
+          <Txt Lang="en-GB" Txt="explain crucial features of V / Hz control of three-phase AC machines and frequency converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="samskabelse af resultater til alle opgaver og selv reflektion over eget læring og trivsel i ingeniørmiljø" />
+          <Txt Lang="en-GB" Txt="co-creation of all exercises and self-reflection on own learning and wellbeing in an engineering environment" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.elektro.dtu.dk/31351" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til de grundlæggende effektelektronikkredsløb i enerigsystemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31350/31039/31351/62756" />
+        <PreviousCourse CourseCode="31351" />
+        <PreviousCourse CourseCode="31039" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="31" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="44" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+        </OfferedAsACourseOfTypes>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:36.863" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

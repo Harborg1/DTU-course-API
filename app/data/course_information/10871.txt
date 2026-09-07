@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10871" Volume="2026/2027" University="dtu" LastUpdated="2026-04-22+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avanceret design og simulering af solceller" />
+        <Title Lang="en-GB" Title="Advanced design and simulation of solar cells" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="10" KVL_Resources="100" />
+          <Ass_Dep UID="59" Resources="90" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="71141" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Andrea</GivenName>
+            <FamilyName>Crovetto</FamilyName>
+            <Email>ancro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="16091" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter Christian Kjærgaard</GivenName>
+            <FamilyName>Vesborg</FamilyName>
+            <Email>peter.vesborg@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Grupperapport (vejledende karaktervægt: 60%) og individuel mundtlig eksamen (40%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment. Group project report (indicative weight on final grade: 60%) and individual oral exam (40%)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette er et ”learning-by-doing”-kursus, hvor matematik og fysik ikke præsenteres på forhånd, men i stedet vil blive baseret på dit praktiske arbejde. Undervisningsformatet er som følger: 1) Briefing i plenum med introduktion til koncepter og instruktioner; 2) Praktisk arbejde i grupper (simulering, datamining eller eksperiment); 3) Debriefing i plenum med konklusioner fra jeres praktiske arbejde.
+
+I den første uge lærer du om relevante egenskaber af solcellematerialer og om solceller arkitektur. Ved computersimulering vil du bestemme de centrale elementer i solcellers fysik og de forskellige egenskabers rolle i bestemmelsen af en solcelles opførsel.
+
+I den anden uge tager du i laboratoriet og foretager de målinger, som typisk bruges til at karakterisere en rigtig solcelle. Du vil lære at bruge disse målinger sammen med simuleringsprogrammet for at diagnosticere problemer og estimere ukendte egenskaber i solcellen. Derefter vil du lære at søge i store materialedatabaser for at finde solcellematerialer med bedre egenskaber.
+
+I den tredje uge skal du arbejde med et gruppeprojekt, hvor I skal bruge jeres erfaringer fra kurset til at designe en solcelle efter et sæt specifikationer. Grupperne vil skrive en slutrapport baseret på dette projekt.</Contents>
+          <Teaching_And_Learning_Methods>Computer simulering (50%), forelæsninger (30%), data mining (10%), eksperimenter (10%)</Teaching_And_Learning_Methods>
+          <Course_Literature>Udleveret kompendium</Course_Literature>
+          <Course_Objectives>Hvordan designer man en solcelle, der har potentialet til at omdanne lys til elektricitet med maksimal effektivitet? Og hvordan optimerer man herefter solcellen til at realisere dette potentiale? Disse spørgsmål forsøger vi at besvare i dette kursus. Kurset er baseret på praktisk arbejde med komponentsimulering, suppleret med målinger på rigtige solceller og materialedatamining.</Course_Objectives>
+          <Remark>En Windows-computer eller en Windows virtuel maskine er påkrævet for at køre SCAPS simuleringsprogrammet. (Gratis gamle udgaver af Windows er OK).</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This is a learn-by-doing course, where most of the relevant math and physics will not be presented beforehand, but it will instead be derived from your hands-on work. The general teaching format consists of a three-step loop: 1) Briefing in plenum with introductory concepts and instructions for the hands-on work; 2) Hands-on work in groups (either simulation, data mining, or experiment); 3) Debriefing in plenum with conclusions from the hands-on work.
+
+In the first week, you will learn about the relevant properties of solar cell materials and the architecture of a solar cell. By computer simulation, you will derive the key elements of the physics of solar cells and the role of the various properties in determining the behavior of a solar cell.
+
+In the second week, you will go to the lab and conduct the measurements that are typically used to characterize a real solar cell. You will learn to integrate these measurements with the simulation program to diagnose issues and estimate unknown properties in the solar cell. Then, you will learn to query large computational material databases to search for potentially improved solar cell materials with optimal properties.
+
+In the third week, you will work on a group project, where each group will use their experience from the course to design a solar cell given a set of specifications. Each group will write a final report based on this project.</Contents>
+          <Teaching_And_Learning_Methods>Computer simulation (50%), introductory/wrap-up lectures (30%), database mining (10%), laboratory measurements (10%)</Teaching_And_Learning_Methods>
+          <Course_Literature>Custom compendium provided by teachers</Course_Literature>
+          <Course_Objectives>How do we design a solar cell that can potentially convert light into electricity at maximum efficiency? And how do we then optimize the solar cell towards actually achieving this goal? In this course, you will learn how to find answers to these questions by guided hands-on work centered on solar cell simulation, and complemented by measurements on real solar cells and materials data mining.</Course_Objectives>
+          <Remark>A Windows computer or virtual machine is required to run the SCAPS simulation program .(Free old versions of Windows are OK).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser (mindst ét). Grundlæggende kendskab til halvledere. Pre-test tilgængelig (uden karakter). ”Catch-up” kompendium tilgængelig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses (at least one). Familiarity with semiconductor basics. Pre-test available to check your existing knowledge (not graded). Catch-up compendium available." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10303/10317/10260/34551" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive materialeegenskaber (f.eks. båndgab og doteringsdensitet) og enhedsegenskaber (f.eks. lagtykkelser og kontaktkonfiguration), der er relevante ved design og simulering af en solcelle" />
+          <Txt Lang="en-GB" Txt="Describe the material properties (e.g., band gaps, doping densities)  and device properties (e.g. layer thicknesses, contact configuration) that are relevant in the design and simulation of a solar cell " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde passende karakteristiske værdier i den videnskabelige litteratur eller i databaser" />
+          <Txt Lang="en-GB" Txt="Find appropriate reference values for such properties in the scientific literature or databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Afvikle realistiske solcellesimuleringer i én dimension med SCAPS-programmet" />
+          <Txt Lang="en-GB" Txt="Run realistic solar cell simulations in one dimension with the SCAPS program" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere effekten af at ændre én bestemt egenskab ved solcellens ydeevne (effektivitet, kortslutningsstrøm, tomgangsspænding, fyldfaktor)" />
+          <Txt Lang="en-GB" Txt="Simulate the effect of changing a given property on solar cell performance (efficiency, short-circuit current, open-circuit voltage, fill factor)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvalitativt forklare årsagerne til de observerede tendenser ved hjælp af matematiske relationer baseret på halvlederfysik og/eller ekstra simuleringer" />
+          <Txt Lang="en-GB" Txt="Explain reasons for the observed property-performance trends, using mathematical relations based on semiconductor physics and/or auxiliary simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede fundamentale grænser for solcellers effektivitet (f.eks. Shockley-Queisser-grænsen) gennem simuleringsarbejde" />
+          <Txt Lang="en-GB" Txt="Derive fundamental limits to the power conversion efficiency of solar cells (e.g., Shockley-Queisser limit) from simulation work" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diagnosticere problemer med solcellers ydeevne ved at udføre strøm/spænding-, kvanteeffektivitet- og kapacitansmålinger på en rigtig solcelle" />
+          <Txt Lang="en-GB" Txt="Diagnose solar cell performance issues by conducting current-voltage, quantum efficiency, and capacitance measurements on a real solar cell" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere ukendte egenskaber ved at tilpasse måleresultaterne til en simuleringsmodel" />
+          <Txt Lang="en-GB" Txt="Estimate unknown properties by fitting the measurement results to a device simulation model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe en optimal solcelle (materialer og komponentarkitektur) efter bestemte specifikationer" />
+          <Txt Lang="en-GB" Txt="Design an optimal solar cell (materials and device structure) given a set of specifications" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Solceller</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="7" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="60" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="60" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="40" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="15" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:43.787" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

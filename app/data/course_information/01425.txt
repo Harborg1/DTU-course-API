@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="01425" Volume="2026/2027" University="dtu" LastUpdated="2026-03-20+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avanceret kryptografi" />
+        <Title Lang="en-GB" Title="Advanced Cryptography" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="189326" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Luisa</GivenName>
+            <FamilyName>Siniscalchi</FamilyName>
+            <Email>luisi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="86800" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tyge</GivenName>
+            <FamilyName>Tiessen</FamilyName>
+            <Email>tyti@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se engelsk</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, projekter</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med dette kursus er at sætte kryptografi på et solidt teoretisk grundlag og at introducere vigtige kryptografiske teknikker ud over fortrolighed, integritet og autenticitet.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fundamental and more advanced cryptographic primitives/protocols such as pseudorandom functions, pseudorandom generators, one-way functions, key encapsulation mechanisms, commitments, secret-sharing, sigma-protocols.
+Elements of symmetric cryptanalysis.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, projects</Teaching_And_Learning_Methods>
+          <Course_Objectives>The purpose of this course is to put cryptography on solid theoretical foundations and to introduce important cryptographic techniques protocols beyond confidentiality, integrity, and authenticity.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kryptografi, f.eks. RSA- og Diffie-Hellman-protokoller, blokchiffer, kryptografiske hashfunktioner, CCA-sikkerhed, pseudo-tilfældige funktioner." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Fundamentals of cryptography, e.g. RSA and Diffie-Hellman protocols, block ciphers, cryptographic hash functions, CCA security, pseudo-random functions." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02231(01410)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar begreber som envejs og pseudo-tilfældige funktioner samt pseudo-tilfældige generatorer og beskriv deres forskelle. " />
+          <Txt Lang="en-GB" Txt="Explain concepts such as one-way and pseudorandom functions as well as pseudorandom generators and outline their differences " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlæggende teknikker i sikkerhedsanalysen af symmetrisk nøglekryptografi, såsom differentiel kryptoanalyse." />
+          <Txt Lang="en-GB" Txt="Explain fundamental techniques in the security analysis of symmetric-key cryptography, such as differential cryptanalysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualiser brugen af differentiel kryptoanalyse i eksempler, som f.eks. anvendelsen af AES-blokkrypteringen. " />
+          <Txt Lang="en-GB" Txt="Visualize the use of differential cryptanalysis in examples, such as the application to the AES block cipher " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vis, hvordan komplekse primitiver som autentificeret kryptering opstår fra kombinationer af enklere koncepter" />
+          <Txt Lang="en-GB" Txt="Show how complex primitives such as authenticated encryption arise from combinations of simpler concepts" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare avancerede kryptografiske primitiver såsom commitment schemes, secret sharing, sigma-protokoller" />
+          <Txt Lang="en-GB" Txt="Explain advanced cryptographic primitives such as commitment schemes, secret sharing, sigma protocols" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenlign kryptografiske primitiver og protokoller baseret på sikkerheds- og omkostningsmålinger" />
+          <Txt Lang="en-GB" Txt="Compare cryptographic primitives and protocols based on security and cost metrics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udforsk anvendeligheden af avancerede kryptografiske primitiver i komplekse brugssituationer " />
+          <Txt Lang="en-GB" Txt="Explore the applicability of advanced cryptographic primitives in complex use-cases " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Mundtligt præsentere grundlæggende koncepter bag avancerede kryptografiske protokoller" />
+          <Txt Lang="en-GB" Txt="Orally present fundamental concepts behind advanced cryptographic protocols" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modern Cryptography</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="02255" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:22.883" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

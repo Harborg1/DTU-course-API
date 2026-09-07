@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28530" University="dtu" LastUpdated="2025-03-11+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="28" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Transportprocesser" />
+        <Title Lang="en-GB" Title="Transport Processes" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="2384" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Szabo</FamilyName>
+            <Email>ps@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="29644" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Hao</GivenName>
+            <FamilyName>Wu</FamilyName>
+            <Email>haw@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Vægtning: Skriftlig eksamen 60%, to rapporter med en samlet vægt på 40%.&#xD;&#xA;Aflevering af begge rapporter er en obligatorisk betingelse for deltagelse i skriftlig eksamen, herunder reeksamen.&#xD;&#xA;Evt. erstatningseks. for skriftlig eks. kan have anden evalueringsform." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Weight: Written exam 60%, two reports with a combined weight of 40%.&#xD;&#xA;Turn in of both reports is a mandatory requirement for taking the written exam, including any re-exam.&#xD;&#xA;Any substitute exam for the written exam may use another assessment type." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Mekanismer for transport af impuls (strømning), energi og stof i kemiske og biologiske sammenhænge. Introduktion til numerisk beregning af strømning som basis for analyse af transportprocesser (CFD). Anvendelser inkluderer design af procesapparatur og analytisk instrumentering i den kemiske, bioteknologiske og farmaceutiske industri, samt modelbeskrivelse og beregninger knyttet til bæredygtig procesudformning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger med tilhørende øvelser, to projekter. De to projekter udføres sædvanligvis i oktober (rapportaflevering ca. ved udgang af oktober) og i slutningen af undervisningsperioden (rapportaflevering typisk første dag i eksamensperioden). Der er almindelig undervisning sideløbende med projekterne.</Teaching_And_Learning_Methods>
+          <Course_Literature>R.B.Bird, W.E.Stewart &amp; E.N.Lightfoot, Transport Phenomena, Revised Second Edition, Wiley (2007 eller senere optryk)</Course_Literature>
+          <Course_Objectives>At introducere deltagerne til modelbeskrivelse og numerisk beregning af strømning, energi- og stoftransport.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Mechanisms for the transport of momentum (flow), nergy and mass in chemical and biological systems. Introduction to Computational Fluid Dynamics as basis for transport processes. Applications in the design of equipment and analytical instrumentation in the chemical, biotechnological and pharmaceutical industry, and in modeling and simulation of processes in a sustainability context.</Contents>
+          <Teaching_And_Learning_Methods>Lectures with exercises, two projects. The two projects are usually scheduled in October (report due at end of month) and in last weeks of the 13-week period (report due first day of examination period, usually). Normal teaching activities continue concurrently with the projects.</Teaching_And_Learning_Methods>
+          <Course_Literature>R.B.Bird, W.E.Stewart &amp; E.N. Lightfoot, Transport Phenomena,  Revised Second Edition, Wiley (2007 or later prints)</Course_Literature>
+          <Course_Objectives>To introduce the participants to the modeling and numerical description of flow, heat and mass transport.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Opstilling af modeller, som resulterer i sædvanlige eller partielle differentialligninger.&#xD;&#xA;Matematik 2" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Formulation of models resulting in ordinary or partial differential equations.&#xD;&#xA;Advanced engineering mathematics, including linear partial differential equations." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="28160.(01025/01034/01035/01037)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de molekylære mekanismer bag viskositet, varmeledning og diffusion." />
+          <Txt Lang="en-GB" Txt="Describe the molecular processes behind  viscosity, thermal conduction and diffusion." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme analytiske løsninger for strømning med simple grænse- og begyndelsesværdier" />
+          <Txt Lang="en-GB" Txt="Obtain analytical solutions for flow problems with simple boundary and initial data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og behandle modeller for kombineret strømning og varmetransport" />
+          <Txt Lang="en-GB" Txt="Formulate and analyze models for combined flow and heat transport" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og behandle modeller for kombineret strømning og diffusion" />
+          <Txt Lang="en-GB" Txt="Formulate and analyze models for combined flow and diffusion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og behandle modeller for kombineret strømning og kemisk reaktion" />
+          <Txt Lang="en-GB" Txt="Formulate and analyze models for combined flow and chemical reaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere størrelsesordener for fluxe, reaktionshastigheder og tid til ligevægt." />
+          <Txt Lang="en-GB" Txt="Make order of magnitude estimates for key quantities such as fluxes, reaction rates and equilibration times." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte numeriske metoder til simulering af strømning, stof og varmetransport  vha. COMSOL" />
+          <Txt Lang="en-GB" Txt="Use Computational Fluid Dynamics for the simulation of flow with combined heat and mass transport (COMSOL)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere nøjagtigheden af en approximation opnået i COMSOL." />
+          <Txt Lang="en-GB" Txt="Evaluate the accuracy of approximations obtained by Computational Fluid Dynamics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille asymptotiske modeller for transport med en lille eller stor parameter (grænselag)" />
+          <Txt Lang="en-GB" Txt="Formulate models for transport with a small or large parameter (boundary layers)" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Strømning, stof- og varmetransport</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="88701" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:18.747" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

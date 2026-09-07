@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="42115" University="dtu" LastUpdated="2026-02-19+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Netværksoptimering" />
+        <Title Lang="en-GB" Title="Network Optimization" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="54071" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>David</GivenName>
+            <FamilyName>Pisinger</FamilyName>
+            <Email>dapi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En større projektopgave i grupper, suppleret med en skriftlig individuel eksamen.&#xD;&#xA;Projektopgaven skal bestås for at kunne gå til eksamen og indgår ikke i karakteren." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A large project assignment in groups followed by a written individual exam.&#xD;&#xA;Project assignment must be passed before going to the exam and is not part of the grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Exam hand-in on paper or electronically" />
+            <Aid_Txt Lang="da-DK" Txt="Eksamen må afleveres på papir eller elektronisk" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Algoritmer til netværk: Resumé af relevant grafteori. Algoritmer til bestemmelse af korteste veje, maksimal strømning i netværk med kapacitetsbegrænsninger og strømning med minimal omkostning. Anvendelse af grafer og netværk til formulering af komplekse problemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusnoter og artikler</Course_Literature>
+          <Course_Objectives>At give deltagerne en grundig indføring i problemformulering og løsningsmetodik for netværksoptimeringsproblemer, som opstår bl.a. inden for trafik- og transportoptimering samt produktionsplanlægning. Deltagerne bliver i stand til at identificere et problem som et netværksoptimeringsproblem og til at løse det ved hjælp af forskellige dedikerede algoritmer, ofte baseret på teknikker fra lineær/heltalsprogrammering, primal-duale algoritmer og dekomposition.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Algorithms for networks: review of relevant graph theory. Algorithms for shortest paths, maximal flows in capacitated networks, and minimal cost flows and multicommodity flow. Application of graphs and networks to model complex problems.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Literature>Course notes and journal papers</Course_Literature>
+          <Course_Objectives>To give students a thorough introduction to formulating and solving network optimization problems arising in areas like traffic and transportation optimization, and production planning. Participants are enabled to identify and formulate network optimization problems and to solve them with various specialized algorithms, frequently based on techniques from linear/integer programming, primal-dual algorithms, and decomposition.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Et indledende kursus i operationsanalyse er en nødvendig faglig forudsætning." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="The course requires the student to have taken an introductory course in Operations Research." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42101" />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og evaluere egnetheden af ​​lineære/heltalsprogrammeringsteknikker til at formulere og løse netværksoptimeringsproblemer" />
+          <Txt Lang="en-GB" Txt="Analyze and evaluate the suitability of linear/integer programming techniques for formulating and solving network optimization problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og udvikle primal-dual-algoritmer til at løse netværksoptimeringsproblemer, der opstår inden for områder som trafik- og transportoptimering samt produktionsplanlægning" />
+          <Txt Lang="en-GB" Txt="Create and develop primal-dual algorithms to solve network optimization problems arising in areas such as traffic and transportation optimization, and production planning." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Klassificere og skelne mellem de forskellige centrale algoritmer for klassiske netværksproblemer, såsom mindste udspændende træ, korteste vej, projektplanlægning, maksimalt flow, min-cost flow og multicommodity flow" />
+          <Txt Lang="en-GB" Txt="Describe and use the central algorithms for the classical network problems: minimum spanning tree, shortest path, project planning, maximum flow, minimum cost flow and multicommodity flow" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne løse netværksoptimeringsproblemer ved hjælp af specialiserede algoritmer, som ofte er baseret på teknikker fra lineær-/heltalsprogrammering, primal-dual-algoritmer og dekomponering" />
+          <Txt Lang="en-GB" Txt="Solve network optimization problems using specialized algorithms frequently based on techniques from linear/integer programming, primal-dual algorithms, and decomposition." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og vælge passende grafer og netværk som modelleringsværktøjer til komplekse problemer" />
+          <Txt Lang="en-GB" Txt="Evaluate and select appropriate graphs and networks as modeling tools for complex problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere og fortolke de centrale teoremer inden for netværksoptimering, herunder køretid og korrekthed af de præsenterede algoritmer" />
+          <Txt Lang="en-GB" Txt="Analyze and evaluate the worst-case time complexity of algorithms used for network optimization problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og evaluere worst-case tidskompleksitet af algoritmer, der bruges til netværksoptimeringsproblemer" />
+          <Txt Lang="en-GB" Txt="Evaluate and interpret the central theorems within network optimization, including running time and correctness of the presented algorithms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og implementere simple datastrukturer til grafalgoritmer" />
+          <Txt Lang="en-GB" Txt="Develop and implement simple data structures for graph algorithms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Selvstændigt formulere og løse et større netværksoptimeringsproblem ved hjælp af passende algoritmer og teknikker" />
+          <Txt Lang="en-GB" Txt="Independently formulate and solve a larger network optimization problem using appropriate algorithms and techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommunikere resultaterne af et stillet netværksoptimeringsproblem i en skriftlig rapport" />
+          <Txt Lang="en-GB" Txt="Communicate the findings and results of a given network optimization problem in a written report." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Blive i stand til at anvende grafer og netværk som modelleringssprog" />
+          <Txt Lang="en-GB" Txt="To be able to use graphs and networks as modelling language" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Identifikation og løsning af netværksoptimeringsproblemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="15" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:55.777" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

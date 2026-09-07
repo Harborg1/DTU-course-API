@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="01325" University="dtu" LastUpdated="2026-03-16+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Matematik 4:  Analyse - en toolbox i fysik og ingeniørvidenskab" />
+        <Title Lang="en-GB" Title="Mathematics 4: Analysis - a Toolbox in Physics and Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="4715" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Christensen</FamilyName>
+            <Email>ochr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Normerede vektorrum, Hilbertrum, baser i Hilbertrum, basal operatorteori, L^p-rum og de tilsvarende følgerum l^p, approksimation, Fouriertransformationen, foldning, sampling sætningen, Sturm-Liouville teori og specielle basis funktioner (f.eks. Legendre og Hermite polynomier), introduktion til wavelet teori, B-splines, reproducing kernel Hilbert spaces</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>At udstyre deltagerne med de redskaber og teknikker der er nødvendige for at kunne studere fysik, machine learning, og anvendt matematik</Course_Objectives>
+          <DTU_Remark>Fra F25: 01325 flyttes til mandag 8-12 
+
+Kurset har skiftet navn</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Normed vector spaces, Hilbert spaces, bases in Hilbert spaces, basic operator theory, the spaces L^p and l^p, approximation, the Fourier transform, convolution, the sampling theorem, Sturm-Liouville theory and special basis functions (e.g, Legendre and Hermite polynomials), an introduction to wavelet theory, B-splines, reproducing kernel Hilbert spaces</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the students with the mathematical background that is needed for studies in physics, machine learning,  and applied mathematics</Course_Objectives>
+          <DTU_Remark>From F25: 01325 is moved to Monday 8-12
+
+The course has changed title</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="[Emner fra 01001.01002/01005, 01020 eller tilsvarende kursus:] Lineære ligninger og lineære afbildninger. Matrixalgebra. Vektorrum. Egenværdiproblemet. Symmetriske og ortogonale matricer. Komplekse tal. Lineære differentialligninger. Elementære funktioner. Funktioner af én og flere reelle variable: linearisering og partielle afledede, Taylors formel og kvadratiske former.&#xD;&#xA;&#xD;&#xA;[Emner fra 01035 eller tilsvarende kursus:]  Uendelige rækker, potensrækker, Fourierrækker. Konvergens (absolut, betinget, punktvis, uniform) af uendelige rækker. Introduktion til Fouriertransformation." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="[Subjects from 01001.01002/01005, 01020, or an equivalent course:] Linear equations and linear maps. Matrix algebra. Vector spaces. Eigenvalue problems. Symmetric and orthogonal matrices. Complex numbers. Linear differential equations. Standard functions. Functions of one and several real variables: linear approximations and partial derivatives, Taylor expansions, and quadratic forms.&#xD;&#xA;&#xD;&#xA;[Subjects from 01035 or an equivalent course:] Infinite series, power series, Fourier series. Convergence (absolute, conditional, point-wise, uniform) of infinite series, Introduction to the Fourier transform." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01035/01025/01034/01037" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå forskellige typer af konvergens og verificere dem" />
+          <Txt Lang="en-GB" Txt="understand various types of convergence and how to verify them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="mestre basale operationer i Hilbertrum" />
+          <Txt Lang="en-GB" Txt="master basic operations in Hilbert spaces" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå rollen af lineær algebra i analyse" />
+          <Txt Lang="en-GB" Txt="understand the role of linear algebra in analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå rollen af L^2 og udføre regneoperationer heri" />
+          <Txt Lang="en-GB" Txt="know the role of $L^2$ and perform basic operations herein" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kunne anvende præcise matematiske argumenter og beregninger vedrørende Hilbertrum og operatorer indenfor f.eks. fysik og kvantemekanik" />
+          <Txt Lang="en-GB" Txt="apply precise mathematical arguments and calculations concerning Hilbert spaces and their operators, e.g., within physics and quantum mechanics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Fourier transformationen" />
+          <Txt Lang="en-GB" Txt="master the basic manipulations with Fourier transform" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="afgøre hvornår man skal bruge Fourierrækker eller Fouriertransformationen" />
+          <Txt Lang="en-GB" Txt="know when one should apply Fourier series or the Fourier transform" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle L^2-funktioner i forskellige baser" />
+          <Txt Lang="en-GB" Txt="expand square-integrable functions in various bases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beherske basal wavelet teori" />
+          <Txt Lang="en-GB" Txt="master basic wavelet theory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="manipulere med L^p-rummene og de tilsvarende følgerum " />
+          <Txt Lang="en-GB" Txt="perform calculations with the L^p-spaces and the corresponding sequence spaces" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende B-splines til matematiske og anvendelsesmæssige problemer" />
+          <Txt Lang="en-GB" Txt="apply B-splines in mathematical and application-oriented contexts" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå brugen af reproducing kernel Hilbert spaces i machine learning " />
+          <Txt Lang="en-GB" Txt="understand the role of reproducing kernel Hilbert spaces in machine learning" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Matematisk analyse og anvendelser i fysik, kunstig intelligens,  og signalbehandling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="62" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="38" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:19.877" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

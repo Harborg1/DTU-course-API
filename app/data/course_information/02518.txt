@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02518" Volume="2026/2027" University="dtu" LastUpdated="2026-04-07+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computational 3D-billeddannelse og analyse" />
+        <Title Lang="en-GB" Title="Computational 3D Imaging and Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="90" KVL_Resources="100" />
+          <Ass_Dep UID="10" Resources="10" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="148667" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Marco</GivenName>
+            <FamilyName>Pizzolato</FamilyName>
+            <Email>mapiz@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="32847" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Anders Bjorholm</GivenName>
+            <FamilyName>Dahl</FamilyName>
+            <Email>abda@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="42623" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Hans Martin</GivenName>
+            <FamilyName>Kjer</FamilyName>
+            <Email>hmkj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Du vil udvikle kernefærdigheder, der er afgørende for 3D-billeddannelse, herunder billedoptagelsesprincipper, kodning, softwareværktøjer og dataeksperimentering.
+
+Du vil udforske nøglemetoder til billedrekonstruktion, segmentering, registrering, filtrering, morfologi, feature-ekstraktion og kvantificering. Denne læring vil være praktisk, med fokus på at implementere disse teknikker i Python og samtidig bevare et stringent matematisk perspektiv.
+
+Du vil blive dygtig til softwareværktøjer til visualisering og dataudforskning, samt lære at beregne statistik relateret til formen og størrelsen af ​​afbildede strukturer.
+
+Derudover vil du lære, hvordan du optimerer ydeevnen ved behandling af store datasæt, herunder måling af eksekveringstid, håndtering af hukommelsesressourcer og brug af parallel computing.
+
+Da 3D-billeder kan være adskillige gigabyte store, kan håndtering og behandling af dem på en standard pc være udfordrende. Derfor vil du få erfaring med at bruge højtydende computersystemer, såsom Gbar, til effektivt at behandle data i stor skala.
+
+Ved afslutningen af ​​kurset vil du have tillid til at skrive din egen kode til udvikling af billedbehandlingspipelines, der er egnet til 3D-billeddannelse. Du vil også opnå et stærkt grundlag for yderligere arbejde med 3D-billeddannelse, billedanalyse og højtydende databehandling.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger efterfulgt af øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusnoter.</Course_Literature>
+          <Course_Objectives>På dette kursus vil du arbejde med 3D volumetriske billeder (dvs. lavet af volumetriske pixels). 3D-billeddannelse er især nyttig, hvis du ønsker at undersøge den indre struktur af et materiale på et mikroskopisk niveau uden at ødelægge den prøve, du afbilder. Dette er især nyttigt inden for medicinsk billeddannelse, materialevidenskab og biologi blandt de andre. På dette kursus får du praktiske færdigheder inden for billedopsamling, bearbejdning og analyse samt relevant matematisk indsigt.
+
+De metoder, vi vil diskutere, vil være generelle og anvendelige til alle 3D volumetriske billeder som dem, for eksempel fra magnetisk resonansbilleddannelse. Der vil dog blive lagt særlig vægt på 3D røntgen µCT-billeddannelse (mikrocomputertomografi) på grund af vores tætte samarbejde med 3D-billedbehandlingscentret på DTU og med MAX IV synkrotronen i Lund.
+
+Det mest udfordrende – men også det mest givende – aspekt ved 3D-billeddannelse er billedanalyse. På dette kursus vil du udvikle praktiske færdigheder til avanceret visualisering og analyse, selvom du ikke har nogen tidligere erfaring med billedanalyse, da vi tager udgangspunkt i det grundlæggende. Derudover vil du bruge high-performance computing (DTU Gbar) til effektivt at analysere store 3D-billeder gennem hele kurset.</Course_Objectives>
+          <DTU_Remark>Dette kursus vil give dig et solidt metodisk grundlag for volumetrisk billedanalyse ved at introducere de nødvendige analyseværktøjer, samt træne dig i hvordan du implementerer metoder på High Performance Computing clusteret.
+
+Sideløbende med dette kursus er der et andet kursus ’02510’, som vil give dig færdigheder i at analysere store 3D-billeder ved hjælp af deep learning. Det er muligt, og fordelagtigt, at følge begge kurser.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>You will develop core skills essential for 3D imaging, including image acquisition principles, coding, software tools, and data experimentation.
+
+You will explore key methods for image reconstruction, segmentation, registration, filtering, morphology, feature extraction, and quantification. This learning will be hands-on, focusing on implementing these techniques in Python while maintaining a rigorous mathematical perspective.
+
+You will become proficient with software tools for visualization and data exploration, as well as learn how to compute statistics related to the shape and size of imaged structures.
+
+Additionally, you will learn how to optimize performance when processing large datasets, including measuring execution time, managing memory resources, and utilizing parallel computing.
+
+Since 3D images can be several gigabytes in size, handling and processing them on a standard PC can be challenging. Therefore, you will gain experience using high-performance computing systems, such as Gbar, to efficiently process large-scale data.
+
+By the end of the course, you will have the confidence to write your own code for developing image processing pipelines suited for 3D imaging. You will also acquire a strong foundation for further work in 3D imaging, image analysis, and high-performance computing.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and hands-on sessions.</Teaching_And_Learning_Methods>
+          <Course_Literature>Course notes.</Course_Literature>
+          <Course_Objectives>In this course, you will work with 3D volumetric images (i.e. made of volumetric pixels). 3D imaging is particularly useful if you want to investigate the internal structure of a material on a microscopic level without destroying the sample you are imaging. This is particularly useful in medical imaging, material science, and biology among the others. In this course, you will get hands-on skills in image acquisition, processing, and analysis as well as relevant mathematical insights.
+
+The methods we will discuss will be general and applicable to any 3D volumetric images like those, for instance, from magnetic resonance imaging. However, a special emphasis will be put on 3D x-ray µCT imaging (micro-computed-tomography) because of our close collaboration with the 3D imaging center at DTU and with the MAX IV synchrotron in Lund.
+
+The most challenging—yet also the most rewarding—aspect of 3D imaging is image analysis. In this course, you will develop practical skills for advanced visualization and analysis, even if you have no prior experience with image analysis, as we will start from the fundamentals. Additionally, you will utilize high-performance computing (DTU Gbar) to efficiently analyze large 3D images throughout the course.</Course_Objectives>
+          <DTU_Remark>This course will give you a solid methodological basis for volumetric image analysis by introducing the necessary analysis tools, as well as training you in how to implement methods on the High-Performance Computing cluster.
+
+Alongside this course, there is another course '02510' which will give you skills in analyzing large 3D images using deep learning. It is possible, and advantageous, to follow both courses.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Dette kursus kan følges uden forudsætninger. Kurset er hands-on og derfor kommer du til at kode i Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course can be followed without prerequisites. The course is hands-on therefore you should expect to be coding in Python during classes." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450/02502" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend kvantitativ analyse på volumetriske billeder ved hjælp af beskrivende metoder." />
+          <Txt Lang="en-GB" Txt="Apply quantitative analysis to volumetric images using descriptive methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrer eksperimentelle metadata for at relatere billeder til den fysiske verden." />
+          <Txt Lang="en-GB" Txt="Integrate experimental metadata to relate images to the physical world." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualiser og interager med 2D/3D-billeder." />
+          <Txt Lang="en-GB" Txt="Visualize and interact with 2D/3D images." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Segmentér billeder ved hjælp af baggrunds-/forgrundsadskillelse, kantdetektion og analyse af forbundne komponenter." />
+          <Txt Lang="en-GB" Txt="Segment images using background/foreground separation, edge detection, and connected-components analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bearbejd billeder med morfologiske operationer, foldning og filtrering (lineær, ikke-lineær, skala-rum)." />
+          <Txt Lang="en-GB" Txt="Process images with morphological operations, convolution, and filtering (linear, non-linear, scale-space)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser strukturer ved hjælp af porøsitetsmetoder, vandskelsegmentering, overfladedetektion og orienteringsanalyse." />
+          <Txt Lang="en-GB" Txt="Analyze structures using porosity methods, watershed segmentation, surface detection, and orientation analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Registrer og juster billeder gennem billedregistreringsteknikker." />
+          <Txt Lang="en-GB" Txt="Register and align images through image registration techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv billedoptagelsesprincipper, herunder tomografisk rekonstruktion og Fourier-analyse." />
+          <Txt Lang="en-GB" Txt="Describe image acquisition principles including tomographic reconstruction and Fourier analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikl Python-baserede pipelines til 3D-billedbehandling ved hjælp af Gbar-cluster." />
+          <Txt Lang="en-GB" Txt="Develop Python-based pipelines for 3D image processing using the Gbar cluster." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimer den beregningsmæssige ydeevne med parallelisering på CPU'er ved hjælp af Gbar." />
+          <Txt Lang="en-GB" Txt="Optimize computational performance with parallelization on CPUs using the Gbar." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlæg og udfør et miniprojekt, der involverer billeddannelse, analyse og kvantificering." />
+          <Txt Lang="en-GB" Txt="Plan and execute a mini-project involving imaging, analysis, and quantification." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02509" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="50" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:12.657" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

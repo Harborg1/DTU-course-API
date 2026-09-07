@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02686" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Scientific computing for differentialligninger" />
+        <Title Lang="en-GB" Title="Scientific computing for differential equations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="32457" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>John Bagterp</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>jbjo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="22171" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Allan Peter</GivenName>
+            <FamilyName>Engsig-Karup</FamilyName>
+            <Email>apek@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment of individual reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Emner der dækkes i kursus inkluderer: 
+- Analyse af metoder til numerisk løsning af differentialligningssystemer
+- Egenskaber ved metoder til numerisk løsning af differentialligningssystemer 
+  (orden, konvergens, stabilitet)
+- Konvergens- og stabilitetsanalyse
+- Stive og ikke-stive differentialligningssystemer
+- Begyndelsesværdiproblemet (IVP) og dynamiske systemer
+- Newtons metode i forbindelse med implicitte metoder til løsning af differentialligninger
+-  Simple numerisk metoder (explicit Euler, implicit Euler) til løsning af 
+   differenttialligningssystemer (ODEs, SDEs, DAEs)
+- Lineære multi-step metoder (Adams-Bashfort, Adams-Moulton, BDF)
+- Runge-Kutta metoder (ERK, ESDIRK, SDIRK, DIRK, IRK)
+- Matrixeksponentialfunktionen til løsning af systemer af lineære differentialligninger
+- Numerisk løsning af ordinære differentialligningssystemer (ODEs)
+- Numerisk løsning af stokastiske differentialligningssytemer (SDEs)
+- Numerisk løsning af differential-algebraiske systemer (DAEs)
+- Sensitivitetsberegninger for differentialligningssystemer i forbindelse med skyde-metoder</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computer øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver et solidt kendskab til teori og praksis ved brug af Scientific Computing metoder til løsning af differentialligninger i natur- og ingeniørvidenskaberne. Deltagerne lærer at udvikle, analysere, implementere og anvende forskellige numeriske metoder og algoritmer til løsning af begyndelsesværdi-problemer (IVP)  beskrevet ved sædvanlige differentialligningsssystemer (ODEs), stokastiske differentialligningssystemer (SDEs), differential-algebraiske systemer (DAEs), og partielle differentialligninger (PDEs). De opnåede erfaringer kan anvendes til løsning og studie af matematiske problemer som opstår i natur- og ingeniørvidenskabelige anvendelser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Topics covered in the course include:
+- Analysis of methods for numerical solution of systems of differential equations
+- Properties of methods for numerical solution of systems of differential equations
+  (order, convergence, stability)
+- Convergence and stability analysis
+- Stiff and non-stiff systems of differential equations
+- The initial value problem (IVP) and dynamical systems
+- Newton's method in connection to implicit methods for solution of differential equation 
+  systems
+- Basic numerical methods (explicit Euler, implicit Euler) for solution of systems of 
+  differential equations (ODEs, SDEs, DAEs)
+- Linear multi-step methods (Adams-Bashforth, Adams-Moulton, BDF)
+- Runge-Kutta methods (ERK, ESDIRK, SDIRK, DIRK, IRK)
+- The matrix exponential function for solution of systems of linear differential equations
+- Numerical solution of ordinary differential equation systems (ODEs)
+- Numerical solution of stochastic differential equation systems (SDEs)
+- Numerical solution of differential-algebraic systems (DAEs)
+- Sensitivity computations for differential equation systems in connection to shooting 
+  methods</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course provides a solid knowledge of theory and practice of Scientific Computing for numerical solution of differential equation systems arising in science and engineering. The participants learn to develop, analyze, implement and apply various numerical methods and algorithms for solution of initial value problems (IVP) described by ordinary differential equation systems (ODEs), stochastic differential equation systems (SDEs), differential-algebraic equation systems (DAEs), and partial differential equation systems (PDEs). The experience gained is useful for the solution and study of mathematical problems arising in engineering and science applications.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundkursus i numeriske algoritmer, fx 02601.&#xD;&#xA;Kendskab til programmering, fx 02631.&#xD;&#xA;02687 kan tages samtidig med 02686. Begge kurser kan følges uafhængigt af hinanden." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic course in numerical algorithms, eg 02601.&#xD;&#xA;Basic knowledge in programming, eg 02631.&#xD;&#xA;02687 can be followed in the same semester as 02686. Both courses can be taken independently." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02601.(02002/02631/02632/02633/02692)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive, analysere og anvende grundlæggende principper for numerisk løsning af  begyndelsesværdi-problemer beskrevet ved forskellige typer af differentialligningsssytemer " />
+          <Txt Lang="en-GB" Txt="Describe, analyze and apply fundamental principles for numerical solution of initial value problems (IVPs) described by various categories of differential equation systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og udlede orden, konvergens og stabilitets-egenskaber for numeriske metoder." />
+          <Txt Lang="en-GB" Txt="Analyze and derive order, convergence, and stability properties of numerical methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere og analysere egenskaber ved differentialligningsssytemer og vælge en egnet numerisk metode for såvel stive og ikke-stive systemer" />
+          <Txt Lang="en-GB" Txt="Discuss and analyze properties of differential equation systems and choose an appropriate numerical method for stiff as well as non-stiff systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, implementere og anvende lineære multi-step metoder (explicitte og implicitte metoder, Adams-Bashforth, Adams-Moulton, BDF)" />
+          <Txt Lang="en-GB" Txt="Analyze, implement and apply linear multi-step methods (explicit and implicit methods, Adam-Bashforth, Adams-Moulton, BDF)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, implementere og anvende Runge-Kutta metoder (ERK, ESDIRK, SDIRK, DIRK, IRK)" />
+          <Txt Lang="en-GB" Txt="Analyze, implement and apply Runge-Kutta methods (ERK, ESDIRK, SDIRK, DIRK, IRK)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, implementere og anvende numerisk metoder med automatisk kontrol af den lokale fejl." />
+          <Txt Lang="en-GB" Txt="Analyze, implement and apply numerical methods for automatic control of the local error" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive, implementere og anvende numeriske metoder til systemer af lineære differentialligninger (matrix eksponential funktionen)" />
+          <Txt Lang="en-GB" Txt="Describe, implement and apply numerical methods for systems of linear differential equations (the matrix exponential function)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, implementere og anvende numeriske metoder til løsning af systemer af ordinære differentialligninger (ODEs)" />
+          <Txt Lang="en-GB" Txt="Analyze, implement and apply numerical methods for solution of systems of ordinary differential equations (ODEs)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, implementere og anvende numeriske metoder til løsning af systemer af stokastiske differentialligninger (SDEs)" />
+          <Txt Lang="en-GB" Txt="Analyze, implement and apply numerical methods for solution of systems of stochastic differential equations (SDEs)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, implementere og anvende numeriske metoder til løsning af differential-algebraiske systemer (DAEs)" />
+          <Txt Lang="en-GB" Txt="Analyze, implement and apply numerical methods for systems of differential-algebraic equations (DAEs)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, implementere og anvende numeriske metoder til løsning af systemer af partielle differentialligninger (PDEs)" />
+          <Txt Lang="en-GB" Txt="Analyze, implement and apply numerical methods for  systems of partial differential equations (PDEs)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, implementere og anvende sensitivitetsberegninger til differentialligninger i forbindelse med skyde-metoder" />
+          <Txt Lang="en-GB" Txt="Analyze, implement and apply sensitivity computations for differential equations in connection with shooting methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Numerisk analyse, metoder og anvendelse</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02685" />
+        <PreviousCourse CourseCode="02685" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:30.05" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

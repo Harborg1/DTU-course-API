@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30021" University="dtu" LastUpdated="2026-04-27+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Digital instrumentering" />
+        <Title Lang="en-GB" Title="Digital Instrumentation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="I tilfælde af mange tilmeldte vil det være nødvendigt at anvende andre skemagrupper til øvelser." />
+          <Schedule_Txt Lang="en-GB" Txt="In the case of many students, it will be necessary to use other time slots for exercises." />
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="2909" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>José M. G.</GivenName>
+            <FamilyName>Merayo</FamilyName>
+            <Email>jmgm@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset består af laboratoriearbejde. Der er ingen forelæsninger, men der vil være en kort introduktion til hver øvelse.
+Under øvelserne opbygges forskellige mikroprocessor baserede systemer med serielt interface til perifere komponenter som AD konvertere, digitale sensore, hukommelse og LCD display. I løbet af den sidste del af kurset gennemføres et selv designet større instrumenterings projekt, hvor system engineering processer anvendes. 
+Disse øvelser/projekt skal dokumenteres i rapporter.</Contents>
+          <Teaching_And_Learning_Methods>Obligatoriske quizzes, laboratorieøvelser og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At bibringe den studerende forståelse for mikroprocessorers og periferikredses anvendelse i instrumenteringssystemmer og intelligente apparater med systems engineering processer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course consists of laboratory work. There are no lectures, but there will be a brief introduction to each exercise.
+During the exercises, a number of microprocessor-based systems with serial interface to peripheral components like AD converters, digital sensors, memory, and LCD displays are developped. In the last part of the course, a self designed larger instrumentation project is implemented, where system engineering processes are used. 
+These exercises/project shall be documented in reports.</Contents>
+          <Teaching_And_Learning_Methods>Mandatory quizzes, laboratory exercises, and project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the students an understanding of the use of microprocessor peripheral circuits in instrument systems and intelligent devices with systems engineering processes.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det er vigtigt at have erfaring med C-programmering el.lign. og et grundlæggende kendskab til mikroprocessoren og dennes interfacing til periferikredse." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is important to have experience with C programming or a similar language and a basic understanding of microprocessors and their interfacing with peripherals." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30010" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle C-programmer til mikroprocessorer " />
+          <Txt Lang="en-GB" Txt="develop microprocessor programs in C" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende SPI-, I2C- og/eller UART-bus/interface baserede perifere komponenter" />
+          <Txt Lang="en-GB" Txt="apply SPI-, I2C- and/or UART-bus/interface based peripheral components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere sensorer (accelerometer, gyroskop, magnetometer, termometer, afstandmåler, ...) til måling af fysiske variabler " />
+          <Txt Lang="en-GB" Txt="implement sensors (accelerometer, gyroscope, magnetometer, thermometer, distance meter,...) for measuring physical variables" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende mikroprocessorens indbyggede funktioner" />
+          <Txt Lang="en-GB" Txt="apply the build-in functions of the microprocessor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udbygge et mikroprocessor-system med ekstern hukommelse" />
+          <Txt Lang="en-GB" Txt="expand a microprocessor system with external memory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende analog-til-digital konvertere i et mikroprocessor-baseret målesystem" />
+          <Txt Lang="en-GB" Txt="use analog-to-digital converters in a microprocessor based measurement system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende mikroprocessoren til kalibrering og linearisering af digitaliserede måledata" />
+          <Txt Lang="en-GB" Txt="use the microprocessor to calibrate and linearise digitised measurements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende avancerede komponenter til digitalisering af sensorsignaler" />
+          <Txt Lang="en-GB" Txt="use advanced components for digitalisation of sensor signals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et mikroprocessor-baseret instrumentering system og dets software og/eller firmware med standard processer (milestones, kravspecifikationer,... ) af systems engineering." />
+          <Txt Lang="en-GB" Txt="design a microprocessor-based instrumentation system and its software and/or firmware with standard processes (milestone, requirement specifications,...) of systems engineering." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Anvendelse af mikroprocessor til at designe og implementere et målesystem</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31860.30030" />
+        <PreviousCourse CourseCode="31860" />
+        <PreviousCourse CourseCode="30030" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:45.823" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

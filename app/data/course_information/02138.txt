@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02138" University="dtu" LastUpdated="2026-07-22+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Digital elektronik 1" />
+        <Title Lang="en-GB" Title="Digital Electronics 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="2340" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Flemming</GivenName>
+            <FamilyName>Stassen</FamilyName>
+            <Email>flst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Løsning af en eller flere opgaver kan kræve laboratoriearbejde.&#xD;&#xA;Det er en forudsætning for at gå til eksamen, at de obligatoriske øvelser er godkendt. Hjemmeopgaver og øvelser indgår ikke i den endelige eksamensbedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Lab work may be required to solve one or more of the problems.&#xD;&#xA;It is a requirement for participating in the exam that the mandatory laboratory exercises are approved. The home work and the laboratory exercises are not part of the final exam assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Den digitale abstraktion (binære signaler og diskret tid). 
+Binær repræsentation af heltal og andre former for data. 
+CMOS transistoren som logisk switch. Realisering af grundlæggende digitale elementer: gates, kombinatoriske kredsløb, latche og flip-flops. Boolesk algebra. Tilstandsgrafer. Specifikation og syntese af kombinatoriske kredsløb og tilstandsmaskiner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde og hjemmeopgaver. Obligatoriske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere de grundlæggende principper for digitale kredsløb og at give de deltagerne grundlæggende færdigheder i specifikation, analyse, syntese og implementering af simple digitale kredsløb (kombinatoriske kredsløb og tilstandsmaskiner).</Course_Objectives>
+          <Remark>Kurset indgår på 1. semester af bachelorprogrammerne Elektroteknologi og Computer Engineering. Forelæsninger gives på dansk. Det skriftlige kursusmateriale er overvejende på engelsk. Ved eksamen vil eksamenssættet både foreligge i en dansk og i en engelsk udgave.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The digital abstraction (binary signals and discrete time). Number representation. The MOS-transistor as a logic switch. Implementation of basivc digital components: gates, combinatorial circuits, latches and flip-flops. Boolean algebra. State graphs. Specification and synthesis of combinatorial circuits and finite state machines.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, and home work. Mandatory laboratory exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce the basics of digital electronics and to enable participants to specify, analyze, synthesize and implement simple digital circuits (combinatorial logic and finite state machines).</Course_Objectives>
+          <Remark>The course is a 1st-semester constituent of the Bachelor's degree programmes in Electrical Engineering and Computer Engineering. Lectures are conducted in Danish. Most written course material is in English. The examination paper will be available in both Danish and English.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de grundlæggende begreber for og de antagelser om synkrone digitale kredsløb – den ”diskrete abstraktion” samt den grundlæggende opbygning ved anvendelse af logiske funktioner (kombinatoriske kredsløb) og hukommelseselementer (flip-flop's)." />
+          <Txt Lang="en-GB" Txt="Explain the basic principles and underlying assumptions of synchronous digital circuits – the 'discrete abstraction' and the fundamental implementation using logic functions (combinatorial circuits) and memory elements (flip-flops etc.)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare MOS-transistorens funktion som en ideel logisk switch og beskrive hvorledes den anvendes til realisering af CMOS logik (logiske gates og hukommelseselementer)." />
+          <Txt Lang="en-GB" Txt="Explain the operation of the MOS-transistor as an ideal logic switch, and describe how transistors are used to implement CMOS logic (logic gates and memory elements)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare Boolesk algebra og Karnaugh-kort, og anvende disse til opstilling, udvikling og reduktion af logiske udtryk - herunder de kanoniske former, ’sum af produkter’ og ’produkt af summer’." />
+          <Txt Lang="en-GB" Txt="Explain the basics of Boolean algebra and use it for describing, developing and reducing logical expressions – including the canonical forms: sum of products and products of sums." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Omsætte mellem logiske udtryk og digitale kredsløb opbygget af logiske porte såsom: AND, OR, NOT, NAND, NOR." />
+          <Txt Lang="en-GB" Txt="Transform between a logical expression and a digital circuit implemented using logic gates such as AND, OR, NOT, NAND and NOR." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive gængse former for tal- og datarepræsentation og konvertere mellem forskellige former for talrepræsentation." />
+          <Txt Lang="en-GB" Txt="Describe commonly used number and data representation formats and convert between different number representations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Realisere og afprøve små kombinatoriske kredsløb i praksis ved hjælp af diskrete logik-porte (simple 4000-komponenter)." />
+          <Txt Lang="en-GB" Txt="Implement and operate small combinatorial circuits in the lab using discrete logic gates (simple 4000-series components). " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare virkemåde og realisering af grundlæggende aritmetiske kredsløb og andre typiske kombinatoriske byggeblokke (multiplekser, dekoder, etc.)." />
+          <Txt Lang="en-GB" Txt="Explain the operation and implementation of fundamental arithmetic circuits and other typical combinatorial circuit building blocks (multiplexer, decoder, etc.). " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare virkemåde og realisering af grundlæggende hukommelseselementer (D flip-flop og D-latch)." />
+          <Txt Lang="en-GB" Txt="Explain the operation and implementation of fundamental memory elements (D flip-flops and D-latches)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne forsinkelsestid (kritisk vej) i kombinatoriske kredsløb." />
+          <Txt Lang="en-GB" Txt="Calculate propagation delay (critical path) in a combinatorial circuit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for opbygning og virkemåde af tilstandsmaskiner (Moore maskiner) samt beskrive trin for trin hvorledes en sådan tilstandsmaskine designes (tilstandsgraf, tilstandstabel, tilstandsminimering, tilstandskodning, etc.)." />
+          <Txt Lang="en-GB" Txt="Explain the structure and operation of a finite state machine (Moore type), and explain step-by-step how such a finite state machine is designed (state graph, state table, state minimization, state encoding, etc.)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Omsætte et verbalt designoplæg til en specifikation af et digitalt kredsløb ved brug af Boolesk algebra, sandhedstabeller, tilstandsgrafer, etc. og efterfølgende at syntetisere og implementere kredsløbet." />
+          <Txt Lang="en-GB" Txt="Transform a verbal description of an intended circuit into a specification using Boolean algebra, truth tables, state-graphs, etc., and subsequently synthesize and implement the circuit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere grundlæggende kendskab til simulerings- og synteseværktøjer for digitale kredsløb, og herunder kunne beskrive små kombinatoriske kredsløb i et hardwarebeskrivende sprog (som f.eks. VHDL). " />
+          <Txt Lang="en-GB" Txt="Demonstrate basic knowledge of simulation and synthesis tools for digital circuits, including the ability to describe small combinatorial circuits using a hardware description language (such as VHDL)." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.compute.dtu.dk/courses/02138" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Kombinatorisk logik, tilstandsmaskiner og timing (intro til VHDL og FPGA)</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="30081. 34331. 02320. 02328" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="65" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="35" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-07-23" Time="06:51:31.977" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

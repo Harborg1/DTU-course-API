@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02196" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kvante kompilatorer" />
+        <Title Lang="en-GB" Title="Quantum Compilers" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="Datalogiskt Institut, KU" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="DIKU, University of Copenhagen" />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="41921" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sven</GivenName>
+            <FamilyName>Karlsson</FamilyName>
+            <Email>svea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Pocket calculators are not allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Lommeregner er ikke tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kompiler teori: Kompileringsprocessen; Mellemrepræsentationer;
+
+Optimering af kvantekredsløb: Kredsløbskomprimering; Dekomponere; Optimal routing; 
+
+Afhjælpning af fejl.
+
+Målretning mod kvantecomputere i NISQ-æraen
+
+Integration af QC med klassisk databehandling</Contents>
+          <Course_Objectives>Klassiske computere bruger compilere til at oversætte højniveau programmeringssprog til specifikke operationer af computerens hardwarearkitektur. Denne afkobling af programmeringssproget fra den underliggende hardwarearkitektur har gjort det muligt for os at bevæge os væk fra Assembly programmering på lavt niveau og udvikle komplekse programmer, der fungerer på tværs af forskellige computerarkitekturer, hvilket effektivt muliggør den digitale transformation.
+
+Efterhånden som kvantecomputere bliver en realitet, vil kvantekompilere være nødvendige for at hæve abstraktionsniveauet for kvanteprogrammering. Mens der observeres imponerende resultater i den fysiske realisering af kvantecomputere, mangler udviklingen af kvantekompilere stadig. I dag udtrykkes kvanteprogrammer som kvantekredsløb, der arbejder på enkelte qubits.
+
+Baseret på klassisk compilerteori og kvanteinformation vil dette kursus dække de komponenter, der er nødvendige for at udvikle en kvantekompiler, som kan oversætte et højniveau programmeringssprog til mulige kvantekredsløb og kortlægge disse kredsløb på qubits af målkvantecomputerarkitekturen.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Compiler theory: The compilation process; Intermediate representations;
+
+Optimization of quantum circuits: Circuit compression; Decompose; Optimal routing; Error mitigation
+
+Targeting quantum computers in the NISQ era
+
+Integration of QC with classical computing</Contents>
+          <Course_Objectives>Classic computers use compilers to translate high-level programming languages into specific operations of the hardware architecture of the computer. This decoupling of the programming language from the underlying hardware architecture has allowed us to move away from low-level assembly programming and develop complex programs that work across different computer architectures, effectively enabling the digital transformation.
+
+As quantum computers are reaching feasibility, quantum compilers will be needed to raise the abstraction level of quantum programming. While impressive accomplishments are observed in the physical realization of quantum computers, the development of quantum compilers is still lacking behind. Today, quantum programs are expressed as quantum circuits working on single qubits.
+
+Based on classic compiler-theory and quantum information, this course will cover the components needed to develop a quantum compiler, which can translate a high-level programming language into feasible quantum circuits and mapping these circuits onto the qubits of the target quantum computer architecture.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare strukturen for optimerende compilere og funktionaliteten af de forskellige faser" />
+          <Txt Lang="en-GB" Txt="explain the structure of optimizing compilers and the functionality of the different phases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare forholdet mellem højt niveau sprog, mellemrepræsentation, analyser og optimeringer" />
+          <Txt Lang="en-GB" Txt="explain the relation between high-level language, intermediate representation, analyses, and optimizations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare processen af kodegenerering for kvantecomputere og forskellen på at genererer kode for forskellige kvantecomputere i NISQ-æraen" />
+          <Txt Lang="en-GB" Txt="explain the process of code generation for quantum computers and the difference of doing so for different quantum computers in the NISQ era" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere vigtige optimeringsfaser" />
+          <Txt Lang="en-GB" Txt="implement key optimization phases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og udlede analytiske modeller for ydeevne" />
+          <Txt Lang="en-GB" Txt="explain and derive analytic models for performance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere ydeevnen af kvantecomputere" />
+          <Txt Lang="en-GB" Txt="evaluate the performance of quantum computers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare forholdet mellem supercomputere og kvantecomputere" />
+          <Txt Lang="en-GB" Txt="explain the relationship between high-performance computers and quantum computers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere ydeevne-flaskehalse i kvantecomputersystemer" />
+          <Txt Lang="en-GB" Txt="identify performance bottlenecks in quantum computer systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:56.313" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02143" University="dtu" LastUpdated="2026-03-23+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Formelle sprog og semantik" />
+        <Title Lang="en-GB" Title="Formal Languages and Semantics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kursusforelæsningerne finder sted tirsdage og fredage (sammen med 02141) men kun i 13 af de 26 slots. Forelæsningsplanen vil blive annonceret på DTU Learn." />
+          <Schedule_Txt Lang="en-GB" Txt="The course lectures will take place on Tuesdays and Fridays (together with 02141) but will use only 13 of the 26 slots. The lecture plan will be announced on DTU Learn." />
+          <Schedule ScheduleKey="F3A" SortID="0" />
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="94040" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alberto Lluch</GivenName>
+            <FamilyName>Lafuente</FamilyName>
+            <Email>albl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="199719" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Andrey</GivenName>
+            <FamilyName>Rivkin</FamilyName>
+            <Email>ariv@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen (som normalt ændres til mundtlig ved reeksaminer). Et antal individualiserede programmeringsopgaver vil indgå i den samlede vurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written exam (usually changed to oral at reexams). A number of individualized programming assignments will be part of the overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omfatter to emner: 
+
+(1) Formelle sprog og deres brug til at beskrive syntaks. For regulære sprog behandles måder at beskrive dem med automata og regulære udtryk, deres sammehæng, praktiske anvendelser (fx søgning, leksikalsk analyse, formelle specifikationer). For kontekstfri sprog behandles måder at beskrive dem med pushdown automata og kontekstfri grammatik, en række anvendelser (fx til parsing af programmer, dokumenter og formateret data) sammen med en kort indføring til stakautomater og deres sammenhæng med kontekstfri sprog. 
+
+(2) Formelle metoder og deres brug til både modellering og analyse af IT systemers egenskaber, især software koe. Dette inkluderer semantik af programmeringssprog og deres brug til at bygge en compiler.
+
+Kurset involverer praktisk brug af forskellige værktøjer, og de studerende skal løse både teoretiske og praktiske opgaver, som integrerer kursets to emner.
+
+Deltagere i 02143, der ønsker at tage imod hele tilbuddet på 02141 er velkommen til at skifte til 02141 efter aftale med lærerne.
+
+Kurset 02141 giver en dybere behandling og praktisk oplevelse af forskellige formelle sprog og formelle metoder. Især dækker 02141 centrale praktiske og teoretiske aspekter af formelle sprog (f.eks. afgørelighed af grundlæggende problemer, pumping lemma, minimering af automater). Desuden giver 02141 en dyb behandling og praktisk erfaring med metoder til at analysere programmer (programverifikation, programanalyse, informationsflowsikkerhed og modeltjek), mens 02143 kun vil give et kort overblik over de.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, teoretiske øvelser, programmeringsøvelser og en obligatorisk opgave.</Teaching_And_Learning_Methods>
+          <Course_Literature>(1) "Introduction to Automata Theory, Languages, and Computation", af John E. Hopcroft, Rajeev Motwani, Jefrey D. Ullman, Third Edition, Addison-Wesley, 2007. 
+Kursusbogen "02141: Automata Theory and Languages" udvalgt af Hanne Riis Nielson indeholder de nødvendige kapitler.
+(2) "Formal Methods - An Appetizer" af Flemming Nielson og Hanne Riis Nielson, Springer, 2019.</Course_Literature>
+          <Course_Objectives>De studerende lærer at anvende centrale datalogiske modeller og formalismer, at udvikle værktøjer baseret på disse formalismer og at bruge disse værktøjer til at analysere softwarekode.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers two main topics: 
+
+(1) Formal languages and their use for describing syntax and computations. For regular languages we consider ways to describe them with finite automata and regular expressions, relations between those, practical applications (e.g. searching in texts, lexical analysis, formal specifications). For context-free languages we consider ways of describing them with context-free grammars and pushdown automata, their relation, and practical applications (e.g. parsing programs, documents and formatted data). 
+
+(2) Formal Methods and their use for both modelling and analysis of properties of IT systems, in particular software code. This includes semantics of programming languages and its use for building compilers and interpreters. 
+
+The course includes hands-on experience with various tools, and the students are asked to solve theoretical as well as practical exercises, which integrate the two topics of the course.
+
+Participants of 02143 that wish to take the whole offer of 02141 are welcome to switch to 02141 after agreement with the teachers.
+
+The course 02141 provides a deeper treatment and hands-on experience of various formal languages and formal methods. In particular, 02141 covers key practical and theoretical aspects of formal languages (e.g. decidability of fundamental problems, pumping lemma, Turing machines, minimization of automata). Moreover, 02141 provides a deep treatment and hands-on experience of methods to analyze programs (program verification, program analysis, information flow security and model checking), while 02143 will only provide a short overview of those.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, theoretical exercises, programming exercises and a mandatory assignment.</Teaching_And_Learning_Methods>
+          <Course_Literature>(1) "Introduction to Automata Theory, Languages, and Computation", by John E. Hopcroft, Rajeev Motwani, Jefrey D. Ullman, Third Edition, Addison-Wesley, 2007. 
+The course handbook "02141: Automata Theory and Languages" compiled by Hanne Riis Nielson covers the necessary chapters.
+(2) "Formal Methods - An Appetizer" by Flemming Nielson og Hanne Riis Nielson, Springer, 2019.</Course_Literature>
+          <Course_Objectives>The students learn to apply central models and formalisms from computer science, develop tools based on these formalisms, and use those tools to run software code.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om diskret matematik (logik, mængder, grafer, funktioner, induktion) - som forudsat f.eks. i 01001 og 01019&#xD;&#xA;Grundlæggende viden om algoritmer og datastrukturer - som forudsat f.eks. i 02105.&#xD;&#xA;Grundlæggende viden om funktionel programmering - som forudsat f.eks. i 02100 og 02157." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of discrete math (logic, sets, graphs, functions, induction) - as provided e.g. in 01001 and 01019&#xD;&#xA;Basic knowledge of algorithms and data structures - as provided e.g. in 02105.&#xD;&#xA;Basic knowledge of functional programming - as provided e.g. in 02157." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01001/01019).02105.(02100/02157)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anføre forskelle i udtrykskraft af de præsenterede formelle modeller;" />
+          <Txt Lang="en-GB" Txt="state the difference in expressive power of the formal models covered;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="tolke betydningen af en formel model (f.eks. automater, grammatiker, semantikker):" />
+          <Txt Lang="en-GB" Txt="interpret the meaning of a formal model (e.g., automata, grammars, semantics);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede en formel model for en ønsket egenskab eller opførsel givet som en tekstuel beskrivelse;" />
+          <Txt Lang="en-GB" Txt="derive a formal model of a desired property or behaviour given in a textual description;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="oversætte en model til en anden model (f.eks. regulære udtryk til NFA);" />
+          <Txt Lang="en-GB" Txt="translate a model into another model (e.g. regular expressions to NFA);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="ændre en model svarende til et givet kriterie (f.eks. fjernelse af afskedigelser, fjernelse af uklarheder grammatik);" />
+          <Txt Lang="en-GB" Txt="modify a model according to certain criteria (e.g. remove redundancies in automata, remove ambiguities in grammars);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende udvalgte værktøjer til at køre programmer og udvikle ny værktøjer baseret på de formelle modeller (f.eks. compilere &amp; tolke);" />
+          <Txt Lang="en-GB" Txt="operate selected tools to run programs and implement new ones based on formal models (e.g., program compilers &amp; interpreters);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede egenskaber ved at anvende bevisstrategier (f.eks. matematisk induktion, strukturel induktion);" />
+          <Txt Lang="en-GB" Txt="determine whether a description in a given formal model satisfies a given property;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede egenskaber af formelle modeller ved at anvende bevisstrategier (f.eks. matematisk induktion, givne sætninger);" />
+          <Txt Lang="en-GB" Txt="derive properties of formal models using given proof strategies (e.g. mathematical induction, structural induction);" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge formelle modeller der kan være nødvendige eller nyttige ved løsning af et givent problem;" />
+          <Txt Lang="en-GB" Txt="select formal models that may be necessary or useful for a given problem;" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02143" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02141" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:46.403" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

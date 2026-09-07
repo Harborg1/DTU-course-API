@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02148" Volume="2026/2027" University="dtu" LastUpdated="2026-04-21+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til koordinering af fordelte applikationer" />
+        <Title Lang="en-GB" Title="Introduction to Coordination in Distributed Applications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="94040" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alberto Lluch</GivenName>
+            <FamilyName>Lafuente</FamilyName>
+            <Email>albl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individualiserede gruppe projekter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individualized group projects." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Within the semester." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Inden for semester." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil fokusere på:
+(1) Flere koordinationsparadigmer;
+(2) Softwareudviklingsmiljøer som understøtter disse paradigmers;
+(3) Nogle enkle distribuerede algoritmer og applikationer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, projektarbejde og præsentationer fra de studerende.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Distribuerede applikationer udnytter mange forskellige netværksressourcer, fra lokale netværk, over skyen, til hele internettet, for at tilbyde tjenester med høje ydeevner, som er tilgængelige overalt. At programmere sådan en distribueret applikation kan være trættende og udfordrende, fordi de skal understøtte mange forskellige slags enheder, og fordi de skal integrere kommunikation over mange forskellige kanaler.
+
+Udviklingen af distribuerede applikationer gøres nemmere ved at bruge højniveau programmeringssprog og paradigmer til koordinering, som tuple-spaces, actors, protokoller, workflows, streams, osv., som tilbyder et passende abstraktionsniveau. Disse metoder gemmer problemer med parallelitet og kommunikation, så det bliver muligt for programmørerne at koncentrere sig på kerne logik af applikationer: koordinering, funktionalitet, sikkerhed, osv.
+
+På dette kursus erhverver man de første begreber og kompetencer til at udvikle fordelte applikationer. Kurset indeholder præsentationer af den grundlæggende baggrund, de studerendes projektarbejde, og præsentationer givet af de studerende. Arbejdet foregår i grupper på selvdefinerede projekter, hvor man udvikler enkelte, distribuerede applikationer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course will cover:
+(1) Several distributed coordination paradigms;
+(2) Software run-time frameworks supporting those paradigms;
+(3) A set of simple distributed algorithms and applications.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, project work and presentations from the participants.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Distributed applications exploit all kinds of networked resources, from local networks, to clouds, to the entire Internet, in order to offer ubiquitous and performant services. Programming a distributed application may be tedious and challenging, due to the need to consider different kinds of devices and communication channels.
+
+High-level coordination and programming paradigms such as tuple spaces, protocols, actors, workflows, streams and so on, simplify this task, by offering suitable abstractions that hide low-level concurrency and communication issues thus allowing one to focus on the core logic of applications: coordination, functionality, security, etc. 
+
+This course will introduce students to basic concepts of coordination and will provide students first experience with the development of distributed applications based on those concepts. The course will include lectures introducing basic notions and background, project work, and presentations by the students. Students will work in groups on self-defined projects, where they develop distributed applications.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="De studerende skal kunne udtrykke sig i et objekt-orienteret programmeringssprog. Grundlæggende kendskab til algoritmer, datastrukturer og software engineering anbefales også." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Ability to program in an object oriented language like Java is recommended. Basic knowledge of algorithms, data structures and software engineering is also recommended." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02101/02102).02161.02105" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende koordinationsparadigmer;" />
+          <Txt Lang="en-GB" Txt="Explain and apply basic coordination paradigms;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere en distribueret applikation baseret på paradigmer om koordinering;" />
+          <Txt Lang="en-GB" Txt="Model a distributed application based on the covered coordination paradigms; " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og løse typiske problemer med parallelitet og kommunikation;" />
+          <Txt Lang="en-GB" Txt="Identify and solve typical concurrency and communication issues;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere en enkelt, distribueret applikation med hjælp af paradigmer af koordinering af distribuerede applikationer;" />
+          <Txt Lang="en-GB" Txt="Implement a simple distributed application based on the covered coordination paradigms; " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende en enkelt, distribueret applikation i forskellige netværk;" />
+          <Txt Lang="en-GB" Txt="Deploy a simple distributed application on different networks;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere, planlægge og samarbejde om softwareudvikling i en lille gruppe;" />
+          <Txt Lang="en-GB" Txt="Organize, plan, and carry out collaborative software development in a small group;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv og forklar design og implementering af et distribueret program; " />
+          <Txt Lang="en-GB" Txt="Describe and explain the design and implementation of a simple distributed application;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Documenter the design and implementation of a simple distributed application;" />
+          <Txt Lang="en-GB" Txt="Document the design and implementation of a simple distributed application;" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02148" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:47.183" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="25628" Volume="2026/2027" University="dtu" LastUpdated="2026-05-01+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Fiskeriøkologi og rådgivning" />
+        <Title Lang="en-GB" Title="Fisheries Ecology and Advice" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" Tuition_Fee="8255" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="campus_hirtshals">
+          <LocationTxt Lang="da-DK" Txt="See English version" />
+          <LocationTxt Lang="en-GB" Txt="Is offered with Remote Classroom in Lyngby https:/​​/​​www.aqua.dtu.dk/​​english/​​education/​​courses/​​remote-classroom" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Forår" />
+          <Schedule_Txt Lang="en-GB" Txt="Spring" />
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="25" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Aqua" />
+        <Course_Responsible PersonKey="39872" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mikael Seehusen Kruchov van</GivenName>
+            <FamilyName>Deurs</FamilyName>
+            <Email>mvd@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="94039" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Gildas</GivenName>
+            <FamilyName>Glemarec</FamilyName>
+            <Email>ggle@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="119429" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mollie Elizabeth</GivenName>
+            <FamilyName>Brooks</FamilyName>
+            <Email>molbr@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="See English version" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se English version</Contents>
+          <Teaching_And_Learning_Methods>See the English version</Teaching_And_Learning_Methods>
+          <Course_Literature>See English version</Course_Literature>
+          <Course_Objectives>See English version</Course_Objectives>
+          <Remark>Se English version</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fisheries support many millions of livelihoods, provide food security, and contribute to national economies as well as coastal societies, but fisheries can also impact ecosystems negatively. For instance, fishing activities may disrupt food webs, damage the sea floor, or be responsible for the unintended captures of threatened marine animals. During the past decades, important effort has been made to develop the science and fisheries policies. In this course, we will study how fisheries scientists assess the size of fish stocks to produce stock-by-stock catch advice and how ecosystem considerations currently is moving up on the fisheries management agenda. We will look at concrete examples of fisheries management measures, including quota limits, time/area closures and actual Marine Protected Areas (MPA). The lectures will have a global perspective but will focus more closely on the North-East Atlantic and EU waters. The R programming language, being one of the most often used in ecology and fisheries science, will be used for the analytical parts of the course. The course program consists of (1) four modules covering the global perspective on fisheries, stock-by-stock assessments, and the ICES advice system, (2) four modules with analytical exercises in R, (3) four modules on the ecosystem approach to fisheries management, including a short legislative background and the tools available to managers to ensure fisheries sustainability and biodiversity conservation, and (4)Report assignment, in which students will apply the concepts and tools learned throughout the course to develop a management recommendation for a marine fish stock of their own choice. The students should find relevant scientific literature and data and select model approaches, and the result should be an evidence-based advice that considers stock dynamics, the fishery, and broader ecosystem or climate-related factors.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, individual and group assignments (problem solving and analytical exercises in R), and home assignments (e.g. read scientific articles and produce one report on a pre-defined topic/problem).</Teaching_And_Learning_Methods>
+          <Course_Literature>Jennings, S., Kaiser, M., Reynolds, J.D. 2001. Marine Fisheries Ecology. Blackwell Science.
+Selection of scientific papers and other relevant texts, which are handed out during the course as PDFs (we continuously update the selection to reflect the current situation as much as possible).</Course_Literature>
+          <Course_Objectives>This course provides students with a comprehensive understanding of modern fisheries management, emphasizing both single-stock approaches and ecosystem effects. Students will learn to interpret ICES catch advice and perform basic stock assessments and fishing pressure projections using the R programming environment. Using scientific literature and hands-on modeling exercises, students will also learn to critically evaluate management advice considering biodiversity conservation challenges and formulate their own evidence-based recommendations for sustainable fisheries.</Course_Objectives>
+          <Remark>This course provides students with competences relevant to UN SDGs, particularly #12 (Responsible consumption and production), #13 (Climate action) and #14 (Life below water)
+
+Is offered with Remote Classroom in Lyngby https:/​​/​​www.aqua.dtu.dk/​​english/​​education/​​courses/​​remote-classroom</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="See English version" />
+          <Txt Lang="en-GB" Txt="Explain and compare the basic principles and practical applications of single-stock and ecosystem-based approaches to fisheries management." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="See English version" />
+          <Txt Lang="en-GB" Txt="Interpret and summarize the main content presented in ICES advice sheets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="See English version" />
+          <Txt Lang="en-GB" Txt="Adapt and implement R scripts to estimate stock size, calculate biological reference points, and simulate short-term catch scenarios." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="See English version" />
+          <Txt Lang="en-GB" Txt="Reproduce the ICES advice for a given fish stock by locating relevant data and implementing the necessary modeling code." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="See English version" />
+          <Txt Lang="en-GB" Txt="Compare Virtual Population Analysis with a statistical stock assessment model or propose alternative forecasting approaches accounting for additional drivers beyond the biomass of the spawning stock." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="See English version" />
+          <Txt Lang="en-GB" Txt="Identify and synthesize current challenges at the intersection between fisheries management and biodiversity conservation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="See English version" />
+          <Txt Lang="en-GB" Txt="Propose and defend practical strategies for implementing ecosystem-based fisheries management in a real-world fisheries context, addressing ecological, practical, and policy-related factors." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="See English version" />
+          <Txt Lang="en-GB" Txt="Critically evaluate and apply scientific literature within the scope of the course to support evidence-based arguments related to fisheries management and sustainability." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Fisheries ecology and advice</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="1" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="25349" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:21:19.24" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02182" Volume="2026/2027" University="dtu" LastUpdated="2026-03-16+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Symbolsk kunstig intelligens" />
+        <Title Lang="en-GB" Title="Symbolic Artificial Intelligence" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="6474" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Thomas</GivenName>
+            <FamilyName>Bolander</FamilyName>
+            <Email>tobo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset bedømmes på basis af 3 gruppeprojekter og en afsluttende skriftlig eksamen. Karakteren gives som en helhedsvurdering, hvor hver af de 3 gruppeprojekter vægtes med omtrent 20% og den afsluttende eksamen med omtrent 40%." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course is assessed on the basis of 3 group projects and a final written exam. The grade is given as an overall assessment, where each of the 3 group projects is weighted with approximately 20% and the final exam with approximately 40%." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>1. Symbolske modeller af omverden: propositionelle tilstande, PDDL, belief states, epistemiske modeller. 
+
+2. Multiagent-systemer og social AI: spilteori, spilteoretiske ligevægte, modeller for koordination, Theory of Mind, multiagent-planlægning og plan/goal recognition. 
+
+3. Algoritmer på symbolske modeller: informerede søgealgoritmer, STRIPS-planlægning, søgning under partial observerbarhed og ikke-determinisme, spilteoretisk søgning, algoritmer til plan/goal recognition. 
+
+4. Symbolsk vs subsymbolsk AI: Styrker og svagheder i symbolsk vs subsymbolsk AI. Introduktion til kombinationen af symbolske og subsymbolske teknikker.
+
+5. Anvendelser: Integration af samtlige kursets emner til anvendelser indenfor socialt intelligente humanoide robotter samt menneske-robot interaktion.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og obligatoriske afleveringer.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet er at introducere den studerende til fundamentale begreber og teknikker indenfor symbolsk kunstig intelligens (symbolsk AI) samt anvende disse indenfor søgning, planlægning, spil, multiagent-systemer, social intelligens, humanoide robotter og menneske-robot interaktion. I symbolsk kunstig intelligens arbejder man med eksplicitte – ofte logiske – modeller af omverden. Dette giver visse fordele med hensyn til at bygge systemer som kan lægge planer og ræsonnere logisk, samt giver fordele omkring forklarlighed og sikkerhed. Desuden vil den studerende blive introduceret til neurosymbolsk AI: kombinationen af symbolsk AI med neurale netværk og andre teknikker indenfor maskinlæring.</Course_Objectives>
+          <DTU_Remark>Kurset er en del af bacheloruddannelsen Kunstig Intelligens og Data og er forbeholdt studerende fra denne uddannelse. Andre studerende henvises til kursus 02180.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>1. Symbolic models of the environment: propositional states, PDDL, belief states, epistemic models. 
+
+2. Multiagent systems and social AI: game theory, game theoretical equilibria, models of coordination, Theory of Mind, multiagent planning and plan/goal recognition.
+
+3. Algorithms on symbolic models: informed search algorithms, STRIPS planning, search under partial observability and non-determinism, adversarial search, algorithms for plan/goal recognition. 
+
+4. Symbolic vs subsymbolic AI: Strengths and weaknesses of symbolic vs subsymbolic AI. Introduction to the combination of symbolic and subsymbolic techniques.
+
+5. Applications: Integration of all curriculum elements in applications within socially intelligent humanoid robots and human-robot interaction.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and mandatory assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The goal is to introduce the student to fundamental concepts and techniques within symbolic artificial intelligence (symbolic AI) and to apply these within search, planning, games, multiagent systems, social intelligence, humanoid robots and human-robot interaction. Symbolic AI relies on explicit – often logical – models of the environment. This provides certain advantages in terms of being able to build systems that can form plans and do logical reasoning, as well as giving advantages in terms of explainability and safety. The student will furthermore be introduced to neurosymbolic AI: the combination of symbolic AI with neural networks and other techniques within machine learning.</Course_Objectives>
+          <DTU_Remark>The course is part of the BSc programme Artificial Intelligence and Data and is reserved for students from this program. Other students are referred to course 02180.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser. Du skal have erfaring med algoritmer og datastrukturer, programmering, udsagnslogik og rekursive procedurer. Kurset kræver erfaring med implementation af ikke-trivielle algoritmer i Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses. You need experience with algorithms and data structures, programming, propositional logic and recursive procedures. The course requires experience with implementing non-trivial algorithms in Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01017. 02105. 02450. 02464. 02465." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare forskellen på symbolske og subsymbolske teknikker indenfor kunstig intelligens, samt forklare neurosymbolsk AI" />
+          <Txt Lang="en-GB" Txt="Explain the difference between symbolic and subsymbolic techniques within artificial intelligence, as well as explain the concept of neurosymbolic AI" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de respektive anvendelsesområder, fordele og ulemper ved symbolsk og subsymbolsk kunstig intelligens" />
+          <Txt Lang="en-GB" Txt="Explain the respective application areas, advantages and disadvantages in symbolic vs subsymbolic AI" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge passende formelle modeller til at repræsentere tilstande og transitioner i et givet domæne" />
+          <Txt Lang="en-GB" Txt="Select the appropriate formal models to represent states and transitions in a given domain" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere hvilke algoritmer og teknikker indenfor symbolsk kunstig intelligens der er relevante i forhold til en given anvendelse" />
+          <Txt Lang="en-GB" Txt="Analyse which algorithms and techniques within symbolic AI are relevant to a given application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere simple symbolske AI-metoder til søgning, vidensrepræsentation, planlægning, spil, multiagent-systemer, social intelligens, humanoide robotter og menneske-robot interaktion" />
+          <Txt Lang="en-GB" Txt="Implement simple methods within symbolic AI for search, knowledge representation, planning, games, multiagent systems, social intelligence, humanoid robots and human-robot interaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende eksisterende symbolske AI-værktøjer til søgning, vidensrepræsentation, planlægning, spil, multiagent-systemer, social intelligens, humanoide robotter og menneske-robot interaktion" />
+          <Txt Lang="en-GB" Txt="Apply existing tools within symbolic AI for search, knowledge representation, planning, games, multiagent systems, social intelligence, humanoid robots and human-robot interaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere hvilke teknikker – symbolske, subsymbolske eller en kombination – der er nødvendige for at automatisere en given opgave" />
+          <Txt Lang="en-GB" Txt="Analyse which techniques – symbolic, subsymbolic or a combination – are necessary to automate a given task" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere symbolske og subsymbolske teknikker i en humanoid robot samt designe og udføre eksperimenter med menneske-robot interaktion" />
+          <Txt Lang="en-GB" Txt="Integrate symbolic and subsymbolic techniques in a humanoid robot and design and perform experiments in human-robot interaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02180" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:54.867" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30110" University="dtu" LastUpdated="2026-04-07+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Fagprojekt - Geofysik og Rumteknologi" />
+        <Title Lang="en-GB" Title="Project work -  Earth and Space Physics and Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Den endelige placering aftales med vejlederen. Hvis det ønskes, kan fagprojekt-kurset afholdes fra januar til maj, eller om efteråret. Kontakt ansvarlig underviser for yderligere information." />
+          <Schedule_Txt Lang="en-GB" Txt="The actual schedule is agreed with the teacher. If needed, the course can be carried out from January to May or in the fall. Please contact the responsible teacher for more information." />
+          <Schedule ScheduleKey="F" SortID="0" />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+          <Ass_Dep UID="1" Resources="0" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="10" Resources="0" University="DTU" SortID="1" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="12" Resources="0" University="DTU" SortID="2" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="38290" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jerome</GivenName>
+            <FamilyName>Chenevez</FamilyName>
+            <Email>jerome@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Desuden aflevering af projektbeskrivelse og midtvejsrapport." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Also hand-in of project description and midterm report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De studerende udfører et selvstændigt eksperimentelt eller teoretisk projekt, hvor resultatet ikke er kendt på forhånd.
+Der udbydes et sæt emner med relation til forskningsaktiviteterne ved de deltagende institutter. De studerende vælger selv blandt disse.</Contents>
+          <Teaching_And_Learning_Methods>Gruppearbejde og/eller laboratoriearbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At skabe ingeniør- og retningsfaglig identitet. At bruge de fagligheder som er lært indtil nu i et samlet hele til selvstændigt at udforske og fordybe sig i et nyt emne eller en ny problemstilling. At gennemføre et projekt- og gruppearbejde inden for retningens fagområde, herunder litteratur- og informationssøgning, samt at formidle dette arbejde både skriftligt og mundtligt. At forberede til bachelorprojektet.</Course_Objectives>
+          <Remark>Efter nærmere aftale kan der evt. vælges projekter fra institutter udenfor listen.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The students carry out an independent experimental or theoretical project where the result is not known in advance.
+A series of possible project subjects will be provided relating to the research activities at the participating institutes. The students select among the proposed projects.</Contents>
+          <Teaching_And_Learning_Methods>Group and/or laboratory work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To create an engineering and professional identity. To use the skills that have been learned so far in a unified whole to independently explore and immerse oneself in a new subject or a new problem. To carry out a project and group work within the discipline's subject area, including literature and information searches, and to communicate this work in writing and orally. To prepare for the bachelor project.</Course_Objectives>
+          <Remark>Subject to acceptance, it is possible to choose projects from institutes not on the list.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurser svarende til indholdet af de obligatoriske, anbefalede kurser på de første tre semestre af bacheloruddannelsen Geofysik og Rumteknologi." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Courses corresponding to the content of the recommended mandatory courses in the first three semesters in the Earth and Space Physics and Engineering bachelor program." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="selvstændigt analysere problemstillinger samt identificere, afgrænse og implementere løsninger i samarbejde på tværs af både faglige- og personlige kompetencer." />
+          <Txt Lang="en-GB" Txt="independently analyze problematics and identify, define and implement solutions in collaboration across both professional and personal competencies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre relevant og kritisk informationssøgning og -gennemgang for selvstændigt at øge sit vidensniveau i forhold til problemstillingen. " />
+          <Txt Lang="en-GB" Txt="conduct relevant and critical information search and review to independently increase one's level of knowledge in relation to the problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formidle teknisk information, teorier og resultater både grafisk, skriftligt og mundtligt og præsentere det for forskellige grupper af interessenter." />
+          <Txt Lang="en-GB" Txt="communicate technical information, theories and results both graphically, in writing and orally and present it to different groups of stakeholders" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere egne og andres udviklede løsninger i forhold til opstillede krav herunder evt. bæredygtighedskriterier" />
+          <Txt Lang="en-GB" Txt="evaluate own and others' solutions developed in relation to established requirements, including possible sustainability criteria" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere eventuelt uforudsete udfordringer i forbindelse med problemløsning af et ingeniørmæssigt projekt. " />
+          <Txt Lang="en-GB" Txt="evaluate any unforeseen challenges in connection with problem-solving in an engineering project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge projektet ved at formulere mål og metoder for projektforløbet i passende omfang og kompleksitet" />
+          <Txt Lang="en-GB" Txt="plan the project by describing its goals and methods in suitable extent and complexity  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="relatere data til projektets mål " />
+          <Txt Lang="en-GB" Txt="relate the data to the goals of the project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre grundigt og systematisk arbejde indenfor eksperiment eller teori, f.eks. ved selv at opbygge en forsøgsopstilling (eksperimentelt projekt)/ kode en simulation (teoretisk projekt) hhv. indsamle målte eller genererede data og behandle disse" />
+          <Txt Lang="en-GB" Txt="perform thorough and systematic work within the experiment or theory, e.g. by constructiing an experiement, or provide code for a simulation, and collect the measured or generated data and treat the data in the analysis " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre projekt - og gruppearbejde med stor selvstændighed i alle dets faser fra planlægning over gennemførelse til præsentationen." />
+          <Txt Lang="en-GB" Txt="carry a project and group work through with great independence in all aspects." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="3" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="3" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="30" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:51.277" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

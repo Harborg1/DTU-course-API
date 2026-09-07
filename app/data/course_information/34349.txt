@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34349" University="dtu" LastUpdated="2024-04-16+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="FPGA design til kommunikationssystemer" />
+        <Title Lang="en-GB" Title="FPGA design for communication systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="fortrinsvis eftermiddag" />
+          <Schedule_Txt Lang="en-GB" Txt="mostly afternoons" />
+          <Schedule ScheduleKey="F5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="6050" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Michael Stübert</GivenName>
+            <FamilyName>Berger</FamilyName>
+            <Email>msbe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen (30%)&#xD;&#xA;rapporter (70%)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam (30%)&#xD;&#xA;reports (70%)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Oversigt over designprincipper for højhastighedselektronik i digitale kommunikationssystemer. VHDL kode retningslinier, FPGA arkitektur, parallelisering, pipelining, hukommelsesstyring, skedulering,  fejldetektion, clock- og datasynkronisering. Hardware arkitekturer og ydeevne for switch systemer indenfor tele- og datakommunikation. Eksempler fra instituttets forskning. Projektarbejdet inkluderer højhastigheds design ved brug af VHDL (Very high-speed integrated circuits Harsware Description Language) baserede FPGA design værktøjer.</Contents>
+          <Teaching_And_Learning_Methods>Seminarer, øvelser og designopgaver</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte de studerende i stand til a) at analysere og designe digitale integrerede kredsløb baseret på FPGA teknologi til brug for anvendelser i bredbånds kommunikationssystemer, især indenfor optisk kommunikation og SDH, OTN, Ethernet, IP og MPLS systemer; b) at forstå de involverede designområder fra specifikation og simulering til syntese, verifikation og optimering. c) at færdiggøre et designprojekt, der inkluderer specifikation, implementering og dokumentation.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Survey of high-speed electronic design principles in digital communication systems. VHDL coding styles, FPGA architectures, parallel design, pipelining, memory control, scheduling, error detection, clock and data synchronisation. Hardware architectures and performance of telecommunications and data communication switch systems.  Examples from recent or ongoing research. The student projects include high-speed design by use of VHDL (Very high-speed integrated circuits Hardware Description Language) based FPGA design tools.</Contents>
+          <Teaching_And_Learning_Methods>Seminars, exercises and design tasks</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable the students a) to analyse and design integrated circuits based on FPGA technology for use in broadband communications (broadband electronics), especially optical communication and, SDH, OTN, Ethernet, IP and MPLS systems; b) to understand the design principles involved spanning from specification and simulation over synthesis, verification and optimisation; c) to complete a design project, involving specification, implementation and documentation</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå fundamentale problemer i forbindelse med udvikling af bredbåndselektronik" />
+          <Txt Lang="en-GB" Txt="Understand fundamental problems in Broadband Electronics development" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle en specifikation på blokniveau (gruppearbejde)" />
+          <Txt Lang="en-GB" Txt="Develop a block level specification (group work)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere en specifikation i VHDL/Verilog" />
+          <Txt Lang="en-GB" Txt="Implement a specification in VHDL/Verilog " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive effektiv VHDL/Verilog kode til anvendelse i kommunikationssystemer" />
+          <Txt Lang="en-GB" Txt="Write efficient VHDL/Verilog code for communication applications " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simulering af det udviklede design" />
+          <Txt Lang="en-GB" Txt="Perform functional simulation of implemented design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre syntese og verifikation" />
+          <Txt Lang="en-GB" Txt="Perform synthesis and verification" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende optimeringsværktøjer" />
+          <Txt Lang="en-GB" Txt="Use optimisation tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en teknisk rapport som dokumenterer arbejdet" />
+          <Txt Lang="en-GB" Txt="Write a technical report documenting the project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre et struktureret udviklingsforløb for et ingeniørmæssigt projekt " />
+          <Txt Lang="en-GB" Txt="Carry through a structured development process for an engineering project " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og give konstruktiv kritik på andres arbejder" />
+          <Txt Lang="en-GB" Txt="Evaluate and provide constructive criticism for others’ work" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02139.34310" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Communication technology and FPGA development   </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:15.573" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

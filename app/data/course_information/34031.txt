@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34031" University="dtu" LastUpdated="2026-04-23+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Anvendt matematik for fysikere" />
+        <Title Lang="en-GB" Title="Applied mathematics for physicists" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="22824" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mikkel</GivenName>
+            <FamilyName>Heuck</FamilyName>
+            <Email>mheu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="42451" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Thomas</GivenName>
+            <FamilyName>Christensen</FamilyName>
+            <Email>tomch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen (100%)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written exam (100%)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Fourier transformation og generelle integraltransformationer. Sturm-Liouville problemer og separation af variable. Bessel funktioner. Green funktion. Variationsregning.
+
+Gruppearbejdet involverer fire større projekter, der anvender de introducerede metoder til behandling af forskellige fysiske problemer, herunder Bose-Einstein kondensater, optiske fibre, elektromagnetisk bølgeudbredelse og ulineære krystaller.</Contents>
+          <Teaching_And_Learning_Methods>13 formiddags sessioner (8-12) med forelæsninger og grupperegning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere begreber, værktøjer og metoder fra anvendt matematik for Fysik og Teknologi studerende.</Course_Objectives>
+          <Remark>Lærebog:
+Arfken &amp; Weber: Mathematical Methods for Physicists, 7th ed., Elsevier.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fourier transformation and general integral transformations. Sturm-Liouville problems and special functions.  Bessel functions. Green function. Calculus of variations.
+
+Group work involves four extended projects, applying the introduced methods to the treatment of various physical problems, including Bose-Einstein condensates, optical fibers, electromagnetic wave propagation, nonlinear crystals, and laser beams.</Contents>
+          <Teaching_And_Learning_Methods>13 morning sessions (8-12) with lectures and group work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce concepts, tools and methods from applied mathematics to Engineering Physics students.</Course_Objectives>
+          <Remark>Textbook:
+Arfken &amp; Weber: Mathematical Methods for Physicists, 7th ed., Elsevier.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme om en operator og en ligning er lineær eller ikke-lineær og forstå forskellen mellem de to typer." />
+          <Txt Lang="en-GB" Txt="Determine whether an operator and an equation is linear or nonlinear and understand the difference between the two types." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse lineære ligninger med Fourier transformation og forstå relationen mellem en funktion og dens Fourier spektrum." />
+          <Txt Lang="en-GB" Txt="Solve linear partial differential equations with Fourier transformation and understand the relation between a function and its Fourier spectrum." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse lineære ordinære differentialligninger med Green funktion." />
+          <Txt Lang="en-GB" Txt="Solve linear ordinary differential equations with Green function." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede egenskaberne af Sturm-Liouville operatorer og deres tilhørende egenværdipoblemer." />
+          <Txt Lang="en-GB" Txt="Derive the properties of Sturm-Liouville operators and Sturm-Liouville eigenvalue problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse lineære partielle differentialligninger med separation af de variable." />
+          <Txt Lang="en-GB" Txt="Solve linear partial differential equations using separation of variables." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse singulære, lineære, ordinære differentialligninger med Frobenius' metode." />
+          <Txt Lang="en-GB" Txt="Solve singular linear ordinary differential equations using Frobenius' method." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende Bessel's ligninger og kunne anvende Bessel funktioner." />
+          <Txt Lang="en-GB" Txt="Know Bessel's equations and be able to use Bessel functions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede Euler-Lagrange ligninger og forstå variationsregning og Hamilton's princip for multi-dimensionale systemer med flere variable." />
+          <Txt Lang="en-GB" Txt="Derive the Euler-Lagrange equations and understand the concept of calculus of variations and Hamilton's Principle for multi-dimensional systems with several variables." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Rayleigh-Ritz variationsregning til at finde grundtilstands egenfunktioner og egenværdier." />
+          <Txt Lang="en-GB" Txt="Apply the Rayleigh-Ritz variational technique to find ground state eigenfunctions and eigenvalues." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende variationsregning med kollektive koordinater til at finde og analysere løsninger til ikke-lineære partielle differentialligninger." />
+          <Txt Lang="en-GB" Txt="Apply the collective coordinate variational approach to find and analyse solutions to nonlinear partial differential equations." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01001/01003. 01002/01004. 01034/01035/01037. 10036" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Anvendt matematik med fokus på det anvendte inden for fysikken og inden for foto</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="02647" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:36.003" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

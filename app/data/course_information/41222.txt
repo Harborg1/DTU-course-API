@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41222" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Bølgebelastninger på skibe og offshore konstruktioner" />
+        <Title Lang="en-GB" Title="Wave loads on ships and offshore structures" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="117076" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Yanlin</GivenName>
+            <FamilyName>Shao</FamilyName>
+            <Email>yshao@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6371" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Harry Bradford</GivenName>
+            <FamilyName>Bingham</FamilyName>
+            <Email>hbbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Grupperapporter (maks. 2 personer) til 6 individualiserede grupperapporter, vægter ligeligt (50%) og mundtlig eksamen (50 %). Delkarakterer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="group (max. 2 persons) reports to 6 individualized group reports, weighted equally (50%) and oral exam (50 %). Partial grades." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="25 minuter" />
+          <Duration Lang="en-GB" Txt="25 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Med udgangspunkt i de grundlæggende bevarelseslove for en strømning (Navier-Stokes ligniner) vil vi udlede  potentielle strømnings approksimation for den hydrodynamiske interaktion mellem en fast eller flydende marine struktur og bølgerne. Dette problem bliver lineariseret, under forudsætning af små  bølgeamplituder og små bevægelser, for at udtrykke konstruktionen som en lineær harmonisk oscillator. Forholdet mellem  tid-og frekvens-domæne udtryk understreges. Green's sætning bruges til at udlede en række nyttige relationer mellem koefficienterne, samt høj-og lavfrekvente grænser. Green's sætning fører også til rand integral formuleringen og videre til rand element metoden (BEM), som er den mest udbredte løsningsteknik for at beregne de hydrodynamiske koefficienter. En række varianter af BEM diskuteres herunder både 2D strip-type metoder og 3D-metoder baseret på enten det frie overflade eller Rankine Green funktion. Som opgave, skal den studerende opbygge sin egen 2D BEM løser til både uendelige domæne problemer og bølge problemer. Finite difference og finite volumen løsninger bliver også diskuteret. Ugentlige øvelser løses for at illustrere teorien. En  bevægelsesligningsløser bygges i Python/Matlab og anvendes til at analysere flere typiske konstruktioner.  Nogle koncept prøver bliver også svaret på i løbet af semesteren.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, kort konceptprøver og en mundlig eksamen.</Teaching_And_Learning_Methods>
+          <Course_Literature>"Marine Hydrodynamics - 40th Anniversary Edition" by J.N. Newman, MIT press 2017.
+Forlæsningsnoter.</Course_Literature>
+          <Course_Objectives>Efter dette kursus skal den studerende være i stand til at anvende lineær potential strømnings teori til at forudsige bølgeinducerede bevægelser af flydende maritime konstruktioner. En forståelse for styrker og svagheder ved forskellige numeriske løsningsteknikker skal gøre det muligt at foretage pasende valg afhængigt af konstruktionens type og funktion.  Hovedfokus på beregningseksempler er skibe, offshore vindturbiner og bølgeenergianlæg.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Starting from the basic conservation laws for a fluid flow (the Navier-Stokes equations) we derive the potential flow approximation for the hydrodynamic interaction between a fixed or floating marine structure and ocean waves.  This problem is linearized, assuming small amplitude waves and small body motions, to express the structure as a linear harmonic oscillator.  The relationship between the time- and frequency-domain expressions is stressed.  Green's theorem is used to derive a number of useful relations between coefficients, as well as high- and low-frequency limits.  Green's theorem also leads to the Boundary Integral form of the problem and further to the Boundary Element Method (BEM) which is the most widely used numerical solution technique for obtaining the hydrodynamic coefficients.  A number of variants of the BEM are discussed including both 2D strip-type methods and 3D methods based on either the free-surface or the Rankine Green function.  As exercises, the student will develop their own 2D, BEM solver is both for infinite fluid problems and for wave radiation and diffraction. Finite difference and finite volume solutions are also discussed.  Weekly exercises are solved to illustrate the theory.  A solver for the equations of motion is built in Python/Matlab and applied to analyse several typical structures.  Several short concept tests will also be given during the course of the Semester.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, short concept tests  and a final oral exam.</Teaching_And_Learning_Methods>
+          <Course_Literature>"Marine Hydrodynamics - 40th Anniversary Edition" by J.N. Newman, MIT press 2017.
+Lecture notes.</Course_Literature>
+          <Course_Objectives>After completing this course, the student should be able to use linear potential flow theory to predict the wave induced motions of floating maritime structures.  An understanding of the strengths and weaknesses of different numerical solution techniques will allow the student to make the appropriate choice depending on the application.  The primary focus, for example applications, is on ships, offshore wind turbines and wave power devices.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende skibs og offshore teknik, grundlæggende fluid mekanik, lineær bølgeteori samt programmering i Python/Matlab er forventet.  Ordinære og partielle differentialligninger er ønskelige." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic naval architecture, and ocean engineering, basic fluid mechanics, linear wave theory and programming in Python/Matlab are expected.  Ordinary and partial differential equations  are desirable." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41201.(41312/41102/10346).(41107)/41226.02601.02687.02002 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede bevægelsesligninger for en flydende maritim konstruktion ved brug af lineære koefficienter" />
+          <Txt Lang="en-GB" Txt="Express the equations of motion for a floating marine structure in terms of linear coefficients" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gå frem og tilbage mellem den tid-og frekvens-domæne repræsentationer af problemet" />
+          <Txt Lang="en-GB" Txt="Go back and forth between the time- and frequency-domain representations of the problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede relationer mellem forskellige sprednings problemer og deres asymptotiske grænser " />
+          <Txt Lang="en-GB" Txt="Derive relationships between different scattering problems and their asymptotic limits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt=" Bruge Green's sætning til at udlede rand integral  formuleringen" />
+          <Txt Lang="en-GB" Txt="Use Green's theorem to derive the boundary integral formulation of the problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lave en diskretisering af rand integral formuleringen til numeriske beregninger " />
+          <Txt Lang="en-GB" Txt="Discretize the boundary integral equation to obtain a numerical method suitable for calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beslutte hvilke numerisk løsning teknik der er bedst egnet til et bestemt problem" />
+          <Txt Lang="en-GB" Txt="Decide which numerical solution technique is best suited to a particular application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en program for at løse bevægelsesligninger i Matlab/Python" />
+          <Txt Lang="en-GB" Txt="Write a solver for the equations of motion in Python/Matlab" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne responsen af en flydende konstruktion i bølge og sammenligne med etablerede benchmark løsninger" />
+          <Txt Lang="en-GB" Txt="Compute the response of a floating structure in waves and compare with established benchmark solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan svage ikke-lineær effekter kan inkorporeres i en tids domæn løsning" />
+          <Txt Lang="en-GB" Txt="Explain how weakly-nonlinear effects can be incorporated into a time-domain analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan ikke-lineære effekter kan indgå i analysen" />
+          <Txt Lang="en-GB" Txt="Describe how nonlinear effects can be included in the analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Beregning af bølgeinducerede bevægelser af skibe og maritime konstruktioner </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:43.01" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

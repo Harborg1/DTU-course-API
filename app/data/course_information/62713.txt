@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="62713" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Grundlæggende C programmering" />
+        <Title Lang="en-GB" Title="Basic C Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="78867" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Schultz</FamilyName>
+            <Email>osch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="213063" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Gökçe</GivenName>
+            <FamilyName>Aydos</FamilyName>
+            <Email>gokay@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="I den første del gennemgår du et tilfældigt afleveringsproblem, og i den anden del svarer du på spørgsmål baseret på læringsmålene. &#xD;&#xA;&#xD;&#xA;Alle quizzer og problemløsninger skal afleveres for at kunne gå til eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="In the first part, you present a randomly selected assignment you have submitted, and in the second part, you answer questions based on the learning objectives.&#xD;&#xA;&#xD;&#xA;All quizzes and problem solutions must be submitted in order to attend the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Depending on the number of students, an additional day may be necessary." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Afhængigt af antallet af studerende kan en ekstra dag være nødvendig." />
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Værktøjer: Du bruger VS Code til at udvikle dine programmer samt Git til at føre en dagbog over din kode og dele dit arbejde med andre. 
+
+Flowcharts: Du tegner diagrammer for at designe og beskrive et program før og mens du koder det. 
+
+Programstruktur, syntaks, variabler, datatyper, operatorer: Du lærer, hvordan et program er opbygget, og hvordan du arbejder med data og beregninger. 
+
+Programkontrol: Du vælger kontrolstrukturer som `if-else`, `switch` og `for`/`while`-løkker til at lade programmet tage beslutninger og gentage processer. 
+
+Funktioner: Du genbruger kode uden copy-paste og skriver kode, der beregner eller behandler data forskelligt afhængigt af, hvad du sender ind, fx en funktion, der beregner arealet af forskellige former. 
+
+Header-filer: Du bygger dine programmer på eksisterende kode skrevet af andre og skriver selv kode som kan deles på tværs af flere filer. 
+
+Arrays: Du samler data af samme type, fx en liste af temperaturer eller karakterer, i stedet for at bruge en variabel per værdi. 
+
+Pointere: Du arbejder med hukommelsesadressen, hvor data ligger, i stedet for at kopiere store mængder data, fordi arrays og nogle funktioner arbejder direkte med adresser. 
+
+Structs: Du samler flere værdier af forskellige datatyper i en variabel, fx navn, alder og vægt for en person. 
+
+Fejlsøgning / debugging: Du håndterer oversættelsesfejl (compilerfejl) og lærer, hvordan du undersøger fejl i din programfunktionalitet. 
+
+Strings: Mennesker kommunikerer med computere gennem tekst, som gemmes som strings. Du lærer, hvordan du læser, skriver og manipulerer strings. 
+
+Fil-Input-Output: Du læser data fra filer ind i dit program i stedet for at taste dem ind manuelt og gemmer resultatet tilbage i en fil efter behandling.  
+
+AI-assisteret programmering: Efter du har lært det fundamentale, prøver du at udvikle med AI som hjælper. Du specificerer krav og skriver tests og gentager processen indtil kravene er opfyldt.</Contents>
+          <Teaching_And_Learning_Methods>Du arbejder med problemer og opgaver, som danner grundlaget for din eksamen. Teorien forbereder du hjemmefra og udvikler videre i selve undervisningen.</Teaching_And_Learning_Methods>
+          <Course_Literature>C How To Program, Deitel et al., 9th edition</Course_Literature>
+          <Course_Objectives>At udvikle grundlæggende programmeringsfærdigheder i C, så du kan skrive programmer på en læsbar og systematisk måde samt teste og analysere deres funktionalitet.</Course_Objectives>
+          <Remark>Energy Technology and Computer Science 
+Elektrisk Energiteknologi 1. semester
+Elektroteknologi: 1. semester
+
+En del af undervisningen kan foregå på engelsk.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Tools: You use VS Code to develop your programs and Git to keep a logbook of your code and share your work with others.
+
+Flowcharts: You draw diagrams to design and describe a program before and during coding.
+
+Program structure, syntax, variables, data types, operators: You learn how a program is built and how to work with data and calculations.
+
+Program control: You choose control structures such as if-else, switch, and for/while loops to let the program make decisions and repeat processes.
+
+Functions: You reuse code without copy-paste and write code that calculates or processes data differently depending on what you pass into the function—for example, a function that calculates the area of different shapes.
+
+Header files: You build your programs on existing code written by others and write your own code that can be shared across multiple files.
+
+Arrays: You collect data of the same type (e.g., a list of temperatures or grades) instead of using one variable per value.
+
+Pointers: You work with the memory address where data is stored instead of copying large amounts of data, and because arrays and some functions operate directly with addresses.
+
+Structs: You group multiple values of different data types into a single variable—for example, name, age, and weight of a person.
+
+Debugging: You handle compilation errors and learn how to investigate errors in your program’s functionality.
+Strings: Humans communicate with computers through text stored as strings. You learn how to read, write, and manipulate strings.
+
+File I/O: You read data from files into your program instead of entering them manually, and store the processed results back to a file.
+
+AI-assisted programming: After learning the fundamentals, you try developing with AI as a helper. You specify requirements and write tests, repeating the process until the requirements are met.</Contents>
+          <Teaching_And_Learning_Methods>You work with problems and assignments that form the basis of your exam. You prepare the theory at home and develop it further during the lessons.</Teaching_And_Learning_Methods>
+          <Course_Literature>C How To Program, Deitel et al., 9th edition</Course_Literature>
+          <Course_Objectives>To develop fundamental programming skills in C so you can write programs in a readable and systematic way and test and analyze their functionality.</Course_Objectives>
+          <Remark>Energy Technology and Computer Science 
+Elektrisk Energiteknologi 1. semester
+Elektroteknologi: 1. semester
+
+Part of the teaching may be in English.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsætte et udviklingsmiljø til C-programmering. " />
+          <Txt Lang="en-GB" Txt="Set up a development environment for C programming." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere kode i et Git-repository og anvende grundlæggende arbejdsgange som init, add og commit." />
+          <Txt Lang="en-GB" Txt="Organize code in a Git repository and use basic workflows such as init, add, and commit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualisere programlogik med flowcharts for at planlægge en løsning. " />
+          <Txt Lang="en-GB" Txt="Visualize program logic with flowcharts to plan a solution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Genkende, forklare og anvende grundlæggende C-programmeringskoncepter, herunder programstruktur, syntaks, datatyper, variabler, operatorer." />
+          <Txt Lang="en-GB" Txt="Recognize, explain, and use fundamental C programming concepts, including program structure, syntax, data types, variables, and operators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Læse data fra tastatur og filer og skrive data til skærm og filer ved hjælp af standardbiblioteket." />
+          <Txt Lang="en-GB" Txt="Read data from the keyboard and files, and write data to the screen and files using the standard library." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende betingelser og løkker til at styre programmets forløb." />
+          <Txt Lang="en-GB" Txt="Use conditions and loops to control program flow." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Nedbryde et stort problem i funktioner." />
+          <Txt Lang="en-GB" Txt="Break down a large problem into functions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere og fordele funktionalitet med header-filer." />
+          <Txt Lang="en-GB" Txt="Integrate and distribute functionality using header files." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og afprøve funktioner med debugger og testcases for at løse programmeringsproblemer." />
+          <Txt Lang="en-GB" Txt="Analyze and test functions with a debugger and test cases to solve programming problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende adresser (pointere) i samspil med centrale funktioner til fx tekstinput, tekstbehandling og filhåndtering." />
+          <Txt Lang="en-GB" Txt="Use addresses (pointers) together with essential functions for text input, text processing, and file handling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende arrays og structs til at organisere data." />
+          <Txt Lang="en-GB" Txt="Use arrays and structs to organize data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende AI-understøttede udviklingsværktøjer til at generere, vurdere og tilpasse kode på baggrund af krav og test." />
+          <Txt Lang="en-GB" Txt="Use AI-assisted development tools to generate, evaluate, and adapt code based on requirements and tests." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://c-programming.aydos.de" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundlæggende C programmering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="62712" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:04.49" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02116" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Netværksforbundne indlejrede systemer" />
+        <Title Lang="en-GB" Title="Networked Embedded Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="65890" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Xenofon</GivenName>
+            <FamilyName>Fafoutis</FamilyName>
+            <Email>xefa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="74568" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Charalampos</GivenName>
+            <FamilyName>Orfanidis</FamilyName>
+            <Email>chaorf@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="230570" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Roberto</GivenName>
+            <FamilyName>Morabito</FamilyName>
+            <Email>romor@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="228473" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Massimo</GivenName>
+            <FamilyName>Pavan</FamilyName>
+            <Email>mapav@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Internet access not allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Internetadgang er ikke tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Netværksforbundne indlejrede systemer, mikrocontrollere, sensorer, aktuatorer, indlejret systemdesign, input/output porte, analog-til-digital konvertere, pulsbredde modulatorer, seriel kommunikation, UART, SPI, I2C, differentiel signalering, medium adgangskontrol, CAN Bus, Ethernet, Automotive Ethernet, trådløst indlejret netværk, radio duty cycling, tidssynkronisering, GPS, NTP, PTP, industrielle netværk, indlejret softwareudvikling, indlejrede operativsystemer, afvikling, samtidighed, interrupts, timere, laveffekttilstande, indlejret maskinlæring, TinyML, ydelsesevaluering, pålidelighed, energieffektivitet, latens</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og lab</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset vil give grundlæggende, avanceret samt praktisk viden om design og implementering af netværksforbundne indlejrede systemer til tingenes internet (IoT). Kurset vil fokusere på byggeklodser på systemniveau til udvikling af netværksforbundne indlejrede systemer, herunder software-hardware-interaktion, sensorer og aktuatorer, intra-board kommunikation, kablet/trådløst indlejret netværk, indlejret softwareudvikling, ydelsesevaluering og -testning, samt databehandling på enheden og indlejret maskinlæring.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Networked embedded systems, microcontrollers, sensors, actuators, embedded system design, input/output ports, analogue-to-digital converters, pulse width modulators, serial communication, UART, SPI, I2C, differential signalling, medium access control, CAN Bus, Ethernet, Automotive Ethernet, wireless embedded networking, radio duty cycling, time synchronisation, GPS, NTP, PTP, industrial networks, embedded software development, embedded operating systems, scheduling, concurrency, interrupts, timers, low-power modes, embedded machine learning, TinyML, performance evaluation, reliability, energy-efficiency, latency</Contents>
+          <Teaching_And_Learning_Methods>Lectures and lab</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course will provide basic, advanced, as well as practical knowledge on the design and implementation of networked embedded systems for the Internet of Things (IoT). The course focuses on system-level building blocks for developing networked embedded systems including software-hardware interaction, sensors and actuators, intra-board communication, wired/wireless embedded networking, embedded software development, performance evaluation and testing, as well as on-device data processing and embedded machine learning.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="grundlæggende kendskab til C-programmering og operativsystemer (det anbefales at tage 02159 senest samtidigt)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="basic knowledge in C programming and operating systems (it is recommended to take 02159 latest at the same semester)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02112.02159" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive grundlæggende begreber inden for netværksforbundne indlejrede systemer og deres rolle inden for tingenes internet (IoT). " />
+          <Txt Lang="en-GB" Txt="describe basic concepts in the field of networked embedded systems and their role within the Internet of Things (IoT). " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere de forskellige undersystemer i et basalt netværksforbundet indlejret system, og hvordan de interagerer med hinanden. " />
+          <Txt Lang="en-GB" Txt="identify the different subsystems of a basic networked embedded system and how they interact with each other. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de grundlæggende måder, hvorpå netværksforbundne indlejrede systemer interagerer med det fysiske miljø. " />
+          <Txt Lang="en-GB" Txt="explain the fundamental ways networked embedded systems interact with the physical environment. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere fordele og ulemper ved forskellige intra-board og inter-board kommunikationstilgange. " />
+          <Txt Lang="en-GB" Txt="evaluate the advantages and disadvantages of different intra-board and inter-board communication approaches. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare afvejningen mellem forskellige metoder til kablet/trådløs indlejret systemkommunikation. " />
+          <Txt Lang="en-GB" Txt="explain the trade-offs among different means for wired/wireless embedded system communication. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare fordele og ulemper ved forskellige metoder til tidssynkronisering. " />
+          <Txt Lang="en-GB" Txt="explain the advantages and disadvantages among different means of time synchronisation. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe indlejret software og programmere basale netværksforbundne indlejrede systemer. " />
+          <Txt Lang="en-GB" Txt="design embedded software and program basic networked embedded systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og teste netværksforbundne indlejrede systemer. " />
+          <Txt Lang="en-GB" Txt="design and test networked embedded systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Netværksindlejrede Systemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02226" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:39.807" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

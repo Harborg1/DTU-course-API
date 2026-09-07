@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41315" University="dtu" LastUpdated="2023-03-27+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Anvendt CFD" />
+        <Title Lang="en-GB" Title="Applied CFD" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="7646" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jens Honore</GivenName>
+            <FamilyName>Walther</FamilyName>
+            <Email>jhwa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="3 individualiserede grupperapporter og mundtlig præsentation på kursets sidste dag." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="3 individualized group reports and oral presentation last day of the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver en introduktion til de styrende Navier-Stokes ligninger og deres numeriske løsning vha. finite-volume metoden. Kurset præsenterer løsningsmetoder til kobling af hastigheds- og tryk feltet i forbindelse med eksplicit og implicit tidsintegration. Kurset gennemgår desuden direkte og iterative løsningsalgoritmer.
+Kursets fokus er anvendelse af den kommercielle CFD pakke: STAR-CCM+  på praktiske fluid mekaniske problemer.
+
+Computational Fluid Dynamics (CFD) er numerisk analyse af strømningsmekanik, varmetransmission og relaterede fysiske processer. CFD involverer formulering af de styrende partielle differentialligninger for masse, momentum og energi, samt en diskretisering af disse ligninger vha. finite-differenser, finite-volume eller finite-element.
+Finite-volume metoden er den foretrukne metode ved ingeniørmæssige anvendelser da den tillader beregninger af strømninger i komplekse geometrier med et minimum krav til computer hukommelse og regnetid.
+Kurset gennemgår rumlig og tidslig finite-volume diskretisering af de styrende ligniger, samt teknikker til løsning af de diskrete ligningssystemer.
+Kurusdeltagerne kan medbringe egne (STAR-CCM+) strømningsproblemer til øvelserne i den 3. uge.</Contents>
+          <Teaching_And_Learning_Methods>formiddag: forelæsninger
+eftermiddag: øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Ferziger and Peric
+Computational Methods for Fluid Dynamics, Springer, 2002</Course_Literature>
+          <Course_Objectives>Kursets mål er at give en introduktion til den teoretiske baggrund for Computational Fluid Dynamics (CFD) og fokusere på den praktisk anvendelse af den kommercielle CFD pakke STAR-CCM+.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course gives an introduction to the governing Navier-Stokes equations and their solution using the finite-volume method. The course presents solution procedures for the velocity-pressure coupling for explicit and implicit time discretization schemes. Direct and iterative solution procedures for the linearized equations are discussed. The focus of the course is application of the commercial CFD package: STAR-CCM+ for practical problems in fluid mechanics.
+
+Computational Fluid Dynamics (CFD) is the numerical analysis of fluid motion, heat transfer and associated phenomena. It involves the formulation of the governing partial diffential equations describing the transport of mass, momentum and heat, and a discretiation of these equations using finite-difference, finite-volume or finite-element methods.
+For engineering applications the finite volume discretization is often method of choice as it allows simulations of fluid flow in complex geometries with a minimum requirement of computer memory and execution time. The course will outline the steps required for the spatial and temporal discretization of the governing equations using finite-volumes and describe techniques for the solution of the discrete set of equations. 
+The participants may bring their own (STAR-CCM+) flow problem for the exercises in the 3rd week of the course.</Contents>
+          <Teaching_And_Learning_Methods>morning lectures
+afternoon exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Ferziger and Peric
+Computational Methods for Fluid Dynamics, Springer, 2002</Course_Literature>
+          <Course_Objectives>The course give an introduction to the theory of Computational Fluid Dynamics (CFD) and focus on the practical application of the commercial CFD package STAR-CCM+</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede finite-volume diskretisering af de inkompressible Navier-Stokes ligninger" />
+          <Txt Lang="en-GB" Txt="derive a finite-volume discretisation for the incompressible Navier-Stokes equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede første og anden ordens rumlig diskretisering" />
+          <Txt Lang="en-GB" Txt="derive first and second order spatial discretization schemes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede en trykligning for de inkompressible Navier-Stokes ligninger (SIMPLE algoritmen)" />
+          <Txt Lang="en-GB" Txt="derive a pressure equation for the incompressible Navier-Stokes equation (the SIMPLE algorithm)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udlede første og anden ordens eksplicitte og implicitte tidsdiskretiseringsskemaer" />
+          <Txt Lang="en-GB" Txt="derive first and second order explicit and implicit time integration schemes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="generere beregningsnet vha. STAR-CCM+" />
+          <Txt Lang="en-GB" Txt="create meshes using the STAR-CCM+" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og udvælge korrekte fysiske og numeriske randbetingelser" />
+          <Txt Lang="en-GB" Txt="analyze and select proper physical and numerical boundary conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og udvælge korrekte fysiske modeller" />
+          <Txt Lang="en-GB" Txt="analyze and select appropriate physical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme tidsskridt under hensyn til Courant og Fourier stabilitetsgrænser" />
+          <Txt Lang="en-GB" Txt="select an appropriate time step size based on Courant and Fourier stability limits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="generere visualisering af strømningsfelter vha. STAR-CCM+" />
+          <Txt Lang="en-GB" Txt="produce flow visualisations using STAR-CCM+" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41312. 41323" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Anvendt CFD kursus i STAR-CCM+</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="12" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="83" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="17" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:52.263" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

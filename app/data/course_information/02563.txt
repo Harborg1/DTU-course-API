@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02563" Volume="2026/2027" University="dtu" LastUpdated="2026-06-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Generative metoder til computergrafik" />
+        <Title Lang="en-GB" Title="Generative Methods for Computer Graphics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Udbydes i lige år" />
+          <Schedule_Txt Lang="en-GB" Txt="Offered in even-numbered years" />
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="4465" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>J. Andreas</GivenName>
+            <FamilyName>Bærentzen</FamilyName>
+            <Email>janba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen er baseret på en afsluttende projektrapport ledsaget af en kort præsentationsvideo. Op til fire studerende kan samarbejde om et projekt, og der indsendes kun én video pr. projekt, men rapporterne er individuelle. Studerende kan kun deltage i prøven, hvis et antal øvelsesrapporter er godkendt. Øvelserne udføres i grupper." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assessment is based on a final project report accompanied by a brief presentation video. Up to four students can collaborate on a project, and only one video is submitted per project, but the reports are individual. Students can only participate in the exam if a number of exercise reports have been approved. Exercises are carried out in groups." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Generering af punktfordelinger med f.eks. jittering og Poisson disk metoden
+- Partikelsystemer til simulering af væske, granulære materialer og sværme.
+- pixel og patch baseret billedsyntese med kildepatch sampling, bølgefunktionskollaps og læringsbaserede metoder.
+- Fraktaler og generering af selvlignende strukturer i billeder og 3D-former.
+- Grammatikbaserede metoder og L-systemer til digital botanik og andre typer 3D-indhold.
+- Støjgenerering i nD og specifikke typer støj såsom Perlin-støj, Worley-støj, curl-støj og phasor-støj.
+-Syntese af 3D-former ved hjælp af implicitte repræsentationer såsom afstandsfelter og dyb læring af 3D-former ved hjælp af implicitte repræsentationer.
+- Biologisk informerede metoder: Turing-mønstre, cellulære automater, differentialvækst og evolutionære metoder til formfinding.
+- Brug af polygonnet til at generere 3D former.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus handler om metoder til at syntetisere digitalt visuelt indhold i form af billeder, 3D-modeller, partikelsystemer og dynamiske fænomener. Mange af disse metoder er inspireret af fysiske eller biologiske fænomener; nogle er rent algoritmiske og andre er datadrevne. Kurset dækker de underliggende modeller, matematiske fundamenter og de praktiske implementeringer.</Course_Objectives>
+          <DTU_Remark>Kurset afholdes i lige år og næste gang i efteråret 2026</DTU_Remark>
+          <Remark>Kursuslitteraturen består af akademiske artikler og noter. Øvelserne vil mestendels bestå af programmering i Python, brug af Blender til at skabe indhold, og shader-programmering ved hjælp af GLSL.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Generation of point samples, using e.g. jittering and Poisson disc sampling. 
+- Particle systems for simulation of fluids, granular material, and swarms.
+- Pixel and patch based image (texture) synthesis using source patch sampling, wave function collapse, and learning based methods.
+- Fractals and the generation of self-similar structures in images and 3D shapes.
+- Grammar based methods and L-systems for digital botany and other types of 3D content.
+- Noise generation in nD and specific types of noise such as Perlin noise, Worley noise, curl noise, and phasor noise.
+- Synthesis of 3D shapes using implicit representations such as signed distance fields and deep learning of 3D shapes in terms of implicit representations.
+- Biologically informed methods: Turing patterns, cellular automata, differential growth, and evolutionary methods for form finding.
+- Using polygonal meshes for 3D shape synthesis.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course is about methods for synthesizing digital, visual content in the form of images, 3D models, particle systems, and dynamic phenomena. Many of these methods are inspired by physical or biological phenomena; some are purely algorithmic and some are data-driven. The course covers the underlying models, mathematical underpinnings, and the practical implementations.</Course_Objectives>
+          <DTU_Remark>This course is offered in even-numbered years. Next time in the autumn of 2026.</DTU_Remark>
+          <Remark>The course literature consists of academic papers and course notes. The exercises will mostly consist of programming in Python, using Blender for content creation and rendering, and shader programming using GLSL.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kvalifikationer svarende til mindst et kursus i computergrafik. Bemærk at 02561 kan følges samtidigt. Erfaring med programmering og forståelse for fundamentale algoritmer og datastrukturer er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Qualifications that correspond to at least one course in computer graphics. Note that 02561 can be taken concurrently. Programming experience and familiarity with fundamental algorithms and data structures are an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02561" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="generere punktfordelinger." />
+          <Txt Lang="en-GB" Txt="create point sample sets." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte partikler til at simulere ensembler." />
+          <Txt Lang="en-GB" Txt="use particles to simulate ensembles of simple entities." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="generere syntetiske billeder, teksturer og 3D modeller med maskinlæring." />
+          <Txt Lang="en-GB" Txt="synthesise images, textures, and 3D models using learning-based methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="generere fraktale billeder og 3D modeller." />
+          <Txt Lang="en-GB" Txt="generate fractal images and 3D models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="syntetisere 3D objekter med grammatikbaserede metoder såsom L-systemer." />
+          <Txt Lang="en-GB" Txt="synthesize 3D objects using grammar-based methods such as L-systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge syntetiske støjfunktioner i forbindelse med generative metoder." />
+          <Txt Lang="en-GB" Txt="use synthetic noise functions in generative methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skabe implicitte 3D modeller med f.eks. afstandsfelter." />
+          <Txt Lang="en-GB" Txt="create implicitly represented 3D objects using e.g. distance fields." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="manipulere polygonnet" />
+          <Txt Lang="en-GB" Txt="manipulate polygonal meshes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende bio-inspirerede metoder som differentiel vækst til formgenerering." />
+          <Txt Lang="en-GB" Txt="apply bio-inspired methods such as differential growth for form finding." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og diskutere underliggende principper for generative metoder." />
+          <Txt Lang="en-GB" Txt="explain and discuss underlying principles of generative methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02564" />
+        <PreviousCourse CourseCode="02564" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-06-10" Time="15:28:27.92" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

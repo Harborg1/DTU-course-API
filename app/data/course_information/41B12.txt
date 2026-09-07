@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41B12" Volume="2026/2027" University="dtu" LastUpdated="2026-05-01+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_MASTER" />
+        <Title Lang="da-DK" Title="Brandmodellering" />
+        <Title Lang="en-GB" Title="Fire modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Delvist på Campus Lyngby, se https://www.brand.dtu.dk/undervisningsuger, og delvist online." />
+          <LocationTxt Lang="en-GB" Txt="Partly on Campus Lyngby, see https://www.brand.dtu.dk/undervisningsuger, and partly online." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Forår.&#xD;&#xA;Tre ophold på DTU, se https://www.brand.dtu.dk/undervisningsuger for de eksakte datoer" />
+          <Schedule_Txt Lang="en-GB" Txt="Spring.&#xD;&#xA;Three stays at DTU, see https://www.brand.dtu.dk/undervisningsuger for the exact dates" />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <External_Course_Responsible Email="silvia.arias@brand.lth.se" Name="Silvia Arias" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="52423" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Bjarne Bruun Paulsen</GivenName>
+            <FamilyName>Husted</FamilyName>
+            <Email>bphu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2422" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lars Schiøtt</GivenName>
+            <FamilyName>Sørensen</FamilyName>
+            <Email>lsso@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der skal afleveres 3 individuelle rapporter, hvoraf de 2 første skal godkendes og den sidste er kararaktergivende." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Three individual reports must be submitted, the first two of which must be approved and the last is graded." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Tilmelding kun via DTU Learn for Life: learnforlife@dtu.dk &#xD;&#xA;(se også https://www.brand.dtu.dk/mib-tilmelding)&#xD;&#xA;" />
+            <Supp_Txt Lang="en-GB" Txt="Registration only via DTU Learn for Life: learnforlife@dtu.dk &#xD;&#xA;(see https://www.brand.dtu.dk/mib-tilmelding)&#xD;&#xA;" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De tre undervisningsdele fokuserer hhv. på: i) modellering af evakuering; ii) modellering af brand og iii) integration mellem brand og evakuerings modellerne.
+I første og andet modul præsenteres de vigtigste teoretiske aspekter i relation til Computational Fluid Dynamics (CFD) og evakuerings algoritmer. De benyttede programmer er FDS som CFD-program og Pathfinder som evakueringsprogram. Syntaksen af inputfiler for disse programmer vil introduceres og simple modeller vil oprettes. Gennem simuleringer vil kritiske aspekter af modellering blive belyst, såsom: i) validering af modellen; ii) objektivitet af løsningen og følsomhed overfor usikkerheder, iii) begrænsninger af resultaterne, afhængigt af de gjorte forenklinger og antagelser.
+Som første hjemmeopgave efter den første modul skal de studerende foretage en  brandmodellering med FDS og bedømme kritiske forhold, herunder temperatur og røglagshøjde . Som anden hjemmeopgave efter det andet modul skal de studerende gennemføre en evakueringssimulering af en bygning med Pathfinder og evaluere evakueringstid.  
+
+Mere avancerede funktioner i FDS og Pathfinder vil også introduceres i løbet af den tredje modul og samspillet mellem brand- og evakueringsmodeller vil præsenteres.
+Som afsluttende opgave skal de studerende udføre et integreret design på baggrund af de brand- og evakuerings simuleringer, som blevet udviklet i de tidligere hjemmeopgaver. Modellerne og resultaterne skal diskuteres i en rapport.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og klasseøvelser i løbet af undervisningsmoduler; fjernundervisning med vejledning</Teaching_And_Learning_Methods>
+          <Course_Literature>Alt materiale hentes på nettet og er udgiftsfrit.
+
+Brand:
+- Current release of Fire Dynamic Simulator (FDS v.6.10.1) and Smokeview (SMV 6.10.1) freeware (https://pages.nist.gov/fds-smv/downloads.html)
+- NIST Special Publication 1019 (2025), Fire Dynamics Simulator (Version 6) - User’s Guide (https://pages.nist.gov/fds-smv/manuals.html)
+- Husted, B.P. (2026). FDS User Manual: A practical manual on how to use FDS. DTU Construct (https://brandogsikring.dk/files/Argos/fds_manual/Husted_FDS_User_Manual.pdf)
+- Gissi E. (2009): Introduction to fire simulation with FDS and Smokeview 
+- CFD Best Practice, Best Practice gruppen, Denmark, November 2009 (https://hbr.dk/wp-content/uploads/2016/10/Best-Practice-CFD-november-2009.pdf)
+
+Evakuering:
+-Ronchi, E., Nilsson, D. (2016). Basic Concepts and Modelling Methods. In: Cuesta, A., Abreu, O., Alvear, D. (eds) Evacuation Modeling Trends. Springer, Cham. https://doi.org/10.1007/978-3-319-20708-7_1</Course_Literature>
+          <Course_Objectives>Kurset sigter at give en indsigt i mest anvendte beregningsværktøjer til brand- og evakueringsmodellering og deres mulig integration i forhold med brandsikkerhed design.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is organized in three parts, focusing on: i) evacuation modelling; ii) fire modelling; and iii) integration between the two.
+In the first and second modules the main theoretical aspects related to computational fluid dynamic (CFD) and evacuation algorithms will be presented, respectively. The syntax of FDS as CFD program and of Pathfinder as evacuation program will be introduced and some simple models will be implemented. The simulations will be aimed at highlighting some critical aspects of the modelling, such as validation of the model, objectivity of the solution and sensitivity to uncertainties.
+As the first homework assignment after the first module, the students must carry out a fire modelling simulation using FDS and assess critical conditions, including temperature and smoke layer height.
+As the second homework assignment after the second module, the students must conduct an evacuation simulation of a building using Pathfinder and evaluate the evacuation time.
+
+Few more advanced functions of FDS and Pathfinder will be introduced and the interaction between fire modelling and evacuation modelling will be presented. Shortly after the end of the third module, a final assignment will be given to the students in the form of an integrated design problem based on the fire and evacuation models implemented in the two previous home assignments.
+The final models and results should be described in a detailed report.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and class exercises during the teaching modules, remote teaching with supervision</Teaching_And_Learning_Methods>
+          <Course_Literature>All material is freely downloadable in the internet.
+
+Fire:
+- Current release of Fire Dynamic Simulator (FDS v.6.10.1) and Smokeview (SMV 6.10.1) freeware (https://pages.nist.gov/fds-smv/downloads.html)
+- NIST Special Publication 1019 (2025), Fire Dynamics Simulator (Version 6) - User’s Guide (https://pages.nist.gov/fds-smv/manuals.html)
+- Husted, B.P. (2026). FDS User Manual: A practical manual on how to use FDS. DTU Construct (https://brandogsikring.dk/files/Argos/fds_manual/Husted_FDS_User_Manual.pdf)
+- Gissi E. (2009): Introduction to fire simulation with FDS and Smokeview 
+- CFD Best Practice, Best Practice gruppen, Denmark, November 2009 (https://hbr.dk/wp-content/uploads/2016/10/Best-Practice-CFD-november-2009.pdf)
+
+Evacuation:
+-Ronchi, E., Nilsson, D. (2016). Basic Concepts and Modelling Methods. In: Cuesta, A., Abreu, O., Alvear, D. (eds) Evacuation Modeling Trends. Springer, Cham. https://doi.org/10.1007/978-3-319-20708-7_1</Course_Literature>
+          <Course_Objectives>The course is aimed at providing an insight into the most widely used computational tools for fire and evacuation modeling and their possible integration in relation to fire safety design.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="liste de vigtigste typer af numeriske modeller for præ- og post-overtændingsbrand" />
+          <Txt Lang="en-GB" Txt="list the main types of numerical models for pre- and post-flashover fire" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de vigtigste sæt af ligninger og de vigtigste løsningsmetoder af CFD-programmer" />
+          <Txt Lang="en-GB" Txt="explain the main set of equations and the main solution methods of CFD programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de fænomener, der påvirker evakuering og de analytiske og empiriske formler, der beskriver dem" />
+          <Txt Lang="en-GB" Txt="explain the phenomena influencing evacuation and the analytical and empirical formula describing them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de væsentligste forskelle mellem CFD og evakuering modelleringsprogrammer og deres mulige integration" />
+          <Txt Lang="en-GB" Txt="explain the main differences between CFD and evacuation modeling programs and their possible integration  implement the necessary sensitivity analyses on the basis of the main model assumptions " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere de væsentligste egenskaber og inputparametre i FDS og Pathfinder" />
+          <Txt Lang="en-GB" Txt="identify the main input parameters in FDS and Pathfinder" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fremhæve de vigtigste usikkerheder og gennemføre nødvendige følsomhedsanalyser" />
+          <Txt Lang="en-GB" Txt="highlight the main uncertainties in fire and evacuation models and implement the necessary sensitivity analyses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre analyser i FDS og Pathfinder og fortolke den opnåede resultaterne" />
+          <Txt Lang="en-GB" Txt="to run analyses in FDS and Pathfinder and interpret the outcomes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="genkende væsentligste antagelser af modellerne og begrænsninger af resultater" />
+          <Txt Lang="en-GB" Txt="recognize the main assumptions of the fire and evacuation models and the limits of validity of the results" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.brand.dtu.dk/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="11B12" />
+        <PreviousCourse CourseCode="11B12" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="27" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="27" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="25" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="30" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:46.887" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

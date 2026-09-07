@@ -1,0 +1,11 @@
+cd /home/s214967/dtu-course-api
+
+docker compose up -d postgres
+
+LOCAL_DB_IP=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' dtu-course-api-postgres-1) \
+DATABASE_URL="postgresql+psycopg://dtu:dtu@$LOCAL_DB_IP:5432/dtu_courses" \
+MIGRATION_DATABASE_URL= \
+.venv/bin/alembic upgrade head
+
+LOCAL_DB_IP=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' dtu-course-api-postgres-1) \
+.venv/bin/python copy_supabase_database/copy_supabase_database.py

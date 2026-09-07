@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="46230" University="dtu" LastUpdated="2026-03-17+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Balancering af elsystemer med storskala vindkraft" />
+        <Title Lang="en-GB" Title="Power system balancing with large scale wind power" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="4505" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anca Daniela</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>anca@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="81572" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Kaushik</GivenName>
+            <FamilyName>Das</FamilyName>
+            <Email>kdas@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset indeholder et sæt af obligatoriske afleveringsopgaver, som er en forudsætning for deltagelse i den skriftlige eksamen. Den skriftlige eksamen afholdes som Multiple Choice.  Den endelige karakter er kun baseret på den skriftelige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course contains a set of assignment reports which must be passed as a condition to participate in the written exam. The written exam will be a Multiple Choice-exam. The final grade is only based on the written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kerneelementer på kurset:
+Grundlæggende principper om effektbalance og regulering af frekvens; Power balance ligning; Komponenter til produktion enheder; Lastdeling mellem flere produktions enheder; Beregninger i p.u.; Dynamisk modellering af et elsystem, med simple modeller for generator, laster og regulatorer; Vindmøllebegreber og egenskaber; Aerodynamisk effekt: Effektkurve og optimal effektivitet af a vindmølle; Inerti af vindmøller in p.u.; Modellering af fast hastigheds vindmøller; Modellering og kontrol af variabel hastigheds vindmøller; Integration af vindmøllernes model i elsystemmodellen.
+
+De studerende arbejder i grupper på max. 4 studerende i de obligatoriske opgaver. Gruppearbejdet dokumenteres i form af opgaverapporter, som skal bestås som en betingelse for at deltage i den skriftlige eksamen.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, computerøvelser, Multiple Choice quizzer, obligatoriske afleveringsopgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusnoter og overheads</Course_Literature>
+          <Course_Objectives>At give de studerende en forståelse af de grundlæggende principper for matematisk modellering og balancering af elsystemer. Med en ikke-elektrisk perspektiv, kurset introducerer de studerende til modellering og kontrol af balancen mellem produktion og forbrug i et elsystem med mange vindmøller.  De studerende vil lære og blive teknisk udfordret til at forstå, hvordan vindmøller kan påvirke og bidrage til effekt balancen og frekvens regulering i elsystemet. For at adressere disse udfordringer er en betydelig bestanddel af kurset afsat til teori og anvendelse af modellering og computersimuleringer. Matlab &amp; Simulink er brugt som simuleringsværktøj i kurset for at opnå de læringsmål.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fundamentals for power balance and frequency control; Power balance equation; Generating units components; Load sharing between multiple units; Per unit calculations; Power system frequency control loop with simple models for generators, loads and governors; Wind turbine concepts and characteristics; Aerodynamic power: Power curve and optimal efficiency of a wind turbine; Wind turbine inertia in per-unit; Modeling fixed speed wind turbines; Modelling and control of variable speed wind turbines; Integration of wind power model into the power system model
+
+The students will work in groups of max. 4 students in the mandatory assignments. The group work will be documented in the form of assignment reports, which must be passed as a condition to participate in the written exam.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, computer exercises, Multiple Choice quizzes, mandatory assignment reports.</Teaching_And_Learning_Methods>
+          <Course_Literature>Course notes and slides</Course_Literature>
+          <Course_Objectives>To give the students an understanding of the basic principles of mathematical modeling and balancing  of an electrical system. With a non-electrical perspective, the course introduces the students to the modeling and control of the balance between generation and consumption of a power system with many wind turbines.
+The students will learn and be technically challenged understanding how wind turbines can influence and contribute to the power balance and frequency control of the power system. To address these challenges, an important part of the course is devoted to theory and practice of modeling and computer simulations. Matlab &amp; Simulink is used as simulation tool to achieve the learning objectives.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Matematik svarende til 01005, fysik svarende til 10024 eller 10020. Introduktion til Matlab" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Mathematics corresponding to 01005, physics corresponding to 10024 or 10020. Introduction to Matlab" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01005.10024/10020.02631/02633" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og forklare principperne for balancering af elsystemer" />
+          <Txt Lang="en-GB" Txt="Understand and explain the principles of power system balancing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere kilder til effekt ubalance i et elsystem (vindkraft variation og usikkerhed)" />
+          <Txt Lang="en-GB" Txt="Identify sources of power system imbalance including wind power variability and uncertainty." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare værktøjskæden for balancering af elsystemet" />
+          <Txt Lang="en-GB" Txt="Explain the balancing tool chain." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive  principperne for regulering af frekvensen i elsystemet. " />
+          <Txt Lang="en-GB" Txt="Describe frequency control principles in power systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare modelleringsaspekter af regulering af frekvensen i elsystemet" />
+          <Txt Lang="en-GB" Txt="Explain modelling aspects of frequency control" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlæggende vindmøllekoncepter" />
+          <Txt Lang="en-GB" Txt="Describe  basic wind turbine concepts" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og implementere enkle dynamiske modeller til generatorer, belastninger, regulatorer og vindmøller." />
+          <Txt Lang="en-GB" Txt="Explain and implement simple dynamic models for generators, loads, governors and wind turbines." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og implementere en simpel dynamisk model til et ø-elsystem med mange vindmøller" />
+          <Txt Lang="en-GB" Txt="Develop and implement simple dynamic model for an island power system with wind power " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, forklare og præsentere modelresultater.  " />
+          <Txt Lang="en-GB" Txt="Analyze, explain and present model results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere vindmøllers bidrag til regulering af frekvensen i elsystemet" />
+          <Txt Lang="en-GB" Txt="Evaluate wind turbines contribution to the frequency control in the power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:34.947" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

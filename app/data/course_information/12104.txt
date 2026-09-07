@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="12104" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Modellering af miljøtekniske processer" />
+        <Title Lang="en-GB" Title="Environmental Modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="12" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="12" />
+        <Course_Responsible PersonKey="31113" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Luca</GivenName>
+            <FamilyName>Vezzaro</FamilyName>
+            <Email>luve@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="93506" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Klaus</GivenName>
+            <FamilyName>Mosthaf</FamilyName>
+            <Email>klmos@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="5870" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Stefan</GivenName>
+            <FamilyName>Trapp</FamilyName>
+            <Email>sttr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="4 gruppeøvelser + 4 multiple choice eksamen (ca. 30 min hver) + mundtlig eksamen (15 min for hele gruppe)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="4 group assignments + 4 multiple choice individual exam (ca. 30 min each) + oral exam (15 min for the whole group)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="All aids, including PC/tablet, are allowed&#xD;&#xA;Use of generative artificial intelligence (AI) is not allowed" />
+            <Aid_Txt Lang="da-DK" Txt="Alle hjælpemidler, herunder pc'er og tablets, er tilladt &#xD;&#xA;Brug af generativ kunstig intelligens (AI) er ikke tilladt" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Gruppeeksamen i eksamensperioden" />
+          <Duration Lang="en-GB" Txt="Group oral exam in the exam period" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset indeholder udvalgte emner som inkluderer: Modelleringsterminologi; modelopbygningsproces; nuldimensionale massebalancer for miljøproblemer; miljømodeller baseret på koblede ordinære og partielle differentialligninger, herunder modellering af masse- og energibevarelse og reaktiv transport samt modeller for mikrobielle processer; følsomhedsanalyse; parameterestimering og optimering; stokastisk modellering; programmering. Der tages eksempler fra områderne skæbne og virkninger af kemikalier i miljøet, grundvandsstrømning og -transport samt urbane vandssystemer.</Contents>
+          <Teaching_And_Learning_Methods>Kurset anvender problembaseret læring, hvor kernen af kurset er en række tutorials og opgaver, som eksponerer studerende for de vigtigste teknikker og koncepter i miljøteknisk modellering. Baggrundsviden bliver opbygget igennem fokuseret læsestof, diskussioner og forelæsninger.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at give de studerende de generelle kompetencer til at kunne arbejde med matematisk modellering og anvende disse på miljøtekniske problemer, som de vil bygge videre i specialisering kurser. Kurset har fire hovedelementer: i) massebalancer ved brug af store miljødatasæt, ii) deterministisk modellering ved hjælp af almindelige differentialligninger, iii) deterministisk modellering ved hjælp af partielle differentialligninger og iv) modeloptimering, følsomhedsanalyse og usikkerhed analyse. Kurset er opbygget omkring et bredt udvalg af eksempler fra det miljøteknologiske område og bruger softwarepakker og programmering sprog (f. eks. COMSOL Multiphysics, Python) til at illustrere generelle modelleringsprincipper. Studerende lærer, hvordan man integrerer observerede data og modeller med henblik på at løse miljørelaterede problemer, og hvordan man vurderer modellens resultater.</Course_Objectives>
+          <Remark>Kurset er et obligatorisk kursus for kandidater i miljøteknologi.
+Det er stærkt anbefalet at MSc-studerende følger kurset i det første år af deres MSc-studier.
+Det er vigtigt, at alle faglige forudsætninger er opfyldt ved kursets begyndelse (programmering, statistik) eller i løbet af semesteret (miljøtekniske processer).</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Topics will include selections from the following: Modelling terminology; model building process; zero-dimensional mass balances of environmental problems; environmental models based on coupled ordinary and partial differential equations, including modelling of mass and energy conservation and reactive transport, and models of microbial processes; sensitivity analysis; parameter estimation and optimisation; stochastic modelling; programming. Example cases are taken from the fields fate and effects of chemicals in the environment, groundwater flow and transport, and urban water systems.</Contents>
+          <Teaching_And_Learning_Methods>The underlying teaching philosophy is problem based learning. The core of the course consists of a series of tutorials and assignments, which should expose the students to the most important techniques used in environmental modelling. The tutorials and assignments are supported by focused reading, discussion, and lectures.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course aims to provide students the basic knowledge to work with mathematical models and apply them to environmental problems, providing the theoretical basis for subsequent applications in specialization courses. The course has four major elements: i) simple mass balances using big environmental datasets, ii) deterministic modelling using ordinary differential equations, iii) deterministic modelling using partial differential equations and iv) model optimisation, sensitivity analysis and uncertainty analysis. The course builds on a series of examples drawn from the field of environmental engineering and employs programming tools and languages (e.g., COMSOL Multiphysics, Python) to illustrate the general modelling principles. The course will teach students how to integrate observed data with models and apply them to describe environmental problems and evaluate model results .</Course_Objectives>
+          <Remark>The course is a mandatory course for the MSc in Environmental Engineering.
+It is highly recommended that MSc students complete the course in their first year of study.
+It is essential that all the academic prerequisites are met at the beginning of the course (programming, statistics) or during the semester (environmental processes).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmering (primært Python) er en nødvendig forudsætning for kurset (02002/02003). Studerende, der ikke har tidligere kendskab til programmering, skal opnå grundlæggende programmeringsfærdigheder inden kursets start (jf. kursus materialet på https://programmering.compute.dtu.dk/)&#xD;&#xA;Godt kendskab til både statistik (02402) og miljøprocesser (12102/12111) er påkrævet for at opnå kursets læringsmål." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Programming (mainly Python) is an essential prerequisite for the course (02002/02003). Students not having previous programming knowledge are required to get basic skills before the start of the course (refer to the material available at https://programmering.compute.dtu.dk/). &#xD;&#xA;Good knowledge of both statistics (02402) and environmental processes (12102/12111) is required to achieve the course learning objectives" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/02003.02402.12102/12111" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende grundlæggende fysisk, kemisk og biologisk viden til at beskrive i matematisk form et miljøproblem" />
+          <Txt Lang="en-GB" Txt="Apply fundamental physical, chemical and biological knowledge to mathematically describe an environmental problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og beskrive processerne, startbetingelser, og system grænsers, som er relevante for miljøtekniske problemer." />
+          <Txt Lang="en-GB" Txt="Identify and describe the governing processes, boundary and initial conditions that are relevant to environmental problems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere massebalancer, ordinære og partielle differentialligninger på baseret på forståelse af processen" />
+          <Txt Lang="en-GB" Txt="Formulate mass balances, ordinary and partial differential equations based on process understanding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende numeriske og analytiske teknikker ved hjælp af programmerings- og modelleringsværktøjer til at simulere miljøsystemer" />
+          <Txt Lang="en-GB" Txt="Employ numerical and analytical techniques, using programming and modelling tools to simulate environmental systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere modelresultater og deres usikkerhed" />
+          <Txt Lang="en-GB" Txt="Evaluate model results and their uncertainty" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå modelopførsel ved hjælp af følsomhedsanalyse" />
+          <Txt Lang="en-GB" Txt="Understand model behaviour through sensitivity analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende parameterestimering ved hjælp af måledata" />
+          <Txt Lang="en-GB" Txt="Apply parameter estimation by employing measured data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle modelleringsresultater på en klar, præcis og overbevisende måde" />
+          <Txt Lang="en-GB" Txt="Communicate modelling results in a clear, concise, and convincing manner" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle samarbejdsevner i et team af fagfæller" />
+          <Txt Lang="en-GB" Txt="Develop collaborative skills in a team of professional peers " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modellering af miljøtekniske processer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="9" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="78" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="30" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:50.183" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

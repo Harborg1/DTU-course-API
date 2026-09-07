@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02840" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">15</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Grundlæggende computerspilprogrammering (DADIU)" />
+        <Title Lang="en-GB" Title="Computer Game Programming Fundamentals (DADIU)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset foregår i alle skemamoduler og løber i første halvdel af 13-uger perioden i efteråret." />
+          <Schedule_Txt Lang="en-GB" Txt="This course covers all time slots in the first half of the autumn 13 week period" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="DADIU" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="DADIU" />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="4465" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>J. Andreas</GivenName>
+            <FamilyName>Bærentzen</FamilyName>
+            <Email>janba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individuelle rapporter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individual reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Studerende, der tilmelder sig dette kursus skal være optaget på DADIU." />
+            <Supp_Txt Lang="en-GB" Txt="Students who register for this course must be accepted into DADIU." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Computerspil og spiludvikling bredt, betydningsfulde computerspil, Unity3D spilmotoren, udvikling af komplet mini spil på få dage, selvstændigt kompetenceprojekt svarende til research and development i et spilfirma.</Contents>
+          <Teaching_And_Learning_Methods>Projektorienteret gruppearbejde og forelæsninger.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give den studerende grundig indsigt i spiludvikling set fra en programmørs synspunkt. 
+Herunder træning i programmering indenfor computerspil domænet og i samarbejde med andre kompetencer i en spilproduktion. En vigtig del af kurset er et selvstændigt udviklingsprojekt, hvor den studerende udvikler et softwareredskab i samarbejde med en anden komptence, der optræder som klient og motiverer projektet.</Course_Objectives>
+          <DTU_Remark>Dette kursus er første del af DADIU forløbet. Studerende, der tilmelder sig dette kursus skal være optaget på DADIU og skal samtidigt tilmelde sig  02841.</DTU_Remark>
+          <Remark>Aktiviteterne foregår nær Københavnsområdet, men det meste af tiden ikke på DTU.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Computer games and game development broadly, technical history of computer games and compute game genres, Unity3D game engine, development of a complete mini game in few days, an independent project comparable to research and development in a game company.</Contents>
+          <Teaching_And_Learning_Methods>Project oriented teamwork and lectures.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the student thorough insight into game development from a programmers point of view. This includes training in programming within the domain of computer games and training in collaboration with the other competencies in a game production. An important part of the course is an independent development project where the student develops a software tool in collaboration with another competence which assumes the client role and motivates the project.</Course_Objectives>
+          <DTU_Remark>This course is the first part of the DADIU programme. Students who sign up for this course must be accepted for the DADIU programme and must also sign up for 02841.</DTU_Remark>
+          <Remark>All activities are in or near the Copenhagen area, but mostly not at DTU.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurser i prototyping af computerspil og realtidsgrafik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Courses in prototyping of computer games and real-time graphics" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02823.02564" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle en avanceret softwarekomponent til et computerspil." />
+          <Txt Lang="en-GB" Txt="Develop an advanced software component for a computer game." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejde med folk der har andre kompetencer indenfor spiludvikling." />
+          <Txt Lang="en-GB" Txt="Collaborate with people who have other competencies in game development." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Hurtigt udvikle prototyper til computerspil." />
+          <Txt Lang="en-GB" Txt="Rapidly develop prototypes for for computer games." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle til computerspil både i script sprog (spilprogrammering) og oversatte sprog." />
+          <Txt Lang="en-GB" Txt="Develop for games in scripting languages as well as compiled languages." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere bredt kendskab til både hardware og software platforme for computerspil." />
+          <Txt Lang="en-GB" Txt="Demonstrate broad knowledge of hardware  as well as software platforms for computer games." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere overblik over computerspillets udvikling." />
+          <Txt Lang="en-GB" Txt="Demonstrate overview of the evolution of computer games. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstere solidt kendskab til et bestemt udviklingsmiljø til computerspil." />
+          <Txt Lang="en-GB" Txt="Demonstrate solid practical knowledge of a particular environment for game development." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge de bedste metoder til at løse et problem indenfor spil programmering." />
+          <Txt Lang="en-GB" Txt="Select the best methods for solving a given problem in game development." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="78" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="78" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="156" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="10" Min="2" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:36.99" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

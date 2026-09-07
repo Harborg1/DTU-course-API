@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02429" University="dtu" LastUpdated="2025-06-24+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Analyse af korrelerede data: Mixede lineære modeller" />
+        <Title Lang="en-GB" Title="Analysis of correlated data: Mixed linear models" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="41999" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Stockmarr</FamilyName>
+            <Email>anst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="111925" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Guillermina</GivenName>
+            <FamilyName>Eslava</FamilyName>
+            <Email>guiesl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives på grundlag af mundtlig eksamen og individuelle opgaver/rapporter. Herudover skal grupperapporter være godkendt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is based on the oral exam and individual assignments/reports. It is also required that group assignments/reports are approved." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil dække basal teori og anvendelse af mixede lineære modeller. Dette inkluderer systematiske og tilfældige effekter men også mere generelle korrelationsstrukturer, som kommer i spil i forbindelse med gentagne målinger/longitudinelle data.
+
+Kort sagt: Kurset giver teoretiske og praktiske værktøjer til statistisk analyse af datastrukturer, som ikke opfylder uafhængighedsantagelserne fra de indledende statistikkurser.
+
+Vi vil benytte det statistiske software R.</Contents>
+          <Teaching_And_Learning_Methods>Alt kursusmateriale vil være tilgængeligt online. Der vil ugentligt være to timers øvelser, herunder computer øvelser, mestendels med data analyse øvelser. Formatet vil afhænge af antallet af studenter, men man bør forvente involvering af de studerende.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursusmaterialet er pt. ikke tilgængeligt online</Course_Literature>
+          <Course_Objectives>At opnå kendskab og evne til at udføre statistisk analyse af data ved brug af såkaldte mixede lineære modeller med anvendelser inden for biologi, medicin, jordbrugs- og levnedsmiddelvidenskab samt tekniske videnskaber.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will cover basic theory and application of mixed linear models. This includes fixed and random effects but also more general correlation structures relevant to the analysis of repeated measurements/longitudinal data.
+
+In short: The course gives theoretical and practical tools for performing statistical analysis of data structures which do not satisfy the independence assumptions made in introductory statistics courses. 
+
+The statistical software R will be used.</Contents>
+          <Teaching_And_Learning_Methods>All course material will be available online. There will weekly be two hours lecturing and two hours for exercises including computing exercises, mostly practical data analysis challenges. The format will depend on the number of students participating, but student involvement is to be expected.</Teaching_And_Learning_Methods>
+          <Course_Literature>The course material is currently not available online.</Course_Literature>
+          <Course_Objectives>To obtain knowledge about and ability to perform statistical analysis of data using mixed linear models with applications in agriculture, food science, biology, medicine, and technical sciences.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Udover et introducerende statistikkursus (f.eks. 02402) er det anbefalet at have mindst to relevante statistikkurser. De to mest relevante kurser er 02411 og 02418." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="In addition to an introductory statistics course (e.g. 02402) it is recommended to have at least two relevant statistics courses. The two most relevant courses are 02411 and 02418." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02402/02403/02323).02411.02418" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede og anvende faktorstrukturdiagrammer for komplekse forsøgsdesign." />
+          <Txt Lang="en-GB" Txt="Construct and apply factor structure diagrams for complex experimental designs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre statistiske analyser baseret på teorien for mixede lineære modeller ved hjælp af det statistiske software R." />
+          <Txt Lang="en-GB" Txt="Perform statistical analyses based on the theory of mixed linear models using the statistical software R." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare teorien for mixede lineære modeller." />
+          <Txt Lang="en-GB" Txt="Explain the theory of mixed linear models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Differentiere mellem systematiske og tilfældige effekter." />
+          <Txt Lang="en-GB" Txt="Distinguish between random and fixed effects. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne og differentiere mellem forskellige relevante modeller og statistiske metoder.  " />
+          <Txt Lang="en-GB" Txt="Compare and distinguish between different relevant models and statistical methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre, forklare og diskutere statistiske analyser af data fra ubalancerede blok- og split-plot-forsøg." />
+          <Txt Lang="en-GB" Txt="Perform, explain, and discuss statistical analyses of data from unbalanced block and split-plot experiments. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre, forklare og diskutere statistiske analyser af data fra ubalancerede longitudinelle studier." />
+          <Txt Lang="en-GB" Txt="Perform, explain, and discuss statistical analyses of data from unbalanced longitudinal studies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre, forklare og diskutere hierarkiske statistiske analyser herunder analyser baseret på varianskomponentmodeller og regressionsmodeller med varierende koefficienter." />
+          <Txt Lang="en-GB" Txt="Perform, explain, and discuss hierarchical statistical analyses including analyses based on variance component models and regression models with varying coefficients." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre, forklare og diskutere statistiske analyser af gentagne målinger herunder identifikation af forskellige korrelationsstrukturer." />
+          <Txt Lang="en-GB" Txt="Perform, explain, and discuss statistical analyses for repeated measurements including identification of various correlation structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombinere og modificere de forskellige metodikker.   " />
+          <Txt Lang="en-GB" Txt="Combine and modify the various techniques." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02429" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Håndtering af mere komplekse data strukturer og forsøgssetup.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:48.173" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

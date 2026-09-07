@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42588" Volume="2026/2027" University="dtu" LastUpdated="2026-03-25+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Data og data science" />
+        <Title Lang="en-GB" Title="Data and data science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="23491" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Stefan Eriksen</GivenName>
+            <FamilyName>Mabit</FamilyName>
+            <Email>smab@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="34141" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Anders Kristian </GivenName>
+            <FamilyName>Munk</FamilyName>
+            <Email>ankm@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="64390" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mads</GivenName>
+            <FamilyName>Paulsen</FamilyName>
+            <Email>madsp@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueringen er baseret på tre gruppeprojekter og en mundtlig eksamen. Der gives en samlet karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based on three group projects and an oral exam. One overall grade is given." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset præsenterer generelle aspekter af data og dataindsamling. Samtidig giver det en introduktion til de forskellige datakategorier og deres kendetegn f.eks. observationsdata, hypotetiske data og dataindsamling via surveys, eksperimentelle data og realtidsdata. Kurset omhandler også governance f.eks. data management plans, GDPR og FAIR. I kurset skal de studerende løbende afprøve de forskellige værktøjer på forskellige datasæt, så de kan opbygge en forståelse af de udfordringer, der følger med databehandling (og hvor tidskrævende det er). Den sidste del af kurset omhandler dataanalyse og indeholder emner som deskriptiv statistik, data scraping, sprogteknologi, visualisering, regressions- og klassifikationsmodeller.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, diskussion og projekter.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kurset benytter
+- James, Witten, Hastie, Tibshirani, Taylor (2023) An Introduction to Statistical Learning: with Applications in Python. https:/​/​findit.dtu.dk/​en/​catalog/​64f4119c68cc5422d030e2e9. 
+
+Yderligere litteratur består af noter og artikler, som udleveres eller findes på findit.dtu.dk i løbet af kurset.</Course_Literature>
+          <Course_Objectives>Kurset handler om de udfordringer, som opstår, når man forsøger at besvare spørgsmål vha. data og forskellige tilgange til at løse disse udfordringer. Kursets hovedemne er derfor data, og det dækker viden om forskellige typer af data samt måder at indsamle og behandle data på. Kurset introducerer forskellige tilgange til deskriptiv analyse, datavisualisering og -analyse. Kurset har også til formål at give de studerende et overblik over forskellige skoler inden for statistik og data science, som alle bidrager med forskellige tilgange til at besvare spørgsmål vha. data f.eks. statistisk analyse vs. machine learning og eksplorativ vs. konfirmatorisk datavisualisering.</Course_Objectives>
+          <DTU_Remark>Obligatorisk kursus for Data Science og Management studerende, kurset er forbeholdt disse studerende.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers general aspects of data collection, management and analysis. It classifies various data categories, e.g. revealed preference data, stated preference data as well as data collection through surveys, experiments and online databases. It also covers governance issues such as data management plan and data management principles, such as GDPR and FAIR. Throughout the course, students will work on data to gain experience with data processing (and how time consuming it is). Various tools to do both exploratory analysis as well as data analysis will be covered including descriptive statistics, data scraping, language technology, visualisations, regression and classification tools.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, discussions and projects.</Teaching_And_Learning_Methods>
+          <Course_Literature>The course uses:
+- James, Witten, Hastie, Tibshirani, Taylor (2023) An Introduction to Statistical Learning: with Applications in Python. https:/​/​findit.dtu.dk/​en/​catalog/​64f4119c68cc5422d030e2e9.  
+
+Additional material is provided throughout the course.</Course_Literature>
+          <Course_Objectives>This course focuses on the challenges that arise when we try to use data to answer questions. In addition, it establishes various approaches to deal with these challenges. To establish such a focus, the course discusses data types, data collection techniques, and data management. In addition, the course focuses on tools for data processing, exploratory analysis and data visualisations. Finally, the course focuses on how various directions within data science can give different perspectives in a data analysis, e.g. statistical analysis vs. machine learning and exploratory vs. confirmatory data visualisation.</Course_Objectives>
+          <DTU_Remark>Mandatory course for the BSc in Data Science and Management. Reserved for these students.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere forholdet mellem problemstilling, metode og data" />
+          <Txt Lang="en-GB" Txt="Discuss the relationship between problem, plan and data to answer questions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige typer af data og dataindsamling" />
+          <Txt Lang="en-GB" Txt="Describe data types and ways to collect data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere data governance og producere en data management plan" />
+          <Txt Lang="en-GB" Txt="Discuss data governance and produce a data management plan" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte data til at besvare relevante spørgsmål" />
+          <Txt Lang="en-GB" Txt="Use data to answer relevant questions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage en deskriptiv analyse og visualisere data" />
+          <Txt Lang="en-GB" Txt="Conduct exploratory data analysis and visualisation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere forskellen mellem forskellige tilgange til statistik/data science" />
+          <Txt Lang="en-GB" Txt="Discuss differences between various approaches in statistics/data science" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende standardmetoder til analyse af kontinuerte data og fortolke resultater" />
+          <Txt Lang="en-GB" Txt="Apply common techniques to analyse continuous data and interpret the results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende standardmetoder til analyse af diskrete data og fortolke resultater" />
+          <Txt Lang="en-GB" Txt="Apply common techniques to analyse discrete data and interpret the results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende standardmetoder til analyse af tekstuelle data og fortolke resultater" />
+          <Txt Lang="en-GB" Txt="Apply common techniques to analyse textual data and interpret the results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere fokuserede og koncise dataanalyser" />
+          <Txt Lang="en-GB" Txt="Present focused and concise data analyses " />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02402/02403).42580.02002" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:15.8" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

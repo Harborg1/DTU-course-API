@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46035" University="dtu" LastUpdated="2026-03-17+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Energistyring med indlejrede systemer" />
+        <Title Lang="en-GB" Title="Energy management with embedded systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="41715" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Yi</GivenName>
+            <FamilyName>Zong</FamilyName>
+            <Email>yizo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="193242" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bruno</GivenName>
+            <FamilyName>Laurini</FamilyName>
+            <Email>brulau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="218339" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Muhammad Talha</GivenName>
+            <FamilyName>Siddique</FamilyName>
+            <Email>mtasi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives individuelt ud fra en vægtet evaluering af en samling af en enkelt-/multiple choice-quiz (uden hjælpemidler), en projektlaboratoriedemonstration og en projektrapport.&#xD;&#xA;Der gives én samlet karakter for kurset (helhedsvurdering)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is given individually based on a weighted evaluation of a collection of a single/multiple-choice Quiz (without aids), a project lab demonstration, and one project report. One combined grade is given for the course (overall assessment)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="30-minute quiz in English (without aids)" />
+            <Aid_Txt Lang="da-DK" Txt="30-minutters quiz på engelsk (uden hjælpemidler)" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Størstedelen af tiden arbejdes i laboratoriet i projektgrupper.
+Oversigtsforelæsninger gives om:
+- Energistyring systemer for intelligente huse og relaterede ICT-teknologier
+- Konkrete demand response  i intelligente huse applikationer (projekter)
+- 32-bit ARM mikrocontroller (Arduino MKR1000/1010)-indlejret systemet og de perifere enheder (A/D og D/A convertere, Timeren, I/O, PWM, Interrupter, og LCD display,osv.),inklusive tilsvarende programmering af registre.
+- Det integrerede udviklingsmiljø Arduino Embedded Workbench 
+- Kommunikationssystemer i smart energisystemer
+- Brugercentreret interface design</Contents>
+          <Teaching_And_Learning_Methods>Oversigtsforelæsninger og projektarbejde i grupper</Teaching_And_Learning_Methods>
+          <Course_Objectives>I fremtidens vision for intelligente huse forventes en energioptimeret husholdning, der er baseret på vedvarende energikilder og intelligente apparater.
+Eksempler på elementer i intelligente huse er apparater, der reagerer intelligent på forskellige systemforhold, automatiske mekanismer til koordinering af ressourcer og avancerede informationsudvekslingssystemer.
+Målet med dette kursus er at opnå hands-on erfaring med de energistyringsteknologier, der benyttes i disse systemer, ved at designe, implementere og teste en Smart Houses applikation på et mikrocontroller baseret, indlejret system. 
+De opnåede kompetencer kan også anvendes på smart grids og intelligente energisystemer.</Course_Objectives>
+          <DTU_Remark>Kurset er for studerende på 'Bæredygtigt energidesign', som har første prioritet ved evt. overtegning af kurset.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Most of the time, the students will work in the laboratory in project teams.
+Introductory lectures are given on:
+- Energy management systems (EMS) for smart houses and related ICT technology 
+- Specific demand response in smart houses’ applications (projects) 
+- A 32-bit ARM microcontroller(Arduino MKR1000/1010) system and its peripherals (A/D and D/A converters, Timer, I/O, PWM, Interrupter, and LCD display, etc.) including their corresponding registers' programming.
+- The integrated development environment Arduino Embedded Workbench 
+- Communication systems in smart energy systems 
+- User-centered interface design</Contents>
+          <Teaching_And_Learning_Methods>Introductory lectures and project teamwork</Teaching_And_Learning_Methods>
+          <Course_Objectives>Smart Houses are introduced as the vision of a future energy optimized households, which are based on renewable energy sources and intelligent apparatus.
+Examples of Smart Houses technologies are household appliances that react intelligently to varying system conditions, automatic mechanisms for coordination of resources, and advanced information exchange systems.
+The objective of this course is to gain hands-on experience with energy management technologies used in such systems, by designing, implementing and testing a Smart House application on a microcontroller based, embedded system. 
+The learnings from the course can also be applied to smart grids and intelligent energy systems.</Course_Objectives>
+          <DTU_Remark>The course is for students following 'Sustainable energy design'. These students have 1st priority</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende grundlæggende kendskab til C, Python, eller Java programmering, eller internet-protokoller, eller web programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent basic knowledge of programming, such as C, or Python, or Java programming, or internet protocols, or web programming." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30010./02312./" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå grundkoncepterne for energistyring systemer i intelligente huse" />
+          <Txt Lang="en-GB" Txt="understand the basic concepts of energy management systems in Smart Houses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere kravene til intelligente husholdningssystemer" />
+          <Txt Lang="en-GB" Txt="analyze the requirements of intelligent household systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en applikation der bruger input og output til at vekselvirke med en fysisk enhed" />
+          <Txt Lang="en-GB" Txt="design an application that uses inputs and outputs to interact with a physical device" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en brugergrænseflade til lokal styring og overvågning" />
+          <Txt Lang="en-GB" Txt="design a user interface for local control and monitoring" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et kommunikationsinterface til fjernstyring og overvågning" />
+          <Txt Lang="en-GB" Txt="design a communication interface for remote control and monitoring" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere applikationen på et mikrocontrollerbaseret, indlejret system" />
+          <Txt Lang="en-GB" Txt="implement the application on a microcontroller based, embedded system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en testprocedure som udnytter laboratoriefaciliteter til at validere applikationens funktion" />
+          <Txt Lang="en-GB" Txt="design a test procedure that utilizes laboratory facilities to validate the function of the application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre tests i laboratoriet" />
+          <Txt Lang="en-GB" Txt="perform tests in the laboratory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dokumentere hele processen og den udviklede applikation" />
+          <Txt Lang="en-GB" Txt="document the entire process and the developed application" />
+        </DTU_ObjectiveKeyword>
+        <Mandatory_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="46025/46030" />
+        </Mandatory_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Embedded Systems for the Smart Grid</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31070/31728/46760" />
+        <PreviousCourse CourseCode="31728" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="50" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:24.01" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

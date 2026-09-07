@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="26250" Volume="2026/2027" University="dtu" LastUpdated="2026-05-29+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Machine learning-driven molecular science" />
+        <Title Lang="en-GB" Title="Machine learning-driven molecular science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="26" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="26" />
+        <Course_Responsible PersonKey="224217" FUniversity="DTU" SortID="0" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Eli Nathan</GivenName>
+            <FamilyName>Weinstein</FamilyName>
+            <Email>enawe@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2794" FUniversity="DTU" SortID="1" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Klaus Braagaard</GivenName>
+            <FamilyName>Møller</FamilyName>
+            <Email>kbmo@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>See the English version</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem sets, in class problem solving, final project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>See English version</Course_Objectives>
+          <DTU_Remark>Nyt kursus E26</DTU_Remark>
+          <Remark>For questions regarding the course content and prerequisites, please contact the teacher Eli Weinstein.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces the core principles underlying modern learning systems for the molecular sciences. We describe methods to formalize, analyze and scale up each component of the design-build-test-learn cycle, and how these pieces can be combined into automated lab-in-the-loop systems. 
+
+The course begins with probabilistic models of molecules and molecular data. We introduce methods to relate a molecule's chemical structure or sequence to its activity, including those based on structural similarity and on neural networks. We introduce probabilistic models of assays and synthesis, using exponential family distributions.
+
+Next we cover methods for learning and inference. We explain methods to fit models to data, and how to apply these methods using probabilistic programming languages. We introduce methods to evaluate models' quality, focusing especially on quantifying uncertainty that comes from noisy assays or limited experiments.
+
+Finally we study methods to design and plan experiments. We specify different scientific goals as objective functions for learning or optimization. We introduce methods for iteratively selecting candidates to test, and introduce bandit algorithms for trading off between exploration and exploitation.
+
+Throughout, we focus on obtaining both a deep conceptual understanding and hands on experience. We explain how diverse problems in the molecular sciences (e.g. lead optimization, protein design, high throughput screening) can be formalized, analyzed, and implemented using core machine learning principles. We explain how diverse modern machine learning tools (e.g. Bayesian optimization, generative modeling, agents) instantiate these core principles.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem sets, in class problem solving, final project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course focuses on experimental design and analysis for the molecular sciences using modern machine learning. Molecular space is vast, and navigating it efficiently requires a blend of algorithmic and chemical thinking. This course introduces the architecture of modern lab-in-the-loop and automated laboratory systems, with a focus on probabilistic foundations. It provides a rigorous mathematical and computational view of the design-build-test-learn cycle underpinning molecular discovery in chemistry, chemical biology and bioengineering.</Course_Objectives>
+          <DTU_Remark>New course E26</DTU_Remark>
+          <Remark>For questions regarding the course content and prerequisites, please contact the teacher Eli Weinstein.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Some knowledge of Machine Learning is advantageous" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Some knowledge of Machine Learning is advantageous" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Build adaptive lab-in-the-loop machine learning systems." />
+          <Txt Lang="en-GB" Txt="Build adaptive lab-in-the-loop machine learning systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain common methods of extracting features from molecules, including those based on structural similarity and neural networks." />
+          <Txt Lang="en-GB" Txt="Explain common methods of extracting features from molecules, including those based on structural similarity and neural networks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain common featurization methods for molecules, including those based on structural similarity and neural embeddings." />
+          <Txt Lang="en-GB" Txt="Explain common featurization methods for molecules, including those based on structural similarity and neural embeddings." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Account for different types of experimental noise and uncertainty, managing assays that involve sparse count data or skewed error distributions." />
+          <Txt Lang="en-GB" Txt="Account for different types of experimental noise and uncertainty, managing assays that involve sparse count data or skewed error distributions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Derive decision rules for selecting candidates, and explain mathematically the tradeoffs between exploration and exploitation." />
+          <Txt Lang="en-GB" Txt="Derive decision rules for selecting candidates, and explain mathematically the tradeoffs between exploration and exploitation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Write probabilistic programs to fit models to data." />
+          <Txt Lang="en-GB" Txt="Write probabilistic programs to fit models to data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design experiments based on learned models." />
+          <Txt Lang="en-GB" Txt="Design experiments based on learned models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Test and evaluate lab-in-the-loop machine learning systems with stochastic simulations." />
+          <Txt Lang="en-GB" Txt="Test and evaluate lab-in-the-loop machine learning systems with stochastic simulations." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-30" Time="15:50:11.703" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

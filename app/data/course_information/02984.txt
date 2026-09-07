@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02984" Volume="2026/2027" University="dtu" LastUpdated="2026-05-29+02:00">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Nordic Logic Summer School 2026 (NLSS)" />
+        <Title Lang="en-GB" Title="Nordic Logic Summer School 2026 (NLSS)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="DTU SkyLab" />
+          <LocationTxt Lang="en-GB" Txt="DTU SkyLab" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Mandag d. 17. august - torsdag d. 20. august (kl. 9-18)" />
+          <Schedule_Txt Lang="en-GB" Txt="Monday Aug 17 - Thursday Aug 20 (9am-6pm)" />
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Compute" />
+        <Course_Responsible PersonKey="104472" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Nina</GivenName>
+            <FamilyName>Gierasimczuk</FamilyName>
+            <Email>nigi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Fremmøde er påkrævet." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Attendance is required." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="July 15, 2026" />
+            <DeadLineTxt Lang="en-GB" Txt="July 15, 2026" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Ph.d.-studerende på DTU: Studyplanner.&#xD;&#xA;&#xD;&#xA;Ph.d.-studerende fra andre danske universiteter: https://www.dtu.dk/english/education/incoming-students/guests/admission_and_enrolment/enrolment &#xD;&#xA;&#xD;&#xA;Ph.d.-studerende fra universiteter uden for Danmark: https://www.dtu.dk/english/education/phd/intro/guest-phd/guest_courses/registration_form&#xD;&#xA;&#xD;&#xA;Tilmelding via NLSS' hjemmeside er også påkrævet:&#xD;&#xA;https://slss2026.compute.dtu.dk/registration/" />
+            <Supp_Txt Lang="en-GB" Txt="PhD students at DTU: Through Study planner. &#xD;&#xA;&#xD;&#xA;PhD students from other Danish universities: https://www.dtu.dk/english/education/incoming-students/guests/admission_and_enrolment/enrolment &#xD;&#xA;&#xD;&#xA;PhD students from universities outside Denmark: https://www.dtu.dk/english/education/phd/intro/guest-phd/guest_courses/registration_form&#xD;&#xA;&#xD;&#xA;Registration through the NLSS website is also required: https://slss2026.compute.dtu.dk/registration/&#xD;&#xA;" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Nordic Logic Summer School (https://slss2026.compute.dtu.dk/nordic-logic-school/) tilbyder et 4-dages program med avancerede kurser i de logiske og matematiske fundamenter (med fokus på AI og datalogi). Arrangementet finder sted på DTU's Skylab - et velkendt innovations- og iværksættercenter for teknologisk udvikling.
+
+Skolen vil følge det format, der med succes blev brugt i tidligere udgaver af skolen (se https://scandinavianlogic.org/summer-school.html): fem internationalt anerkendte forskere vil hver undervise i et minikursus bestående af fire forelæsninger. Bekræftede forelæsere og emner er:
+- Bahareh Afshari (Gothenburg U): Proof Theory and Structural Aspects of Logical Systems in  Formal Verification;
+- Gaia Belardinelli (Stanford U): Formal Models of Attention
+- Vaishak Belle (Edinburgh U): Logic meets Learning: Explanations and LLM-based symbolic executors
+- Patrick Blackburn (Roskilde U): Worlds, Times and Things
+- Balder ten Cate Logic (Amsterdam U): Data Examples and Learning</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger. Undervisningsaktiviteterne vil omfatte uformelle diskussioner i pauserne og sociale aftenarrangementer, der fremmer interaktion med kolleger, kreativ udveksling af idéer og netværk.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med Nordic Logic Summer School er at tilbyde avanceret træning i logiske og matematiske metoder, der understøtter moderne AI og datavidenskab. Skolen vil udstyre kandidat- og ph.d.-studerende samt AI-praktikere med teoretiske værktøjer, der styrker det metodologiske grundlag for datavidenskab inden for områder som vidensrepræsentation, probabilistisk ræsonnement og automatiseret ræsonnement. Logiske metoder giver et formelt grundlag for datadrevne systemer ved at supplere maskinlæring og statistiske tilgange med formel ræsonnement, fortolkelighed og principiel håndtering af usikkerhed. Ved at være vært for arrangementet på DTU i forbindelse med Scandinavian Logic Society Symposium 2026 vil programmet give danske studerende og forskere adgang til førende internationale eksperter og dermed styrke Danmarks rolle i det nordiske og europæiske forskningslandskab på grundlag af AI og datavidenskab.</Course_Objectives>
+          <DTU_Remark>NLSS er sponsoreret af the Danish Data Science Academy.</DTU_Remark>
+          <Remark>Se: https://scandinavianlogic.org/summer-school.html</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The Nordic Logic Summer School (https://slss2026.compute.dtu.dk/nordic-logic-school/) will offer a 4 day programme of advanced courses on the logical and mathematical foundations (with a focus on AI and data science). The event will take place at DTU's Skylab - a well-known innovation and entrepreneurship centre for tech development.
+
+The school will follow the format successfully used in previous editions of the school (see https://scandinavianlogic.org/summer-school.html): five internationally recognised researchers will each teach a mini-course consisting of four lectures. Confirmed lecturers and topics are:
+- Bahareh Afshari (Gothenburg U): Proof Theory and Structural Aspects of Logical Systems in  Formal Verification;
+- Gaia Belardinelli (Stanford U): Formal Models of Attention
+- Vaishak Belle (Edinburgh U): Logic meets Learning: Explanations and LLM-based symbolic executors
+- Patrick Blackburn (Roskilde U): Worlds, Times and Things
+- Balder ten Cate Logic (Amsterdam U): Data Examples and Learning</Contents>
+          <Teaching_And_Learning_Methods>Lectures. Teaching activities will include informal discussions during breaks and social evening events, facilitating peer interaction and creative flow of ideas and networking.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The objective of the Nordic Logic Summer School is to provide advanced training in logical and mathematical methods that underpin modern AI and data science. The school will equip MSc and PhD students, as well as AI practitioners with theoretical tools that strengthen the methodological foundations of data science in areas such as knowledge representation, probabilistic reasoning, and automated reasoning. Logical methods provide formal foundations for data-driven systems by complementing machine learning and statistical approaches with formal reasoning, interpretability, and principled handling of uncertainty. By hosting the event at DTU in connection with Scandinavian Logic Society Symposium 2026, the programme will provide Danish students and researchers with access to leading international experts, strengthening Denmark’s role in the Nordic and European research landscape on the foundations of AI and data science.</Course_Objectives>
+          <DTU_Remark>NLSS is sponsored by the Danish Data Science Academy.</DTU_Remark>
+          <Remark>See: https://scandinavianlogic.org/summer-school.html</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå logiske rammer, der anvendes i modal, temporal, probabilistisk og databaselogik" />
+          <Txt Lang="en-GB" Txt="Understand logical frameworks used in modal logic, temporal logic, probabilistic reasoning, and database logic" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar hvordan logik bidrager til datavidenskab inden for vidensrepræsentation, ræsonnement under usikkerhed, forklarlig AI og dataforespørgsler" />
+          <Txt Lang="en-GB" Txt="Explain how logic contributes to data science in knowledge representation, reasoning under uncertainty, explainable AI, and data querying" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrer logiske teknikker med datadrevne tilgange til AI og datavidenskab" />
+          <Txt Lang="en-GB" Txt="Integrate logical techniques with data-driven approaches to AI and data science" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Genkende forbindelser mellem symbolske ræsonnementsmetoder og statistiske eller maskinlæringsmetoder i moderne AI-systemer" />
+          <Txt Lang="en-GB" Txt="Recognise connections between symbolic reasoning methods and statistical or machine-learning approaches in modern AI systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og evaluere logiske repræsentationer af problemer, der opstår inden for kunstig intelligens og datahåndtering" />
+          <Txt Lang="en-GB" Txt="Formulate and evaluate logical representations of problems arising in artificial intelligence and data management" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Læse og kritisk vurdere forskningslitteratur inden for logik, især i forbindelse med AI og datalogi" />
+          <Txt Lang="en-GB" Txt="Read and critically assess research literature in logic, especially in the context of AI and data science" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Deltag i tværfaglige diskussioner, der forbinder logik, maskinlæring og datalogi" />
+          <Txt Lang="en-GB" Txt="Engage in interdisciplinary discussions connecting logic, machine learning, and data science" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser og ræsonner om formelle modeller for viden, tid, agenter og usikkerhed" />
+          <Txt Lang="en-GB" Txt="Analyse and reason about formal models of knowledge, time, agents, and uncertainty" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <Restrictions Max="50" Min="1" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-03" Time="14:58:28.5" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

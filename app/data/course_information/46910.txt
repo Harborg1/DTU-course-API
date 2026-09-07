@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="46910" University="dtu" LastUpdated="2025-03-11+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Vind" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Avanceret finite element simulering ved brug af Abaqus" />
+        <Title Lang="en-GB" Title="Advanced Finite Element Simulations Using Abaqus" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="ServiceCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Kurset afholdes på DTU Campus Lyngby. Derudover vil forelæsningerne blive streamet, optaget og efterfølgende uploadet til DTU Learn. Dette giver kursusdeltagere mulighed for at følge kurset online og deltage aktivt ved at interagere med underviserne via chat- og videoopkaldsfunktioner under forelæsninger og øvelser ved hjælp af Microsoft Teams eller Zoom." />
+          <LocationTxt Lang="en-GB" Txt="The course is held at DTU Campus Lyngby. Additionally, the lectures will be streamed, recorded, and uploaded to DTU Learn afterwards. This allows participants to attend the course online and actively engage with the lecturers via chat and video call functions during lectures and tutorials using Microsoft Teams or Zoom." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="61797" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Philipp Ulrich</GivenName>
+            <FamilyName>Haselbach</FamilyName>
+            <Email>phih@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1639" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lars Pilgaard</GivenName>
+            <FamilyName>Mikkelsen</FamilyName>
+            <Email>lapm@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="I løbet af kurset vil fem forskellige tilfælde blive undersøgt og rapporteret i individuelle eller grupperapporter med løbende feedback." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="During the course 5 different cases are studied and collected in individual or group reports with ongoing feedback and final assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Arbejdsbelastningen i kurset vil fokusere på at studere en række ikke-lineære problemer, herunder formulering, løsning og evaluering af løsninger på realistiske finite element-problemer. Gennem arbejdet med de finite element-øvelser vil væsentlige aspekter af brugen af en kommerciel finite element-kode blive behandlet. Der vil blive analyseret sager, der involverer isotrop elastisk, anisotrop elastisk og elastisk-plastisk materialelovgivning. Derudover vil brugerdefinerede subrutiner og Python-scripting blive anvendt.</Contents>
+          <Teaching_And_Learning_Methods>Kurset er struktureret som en problem-baseret, problemløsende læringsoplevelse. Dette betyder, at den viden, der opnås gennem forelæsninger og øvelser, skal overføres og anvendes på lignende eksempler for at løse givne problemer. Der lægges vægt på dyb forståelse og konklusiv efterbehandling, hvor analytiske løsninger og eksperimentelle resultater ofte sammenlignes og diskuteres.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset vil introducere anvendelsen af den kommercielle finite element kode ABAQUS i en forskningsorienteret anvendelse hvorunder en række ikke-lineære problemer vil blive behandlet. Der vil være fokus på at skabe, analysere og evaluere ikke-lineær materialesimulering, simulering af fiberforstærkede kompositmaterialer, revnevækstforudsigelser og simuleringer.
+Kurset er kategoriseret som et AI-first-kursus, hvilket betyder, at studerende opfordres til at bruge AI i alle faser af kurset, herunder læring, evalueringer og eksamener.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The workload in the course will focus on studying a range of nonlinear problems, including formulating, solving, and evaluating solutions for realistic finite element problems. Throughout the finite element exercises, key aspects of using a commercial finite element code will be addressed. Cases involving isotropic elastic, anisotropic elastic, and elastic-plastic material laws will be analyzed. Additionally, user-defined subroutines and Python scripting will be utilized.</Contents>
+          <Teaching_And_Learning_Methods>The course is structured as a problem-based, problem-solving learning experience. This means that the knowledge gained from lectures and tutorials must be transferred and applied to similar examples to solve given problems. The emphasis is on deep understanding and conclusive post-processing, where analytical solutions and experimental results are often compared and discussed.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course will introduce the use of the commercial finite element code Abaqus in a research-oriented way where a number of nonlinear problems will be addressed. The focus will be on creating, analyzing, and evaluating nonlinear material simulations, as well as simulations of fibre-reinforced composites and crack growth predictions.
+The course is categorized as an AI-first course, meaning that students are encouraged to use AI throughout all phases of the course, including learning, assessments, and exams.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller andre kurser, der dækker styrkelære og en introduktion til finite element metoden eller andre kurser, der dækker emnerne kompositmaterialer og brudmekanik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or other courses covering strength of materials and an introduction to the finite element method or other courses covering composite materials and fracture mechanics" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(41501/41502)( 41812/41525/)(41526)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opret avancerede finite element-modeller i Abaqus" />
+          <Txt Lang="en-GB" Txt="Create advanced finite element models in Abaqus" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend teoretiske begreber til at analysere finite element simuleringer" />
+          <Txt Lang="en-GB" Txt="Apply theoretical concepts to analyze finite element simulations " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend effekterne af ikke-lineære materialemodeller og evaluer resultaterne" />
+          <Txt Lang="en-GB" Txt="Apply the effects of nonlinear material models and evaluate the results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lav modeller bestående af ortotrope materialer og analyser dets indflydelse" />
+          <Txt Lang="en-GB" Txt="Create models consisting of orthotropic materials and analyse its influence " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opret modeller, der diskretiserer fiberkompositstrukturer, og analyser layups og kritiske lagspændinger og tøjninger baseret på første og sidste lags svigtkriterier" />
+          <Txt Lang="en-GB" Txt="Create models discretizing fiber composite structures and analyse the layups and  critical ply stresses and strains based on first and last ply failure criteria" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opret og evaluer crack tip-modeller og analyser deres forudsigelsesnøjagtighed." />
+          <Txt Lang="en-GB" Txt="Create and evaluate crack tips models and analyse their prediction accuracy. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skab sprækkevækst ved hjælp af modellers sammenhængende materialelove i en finite element-model og evaluer virkningen af forskellige modelleringsparametre" />
+          <Txt Lang="en-GB" Txt="Create crack growth using models cohesive material laws in a finite element model and evaluate the impact of different modelling parameters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opret Python-scripts og anvend disse til for- og efterbehandlingstrin" />
+          <Txt Lang="en-GB" Txt="Create Python scripts and apply these for pre- and post-processing steps" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend AI (store sprogmodeller som ChatGPT/CoPilot) til at generere scripts og inputfiler for at interagere med Abaqus og evaluere/efterbehandle resultaterne." />
+          <Txt Lang="en-GB" Txt="Apply AI-tools (Large-Language Models e.g. like ChatGPT/CoPilot) to generate scripts and input files in order to interact with Abaqus and to evaluate/post-process results. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opret enkle brugerdefinerede underrutiner i Abaqus" />
+          <Txt Lang="en-GB" Txt="Create simple user-defined subroutines in Abaqus" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå navigationen i Abaqus’ brugermanual og anvend din viden til at finde relevant information." />
+          <Txt Lang="en-GB" Txt="Understand the navigation in Abaqus’ User Manual and apply your knowledge to find relevant information. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser og evaluer kritiske finite element-simuleringer (plausibel kontrol, fysisk meningsfuld, mesh-konvergensundersøgelse, sammenligning med test/analytiske resultater)" />
+          <Txt Lang="en-GB" Txt="Analyse and evaluate critically finite elements simulations (plausible check, physical meaningful, mesh convergence study, comparison with tests/analytical results). " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>FEM of composite materials</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ Collider" />
+        </OfferedAsACourseOfTypes>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-03-25" Time="09:31:31.183" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

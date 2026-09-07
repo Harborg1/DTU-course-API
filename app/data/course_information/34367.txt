@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34367" University="dtu" LastUpdated="2026-04-21+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Projekt i Intelligente Systemer" />
+        <Title Lang="en-GB" Title="Project in Intelligent Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="5643" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Dittmann</FamilyName>
+            <Email>ladit@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Afsluttende rapport med mundtlig fremlæggelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Final report with oral presentation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til typiske problemer egnet til anvendelse af intelligente system, opgaveanalyse, systemudviklingsmetoder og arkitekturelementer; anvendelse af intelligente systemer til automatisering, problemer med internet af ting (IoT) og Smart Grid.
+Distribuerede systemer: design til samtidighed, kommunikation og debugging.
+Videnrepræsentationstyper og ontologier, samt anvendelse i udvalgte deklarative paradigmer (fx regelbaseret logik, søgnin på grafer, ...).
+Håndtering af store datasæt; Data visualisering; Anvendt statistiske læringsmetoder. Analyse af model-kvalitet.</Contents>
+          <Teaching_And_Learning_Methods>Projektarbejde - individuelt eller i gruppe</Teaching_And_Learning_Methods>
+          <Course_Literature>Afhængig af individuelt projekt</Course_Literature>
+          <Course_Objectives>Kursets formål er formidle de grundlæggende kompetencer, der kræves til at udtænke, designe og implementere intelligente og distribuerede styringssystemer, der kombinerer datastyrede og videnbaserede metoder. Kursusarbejdet giver deltagerne en applikationsorienteret introduktion til maskinelæring og deklarative metoder til kunstig intelligens. Kursusdeltagerne vil lære de praktiske aspekter ombrug og design af intelligente systemer</Course_Objectives>
+          <Remark>Kurset udbydes også i 3-ugers perioden i juni som kursus 34372.
+
+Det anbefales at overveje om man opfylder forudsætningerne inden for programmering og at kontakte den kursusansvarlige, hvis man er i tvivl.
+
+
+In case of unclear interpretation of the Danish description, the English description is suggested for reference. Please contact the course responsible if in doubt.</Remark>
+          <No_Credit_Points_With>Kurset udgør en praktisk/experimental opfølgende del til kursus 34366 som udbydes i 13-ugers perioden i efteråret. Det er ikke obligatorisk at have fulgt kursus 34366, men en ekstra arbejdsinsats må forventes, hvis det ikke er tilfældet.</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to intelligent systems problems, task analysis, systems development approaches &amp; architecture elements; applications of intelligent systems in automation, Internet of Things (IoT) and Smart Grid / Energy problems.
+Distributed systems basics: concurrency, communication, and debugging.
+Structured knowledge representation (e.g. ontologies) and applications to declarative and logic-based programming methods (e.g. rule-based logic, graph-search,  ... ).
+Handling large data sets; data visualization; applied statistical learning methods. Quality of data-driven models.</Contents>
+          <Teaching_And_Learning_Methods>Project work - individually or in groups</Teaching_And_Learning_Methods>
+          <Course_Literature>Depends on individual project</Course_Literature>
+          <Course_Objectives>This course aims to provide participants with the fundamental competences required to conceive, design and implement intelligent and distributed control systems combining data-driven and knowledge-based techniques. The course work offers participants an application-oriented introduction to machine learning and declarative methods of artificial intelligence. Course participants will learn the practical aspect of intelligent systems with respect to use-cases and top level design to design.</Course_Objectives>
+          <Remark>The course is also offered in the June 3-week period as course 34372.
+
+It is recommended to consider programming prerequisites of this course, and to contact the course responsible if in doubt.</Remark>
+          <No_Credit_Points_With>The course is a practical/experimental follow on to course 34366 that runs as in the 13-weeks period of autumn. It is not mandatory to have followed course 34366, but an extra workload should be expected if not.</No_Credit_Points_With>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset bygger på den projektbeskrivelse, der er lavet som opgave i kurset 34366." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is based on the project description that was an assignment in course 34366." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34666" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og diskutere situationsbevidstheds-, beslutnings- og kontrolopgaver i et intelligent system." />
+          <Txt Lang="en-GB" Txt="Identify and discuss situation awareness, decision, and control tasks in an intelligent systems problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende maskinelæringsmetoder til data modellering i intelligente systemer og evaluere deres effektivitet." />
+          <Txt Lang="en-GB" Txt="Apply machine learning methods to data modeling problems in intelligent systems and evaluate their effectiveness." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med store datasæt, udføre dataudforskning og udtræk for at udlede viden fra data i et realistisk automatiseringsproblem." />
+          <Txt Lang="en-GB" Txt="Work with a large data set, perform data exploration and feature extraction to derive knowledge from data in a real-world automation problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare teknikker til vidensrepræsentation samt relaterede modeleringsprincipper, og vælg egnede vidensrepræsentation til integration i en intelligent systemløsning." />
+          <Txt Lang="en-GB" Txt="Explain structured knowledge representation techniques and related modeling principles, and select suitable knowledge representations for integration in an intelligent systems solution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive passende anvendelser af logikbaserede og deklarativ programmering anvendt til løsning af beslutningsproblemer i intelligente systemer." />
+          <Txt Lang="en-GB" Txt="Describe suitable uses of logic-based and declarative methods applied to the solution of decision making problems in intelligent systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og vælge passende metoder samt de tilsvarende datamodeller og videnrepræsentationer som led i et designproblem." />
+          <Txt Lang="en-GB" Txt="Explain and select appropriate methods as well as the corresponding data models and knowledge representations as part of a design problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere et udviklings problem til intelligente systemer, kommunikere design ideen, formulere specifikationer og test krav." />
+          <Txt Lang="en-GB" Txt="Analyse an intelligent systems design problem, communicate the design idea, formulate specifications and test requirements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere en prototype af et intelligent system ved hjælp af data-drevne og deklarative programmeringsteknikker i en distribueret systemkontekst." />
+          <Txt Lang="en-GB" Txt="Design, implement and evaluate an operational prototype of an intelligent system using data-driven and declarative programming techniques applied to a distributed systems problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Designing Decision and Control Software for Robotics, Smart Buildings and Energy Systems</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31380 / 34372" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="8" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="6" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:18.407" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

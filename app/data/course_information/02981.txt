@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02981" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Generativ Modellering Forårs Skole (GeMMS)" />
+        <Title Lang="en-GB" Title="Generative Modeling Spring School (GeMMS)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Sommerskolen afholdes off-campus. Se hjemmesiden for detaljer." />
+          <LocationTxt Lang="en-GB" Txt="The summer school is held off-campus. See the homepage for details." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset afholdes over én uge i forårssemesteret. Se kursushjemmesiden for de præcise datoer." />
+          <Schedule_Txt Lang="en-GB" Txt="The course runs for one week during the spring semester. See the course homepage for the exact dates." />
+          <Schedule ScheduleKey="F" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Compute" />
+        <External_Course_Responsible Email="j.m.tomczak@tue.nl" Name=" Jakub M. Tomczak" IsContact="false" SortID="1" />
+        <External_Course_Responsible Email="pierre-alexandre.mattei@inria.fr" Name="Pierre-Alexandre Mattei" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="18775" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jes</GivenName>
+            <FamilyName>Frellsen</FamilyName>
+            <Email>jefr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="Se hjemmesiden for tilmeldingsfrist." />
+            <DeadLineTxt Lang="en-GB" Txt="See the homepage for registration deadline." />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_PROFESSOR" />
+            <Supp_Txt Lang="da-DK" Txt="Tilmelding skal ske via tilmeldingslinket på hjemmesiden." />
+            <Supp_Txt Lang="en-GB" Txt="Registration must be done using the registration link on the website." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>The course gives the students an introduction to the basics behind the most widely used generative modelling techniques and insights into the newest research on deep generative models and their applications. The course is accordingly divided into two parts.
+
+The first part (Monday-Tuesday-Wednesday) consists of lectures and practical lab sessions. The topics covered within the first three days are 1) introduction to generative modelling, 2) autoregressive models, 3) flow-based models, 4) probabilistic PCA, 5) deep latent variable models, 6) energy-based models, 7) generative adversarial networks and 8) probabilistic circuits. The reading material for this first part is the course book and code examples listed as course literature. A detailed reading list is given on the course homepage, and this is mandatory preparation for the course. The course organisers conduct the lectures in the first part, and teaching assistants aid the lab sessions. This part is concluded by a mandatory poster session, where the participant share their (planned) research and discuss how deep generative models can be applied in the given context.
+
+The second part (Thursday-Friday) will contain invited talks given by leading researchers in academia and industry. These talks will focus on both cutting-edge methodological developments in deep generative modelling and applications of deep generative modelling.</Contents>
+          <Course_Literature>Tomczak, Jakub M. Deep generative modeling. Springer, second edition, 2024.
+https://doi.org/10.1007/978-3-031-64087-2</Course_Literature>
+          <Course_Objectives>The summer school is targeted toward PhD students working with data science broadly and for whom generative modelling potentially plays a part in their projects. The objective of the course is to introduce the students to the basics behind the most widely used deep generative models as well as expose the students to cutting-edge research in deep generative models.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course gives the students an introduction to the basics behind the most widely used generative modelling techniques and insights into the newest research on deep generative models and their applications. The course is accordingly divided into two parts.
+
+The first part (Monday-Tuesday-Wednesday) consists of lectures and practical lab sessions. The topics covered within the first three days are 1) introduction to generative modelling, 2) autoregressive models, 3) flow-based models, 4) probabilistic PCA, 5) deep latent variable models, 6) energy-based models, 7) generative adversarial networks and 8) probabilistic circuits. The reading material for this first part is the course book and code examples listed as course literature. A detailed reading list is given on the course homepage, and this is mandatory preparation for the course. The course organisers conduct the lectures in the first part, and teaching assistants aid the lab sessions. This part is concluded by a mandatory poster session, where the participant share their (planned) research and discuss how deep generative models can be applied in the given context.
+
+The second part (Thursday-Friday) will contain invited talks given by leading researchers in academia and industry. These talks will focus on both cutting-edge methodological developments in deep generative modelling and applications of deep generative modelling.</Contents>
+          <Course_Literature>Tomczak, Jakub M. Deep generative modeling. Springer, second edition, 2024.
+https://doi.org/10.1007/978-3-031-64087-2</Course_Literature>
+          <Course_Objectives>The summer school is targeted toward PhD students working with data science broadly and for whom generative modelling potentially plays a part in their projects. The objective of the course is to introduce the students to the basics behind the most widely used deep generative models as well as expose the students to cutting-edge research in deep generative models.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Comprehend, explain and apply the general concept of generative modelling, the likelihood function and maximum likelihood estimation." />
+          <Txt Lang="en-GB" Txt="Comprehend, explain and apply the general concept of generative modelling, the likelihood function and maximum likelihood estimation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Comprehend, explain and apply the principles behind the most common deep generative models, including autoregressive models, flow-based models, deep latent variable models, energy-based models, generative adversarial networks and probabilistic circuits." />
+          <Txt Lang="en-GB" Txt="Comprehend, explain and apply the principles behind the most common deep generative models, including autoregressive models, flow-based models, deep latent variable models, energy-based models, generative adversarial networks and probabilistic circuits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain the assumptions and limitations of the most common deep generative models." />
+          <Txt Lang="en-GB" Txt="Explain the assumptions and limitations of the most common deep generative models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Use a machine learning framework with automatic differentiation (e.g., PyTorch) to implement deep generative modes, including deep latent variable models, autoregressive models, and flow-based models." />
+          <Txt Lang="en-GB" Txt="Use a machine learning framework with automatic differentiation (e.g., PyTorch) to implement deep generative modes, including deep latent variable models, autoregressive models, and flow-based models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Document and disseminate software implementations of deep generative models." />
+          <Txt Lang="en-GB" Txt="Document and disseminate software implementations of deep generative models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give an overview of and compare the most common deep generative models." />
+          <Txt Lang="en-GB" Txt="Give an overview of and compare the most common deep generative models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Match appropriate deep generative models to corresponding modelling problems. " />
+          <Txt Lang="en-GB" Txt="Match appropriate deep generative models to corresponding modelling problems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Discuss and disseminate how the most common deep generative models can be applied in their own research project." />
+          <Txt Lang="en-GB" Txt="Discuss and disseminate how the most common deep generative models can be applied in their own research project." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relate the most common deep generative models to cutting-edge research in the field." />
+          <Txt Lang="en-GB" Txt="Relate the most common deep generative models to cutting-edge research in the field." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://gemss.ai" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="37" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="37" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="56" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="44" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="100" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:44.117" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

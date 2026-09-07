@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="46320" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Vindmøllelaster, -aerodynamik og -kontrol" />
+        <Title Lang="en-GB" Title="Loads, Aerodynamics and Control of Wind Turbines" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="118756" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jenni</GivenName>
+            <FamilyName>Rinker</FamilyName>
+            <Email>rink@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="5845" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Bak</FamilyName>
+            <Email>chba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="141868" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Fanzhong</GivenName>
+            <FamilyName>Meng</FamilyName>
+            <Email>famen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="126377" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Alan Wai Hou</GivenName>
+            <FamilyName>Lio</FamilyName>
+            <Email>wali@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="99755" FUniversity="DTU" SortID="4" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Kenneth</GivenName>
+            <FamilyName>Lønbæk</FamilyName>
+            <Email>kenloen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="For at deltage i eksamen skal studerende bestå 3 gruppe opgaver.&#xD;&#xA;&#xD;&#xA;Den samlede karakter gives på basis af grupperapporter, en individuel rapport og en skriftlig eksamen (helhedsvurdering). Hvis der er færre end 30 tilmeldt kurset vil eksamen være en mundtlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="To attend the final exam, students must pass 3 group assignments.&#xD;&#xA;&#xD;&#xA;The final grade is given as a combined evaluation of group reports, an individual written report and written exam (overall assessment). If fewer than 30 students enrol, the final exam will be an oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus anvender de ingeniørmæssige færdigheder som kan tilegnes fra kurser 46300 og 46310 for at udvide de studerendes praktiske viden om interaktionerne mellem aerodynamik, last og kontrol igennem vindmølledesign. I løbet af semestret vil de studerende arbejde i grupper hvor de vil anvende design forandringer af DTU 10 MW referencevindmøllen. Der undervises i de følgende emner: metoder for at lave design forandringer af rotordesignet, grundlæggende viden om vindmøllekontrol og justering af styring, vindmølledynamik og aeroelastiske egensvingsningsformer, designlastberegninger (udmattelse og ekstrem), vindmøllegodkendelses-standarder og mere.
+
+De teorier, modeller og metoder introduceret i dette kursus kan anvendes til generel modellering og analyse af vindmøller. Dog vil de studerende arbejde med HAWC koden (HAWC2S/HAWC2/HAWCStab2) til aeroelastiske simuleringer (HAWC2), aeroelastiske modalanalyse (HAWCStab2) af vindmøller og kalibrering af styringen (HAWC2S). 
+
+Beregningsmæssige færdigheder udvikles også i løbet af semestret. Holdene bruger GitHub til i fællesskab at udvikle kode, herunder en Python-pakke, til at opsætte og analysere beregninger og efterbehandle simuleringer. En klyngecomputer bruges også til et stort antal simuleringer. Vi anbefaler, at de studerende tager 46120, før de deltager i dette kursus, for at sikre et tilstrækkeligt niveau af beregningsfærdigheder.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppearbejde i forbindelse med rapporter (3-4 studerende pr. gruppe)</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende udvidede kompetencer i at modellere og analysere vindmøllers strukturdynamik, aerodynamik, og kombinerede aeroelastiske egenskaber inklusiv kontrol ved hjælp af analytiske og beregningsmæssige metoder og derved skabe et grundlag for at evaluere afvejningen mellem laster og produktion i vindmølledesign.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course uses the engineering skills learned in 46300 and/or 46310 as a springboard to deepen students’ practical knowledge of the interaction between aerodynamics, loads and controls during turbine design. During the semester, students work in groups to apply modification to the DTU 10 MW Reference Wind Turbine for a different wind class. The following topics are covered: methods for applying modification to a wind turbine rotor, wind turbine control basics and controller tuning, wind turbine dynamics and aeroelastic mode shapes, lifetime load calculations (fatigue + extreme), wind turbine certification standards and more.
+
+The theories, sub-models, and methods introduced in this course are applicable for general modelling and analysis of wind turbines; however, the students will work with the HAWC software (HAWC2S/HAWC2/HAWCStab2) for aeroelastic simulations (HAWC2), aeroelastic modal analysis of wind turbines (HAWCStab2) and controller tuning (HAWC2S). 
+
+Computational skills are also developed during the semester. Teams use GitHub to collaboratively develop code, including a Python package, to set up and analyse computations and post-process simulations. A computing cluster is also used for large numbers of simulations. We recommend students take 46120 before attending this course to ensure an adequate level of computational literacy.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work on reports (3-4 students per group)</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the students advanced competencies in modelling and analysing the structural dynamics, aerodynamics, aeroelastic characteristics and control of wind turbines using analytical and computational methods, thereby creating a basis for evaluating the loads-performance trade-off during wind turbine design.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det antages, at studerende har taget (1) 46120 og (2) enten 46300 eller 46310. Viden om grundlæggende strukturdynamik og aerodynamik er påkrævet. Viden om vindmølleteknologi, vindmølleaerodynamik og grundlæggende kontrolteori (PI-controller) anbefales stærkt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is assumed that students have taken (1) 46120 and (2) either 46300 or 46310. Knowledge of basic structural dynamics and aerodynamics is required. Knowledge of wind turbine technology, wind turbine aerodynamics and basic control theory (PI controller) is highly recommended." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46120/46300/46310" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="I en gruppe, anvende design ændringer for en referencemølle til en ny vindklasse og evaluere kvaliteten af det nye design " />
+          <Txt Lang="en-GB" Txt="In a team, apply modifications for a reference turbine when changing its design wind class and evaluate the quality of the resulting design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere, hvordan designets aeroservoelastiske respons påvirker møllens produktion og designlaster, og opstille hypoteser om, hvordan designet kan forbedres " />
+          <Txt Lang="en-GB" Txt="Evaluate how the design’s aeroservoelastic response affects turbine production and lifetime loads and hypothesize how the design could be improved" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de forskellige kontrolmål, og hvordan en styring kan tunes for at nå målene" />
+          <Txt Lang="en-GB" Txt="Explain the wind turbine control objectives and how a controller is designed to achieve these objectives" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne de strukturelle, aeroelastiske og aeroservoelastiske egensvingsformer for en vindmølle i drift og forklar forskellene mellem dem" />
+          <Txt Lang="en-GB" Txt="Calculate the structural, aeroelastic and aeroservoelastic modes of an operating wind turbine and explain the differences between them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kalibrere en vindmølle-styring og evaluere dens virkning med en aeroelastiske simuleringskode" />
+          <Txt Lang="en-GB" Txt="Tune a wind turbine controller and evaluate its performance with an aeroelastic simulation code" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, hvordan forskellige parametre som tiphastighedsforhold, lift-drag-værdier og liftkoefficient påvirker det aerodynamiske design og ydeevnen af rotorer" />
+          <Txt Lang="en-GB" Txt="Explain how the different parameters such as tip-speed ratio, lift-drag values and the lift coefficient affect the aerodynamic design and performance of rotors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, hvilke eksterne laster der påvirker en belastning i møllen, og skitsere middellaster versus vindhastighed" />
+          <Txt Lang="en-GB" Txt="Explain which external loads affect a specific load channel in the turbine and sketch the mean loads versus wind speed" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere, plot og analyser et standarddesignbelastningsgrundlag for en redesignet mølle, og brug det til at beregne levetidslaster" />
+          <Txt Lang="en-GB" Txt="Simulate, plot and analyse a standard design load basis for a redesigned turbine and use it to calculate lifetime loads" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="I et team, designe og bruge en Python-pakke hostet på GitHub til at generere inputfiler til en aeroelastiske software" />
+          <Txt Lang="en-GB" Txt="In a team, design and utilize a Python package hosted on GitHub to generate input files for aeroelastic software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skriftligt præsentere viden om aeroservoelastisk vindmølledesign" />
+          <Txt Lang="en-GB" Txt="Present knowledge in writing related to aeroservoelastic wind turbine design" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Wind turbine loads, wind turbine aerodynamics, wind turbine control, wind turbine design</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:37.223" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

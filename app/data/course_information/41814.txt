@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41814" University="dtu" LastUpdated="2024-02-29+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Varmetransmission" />
+        <Title Lang="en-GB" Title="Heat transfer" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="844" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jesper Henri</GivenName>
+            <FamilyName>Hattel</FamilyName>
+            <Email>jhat@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="129138" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mohamad</GivenName>
+            <FamilyName>Bayat</FamilyName>
+            <Email>mbayat@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="62753" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Nasrin Arjomand</GivenName>
+            <FamilyName>Kermani</FamilyName>
+            <Email>nasker@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen vægtes med 70% og bedømmelse af to individualiserede gruppeopgaver med 30%. Delkarakterer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written exam is weighted with 70% and two individualized group assignments with 30%. Partial grades." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Varmeledning i faste stoffer med og uden intern varmegenerering. Varmeledning i geometrier beskrevet i kartesiske og cylindriske koordinatsystemer. Analytiske løsninger til den partielle differentialligning for både stationær og instationær varmeledning i faste stoffer. Termisk modstand. Ækvivalent varmeovergangstal. Termiske ribber. Numerisk løsning af varmeledningsligningen. Finite differens metoden med eksplicit og implicit tids-diskretisering.  Konvektiv varmetransport. Dimensionsløse modeltal. Simpel grænselagsteori. Termiske grænselag ved laminar og turbulent strømning. Konvektion ved intern strømning. Varmevekslerteori, herunder LMTD (Logarithmic Mean Temperature Difference) og epsilon-NTU (Number of Transfer Units) metoder.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning og opgavegennemgang</Teaching_And_Learning_Methods>
+          <Course_Objectives>Indføring i varmetransmissionsprocesser og deres matematiske beskrivelse med henblik på praktiske anvendelser inden for konstruktion, drift og måleteknik.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Conductive heat transfer in solids with and without volumetric heat generation. Conductive heat transfer in geometries described in Cartesian and cylindrical coordinate systems. Analytical solutions to the partial differential equation for steady and unsteady heat conduction in solids. Thermal resistances. Overall heat transfer coefficient. Fins and extended surfaces. Numerical solution for conduction heat transfer in solids. The finite difference method (FDM) with explicit and implicit time discretization. Convection heat transfer. Dimensionless numbers. Simple boundary layer theory. Thermal boundaries in laminar and turbulent regimes. Convection/advection in internal flows. Heat exchangers and their theory. LMTD (Logarithmic Mean Temperature Difference) and epsilon-NTU (Number of Transfer Units) methods</Contents>
+          <Teaching_And_Learning_Methods>Lessons and problem solving.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Introduction to heat transfer processes and their mathematical description concerning practical use within design and measuring techniques.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille  varmebalancer for endimensionale varmestrømme i kartesiske og cylindriske koordinatsystemer for simple emner og konstruktioner med og uden varmeudvikling" />
+          <Txt Lang="en-GB" Txt="Establish heat balances for one dimensional heat conduction in Cartesian and cylindrical coodinate systems for structures and constructions with and without heat generation in the construction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne temperaturfordelinger i simple kartesiske og cylindriske systemer" />
+          <Txt Lang="en-GB" Txt="Calculate the temperature distribution in simple Cartesian and cylindrical bodies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne termisk effektivitet og temperaturfordeling for finner" />
+          <Txt Lang="en-GB" Txt="Calculate the thermal efficiency and temperature distribution for fins (extended surfaces)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne transiente temperaturer v.h.a. klumpbaserede og fordelte kapacitansmodeller" />
+          <Txt Lang="en-GB" Txt="Calculate temperature versus time for lumped and distributed capacitance thermal models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskretisere varmeblanceligninger baseret på eksplicitte og implicitte finite differens metoder" />
+          <Txt Lang="en-GB" Txt="Discretize heat balance equations based on the explicit and implicit finite difference methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne simpel konvektion og tilhørende grænselag" />
+          <Txt Lang="en-GB" Txt="Calculate simple convection and boundary layers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne simple varmestrømme og temperaturfordelinger ved tvungen konvektion over plane flader og omkring rør" />
+          <Txt Lang="en-GB" Txt="Calculate the heat transfer and temperature distribution for forced convection for plane surfaces and flow around pipes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne varmestrøm og temperaturfordeling ved strømning inde i rør" />
+          <Txt Lang="en-GB" Txt="Calculate heat transfer and temperature distribution for flow inside channels" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne varmevekslere med LMTD (Logarithmic Mean Temperature Difference) og epsilon-NTU (Number of Transfer Units) metoderne" />
+          <Txt Lang="en-GB" Txt="Calculate heat exchangers with LMTD (Logarithmic Mean Temperature Difference) and epsilon-NTU (Number of Transfer Units) methods" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01030/01035)." />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Det grundlæggende former for varmetransmission behandles </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="7" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:02.587" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

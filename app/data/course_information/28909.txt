@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28909" University="dtu" LastUpdated="2022-04-06+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Kemiteknik" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">7.5</Point>
+        <Title Lang="da-DK" Title="Fundamentale og beregningsmæssige aspekter ved termodynamiske modeller" />
+        <Title Lang="en-GB" Title="Thermodynamic Models, Fundamentals and Computational Aspects" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="26" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Course_Responsible PersonKey="6678" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Georgios</GivenName>
+            <FamilyName>Kontogeorgis</FamilyName>
+            <Email>gk@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="10354" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Wei</GivenName>
+            <FamilyName>Yan</FamilyName>
+            <Email>weya@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="CERE, bygning 229, 2. sal" />
+            <Supp_Txt Lang="en-GB" Txt="CERE, building 229, 2nd floor" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se venligst den engelske kursusbeskrivelse</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, beregningsøvelser og computerberegninger i de første to uger (hold på to). Den sidste uge bruges til at løse en større opgave.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Se venligst den engelske kursusbeskrivelse</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The state functions, the second law, conditions of equilibrium, derivation of thermodynamic properties, checking model expressions and model consistency. Equilibrium and stability, critical points, effects of gravitation, surface tension and thermal gradients. Chemical equilibrium. Equations of state, corresponding state models and  excess Gibbs energy models. Mixing rules from excess Gibbs energy models. Chemical - and association models General equilibrium relations and material balances. The PT-flash: Successive substitution, the Rachford-Rice equation, acceleration, higher order methods and stability analysis. The multiphase flash. General state function based specifications. Dew- and bubble points, stability analysis and the calculation of critical point. Chemical equilibrium calculation.
+Thermodynamic models (cubic equations of state, activity coefficient models, advanced mixing rules, association models).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, class room problems and computer exercises (in teams of two) in the first two weeks. During the final week the participants complete and write a report on a major exam problem.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course is of relevance for researchers engaged in the development and implementation of thermodynamic models for process simulation.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Teknisk termodynamik og programmeringserfaring i Fortran" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Chemical Engineering Thermodynamics and a working knowledge of Fortran" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede termodynamiske egenskaber fra en tilstandsligning" />
+          <Txt Lang="en-GB" Txt="Derive thermodynamic properties from an Equation of State" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere en tilstandsligning på hensigtsmæssig måde" />
+          <Txt Lang="en-GB" Txt="Develop an efficient computer code for an Equation of State" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge en given computerimplementering af en tilstandsligning for termodynamisk konsistens" />
+          <Txt Lang="en-GB" Txt="Investigate whether a given Equation of State code is thermodynamically consistent " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende stabilitetsanalyse ved ligevægtsberegning" />
+          <Txt Lang="en-GB" Txt="Use stability analysis in equilibrium calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udforme et computerprogram til beregning af flerkomponentligevægt ved givet T og P" />
+          <Txt Lang="en-GB" Txt="Write a computer program for the multicomponent PT flash" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne koeksistenskurver" />
+          <Txt Lang="en-GB" Txt="Calculate phase envelopes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udforme et computerprogram til beregning af kemisk ligevægt" />
+          <Txt Lang="en-GB" Txt="Write a computer code for calculation of chemical equilibrium" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende kemisk teori i modeller for faseligevægt" />
+          <Txt Lang="en-GB" Txt="Apply chemical theory in models for physical properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lære termodynamiske modeller for forskellige anvendelser" />
+          <Txt Lang="en-GB" Txt="Learn thermodynamic models for different applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere de mest kendte termodynamiske modeller" />
+          <Txt Lang="en-GB" Txt="Present the most popular thermodynamic models" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Please see the course brochure in www.cere.dtu.dk for details</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="28424" />
+        <Restrictions Max="25" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:37.197" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

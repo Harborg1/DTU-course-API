@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22180" Volume="2026/2027" University="dtu" LastUpdated="2026-04-13+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Design-build i Life Science" />
+        <Title Lang="en-GB" Title="Design-build in Life Science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Nogle onsdag eftermiddage (E5B) bruges til laboratoriearbejde, vejledning, mv. Disse dage vil der være undervisningsfri om formiddagen (E5A). &#xD;&#xA;De resterende onsdag eftermiddage benyttes ikke til undervisning. &#xD;&#xA;Kurset fortsætter i 3-ugersperioden i januar." />
+          <Schedule_Txt Lang="en-GB" Txt="Some of the weeks, Wednesday afternoon (E5B) will be used for lab exercises, etc.  These days will not have teaching in the morning (E5A). The rest of the Wednesday afternoons will not be used for teaching. &#xD;&#xA;The course continues in the 3-weeks period in January." />
+          <Schedule ScheduleKey="E5A" SortID="0" />
+          <Schedule ScheduleKey="January" SortID="0" />
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="59" KVL_Resources="100" />
+          <Ass_Dep UID="23" Resources="20" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="26" Resources="1" University="DTU" SortID="1" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="27" Resources="20" University="DTU" SortID="2" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="107248" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Pernille Rose</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>peroje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="26818" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Marie Sofie</GivenName>
+            <FamilyName>Møller</FamilyName>
+            <Email>msmo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="39147" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Frank Møller</GivenName>
+            <FamilyName>Aarestrup</FamilyName>
+            <Email>fmaa@food.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen består af en mundtlig gruppepræsentation. Deltagelse i eksamen forudsætter, at obligatoriske elementer er afleveret og godkendt i løbet af hele kursusperioden." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam is a group oral presentation. Participation in the exam requires that mandatory elements during the full course period have been approved." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset er kun for studerende på bacheloruddannelserne Bioteknologi og Teknisk Biomedicin." />
+            <Supp_Txt Lang="en-GB" Txt="The course is only for students enrolled in the BSc programmes Biotechnology and Technical Biomedicine." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De studerende arbejder i små grupper gennem hele forløbet med problemer relateret til antibiotikaresistens. 
+
+Baggrunden for emnet vil blive behandlet i et review projekt, som vil blive opsummeret i skriftlig form. Viden vil herefter blive omsat til en projektplan, der fører til design af et mikrobiologisk vækstforsøg til bestemmelse af antibiotikaresistens. 
+
+Antibiotikaresistensen måles ved hjælp af et prototypesystem, som er designet og bygget af de studerende. Systemet er baseret på et 3D printet fundament med en mikrocontroller, som henter online data ved hjælp af basale scripts. Skylabs innovative laboratorier vil understøtte de forskellige dele af prototypefremstillingen. 
+
+De studerende vil selv lede projektet med vejledning fra instruktører. I en afsluttende mundtlig præsentation vil "Conceive-Design-Implement-Operate" tilgangen blive evalueret sammen med de opnåede resultater.</Contents>
+          <Teaching_And_Learning_Methods>Kurset er projektbaseret og benytter en blanding af forelæsninger, øvelser og laboratoriearbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus introducerer de studerende til "Conceive-Design-Implement-Operate" tilgangen til at opnå en forståelse af problembaseret læring. I et tværfagligt projekt vil de studerende lære at udtænke en mikrobiologisk studieplan og forberede prøver i overensstemmelse hermed. Herefter vil et prototypesystem til måling af planlagte data blive designet og bygget. Kurset vil delvist foregå på DTU Skylab, hvilket vil give grundlag til at forfølge innovation og udvikling af prototyper på eget initiativ efter kurset.</Course_Objectives>
+          <DTU_Remark>Kurset er kun for studerende på bacheloruddannelserne Bioteknologi og Teknisk Biomedicin.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The students will work in small groups throughout the whole course on problems related to antimicrobial resistance.  
+
+The background of the topic will be addressed in a review project which will be summarized in written form. The knowledge will hereafter be translated into a project plan which leads to the design of a microbiological growth experiment for determination of antimicrobial resistance. 
+
+Antimicrobial resistance will be measured using a device which is designed and built by the students. The device is based on a 3D printed frame with a microcontroller which acquires online data using basic scripting. The innovative laboratories of Skylab will support the different aspects of prototyping the device. 
+
+The students will lead the project themselves with guidance from instructors. In a final oral presentation, the “Conceive-Design-Implement-Operate” approach will be evaluated together the obtained results.</Contents>
+          <Teaching_And_Learning_Methods>The course is project based and uses a mixture of lectures, exercises and lab work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course introduces the students to the “Conceive-Design-Implement-Operate” approach to obtain an understanding of problem-based engineering.  In a cross disciplinary project, the students will learn to conceive a microbiological study plan and prepare samples accordingly. Hereafter a prototype instrument for measuring planned data will be designed and build. The course will partly take place at DTU Skylab which will give the foundation of pursuing innovation and instrument prototyping on own initiative after the course.</Course_Objectives>
+          <DTU_Remark>The course is only for students enrolled in the BSc programmes Biotechnology and Technical Biomedicine.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre et litteraturstudie om et veldefineret videnskabeligt problem." />
+          <Txt Lang="en-GB" Txt="conduct a literature study on a defined scientific problem " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere resultatet af litteraturstudiet på en klar og sammenhængende måde. " />
+          <Txt Lang="en-GB" Txt="communicate findings from the literature study in written form, in a clear and coherent manner. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udarbejde en projektplan baseret på opdeling af et større problem til delopgaver under hensyntagen til tidsbegrænsningerne i de forskellige projektfaser." />
+          <Txt Lang="en-GB" Txt="devise a project plan based on the decomposition of a larger problem into component tasks taking the time constraints of the different project stages into account." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kan skrive Python-kode til dataanalyse af vækstkurver, bruge AI værktøjer til at generere og forbedre koden samt validere og forklare den." />
+          <Txt Lang="en-GB" Txt="Can write Python code for growth-curve data analysis, use AI tools to generate and refine this code, and validate as well as explain it." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og bygge et målesystem med CAD software og 3D print." />
+          <Txt Lang="en-GB" Txt="design and build a device using CAD software and 3D printing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="karakterisere følsomheden og lineariteten af systemet." />
+          <Txt Lang="en-GB" Txt="characterize the sensitivity and linearity of the device." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="måle og analysere data fra selvfremstillede mikrobiologiske prøver." />
+          <Txt Lang="en-GB" Txt="measure and analyze data from self-made microbiological samples." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere og beskrive CDIO processen samt de opnåede resultater." />
+          <Txt Lang="en-GB" Txt="evaluate and describe the CDIO process and the obtained results." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="27002. 27023/23214" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="78" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="200" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:20.307" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

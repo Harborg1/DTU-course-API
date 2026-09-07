@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02504" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computer Vision" />
+        <Title Lang="en-GB" Title="Computer Vision" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="70571" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Morten Rieger</GivenName>
+            <FamilyName>Hannemose</FamilyName>
+            <Email>mohan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="219202" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Theodora</GivenName>
+            <FamilyName>Kontogianni</FamilyName>
+            <Email>thekon@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="32847" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Anders Bjorholm</GivenName>
+            <FamilyName>Dahl</FamilyName>
+            <Email>abda@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Or_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Hvis antallet af studerende er stort vil eksamen blive skriftlig. Ellers er eksamen mundlig." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="If the number of students is too large, the exam will be written. Otherwise the exam is oral." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="In case of a written exam the exam will take place on the official date. An oral exam will take place over several days around the official date." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ved en skriftlig eksamen vil eksamen forgå på den officielle dato. Ved en mundtlig eksamen vil eksamen forgå over flere dage omkring den officielle dato." />
+            <Schedule ScheduleKey="F3B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset dækker computer vision-metoder baseret på en kombination af geometri, matematik, statistik og læringsbaserede tilgange, anvendt på billeder og visuelle data. De studerende introduceres til både grundlæggende begreber og praktiske metoder inden for computer vision og opnår hands-on erfaring gennem øvelser med implementering, eksperimenter og evaluering. Kurset omfatter både klassiske metoder og udvalgte moderne tilgange. Det forventes, at studerende, der deltager i kurset, har erfaring med programmering i Python, grundlæggende billedanalyse og et introducerende kursus i deep learning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Vi benytter kursusnoter og videnskabelige artikler.</Course_Literature>
+          <Course_Objectives>Dette kursus dækker centrale emner indenfor computer vision med særligt fokus på 3D geometri og overfladerekonstruktion til at få information baseret på billeder fra et perspektivisk kamera. Computer vision metoder er centrale for en række anvendelser inklusiv digital underholdning, kortlægning, visuelle sensorer i industrielle anvendelser, robotnavigation og meget andet. Kursets mål er at give studerende en kombineret teoretisk og praktisk forståelse af, hvordan computer vision problemer løses.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers computer vision methods based on a combination of geometry, mathematics, statistics, and learning-based approaches, applied to images and visual data. Students are introduced to both fundamental concepts and practical methods in computer vision, and gain hands-on experience through exercises involving implementation, experimentation, and evaluation. The course includes both classical methods and selected modern approaches. Students are expected to have prior experience with Python programming, basic image analysis, and introductory deep learning.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>We will use lecture notes and scientific articles.</Course_Literature>
+          <Course_Objectives>This course covers core topics in computer vision including 3D geometry and surface reconstruction for obtaining information from images obtained from a perspective camera. Computer vision methods are core to a range of applications including digital entertainment, mapping, visual sensors in industrial application, robot navigation, and many others. The course aims at providing students a combined theoretical and practical understanding of how computer vision problems are solved.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med programmering i Python og NumPy. Billedanalyse eller lignende introducerende kursus som dækker grundlæggende billedrepræsentationer og operationer på billeder, herunder filtrering. Kendskab til deep learning-koncepter og -frameworks er også påkrævet." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience programming in Python and NumPy. Image analysis or similar introductory course covering fundamental image representations and operations, including filtering. Familiarity with deep learning concepts and frameworks is also required" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02456(02516)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere relevante metoder til løsning af computer vision problemer." />
+          <Txt Lang="en-GB" Txt="Identify relevant methods for solving computer vision problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere en valgt computer vision algoritme i for eksempel Matlab eller Python." />
+          <Txt Lang="en-GB" Txt="Implement a chosen computer vision algorithm in e.g. Matlab or Python." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre en systematisk performanceanalyse af en computer vision algoritme. " />
+          <Txt Lang="en-GB" Txt="Carry out a systematic performance analysis of a computer vision algorithm." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et- og to-billedegeometri til estimering af punkter, positioner og overflader" />
+          <Txt Lang="en-GB" Txt="Apply one and two view geometry for estimating points, positions, and surfaces." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og anvende linerære metoder til kameraestimering." />
+          <Txt Lang="en-GB" Txt="Implement and use linear methods for camera estimation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og anvende kamerakalibrering." />
+          <Txt Lang="en-GB" Txt="Implement and use camera calibration." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og anvend RANSAC-algoritmen" />
+          <Txt Lang="en-GB" Txt="Implement and apply the RANSAC algorithm." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde korrespondancer mellem 2D billedpunkter og estimere 3D punkter ud fra disse." />
+          <Txt Lang="en-GB" Txt="Find correspondences between 2D image points and estimate 3D points from these." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende billedfeatures i computer vision." />
+          <Txt Lang="en-GB" Txt="Understand and use image features in computer vision." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende computer vision software-biblioteker." />
+          <Txt Lang="en-GB" Txt="Use common computer vision software libraries." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Kamerabaseret 3D estimation og objektgenkendelse</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="02501" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="6" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:08.547" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46411" Volume="2026/2027" University="dtu" LastUpdated="2026-03-16+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Design af store komposit konstruktioner" />
+        <Title Lang="en-GB" Title="Design of large composite structures" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="126378" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Xiao</GivenName>
+            <FamilyName>Chen</FamilyName>
+            <Email>xiac@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="189465" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sina</GivenName>
+            <FamilyName>Samareh</FamilyName>
+            <Email>seysa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives som en samlet vurdering af den mundtlige eksamen og to rapporter baseret på øvelserne. Både den mundtlige eksamen samt de to rapporter skal bestås." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assesment is based on the oral exam and two reports based on the exercises. Both the oral exam and the two reports must be passed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil fokusere på forståelsen af det strukturelle respons og svigt af kompositkonstruktioner udsat for belastning. Dette vil opnås ved at give de studerende praktiske og beregningsmæssige metoder til at analysere og designe disse strukturer. Fokus vil til dels være på design af vindmøllevinger, men den opnåede viden vil være relevant for design af andre typer af kompositkonstruktioner.
+
+Kursets indhold er ligeligt fordelt mellem teoretiske metoder til analyse og den praktiske anvendelse af disse metoder i design. Følgende teoretiske emner vil blive dækket i løbet kurset:
+
+- Oversigt over komposit videnskab og teknologi (materialer, produktion, applikationer);
+
+- Klassisk laminat teori;
+
+- Svigtanalyser (svigtkriterier progressiv skades-/svigt-analyse, buling, udmattelse);
+
+- Bjælke og pladeteori for monolitiske fiberforstærkede kompositter;
+
+- Bjælke og pladeteori for sandwichkonstruktioner;
+
+- Finite Element Analyse (FEA) af kompositkonstruktioner (formulering, element teknologi);
+
+- Design og analyse af kompositkonstruktioner
+
+
+Forståelse og anvendelse af ovenstående emner opnås gennem praktiske øvelser i design og svigt af komposit og sandwich komponenter (FEA og programmering i Matlab eller lignende).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og evt. virksomhedsbesøg</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kompositmaterialer bruges i stigende omfang til design af avancerede og lette strukturer, så som vindmøllevinger, fly, land køretøjer, maritime fartøjer samt strukturer til brug i rummet.
+
+Formålet med dette kursus er at give de studerende den nødvendige baggrund med henblik på at kunne designe og analysere komponenter og store konstruktioner fremstillet af lette kompositmaterialer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will focus on the understanding of the structural response and failure of composite structures when exposed to loading. This will be done by providing the students with practical and computational methods to analyze and design these structures. Focus will partly be on the design of wind turbine blades, but the obtained knowledge can be applied to other types of composite structures.
+
+The course content is equally distributed between theoretical methods for analysis and the practical application of these methods in design. The following theoretical topics will be covered during this course:
+
+- Overview of composite science and technology (materials, manufacturing, applications);
+
+- Classical laminate theory (CLT);
+
+- Failure analysis (failure criteria, progressive damage/failure analysis, buckling, fatigue);
+
+- Beam and plate theory for monolithic fiber-reinforced composites;
+
+- Beam and plate theory for sandwich structures;
+
+- Finite Element Analysis (FEA) of composite structures (formulation, modeling technology);
+
+- Design and analysis of composite structures.
+
+Understanding and application of the above topics is achieved through practical exercises in design and failure of composite and sandwich components (FEA and programming in MatLab or similar).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and possible company visit</Teaching_And_Learning_Methods>
+          <Course_Objectives>Composite materials are increasingly being used in the design of advanced and lightweight structures, such as wind turbine blades, airplanes, land vehicles, marine and space structures.
+
+The course aims to provide students with the fundamental knowledge and necessary tools for designing and analyzing components and large structures made of lightweight composite materials.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for tilgængelige konstruktionsmaterialer inden for fiberarmerede plastkompositkonstruktioner og disse materialers egenskaber, fordele og ulemper." />
+          <Txt Lang="en-GB" Txt="Account for fiber-reinforced polymer composite materials and their properties, advantages and disadvantages in a structural application. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende klassisk laminat teori på komposit strukturer og grundlæggende metoder inden for klassisk sandwich teori." />
+          <Txt Lang="en-GB" Txt="Explain typical structural configurations of composite wind turbine blades and the general design procedure." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare forskellene mellem bjælke og plade strukturer og anvende klassisk Euler-Bernoulli teori til at beregne udbøjning af bjælker." />
+          <Txt Lang="en-GB" Txt="Account for the general relations between cross-sectional forces and stresses for sandwich construction elements. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse udbøjning og bule opgaver for laminerede plader ved hjælp af Kirchhoff's pladeteori." />
+          <Txt Lang="en-GB" Txt="Solve bending and buckling problems for laminated plates using Kirchhoff's plate theory." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende forskellige svigt kriterier for kompositmateriale og i sandwich konstruktionselementer." />
+          <Txt Lang="en-GB" Txt="Explain the basic design principles of sandwich construction elements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skitsere forskellige udmattelsesmodeller for kompositmaterialer." />
+          <Txt Lang="en-GB" Txt="Calculate the deflection of laminated beams and plates under static loads utilizing the Classical Laminate Theory." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere strukturen af en 10 MW vindmøllevinge ud fra stivhed, styrke og udmattelse ved at anvende analysemetoder lært i løbet af kurset." />
+          <Txt Lang="en-GB" Txt="Apply different failure criteria to assess the strength of composite materials and sandwich elements. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for den generelle sammenhæng mellem snitkræfter, snitmomenter og spændingsfordelinger for sandwich konstruktionselementer." />
+          <Txt Lang="en-GB" Txt="Solve bending and buckling problems of laminated plates using Kirchhoff's plate theory. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for strukturelle designmetoder og forstå hvordan belastninger og randbetingelser påvirker det strukturelle design." />
+          <Txt Lang="en-GB" Txt="Account for structural design methods and understand the effect of loading and boundary conditions on the structural design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende design og analyseværktøjer til at dimensionere specifikke kompositkonstruktioner." />
+          <Txt Lang="en-GB" Txt="Analyze the structure of a 10 MW wind turbine blade from deflection, material strength and buckling point of view using analytical methods. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere resultater opnået via standard design- og analyseværktøjer imod et forventet respons af konstruktionen." />
+          <Txt Lang="en-GB" Txt="Model composite structures and analyze their structural response using ABAQUS or similar finite element software." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere og analysere kompositkonstruktioner i ABAQUS eller tilsvarede finite element software, under statiske lasttilfælde og buling." />
+          <Txt Lang="en-GB" Txt="Evaluate results by comparing them with analytical solutions and make quality engineering judgment." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41501/41812/46420" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Komposit konstruktioner</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="18" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:38.83" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02562" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Rendering - introduktion" />
+        <Title Lang="en-GB" Title="Rendering - Introduction" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="21367" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jeppe Revall</GivenName>
+            <FamilyName>Frisvad</FamilyName>
+            <Email>jerf@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Individuel aflevering af lab journal (løsninger til arbejdssedler) og projektrapport. I tilfælde af samarbejde med en anden skal ansvarsdelingen i samarbejdet klart fremgå af afleveringen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Individual submission of lab journal (worksheet solutions) and project report. In case of collaboration with someone else, the distribution of responsibilities in the collaboration must be stated clearly in the submission." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Visuelle effekter: direkte belysning, skygger, refleksion, brydning (refraktion), farveblødning (colour bleeding), kaustikker, tekstur.
+Metoder: ray tracing, photon mapping, path tracing, texture mapping, radiosity.
+Kerneelementer: opbygning af computergrafiksystemer til rendering, radiometri og fotometri, lys-materiale interaktion (BRDF, BTDF), accelerationsstrukturer, 3D projektion (kamera og tekstur), GPU accelerering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Rendering er at bruge en matematisk model på en computer til at skabe digitale billeder, som ligner virkelighedens 3-dimensionelle verden. Computeranimation til film og spil er klassiske eksempler, hvor rendering er essentielt. Visualisering af arkitektur og produkter på tegnebrættet (digitale prototyper) er et andet vigtigt anvendelsesområde. 3D simuleringer eller målinger kan med fordel også visualiseres vha. computergrafiske renderingsteknikker. Endvidere bliver det mere og mere almindeligt at generere datasæt med syntetiske billeder til maskinlæring.
+
+Kursets mål er at introducere de ray tracing teknikker, der almindeligt anvendes i computergrafiksystemer til generel/offline rendering (fotorealistiske billeder, modellering af materialers udseende, computeranimation, videnskabelig visualisering, afbildningsteknikker) samt at give erfaring med udvikling af algoritmer og implementering af dele til sådanne systemer. Specielt er det målet at stifte bekendskab med algoritmer til simulering af lys-materiale interaktion og at implementere dele af grafik-systemer, der kan rendere forholdsvis komplicerede objekter, scener og lysforhold.</Course_Objectives>
+          <DTU_Remark>Kurset afholdes i ulige år og næste gang i efteråret 2027.</DTU_Remark>
+          <Remark>Kurset kan følges sideløbende med kursus 02561 Computergrafik og komplementerer dette kursus, men kan også følges uafhængigt af dette kursus.
+Computergrafik interesserede bachelor studerende kan følge kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Visual effects: direct illumination, shadows, reflection, refraction, colour bleeding, caustics, texture.
+Methods: ray tracing, photon mapping, path tracing, texture mapping, radiosity.
+Core elements: building computer graphics systems for rendering, radiometry and photometry, light-material interaction (BRDF, BTDF), acceleration data structures, 3D projection (camera and texture), GPU acceleration.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>Rendering is to use a mathematical model on a computer for creating a digital image that looks like the real three-dimensional world. Computer animation for movies and games are classical examples where rendering is essential. Visualization of architecture and products under development (digital prototypes) is another important application area. It is also an advantage to use computer graphics rendering techniques for visualizing 3D simulations or measurements. Furthermore, it is increasingly more common to generate datasets consisting of synthetic images for machine learning.
+
+The course objective is to introduce the ray tracing techniques commonly used in computer graphics systems for general/off-line rendering (photorealistic images, material appearance modelling, computer animation, scientific visualization, mapping techniques) as well as providing some experience with developing algorithms and implementing parts of such systems. In particular, the objective is to acquaint the participants with algorithms for simulating light-material interaction and to implement parts of a graphics system that can render relatively complicated objects, scenes, and illumination conditions.</Course_Objectives>
+          <DTU_Remark>The course runs in odd years and next time in the autumn of 2027.</DTU_Remark>
+          <Remark>It is possible to take this course alongside 02561 Computer Graphics. The two courses complement each other. However, this course can also be attended independently.
+Bachelor students with an interest in computer graphics can attend the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmeringserfaring (fx Python, Java, C/C++, JavaScript eller Matlab)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Programming experience (for instance Python, Java, C/C++, JavaScript, or Matlab)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01002/01004).(02002/02003/02100/02312/02635)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere ray tracing og tilhørende Monte Carlo sampling metoder." />
+          <Txt Lang="en-GB" Txt="Implement ray tracing and associated Monte Carlo sampling techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere shadere til rendering af overflader." />
+          <Txt Lang="en-GB" Txt="Implement shaders for rendering surfaces." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende forskellige BRDF-løsninger til beskrivelse af lys-materiale interaktion." />
+          <Txt Lang="en-GB" Txt="Explain and apply BRDF solutions for describing light-material interaction." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere visuelle effekter som opstår inden for global belysning (refleksion, brydning, farveblødning [colour bleeding], kaustikker)." />
+          <Txt Lang="en-GB" Txt="Simulate visual effects that appear in a global illumination context (reflection, refraction, colour bleeding, caustics)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og analysere renderingsteknikker og vælge den bedst egnede metode til en given visualiseringsopgave." />
+          <Txt Lang="en-GB" Txt="Explain and analyze rendering techniques and choose the best suited method for a given visualization assignment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simple sampling teknikker til anti-aliasing og bløde skygger." />
+          <Txt Lang="en-GB" Txt="Use simple sampling techniques for anti-aliasing and soft shadows." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende teksturafbildning (afbildning af et billede på en overflade) for at højne den visuelle detaljegrad." />
+          <Txt Lang="en-GB" Txt="Use texture mapping (mapping an image to a surface) to highten the level of visual detail." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Accelerere renderingsteknikker med spatielle datastrukturer og grafikkort (GPU)." />
+          <Txt Lang="en-GB" Txt="Accelerate rendering techniques using spatial data structures and graphics cards (GPU)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge radiometriske koncepter til at beskrive hvordan lysenergi udsendes, reflekteres og transmitteres fra overflade til overflade." />
+          <Txt Lang="en-GB" Txt="Use radiometric concepts to describe how light energy is emitted, reflected, and transmitted from one surface to another." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et renderingsværktøj til fysisk-baseret rendering af et materiales udseende og forklare den path tracing det bygger på. " />
+          <Txt Lang="en-GB" Txt="Use a rendering tool for physically based rendering of the appearance of a material and explain the path tracing it is based on." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02562/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Lyssimulering og visualisering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:16.24" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

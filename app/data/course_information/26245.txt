@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="26245" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Computerbaserede metoder i kemi" />
+        <Title Lang="en-GB" Title="Applied computational chemistry" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="26" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="26" />
+        <Course_Responsible PersonKey="882" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Niels Engholm</GivenName>
+            <FamilyName>Henriksen</FamilyName>
+            <Email>neh@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="161452" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Janus Juul</GivenName>
+            <FamilyName>Eriksen</FamilyName>
+            <Email>Janus@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Beståelse af kurset er betinget af aktiv deltagelse i samtlige øvelser, derfor kræves der mødetid ved lektionens start og lægeattest ved fravær, hvis underviser forlanger det.&#xD;&#xA;Der er ingen reeksamen i kurset. Man skal tilmeldes kurset igen næste gang det kører, hvis man ikke fuldfører." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="In order to pass the course active participation in all exercises is required. Therefore the student is required to meet no later than the start of the class and submit a medical certificate if requested by the teacher when not attending.&#xD;&#xA;There is no re-examination in the course. You must register for the course again the next time it runs if you do not complete it." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til molekylmodellering og visualisering. Grundlæggende metoder til beregning af molekylers struktur og dynamik: Kvantekemi, molekylmekanik og molekylærdynamik. Eksempler på anvendelser: Konformationssøgning, reaktionsmekanismer i organisk kemi, spektroskopi, diffusionskonstanter, og radiale fordelingsfunktioner. En række computerøvelser illustrerer anvendelser inden for uorganisk og organisk kemi samt biokemi.</Contents>
+          <Teaching_And_Learning_Methods>3 uger. Forelæsninger og computerøvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Noter udleveres</Course_Literature>
+          <Course_Objectives>At udvikle et kendskab til grundlæggende metoder og begreber inden for beregning af molekylers struktur, interaktion og dynamik. At introducere anvendelse af computerbaserede beregningsmetoder i kemi. Opnå erfaring med relevant computer software.</Course_Objectives>
+          <DTU_Remark>BSc studerende fra Kemi og Teknologi har fortrinsret i tilfælde af lodtrækning.</DTU_Remark>
+          <Remark>Kurset kan benyttes som en introduktion til "computational chemistry" for masterstuderende. Dette kursus illustrerer flere begreber diskuteret i kurserne Introduktion til Kvantekemi (26261) og Fysisk Kemi 3 (26231).</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to molecular modeling and visualization. Basic methods for the calculation of molecular structure and dynamics: Quantum chemistry, molecular mechanics and molecular dynamics. Applications: Conformational search, reaction mechanisms in organic chemistry, spectroscopy, diffusion constants, and radial distribution functions. A number of computer exercises illustrate applications within inorganic and organic chemistry, and biochemistry.</Contents>
+          <Teaching_And_Learning_Methods>3 weeks. Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Notes are handed out</Course_Literature>
+          <Course_Objectives>To develop a knowledge of basic methods and concepts for the calculation of molecular structure, interaction, and dynamics. To introduce applications of computer-based computational methods in chemistry. Obtain hands-on experience with relevant computer software.</Course_Objectives>
+          <DTU_Remark>BSc students from Chemistry and Technology have priority in the event of a draw.</DTU_Remark>
+          <Remark>The course can serve as an introduction to computational chemistry for master's students. This course illustrates several concepts discussed in the courses Introduction to Quantum Chemistry (26261) and Physical Chemistry 3 (26231).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende indledende fysisk og organisk kemi. Bemærk: Forventet viden om grundlæggende fysisk kemi." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or similar introductory physical and organic chemistry. Note: Expected knowledge of basic physical chemistry." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(26200/26201/26211).(26400).(27002/27020)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualisere molekylstrukturer på basis af krystallografiske databaser" />
+          <Txt Lang="en-GB" Txt="Visualize molecular structures on the basis of crystallografic databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive fundamentale metoder til beregning af molekylers struktur og dynamik" />
+          <Txt Lang="en-GB" Txt="Describe fundamental methods for calculation of molecular structure and dynamics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende software til forudsigelse af molekylers konformation" />
+          <Txt Lang="en-GB" Txt="Apply computer software to the prediction of molecular conformations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende software til at beregne vekselvirkning mellem molekyler" />
+          <Txt Lang="en-GB" Txt="Apply computer software to the calculation of molecular interactions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive reaktionsmekanismer i organisk kemi på kvantitativt grundlag" />
+          <Txt Lang="en-GB" Txt="Describe reaction mechanisms in organic chemistry on a quantitative basis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende software til at beregne molekylære spektra" />
+          <Txt Lang="en-GB" Txt="Apply computer software to the calculation of molecular spectra" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende software til at beregne diffusionskonstanter i væsker" />
+          <Txt Lang="en-GB" Txt="Apply computer software to the calculation of diffusion constants in liquids" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende software til at beregne væskers struktur" />
+          <Txt Lang="en-GB" Txt="Apply computer software to the calculation of the structure of liquids" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="120" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="120" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="30" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:21:49.537" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

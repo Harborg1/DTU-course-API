@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10306" Volume="2026/2027" University="dtu" LastUpdated="2026-04-21+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Teori for 2D materialer og stærk lys-stof vekselvirkning" />
+        <Title Lang="en-GB" Title="Theory of 2D materials and Strong Light-Matter Interaction" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="90369" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Simone</GivenName>
+            <FamilyName>Latini</FamilyName>
+            <Email>simola@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Alle elementer skal bestås." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment. All elements have to be passed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Tight-binding-modeller for repræsentative 2D-materialer, elektroniske båndstrukturer og "valley" frihedsgrader, optisk lineær responsteori, excitoner. Lys-stof vekselvirknings Hamiltonen, Gauge frihed, Floquet teori, konceptet bag polariton, lav-energi kvanteelektrodynamik (QED), grundlæggende “cavity-materials-engineering”.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, numeriske og analytiske øvelser, projekt.</Teaching_And_Learning_Methods>
+          <Course_Literature>Tilpassede noter fra læreren og henvisninger til forskningsartikler.</Course_Literature>
+          <Course_Objectives>At udruste dig med de nødvendige teoretiske og numeriske værktøjer til at forstå de forskellige nye fænomener, der stammer fra stærk lys-materiale interaktion. Kurset vil give dig grundæggende viden om optiske egenskaber af to-dimensionelle materialer, og du vil blive introduceret til metoder som på forskningsniveau bliver brugt til at behandle interaktionen med klassisk- og kvantelys.</Course_Objectives>
+          <DTU_Remark>Dette er et teoretisk, beregningsorienteret kursus om to-dimensionelle (2D) materialer og deres vekselvirkning med lys. Kurset er tæt knyttet til nuværende aktiviteter på DTU Fysik (https://physics.dtu.dk/research/sections/2dphys).</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Tight-binding models of representative 2D materials, Electronic structure and valley degrees of freedom, Optical linear response theory, Excitons. Light-Matter interaction Hamiltonians, gauge freedom, Floquet theory, the concept of Polaritons, low-energy Quantum electrodynamics (QED), basics of Cavity material engineering.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, Numerical and Analytical Exercises, Project.</Teaching_And_Learning_Methods>
+          <Course_Literature>Tailored notes from teacher and references to research papers.</Course_Literature>
+          <Course_Objectives>To equip you with the necessary theoretical and numerical tools to understand the diverse emergent phenomena originating from strong light-matter interaction. The course will provide you with basics on optical properties of two-dimensional materials and you will be introduced to research-level methodologies to treat their strong interaction with classical and quantum light.</Course_Objectives>
+          <DTU_Remark>A theoretical and computational hands-on course on two-dimensional (2D) materials with focus on their interaction with light. The course connect you with current activities at DTU Physics (https://physics.dtu.dk/research/sections/2dphys).</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser.&#xD;&#xA;&#xD;&#xA;Basal kendskab til Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses.&#xD;&#xA;&#xD;&#xA;Basic Experience with Python" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(10102/10104) . (10303/10317) . 10112" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opliste de relevante symmetrier i 2D-materialer" />
+          <Txt Lang="en-GB" Txt=" List the relevant symmetries in 2D materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere tight-binding modeller for de mest repræsentative 2D-materialer" />
+          <Txt Lang="en-GB" Txt="Construct tight-binding models for most representative 2D materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere den optiske respons af 2D-materialer" />
+          <Txt Lang="en-GB" Txt="Model the optical response of 2D materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede elektriske og magnetiske felter i kvantificeret form" />
+          <Txt Lang="en-GB" Txt="Derive electric and magnetic fields in quantized form" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opliste og forklare de forskellige gauge-valg" />
+          <Txt Lang="en-GB" Txt="List and explain the different gauge choices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede lys-materie kobling fra lokal ladningsbevarelse" />
+          <Txt Lang="en-GB" Txt="Derive light-matter coupling from local charge conservation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare konsekvensen af periodisk laserdrivning af materialer" />
+          <Txt Lang="en-GB" Txt="Explain the consequence of periodic laser driving of materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Floquet-teori til at konstruere båndstrukturer i 2D-materialer" />
+          <Txt Lang="en-GB" Txt="Apply Floquet theory to engineer band structures in 2D materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere dannelsen af sammensatte polaritoner" />
+          <Txt Lang="en-GB" Txt="Model the formation of composite polaritons" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:04.01" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

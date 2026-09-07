@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22481" University="dtu" LastUpdated="2026-08-11+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Indledende medicinsk billeddannelse" />
+        <Title Lang="en-GB" Title="Introduction to medical imaging" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="1-2 af de 13 moduler afholdes på Bispebjerg hospital." />
+          <LocationTxt Lang="en-GB" Txt="1-2 of the 13 teaching modules are conducted at Bispebjerg hospital." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="1-2 moduler ud af 13: Fredag formiddag (E4B) og/eller eftermiddag (E3B) vil blive anvendt til praktiske øvelser på Bispebjerg hospital. Der vil disse dage ikke være undervisning om morgenen på DTU (E4B)" />
+          <Schedule_Txt Lang="en-GB" Txt="One or two modules out of 13: Friday morning (E4B) and/or afternoon (E3B) will be used for practical exercises at Bispebjerg hospital. These days no teaching will take place in the morning at DTU (E4B)." />
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="Bispebjerg Hospital" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="Bispebjerg Hospital" />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <External_Course_Responsible Email="MNL01@bbh.hosp.dk" Name="Markus Nowak Lonsdale" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="107576" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mathilde Hauge</GivenName>
+            <FamilyName>Lerche</FamilyName>
+            <Email>mhauler@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="74337" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Axel</GivenName>
+            <FamilyName>Thielscher</FamilyName>
+            <Email>axthi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Afsluttende 2 timers Multiple Choice Questions (MCQ) eksamen tæller vejledende 60% i den samlede karakter. Den afsluttende grupperapport (med individualisering) tæller vejledende de resterende 40%. &#xD;&#xA;Der anvendes helhedsbedømmelse. Både rapport og MCQ eksamen skal bestås.&#xD;&#xA;Der kan indgå obligatoriske opgaver, som løbende skal afleveres og evt. peer-reviewes, men som ikke danner grundlag for bedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final, two-hour Multiple Choice Questions (MCQ) exam counts for 60% of the total grade. The final group report (with individualization) counts for the remaining 40%. &#xD;&#xA;The total grade is based on an overall assessment. Students must pass both the MCQ exam and the final report.&#xD;&#xA;&#xD;&#xA;The course can include certain mandatory homework assignments with possible peer review; however, they do not contribute to the final grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The exam will be digital." />
+            <Aid_Txt Lang="da-DK" Txt="Eksamen vil være digital." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Re-examination will be oral" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Reeksamen vil være mundtlig" />
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Velkommen til kurset Indledende medicinsk billeddannelse, hvor vi dykker ned i den fascinerende verden med at visualisere strukturen og funktionen af organer i den menneskelige krop. Dette kursus udforsker en række billeddannelsesmetoder, der er afgørende for medicinsk diagnose, herunder ultralyd, røntgen (både skyggebilleder og tomografiske billeder som CT-scanninger), magnetisk resonansbilleddannelse (MRI) samt positronemissionstomografi (PET) og enkeltfoton emissionscomputertomografi (SPECT).
+
+At forstå de fysiske principper bag disse billeddannelsesmodaliteter er altafgørende, da de danner grundlaget for nøjagtig fortolkning og analyse af medicinske billeder. Det primære projekt indeholder en udfordring: at bestemme typen af biologisk materiale i et ukendt fantom ved hjælp af disse billeddannelsesmetoder.
+
+Gennem hele kurset vil du engagere dig i kollaborativ læring i små grupper, hvor du tackler problemer relateret til fortolkning og analyse af medicinske billeder. I jeres grupper vil I undersøge jeres individuelle fantomer. Dette involverer erhvervelse af billeder ved hjælp af forskellige billeddannelsesmodaliteter og anvendelse af de værktøjer og teknikker, I lærer, til at analysere og fortolke disse billeder effektivt.</Contents>
+          <Teaching_And_Learning_Methods>Interaktive forelæsninger, praktiske øvelser på DTU og Bispebjerg hospital, computerøvelser, projektarbejde. Kurset kræver, at deltagerne er rutinerede i brugen af Python.</Teaching_And_Learning_Methods>
+          <Course_Literature>I kursus 22481 anvender vi "Medical Imaging - physics, engineering and clinical applications" af Nadine Barrie Smith og Andrew Webb, 2011, publiceret af Cambridge University Press.  Bogen kan købes (enten som fysisk bog eller online ressource) gennem polyteknisk boghandel.</Course_Literature>
+          <Course_Objectives>Kurset har til formål at forstå og udnytte de grundlæggende fysiske principper bag de vigtigste medicinske billeddiagnostiske modaliteter, der anvendes på hospitalet. Gennem individuelle studier, interaktive e-læringsmaterialer, interaktive forelæsninger og  projektbaseret samarbejde opnår de studerende praktisk ekspertise i at anvende disse principper på scenarier i den virkelige verden.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Welcome to Introduction to Medical Imaging, where we delve into the fascinating world of visualizing the structure and function of organs within the human body. This course explores a variety of imaging methods crucial for medical diagnosis, including ultrasound, x-ray (both shadow images and tomographic images like CT scans), magnetic resonance imaging (MRI), as well as positron emission tomography (PET) and single photon emission computer tomography (SPECT).
+
+Understanding the physical principles behind these imaging modalities is paramount, as they form the foundation for accurate interpretation and analysis of medical images. Your primary project revolves around a compelling challenge: determining the type of biological tissue within an unknown phantom using these imaging modalities.
+
+Throughout the course, you'll engage in collaborative learning within small groups, tackling problems related to the interpretation and analysis of medical images. In your groups you will investigate your individual phantoms. This involves acquiring images using different imaging modalities and applying the tools and techniques you've learned to analyze and interpret these images effectively.</Contents>
+          <Teaching_And_Learning_Methods>Interactive lectures, practical exercises at DTU and Bispebjerg hospital, computer exercises, project work. The course requires the participants to be experienced in Python.</Teaching_And_Learning_Methods>
+          <Course_Literature>In course 22481, we use "Medical Imaging - physics, engineering and clinical applications" by Nadine Barrie Smith and Andrew Webb, 2011, published by Cambridge University Press. The book can be purchased (either as a physical copy or an online resource) through Polyteknisk Boghandel.</Course_Literature>
+          <Course_Objectives>The course aims to grasp and utilize the core physical principles behind main medical imaging modalities used at the hospital. Through individual studies, interactive e-learning materials, interactive lectures, and collaborative, project-based teamwork, students gain practical expertise in applying these principles to real-world scenarios.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Fysiologi og anatomi. Godt kendskab til Python er essentielt. Det er en fordel at have gennemført kursus 22476." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Physiology and anatomy. Good knowledge of Python is essential. It is an advantage to have completed course 22476." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="22476" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, hvordan de fysiske principper for diagnostisk ultralyd bestemmer billeddannelse, opløsning og artefakter, og fortolke ultralydsbilleder i relation til disse principper." />
+          <Txt Lang="en-GB" Txt="Explain how physical principles of diagnostic ultrasound determine image formation, resolution, and artifacts, and interpret ultrasound images in relation to these principles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere MR-billeders kontrast og fremtoning til underliggende fysiske principper, herunder relaksationsmekanismer og billedoptagelsesparametre." />
+          <Txt Lang="en-GB" Txt="Relate MRI image contrast and appearance to underlying physical principles, including relaxation mechanisms and acquisition parameters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke røntgenbilleder ved at forklare, hvordan røntgenstrålers vekselvirkning med materiale påvirker billedkontrast og diagnostisk information." />
+          <Txt Lang="en-GB" Txt="Interpret planar X-ray images by explaining how X-ray interactions with matter influence image contrast and diagnostic information." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne for CT-billedrekonstruktion og ved brug af CT-billeddata vurdere, hvordan disse påvirker billedopløsning, kontrast og almindelige artefakter." />
+          <Txt Lang="en-GB" Txt="Explain the principles of CT image reconstruction and evaluate their effects on image resolution, contrast, and common artifacts using CT image data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og vurdere de grundlæggende fysiske principper for PET- og SPECT-billeddannelse og sammenligne deres funktionelle egenskaber med anatomiske billedmodaliteter." />
+          <Txt Lang="en-GB" Txt="Explain and evaluate the fundamental physical principles of PET and SPECT imaging and compare their functional capabilities to anatomical imaging modalities." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bearbejde, visualisere og fortolke 2D og 3D medicinske billeddatasæt ved anvendelse af Python-baserede værktøjer." />
+          <Txt Lang="en-GB" Txt="Process, visualize, and interpret planar (2D) and volumetric (3D) medical imaging datasets using Python-based tools." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne og vurdere medicinske billedmodaliteter med hensyn til fysiske principper, billedegenskaber og klinisk anvendelighed." />
+          <Txt Lang="en-GB" Txt="Compare and evaluate medical imaging modalities with respect to physical principles, image characteristics, and clinical applicability." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende fysiske principper til at analysere og fortolke medicinske billeddatasæt samt til at løse billedbaserede kvantitative og kvalitative problemstillinger." />
+          <Txt Lang="en-GB" Txt="Apply physical principles to analyze and interpret medical imaging datasets and to solve image-based quantitative and qualitative problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere billeddannelsesfysik, dataanalyse og eksperimentelle observationer til at undersøge sammensætningen af gruppespecifikke fantomer i projektsamarbejde." />
+          <Txt Lang="en-GB" Txt="Integrate imaging physics, dataset analysis, and experimental observations to investigate the composition of group-specific phantoms in collaborative project work." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, syntetisere og formidle billedresultater i en struktureret videnskabelig rapport, der demonstrerer klare sammenhænge mellem fysiske principper og observerede billedegenskaber." />
+          <Txt Lang="en-GB" Txt="Analyze, synthesize, and communicate imaging findings in a structured scientific report demonstrating clear links between physical principles and observed image characteristics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende digitale og AI-baserede værktøjer kritisk til at understøtte konceptuel forståelse, dataanalyse og videnskabelig kommunikation inden for medicinsk billeddannelse." />
+          <Txt Lang="en-GB" Txt="Critically use digital and AI-based tools to support conceptual understanding, data analysis, and scientific communication in medical imaging." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>De fysiske principper bag de centrale kliniske billeddannende teknikker</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="2" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="31540" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="15" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="37" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="2" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-08-11" Time="13:35:08.003" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

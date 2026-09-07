@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46600" Volume="2026/2027" University="dtu" LastUpdated="2026-03-11+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Aeroakustik" />
+        <Title Lang="en-GB" Title="Aeroacoustics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="38653" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Franck René Jacques</GivenName>
+            <FamilyName>Bertagnolio</FamilyName>
+            <Email>frba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="45180" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Andreas</GivenName>
+            <FamilyName>Fischer</FamilyName>
+            <Email>asfi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_And_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="2 skriftlige (1 individuel + 1 i gruppe) opgaver, 1 individuel mundtlig eksam, og 1 individuel skritflig eksam.&#xD;&#xA;Bemærk at den skriftelige eksamen ligger i undervisningsperioden og den mundtlige eksamen i eksamensperioden" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="2 written (1 single + 1 in group) assignments, 1 individual oral exam, and 1 individual written exam.&#xD;&#xA;Please note that the written exam is during the 13-week period and the oral exam is in the exam-period." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Mundtlig 20 min - Skriftlig 2 timer" />
+          <Duration Lang="en-GB" Txt="Oral 20 mins - Written 2 h" />
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Aeroakustiske koncepter, Linære bølgeligninger og akustisk analogi, Støjmekanismer på vindmøller, Støjforudsigende modeller, Design af lydsvage vindmøller, aeroakustiske lydmålinger, støjudbredelse, Paraboliske bølgeligninger,  Beregningsbaseret aeroakustik, Udførelse af et defineret vindtunneleksperiment i Poul La Cour vindtunnel og analyse af data</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>“Aeroacoustics of Low Mach Number Flow: Fundamentals, Analysis, and Measurement” by Glegg, Devenport (Academic Press, 2017)
+“Handbook of Wind Energy Aerodynamics - Part VII Aeroacoustics” by Stoevesandt et al (Eds) (Springer, 2022)
+“Fundamentals of General Linear Acoustics” by Jacobsen, Juhl (Wiley, 2013)</Course_Literature>
+          <Course_Objectives>Målet er at give de studerende en forståelse af hvordan en vindmølle genererer aerodynamisk støj, hvordan støjen kan reduceres og hvordan lyden udbreder sig i atmosfæren. Dette mål er understøttet af læring om de numeriske og matematiske modelleringskoncepter. Derudover vil de studerende lære hvordan lyd kan måles og fortolkes.</Course_Objectives>
+          <Remark>I de to første forelæsninger vil de studerende blive opdelt i to grupper. Gruppe 1: Introduktion til aerodynamik for studerende med baggrund i akustik. Gruppe 2: Introduktion til akustik for studerende med baggrund i aerodynamik.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Aero-acoustics concepts, Linear wave equation and acoustic analogy, Noise mechamisms of wind turbines, Noise prediction models, Low noise wind turbine design, aeroacoustic measurements, sound propagation, Parabolic wave equations,  Computational aero-acoustics, Conduction of a pre-defined wind tunnel experiment in the Poul La Cour wind tunnel and analysis of the data</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>“Aeroacoustics of Low Mach Number Flow: Fundamentals, Analysis, and Measurement” by Glegg, Devenport (Academic Press, 2017)
+“Handbook of Wind Energy Aerodynamics - Part VII Aeroacoustics” by Stoevesandt et al (Eds) (Springer, 2022)
+“Fundamentals of General Linear Acoustics” by Jacobsen, Juhl (Wiley, 2013)</Course_Literature>
+          <Course_Objectives>The goal is to provide the students with an understanding of how a wind turbine generates aerodynamic noise, how it can be mitigated and how it is transported in the atmosphere. This goal is supported by learning the numerical and mathematical modelling concepts. Furthermore, the students will learn how sound can be measured and physically interpreted.</Course_Objectives>
+          <Remark>During the two first lectures the students will be split into two groups. Group 1: Introduction to aerodynamics for students with a background in acoustics. Group 2: Introduction to acoustics for students with a background in aerodynamics.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til enten aerodynamik som f.eks. Grundlæggende aerodynamik (46110), eller lineær akustik Grundkursus i akustik og støj (34840).&#xD;&#xA;Grundlæggende kendskab til Python eller MatLab." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of either aerodynamics similar to Fundamentals of aerodynamics (46110), or linear acoustics similar to Fundamentals of acoustics and noise control (34840).&#xD;&#xA;Basic knowledge of Python or Matlab." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46110 or 34840" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvorfor støj fra vindmøller er relevant for samfundet " />
+          <Txt Lang="en-GB" Txt="explain the relevance of wind turbine noise for society" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fortolke og modellere grundlæggende akustiske lydbølger" />
+          <Txt Lang="en-GB" Txt="interpret and model basic acoustic wave motion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fortolke og modellere af strømning på akustisk lydbølger" />
+          <Txt Lang="en-GB" Txt="interpret and model the effect of flow on the acoustic wave motion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skitsere mekanismer bag turbulente strømninger og støjgenerering" />
+          <Txt Lang="en-GB" Txt="outline the mechanisms of flow turbulence and aerodynamic noise generation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende de nævnte koncepter for at identificere og modellere aerodynamiske støjkilder på en vindmølle" />
+          <Txt Lang="en-GB" Txt="apply the concepts above to identify and model aerodynamic noise sources of a wind turbine" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvend metoder til at reducere og controllere støjkilder på en vindmølle" />
+          <Txt Lang="en-GB" Txt="apply techniques to reduce and control noise sources of a wind turbine" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende din viden om lydbølger på lydudbredelse i atmosfæren" />
+          <Txt Lang="en-GB" Txt="apply your knowledge of acoustic wave motion to atmospheric sound propagation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse en aeroakustisk problemstilling numerisk" />
+          <Txt Lang="en-GB" Txt="solve an aeroacoustic problem numerically" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="måle egenskaber af en lydbølge" />
+          <Txt Lang="en-GB" Txt="measure characteristics of a sound wave" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere data fra mikrofonarrays" />
+          <Txt Lang="en-GB" Txt="process data from microphone array measurements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre og analysere data fra en aeroakustisk vindtunneleksperiment" />
+          <Txt Lang="en-GB" Txt="conduct and process data of an aeroacoustic wind tunnel experiment" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Aeroacoustics, wind turbine noise, acoustic measurements</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:43.16" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

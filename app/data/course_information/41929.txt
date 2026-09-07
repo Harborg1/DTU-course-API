@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41929" Volume="2026/2027" University="dtu" LastUpdated="2026-05-28+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Digitale designværktøjer" />
+        <Title Lang="en-GB" Title="Digital design tools" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="23158" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kristoffer</GivenName>
+            <FamilyName>Negendahl</FamilyName>
+            <Email>krnj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der skal afleveres 4 individualiserede gruppeopgaver. Der benyttes helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="4 individualized group assignments. An overall assessment is used." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er i organiseret omkring lektioner, øvelser og designopgaver. Indledningsvist introduceres visuel programmering i relation til byggeri. Lektionerne omhandler parametri, rammebetingelser, modelteknikker, modeldefinitioner. Undervejs i kurset får kursisterne mulighed for selv at opbygge og implementere modeller med åbne og faste parametre. Modellerne anvendes til at beregne eller simulere bygningsfysik og bygningsstatik. Kurset introducerer emner som interoperabilitet, koblinger af modeller, filformater Input &gt; output mellem værktøjer. Gennem kurset skabes en forståelse af lineære modelleringsprocesser og mere avancerede processer som rekursion og generative processer. Her introduceres automatisering og optimering som emner og kursisterne får adgang til at afprøve metoderne på egne modeller. I kurset anvendes viden fra tidligere kurser og der anvendes nye værktøjer til at modellere termiske forhold og konstruktive forhold.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, individuelle opgaver og gruppeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere forskellige modelleringstilgange indenfor bygningsdesign ved anvendelse af software. At opnå indsigt og forståelse for forskellige typer af modeller anvendt under bygningsingeniørdiscipliner. At opnå kompetencer indenfor visuel kodning og scripting i modelsammenhænge. At opnå evner til at forstå og modellere digitale repræsentationer af virkeligheden, og at benytte resultater til at begrunde bygningsdesignvalg. Kurset udvider deltagernes forståelse for Bygningsinformationsmodellering (BIM) som koncept, særligt med henblik på at integrere og parametrisere modeller.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is organized around lessons, exercises and design assignments. Initially, visual programming in relation to construction is introduced. The lessons deal with parameters, framework conditions, model techniques, model definitions. During the course, the students get the opportunity to build and implement models with open and fixed parameters. The models are used to calculate or simulate building physics and building statistics. The course introduces topics such as interoperability, model couplings, file formats Input&gt; output between tools. The course creates an understanding of linear modeling processes and more advanced processes such as recursion and generative processes. Here, automation and optimization are introduced as topics and the students get access to test the methods on their own models. The course uses knowledge from previous courses and new tools are used to model thermal conditions and conditions of structural design.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, individual assignments, and group assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce different modeling approaches within building design using software. To gain insight and understanding of different types of models used under building engineering disciplines. To acquire competencies within visual coding and scripting in model contexts. To gain the ability to understand and model digital representations of reality, and to use results to justify building design choices. The course expands the participants' understanding of Building Information Modeling (BIM) as a concept, especially with a view to integrating and parameterizing models.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere bygningskomponenter, bygningsdele og bygninger i forskellige digitale designværktøjer i 2d og 3d " />
+          <Txt Lang="en-GB" Txt="Model building components, building parts and buildings in various digital design tools in 2d and 3d" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge geometriske forudsætninger for beregningsmodeller og anvende forskellige modelleringsbetingelser " />
+          <Txt Lang="en-GB" Txt="Build geometric assumptions for calculation models and use different modeling conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og opbygge parametriske modeller vha. scriptingværktøjer " />
+          <Txt Lang="en-GB" Txt="Apply and build parametric models using scripting tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere, undersøge og løse af relevante problemstillinger vha. digitale værktøjer" />
+          <Txt Lang="en-GB" Txt="Formulate, study and solve relevant problems using digital tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og implementere beregningsmetoder for energi, indeklima og bærende konstruktioner for udvikling " />
+          <Txt Lang="en-GB" Txt="Apply and implement calculation methods for energy, indoor climate and load bearing structures for development" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udveksle og integrere data mellem forskellige værktøjer" />
+          <Txt Lang="en-GB" Txt="Exchange and integrate data between different tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Aflæse og opbygge topologi og modelleringshierarki" />
+          <Txt Lang="en-GB" Txt="Read and build topology and modeling hierarchy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende scriptingteknikker og forstå loops, if-statements relateret til geometri og modellering" />
+          <Txt Lang="en-GB" Txt="Apply scripting techniques and understand loops, if-statements related to geometry and modeling" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere egne algoritmer og software til analyse af bygnings-relateret kontekst" />
+          <Txt Lang="en-GB" Txt="Implement algorithms and software enabling analysis of building related context" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41925.02002" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til parametrisk modellering og performancebasseret design</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="11035/41919" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-29" Time="09:09:19.68" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30784" Volume="2026/2027" University="dtu" LastUpdated="2026-03-25+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Røntgen- og gamma-strålingsdetektorer til ruminstrumentering" />
+        <Title Lang="en-GB" Title="X-ray and gamma-ray detectors for space instrumentation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="DTU Space B328" />
+          <LocationTxt Lang="en-GB" Txt="DTU Space B328" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Der vil være obligatoriske detektoreksperimenter ved brug af strålingskalibreringskilder." />
+          <Schedule_Txt Lang="en-GB" Txt="There will be mandatory detector experiments utilizing radiation calibration sources." />
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="7703" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Irfan</GivenName>
+            <FamilyName>Kuvvetli</FamilyName>
+            <Email>irfan@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="89007" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Selina Ringsborg Howalt</GivenName>
+            <FamilyName>Owe</FamilyName>
+            <Email>shoowe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den mundtlige eksamen fastsætter karakteren. En individuel laboratorierapport skal afleveres og godkendes som bestået eller ikke bestået før eksamen. Rapporten skal afspejle dit eget arbejde, bruge dine tildelte data og svare til det udførte forsøg. Du skal kunne forklare rapportens hovedpunkter ved eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The oral exam determines the grade. An individual laboratory report must be submitted and approved as pass or fail before the exam. The report must reflect your own work, use your assigned data, and match the performed experiment. You must be able to explain the main elements of the report at the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Mundtlig eksamen: 10 minutter + 5 minutters Q&amp;A-session." />
+          <Duration Lang="en-GB" Txt="Oral exam: 10 minutes + 5-minute Q&amp;A session" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursusindholdet omfatter traditionelle forelæsninger, gruppediskussioner og praktiske laboratorieøvelser. Studerende vil have muligheder for at arbejde med numeriske simulationer og databehandling. Der vil være et betydeligt fokus på gruppearbejde og kommunikation, hvor studerende præsenterer deres resultater i en formel rapport.</Contents>
+          <Teaching_And_Learning_Methods>Teori: forelæsninger, interaktive diskussioner, numeriske simulationer og databehandling. Eksperimentel: Øvelser i detektorlaboratorium.
+Antallet af laboratorieøvelser afgøres af, hvor mange studerende der er tilmeldt</Teaching_And_Learning_Methods>
+          <Course_Literature>Radiation detection and Measurements' by G.F.Knoll
+
+Udvalgte artikler og laboratorieøvelsesdokumenter.</Course_Literature>
+          <Course_Objectives>Dette kursus, specifikt designet til MSc-studerende, tilbyder en omfattende udforskning af principperne for strålingsdetektion og -måling. Det fokuserer på hårdt røntgen- og gammastråledetektorer med særlig vægt på deres anvendelser inden for videnskabelig ruminstrumentering. Pensum går dybt ind i de grundlæggende begreber inden for faststoffysik og fremhæver deres kritiske rolle i forskellige strålingsinteraktioner inden for faste stof detektorer.
+
+Kurset tilbyder en grundig undersøgelse af design, egenskaber og præstation af 1D, 2D og 3D røntgen- og gamma-detektorer. Derudover vil studerende udføre eksperimenter i laboratoriet ved hjælp af virkelige detektorer og numeriske metoder til simulering af instrumentpræstation med værktøjer som SRIM og SPENVIS. Praktiske laboratorieøvelser vil give praktisk erfaring med topmoderne detektorer og dække både detektorfysik og teoretiske aspekter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course content includes traditional lectures, group discussions, and practical laboratory exercises. Students will have opportunities to work with numerical simulations and data processing. A significant focus will be on group work and communication, with students presenting their results in a formal report.</Contents>
+          <Teaching_And_Learning_Methods>Theory: lectures, interactive discussions, numerical simulations, and data processing. Experimental: detector laboratory exercises.
+The number of laboratory exercises is determined by the number of students enrolled.</Teaching_And_Learning_Methods>
+          <Course_Literature>Radiation detection and Measurements' by G.F.Knoll
+
+Selected articles and lab exercise documents.</Course_Literature>
+          <Course_Objectives>This course, designed specifically for MSc students, provides a comprehensive exploration of radiation detection and measurement principles and hard X-ray and Gamma-Ray detectors, with a special focus on their applications in scientific space instrumentation. It delves deep into the core concepts of solid-state physics, highlighting their critical role in various radiation interactions within solid-state detectors. The curriculum offers an in-depth study of the design, properties, and performance of 1D, 2D, and 3D X-ray and gamma detectors. In addition, students will conduct experiments in the laboratory using real detectors and numerical methods for instrument performance simulation with tools like SRIM and SPENVIS. Practical laboratory exercises will provide hands-on experience with cutting-edge detectors, reflecting both detector physics and theoretical aspects.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til principper inden for faststoffysik samt erfaring med håndtering og analyse af eksperimentelle data er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of principles in solid-state physics, as well as experience in handling and analyzing experimental data, is an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30120. 30794. 10122. " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar principperne inden for faststoffysik i strålingsdetektion og måling." />
+          <Txt Lang="en-GB" Txt="Explain the principles of solid-state physics in radiation detection and measurement." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv forskellige typer af vekselvirkning og strålingsinteraktioner i faststofdetektorer." />
+          <Txt Lang="en-GB" Txt="Describe various types of radiation interactions in solid-state detectors." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør eksperimentelle metoder til karakterisering af detektorernes ydeevne." />
+          <Txt Lang="en-GB" Txt="Conduct experimental methods for detector performance characterization." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend eksperimenter med halvlederdetektorer for at vurdere billed-, spektrale og tidsmæssige egenskaber af detektorer." />
+          <Txt Lang="en-GB" Txt="Apply experiments using semiconductor radiation detectors to evaluate the imaging, spectral, and timing properties of detectors." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn den teoretiske detektor-kvanteeffektivitet og orbit baggrund." />
+          <Txt Lang="en-GB" Txt="Calculate the theoretical detector quantum efficiency and in-orbit background." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå designet og funktionaliteten af X- og gammastråle videnskabelig ruminstrumentering og vurder de videnskabelige evner af detektorinstrumenter i en rummæssig sammenhæng." />
+          <Txt Lang="en-GB" Txt="Understand the designs and functionality of X- and Gamma-ray scientific space instrumentation, and evaluate the scientific capabilities of detector instruments in a space environment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend og brug strålingskalibreringskilder." />
+          <Txt Lang="en-GB" Txt="Utilize and use radiation calibration sources." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar de forskellige typer af stråling i rummet." />
+          <Txt Lang="en-GB" Txt="Explain the types of radiation in space." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Strålingsdetektorer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="30787" />
+        <PreviousCourse CourseCode="30788" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="48" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="24" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:25.893" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

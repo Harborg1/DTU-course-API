@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41526" University="dtu" LastUpdated="2026-02-25+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Brudmekanik" />
+        <Title Lang="en-GB" Title="Fracture mechanics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="6575" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christian Frithiof</GivenName>
+            <FamilyName>Niordson</FamilyName>
+            <Email>cfni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9529" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Brian Nyvang</GivenName>
+            <FamilyName>Legarth</FamilyName>
+            <Email>bnle@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Or_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamensform afgøres på baggrund af deltagerantal og meddeles i første uge af semesteret." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The form of the exam is determined based on the number of participants, and it will be decided in the first week of the semester." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Spændingsfunktionsmetoder (Airys og Westergaards spændingsfunktioner), spændingskoncentrationer, spændingssingulariteter ved revnespidser, lineær elastisk brudmekanik, energimetoder, plasticitet ved revnespidser, J-integralet, HRR-feltet, kohæsiv zone modellering, kriterier for retningen af revneudbredelse, materialers udmattelse under cyklisk belastning, Paris lov.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaveregning</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give en videregående indsigt i konstruktioners styrkeforhold under såvel monoton som cyklisk belastning, samt at sætte den studerende i stand til at benytte moderne dimensioneringsprincipper under hensyntagen til revneudbredelse i både homogene materialer og kompositter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Stress functions (Airy's and Westergaard's), stress concentrations, stress singularities at crack tips, linear-elastic fracture mechanics, energy methods, plasticity at crack tips, the J-integral, the HRR-field, cohesive zone modeling, criteria for the direction of crack extension,  fatigue during cyclic loading, Paris law.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem solving</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give thorough insight into the mechanics of materials under both monotonic and cyclic loading, and to enable the student of using modern principles for dimensioning structures, while accounting for fracture in both homogeneous materials and composites.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Viden om bjælketeori såvel som elasticitetsteori, herunder transformation af spændinger og tøjninger" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of beam theory as well as theory of elasticity including transformation of stresses and strains" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41502 / 41534" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte spændingsfunktioner (potentialmetoder) til at løse plane elastiske problemer." />
+          <Txt Lang="en-GB" Txt="Use stress-functions to solve plane elastic problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme spændingsintensitetsfaktorer for revner i konstruktioner." />
+          <Txt Lang="en-GB" Txt="Determine stress intensity factors for cracks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte lineær elastisk brudmekanik (både spændings- og energikriterier) til forudsigelse af revneinitiering og vækst i sprøde materialer." />
+          <Txt Lang="en-GB" Txt="Use linear elastic fracture mechanics (both stress and energy criteria) to predict crack initiation and growth in brittle materials." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere størrelsen af plastiske zoner omkring revnespidser." />
+          <Txt Lang="en-GB" Txt="Estimate the size of plastic zones at crack tips." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme om lineær elastisk brudmekanik kan benyttes for konkrete problemer." />
+          <Txt Lang="en-GB" Txt="Establish the applicability of linear elastic fracture mechanics for a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udregne J-integralet og revneåbningen (COD) i elastisk-plastiske konstruktioner og benytte disse til at bestemme kritiske belastninger mht. revneudbredelse." />
+          <Txt Lang="en-GB" Txt="Calculate the J-integral and crack opening displacement in elastic-plastic materials and use these to determine critical loads with respect to crack growth." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme retningen for revneudbredelse i konstruktioner." />
+          <Txt Lang="en-GB" Txt="Determine the direction of crack propagation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere kritisk last under fuldt plastiske betingelser" />
+          <Txt Lang="en-GB" Txt="Determine critical load under fully plastic conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere revnevækst under cykliske påvirkninger." />
+          <Txt Lang="en-GB" Txt="Analyze crack growth under cyclic loading." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Fracture and fatigue in engineering materials</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:23.933" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

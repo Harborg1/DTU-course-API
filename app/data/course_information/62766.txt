@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62766" Volume="2026/2027" University="dtu" LastUpdated="2026-06-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Drift af elektriske energisystemer" />
+        <Title Lang="en-GB" Title="Operation of electrical energy systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="170915" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ashraf Fathi Khalil</GivenName>
+            <FamilyName>Sulayman</FamilyName>
+            <Email>ashka@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="178698" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mehdi</GivenName>
+            <FamilyName>Savaghebi</FamilyName>
+            <Email>medi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den mundtlige eksamen er baseret på en grundlæggende teori om drift og SCADA systemer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The oral examination is based on a the fundamental theory of operation and control and SCADA systems." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Del 1:
+- Elproduktion ved hjælp af fossilt brændstof og vedvarende energikilder og energilagring
+- Elsystemers styringssystemer til styring af aktiv effekt, reaktiv effekt, spænding og frekvens - regulatorstyring, automatisk spændingsregulator (AVR), elsystemstabilisator (PSS) og "station controllers"
+- Elsystemers stabilitet med hensyn til frekvens og spænding
+- Stabilitet i elsystemet med integration af vedvarende energi
+- Transient stabilitet og oscillerende stabilitet
+- Beredskabsanalyse, PV &amp; QV-kurver og PTDF
+- Økonomisk forsendelse, enhedsforpligtelse og optimal strømstyrke
+- Markedsbaseret drift af strømforsyningssystemer
+
+Del 2:
+- SCADA-kommunikationsprotokoller, fx IEC 60870-5-101/104, IEC 61850, osv.
+- Substationsautomatiseringssystemer og GOOSE-protokollen
+- SCADA systemprogrammering</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, projektarbejde i grupper</Teaching_And_Learning_Methods>
+          <Course_Literature>Antonio Gómez-Expósito, Antonio J. Conejo, Claudio A. Cañizares, “Electric Energy Systems: Analysis and Operation, 2nd Edition, Taylor and Francis Group, 2018.
+Hadi Saadat, Power System Analysis, third edition, PSA Publishing LLC, 2011. 
+Wood, Wollenberg and Sheblé, "Power Generation, Operation and Control”, third edition, John Wiley &amp; Sons, 2014
+P. Kundur, Power system stability and control, McGraw-Hill, 2022.
+Daniel Kirschen, Goran Strbac ,Fundamentals of Power System Economics, 2nd Edition, Wiley, 2018.
+Mini S. Thomas, John Douglas McDonald, "Power Systems SCADA and Smart Grids", CRC-Press, 2017.</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at lære studerende om drift, styring og automatisering af el-systemer.
+Kurset er opdelt i to dele. Del 1 handler hovedsagelig om elsystemdrift inklusive vedvarende energi og de forskellige styresystemer til styring af el-systemer, som er nødvendige for at styre aktiv effekt, reaktiv effekt, spænding og frekvens, samtidig med at el-systemet bliver stabilt med vedvarende energikilder. I denne del vil studerende blive vist hvordan man simulerer disse forskellige styresystemer ved hjælp af PowerFactory, samt hvordan man bruger forskellige værktøjer i PowerFactory til at tjekke for systemstabilitet.
+Del 2 handler om el-system automatisering med fokus på de forskellige SCADA-kommunikationsprotokoller, fx IEC 608705-101 &amp; 104, IEC 61850, GOOSE osv., Automationssystemer til el-system, fx SICAM PAS og SCADA-systemer, fx SICAM SCC. De studerende vil opnå viden om SCADA principper og deres forhold til el-systemer.
+Denne baggrund gør det muligt for eleverne at analysere eksisterende energisystemer og evaluere tendenser mod intelligente systemer og komponenter, dvs. Digital Grid, Grid 4.0 og Smart Grid-systemer.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektrisk Energiteknologi: 5. semester (specialisering)
+
+PowerFactory 2020 er tilgængeligt for studerende via VPN</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Part 1:
+- Power generation using fossil fuel and renewable energy sources, and energy storage
+- Power systems control systems for the control of active power, reactive power, voltage, and frequency - governor controller, automatic voltage regulator (AVR), power system stabiliser (PSS), and station controllers
+- Power system stability with regard to frequency and voltage
+-Power system stability with renewable energy integration
+- Transient stability and oscillatory stability
+- Contingency Analysis, PV &amp; QV Curves and PTDF
+- Economic dispatch, unit commitment, and optimum power flow
+- Market based operation of power supply systems
+
+Part 2:
+- SCADA communication protocols, e.g. IEC 60870-5-101/104, IEC 61850, etc.
+- Substation automation systems and the GOOSE protocol
+- SCADA system programming</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, project group work</Teaching_And_Learning_Methods>
+          <Course_Literature>Antonio Gómez-Expósito, Antonio J. Conejo, Claudio A. Cañizares, “Electric Energy Systems: Analysis and Operation, 2nd Edition, Taylor and Francis Group, 2018.
+Hadi Saadat, Power System Analysis, third edition, PSA Publishing LLC, 2011. 
+Wood, Wollenberg and Sheblé, "Power Generation, Operation and Control”, third edition, John Wiley &amp; Sons, 2014
+P. Kundur, Power system stability and control, McGraw-Hill, 2022.
+Daniel Kirschen, Goran Strbac ,Fundamentals of Power System Economics, 2nd Edition, Wiley, 2018.
+Mini S. Thomas, John Douglas McDonald, "Power Systems SCADA and Smart Grids", CRC-Press, 2017.</Course_Literature>
+          <Course_Objectives>The purpose of the course is to equip the students with knowledge of operation, control, and automation of electrical power systems.
+The course is divided into two parts. Part one deals mainly with power system operation including renewable energy and different power system control systems that is required to control active power, reactive power, voltage and frequency whilst keep the power system stable with renewable energy sources. In this part students will be shown how to simulate these different control systems using PowerFactory as well as how to use different tools in PowerFactory to check for system stability.
+Part two deals with power system automation focusing on the different SCADA communication protocols, e.g IEC 608705-101 &amp; 104, IEC 61850, GOOSE, etc., power system automation systems, e.g. SICAM PAS, and SCADA systems, e.g. SICAM SCC. The students will achieve knowledge about SCADA principles and their relation to power systems.
+This background allows the students to analyse existing energy systems and evaluate trends towards intelligent systems and components, i.e. Digital Grid, Grid 4.0 &amp; Smart Grid systems.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektrisk Energiteknologi: 5. semester (specialisation)
+
+PowerFactory 2020 is available for students via VPN</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå princippet og brugen af regulator-, AVR- og PSS-controllere i et elsystem og hvordan man modellerer dem ved hjælp af PowerFactory" />
+          <Txt Lang="en-GB" Txt="Understand the principle and use of governor-, AVR- and PSS controllers in a power system and how to model them using PowerFactory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå, hvordan man tester for transiet stabilitet under fejltilstand på et elsystem ved hjælp af PowerFactory" />
+          <Txt Lang="en-GB" Txt="Understand how to test for transient stability during fault condition on a power system  using PowerFactory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå oscillatorisk stabilitet, hvordan man bestemmer egenværdierne ved hjælp af PowerFactory og hvordan en PSS controller kan løse oscillatoriske problemer i et elsystem" />
+          <Txt Lang="en-GB" Txt="Understand oscillatory stability, how to determine the eigenvalues using PowerFactory and how a PSS controller can solve oscillatory problems in a power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå frekvensstabilitet i et elsystem og hvordan man simulerer dette ved hjælp af PowerFactory" />
+          <Txt Lang="en-GB" Txt="Understand frequency stability in a power system and how to simulate this using PowerFactory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå konventionel og vedvarende energiproduktion inklusive PV, vind- og energilagring og deres modeller i PowerFactory" />
+          <Txt Lang="en-GB" Txt="Understand conventional and renewable energy power generation including PV, wind and energy storage and their models in PowerFactory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå stabiliteten af elsystemet med integration af vedvarende energi og virkningen af den lave inerti, og hvordan den kan afbødes ved brug af virtuel inerti og virtuelle synkrone maskiner" />
+          <Txt Lang="en-GB" Txt="Understand the stability of the power system with renewable energy integration and the impact of the low inertia and how it can be mitigated by use of virtual inertia and virtual synchronous machines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå spændingsstabilitet i et elsystem og hvordan man bruger PV og QV-kurver i PowerFactory til at bestemme niveauet for spændingsstabilitet og de reaktive effect påkrævet i et elsystem" />
+          <Txt Lang="en-GB" Txt="Understand voltage stability in a power system and how to use PV &amp; QV curves in PowerFactory to determine the level of voltage stability and the reactive power requirements of a power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de grundlæggende principper for beredskabsanalyse og hvordan man simulerer dette i et elsystem ved hjælp af PowerFactory" />
+          <Txt Lang="en-GB" Txt="Understand the basic principles of contingency analysis and how to simulate this in a power system using PowerFactory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå principperne om økonomisk forsendelse, enhedsforpligtelse, optimalt effect flow og energimarkedet" />
+          <Txt Lang="en-GB" Txt="Understand the principles of economic dispatch, unit commitment, optimal power flow and the energy market" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå forskellen mellem de forskellige SCADA-protokoller, fx IEC 60870-5-101 / 104, IEC 61850, Modbus osv." />
+          <Txt Lang="en-GB" Txt="Understand the difference between the different SCADA protocols, e.g. IEC 60870-5-101/104, IEC 61850, Modbus, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de grundlæggende principper for transformatorstationautomatisering ved hjælp af GOOSE og et strømautomatiseringssystem, fx. SICAM PAS og kunne implementere grundlæggende automatisering ved hjælp af GOOSE messaging og CFC programmering" />
+          <Txt Lang="en-GB" Txt="Understand the basic principles of substation automation using GOOSE and a power automation system, e.g. SICAM PAS and be able to implement basic automation using GOOSE messaging and CFC programming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de grundlæggende principper for SCADA konfiguration (&quot;programmering&quot;), hændelsesoptagelse og alarmhåndtering" />
+          <Txt Lang="en-GB" Txt="Understand the basic principles of SCADA configuration (&quot;programming&quot;), event recording and alarm handling" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="62761.62704" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Operation and Control of Electrical Power Systems</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-06-10" Time="15:27:50.14" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

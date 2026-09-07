@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41216" University="dtu" LastUpdated="2026-04-27+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Styrkeberegning af skibe" />
+        <Title Lang="en-GB" Title="Structural assessment of ships" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="117076" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Yanlin</GivenName>
+            <FamilyName>Shao</FamilyName>
+            <Email>yshao@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6371" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Harry Bradford</GivenName>
+            <FamilyName>Bingham</FamilyName>
+            <Email>hbbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evaluering af en projektrapport (50 %) afleveret ved semesters slutning sammen med mundtlig fremlæggelse (50 %). Delkarakterer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Grade will be given based on one project report (50 %) made during the course and oral presentation (50 %) of the group project. Partial grades." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="30 minutter pr. studerende" />
+          <Duration Lang="en-GB" Txt="30 minutes per student" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Hovedvægten i kurset er lagt på bestemmelse af global strukturel analyse af en skib, der sejler i bølger. Sikkerhed mod globalt skrogsvigt under normale operationsprofiler vil blive analyseret. Ulykkeslaster (kollision og Grundstødning) beskrives også ligesom rationel regeludvikling baseret på direkte beregninger behandles
+
+Bøjningsmoment, sagging, hogging
+Havbølger: Lineære og ikke-lineære bølgeprofiler, bølgernes energispektrum, stationære processer, scatter diagrammer.
+Spændinger i skroget: Midtskibssektion, effektiv tykkelse, bøjningsmodstand, normal spænding, flydespænding.
+Statistiske korttids og langtidsanalyser, ekstremværdier og udmattelseslevetider.
+Skrogets vibrationer: Skrogfleksibilitet, egenfrekvenser, springing, whipping.
+Pålidelighedsanalyse: Partialkoefficienter, første ordens metoder, sandsynlighed for sammenbrud.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>J.J Jensen 2001, Load and Global Response of Ships, Elsevier Science.</Course_Literature>
+          <Course_Objectives>At give de studerende den nødvendige teoretiske baggrund for at kunne forstå og anvende de nyeste rationelle beregningsmetoder inden for  styrkelæren og sikkerhedsteori til dimensionering af skibe.
+At indøve metoder til kvalitetssikring af et projekt.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The main emphasis is on the determination of the global response of a given ship sailing in waves. Safety against global failure of the hull girder should be evaluated under normal operation conditions. Accidental loads (collision and grounding) will also be covered as well as rational rule development.
+
+Bending moment, sagging, hogging.
+Ocean waves: linear and non-linear wave elevation, regular and irregular waves, excitation wave spectrum, stationary process, wave scatter diagram.
+Stresses in the hull girder: midship section, effective thickness, section modulus, maximum normal stress, yield stress. Statistical short-term and long-term analyses, extreme values, expected fatigue damage.
+Hull vibrations: hull flexibility, the natural frequency of the hull, springing, whipping.
+Reliability analysis of the hull girder: Hasofer-Lind safety index, probability of failure, limit state function.</Contents>
+          <Teaching_And_Learning_Methods>Lecture modules and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>J.J Jensen 2001, Load and Global Response of Ships, Elsevier Science.</Course_Literature>
+          <Course_Objectives>To enable the students to understand and to use modern rational methods within the strength of materials and reliability theory to design ships.
+
+To enable students to do quality assurance of an engineering project.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Statik, mekaniske vibrationer og styrke af materialer; Fluidmekanik; Grundlæggende viden om marin- og oceanteknik; Programmering ved Python/MATLAB." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Statics, mechanical vibrations, and strength of materials; Fluid mechanics; Fundamental knowledge of marine and ocean engineering; Python/MATLAB Programming." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41501. 41502. 41312. 41201. 41107. 41271. 02002" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de grundlæggende dimensioneringskriterier for skibe" />
+          <Txt Lang="en-GB" Txt="Describe the fundamentals of structural design and assessment of ships" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlaget for dybvands bølgemodellering " />
+          <Txt Lang="en-GB" Txt="Describe the fundamentals of modeling of ocean waves " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende statistiske metoder til beskrivelse af havbølger " />
+          <Txt Lang="en-GB" Txt="Apply methods that account for the statistical nature of ocean waves" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme bølgeinducerede belastninger på skibet i en stokastisk sø" />
+          <Txt Lang="en-GB" Txt="Determine wave-induced loads on the ship in stochastic sea" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme ekstreme bølgebelastninger på skibet" />
+          <Txt Lang="en-GB" Txt="Determine extreme wave loads on the ship" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme udmattelseslevetider for skrogbjælken" />
+          <Txt Lang="en-GB" Txt="Determine the expected fatigue damage in the hull" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme spændingerne i skrogets pga. statiske og dynamisk belastninger " />
+          <Txt Lang="en-GB" Txt="Determine hull girder stresses due to static and dynamic loads" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere sikkerhed mod skrogsvigt under de specificerede belastninger." />
+          <Txt Lang="en-GB" Txt="Assess the safety against the failure of the hull girder under specified loading" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for effekten af skrogets vibrationer på udmattelsesstyrken" />
+          <Txt Lang="en-GB" Txt="Explain loads due to hull girder vibrations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for sikkerhedsfaktorer til dimensioneringsregler" />
+          <Txt Lang="en-GB" Txt="Explain safety factors for rule development" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere skibes sikkerhed som følge af skader ved kollision og grundstødning" />
+          <Txt Lang="en-GB" Txt="Assess the safety of a vessel after collision or grounding " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en teknisk rapport over en undersøgelse omfattende ovenstående punkter " />
+          <Txt Lang="en-GB" Txt="Write a technical report for a specific ship dealing with bullets mentioned above" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Direkte beregningsmetoder til analyse af skibes strukturelle forhold</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41211/41210" />
+        <PreviousCourse CourseCode="41211" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:42.273" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

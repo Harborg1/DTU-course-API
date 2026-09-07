@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02203" University="dtu" LastUpdated="2026-03-17+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Design af Digitale Systemer" />
+        <Title Lang="en-GB" Title="Design of Digital Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="74954" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Luca</GivenName>
+            <FamilyName>Pezzarossa</FamilyName>
+            <Email>lpez@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen og bedømmelse af individualiserede grupperapporter udarbejdet i løbet af semestret. Den endelige karakter gives på baggrund af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination and assessment of individualized group reports prepared during the semester. The final grade is based on all results in their entirety." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vedrører design af digitale systemer på RTL-niveau, VHDL/Verilog sproget, syntese og FPGA/chip teknologi. Kurset fokuserer på at skrive effektiv RTL-kode og på sammenhægen mellem koden og den hardware realisering som syntetiseres ud fra den. 
+
+Konstruktion af digitale systemer: Beregningskredsløb og tilstandsmaskiner. Pipelineteknikker. Fra algoritme til kredsløb. Kvantificering af hastighed (throughput og latenstid). Designsproget VHDL/Verilog og simulering af kredsløb beskrevet dette sprog. Sammenhæng mellem VHDL/Verilog kode og det tilsvarende syntetiserede kredsløb. 
+Introduktion til FPGA teknologi. Hardwaresyntese. Udviklingsmetode for design af digitale systemer (specifikation, trinvis forfining, simulering, syntese,  implementering og endelig afprøvning). 
+Tidsmæssig analyse af sekventielle kredsløb herunder kredsløb som har clock-skew.
+
+Sideløbende med forelæsningerne gennemføres en række øvelser, som dels giver deltagerne en dybere indsigt i forelæsningsstoffet, og dels gør deltagerne fortrolige med designsproget VHDL/Verilog og de dertil hørende CAD værktøjer til design, simulering og syntese af digitale systemer. Til slut udføres en mindre selvstændigt designopgave.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, og projekter.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: Pong Chu, "RTL-Hardware Design Using VHDL - Coding for Efficiency, Portability, and Scalability,"  Wiley, 2006.</Course_Literature>
+          <Course_Objectives>At sætte deltagerne i stand til på systematisk vis at konstruere større digitale kredsløb, f.eks. hardware acceleratorer, og at realisere disse i FPGA og chip teknologi ved anvendelse af gængse CAD-værktøjer.
+ 
+At sætte deltagerne i stand til at analysere og optimere digitale kredsløb mht. hastighed og areal.</Course_Objectives>
+          <Remark>Vejledende placering: tidligt i kandidatuddannelsen, subsidiært med passende forudsætninger sidst i bachelor- eller diplomingeniørstudiet.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course addresses the design of digital systems at the RT-level, the VHDL/Verilog languages, synthesis, and FPGA/chip technology. The focus is on writing efficient RTL-code and on the relationship between HDL-constructs and the corresponding synthesized hardware implementations.
+
+Design of digital systems. Data-path and Control. Pipelining. From algorithm to a circuit. Performance measures (throughput and latency). The VHDL/Verilog hardware description language. Simulation and synthesis. Introduction of FPGA technology. Design flow (specification, stepwise refinement, simulation, synthesis, implementation, and test). Timing analysis of sequential circuits; possibly circuits suffering from clock-skew. 
+
+A sequence of exercises supplements the lectures and provides hands-on experience using VHDL/Verilog and the associated CAD tools. A small project concludes the course.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and projects.</Teaching_And_Learning_Methods>
+          <Course_Literature>Textbook: Pong Chu, "RTL-Hardware Design Using VHDL - Coding for Efficiency, Portability, and Scalability,"  Wiley, 2006.</Course_Literature>
+          <Course_Objectives>To enable students to design larger digital circuits, e.g., hardware accelerators, in a systematic way and to implement these in FPGA and chip technology using typical CAD tools. 
+
+To enable students to analyze and optimize the speed and area of a given digital circuit.</Course_Objectives>
+          <Remark>The course is a graduate-level course (for most students) or an upper-level undergraduate course (for some students with sufficient background in digital design).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til programmering og digitalelektronik herunder kendskab til VHDL (eller et andet hardwarebeskrivende sprog)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic skills in programming and digital electronics including some knowledge of VHDL (or another hardware description language)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02139/(02100/02102)/02132" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere et digitalt kredsløb der udfører en given beregning, som et sekventielt kredsløb bestående af en tilstandsmaskine og en data-path." />
+          <Txt Lang="en-GB" Txt="Design a digital circuit that performs a given computation as a sequential circuit consisting of a finite state machine and a data-path. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="På systematisk vis pipeline et givent kredsløb samt identificere fejl i et givent kredsløb som er forsøgt pipelinet." />
+          <Txt Lang="en-GB" Txt="Systematically pipeline a given circuit and identify errors in a given circuit where pipelining has been attempted. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare parametrene throughput og latenstid, forklare den indbyrdes sammenhæng mellem disse parametre, og optimere hastigheden af et givent kredsløb." />
+          <Txt Lang="en-GB" Txt="Explain the performance parameters throughput and latency, explain the relationship between these and optimize the performance of a given circuit. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere den tidsmæssige korrekthed af et givet sekventielt kredsløb, herunder også kredsløb som rummer clock-skew." />
+          <Txt Lang="en-GB" Txt="Analyze the timing-correctness of a given sequential circuit; possibly a circuit suffering from clock skew." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for den interne opbygning i en gængs FPGA komponent (p.t XILINX) og redegøre for, hvorledes dennes ressourcer bedst kan udnyttes ved realisering af et givent kredsløb. " />
+          <Txt Lang="en-GB" Txt="Explain the internal organization of a typical FPGA component (XILINX) and explain how its resources are best exploited when implementing a given circuit. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for hvorledes en given VHDL/Verilog-beskrivelse af et ønsket kredsløb syntetiseres til hardware (dvs. en struktur af registre og kombinatorisk logik), og estimere størrelsen af dette kredsløb. Optimere kredsløbet ved at ændre VHDL/Verilog koden." />
+          <Txt Lang="en-GB" Txt="Explain how the a given VHDL/Verilog-description syntesize to hardware (i.e., a structure of registers and combinational logic blocks) and estimate the hardware resources used for the implementation. Optimize the circuit by modifying the VHDL/Verilog-code." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for fænomenet metastabilitet og beskrive hvorledes et kredsløb med flere klok-domæner skal designes for at det fungerer korrekt." />
+          <Txt Lang="en-GB" Txt="Explain the phenomenon &quot;metastability&quot; and describe how to correctly design a circuit comprising multiple clock domains." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive effektiv VHDL/Verilog-kode på et passende højt abstraktionsniveau (RTL-niveau), hvorfra det ønskede kredsløb kan syntetiseres. " />
+          <Txt Lang="en-GB" Txt="Write efficient register transfer level VHDL/Verilog code that synthesize to the intended circuit implementation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og anvende testbenches til simulering og verifikation af et kredsløbs funktion." />
+          <Txt Lang="en-GB" Txt="Develop and apply testbenches for simulation and verification of the functional correctness of a digital circuit" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle komplekse digitale kredsløb ved en trinvis forfining fra en specifikation til et hardwarenært niveau, hvorfra der kan syntetiseres en realisering. " />
+          <Txt Lang="en-GB" Txt="Design complex digital circuits by stepwise refinement from a specification down to a level from which a hardware implementation can be synthesized." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere og planlægge design af større kredsløb i en gruppe af studerende. " />
+          <Txt Lang="en-GB" Txt="Organize and plan the design of a larger digital circuit in a group comprising several students." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere dette arbejde (design, implementering og test) i form af en teknisk rapport, som henvender sig til en udenforstående fagfælle, og som overholder sædvanlige krav til form og indhold/abstraktionsniveau." />
+          <Txt Lang="en-GB" Txt="Document this work (design, implementation and test) in the form of a technical report addressing engineers in the field. The report must conform to usual requirements to form, content and level of abstraction." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.compute.dtu.dk/courses/02203" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Design af digitale systemer : RTL-niveau, design-flow, VHDL/Verilog, syntese, FPGA.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:57.573" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

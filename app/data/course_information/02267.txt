@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02267" University="dtu" LastUpdated="2024-04-02+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Software-udvikling af Webtjenester" />
+        <Title Lang="en-GB" Title="Software Development of Web Services" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="34435" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Hubert</GivenName>
+            <FamilyName>Baumeister</FamilyName>
+            <Email>huba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individualiseret grupperapport og dokumentation af et større projekt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment of an individualized group report and documentation of a larger project." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Basale teknologier for webtjeneste, f.eks. HTTP, REST, asynchronous messaging. Introduktion og brug af microservices; brug af applikationsservere og/eller cloud for at "hoste"  services
+
+Problemer og løsninger i tjenesteorienterede arkitekturer; oprette, teste og vedligeholde den nødvendige infrastruktur til at køre serviceorienterede applikationer. Udvikle, bygge og teste et praktisk projekt (dvs., agile udvikling af serviceorienterede systemer)</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og teamprojekt. Forelæsninger og projektet dækker praktiske aspekter, ligesom programmering af services (web- og microservices), men også mere teoretiske aspekter.</Teaching_And_Learning_Methods>
+          <Course_Literature>Litteratur bliver nævnt i kursusforløbet.</Course_Literature>
+          <Course_Objectives>Målet er at forstå de grundlæggende begreber i serviceteknologi (web- og microservice) og udfordringer og deres løsninger i tjenesteorienterede arkitekturer.</Course_Objectives>
+          <Remark>Anbefales sent i bachelor og masters uddannelsen.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Basic technologies for Web Services like HTTP, REST, asynchronous messaging. Introduction and use of micro services; use an application server and / or cloud to host the services
+
+Problems and solutions in service oriented architectures; setting up, testing and maintaining the required infrastructure to run service oriented applications
+Develop, build, and test a practical ongoing project (i.e., agile development of a service oriented system)</Contents>
+          <Teaching_And_Learning_Methods>Lectures and team project. The lectures and the project (to be done in teams) will cover practical aspects, like programming services (web- &amp; microservices), as well as underlying theoretical aspects.</Teaching_And_Learning_Methods>
+          <Course_Literature>Literature references will be given during the course.</Course_Literature>
+          <Course_Objectives>The goal of this course is to understand the basic concepts of service technology (web- and microservice) technology and the problems and solutions in service oriented architectures.</Course_Objectives>
+          <Remark>Is recommended late in bachelor or masters.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Solid erfaring i Java programmering og basale kundskaber til koncepter af computer arkitektur relateret til Internet, lige som socket, URL, hostname og port. Være i stand til at installere software og administrere computer systemer ved brug af command line værktøj." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Solid experience in Java programming. Basic knowledge of concepts of computer architecture related to the Internet, like socket, URL, hostname, and port.  Being able to install software and to administrate computer systems using command line tools." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02100/02314/02160).(02161/02160/02324)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="arbejde i et team og bygge en større tjenesteorienteret anvendelse" />
+          <Txt Lang="en-GB" Txt="work in a team and to build a larger service-oriented application " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="oprette servicer fra deres beskrivelse ved brug af agile metoder" />
+          <Txt Lang="en-GB" Txt="create services based on their description using agile methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge eksisterende servicer i overenstemmelse med deres beskrivelse" />
+          <Txt Lang="en-GB" Txt="use existing services according to their description" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammensætte nye servicer fra eksisterede" />
+          <Txt Lang="en-GB" Txt="compose new services from existing ones" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvilkle, teste, og dokumentere en stor serviceorienterede applikation som team ved brug af agile metoder" />
+          <Txt Lang="en-GB" Txt="develop, test, and document a larger service-oriented application in a team using agile practices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bygge, deploye og køre en stor serviceorienterede applikation " />
+          <Txt Lang="en-GB" Txt="build, deploy, and run a service-oriented application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diskutere koordination og sikkerhed af services" />
+          <Txt Lang="en-GB" Txt="discuss coordination and the security of Web services" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare tjenesteorienterde arkitekturer" />
+          <Txt Lang="en-GB" Txt="discuss service-oriented architectures" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>En praktiske introduktion i Web-service og microservice teknologier</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="63" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="37" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:13.613" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

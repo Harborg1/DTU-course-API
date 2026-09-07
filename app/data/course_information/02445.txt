@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02445" University="dtu" LastUpdated="2026-03-28+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Projekt i statistisk evaluering for Kunstig intelligens og Data" />
+        <Title Lang="en-GB" Title="Project in Statistical Evaluation for Artificial Intelligence and Data" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset udbydes for sidste gang i januar i januar 2024" />
+          <Schedule_Txt Lang="en-GB" Txt="This course is offered for the last time in January, in January 2024." />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="160076" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sneha</GivenName>
+            <FamilyName>Das</FamilyName>
+            <Email>sned@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="14823" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Line Katrine Harder</GivenName>
+            <FamilyName>Clemmensen</FamilyName>
+            <Email>lkhc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig fremlæggelse og bedømmelse af rapport(er)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral presentation and evaluation of report(s)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Forelæsninger og øvelser efterfulgt af projektarbejde udført i grupper. ANOVA, permutationstest, multiple sammenligninger, parametrisk og ikke-parametrisk bootstrapping, A/B-test, grundlæggende principper for fixed- og mixed-effects-modeller og Iten-response-teori, evaluering af ydeevne baseret på hold-out og krydsvalideringsresultater. Implementering af nogle metoder i Python. Sammenligning og evaluering af statistiske metoder på simulerede og reelle data. Opsummering af resultater i en rapport.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser (integrerede) samt løsning af praktiske opgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte deltagerne i stand til at anvende statistiske og kvantitative metoder til evaluering af AI- og datavidenskabelige modeller, fortolke og reflektere over de anvendte statistiske og kvantitative metoder og være i stand til at anvende kodningsværktøjer til dette.</Course_Objectives>
+          <DTU_Remark>Kurset er en del af bacheloruddannelsen Kunstig Intelligens og Data og er forbeholdt studerende fra denne uddannelse.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Lectures and exercises followed by project work carried out in groups. ANOVA, permutation tests, multiple comparisons, parametric and non-parametric bootstrapping, A/B tests, Basics of fixed and mixed effects models and Iten-response theory, evaluation of performance based on hold-out and cross-validation results. Implementation of some methods in Python. Comparison and evaluation of statistical methods on simulated and real data. Summarize findings in a report.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and excercises (integrated) and solution of practical assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable participants to use statistical and quantitative methods for evaluation of AI and data science models, interpret and reflect upon the statistical and quantitative methods used, and be able to apply coding tools for the same.</Course_Objectives>
+          <DTU_Remark>The course is part of the BSc programme Artificial Intelligence and Data and is reserved for students from this program.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det anbefales også at have taget 02809 eller tilsvarende." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="02809 or similar is also recommended." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402/02403. 02450." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille passende statistiske modeller og diskutere anvendelsen heraf, til evaluering af AI systemer og praktiske problemer, som involverer data." />
+          <Txt Lang="en-GB" Txt="Identify and discuss suitable statistical methods for the evaluation of AI systems and practical problems involving data.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå matrixformuleringen af simple statistiske modeller" />
+          <Txt Lang="en-GB" Txt="Understand the matrix formulation of simple statistical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå, diskutere og teste for interaktionseffekter i statistiske modeller." />
+          <Txt Lang="en-GB" Txt="Understand, discuss and test for interaction effects in statistical models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og diskutere antagelserne bag statistiske modeller ." />
+          <Txt Lang="en-GB" Txt="Understand and discuss the assumptions behind relevant statistical methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende parametriske og ikke-parametriske tests." />
+          <Txt Lang="en-GB" Txt="Understand and apply parametric and non-parametric tests." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre estimering, hypotese test, og prædiktion vha simple statistiske modeller og passende software." />
+          <Txt Lang="en-GB" Txt="Perform estimation, hypothesis testing, and prediction by means of some simple statistical models using suitable software. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere estimater for modelgeneralisering." />
+          <Txt Lang="en-GB" Txt="Setup and evaluate A/B tests." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og evaluere A/B tests." />
+          <Txt Lang="en-GB" Txt="Evaluate estimates for model generalization." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende resamplingsmetoder til evaluering af statistiske estimatorer" />
+          <Txt Lang="en-GB" Txt="Apply resampling methods for evaluation of statistical estimators. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og diskutere mål for bias og fairness i kunstig intelligens" />
+          <Txt Lang="en-GB" Txt="Apply and discuss measures of bias and fairness in AI" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke output fra statistisk software." />
+          <Txt Lang="en-GB" Txt="Interpret the output from statistical analysis software." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle statistiske resultater i en rapport til personer uden statistisk baggrund." />
+          <Txt Lang="en-GB" Txt="Disseminate the statistical results in a report targeted people without background in statistics." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02441" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="3" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:52.39" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

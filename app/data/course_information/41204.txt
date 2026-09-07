@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41204" University="dtu" LastUpdated="2026-02-25+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Grundlæggende bygningsmekanik" />
+        <Title Lang="en-GB" Title="Fundamental structural mechanics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="14148" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jan Becker</GivenName>
+            <FamilyName>Høgsberg</FamilyName>
+            <Email>jahog@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der afleveres 2 individuelle rapporter og der afholdes en afsluttende skriftlig eksamen. Den samlede karakter for kurset opnås ved en helhedsvurdering af rapporter og eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="2 individual reports and a written exam. The grade for the course relies on an overall assessment of the reports and exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset bygges op som et sammenhængende forløb med forelæsninger og efterfølgende øvelsesopgaver. Øvelsesopgaverne tjener som eksempler samt til indøvelse af analytiske og numeriske metoder. Det overordnede indhold gennemgås i følgende dele:
+
+1. Belastninger og reaktioner ved kræfter og momenter.
+
+2. Reaktioner og stangkræfter i gitterkonstruktioner.
+
+3. Reaktioner og snitkræfter i bjælker og rammer.
+
+4. Bjælker og rammers deformationer og nedbøjninger
+
+5. Teori for søjler og deres dimensionering.
+
+Eksempler på konstruktionsanalyse gør brug af simple numeriske programmer, mens design med optimalt materialeforbrug inkluderes i forbindelse med bestemmelse af bæreevne, nedbøjninger og søjleinstabilitet.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Steen Krenk &amp; Jan Høgsberg, "Statics and Mechanics of Structures", Springer, 2013.</Course_Literature>
+          <Course_Objectives>Kursets formål er at give en grundlæggende forståelse af bærende konstruktioners virkemåde samt give kendskab til beregningsmetoder til simpel dimensionering af bærende konstruktioner. Der etableres et grundlag for kurser i udformning af konstruktioner samt kurser omhandlende mere komplicerede konstruktionselementer. Der introduceres simple numeriske værkstøjer til at bestemme reaktioner, snitkræfter og deformationer.
+
+Kurset omfatter primært stænger og bjælker samt disses brug og virkemåde i statisk bestemte gitter- og rammekonstruktioner. Væsentlige kursuselementer er: Bestemmelse af reaktioner og indre kræfter og momenter i statisk bestemte konstruktioner for givne belastninger, samt differentialligningen for bjælker, instabilitet af søjler og beregning af deformationer ved det virtuelle arbejdes princip.</Course_Objectives>
+          <DTU_Remark>Kurset afholdes første gang i foråret 2024.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is coherently comprised of lectures and subsequent exercise sessions. The exercises serve as examples and for practicing analytical and numerical methods. The overall content is covered in the following parts:
+
+1. Loads and reactions by forces and moments.
+
+2. Reactions and bar forces in truss structures.
+
+3. Reactions and section forces in beams and frames.
+
+4. Deformations and deflections of beams and frames.
+
+5. Theory for columns and their dimensioning.
+
+Examples of structural analysis make use of simple numerical programs, while design with optimal use of material is included in connection with the determination of load carrying capacity, deformations and column instability.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Steen Krenk &amp; Jan Høgsberg, "Statics and Mechanics of Structures", Springer, 2013.</Course_Literature>
+          <Course_Objectives>The goal of the course is to give a basic understanding of how structures work, and provide knowledge of methods for analysis and design of simple structures. The course provides the basis for courses in structural design and more advanced theory of structural elements. Simple numerical tools are introduced to determine reactions, section forces and deformations. 
+
+The main theme of the course is bars and beams and their role in statically determinate truss and frame structures. Central elements of the course are: determination of reactions and internal forces and moments in statically determinate structures for given loads, as well as the differential equation for beams, instability of columns and calculation of deformations by the principle of virtual work.</Course_Objectives>
+          <DTU_Remark>The course is offered the first in the spring 2024.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive belastninger ved kræfter og momenter og bestemme reaktioner ved ligevægtsligninger." />
+          <Txt Lang="en-GB" Txt="Represent loads by forces and moments and determine reactions by equilibrium equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme reaktioner og stangkræfter i statisk bestemte gitterkonstruktioner." />
+          <Txt Lang="en-GB" Txt="Determine reactions and member forces in statically determinate trusses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme snitkræfter i statisk bestemte bjælker ved ligevægt og differentialligninger." />
+          <Txt Lang="en-GB" Txt="Determine section forces in statically determinate beams and frames by equilibrium conditions and differential equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simple numeriske programmer til at bestemme reaktioner, snitkræfter og deformationer i plane gitre, bjælker og rammer." />
+          <Txt Lang="en-GB" Txt="Use simple numerical tools to determine reactions, section forces and deformations in planar trusses, beams and frames" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for elastiske bjælkers deformationer og de dertil hørende differentialligninger." />
+          <Txt Lang="en-GB" Txt="Explain the mechanisms of deformation of beams and the corresponding differential equation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme tværsnitskonstanter og normalspændinger for en homogen bjælke." />
+          <Txt Lang="en-GB" Txt="Determine simple cross-section parameters and normal stresses for a homogeneous beam." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte det virtuelle arbejdes princip til bestemmelse af flytninger i gitre, bjælker og rammer." />
+          <Txt Lang="en-GB" Txt="Use the principle of virtual work to determine displacements in trusses, beams and frames. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme stabilitetslast for simple søjler og fastlægge den kritiske last for søjler med imperfektioner. " />
+          <Txt Lang="en-GB" Txt="Determine the stability load for simple columns and the critical load for columns with imperfections." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41903" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="41203/11341/41951/41953" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:41.593" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

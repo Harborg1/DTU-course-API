@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41792" University="dtu" LastUpdated="2026-02-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Måleusikkerhedsevaluering ved brug af statistiske metoder" />
+        <Title Lang="en-GB" Title="Measurement uncertainty evaluation using statistical methods" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="1 uges forelæsninger med tilstedeværelse på DTU fra mandag den 07/09/2026 til fredag den 11/09/2026, efterfulgt af 1 uge med personlig case-studie derhjemme i løbet af september." />
+          <Schedule_Txt Lang="en-GB" Txt="1 week lectures in presence at DTU from Monday 07/09/2026 until Friday 11/09/2026, followed by 1 week of personal case study at home during September." />
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Mekanik" />
+        <External_Course_Responsible Email="gianfranco.genta@polito.it" Name="Assoc. Prof. Gianfranco Genta,  Politecnico di Torino, Italy" IsContact="false" SortID="1" />
+        <External_Course_Responsible Email="giacomo.maculotti@polito.it" Name="Assist. Prof. Giacomo Maculotti" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="14205" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Guido</GivenName>
+            <FamilyName>Tosello</FamilyName>
+            <Email>guto@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af 1 individuelle rapport og mundtlig eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of 1 individual report and oral examination" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Tilmelding for eksterne studerende: https://www.dtu.dk/english/education/phd/intro/guest-phd/Guest_courses/Registration_form" />
+            <Supp_Txt Lang="en-GB" Txt="Registration for external students: https://www.dtu.dk/english/education/phd/intro/guest-phd/Guest_courses/Registration_form" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>1 Grundbegreber
+Introduktion. Hvorfor det er nødvendigt at estimere måleusikkerheden: Krav fra
+Kvalitetsstandarder og overførsel af måleinformation
+1.1 Måleusikkerhed
+Typiske bidrag til måleusikkerhed: tilfældige og systematiske effekter samt grove fejl
+(outliers)
+1.2 Metrologiske karakteristikker
+Forbindelse mellem usikkerhedsbidrag og instrumentkarakteristikker (bias,
+repeterbarhed, opløsning) og måleproces (reproducerbarhed mht instrument, operatør, målemiljø og målestørrelse).
+2 Trin i måleusikkerhedsestimering
+Teroretisk grundlag: central grænseværdisætning
+2.1 Modellering af måleproces
+Anvendelse af teoretiske og empiriske modeller til fastlæggelse af måleprocedure: korrelationsusikkerhed (ISO GPS Standarder)
+2.2 Usikkerhedsestimering
+Type A og Type B usikkerhedskomponenter (ISO GUM)
+2.3 Bestemmelse af den ekspanderede usikkerhed
+Usikkerhedsforplantelse og antal af relevante frihedsgrader
+2.4 Kritiske punkter
+Korrelation af uafhængige variable, ulinearitet, asymmetry af sandsynlighedsfordelinger
+3 Usikkerhedsbudget
+Praktisk metode for vurdering af usikkerhed
+4 Typiske eksempler
+Anvendelser på case studies omkring måling, maskinkonstruktion og planlægning af produktionsprocesser</Contents>
+          <Teaching_And_Learning_Methods>Lectures by visiting lecturers and personal study case</Teaching_And_Learning_Methods>
+          <Course_Literature>G. Barbato, A. Germak, G. Genta, Measurements for Decision Making, Società Editrice Esculapio, 2013.
+
+http://www.polyteknisk.dk/home/Detaljer/9788874885756</Course_Literature>
+          <Course_Objectives>Angivelse af måleusikkerhed er obligatorisk ifølge gældende kvalitetsstanddarder, f.o.f. ISO 9001, og mere specifikt ISO 17025, der regulerer kvalitetssikringen af prøvning hos målelaboratorier. Som grundlæggende referencetekst om dette emne, har ISO publiceret “Guide to the expression of Uncertainty in Measurement”, i daglig tale "The GUM", som er implementeret i form af den europæiske standard ENV 13005. De statistiske procedurer, som GUM foreskriver dækker et bredt spektrum af applikationer. Udover at give definitionen af den følsomme proces omkring estimering af måleusikkerheden ud fra et sæt klare regler accepteret over hele verden, bistår procedurerne med at planlægge målinger og prøvningsarbejdet til opnåelse af bestemte usikkerhedsniveauer, og således undgå både at operere med for lave usikkerheder, og overestimere usikkerheden med høje konstruktionsomkostninger til følge. Ovennævnte metoder, der både dækker specifikt metrologisk arbejde, som eksempelvis kalibrering af sensorer og målesystemer, og generel prøvning, kan desuden anvendes i forbindelse med applikationer indenfor design og planlægning af produktionsprocesser. Kursets formål er ar beskrive de vigtigste metoder, der kan anvendes samt præsentere nogle applikationer indenfor måling, design og produktion.</Course_Objectives>
+          <Remark>Dette ph.d.-kursus består af meget korte præsentationer ved læreren samt omfattende diskussioner med den studerende, der på forhånd har læst relevante artikler. Kurset knytter forelæsninger og aktiviteter om måleusikkerhedsvurdering sammen med praktiske cases. Den studerende opfordres til at forelægge en simpel case study, der involverer egne måleaktiviteter, mekanisk konstruktion eller produktion, for diskussioner og videre analyser på baggrund af metoderne fra kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>1 Basic concepts
+Introduction. Why it is necessary to evaluate uncertainty: requirements of Quality
+Standards and transfer of measurement information
+1.1 Measurement uncertainty
+Typical contributes to measurement uncertainty: random and systematic effects and
+measurement accidents (outliers)
+1.2 Metrological characteristics
+Relationship between uncertainty contributes and instrument characteristics (bias,
+repeatability, resolution) and measurement complex (reproducibility, considering
+instrument, operator, ambient conditions and measurand).
+2 Stages of uncertainty evaluation
+Theoretical basis: theorem of the central limit
+2.1 Modelling the process
+Use of theoretical or empirical models to identify the measurement procedure: correlation
+uncertainty (ISO GPS Standards)
+2.2 Evaluation of uncertainty
+Type A and Type B uncertainty contributes (ISO GUM)
+2.3 Determining expanded uncertainty
+Uncertainty propagation and relevant degrees of freedom
+2.4 Critical points
+Independent variables correlation, non linearity, asymmetry of probability distributions
+3 Uncertainty table
+Practical method for evaluating uncertainty
+4 Typical examples
+Applications to case studies on measurement, mechanical design and production process
+planning</Contents>
+          <Teaching_And_Learning_Methods>Lectures by visiting lecturers and personal study case</Teaching_And_Learning_Methods>
+          <Course_Literature>G. Barbato, A. Germak, G. Genta, Measurements for Decision Making, Società Editrice Esculapio, 2013.
+
+http://www.polyteknisk.dk/home/Detaljer/9788874885756</Course_Literature>
+          <Course_Objectives>Statement of uncertainty is mandatory by current quality standards, starting from ISO
+9001 and, more specifically, ISO 17025, that governs management of testing and
+measurement laboratories. A fundamental reference text on this topic has been published
+by ISO: “Guide to the expression of Uncertainty in Measurement”, currently referred to as
+“The GUM” and embodied into the ENV 13005 European standard. Statistical procedures
+dictated by GUM cover a broad range of applications. Besides definition of such a delicate
+undertaking as evaluation of measurement uncertainty with a clear set of rules accepted
+worldwide, they cater for planning measurement and testing work aimed at specific levels
+of uncertainty, in order to avoid failure to reach required accuracy, and costly overdesign.
+These methods - covering both specific metrological work, such as e.g. calibration of
+sensors and instrument systems, and generic testing work –also deal with applications in
+the activities of design and planning of production processes. The objectives of this course
+are to describe the main methods to be adopted and to present some applications in the
+field of measurement, design and production engineering.</Course_Objectives>
+          <Remark>The PhD course is based on very short presentations by the teacher and ample discussions
+with students that beforehand have read relevant papers. The course couples lectures and
+activities on measurement uncertainty evaluation with practical cases. Students are
+invited to present simple case studies involving their activity with measurement,
+mechanical design and production engineering for a discussion and further analysis using
+the methods described in the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Basic knowledge about statistics" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge about statistics" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive relevansen af måleusikkerhed" />
+          <Txt Lang="en-GB" Txt="Describe the relevance of uncertainty in measurement" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere de vigtigste faktorer der påvirker en målings usikkerhed" />
+          <Txt Lang="en-GB" Txt="Recognise the main factors affecting the uncertainty of a measurement" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den internationale tilgang til at udtrykke måleusikkerhed" />
+          <Txt Lang="en-GB" Txt="Describe the international approach to expressing the uncertainty of measurement" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende metoden for måleusikkerhedsevaluering beskrevet i GUM" />
+          <Txt Lang="en-GB" Txt="Apply the uncertainty evaluation technique proposed by GUM" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere usikkerhedsbudgettet for en given måleprocedure" />
+          <Txt Lang="en-GB" Txt="Analyse the uncertainty budget connected with a measurement procedure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille usikkerhedsbudgettet for en given ingeniørmæssig applikation" />
+          <Txt Lang="en-GB" Txt="Produce an uncertainty budget for a given engineering application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Håndtere problemstillinger i forbindelse med mekanisk konstruktion på statistisk vis" />
+          <Txt Lang="en-GB" Txt="Manage the problems connected with mechanical design in statistical way" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Håndtere problemstillinger i forbindelse med produktion på statistisk vis" />
+          <Txt Lang="en-GB" Txt="Manage the problems connected with production engineering in statistical way" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Statistical evaluation of uncertainty in design, production and verification</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="8" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="24" Min="8" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:58.803" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

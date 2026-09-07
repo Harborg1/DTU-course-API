@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62809" Volume="2026/2027" University="dtu" LastUpdated="2026-03-25+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Modellering og Programmering" />
+        <Title Lang="en-GB" Title="Modeling and Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_online">
+          <LocationTxt Lang="da-DK" Txt="Online" />
+          <LocationTxt Lang="en-GB" Txt="Online" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="36701" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Christian Kim</GivenName>
+            <FamilyName>Christiansen</FamilyName>
+            <Email>chkch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="220320" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tran Nguyen</GivenName>
+            <FamilyName>Le</FamilyName>
+            <Email>tngle@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Frivillige øvelser til aflevering i løbet af kurset.&#xD;&#xA;Circa 30 minutters mundtlig eksamen, der tæller 100 %.&#xD;&#xA;Karakteren gives som en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Voluntary exercises for hand-in during the course.&#xD;&#xA;Approximately 30-minute oral exam weighted by 100 % in the final grade.&#xD;&#xA;The grade is based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Computer with Matlab" />
+            <Aid_Txt Lang="da-DK" Txt="Computer med Matlab" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The oral exam will be positioned relatively to the other courses at the semester" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Den mundtlige eksamen vil placeres relativt til de andre kurser på semestret" />
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Grundlæggende Matlab programmering: Betingelser, løkker, funktioner, arrays, plots og handles, samt fil input/output. Grundlæggende fysiske love: for eksempel Newtons 2. lov, Fouriers varmelov, Kirchhoffs strømlov. Numerisk løsning af begyndelsesværdiproblemer: Eulers metode, Midtpunktsmetoden, ODE45 og Simulink. Tilstandsbeskrivelse. Linearisering af differentialligning.</Contents>
+          <Teaching_And_Learning_Methods>Undervisningsformen er en  kombination af forelæsninger samt programmerings- og modelleringsopgaver. De studerende vil benytte deres egen computer til disse opgaver, med fokus på problemløsning med ingeniørrrelevant software, som f.eks. MATLAB/Simulink.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset sigter mod at give grundlæggende færdigheder i MATLAB programmering og anvendelsen af fysiske love til at formulere matematiske modeller indenfor maskin- og reguleringsteknik.</Course_Objectives>
+          <DTU_Remark>Kun for studerende, der er indskrevet på den digitale version af B Eng i Maskinteknik.</DTU_Remark>
+          <Remark>Sektion for Mekanisk teknologi
+Maskinteknik: 4. semester digital</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Fundamental Matlab programming: Conditions, loops, functions, arrays, plots, handles, and file input/output. Classical laws of physics: for example Newton's 2nd law, Fourier's heat law, Kirchhoff's current law. Numerical solution of initial value problems: Euler's method, midpoint rule, ODE45, and Simulink. State-space formulation. Linearization of differential equation.</Contents>
+          <Teaching_And_Learning_Methods>The teaching method combines lectures with programming and modeling tasks. Students will use their own computers to complete these tasks, focusing on problem-solving with engineering software, such as MATLAB/Simulink.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course aims to provide a basic level of proficiency in MATLAB programming and the application of physical laws to formulate mathematical models within the field of mechanical and control engineering.</Course_Objectives>
+          <DTU_Remark>Only for B Eng students from Mechanical Engineering, the digital version.</DTU_Remark>
+          <Remark>Section of Mechanical Technology
+Maskinteknik: 4. semester digital</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Indledende kurser i calculus, lineær algebra og mekanik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introductory course on calculus, linear algebra, and mechanics." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Matlab-programmering, herunder betinget kodeafvikling, løkker, funktioner og arrays." />
+          <Txt Lang="en-GB" Txt="Write programs in Matlab using conditional code execution, loops, functions, and arrays." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende ODE45 til at løse et system af differentialligninger i tidsdomænet." />
+          <Txt Lang="en-GB" Txt="Solve a set of differential equations in the time domain with ODE45." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Simulink til at løse en given differentialligning i tidsdomænet." />
+          <Txt Lang="en-GB" Txt="Solve a differential equation in the time domain with Simulink." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Matlabs Symbolic Math Toolbox til manipulation af matematiske formler og løsning af ligninger." />
+          <Txt Lang="en-GB" Txt="Apply the Matlab Symbolic Math Toolbox for manipulation of and solving equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de styrende ligninger for nogle problemer fra maskinteknikken." />
+          <Txt Lang="en-GB" Txt="Describe the governing equations for various problems in the field of mechanical and control engineering." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Omskrive højere ordens differentialligninger til et system af første ordens differentialligninger." />
+          <Txt Lang="en-GB" Txt="Rewrite higher order differential equations as a set of first order differential equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Afgøre om et system er lineært eller ej, samt foretage linearisering af ikke-lineære systemer." />
+          <Txt Lang="en-GB" Txt="Determine whether a system is linear or not, and perform the linearization of nonlinear systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende filhåndtering (læsning og skrivning) samt plotning til at håndtere data." />
+          <Txt Lang="en-GB" Txt="Apply file handling (read and write) as well as plotting to handle data." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modellering. Simulering. Programmering.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62645.62646" />
+        <PreviousCourse CourseCode="62645" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="44" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="44" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:25.163" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

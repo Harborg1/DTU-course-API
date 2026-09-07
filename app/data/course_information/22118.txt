@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22118" Volume="2026/2027" University="dtu" LastUpdated="2026-02-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Avanceret Unix &amp; Python for Bioinformatikere" />
+        <Title Lang="en-GB" Title="Advanced Unix &amp; Python for Bioinformaticians" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="816" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Peter Wad</GivenName>
+            <FamilyName>Sackett</FamilyName>
+            <Email>pwsa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen er et programmeringsprojekt, hvor rapport og kode er individualiseret. Aflevering af obligatoriske øvelser samt udførelse af peer-evaluering (mindst 10 ud af 12 af begge)  er forudsætningen for at projektet bliver evalueret =&gt; kurset bestået." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam is a programming project where the report and code are individualized. Submission of mandatory exercises and completion of peer evaluations (at least 10 out of 12 of both) are prerequisites for the project to be evaluated =&gt; course passed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus giver en introduktion til Unix, som er meget brugt inden for bioinformatik. Du lærer grundlæggende kommandoer, filmanipulation, input/output-omdirigering, filsystemstruktur og procesmanipulation.Git versionering og samarbejde anvendes på Unix platformen. Kurset bygger på den eksisterende viden om Python, og du lærer om avancerede datastrukturer, funktioner, Pythons objektmodel, klasser, enhedstests og runtime-evaluering. Dette sker under en paraply af øvelser baseret på bioinformatik og dataanalyseproblemer.
+Øvelserne skal peer-evalueres. Studerende i grupper af to vil få et mindre programmeringsprojekt i løbet af kurset, muligvis et projekt af deres eget design. Individuelle bidrag til projektet skal angives for at lette individuel vurdering. En studerende vil også peer-evaluere en anden gruppes projekt.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger med ugentlige obligatoriske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Den studerende skal kunne løse større bioinformatiske problemstillinger på en struktureret måde ved anvendelse af Python i et Unix-miljø, med brug af avancerede programmeringsmetoder, hensigtsmæssige testmetoder samt samarbejdsbaserede versionsstyringsarbejdsgange med Git for at understøtte teamwork.</Course_Objectives>
+          <DTU_Remark>Kurset eksisterer også i en kandidatversion (22168)</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course provides an introduction to Unix, which is widely used in bioinformatics. You learn basic commands, file manipulation, input / output redirection, file system structure and process manipulation. Git versioning and collaboration is applied on the Unix platform. The course builds on the existing knowledge of Python, and you learn about advanced data structures, functions, Python's object model, classes, unit tests, and runtime evaluation. This is done under an umbrella of exercises based on bioinformatics and data analysis problems.
+The exercises must be peer-evaluated. Students in groups of two will get a minor programming project during the course, possibly a project of their own design. Individual contributions to the project must be stated to facilitate individual assessment. A student will also peer-evaluate another group's project.</Contents>
+          <Teaching_And_Learning_Methods>Lectures med weekly mandatory exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The student should be able to solve major bioinformatic problems in a structured manner using Python in a Unix environment, applying advanced programming practices, proper testing methods, and collaborative version control workflows using Git to support teamwork.</Course_Objectives>
+          <DTU_Remark>The course also exists on MSc level (22168).</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kompetent i Python-programmering på niveau med kursus 22116. Dette er dit tredje fulde 5 ETCS points programmeringskursus og sværhedsgraden reflekterer dette. Kontakt kursusansvarlig i tilfælde af tvivl." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Confident in Python programming at the level of course 22116. This is your third full 5 ETCS points programming course and this is reflected in the difficulty level. Contact the course responsible in case of doubt." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="22116/22166/22101/22161" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Navigere i Unix-filsystemet og udføre grundlæggende tekstfil-manipulationer." />
+          <Txt Lang="en-GB" Txt="Navigate the Unix file system and perform basic text file manipulations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende avancerede Unix-kommandoer og konstruere simple bash-scripts til automatisering." />
+          <Txt Lang="en-GB" Txt="Apply advanced Unix commands and create simple bash scripts for automation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge Git til versionering og samarbejde." />
+          <Txt Lang="en-GB" Txt="Utilize Git for versioning and collaboration." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende forskellige metoder til argumentoverførsel, scope og namespace håndtering." />
+          <Txt Lang="en-GB" Txt="Explain and use various argument parsing methods, scope, and namespace management." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere og anvende avancerede datastrukturer ved hjælp af relationer mellem navne, referencer og objekter." />
+          <Txt Lang="en-GB" Txt="Construct and apply advanced data structures using relations between names, references and objects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne bag grundlæggende og avanceret iteration, herunder comprehensions og generatorer." />
+          <Txt Lang="en-GB" Txt="Explain the principles behind basic and advanced iteration, including comprehensions and generators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere nye klasser ved hjælp af magiske metoder, indkapsling og arv." />
+          <Txt Lang="en-GB" Txt="Implement new classes using magic methods, encapsulation and inheritance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre enhedstest ved hjælp af parameterisering, fixtures og eksterne filer." />
+          <Txt Lang="en-GB" Txt="Conduct unit testing using parameterization, fixtures and external files." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere et programs køretids-skalering baseret på inputstørrelse ved hjælp af Big-O notation." />
+          <Txt Lang="en-GB" Txt="Evaluate a program's running time scales based on input size using the Big-O notation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere eksisterende kodebaser med henblik på at forbedre eller udvide funktionalitet og vedligeholdelse." />
+          <Txt Lang="en-GB" Txt="Evaluate existing code bases, aiming to improve or extend functionality and maintainability." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende strategier for brug af GAI til at understøtte kodeudvikling, samtidig med at selvstændig problemløsning opretholdes og egen forståelse af underliggende programmeringskoncepter demonstreres." />
+          <Txt Lang="en-GB" Txt="Apply strategies for using GAI to support code development while maintaining independent problem-solving and demonstrating their own understanding of underlying programming concepts." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://teaching.healthtech.dtu.dk/22118/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Advanced Unix &amp; Python for Bioinformaticians</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="22113/22163" />
+        <PreviousCourse CourseCode="22113" />
+        <PreviousCourse CourseCode="22163" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:09.833" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

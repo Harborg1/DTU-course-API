@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30564" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Sommerskole i Tyngdefelt og Jordobservation" />
+        <Title Lang="en-GB" Title="Summer School in Gravity Field and Earth Observation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="På DTU Space, lokale tbc" />
+          <LocationTxt Lang="en-GB" Txt="At DTU Space, rooms tbc" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset afholdes i juni i samarbejde med internationale geodætiske bureaupartnere og studerende fra DTU partneruniversiteter." />
+          <Schedule_Txt Lang="en-GB" Txt="The course will be given every June in cooperation with international geodetic agency partners and students from DTU partner universities." />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="Åbent for internationale partnere" />
+            <Extern_Dep_Txt Lang="en-GB" Txt=" Open for international partners" />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <External_Course_Responsible Email="oa@space.dtu.dk" Name="Ole Andersen" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="38313" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>René</GivenName>
+            <FamilyName>Forsberg</FamilyName>
+            <Email>rf@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="209716" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jonathan Frank</GivenName>
+            <FamilyName>Kirby</FamilyName>
+            <Email>jonkir@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evaluering af cases og rapport." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of experiments and reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="15 APR 2027 (for eksterne / ph.d.-studerende)" />
+            <DeadLineTxt Lang="en-GB" Txt="15 APR 2027 (for external participants / PhD students)" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Eksterne deltagere bedes tilmelde sig direkte til Jon Kirby (jonkir@space.dtu.dk) senest den 15/4 2026" />
+            <Supp_Txt Lang="en-GB" Txt="External participants are to register with Jon Kirby (jonkir@space.dtu.dk) no later than 1/5 2027" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Basal geodæsi, reference systemer, tyngdefelt, globale tyngdefelts modeller 
+Gravimetri: surface, marine and airborne 
+Globale masse ændringer fra satellitter (GRACE, GRACE-FO)
+GNSS kinematisk positioning for fly og skibs gravimetri 
+Satellite radar altimetri for tyngdefelt og havniveau 
+Mindste kvadraters udjævning og inversions metoder
+Tyngdefelts modellering med Fourier metoder
+Terræn effekter i tyngdefelts modellering 
+Geoide og højdesystemer - internationale cases 
+Nye sensorer til tyngdemålinger – kvante gravimetri</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser. Arbejde med praktisk case.
+Arbejde på et dedikeret case-studie projekt, der involverer in-situ, luftbårne og satellitdata. 2-ugers international skole og 1-uges læsning/opgave.</Teaching_And_Learning_Methods>
+          <Course_Literature>Hoffmann Wellenhof og H Moritz: Physical Geodesy, 2nd Ed (Springer, 2006) 
+Papers related to geodetic satellites (GRACE, GOCE, NGGM, satellite altimetry). airborne measurements and global gravity field modelling.</Course_Literature>
+          <Course_Objectives>Jordens tyngdefelt varierer over sted og tid, afhængig af sammensætningen af ​​materialerne i undergrunden, og tidsmæssigt som funktion af klimatiske og geodynamiske processer. Disse variationer påvirker Jordens form og får vandet i havene til ikke at falde sammen med en simpel overflade, men afhænger af tyngdefelts variationerne. Data fra tyngdefelt satellitter som GRACE giver unik overvågning af indlandsisens afsmeltning, havniveaustigning og global havcirkulation.
+
+Formålet med kurset er at give de studerende avanceret viden om matematiske modeller, avanceret metodik til bestemmelse af tyngdefelt variationer og brug af satellitter til tyngde målinger og bestemmelse af hjælpedata såsom digitale terrænmodeller og brug af tyngdefelt data i moderne geodætisk kortlægning, geofysik og klimaovervågning.</Course_Objectives>
+          <DTU_Remark>Træningskursus/sommer skole, velegnet til både til kandidat og ph.d. studerende. Det er baseret på tidligere sommerskoler (IAG geoid schools), GRACE satellit skoler (GRACE hackaton) og satellit altimetri workshops, inklusive klima ændrings applikationer. 
+Kurset vil løbe i juni 2027 perioden og årligt herefter, og forventes at delvis at overlappe med  en international workshop om ”gravity field science”. Kurset vil for DTU students blive indledt med materiale til gennemlæsning.</DTU_Remark>
+          <Remark>Internationale deltagere forventet i sommerskolen (primært DTU projekt partnere) 
+Kurset er også rettet mod ph.d.-studerende.
+
+Relevant for FN SDG-mål 9 ("Industry, innovation and infrastructure") og mål 13 ("Climate Action").</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Basic geodesy reference systems, gravity field, spherical harmonics/earth gravity models 
+Gravimetry: surface, marine and airborne 
+Global mass changes from satellites (GRACE, GRACE-FO)
+GNSS kinematic positioning for aircraft and ship gravimetry 
+Satellite altimetry for gravity, sea level and climate change 
+Least squares adjustment methods and inversion methods 
+Gravity field modelling by Fourier methods 
+Terrain effects in gravity field modelling 
+Geoid, vertical datum and height systems – international cases 
+Novel sensors for gravity measurements – quantum gravimetry</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises. 
+Work on a dedicated case-study project involving in-sItu, airborne and satellite data. 
+2-week international school and 1-week reading/assignment.</Teaching_And_Learning_Methods>
+          <Course_Literature>Hoffmann Wellenhof og H Moritz: Physical Geodesy, 2nd Ed (Springer, 2006) 
+Papers related to geodetic satellites (GRACE, GOCE, NGGM, satellite altimetry). Airborne measurements and global gravity field modelling.</Course_Literature>
+          <Course_Objectives>The Earth's gravity field varies with location depending on the composition of the materials in the subsurface and time as a function of climatic and geodynamic processes. These variations impact the shape of the Earth and cause the water in the oceans not to coincide with a simple surface but depend on the gravity field variations. Data from gravity field satellites lika GRACE provide unique monitoring of the melt of the ice sheets, sea level rise, and global ocean circulation.
+
+The goal of the course is to provide the students with advanced knowledge about mathematical models, advanced methodology for determining gravity field variations, and the use of satellites for gravity field measurements and determination of auxiliary data such as digital terrain models and use of gravity field data in moderne geodetic mapping, geophysics and climate monitoring.</Course_Objectives>
+          <DTU_Remark>Training course / summer school, suitable for both master and PhD students. It is based on previous summer schools (IAG geoid schools), GRACE satellite schools (GRACE hackathon) and satellite altimetry lectures, inclusive climate applications. 
+The course will run in the June 2027 period and yearly after that, and will partially include elements of an international workshop on "gravity field science". The course will for DTU students begin with material to read through.</DTU_Remark>
+          <Remark>International participants expected in the summer school (DTU project partners) 
+The course is also aimed for PhD students.
+
+Relevant for UN SDG goal 9 ("Industry, innovation and infrastructure ") and goal 13 ("Climate Action").</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="(eller grundlæggende viden om geofysik/geodesi og tyngdefeltsbegreber)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="(or basic knowledge of geophysics/geodesy and gravity field concepts)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30142.30150.30560" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå tyngdefeltsændringer i tid og rum, og dets anvendelse i landmåling og klimaovervågning." />
+          <Txt Lang="en-GB" Txt="Understand the gravity field variations as a function of time and place, and its role in geodesy, surveying and climate change applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Være i stand til at forstå avancerede modeller til brug i geodæsi, geofysik og jordobservation." />
+          <Txt Lang="en-GB" Txt="Be able to use and understand advanced methods for modelling gravity and other potential fields in 3D (globally and regionally), including auxiliary uses in geophysics and earth observation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Være i stand til at downloade og bruge satellit data (GRACE, GOCE), og globale kuglefunktions felter." />
+          <Txt Lang="en-GB" Txt="Be able to download and use satellite data (GRACE, GOCE) and global spherical harmonic models for use in gravity field modelling, geoid determination, and climate change applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Være i stand til at bruge digitale terrænmodeller i tyngdefelts modellering." />
+          <Txt Lang="en-GB" Txt="Be able to download and handle digitial terrain models for use in physical geodesy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå flybårne tyngdemålinger, forstå fejlkilder og optimal brug af satellit, fly og in-situ data." />
+          <Txt Lang="en-GB" Txt="Be able to use airborne gravity measurements, understand error sources from aircraft positioning, and the optimal combination of in-situ, airborne and satellite data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Få kendskab til nye teknologier for tyngde måling (kvante sensorer, inertielle sensorer, nye satellit missioner)." />
+          <Txt Lang="en-GB" Txt="Get knowledge of new technologies for gravity measurement (quantum sensors, inertial sensors, next generation gravity satellite missions)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå baggrund og fejlkilder for marin tyngdefelts bestemmelse ved radarmålinger fra satellitter, og deres brug til geoide og bestemmelse af havstrømme." />
+          <Txt Lang="en-GB" Txt="Understand background and error sources in marine gravity measurement by satellite altimetry, and their use for geoid determination and ocean circulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde uafhængigt på et regional geodætisk/geofysisk projekt, inklusiv brug af forskellige software systemer." />
+          <Txt Lang="en-GB" Txt="Work independently on a regional geodetic/geophyscal project, including being able to use advanced geodetic software from different sources" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere videnskabeligt projektarbejde." />
+          <Txt Lang="en-GB" Txt="Present scientific project work." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Geodæsi/landmåling, Geofysik, Monitering af klimaændringer, Satellit jordobservation</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="25" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="90" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="12" Min="4" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:17.777" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

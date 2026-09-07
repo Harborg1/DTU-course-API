@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="27032" Volume="2026/2027" University="dtu" LastUpdated="2026-04-30+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til cellefabrikker" />
+        <Title Lang="en-GB" Title="Introduction to cell factories" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="27" University="DTU" Resources="10" KVL_Resources="100" />
+          <Ass_Dep UID="29" Resources="90" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="27" />
+        <Course_Responsible PersonKey="26799" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Birgitte</GivenName>
+            <FamilyName>Zeuner</FamilyName>
+            <Email>bzeu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="50626" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sheila Ingemann</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>shin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Aktiv deltagelse i gruppeøvelser (max. 3 ganges fravær) er en forudsætning for eksamensdeltagelse.&#xD;&#xA;Skriftlig eksamen 3 timers Multiple Choice" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Active participation in group exercises (max. 3 times absence) is a prerequisite for exam participation.&#xD;&#xA;Written exam 3 hours Multiple Choice" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset ’Introduktion til cellefabrikker’ indeholder følgende elementer, der dækkes under forelæsningerne og øvelserne:
+Hvad er en cellefabrik og hvordan vælger du en relevant værtsorganisme til dit produkt af interesse? Hvordan påvirker værdien og formålet med dit produkt valget af værtsorganisme? LCA, teknoøkonomiske og opskaleringsovervejelser. Generel karakterisering (substrat/næringsstofudnyttelse, vedligeholdelsesenergi, etc.) af værtsorganisme af interesse. Hvordan bedømmer man genetisk stabilitet og udfører adaptive laboratorieevolutionsforsøg. Basal introduktion til genomskala metaboliske modeller, omics-analyser og genetiske værktøjer. Produkter fra central metabolismen, side-produkter eller nye for naturen. Heterolog udtrykkelse af metaboliske veje, fluxredistribuering og fjernelse af uønskede sideprodukter i DBTL-cyklussen.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppeøvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Videnskabelig litteratur</Course_Literature>
+          <Course_Objectives>At give de studerende en grundlæggende indsigt i de forskellige metoder, der bruges til at generere effektive industrielt relevante cellefabrikker baseret på genteknologi: LCA, TEA, og opskaleringsovervejelser (fermentering/procesoptimering /downstream-behandling), genetisk stabilitet, ALE, genomskala metaboliske modeller, pangenomics, omics-analyser, heterolog genekspression, genommodificering, DBTL-cyklus.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The introduction to cell factories course contains the following elements that are covered during the lectures and the exercises:
+What is a cell factory and how do you choose a relevant cell factory chassis organism for your product of interest? How does the value and purpose of your product affect your chassis choice? LCA, technoeconomic and upscaling considerations. General characterizations (substrate/nutrient utilization, maintenance energy, etc.) of the cell of interest. How to assess genetic stability and perform adaptive laboratory evolution experiments. Basic introduction to genome scale metabolic modelling, omics analysis, and engineering tools. Products from central metabolism, side-products, or new to nature. Heterologous pathway expression, flux redistribution, and removal of side-production formation in the DBTL cycle.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Scientific literature</Course_Literature>
+          <Course_Objectives>To provide the students with a basic insight into the different methods that are used to generate effective, industrially relevant cell factories based on gene technology: LCA, TEA and upscaling considerations (fermentation/process engineering/down-stream processing), genetic stability, ALE, genome-scale metabolic models, pangenomics, omics analysis, heterologous gene expression, genome modifications, DBTL cycle.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvad en cellefabrik er og hvordan man overordnet kan konstruere en industriel relevant cellefabrik." />
+          <Txt Lang="en-GB" Txt="Explain what a cell factory is and how one in general can construct an industrially relevant cell factory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere hvordan produktværdi påvirker valg af startstamme" />
+          <Txt Lang="en-GB" Txt="Evaluate how product value affects the choice of starting strain" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan LCA, teknoøkonomiske og opskaleringsovervejelser kan bruges til at guide et industrielt relevant cellefabrikprojekt" />
+          <Txt Lang="en-GB" Txt="Describe how LCA, technoeconomic and scale-up considerations can be used to guide an industrially relevant cell factory project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe forsøg til at evaluere genetisk stabilitet og adaptiv laboratorieevolution" />
+          <Txt Lang="en-GB" Txt="Design experiments to evaluate genetic stability and do adaptive laboratory evolution" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for hvordan genomskala metaboliske modeller kan bruges til at optimere cellefabrikker" />
+          <Txt Lang="en-GB" Txt="Describe how genome scale metabolic models can be used to optimize cell factories" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skitsere tilgange til brug af forskellige Omics-analyser til at guide et cellefabriksprojekt" />
+          <Txt Lang="en-GB" Txt="Outline approaches for the use of different Omics-analysis to guide a cell factory project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan høje TRY-værdier kan opnås gennem forskellige metaboliske manipulationsmetoder" />
+          <Txt Lang="en-GB" Txt="Explain how high TRY values can be achieved through different metabolic manipulations methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan DBTL-cyklussen kan anvendes" />
+          <Txt Lang="en-GB" Txt="Explain how the DBTL cycle can be used" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="27022. 27026" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="80" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:33:14.69" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

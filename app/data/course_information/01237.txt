@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="01237" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Differentialgeometri og parametrisk design" />
+        <Title Lang="en-GB" Title="Differential geometry and parametric design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="1591" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Steen Schyum</GivenName>
+            <FamilyName>Markvorsen</FamilyName>
+            <Email>stema@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="50472" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>David</GivenName>
+            <FamilyName>Brander</FamilyName>
+            <Email>dbra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen (2 timer med alle hjælpemidler) og bedømmelse af individualiserede rapporter og hjemmeopgaver. Skriftlig eksamen tæller 50% og en samlet evaluering af hjemmeopgaver og rapport tæller de resterende 50%." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination (2 hours) and evaluations of individualized reports and homework. The written exam counts 50% of the final grade, and an evaluation of the homework together with the project work counts for the other 50% of the total grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Tidsafhængige deformationsmatricer og deres SVD dekomposition. Rotationsmatricer. Kinematik i plan og rum. Kurvers Frenet-Serret basis, krumning og torsion. Parametriseringer af kurver og flader, specielt via sweeping og rulning. Analyse af flader via første og anden fundamental form. Retlinede flader og udfoldelige flader. Weingarten matricen, principale krumninger og principale retninger. Gauss-krumning og middelkrumning for flader. Specielle kurver på flader: geodætiske kurver, krumningskurver, asymptotiske kurver. Anvendelser af de nævnte metoder og begreber i forbindelse med architectural engineering og skulpturel formgivning. Anvendelse af computer-eksperimenter, -illustrationer, og -beregninger til understøttelse af samtlige læringselementer i kurset.</Contents>
+          <Teaching_And_Learning_Methods>Hver uge: To timers forelæsning og to timers øvelser (typisk med Maple). Derudover projektopgave-arbejde i de to sidste uger i semesteret.</Teaching_And_Learning_Methods>
+          <Course_Literature>Noter.</Course_Literature>
+          <Course_Objectives>At give et matematisk grundlag for at forstå og anvende en række geometriske teknikker, som anvendes i ingeniørmæssige og designmæssige sammenhænge. At benytte familier af 2x2 og 3x3 matricer til konstruktion og analyse af geometriske former i plan og rum. At indføre metoder til parametrisk design og analyse af kurver og flader. At udnytte computer eksperimenter som en integreret del af kurset til illustrationer, begrebsindlæring, og beregninger. Kurset giver således også en introduktion til og et elementært grundlag for det videregående avancerede kursus 01238 Differentialgeometri.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Time-dependent deformation matrices and their SVD decompositions. Rotation matrices. Kinematics in plane and space. The Frenet-Serret basis for curves and the ensuing curvature and torsion. Parametrization of curves and surfaces, in particular via sweeping and rolling. Analysis of surfaces via the first and second fundamental form. The Weingarten matrix and the principal curvatures and principal directions.  Ruled surfaces and developable surfaces. The Gauss curvature and mean curvature of surfaces. Special curves on surfaces: geodesics, curvature lines, asymptotic curves. Applications of these methods and concepts in architectural engineering and sculptural design. Applications of computer experiments, illustrations, and calculations to support all the learning elements of the course.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises including computer experiments (typically with Maple). Project exercises for two weeks at the end of the semester.</Teaching_And_Learning_Methods>
+          <Course_Literature>Notes.</Course_Literature>
+          <Course_Objectives>To provide the students with solid framework for understanding and applying a number of geometric techniques as they are used in engineering and architectural design contexts. To apply families of 2x2 and 3x3 matrices to construct and analyze geometric shapes in plane and space. To introduce effective methods for parametric design and analysis of curves and surfaces. To apply computer experiments as an integrated part of the course for illustrations, learning, and calculations. The course gives a solid introduction to the elementary basic concepts needed for the more advanced course 01238 Differential Geometry.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme SVD dekomposition af især regulære 2x2 og 3x3 matricer." />
+          <Txt Lang="en-GB" Txt="Calculate the SVD decomposition of matrices - in particular regular 2x2 and 3x3 matrices." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende kinematiske begreber til at analysere simple bevægelser i plan og rum." />
+          <Txt Lang="en-GB" Txt="Apply basic kinematic concepts and methods to analyze rigid motions in plane and space." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme kinematisk motiverede parametriseringer af kurver og flader." />
+          <Txt Lang="en-GB" Txt="Find kinematically motivated parametrizations of curves and surfaces." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne længder, arealer, volumener af parametriserede objekter." />
+          <Txt Lang="en-GB" Txt="Calculate lengths, areas, and volumes of parametrized objects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne Frenet-Serret data for kurver i plan og rum." />
+          <Txt Lang="en-GB" Txt="Calculate the Frenet-Serret data for curves in plane and space." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme og anvende første og anden fundamentalform for parametriserede flader. " />
+          <Txt Lang="en-GB" Txt="Find and apply the first and second fundamental forms for parametrized surfaces." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne Weingarten matricen, principale krumninger, og principale retninger." />
+          <Txt Lang="en-GB" Txt="Calculate the Weingarten matrix, the principal curvatures, and the principal directions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne Gauss-krumning og middelkrumning for parametriserede flader." />
+          <Txt Lang="en-GB" Txt="Calculate the Gaussian and the mean curvature for parametrized surfaces." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende krumningsbegreberne for kurver og flader til analyse og løsning af design-relaterede opgaver." />
+          <Txt Lang="en-GB" Txt="Apply the curvature concepts for curves and surfaces to analyze and solve design-related problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende den generelle fladeteori på omdrejningsflader, retlinede flader, og andre designmotiverede standard-flader." />
+          <Txt Lang="en-GB" Txt="Apply the general theory of surfaces for surfaces of revolution, ruled surfaces, and other design-motivated standard surfaces." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Genkende og foreslå anvendelser af geometriske metoder til løsning af design opgaver." />
+          <Txt Lang="en-GB" Txt="Recognize and suggest applications of geometric methods for the solution of design problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende de gennemgåede metoder og begreber på en selvvalgt problemstilling og præsentere overvejelserne i form af en rapport." />
+          <Txt Lang="en-GB" Txt="Apply the respective methods and concepts in an individually chosen project exercise and present the findings in a report." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01002/01004/01005/01920" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Geometriske design-operationer i plan og rum</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="01234" />
+        <PreviousCourse CourseCode="01999" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="24" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="22" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="46" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="8" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="52" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="48" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:17.613" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

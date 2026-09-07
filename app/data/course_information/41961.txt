@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41961" University="dtu" LastUpdated="2026-06-10+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Bærende Konstruktioners Numeriske Modellering: Ikke-lineær elementmetode" />
+        <Title Lang="en-GB" Title="Computational Structural Modelling: Non-linear Finite Element Method" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="3049" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Peter Noe</GivenName>
+            <FamilyName>Poulsen</FamilyName>
+            <Email>pnpo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="40297" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sebastian</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>seba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The student must bring a PC for the written exam." />
+            <Aid_Txt Lang="da-DK" Txt="Den studerende skal medbringe en PC til den skriftlige eksamen." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til den grundlæggende teoretiske basis for formulering af geometrisk ikke-lineær og dynamisk opførsel, samt kollapslastoptimering, og beskrivelse af de tilsvarende elementmetodeformuleringer. Gennemgang af klassiske løsningsstrategier og deres numeriske implementering. Kurset er opbygget omkring forelæsninger og øvelser, der dækker både analytiske udledninger, videreudvikling af udleveret kode, selvstændig programmering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet er at introducere ikke-lineære elementmetodemodeller til numerisk løsning af ikke-lineære problemer inden for det bygningsmekaniske område, herunder geometrisk ikke-linearitet, dynamisk opførsel og idealplastisk optimering af kollapslast.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to the fundamental theoretical basis for the formulation of geometrical non-linear and dynamic behaviour, as well as optimization of collaps load, and description of the corresponding FEM formulation. Presentation of classic solution strategies and their numerical implementation. The course is structured around lectures and exercises covering both analytical approach, further development of supplied Matlab-code, independent programming.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The scope is to introduce finite element models for non-linear FEM problems within structural mechanics, including geometric non-linearity, dynamic behaviour and ideal plastic optimization of collaps load.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille ikke-lineære modeller for enkle stangsystemer." />
+          <Txt Lang="en-GB" Txt="Establish non-linear models for simple truss systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende ikke-lineære iterative løsningsmetoder." />
+          <Txt Lang="en-GB" Txt="Explain and apply non-linear iterative solution methods." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende hensigtsmæssige fejlmål ved iterationsstyring." />
+          <Txt Lang="en-GB" Txt="Explain and apply relevant error measures for iteration control." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille elementmetodeligningerne for geometrisk ikke-lineære bjælkekonstruktioner." />
+          <Txt Lang="en-GB" Txt="Establish the Finite Element Method equations for geometrical non-linear beam structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille elementmetodeligningerne for geometrisk ikke-lineære skaller." />
+          <Txt Lang="en-GB" Txt="Establish the Finite Element Method equations for geometrical non-linear shells." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille elementmetodeligningerne for dynamiske systemer med dæmpning. " />
+          <Txt Lang="en-GB" Txt="Establish the Finite Element Method equations for dynamic systems with damping." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende implicitte løsningsmetoder for dynamiske systemer." />
+          <Txt Lang="en-GB" Txt="Explain and apply implicit solution methods for dynamic problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage en kritisk vurdering af kvaliteten af en dynamisk beregningsløsning." />
+          <Txt Lang="en-GB" Txt="Perform a critical evaluation of quality of dynamic calculation results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille elementmetodeligningerne for idealplastisk optimering af kollapslast. " />
+          <Txt Lang="en-GB" Txt="Establish the Finite Element Method equations for ideal plastic optimization of collaps load." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende konvekse løsningsmetoder for optimering af kollapslast." />
+          <Txt Lang="en-GB" Txt="Explain and apply convex solution methods for optimization of collaps load." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere og tilpasse ikke-lineære FEM-programmer." />
+          <Txt Lang="en-GB" Txt="Programme and modify non-linear FEM-programs. " />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41955(11343).41958(11305)/41959.02601.02002/02003" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="11346" />
+        <PreviousCourse CourseCode="11346" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-30" Time="09:40:16.543" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

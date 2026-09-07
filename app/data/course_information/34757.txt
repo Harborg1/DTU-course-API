@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34757" Volume="2026/2027" University="dtu" LastUpdated="2024-04-18+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Ubemandede autonome systemer" />
+        <Title Lang="en-GB" Title="Unmanned autonomous systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Kurset afholdes i Unmanned System Arena (B330D)" />
+          <LocationTxt Lang="en-GB" Txt="The course will be held in the Unmanned System Arena (B330D)" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="142533" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Matteo</GivenName>
+            <FamilyName>Fumagalli</FamilyName>
+            <Email>mafum@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset består af en række introduktionsforelæsninger, opgaver baseret på forelæsninger og en generel opgave baseret på forudsætningerne for kurset. Kursets indhold er mekatronisk design af ubemandede systemer og deres mekaniske modellering, kontrol, opfattelse, navigation, software, simulering, eksperimentering med ubemandede luftfartøjer. Den endelige opgave løses med anvendelse af AUT-ubemandede luftfartøjer.</Contents>
+          <Teaching_And_Learning_Methods>Laboratory assignment, complemented by lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give eleverne praktisk erfaring med udvikling, integration, test og validering af de mest relevante teorier for autonome systemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course consists of a number of introductory lectures, assignments based on the lectures and a general assignment based on the course prerequisites. Contents of the course are mechatronic design of unmanned systems and their mechanical modeling, control, perception, navigation, software, simulation, experimentation with unmanned aerial vehicles. The final task is solved by using one of the AUT unmanned aerial vehicles.</Contents>
+          <Teaching_And_Learning_Methods>Laboratory assignment, complemented by lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the students a hands on experience into the development, integration, test and validation of the most relevant theories for autonomous systems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Studerende, der deltager i dette kursus, har fortrinsvis tidligere erfaring med nogle af følgende emner: c++ eller python programmering, ROS, kamera og billedbehandling, PID kontrol, modellering mekaniske systemer, statestimering og opfattelse for robotik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students attending this course have ideally prior experience with some of the following topics: c++ or python programming, ROS, camera and image handling, PID control, modeling mechanical systems, state estimation and perception for robotics." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare brugen af autonome systemer" />
+          <Txt Lang="en-GB" Txt="explain the uses of autonomous systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare mekanikken i autonome systemer" />
+          <Txt Lang="en-GB" Txt="explain the mechanics of autonomous systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="modellere og styre et autonomt system" />
+          <Txt Lang="en-GB" Txt="model and control an autonomous system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende relevante teorier til ubemandede autonome systemer" />
+          <Txt Lang="en-GB" Txt="apply relevant theories to unmanned autonomous systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere en opgave og planlægge den autonome løsning ved hjælp af et givet ubemandet system" />
+          <Txt Lang="en-GB" Txt="analyze a task and plan the autonomous solution using a given unmanned system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="programmere, integrere og udvikle software til et ubemandet autonomt system til at udføre en given opgave" />
+          <Txt Lang="en-GB" Txt="program, integrate and develop software for an unmanned autonomous system to perform a given task" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fejlfinding og løse praktiske problemer i laboratoriet" />
+          <Txt Lang="en-GB" Txt="troubleshoot and solve practical problems in the laboratory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="arbejde i et hold for at løse en kompleks opgave" />
+          <Txt Lang="en-GB" Txt="work in a team to solve a complex task" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31390" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="50" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:55.92" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41959" University="dtu" LastUpdated="2026-06-10+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Bærende Konstruktioners Numeriske Modellering: Lineær elementmetode" />
+        <Title Lang="en-GB" Title="Computational Structural Modelling: Linear Finite Element Method" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="3049" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Peter Noe</GivenName>
+            <FamilyName>Poulsen</FamilyName>
+            <Email>pnpo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="40297" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sebastian</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>seba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The student must bring a PC for the written exam." />
+            <Aid_Txt Lang="da-DK" Txt="Den studerende skal medbringe en PC til den skriftlige eksamen." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Hovedindholdet er Elementmetoden for bærende konstruktioner. I kurset lægges der vægt på en systematisk udvikling af elementmetoden på baggrund af det virtuelle arbejdes princip, med udgangspunkt i skiver. Der introduceres formfunktioner til interpolation af de primære variable hvorfra de generaliserede tøjninger og spændinger kan bestemmes. Numerisk integration og isoparametermetoden introduceres og anvendes. I forbindelse med anvendelsen af kommercielle Elementmetodeprogrammer introduceres den generelle opbygning. Et kommercielt program anvendes og med baggrund i en teoretisk indsigt i Elementmetoden kan en kritisk vurdering af resultater foretages. Det vises hvordan Maxwell-Betti's theorem kan anvendes til optimering af konstruktioner i en elementmetode sammenhæng.
+Kurset er opbygget omkring forelæsninger og øvelser der dækker både analytiske udledninger, programmering af elementmetoden samt anvendelse af kommercielt software.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Bærende Konstruktioners Numeriske Modellering - Elementmetoden af J.H.Nielsen, J.F.Olesen og J.N.Poulsen</Course_Literature>
+          <Course_Objectives>Elementmetoden (FEM) er et udbredt værktøj blandt bygningsingeniører (og ingeniører generelt). Dette skyldes at det er et generelt og meget fleksibelt værktøj der kan bruges til at løse en stor mængde af ingeniørmæssige problemer. Selvom de fleste praktiserende ingeniører anvender kommercielle programmer, er en forståelse af den underliggende teori en nødvendighed for at kunne udføre fornuftige, realistiske og troværdier analyser med FEM. 
+Dette kursus fokuserer på det fundamentale bag metoden og giver det teoretiske grundlag for videre studier, samt brugen af FEM. Kurset er orienteret mod konstruktioner og det bygningsmekaniske område.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The main subject is the Finite Element Method for structural design purposes. Emphasis is on a systematic development of the Finite Element Method based on the principle of virtual work, starting with panels. Shape functions are introduced for interpolation of the primary variables from which the generalized strains and stresses can be determined. Numerical integration and the isoparameter method are introduced and applied. In connection with the use of commercial Finite Element Method programs, the general structure is introduced. A commercial program is used and based on a theoretical insight into the Finite Element Method, a critical assessment of results can be made. It is shown how Maxwell-Betti's theorem can be used to optimize structures in a Finite Element Method context.
+The course is structured around lectures and exercises that cover both analytical derivations, programming of the Finite Element Method and use of commercial software.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Bærende Konstruktioners Numeriske Modellering - Elementmetoden (in Danish) by J.H.Nielsen, J.F.Olesen og J.N.Poulsen</Course_Literature>
+          <Course_Objectives>The Finite Element Method (FEM) is a widely used tool among Civil Engineers (and Engineers in general) due to its generality and flexibility in a large number of engineering problems. Although most practitioners use commercial programs, an understanding of the underlying theory is a necessity for performing reasonable, realistic and reliable analyzes using FEM.
+This course focuses on the fundamentals behind the method and provides the theoretical basis for further studies, as well as the use of FEM as a design tool. The course is oriented towards constructions and the structural mechanics area.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Introducere og anvende influenslinjer i elementmetode formuleringer." />
+          <Txt Lang="en-GB" Txt="Introduced and apply influence lines in Finite Element formulations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille elementmetodeligningerne for skiver og skaller på basis af det virtuelle arbejdes princip." />
+          <Txt Lang="en-GB" Txt="Establish the Finite Element Method equations for panels and shells based on the principle of virtual work." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende isoparametermetoden til udvikling af elementer." />
+          <Txt Lang="en-GB" Txt="Explain and apply the isoparametric method for the development of elements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Maxwell-Betti's theorem til optimering af konstruktioner i elementmetoden." />
+          <Txt Lang="en-GB" Txt="Apply Maxwell-Betti's theorem for optimization of structures using the Finite Element Method." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare forskellige strukturelle elementtypers opbygning og virkemåde." />
+          <Txt Lang="en-GB" Txt="Explain different structural element types." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og vurdere resultater opnået ved brug af forskellige strukturelle elementtyper." />
+          <Txt Lang="en-GB" Txt="Apply and evaluate the results obtained using different structural element types." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et kommercielt FEM-program samt foretage en kritisk vurdering af fundne resultater." />
+          <Txt Lang="en-GB" Txt="Apply a commercial FEM program and perform critical assessment of the results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere og modificere lineære elementmetodeprogrammer. " />
+          <Txt Lang="en-GB" Txt="Program and modify linear Finite Element programs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage en analyse af vridningspåvirkede bjælker i en elementmetode formulering." />
+          <Txt Lang="en-GB" Txt="Perform an analysis of beams subjected to torsion using the Finite Element Method." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01035.41955(11343).02601.02002/02003" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Teoretisk indføring i metoden</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="11305/41239/41958" />
+        <PreviousCourse CourseCode="11305" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-30" Time="09:39:06.147" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

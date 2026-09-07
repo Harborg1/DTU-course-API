@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="01922" Volume="2026/2027" University="dtu" LastUpdated="2025-07-30+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Lineær Algebra og Modellering" />
+        <Title Lang="en-GB" Title="Linear Algebra and Modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Kurset afholdes på Ballerup Campus." />
+          <LocationTxt Lang="en-GB" Txt="The course takes place on Ballerup Campus." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="6718" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jakob Martin</GivenName>
+            <FamilyName>Pedersen</FamilyName>
+            <Email>jmpe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1968" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Michael</GivenName>
+            <FamilyName>Pedersen</FamilyName>
+            <Email>micp@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Ugentlige tests (samlet vægt 10%) og to modelleringsøvelser (hver med en vægt på 10%) i løbet af 13-ugers perioden samt skriftlig eksamen (vægt 70%). Der gives en helhedsbedømmelse.&#xD;&#xA;&#xD;&#xA;Særlige vilkår til eksamen: Vedrørende ekstra tid - kun ved den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Weekly tests (total weight 10%) plus two modelling exercises (weight 10% each) during the 13-week period and written exam (weight 70%). An overall assessment is given.&#xD;&#xA;&#xD;&#xA;Special exam conditions: Regarding extra time - only in connection with the written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The written exam is divided into 2 hours with no aids allowed and 2 hours with all aids allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Den skriftlige eksamen er delt op i 2 timer uden hjælpemidler og 2 timer med alle hjælpemidler." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Separate examination day." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Særlig eksamensdag." />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Lineære ligningssystemer, Gausselimination, matrixregning, determinanter, egenværdier og egenvektorer, systemer af lineære differentalligninger, ingeniørmæssige anvendelser af lineær algebra.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, selvstændigt gruppearbejde og gruppearbejde under vejledning af klasselærer, ugentlig test i Möbius samt modelleringsdage.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset er en direkte efterfølger til kursus 01911, Matematisk Analyse og Modellering. Målet er at sætte de studerende i stand til selvstændigt at anvende fundamentale matematiske begreber og moderne computerværktøjer i forbindelse med løsning af klassiske ingeniørmæssige problemstillinger på et lidt højere taksonomisk niveau end i 01911. Der introduceres relevante begreber fra lineær algebra som metodisk fundament for behandling af flerdimensionelle problemstillinger med afsæt i ingeniørmæssige anvendelser. Undervisningsformen understøtter gennemløb af modelleringscirklen med henblik på behandling af fagligt relevante emner inden for de forskellige studielinjer under jævnt stigende taksonomiske niveauer. De studerendes digitale dannelse og "computational thinking" styrkes yderligere i forhold til kursus 01911 gennem arbejde med moderne computerværktøjer (pt. Maple).</Course_Objectives>
+          <DTU_Remark>Obligatorisk kursus for alle diplomingeniørstuderende, der påbegynder deres studie fra og med 2024
+(Fiskeriteknologi og Maskinteknik - digital uddannelse undtaget). Kurset erstatter 01920, BasisMat 2.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Systems of linear equations, Gaussian elimination, matrix algebra, determinants, eigenvalues and eigenvectors, systems of linear differential equations, engineering applications of linear algebra</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work with and without guidance of teaching assistants, weekly test in Möbius, and modelling days.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course is a direct continuation of course 01911, Mathematical Analysis and Modelling. The goal is to provide the students with the ability to apply fundamental mathematical concepts and modern computer tools solving classical problems of engineering on a slightly higher taxonomical level than in 01911. Relevant topics from linear algebra are introduced as a methodical basis for treating multi-dimensional problems arising from engineering applications. The scope and form of the course supports application of the modelling circle aiming at the treatment of relevant problems within the different study lines at increasing taxonomical levels. The digital formation and "computational thinking" of the students is further strengthened compared to course 01911 by working with modern computational tools (currently Maple).</Course_Objectives>
+          <DTU_Remark>Mandatory course for all students enrolled in the Bachelor of Engineering programme from 2024 and forward
+(except students of Fisheries Technology and Mechanical Engineering - digital study programme). The course replaces 01920, Calculus and Algebra 2.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse lineære ligningssystemer ved anvendelse af bl.a. Gausselimination både i hånden og vha. en computer samt kunne forklare strukturen af den fundne løsning." />
+          <Txt Lang="en-GB" Txt="Solve systems of linear equations by, among other things, Gaussian elimination, both by hand and using a computer and explain the structure of the resulting solution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere forskellige typer af matricer og udføre elementære beregninger med matricer både i hånden og vha. en computer." />
+          <Txt Lang="en-GB" Txt="Identify different types of matrices and carry out basic calculations with matrices, both by hand and using a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende determinantbegrebet for kvadratiske matricer og beregne determinanter både i hånden og vha. en computer. " />
+          <Txt Lang="en-GB" Txt="Apply the concept of the determinant of a quadratic matrix and calculate determinants, both by hand and using a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Afgøre om en kvadratisk matrix er invertibel og i givet fald beregne dens inverse både i hånden og vha. en computer." />
+          <Txt Lang="en-GB" Txt="Determine whether a square matrix is invertible, and if so, calculate its inverse, both by hand and using a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare betydningen af egenværdier og egenvektorer for kvadratiske matricer og bestemme disse både i hånden og vha. en computer." />
+          <Txt Lang="en-GB" Txt="Explain the concept of eigenvalues and eigenvectors for square matrices and calculate these, both by hand and using a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse simple systemer af lineære differentialligninger både i hånden og vha. en computer." />
+          <Txt Lang="en-GB" Txt="Solve simple systems of linear differential equations, both by hand and using a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte det symbolske software-værktøj Maple til løsning og grafisk illustration af matematiske/ingeniørmæssige problemer." />
+          <Txt Lang="en-GB" Txt="Apply the symbolic software tool Maple to solve and graphically display mathematical/engineering problems and solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte lineær algebra til modellering og løsning af ingeniørmæssige problemstillinger i form af fx kryptering, lineære differentialligningssystemer, overbestemte ligningssystemer og bestemmelse af lokale ekstrema for funktioner af to variable." />
+          <Txt Lang="en-GB" Txt="Use linear algebra to model and solve engineering problems such as encryption, systems of linear differential equations,  over-determined systems of equations, and finding extremal points for functions of two variables." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01911" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="01920.01915.01001.01003.01005.01006.01015.01016" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:32.34" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02110" University="dtu" LastUpdated="2026-03-17+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Algoritmer og datastrukturer 2" />
+        <Title Lang="en-GB" Title="Algorithms and Data Structures 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="33225" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Inge Li</GivenName>
+            <FamilyName>Gørtz</FamilyName>
+            <Email>inge@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53341" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Philip</GivenName>
+            <FamilyName>Bille</FamilyName>
+            <Email>phbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren er en helhedsvurdering af opgaver og eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is an overall assessment of the exercises and the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Strømingsalgoritmer. Datatrukturer til indeksering og partiel sum (f.eks. hashtabeller, Fenwick trees). Algoritmer til strengmatching. Teknikker til design og analyse af algoritmer (dynamisk programmering, del-og-hersk, randomiserede algoritmer og datastrukturer, forventet og amortiseret køretidsanalyse). NP.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegninger.</Teaching_And_Learning_Methods>
+          <Course_Literature>"Algorithm Design" af Kleinberg og Tardos.</Course_Literature>
+          <Course_Objectives>At give den studerende kendskab til teknikker til design og analyse af avancerede algoritmer. At træne evnen til at konstruere egne algoritmer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Flow algorithms. Data structures for indexing and partial sum (fx. hash tables, Fenwick trees). Algorithms for string matching. Techniques for the design and analysis of algorithms (dynamic programming, divide-and-conquer, randomized algorithms and data structures, analysis of expected running times, and amortized analysis). NP.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>"Algorithm Design" by Kleinberg and Tardos.</Course_Literature>
+          <Course_Objectives>To provide the student with an understanding of the techniques involved in the construction and analysis of advanced algorithms. To strengthen the student's ability to construct algorithms.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset bygger på 02105 Algoritmer og Datastrukturer I. Det forventes at den studerende kan pensum fra 02105, som inkluderer&#xD;&#xA;&#xD;&#xA;Basal algoritmisk analyse, asymptotisk notation.&#xD;&#xA;Datastrukturer: stakke, køer, hægtede lister, træer, hobe, prioritetskøer, union-find, balancerede binære søgetræer.&#xD;&#xA;Søgning og sortering: binær søgning, hobsortering, indsættelsessortering, flettesortering.&#xD;&#xA;Grafalgoritmer: korteste veje (Dijkstra og korteste veje i DAGs), mindste udspændende træer, topologisk sortering, breddeførst søgning, dybdeførst søgning, repræsentation af grafer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course builds on 02105 Algorithms and Data Structures I. Students are expected to know the curriculum for 02105, which includes&#xD;&#xA;&#xD;&#xA;Basic algorithm analysis, asymptotic notation.&#xD;&#xA;Data structures: stacks, queues, linked lists, trees, heaps, priority queues, union-find, balanced binary search trees.&#xD;&#xA;Searching and sorting: binary search, heap sort, insertion sort, merge-sort.&#xD;&#xA;Graph algorithms: single source shortest paths (Dijkstra and SSSP in DAGs), Minimum spanning trees, topological sorting, Breadth first search, Depth first search, representation of graphs." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02105/02326" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive en algoritme præcist, kortfattet og entydigt." />
+          <Txt Lang="en-GB" Txt="Describe an algorithm accurately, concise and unambiguous." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende datastrukturer og algoritmer fra kurset på en given probleminstans." />
+          <Txt Lang="en-GB" Txt="Apply algorithms and data structures from the course on a given problem instance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere algoritmer og datastrukturer, herunder være i stand til at bestemme værste-tilfælde, forventet og amortiseret køretid og pladsforbrug i asymptotisk notation." />
+          <Txt Lang="en-GB" Txt="Analyze algorithms and data structures, including being able to determine the worst case, expected, and amortized running time and space consumption in asymptotic notation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for korrekthed af algoritmer." />
+          <Txt Lang="en-GB" Txt="Argue for the correctness of algorithms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og formulere det underliggende algoritmiske problem i en given problemstilling." />
+          <Txt Lang="en-GB" Txt="Identify and formulate the underlying algorithmic problem in a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, vurdere og sammenligne algoritmer/​datastrukturer og på baggrund af dette vælge en passende algoritme/datastruktur til løsning af et givet problem." />
+          <Txt Lang="en-GB" Txt="Analyze, evaluate, and compare algorithms / data structures and in the light of this, select an appropriate algorithm / data structure for solving a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende datastrukturer og algoritmer fra kurset til at løse et givet problem." />
+          <Txt Lang="en-GB" Txt="Apply algorithms and data structures from the course to solve a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilpasse algoritmer og datastrukturer fra kursest til at løse et givet problem." />
+          <Txt Lang="en-GB" Txt="Modify algorithms and data structures from the course to solve a given problem. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne forskellige algoritmiske paradigmer (f.eks. del-og-hersk, dynamisk programmering, randomiserede algoritmer og strømningsalgoritmer) og vælge et passende til løsning af et givet problem." />
+          <Txt Lang="en-GB" Txt="Compare different algorithmic paradigms (fx. divide-and-conquer, dynamic programming, randomized algorithms, and flow algorithms) and select an appropriate one for solving a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lave reduktioner mellem problemer, f.eks. til at vise hårdhed af et givet problem. " />
+          <Txt Lang="en-GB" Txt="Construct reductions between problems, fx. to prove hardness of a given problem. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og afprøve datastrukturer og algoritmer." />
+          <Txt Lang="en-GB" Txt="Implement and test data structures and algorithms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for valg foretaget i forbindelse med løsning af et problem." />
+          <Txt Lang="en-GB" Txt="Argue for choices made when solving a problem." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02110" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>The course presents advanced algorithmic techniques and data structures.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="32" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="20" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="52" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="48" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:36.923" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

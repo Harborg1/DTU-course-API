@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02207" Volume="2026/2027" University="dtu" LastUpdated="2026-03-23+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Verifikation af digitale systemer" />
+        <Title Lang="en-GB" Title="Verification of Digital Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <External_Course_Responsible Email="jacob@syosil.com" Name="Jacob Sander Andersen" IsContact="true" SortID="1" />
+        <Course_Responsible PersonKey="74954" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Luca</GivenName>
+            <FamilyName>Pezzarossa</FamilyName>
+            <Email>lpez@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evaluering af øvelse/rapport + studenterpræsentation.&#xD;&#xA;Den endelige karakter gives på baggrund af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of exercise/report + student presentation.&#xD;&#xA;The final grade is given based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Principper for verifikation af integrerede kredsløb, constrained random verification, verification planning, transaction-based testbench-arkitektur, coverage models, funktionelle checks, assertions, PyUVM, Python tests, scoreboards, requirement-centric verification closure.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde og hjemmeopgaver. Obligatorisk afsluttende projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus giver grundlæggende viden om metoder og værktøjer til verifikation af integrerede kredsløb ved at dække de principielle elementer i coverage-driven constrained random verification:
+•	Kortlægning af designarkitekturkrav til verification plans
+•	Implementering af objektorienterede testbench-miljøer
+•	Oprettelse af constrained random test cases med tilsigtet random stimuli distribution
+•	Implementering af funktionelle checks på både RT- og transaktionsniveau
+•	Opbygning af coverage models til måling af verifikationskompletheden
+•	Kortlægning af tests, checks og coverage models til kravene i verification plan
+
+Kurset præsenterer den grundlæggende teori, der er nødvendig for at forstå og implementere disse principielle elementer. De studerende lærer at bruge simulationsværktøjer til at debugge designet, de constrained random test cases samt de implementerede design checks, men også hvordan sådanne værktøjer kan anvendes til at måle de opnåede coverage metrics ved hjælp af de implementerede coverage models.
+
+Som en praktisk del arbejder de studerende i små teams med en praktisk implementering af en testbench i PyUVM ved brug af Python til verifikation af funktionaliteten i et RTL-design. I det afsluttende projekt skal hvert studenterteam integrere deres komplette PyUVM-verifikationsmiljø bestående af tests, checks og coverage models. Det endelige projekt evalueres ud fra den teoretiske korrekthed af de enkelte elementer samt den samlede kapacitet af verifikationsmiljøet til at finde komplekse RTL-designfejl.
+
+Ved afslutningen af kurset vil de studerende have opnået både en grundig teoretisk forståelse og praktisk erfaring med anvendelse af moderne metoder til verifikation af integrerede kredsløb ved brug af PyUVM og Python. De studerende bliver klar til at arbejde med de omfattende industri-skala miljøer, der anvendes til verifikation af moderne komplekse chip-designs.</Course_Objectives>
+          <Remark>Dette kursus udbydes i samarbejde med virksomheden Syosil, som er specialiseret i verifikation af digitale systemer.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Principles of verification of integrated circuits, constrained random verification, verification planning, transaction-based test bench architecture, coverage models, functional checks, assertions, PyUVM, Python tests, scoreboards, requirement-centric verification closure.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, and homework. Mandatory final project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course provides basic knowledge of methods and tools for verifying integrated circuits, by covering the principial elements of coverage-driven constrained random verification:
+•	Mapping design architecture requirements into verification plans
+•	Implementing object-oriented test bench environments
+•	Creating constrained random test cases with intended random stimuli distribution
+•	Implementing functional checks on the RT as well as the transactional level
+•	Building coverage models for measuring verification completeness
+•	Mapping tests, checks, and coverage models to requirements in the verification plan
+
+The course presents the fundamental theory necessary to understand and implement these principal elements. Students will learn how to use simulation tools to debug the design, the constrained random test cases as well as the implemented design checks, but also how to use such tools to measure the obtained coverage metrics using the implemented coverage models. 
+
+As a practical aspect, students work in small teams on a practical implementation of a testbench in PyUVM using Python for verifying the functionality of an RTL design. In the final project, each student team will integrate their complete PyUVM verification environment comprised of tests, checks, and coverage models. The final project will be evaluated based on the theoretical correctness of each element, as well as the aggregated capability of the verification environment for finding complex RTL design bugs.
+
+By the end of this course, students will have gained both a thorough theoretical understanding and practical experience in employing modern methods for verifying integrated circuits, using PyUVM and Python. Students will become ready to employ the extensive industry-scale environments used to verify modern complex chip designs.</Course_Objectives>
+          <Remark>This course is given in collaboration with the company Syosil, which specializes in verification of digital systems.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende færdigheder i programmering og digital elektronik, herunder en vis viden om et hardwarebeskrivelsessprog." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic skills in programming and digital electronics including some knowledge of a hardware description language." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02139 / 02203" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare rollen af forskellige værktøjer og sprog i digital systemverifikation og deres anvendelse i verifikationsprocesser." />
+          <Txt Lang="en-GB" Txt="Explain the role of different tools and languages in digital system verification and their application in verification processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende den grundlæggende teori om constrained random verification i akademiske og virkelige situationer, herunder principper for funktionel verifikation af RTL-designs, state space exploration, transaktionskoncepter, verifikationskvalitet og verification plans." />
+          <Txt Lang="en-GB" Txt="Apply the basic theory of constrained random verification to academic and real-world situations, including principles of functional verification of RTL designs, state space exploration, transaction concepts, verification quality, and verification plans." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe directed og constrained random test cases for at sikre en effektiv stimuli distribution til verifikation af RTL-designs i virkelige situationer." />
+          <Txt Lang="en-GB" Txt="Design directed and constrained random test cases, ensuring effective stimuli distribution to verify RTL designs for real-world situations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og/eller anvende funktionelle checkers, reference models, scoreboards og assertions ved brug af temporal logic til validering af designkorrekthed i virkelige situationer." />
+          <Txt Lang="en-GB" Txt="Implement and/or use functional checkers, reference models, scoreboards, and assertions using temporal logic to validate design correctness for real-world situations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle og anvende coverage models samt coverage model closure-teknikker til at måle verifikationskompletheden." />
+          <Txt Lang="en-GB" Txt="Develop and apply coverage models and coverage model closure techniques to measure verification completeness." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere testbenches i PyUVM ved brug af Python til verifikation af funktionaliteten af et RTL-design." />
+          <Txt Lang="en-GB" Txt="Implement testbenches in PyUVM using Python to verify the functionality of an RTL design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge simulationsværktøjer til at debugge RTL-designs, test cases, funktionelle checks og coverage models." />
+          <Txt Lang="en-GB" Txt="Use simulation tools to debug RTL designs, test cases, functional checks, and coverage models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere effektiviteten af et verifikationsmiljø ved at evaluere verifikationsmetrikker og fejlfindingskapacitet." />
+          <Txt Lang="en-GB" Txt="Analyze the effectiveness of a verification environment by evaluating verification metrics and bug-finding capabilities." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere forskellige verifikationskomponenter, herunder tests, checks og coverage models, i et komplet verifikationsmiljø." />
+          <Txt Lang="en-GB" Txt="Integrate different verification components, including tests, checks, and coverage models, into a complete verification environment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere den endelige kvalitet af et verifikationsmiljø baseret på dets evne til at detektere komplekse RTL-designfejl." />
+          <Txt Lang="en-GB" Txt="Assess the final quality of a verification environment based on its ability to detect complex RTL design bugs." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Verifikation af digitale systemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="10" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="90" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:59.07" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

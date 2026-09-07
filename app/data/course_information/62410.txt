@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="62410" University="dtu" LastUpdated="2026-03-18+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="CDIO-Projekt" />
+        <Title Lang="en-GB" Title="CDIO-Project" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="215716" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Sommer</FamilyName>
+            <Email>lasom@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="153116" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Deena</GivenName>
+            <FamilyName>Francis</FamilyName>
+            <Email>dfra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Gruppeprojekt med individual bedømmelse.&#xD;&#xA;Evalueringen er en helhedsvurdering af&#xD;&#xA;- de i løbet af kurset afleverede statusrapporter&#xD;&#xA;- den endelige løsning, som demonstreres i sidste del af 3-ugers perioden&#xD;&#xA;- den endelige rapport" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Group project with individual assesment.&#xD;&#xA;The evaluation is an overall assessment of&#xD;&#xA;- the status reports submitted&#xD;&#xA;- the final solution, which is demonstrated in the last part of the 3-week period&#xD;&#xA;- the final report" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Man vil i kurset blive konfronteret med en åbent specificeret opgave som kan løses på en række forskellige måder. De studerende skal i grupper analysere problemet og beslutte sig for hvordan det skal håndteres samt designe et system som løser problemet. Herefter skal systemet implementeres. Arbejdet skal dokumenteres og præsenteres undervejs. 
+
+Kurset vil blive evalueret på basis af følgende 5 obligatoriske elementer:
+- 3 mindre status-rapporter som skal afleveres og senere præsenteres og diskuteres mundtligt ved 3 tilhørende status-gruppe-møder.
+- præsentation af det færdige produkt i den 3. uge af 3-ugers perioden.
+- afsluttende rapport på 25 til 35 sider som skal afleveres ved 3-ugers periodens slutning.
+
+Karakteren vil blive givet som en helhedsvurdering baseret på disse 5 elementer.
+
+Arbejdet udføres i grupper af 6-8 studerende. Alle rapporter og mundtlige præsentationer udføres af gruppen i fællesskab. I den afsluttende rapport skal der dog være en klar opdeling af hvem der har produceret hvilke dele af rapporten, samt en klar angivelse af hvem der har lavet hvad i forbindelse med projektet som helhed.
+
+Der vil blive givet obligatoriske forelæsninger til projektstyring parallelt med det tekniske arbejde på projektet og der er et etik-modul med obligatoriske opgaver.</Contents>
+          <Teaching_And_Learning_Methods>Projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at gøre den studerende i stand til at håndtere en komplet systemudviklings-cyklus fra koncept-design til færdigt produkt. Kurset inkorporerer både softwaremæssige og hardwaremæssige aspekter. Kurset bestræber sig på at skabe arbejdssituationer som ligner de reelle arbejdsforhold for IT-ingeniører i industrien, og vil træne den studerende i at arbejde i et udviklings-team.
+
+Kurset bygger på den studerendes erfaring og viden fra studiets tidligere semestre (1.-3.) samt kundskaber som opnås i de andre kurser på studiets 4. semester.
+
+Den studerende skal opnå kursets mål som del af en gruppe på 6-8 studerende, mens det individuelle ansvar opretholdes. Herved forstås, at
+     i.      Den studerende skal kunne redegøre for den overordnede ide bag hver enkelt komponent i systemet, og
+     ii.      Den studerende skal udvise detaljeret forståelse af mindst en væsentlig komponent gennem alle CDIO faser.
+
+Endvidere er det er mål at lade de studerende overveje etiske spørgsmål i relation til deres fagområde. Dette gøres gennem et særligt etik-modul.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+IT-elektronik: 4. semester
+IT og Økonomi: 4. semester
+Softwareteknologi: 4. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The students are confronted with an openly specified task which can be solved in a number of ways. The students will in groups have to analyse the problem and decide how to tackle it and design a system that solves it. Thereafter the chosen approach has to be implemented. The work has to be documented and presented regularly throughout the course.
+
+The course will be assessed on the following 5 mandatory components:
+- 3 smaller status reports to be handed in and later presented and discussed orally at 3 corresponding status group meetings.
+- presentation of the final product in the 3rd week of the 3 week period. 
+- a final report of 25 to 35 pages to be handed in at the end of the 3 week period.
+
+The grade will be based on an assessment of these 5 elements judged as a whole.
+
+The work has to be conducted in groups of 6-8 students. All reports and oral presentations are to be carried out by the group as a whole. The final report, however, is required to contain a clear indication of who produced which parts of the report, as well as a clear indication of who did what in connection with the project in its entirety.
+
+Parallel to the technical part of the course, mandatory lectures on group project work will be given and an ethics module with mandatory exercises.</Contents>
+          <Teaching_And_Learning_Methods>Project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course aims to enable students to handle a complete system design cycle from concept design to the working product. It incorporates both software and hardware aspects. The course strives to recreate work situations which reflect actual working conditions and prepares the student to work in a development group.
+
+It builds on the student's experience and knowledge from the previous semesters (1-3) as well as the knowledge obtained in the other courses on the 4th semester.
+
+The student must achieve the course goals as a member of a 6-8 person group. Individual responsibilities must be kept. This means that:
+ i. The student must be able to explain the overall idea behind every single part of the system.
+ ii. The student must demonstrate in depth understanding of at least one important component of the system through all CDIO phases.
+
+Furthermore it is a goal to let the students consider ethical questions related to their subject. This is done through a special ethics module.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+IT-elektronik: 4. semester
+IT og Økonomi: 4. semester
+Softwareteknologi: 4. semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset er et CDIO design-build forløb på videregående niveau, der bygger på alle obligatoriske kurser fra 1.-4. semester for retningerne IT-sw, IT-Ø, og IT-elektronik, idet kurserne på 4. semester kan tages samtidigt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is a CDIO design-build course at advanced level, based on all compulsory courses from 1st to 4th. semester for IT-sw, IT-Ø, and IT electronics, as courses in 4th semester can be taken simultaneously." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="selvstændigt benytte sine faglige kompetencer ved løsning af praktiske, ingeniørmæssige problemer" />
+          <Txt Lang="en-GB" Txt="independently use his/her professional competences to solve practical engineering problems " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="arbejde med åbne problemstillinger" />
+          <Txt Lang="en-GB" Txt="work with loosely formulated problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kunne forstå og formulere hvorfor det ikke er tilstrækkelig ballast udelukkende at kunne programmere i projekter" />
+          <Txt Lang="en-GB" Txt="be able to understand and articulate why it is not enough to be able to program exclusively in projects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kombinere viden og kompetencer fra forskellige fagområder i et større tværfagligt projekt" />
+          <Txt Lang="en-GB" Txt="combine the knowledge and competence from different areas in a larger interdisciplinary project " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre projekter som involverer alle 4 CDIO-elementer: conceive, design, implement, operate" />
+          <Txt Lang="en-GB" Txt="conduct a project which involves all  4 CDIO-elements: conceive, design, implement, operate" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="arbejde konstruktivt i større grupper " />
+          <Txt Lang="en-GB" Txt="work efficiently in larger groups" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="selvstændigt fremfinde relevant litteratur og software i forbindelse med løsning af en åben problemstilling" />
+          <Txt Lang="en-GB" Txt="independently explore the relevant literature and software involved in solving a loosely formulated problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="integrere forskellige teknikker og teknologier i et større sammenhængende system" />
+          <Txt Lang="en-GB" Txt="integrate different techniques and technologies into a larger coherent system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opsplitte et større projekt i mindre dele med relevante delmål" />
+          <Txt Lang="en-GB" Txt="divide a larger project into minor parts with the relevant partial objectives" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="præsentere et igangværende projekts status i både skriftlig og mundtlig form" />
+          <Txt Lang="en-GB" Txt="present the status of an ongoing project in both written and oral form" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="præsentere et færdigt produkt i skriftlig form" />
+          <Txt Lang="en-GB" Txt="present a final product in writing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beherske det engelske fagsprog til at kunne søge information, læse manualer og kommunikere fagligt med andre specialister inden for fagområdet." />
+          <Txt Lang="en-GB" Txt="be familiar with the English technical terminology to be able to search for information, read manuals and communicate with other specialists in the field." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:28.19" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

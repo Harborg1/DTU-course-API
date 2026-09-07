@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62734" Volume="2026/2027" University="dtu" LastUpdated="2026-03-23+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Datateknik og programmering" />
+        <Title Lang="en-GB" Title="Data technique and programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="78867" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Schultz</FamilyName>
+            <Email>osch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="I løbet af semesteret afleverer grupperne et antal programmerings/kursusarbejder, som skal kunne godkendes før eksamen og det sidste kursusarbejde bedømmes og indgår i den endelige karakter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="During the semester hands-on programming assignments should be done and approved before the exam and the last course-lab is graded and is a part of the final grade" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Additional days might be necessary" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="ekstra dage kan forekomme." />
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Individuel mundtlig eksamen - 10 minutter per studerende inkl bedømmelse" />
+          <Duration Lang="en-GB" Txt="10 minuttes per student incl. evaluation" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De studerende vil gennem struktureret C-programudvikling til en mikrokontroller på et udviklingsboard lære at anvende C programmering til at styre enheder: I/O porte og serielle porte. De studerende vil lære at bruge en systematisk metode til programudvikling. 
+C-Programmering på registre-niveau ved brug af boolske operatorer, c syntax for Boolean operators on bit-level, pointers, arrays, strings, state machines, indkapsling, lagerbrug, programmering af: USART, SPI, Timers, ADC konverter, interrupts. Hver studerende anvender sit eget board</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger med hands-on C-programmerings øvelser og projektarbejde i grupper 
+Før forelæsningerne er der Quiz'es, som forudsættes udført inden 
+forelæsningen. Igennem kurset arbejder grupper af 2-3 studerende med programmerings opgaver med tilhørende journal. Kurset afsluttes med et kursus-arbejde udført i grupper af 2-3 studerende - Rapporten over det afsluttende kursus arbejde indgår i karakteren sammen med en mundtlig eksamination i faget</Teaching_And_Learning_Methods>
+          <Course_Literature>Databladet for den brugte mikrokontroller MEGA2565 og Huang
+eBook: The Atmel AVR Microcontroller: MEGA and XMEGA in Assembly and C
+1285605977 | 9781285605975
+1/1/2013 © 2014</Course_Literature>
+          <Course_Objectives>De studerende lærer struktureret C-programudvikling til en mikrokontroller på et udviklingsboard. De vil anvende C programmering til at styre perifere enheder, som f. eks. porte, serielle interfaces og analog til digital konvertering samt energistyring af selve microcontroleren. De studerende vil lære at bruge en systematisk metode til programudvikling, test og dokumentation. Kurset kræver forudsætninger svarende Kurset understøtter 3-ugers kurset 30082 på 2.semester. Kurset giver de studerende en indføring i en mikrokontrollers arkitektur og indbyggede hardware enheder. Hver studerende anvender sit eget board</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektroteknologi: 2. semester
+
+
+Hver studerende forudsættes at købe et udviklingsboard Arduino MEGA 2560</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The student will learn structural program development using C-programming applied to a microcontroller board for interfacing with: I/O ports and serial ports. The students will learn a systematic method for program development. 
+C-programming on register levels using boolean operators, c-syntax for Boolean operators on bit level, pointers, arrays, strings, state machines, encapsulation, use of memory, programming of: USART, SPI, Timers, ADC-converter, interrupts. Each students uses their own microcontroller board</Contents>
+          <Teaching_And_Learning_Methods>Lectures with hands on exercises and project work in groups.
+Before each lecture quizes should be completed. During the course groups of 2 - 3 students works on assigments with reports. In the last part of the semester, a course-lab will be given and must be solved in groups of 2- 3 students. A report for this course-lap is part of the grade together with  an oral examination</Teaching_And_Learning_Methods>
+          <Course_Literature>The data sheet for the microcontroller MEGA2560 and Huang
+eBook: The Atmel AVR Microcontroller 
+ISBN 9781473792432
+1/1/2013 © 2014</Course_Literature>
+          <Course_Objectives>The students will learn structured C program development for a microcontroller on a development board. They will use C programming to control peripherals, such as ports and serial interfaces as well as analog to digital conversion. The students will learn to use a systematic method of program development, testing and documentation. The course requires prerequisites similar to Preliminary programming for diploma-E (programming in C) on the first semester and supports the 3-week course 30082 in the 2nd semester. The course provides students with an introduction to microcontroller architecture and built-in hardware devices. Each student uses their own board</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektroteknologi: 2. semester
+
+
+Each student is to buy his own Arduino Arduino MEGA 2560</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="C-programmering på 1 semester eller tilsvarende" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="C-programming at the 1st semester or corresponding" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02318" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og implementere et struktureret program til et mindre mikrokontroller system" />
+          <Txt Lang="en-GB" Txt="Design and implement a structural program for a small microcontroller system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende C kontrolstrukturer, pointers, datastrukturer, funktioner og tilstandsmaskiner" />
+          <Txt Lang="en-GB" Txt="Using C-language for control structures, pointers, data structures, functions, and finite state machines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende hardware nær c-programmering til initialisering af de forskellige funktionaliter som porte, timere, serielle enheder, analog til digital konveter (ADC) samt power down registre" />
+          <Txt Lang="en-GB" Txt="Use hardware C programming to initialize the different hardware units, such as ports, timers, serial units,analog digital conveter (ADC) as well as power down registre" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare en mikrokontroller's arkitektur, hukommelses hierarkiet, registrere, og dens operationer." />
+          <Txt Lang="en-GB" Txt="Explain the architecture of a microcontroller, memory hierarchy, registers, and its operations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Læse databladet for en mikrocontroller og anvende det i C-programmeringen" />
+          <Txt Lang="en-GB" Txt="Read the datasheet for a given microcontroller and use it in the C-prgramming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå forskellen mellem polling og interrupts og anvende det passende i c-programmer" />
+          <Txt Lang="en-GB" Txt="Understand the difference between polling and interrupts and use it appropriately in c-programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende boolske operatorer til at sætte og slette bits i registre" />
+          <Txt Lang="en-GB" Txt="Use Boolean operators to set and reset bits in registers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre verifikation på c-moduler og integrations test, ved brug af relevante værktøjer." />
+          <Txt Lang="en-GB" Txt="Verify c-modules and perform integration test using appropriately tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre c- programmer til en mikrokontroller under hensyntagen til energiforbrug, så den kan interface perifere enheder som f.eks. analog sensorer, serielle enheder, m.fl." />
+          <Txt Lang="en-GB" Txt="Carry out c-programming for a microcontroller taking into account energy consumption interfacing different peripheral units, such as analog sensors, serial units, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne evaluere hinandens kursusarbejder gennem peer-review" />
+          <Txt Lang="en-GB" Txt="Peer review among the students of their projects" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne evaluere og kritisk anvende AI-værktøjer til kodegenering for komplekse problemer" />
+          <Txt Lang="en-GB" Txt="Be able to evaluate and use AI-tools for code generation for complex problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne dokumentere et c-program for et indlejret system." />
+          <Txt Lang="en-GB" Txt="Be able to do documentation for a c-program for an embedded system" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="58" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="42" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:06.633" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

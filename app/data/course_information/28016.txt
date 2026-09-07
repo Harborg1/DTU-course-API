@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28016" University="dtu" LastUpdated="2026-04-15+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">7.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Matematiske modeller for kemiske og biokemiske systemer" />
+        <Title Lang="en-GB" Title="Mathematical models for chemical and biochemical systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="6604" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Søren</GivenName>
+            <FamilyName>Kiil</FamilyName>
+            <Email>SK@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="3687" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Alexander</GivenName>
+            <FamilyName>Shapiro</FamilyName>
+            <Email>ASH@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsbedømmelse på basis af projektrapporter samt skriftlig eksamen. En kort mundtlig eksamen er en del af bedømmelsen af den anden rapport." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment based on evaluation of project reports and a written exam. A short oral exam is a part of the evaluation of the second report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Opstilling af stationære og ikke-stationære differentielle masse- og energibalancer. Matematiske modeller for systemer med kemisk og biokemisk reaktion, samt konvektion, diffusion og varmeledning. Formulering af randbetingelser. Sædvanlige differentialligninger og systemer af disse. Anvendelse på kemitekniske systemer og processer, såsom kontinuerligt omrørte tankreaktorer, katalysatorpartikler og andre systemer.
+Eksperimentel øvelse med modelopstilling.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>For en ingeniør er det vigtigt at kunne analysere en praktisk problemstilling gennem opstilling af simplificerede modeller, der hver tager højde for forskellige aspekter af problemstillingen. I kurset skal de studerende lære at opstille modeller for simple kemiske og biokemiske problemstillinger. Endvidere skal de studerende opnå viden om og færdighed i en række centrale matematiske begreber og metoder for at kunne løse de opstillede modeller analytisk eller med brug af passende software.</Course_Objectives>
+          <Remark>Kurset gives på dansk.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The development of steady-state and non-steady-state differential mass- and energy balances. Mathematical models for systems with chemical and biochemical reaction, together with convective and diffusive mass- and heat transport. The formulation of initial and boundary conditions. Ordinary differential equations and systems of such equations. Laboratory exercise with model formulation. Application to chemical engineering systems and processes, like continuous stirred tank reactor, catalyst particles, and other.
+Experimental exercise with modeling.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>For an engineer it is important to be able to analyse practical problems by simplified models, each of which simulates different aspects of the problem. In the course, the students learn to formulate models for simple chemical and biochemical systems. Furthermore, the students must obtain knowledge and capabilities within a number of central mathematical concepts and methods in order to solve the models analytically or with the help of an appropriate software.</Course_Objectives>
+          <Remark>The course is given in Danish.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="(28022 senest samtidig)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="(28022 concurrent)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01901.01920.28022" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage en relevant systemafgrænsning og angive et hensigtsmæssigt kontrolvolumen i simple (bio)kemiske systemer." />
+          <Txt Lang="en-GB" Txt="Identify relevant system boundaries and select an appropriate control volume in simple (bio)chemical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive systemets vekselvirkning med omgivelserne ved identifikation af masse- og energistrømme." />
+          <Txt Lang="en-GB" Txt="Identify mass and energy interactions between the system and the surroundings." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend de grundlæggende balance­r for masse og energi til at aflede differentialligninger, der beskriver processen." />
+          <Txt Lang="en-GB" Txt="Use the fundamental balances for mass and energy to derive differential equations describing the process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="indføre og anvende dimensionsløse variable ved analysen af den matematiske model for systemet." />
+          <Txt Lang="en-GB" Txt="Introduce and apply dimensionless variables in the analysis of the mathematical model for the system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="typebestemme lineære differentialligninger samt foretage en faserumsanalyse." />
+          <Txt Lang="en-GB" Txt="Determine the type of a system of linear differential equations and perform a phase space analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="for to koblede differentialligninger bestemme de stationære punkter, linearisere omkring de stationære punkter, typebestemme lineariseringen, og plotte vektorfeltet. Kan anvende denne information til en faseplansanalyse." />
+          <Txt Lang="en-GB" Txt="Find the stationary points for two coupled non-linear differential equations, linearise around each stationary point, determine the type of the linearised system, plot the vector field and perform a phase plane analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere hvordan en løsning ændres ved variation af parametre i en matematiske model af et (bio)kemisk system." />
+          <Txt Lang="en-GB" Txt="Analyse how a solution is changed when the parameters in a (bio)chemical system is changed." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="for en matematisk model af et (bio)kemisk system gennemføre de nødvendige udregninger, gerne ved brug af symbolske og numeriske computerværktøjer, som programmet Maple og AI." />
+          <Txt Lang="en-GB" Txt="Perform the necessary calculations for a mathematical analysis of a (bio) chemical system. Normally using symbolic and numerical computer tools, including program Maple and AI." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="holde regnskab med enheder og størrelsesordener af de i en matematisk model indgående størrelser." />
+          <Txt Lang="en-GB" Txt="Keep track of units and orders of magnitude of the variables in a mathematical model of a (bio) chemical system." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="01913.28015" />
+        <PreviousCourse CourseCode="28015" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:22:45.137" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

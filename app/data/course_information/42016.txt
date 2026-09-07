@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42016" Volume="2026/2027" University="dtu" LastUpdated="2026-03-20+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Forretningsøkonomi og finansiering" />
+        <Title Lang="en-GB" Title="Business Economics and Finance" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="166026" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ramazan</GivenName>
+            <FamilyName>Sari</FamilyName>
+            <Email>ramsa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="152202" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ugur</GivenName>
+            <FamilyName>Soytas</FamilyName>
+            <Email>uguso@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="202400" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Julien Xavier</GivenName>
+            <FamilyName>Daubanes</FamilyName>
+            <Email>jxada@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="For at kvalificere sig til eksamen skal et individuelt projekt være gennemført og godkendt. Dette projekt består i at indsamle, behandle og analysere reelle økonomiske data. Projekterne bliver godkendt, hvis man opnår mindst 50/100. Rapporten vil udgøre 10 % af den samlede karakter, mens eksamenen, som vil være multiple choice, udgør 90 % af karakteren." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="An individual project must be completed and approved to qualify for the exam. This project involves collecting, treating, and analyzing actual financial data. The project will be approved if you get at least 50/100. The report will constitute 10% of your overall grade. The final exam will be multiple choice and constitute 90% of your grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3B" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I. Kursusintroduktion 
+II. Strategisk investeringsbeslutningstagning (Julien Xavier Daubanes) 
+a. Introduktion, grundlæggende begreber og definitioner
+b. Værdiansættelse
+c. Grundlæggende principper for kapitalbudgettering
+d. Risiko og afkast
+
+III. Struktur, adfærd, præstation 
+a. Grundlæggende markedsstruktur (efterspørgsel og udbud, elasticiteter og forbruger- og producentoverskud)
+b. Sådan måles markedsstruktur: koncentrationsmål, produktheterogenitet, adgangs-/udgangsbarrierer, information
+c. Forståelse af virksomhedsadfærd: prisfastsættelses-outputbeslutninger med markedsstyrke (mere detaljer i spilteori), forskning og udvikling, reklame, samarbejde (karteller: OPEC)
+d. Sådan måles virksomheds- og markedspræstation: profit, forskellige præstationsmål, effektivitet, velfærd
+
+IV. Fra SCP til konkurrencestrategi
+a. Kortlægning af SCP til Porters fem kræfter 
+• Rivalisering mellem eksisterende virksomheder
+• Trussel om adgang
+• Trussel om substitutter
+• Købernes forhandlingsstyrke
+• Leverandørernes forhandlingsstyrke
+b. Branchens attraktivitet vs. virksomhedens præstation
+c. Omkostningslederskab vs. differentiering
+d. Strategisk positionering inden for branchestrukturen
+
+V. Træd ind i andre aktørers sted (strategiske interaktioner) 
+a. Samtidige trækspil (normalform): Dominerende strategi, itereret eliminering af dominerede strategier, Nash-ligevægt (kort introduktion til bedste responsfunktioner)
+Eksempler: fangerens dilemma (PD), forureningsbekæmpelse, koordinering, teknologiadoption, kyllingespil, streng konkurrence.
+b. Sekventielle trækspil (ekstensiv form): Baglæns induktion, delspil perfekt ligevægt, strategier til at håndtere tomme trusler og løfter (Eksempler: Kædebutik, tusindben, forhandling)
+c. Gentagne spil (endelige og uendelige): diskontering, gengældelse og grim trigger-strategier (Eksempler: gentagen PD, kan samarbejde reddes?)
+VI. Markeder og prisstrategier 
+a. Perfekt konkurrence: en benchmark markedsstruktur
+b. Monopol: højeste markedsstyrke, naturgas, olie og elektricitet som naturlige monopoler
+c. Monopolistisk konkurrence: produktdifferentiering skaber monopolstyrke
+d. Prisdiskrimination
+i. 1. grads (perfekt) diskrimination
+ii. 2. grads (kvantitets) diskrimination: à la carte vs. buffet
+iii. 3. grads (gruppe) diskrimination: studenter-/seniorrabatter
+
+VII. Strategi i oligopolistiske spil 
+a. Cournot: duopol, N-spiller, symmetrisk, asymmetrisk, velfærd (Eksempel: Airbus vs Boeing)
+b. Bertrand: prisfastsættelse i homogene/heterogene produktmarkeder, velfærd (Eksempel: Pizza Hut &amp; Dominos)
+c. Stackelberg: symmetriske/asymmetriske omkostninger, velfærd (Eksempel: Coca-Cola vs Pepsi)
+d. Valg af rumlig og attributbaseret placering: Hotellings lineære by, Salops cirkel (Eksempler: tankstationer, issmage)</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Foreslåede lærebøger:  
+• "Industrial Organisation: Theory and Practice" af DE Waldman og EJ Jensen, 2019, Fifth Edition, Routledge. • "Games, Strategies, and Decision Making" af Joseph Harrington, 2015, 2. udgave, Macmillan 
+
+Andre materialer:
+• Powerpoint-præsentationer vil være tilgængelige på DTU Learn 
+• Problemsæt og svar vil være tilgængelige inden forelæsningsdatoen på DTU Learn</Course_Literature>
+          <Course_Objectives>Kurset tilbyder koncepter og værktøjer inden for økonomi og finans til at understøtte strategisk ledelsesmæssig beslutningstagning. Kurset forbinder virksomhedsfinansiering og økonomisk teori med strategisk ledelse. Det lægger vægt på teori og praksis med eksempler fra det virkelige liv for at skærpe analytiske færdigheder, undervise i de grundlæggende principper for virksomhedsfinansiering, der er nødvendige for strategiske økonomiske beslutninger, integrere Structure-Conduct-Performance (SCP)-paradigmet og Porters konkurrenceramme samt give intuition til strategisk konkurrence under forskellige markedsstrukturer. Studerende vil opleve at løse beslutningsproblemer ved hjælp af de værktøjer, der dækkes i kurset. Teoriens betydning i beslutningsprocessen, de centrale problemstillinger inden for prisfastsættelse i forskellige markedsstrukturer og valg af produktdifferentiering vil blive introduceret. Virkningerne af strategiske beslutninger og statslig regulering på virksomheders præstation og social velfærd vil blive diskuteret.
+Kurset har til formål at give de studerende en forståelse af:
+• Hvordan man bruger kapitalbudgetteringsteknikker til at vurdere strategiske investeringer
+• Hvordan risiko og afkast former den økonomiske præstation
+• Hvordan udbuds- og efterspørgselskræfter fungerer under forskellige markedsstrukturer
+• Hvordan markedsstruktur, virksomhedsadfærd og præstation er forbundet
+• Hvordan man vurderer konkurrenceintensitet
+• Hvordan oligopolistiske markeder adskiller sig fra perfekt konkurrenceprægede markeder og et monopol
+• Hvordan man tænker strategisk, når der er gensidig afhængighed mellem markedsaktører
+• Hvordan prisfastsættelse, output og placeringsstrategier påvirker virksomhedens præstation og velfærd på forskellige markeder</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>I.	Course introduction 
+II.	Strategic Investment Decision-Making 
+a.	Intro, basic concepts, and definitions
+b.	Valuation
+c.	Fundamentals of capital budgeting
+d.	Risk and return
+
+III.	Structure, conduct, performance 
+a.	Basic Market Structure (Demand and Supply, elasticities, and consumer and producer surpluses)
+b.	How to measure market structure: concentration measures, product heterogeneity, entry/exit barriers, information
+c.	Understanding firm conduct: pricing-output decisions with market power (more detail in game theory), R&amp;D, advertising, collusion (cartels: OPEC)
+d.	How to measure firm and market performance: profit, different performance measures, efficiency, welfare
+
+IV.	From SCP to Competitive Strategy
+a.	Mapping SCP to Porter’s Five Forces 
+•	Rivalry among existing firms
+•	Threat of entry
+•	Threat of substitutes
+•	Bargaining power of buyers
+•	Bargaining power of suppliers
+b.	Industry attractiveness vs firm performance
+c.	Cost leadership vs differentiation
+d.	Strategic positioning within industry structure
+
+V.	Step into other players’ shoes (strategic interactions) 
+a.	Simultaneous move (Normal form) games: Dominant strategy, iterated elimination of dominated strategies, Nash equilibrium (brief intro to best response functions)
+Examples: prisoner’s dilemma (PD), pollution abatement, coordination, technology adoption, game of chicken, strict competition.
+b.	Sequential move (Extensive form) games: Backward induction, subgame perfect equilibrium, strategies to deal with empty threats and promises (Examples: Chain-store, centipede, bargaining)
+c.	Repeated games (finite and infinite): discounting, tit-for-tat, and grim trigger strategies (Examples: repeated PD, can collaboration be saved?)
+VI.	Markets and pricing strategies 
+a.	Perfect Competition: a benchmark market structure
+b.	Monopoly: highest market power, natural gas, oil, and electricity as natural monopolies
+c.	Monopolistic Competition: product differentiation creates monopoly power
+d.	Price Discrimination
+i.	1st degree (perfect) discrimination
+ii.	2nd degree (quantity) discrimination: à la carte vs buffet
+iii.	3rd degree (group) discrimination: student/senior discounts
+
+VII.	Strategy in oligopolistic games
+a.	Cournot: duopoly, N-player, symmetric, asymmetric, welfare (Example: Airbus vs Boeing)
+b.	Bertrand: pricing in homogeneous/heterogeneous product markets, welfare (Example: Pizza Hut &amp; Dominos)
+c.	Stackelberg: symmetric/asymmetric costs, welfare (Example: Coke vs Pepsi)
+d.	Spatial and attribute space location choice: Hotelling’s linear city, Salop’s circle (Examples: gas stations, ice cream flavors)</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Suggested Textbooks:
+• “Industrial Organization: Theory and Practice” by D. E. Waldman and E. J. Jensen, 2019, Fifth Edition, Routledge.
+• “Games, Strategies, and Decision Making” by  Joseph Harrington, 2015, 2nd edition, Macmillan
+Other Materials:
+• Powerpoint presentations will be available at DTU Learn
+• Problem sets and answers will be available before the lecture date at DTU Learn</Course_Literature>
+          <Course_Objectives>The course offers concepts and tools in economics and finance to support strategic managerial decision-making. The course connects corporate finance and economic theory to strategic management. It emphasizes theory and practice, with real-life examples, to sharpen analytical skills, teach the fundamentals of corporate finance necessary for strategic financial decisions, and integrate the Structure–Conduct–Performance (SCP) paradigm and Porter’s competitive framework. and provide intuition for strategic competition under different market structures. Students will experience solving decision-making problems using the tools covered in the course.  The importance of theory in the decision-making process, the key issues in pricing in different market structures, and product differentiation choices will be introduced. The effects of strategic decisions and government regulation on firm performance and social welfare will be discussed.
+To give students an understanding of…
+•	How to use capital budgeting techniques to assess strategic investments
+•	How risk and return shape financial performance
+•	How demand and supply forces work under different market structures
+•	How  market structure, firm conduct, and performance are linked
+•	How to assess competitive intensity 
+•	How oligopolistic markets differ from perfectly competitive markets and a monopoly
+•	How to think strategically when there is mutual interdependence between market players
+•	How pricing, output, and location strategies affect firm performance and welfare in different markets</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Introduktionsøkonomi eller tilsvarende" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introductory Economics or equivalent" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42009" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende komparativ statistik for at forstå, hvordan markedsligevægten ændrer sig" />
+          <Txt Lang="en-GB" Txt="Apply comparative statics to understand how market equilibrium changes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og bruge teknikker til kapitalbudgettering " />
+          <Txt Lang="en-GB" Txt="Understand and use capital budgeting techniques " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge elasticitetsestimater til ledelsesmæssige beslutninger " />
+          <Txt Lang="en-GB" Txt="Use elasticity estimates for managerial decisions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv forholdet mellem aktivers risiko og afkast." />
+          <Txt Lang="en-GB" Txt="Describe the relation between assets’ risk and return" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere og fortolke markedsrisikoen for et finansielt aktiv" />
+          <Txt Lang="en-GB" Txt="Estimate and interpret the market risk of a financial asset" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og kvantificere nøgledeterminanter for markedsstruktur, ydeevne og adfærd." />
+          <Txt Lang="en-GB" Txt="Understand and quantify key determinants of market structure, performance, and conduct." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurder konkurrenceintensitet ved hjælp af SCP og Porter's fem kræfter" />
+          <Txt Lang="en-GB" Txt="Assess competitive intensity using SCP and Porter’s Five Forces" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme strategisk optimal placering, mængde og prisvalg" />
+          <Txt Lang="en-GB" Txt="Strategically determine optimal location, quantity, and price choices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Finde optimale pris- og outputniveauer på forskellige markeder ved hjælp af spilteori" />
+          <Txt Lang="en-GB" Txt="Find optimal pricing and output levels in different markets using game theory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere sammenhængen mellem konkurrence, regulering og velfærd" />
+          <Txt Lang="en-GB" Txt="Evaluate the link between competition, regulation, and welfare." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle strategiske anbefalinger baseret på økonomisk analyse af markeder." />
+          <Txt Lang="en-GB" Txt="Formulate strategic recommendations based on economic analysis of markets" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>strategy and analyses</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="21" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:52.443" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

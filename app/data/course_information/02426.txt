@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02426" Volume="2026/2027" University="dtu" LastUpdated="2026-04-21+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Ikke-lineære random effekt modeller: tidsuafhængige og dynamiske modeller" />
+        <Title Lang="en-GB" Title="Non-linear random effect models: time-independent and dynamic models" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="20293" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jan Kloppenborg</GivenName>
+            <FamilyName>Møller</FamilyName>
+            <Email>jkmo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen baseret på projektarbejde.&#xD;&#xA;Karakteren er baseret på en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam based on project work.&#xD;&#xA;The grade is based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Formulering og beregning/approksimation, ved brug af f.eks. Laplace-approksimationen, af den marginale likelihood for ikke-lineære random effekt modeller er kernen i kurset. Det inkludere modeller med eksplicitte løsninger for den marginale likelihood og mere generelle modeller, hvor Laplace-approksimationen er nødvendig, for eksempel Generalized Linear Mixed Effect-model, ikke-lineær og ikke-Gaussisk modeller. Derudover præsenteres ikke-lineære/ikke-Gaussiske stokastiske tilstands modeller (f.eks. generaliserede tilstands modeller). Kurset inkluderer både matematiske udledninger og praktisk implementering ved hjælp af TMB (Template Model Builder) og andre model specifikke R-pakker.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegning</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset sigter mod at give de studerende en solid forståelse af avancerede metoder for random effekt/latente variable modeller. Fokus vil være på modeller med klar fortolkning af parametrene og en solid forståelse af de moderne estimations teknikker. Modellerne inkluderer både ikke-lineære random effek tmodeller for tidsuafhængige observationer og formulering af den marginale sandsynlighed for ikke-lineære/ikke Gaussiske stokastiske dynamiske systemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Formulation and calculation/approximation, using e.g. the Laplace approximation, of the marginal likelihood for nonlinear random effect models is the core of the course. This include models with explicit solutions for the marginal likelihood and more general models where the Laplace approximation is needed, for example Generalized Linear Mixed Effect model, non-linear and non-Gaussian models. In addition non-linear/non-Gaussian stochastic state space models (e.g generalized state space models) is also presented. The course include both mathematical derivations and practical implementation using TMB (Template Model Builder), and other model specific R-packages.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course aims at giving the students a solid understanding of advanced methods for random effect/latent variable models. Focus will be on models with clear interpretation of the parameters and a solid understanding of the modern estimation techniques. The models include both non-linear random effect type models for time independent observations and formulation of the marginal likelihood for non-linear/non Gaussian stochastic dynamical systems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Studerende antages at have en god forståelse af likelihood teori, standard statistiske modeller (f.eks. den generaliserede lineære model), tidsrækkeanalyse, lineære tilstandsestimering (Kalman-filteret) og kendskab til lineære mixed effect-modeller." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students are assumed to have a good understanding of likelihood theory, standard statistical models (e.g. the generalized linear model), time series analysis, linear state estimation (the Kalman filter), and some knowledge of linear mixed effect models." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02418.02417.02429" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den marginale likelihood for random effekt modeller" />
+          <Txt Lang="en-GB" Txt="Describe the Marginal likelihood for random effect models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer rimelige korrelationsstrukturer i lineære mixed effektmodeller, baseret på relevante antagelser" />
+          <Txt Lang="en-GB" Txt="Indentify reasonable correlation structures in linear mixed effect models, based on relevant assumptions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt=" Anvende og forstå Laplace-approksimationen" />
+          <Txt Lang="en-GB" Txt="Apply and understand the Laplace approximation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere modeller indenfor rammerne af Generalized Linear Mixed Effect-modeller (GLMM)" />
+          <Txt Lang="en-GB" Txt="Formulate models in the framework of Generalized Linear Mixed effect models (GLMM)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende random effekt modeller ved hjælp af konjugerede priors" />
+          <Txt Lang="en-GB" Txt="Formulate and apply random effect models using conjugate priors " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og implementere generelle mixed effekt modeller, dvs. ikke-lineære/ikke-Gaussiske første- og anden stage modeller" />
+          <Txt Lang="en-GB" Txt="Formulate and implement General mixed effect models, i.e. non-linear/non-Gaussian first and second stage models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og estimere parametre i generaliserede tilstands modeller." />
+          <Txt Lang="en-GB" Txt="Formulate and estimate parameters in generalized state space models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende automatisk differentiation til parameter- og tilstandsestimering i hierarkiske modeller" />
+          <Txt Lang="en-GB" Txt="Apply automatic diffferention for parameter and state estimation in Hierarchical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og estimere parametre i ikke-homogene Hidden Markov-modeller og fortolke lokal og global decoding" />
+          <Txt Lang="en-GB" Txt="Formulate and estimate parameters in non-homogeneous Hidden Markov Models, and interpret local and global decoding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimer tilstands variable og parametre i SDE-modeller ved hjælp af Laplace-approksimationen" />
+          <Txt Lang="en-GB" Txt="Estimate state variables and parameters in SDE models using the Laplace approximation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne og diskutere forskellige statistiske modeller og metoder" />
+          <Txt Lang="en-GB" Txt="Compare and discuss different statistical models and methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Non-linear random effect models: time-independent and dynamic models</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02424" />
+        <PreviousCourse CourseCode="02424" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:45.653" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

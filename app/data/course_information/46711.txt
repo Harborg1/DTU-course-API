@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46711" University="dtu" LastUpdated="2024-06-19+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="46" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Stabilitet og kontrol i elforsyningssystemer" />
+        <Title Lang="en-GB" Title="Stability and control in electric power systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="86696" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Oscar</GivenName>
+            <FamilyName>Saborío-Romano</FamilyName>
+            <Email>osro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="104969" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Daniel</GivenName>
+            <FamilyName>Müller</FamilyName>
+            <Email>danmul@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="For at bestå kurset skal alle opgaver og den afsluttende skriftlige eksamen bestås individuelt. Kursuskarakteren gives som en heldhedvurdering af eksamen og vurdering af rapporter. Hvis færre end 40 studerende er tilmeldt eksamen, kan den afsluttende eksamen afholdes som en mundtlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is given as a combined evaluation of group reports and a written exam (overall assessment). &#xD;&#xA;To pass the course, students must pass each assignment and pass the final exam. If less than 40 students enroll, the final exam can be oral." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Efter en generel introduktion til stabilitetsproblemerne i elforsyningssystemer behandles hovedkategorierne af stabilitetsproblemer, herunder mekanismerne for ustabilitet, modforanstaltninger, samt analytiske og teoretiske metoder. Forelæsningerne suppleres af øvelsessessioner med Python, hvor eksempler modelleres, simuleres og analyseres.</Contents>
+          <Teaching_And_Learning_Methods>Undervisningen vil foregå gennem forelæsninger, der suppleres med beregningsøvelser på computer. Flere obligatoriske opgaver vil blive stillet gennem kurset, som den studerende skal besvare i grupper op til 4 personer.</Teaching_And_Learning_Methods>
+          <Course_Literature>Prahba Kundur, "Power System Stability and Control", 1994. ISBN: 0-07-035958-X</Course_Literature>
+          <Course_Objectives>At give den studerende den nødvendige baggrund og kompetencer til at vurdere stabilitet i elforsyningssystemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>After a general introduction to the stability problems in electric power systems, the main categories of stability problems are treated, including the mechanisms of instability, countermeasures and theory for analysis. The lectures are complemented by exercise sessions with Python, where study cases are modelled, simulated, and analysed.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, computer exercises, and mandatory assignments.
+For the assignments, students must work in groups of max. 4.</Teaching_And_Learning_Methods>
+          <Course_Literature>Prahba Kundur, "Power System Stability and Control", 1994. ISBN: 0-07-035958-X</Course_Literature>
+          <Course_Objectives>Give students the necessary background and competences for assessing stability in electric power systems.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hovedårsagerne til problemer med spænding-, frekvens-, og rotorvinkel-stabilitet i elsystemet" />
+          <Txt Lang="en-GB" Txt="Explain the principal causes of voltage, frequency, and rotor angle stability problems in electric power systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de forskellige repræsentationer af synkronmaskiner, der anvendes til stabilitetsstudier i elsystemet" />
+          <Txt Lang="en-GB" Txt="Describe the different representations of the synchronous machines used for stability studies in electric power systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere problemer med spændingsstabilitet i elsystemet ved hjælp af PV-kurver" />
+          <Txt Lang="en-GB" Txt="Analyse voltage stability problems in electric power systems using PV curves" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare nøglebegreberne for frekvensstyring i elsystemet" />
+          <Txt Lang="en-GB" Txt="Explain the key concepts for frequency control in electric power systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere problemer med rotorvinkel-småsignal-stabilitet i elsystemet, samt beskrive måder til at undgå disse" />
+          <Txt Lang="en-GB" Txt="Analyse rotor angle small-signal stability problems in electric power systems and describe means to prevent them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan stabilitetsproblemerne i elsystemet påvirkes af forsyningsbegrænsninger i nettet og generatorrelaterede effektbegrænsninger" />
+          <Txt Lang="en-GB" Txt="Describe how the stability problems in electric power systems are affected by grid-related power transfer limitations and generator-related power injection limitations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere problemer med rotorvinkel-transient-stabilitet, samt beskrive måder at beskytte elsystemet mod disse" />
+          <Txt Lang="en-GB" Txt="Analyse rotor angle transient stability problems and describe means to protect the system against them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og forklare analytiske og simulerede resultater" />
+          <Txt Lang="en-GB" Txt="Analyse and explain analytical and simulation results" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34721 46700 46705" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Stabilitet og kontrol i elsystemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="46710" />
+        <PreviousCourse CourseCode="46710" />
+        <PreviousCourse CourseCode="31750" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:46.217" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

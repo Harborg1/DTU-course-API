@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10350" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Numeriske studier i fysik" />
+        <Title Lang="en-GB" Title="Numerical studies in physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="10027" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Bruus</FamilyName>
+            <Email>bruus@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="I kursets sidste uge udføres en individualiseret projektopgave i grupper med tre medlemmer. Projektet fremlægges mundtligt for hele holdet, og den medfølgende rapport bedømmes af underviseren." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="During the last week of the course, an individualized problem assignment is solved in groups with three students. The result is presented orally for the entire class, and the associated report is evaluated by the teacher." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Partielle differentialligninger (PDE) på svag form. Implementering af PDE'er i finite-element-method-softwaret Comsol Multiphysics. Numerisk konkvergensanalyse. Styrende ligninger for skalar- og vektor felter i mekanik, termodynamik, kvantemekanik, elektromagnetisme, elektrokinetik, akustik og optik. Progression i problemernes kompleksitet fra ét skalarfelt, via ét vektorfelt, til koblede skalar- og vektorfelter, samt fra 2D til 3D.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, regneøvelser og projektopgave</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningsnoter, "Numerical studies in physics" by Henrik Bruus (DTU, 2026)</Course_Literature>
+          <Course_Objectives>At sætte den studerende i stand til at løse et bredt udvalg af den matematiske fysiks fundamentale partielle differentialligninger ved brug af finite-element-method-softwaret Comsol Multiphysics.</Course_Objectives>
+          <Remark>Kurset kræver, at den studerende installerer softwaret Comsol Multiphysics på sin personlige laptop. Comsol Multiphysics kan hentes på "DTU Software Download" i DTUs G-Bar, og programmet skal være installeret og tjekket før den første forelæsning i kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Partial differential equations (PDE) on weak form. Implementation of PDEs in the finite-element-method software Comsol Multiphysics. Numerical convergence analysis. Governing equations for scalar and vector fields in mechanics, thermodynamics, quantum mechanics, electromagnetism, elektrokinetics, acoustics, and optics. Progression in the complexity of the problems from one scalar field, via one vector field, to coupled scalar and vector fields, as well as from 2D to 3D.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem sessions, and project assignment</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes, "Numerical studies in physics" by Henrik Bruus (DTU, 2026)</Course_Literature>
+          <Course_Objectives>To enable the student to solve a broad selection of the fundamental partial differential equations of mathematical physics using the finite-element-method software Comsol Multiphysics.</Course_Objectives>
+          <Remark>The course requires the student to install the software Comsol Multiphysics on his/her personal laptop. Comsol Multiphysics can be acquired from "DTU Software Download" at the DTU G-Bar, and it must be installed and checked before the first lecture of the course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="især kendskab til den matematiske fysiks grundligninger for iondiffusion, varmeledning, elektromagnetisme, kvantemekanik, hydrodynamik, faststofmekanik, akustik og optik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="especially knowledge of the governing equations in mathematical physics for ion diffusion, heat conduction, electromagnetism, quantum mechanics, hydrodynamics, solid state mechanics, acoustics, and optics" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01001 .01002. 01035. 10033 .10034. 10036. 10102. 34020" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opskrive i &quot;svag form&quot; den matematiske fysiks fundamentale partielle differentialligninger (PDE'er) med korrekte randbetingelser" />
+          <Txt Lang="en-GB" Txt="Write down in &quot;weak form&quot; the partial differential equations (PDEs) of mathematical physics with correct boundary conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere PDE'er i svag form i finite-element-method-softwaret Comsol Multiphysics" />
+          <Txt Lang="en-GB" Txt="Implement the PDEs in weak form using the finite-element software Comsol Multiphysics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Verificere numeriske løsninger ved brug af analytisk-kendte særtilfælde og numerisk konvergensanalyse" />
+          <Txt Lang="en-GB" Txt="Verify numerical solutions using analytically-known special cases and numerical convergence analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse advektions-diffussions-ligningen for transport af masse og varme" />
+          <Txt Lang="en-GB" Txt="Solve the advection-diffusion equation for transport of mass and heat" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse Schrödinger-ligningen for kvantemekaniske egentilstande" />
+          <Txt Lang="en-GB" Txt="Solve the Schrödinger equation for quantum mechanical eigenstates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse Navier-Stokes- og Navier-Cauchy-ligningen for væsker og elastiske materialer både hver for sig og sammenkoblet" />
+          <Txt Lang="en-GB" Txt="Solve the Navier-Stokes and Navier-Cauchy equation for liquids and elastic solids both separately and coupled " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse Poisson-ligningen for det elektrostatiske potential i elektrisk ladede systemer" />
+          <Txt Lang="en-GB" Txt="Solve the Poisson equation for the electrical potential in electrically charged systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse Poisson-Boltzmann-ligningen for ionkoncentrationen i vandige opløsninger af ioner i elektriske felter" />
+          <Txt Lang="en-GB" Txt="Solve the Poisson-Boltzmann equation for the ion concentration in aqueous solutions of ions in electrical fields" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse Helmholtz-ligningen for akustiske og optiske bølgeledere" />
+          <Txt Lang="en-GB" Txt="Solve the Helmholtz equation for acoustical and optical wave guides" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare sammenhængen mellem egentilstande og resonanser i et system, som er henholdsvis isoleret og drevet af eksterne kræfter" />
+          <Txt Lang="en-GB" Txt="Explain the relation between eigenmodes and resonances in a system that respectively is isolated or driven by external forces" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den strukturelle lighed mellem PDE'erne for ovenstående fysiske systemer" />
+          <Txt Lang="en-GB" Txt="Explain the structural similarity between the PDEs for the above-mentioned physical systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde i smågrupper med udvælgelse, formulering, løsning og præsentation af et fysisk problem, som kræver brug af ovenstående numeriske metoder" />
+          <Txt Lang="en-GB" Txt="Work in small groups with selection, formulation, solution, and presentation of design and analysis of a physics problem, which requires the use of the above numerical menthods" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Numerisk simulering  i faststof-, fluid- og kvantemekanik, akustik, elektromagnetisme, elektrokinetik, diffusion</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:13.933" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

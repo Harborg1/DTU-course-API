@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30330" University="dtu" LastUpdated="2026-03-25+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Billedanalyse på mikrocomputer" />
+        <Title Lang="en-GB" Title="Image Analysis with Microcomputer" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Forelæsninger i E1-A og øvelser/specialopgave i E1-B eller E2-A (den studerende kan vælge at deltage i enten den ene eller den anden af modulerne for øvelserne)." />
+          <Schedule_Txt Lang="en-GB" Txt="Lectures in module E1-A, exercises in either E1-B or E2-A (the student can choose to participate in one or the other module for the exercises)." />
+          <Schedule ScheduleKey="E1A" SortID="0" />
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="15884" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mathias</GivenName>
+            <FamilyName>Benn</FamilyName>
+            <Email>mbenn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Rapporten bedømmes efter følgende (rangordnede) kriterier:&#xD;&#xA;&#xD;&#xA;1) Teknisk videnskabelig kvalitet.&#xD;&#xA;2) Præsentation og form af det udførte arbejde.&#xD;&#xA;3) Kvalitet af det afleverede program (Afleveres elektronisk sammen med rapporten)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The report will be evaluated based on the following criteria: &#xD;&#xA;&#xD;&#xA;1) Technical-scientific content.&#xD;&#xA;2) Presentation and comprehensiveness.&#xD;&#xA;3) Quality of the programs made (Electronic version must accompany the report)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The report must be delivered to the teacher, no later than 17.00 at the day of the exam in E1-A." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Rapporten skal afleveres før 17.00 på eksamensdagen for E1-A." />
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I løbet af de første 10 uger gennemgås principperne for billeddannelse ved projektion, refleksion og refraktion vha. spejle og linser, samt fysikken for fotoabsorption og elektrontransport i halvledersensorer, med speciel fokus på CCD og APS sensorer. Endvidere vil de studerende blive introduceret til analog og digital processering af elektroniske billedsignalformer og effektiv anvendelse af softwarebiblioteker. 
+
+I den sidste del af kurset fokuseres der på anvendelser og indlejring af billeddannende systemer i forskellige sammenhænge, f.eks. anvendelse af algoritmer til objektgenkendelse og klassifikation i visionbaseret navigation, automatisk detektion og genkendelse, med specielt fokus på udvikling af autonome robuste systemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og større afsluttende afløsningsopgave.</Teaching_And_Learning_Methods>
+          <Course_Literature>Grundbog er: Computer Vision, Richard Szeliski, 2nd Edition, 2022
+Herudover noter i filter-teori, kamerateknik, billedanalyse HW og standard biblioteker.</Course_Literature>
+          <Course_Objectives>Kurset omhandler de basale koncepter og metoder for udvikling og anvendelse af optiske billeddannende systemer, med hovedvægt på hardware (kameraer), interfacing til digitale processeringssystemer samt anvendelse af et kamera til overvågning, navigation, medicinske problemstillinger, industriel kontrol eller i andre sammenhænge.</Course_Objectives>
+          <Remark>De første 10 uger gives introduktion til teori i auditoriet.
+De sidste 10 uger, overlappende teoridelen, arbejdes med anvendelser i små teams.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>In the first 10 weeks, the principle of image formation in optical systems and the physics of photoabsorption and electron transport in semiconductors (with emphasis on CCD and APS technology). The students will also be introduced to analogue and digital processing of electronic image information and the use and optimal use of SW libraries. 
+
+The last part of the course focuses on applying and embedding image analysis in real-world applications. Examples of fields addressed are object classification and recognition applied in vision-based navigation in 2D and 3D scenes and automatic detection and recognition of targets. Throughout, the focus is on usability through robustness and autonomy.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises, followed by a larger special assignment for each student team.</Teaching_And_Learning_Methods>
+          <Course_Literature>Basic Theory: Computer Vision, Richard Szeliski, 2nd Edition, 2022
+Special notes in filter theory, camera technology, image analysis and standard libraries.</Course_Literature>
+          <Course_Objectives>The course primarily focuses on hardware/software interaction and the development and application of electro-optical systems. Emphasis is on optimal hardware performance, i.e. optics, camera, acquisition HW, in application in surveillance, navigation, medicine and industrial control.</Course_Objectives>
+          <Remark>The theory will be presented during the first 10 weeks of the course.
+During the last 10 weeks, overlapping the theory, the students will work in small teams on a special assignment (real-world application).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Komplekse tal og funktioner og mikrodatamatsystemer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Complex functions and Microcomputer systems." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30020/30021" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et selvstændigt billedanalysesystem" />
+          <Txt Lang="en-GB" Txt="design a stand alone image analysis system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere den elektrooptiske enhed" />
+          <Txt Lang="en-GB" Txt="optimize the electro optical front-end" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="søge og udvikle en adækvat algoritme til løsning af måleopgaven" />
+          <Txt Lang="en-GB" Txt="research and design an adequate algorithm for the basic measurement problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre en udtømmende sceneanalyse" />
+          <Txt Lang="en-GB" Txt="perform an exhaustsive scene analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre en tilstrækkelig støjanalyse" />
+          <Txt Lang="en-GB" Txt="perform an adequate noise source analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og implementere en digital algoritme for analysen" />
+          <Txt Lang="en-GB" Txt="design and implement a digital version of the algorithm" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og skalere basisprocessorenheden til systemet" />
+          <Txt Lang="en-GB" Txt="perform the relevant Software/Hardware analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere og fejlchecke den valgte metode" />
+          <Txt Lang="en-GB" Txt="implement and verify the selected analysis algorithm" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge, implementere og udføre en verifikation af metoden" />
+          <Txt Lang="en-GB" Txt="plan, implement and evaluate a verification of the selected method" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere den implementerede metode mod alternative løsninger." />
+          <Txt Lang="en-GB" Txt="evaluate the actually implemented method(s) against alternative solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Metoder og teknikker som anvendt til moderne, indlejret maskinsyn (robot vision)</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31840" />
+        <PreviousCourse CourseCode="31840" />
+        <PreviousCourse CourseCode="50240" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="12" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:03.193" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

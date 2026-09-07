@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="42114" University="dtu" LastUpdated="2026-07-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Heltalsprogrammering" />
+        <Title Lang="en-GB" Title="Integer Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="53320" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Richard Martin </GivenName>
+            <FamilyName>Lusby</FamilyName>
+            <Email>rmlu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="3457" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jesper</GivenName>
+            <FamilyName>Larsen</FamilyName>
+            <Email>jesla@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="54071" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>David</GivenName>
+            <FamilyName>Pisinger</FamilyName>
+            <Email>dapi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="199127" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jasmine</GivenName>
+            <FamilyName>Lam</FamilyName>
+            <Email>slela@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset evalueres ved en skriftlig eksamen, der bla. indeholder multiple choice-spørgsmål. For at deltage i den skriftlige eksamen skal man bestå projektopgaven i kurset. Projektet kan løses i grupper på op til fire studerende." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The course is evaluated based a written exam, which includes multiple-choice questions and some essay-style questions. Participation in the written exam requires the student to pass a project. The project can be made in groups of up to four persons." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Relaxation, dualitet, Branch &amp; Bound, snitplaner, Branch &amp; Cut, Lagrange relaksering, dynamisk programmering. Eksempler på anvendelser: Projektplanlægning, rutelægning og produktionsplanlægning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>L. Wolsey: Integer Programming, Wiley. Kursusnoter. Bogen kan tilgås via DTUs bibliotek her: https://findit.dtu.dk/en/catalog/60b61ffed9001d00f03caef8</Course_Literature>
+          <Course_Objectives>Matematisk optimering er en essentiel og kompleks del af data science. Heltalsprogrammering muliggør effektiv udnyttelse af data og ressourcer. I planlægning af f.eks. transport-, energi- eller produktionssystemer kan heltalsprogrammering give afgørende fordele gennem fokus på ressourceudnyttelse, omkostninger, robusthed og løsningskvalitet. Dette kursus giver de studerende en grundig introduktion til problemformulering og løsningsmetodik for heltalsprogrammeringsproblemer, som opstår i en lang række komplekse situationer. De studerende bliver i stand til både at formulere heltalsprogrammeringer og anvende dem til at etablere optimale løsninger for både simple og komplekse planlægnings- og beslutningsproblemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Relaxation, Duality, Branch &amp; Bound, Cutting planes, Branch &amp; Cut, Lagrange Relaxation, Dynamic Programming, Strong Valid Inequalities. Application examples: project planning, vehicle routing, and production planning.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>L. Wolsey: Integer Programming, Wiley. Course notes. The book can be accessed via the DTU library here: https://findit.dtu.dk/en/catalog/60b61ffed9001d00f03caef8</Course_Literature>
+          <Course_Objectives>Optimization is one of the most important components of data science. Integer Programming enables one to obtain optimal, or near-optimal, solutions to complex decision-making problems within, e.g., production, energy, and transport. This courses gives students a thorough introduction to formulating and solving integer programming problems. Participants will be able to formulate integer programming problems and apply them to a wide range of optimization problems in order to utilize data to its full capacity.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Et indledende kursus i operationsanalyse er en nødvendig faglig forudsætning." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="The course requires the student to have taken an introductory course in Operations Research." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42101" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et indledende kursus i operationsanalyse er en nødvendig faglig forudsætning." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course requires the student to have taken an introductory course in Operations Research." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42101" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere og beskrive et &quot;mixed integer&quot;-program, et heltalsprogram og et binært program i forhold til et lineært program." />
+          <Txt Lang="en-GB" Txt="Define and describe what a mixed integer program, an integer program and a binary program is compared to a linear program" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille en heltalsprogrammeringsmodel med målfunktion, begrænsninger og variabeldefinition ud fra en simpel tekst" />
+          <Txt Lang="en-GB" Txt="Construct an integer programming model with objective function, constraints and variable definitions based on a simple textual description of the problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere en formulering og vise eksempler på anvendelser" />
+          <Txt Lang="en-GB" Txt="Define a formulation and show examples of how it is used in integer programming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende bounds på et heltalsprogrammeringsproblem og vurdere deres effektivitet" />
+          <Txt Lang="en-GB" Txt="Apply bounds on an integer programming problem and evaluate their effectiveness" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere en relaksering og beskrive eksempler på relakseringer fra pensum, inklusiv LP-relaksering og Lagrange-relaksering" />
+          <Txt Lang="en-GB" Txt="Define a relaxation and mention examples of relaxations from the course. Also define an LP relaxation and a Lagrangian relaxation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Lagrange-relaksering på et simpelt IP problem" />
+          <Txt Lang="en-GB" Txt="Apply Lagrangian relaxation to a simple IP problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan et branch-and-bound (B&amp;B) træ for et standard IP problem opstilles og gennemløbes for derigennem at finde den optimale løsning." />
+          <Txt Lang="en-GB" Txt="Describe how to construct the branch-and-bound (B&amp;B) tree to a standard IP problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive betydningen af og indholdet i de centrale beviser inden for heltalsprogrammering, som angivet i kurset" />
+          <Txt Lang="en-GB" Txt="Explain the meaning and contents of the central theorems within integer programming as selected in the course" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere, hvordan gyldige uligheder og snit generelt fungerer, og specifikt i forbindelse med et heltalsprogrammeringsproblem" />
+          <Txt Lang="en-GB" Txt="Demonstrate the use of valid inequalities and cuts in general and specifically with a given simple IP problem. Define Gomory cuts" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive problemstillingerne ved udvidelsen fra uligheder og snit til en branch-and-cut (B&amp;C) algoritme" />
+          <Txt Lang="en-GB" Txt="Describe the challenges when making the extension from valid inequality and cuts to a branch-and-cut algorithm (B&amp;C)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive brugen af B&amp;B, B&amp;C samt øvre og nedre grænser i forbindelse med implementering af effektive løsningsmetoder for simple IP-problemer" />
+          <Txt Lang="en-GB" Txt="Describe on a high level the applications of B&amp;B, B&amp;C, upper and lower bounds when implementing an efficient solution method for simple IP problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille en dynamisk programmeringsalgoritme for et simpelt optimeringsproblem herunder beskrive hvornår dynamisk programmering kan bruges og hvornår det ikke kan bruges." />
+          <Txt Lang="en-GB" Txt="Devise dynamic programming algorithms for simple problems based on &quot;principle of optimality&quot;, &quot;stage&quot; and &quot;state&quot;" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Decision Science: metoder og modeller</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-07-21" Time="09:11:39.743" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02289" University="dtu" LastUpdated="2026-02-11+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Algoritmiske teknikker for moderne datamodeller" />
+        <Title Lang="en-GB" Title="Algorithmic Techniques for Modern Data Models" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="33225" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Inge Li</GivenName>
+            <FamilyName>Gørtz</FamilyName>
+            <Email>inge@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53341" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Philip</GivenName>
+            <FamilyName>Bille</FamilyName>
+            <Email>phbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>State-of-the-art algoritmiske teknikker for moderne datamodeller, såsom probabilistiske, tidsafhængige og approksimativt summerende teknikker, teknikker for distribuerede og parallelle beregninger og teknikker for beregninger i komprimeret data.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegninger.</Teaching_And_Learning_Methods>
+          <Course_Literature>Litteraturen i kurset består hovedsageligt af videnskabelige artikler.</Course_Literature>
+          <Course_Objectives>At kende, anvende, analysere og designe algoritmer i moderne datalogiske modeller: 
+
+· Probabilistiske, tidsafhængige og approksimativt summerende teknikker, såsom online, dynamiske og streamingalgoritmer, algoritmer for skitsering og stikprøvealgoritmer.
+
+· Teknikker for distribuerede og parallelle beregninger, såsom map-reduce, bsp, multicoremodeller og kommunikationsmodeller. 
+
+· Teknikker for beregninger i komprimeret data, såsom approksimeret nærmeste nabo i højdimensionelle rum, clusteringalgoritmer og komprimeret indeksering og søgning i tekst.</Course_Objectives>
+          <DTU_Remark>Kurset er aflyst i efteråret 2026</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>State-of-the-art algorithmic techniques for modern data models, such as probabilistic, time-dependent and approximate summary techniques, distributed and massively parallel computation techniques, and compressed computation techniques.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>The course literature consists mainly of scientific articles.</Course_Literature>
+          <Course_Objectives>To know, apply, analyze, and design algorithms in modern data models: 
+
+· Probabilistic, time-dependent and approximate summary techniques, such as algorithms in the online, dynamic, or streaming model of computation, algorithms for data sketching, and data sampling algorithms. 
+
+· Distributed and massively parallel computation techniques, such as algorithms in MapReduce, BSP,  and  multicore models, and algorithms for communication models. 
+
+· Compressed computation techniques, such as approximate nearest neighbors in high-dimensional spaces, clustering algorithms, and compressed indexing and searching.</Course_Objectives>
+          <DTU_Remark>The course is canceled in fall of 2026</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kurser i algoritmik og datastrukturer (svarende til 02105/02326 + 02110). Matematisk modenhed." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic courses in algorithms and data structures (comparable to 02105/02326 + 02110). Mathematical maturity." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02110" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive en algoritme på forståelig vis, dvs., præcist, kortfattet og utvetydigt." />
+          <Txt Lang="en-GB" Txt="Describe an algorithm or a data structure in a comprehensible manner, i.e., accurately, concise, and unambiguous." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bevise korrekthed af algoritmer. " />
+          <Txt Lang="en-GB" Txt="Prove correctness of algorithms and data structures in different data models, such as the streaming and parallel models. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, evaluere og sammenligne effektiviteten af algoritmer i moderne datamodeller, såsom streaming og parallelle modeller." />
+          <Txt Lang="en-GB" Txt="Analyze, evaluate, and compare the performance of algorithms and data structures in different data models, such as the streaming, parallel, and external memory models. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, evaluere og sammenligne brugbarheden af forskellige datamodeller i en given sammenhæng." />
+          <Txt Lang="en-GB" Txt="Analyse, evaluate, and compare the suitability of different data models in a given setting." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og videreudvikle algoritmiske teknikker (såsom skitsering, map-reduce, beregninger i komprimeret data) i moderne datamodeller." />
+          <Txt Lang="en-GB" Txt="Apply and extend relevant algorithmic techniques (e.g. sketching, map-reduce, compressed computation) in modern data models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe algoritmer der løser et givet problem i en given moderne datamodel." />
+          <Txt Lang="en-GB" Txt="Design algorithms that solve a given problem in a given modern data model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Systematisk identificere og analysere problemer og træffe kvalificerede valg for at løse problemerne baseret på analysen." />
+          <Txt Lang="en-GB" Txt="Systematically identify and analyse problems and make informed choices for solving the problems based on the analysis. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere tydeligt for trufne valg i forbindelse med løsningen af et problem." />
+          <Txt Lang="en-GB" Txt="Argue clearly for the choices made when solving a problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere sig skriftligt på et videnskabeligt niveau. " />
+          <Txt Lang="en-GB" Txt="Express oneself in writing at a scientific level." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www2.compute.dtu.dk/courses/02289/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Algorithmic Techniques for Modern Data Models and their Theoretical Foundations</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="32" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="20" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:22.637" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

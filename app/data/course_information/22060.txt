@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22060" Volume="2026/2027" University="dtu" LastUpdated="2026-05-21+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Mobil sundhedsteknologi" />
+        <Title Lang="en-GB" Title="Mobile Health Technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="107464" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jakob Eyvind</GivenName>
+            <FamilyName>Bardram</FamilyName>
+            <Email>jakba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen består af en individualiseret grupperapport baseret på projektet i løbet af kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam consists of an individualized group report based on the project made during the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer på at udvikle prototyper af næste generations mobile sundhedsteknologiske (mHealth) applikationer, der inkorporerer indsamling, visualisering og analyse af sundhedsdata indsamlet fra mobile og bærbare enheder. Eleverne arbejder i grupper på 2 personer. Projektet vil fokusere på alle aspekter af en sådan applikation, herunder UX-design og datavisualisering, trådløs kommunikation, dataindsamling, databehandling og softwareudvikling og -arkitektur af den slags systemer. Kurset vil også fokusere på, hvordan man dokumenterer sådan et projekt både i form af softwaredokumentation og en endelig rapport.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Ovenpå en kort introduktion til de grundlæggende værktøjer guider kurset de studerende gennem et praktisk og projektorienterede forløb i design af mobile sundhedsteknologier (mHealth), ved at kombinere metoder indenfor user-experience (UX) design, software arkitektur design, software udvikling på mobiltelefoner, samt validering af simple mHealth applikationer som et "minimum viable product" (MVP).</Course_Objectives>
+          <Remark>Dette kursus arbejde med programmering af mobiltelefoner i Flutter/Dart. Det er derfor en forudsætning at du medbringer en laptop og en mobiltelefon du kan programmere. Bemærk at Android telefoner kan programmeres fra både Windows og Mac PCer, hvorimod at hvis du (kun) ejer en iPhone skal du anvende en Mac PC (Xcode) til programmering.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course focuses on developing prototypes of next-generation mobile health technology (mHealth) applications that incorporate the collection, visualization, and analysis of health data from mobile and wearable devices. Students will work in groups of 2 people. The project will focus on all aspects of such an application, including UX design and data visualization, wireless communication, data collection, data processing, and software engineering and architecture of such types of systems. The course will also focus on how to document such a project, both in software documentation and in a final report.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Building on a briefly introduced foundation, the course guides students through project-driven hands-on applications of methods to the design of mobile health (mHealth) technology, combining user experience (UX) design, software architecture design, mobile phone development, and validation of a simple mHealth application as a minimum viable product (MVP).</Course_Objectives>
+          <Remark>This course works with Flutter/Dart programming on Smartphones and it is a prerequisite that you have a laptop and a smartphone you can program. Android phones can be programmed on both Mac and Windows PCs, while an iPhone can ONLY be programmed on a MAC PC. Hence, if you (only) have an iPhone, you should have a Mac PC running Xcode.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="En generel baggrund indenfor objekt-orienteret programmering og programdesign er nødvendig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge and experience in object-oriented programming and program design are needed." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02809/02160" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere sundhedsrelaterede aspekter, som kan være nyttige for brugere indenfor personlig sundhed." />
+          <Txt Lang="en-GB" Txt="identify health-related aspects that can assist users in their personal health." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere, modellere og validere brugerbehov og mål i forhold til et specifikt mHealth applikation gennem brug af en iterativ design proces." />
+          <Txt Lang="en-GB" Txt="identify, model and validate user needs and goals for specific mHealth applications, using an iterative  process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og validere MVP UX prototyper, som bygger på velkendte og etablerede interface paradigmer." />
+          <Txt Lang="en-GB" Txt="design and validate MVP UX prototypes building upon established interface paradigms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udforme det tekniske softwaredesign og -struktur af et mHealth system." />
+          <Txt Lang="en-GB" Txt="create the technical software design and structure of a mHealth software system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en teknisk mHealth prototype, som involverer trådløs kommunikation mellem en mobiltelefon og en bærbar medico-sensor." />
+          <Txt Lang="en-GB" Txt="implement a technical mHealth prototype involving wireless communication between a mobile phone and wearable components." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="indarbejde mobile og bærbare dataindsamlinger og målinger i en MVP prototype." />
+          <Txt Lang="en-GB" Txt="incorporate mobile and wearable data collections and measurements into a MVP prototype." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive en klar og velstruktureret rapport, som dokumenterer alle centrale aspekter ved et mHealth projekt." />
+          <Txt Lang="en-GB" Txt="write a clear and well-structured report documenting all the central aspects of a mHealth project." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="mundligt at kunne præsentere et mHealth projekt for et større publikum." />
+          <Txt Lang="en-GB" Txt="present the mHealth project for a larger audience." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere og give feedback på andre studerendes arbejde." />
+          <Txt Lang="en-GB" Txt="evaluate and provide feedback to other students' work." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kunne anvende GAI værktøjer gennem hele projektet, herunder til litteratursøgning, design, programmering, data analyse og i den skriftlige rapport" />
+          <Txt Lang="en-GB" Txt="be able to use GAI tools throughout the project, including for literature search, design, programming, data analysis, and the written report." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="80" Min="20" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-21" Time="08:53:00.95" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

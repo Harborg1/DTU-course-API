@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="47201" Volume="2026/2027" University="dtu" LastUpdated="2026-03-23+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Anvendt termodynamik" />
+        <Title Lang="en-GB" Title="Engineering thermodynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="47" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="47" />
+        <Course_Responsible PersonKey="86373" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Andrea Roberto</GivenName>
+            <FamilyName>Insinga</FamilyName>
+            <Email>aroin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="143032" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Arash</GivenName>
+            <FamilyName>Nemati</FamilyName>
+            <Email>arnem@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen og rapporter&#xD;&#xA;Evalueringen består af 2 dele. Den endelige karakter vil være baseret på en helhedsvurdering af disse 2 dele: 1) Løbende evaluering (gennem hele kurset). Den består af et par gruppeprojekter og tilsvarende korte rapporter, der skal afleveres i løbet af kurset. 2) Sluteksamen (individuel). Typiske spørgsmål vil være: beskrivelse af proceduren til løsning af termodynamiske problemer analogt med dem, der foreslås i løbet af kurset, samt konceptuelle spørgsmål." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral examination and reports&#xD;&#xA;The assessment is composed of 2 parts. The final grade will be based on the overall assessment of these 2 parts, 1) Continuous assessment (throughout the course). It consists of a few group-projects and corresponding short reports to be handed in during the course. 2) Final (individual) Oral Exam. Typical questions will be: describing the procedure for solving thermodynamic problems analogous to those proposed throughout the course, as well as conceptual questions." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No aid will be allowed during the final oral exam" />
+            <Aid_Txt Lang="da-DK" Txt="Ingen hjælpemidler er tilladt under den afsluttende mundtlige eksamen" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Due to the number of participants the final oral exams will be spread over two days. The dates will be coordinated with the students." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="På grund af antallet af deltagere vil de afsluttende mundtlige eksamener blive spredt over to dage. Datoerne vil blive koordineret med de studerende." />
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="10-20 minutter pr. elev" />
+          <Duration Lang="en-GB" Txt="10-20 minutes per student" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til ideelle gasser, termodynamisk temperatur og indre energi. Termodynamikkens 1. hovedsætning samt exoterme/endoterme reaktioner, enthalpibegrebet, kalorimetri og varmekapaciteter. Varmetransport (varmeledning, konvektion og varmestråling). Termodynamikkens 2. hovedsætning (reversible/irreversible processer), entropi og exergibegrebet. Gibbs fri energi, fasediagrammer og termodynamiske "størrelsers" relation til elektrokemi.
+Den studerende får kendskab til klassiske termodynamiske processer (isochore, isobare, isoterme, adiabtiske processer) i løbet af kurset.
+I cirka en tredjedel af kurset vil de studerende arbejde på projekter, hvor de analyserer et relevant system fra det virkelige liv ud fra et termodynamisk perspektiv.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, diskussioner, opgaveløsning, projektarbejde og rapportskrivning</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: 
+1) Energy, Entropy and Engines - An Introduction to Thermodynamics (ISBN: 978-1-119-01315-0) af Sanjeev Chandra (2016).  (Den digitale version kan downloades gratis fra DTU Findit)
+
+2) M.J. Moran, H.N. Shapiro, D.D. Boettner and M.B. Bailey, 2018, “Moran's Principles of Engineering Thermodynamics, SI Version, 9th Edition, Global Edition,” John Wiley &amp; Sons, Inc. (ISBN: 978-1-119-45585-1). (Fysisk kopi tilgængelig på DTU bibliotek)
+
+
+Yderligere læsemateriale vil blive stillet til rådighed via DTU Learn.</Course_Literature>
+          <Course_Objectives>Kurset giver de studerende en grundig introduktion til termodynamiske begreber, størrelser og beregninger. Ud fra termodynamikkens hovedsætninger arbejdes der med termodynamik i kalorimetrisk kontekst og sammenhængen mellem termodynamik og elektrokemi. Der introduceres det nødvendige begrebsapparat og de nødvendige termodynamiske værktøjer til at analysere simple cases fra industrien.</Course_Objectives>
+          <DTU_Remark>Dette kursus tager dig fra enkle beregninger af enthalpiændringer til termodynamiske analyser af simple industrielle systemer.</DTU_Remark>
+          <Remark>Dette kursus er en del af General Engineering-specialiseringen Future Energy og studieretningen Bæredygtigt Energidesign.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to ideal gases, thermodynamic temperature and internal energy. The first law of thermodynamics and exothermic/endothermic reactions, the concept of enthalpy, calorimetry and heat capacities. Heat transfer mechanism (conduction, convection and radiation). The second law of thermodynamics (reversible/irreversible processes), entropy and concept of exergy. Gibbs free energy, phase diagrams and thermodynamic "quantities" and their relation to electrochemistry.
+The course will treat common thermodynamic processes (isochore, isobaric, isothermal and adiabatic processes).
+For approximately one third of the course, the students will work on projects where they analyze a relevant real-life system from a thermodynamic perspective.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, class discussions, assignments, project work and report writing</Teaching_And_Learning_Methods>
+          <Course_Literature>Textbook: 
+1) Energy, Entropy and Engines - An Introduction to Thermodynamics (ISBN: 978-1-119-01315-0) by Sanjeev Chandra (2016).  (digital version can be downloaded for free from DTU Findit)
+
+2) M.J. Moran, H.N. Shapiro, D.D. Boettner and M.B. Bailey, 2018, “Moran's Principles of Engineering Thermodynamics, SI Version, 9th Edition, Global Edition,” John Wiley &amp; Sons, Inc. (ISBN: 978-1-119-45585-1). (Physical copy available at the DTU library)
+
+Additional reading material will be provided via DTU Learn.</Course_Literature>
+          <Course_Objectives>The course gives students a thorough introduction to thermodynamic concepts, quantities and calculations. Based on the introduction of the laws of thermodynamics, the course treats calorimetry in a thermodynamic context and establishes the link between thermodynamics, heat transfer and electrochemistry. The conceptual framework and thermodynamic tools introduced enable the student to analyze simple real-life applications in power production and heating and cooling.</Course_Objectives>
+          <DTU_Remark>This course will guide you from doing simple calculations of changes in enthalpy to thermodynamic analyses of simple real-life systems.</DTU_Remark>
+          <Remark>This course is part of the General Engineering specialization Future Energy and the study line Design of Sustainable Energy Systems.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive stoffers tilstandsformer og termodynamiske temperatur" />
+          <Txt Lang="en-GB" Txt="Describe the state and thermodynamic temperature of compounds" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og forklare termodynamikkens 1. og 2. lov for kontrolmasse- og kontrolvolumensystemer." />
+          <Txt Lang="en-GB" Txt="Formulate and explain the 1st and 2nd law of thermodynamics for control mass and control volume systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne et simpelt systems udveksling af arbejde og varme med omgivelserne, hvor varmetransportmekanismer tages i betragtning" />
+          <Txt Lang="en-GB" Txt="Calculate the exchange of work and heat, considering the heat transfer mechanism, between a simple system and its surroundings " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for stoffers termodynamiske egenskaber, herunder varmekapaciteter, samt beregne stoffers varmekapacitet ved specifikke betingelser" />
+          <Txt Lang="en-GB" Txt="Detail the thermodynamic characteristics of a compound, including specific heat capacities, and calculate specific heat capacities under given conditions " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og bruge grundlæggende termodynamiske egenskaber såsom indre energi, entropi og entalpi." />
+          <Txt Lang="en-GB" Txt="Explain and use fundamental thermodynamic properties such as internal energy, entropy, enthalpy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne forbrændingsreaktioners enthalpi samt beregne den termodynamiske effektivitet for en elektrokemisk celle" />
+          <Txt Lang="en-GB" Txt="Calculate the enthalpy of reaction for a combustion reaction and calculate the thermodynamic efficiency for an electrochemical cell" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne nyttevirkning/tab for simple termodynamiske systemer" />
+          <Txt Lang="en-GB" Txt="Calculate efficiency/loss for simple thermodynamic systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere og forklare den fundamentale termodynamik, der ligger til grund for en af flere varme- eller kølekredsprocesser " />
+          <Txt Lang="en-GB" Txt="Communicate and explain the fundamental thermodynamics involved in one of several power and refrigeration cycles " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge tabeller, diagrammer og tilstandsligninger til at bestemme termodynamiske tilstandsegenskaber og deres variation under processer." />
+          <Txt Lang="en-GB" Txt="Use tables, diagrams and equations of state to determine thermodynamic state properties, and their variation during processes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere et relevant &quot;real life&quot; system ud fra et termodynamisk perspektiv" />
+          <Txt Lang="en-GB" Txt="Analyze a relevant real-life system from a thermodynamic perspective" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge beregningsværktøjer som f.eks. Engineering Equation Solver (EES) til beskrivelse af tilstandsegenskaber og processer." />
+          <Txt Lang="en-GB" Txt="Use computational tools such as Engineering Equation Solver (EES)  for the description of state properties and processes." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01005/01006/10018/10020/10022/10024" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Termodynamik for ingeniører</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:57.73" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

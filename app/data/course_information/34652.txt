@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34652" University="dtu" LastUpdated="2025-04-29+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Power Electronics 1" />
+        <Title Lang="en-GB" Title="Power Electronics 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="53459" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ziwei</GivenName>
+            <FamilyName>Ouyang</FamilyName>
+            <Email>ziou@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="4801" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Michael A. E.</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>maea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="157623" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bima Nugraha</GivenName>
+            <FamilyName>Sanusi</FamilyName>
+            <Email>bnusa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="NB: Both E5A &amp; E5B are used for the exam. students hand in final reports" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="NB: Både E5A &amp; E5B bruges til eksamen. students hand in final reports" />
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Section 1:  Course Introduction
+Section 2:  Non-isolation DC-DC Converters
+Basic concepts and definitions; Analysis of  basic power circuits: Buck, Boost, and Buck-Boost; Calculation of components stress factors.
+Section 3:  Isolation DC-DC Converters
+Choice and analysis of Isolated converter topologies: Flyback, Forward, Push-Pull, Half-Bridge, Full-Bridge, SEPIC, Cuk; Steady state transfer functions; Voltages and currents waveforms in the circuit; Continuous  and discontinuous conduction mode; Selection of power-semiconductors and passive components; Snubber circuits. 
+Section 4:  Magnetic Components Design
+Basic magnetic theory; Transformer and inductor models; Loss models; High frequency skin and proximity effects; Transformers &amp; Inductors design examples.
+Section 5:  Input filter &amp; Output filter Design
+Output filter design considerations: voltage ripple, load step, ESR. Input filter design criterias: high frequency attenuation,  Middlebrook's impedance inequlities theory
+Section 6:  Controller Design
+Feedback loop stability; Choice and design of control and protection circuits (Error-amplifiers, Auxiliary supply, undervoltage - and overvoltage protection, current limit etc.). Driver circuits. PWM-, voltage- and current-mode control.</Contents>
+          <Teaching_And_Learning_Methods>Oversigts-forelæsninger og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Robert W. Erickson &amp; Dragan Maksimovic: “Fundamentals of Power Electronics”, Kluwer Academic Publishers, 2001,  2nd Edition. (3rd Edition is also possible)</Course_Literature>
+          <Course_Objectives>Kursets overordnede formål er at sætte den  studerende i stand til at analysere og forstå virkemåden af såvel kendte som nye konverter topologier. Endvidere at give den studerende en forståelse for fordele og ulemper ved forskellige effektelektronikkomponenter og konverter topologier, således at der kan laves et grundlæggende design af en konverter til en given applikation.</Course_Objectives>
+          <Remark>I kurset vil der blive tilstræbt et tæt industrisamarbejde eller opgaver inspireret af virksomheder. Kurset har en naturlig fortsættelse i 34653 Power Electronics 2, laboratoriekursus. (original course no. 31353)
+E-learning anvendes i form af on-line voting systems, on-line quiz (home assignments), chat room, discussion board eller blog og web-based tools.
+Efter at have gennemført kursus 34652 anbefales det at tage kurserne 34653, 34658 og 34659 samt MSc-afhandlingen i Power Electronics som en sammenhængende sekvens</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Section 1:  Course Introduction
+Section 2:  Non-isolation DC-DC Converters
+Basic concepts and definitions; Analysis of  basic power circuits: Buck, Boost, and Buck-Boost; Calculation of components stress factors.
+Section 3:  Isolation DC-DC Converters
+Choice and analysis of Isolated converter topologies: Flyback, Forward, Push-Pull, Half-Bridge, Full-Bridge, SEPIC, Cuk; Steady state transfer functions; Voltages and currents waveforms in the circuit; Continuous  and discontinuous conduction mode; Selection of power-semiconductors and passive components; Snubber circuits. 
+Section 4:  Magnetic Components Design
+Basic magnetic theory; Transformer and inductor models; Loss models; High frequency skin and proximity effects; Transformers &amp; Inductors design examples.
+Section 5:  Input filter &amp; Output filter Design
+Output filter design considerations: voltage ripple, load step, ESR. Input filter design criterias: high frequency attenuation,  Middlebrook's impedance inequlities theory
+Section 6:  Controller Design
+Feedback loop stability; Choice and design of control and protection circuits (Error-amplifiers, Auxiliary supply, undervoltage - and overvoltage protection, current limit etc.). Driver circuits. PWM-, voltage- and current-mode control.</Contents>
+          <Teaching_And_Learning_Methods>Overview class lectures and project work/assignments</Teaching_And_Learning_Methods>
+          <Course_Literature>Robert W. Erickson &amp; Dragan Maksimovic: “Fundamentals of Power Electronics”, Kluwer Academic Publishers, 2001,  2nd Edition. (3rd Edition is also possible)</Course_Literature>
+          <Course_Objectives>It is the goal of this course to enable the students to understand and analyze the function of known as well as unknown converter topologies. Further to enable the students to identify both advantages and disadvantages of different power electronic components and converter topologies in order to be able to make a basic design of a converter for a given application.</Course_Objectives>
+          <Remark>This course has a natural continuation in 34653 Power Electronics 2, lab. course. 
+E-learning is used in the form of on-line voting systems, on-line quiz (home assignments), chat room, discussion board or blog and web-based tools.
+Following the completion of course 34652, it is recommended to take courses 34653, 34658, and 34659, along with the MSc thesis in Power Electronics, as a continuous sequence.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Elektriske kredsløb 1 &amp; 2; og Grundlæggende elektronik; Grundlæggende forståelse af transformatorer og induktorer, Grundlæggende kontrolteori" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Electrical Circuits 1 &amp; 2; and Basic Power Electronics; Basic understanding of Transformers and Inductors, Basic circuits and control theories." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34600/34601/34620" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå og analysere kendte og nye konverter kredsløb" />
+          <Txt Lang="en-GB" Txt="understand and analyze  both known and unknown converter topologies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere de almindelige reguleringsmetoder (current mode/voltage mode). som anvendes i Switch mode konvertere " />
+          <Txt Lang="en-GB" Txt="identify the fundamental control methods (current mode/voltage mode) used in switch mode converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere fordele og ulemper ved forskellige Switch mode topologier i forhold til en given applikation" />
+          <Txt Lang="en-GB" Txt="evaluate advantages and disadvantages of different converter topologies with respect to a given application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere ferrit-transformatorer til Switch mode konvertere" />
+          <Txt Lang="en-GB" Txt="design ferrite transformers for switch mode converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere spoler til Switch mode konvertere" />
+          <Txt Lang="en-GB" Txt="design inductors for switch mode converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere input filtre til Switch mode konvertere" />
+          <Txt Lang="en-GB" Txt="design input filters for switch mode converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere output filtre til Switch mode konvertere" />
+          <Txt Lang="en-GB" Txt="design output filteres for switch mode converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage simple beregninger/simuleringer af feed-back kredsløbet i en Switch mode konverter " />
+          <Txt Lang="en-GB" Txt="perform simple calculations/simulations on the feedback circuit in switch mode converters" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere egnetheden og anvendelsesmulighederne for forskellige effektelektronikkomponenter, aktive som passive" />
+          <Txt Lang="en-GB" Txt="evaluate suitability and applicability of different power electronic components, active as well as passive" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave et grundlæggende design af en converter ud fra en given applikation" />
+          <Txt Lang="en-GB" Txt="perform a basic design of a converter for a given application" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://sites.google.com/view/ziweiouyang/teaching" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Design of switch-mode power supplies (SMPS)</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31352" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="92" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="12" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="12" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:40.133" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

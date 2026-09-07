@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10325" University="dtu" LastUpdated="2026-04-21+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kvantemekanisk modellering af nanoelektronik" />
+        <Title Lang="en-GB" Title="Quantum mechanical modelling of nanoelectronics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="5480" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mads</GivenName>
+            <FamilyName>Brandbyge</FamilyName>
+            <Email>mabr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering. Resultaterne af projektarbejdet skal præsenteres (gruppevis, men individualiseret) som afslutning på kurset og udarbejdet programmel (jupyter notebooks) skal afleveres." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment. The course is finished by presentations of the results of the project work (in groups, but individualized), and programs (jupyter notebooks) are handed in." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette er et anvendelsesorienteret kursus. Det omhandler simpel elektronstrukturteori af molekyler og faste stoffer og specielt (elektron eller fonon) transportteori for nanosystemer. I kurset udvikler og anvender du egne computerprogrammer i programsproget Python.
+
+I den første halvdel introduceres de teoretiske metoder, som sætter dig i stand til at beregne elektrontransport v.h.a. Greens funktioner. Dette sker ved løsning af opgaver og anvendelse af Python. I anden halvdel anvendes metoderne på en konkret problemstilling i et projektforløb. Resultaterne og deres præsentation indgår i bedømmelsen.
+
+Emnerne er tilknyttet aktuel forskning på DTU Fysik. De vil variere fra år til år. Typiske emner er: Elektronstruktur og transport i  nanostrukturer baseret på grafen eller andre 2D materialer, molekylære kontakter, eller 1D nanorør.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppearbejde med anvendelse af computere i 3 uger, 8 timer pr. dag.</Teaching_And_Learning_Methods>
+          <Course_Literature>Noter.</Course_Literature>
+          <Course_Objectives>I dag er det muligt at designe nye materialer og nanostrukturer med særlige egenskaber ved hjælp af computereksperimenter. Disse computereksperimenter er baseret på kvantemekaniske modeller. Formålet med dette kursus er at give dig et indblik i de bagvedliggende kvantemekaniske modeller og deres anvendelse med særligt fokus på elektrontransport i nanostrukturer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This is an application oriented course on electron structure theory of molecules and solid-state materials, and especially (electron or phonon) transport theory for nanosystems.
+You will write and use your own computer code written in Python.
+
+You will be introduced to the theoretical methods enabling you to calculate electronic transport using Green's functions in the first half part of the course. This is done by solving problems and using Python.  In the second half of the course you will apply the methods on a concrete problem in a project. The results and their presentation are part of the course evaluation.
+
+The topics are chosen so as to match active research at DTU Physics. These will therefore change from year to year.  Typical topics include:  Electronic structure and transport in graphene nanostuctures or other 2D materials, molecular contacts, or 1D nanotubes.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work by using computers in 3 weeks, 8 hours per day.</Teaching_And_Learning_Methods>
+          <Course_Literature>Notes.</Course_Literature>
+          <Course_Objectives>Today it is possible to design new materials and nanostructures with special properties by performing computer simulations. Such simulations are based on quantum mechanical models of the systems. The goal of this course is to give you a knowledge of the basic quantum mechanical models and their use, focusing on electronic transport in nanostructures.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser. Især kendskab til basal kvantemekanik &#xD;&#xA;(Schrödinger ligningen, bølgefunktioner) og lineær algebra.&#xD;&#xA;Gerne kendskab til (men ikke strengt nødvendigt) basal faststoffysik.&#xD;&#xA;Lidt erfaring med numeriske metoder, f.eks. Python/numpy, Matlab, Mathematica, Maple  etc." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses. Especially, knowledge of basic quantum mechanics (Schrödinger equation, wavefunctions) and linear algebra. &#xD;&#xA;Basic solid-state physics (not a strict requirement).&#xD;&#xA;Some experience with numerical methods, e.g. Python/numpy, Matlab, Mathematica, Maple, etc." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10102/10104/26261 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere grundlæggende ballistisk transport" />
+          <Txt Lang="en-GB" Txt="Outline basic ballistic quantum transport" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Genkende og anvende Landauer-Buttiker formulering af kvantetransport (1D)" />
+          <Txt Lang="en-GB" Txt="Outline and apply the Landauer-Buttiker formulation of quantum transport (1D)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende enkelt partikel Greensfunktioner i tids og energi domænerne" />
+          <Txt Lang="en-GB" Txt="Use single-particle Green's function in time and energy domains" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare elektronstruktur af faste stoffer og molekyler udfra LCAO teori (linear kombination af atomare orbitaler) og båndstruktur (Blochs teorem)" />
+          <Txt Lang="en-GB" Txt="Explain electronic structure of molecules and solids using LCAO theory (linear combination of atomic orbitals) and bandstructure (Blochs theorem)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende numerisk matrix algebra til transportberegninger" />
+          <Txt Lang="en-GB" Txt="Apply numerical matrix algebra to calculate transport" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og udføre simple beregninger på resonant tunnelering  " />
+          <Txt Lang="en-GB" Txt="Explain and do simple calculations of resonant tunneling " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikling af computer program til beregning af kvantetransport i et atomistisk beskrevet nanosystem, f.eks. baseret på grafen eller andre 2D materialer." />
+          <Txt Lang="en-GB" Txt="Develop computer program for calculation of quantum transport for an atomistic description of a nanosystem, f.ex. based on graphene or other 2D materials." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Brug af python til numeriske beregninger og grafer." />
+          <Txt Lang="en-GB" Txt="Use of python for numerical calculations and graph plotting." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Anvendelse af kvante mekanik til simulation af nano-elektronik.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="33442" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:09.52" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

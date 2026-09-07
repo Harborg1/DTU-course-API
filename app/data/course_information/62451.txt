@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62451" Volume="2026/2027" University="dtu" LastUpdated="2026-02-28+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Informationsteknologi 2" />
+        <Title Lang="en-GB" Title="Information Technology 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="225220" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Daniel</GivenName>
+            <FamilyName>Zielasko</FamilyName>
+            <Email>danzi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen består af et gruppebaseret projekt og en individuel mundtlig eksamen.&#xD;&#xA;&#xD;&#xA;Gruppeprojektet, herunder en individuel skriftlig rapport, udgør 40 % af den samlede karakter. Projektet bedømmes på baggrund af den implementerede løsning, kvaliteten af dokumentationen samt den demonstrerede evne til at strukturere, udvikle og begrunde softwareløsninger i en samarbejdsmæssig kontekst.&#xD;&#xA;&#xD;&#xA;Den individuelle mundtlige eksamen udgør 60 % af den samlede karakter. Den mundtlige eksamen tager udgangspunkt i både kursets faglige indhold og den studerendes forståelse af og bidrag til gruppeprojektet." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assessment consists of a group-based project and an individual oral examination.&#xD;&#xA;&#xD;&#xA;The group project, including an individual written report, constitutes 40% of the final grade. The project is assessed based on the implemented solution, the quality of the documentation, and the demonstrated ability to structure, develop, and justify software solutions in a collaborative setting.&#xD;&#xA;&#xD;&#xA;The individual oral examination constitutes 60% of the final grade. The oral examination is based on both the course content and the student’s understanding of and contribution to the group project." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="More dates may be used." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Flere datoer kan blive taget i brug." />
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Objektorienteret udvikling:
+- Grundlæggende objektorienterede begreber, herunder indkapsling, arv og polymorfi.
+- Klassedesign, ansvarsfordeling og modulær strukturering af software.
+- UML-klassediagrammer og deres relation til programimplementering.
+- Principper for adskillelse af ansvar (separation of concerns) og grundlæggende arkitektonisk strukturering.
+- Refaktoreringsteknikker og forbedring af kodekvalitet og vedligeholdelighed.
+
+Softwaresystemer og samarbejde:
+- Iterativ udvikling i samarbejdsbaserede projektforløb.
+- Professionelle udviklingspraksisser, herunder versionsstyring og strukturerede arbejdsgange.
+- Teststrategier for struktureret og objektorienteret software.
+- Dokumentation og begrundelse af designbeslutninger.
+
+Brugercentreret design og evaluering:
+- Principper for brugercentreret design.
+- Grundlæggende principper for brugbarhed og evalueringsmetoder.
+- Integration af evalueringsresultater i iterative udviklingsprocesser.
+
+Softwareøkosystemer:
+- Perspektiver på forskellige programmeringssprogs og teknologiers rolle i softwaresystemer.
+- Grundlæggende begreber inden for datahåndtering og integration mellem systemkomponenter.</Contents>
+          <Teaching_And_Learning_Methods>Kurset består af forelæsninger, klasseundervisning, praktiske øvelser og projektbaseret gruppearbejde. Undervisningen omfatter vejledte designopgaver, samarbejdsbaserede udviklingsaktiviteter samt superviseret projektarbejde med formativ feedback. Gruppeprojektet forløber parallelt med undervisningen og afsluttes med en struktureret præsentations- og evalueringsproces.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset har til formål at give de studerende kompetencer inden for struktureret og objektorienteret softwareudvikling i en samarbejdsbaseret projektkontekst. Kurset lægger vægt på design og implementering af modulære softwareløsninger, principper for strukturering og kvalitetsforbedring af software, brugercentreret design og evaluering samt anvendelse af professionelle udviklingspraksisser i teambaserede projekter.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Sundhedsteknologi: 2. semester
+
+Kurset bygger videre på de grundlæggende IT kundskaber den studerende har tilegnet sig på kursus 62420.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Object-oriented development:
+- Fundamental object-oriented concepts, including encapsulation, inheritance, and polymorphism.
+- Class design, responsibility assignment, and modular structuring of software.
+- UML class diagrams and their relation to program implementation.
+- Principles of separation of concerns and basic architectural structuring.
+- Refactoring techniques and improvement of code quality and maintainability.
+
+Software systems and collaboration:
+- Iterative development in collaborative project settings.
+- Professional development practices, including version control and structured workflows.
+- Testing strategies for structured and object-oriented software.
+- Documentation and justification of design decisions.
+
+User-centered design and evaluation:
+- Principles of user-centered design.
+- Basic usability principles and evaluation methods.
+- Integration of evaluation results into iterative development.
+
+Software ecosystems:
+- Perspectives on the role of different programming languages and technologies within software systems.
+- Basic concepts of data handling and integration across system components.</Contents>
+          <Teaching_And_Learning_Methods>The course consists of lectures, classroom discussions, practical exercises, and project-based group work. Teaching activities include guided design tasks, collaborative development sessions, and supervised project work with formative feedback. The group project runs in parallel with the course and culminates in a structured presentation and evaluation process.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course aims to provide students with competencies in structured and object-oriented software development within collaborative project settings. The course emphasizes the design and implementation of modular software solutions, principles of software structuring and quality improvement, user-centered design and evaluation, and the use of professional development practices in team-based projects.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Sundhedsteknologi: 2. semester
+
+The course extends the basic IT skills the students have acquired by following course 62420.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende grundlæggende objektorienterede begreber, herunder indkapsling, arv og polymorfi, i design og implementering af softwareløsninger." />
+          <Txt Lang="en-GB" Txt="Explain and apply fundamental object-oriented concepts, including encapsulation, inheritance, and polymorphism, in the design and implementation of software solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og fortolke UML-klassediagrammer samt relatere disse til konkrete programimplementeringer." />
+          <Txt Lang="en-GB" Txt="Design and interpret UML class diagrams and relate them to concrete program implementations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Strukturere og modularisere softwaresystemer ved at tildele klare ansvarsområder og adskille concerns." />
+          <Txt Lang="en-GB" Txt="Structure and modularize software systems by assigning clear responsibilities and separating concerns." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Refaktorere og forbedre eksisterende kode med henblik på læsbarhed, vedligeholdelighed og strukturel kvalitet." />
+          <Txt Lang="en-GB" Txt="Refactor and improve existing code with regard to readability, maintainability, and structural quality." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle interaktive applikationer ved anvendelse af strukturerede og objektorienterede tilgange." />
+          <Txt Lang="en-GB" Txt="Develop interactive applications using structured and object-oriented approaches." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende grundlæggende teststrategier til at vurdere korrekthed og robusthed af objektorienterede softwarekomponenter." />
+          <Txt Lang="en-GB" Txt="Apply basic testing strategies to evaluate the correctness and robustness of object-oriented software components." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende principper for brugercentreret design og gennemføre grundlæggende brugbarhedsevalueringer af interaktive systemer." />
+          <Txt Lang="en-GB" Txt="Apply principles of user-centered design and conduct basic usability evaluations of interactive systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejde effektivt i teambaserede softwareprojekter ved anvendelse af professionelle udviklingspraksisser og versionsstyringsarbejdsgange." />
+          <Txt Lang="en-GB" Txt="Collaborate effectively in team-based software projects using professional development practices and version control workflows." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over forskellige programmeringssprogs og teknologiers rolle i bredere softwareøkosystemer." />
+          <Txt Lang="en-GB" Txt="Reflect on the role of different programming languages and technologies within broader software ecosystems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle og begrunde designbeslutninger og tekniske løsninger i en professionel sammenhæng." />
+          <Txt Lang="en-GB" Txt="Communicate and justify design decisions and technical solutions in a professional context." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="62420" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="SU-IT2-U1" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:48.923" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

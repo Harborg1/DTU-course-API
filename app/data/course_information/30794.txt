@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30794" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Analyseteknikker af astrofysiske data" />
+        <Title Lang="en-GB" Title="Astrophysical Data Analyses" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="38290" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jerome</GivenName>
+            <FamilyName>Chenevez</FamilyName>
+            <Email>jerome@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="139004" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Thomas Rodriguez</GivenName>
+            <FamilyName>Greve</FamilyName>
+            <Email>tgreve@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="26459" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Giorgos</GivenName>
+            <FamilyName>Leloudas</FamilyName>
+            <Email>giorgos@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering af tre individuelle rapporter, der skal afleveres løbende i kursets 13 ugers forløb som en forudsætning for at kunne deltage til den afsluttende mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment: three individual reports carried out during the 13-week course period are required to meet at the final oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The date of the final oral exam will be agreed upon together with the students." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Datoen for den mundtlige eksamen aftales på bedste vis med de studerende." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset starter med en introduktion til brugen af Linux-systemer efterfulgt af grundlæggende viden om astronomiske detektorer, kalibrering, målebetydning og forskellige støjkilder. Deltagerne bliver trænet til billedbehandling, spektroskopi og fotometri. De studerende lærer om såkaldte single-dish og interferometriske observationer ved millimeter og radiobølgelængder og skal reducere og analysere kontinuum og spektroskopiske data. Røntgendata fra aktuelle røntgeninstrumenter (fx. NuSTAR, INTEGRAL, NICER) bliver leveret og behandlet til videnskabelige produkter (billeder, lyskurve, og spektre). Alle forelæsninger bliver fulgt af praktiske øvelser baseret på de metoder og teknikker, der er beskrevet under forelæsningerne. Eksempel applikationer omfatter analyse af spektre af galakser og supernova eksplosioner, anvendelse af teknikker til at finde exoplaneter, måling af molekylære indhold af fjerne galakser og undersøgelse af  termonukleare eksplosioner på neutronstjerner.</Contents>
+          <Teaching_And_Learning_Methods>Forelœsninger og praktiske øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Baseret på praktiske aktiviteter, udstyrer kurset deltagerne et kendskab til astronomisk dataindsamling, analyse og videnskabelig udnyttelse. Kurset træner de studerende i at bruge professionel software og værktøjer til at analysere rigtige astronomiske data fra teleskoper, der observerer ved forskellige bølgelængder.</Course_Objectives>
+          <Remark>Kurset giver en god forberedelse til Nordic Optical Telescope (NOT) Sommerskolen.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course starts with an introduction to the use of the Linux command-line system (incl. scripts), followed by basic knowledge about astronomical detectors, calibration, measurement significance, and noise sources. The participants are trained in reducing imaging and spectroscopic data and performing photometry. The students learn about single-dish and interferometric observations at millimetres and radio wavelengths and get to reduce and analyze continuum and spectroscopic data. X-ray data from currently flying X-ray instruments (e.g. NuSTAR, INTEGRAL, NICER) are provided and analyzed to generate scientific products (images, light curves, and spectra). All lectures are followed by hands-on exercises based on the methods and techniques described during the lectures. Example applications include analyzing the spectra of galaxies and supernova explosions, applying techniques to find exoplanets, measuring the molecular content of distant galaxies, and studying thermonuclear explosions on neutron stars.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and practical exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Based on hands-on activities, the course gives the participants a working knowledge of astronomical data acquisition, analysis, and scientific exploitation. The course trains students in using professional software and tools to analyze real astronomical data from a series of different wavelengths and telescopes.</Course_Objectives>
+          <Remark>The course provides a good preparation to the Nordic Optical Telescope (NOT) Summer School.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det anbefales at tage kursus 30791 først." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is highly recommended to take course 30791 first." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30120/30121/30790/30791" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende en computer med Linux kommandolinjens system og shell-scripts" />
+          <Txt Lang="en-GB" Txt="use a computer with the Linux command line system and shell-scripts" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="søge gennem videnskabelige databaser og arkiver til specifikke instrumentdata" />
+          <Txt Lang="en-GB" Txt="search through scientific databases and archives for specific instrument data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre videnskabelig analyse af astronomiske data på tværs af det elektromagnetiske spektrum" />
+          <Txt Lang="en-GB" Txt="perform scientific analysis of astronomical data across the electromagnetic spectrum" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="reducere røntgen, optisk, millimeter bølgelængde og radio data" />
+          <Txt Lang="en-GB" Txt="reduce X-ray, optical, millimeter wavelength and radio data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="undersøge astrofysiske data med dedikerede metoder og værktøjer" />
+          <Txt Lang="en-GB" Txt="examine astrophysical data with dedicated methods and tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere datakvaliteten ud fra et statistisk perspektiv" />
+          <Txt Lang="en-GB" Txt="assess data quality from a statistical perspective" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udnytte observationsprodukter som billeder, lyskurver og spektre" />
+          <Txt Lang="en-GB" Txt="exploit observation products such as images, light-curves, and spectra" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende statistiske metoder til at modelere og fitte analytiske funktioner til data" />
+          <Txt Lang="en-GB" Txt="utilize fitting techniques to apply a model or mathematical function to data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse ægte astrofysiske problemer og skræddersyede øvelser" />
+          <Txt Lang="en-GB" Txt="solve real astrophysical problems and tailored exercises" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fortolke, evaluere og beskrive resultaterne." />
+          <Txt Lang="en-GB" Txt="interpret, evaluate and describe the results." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Technological specialization course, MSc. Eng., Earth and Space Physics Engineering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:28.293" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

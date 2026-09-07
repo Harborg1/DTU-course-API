@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34313" University="dtu" LastUpdated="2026-04-06+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til datanet" />
+        <Title Lang="en-GB" Title="Introduction to Data Communication Networks" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="2334" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Staalhagen</FamilyName>
+            <Email>larst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsbedømmelse af mundtlig eksamen samt rapporter over øvelser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam and evaluation of exercise-reports. The course is evaluated as a whole." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4B" />
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Pakkekoblet og kredsløbskoblet overførsel af information. Protokoller i datakommunikationsnetværk. Ethernet og WiFi lokalnet. Internettet: Grundlæggende principper og vigtigste protokoller (IP, TCP, UDP, DNS, HTTP, etc.). Datakommunikation i mobilnet: Netværksarkitekturer, principper for deling af kapacitet, dækningsforhold, 
+procedurer (attachment, pageing, handover). Generelle koncepter vedr. netværkssikkerhed:
+Kryptering, autentificering, certifikater og kryptografiske hashfunktioner. Simulering af datakommunikationsnetværk og protokoller.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser samt opgaveregning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give en generel introduktion til netværk til datakommunikation med fokus på udvekslingen af information, herunder hvordan dette kan ske pålideligt og/eller sikkert. At give deltagerne kendskab til principperne bag nuværende typer af datanet, som f.eks. lokalnet, internettet og mobilnet.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Packet-switched and circuit-switched transfer of information. Protocols in data communication networks. Ethernet and WiFi local area networks. The Internet: Fundamental principles and important protocols (IP, TCP, UDP, DNS, HTTP, etc.). Data communication in mobile communication networks: Network architectures, principles of capacity sharing, coverage, procedures (attachment, pageing, handover). Fundamental concepts of network security: Encryption, authentication, certificates and cryptographic hash functions. Simulation of data communication networks and protocols.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and problem solving.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give a general introduction to data communication networks with emphasis on the exchange of information, including how this exchange can be made reliable and/or secure. To give the participants an understanding of the principles of contemporary types of data communication networks, such as local area networks, the internet and networks for mobile communication.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for generelle principper for overførsel af information i datakommunikationsnetværk." />
+          <Txt Lang="en-GB" Txt="Explain the fundamental principles for the exchange of information in data communication networks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive protokoller i moderne datakommunikationsnetværk." />
+          <Txt Lang="en-GB" Txt="Describe protocols in modern data communication networks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og sammenligne netværksarkitekturer til datakommunikation." />
+          <Txt Lang="en-GB" Txt="Describe and compare network architectures for data communication." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere fordele og ulemper ved forskellige netværksteknologier og protokoller." />
+          <Txt Lang="en-GB" Txt="Discuss advantages and disadvantages of different network technologies and protocols." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de sikkerhedsmæssige aspekter ved datakommunikation." />
+          <Txt Lang="en-GB" Txt="Describe security aspects of data communication." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de grundlæggende principper ved kryptering af information." />
+          <Txt Lang="en-GB" Txt="Explain the fundamental principles for encryption of information." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere øvelsesresultater i en skriftlig rapport." />
+          <Txt Lang="en-GB" Txt="Present experimental results from exercises in a written report." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere simulationsresultater og sammenholde disse med relevant teori." />
+          <Txt Lang="en-GB" Txt="Discuss experimental results and compare these with relevant theory." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til kommunikationsnetværk og -protokoller</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34310/34311/34312/34322" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:07.457" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

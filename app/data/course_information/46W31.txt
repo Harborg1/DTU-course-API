@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46W31" Volume="2026/2027" University="dtu" LastUpdated="2026-04-24+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_MASTER" />
+        <Title Lang="da-DK" Title="Numeriske værktøjer i vindenergi" />
+        <Title Lang="en-GB" Title="Numerical Tools in Wind Energy" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="E-learning" />
+          <LocationTxt Lang="en-GB" Txt="E-learning" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="20250" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Niels</GivenName>
+            <FamilyName>Troldborg</FamilyName>
+            <Email>niet@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="7745" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Niels Morten</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>nini@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="141868" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Fanzhong</GivenName>
+            <FamilyName>Meng</FamilyName>
+            <Email>famen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="1 juni" />
+            <DeadLineTxt Lang="en-GB" Txt="June 1st" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="Se mere på https://lifelonglearning.dtu.dk/en/wind-energy/master-en/wind-energy-master-online-programme/" />
+            <Supp_Txt Lang="en-GB" Txt="See more on https://lifelonglearning.dtu.dk/en/wind-energy/master-en/wind-energy-master-online-programme/" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>This course starts with a general introduction to numerical tools and modelling in wind energy. It includes an overview of numerical tools in wind energy and the concepts of physical world vs model world, measurements vs modelling, resolution and scale in modelling, verification and validation of models, sensitivity analysis, uncertainty quantification, rules, guidelines and best engineering practice.
+You will select and receive specific training in one of the following three numerical toolboxes: 
+•	Wind Resource and Site Assessment for Wind Farm Design  
+(WAsP, WAsP Engineering, Windfarm Assessment Tool).
+•	Computational Fluid Dynamics (EllipSys2D/3D).
+•	Loads and Aero-elasticity of Wind Turbines (HAWC2).
+Each toolbox provides training in different parts of the software through exercises and quizzes, but also contains a comprehensive case study where all the elements are employed together.</Contents>
+          <Teaching_And_Learning_Methods>E-learning</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce the participant to various numerical tools developed for wind energy and to provide the necessary knowledge for solving an advanced wind energy related problem with one of these tools.</Course_Objectives>
+          <DTU_Remark>Det anbefales at kurset følges i semesteret lige før det afsluttende projekt</DTU_Remark>
+          <Remark>It is recommended that this course is followed in the semester just before the final project</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course starts with a general introduction to numerical tools and modelling in wind energy. It includes an overview of numerical tools in wind energy and the concepts of physical world vs model world, measurements vs modelling, resolution and scale in modelling, verification and validation of models, sensitivity analysis, uncertainty quantification, rules, guidelines and best engineering practice.
+You will select and receive specific training in one of the following three numerical toolboxes: 
+•	Wind Resource and Site Assessment for Wind Farm Design  
+(WAsP, WAsP Engineering, Windfarm Assessment Tool).
+•	Computational Fluid Dynamics (EllipSys2D/3D).
+•	Loads and Aero-elasticity of Wind Turbines (HAWC2).
+Each toolbox provides training in different parts of the software through exercises and quizzes, but also contains a comprehensive case study where all the elements are employed together.</Contents>
+          <Teaching_And_Learning_Methods>E-learning</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce the participant to various numerical tools developed for wind energy and to provide the necessary knowledge for solving an advanced wind energy related problem with one of these tools.</Course_Objectives>
+          <DTU_Remark>It is recommended that this course is followed in the semester just before the final project</DTU_Remark>
+          <Remark>It is recommended that this course is followed in the semester just before the final project</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="46W14 recommended for WAsP tool.&#xD;&#xA;Knowledge of classical control theory is an advantage for HAWC2 tool&#xD;&#xA;Knowledge of Computational Fluid Dynamics is an advantage for EllipSys tool." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="46W14 recommended for WAsP tool.&#xD;&#xA;Knowledge of classical control theory is an advantage for HAWC2 tool&#xD;&#xA;Knowledge of Computational Fluid Dynamics is an advantage for EllipSys tool." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="List the different numerical tools used in DTU Wind Energy and their typical applications." />
+          <Txt Lang="en-GB" Txt="List the different numerical tools used in DTU Wind Energy and their typical applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain the basics of selected tools and their operational envelopes." />
+          <Txt Lang="en-GB" Txt="Explain the basics of selected tools and their operational envelopes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Illustrate the concept of model verification and validation." />
+          <Txt Lang="en-GB" Txt="Illustrate the concept of model verification and validation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Choose a numerical tool for a given application." />
+          <Txt Lang="en-GB" Txt="Choose a numerical tool for a given application." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Apply a selected tool on a predefined setup." />
+          <Txt Lang="en-GB" Txt="Apply a selected tool on a predefined setup." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Set up a selected tool for solving a given problem." />
+          <Txt Lang="en-GB" Txt="Set up a selected tool for solving a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyse the sensitivity of different setups for a given case." />
+          <Txt Lang="en-GB" Txt="Analyse the sensitivity of different setups for a given case." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Select the optimal setup for a given problem." />
+          <Txt Lang="en-GB" Txt="Select the optimal setup for a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluate the uncertainties of the results predicted by a selected tool." />
+          <Txt Lang="en-GB" Txt="Evaluate the uncertainties of the results predicted by a selected tool." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://lifelonglearning.dtu.dk/en/wind-energy/master-en/wind-energy-master-online-programme/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="54673" PersonUniversity="dtu" Date="2026-04-28" Time="14:40:38.483" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

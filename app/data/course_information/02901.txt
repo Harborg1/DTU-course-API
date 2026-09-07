@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02901" University="dtu" LastUpdated="2026-06-30+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Avancerede emner indenfor machine learning" />
+        <Title Lang="en-GB" Title="Advanced Topics in Machine Learning" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" Tuition_Fee="8250" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset foregår en uge i august. Se kursets hjemmeside for specifikke datoer." />
+          <Schedule_Txt Lang="en-GB" Txt="The course runs in August. See the course homepage for specific dates." />
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Compute" />
+        <Course_Responsible PersonKey="16497" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Morten</GivenName>
+            <FamilyName>Mørup</FamilyName>
+            <Email>mmor@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="64228" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jesper Løve</GivenName>
+            <FamilyName>Hinrich</FamilyName>
+            <Email>jehi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="To participate in the course, an application is required. Please send an application consisting of a CV to jehi@dtu.dk no later than the 21st of June 2025. The applications will be assessed and confirmations will be sent out by the 30th of June." />
+            <Supp_Txt Lang="en-GB" Txt="To participate in the course, an application is required. Please send an application consisting of a CV to jehi@dtu.dk no later than the 21st of June 2025. The applications will be assessed and confirmations will be sent out by the 30th of June." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer nye trends og avancerede emner i machine learning. Kurset dækker centrale emner inden machine learning såsom Bayesians parametrisk og ikke-parametrisk inferens, optimering, latent variabel modellering, kernel metoder og deep learning. Kurset består af forelæsninger og øvelser og er efterfulgt af et mini-projekt, der præsenteres i en teknisk rapport. Vi opfordrer studerende til at anvende de metoder, der undervises i på data, der er relevante for deres ph.d.-projekt. Typiske applikationer omfatter: Bio-medicinsk, audio, multimedia, og topic modellering samt collaborative filtering og monitoreringssystemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, mini-projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere deltagerne til nye trends i statistisk signalbehandling og machine learning.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces new trends and advanced topics in machine learning. The course covers key topics in machine learning such as Bayesian parametric and non-parametric inference, optimization, latent variable models, kernel methods, and deep learning. The course consists of lectures and exercises, and is followed up by a mini-project presented in a written report. We encourage that students apply the methods taught to data relevant for their PhD project. Typical applications include: Bio-medical, audio, multimedia, and topic modeling as well as collaborative filtering and monitoring systems.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, mini-project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce the student to new trends in statistical signal processing and machine learning.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende avancerede metoder indenfor machine learning" />
+          <Txt Lang="en-GB" Txt="Comprehend and apply advanced methods within machine learning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Indsamle videnskabelig viden og data indenfor kursets emner" />
+          <Txt Lang="en-GB" Txt="Collect scientific knowledge and data related to topics covered in the course" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og gennemføre et mini-projekt relateret til et eller flere af kursusemnerne (helst indenfor den studerendes eget PhD projekt)" />
+          <Txt Lang="en-GB" Txt="Formulate and carry out a mini-project related to one or more of the covered course topics (preferably within the scope of the student’s PhD project)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere komplekse machine learning systemer baseret på en analyse af problemstillinger og projektmål" />
+          <Txt Lang="en-GB" Txt="Design a complex machine learning system based on an analysis of the problem and the project aims" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere machine learning systemet" />
+          <Txt Lang="en-GB" Txt="Implement the machine learning system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere resultaterne af machine learning systemet" />
+          <Txt Lang="en-GB" Txt="Evaluate the performance of the machine learning system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere og opsummere miniprojekt-resultater i relation til projektmål, metoder og tilgængelige data" />
+          <Txt Lang="en-GB" Txt="Assess and summarize the mini-project results in relation to aims, methods and available data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Disseminere projektresultaterne i en teknisk rapport" />
+          <Txt Lang="en-GB" Txt="Disseminate the project results in a technical report" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.compute.dtu.dk/courses/02901" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Advanced Topics in Machine Learning</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="14" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="26" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="0" Min="0" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-30" Time="09:50:59.04" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

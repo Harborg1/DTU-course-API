@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34220" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Kodning i kommunikationssystemer" />
+        <Title Lang="en-GB" Title="Coding in communication systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="575" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Søren Otto</GivenName>
+            <FamilyName>Forchhammer</FamilyName>
+            <Email>sofo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The course project report shall be presented on the last day" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Kursus-rapport skal fremlægges sidste dag" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Moderne kommunikations- og cyber systemer anvender en eller flere former for kodning og det er målet med dette kursus at give en indføring i sådanne kodningssystemer. Dette kursus har et anvendelsesperspektiv understøttet af praktiske øvelser og projekter, der kan udføres med Python. Teorierne bag kodningsmetoder indeholder stor dybde og de behandles i en række efterfølgende DTU kurser. Kurset omfatter følgende emner:
+•	Kanalkodning (fejlkorrektion)
+-	Lineære blokkoder: Principper. Hamming, RS og BCH på brugerniveau
+-	Foldningskoder: Kodning og dekodning (Viterbi)
+•	Kildekodning (datakompression)
+-	Entropibegrebet
+-	Huffman-kodning
+-	Anvendelse af lineær prædiktion af signaler
+-	Video- og billedkodning
+-	MPEG og JPEG
+•	Kryptering (sikring og beskyttelse af information)
+-	Klassiske blok-krypteringssystemer
+-	McEliece's krypto-system
+Kursets forelæsninger anvender detaljerede slides som er det væsentligste undervisningsmateriale. Til hver forelæsning er knyttet en eller flere øvelser. Øvelserne kræver som regel programmering i Python. Til slut udarbejdes en rapport over et mindre projekt med selvvalgt emne.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give en indføring i kodning i kommunikationssystemer og cyberteknologi:
+-	Fejlkorrigerende kodning for kommunikationskanaler
+-	Kodning af informationskilder for datakompression
+-	Kryptering af information for at sikre indholdet.</Course_Objectives>
+          <Remark>Kurset er grundlæggende og der tilbydes mange videregående kurser i disse emner.
+Det forudsættes at de studerende selv medbringer en laptop-computer og har adgang til programmering i Python (alternativt kan MATLAB, eller C/C++ bruges).</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Modern communication and cyber systems use one or more instances of coding and the goal of this course is to provide an introduction to such coding systems. The present course has an application perspective supported by practical exercises and projects which may be solved and executed in Python. The theories for coding systems are quite deep and these issues are treated in several other DTU courses. The course contains the following subjects:
+•	Channel coding (error-correction)
+-	Linear block codes: Principles. Hamming, RS, and BCH from a user perspective
+-	Convolutional codes: Encoding and decoding (Viterbi)
+•	Source coding (data compression)
+-	The entropy concept
+-	Huffman-coding
+-	Use of linear prediction of signals
+-	Video and image coding
+-	MPEG and JPEG
+•	Cryptography (safeguarding and protection of information)
+-	Classical block cryptography
+-	McEliece's crypto-system
+The lectures use detailed slides The exercises usually require programming in Python. At the end of the course, a small project on a subject chosen by the student is to be carried out and a report should be handed in.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide an introduction to coding in communication systems and cyber technology:
+-	Error-correcting coding for communication channels
+-	Coding of information sources for data compression
+-	Encryption of information to safeguard the content.</Course_Objectives>
+          <Remark>The course is introductory and many advanced courses are offered in these subjects.
+It is assumed that the students bring a laptop computer and have access to programming in Python (alternatively MATLAB, or C/C++ may be used).</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare lineære blokkoder og deres vigtigste egenskaber" />
+          <Txt Lang="en-GB" Txt="explain linear block codes and their most important properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og anvende kodere og dekodere for almindelige blokkoder som Hamming, BCH og RS " />
+          <Txt Lang="en-GB" Txt="explain and use encoders and decoders for common block codes as Hamming, BCH, and RS " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare foldningskoder og deres vigtigste egenskaber " />
+          <Txt Lang="en-GB" Txt="explain convolutional codes and their most important properties " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og anvende Viterbi algoritmen for foldningskoder " />
+          <Txt Lang="en-GB" Txt="describe and apply the Viterbi decoding algorithm for convolutional codes " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="simulere kodningssystemer" />
+          <Txt Lang="en-GB" Txt="simulate coding systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="genkende entropibegrebet" />
+          <Txt Lang="en-GB" Txt="recognize the entropy concept" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre Huffman kodning af simple informationskilder" />
+          <Txt Lang="en-GB" Txt="perform Huffman coding of simple information sources" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå anvendelsen af prædiktion i kildekodning" />
+          <Txt Lang="en-GB" Txt="explain the application of prediction in source coding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå de vigtigste elementer i kodning af billeder og video (JPEG, MPEG) og kunne anvende og indstille sådanne kodere" />
+          <Txt Lang="en-GB" Txt="explain the most important elements of coding of images and video (JPEG, MPEG) and be able to apply and parameterize such coders" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare udvalgte klassiske krypteringsmetoder" />
+          <Txt Lang="en-GB" Txt="know classical methods of cryptography" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/02101. 01001/01005" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Coding in communication systems</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:58.707" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

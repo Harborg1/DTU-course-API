@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10319" University="dtu" LastUpdated="2026-05-12+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående faststoffysik" />
+        <Title Lang="en-GB" Title="Advanced solid state physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="13069" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kristian Sommer</GivenName>
+            <FamilyName>Thygesen</FamilyName>
+            <Email>thygesen@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Andenkvantisering. Tæthedsresponsfunktionen og dennes relation til den dielektriske funktion. Det kvantemekaniske udtryk for responsfunktionen; statisk og dynamisk skærmning indenfor Random Phase Approksimationen (RPA); plasmoner og plasmon-polaritoner; den elektroniske båndstruktur og kvasipartikelbegrebet; en-partikel Green's funktionen og selv-energien; GW approksimationen og kvasipartikelligningen; excitoner og Bethe-Salpeter ligningen; Berrys fase; topologiske isolatorer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde, regneøvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Solid State Physics by Grosso and Paravicini, 2nd edition</Course_Literature>
+          <Course_Objectives>At give den studerende en videgående forståelse af elektronstrukturen i faste stoffer og nanostrukturer med fokus på fænomener som kræver en beskrivelse udover en-partikel approksimationen som er vigtige for forståelsen af f.eks. exciterede tilstande og materialers vekselvirkning med elektromagnetiske felter. Kurset vil sætte den studerende i stand til at læse og forstå moderne litteratur på området og gennemføre mindre forskningsprojekter indenfor faststoffysik.</Course_Objectives>
+          <Remark>Dette er en fortsættelse af den indledende kursus i faststoffysik</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Second quantisation. The density response functions and its relation to the dielectric function. A quantum expression for the response function; static and dynamical screening within the random phase approximation (RPA); plasmons and plasmon-polaritons; electronic band structures and quasi-particles; the single-particle Green's functions and the concept of the self-energy; quasiparticle excitations and the GW approximation and the quasiparticle equation; excitons and the Bethe-Salpeter equation for optical excitations; Berry's phase, topological insulators.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Solid State Physics by Grosso and Paravicini, 2nd edition</Course_Literature>
+          <Course_Objectives>To provide a more advanced understanding of the electronic structure of solid state and nanostructured systems with emphasis on the phenomena which require a description beyond the single-particle approximation and which are important for understanding e.g. excited states and solid materials interaction with electromagnetic fields. The course will enable the student to read the modern litterature and undertake smaller research projects in the field.</Course_Objectives>
+          <Remark>This is a continuation of the introductory course on solid state physics.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til faststoffysik og kvantemekanik. Videregående kvantemekanik 10112 er en ønskelig forudsætning, men kurset kan gennemføres uden." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of solid state physics and quantum mechanics. Advanced quantum mechanics is desirable, but the course can be followed without." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10317.10112" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere og forstå tæthedsresponsfunktionen for et system af vekselvirkende elektroner samt dennes relation til systemets excitations-energieer." />
+          <Txt Lang="en-GB" Txt="Define and discuss the concept of the density response function of a system of interacting electrons and its relation to the elementary electronic excitations in the system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og udlede de analytiske egenskaber af generelle responsfunktioner inklusiv Kramers-Kronig relationerne mellem real- og imaginærdelene." />
+          <Txt Lang="en-GB" Txt="Formulate and derive the analytic properties of general response functions including the Kramer-Kronig relations between the real- and imaginary parts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere og karakterisere de forskellige typer af elektroniske excitationer i faste stoffer, inklusiv plasmoner, excitoner og enkeltpartikel excitationer" />
+          <Txt Lang="en-GB" Txt="Discuss and characterize the various types of elementary electronic excitations in a solid state system including collective excitations, bound electron-hole, and single-particle excitations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de væsentligste egenskaber ved tæthedsresponsfunktionen for den homogene elektrongas " />
+          <Txt Lang="en-GB" Txt="Explain the key features of the density response function of the homogeneous electron gas." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive sammenhængen mellem tæthedsreponsfunktionen og den dielektriske funktion  " />
+          <Txt Lang="en-GB" Txt="Describe the connection between the microscopic dielectric function and the density response function." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere den mikroskopiske dielektriske funktion til de makroskopiske optiske konstanter som absorptionskoefficienten, det refraktive indeks samt diskutere rollen af lokale felt effekter.  " />
+          <Txt Lang="en-GB" Txt="Relate the microscopic dielectric function to the macroscopic optical constants of a solid such as the absorption coefficient and reflectivity, and discuss the role of local field effect." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere en-partikel Green's funktionen samt selv-energien og relatere disse til materialets båndstruktur" />
+          <Txt Lang="en-GB" Txt="Define the single-particle Green function and the self-energy, and discuss its relation to the band structure of a solid." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere GW approksimation og hvordan den kan benyttes til beregning af båndstrukturer." />
+          <Txt Lang="en-GB" Txt="Discuss the GW approximation as a method to obtain the band structure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere Bethe-Salpeter ligningen til beregning af optiske excitationer" />
+          <Txt Lang="en-GB" Txt="Discuss the Bethe-Salpeter equation as a method to calculate optical excitations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare Hydrogen modellen til beskrivelse af excitoner" />
+          <Txt Lang="en-GB" Txt="Explain the Hydrogenic model for calculating excitons" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare Berry's fase samt dennes relation til topologiske isolatorer" />
+          <Txt Lang="en-GB" Txt="Explain the Berry phase and relate it to topological insulators." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Videregående faststoffysik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="10318" />
+        <PreviousCourse CourseCode="10305" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-18" Time="16:46:47.123" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

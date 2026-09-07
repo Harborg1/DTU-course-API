@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46045" Volume="2026/2027" University="dtu" LastUpdated="2026-04-19+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Design og implementering af koordineret styring for distribuerede energisystemer" />
+        <Title Lang="en-GB" Title="Design and Implementation of Coordinated Distributed Energy Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="6 dage af kurset bliver afholdt i SYSLAB faciliteter på Risø Campus.&#xD;&#xA;(en introduktionsdag, dag 3, dernæst de sidste fem dage til projektarbejde)" />
+          <LocationTxt Lang="en-GB" Txt="6 days of the course will be carried out in SYSLAB facility on Risø Campus (one introduction day (day 3), then the last 5 consecutive days for project work)" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="9 dage i Lyngby 1+5 dage på Risø." />
+          <Schedule_Txt Lang="en-GB" Txt="9 days on Lyngby Campus 1+5 days at Risø Campus." />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="43829" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kai</GivenName>
+            <FamilyName>Heussen</FamilyName>
+            <Email>kheu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Grupperapport og individuel rapport. Brug af kunstig intelligens (AI) er tilladt, men skal oplyses." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Group report and individual report. Use of AI is allowed, but needs to be declared." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Reports to be submitted on the last course day." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Rapporter bliver indsendt på sidste dag af kurset." />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Uge 1: Introduktion til operationel kontrol af koordinerede energisystemer og distribuerede kontrolsystemer; konceptudvikling. Forskelle mellem simulerede og faktiske distribuerede kontrolsystemer. Design af kontrolsystemers struktur med henblik på overordnede mål. Laboratoriet. Implementering af styringsalgoritmer og kommunikation.
+Uge 2: Strategier for koordinering og fejltolerance. Implementering af et kontrolsystem på en simuleret tvilling af SYSLAB, test for reproducerbare udfald. Udrulning og evaluering af distribuerede kontrolsystemer.
+Uge 3:  Kontrolimplementering og eksperimentafvikling i SYSLAB. Præsentation af resultater.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning og opgaver, projekt, eksperiment i laboratoriet</Teaching_And_Learning_Methods>
+          <Course_Objectives>Energisystemet stoler i stigende grad på mindre, vedvarende energikilder, elektrificerede flexible forbruger og energilagring. Men hvordan arbejder disse ressourcer sammen til at balancere energisystemet? Enhederne koordineres til at virke som én samlet enhed, som f.eks. et microgrid, et energifællesskab eller et hybridkraftværk.
+
+Dette kursus introducerer de påkrævede metoder til at implementere et sådant distribueret system, ved at de studerende viser, hvordan fjernmåling og -kontrol kan kombineres med fejltolerant kommunikation i et koordineret energisystem.
+
+Det primære fokus er på hands-on erfaring med at udvikle et distribueret system ved brug af funktionel repræsentation af enheder, anvendelse af mønstre for distribueret system- og kommunikationsdesign, overvågelse af drift, og test af systemets faktiske performance.
+Kursets værktøjskasse inkluderer Linux command line (bash) med ssh tunnel, kommunikationsmønstre og Python programmering. Eksempler brugt i kurset relaterer direkte til aktuelle udfordringer indefor både forskning og industriel anvendelse.
+
+Brug af AI er tilladt til at støtte softwareudvikling - dog ikke til at erstatte forståelsen af design konceptet og forklaring af resultater.
+
+Kurset afsluttes med et projekt der gennemføres på det distribuerede energisystem "SYSLAB", beliggende på Risø Campus.
+
+Nøgleord: Distribuerede systemer, sensornetværk, internet of things, kommunikation, kontrol, fault tolerance</Course_Objectives>
+          <Remark>Brug af kunstig intelligens er tilladt, men der gælder særlige regler for brugen heraf.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Week 1: Introduction to smart energy systems control problems, and distributed control  systems; solution concept design; differences between simulated and actual distributed control system. Introduction to physical laboratory facilities, lab safety and remote control of SYSLAB units; implementing communication in a distributed system; implementing controllers. 
+Week 2: Coordination and fault tolerance strategies. Implementation of a control system on a simulated testbed, testing for reproducible outcomes. Deployment and evaluation of distributed controllers.  
+Week 3: Control solution development, implementation and experiment execution in SYSLAB (Risø campus). Reporting and presentation of results.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, project with lab-experiment</Teaching_And_Learning_Methods>
+          <Course_Objectives>Variable renewable energy resources, electrified consumers and energy storage together make up the building blocks of a fully renewabe energy system. But how do these technologies work together to balance the energy system? Effective cooperation requires control algorithms and communication to coordinate and balance power and energy levels continuously, forming a cyber-physical distributed energy system. Distributed energy systems can be formed for different goals, such as e.g. microgrids, which increase, energy community, or hybrid power plant.  
+
+This course introduces the methods required to implement such a distributed system, enabling students to develop and test their own solutions, which include remote sensing and control, combined with fault tolerant communication to build a coordinated energy system.
+
+The main focus of this course is on a hands-on experience in designing and implementing a distributed energy system solution, applying control structures, distributed system fault tolerance and communication patterns, monitoring its operation, and testing its actual performance. 
+The course main tools include Python programming, use of communication patterns, as well as Linux command line operations, remote operation via ssh and code collaboration tools. Use of AI tools is permitted and encouraged during the course for programming purposes, but not to replace a the student' overview of the concept design, testing strategies and test result interpretation. 
+The final project is implemented on the distributed energy system "SYSLAB", located at Risø Campus.
+
+Keywords: distributed systems, sensor networks, IoT, communication, control, fault tolerance.</Course_Objectives>
+          <Remark>Use of AI is permitted, but specific rules about AI use apply.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Mikrocontroller programmering, Reguleringsteknik 1, grundlæggende Python programmering" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Mikrocontroller programming, Linear Control Design 1, basic Python programming" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(31728/31070).(31300/1)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan distribuerede energisystemer bruger koordinerings- og kommunikationssystemer til at opnå styringsmål." />
+          <Txt Lang="en-GB" Txt="Explain how distributed energy systems use coordination and communication to achieve their goals. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Erkende og illustrere aspekter relaterende til styring, kommunikation og koordinering i et distribueret energi løsning." />
+          <Txt Lang="en-GB" Txt="Recognize and clearly illustrate the communication, control and coordination aspects of a distributed energy application." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opliste, forklare og anvende typiske kommunikationsmønstre anvendt til styring af distribuerede energissystemer." />
+          <Txt Lang="en-GB" Txt="List, explain and apply typical communication patterns applied in distributed systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende typiske reguleringsstrukturer og strategier til fejltolerance anvendt i distribuerede systemer." />
+          <Txt Lang="en-GB" Txt="Explain and apply typical control structures and fault-tolerance strategies applied in distributed control systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive krav og specificere et koncept for en koordineret distribueret energisystemløsning, herunder kontrol-, koordinerings- og kommunikationsaspekter og eksperimentel validering." />
+          <Txt Lang="en-GB" Txt="Describe requirements and specify a concept for a distributed energy system solution, including control, coordination and communication aspects and its experimental validation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg og anvend relevante styrings- og kommunikationsmønstre i en distribueret styringssoftware." />
+          <Txt Lang="en-GB" Txt="Select and apply relevant control and communication patterns in a distributed control software." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og anvende en distribueret kontrolsoftware i laboratoriemiljø." />
+          <Txt Lang="en-GB" Txt="Implement and deploy a distributed control software in a laboratory setting." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Specificer en test til en distribueret kontrolsoftware baseret på undersøgelse af applikationskrav, herunder relevante præstationsmålinger og testprotokoller." />
+          <Txt Lang="en-GB" Txt="Specify a test for a distributed control software based on examining application requirements, including relevant performance metrics and test protocoll." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og udføre en specificeret test, dokumentere testresultaterne og fortolke testresultaterne i forhold til det distribuerede kontrolsystems funktion og testkrav." />
+          <Txt Lang="en-GB" Txt="Implement and execute a specified test, document the test results and interpret the test results in terms of the distributed control system functioning and test requirements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejd effektivt i et team om at udvikle løsninger, der involverer programmering og kommunikation om kode samt om brugen af kunstig intelligens til at understøtte udviklingen." />
+          <Txt Lang="en-GB" Txt="Collaborate efficiently in a team to develop solutions involving programming and communicating about code and about the use of AI to support development." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="7" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31725" />
+        <PreviousCourse CourseCode="31725" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="38" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:25.47" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

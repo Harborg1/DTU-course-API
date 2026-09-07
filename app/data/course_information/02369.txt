@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02369" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Software processer og mønstre" />
+        <Title Lang="en-GB" Title="Software Processes and Patterns" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="102607" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Hugo-Andrés</GivenName>
+            <FamilyName>López-Acosta</FamilyName>
+            <Email>hulo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den studerende afleverer en obligatorisk gruppeopgave, der dækker kursusindholdet i et softwareingeniørprojekt.&#xD;&#xA;&#xD;&#xA;Den studerende skal aflevere en projektrapport, der beskriver de opnåede resultater i projektet. Karakteren vil blive fastsat på baggrund af en samlet vurdering af et individualiseret gruppeprojekt." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The student will submit a mandatory group assignment that covers the course content in a software engineering project.&#xD;&#xA;&#xD;&#xA;The student is required to submit a project report describing the results achieved in the project. The grade will be based on an overall assessment of an individualized group project." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The date reflects the date the deadline for report delivery. To be eligible for the grade the student must have had the intermediate hand-ins approved beforehand." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Datoen angiver fristen for aflevering af rapporten. For at være berettiget til karakteren skal den studerende have fået godkendt de mellemliggende afleveringer på forhånd." />
+            <Schedule ScheduleKey="E1B" />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Agile udviklingsmetoder (bl.a. SCRUM)
+User stories
+Agile estimationsprincipper 
+Risikoanalyse tekniker
+Tilstands- og processmodeller
+Softwarearkitektur
+Designmønstre</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Oplyses via Campus Net</Course_Literature>
+          <Course_Objectives>Kursets mål er at sætte den studerende i stand til at udvikle software efter agile udviklingsmetoder i et konkret projekt. Endvidere at give den studerende et overblik over gængse designmønstre og deres anvendelser. Den studerende lærer at arbejde med en leverance styret agil process model, hvor vurdering af risici samt værdi for kunden er i fokus.</Course_Objectives>
+          <DTU_Remark>Softwareteknologi: 3. semester 
+IT og Økonomi: 3. semester</DTU_Remark>
+          <Remark>Kurset består af teori/​øvelsesperiode og projektarbejde.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Agile development methods (e.g. Scrum)
+User stories
+Agile estimation principles
+Risk analysis techniques
+State- and Process Models
+Software Architecture
+Design Patterns</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Information on Campus Net</Course_Literature>
+          <Course_Objectives>The course aims to enable the student to develop software according to agile development methods in a realistic setting, with potential customers, open requirements, and possible changes (just like a real software-engineering project). Furthermore, it gives the student an overview of common design patterns and their applications. The students learn to work with a delivery-driven agile development process, where the assessment of risks and value for the customer is in focus.</Course_Objectives>
+          <Remark>The course includes theory/exercises and project work.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Brug principper af agile softwareudviklingsmetoder i en softwareprojekt" />
+          <Txt Lang="en-GB" Txt="Apply principles of agile software development methods in a software project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Interagere med en potentiel kunder i skabelsen af et softwareprodukt ved hjælp af scrum-metoden" />
+          <Txt Lang="en-GB" Txt="Interact with a potential customer in the creation of a software product using the scrum methodology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et agile projektstyringsværktøj til en kørende softwareprojekt" />
+          <Txt Lang="en-GB" Txt="Apply an agile project management tool to a software project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende risikoanalysetekkniker til en softwareprojekt" />
+          <Txt Lang="en-GB" Txt="Apply risk analysis techniques to a software project  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og forklare den arkitektur af en softwareprodukt" />
+          <Txt Lang="en-GB" Txt="Identify and explain the architecture of a software product" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design skalerbar og pålidelig software via anvendelse af en række designmønstre" />
+          <Txt Lang="en-GB" Txt="Design scalable and reliable software via the application of a variety of design patterns" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommunikere komplekse softwareadfærd med state og processmodeller " />
+          <Txt Lang="en-GB" Txt="Communicate complex software behaviour via state diagrams and process models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde en rapport, der dokumenterer og vurderer et projekts leverancer" />
+          <Txt Lang="en-GB" Txt="Prepare a report that documents and evaluate a project's deliverables" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse problemer som del af et team" />
+          <Txt Lang="en-GB" Txt="Solve a characteristic software problem in teams" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02312/02314).((02327.02324)/(02327.02362))" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="02368" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="62" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="38" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="120" Min="1" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:35.807" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

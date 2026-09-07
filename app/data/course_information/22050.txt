@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22050" University="dtu" LastUpdated="2026-03-02+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Signaler og lineære systemer i kontinuert  tid" />
+        <Title Lang="en-GB" Title="Continuous time signals and linear systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="5548" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Kaj-Åge</GivenName>
+            <FamilyName>Henneberg</FamilyName>
+            <Email>khen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Multiple choice." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Multiple choice." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Reexam in August." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Reeksamen i august." />
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus beskæftiger sig med signaler og lineære systemer i kontinuert tid. Repetition af elektrisk kredsløbsteori, klassifikation af signaler og systemer, udledning og løsning af systemligninger, impuls/step respons, foldning, Fourier transformation af aperiodiske og periodiske signaler, amplitude- og fasespektre, Bode plot, pol-nulpunktdiagrammer, impuls/step respons bestemmelse vha. Laplace transformation, Butterworth filtre, frekvensskalering, impedansskalering samt brug af Python/Maple og programmer til kredsløbssimulering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, computerøvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>B.P. Lathi og R. Green. Signal Processing and Linear Systems. Oxford University Press.</Course_Literature>
+          <Course_Objectives>Det er kursets overordnede mål at gøre den studerende i stand til at opstille matematiske modeller for simple lineære elektriske AC-kredsløb og bruge disse modeller til at karakterisere og forbedre systemernes egenskaber i både tidsdomænet, Fourier-domænet og Laplace-domænet. Anvendelser fokuserer på måletekniske kredsløb indeholdende en AC-koblet instrumenteringsforstærker samt lav- og højpasfiltre til forstærkning af et ønsket AC signal og undertrykkelse af sekundære DC og AC signaler.</Course_Objectives>
+          <Remark>Kurserne 22050, 22051 og 22052 udgør et specialiseringsforløb inden for signalbehandling og bør tages i nævnte rækkefølge. AI indgår som læringsredskab i kurset, men benyttes ikke ved eksamen. Repetition af teori faciliteres i forudoptagede videoer og frivillige quizzer. Diskussionsværktøjet i DTU Learn bruges som Question and Answer platform.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course concerns signals and linear systems in continuous time. Review of circuit theory, classification of signals and systems, derivation and solutions of system equations, impulse/step response, convolution, Fourier transformation of aperiodic and periodic signals, amplitude and phase spectra, Bode plot, pole-zero diagrams, Laplace domain derivation of impulse and step response, Butterworth filters, frequency scaling, impedance scaling, and applications of Python/Maple and circuit simulators.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, computer exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>B.P. Lathi and R. Green. Signal Processing and Linear Systems. Oxford University Press.</Course_Literature>
+          <Course_Objectives>The overall goal of the course is to enable the student to build mathmatical models for simple linear electrical AC-circuits and use these models to characterize and improve their properties in both time domain, Fourier domain, and Laplace domain. Applications focus on measurement systems with an AC-coupled instrumentation amplifier and low- and highpass filters to amplify a target signal and suppress secondary DC and AC signals.</Course_Objectives>
+          <Remark>The courses 22050, 22051, and 22052 constitute a specialization track in signal processing and should be taken in said order. AI is used as a learning tool in the course, but is not used at the exam. Lectures on theory can be reviewed in pre-recorded videos and in voluntary quizzes. The Discussion tool in DTU Learn provides a Question and Answer platform.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Forudgående kurser i DC og AC kredsløb er essentielt. 22462 kan tages samtidigt." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Prior courses in DC and AC circuits are essential. Course 22462 can be taken in the same semester." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(34600/22438/22461).(34601/22437/22462).01005.(01034/01035/01037)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere og kategorisere deterministiske/stokastiske, analoge/digitale, kausale/nonkausale, periodiske/aperiodiske signaler, og signaler med endelig energi/effekt." />
+          <Txt Lang="en-GB" Txt="identify and categorize deterministic/stochastic, analog/digital, causal/noncausal, periodic/aperiodic signals and signals with finite energy/power. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere og kategorisere systemer med hensyn til linearitet, stabilitet, kausalitet, tidsinvarians og orden." />
+          <Txt Lang="en-GB" Txt="identify and categorize systems according to linearity, stability, causality, time invariance and order." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere lineære fysiske systemer og opstille tilhørende matematiske modeller. " />
+          <Txt Lang="en-GB" Txt="analyse linear physical systems and build corresponding mathematical models. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="undersøge styrker og svagheder ved et system- eller filterdesign ved brug af systemets differentialligning, overføringsfunktion, frekvenskarakteristik og pol/nulpunkt-diagram og konvertere mellem disse repræsentationsformer." />
+          <Txt Lang="en-GB" Txt="investigate strengths and weaknesses in a system or filter design according to the systems differential equation, transfer function, frequency response, and pole-zero diagram and convert between these representations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Fourier- og Laplace-transformationerne samt redegøre for deres matematiske egenskaber og forudsætningerne for deres anvendelse." />
+          <Txt Lang="en-GB" Txt="use the Fourier and Laplace transforms, explain and use their mathematical properties and explain the conditions for their use." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne udgangssignaler for kendte indgangssignaler ved hjælp af foldning og ved hjælp af Fourier- og Laplacetransformation." />
+          <Txt Lang="en-GB" Txt="calculate output signals for known input signals using convolution, Fourier, and Laplace transformation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne impuls-, trin- og ramperespons og deres respektive stationære fejl." />
+          <Txt Lang="en-GB" Txt="calculate the impulse, step, and ramp responses and their steady state error." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne deterministiske signalers amplitudespektrum og fasespektrum og forudsige deres symmetriegenskaber." />
+          <Txt Lang="en-GB" Txt="calculate the frequency and amplitude spectrum of deterministic signals and predict their symmetry properties. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="undersøge og redegøre for indflydelsen af dæmpningsfaktoren og den udæmpede resonansfrekvens på polplacering, steprespons og amplitudekarakteristik for 2. ordens systemer." />
+          <Txt Lang="en-GB" Txt="investigate and explain the influence of the damping ratio and the natural frequency on the position of poles, step response, and amplitude characteristic for second order systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere et systems differentialligning og overføringsfunktion baseret på en given frekvenskarakteristik ved brug af Bode plot." />
+          <Txt Lang="en-GB" Txt="identify the differential equation and transfer function of a system from its frequency characteristics using Bode plot." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe overføringsfunktionen for filtre af Butterworth typen på basis af en sensitivitetsanalyse." />
+          <Txt Lang="en-GB" Txt="design the transfer function for Butterworth filters based on the outcome of a sensitivity analysis. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende computerbaserede værktøjer og generativ kunstig intelligens som læringsredskaber til signal- og systemanalyse, herunder til at undersøge, validere og kritisk vurdere egne matematiske udledninger og modeller." />
+          <Txt Lang="en-GB" Txt="Apply computer-based tools and generative artificial intelligence as learning tools for signal and system analysis, including to examine, validate, and critically evaluate one’s own mathematical derivations and models." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Signaler og lineære systemer i kontinuert tid</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02462.30160" />
+        <PreviousCourse CourseCode="31605" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="63" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="37" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:55.81" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

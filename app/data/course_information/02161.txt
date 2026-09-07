@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02161" University="dtu" LastUpdated="2024-04-01+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Software Engineering 1" />
+        <Title Lang="en-GB" Title="Software Engineering 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="34435" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Hubert</GivenName>
+            <FamilyName>Baumeister</FamilyName>
+            <Email>huba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individualiserede grupperapporter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individualized group reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Softwareudvikling, herunder typiske faser i et udviklingsforløb og forskellige roller i udviklingsgrupper og agile processer. 
+
+Softwaredokumentation, herunder analyse af problemformulering, kravspecifikation, softwaredesign, test og implementering. Til dette formål introduceres dele af UML, bl.a. use cases, klassediagrammer og sekvensdiagrammer.
+
+Et udviklingsmiljø vil blive benyttet.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og projektarbejde, hvor grupper af studerende skal samarbejde omkring udviklingen af et mindre softwaresystem.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende en introduktion til softwareudvikling. 
+At give de studerende færdigheder omkring løsningen af en mindre softwareudviklingsopgave, spændende fra problemformulering til implementering og brug af det konkrete softwareprodukt.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Softwaredevelopment, comprising the typical phases in the development and different roles in development teams and agile processes.
+
+Software documentation, comprising analysis of problem statement, requirements specification, software design, test and implementation. For this purpose, parts of UML is introduced, e.g. use cases, class diagrams and sequence diagrams.
+
+A development environment will be used.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project work, where teams of students must collaborate
+in the development of a software system.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give students an introduction to software development. To give students skills concerning the solution of a small software development problem, spanning from the problem statement to the implementation and use of the concrete software product.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Basale Java programmeringsevner" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic Java programming skills" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02100/02101" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opstille en kravspecification i form af use case beskrivelser på baggrund af en given problemstilling. " />
+          <Txt Lang="en-GB" Txt="establish a requirements specification in the form of use case descriptions on the basis of a given problem statement." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende UMLs klasse- og sekvensdiagrammer til beskrivelse af programdesign." />
+          <Txt Lang="en-GB" Txt="apply the class and sequence diagrams of UML in order to describe a program design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge en funktionel test for en given kravspecifikation og gennemføre de konkrete test." />
+          <Txt Lang="en-GB" Txt="plan a functional test on the basis of a given requirements specification." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="planlægge en strukturel test for et givet program og gennemføre de konkrete test." />
+          <Txt Lang="en-GB" Txt="plan a structural test on the basis of a given program." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre et mindre software projekt og lave en teknisk dokumentation der sikrer at væsentlige begreber fra problemstillingen er sporbare i implementeringen.  " />
+          <Txt Lang="en-GB" Txt="complete a small software project and produce a technical documentation, so that important concepts of the problem statement are tracable in the implementation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="præsentere deres resultater og analyser på en præcis og klar form." />
+          <Txt Lang="en-GB" Txt="present their results and analyses in a succinct manner. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="at gøre rede for typiske faser og roller i softwareudviklingsprocessen." />
+          <Txt Lang="en-GB" Txt="explain typical phases and roles in a software development process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="gennemføre problem-, design- og implementerings-orienterede analyser og gøre rede for fordele og ulemper for alternative løsninger." />
+          <Txt Lang="en-GB" Txt="complete problem, design, and implementation-oriented analyses and explain pros and cons for alternative solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge begreber fra design-by-contract i forbindelse med programdokumentation." />
+          <Txt Lang="en-GB" Txt="use concepts from design-by-contract in connection with the documentation of a program." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge programbiblioteker i forbindelse med programmelkonstruktion." />
+          <Txt Lang="en-GB" Txt="use program libraries in connection with the development of programs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge nogle design patterns." />
+          <Txt Lang="en-GB" Txt="use some design patterns." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundlag i software udviklings teknikker og metoder</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02160" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="63" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="37" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:51.91" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34242" Volume="2026/2027" University="dtu" LastUpdated="2025-10-28+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Maskinlæringstekniker til design og optimering af kommunikationssystemer" />
+        <Title Lang="en-GB" Title="Machine learning techniques for design and optimization of communication systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="20251" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Darko</GivenName>
+            <FamilyName>Zibar</FamilyName>
+            <Email>dazi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The evaluation is based on the reports that students submit and need to pass during the course." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Evalueringen er baseret på de rapporter, som afleveres og  bestås i løbet af kurset." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Lineære modeller til regression og klassifikation
+- Ikke-lineære modeller baseret på flerlags neurale netværk til regression og klassifikation
+- Automatisk differentiering og optimeringsalgoritmer til træning af neurale netværk
+- Maskinlæring baseret lineær og ikke-lineær equalizers
+- Modellering og design af optiske forstærker ved hjælp af maskinlæring
+-Anvendelse af maskinlæring tilløsning af et mindre problem inden for kommunikationsingeniørarbejde</Contents>
+          <Teaching_And_Learning_Methods>3 uger med forelæsninger og øvelser, hvor studerende anvender forskellige maskinlæringsmetoder til at løse et relevante problemer inden for kommunikationssystemer, såsom design af equalizer for undertrykkelse af støj, optiske forstærker, puls-shaper og tilpassede filtre.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Maskinlæring er ved at blive en uundværlig værktøj for kommunikationsingeniører. Det der kan være udfordrende at identificere en række relevante maskinlæringstekniker til at løse en specifik problemstilling indenfor kommunikationssystemer, da maskinlæringsfeltet er bredt. Formålet med dette kursus er at introducere grundlæggende maskinlæringsteknikker, der kan anvendes til at designe både fiber-optiske og trådløse kommunikationssystemer. Kurset vil give deltagerne kendskab til, hvordan de kan: 1) opbygge datadrevne modeller ud fra input-/outputdata. Dette vil omfatte modeller af forstærkere, transmissionskanaler og transmitter-modtagere, 2) designe for- og efterforstærknings-lineære equalizere baseret på multilags neurale netværk, 3) udføre optimal filtrering og genskabe nyttige oplysninger fra støjende observationer, samt 4) udføre systempræstationsforudsigelse og -optimering af kommunikationssystemer og netværk.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>-	Linear models for regression and classification 
+-	Nonlinear models based on multi-layer neural networks for regression and classification 
+-	Automatic differentiation and optimization algorithms for training of neural networks  
+-	Machine learning based linear and nonlinear equalization 
+-	Modelling and design of optical amplifiers using machine learning 
+-	Application of machine learning to formulate and solve a small-scale problem in communication engineering</Contents>
+          <Teaching_And_Learning_Methods>3 weeks of lectures and exercises followed where students apply learned machine learning techniques to solve a relevant problem within communication engineering etc. design of equalizer for supression of noise, opticla amplifiers, pulse-shaper and matched filters</Teaching_And_Learning_Methods>
+          <Course_Objectives>Machine learning is becoming an indispensable tool for communication engineers. However, as the field of machine learning is broad, identifying a set of relevant tools for solving a specific set of problems may be challenging. The objective of this course is to introduce basic machine learning techniques that can be applied for designing fiber-optic and as well as wireless communication systems. The course will provide the participants' with knowledge of how to:  1) build data driven models of from input/output data. This will include models of amplifiers, transmission channels, transmitter-receivers, 2) design pre- and –post nonlinear equalizers based on multi-layer neural-network. 3) optimal filtering and recover useful information from noisy observations and 4) perform system performance prediction and optimization of communication systems and networks.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="34231 Digital Kommunikation 1, Matematik 1, Grundlæggende programmeringsfærdigheder i Python, MATLAB/Octave/C, lineær algebra, introduktion til statistik og sandsynlighedsteori." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="34231 Digital Kommunikation 1, Engineering mathematics, basic programming skills Python MATLAB/ Octave/Clinear algebra, introductory statistics and probability theory." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør de nødvendige trin ved anvendelse af maskinlæringsteknikker til at designe og optimere kommunikationssystemer. Dette inkluderer data generering og forberedelse, dataanalyse, modelopbygning og evaluering." />
+          <Txt Lang="en-GB" Txt="Execute necessary steps when applying machine learning techniques to design and optimize communication systems. This includes data generation and preparation, data analysis, model building and evaluation. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer begrænsningerne ved maskinlæringsteknikker til at opbygge data drevne modeller af kommunikationssystemer ud fra input-output data" />
+          <Txt Lang="en-GB" Txt="Identify limitations of machine learning techniques for building models form input-output data " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutér og fortolke begreber som feature extraction, cross-validation, generalisering og overfitting, " />
+          <Txt Lang="en-GB" Txt="Discuss concepts such as feature extraction, cross-validation, generalization and over-fitting, prediction and curse of dimensionality." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer optimeringsalgoritmer til træning af adaptive equalizere baseret på flerlags neurale netværk" />
+          <Txt Lang="en-GB" Txt="Implement optimization algorithms for training adaptive equalizers based on multi-layer neural networks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer kommunikationssystemer og maskinlæringsalgoritmer i Python/PyTorch/Matlab." />
+          <Txt Lang="en-GB" Txt="Implement the communication systems and machine learning framework in Python/PyTorch/Matlab " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer forskellige versioner af  maskinlæringsalgoritmer til estimering af information ud fra støjefulde signaler" />
+          <Txt Lang="en-GB" Txt="Implement different variations of learning algorithms  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend tilegnede maskinlæringsteknikker til at løse et mindre problem inden for kommunikationssystemer" />
+          <Txt Lang="en-GB" Txt="Apply acquired machine learning techniques to solve a small-scale engineering problem, within the field of communication engineering " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skriv og fremlægge en teknisk rapport inklusiv problemformulering, beskrivelse af metoder, eksperimenter, evaluering og konklusion" />
+          <Txt Lang="en-GB" Txt="Write and present a technical report including problem formulation, description of methods, experiments, evaluation and conclusion" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="25" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="30" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:02.56" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

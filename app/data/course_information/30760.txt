@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30760" University="dtu" LastUpdated="2026-04-30+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Inverse problemer og machine learning i rum- og geofysik" />
+        <Title Lang="en-GB" Title="Inverse Problems and Machine Learning in Earth and Space Physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="71741" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Chris</GivenName>
+            <FamilyName>Finlay</FamilyName>
+            <Email>cfinl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Teori: 
+Statistisk databeskrivelse, Maximum likelihood, Model ikke-entydighed, Null space og opløsning, Bayes Teorem, Probabilistisk inversion, Overvåget og uovervåget maskinindlæringsmetoder
+
+Metoder: 
+Robust statistik til ikke-Gaussian støj, Annihilators, Modelregularisering,  Trade-off kurver, Generaliseret krydsvalidering, Resolution matrix, Markov-Chain-Monte-Carlo (MCMC) metoder, Sequential Gibbs sampling, Feed-forward neurale netværker, Træning med backpropagation, stokastiske gradientafstamning</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, regneøvelser, computerøvelser, mindre projekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset omhandler avancerede metoder til inversion af geofysiske og astrofysiske data, 
+herunder machine learning metoder. Gennem kurset løses eksempler på inverse problemer baseret på problemstillinger relateret til rum- og geofysik (f.eks. seismisk tomografi, geomagnetisme, exoplaneter,  ground penetrating radar, galaktisk emissionsspektre). I kurset lægges særlig vægt på inversionsmetoder, som håndterer ikke-Gaussian støj og gør brug af passende a priori information, til at få mest muligt ud af observations data.
+
+Python vil blive anvendt som værktøj i kurset.</Course_Objectives>
+          <DTU_Remark>Kurset bliver udbudt for sidste gang som forårskursus i F27. Derefter bliver det udbudt i efterårssemesteret, første gang i E28.</DTU_Remark>
+          <Remark>Kurset er rettet mod studerende, der ønsker kompetence inden for avancerede inversionsmetoder og maskinlæring inden for rum- og geofysik,</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Theory: 
+Statistical data description, Maximum likelihood,  Model non-uniqueness, null space and resolution, Bayes Theorem, Probabilistic Inversion, Supervised and Unsupervised Machine Learning
+
+
+Methods: 
+Robust statistics for non-Gaussian errors, Annihilators, Model regularization, Trade-off curves, Generalized cross validation, Resolution matrix, Markov-Chain-Monte-Carlo (MCMC) methods, Sequential Gibbs sampling, Feed-forward neural networks, Training by Back-propagation, Stochastic gradient descent</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course covers advanced methods for inversion of geophysical and astrophysical data, including machine learning techniques. Case studies from a wide range of inverse problems in Earth and Space physics (e.g. seismic tomography, geomagnetism, exoplanets, ground penetrating radar, galactic emission spectra, gravity) are presented and solved. The emphasis in this course is on inversion methods that handle non-Gaussian noise and use of suitable a priori information to get the most out of the observed data.  
+
+Python will be used as a tool throughout the course.</Course_Objectives>
+          <DTU_Remark>The course will be offered for the last time as a Spring course in F27. From then on, it will be offered in the Fall semester, for the first time in E28.</DTU_Remark>
+          <Remark>The course is aimed at students who want competence in advanced inversion methods and machine learning for use in Earth and Space Physics.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende dataanalyse (især sandsynlighedsteori, lineær algebra inkl. SVD, lineære inverse problemer, modelusikkerhed og opløsningsanalyse samt modelregularisering) på niveau med kursus 30230. Programmering mindst på niveau med 02002, helst på niveau med 02686." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic data analysis (in particular probability theory, linear algebra including SVD, linear inverse problems, model uncertainty and resolution analysis, and model regularization) at the level of course 30230. Programming at least at the level 02002, preferably at the level of 02686" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30230.(02631/02632/02633/02002/02003).02686.01418" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere og løse konkrete inversionsproblemer med ufuldstændige og støjfyldte data" />
+          <Txt Lang="en-GB" Txt="formulate and solve practical inverse problems with incomplete, noisy data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende robuste statistiske metoder til at udlede modeller ud fra data, håndtering af ikke-Gaussian støj" />
+          <Txt Lang="en-GB" Txt="use robust statistical methods to derive models from data, handling non-Gaussian noise" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende modelregularisering og a priori information i forbindelse med inversion" />
+          <Txt Lang="en-GB" Txt="use model regularization and a priori information during the inversion procedure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for niveau af modelregularisering" />
+          <Txt Lang="en-GB" Txt="explain how to select level of model regularization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende sparsity modelregulariseringsmetoder " />
+          <Txt Lang="en-GB" Txt="use of  sparsity regularization methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for anvendelsen af Bayesianske metoder til inversion af geofysiske og astrofysiske data" />
+          <Txt Lang="en-GB" Txt="explain the use of Bayesian methods for inversion of geophysical and astrophysical data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Markov-Chain Monte Carlo (MCMC) metoder til at finde probabilistisk løsninger til inverse problemer." />
+          <Txt Lang="en-GB" Txt="use Markov-Chain Monte Carlo (MCMC) techniques to find probabilistic solutions to inverse problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre relevans af maskinlæringsmetoder for problemer i jord- og rumfysik" />
+          <Txt Lang="en-GB" Txt="explain relevance of machine learning techniques to problems in Earth and Space physics " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende backpropagation metoder til at træne feed-forward neurale netværker til løsning af inverse problemer" />
+          <Txt Lang="en-GB" Txt="use backpropagation methods to train feed-forward neural networks for solving inverse problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Avanceret dataanalyse og applikationer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:23.377" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

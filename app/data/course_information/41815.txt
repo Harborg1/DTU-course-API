@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41815" University="dtu" LastUpdated="2026-02-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til Finite Element Analyse" />
+        <Title Lang="en-GB" Title="Introduction to Finite Element Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset kan ikke deles op i et 13 ugers kursus og et kursus i 3 ugers perioden." />
+          <Schedule_Txt Lang="en-GB" Txt="The course cannot be divided into a 13 weeks period course and a 3 weeks period course." />
+          <Schedule ScheduleKey="E1B" SortID="0" />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="65472" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Konstantinos</GivenName>
+            <FamilyName>Poulios</FamilyName>
+            <Email>kopo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="129138" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mohamad</GivenName>
+            <FamilyName>Bayat</FamilyName>
+            <Email>mbayat@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen baseres på 2 individualiserede grupperapporter (1 i efterår og 1 i januar, tremandsgrupper) og en individuel 2-timers skriftlig &quot;multiple choice&quot; eksamen i december. Karakteren baseres på en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assessment is based on 2 individualized group reports (1 in fall and 1 in January, three students per group) and an individual 2-hour written multiple choice exam in December. The final grade is based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="2 timer multiple choice i december." />
+          <Duration Lang="en-GB" Txt="2 hours multiple choice in December." />
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er baseret på teoretiske forelæsninger, computerøvelser og projektarbejde. Indledningsvist introduceres stivhedsmetoden som en praktisk tilgang til finite element metoden for simple elementer. Herefter præsenteres den generelle teori for finite element metoden som beror på koncepter som virtuelt arbejdes princip, formfunktioner og numerisk integration. Der gennemgås og testes de mest almindelige elementtyper, der findes i finite element software. Derudover forklares simple og mere avancerede randbetingelser i detalje. En række praktiske aspekter bliver omtalt, såsom import af CAD-geometrier, netgenererings teknikker, filformater og post-processering. Den grundlæggende teori bag forskellige analyseformer præsenteres også, samt de mest almindelige typer af lineære løsere, der anvendes i finite element analyser. I det første gruppeprojekt programmerer studerende en meget simpel finite element model ved hjælp af stivhedsmetoden. I løbet af de tre uger i januar udføres et større projektarbejde ved hjælp af kommerciel software.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser med brug af software og håndberegninger samt projektarbejde. Afleveringsprojekter udføres i grupper af tre studerende.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Finite Element Metoden er en af de mest udbredte numeriske metoder som tages i brug til at designe og optimere komponenter og processer i traditionel maskinindustri, produktion, udstyr for medicinske og biomekaniske anvendelser (Life-sciences), samt civile infrastrukturer. Det er et essentielt redskab med betydelige samfundsmæssige bidrag til bl.a. den grønne omstilling, sundhedssektoren og industri 4.0.
+
+Studerende på dette kursus vil opnå en grundlæggende forståelse af den teoretiske baggrund for finite element metoden og dens anvendelse på industrielle problemer. Ved hjælp af kommerciel finite element software vil de studerende kunne udføre termiske og strukturelle analyser i 2D og 3D. Gennem både teori og numeriske eksperimenter vil de studerende få et overblik over metodens styrkepunkter, men også kende dens begrænsninger. Der lægges særlig vægt på grundlæggende koncepter indenfor numerisk modellering, såsom at forstå, vurdere og kontrollere de forskellige fejlkilder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is based on theoretical lectures, computer exercises and project work. Initially, the stiffness method is introduced as a practical approach to the finite element method for simple elements. Subsequently, the general theory of finite element is presented by covering the concepts of virtual work, shape functions and numerical integration. The most common element types found in finite element software are discussed and tested. Moreover, simple and more advanced boundary conditions are explained in detail. A series of practical aspects are also covered such as import of CAD geometries, meshing techniques, file formats and post-processing. The basic theory behind different analysis types are also presented as well as the most common types of linear solvers employed in finite element analysis. In the first group project the students program a very simple finite element model using the stiffness method. During the three weeks period in January a larger project work is performed using commercial software.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises with use of software and hand calculations, project work. Hand-in projects are  performed in groups of three students.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The Finite Element Method is one of the most widely used numerical methods for designing and optimizing components and processes in traditional machine industry, production, devices for medical and biomechanical applications (Life-sciences) as well as civil infrastructure. It is an essential tool with significant societal contributions to areas such as the green transition, the healthcare sector, and Industry 4.0.
+
+Students of this course will get a fundamental understanding of the theoretical background of the finite element method and its application to industrial problems. Using commercial finite element software, students will be able to conduct thermal and structural analyses in 2D and 3D. By means of both theory and numerical experiments, the students will be able to grasp the breadth of its capabilities, but importantly also its limits. Particular emphasis is put on concepts of numerical modeling philosophy, such as understanding, evaluating and controlling the different sources of analysis errors.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Der lægges stor vægt på kendskab til generelle spændings- og tøjningstilstande (41502/41534 eller tilsvarende), kendskab til varmetransmission (41814) samt fortrolighed med programmering (02002/02003/62646 eller tilsvarende erfaring)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Comprehensive knowledge is expected within general stress and strain states (41502/41534 or similar), knowledge of heat transfer (41814), as well as good computer programming background (02002/02003/62646 or similar experience)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/02003/62646 41502/41534 41814" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre strukturel og varmeoverførselsmodellering ved hjælp af finite element software." />
+          <Txt Lang="en-GB" Txt="Perform structural and heat transfer modeling using available finite element software." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare teorien bag de oftest brugte modelleringsmuligheder der tilbydes i kommercielle finite element software." />
+          <Txt Lang="en-GB" Txt="Explain the theory behind the most common options provided in the graphical user interface of commercial finite element software." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Huske de mest relevante typer af finite element analyser og vælge den rigtige for et givet problem." />
+          <Txt Lang="en-GB" Txt="Recall the most common types of finite element analyses and choose appropriately for a given problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de forskellige netgenereringsstrategier og -teknikker og anvende dem korrekt for at skabe nøjagtige og effektive finite element modeller." />
+          <Txt Lang="en-GB" Txt="Describe the different meshing strategies and techniques, and apply them appropriately in order to create accurate and efficient finite element models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge en eller flere passende finite element typer til en specifik analyse." />
+          <Txt Lang="en-GB" Txt="Choose one or more suitable finite element types for a specific analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive input- og output-filformater, der anvendes af finite element software, og tilpasse finite element modeller ved at redigere sådanne filer." />
+          <Txt Lang="en-GB" Txt="Describe input and output file formats used by finite element software, and modify finite element models by editing of such files." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, hvordan importerede CAD-modeller hænger sammen med det genererede finite element net, identificere og rette fejl i de importerede CAD-geometrier." />
+          <Txt Lang="en-GB" Txt="Explain how imported CAD model descriptions can affect the generated finite element mesh, identify and fix issues with imported CAD geometries." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simplificeringer med hensyn til geometri, belastninger og randbetingelser i en finite element model for at opnå den nødvendige nøjagtighed samtidig med at minimere beregningstiden." />
+          <Txt Lang="en-GB" Txt="Perform system simplifications in terms of geometry, loads and boundary conditions in a finite element model to achieve the required accuracy while minimizing computation time." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Verificere en model og vurdere dens nøjagtighed baseret på enkle håndberegninger, finite element teori og netkonvergensstudier." />
+          <Txt Lang="en-GB" Txt="Verify a model and evaluate its accuracy, based on simple hand calculations, finite element theory, and mesh convergence studies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare logistikken bag implementeringen af finite element metoden med hensyn til nummerering af frihedsgrader og forbindelse af elementer." />
+          <Txt Lang="en-GB" Txt="Explain the logistics behind the implementation of the finite element method for numbering of degrees of freedom and connection of elements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre post-processering og rapportere resultaterne af finite element analyser på en struktureret, klar, præcis og informativ måde." />
+          <Txt Lang="en-GB" Txt="Post-process and report finite element analysis results in a structured, clear, concise and informative manner." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Anvendt finite element modellering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41545/11305/41958/41819/41809/41812" />
+        <PreviousCourse CourseCode="41812" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="8" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="65" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="35" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:03.23" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

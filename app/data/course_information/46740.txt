@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46740" University="dtu" LastUpdated="2026-03-04+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Distribuerede energiteknologier, modellering og kontrol" />
+        <Title Lang="en-GB" Title="Distributed energy technologies, modelling and control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="Et undervisnings-modul gennemføres på Risø Campus" />
+          <LocationTxt Lang="en-GB" Txt="One lecture will be at Risø Campus" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="76711" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mattia</GivenName>
+            <FamilyName>Marinelli</FamilyName>
+            <Email>matm@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="191930" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mattia</GivenName>
+            <FamilyName>Secchi</FamilyName>
+            <Email>matsec@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Gruppeopgaver og skriftlig eksamen. &#xD;&#xA;Karakter gives på grundlag af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Group assignments and written examination. &#xD;&#xA;Grades will be given based on an overall evaluation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Fysisk modellering af distribuerede energiressourcer på tværs af forskellige energiforsyning. Elektrisk biler, lagringer, solceller systemer, og virtuelle kraftværk
+Spændingskontrol og overholdelse netkrav i distributionsnet. 
+Statiske og dynamiske simuleringstudier med Matlab-Simulink-Simscape Electrical</Contents>
+          <Teaching_And_Learning_Methods>a) Forelæsninger og problemløsning
+b) Fysisk modellering af distribueret energiresurser (bl.a. elektrisk biler, lagring og produktion fra solceller) og interaktion med elektriske distributionsnet samt andre energikilder domæner</Teaching_And_Learning_Methods>
+          <Course_Literature>G. M. Masters, Kevin F. Hsu, Renewable and efficient electric power systems, 3rd edition, 2023
+og supplerende materiale</Course_Literature>
+          <Course_Objectives>Kurset fokuserer på et udvalg af distribuerede energiteknologier og vurderer deres indflydelse på tværs af forskellige energiområder.
+Elbiler, lagringer, solcelleanlæg modelleres fra både et komponent- og et netperspektiv for at vurdere deres rolle i aktive distributionsnet.
+Vedvarende energi-fællesskaber og virtuelle kraftværker undersøges som en metode til at integrere disse teknologier i elsystemet.
+Load flow i radiale distributionsnet og dynamiske simuleringer i Matlab-Simulink-Simscape Electrical anvendes til at vurdere udvalgte kontrolstrategier for at udnytte ressourcernes potentiale.</Course_Objectives>
+          <Remark>E-learning anvendes i form af on-line quiz (home assignments), interactive quiz og electronic correction system.
+YouTube-videoer på Mattias kanal understøtter læringsprocessen.
+Grundlæggende kendskab til Matlab-Simulink er stærkt anbefales - studerende med ingen kendskab til softwaren rådes kraftigt til at tage tutorial før kursusstart.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Physical modelling of distributed energy resources across different energy domains.
+Electric vehicles, storages, photovoltaic systems, virtual power plants. 
+Voltage control and compliance with grid codes in distribution grids.  
+Static and dynamic simulation studies with Matlab-Simulink-Simscape Electrical</Contents>
+          <Teaching_And_Learning_Methods>a) Lectures and problem solving
+b) Physical modeling of distributed resources (such as electric vehicles, storage and photovoltaic systems) and interaction within the electrical distribution grid as well as other energy domains</Teaching_And_Learning_Methods>
+          <Course_Literature>G. M. Masters, Kevin F. Hsu, Renewable and efficient electric power systems, 3rd edition, 2023
+and supplementary material</Course_Literature>
+          <Course_Objectives>The course focuses on a selection of distributed energy technologies and assesses their influence across different energy domains.
+Electric vehicles, storage systems, photovoltaic systems are modelled from a component and grid perspective in order to assess their role in active distribution networks.
+Renewable energy communities and virtual power plants are explored as a way to integrate those technologies into the power system.
+Load flows in radial distribution grids and dynamic simulations in Matlab-Simulink-Simscape Electrical are used to assess selected control strategies for exploiting the potential of the resources.</Course_Objectives>
+          <Remark>E-learning is used in the form of on-line quiz (home assignments), interactive quiz and electronic correction system.
+YouTube videos on Mattia's channel support the learning process.
+Basic knowledge of Matlab-Simulink is highly recommended - students with no knowledge of the software are strongly advised to take online tutorials before the course begins.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til elektroteknik og termodynamik.&#xD;&#xA;Grundlæggende kendskab til Matlab-Simulink.&#xD;&#xA;Studerende, der tager både kursus 46745 og 46740, anbefales at tage 46740 før 46745." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of electrotechnics and thermodynamics.&#xD;&#xA;Basic knowledge of Matlab-Simulink.&#xD;&#xA;Students taking both course 46745 og 46740, are advised to take 46740 before 46745." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og beherske grundlæggende energiterminologi" />
+          <Txt Lang="en-GB" Txt="Understand and command basic energy terminology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlæggende forhold i det nuværende og fremtidige energisystem" />
+          <Txt Lang="en-GB" Txt="Explain fundamentals of the present and future energy system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forholde sig til energiproblemstillinger ud fra fysikkens love" />
+          <Txt Lang="en-GB" Txt="Relate to energy aspects from the point of view of the laws of physics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge forskellige energiteknologier bl.a. elektrisk biler, lagring og produktion fra solceller" />
+          <Txt Lang="en-GB" Txt="Investigate different energy technologies including electric vehicles, storage and photovoltaic systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre fysisk modellering af forskellige energiteknologier" />
+          <Txt Lang="en-GB" Txt="Perform physical modelling of energy technologies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe model af distributionsnet og udføre load flow beregninger i Simulink-Simscape" />
+          <Txt Lang="en-GB" Txt="Design distribution grid models and perform load flow analysis in Simulink-Simscape" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opret dynamiske modeller til vurdering rollen af distribuerede ressourcer i elnettet" />
+          <Txt Lang="en-GB" Txt="Create dynamic models for assessing the role of distributed resources in the electrical grid" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare udfordringer og løsninger med hensyn til integration af distribueret energiresurser" />
+          <Txt Lang="en-GB" Txt="Explain challenges and solutions for distributed energy resources integration" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og anvende PI - proportional integrerede controllere" />
+          <Txt Lang="en-GB" Txt="Design and apply PI - proportional integral controllers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere samspillet mellem komponenter i virtuelle kraftværker" />
+          <Txt Lang="en-GB" Txt="Analyze the interaction of components in virtual power plants" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bekræftelse af overholdelse af teknisk forskrift " />
+          <Txt Lang="en-GB" Txt="Verify grid code compliance" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31778" />
+        <PreviousCourse CourseCode="31778" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="20" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="32" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:50.2" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

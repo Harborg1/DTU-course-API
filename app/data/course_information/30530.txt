@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30530" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til GIS" />
+        <Title Lang="en-GB" Title="Introduction to GIS" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="53767" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mai</GivenName>
+            <FamilyName>Winstrup</FamilyName>
+            <Email>maiwin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En helhedsvurdering baseret på et gruppeprojekt, små individuelle øvelsesrapporter og multiple-choice tests. Både den individuelle del og egen indsats i gruppeprojektet skal bestås. Gruppeprojekter vil blive præsenteret som posters i en poster-session i den sidste undervisningstime, og resultaterne afleveres efterfølgende som en kort videnskabelig rapport." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="An overall assessment based on a group project, small individual lab reports and multiple-choice tests. Both the individual component and the contribution to the group project must be passed. Group projects will be presented as posters in a poster session during the last class, and a scientific paper style report with the results will subsequently be handed in." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Introduktion til GIS og rumlig analyse. 
+- Koordinatsystemer, kortprojektioner og datums. 
+- Kartografi og geovisualisering. 
+- GIS datastrukturer og modeller. 
+- Rumlig analyse i vektor- og rasterdatamodeller. 
+- Digitale højdemodeller og terrænanalyse. 
+- Python programmering inden for GIS. 
+- Datainput i GIS og kilder til geodata. 
+- Relationelle og rumlige databaser, databasedesign og forespørgsler med SQL. 
+- Anvendelser af GIS.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Noter.</Course_Literature>
+          <Course_Objectives>At opnå en solid forståelse af de grundlæggende begreber, teknikker og værktøjer indenfor geografiske informationssystemer (GIS), samt at anvende disse effektivt til analyse af rumlige data og til at skabe visuelt informative kort.</Course_Objectives>
+          <Remark>Dette kursus giver de studerende mulighed for at udvikle kompetencer med relevans for FN's Bæredygtige Udviklingsmål (SDG'er). De(t) specifikke FN-mål afhænger af det valgte GIS-projekt, der udføres som del af kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Introduction to GIS and spatial analysis. 
+- Coordinate systems, map projections, and datums. 
+- Cartography and geovisualization. 
+- GIS data structures and models. 
+- Spatial analysis in vector and raster models. 
+- Digital elevation models and terrain analysis. 
+- Python programming within GIS. 
+- Data input in GIS and sources of spatial data. 
+- Relational and spatial databases, database design and queries with SQL. 
+- Applications of GIS.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Handouts.</Course_Literature>
+          <Course_Objectives>To achieve a solid understanding of the fundamental concepts, techniques, and tools within Geographic Information Systems (GIS), and to apply these effectively to analyze spatial data and create visually informative maps.</Course_Objectives>
+          <Remark>This course offers students the opportunity to develop competencies aligned with various UN Sustainable Development Goals (SDGs). The specific UN goal(s) addressed depend on the student-selected GIS project undertaken as part of the course.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive grundlæggende begreber og principper indenfor geografiske informationssystemer (GIS)" />
+          <Txt Lang="en-GB" Txt="Describe fundamental concepts and principles of Geographic Information Systems (GIS)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere viden og forståelse af koordinatsystemer og projektioner, og anvende denne viden til at sikre nøjagtig rumlig analyse og kortlægning" />
+          <Txt Lang="en-GB" Txt="Demonstrate knowledge and understanding of coordinate systems and projections, and apply this knowledge to ensure accurate spatial analysis and mapping" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tolke og analysere et kort med dets forskellige kortelementer" />
+          <Txt Lang="en-GB" Txt="Interpret and analyze a map with its various map elements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige typer af rumlige datastrukturer (vektor, raster) og deres karakteristika" />
+          <Txt Lang="en-GB" Txt="Explain the different types of spatial data structures (vector, raster) and their characteristics " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige teknikker til indsamling af geodata med hensyn til deres grundlæggende principper, anvendelsesområder, krævet indsats og begrænsninger" />
+          <Txt Lang="en-GB" Txt="Describe different techniques for the acquisition of geodata with respect to their fundamental principles, their field of application, the required effort and their limitations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge og anvende passende rumlige analysemetoder til at løse virkelighedsnære problemer ved hjælp af GIS-software" />
+          <Txt Lang="en-GB" Txt="Select and apply appropriate spatial analysis techniques to solve real-world problems using GIS software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende GIS software-værktøjer til at analyse rumlige mønstre og relationer mellem datasæt" />
+          <Txt Lang="en-GB" Txt="Utilize GIS software tools to analyze spatial patterns and relationships within datasets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende programmeringssprog, såsom Python, til automatisering og tilpasning af GIS-workflows" />
+          <Txt Lang="en-GB" Txt="Apply programming languages, such as Python, for automation and customization of GIS workflows." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge en simpel database til undersøgelse af et givet rumligt problem i overensstemmelse med en passende rumlig datamodel, og formulere enkle forespørgsler på denne" />
+          <Txt Lang="en-GB" Txt="Develop a simple database for the investigation of a given spatial problem in alignment with a suitable spatial data model and formulate simple queries on it" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og skabe visuelt tiltalende og informative kort ved hjælp af GIS-software" />
+          <Txt Lang="en-GB" Txt="Design and create visually appealing and informative maps using GIS software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Generere meningsfyldte indsigter baseret på GIS-analyse og fortolkning" />
+          <Txt Lang="en-GB" Txt="Generate meaningful insights based on GIS analysis and interpretation " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere nøjagtighed og pålidelighed af resultaterne af en GIS-analyse." />
+          <Txt Lang="en-GB" Txt="Assess the accuracy and reliability of GIS analysis results." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Teoretisk og praktisk viden om Geografiske Informations Systemer (GIS)</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="4" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="30532.30535.30531" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:11.807" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="01227" University="dtu" LastUpdated="2023-04-18+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Grafteori" />
+        <Title Lang="en-GB" Title="Graph Theory" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="126613" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>David Earl</GivenName>
+            <FamilyName>Roberson</FamilyName>
+            <Email>dero@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2460" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Thomassen</FamilyName>
+            <Email>ctho@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Grundlæggende grafteori, herunder Euler grafer, Menger's sætning om grafsammenhæng, planaritet, parringsteori med anvendelse til strukturrang, skemalægning. Netværksstrømninger, som udgør grundlaget for kombinatorisk optimering med anvendelse i f.eks. operationsanalyse. Beskrivelse og kompleksitet af algoritmer (korteste veje, mindste udspændende træer, det kinesiske postbuds problem, største parringer, jobtildelingsproblemet) af interesse i datalogi. Det matematiske grundlag for elektriske netværk, herunder effektive modstande udtrykt ved hjælp af udspændende træer og determinanter. Tilfældige vandringer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, fælles opgavegennemgang, afleveringsopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Hovedformålet er at præsentere grundlæggende resultater og metoder i grafteori, specielt med henblik på netværksalgoritmer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Basic graph theory, including Euler graphs, Menger's theorem on connectivity, planarity, matchings with applications to structure rank, scheduling problems. Network flows which constitute the foundation of combinatorial optimization with applications in e.g. operations research. Description and complexity of algorithms (shortest paths, spanning trees of minimal weight, the Chinese Postman's problem, maximum matchings, job assignment) of interest in computer science. The mathematical foundation of electrical networks, including effective resistances expressed by spanning trees and determinants. Random walks.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises in groups, discussion of exercises in lecture room, home work exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The main aim of this course is to present to the students some basic results and proof techniques in graph theory, in particular in connection with networks algorithms.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Matematisk modenhed." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Mathematical maturity." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01001/01003/01005).(01017/01019)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kombinere grundlæggende grafteoretiske begreber og resultater til besvarelse af strukturspørgsmål vedrørende grafer" />
+          <Txt Lang="en-GB" Txt="combine fundamental graph theoretic concepts and results to answer questions concerning the structure of graphs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere simple beviser for grafteoretiske udsagn" />
+          <Txt Lang="en-GB" Txt="construct simple proofs of graph theoretic statements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="genkende forskellige grafklasser, så som træer, todelte grafer, komplette grafer og plane grafer." />
+          <Txt Lang="en-GB" Txt="recognize different graph classes, such as, trees, bipartite graphs, complete graphs, and planar graphs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="modellere et givet problem som et grafproblem" />
+          <Txt Lang="en-GB" Txt="model a given problem as a graph problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende grafalgoritmer til at løse et givet problem, feks. korteste veje, maksimum flow, maksimale parringer, minimale dækninger, antal af udspændende træer, effektiv modstand, mm.  " />
+          <Txt Lang="en-GB" Txt="apply graph algorithms to solve a given problem, e.g. shortest paths, maximum flow, maximal matching, minimum coverings, numbers of spanning trees, effective resistance, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="modificere kendte grafalgoritmer til at løse et givet problem." />
+          <Txt Lang="en-GB" Txt="modify known graph algorithms to solve a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="argumentere for korrekthed af grafalgoritmer" />
+          <Txt Lang="en-GB" Txt="argue for correctness of a graph algorithm" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere kompleksiteten af grafalgoritmer" />
+          <Txt Lang="en-GB" Txt="analyze the complexity of graph algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grafteori og anvendelser</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="6" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="77" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="23" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:16.993" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

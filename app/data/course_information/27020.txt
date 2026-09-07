@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="27020" Volume="2026/2027" University="dtu" LastUpdated="2026-08-06+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Bioengineering (Polyteknisk grundlag)" />
+        <Title Lang="en-GB" Title="Bioengineering (Polytechnical Foundation)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset udbydes to gange årligt" />
+          <Schedule_Txt Lang="en-GB" Txt="Course is offered twice yearly" />
+          <Schedule ScheduleKey="E2A" SortID="0" />
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="27" University="DTU" Resources="40" KVL_Resources="100" />
+          <Ass_Dep UID="28" Resources="18" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="34" Resources="18" University="DTU" SortID="1" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="41" Resources="14" University="DTU" SortID="2" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="47" Resources="5" University="DTU" SortID="3" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="59" Resources="5" University="DTU" SortID="4" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="27" />
+        <Course_Responsible PersonKey="142337" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alexander Kai</GivenName>
+            <FamilyName>Büll</FamilyName>
+            <Email>alebu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_And_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der afholdes en skriftlig eksamen (multiple choice på egen computer, 2 timer), der dækker indholdet af de første 6 uger (Blok I), som tæller 60% af den endelige karakter. &#xD;&#xA;I løbet af Blok I og II (uger 1-10) vil der være obligatoriske opgaver, som ikke er bedømt, men som skal gennemføres for at kunne gå til eksamen. &#xD;&#xA;Det afsluttende projekt vil være gruppearbejde og evalueret i en posterpræsentation og tæller 40% af den endelige karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="There will be a written exam (multiple choice on own computer, 2 hours) covering the content of the first 6 weeks (Block I) of the course, which will count for 60% of the final grade. &#xD;&#xA;During Blocks I and II (weeks 1-10) there will be mandatory assignments that are not graded, but that MUST be completed in order to be able to attend the exam. &#xD;&#xA;The final project will be group work and evaluated in a poster presentation and counts 40% of the final grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="At the oral exam, no aids are allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Ved den mundtlige eksamen er ingen hjælpemidler tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus introducerer grundlæggende principper inden for biologi og bioteknologi, der relaterer sig til en bred vifte af discipliner. Kurset introducerer det kemiske grundlag for liv og dets relation til biokemi og enzymer. DNA introduceres som livets universelle informationsbærende molekyle, og de studerende introduceres til, hvordan biologi omdanner sekvensinformation gennem processerne replikation, transkription og translation til kemisk funktionalitet.
+
+Kursusindholdet vil bestå af forelæsninger, diskussioner, øvelser og gruppearbejde. Indholdet vil være struktureret i tre blokke:
+- Blok I introducerer de grundlæggende principper og anvendelser inden for molekylærbiologi, evolutionsfænomenet, nogle grundlæggende begreber om økologi og den vigtige rolle, som store datasæt spiller i moderne biologi (uge 1-6).
+- I blok II (uge 7-10) vil deltagerne kunne vælge mellem fire spor, der har forskelligt fokus og er organiseret af forskellige afdelinger. De brede fokusområder for de fire spor er biosensing (spor BED), biomimetik og biomaterialer (spor MIM), miljømæssig bioengineering (spor ENV) og simuleringer og kontrol af biologiske systemer (spor SIM).
+
+- Blok III vil bestå af et gruppeprojekt, der inkorporerer temaer fra Blok 1 og 2. Projektet vil blive udført i tværfaglige grupper på 6 studerende og evalueret ved en posterpræsentation på kursets to afsluttende moduler (kl. 12-18).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, gruppearbejde og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Kursuskompendium og anden relevant litteratur (f.eks. forskningsartikler) vil blive gjort tilgængelig.</Course_Literature>
+          <Course_Objectives>De senere års teknologiske gennembrud har lagt fundamentet for en æra, hvor biologiske systemer kan anvendes til at løse en lang række samfundsrelaterede udfordringer, og bidrage til bæredygtige løsninger inden for sundhed-, fødevare-, miljø- og energisektorerne. Dette kursus har til formål at give alle bachelorstuderende en introduktion til de biologiske principper og de vigtigste grundlæggende teknologier, som skaber grundlaget for tværgående, biologiske applikationer indenfor de ingeniørvidenskabelige områder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course will introduce fundamental principles of biology and biotechnology that relate to a wide variety of disciplines. The course will introduce the chemical basis for life and its relation to biochemistry and enzymes. DNA is introduced as the universal information-carrying molecule of life, and the students' are introduced to how biology converts sequence information through the processes of replication, transcription and translation into chemical functionality. 
+Course content will consist of lectures, discussions, exercises and group work. Content will be structured in three blocks: 
+- Block I will introduce the fundamental principles and applications of molecular biology, the phenomenon of evolution, some basic notions of ecology and the important role that large data sets play in modern biology (weeks 1-6). 
+- In block II (weeks 7-10), participants will be able to choose between four tracks, that have different focus and that are organised by different departments. The broad focus areas of the four tracks are biosensing (track BED), biomimetics and biomaterials (track MIM), environmental bioengineering (track ENV), and simulations and control of biological systems (track SIM).
+- Block III will consist of a group project incorporating themes from Blocks 1 and 2. The project will be carried out in interdisciplinary groups of 6 students and evaluated at a poster presentation session on the two final modules of the course (12-18h).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, group work, and project work</Teaching_And_Learning_Methods>
+          <Course_Literature>Course compendium and other relevant literature (e.g. research articles) will be made accessible.</Course_Literature>
+          <Course_Objectives>The recent technological advances have created the foundation for engineering biological systems in order to address a wide variety of societal challenges and provide sustainable solutions for the health, food, environment and energy sectors. This course is intended to provide all BSc students with an introduction to biological principles and an understanding of the key fundamental technologies underlying cross-disciplinary applications of biology across engineering areas.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller lignende kemikurser.&#xD;&#xA;Kurset bør tidligst tages på 3. semester." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or similar chemistry courses.&#xD;&#xA;Course should be taken in 3rd semester at the earliest." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="26000/26026/26027/26030/26050/26171" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare betingelserne for og grundlæggende fysiske egenskaber af liv" />
+          <Txt Lang="en-GB" Txt="Explain the requirements and fundamental physical properties of life" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare proteiners funktioner og roller, og hvordan de kan konstrueres og forbedres. " />
+          <Txt Lang="en-GB" Txt="Explain the functions and roles of proteins and how they can be engineered and improved." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan 'det centrale dogme' beskriver omdannelsen af digital information til analoge biomolekylære funktioner" />
+          <Txt Lang="en-GB" Txt="Explain the central dogma of molecular biology and the conversion of digital information into analog biomolecular functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive evolution på bagrund af 'det centrale dogme' og viden om cellulær reproduktion" />
+          <Txt Lang="en-GB" Txt="Describe evolution on the basis of the central dogma and knowledge on cellular reproduction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hovedprincipperne for økologi og biologiske samfund med særlig vægt på bakteriesamfund. " />
+          <Txt Lang="en-GB" Txt="Explain the main principles of ecology and biological communities with specific emphasis on bacterial communities." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den specifikke rolle for data og datavidenskab inden for biologi og bioteknologi. " />
+          <Txt Lang="en-GB" Txt="Describe the specific role of data, and data science in biology and bioengineering. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige eksempler på, hvordan biologi inspirerer ingeniørkunst. " />
+          <Txt Lang="en-GB" Txt="Describe different examples of how biology inspires engineering." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige eksempler på, hvordan biologiske systemer kan sammensættes." />
+          <Txt Lang="en-GB" Txt="Describe different examples of how biological systems can be engineered." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og kvantificere en bioteknologisk løsning på en global udfordring." />
+          <Txt Lang="en-GB" Txt="Design and quantify a bioengineering solution to a real world problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Bioteknologi</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="27002.27021" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-08-06" Time="09:10:52.343" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

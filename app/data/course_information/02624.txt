@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02624" University="dtu" LastUpdated="2025-03-27+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Inverse Problemer og Billeddannelse" />
+        <Title Lang="en-GB" Title="Inverse problems and Imaging" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="50476" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kim</GivenName>
+            <FamilyName>Knudsen</FamilyName>
+            <Email>kiknu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="81852" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Yiqiu</GivenName>
+            <FamilyName>Dong</FamilyName>
+            <Email>yido@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Rapporter i løbet af kurset skal godkendes som en forudsætning for deltagelse i mundtlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Reports during the course must be approve to qualify for the oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Integralligninger af første art.  Singular værdi udvikling af kompakte afbildninger i Hilbertrum og Picard-betingelsen.  Diskretiserings-metoder.  Regulariseringsmetoder (TSVD og Tikhonov).  Metoder til valg af regulariseringsparameter.  Iterative regulariserings-metoder.  
+Inverse problemer for partielle differentialligninger. Det inverse varmeledningsproblem. Medicinsk billeddannelse herunder Computerized Tomography og Electrical Impedance Tomography.  Ikke-lineære inverse problemer og linearisering. Bayes' tilgang til inverse problemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser med teori og beregninger.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet med kurset er at give en systematisk, matematisk introduktion til inverse problemer i forskellige former. Sådanne problemer optræder fx ved billeddannelse i medicinsk tomografi, seismiske undersøgelser, og rekonstruktion fra slørede billeder. I kurset diskuteres den matematiske baggrund for inverse problemer og deres løsning. Teorien belyses med computerstøttede beregninger, som der giver konkreterfaring med nogle teknikker og paradigmer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Integral equations of the first kind.  The singular value expansion for compact operators in Hilbert spaces and the Picard condition.  Discretization methods. Regularization methods (TSVD and Tikhonov). Parameter-choice methods.  Iterative regularization methods.  Tomographic reconstruction methods.
+Inverse problems for partial differential equations. The inverse heat conduction problem. Medical imaging, including Computed Tomography and Electrical Impedance tomogprahy. Nonlinear inverse problems and linearization. Bayesian inverse problems.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises with theory and computations.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to give a systematic, mathematical introduction to inverse problems in science and engineering. Such problems arise, e.g., in connection with medical imaging, tomography, seismic exploration, and deblurring og images.  The course gives the mathematical background for inverse problems and their  solution. The theory is illustrated by computational exercises that gives hands-on experience with some common techniques and paradigms.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med avanceret matematik (fx via 01035) og numeriske beregninger (fx 02601)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience with advanced engineering mathematics (e.g. 01035) and numerical computations (e.g., 02601)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01035.02601" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og identificere simple modeller indenfor de tekniske videnskaber, i form af inverse problemer" />
+          <Txt Lang="en-GB" Txt="Formulate and identify simple models in the technical sciences, in the form of inverse problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de fundamentale vanskeligheder ved inverse problemer" />
+          <Txt Lang="en-GB" Txt="Understand the inherent difficulties of inverse problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskretisere og løse Fredholm integralligninger af første art" />
+          <Txt Lang="en-GB" Txt="Discretize and solve first-kind Fredholm integral equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå mekanismerne ved regularisering i forbindelse med løsning af et inverst problem" />
+          <Txt Lang="en-GB" Txt="Understand the mechanisms of regularization for the solution to an inverse problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og bruge numeriske værktøjer til analyse og løsning af inverse problemer vha. regularisering" />
+          <Txt Lang="en-GB" Txt="Implement and use computational  tools for the analysis and solution of inverse problems by means of regularization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge forskellige metoder til valg af regulariseringsparameteren" />
+          <Txt Lang="en-GB" Txt="Use different methods for choosing the regularization parameter" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og bruge iterative metoder til storskala-problemer" />
+          <Txt Lang="en-GB" Txt="Implement and use iterative methods for large-scale problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå, analysere og løse udvalgte inverse problemer indenfor partielle differentialligninger" />
+          <Txt Lang="en-GB" Txt="Understand, analyze and solve selected inverse problems in differential euqations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere inverse problemer i billedrekonstruktion, røngten-tomografi og elektrisk impedanstomografi " />
+          <Txt Lang="en-GB" Txt="Formulate inverse problems in imaging, computerized tomography and electrical impedance tomography" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere ikke-lineære inverse problemer og løse dem" />
+          <Txt Lang="en-GB" Txt="Identify nonlinear inverse problems and solve them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for og anvende den Bayesianske tilgang til inverse problemer" />
+          <Txt Lang="en-GB" Txt="Explain and utilize the Bayesian approach to inverse problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduction to Inverse Problems</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="15" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:28.55" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

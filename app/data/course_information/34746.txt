@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34746" University="dtu" LastUpdated="2026-04-09+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Robust og fejltolerant regulering" />
+        <Title Lang="en-GB" Title="Robust and fault-tolerant control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="1842" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Hans Henrik</GivenName>
+            <FamilyName>Niemann</FamilyName>
+            <Email>hahe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="74723" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Dimitrios</GivenName>
+            <FamilyName>Papageorgiou</FamilyName>
+            <Email>dimpa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen og rapporter bedømmes samlet.&#xD;&#xA;Mundtlig reeksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam and the reports are evaluated together.&#xD;&#xA;The re-exam is an oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omhandler nye reguleringsmetoder og koncepter indenfor robust og optimal regulering, fejldiagnose samt fejltolerant regulering. 
+
+Robust og optimal regulering anvendes hvor man ønsker at anvende regulatorer som er ufølsom overfor variationer i reguleringsobjekterne, d.v.s. at variationerne vil påvirke systemets ydeevne i mindre grad. Fejldiagnose anvendes til at detektere og e.v.t. også at identificere fejl i dynamisk system. Dette kan være fejl som f.eks. et sensorudfald, en ventil ikke opføre sig optimalt etc. Fejldiagnose bruges bl.a. til overvågning af dynamiske systemer samt i forbindelse med fejltolerant regulering. Når der sker store ændringer evt. p.g.a. fejl i  reguleringsobjektet kan det være nødvendig af foretage større ændringer i reguleringen af objektet for at undgå nedbrud af systemet. Dette gøres systematisk ved at anvende fejltolerant regulering, hvor reguleringssystemet omkonfigureres eller reguleringsobjektet nedlukkes på en forsvarlig måde.
+
+Første del af kurset vil indeholde en introduktion til de øvrige hovedområder som kurset dækker.
+
+I kurset gennemgås fejldiagnose, fejltolerant og robust regulering og der lægges vægt på at deltagerne får erfaring med selv at analysere og dimensionere med anvendelse af disse metoder. Deltagerne får lejlighed til at arbejde med dedikerede programmer til analyse, design og simulering af robuste og fejltolerante systemer.
+
+I kurset vil der foruden nogle mindre opgaver og eksempler blive giver to større opgaver med tilknyttet testopstilling, som vil dække kursets emner.</Contents>
+          <Teaching_And_Learning_Methods>Oversigtsforelæsninger, gruppearbejde, øvelser med simulering og programmering.</Teaching_And_Learning_Methods>
+          <Course_Literature>M. Blanke, M. Kinnaert, J. Lunze and M. Staroswiecki: Diagnosis and fault-tolerant control, 3nd ed., Springer 2015.
+samt
+S. Skogestad og I. Postlethwaite, Multivariable feedback control - analysis and design, Wiley, 2nd ed.</Course_Literature>
+          <Course_Objectives>Generelle mål:
+- at lære grundbegreber indenfor robust regulering, fejl diagnose og fejl tolerant regulering
+- at vise anvendelser
+- at lære at anvende robust og fejl tolerant regulering
+- at kunne vurdere fordele of ulemper ved anvendelse af robust regulering og fejl tolerant regulering</Course_Objectives>
+          <Remark>E-learning anvendes i form af discussion board eller blog.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course deals with novel control methods and concepts in the area of robust and optimal control, fault diagnosis and fault-tolerant control.
+
+Robust and optimal control are applied where the controller needs to be independent of variations in the control object, i.e. the effect from the variations on the performance is minimal. Fault diagnosis is applied for detection and/or isolating faults in dynamical systems. Faults can e.g. be a sensor break down, a valve is not working optimal, etc. Fault diagnosis is applied for supervision of dynamical systems in connection with fault-tolerant control. When major changes happen in the control object or in the controller due to e.g. faults in the system, it can be necessary to make changes in the controller/control architecture to avoid undesired stop of production, break down or safety hazards. This can be done in a systematic way by using fault-tolerant control, where the control system is reconfigured or the control object is closed down in a safe way.
+
+The first part of the course includes an introduction to the other parts of the course.
+
+Both analysis and design methods will be presented, the participants will work actively with analysis and design and real application cases are used to illustrate the concepts. Participants will work with the latest generation of dedicated software for the analysis and design of fault-tolerant and robust control systems.
+
+A number of small exercises/examples will be applied together with two larger assignments with associated test setup in the laboratory.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group-work, simulation and programming exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>M. Blanke, M. Kinnaert, J. Lunze and M. Staroswiecki: Diagnosis and fault-tolerant control, 3nd ed., Springer 2015.
+and
+S. Skogestad and I. Postlethwaite, Multivariable feedback control - analysis and design, 2nd ed. Wiley.</Course_Literature>
+          <Course_Objectives>General objectives:
+- to teach the basic in robust control, fault diagnosis and fault tolerant control
+- to show applications
+- show how to use robust cantrol and fault tolerant control
+- to be able to evaluate advantages and disadvantages in connection with application of robust control and fault tolerant control.</Course_Objectives>
+          <Remark>E-learning is used in the form of discussion board or blog.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til state-space beskrivelser af dynamiske systemer. Kendskab til observer-baseret feedback regulering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of state-space description of dynamical systems. Knowledge of observer based feedback control." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="31310/34745" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille en strukturel og analytisk model for et dynamisk system" />
+          <Txt Lang="en-GB" Txt="Formulate a structural model of a dymical system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede residualgeneratorer udfra strukturelle og analytiske modeller " />
+          <Txt Lang="en-GB" Txt="Design a residual generator from structural and analytical results " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere detekterbarhed, isolerbarhed og estimerbarhed for fejl i det dynamiske system" />
+          <Txt Lang="en-GB" Txt="Analyze detectability and isolability of faults and assess the fault by estimation " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere de dynamiske egenskaber for en residualgenerator således at  man opnår ønskede egenskaber" />
+          <Txt Lang="en-GB" Txt="Master dynamical design of residual generators to achieve desired properties " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere og implementere algoritmer til hypotesetests, der afgør om der er fejl i det observerede system" />
+          <Txt Lang="en-GB" Txt="Design and implement algorithms for change detection and hypothesis testing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille modeller for usikkerhed i et dynamisk system" />
+          <Txt Lang="en-GB" Txt="Formulate models with uncertainty for a dynamical system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille performance specifikationer for et reguleret system" />
+          <Txt Lang="en-GB" Txt="Formulate performance specifications for a feedback system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere egenskaber som sensitivitet og performance" />
+          <Txt Lang="en-GB" Txt="Master analysis of sensitivity and performance for a feedback system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille reguleringsproblemer som et standardproblem" />
+          <Txt Lang="en-GB" Txt="Formulate different control requirements as a standard control problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere regulatorer under hensyntagen til modelusikkerhed" />
+          <Txt Lang="en-GB" Txt="Master design of feedback control with specified regions of uncertainty for the control object " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre redesign af en regulator for et fejlbehæftet system" />
+          <Txt Lang="en-GB" Txt="Redesign a control system for a faulty control object" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Regulering af dynamiske systemer under hensyn til fejl og usikkerhed </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31320" />
+        <PreviousCourse CourseCode="31320" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:51.86" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

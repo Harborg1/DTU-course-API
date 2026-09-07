@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30531" University="dtu" LastUpdated="2026-05-01+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="GIS for diplomingeniører" />
+        <Title Lang="en-GB" Title="GIS for Bachelor's of Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="38310" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Per</GivenName>
+            <FamilyName>Knudsen</FamilyName>
+            <Email>pknud@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="229953" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lene</GivenName>
+            <FamilyName>Fischer</FamilyName>
+            <Email>lfi@ign.ku.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueringen er baseret på en afsluttende individuel opgave. I løbet af semesteret arbejdes der med en række delopgaver, som relaterer sig til den afsluttende opgave. Alle delopgaver skal være afleveret og godkendt, før der kan gives en endelig karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based on a final individual assignment. Throughout the semester, a series of partial assignments related to the final assignment are completed. All partial assignments must be submitted and approved before a final grade can be awarded." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til GIS
+Datatyper og datastrukturer
+Geodata – Kilder, formater og kvalitetssikring af geospatiale data.
+
+Dataindsamling
+•	Digitalisering – grundlæggende metoder til digitalisering
+•	Oprettelse af datalag til vektordata med attributtabel
+•	Oprettelse af projekt med formularer til dataindsamling
+•	Indsamling /redigering af data med gps på mobiltelefon
+•	Bearbejdelse af dronedata til orthofoto, overflademodel og punktsky
+•	Georeferering
+
+Visualisering af geodata
+•	Farvelægning af vektor-, raster og punktsky data
+•	Opsætning af layout til bilag og poster
+
+Geoprocessering og Expressions
+•	Anvendelse geoprocesværktøjer som: Buffer, Clip, Difference, Intersection mv.
+•	Anvendelse af expression i : Udvælgelse, labels, symbologi, felt- og rasterberegner
+
+Model designer
+
+
+Rasterdata
+•	Simple beregninger af indeks med sattellitdata
+•	Export af rasterdata
+•	Klip rasterdata med vektordata
+•	Udarbejdelse af slope og aspect på terrændata
+•	Rasterberegning til bestemmelse af volumen
+•	Farvelægning af rasterdata
+•	Omdan raster til vektordata
+
+Ruteberegning
+•	Simpel ruteberegning med ORS
+•	Simpel beregning af isokroner
+
+Introduktion til punktskydata (point cloud)
+•	Indlæs point cloud
+•	Farvelæg point cloud ud fra forskellige værdier
+•	Vis i 3D
+
+
+Der anvendes Open Source programmer QGIS og WebODM</Contents>
+          <Teaching_And_Learning_Methods>Forberedelse med videoer og øvelser.
+Forelæsninger og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere grundlæggende begreber i Geografiske Informationssystemer (GIS). Gennem øvelser og forelæsninger at give en indsigt i stedbestemt information og geodata.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to GIS
+Data types and data structures
+Geodata – Sources, formats and quality assurance of geospatial data.
+
+Data collection
+• Digitization – basic methods for digitization
+• Creation of data layers for vector data with attribute tables
+• Creation of projects with forms for data collection
+• Collection / editing of data with GPS on mobile phone
+• Processing drone data for orthophoto, surface model and point cloud
+• Georeferencing
+
+Visualization of geodata
+• Symbolizing vector, raster and point cloud data
+• Setting up layout for maps and posters
+
+Geoprocessing and Expressions
+• Use of geoprocessing tools such as: Buffer, Clip, Difference, Intersection etc.
+• Use of expressions in: Selections, labels, symbology, field-  and raster calculator
+
+Model designer
+
+Raster data
+• Simple calculations of indices with satellite data
+• Export  raster data
+• Clip raster data with vector data
+• Calculate slope and aspect on terrain data
+• Raster calculation for volume
+• Symbolize raster data
+• Convert raster to vector data
+
+Route calculation
+• Simple route calculation with ORS
+• Simple calculation of isochrones
+
+Introduction to point cloud data (point cloud)
+• Load point cloud
+• Color point cloud based on different values
+• View in 3D
+
+
+Open Source programs QGIS and WebODM are being used as platforms</Contents>
+          <Teaching_And_Learning_Methods>Preparation with videos and exercises.
+Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce the basic concepts of Geographical Information Systems (GIS). To give an insight into spatial information and geodata.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere GIS-datastrukturer og algoritmer samt vurdere og optimere deres egnethed til specifikke geospatiale problemstillinger." />
+          <Txt Lang="en-GB" Txt="Analyze GIS data structures and algorithms, and assess and optimize their suitability for specific geospatial problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Indsamle, bearbejde og analysere spatielle data" />
+          <Txt Lang="en-GB" Txt="Collect, manipulate and analyze spatial data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrere og evaluere data fra danske geodatabaser til vektor- og rasteranalyser." />
+          <Txt Lang="en-GB" Txt="Integrate and evaluate data from Danish geodatabases for advanced vector and raster analyses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere enkle GIS-applikationer med specifikke krav til geodata og funktionalitet." />
+          <Txt Lang="en-GB" Txt="Design and implement basic GIS applications with specific requirements for geospatial data and functionality." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombinere og tilpasse geometriske operationer i vektor- og raster til komplekse rumlige analyser." />
+          <Txt Lang="en-GB" Txt="Combine and adapt geometric operations in vector and raster for complex spatial analyses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udforme og kommunikere kort med geospatiale analyser til forskellige formål og målgrupper." />
+          <Txt Lang="en-GB" Txt="Develop and communicate maps with geospatial analyses for various purposes and audiences." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde modeller til automatisering af analyser ved hjælp af Model Designer" />
+          <Txt Lang="en-GB" Txt="Develop models to automize analysis using Model Designer" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde forespørgsler på spatielle data" />
+          <Txt Lang="en-GB" Txt="Create queries on spatial data" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="01901/01910" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Teoretisk og praktisk viden om Geografiske InformationsSystemer (GIS)</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02545.30532.30535.30530" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:12.577" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

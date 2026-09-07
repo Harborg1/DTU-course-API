@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42136" University="dtu" LastUpdated="2026-03-23+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Advancerede operationsanalytiske metoder" />
+        <Title Lang="en-GB" Title="Advanced Operations Research Methods" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="23631" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Stefan</GivenName>
+            <FamilyName>Røpke</FamilyName>
+            <Email>ropke@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53320" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Richard Martin </GivenName>
+            <FamilyName>Lusby</FamilyName>
+            <Email>rmlu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="220916" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Fabricio</GivenName>
+            <FamilyName>Oliveira</FamilyName>
+            <Email>fabol@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen og en projektopgave (gruppearbejde). Opgaven er implementeringsorienteret og skal godkendes for at kunne deltage i den skriftlige eksamen. Opgaven er delt op i to afleveringer. Opgaven godkendes, hvis mindst 50% er besvaret korrekt. Opgaven tæller ikke med i kursuskarakteren." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination and a project assignment (group work). The assignment is implementation-oriented and must be approved to attend the written exam. The assignment is split into two hand-ins. The assignment is approved if at least 50% is answered correctly. The assignment does not count towards the grade of the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Mange vigtige optimeringsproblemer kan formuleres som mixed integer programming-modeller (MIP). Når sådanne modeller ikke kan løses effektivt med standard løsningssoftware, kan dekomponeringsalgoritmer anvendes til iterativt at løse problemet ved at samle løsninger fra mindre delproblemer. De metoder, der behandles i kurset, er Benders Decomposition, Dantzig–Wolfe Decomposition/column generation, Stochastic Dual Dynamic Programming (SDDP) og Progressive Hedging.
+
+Kurset giver de studerende et grundigt overblik over disse metoder og sætter dem i stand til at anvende dem som løsningsmetoder på forskellige typer optimeringsproblemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Videnskabelige artikler, kursusnoter og bogen "Branch-and-Price" af Jacques Desrosiers, Marco Lübbecke, Guy Desaulniers, og Jean-Bertrand Gauthier. Bogen kan downloades gratis på https://link.springer.com/book/10.1007/978-3-031-96917-1 (når du er på DTU).</Course_Literature>
+          <Course_Objectives>Målet med kurset er at give en grundig indføring i dekompositionsalgoritmer. Dette skal gøre det muligt for de studerende at anvende dekompositionsalgoritmer til at løse komplekse optimeringsproblemer. Desuden trænes de studerende i at anvende metoderne og implementere dem i Julia</Course_Objectives>
+          <Remark>Kurset er kvantitativt orienteret, og en god forståelse af lineær programmering er nødvendig. I øvelserne anvendes programmeringssproget Julia/JuMP (som introduceres i kursus 42112) samt SDDP-pakken til implementering af dekomponeringsalgoritmerne</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Many important optimization problems can be formulated as mixed integer programming models. When these models cannot be solved using standard solver software, decomposition algorithms can be applied to iteratively solve the problems by iteratively coordinating smaller problems. These methods are: Benders decomposition, Dantzig-Wolfe decomposition/column generation, Stochastic Dual Dynamic Programming, and Progressive Hedging.
+
+The course will give students a thorough overview of these methods and enable them to use them as solution methods for various problems.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, excercises and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Scientific papers, course notes, and the textbook "Branch-and-Price" by Jacques Desrosiers, Marco Lübbecke, Guy Desaulniers, and Jean-Bertrand Gauthier. The book can be downloaded for free at https://link.springer.com/book/10.1007/978-3-031-96917-1 when at DTU.</Course_Literature>
+          <Course_Objectives>The aim of the course is to give a thorough introduction to decomposition algorithms. This will enable the students to solve complex optimization problems. Furthermore the student is trained in applying the algorithms and implementing them in Julia</Course_Objectives>
+          <Remark>The course is quantitatively oriented and requires a solid understanding of linear programming. In the exercises, students will use the Julia programming language together with the JuMP modeling package (introduced in course 42112) and the SDDP package to implement the decomposition algorithms.</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Operationsanalyse (42101) og Heltals Programmering (42114) eller Netværks Optimering (42115) og mindst et andet OR-kursus" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Operations Research (42101) and Integer Programming (42114) or Network Optimization (42115) and at least one other OR course" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42101.42114" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programeringssproget Julia, med pakken Jump vil blive benyttet i øvelserne og afleveringsopgaver" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The programming language Julia, using the Math. Programming package Jump will be used in the exercises and in the assignments." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42112" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive motivationen for dekomponering i storskala optimering, herunder blokstruktur, separabilitet og scenarie-baseret modellering" />
+          <Txt Lang="en-GB" Txt="Describe the motivation for decomposition in large‑scale optimization, including block structure, separability, and scenario‑based modeling" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de grundlæggende idéer bag de centrale dekomponeringsmetoder: Benders Decomposition, Dantzig–Wolfe Decomposition, Stochastic Dual Dynamic Programming og Progressive Hedging" />
+          <Txt Lang="en-GB" Txt="Explain the core ideas behind the major decomposition methods  Benders Decomposition, Dantzig–Wolfe Decomposition, Stochastic Dual Dynamic Programming, and Progressive Hedging " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de matematiske fundamenter, der ligger til grund for disse metoder, herunder dualitetsteori, konveksitet, recourse-begrebet og value functions" />
+          <Txt Lang="en-GB" Txt="Summarize the mathematical foundations supporting these methods, including duality, convexity, recourse, and value functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere master- og delproblemer for deterministiske og stokastiske optimeringsmodeller, der egner sig til dekomponering" />
+          <Txt Lang="en-GB" Txt="Formulate master and subproblem structures for deterministic and stochastic optimization models suitable for decomposition" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere grundlæggende versioner af Benders Decomposition, Dantzig–Wolfe Decomposition, Stochastic Dual Dynamic Programming og Progressive Hedging ved hjælp af et modelleringsværktøj (f.eks. Julia/JuMP)." />
+          <Txt Lang="en-GB" Txt="Implement basic versions of Benders, Dantzig–Wolfe, Stochastic Dual Dynamic Programming, and Progressive Hedging using a modeling framework (e.g., Julia/JuMP)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere en matematisk model med henblik på at afgøre, om den besidder strukturelle egenskaber, der gør den egnet til dekomponering" />
+          <Txt Lang="en-GB" Txt="Analyze a mathematical model to determine whether it possesses structural properties that make it suitable for decomposition" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende dekomponeringsmetoder til at løse repræsentative deterministiske og stokastiske optimeringsproblemer" />
+          <Txt Lang="en-GB" Txt="Apply decomposition methods to solve representative deterministic and stochastic optimization problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenfatte de væsentligste fordele og begrænsninger ved de behandlede metoder" />
+          <Txt Lang="en-GB" Txt="Summarize the main advantages and limitations of the methods considered" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http:// " />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Avancerede matematiske metoder til optimering af svære optimerings problemer.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:56.57" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02687" Volume="2026/2027" University="dtu" LastUpdated="2026-04-07+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Scientific Computing for ordinary and partial differential equations" />
+        <Title Lang="en-GB" Title="Scientific Computing for ordinary and partial differential equations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="22171" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Allan Peter</GivenName>
+            <FamilyName>Engsig-Karup</FamilyName>
+            <Email>apek@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="32457" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>John Bagterp</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>jbjo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af 2 individuelle rapporter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment of 2 individual reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Emnerne der dækkes i kurset inkluderer:
+- Analyse af metoder til numeriske løsning af 2-punkt grænseværdi-problemer (BVP)
+- Egenskaber ved metoder til numerisk løsning af ordinære og partielle differentialliginger 
+  (konsistens, orden of accuracy, stabilitet, konvergens)
+- Newtons metode til løsning af 2-punkt grænseværdi-problemer (BVP)
+- Numeriske metoder til grænseværdi-problemer (BVP) med varierende konduktivitet
+- Deferred-correction metoder til BVPs
+- Analyse af numeriske metoder til løsning af elliptiske ligningssystemer
+- Iterative metoder til løsning af store linære ligningssystemer
+- Konjugeret gradient metoder, prækonditioneret konjugeret gradient metoder, og GMRES- 
+  metoder til løsning af lineære ligningssystemer
+- Newton-Krylov metoder til ikke-lineære ligningssystemer
+- Multi-grid metoder til effektive iterative metoder til løsning af store lineare ligningssystemer
+- Analyse af metoder til numeriske løsning af parabolske og hyperbolske ligninger
+- Metoder til blandede og ikke-linære PDEs
+- Metoder til Scientific Machine Learning</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computer-øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset giver et solidt kendskab til teori og praksis ved brug af numeriske metoder til løsning af differentialligninger i natur- og ingeniørvidenskaberne med fokus på scientific computing. Deltagerne lærer at udvikle, analysere, implementere og anvende forskellige numeriske metoder og algoritmer til løsning af både steady-state og tidsafhængige ordinære (ODEs) samt partielle differentialligningssystemer (PDEs). Teknikkerne er relevante for vilkårlige differentialligninger, inkl. stokastiske differentialligningssystemer (SDEs). Herunder introduceres data-drevne metoder indenfor det nye område Scientific Machine Learning (SciML). SciML kombinerer teknikker inden for matematisk-fysisk modellering, scientific computing og statistik. De opnåede erfaringer kan anvendes til løsning, analyse og studie af matematiske problemer som opstår i natur- og ingeniørvidenskabelige anvendelser.</Course_Objectives>
+          <DTU_Remark>Dette kursus giver et solidt grundlag i numerisk analyse til at løse differentialligninger.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Topics covered in the course include: 
+- Analysis of methods for numerical solution of 2-point boundary problems.
+- Properties of methods for numerical solution of systems of ordinary and partial differential equations
+(consistency, order of accuracy, stability, convergence).
+- Newton's method for the solution of nonlinear 2-point boundary problems.
+- Numerical methods for 2-point boundary problems with varying conductivity.
+- Deferred correction methods for boundary value problems.
+- Analysis of methods for numerical solution of elliptic equations.
+- Iterative methods for the solution of large linear systems of equations.
+- Conjugate gradient, preconditioned conjugate gradient and GMRES methods for the solution of linear systems of equations.
+- Newton-Krylov methods for nonlinear systems of equations.
+- Multigrid methods for the efficient iterative solution of large linear system of equations.
+- Analysis of methods for numerical solution of parabolic and hyperbolic equations.
+- Methods for mixed equations and nonlinear PDEs.
+- Methods for Scientific Machine Learning</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course provides a solid knowledge of theory and practice of numerical solution of differential equation systems arising in science and engineering of relevance for scientific computing. The participants learn to develop, analyze, implement and apply various numerical methods and algorithms for solution of steady-state and time-dependent ordinary (ODEs) and partial differential equation systems (PDEs). The techniques are relevant for any type of differential equations, incl. stocastic differential equations (SDEs). Data-driven methods within the emerging area of Scientific Machine Learning (SciML) arre introduced. SciML combines techniques from mathematics-physics modelling, scientific computing and statistics. The experience gained is useful for the solution and study of mathematical problems arising in engineering and science applications.</Course_Objectives>
+          <DTU_Remark>This course gives a strong grounding in numerical analysis for solving differential equations.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="02601.­(02002/02631/02632/02633/02692) , Grundlæggende kurus i numeriske algoritmer, fx. 02601. Grundlæggende færdigheder i programmering, fx. 02631.&#xD;&#xA;&#xD;&#xA;02687 kan tages samtidig med 02686. Begge kurser kan tages uafhængigt af hinanden og i vilkårlig orden." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="02601.­(02002/02631/02632/02633/02692) , Basic course in numerical algorithms, eg 02601. Basic knowledge in programming, eg 02631.&#xD;&#xA;&#xD;&#xA;02687 can be followed in the same semester as 02686. Both courses can be taken independently and in any order." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02601/02631" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive, analysere og anvende fundamentale principper til løsning af grænseværdi-problemer (BVPs) beskrevet ved ordinæe eller partielle differentialligningssystemer" />
+          <Txt Lang="en-GB" Txt="Describe, analyze and apply fundamental principles for numerical solution of boundary value problems (BVPs) described by ordinary or partial differential equation systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og udlede ordens, konvergens og stabilitetsegenskaber for finite-difference metoder " />
+          <Txt Lang="en-GB" Txt="Analyze and derive order, convergence, and stability properties of finite difference methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede finite-difference skemaer til numerisk løsning af grænseværdi-problemer (BVPs) med Dirichlet, Neumann og Robin grænsebetingelser" />
+          <Txt Lang="en-GB" Txt="Analyze and derive finite difference schemes for numerical solution of boundary value problems (BVPs) with Dirichlet, Neumann and Robin boundary conditions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe, analysere og implementere numeriske metoder til effektiv løsning af elliptiske ligningssystemer" />
+          <Txt Lang="en-GB" Txt="Design, analyse, and implement numerical methods for the efficient solution of elliptic equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede og implementere &quot;deferred correction&quot;  metoder til løsning af 2-punkt BVPs og elliptiske liginger" />
+          <Txt Lang="en-GB" Txt="Derive and implement deferred correction methods for the solution of 2-point BVPs and elliptic equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede og analysere stationære iterative &quot;defect correction&quot; metoder, herunder multigrid metoder, til løsning af store lineære ligningssystemer" />
+          <Txt Lang="en-GB" Txt="Derive and analyze stationary iterative defect correction methods, including multigrid methods, to solve large linear systems of equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og implementere matrix-frie konjugerede gradient metoder, prækonditionerede konjugerede gradient metoder og GMRES-metoder til løsning af lineære ligningssystemer" />
+          <Txt Lang="en-GB" Txt="Describe and implement matrix-free conjugate gradient, preconditioned conjugate gradient and GMRES methods to solve linear systems of equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive, implementere og analysere iterative multi-grid metoder" />
+          <Txt Lang="en-GB" Txt="Describe, implement and analyze iterative multigrid methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere konvergens og stabilitet for numeriske metoder til løsning af parabolske og hyperbolske ligninger" />
+          <Txt Lang="en-GB" Txt="Analyze the convergence and stability of numerical schemes for the solution of parabolic and hyperbolic equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, udlede og implementere numeriske metoder til løsning af blandede og ikke-lineære systemer af partielle differentialligninger" />
+          <Txt Lang="en-GB" Txt="Analyze, derive and implement numerical schemes for the solution of mixed and nonlinear systems of partial differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opnå erfaring med introducerede teknikker til scientific machine learning" />
+          <Txt Lang="en-GB" Txt="Gain experience with introduced techniques from scientific machine learning" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Numerisk analyse, metoder og anvendelser</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02685" />
+        <PreviousCourse CourseCode="02685" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:30.83" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

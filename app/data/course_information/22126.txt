@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="22126" University="dtu" LastUpdated="2026-04-13+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Next-Generation-Sequencing Analyse" />
+        <Title Lang="en-GB" Title="Next-Generation-Sequencing Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="224777" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Mick</GivenName>
+            <FamilyName>Westbury</FamilyName>
+            <Email>micwe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="31751" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Rasmus Lykke</GivenName>
+            <FamilyName>Marvig</FamilyName>
+            <Email>rlmn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen består af to dele: et projekt og en efterfølgende poster (25 %) og en endelig skriftlig eksamen (75 %). &#xD;&#xA;Den endelige karakter er baseret på en helhedsvurdering af de to dele. &#xD;&#xA;Aflevering af projekt og poster er en forudsætning for at gå til den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam consists of two parts: a project and subsequent poster (25 %) and a final written exam (75 %).&#xD;&#xA;The final grade is based on an overall assessment of both parts.&#xD;&#xA;Submission of the project and poster is a prerequisite for attending the final written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The final day of the course" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Sidste dag i 3-ugers perioden" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Eksterne kan tilmelde sig via (https://www.dtu.dk/uddannelse/efteruddannelse/kurser/enkeltfagskurser)." />
+            <Supp_Txt Lang="en-GB" Txt="Externals, please sign-up via (https://www.dtu.dk/english/education/continuing-education/open_university)." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Teknologien bag nuværende NGS-metoder; Kvalitetskontrol; Fejlkorrektion; Justering; BAM-behandling; Genotyping; SNPs, Indels, de novo samling; Menneskelig sekventering; Bakteriesekventering; Gamle DNA; Metagenomik; Genomisk epidemiologi; RNA-sekventering; Exome-sekventering; Forberedelse af et projekt, hvor NGS-data analyseres; præsentation af poster.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, computerøvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>På dette kursus vil du lære de centrale begreber inden for Next Generation Sequencing (NGS) og deres beregningsmæssige analyse. Next-Generation Sequencing (NGS) teknologier har transformeret den måde, som biologisk forskning bliver udført på og bliver i dag anvendt indenfor næsten alle biologiske felter til banebrydende opdagelser. I dag kan et menneskes genom sekventeres på meget kort tid og til en pris på under $1000, hvilket giver hidtil usete muligheder for at undersøge menneskelige træk, evolution og sygdomme. Derudover kan arvemasse af hele mikrobielle samfund sekventeres og sammenspil med natur studeres, hvilket har ledt til opdagelsen af nye brugbare enzymer og organismer. Da disse forsøg producerer store mængder af data, er bioinformatiske kompetencer og supercomputere altafgørende for analyserne. Formålet med kurset er at give de studerende kendskab til NGS teknologi med fokus på analyse af data. Kurset vil kvalificere de studerende til at forstå NGS data og sætte dem i stand til at analysere disse ved hjælp af Unix/Linux baserede systemer og programmer. Den sidste halvdel af kurset er projektarbejde, der er baseret på de studerendes egen data eller data fra offentlige databaser.</Course_Objectives>
+          <DTU_Remark>Kurset er obligatorisk på kandidatuddannelsen i Bioinformatik. Studerende på denne studieretning har derfor førsteprioritet.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The technology behind current NGS methods; Quality Control; Error Correction; Alignment; BAM processing; Genotyping; SNPs, Indels, de novo assembly; Human sequencing; Bacterial sequencing; Ancient DNA; Metagenomics; Genomic Epidemiology; RNAseq; Exome sequencing; Preparation of a project where NGS data is analyzed; presentation of the poster.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, computer exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>In this course, you will learn the core concepts of Next Generation Sequencing (NGS) and their computational analysis. The advent of NGS technologies has transformed how biological research is being performed and today almost all biological fields use the technology for cutting-edge discoveries. Today, a human genome can be sequenced in a very short time for under $1000 giving unprecedented possibilities for investigating human traits, evolution, and diseases. Similarly, the genetic material of entire bacterial communities can be sequenced and the interplay with the environment studied, this has lead to the discovery of novel useful enzymes and organisms. As these experiments produce massive amounts of data bioinformatics skills and supercomputing is crucial for the analysis. The aim of the course is to give the students knowledge of NGS technologies with a focus on data analysis. The course will qualify the students to understand NGS data and enable them to analyze these in an UNIX/Linux working environment. The last part of the course will be project work that is based on the students own data or data from public databases.</Course_Objectives>
+          <DTU_Remark>The course is mandatory in the MSc programme in Bioinformatics. Thus students in this program have first priority.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Elementære kommandolinjefærdigheder (f.eks lokalisere eller kopiere filer etc.)&#xD;&#xA;Vi anbefaler, at studerende opfrisker deres viden om molekylærbiologi inden kurset, så de forstår strukturen af DNA og den centrale dogme inden for molekylærbiologi (DNA-&gt;RNA-&gt;protein)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic command line skills (i.e. locate or copy files via command line). &#xD;&#xA;We recommend that students brush up on their molecular biology prior to the course, so they understand the structure of DNA and the central dogma of molecular biology (DNA-&gt;RNA-&gt;protein)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="27002/27230/27430/22116" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare anvendelserne af de forskellige NGS-teknologier, herunder svagheder og styrker ved de forskellige tilgange. " />
+          <Txt Lang="en-GB" Txt="explain the applications of the different NGS technologies, including the weakness and strengths of the approaches." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de trin, der er involveret i en generel NGS-dataanalyse." />
+          <Txt Lang="en-GB" Txt="explain the steps involved in a general NGS data analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de vigtigste teoretiske begreber bag justering og de novo samling." />
+          <Txt Lang="en-GB" Txt="explain the key theoretical concepts behind alignment and de novo assembly." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende programmer i et Unix-miljø til analyse af NGS-data." />
+          <Txt Lang="en-GB" Txt="use programs in a Unix environment for the analysis of NGS data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå, hvorfor visse trin udføres i en specifik rækkefølge i NGS-workflows." />
+          <Txt Lang="en-GB" Txt="understand why certain steps are done in a specific order in NGS workflows." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="strukturere et lille forskningsprojekt ved hjælp af eksisterende NGS-data." />
+          <Txt Lang="en-GB" Txt="structure a small research project using existing NGS data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge den viden, du har fået under forelæsningerne og øvelserne, til et mindre forskningsprojekt " />
+          <Txt Lang="en-GB" Txt="use the knowledge gained during the lectures and exercises for a small research project." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lære at uddelegere opgaver i en gruppe for at afslutte et mindre projekt og kommunikere resultaterne på en plakat." />
+          <Txt Lang="en-GB" Txt="learn to delegate tasks in a group to complete a small project and communicate the results on a poster." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende generative AI-værktøjer ansvarligt til at fejlfinde, fortolke output og understøtte analytisk beslutningstagning i NGS-workflows." />
+          <Txt Lang="en-GB" Txt="use generative AI tools responsibly to troubleshoot errors, interpret outputs, and support analytical decision-making in NGS workflows." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Next-Generation-Sequencing analyse</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="27626" />
+        <PreviousCourse CourseCode="36626" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+        </OfferedAsACourseOfTypes>
+        <Restrictions Max="96" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:12.22" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

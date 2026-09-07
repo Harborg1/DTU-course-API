@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02458" University="dtu" LastUpdated="2025-03-25+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Kognitiv modellering" />
+        <Title Lang="en-GB" Title="Cognitive Modelling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="37568" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Tobias Søren</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>toban@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Or_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamensformen afhænger af antallet af studerende i kurset. Hvis mere end 60 studerende tilmelder sig kurset vil eksamensformen være skriftlig. Ellers vil den være mundtlig. Eksamensformen vil blive annonceret så hurtigt som muligt efter kursets start.&#xD;&#xA;&#xD;&#xA;Øvelser og præsentationer vil også indgå i bedømmelsen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The type of examination depends on the number of students enrolled. If more than 60 students sign up for the course then the exam will be written. Otherwise it will be oral. The type of examination will be announced as soon as possible after the course starts. &#xD;&#xA;&#xD;&#xA;Exercises and in class presentations will also be part of the assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="More exam days will be available in the case of oral examination" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Yderlige eksamensdage vil være tilgængelige hvis eksamen er mundtlig" />
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Emnerne i kurset introduceres i ugentlige forelæsninger. Der lægges stor vægt på praktisk arbejde, hvor dde studerende opnår færdigheder i optimering og evaluering af skræddersyede sandsynlighedsmodeller af kognitive processer gennem projektarbejde og øvelser.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningsnoter</Course_Literature>
+          <Course_Objectives>I dette kursus vil du lære om probablistiske modeller af kognitive processer. Du vil opnå færdigheder i at analysere data fra psykofysiske eksperimenter ved hjælp af signal-detektionsteori og den psykometriske funktion. Vi vil analysere disse standardmetoder og indse, at de er forankret i underliggende modeller og antagelser. Herefter vil vi se, at disse modeller kan indpasses i et bredere Bayesiansk framework, som vi vil bruge til at opbygge skræddersyede probabilistiske modeller af kognitive processer.
+
+Kurset vil også undersøge lineære modeller af neural kodning af information og hvordan vi kan bruge disse modeller til at afkode neurale repræsentationer fra adfærdsdata.
+
+Et betydeligt fokus i dette kursus ligger i at mestre optimering og evaluering af skræddersyede sandsynlighedsmodeller ved hjælp af maximum likelihood-princippet og numerisk optimering. Det forventes, at studerende har færdigheder inden for kodning, især i Python eller MATLAB. Derudover er en grundlæggende forståelse af sandsynlighedsteori vigtig. Igennem kurset vil der blive lagt vægt på evnen til at konstruere skræddersyede modeller og minimere afhængigheden af foruddefinerede funktioner og værktøjskasser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The topics of the course are introduced in weekly lectures. Great emphasis is placed on practical work where students gain proficiency in fitting and evaluating custom probabilistic models of cognitive processes through project work and exercises.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes</Course_Literature>
+          <Course_Objectives>In this course you will learn about probabilistic models of cognitive processes. You will gain proficiency in analysing data from behavioral psychophysical experiments using signal detection theory and the psychometric function. We will analyse these standard methods and realise that they rooted in underlying models and assumptions. Subsequently, we will see that these models can be fit into a broader Bayesian modeling framework, which we will use to build custom probabilistic models of cognitive processes. 
+
+The course will also delve into linear models of neural encoding of information and how we can use these models to decode neural representations from behavioral data. 
+
+A significant focus of this course lies in mastering the fitting and evaluation of customised probabilistic models using the maximum likelihood principle and numerical optimisation. Proficiency in coding, particularly in Python or MATLAB, is expected from students. Additionally, a foundational understanding of probability theory is important. Throughout the course, emphasis will be placed on the ability to construct custom models, minimising reliance on pre-existing functions and toolboxes.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Sandsynlighedsregning, grundlæggende machine learning og kendskab til programmering. Kendskab eller interesse for kognitionsvidenskab." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Probability theory, fundamental machine learning and basic programming. Knowledge or interest in cognitive science." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450.(02454/02464)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere data fra psykofysiske eksperimenter ved hjælp af signal-detektionsteori og den psykometriske funktion " />
+          <Txt Lang="en-GB" Txt="Analyse data from psychophysical data using signal detection theory and the psychometric function" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere perception fra et bayesiansk perspektiv " />
+          <Txt Lang="en-GB" Txt="Analyse perception from a Bayesian perspective" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere lineære modeller af neural kodning " />
+          <Txt Lang="en-GB" Txt="Analyse linear models of neural coding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forholdet mellem neurale og kognitive modeller " />
+          <Txt Lang="en-GB" Txt="Describe the relationship between neural and cognitive models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Optimere en skræddersyet sandsynlighedsmodel af en kognitiv proces til adfærdsdata " />
+          <Txt Lang="en-GB" Txt="Fit a custom probabilistic model of a cognitive process to behavioural data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere en skræddersyet sandsynlighedsmodel ved hjælp af krydsvalidering " />
+          <Txt Lang="en-GB" Txt="Evaluate custom probabilistic model using cross-validation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere data fra en sandsynlighedsmodel " />
+          <Txt Lang="en-GB" Txt="Simulate data from a probabilistic model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge simulerede data til at evaluere model- og parametergenkaldelse " />
+          <Txt Lang="en-GB" Txt="Use simulated data to evaluate model and parameter recovery" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere forholdet mellem kvalitative og kvantitative modeller af kognitive processer" />
+          <Txt Lang="en-GB" Txt="Discuss the relation between qualitative and quantitative models of cognitive processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Matematiske modeller i kognitionsvidenskab</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:56.653" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41635" University="dtu" LastUpdated="2025-05-01+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Robust Design af Produkter og mekanismer" />
+        <Title Lang="en-GB" Title="Robust design of products and mechanisms" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="93663" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tobias</GivenName>
+            <FamilyName>Eifler</FamilyName>
+            <Email>tobeif@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1669" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Niels Henrik</GivenName>
+            <FamilyName>Mortensen</FamilyName>
+            <Email>nhmo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering af 1 individualiseret gruppeaflevering og en skriftlig multiple choice eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of 1 individualized group hand-in and a written multiple choice exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer deltagerne til Robust Design (RD) og giver et overblik over en grundlæggende RD-værktøjskasse, der muliggør analyse af variationseffekter allerede i udviklingsfasen og understøtter designet af robuste produkter. Ud fra grundlæggende RD teori og strategier, dækker kurset både designmetoder (Modul 1: Variationsreduktionsprincipper / Aksiomatisk Design / Mekanisme design og kinematisk analyse / etc.) samt en introduktion til tolerance analyse og teknisk statistik (Modul 2: statistiske tolerancer / følsomhedsanalyse / proces kapabilitets indekser / etc.). Hvert af modulerne suppleres af en praktisk workshop, hvor deltagerne kan afprøve og teste kursets pensum på et eksempel fra praksis. Desuden har kurset normalt 1-2 gæsteforelæsninger fra industrien for at give indsigt i vigtigheden af RD for både store virksomheder og SMVer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og workshops.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kompendiemateriale</Course_Literature>
+          <Course_Objectives>Robust design er et paradigme, der sigter efter at forbedre kvaliteten of pålideligheden af et design. Produkter vil altid være udsat for geometriske variationer, der stammer fra produktionstolerancer, temperaturændringer, lastsituationer osv. Hvis designet er robust, vil det medføre, at variationerne ikke vil have store betydninger produktets funktionalitet eller kvalitet. Hvis designet derimod ikke er robust (følsomt), kan det betyde at produktet ikke virker, ikke kan samles, stort antal fejl under produktion, reduceret kvalitet for brugeren, produkt fejl og i visse tilfælde tilbagekaldelse af produkter og endda dødsfald. Måden, variationer normalt behandles på er, ved at mindske produktionstolerancerne. Dette er dog meget dyrt både i tid, penge og ressourcer. Ved brug af robuste designmetoder vil du lære at reducere følsomheden af dit design og derved ikke sende svære og dyre tolerancer og proceskrav videre til produktionsteamet.</Course_Objectives>
+          <Remark>Studerende optaget på kandidatretningerne Konstruktion og Mekanik samt Design og Innovation har fortrinsret til kurset.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces the participants to the field of Robust Design (RD) by providing a basic RD toolbox that allows for an analysis of variation effects already in product development and for the design of robust products. Based on an introduction to basic RD theory and strategies, the course covers an overview of design approaches (Module 1: Mobility equations / Variation Reduction principles / Axiomatic Design / Kinematic principles for systems and interfaces / etc.) as well as an introduction to tolerance analysis and Engineering statistics (Module 2: Statistical tolerancing / Sensitivity studies / Process Capability indices / etc.). Each of the modules is complemented by a hands-on workshop session where the participants are provided with a physical case example to try out and test the methods they have been introduced to. Furthermore, the course usually features 1-2 guest talks from industry delegates to illustrate the relevance of RD for both large as well as small and medium sized companies.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and workshops.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes from teachers.</Course_Literature>
+          <Course_Objectives>Robust Design is a paradigm that aims to improve the quality and reliability of a design. Products are exerted to geometrical variation stemming from production tolerances, temperature changes, load conditions, etc. If design is robust, it means that the variance will not have a large impact on functionality or the quality of the product. However, if the design is not robust (sensitive) it could lead to the product not functioning, the product not being able to be assembled, high rejection rates during production, reduced quality for the user, product failures and in some cases product recalls and even fatalities. The typical strategy to deal with variance has been to tighten production tolerances to reduce variance, however this comes at great cost in terms of time, money and resources. By using the robust design methodology you will learn how to reduce the sensitivity of your designs and to not pass on difficult and costly tolerances and process requirements to the production team.</Course_Objectives>
+          <Remark>Primarily for students enrolled in the following Master programmes: Mechanical Engineering and Design &amp; Innovation.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Produktkonstruktion og dokumentation" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Product Design and Documentation" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41612 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive et mekanisk produkts robustheds og robusthedens relation til varians i produktets livscyklus (mht. funktionalitet, pålidelighed, produktionsomkostninger, etc.)" />
+          <Txt Lang="en-GB" Txt="Describe the potential of product robustness and its relationship to variation in the life cycle of mechanical products (with respect to function, reliability, production costs, etc.)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de udfordringer der kan være i at forvandle en produktide til et fungerende og producerbart produkt (i fht. designlayout, funktionsflader, geometrier, osv)." />
+          <Txt Lang="en-GB" Txt="Explain the challenges of turning a product idea to a functional and producible product (with respect to design of layout, interfaces, geometries, etc.)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende designprincipper og metoder til at reducere kompleksiteten og sensitiviteten af mekanismer og produkter, og dermed øge deres robusthed." />
+          <Txt Lang="en-GB" Txt="Apply design principles and methods to reduce the complexity and sensitivity of mechanisms and products, hence to increase their robustness. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende kvalitative metoder og software-værktøjer for specificeringen af produktions-tolerancer, beregning af proces kapabilitet, forudsigelse af fejlrater, mm." />
+          <Txt Lang="en-GB" Txt="Apply quantitative methods and software tools for the specification of tolerances, the calculation of process capabilities, the prediction of failure rates, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende analysemetoder på cases fra industrien, og evaluere deres anvendelighed." />
+          <Txt Lang="en-GB" Txt="Use the taught methods for an analysis of real-life cases from engineering practice and evaluate their applicability. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over kursets metodikker som en del af den overordnede produktudviklingsproces." />
+          <Txt Lang="en-GB" Txt="Reflect on the taught methods as part of an overall design process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge og anvende de mest passende analysemetoder til en given case, for at gennemføre en fyldestgørende vurdering af robusthed (inklusiv dokumentationen og præsentation af resultaterne i form af korte rapporter)" />
+          <Txt Lang="en-GB" Txt="Select and apply the most appropriate methods for conducting a full Robust Design analysis (including the documentation and presentation of results in form of short reports)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bedømme og evaluere egne robusthedsanalyser, og give feedback til andre på deres analyser." />
+          <Txt Lang="en-GB" Txt="Review and evaluate one’s own Robust Design analysis and give feedback on the results of others. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>- udvikling af produkter og forretningsideer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41632" />
+        <PreviousCourse CourseCode="41632" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="30" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="76" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="24" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:32.887" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

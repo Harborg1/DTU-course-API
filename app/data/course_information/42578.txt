@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42578" Volume="2026/2027" University="dtu" LastUpdated="2026-04-10+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Advanced Business Analytics" />
+        <Title Lang="en-GB" Title="Advanced Business Analytics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="104358" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Francisco Camara</GivenName>
+            <FamilyName>Pereira</FamilyName>
+            <Email>camara@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="172389" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Rico</GivenName>
+            <FamilyName>Krueger</FamilyName>
+            <Email>rickr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueringen består af et gruppeprojekt (med obligatorisk beskrivelse af de individualiserede bidrag), oplæg, peer-assessment. Karakteren er baseret på en samlet bedømmelse af præstationen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based on a group project (with mandatory description of individualized contributions), project presentation, peer-assessment. The grade is based on an overall evaluation of the performance." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset gennemføres i to hovedblokke. Første halvdel af semestret fokuserer på advanced business analytics techniques og undervises i et intensivt format. Denne blok kombinerer flere undervisningsformer, herunder interaktive forelæsninger integreret med hands-on Python-øvelser samt flipped-classroom-sessioner understøttet af forudindspillede videoforelæsninger og praktiske in-class-aktiviteter. Anden halvdel af semestret er dedikeret til projektarbejde og omfatter en række invited talks fra industri, offentlig sektor og akademia.
+
+Kurset dækker bl.a. følgende hovedemner: web data mining; Augmented/Virtual reality; natural language processing; Large Language Models; recommender systems; explainable AI; deep learning; reinforcement learning; spatio-temporal prediction models; ensemble models; survival analysis; prediction uncertainty; og computer vision.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, praktisk laboratorieundervisning og online undervisning, dvs. selvstudium med online materialer (f.eks. med iPython Notebook).</Teaching_And_Learning_Methods>
+          <Course_Literature>Hvert modul har sine egne anbefalede tekster, som vil blive udleveret i slutningen af forelæsningsnoterne. De obligatoriske tekster vil blive offentliggjort online.</Course_Literature>
+          <Course_Objectives>Business Analytics (BA) handler anvendelsen af data og modeller til at forstå organisatoriske systemer og understøtte beslutninger. Kurset dækker avancerede data-centriske metoder inden for de tre hovedretninger i BA: descriptive (“what happened?”), predictive (“what will happen?”) og prescriptive (“what should happen?”). Der lægges vægt på at koble modelling choices til konkrete decision contexts: problem formulation, data management, model evaluation and validation samt kommunikation af resultater under uncertainty. Metoderne anvendes på business cases for at illustrere, hvordan data og machine learning kan bruges til decision support, herunder moderne tilgange, hvor det er relevant. Gennem kurset fremhæves det, hvordan responsible analytics kan bidrage til societal good—ved at forbedre beslutninger inden for fx sustainability, public services og equitable outcomes—samtidig med at man anerkender limitations, risks og trade-offs. Kurset bygger på advanced machine learning techniques; derfor forventes det, at de studerende har forhåndskendskab til data science og machine learning fundamentals samt solide programming skills.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is delivered in two main blocks. The first half of the semester focuses on advanced business analytics techniques and is taught in an intensive format. This block combines multiple teaching approaches, including interactive lectures integrated with hands‑on Python exercises as well as flipped‑classroom sessions supported by pre‑recorded video lectures and practical in‑class activities. The second half of the semester is dedicated to project work and includes a series of invited talks from industry, the public sector and academia.
+
+The main topics covered in the course includes web data mining; Augmented/Virtual reality; natural language processing; Large Language Models; recommender systems; explainable AI; deep learning; reinforcement learning; spatio-temporal prediction models; ensemble models; survival analysis; prediction uncertainty and computer vision.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, practical laboratories and online learning, i.e. self-learning with online resources (e.g. with iPython Notebook).</Teaching_And_Learning_Methods>
+          <Course_Literature>Each module corresponds to its own recommended texts, that will be provided in the end of the lecture notes. The mandatory texts shall be publicly available online.</Course_Literature>
+          <Course_Objectives>Business Analytics (BA) concerns the use of data and models to understand organisational systems and support decisions. This course covers advanced data-centric methods across the three main directions in BA: descriptive (“what happened?”), predictive (“what will happen?”), and prescriptive (“what should happen?”). Emphasis is on connecting modelling choices to decision contexts: problem formulation, data management, model evaluation and validation, and communicating results under uncertainty. Methods are applied to business cases to illustrate how data and machine learning can be used for decision support, including modern approaches where relevant. Throughout, the course highlights how responsible analytics can contribute to societal good—by improving decisions in areas such as sustainability, public services, and equitable outcomes—while recognising limitations, risks, and trade-offs. The course relies on advanced machine learning techniques; students are therefore expected to have prior knowledge of data science and machine learning fundamentals, as well as solid programming skills.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer forretningsmæssige og samfundsmæssige påvirkningsmuligheder relateret til effektiv dataudnyttelse" />
+          <Txt Lang="en-GB" Txt="Identify business and societal impact opportunities related to effective data utilization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsummer de identificerende karakteristika ved avancerede Machine Learning til descriptive, predictive and prescriptive analytics" />
+          <Txt Lang="en-GB" Txt="Summarize the identifying characteristics of advanced machine learning approaches for descriptive, predictive and prescriptive analytics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg og anvend passende Machine Learning (regression, klassificering, Reinforcement Learning, clustering, recommender systems, computervision, LLM'er)" />
+          <Txt Lang="en-GB" Txt="Select and apply appropriate machine learning (regression, classification, reinforcement learning, clustering, recommender systems, computer vision, LLMs) " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør ML-eksperimenter i komplekse miljøer (f.eks. støjende data, høj usikkerhed, kombination med optimeringskomponenter, parametriske og ikke-parametriske modeller)" />
+          <Txt Lang="en-GB" Txt="Conduct machine learning experiments in complex settings (e.g. noisy data, high uncertainty, combination with optimization components, parametric and non-parametric models)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Levere datadrevet support til online forretning og markedsføring" />
+          <Txt Lang="en-GB" Txt="Apply one or more explainable AI techniques (e.g SHAP, Lime) in data-driven decision advisory situations " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend en eller flere explainable AI-teknikker (f.eks. SHAP, Lime) i datadrevne beslutningsrådgivningssituationer" />
+          <Txt Lang="en-GB" Txt="Understand the technical principles and potential of foundation models (e.g. LLMs)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Build on the latest LLM techniques (RAG, LoRA, Chain-of-Thought reasoning) to develop application-ready tools for business and society" />
+          <Txt Lang="en-GB" Txt="Build on the latest LLM techniques (RAG, LoRA, Chain-of-Thought reasoning) to develop application-ready tools for business and society" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificere usikkerheder i prædiktiv modellering gennem quantile regression og heteroskedasticitetsmodel" />
+          <Txt Lang="en-GB" Txt="Quantify uncertainties in predictive modelling, through quantile regression and heteroskedasticity modelling " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og være i stand til at forklare kausale vs. korrelationsforhold mellem variabler, endogenitet, intervention og counterfactual reasoning" />
+          <Txt Lang="en-GB" Txt="Understand and be able to explain causal vs correlational relationships between variables, endogeneity, intervention and counterfactual reasoning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne give et klart og informativt resumé (executive summary) til datadrevne analyser og værktøjer, herunder indsigt til forretningsmæssige og kritiske spørgsmål" />
+          <Txt Lang="en-GB" Txt="Be able to provide a clear and informative summary (executive summary) for data-driven analyses and tools, including insights for business and critical questions" />
+        </DTU_ObjectiveKeyword>
+        <Mandatory_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="42577" />
+        </Mandatory_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Applied AI for Business and Societal contexts</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:11.963" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

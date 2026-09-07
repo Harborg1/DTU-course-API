@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34240" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Data science, kompression og billedkommunikation" />
+        <Title Lang="en-GB" Title="Data Science, Compression and Image Communication" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="575" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Søren Otto</GivenName>
+            <FamilyName>Forchhammer</FamilyName>
+            <Email>sofo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af rapport(80%) og mundtlig fremlæggelse, samt besvarelse af spørgsmål (20%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of report(80%), oral presentation and answers to questions(20%)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til grundprincipperne bag og metoder til data science og kompression inkl. grundlæggende informationsteori, som entropy, kryds-entropy og gensidig information. Dette omfatter entropi-begrebet som et informationsmål og gensidig information som et mål for delt information. Entropikodning vha. Huffman og aritmetisk kodning. Dekorreleríng af data ved prædiktion eller transformation til frekvensdomænet. Kvantisering af data til kodning med tab eller representation i rum af mindre dimension. En række eksempler på datakompression og -analyse præsenteres, fx. Kodning og analyse af:  datastrenge, billeder i frekvensdomænet (DCT og wavelets - JPEG billedkodnings-specifikationer), lydsignaler, video som billedsekvenser. En Anvendelser er fx kodning af billeder, video eller data fra en drone, samt højkvalitetsbilleder, fx til internet applikationer. 
+Midtvejs vælges et projekt inden for de fremlagte områder.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gennemførelse af individuelt projekt (hold af to studerende)
+Opgaver og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne forståelse for grundprincipperne i data science og kompression og metoder til datakompression f.eks. til billedkommunikation. At sætte deltagerne i stand til at implementere og evaluere data-analyse og -kompressionsalgoritmer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to the basic principles and methods for data science and compression incl. basics of information theory as entropy, cross entropy and mutual information (MI). The entropy is a measure of information and mutual information a measure of shared information. This includes entropy coding by Huffman and arithmetic coding, decorrelation by prediction or transformation to the frequency domain and quantization of data for lossy coding and representation. 
+Some examples of data for compression and analysis are presented, eg. coding and analysis of: Data strings, Images in the frequency domain (DCT and wavelets - JPEG image coding specifications), Audio signals, and video as image sequences. Application areas include coding and analysis of images, video and data from drones, as well as high-quality images, e.g. for internet applications. 
+Midway, the students choose a project within the areas presented.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and individual project (in groups of two)
+Exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the participants solid knowledge of the basic principles of data science and compression and methods for data compression e.g. for image communication. To enable the students to implement and evaluate data analysis and compression algorithms.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller anden form for billed- og/eller signalbehandling og kendskab til Matlab eller Python" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or courses in image and signal processing and familiarity with Matlab or Python" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34220/34230/34231/02502" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en data-analyse eller kompressionsmetode" />
+          <Txt Lang="en-GB" Txt="implement a data compression or analysis scheme" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="simulere datakompressionskodning og -dekoding" />
+          <Txt Lang="en-GB" Txt="simulate data compression encoding and decoding" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne og evaluere perfomance faktoren" />
+          <Txt Lang="en-GB" Txt="calculate and evaluate the performance factor" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne og evaluere kvaliteten af dekodede eller rekonstruerede data objektivt og subjektivt" />
+          <Txt Lang="en-GB" Txt="calculate and evaluate the quality of decoded or reconstructed data objectively and subjectively" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og fortolke et entropi-estimat, fx. cross-entropy i relation til  kodelængden" />
+          <Txt Lang="en-GB" Txt="analyse and explain an entropy estimate, e.g cross-entropy in relation to a code length" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare dekorrelering af data til analyse eller kompressionsformål" />
+          <Txt Lang="en-GB" Txt="explain decorrelation of data for analysis and compression" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare kvantiseríng af en data repræsentation" />
+          <Txt Lang="en-GB" Txt="explain quantization of a data representation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare entropi-konceptet, fx cross-entropy for kodning" />
+          <Txt Lang="en-GB" Txt="explain the entropy concept, e.g. cross-entropy for coding" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Datakompression</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:00.81" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

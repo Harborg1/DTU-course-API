@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34755" Volume="2026/2027" University="dtu" LastUpdated="2025-11-20+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Design af pålidelige robotsystemer" />
+        <Title Lang="en-GB" Title="Building dependable robot systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Tilstedeværelse på kursusdag  1 er obligatorisk, da gruppedeling foregår her.&#xD;&#xA;Indstats i påskeferien er næsten et krav." />
+          <Schedule_Txt Lang="en-GB" Txt="Being present on day one of the course is mandatory, as group formation takes place then." />
+          <Schedule ScheduleKey="F3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="14453" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jens Christian</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>jcan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17403" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Søren</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>sohan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset indeholder gruppearbejde og løsning af praktiske udfordringer.
+En mobil robotplatform med en grundlæggende funktionalitet og software er til rådighed som udgangspunkt. Denne platform skal innoveres til at kunne deltage performe i den afsluttende konkurrence. Software udvikling i Python er nødvendigt. Den grundlæggende software er i C++ (delvist Arduino) og kan ændres efter behov. Mekanisk design er anbefalet og er nødvendigt for et godt resultat ved konkurrencen.
+
+Gruppesamarbejde og planlægning er en integreret del af kurset (se læringsmål).
+
+Der vil være nogle få korte forelæsninger med bl.a. installation af software værktøjer, den anvendte platform, kalibrering, fejldiagnose etc.</Contents>
+          <Teaching_And_Learning_Methods>Intensivt gruppearbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet er at lære at planlægge, designe og implementere et pålideligt robotsystem til deltagelse i konkurrencer som f.eks. det tidligere DTU RoboCup (https://robocup.dtu.dk) med henblik på at vinde.</Course_Objectives>
+          <Remark>Anvendelse af AI er accepteret både i software design og rapporter.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course includes group work and the solution of practical issues. A basic mobile robot platform with some basic functionality and software will be provided. This platform is to be innovated to participate in the final competition. Software development in Python is needed. The base software is in C++ (Partially Arduino) and can be changed as needed. Mechanical design is recommended and needed for a good performance at the competition.
+
+Group cooperation and planning are an integrated part of the course (see the learning objectives).
+
+There will be a few short lectures, such as installing software tools and exercises to learn the fundamentals of the base platform, calibration, fault diagnosis, etc.</Contents>
+          <Teaching_And_Learning_Methods>Intensive group work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim is to learn to plan, design, and implement a dependable robot system capable of competing in competitions like the former DTU RoboCup (https://robocup.dtu.dk) and winning.</Course_Objectives>
+          <Remark>The use of AI is acceptable for both programming and reports.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende programmering, især kendskab til Python samt C eller C++, er nødvendig. Forståelse af grundlæggende mekanisk og reguleringsteknisk design er fordelagtig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic programming knowledge, especially of Python and C or C++, is needed. An understanding of basic mechanical and control design is advantageous." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere teknisk problemanalyse, konsekvensvurdering og løsningsresultater" />
+          <Txt Lang="en-GB" Txt="Formulate technical problem analysis, consequence assessment and solution results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere en udfordring og designe innovative løsninger med begrænsede ressourcer" />
+          <Txt Lang="en-GB" Txt="Analyse a challenge and design innovative solutions with limited resources" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende projektplanlægning" />
+          <Txt Lang="en-GB" Txt="Use project planning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende projektstyring for en gruppe" />
+          <Txt Lang="en-GB" Txt="Use project control for a team" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere karakteristika for robot platformtyper med praktisk anvendelse" />
+          <Txt Lang="en-GB" Txt="Relate characteristica of robot platform types to practical use" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere karakteristika for sensorer og aktuatorer til anvendelse i mobile robotter" />
+          <Txt Lang="en-GB" Txt="Relate characteristica of sensors and actuators to use in mobile robots" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og programmere mobile robotter til krævende missioner" />
+          <Txt Lang="en-GB" Txt="Use and programme mobile robots for demanding missions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bygge robuste løsninger til risikofyldte udfordringer" />
+          <Txt Lang="en-GB" Txt="Build robust solutions for risky challenges" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende en reflektiv fejlsøgningsmetode" />
+          <Txt Lang="en-GB" Txt="Employ a reflective fault finding method" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31386" />
+        <PreviousCourse CourseCode="31386" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="2" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:55.167" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

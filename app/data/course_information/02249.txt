@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02249" University="dtu" LastUpdated="2026-03-06+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">7.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Beregningsmæssigt hårde problemer" />
+        <Title Lang="en-GB" Title="Computationally Hard Problems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="53388" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Witt</FamilyName>
+            <Email>cawi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen og bedømmelse af opgave(r). Gruppeprojekter skal individualiseres. Karakteren fremkommer ved en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination and assessment of exercise(s). Group projects require individualization. The mark is given by an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Use of generative AI is not permitted during the exam." />
+            <Aid_Txt Lang="da-DK" Txt="Det er ikke tilladt at bruge generative AI under eksamen." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Der findes mange vigtige problemer indenfor daalogi og andre områder, som kan løses optimalt, men hvor den tid det kræver er så lang, at det gør det praktisk umuligt. Eksempler på sådanne problemer er: optimal tildeling af opgaver til processorer, finde den optimale rute for en varebil, pakke en kuffert optimalt, optimere læsset af et rumfartøj eller at finde den optimale sammensætning af et aktiedepot.
+
+I kurset vil vi først præcisere hvad vi mener med "beregningsmæssigt hårde" problemer. Derefter vil der blive givet eksempler på denne type problemer og præsenteret metoder til at bevise at et givet problem er hårdt. For at kunne analysere et problem fra den virkelige verden er det nødvendigt først at identificere den tilgrundliggende matematiske struktur af problemet.  Derefter kan det konverteres til en abstrakt matematisk model som det er muligt at analysere.
+
+Vi vil derefter betragte randomiserede algoritmer og vise hvordan disse kan bruges til at give approksimative løsninger til hårde problemer. Disse algoritmer er hurtige algoritmer der "slår plat eller krone" undervejs, dvs. bruger en tilfældighedsgenerator. Derfor kan man få forskellige løsninger når man kører en sådan algoritme på det samme input gentagne gange. Vi vil vise, at der er hårde problemer, som kan løses og "næsten optimalt" med randomiserede algoritmer. Dvs. at algoritmen med stor sandsynlighed finder en "god" løsning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaver (hvoraf nogle er obligatoriske).</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningsnoter vil være tilgængelige på DTU Learn.</Course_Literature>
+          <Course_Objectives>For mange problemer i den virkelige verden kender man ingen metoder til effektivt at finde den optimale løsning. Vi kalder denne type problemer for beregningsmæssigt hårde problemer. For denne type problemer er det kun muligt at finde approksimative løsninger indenfor rimelig tid. Kursets formål er at sætte de studerende i stand til at identificere et problem som beregningsmæssigt hårdt og udstyre dem med algoritmiske metoder til at finde approksimative løsninger.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>There are many important problems in Computer Sciences and other areas for which optimal solutions can be found but the time to do so is so long that it is  not practical. Examples of such problems are optimal assignment of tasks to processors, finding an optimal tour for the local postman, optimal packing of a suitcase, optimizing the payload for a space mission or selecting a profitable stock portfolio. 
+
+In the course we will first specify what we mean by a "computationally hard'' problem. Then some examples of such that problems are presented and methods are described to identify a problem as being hard. In order to become accessible to an analysis real world problems have to be converted into abstract mathematical models which capture the essence of the original problem.
+
+We shall then look at problems where randomization helps in solving them. This means that there are fast algorithms for solving the problem that use "coin flips'', i.e. a random number generator. Hence repeatedly running such an algorithm on the same input might lead to different solutions. We shall consider problems where a "good'' solution will be found with high probability by randomized algorithms.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises, some of which are mandatory.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes will be available on DTU Learn.</Course_Literature>
+          <Course_Objectives>For many real world problems, an optimal solution cannot be found efficiently. Such problems are called computationally hard. For such problems only approximate solutions can be found in reasonable time. The aim is to enable the students to identify a problem as being not efficiently solvable and to supply them with algorithmic schemes for finding approximate solutions.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab af algoritmeteori og grundlæggende emner fra formelle sprog og statistik/sandsynlighedsregning. Matematisk modenhed." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of theory of algorithms and basics of formal languages and statistics/probability theory. Mathematical maturity." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02110. 02141. 02402/02403/02405" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en inputbeskrivelse for et givet problem" />
+          <Txt Lang="en-GB" Txt="to design an input representation for a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="definere de forskellige niveauer af hårdhed af problemer" />
+          <Txt Lang="en-GB" Txt="define the various levels of hardness of problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="definere hvornår et problem er hårdt" />
+          <Txt Lang="en-GB" Txt="define when a problem is hard" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere den tilgrundliggende abstrakte struktur af et virkeligt problem" />
+          <Txt Lang="en-GB" Txt="identify the abstract structure behind a real world problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="afgøre om et givet problem er beregningsmæssigt hårdt" />
+          <Txt Lang="en-GB" Txt="determine whether a given problem is computationally hard" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere et givet problem med hensyn til dets kompleksitet" />
+          <Txt Lang="en-GB" Txt="analyse a given problem with respect to its complexity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere randomiserede algoritmer med hensyn til brug af ressourcer" />
+          <Txt Lang="en-GB" Txt="analyse randomized algorithms with respect to the use of resources" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere randomiserede algoritmer med hensyn til kvaliteten af den løsning de frembringer" />
+          <Txt Lang="en-GB" Txt="analyse randomized algorithms with respect to quality of the solution they provide" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="genkende muligheden for anvendelsen af randomiserede algoritmer til at løse et givet hårdt problem" />
+          <Txt Lang="en-GB" Txt="recognize the potential for a randomized solution in a given hard problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe randomiserede algoritmer for specifikke problemer" />
+          <Txt Lang="en-GB" Txt="design randomized algorithms for specific problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenligne og vurdere forskellige løsningsmetoder for et givet problem og vælge den mest lovende" />
+          <Txt Lang="en-GB" Txt="evaluate and assess different solution methods and select the most promising one" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Beregningsmæssigt hårde problemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:09.903" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

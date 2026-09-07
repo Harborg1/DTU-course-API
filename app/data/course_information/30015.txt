@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30015" Volume="2026/2027" University="dtu" LastUpdated="2024-04-04+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="30" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Indledende elektronik til instrumentering" />
+        <Title Lang="en-GB" Title="Basic electronics for instrumentation" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="2955" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sten Schmidl</GivenName>
+            <FamilyName>Søbjærg</FamilyName>
+            <Email>ssso@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Reeksamen i maj vil typisk være mundtlig." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Re-examination in May will typically be oral." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>DC: Beskrivelse af kredsløb opbygget af lineære komponenter. Modstande, spændings- og strømkilder. Kondensatorer og spoler. Kirchhoffs spændingslov og Kirchhoffs strømlov. Serie- og parallelopstillinger. Maske og knudepunktsligninger. Thevenin- og Nortonækvivalenter. Superpositionsprincippet. Ideelle operationsforstærkere. Dioder og bipolære transistorer, DC-karakteristik og storsignalmodeller. Grundlæggende elektriske målemetoder</Contents>
+          <Teaching_And_Learning_Methods>Interaktiv undervisning, gruppearbejde og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte den studerende i stand til at opbygge mindre elektriske kredsløb samt til at bestemme strømme, spændinger og effekter for elektriske kredsløb i almindelighed ved at:
+- anvende systematiske metoder til analyse af lineære elektriske kredsløb
+- anvende kredsløbsækvivalenter
+- forstå dioders og transistorers virkemåder.
+- anvende operationsforstærkere til grundlæggende forstærkeropstillinger</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>DC: Characterisation of circuits with linear components. Resistors, voltage and current sources. Capacitors and inductors. Kirchhoff's voltage law and Kirchhoff's current law. Serial and parallel circuits. Mesh-current and node-voltage analysis. Thevenin and Norton equivalents. Superposition principle. Ideal operational amplifiers. Diodes and bipolar transistors, DC characteristics and large-signal models. Fundamental measurement techniques</Contents>
+          <Teaching_And_Learning_Methods>Interactive lectures, group work, and lab-work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To enable the student to build small electrical circuits as well as to determine currents, voltages and power for electric circuits in general by:
+- applying systematic methods for the analysis of linear electronic circuits
+- applying circuit equivalents
+- understanding functions of diodes and transistors.
+- applying operational amplifiers for simple amplifier circuits</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne strømme, spændinger og effekt for kredsløb indeholdende serie- og parallelopstillinger" />
+          <Txt Lang="en-GB" Txt="calculate currents, voltages and power for circuits with series and parallel elements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende systematiske knudepunkts- og maskemetoder på kredsløb indeholdende modstande og kilder med henblik på bestemmelse af strømme, spændinger og effekt" />
+          <Txt Lang="en-GB" Txt="apply systematic node-voltage and mesh-current analysis methods to circuits containing resistors and sources for determination of currents, voltages, and power" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme Thevenin- og Nortonækvivalenter" />
+          <Txt Lang="en-GB" Txt="determine Thevenin and Norton equivalents" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende kildetransformationer" />
+          <Txt Lang="en-GB" Txt="apply source transformations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne strømme og spændinger i kredsløb indeholdende ideelle operationsforstærkere" />
+          <Txt Lang="en-GB" Txt="calculate currents and voltages in circuits containing ideal operational amplifiers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende dioder i simple kredsløb" />
+          <Txt Lang="en-GB" Txt="apply diodes in simple circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende bipolære transistorer i simple forstærkeropstillinger samt anvende storsignalmodeller" />
+          <Txt Lang="en-GB" Txt="apply bipolar transistors in simple amplifier circuits and apply large-signal models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne op- og afladningsforløb for kondensatorer samt spoler og beskrive begreberne steady state og transient respons" />
+          <Txt Lang="en-GB" Txt="calculate the charge and discharge behavior of capacitors and inductors and describe the concepts of transient and steady state responses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende målemetoder og standard laboratorieudstyr til gennemførelse af målinger på simple analoge kredsløb." />
+          <Txt Lang="en-GB" Txt="apply measurement methods and standard laboratory equipment to perform measurements on simple analog circuits." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31001/34600" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:44.21" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

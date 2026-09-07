@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34602" University="dtu" LastUpdated="2026-04-01+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Ingeniørarbejde - Elektroteknologi" />
+        <Title Lang="en-GB" Title="Engineering practices - Electrotechnology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="62516" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tiberiu-Gabriel</GivenName>
+            <FamilyName>Zsurzsan</FamilyName>
+            <Email>tgzsur@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af opgaver til sidst i projektet. Sidste dag er der plakat- og projektfremlæggelser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of assignments at the end of the project. Last day there will be poster and project presentations." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="There will be an oral exam the last day, mandatory." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Der vil være mundtlig eksamen sidste dag, obligatorisk." />
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Et fuldt projekt i Elektroteknologi. Projektet udføres ved praktiske implementering af et kredsløb og kræver brug og implementering af teoretiske elementer fra Digital Elektronik 1 og Elektriske Kredsløb 1&amp;2. Yderligere er der også fokus på hvordan der arbejdes i et elektroteknisk laboratorium.</Contents>
+          <Teaching_And_Learning_Methods>Laboratoriearbejde og gruppearbejde. Kurset omfatter et større projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende erfaringer med laboratoriearbejde igennem praktisk arbejde ved at gennemføre et projekt fra start til slut.</Course_Objectives>
+          <DTU_Remark>Kurset er forbeholdt studerende på bacheloruddannelsen i Elektroteknologi.</DTU_Remark>
+          <Remark>E-learning anvendes i form a web-based tools.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>A full project within Electrotechnology. The project is hands-on and involves applying and implementing the theoretical elements from Digital Electronics 1 and Electric Circuits 1&amp;2.
+Further, there is also focus on how to work and behave in an electronics laboratory.</Contents>
+          <Teaching_And_Learning_Methods>Laboratory work and group work. The course includes a larger project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide students with a first encounter with an engineering laboratory environment through hands-on experience in completing a given project from start to finish.</Course_Objectives>
+          <DTU_Remark>The course is reserved for students on the bachelor programme in Electrotechnology.</DTU_Remark>
+          <Remark>E-learning is used in the form of web-based tools.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå sikkerhedsregler ved laboratoriearbejde med elektronik og vigtigheden af overholdelsen af disse." />
+          <Txt Lang="en-GB" Txt="Understand electronics laboratory safety procedures and their importance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere de intrinsiske egenskaber af en DC motor og forstå den matematiske model for denne, samt dens elektriske og mekaniske parametre." />
+          <Txt Lang="en-GB" Txt="Identify intrinsic properties of a DC motor and understand its mathematical model, its electrical and mechanical parameters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrer færdigheder i MATLAB, Simulink eller Python til matematisk modellering og Python/LabVIEW/foretrukkent sprog til implementering af styringer." />
+          <Txt Lang="en-GB" Txt="Demonstrate proficiency in MATLAB, Simulink or Python for mathematical modeling and Python/LabVIEW/language of choice for control implementation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøg brugen af ​​AI-værktøjer/agenter til hurtig kodeudvikling og sammenlign med egen implementering" />
+          <Txt Lang="en-GB" Txt="Investigate use of AI tools/agents for rapid code development and compare with own implementation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruér en passende driver topologi som løser den stillede opgave." />
+          <Txt Lang="en-GB" Txt="Build a suitable driver topology relevant for the project which enables completion of the task at hand." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og implementér beskyttelseskredsløb til det designede kredsløb." />
+          <Txt Lang="en-GB" Txt="Understand and implement protection circuitry around the converter." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og implementer en feedbackmetode passende til projektet." />
+          <Txt Lang="en-GB" Txt="Design and implement a feedback method suitable for the project." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluér performance af det designede kredsløb inklusiv feedback og controller med et udleveret demonstrator set-up." />
+          <Txt Lang="en-GB" Txt="Evaluate the performance of the designed circuit, feedback and controller on a provided demonstrator set-up." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lav en plakat der illustrerer de vigtigste aspekter af den valgte designmetode og forsvar denne mundligt." />
+          <Txt Lang="en-GB" Txt="Author and orally defend a poster to illustrate interesting aspects of the design methodology." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02138.34600/30015.34601" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="34301" />
+        <PreviousCourse CourseCode="34301" />
+        <PreviousCourse CourseCode="31012" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="123" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="12" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="135" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:35.223" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

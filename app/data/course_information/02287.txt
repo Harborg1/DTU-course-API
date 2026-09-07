@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02287" Volume="2026/2027" University="dtu" LastUpdated="2025-04-29+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="1" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Logiske teorier for usikkerhed og læring" />
+        <Title Lang="en-GB" Title="Logical Theories for Uncertainty and Learning" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="104472" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Nina</GivenName>
+            <FamilyName>Gierasimczuk</FamilyName>
+            <Email>nigi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individuelle/individualiserede opgaver (45 %) samt en skriftlig eksamen (55 %)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment of individual/individualized assignments (45 %) and a written exam (55 %)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>1. From Propositional Logic to Epistemic Logic: Language and Models, 
+2. Logical Properties of (Group) Knowledge,  
+3. Axiomatic Systems and Proofs, Soundness and Completeness of Epistemic Logic
+4. Knowledge Change: Public Announcement Logic, Belief Revision 
+5. Probability Based Modelling of Uncertainty: Bayes Theorem, Bayesian Update 
+6. Modelling Uncertainty about Probability Distribution: Belief Functions, Possibility Measures, Ranking Functions, Relative Likelihood, Plausibility Measures
+7. Game Theory: Cooperation and Conflict, Nash Equilibrium, Mixed strategies, Pareto Efficiency 
+8. Extensive Form Games: Harsanyi Transformation, Bayesian Update in Games, Backward Induction, Infinite Payoffs</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, skriftlige opgaver (teoretisk og/eller programmering).</Teaching_And_Learning_Methods>
+          <Course_Literature>I kurset kan de studerende gøre brug af følgende lærebøger:
+
+Joseph Y. Halpern, 'Reasoning about Uncertainty', MIT Press (2003).
+Ronald Fagin, Joseph Y. Halpern, Yoram Moses and Moshe Vardi, 'Reasoning about Knowledge', MIT Press (2004).
+Eric Rasmusen, Games and Information: An Introduction to Game Theory, Wiley-Blackwell (2006).</Course_Literature>
+          <Course_Objectives>Ræsonnering med og håndtering af usikkerhed er vigtig i mange områder af kunstig intelligens, for eksempel i ekspertsystemer og robotteknologi, men også i forskellige tilgange til automatiseret læring. Kurset vil give en oversigt over et repræsentativt udvalg af forskellige matematiske modeller til håndtering af usikker viden og læring i en interaktiv kontekst, såsom (multi-agent epistemisk) modallogik, Belief Revision Theory, Bayesiansk sandsynlighedsteori og spilteori. Formålet med kurset er at give den studerende teori og værktøjer, der er nødvendige for at anvende modellerne i forskning og i programmeringspraksis.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>1. From Propositional Logic to Epistemic Logic: Language and Models, 
+2. Logical Properties of (Group) Knowledge,  
+3. Axiomatic Systems and Proofs, Soundness and Completeness of Epistemic Logic
+4. Knowledge Change: Public Announcement Logic, Belief Revision 
+5. Probability Based Modelling of Uncertainty: Bayes Theorem, Bayesian Update 
+6. Modelling Uncertainty about Probability Distribution: Belief Functions, Possibility Measures, Ranking Functions, Relative Likelihood, Plausibility Measures
+7. Game Theory: Cooperation and Conflict, Nash Equilibrium, Mixed strategies, Pareto Efficiency 
+8. Extensive Form Games: Harsanyi Transformation, Bayesian Update in Games, Backward Induction, Infinite Payoffs</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, written assignments (theoretical and/or programming).</Teaching_And_Learning_Methods>
+          <Course_Literature>In the course the students can make use of the following textbooks:
+
+Joseph Y. Halpern, 'Reasoning about Uncertainty', MIT Press (2003).
+Ronald Fagin, Joseph Y. Halpern, Yoram Moses and Moshe Vardi, 'Reasoning about Knowledge', MIT Press (2004).
+Eric Rasmusen, Games and Information: An Introduction to Game Theory, Wiley-Blackwell  (2006).</Course_Literature>
+          <Course_Objectives>Reasoning with and managing uncertainty is important in many areas of artificial intelligence, for example, in expert systems and robotics, but also in various approaches to automated learning. The course will overview a representative selection of different mathematical models for dealing with uncertain knowledge and learning in an interactive context, such as (Multi-agent Epistemic) Modal Logic, Belief Revision Theory, Bayesian Probability Theory, and Game Theory. The aim of the course is to provide the student with theory and tools necessary to apply the models in research and in programming practice.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Diskret matematik, især udsagnslogik og førsteordenslogik; elementær sandsynlighedsteori." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Discrete mathematics, in particular propositional logic and first order logic; elementary probability theory." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01017/02156/02180" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive en række af de mest udbredte teknikker i modellering af usikkerhed og læring." />
+          <Txt Lang="en-GB" Txt="Describe a number of the most prevalent techniques in modelling uncertainty and learning." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive logikkens rolle i modelleringen af ​​viden, usikkerhed og vidensforandring." />
+          <Txt Lang="en-GB" Txt="Describe the role of logic in the modelling of knowledge, uncertainty, and knowledge change." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de respektive begrænsninger af logik og sandsynlighed i modellering af læring." />
+          <Txt Lang="en-GB" Txt="Describe the respective limitations of logic and probability in modelling learning." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne og vurdere hensigtsmæssigheden af ​​forskellige teknikker til løsning af et givent vidensmodelleringsproblem." />
+          <Txt Lang="en-GB" Txt="Compare and assess the appropriateness of various techniques for solving a given knowledge modelling problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere vanskeligheder specifikke for single-agent modellering af viden." />
+          <Txt Lang="en-GB" Txt="Assess difficulties specific to single-agent modelling of knowledge." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere vanskeligheder specifikke for multi-agent modellering af viden." />
+          <Txt Lang="en-GB" Txt="Assess difficulties specific to multi-agent modelling of knowledge." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Selvstændigt udforske litteraturen relevant for projektet." />
+          <Txt Lang="en-GB" Txt="Independently explore the literature relevant for the project." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en rapport i stil med en konferenceartikel." />
+          <Txt Lang="en-GB" Txt="Write a paper in the style of a conference article. " />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02287/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Logik og kunstig intelligens</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:21.87" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

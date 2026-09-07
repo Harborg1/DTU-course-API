@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62453" Volume="2026/2027" University="dtu" LastUpdated="2026-04-13+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Semesterprojekt 2 Sundhedsteknologi" />
+        <Title Lang="en-GB" Title="Semester Project 2 Healthcare technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="Det Sundhedsfaglige Fakultet, Københavns Professionshøjskole." />
+            <Extern_Dep_Txt Lang="en-GB" Txt="Faculty of Health, University College Copenhagen." />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="227196" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Morten Bak</GivenName>
+            <FamilyName>Kristoffersen</FamilyName>
+            <Email>mobkr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="90585" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lau</GivenName>
+            <FamilyName>Jeppesen</FamilyName>
+            <Email>laje@kp.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Projektet indledes med en analyse af hjertet som et elektrofysiologisk måleobjekt, herunder EKG signalets generering, spændingsniveauer i givne afledninger samt frekvensindhold. Yderligere studeres de mest almindelige støjkilder ved optagelse af et EKG. 
+EKG signalet som værktøj ved diagnose af hjertesygdomme studeres derefter med eksempler.
+
+Derefter arbejdes der med et EKG målesystem indeholdende: elektroder, forstærker, filter, A/D konvertering og overførsel af data til microcontroller og PC. Der udvikles PC software til opsamling, visning og analyse af de optagne EKG data. 
+
+Praktisk måling af EKG signaler optaget fra person samt indledende analyse af disse signaler f.eks. udregne puls, timings osv..</Contents>
+          <Teaching_And_Learning_Methods>Projekt med gruppevis projektvejledning.</Teaching_And_Learning_Methods>
+          <Course_Literature>Materiale og udstyr udleveres ved projektets start.</Course_Literature>
+          <Course_Objectives>Det overordnede kursusmål er at give den studerende praktisk erfaring med at:
+
+• Analysere et biologisk organ som elektrofysisk måleobjekt
+• Analysere, designe, udvikle, teste og anvende et elektronisk målesystem til måling af et biologisk signal
+• Opsamle, analysere og præsentere måledata fra en patientsimulator og forsøgsperson</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Sundhedsteknologi: 2. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The project begins with an analysis of the heart as an electrophysiological measurement object, including ECG signal generation, voltage levels in given derivations and frequency content. Further, the most common sources of noise when recording an ECG are studied.
+The ECG signal as a tool for the diagnosis of heart diseases is then studied with examples.
+
+Working with a ECG measurement system comprising: electrodes, amplifier, filter, A/D conversion and transmission of data from a microcontroller to a PC. PC software for obtaining, analysing, and presenting the recorded ECG data, is developed.
+
+Measure ECG signals recorded from subjects and conduct preliminary analysis of these signals e.g. calculate heart rate, timings etc.</Contents>
+          <Teaching_And_Learning_Methods>Project with group project supervision.</Teaching_And_Learning_Methods>
+          <Course_Literature>Material and equipment are handed out when the project starts.</Course_Literature>
+          <Course_Objectives>The overall course objective is to provide students with practical experience in:
+
+• Analysing a biological organ as electrophysical measuring object
+• Analysing, design, development, test and use of an electronic measuring system for measuring a biological signal
+• Collecting, analysing and presenting measurement data from a patient simulator and test subject</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Sundhedsteknologi: 2. semester</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Da elektronik tilsluttes kroppen er det et krav at 62452 Medicoteknik 2 er bestået før at man kan deltage i kurset." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Since electronics are connected to the body, it is a requirement that 62452 Bio-medical Electronics 2 has been passed before joining the course" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62452" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Viden svarende til semestrets kurser: 62450 Informations Teknologi 2, 62454 Sundhedsvidenskab 2, 01920 Basismat 2" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge equivalent to the semester's courses: 62450 Information Technology 2, 62454 Healthcare Science  2, 01920 Calculus and Algebra 2" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62450/62454/62516" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for hjertets fysiologi" />
+          <Txt Lang="en-GB" Txt="Explain cardiac physiology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for hjertesygdomme, der kan diagnosticeres vha. EKG data" />
+          <Txt Lang="en-GB" Txt="Account for heart disease that can be diagnosed using ECG data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere hjertet som elektrofysiologisk måleobjekt" />
+          <Txt Lang="en-GB" Txt="Analyse the heart as an electrophysiological measurement object" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for funktionen af en biopotentialforstærker" />
+          <Txt Lang="en-GB" Txt="Explain the function of a biopotential amplifier" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre verifikationsmålinger på en biopotentialforstærker" />
+          <Txt Lang="en-GB" Txt="Perform verification measurements on a biopotential amplifier" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for fordele og ulemper ved patient (EKG) simulator" />
+          <Txt Lang="en-GB" Txt="Explain the advantages and disadvantages of patient (ECG) simulator" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for et målesystem til måling af EKG signaler" />
+          <Txt Lang="en-GB" Txt="Explain a measurement system for measuring ECG signals" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsamle, analysere og præsentere EKG data vha. software udviklet i kurset" />
+          <Txt Lang="en-GB" Txt="Collect, analyse and present ECG data using software developed in the course" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="SU-SP2-U1" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:35.077" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02275" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Etisk hacking" />
+        <Title Lang="en-GB" Title="Ethical Hacking" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="177140" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Emmanouil</GivenName>
+            <FamilyName>Vasilomanolakis</FamilyName>
+            <Email>emmva@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53257" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Nicola</GivenName>
+            <FamilyName>Dragoni</FamilyName>
+            <Email>ndra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Vurdering er baseret på individualiserede grupperapporter" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individualized group reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus giver en praktisk tilgang til netværkssikkerhed, hvor studerende får en bedre forståelse for trusselslandskabet og de teknikker og værktøjer der bruges til at udnytte sårberheder og kompromitere systemer. Det giver hands-on erfaring med "penetration testing" og "ethical hacking".
+Studerende introduceres til alle faser i "Cyber Kil Chain", fra fjendtlig rekognoscering til data exfiltrering og de lærer at gennemføre en "penetration test" og dokumentere fundne sårbarheder i en penetration test rapport.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning, øvelser og opgaver</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er at give studerende en praktisk forståelse af netværkssikkerhed.</Course_Objectives>
+          <Remark>Kurset Etisk hacking præsenterer studerende for en række hackerværktøjer.
+Det skal understreges at disse værktøjer aldrig må bruges til illegitime formål. Den grundlæggende regel er at man aldrig må hacke et system man ikke selv ejer eller hvor man har en præcis skriftlig kontrakt herom med ejeren, og man aldrig må hacke et system som man afhænger af.
+Hvis der er nogen tvivl om hvorvidt en given anvendelse af et givet værktøj er lovligt skal der søges juridisk bistand, f.eks. fra DTUs jurister eller relevante myndigheder.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course provides students with practical experience in network security, so that they better understand the threat landscape and the techniques and tools commonly used to exploit vulnerabilities and exploit systems. It provides hands-on experience with penetration testing and ethical hacking. 
+Students are introduced to all phases of the Cyber Kill Chain, from hostile reconnaissance to data exfiltration, and learn how to conduct a penetration test and document discovered vulnerabilities in a penetration test report.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and assignments</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of this course is to provide students with a working knowledge of practical network security.</Course_Objectives>
+          <Remark>Throughout the Ethical Hacking course, a number of hacking tools will be demonstrated.
+It should be emphasized that these tools must never be used for illegitimate purposes. Never hack a system that you do not own or where you have a precise written contract with the owner and never hack a system that you depend on. 
+If you are in doubt as to whether or not the application of a given tool is legal or not, you should contact either DTU’s legal counsel or relevant public authorities</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset er et videregående kursus der forudsætter kendskab til både computer- og netværkssikkerhed, f.eks. svarende til 02270 og 02271 (tidligere 02233)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is an advanced course that requires understanding of both computer and network security, e.g. corresponding to 02270 and 02271 (formerly, 02233)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02270.02271 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de forskellige faser i &quot;Cyber Kill Chain&quot;" />
+          <Txt Lang="en-GB" Txt="Explain each of the phases in the Cyber Kill Chain" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemgå hyppigt anvendte rekognosceringsteknikker og fortælle hvilke former for data de tilvejebringer " />
+          <Txt Lang="en-GB" Txt="List commonly used reconnaissance techniques and the sources of data that they provide" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage en rekognoscering af en virksomhed baseret på åbne data" />
+          <Txt Lang="en-GB" Txt="Perform an open source intelligence investigation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere tjenester der kører på et værtsystem" />
+          <Txt Lang="en-GB" Txt="Identify services on a host system " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere et værtsystem for velkendte (og ukendte) sårbarheder" />
+          <Txt Lang="en-GB" Txt="Analyze a host system for known (and unknown) vulnerabilities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Infiltrere et værtsystem ved at benytte offentligt kendte sårbarheder og værktøjer" />
+          <Txt Lang="en-GB" Txt="Infiltrate host system by exploiting vulnerabilities using publicly available tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare kendte medtoder til at udbygge og sikre fodfæste samt etablere forbindelse til en ekstern kontrolenhed (Command &amp; Control server) " />
+          <Txt Lang="en-GB" Txt="Explain common techniques for lateral movement, retaining access and establishing communication with Command and Control Server" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hyppigt anvendte metoder til at eksfiltrere data gennem skjulte kommunikationskanaler" />
+          <Txt Lang="en-GB" Txt="Explain common techniques for exfiltration of data through covert channels" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>ethical hacking, pentest</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02193" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:17.437" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

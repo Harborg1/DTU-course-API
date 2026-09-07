@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41591" University="dtu" LastUpdated="2025-03-13+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Mekanik" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">3.5</Point>
+        <Title Lang="da-DK" Title="Topologioptimering" />
+        <Title Lang="en-GB" Title="Topology Optimization - Theory, Methods and Applications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" Tuition_Fee="11175" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Udbydes kun i ulige år." />
+          <Schedule_Txt Lang="en-GB" Txt="Offered only in odd years." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="104365" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Federico</GivenName>
+            <FamilyName>Ferrari</FamilyName>
+            <Email>feferr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2278" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Sigmund</FamilyName>
+            <Email>olsi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="18078" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Niels</GivenName>
+            <FamilyName>Aage</FamilyName>
+            <Email>naage@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17478" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Casper Schousboe</GivenName>
+            <FamilyName>Andreasen</FamilyName>
+            <Email>csan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="42485" FUniversity="DTU" SortID="4" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Rasmus Ellebæk</GivenName>
+            <FamilyName>Christiansen</FamilyName>
+            <Email>raelch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="Maj, 2025" />
+            <DeadLineTxt Lang="en-GB" Txt="May, 2025" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="Tilmelding via Conference Manager (https://www.tilmeld.dk/topology-optimization)" />
+            <Supp_Txt Lang="en-GB" Txt="Registration via Conference Manager (https://www.tilmeld.dk/topology-optimization)" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer på teori og praksis om topologioptimering. Emnerne omfatter:
+
+• Designparametrisering (kompositernes homogenisering, tæthedsbaserede interpolationer, niveausæt osv.)
+• Følsomhedsanalyse (direkte og tilknyttede metoder)
+• Optimeringsalgoritmer (OC-metoder, matematisk programmering, konvekse tilnærmelsesskemaer, stokastisk optimering og andre metoder)
+• Beregningsmæssige problemer (skaktern, filtre, robust design, parallelisering)
+• Nye og fremkommende tilgange (multiscale metoder, de-homogenisering, AI/ML, kontakt)
+• Anvendelser til strukturelle og multifysiske problemer (mikro- og nanosystemer, optik, bølgeudbredelsesproblemer, ikke-lineariteter, materialedesign, væskesystemer)
+• Industrielle applikationer og avancerede produktionsbegrænsninger</Contents>
+          <Teaching_And_Learning_Methods>1 uge (inkl. weekend) med forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Martin P. Bendsøe og Ole Sigmund (2003 and 2004), "Topology Optimization: Theory, Methods and Applications." Springer Verlag, 2003 or 2004, ISBN 3-540-42992-1.
+Inledende læsning: Kapitel 1 og Appendix 5.1.
+
+Christensen P. W. and Klarbring A., “An introduction to structural optimization.”, Springer Verlag (2009), ISBN 978-1-4020-8665-6
+Inledende læsning: Kapitler 3, 4, og 6</Course_Literature>
+          <Course_Objectives>Introduktion til og "hands-on" erfaring med topologioptimeringsmetoden</Course_Objectives>
+          <DTU_Remark>Udbydes kun i ulige år</DTU_Remark>
+          <Remark>Alle deltagere skal præsentere en plakat om emnet for deres ph.d. forskningsarbejde.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course focuses on theory and practice of Topology Optimization. Topics include:
+
+• Design parametrization (composites’ homogenization, density-based interpolations, level-set, etc.)
+• Sensitivity analysis (direct and adjoint methods)
+• Optimization algorithms (OC-methods, mathematical programming, convex approximation schemes, stochastic optimization and other methods)
+• Computational issues (checkerboards, filters, robust design, parallelization)
+• Novel and emerging approaches (multiscale methods, de-homogenization, AI/ML, contact)
+• Applications to structural and multi-physics problems (micro- and nano-systems, optics, wave-propagation problems, nonlinearities, material design, fluid systems)
+• Industrial applications and advanced manufacturing constraints</Contents>
+          <Teaching_And_Learning_Methods>1 full week (weekend incl.) with lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Martin P. Bendsøe and Ole Sigmund (2003 and 2004), "Topology Optimization: Theory, Methods and Applications." Springer Verlag, 2003 or 2004, ISBN 3-540-42992-1.
+Preparatory reading consists of Chapter 1 and Appendix 5.1.
+
+Christensen P. W. and Klarbring A., “An introduction to structural optimization.”, Springer Verlag (2009), ISBN 978-1-4020-8665-6
+Preparatory reading: Chapters 3, 4, og 6</Course_Literature>
+          <Course_Objectives>Introduction to and hands-on experience with the method of topology optimization</Course_Objectives>
+          <DTU_Remark>Offered only in odd years</DTU_Remark>
+          <Remark>All participants are required to present a poster on the topic of their Ph.D. research work.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset er designet til ph.d.-studerende og kandidatstuderende. Fotrolighed med de grundlæggende principper i finite element metoden forudsætttes. Viden&#xD;&#xA;svarende til et kursus i FEM samt Matlab erfaring antages." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is designed for Ph.D.-students and final-year graduate students being familiar with the basic concepts of the finite element method. Knowledge &#xD;&#xA;corresponding to a course in FEM as well as Matlab experience is assumed." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og bruge et eksisterende topologioptimeringsprogram (88 - og 99-line Matlab koder)" />
+          <Txt Lang="en-GB" Txt="Understand and use existing topology optimization software for stiffness design (88- and 99-line codes)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modificere den eksisterende kode til  ændrede randbetingelser, belastninger, design domæner, osv." />
+          <Txt Lang="en-GB" Txt="Modify existing codes to change boundary conditions, loads, design domains, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende principper for følsomhedsanalyse og udlede følsomheder for objektfunktioner" />
+          <Txt Lang="en-GB" Txt="Understand principles for design sensitivity analysis and derive them for new objective functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre topologidesign af fleksible mekanismer" />
+          <Txt Lang="en-GB" Txt="Implement topology design of compliant mechanisms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå teorien bag matematiske programmeringsværktøjer og implementere dem i topologioptimeringskoden" />
+          <Txt Lang="en-GB" Txt="Understand the theory behind mathematical programming tools and implement them in topology optimization software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå den nyeste udvikling i de teoretiske aspekter af topologioptimeringsmetoder" />
+          <Txt Lang="en-GB" Txt="Understand the newest developments in theoretical aspects of topology optimization methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Læse og forstå videnskabelige artikler om topologioptimering" />
+          <Txt Lang="en-GB" Txt="Read and understand research papers on topology optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den historiske baggrund for topologioptimeringsmetoden" />
+          <Txt Lang="en-GB" Txt="Know the historical foundation of the topology optimization method" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå nye anvendelser af topologioptimering i forskning og industrielle anvendelser" />
+          <Txt Lang="en-GB" Txt="Understand new applications of topology optimization in academic research and industry" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere topologidesign af dynamiske problemer med harmonisk belastning" />
+          <Txt Lang="en-GB" Txt="Implement topology design of dynamic problems with harmonic loads" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Teori, numerik og baggrund for topologioptimering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="35" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="35" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="50" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:28.997" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

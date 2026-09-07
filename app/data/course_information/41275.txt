@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41275" University="dtu" LastUpdated="2026-05-05+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Skibsoperationer" />
+        <Title Lang="en-GB" Title="Ship operations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="12409" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ulrik Dam</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>udni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6371" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Harry Bradford</GivenName>
+            <FamilyName>Bingham</FamilyName>
+            <Email>hbbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En skriftlig eksamen og 2 rapporter/opgaver. Opgaverne gennem semestret er obligatoriske og laves som individualiserede gruppe-rapporter. Der vil være feedback efter hver opgave. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="An exam and 2 reports/assignments. The compulsory assignments are made as group-reports with individual contributions indicated. Feedback is given after each assignment. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Begrebet ’skibsoperationer’ dækker generelt et bredt område af discipliner inden for shipping og skibsbygning. I dette kursus henfører begrebet udelukkende til forhold, som omhandler skibes sejlads i bølger på åbent hav, hvor den styrende faktor relaterer til bølgebelastningen på skibet og betydningen heraf (bevægelser, kræfter og brændstofforbrug). Fokus rettes i særlig grad mod performance analyser og beslutningsstøtte systemer, som sigter mod henholdsvis brændstoføkonomi (ofte retrospektivt) og sikkerhed (ofte real-tid) ved sejlads i bølger og hård sø. Igennem kurset berøres en række emner, herunder: sødygtighed, dataanalyse, betydning af ’human factors’, fuldskalamålinger og simuleringer. Indholdet i kurset koncentreres om stokastiske bølgesystemer (lineære havbølger, stationære processer, bølgeenergispektrum).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gæsteforelæsning, opgaveregning samt projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet med dette kursus er at give de studerende en forståelse for de metoder og analyser, som danner basis for performance-monitorering (særligt mht. brændstoføkonomi) samt beslutningsstøttesystemer (særligt mht. sikkerhed) i forbindelse med skibes operation på åbent hav. Disse metoder og teknikker er grundlæggende for ingeniører i rederiers tekniske afdelinger, i klassifikationsselskaber og i rådgivende ingeniørfirmaer inden for den maritime industri; særligt i forhold til udvikling af digitale tvillinger.</Course_Objectives>
+          <Remark>Kurset gennemføres til dels som projektarbejde. Videnskabelige artikler inddrages i undervisningen.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The term ‘ship operations’ covers in its general use a wide field of disciplines within shipping and naval architecture. In this course, the term is restricted specifically to aspects dealing with a ship sailing in a seaway on open oceans, where the main problem relates to wave excitations of the ship (including motions, loads and fuel consumption). In particular, the focus is on performance monitoring and decision support systems, used to, respectively, monitor fuel efficiency (retrospectively) and guide crew in decisions focused on safety on-board the ship (in real-time). The course deals with a variety of topics, including seakeeping, human factors affecting ship operations, EEDI (Energy Efficiency Design Index), full-scale measurements, stochastic waves, ocean wave energy spectra, motion transfer functions.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and guest lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of this course is to provide an understanding of the methods and analyses that form the basics of both performance monitoring (fuel efficiency) and decision support (safety) with regards to ship operations during sailing in a seaway. These techniques are used by naval architects and engineers in the technical departments of ship owners, in classification societies, and ship consultancies; in particular, in relation to the development of digital twins.</Course_Objectives>
+          <Remark>The course includes project work and reading of scientific papers.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til et programmeringssprog, f.eks. Python eller MATLAB." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience with numerical methods and programming using e.g. Python or MATLAB." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(41202/41201).02402.02405.(02002/02003)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare formålet og principperne bag beslutningsstøttesystemer til navigering og operationel rådgivning" />
+          <Txt Lang="en-GB" Txt="explain the purpose and principles of decision support systems for navigational and operational guidance of ships" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre (”generere”) simuleringer af skibsrespons" />
+          <Txt Lang="en-GB" Txt="carry out time series simulations of ship responses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive hvorledes bølgespektre og/eller bølgeparametre kan estimeres og efterfølgende anvendes i analyser" />
+          <Txt Lang="en-GB" Txt="describe how wave energy spectra and/or sea state parameters can be obtained and subsequently applied in analyses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Fast Fourier transformation (FFT) på responsmålinger fra et skib" />
+          <Txt Lang="en-GB" Txt="apply Fast Fourier Transformation (FFT) to measured time series of ship responses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne statistiske forudsigelser bølgeinducerede skibsrespons" />
+          <Txt Lang="en-GB" Txt="compute prediction of wave-induced statistics of responses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvorledes brændstofforbruget for en handelsflåde influeres af forskellige faktorer" />
+          <Txt Lang="en-GB" Txt="explain how the fuel efficiency of a merchant fleet is influenced by different factors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvorledes ’human factors’ påvirker skibsoperationer under sejlads" />
+          <Txt Lang="en-GB" Txt="explain how human factors are affecting ship operations during sailing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne udmattelsesgraden i skroget på et skib på basis af målte tidsserier for det bølgeinducerede bøjningsmoment" />
+          <Txt Lang="en-GB" Txt="compute fatigue damage in the hull girder of a ship on the basis of recorded values of the bending moment in the hull girder" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive, opstille og diskutere resultater, som er udledt på basis af analyser af såvel målte som simulerede skibsrespons" />
+          <Txt Lang="en-GB" Txt="describe, prepare and discuss results derived from the analysis of full-scale as well as simulated response data" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="41274" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-18" Time="17:04:35.383" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

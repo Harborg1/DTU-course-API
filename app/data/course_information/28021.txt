@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28021" University="dtu" LastUpdated="2026-04-28+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Kemisk og biokemisk procesteknik online" />
+        <Title Lang="en-GB" Title="Chemical and Biochemical Process Engineering online" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P12M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_online" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="20601" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Philip Loldrup</GivenName>
+            <FamilyName>Fosbøl</FamilyName>
+            <Email>plf@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="215287" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Cody</GivenName>
+            <FamilyName>Gale</FamilyName>
+            <Email>cbrga@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Rapport og præsentation efter første semester, mundtlig online eksamen efter andet semester indgår i helhedsvurderingen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Report and presentation after the first semester, oral online exam after the second semester are included in the overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="No written end-exam, only oral end-exam" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ingen skriftlig sluteksamen, kun mundtlig sluteksamen" />
+            <Schedule ScheduleKey="E1A" />
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="ca. 10-30 minutter per exam" />
+          <Duration Lang="en-GB" Txt="approx. 10-30 min. per exam" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset forløber over 2 semestre og kombinerer teori, regneøvelser og en kursusopgave. Systematisk opstilling af massebalancer og energibalancer for systemer med kemiske reaktioner og/eller med flere faser.
+Trinprocesser eksemplificeret ved absorptions- og destillationskolonner. Anvendelse af faseligevægte, kogepunkts- og dugpunktsberegninger i multikomponentsystemer. 
+Strømning i rør, herunder beregning af friktionstryktab i rørledninger og dimensionering af rørledningssystemer. Filtrering og sedimentationsprocesser.
+Varmetransmission: Varmeledning, varmeovergang og varmegennemgang,  og dimensionering af varmevekslere.
+Stoftransmission: Differentielle massebalancer, batchdestillation, stofdiffusion, design af fyldlegemekolonner og elektrokemiske celler.
+
+Undervisningen inddrager bl.a. praktiske eksempler inden for energioptimering, energilagring og forureningsbekæmpelse som er af relevans for overgangen til en mere bæredygtig kemisk industri.</Contents>
+          <Teaching_And_Learning_Methods>Online undervisning, opgaveregning, mulige hjemmeopgaver,  kursusopgave(r)</Teaching_And_Learning_Methods>
+          <Course_Literature>Kemiske Enhedsoperationer af Lars Kiørboe med flere, Polyteknisk forlag, 6. udgave
+2019</Course_Literature>
+          <Course_Objectives>Kurset har som formål at give en basisviden om centrale områder af den kemiske procesteknik, som anvendes i den kemiske, bioteknologiske og farmaceutiske industri herunder PtX industrien. Denne basisviden skal sætte de studerende i stand til:
+At kunne forstå beskrivelsen af en procesteknisk problemstilling og at kunne løse problemet ved hjælp af de opgivne data eller ved hjælp af data fundet i litteraturen
+At læse og skitsere procesdiagrammer for procesanlæg
+At foretage beregninger af størrelse, sammensætning, temperatur og tryk for strømme i procesanlæg
+At beregne energiudvekslingen i pumper samt ved strømning i rørledninger
+At kende principperne for et antal væsentlige typer af procesudstyr 
+At foretage kvantitative beregninger med henblik på dimensionering af procesudstyr</Course_Objectives>
+          <Remark>Kurset indgår typisk på 3. semester i studieforløbet Teknologi - digital uddannelse.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is extended over two semesters and combines theory,
+and a course problem. Systematic mass and energy balances for chemical processes with and without chemical reaction and with and without multiple phases.
+Stage processes exemplified by absorption and distillation. Applications of phase equilibria, bubble point and dew point calculations in multicomponent systems. Design of distillation columns.
+
+Examples: A number of typical problems from industrial processes are presented to illustrate practical applications and to form a background for understanding the quantitative methods described in the course. Practical examples on solution of environmental problems.
+
+Flow: The mechanical energy balance, flow of gases and liquids, calculation of friction losses in pipe systems. Pumps and  design of pipe systems. Filtration and sedimentation processes.
+Heat transfer: Heat transfer by conduction, convection and condensation.
+Design of heat exchangers.
+Mass transfer: Differential mass balances, batch distillation, diffusion, rate dependent mass transfer operations (absorption, stripping), and electrochemical stacks.
+
+The teaching activities involve i.a. practical examples within energy optimization, energy storage and pollution control that are of relevance for the transition to a more sustainable chemical industry.</Contents>
+          <Teaching_And_Learning_Methods>Online lectures, problem solving sessions, potential homework calculus, and course problem(s)</Teaching_And_Learning_Methods>
+          <Course_Literature>Kemiske Enhedsoperationer af Lars Kiørboe med flere, Polyteknisk forlag, 6. udgave
+2019</Course_Literature>
+          <Course_Objectives>The aim of the course is to give an introduction to chemical
+engineering concepts that are used in the chemical, biotechnological, and the pharmaceutical industry including PtX industry. This introductory course will make the student able to
+understand the description of an engineering problem and be able to solve the problem by using the given information or information found in the literature 
+understand and sketch flowsheets for plants
+calculate size, composition, temperature and pressure of streams in plants
+calculate energy transfer in systems with pumps and in pipes
+know the fundamental principles behind a number of important types of process equipment and to get a general knowledge of such equipment
+make quantitative calculations to design process equipment and to predict performance and capacity of existing equipment when operating conditions are changed</Course_Objectives>
+          <Remark>The course is typically included in the 3rd semester of the Technology - digital education course.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tegne processtrømskemaer for kemiske og bioteknologiske processer" />
+          <Txt Lang="en-GB" Txt="Draw proces flow sheets for chemical and biological processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse masse- og energibalancer for kemiske og bioteknologiske processer" />
+          <Txt Lang="en-GB" Txt="Set up and solve mass and energy balances for chemical and biological processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og løse tidsafhængige massebalancer for kemiske og bioteknologiske processer" />
+          <Txt Lang="en-GB" Txt="Set up and solve transient mass balances for chemical and biological processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne ligevægtssammensætning, dugpunkt og kogepunkt i et to-fase gas-væske system ved brug af Raoult og Henry's love" />
+          <Txt Lang="en-GB" Txt="Calculate equilibrium composition, dew point and boiling point for a two phase gas liquid system based on Raoult and Henry's laws" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende fasediagrammer til beregning af ligevægtssammensætning og mængder for to-fase systemer" />
+          <Txt Lang="en-GB" Txt="Apply phase diagrams to calculate equilibrium composition and amounts for two-phase systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende massebalancer og ligevægtsberegninger til at designe ligevægtstrinprocesser såsom destillation og extraktion" />
+          <Txt Lang="en-GB" Txt="Apply mass balances and equilibrium calculations to make design calculation on equilibrium stage processes such as distillation and extraction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne nødvendigt trintal ved brug af McCabe-Thiele's metode" />
+          <Txt Lang="en-GB" Txt="Calculate required number of equilibrium stages by McCabe-Thiele's method" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende den mekaniske energibalance til at beregne energiudveksling i pumper og andet procesudstyr" />
+          <Txt Lang="en-GB" Txt="Apply the mechanical energy balance to calculate the exchange of energy in pumps and other process equipment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne friktionstryktab ved strømning i rør, fittings og partikelmasser" />
+          <Txt Lang="en-GB" Txt="Calculate the friction pressure drop due to flow in pipes, fittings and fixed beds" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dimensionere hyppigt forekommende procesudstyr som feks filtre, cykloner, fluid beds, varmevekslere og kolonner til absorption og stripning" />
+          <Txt Lang="en-GB" Txt="Design frequently encountered process equipment such as filters, cyclones, fluid beds, heat exchangers, columns for absorption and stripping" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse en procesteknisk opgave og formulere beregningsmetode og resultater i en rapport" />
+          <Txt Lang="en-GB" Txt="Solve a chemical engineering problem and formulate the calculation method and the results in a report" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Kemisk og biokemisk procesteknik online</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="28020/28022/28025" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:22:46.683" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02231" University="dtu" LastUpdated="2026-04-21+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Grundlæggende kryptografi" />
+        <Title Lang="en-GB" Title="Cryptography Fundamentals" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset afholdes hvert efterår." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is given every fall semester." />
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="166539" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Majenz</FamilyName>
+            <Email>chmaj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="190664" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Baum</FamilyName>
+            <Email>cabau@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Hjemmeopgaverne vægtes med 20%, den skriftlige mini-eksamen med 10% og den afsluttende skriftlige eksamen med 70%." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The homeworks count for 20%, the written mini-exam 10% and the final written examination for 70%." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Klassisk kryptografi, grundlaget for moderne kryptografi, AES, Blokshifferoperationsmodi, RSA-systemet, digitale signaturer, nøgleudveksling, det diskrete logaritmeproblem og dets anvendelser, LWE-problemet, Regevs krypteringsskema</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, hjemmeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset har som overordnet mål at indføre den studerende i en række centrale begreber og metoder i kryptografi.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Classical cryptography, the foundation of modern cryptography, AES, block cipher modes of operation, the RSA-System, digital signatures, key exchange, the discrete logarithm problem and its applications, the LWE problem, Regev’s encryption scheme.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, homework.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The main purpose of this course is to introduce the student to central concepts and methods in cryptography.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="se engelsk version" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Discrete Mathematics (01017/01019) is a strongly recommended prerequisite." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01017/01019" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar grundpillerne i moderne kryptografi: sikkerhedsdefinitioner, sikkerhedsreduktioner, angreb." />
+          <Txt Lang="en-GB" Txt="Explain the pillars of modern cryptography: security definitions, security reductions, attacks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv konceptet af en blokchiffer og hvordan blokchiffer anvendes. " />
+          <Txt Lang="en-GB" Txt="Describe the concept of a block cipher and how block ciphers are used " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser sikkerheden af blokchiffer - modes of operation." />
+          <Txt Lang="en-GB" Txt="Analyze the security of block cipher modes of operation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skitser anvendelserne af kryptografiske hashfunktioner inden for kryptografi, og analyser og diskuter deres generiske sikkerhed." />
+          <Txt Lang="en-GB" Txt="Outline the applications of cryptographic hash functions in cryptography, and analyze and discuss their generic security" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter forskellene mellem klassisk (symmetrisk) kryptografi og offentlig-nøgle (asymmetrisk) kryptografi." />
+          <Txt Lang="en-GB" Txt="Discuss the differences between classical (symmetric) cryptography and public-key (asymmetrical) cryptography." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv designet af AES. " />
+          <Txt Lang="en-GB" Txt="Describe the design of AES" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsenter det asymmetriske kryptosystem RSA, og og forklar hvordan systemet anvendes til kryptering og til at konstruere digitale signaturer." />
+          <Txt Lang="en-GB" Txt="Present the RSA public-key cryptosystem, and explain how the system is used for encryption and to construct digital signatures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter kvantetruslen mod kryptografi. " />
+          <Txt Lang="en-GB" Txt="Discuss the quantum threat to cryptography.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar “Learning With Errors”-problemet og Regevs krypteringsskema." />
+          <Txt Lang="en-GB" Txt="Explain the Learning With Errors problem and Regev’s encryption scheme." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Kryptering og digitale signaturer, hemmeligholdelse og authentificering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="01410" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:03.993" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

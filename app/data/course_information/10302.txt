@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10302" University="dtu" LastUpdated="2026-03-23+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Elektronstrukturmetoder i materialefysik, kemi og biologi" />
+        <Title Lang="en-GB" Title="Electronic Structure Methods in Material Physics, Chemistry and Biology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="40609" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Thomas</GivenName>
+            <FamilyName>Olsen</FamilyName>
+            <Email>tolsen@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="988" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Karsten Wedel</GivenName>
+            <FamilyName>Jacobsen</FamilyName>
+            <Email>kwja@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Grupperapport individualiseret gennem mundtlig eksamen. &#xD;&#xA;Præsentation af en artikel i kursets journal club er en forudsætning for at kunne bestå eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Questions about the group project(s) are part of the oral exam. Presentation of a paper in the course journal club is a prerequisite for passing the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil give en oversigt over en række metoder til løsning af det kvantemekaniske elektronstrukturproblem. Følgende emner vil blive berørt: Interatomare vekselvirkninger, det kvantemekaniske mangeelektronproblem, tæthedsfunktionalteori, approksimative totalenergimetoder og anvendelser inden for overflade- og materialefysik samt kemi.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, teori- og computerøvelser, journal club, projekt.</Teaching_And_Learning_Methods>
+          <Course_Literature>Feliciano Giustino
+“Materials Modelling using Density Functional Theory”
+Oxford University Press
+ISBN: 978-0-19-966244-9</Course_Literature>
+          <Course_Objectives>At give den studerende et indblik i moderne elektronstrukturmetoder inden for teoretisk fysik med særlig vægt på beskrivelser af materialer og molekyler på det atomare niveau.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will provide an overview of different methods to solve the quantum mechanical electronic structure problem. The following topics will be discussed: Interatomic interactions, the quantum mechanical many-body problem, density functional theory, approximative total energy methods,  and applications in surface and materials physics and chemistry..</Contents>
+          <Teaching_And_Learning_Methods>Lectures, theory and computer exercises, journal club, project.</Teaching_And_Learning_Methods>
+          <Course_Literature>Feliciano Giustino
+“Materials Modelling using Density Functional Theory”
+Oxford University Press
+ISBN: 978-0-19-966244-9</Course_Literature>
+          <Course_Objectives>To give the student insight into modern electronic structure methods with special emphasis on the description of molecules and solids at the atomic level.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende kurser. Især begreber fra faststoffysik som Blochs teorem og det reciprokke gitter. Programmeringssproget Python anvendes i kurset." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses. Especially concepts from solid state physics like Bloch's theorem and the reciprocal lattice. The programming language Python is used in the course." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10112/10303/10317" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlaget for tæthedsfunktionalteori, Hohenberg-Kohn teoremerne og Kohn-Sham ligningerne" />
+          <Txt Lang="en-GB" Txt="Explain the basis of density functional theory, Hohenberg-Kohn theorems and Kohn-Sham equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere de nødvendige antagelser og parametre for forskellige implementationer af tæthedsfunktionalteori" />
+          <Txt Lang="en-GB" Txt="Identify the assumptions and parameters necessary for different implementations of DFT" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare definitionen af exchange-korrelationsenergien og kende til forskellige niveauer af approksimationer til xc-funktionalet" />
+          <Txt Lang="en-GB" Txt="Explaining the definition of the exchange-correlation energy, and know the different levels of appromixations to the xc-functional" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Læse og forklare moderne litteratur på området, således at der kan holdes et foredrag på baggrund af en udvalgt artikel" />
+          <Txt Lang="en-GB" Txt="Read and explain current literature and give a talk on a selected paper" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere problemer i fysik, kemi og biologi, hvor tæthedsfunktionalteori kan anvendes" />
+          <Txt Lang="en-GB" Txt="Identify problems in physics, chemistry and biology where DFT can be applied." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende ASE og GPAW programmerne til at udføre elektroniske beregninger på atomare systemer" />
+          <Txt Lang="en-GB" Txt="Perform electronic structure calculations with the ASE and GPAW codes on atomic systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definere et eget forskningsprojekt og lave de relevante computersimuleringer" />
+          <Txt Lang="en-GB" Txt="Define your own research project and perform relevant computer simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en rapport på baggrund af resultaterne fra projeket" />
+          <Txt Lang="en-GB" Txt="Write a report on the basis of the results obtained in the project." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Elektronstrukturmetoder i materialefysik, kemi og biologi</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:02.54" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

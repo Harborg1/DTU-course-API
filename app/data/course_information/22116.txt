@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22116" Volume="2026/2027" University="dtu" LastUpdated="2026-03-25+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Python programming i Life Science" />
+        <Title Lang="en-GB" Title="Python programming in Life Science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="816" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Peter Wad</GivenName>
+            <FamilyName>Sackett</FamilyName>
+            <Email>pwsa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Aflevering af obligatoriske øvelser samt udførelse af peer-evaluering (mindst 11 ud af 13 af begge) er forudsætning for at gå til eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Handing in mandatory exercises and performing peer evaluation (at least 11 out of 13 of both) are prerequisites for taking the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No form of AI is allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Ingen form for AI er tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset har et stærkt fokus på at opnå programmatisk tænkning gennem forelæsninger og praktiske øvelser i en life science sammenhæng. Studerende vil engagere sig i dybdegående programmering ved at skabe mindre, men komplette programmer i øvelserne, der udnytter bredden af Python-datatyper og sprogkonstruktioner. Der vil blive lagt vægt på læsbarhed, vedligeholdelse og god programmeringspraksis ved brug af ren Python for at fremhæve det programmatiske aspekt. Ved hjælp af simple algoritmer vil de studerende analysere og manipulere forskellige biologiske datafiltyper. En vigtig del af kurset involverer peer-evaluering af øvelser, hvilket giver de studerende mulighed for at få indsigt i forskellige ideer og løsninger fra deres medstuderende.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger med ugentlige obligatoriske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Den studerende vil blive i stand til at løse mindre life science problemer på en struktureret måde i Python. Det er et vigtigt mål for den studerende at opnå kompetencer i programmatisk tænkning.</Course_Objectives>
+          <DTU_Remark>Kurset eksisterer også i en kandidatversion (22166).</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course has a strong focus on acquiring programmatic thinking through lectures and hands-on exercises in a life science context. Students will engage in in-depth programming by creating smaller but complete programs in the exercises, utilizing the breadth of Python data types and language constructs. The emphasis will be on readability, maintainability, and good programming practices, using pure Python to highlight the programmatic aspect. Through the use of simple algorithms, students will parse and manipulate various biological data file types. An important part of the course involves peer-evaluation of exercises, allowing students to gain exposure to diverse ideas and solutions from their peers.</Contents>
+          <Teaching_And_Learning_Methods>Lectures med weekly mandatory exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The student will be able to solve minor life science problems in a structured manner using Python. It is an important goal for the student to achieve competencies in programmatic thinking.</Course_Objectives>
+          <DTU_Remark>The course also exists on MSc level (22166).</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende programmeringserfaring er påkrævet, fortrinsvis i Python. Dette inkluderer viden om variabler, tildelinger, operatorer, betingede og løkke sprogkonstruktioner og filer. Du må have et fuldt 5 ETCS programmeringskursus før dette, da sværhedsgraden er justeret efter det." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic programming experience is required, preferably in Python. This includes knowledge of variables, assignments, operators, conditional and looping language constructs, and files. You must have completed a full 5 ECTS programming course before this one, as the difficulty is adjusted accordingly." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Selvstændigt få dybere indsigt i at bruge python-sprogkonstruktioner og datatyper i programmering på højere niveau baseret på eksisterende python-viden." />
+          <Txt Lang="en-GB" Txt="Independently gain deeper insight into using python language constructs and data types in higher level programming based on existing python knowledge." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Overholde de grundlæggende principper i god programmeringspraksis, som at evaluere om variabel-/objektnavne er passende i kontekst og undgå obskur, uklar kode." />
+          <Txt Lang="en-GB" Txt="Adhere to basic principles in good programming practice, like evaluating the appropriateness of variable/object names and avoiding obfuscating code." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle pseudokode- og kommentar-færdigheder for at forbedre kodens læsbarhed og vedligeholdelse gennem effektiv kommentering." />
+          <Txt Lang="en-GB" Txt="Develop pseudocode and commenting skills for enhancing code readability and maintainability through effective commenting." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende filstien til interoperabel fillæsning (mac/win/unix) og derved udvide fillæsningskonceptet." />
+          <Txt Lang="en-GB" Txt="Understand and utilize the file path for interoperable (mac/win/unix) file reading thereby expanding the file reading concept." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende exception-håndtering for at håndtere fejl og alternativ eksekvering." />
+          <Txt Lang="en-GB" Txt="Apply exception handling to manage errors and alternative execution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre strengmanipulation for at behandle biologiske dataformater såsom BLAST-output og FASTA-filer." />
+          <Txt Lang="en-GB" Txt="Perform string manipulation to process biological data formats such as BLAST output and FASTA files." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Parse biologiske datafiler som SwissProt med stateful parsing-teknikker til at udtrække data." />
+          <Txt Lang="en-GB" Txt="Parse biological data files like SwissProt with stateful parsing techniques to extract data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende sorterings-, søgnings- og deduplikeringsalgoritmer på biologiske datasæt ved hjælp af listemanipulationsteknikker." />
+          <Txt Lang="en-GB" Txt="Apply sorting, searching, and deduplication algorithms to biological datasets using list manipulation techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende mønstergenkendelsesteknikker - herunder regulære udtryk - til at identificere og udtrække relevante data fra Genbank-filer eller andre biologiske datafiler." />
+          <Txt Lang="en-GB" Txt="Utilize pattern matching techniques - hereunder regular expressions - to identify and extract relevant data from Genbank files or other biological data files." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge sæt- og dict-teknikker til effektiv datahåndtering og analyse i biologiske sammenhænge." />
+          <Txt Lang="en-GB" Txt="Utilize set and dict techniques for efficient data handling and analysis in biological contexts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende strategier for brug af GAI til at understøtte kodeudvikling, samtidig med at selvstændig problemløsning opretholdes og egen forståelse af underliggende programmeringskoncepter demonstreres." />
+          <Txt Lang="en-GB" Txt="Apply strategies for using GAI to support code development while maintaining independent problem-solving and demonstrating their own understanding of underlying programming concepts." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://teaching.healthtech.dtu.dk/22116/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Python programming i Life Science</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="22101/22161" />
+        <PreviousCourse CourseCode="22101" />
+        <PreviousCourse CourseCode="22161" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:08.243" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

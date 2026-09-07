@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28352" University="dtu" LastUpdated="2026-04-14+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Regulering og styring af kemiske processer" />
+        <Title Lang="en-GB" Title="Chemical Process Control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="11407" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jens</GivenName>
+            <FamilyName>Abildskov</FamilyName>
+            <Email>ja@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Endelig karakter fastsættes ud fra en helhedsvurdering af et antal skriftlige kursusopgaver samt mundtlig eksamen. Aflevering af alle kursusopgaverne er en obligatorisk forudsætning for deltagelse i mundtlig eksamen. Deltagelse i reeksamen kræver at alle øvrige kursusopgaver er beståede." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Final grade is based on an overall evaluation of a set of (written) course assignments and an oral exam. Submission of all assignments is a mandatory requirement for taking the oral exam. Taking a re-exam requires that all assignments are submitted, approved and passed." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dynamiske balanceligninger. Simulering. Linearisering. Afvigelsesvariable. Løsning af lineære differentialligninger ved brug af Laplacetransformation. 1. og 2. ordens systemer, tidskonstanter, forstærkning, dæmpning, oversving, overføringsfunktion. Feedbackregulering: P-, I- og D-regulering. Stabilitet af sløjfer. Andre reguleringsformer: Feedforward-, forholds- og kaskaderegulering. Instrumentering, PI-diagrammer. Eksperimentelt projektarbejde. Rapportskrivning.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegning, projektarbejde, laboratorieøvelser og rapportskrivning</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kemiingeniøruddannelsen behandler fortrinsvis den stationære driftstilstand for processer - designet med henblik på optimal udnyttelse af ressourcer under hensyntagen til bæredygtighed m.m.. Men procesanlæg skal sættes i drift, skifte operationsområde og operere så forstyrrelser påvirker driften minimalt. Dette kræver procesregulering. Kurset sigter mod forståelse for samspillet mellem procesdynamik og procesregulering, samt opbygningen af automatiske reguleringssystemer og disses virkemåde. Dette omfatter den underliggende teori samt visse anvendte komponenter. Fortrinsvis behandles PID-regulatoren og dens indstillingsmuligheder. Dette med henblik på planlægning og vurdering af instrumentering af relativt simple anlæg.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Dynamic balance equations. Simulation. Linearization. Deviation variables. Solution of linear differential equations using Laplace transforms. 1st and 2nd order systems, time constants, gain, damping, overshot, transfer function. Feedback control: P-, I- og D-control. Stability of loops. Enhanced control strategies: Feedforward-, ratio and cascade control. Instrumentation, PI diagrams. Experimental project work. Reporting.</Contents>
+          <Teaching_And_Learning_Methods>Classroom Lectures, Tutorials, Project Work, Laboratory, Reporting</Teaching_And_Learning_Methods>
+          <Course_Objectives>Most of the chemical engineering curriculum deals with processes operating at steady state - designed to optimize economical resources, while taking into account sustainability. But plants are put into operation, are shut down, are subjected to differing operating conditions and disturbances. Process control is necessary in these situations. The course aims at an understanding of how process dynamics and process control is related, and of the construction and implications of control systems. This includes the underlying theory and certain components employed. The course emphasizes the application and settings of a standard PID-controller used in simple feedback control and other enhanced control strategies. All aiming at planning and evaluating instrumentation of simple plants.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille dynamiske balancer for simple teknisk-kemiske processer" />
+          <Txt Lang="en-GB" Txt="Formulate dynamic models for simple engineering processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse begyndelsesværdiproblemer ved anvendelse af passende software" />
+          <Txt Lang="en-GB" Txt="Solve initial value problems using suitable software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Linearisere og indføre afvigelsesvariable i ikke-lineære begyndelsesværdiproblemer" />
+          <Txt Lang="en-GB" Txt="Linearize and introduce deviation variables into non-linear initial value problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Laplace-transformation ved løsning af lineære differentialligninger" />
+          <Txt Lang="en-GB" Txt="Apply Laplace transformation to the solution of linear differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikling af blokdiagrammer for dynamiske processer" />
+          <Txt Lang="en-GB" Txt="Develop block diagrams based on models for dynamic processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende de vigtigste dynamiske systemtyper og disses karakteristika" />
+          <Txt Lang="en-GB" Txt="Describe and apply the most important dynamic types of systems and their characteristic features" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte metoder til indstilling af PID-regulatorer for simple sløjfer" />
+          <Txt Lang="en-GB" Txt="Propose settings of PID-controllers in simple control loops" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere stabilitet af reguleringssløjfer ved beregning" />
+          <Txt Lang="en-GB" Txt="Assess the stability of control loops based on calculations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlægge instrumentering af simple processer: Vælge og placere målinger, aktuatorer og regulatorer" />
+          <Txt Lang="en-GB" Txt="Plan instrumentation of simple processes: Select and place sensors, actuators and controllers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere anvendeligheden af andre reguleringsformer: Feedforward-, forholds- og kaskaderegulering" />
+          <Txt Lang="en-GB" Txt="Assess the applicability of enhanced control strategies: Feedforward, Ratio- and Cascade Control" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle simple PI diagrammer" />
+          <Txt Lang="en-GB" Txt="Develop and interpret simple PI diagrams" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over egen læring" />
+          <Txt Lang="en-GB" Txt="Reflect on learning" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="28016.28022.01911.01922.28012" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Procesdynamik og -regulering</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="28150" />
+        <PreviousCourse CourseCode="28351" />
+        <PreviousCourse CourseCode="91763" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="4" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:10.457" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

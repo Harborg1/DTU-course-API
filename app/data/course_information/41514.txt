@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41514" University="dtu" LastUpdated="2025-02-26+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Maskindynamik" />
+        <Title Lang="en-GB" Title="Dynamics of machinery" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="9550" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ilmar Ferreira</GivenName>
+            <FamilyName>Santos</FamilyName>
+            <Email>ilsa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17478" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Casper Schousboe</GivenName>
+            <FamilyName>Andreasen</FamilyName>
+            <Email>csan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="1 individualiseret grupperapport og 1 individuel rapport. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="1 individualized group report and 1 individual report. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Metoder gennemgås til analytisk og numerisk behandling af maskinkonstruktioners og maskindeles respons under periodiske, transiente og stokastiske påvirkninger (impedans begrebet, modalmetoden, FEM metode, transfer metoder). Numeriske metoder opstilles til beregning af torsionale og laterale svingninger af rotorer (optimalisering af dæmpere, ubalancesvingninger, afbalancering, ustabilitet). Eksempler på selvinducerede svingninger og dynamisk ustabilitet gennemgås. Grundlaget for svingningsanalyse og behandling af svingningsdata gives med det formål at bygge "digital twins" og overvåge/diagnosticere maskinfunktionsfejl/svigt indenfor rammerne af industri 4.0.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og praktiske forsøg/målinger. På basis af de udførte forsøg og målinger udarbejdes 2 rapporter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte deltagerne i stand til: a) at analysere og beregne de dynamiske påvirkninger og svingninger, der opstår i maskintekniske konstruktioner, b) på baggrund af pkt. a) at kunne anvende og udvikle maskindynamiske beregningsmetoder til brug ved konstruktion og dimensionering af maskiner, c) at følge og vurdere den tekniske faglitteratur på området.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Methods for the analytical and numerical treatment of the response of a mechanical system under periodic, transient and stochastic loading.  The modal method, FEM method, transfer methods.  Numerical methods for the analysis of torsional and lateral vibrations in rotors (optimization of dampers, vibrations caused by unbalance, balancing, and instability). Examples of self-induced vibrations and dynamic instability. The fundamental theory for vibrational analysis and treatment of vibrational data are given with the goal of building digital twins and monitoring/dignosing machine malfunctions inside the Industry 4.0 framework.</Contents>
+          <Teaching_And_Learning_Methods>Lessons and practical exercises with measurements. Based on the experiments and measurements 2 reports are prepared.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to enable the students to: a) analyse and determine the dynamic loads and vibrations in mechanical systems, b) use and develop analysis methods suitable when designing machinery, c) read and evaluate the scientific literature in this field.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udarbejde mekaniske samt matematiske modeller og implementere dem i beregningsprogrammer, med henblik på at simulere de dynamiske forhold i roterende maskiner, mekanismer og strukturer." />
+          <Txt Lang="en-GB" Txt="Build mechanical and mathematical models and computationally implement them for simulating the dynamical behavior of rotating machines, mechanisms and structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med multi legeme systemer (MLS) og anvende finite element metoden (FEM) til at beskrive dynamiske forhold for stive såvel som fleksible maskinkomponenter." />
+          <Txt Lang="en-GB" Txt="Deal with multibody systems (MBS) and finite element method (FEM) to describe the dynamic behavior of rigid and flexible machine components." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå sammenhængen mellem forskellige emner som dynamik, svingningslære, eksperimentel mekanik, maskinelementer, signal behandling, fluiddynamik, magnetisme, reguleringsteknik og numerisk analyse." />
+          <Txt Lang="en-GB" Txt="Understand the interrelation among different disciplines, as dynamics, mechanical vibrations, experimental mechanics, machine elements, signal processing, fluid dynamics, magnetism, motion control and numerical analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende denne sammenhæng til at bestemme bevægelsesligningernes differentielligningskoefficienter, som enten kan være konstante eller afhænge af maskinens omdrejningshastighed." />
+          <Txt Lang="en-GB" Txt="Apply such an interrelation to achieve the coefficients of differential equations of motions, which can be constant or depending on the angular velocity of machine. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme de dynamiske koefficienter for forskellige hydrodynamiske lejetyper." />
+          <Txt Lang="en-GB" Txt="Determine the dynamic coefficients of different types of hydrodynamic bearings." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med dæmpede (ikke symmetriske) gyroskopiske systemer og udregne egensvingningsformer egenfrekvenser og dæmpningsfaktorer som funktion af omdrejningshastigheden, med henblik på at bestemme kritiske hastigheder og stabilitetsgrænser." />
+          <Txt Lang="en-GB" Txt="Deal with damped (non-symmetric) gyroscopic systems, calculate mode shapes, natural frequencies and damping factors as a function of the machine angular velocity with the aim of predicting critical speeds, vibration levels and stability limits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå principperne bag eksperimentelle dynamiske forsøg samt anvendelse af sensorer og aktuatorer - herunder bl.a. accelerometre, forskydnings- og krafttransducere samt elektromagnetiske bevægelsesaktuatorer." />
+          <Txt Lang="en-GB" Txt="Understand the principles of experimental dynamic tests and the operational principles of sensor and actuators, among them accelerometers, displacement and force transducers and electromagnetic shakers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de signalbehandlings og -analyse teknikker som gør det muligt, at verificiere matematiske modeller (digital twins) og evaluere maskinfunktionsfejl/svigt ud fra eksperimentel data." />
+          <Txt Lang="en-GB" Txt="Understand the techniques of signal analysis and processing, which make possible the development of the experimental methodologies for validating mathematical models (digital twins) and for diagnosing rotating machinery malfunctions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå samt anvende signalbehandlingsteknikker til at opnå auto- og krydskorrelationsfunktioner, power- og cross-power-spectral-density-funktioner, frekvensresponsfunktioner og coherence-funktioner (digitalisering) " />
+          <Txt Lang="en-GB" Txt="Understand and use signal processing techniques to obtain auto and cross-correlation functions, power and cross-spectral density functions, frequency response functions and coherence function (digitalization). " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Validere matematiske modeller basseret på Eksperimentel Modal Analyse (EMA)." />
+          <Txt Lang="en-GB" Txt="Validate mathematical models based on Experimental Modal Analysis (EMA)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tage højde for simplificerende antagelser og begrænsninger ved de anvendte teoretiske og eksperimentelle metoder (MLS, FEM, EMA), samt at forudsige mulige konsekvenser for dynamisk overførsel af roterende og fleksible maskindele." />
+          <Txt Lang="en-GB" Txt="Account for simplifications and limitations of the theoretical and experimental methods (MBS, FEM, EMA) used, and predict the possible consequences for the dynamic behavior of flexible and rotating machine components." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende tekniske betegnelser til, at skrive forståelige og sprogligt strukturerede tekniske rapporter, med eksakte beskrivelser af teoretiske og eksperimentelle procedurer, herunder beskrive fysiske sammenhænge og evaluering af resultater." />
+          <Txt Lang="en-GB" Txt="Write technical reports, with correct description of theoretical and experimental procedures, in a clear way, well structured language, using technical terms, giving physical interpretations and evaluations of results." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="10022/41532. 41560/41035/41535/41564" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Teoretiske, eksperimentelle og praktiske grundlæggende aspekter i maskindynamik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="72113. 72213.41614" />
+        <PreviousCourse CourseCode="41614" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="78" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="87" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="13" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:19.603" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

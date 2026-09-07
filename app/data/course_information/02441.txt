@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02441" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Anvendt statistik og statistisk programmel" />
+        <Title Lang="en-GB" Title="Applied Statistics and Statistical Software" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="111925" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Guillermina</GivenName>
+            <FamilyName>Eslava</FamilyName>
+            <Email>guiesl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig fremlæggelse og bedømmelse af rapport(er)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral presentation and approval of reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Der vil blive undervist i løsning af statistiske problemstillinger vha. statistiske programpakker.  Der indgår en større praktisk opgave, som tager udgangspunkt i en aktuel problemstilling og består i analyse af data.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser (integrerede) samt løsning af praktisk opgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte deltagerne i stand til at løse en større praktisk opgave og i denne sammenhæng læres en række deskriptive teknikker.  Desuden sættes deltagerne i stand til at udføre statistiske analyser (svarende til 02402/02302) vha. statistik programpakker (R).</Course_Objectives>
+          <DTU_Remark>aflyses, hvis færre end 10 tilmeldte</DTU_Remark>
+          <Remark>Kurset er tænkt som en overbygning på "02402 Introduktion til statistik".  Deltagerne lærer at udføre statistiske analyser, primært vha. statistikprogrammet R.  Ydermere kan kurset ses som en introduktion til de efterfølgende statistikkurser, fx 02409 Multivariat Statistik og 02424 Videregående dataanalyse og statistisk modellering. Kurset bør tages umiddelbart efter 02402 Introduktion til statistik</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>A project assignment based on an actual problem will be part of the course. The statistical software R will be used to analyse the data.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and excercises (integrated) and solution of practical assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To acquaint the participants with statistical work on a practical problem, typically involving many data. Descriptive methods are presented. The statistical analyses are carried out using modern statistical software (R).</Course_Objectives>
+          <DTU_Remark>will be cancelled if fewer than 10 people register</DTU_Remark>
+          <Remark>The students learn how to make statistical analysis by means of the statistical software R.  Further, the course is an introduction to other statistics courses, e.g. 02409 and 02424.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et introducerende kursus i statistik (inkl. lidt R)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="An introductory course in statistics (Including limited experience with R)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402 / 02403 / 02323" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og anvende hyppigt anvendte statistiske regressionsmodeller" />
+          <Txt Lang="en-GB" Txt="Formulate and apply some commonly used statistical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Være i stand til at fortolke resultater fra simple statistiske modeller" />
+          <Txt Lang="en-GB" Txt="Able to interpret the results from some simple statistical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre modelkontrol " />
+          <Txt Lang="en-GB" Txt="Perform model validation " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udøre estimation, hypotesetest og prædiktion ved brug af simple statistiske modeller" />
+          <Txt Lang="en-GB" Txt="Perform estimation, hypothesis testing, and prediction by means of some simple statistical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre simple statistiske analyser ved brug af statistisk programmel" />
+          <Txt Lang="en-GB" Txt="Perform simple statistical analysis by means of statistical software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke output fra statistisk programmel" />
+          <Txt Lang="en-GB" Txt="Interpret the output from statistical software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forholde sig kritisk til resultater fra statistiske analyser" />
+          <Txt Lang="en-GB" Txt="Adequately interpret the results of statistical analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forbered rå data til statistisk analyse" />
+          <Txt Lang="en-GB" Txt="Perform data wrangling, i.e. prepare raw data for statistical analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en mindre rapport over statistiske resultater til personer uden statistisk baggrund" />
+          <Txt Lang="en-GB" Txt="Write a report describing the results of statistical analysis to people without background in statistics" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.compute.dtu.dk/courses/02441" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Get practical experience with applied statistics using R.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="3" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="60" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:50.717" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

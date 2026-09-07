@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02258" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Parallelle computersystemer" />
+        <Title Lang="en-GB" Title="Parallel Computer Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="41921" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sven</GivenName>
+            <FamilyName>Karlsson</FamilyName>
+            <Email>svea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Pocket calculators are not allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Lommeregner er ikke tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Computersystemer: Fundamentale parallelle computerarkitekturer; 
+  multi-core systemer; skalerbare arkitekturer; heterogene 
+  computerarkitekturer; cache- og hukommelseshierakieffekter; 
+  cache coherence; hukommelsesmodeller; cloudsystemer; 
+  maskinlæringshardware; ydeevne analyse.
+
+Parallelle systemer: struktureret parallel programmering; 
+ parallelle mønstre; implementation af synkroniseringsprimitiver;
+ implementering af parallelle programmeringsframeworks
+
+Modellering: Ydeevnemodeller; ydeevneværktøjer.</Contents>
+          <Teaching_And_Learning_Methods>Gruppeaktiviteter, øvelser og programmeringsøvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Alle moderne computersystemer er parallelle systemer, uanset om det er indlejrede, server- eller distribuerede cloudsystemer. I dette kursus vil du studere hvordan disse systemer er designede, og hvordan man effektivt programmerer dem.
+
+Kurset antager viden omkring, blandt andet, programmering med tråde, processer og med systemsprog, især C. Baseret på dette, vil du udforske hvordan man kan bruge og implementere moderne parallelle programmeringsframeworks.
+
+Du vil også studere systemarkitekturen af en bred vifte af parallelle systemer. Kurset vil give den nødvendige indsigt for at kunne evaluere og designe parallelle systemer, også på lavt abstraktionsniveau.
+
+Moderne cloud- og maskinlæringssystemer er parallelle computere. Dette kursus vil dække et sådanne system og give den nødvendige indsigt for at benytte, men også designe cloud- og maskinlæringssystemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Computer systems: fundamental parallel computer architecture;
+ multi-core systems; scalable architectures; heterogeneous computer
+ architecture; cache and memory hierarchy effects; cache coherence;
+ memory models; cloud systems; machine learning hardware; performance
+ analysis.
+
+Parallel programming: structured parallel programming; parallel
+ patterns; implementation of synchronization primitives;
+ implementation of parallel programming frameworks;
+
+Modeling: performance models; performance tools;</Contents>
+          <Teaching_And_Learning_Methods>Group activities, exercises and programming laboratories.</Teaching_And_Learning_Methods>
+          <Course_Objectives>All modern computer systems are parallel systems, whether they are
+embedded, server or distributed cloud system. In this course, you will
+study how these systems are designed and how to efficiently program
+them.
+
+The course assumes knowledge of, amongst other things, programming 
+with threads, processes and with system languages, in particular C. 
+Based on this, you will explore how to use and implement modern 
+parallel computing frameworks.
+
+You will also study the system architecture of a wide range of
+parallel systems. The course will provide the insights needed to
+evaluate and design parallel systems, also at a low level.
+
+Modern cloud systems and machine learning systems are parallel
+computers. This course will cover such system as well and will provide
+the necessary insight to use but also design cloud and machine
+learning systems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det bliver antaget at den studerende har taget computerorganisations- og operativsystems kurser. Derudover, antages det at studerende er i stand til at skrive programmer i C. Endelig antages det at studerende er i stand til at bruge tråde og forstå hvordan tråde tilknyttes til processer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students are assumed to have taken computer organization and operating&#xD;&#xA;system courses. In addition, students are assumed to be able to write&#xD;&#xA;programs in C. Finally, students are assumed to be able to&#xD;&#xA;use threads and understand how threads could be mapped to processors." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02132.(02158/02159)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og udlede analytiske modeller for ydeevne." />
+          <Txt Lang="en-GB" Txt="explain and derive analytic models for performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere ydeevnen af parallelle computer systemer og applikationer." />
+          <Txt Lang="en-GB" Txt="evaluate the performance of parallel computer systems and applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare fundamentale designkriterier for parallelle computersystemer." />
+          <Txt Lang="en-GB" Txt="explain fundamental design criteria for parallel computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvilke dele af systemer som er kritiske for ydeevne." />
+          <Txt Lang="en-GB" Txt="explain what parts of the systems are critical for performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare fundamentale parallelle programmeringsparadigmer." />
+          <Txt Lang="en-GB" Txt="explain fundamental parallel programming paradigms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere en parallel applikation til specifik platform og programmeringsparadigme." />
+          <Txt Lang="en-GB" Txt="optimize a parallel application for a specific platform and programming paradigm." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe simple parallelle computersystemer." />
+          <Txt Lang="en-GB" Txt="design simple parallel computer systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere parallelle programmeringsframeworks." />
+          <Txt Lang="en-GB" Txt="implement parallel programming frameworks." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Parallel Computer Systems</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02346 02347" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:11.397" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

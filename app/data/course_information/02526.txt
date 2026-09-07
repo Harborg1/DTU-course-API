@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02526" University="dtu" LastUpdated="2026-04-24+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Matematisk modellering" />
+        <Title Lang="en-GB" Title="Mathematical Modeling" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="DTU Bibliotek" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="DTU Library" />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="20347" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mirza</GivenName>
+            <FamilyName>Karamehmedovic</FamilyName>
+            <Email>mika@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="1 obligatorisk rapport, der skal godkendes (bestået/ikke-bestået), og en endelig eksamensrapport, som forsvares til en mundtlig eksamen.&#xD;&#xA;&#xD;&#xA;Karakteren er baseret på en helheldsbedømmelse af de to rapporter og af den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="1 mandatory report that must be passed (pass/fail), and a final exam report that is defended at an oral exam.&#xD;&#xA;&#xD;&#xA;The final grade is based on an overall assessment of the two reports and of the oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="15 minutter mundtlig eksamen" />
+          <Duration Lang="en-GB" Txt="15 minutes oral exam" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursets hovedindhold er løsning af konkrete cases med tilhørende problemstillinger. For hver case skal problemet analyseres, den matematiske model beskrives og implementeres på en computer, og der skal gennemføres beregninger og simuleringer, som belyser modellens relevans og anvendelighed. Alt dette skal afrapporteres på en struktureret og fagligt velbegrundet måde. De anvendte metoder vil typisk ligge inden for diskret matematik, billedanalyse, differentialligninger, materialelære, operationsanalyse og scientific computing. Kurset omfatter desuden peergrading af andre studerendes rapporter, og deltagelse i denne aktivitet er en forudsætning for at kunne gå til eksamen.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, og rapporter</Teaching_And_Learning_Methods>
+          <Course_Objectives>Matematisk modellering er en central del af løsningen af de fleste tekniske problemstillinger. Typisk begynder processen med formuleringen af en matematisk model, som derefter implementeres på en computer og anvendes til at understøtte laboratorieforsøg og sidenhen udviklingen af virkelige løsninger. Evnen til at formulere relevante matematiske modeller, implementere dem computerbaseret og anvende dem til at opnå meningsfuld indsigt er derfor en grundlæggende kompetence i moderne ingeniørarbejde. I kurset opnår de studerende værktøjer til at formulere matematiske modeller, udføre simulationer og beregninger samt kritisk analysere og formidle de opnåede resultater.</Course_Objectives>
+          <Remark>Kurset er forudsætning for følgende videregående kurser: 02610 Optimering og datafitting, 02614 High performance computing, 02616 Storskala modellering, 02623 Elementmetoden for partielle differentialligninger, 02685 Scientific Computing for differentialligninger. Kurset er et retningsspecifikt kursus for BSc Anvendt Matematik. Kurset er forbeholdt studerende optaget på Anvendt Matematik samt General Engineering, og andre studerende er velkomne i det omfang der er plads.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The main content of the course is the solution of specific cases and their associated problems. For each case, the problem must be analyzed, the mathematical model described and implemented on a computer, and calculations and simulations carried out to illustrate the relevance and the applicability of the model. All of this must be documented in a structured manner. The methods applied may include discrete mathematics, image analysis, differential equations, materials science, operations research, and scientific computing. The course also includes peer grading of other students’ reports, and participation in this activity is a prerequisite for taking the exam.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and reports</Teaching_And_Learning_Methods>
+          <Course_Objectives>Mathematical modeling is a central component in the solution of most technical problems. Typically, the process begins with the formulation of a mathematical model, which is then implemented computationally and used to support laboratory-scale experiments and, eventually, the development of real-world solutions. The ability to formulate relevant mathematical models, implement them on a computer, and use them to obtain meaningful insight is therefore a fundamental competence in modern engineering. In this course, students will acquire tools for formulating mathematical models, carrying out simulations and calculations, and critically analyzing and reporting the results.</Course_Objectives>
+          <Remark>The course is a prerequisite for the following advanced courses: 02610 Optimization and datafitting, 02614 High performance computing, 02616 Large-scale modeling, 02623 Finite element methods for partial differential equations, 02685 Scientific computing for differential equations. The course is a programme-specific course for BSc Applied Mathematics. The course is reserved for students from Applied Mathematics and General Engineering, and other students are welcome if there are available seats.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til matematisk analyse, lineær algebra, statistik, og numeriske algoritmer. Grundlæggende fysik inklusiv mekanik. Kendskab til programmering i Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of mathematical analysis, linear algebra, statistics, and numerical algorithms. Fundamental physics including mechanics. Knowledge of Python programming." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01025/01035).02601.(02403/02402).(02002/02525/02631).(10018/10022)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende en matematisk model til at løse et problem" />
+          <Txt Lang="en-GB" Txt="Apply a mathematical model to solve a problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare elementerne af en matematisk model" />
+          <Txt Lang="en-GB" Txt="Explain the components of a mathematical model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bedømme gyldighedsområdet af en matematisk model" />
+          <Txt Lang="en-GB" Txt="Assess the domain of validity of a mathematical model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte statistik til at opsummere opnåede resultater" />
+          <Txt Lang="en-GB" Txt="Use statistics to summarize the obtained results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere numeriske algoritmer i Python" />
+          <Txt Lang="en-GB" Txt="Implement numerical algorithms using Python" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsætte test-scenarier og indsamle data" />
+          <Txt Lang="en-GB" Txt="Set up test scenarios and collect data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare modelparametrenes indflydelse på modellen" />
+          <Txt Lang="en-GB" Txt="Explain the model parameters' influence on the model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke de opnåede resultater fra modellen" />
+          <Txt Lang="en-GB" Txt="Interpret the calculated results of the model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Visualisere data og resultater grafisk" />
+          <Txt Lang="en-GB" Txt="Visualize data and results graphically" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bedømme relevansen af resultaterne for det analyserede problem" />
+          <Txt Lang="en-GB" Txt="Evaluate the relevance of the results for the analyzed problem " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en stringent og struktureret rapport, som præcist beskriver modellen og analysen af de beregnede resultater" />
+          <Txt Lang="en-GB" Txt="Write a stringent and structured report that precisely describes the model and the analysis of the calculated results" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Formulering og implementering af matematiske modeller</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02603" />
+        <PreviousCourse CourseCode="02603" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="27" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="108" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="135" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="20" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="80" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:14.45" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,347 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  urlcolor=blue!55!black,
+  pdftitle={Arkitektur og design af DTU Course API}
+}
+\setlist{nosep,leftmargin=*}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\title{DTU Course API\\[0.3em]
+\large Arkitektur, design og søgeforløb}
+\author{}
+\date{August 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Projektet er en webbaseret studievejleder, som gør officielle DTU-data
+tilgængelige gennem både en chat og et REST-API. Systemet kan søge efter
+kurser, slå et kursusnummer op og forklare studieplaner og specialiseringer.
+Denne rapport beskriver de centrale arkitekturvalg og følger en forespørgsel
+fra brugerens besked til det svar, der vises i browseren. Fokus er dermed på
+systemets ansvar og dataflow frem for en gennemgang af hver enkelt kildefil.
+\end{abstract}
+
+\tableofcontents
+
+\section{Formål og afgrænsning}
+
+Systemets formål er at give studerende en enkel indgang til DTU's
+kursuskatalog og studieordninger. Brugeren behøver ikke kende API-parametre
+eller den præcise struktur på DTU's sider, men kan eksempelvis skrive:
+
+\begin{itemize}
+  \item ``Giv mig alle kurser i cyber''.
+  \item ``Hvad handler kursus 02150 om?''
+  \item ``Computer Science study plan''.
+  \item ``Hvilke specialiseringer findes på Computer Science and Engineering?''
+\end{itemize}
+
+Applikationen er ikke et generelt søgesystem til hele internettet. Svar om
+kurser, studieplaner og specialiseringer skal baseres på de officielle data,
+som allerede er importeret til projektets database. Links i svaret fører
+brugeren tilbage til DTU som autoritativ kilde.
+
+\section{Overordnet arkitektur}
+
+Løsningen er opbygget som en lagdelt webapplikation. FastAPI er både
+webserver, REST-API og vært for et read-only MCP-interface. PostgreSQL lagrer
+de normaliserede DTU-data og understøtter både fuldtekstsøgning og
+vektorsøgning gennem pgvector.
+
+\begin{figure}[ht]
+\centering
+\fbox{\begin{minipage}{0.92\textwidth}
+\centering
+\textbf{Browser: HTML, CSS og JavaScript}\\
+$\downarrow$ \code{POST /api/chat}\\[0.25em]
+\textbf{FastAPI: validering og chat-route}\\
+$\downarrow$\\[0.25em]
+\textbf{Recommendation service: sprog, intent og orkestrering}\\
+$\swarrow$ \hspace{4em} $\downarrow$ \hspace{4em} $\searrow$\\[0.25em]
+\textbf{Søgeservice} \hspace{2em}
+\textbf{Groq + MCP} \hspace{2em}
+\textbf{Studieplanslogik}\\
+$\searrow$ \hspace{4em} $\downarrow$ \hspace{4em} $\swarrow$\\[0.25em]
+\textbf{PostgreSQL/pgvector med importerede DTU-data}
+\end{minipage}}
+\caption{De vigtigste komponenter i behandling af en chatbesked.}
+\end{figure}
+
+Ansvaret er fordelt således:
+
+\begin{description}[style=nextline]
+  \item[Præsentationslaget]
+  Filerne i \path{app/web/} viser chatten, sender brugerbeskeder til API'et og
+  renderer almindelig tekst samt strukturerede kursus-, studieplans- og
+  specialiseringskort.
+
+  \item[API-laget]
+  Routes i \path{app/api/routes/} validerer input med Pydantic og opretter en
+  SQLAlchemy-session pr. request. Den offentlige chat bruger
+  \code{/api/chat}; det separate kursus-API under \code{/api/v1} kræver en
+  \code{X-API-Key}.
+
+  \item[Servicelaget]
+  Filerne i \path{app/services/} klassificerer brugerens hensigt, finder
+  studieprogrammer, udfører søgninger og sammensætter svaret. Routes holdes
+  derfor forholdsvis tynde.
+
+  \item[AI- og værktøjslaget]
+  Groq anvendes til semantisk intent-klassifikation og til formulering af
+  svar. Ved faktuelle spørgsmål får modellen kun databaseadgang gennem fire
+  MCP-værktøjer: \code{get\_course}, \code{search\_courses},
+  \code{get\_study\_plan} og \code{get\_specializations}. OpenAI's embedding-
+  API bruges særskilt til at omdanne en søgetekst til en vektor.
+
+  \item[Datalaget]
+  SQLAlchemy-modeller repræsenterer kurser, oversættelser, studieprogrammer,
+  sektioner, krav og specialiseringer. Alembic styrer databaseskemaet.
+\end{description}
+
+Denne opdeling isolerer brugergrænsefladen fra søgealgoritmen og databasen.
+Det betyder eksempelvis, at den semantiske søgning kan ændres uden at ændre
+chatformatet.
+
+\section{Data og importdesign}
+
+Data indlæses på forhånd af modulerne i \path{importer/}. Kursusdata hentes
+fra gemte DTU XML-data, mens studieplaner og specialiseringer parses fra deres
+respektive DTU-sider. Importerne bruger indholdshashes, så uændrede data ikke
+skal behandles igen, og de registrerer fejl uden at gøre den offentlige chat
+afhængig af et live-kald til DTU.
+
+De vigtigste relationer er:
+
+\begin{itemize}
+  \item Et \code{Course}-objekt identificeres af kursusnummer og studieår og
+  indeholder blandt andet ECTS, niveau, skemagruppe og kilde-URL.
+  \item Hvert kursus har separate \code{CourseTranslation}-rækker for dansk
+  og engelsk tekst. Her ligger også søgevektor og embedding.
+  \item Et \code{StudyProgram} består af ordnede sektioner, kurser og krav.
+  Krav kan blandt andet udtrykke et ECTS-minimum, et bestemt antal kurser
+  eller at alle kurser skal tages.
+  \item En \code{StudySpecialization} tilhører et studieprogram og har sine
+  egne kurser og krav. De er adskilt fra programmets generelle krav, så en
+  valgfri specialisering ikke fejlagtigt præsenteres som obligatorisk for alle.
+\end{itemize}
+
+Den normaliserede model gør det muligt at returnere strukturerede resultater
+i stedet for kun at lade en sprogmodel genfortælle en lang HTML-side.
+
+\section{Behandling af en chatbesked}
+
+Når brugeren sender en besked, sker følgende:
+
+\begin{enumerate}
+  \item Browseren gemmer beskeden lokalt og sender højst de seneste 12
+  \emph{brugerbeskeder}. Tidligere assistentsvar sendes ikke tilbage.
+  \item Pydantic validerer requesten. Hver besked skal indeholde 1--800 tegn,
+  og studieåret skal have formatet \code{YYYY-YYYY}.
+  \item Backend registrerer sproget i den seneste besked og klassificerer
+  også intent ud fra netop denne besked.
+  \item Hele rækken af brugerbeskeder samles som kontekst. Den bruges til at
+  genfinde oplysninger, som er udeladt i en opfølgning, eksempelvis navnet på
+  et studieprogram.
+  \item Det valgte søgeflow henter fakta fra databasen, eventuelt gennem MCP.
+  \item API'et returnerer et \code{ChatResponse} med tekstsvaret og eventuelle
+  strukturerede anbefalinger, studieplaner eller specialiseringer.
+  \item Frontend viser svaret og vælger danske eller engelske overskrifter og
+  links ud fra feltet \code{responseLanguage}.
+\end{enumerate}
+
+At den seneste besked styrer intent er et vigtigt designvalg. Hvis brugeren
+først søger efter cyberkurser og bagefter skriver ``Find kurser i machine
+learning'', behandles anden besked som en ny kursussøgning. Resultatet fra den
+første søgning må ikke overtage klassifikationen af den næste.
+
+\section{Søgetyper og deres dataflow}
+
+\subsection{Emnebaseret kursussøgning}
+
+En formulering som ``Find kurser i machine learning'' klassificeres som en
+kursusanbefaling. Kendte emner genkendes deterministisk. Hvis den regelbaserede
+klassifikation ikke er sikker, kan Groq i stedet producere en valideret
+\code{SemanticQueryPlan}; modellen vælger kun domæne, operation og emner og
+leverer ikke selve kursusfakta.
+
+I det normale AI-flow sendes samtalekonteksten til Groq. Modellen kalder
+\code{search\_courses} gennem MCP, og værktøjet udfører den faktiske søgning i
+PostgreSQL. Søgeemnet normaliseres til en kort engelsk frase, mens
+\code{search\_language} bestemmer sproget på titler og beskrivelser.
+
+Hvis Groq eller MCP ikke svarer, falder systemet tilbage til sin lokale
+fortolkning af emne, niveau, ECTS, sprog og periode. Her returneres op til fem
+kurser. Niveau- og ECTS-filteret lempes trinvist, hvis den første søgning ikke
+giver resultater.
+
+\subsection{Hybrid tekst- og vektorsøgning}
+
+Selve \code{search\_courses}-servicen kombinerer to forskellige signaler:
+
+\begin{enumerate}
+  \item \textbf{Leksikalsk søgning:} PostgreSQL omdanner forespørgslen til en
+  full-text query og rangerer matches i de danske eller engelske kursustekster.
+  Et GIN-indeks gør dette effektivt.
+  \item \textbf{Semantisk søgning:} OpenAI-modellen
+  \code{text-embedding-3-small} omdanner forespørgslen til en vektor med 1536
+  dimensioner. pgvector beregner cosine-afstanden til de embeddings, som blev
+  genereret for kursusteksterne under en separat backfill-proces.
+  \item \textbf{Fletning:} Resultatlisterne kombineres med Reciprocal Rank
+  Fusion (RRF). Metoden bruger placeringen i hver liste frem for at sammenligne
+  to inkompatible rå scorer direkte.
+\end{enumerate}
+
+Den semantiske del køres kun med PostgreSQL, aktiveret semantisk søgning og en
+konfigureret embedding-nøgle. Fejler embedding-kaldet eller vektorsøgningen,
+bevares den leksikalske resultatliste. En søgning kan derfor stadig fungere,
+selv om OpenAI midlertidigt er utilgængelig.
+
+\subsection{Forespørgsler efter alle match}
+
+Ord som ``alle'', ``every'' eller ``complete list'' aktiverer et særligt flow.
+Den semantiske plan kan udtrække et eller flere emner. Systemet søger hvert
+emne med en høj intern grænse, samler resultaterne, fjerner dubletter på
+kursusnummer og sorterer den endelige liste stigende. Dette omgår MCP-
+værktøjets normale maksimum på 20 resultater og gør ``alle kurser i cyber''
+forskellig fra en kort anbefaling.
+
+\subsection{Direkte opslag på kursusnummer}
+
+Et femcifret tal giver højeste sikkerhed og klassificeres som et direkte
+kursusopslag. Backend kontrollerer først, at kurset findes i det valgte
+studieår. Groq får derefter adgang til det konkrete kursus gennem
+\code{get\_course} og kan besvare spørgsmål om eksempelvis indhold,
+forudsætninger, eksamen eller undervisere. Hvis nummeret ikke findes,
+returneres en præcis ``course not found''-besked i stedet for en bred søgning.
+
+\subsection{Studieplaner}
+
+Ord som ``studieplan'', ``study plan'', ``obligatorisk'' og ``ECTS'' fører til
+studieplansflowet. Programmet matches mod navn, importerede aliaser, slug og
+uddannelsesniveau. Mindre stavefejl kan håndteres med fuzzy matching; hvis det
+stadig er uklart, kan en semantisk resolver vælge blandt de faktiske programmer
+i databasen.
+
+En generel programoversigt bygges deterministisk fra de importerede sektioner
+og krav. Mere specifikke spørgsmål kan besvares af Groq via
+\code{get\_study\_plan}. Uanset tekstsvaret sendes studieplanen også som
+strukturerede data, som browseren viser sektion for sektion. Ved fejl i
+Groq/MCP genererer backend et statisk svar fra de samme databaserækker.
+
+Sproget afgøres af den seneste forespørgsel. ``Computer Science study plan''
+giver derfor engelske labels og links, mens ``Computer Science studieplan''
+giver danske. De originale kursus- og sektionsnavne følger de importerede data,
+men applikationens egne forklaringer oversættes.
+
+\subsection{Specialiseringer}
+
+Forespørgsler med danske, britiske eller amerikanske stavemåder af
+``specialisering'' klassificeres særskilt. Systemet finder først programmet og
+derefter eventuelt en navngiven specialisering. En oversigtsforespørgsel
+returnerer alle importerede specialiseringer; en detaljeforespørgsel returnerer
+krav, kursuspuljer og roller for den valgte specialisering.
+
+Dette flow er primært deterministisk. Det reducerer risikoen for, at modellen
+forveksler anbefalede kurser med obligatoriske kurser. Frontend anvender igen
+\code{responseLanguage}, så blandt andet linkteksten ``View the specialization
+at DTU'' vises på engelsk ved en engelsk forespørgsel.
+
+\subsection{Åbne spørgsmål og opfølgninger}
+
+Hvis ingen af de kendte intents passer, behandles beskeden som et åbent
+spørgsmål. Groq kan stadig bruge de fire MCP-værktøjer, men systemprompten
+kræver, at databasefakta hentes gennem et værktøj og ikke opfindes.
+
+Opfølgninger bruger de tidligere brugerbeskeder som kontekst. Eksempelvis kan
+brugeren først nævne ``Computer Science and Engineering'' og derefter spørge
+``Hvilke specialiseringer har den?''. Begrænsningen er, at assistentens egne
+svar ikke sendes med igen; nødvendig kontekst skal derfor kunne findes i
+brugerens beskeder. Dette valg undgår samtidig, at meget lange kursuslister
+overskrider inputgrænsen ved næste request.
+
+\section{Svarformat, sprog og fejlhåndtering}
+
+\code{ChatResponse} indeholder et kort tekstsvar, den forståede kontekst,
+studieår og svar-sprog. Derudover kan det indeholde tre typer strukturerede
+data: kursusanbefalinger, en studieplan og specialiseringer. Frontend behøver
+derfor ikke parse modellens fritekst for at bygge kort og links.
+
+Fejl håndteres på flere niveauer:
+
+\begin{itemize}
+  \item Ugyldigt input afvises af FastAPI med HTTP 422. Det gælder blandt andet
+  en besked på mere end 800 tegn eller en request uden brugerbeskeder.
+  \item Fejl i semantisk intent-klassifikation giver ikke i sig selv en fejl til
+  brugeren; systemet fortsætter med den regelbaserede klassifikation.
+  \item Fejl i OpenAI-embedding giver leksikalsk søgning som fallback.
+  \item Fejl i Groq/MCP fører, hvor muligt, til en lokal kursussøgning eller et
+  statisk databasebaseret studieplanssvar.
+  \item Hvis hele HTTP-requesten fejler, viser den nuværende frontend en
+  generel besked om, at der opstod en fejl. Status og detaljer logges kun i
+  browserens konsol.
+\end{itemize}
+
+Det sidste punkt er en kendt designbegrænsning: brugeroplevelsen kan forbedres
+ved at oversætte kendte HTTP-statusser til konkrete beskeder, eksempelvis at
+en besked overskrider grænsen på 800 tegn.
+
+\section{Drift og sikkerhedsgrænser}
+
+Lokalt kan applikationen køres med Docker Compose. PostgreSQL-containeren
+bruger pgvector, mens API-containeren først kører Alembic-migrationer og
+derefter starter Uvicorn. I Vercel-miljøet kører FastAPI som en serverless
+funktion, og databasekonfigurationen tager højde for en Supabase transaction
+pooler.
+
+Det almindelige REST-API er beskyttet med en delt \code{X-API-Key}, og MCP-
+endpointet kræver et bearer-token, som sammenlignes sikkert. Chat-endpointet er
+offentligt, så det kan bruges direkte fra browseren. Projektet har derimod ikke
+applikationsstyret rate limiting på chatten. Det betyder, at misbrug primært
+begrænses af hostingmiljøet og kvoterne hos Groq og OpenAI. For offentlig drift
+bør der tilføjes rate limiting, overvågning og et budgetloft for eksterne
+modelkald.
+
+\section{Designvurdering}
+
+Arkitekturen kombinerer deterministisk programlogik med sprogmodeller. Denne
+hybrid er velegnet til domænet: databasen er sandhedskilden, mens modellen
+bruges til at forstå fri tekst og formulere et læsbart svar. Strukturerede
+studieplans- og specialiseringsdata begrænser risikoen for hallucinationer, og
+fallbacks gør kursussøgningen mindre afhængig af eksterne tjenester.
+
+De vigtigste kompromiser er flere netværkskald og dermed højere svartid, en
+offentlig chat uden egen rate limiting samt en samtalehistorik, der kun består
+af brugerbeskeder. Søgekvaliteten afhænger desuden af, at importerede data og
+embeddings holdes opdaterede. Disse begrænsninger er tydelige og kan forbedres
+uafhængigt, fordi præsentation, orkestrering, søgning og dataimport er adskilt.
+
+\section{Konklusion}
+
+DTU Course API er designet som en lagdelt, databasecentreret studievejleder.
+Den seneste besked bestemmer brugerens aktuelle hensigt, mens tidligere
+brugerbeskeder giver kontekst. Kursussøgning kombinerer fuldtekst og embeddings,
+direkte opslag bruger kursusnummeret, og studieplaner samt specialiseringer
+læses fra normaliserede kravmodeller. Groq fungerer som sproglig orkestrator
+via afgrænsede MCP-værktøjer, men de officielle importerede DTU-data forbliver
+grundlaget for svaret. Det giver et system, som både kan forstå naturligt sprog
+og bevare en tydelig grænse mellem genereret tekst og faktuelle data.
+
+\end{document}

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41515" University="dtu" LastUpdated="2026-02-18+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Computerbaseret mekanismedynamik" />
+        <Title Lang="en-GB" Title="Computational multibody dynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="1977" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Niels Leergaard</GivenName>
+            <FamilyName>Pedersen</FamilyName>
+            <Email>nlpe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17478" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Casper Schousboe</GivenName>
+            <FamilyName>Andreasen</FamilyName>
+            <Email>csan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Vektor og matrix notation. Grundlæggende kinematik. Numeriske og computerbaserede metoder til løsning af kinematik. Generel rotation. 3D kinematik. Grundlæggende kinetik. 3D kinetik. Numeriske og computerbaserede metoder til løsning af kinetik styret bevægelse. Kinematik og kinetik modellering. Fleksible legemer. Software udvikling.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning samt computerøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende:
+–	en systematisk fremgangsmåde til opstilling og løsning af de til et såvel plant som rumligt flerlegemesystem knyttede kinematiske bevægelses- og bindingsligninger.
+–	en introduktion til generelle computerbaserede formulering af flerlegemesystemers kinematik og kinetik(dynamik).
+–	færdigheder i opstilling og løsning af sammenhørende bevægelsesligninger og kinematiske bindinger for generelle mekaniske flerlegemesystemer.
+–	den teoretiske baggrund for ligningerne.
+–	en introduktion til inkludering af fleksible legemer i forbindelse med simulering af flerlegemesystemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Vector and matrix notation. Fundamentals of kinematics. Numerical and computational methods and algorithms in kinematics. Rotation in space. Spatial kinematics. Fundamentals of dynamics. Spatial dynamics. Numerical and computational methods and algorithms in dynamics. Kinematic and dynamic modelling. Software development.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem solving and computer exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of this course is to give the students 
+–	a systematic approach to formulate and solve the kinematic movement and constraint equations related to both planar and three-dimensional multibody system. 
+–	an introduction to general computer based methods for formulating kinematics and kinetics (dynamics).
+–	skills in the formulation and the solution of connected differential (movement) and algebraic (kinematic) equations for general multibody systems.
+–	the theoretical background for the equation.
+–	an introduction to flexible bodies in multibody dynamic simulation.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmeringserfaring." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Programming experience." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10060/62675.41501/41533.41564/62643/62694" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Behandle en vilkårlig problemstilling indenfor stivlegemedynamik. " />
+          <Txt Lang="en-GB" Txt="Handling arbitrary problems in rigid body dynamics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere forskellige bevægepar og beskrive deres fordele og ulemper." />
+          <Txt Lang="en-GB" Txt="Identify the different kinematic joints and explain advantages and disadvantages." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de gængse bindingstyper matematisk." />
+          <Txt Lang="en-GB" Txt="Formulate the commonly applied joints mathematical." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille kinematiske ligninger for et stivlegemesystem i såvel 2D som 3D." />
+          <Txt Lang="en-GB" Txt="Derive the kinematic equation for a multibody system (rigid bodies) in 2D and 3D." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere kinematisk bestemt bevægelse (position, hastighed, acceleration)." />
+          <Txt Lang="en-GB" Txt="Simulate kinematic driven movement (position, velocity, acceleration)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille de beskrivende ligninger for et kinetisk bestemt system i såvel 2D som 3D." />
+          <Txt Lang="en-GB" Txt="Derive the equation for kinetic controlled motion in 2D and 3D." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere en mekanisme drevet af kræfter (ydrekræfter, reaktionskræfter, inertikræfter)." />
+          <Txt Lang="en-GB" Txt="Simulate a multibody system driven by forces (external forces, reaction forces, inertia forces)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de forskellige metoder til at beskrive generel rotation i 3D." />
+          <Txt Lang="en-GB" Txt="Understand the different methods for describing rotation in 3D." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare problemstilllinger i forbindelse med introduktion af fleksible legemer." />
+          <Txt Lang="en-GB" Txt="Explain the different challenges in relation to flexible multibody simulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle software til simulering af mekanismer." />
+          <Txt Lang="en-GB" Txt="Develop software for the simulation of multibody systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Computational Multibody Dynamics</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:20.37" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

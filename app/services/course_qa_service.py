@@ -8,32 +8,19 @@ directly via Streamable HTTP.
 
 import logging
 
-from langdetect import detect
-
 from app.config import get_settings
 from app.models.course import Course
+from app.services.language_service import detect_user_language
 
 
 logger = logging.getLogger(__name__)
-
-_LANG_NAMES = {
-    "da": "dansk",
-    "en": "engelsk",
-}
-
 
 class CourseQAError(RuntimeError):
     """Raised when a course answer cannot be obtained from Groq."""
 
 
 def _detect_language(text: str) -> str:
-    try:
-        lang = detect(text)
-        if lang in _LANG_NAMES:
-            return lang
-        return "en"
-    except Exception:
-        return "en"
+    return detect_user_language(text)
 
 
 # ---------------------------------------------------------------------------
@@ -44,7 +31,10 @@ def _detect_language(text: str) -> str:
 def _build_system_prompt(language: str, academic_year: str) -> str:
     """Build system prompt for Groq with language instruction."""
     if language == "da":
-        lang_instruction = "DU SKAL SVARE PÅ DANSK"
+        lang_instruction = (
+            "DU SKAL SVARE UDELUKKENDE PÅ DANSK. Bevar officielle engelske kursus- og "
+            "studieprogramnavne, men skriv alle forklaringer, overskrifter og overgange på dansk"
+        )
     elif language == "en":
         lang_instruction = "DU SKAL SVARE PÅ ENGLSK"
     else:
@@ -55,14 +45,35 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         f"{lang_instruction}.\n\n"
         "Du har adgang til databasen via værktøjer, der automatisk kaldes når nødvendigt.\n"
         f"Brug studieåret {academic_year}, medmindre brugeren udtrykkeligt angiver et andet.\n"
+        f"Når du kalder search_courses, skal search_language være '{language}'.\n"
+        "Når du kalder search_courses, skal q være et kort, kanonisk engelsk emne; oversæt brugerens "
+        "søgeemne til engelsk, mens search_language kun styrer sproget i de returnerede tekster.\n"
+        f"Når du kalder get_course, skal response_language være '{language}'.\n"
         "Brug altid værktøjerne til at hente fakta fra databasen — gæt aldrig data.\n"
+        "Brug get_new_courses, når brugeren spørger hvilke kurser der er nye eller har fået nyt kursusnummer; "
+        "sæt level til BSc, MSc eller PhD, når brugeren angiver et niveau, sæt ects ved et angivet "
+        "ECTS-tal, og sæt q til et kort, kanonisk engelsk emne, når brugeren angiver et emne.\n"
+        "Brug get_specializations til spørgsmål om specialiseringer og deres kursuskrav.\n"
+        "Specialiseringer er valgfrie studieveje. Beskriv aldrig en specialiserings kursuspulje som "
+        "obligatorisk for alle på programmet; respekter de returnerede requirement-roller.\n"
         "Besvar kun på baggrund af data fra værktøjerne.\n"
         "Hvis et værktøj returnerer en fejl, forklar det kort til brugeren.\n"
+        "Never format course results as Markdown tables.\n"
+        "Present courses as a readable bullet list.\n"
+        "Put the course number and title on the first line and ECTS and level on the following line.\n"
+        "Do not place multiple courses on the same line.\n"
+        "Always sort every course list by course number in ascending order before presenting it.\n"
+        "The sentence limit applies to prose, not to individual course-list entries.\n"
         "Svar kort og præcist — højst 3 sætninger.\n"
     )
 
 
-def answer_with_remote_mcp(question: str, academic_year: str | None = None) -> str:
+def answer_with_remote_mcp(
+    question: str,
+    academic_year: str | None = None,
+    *,
+    response_language: str | None = None,
+) -> str:
     """Answer using Groq Responses API with remote MCP tools.
 
     Groq decides which tool to call, the MCP server executes it via
@@ -81,7 +92,7 @@ def answer_with_remote_mcp(question: str, academic_year: str | None = None) -> s
 
     from openai import OpenAI, OpenAIError
 
-    language = _detect_language(question)
+    language = response_language if response_language in {"da", "en"} else _detect_language(question)
     selected_academic_year = academic_year or settings.default_academic_year
     endpoint = settings.mcp_server_url.rstrip("/")
     if not endpoint.endswith("/mcp"):
@@ -101,8 +112,14 @@ def answer_with_remote_mcp(question: str, academic_year: str | None = None) -> s
             "server_label": "dtu_courses",
             "server_url": endpoint,
             "headers": {"Authorization": f"Bearer {settings.mcp_token}"},
-            "server_description": "Read-only access to official DTU courses and study plans.",
-            "allowed_tools": ["get_course", "search_courses", "get_study_plan"],
+            "server_description": "Read-only access to official DTU courses, study plans, and specializations.",
+            "allowed_tools": [
+                "get_course",
+                "search_courses",
+                "get_new_courses",
+                "get_study_plan",
+                "get_specializations",
+            ],
             "require_approval": "never",
         }
     ]

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46110" Volume="2026/2027" University="dtu" LastUpdated="2026-04-14+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Grundlæggende Aerodynamik" />
+        <Title Lang="en-GB" Title="Fundamentals of Aerodynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="2416" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jens Nørkær</GivenName>
+            <FamilyName>Sørensen</FamilyName>
+            <Email>jnso@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="63363" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Hamid</GivenName>
+            <FamilyName>Sarlak</FamilyName>
+            <Email>hsar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="99755" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Kenneth</GivenName>
+            <FamilyName>Lønbæk</FamilyName>
+            <Email>kenloen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren vil blive baseret på vurdering af 3 skriftlige opgaver, hvoraf den sidste også indeholder en poster, der indgår som en del af den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade will be based on the assessment of 3 written assignments, of which the last includes a poster that will be presented as a part of the oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Design af vingeprofiler og vinger samt konceptuelt design af en drone. Introduktion til de fundamentale aerodynamiske principper og ligninger. Inkompressibel profilteori. Potentialstrømning - konform afbildning. Kutta-Joukowsky’s teorem. To-dimensionale panelmetoder. Inkompressible strømninger over vinger af endelig spanvidde. Grundlæggende rotorteori.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde samt øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Diverse noter vil blive udleveret under kurset.</Course_Literature>
+          <Course_Objectives>At give den teoretiske baggrund til formulering og løsning af aerodynamiske strømningsproblemer, herunder at designe en drone, samt være i stand til at beregne og designe vingeprofiler, vinger og rotorblade til fly og rotorer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Design of airfoils and wings, including the conceptual design of a drone. Introduction to the fundamental principles and equations in aerodynamics. Incompressible airfoil theory. Potential flow - conformal mapping. The Kutta-Joukowsky theorem. Two-dimensional panel methods. Incompressible flow over finite wings. Lifting line/lifting surface models. Fundamentals of rotor aerodynamics.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work and problem exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Various notes will be provided during the course.</Course_Literature>
+          <Course_Objectives>To give the theoretical background for formulation and solution of aerodynamic flow problems, including  designing a drone, and be able to calculate and design airfoils and plan forms for fixed wing and propeller powered aircraft.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til Matlab eller lignende, f.eks. 02633" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Matlab or similar software skills required, eg. 02633" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41312/41102/41065/02633" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lave et aerodynamisk design af en drone" />
+          <Txt Lang="en-GB" Txt="Make a conceptual design of a drone" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de fundamentale koncepter af løft, modstand og vorticitet" />
+          <Txt Lang="en-GB" Txt="Describe the basic concepts of lift, drag and vorticity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den  grundlæggende teori for potentialstrømninger" />
+          <Txt Lang="en-GB" Txt="Describe the basics of potential flow theory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte konform afbildning til beregning af strømninger omkring 2D objekter" />
+          <Txt Lang="en-GB" Txt="Use conformal mapping to calculate flows past two-dimensional bodies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte en panelkode og viskos-inviskos interaktion til vingeprofiler" />
+          <Txt Lang="en-GB" Txt="Use a panel code and viscous-inviscid interaction for airfoils" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlaget for vingeprofiler og profilteori" />
+          <Txt Lang="en-GB" Txt="Explain the basics of airfoils and airfoil theory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede Kutta-Joukowsky teorien" />
+          <Txt Lang="en-GB" Txt="Derive the Kutta-Joukowsky theorem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere bærelinjemetoden for vinger af endelige længde i et MatLab script" />
+          <Txt Lang="en-GB" Txt="Implement the lifting line method on finite wings in a MatLab script" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere skeletlinjeteori i et MatLab script" />
+          <Txt Lang="en-GB" Txt="Implement  thin airfoil theory in a MatLab script" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende momentumteori på rotorer" />
+          <Txt Lang="en-GB" Txt="Apply momentum theory on rotors" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere tekniske beregninger skriftligt i kort og præcis form" />
+          <Txt Lang="en-GB" Txt="Document a technical calculation in writing in a short and precise form" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Mundtligt fremlægge et komplext problem i en poster" />
+          <Txt Lang="en-GB" Txt="Present orally a complex problem in a poster" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:29.427" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="62595" University="dtu" LastUpdated="2025-04-24+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Full stack udvikling, drift og distribuerede systemer" />
+        <Title Lang="en-GB" Title="Full Stack Development, Operations and Distributed Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="78757" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Tange</FamilyName>
+            <Email>htan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="There can be additional exam days if the class is large." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Ved store hold kan eksamen fordeles over flere dage." />
+            <Schedule ScheduleKey="F2A" />
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Arkitekturer og design af moderne full stack applikationer som en del af et distribueret system: client/server, serviceorienterede arkitekturer (SOA) og webtjenester såsom JSON, REST og GraphQL.
+Udvikling af moderne front- og back-end services.
+Richardson's maturity model for en REST service.
+Arkitekturer inden for for webapplikationer (HTML, Javascript, serverside og klientside sprog og deres samspil)
+Gode praksis indenfor moderne backendudvikling.
+Håndtering af samtidighedsproblematikker i en backend.
+
+Kurset er projektorienteret og der arbejdes på udvikling af et distribueret system efter eget valg, typisk en front- og back-end med kommunikationen med en webside og/eller en app.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og obligatorisk projektarbejde.
+I kurset udvikler du en backend efter eget valg.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets formål er at træne deltagerne i at udvikle webapplikationer med tidssvarende frontend teknologier, samt at designe, opbygge, idriftsætte og overvåge en moderne backend for en app eller webside.
+At forstå teori og god praksis indenfor opbyggelsen af distribuerede systemer.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+IT og Økonomi: 4. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Architectures and design of modern backends as part of a distributed systems, such as client-server, Service oriented architectures (SOA), and web services, such as JSON, REST and GraphQL.
+Development of modern front- and back-end services.
+Richardson's maturity model for a REST service.
+Architectures in web application development (HTML, Javascript, serverside and client side languages and their interaction)
+Best practices in modern backend development.
+Managing concurrency issues in a backend.
+
+The course is project-oriented and includes development of a distributed system of your choice, typically a front- and back-end and communicatiing with a web page and/or an app.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and excercises and mandatory project work.
+Development of a backend of own choic</Teaching_And_Learning_Methods>
+          <Course_Objectives>The purpose of the course is to train the participants in developing web applications using some modern front-end technologies and to design, build, deploy and operate a modern backend for an app or website.
+To understand of theory and good practice in the construction of distributed systems.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+IT and Economics: 4th semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til Java, objektorienteret programmering og basal forståelse for flertrådet programmering.&#xD;&#xA;Kendskab til netværksprotokoller, herunder TCP/IP og HTTP.&#xD;&#xA;Kurset 62443 kan følges parallelt med 62595." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of Java, object-oriented programming and basic understanding of multithreaded programming.&#xD;&#xA;Knowledge of network protocols, including TCP/IP and HTTP.&#xD;&#xA;The course 62443 can be followed in parallel with 62595." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02312/02314.62532).62531.02327.02362.02369.62443 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for principper og arkitektur af webapplikationer (front- og back-end)" />
+          <Txt Lang="en-GB" Txt="Explain the principles and architecture of web applications (front- and back-end)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle full stack applikationer af en vis kompleksitet" />
+          <Txt Lang="en-GB" Txt="Develop full-stack applications of a certain complexity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere, implementere, idriftsætte og driftovervåge et distribueret system" />
+          <Txt Lang="en-GB" Txt="Document, implement, deploy and monitor a distributed system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Organisere kode i henhold til valgt arkitektur" />
+          <Txt Lang="en-GB" Txt="Organize code according to the chosen architecture" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for principper i reaktiv programmering" />
+          <Txt Lang="en-GB" Txt="Explain the principles of reactive programming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende resurseorienterede protokoller (såsom REST) som klient og server" />
+          <Txt Lang="en-GB" Txt="Use resource oriented protocols (such as REST) as client and server" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå transaktionsbegrebet og transaktionsisolering i et distribueret system" />
+          <Txt Lang="en-GB" Txt="Understand transactions and transaction isolation in a distributed system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå sikkerhedsaspekterne i et distribueret system" />
+          <Txt Lang="en-GB" Txt="Understand security aspects in a distributed system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge og konfigurere en passende driftsplatform og idriftsætte en backend" />
+          <Txt Lang="en-GB" Txt="Select and configure a suitable deployment platform and deploy a backend" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne mellem forskellige container-baserede virtualiseringsteknologier, såsom Docker, og moderne serverdrift" />
+          <Txt Lang="en-GB" Txt="Distinguise between different container-based virtualization technologies, such as Docker, and modern server management" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere bæredygtighed i forbindelse med valg af driftsplatform og backend" />
+          <Txt Lang="en-GB" Txt="Assess the sustainability when choosing deployment platform backend" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Front- og Back-endudvikling, drift og distribuerede systemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62471.02342.02363.62596.62597" />
+        <PreviousCourse CourseCode="02363.62596.62597" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:44.8" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34210" Volume="2026/2027" University="dtu" LastUpdated="2024-11-19+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Introduktion til digital kommunikation" />
+        <Title Lang="en-GB" Title="Introduction to digital communication" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="20251" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Darko</GivenName>
+            <FamilyName>Zibar</FamilyName>
+            <Email>dazi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen (80%) og hjemmeopgaver (20%)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral examination (80%) and evaluation of mandatory assignments (20%)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til analyse og behandling af deterministiske signaler. Sampling og kvantisering. Samplingssætningen. Introduktion til lineære systemer og elektriske kredsløb. Transmission ved hjælp af pulser. Optimal modtager. Intersymbolinterferens. Nyquists sætning. Ortogonale signaler. Modulation. Kanalmodeller for metalliske og optiske transmissionsledninger samt radiokanaler</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning og obligatoriske hjemmeopgaver</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give en introduktion til behandling af signaler som de forekommer i moderne kommunikationssystemer, herunder introducere koncepter som sampling, kvantisering, filtrering, støj og modulation.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to analysis and processing of deterministic signals. Sampling and quantization. The sampling theorem. Introduction to linear systems and electric circuits. Transmission with pulses. Optimal detection of pulses. Intersymbol interference. Nyquist’s theorem. Orthogonal signals. Modulation. Channel models for metallic and optical transmission lines and radio channels</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and mandatory assignments</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give an introduction to processing of signals in modern communication systems, including concepts such as sampling, quantization, filtering, noise and modulation</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="01005 (senest samtidig)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="01005 (at the same time)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01005" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive begrebet signaler generelt i forbindelse med kommunikationssystemer " />
+          <Txt Lang="en-GB" Txt="Describe signals in general in relation to communication systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for forskellen mellem analoge og digitale signaler, samt mellem periodiske og ikke-periodiske signaler." />
+          <Txt Lang="en-GB" Txt="Explain the difference between analog signals and digital signals, and between periodic and non-periodic signals" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive sampling og rekonstruktion af signaler, samt redegøre for samplingssætningen for deterministiske signaler" />
+          <Txt Lang="en-GB" Txt="Describe sampling and reconstruction of signals and explain the sampling theorem for deterministic signals" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begrebet kvantisering, herunder forskellen mellem lineær og ulineær kvantisering" />
+          <Txt Lang="en-GB" Txt="Explain quantization, including the difference between linear and non-linear quantization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for, hvordan signaler kan beskrives i både tids- og frekvensdomænet, samt formålet med Fouriertransformation i denne forbindelse." />
+          <Txt Lang="en-GB" Txt="Describe how signals can be represented in both time-domain and frequency domain, and the purpose of Fourier transform in relation to these different domains" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvad der karakteriserer et lineært system samt relationen mellem et lineært systems impulsrespons og overføringsfunktion" />
+          <Txt Lang="en-GB" Txt="Describe what characterizes a linear system and the relation between a linear system’s impulse response and transfer function" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for, hvordan information kan overføres med pulser, samt hvordan pulser detekteres i støj" />
+          <Txt Lang="en-GB" Txt="Explain how information can be transferred with pulses and how pulses are detected in the presence of noise" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive amplitude- og fasemodulation i både tids- og frekvensdomæne" />
+          <Txt Lang="en-GB" Txt="Describe amplitude modulation and phase modulation in both time domain and frequency domain" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende MATLAB til beregning på simple kommunikationssystemer" />
+          <Txt Lang="en-GB" Txt="Use MATLAB for calculations on simple communication systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduction to digital communication</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34310" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:58" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

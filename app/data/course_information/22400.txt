@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22400" Volume="2026/2027" University="dtu" LastUpdated="2026-08-12+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Design-build 4: Autonome komponenter til styring af og studier i levende systemer" />
+        <Title Lang="en-GB" Title="Design-build 4: Autonomous devices for controlling and studying living systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="34" KVL_Resources="100" />
+          <Ass_Dep UID="1" Resources="33" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+          <Ass_Dep UID="25" Resources="33" University="DTU" SortID="1" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="73941" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Edwin</GivenName>
+            <FamilyName>Hwu</FamilyName>
+            <Email>etehw@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="59973" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Torkel Gissel</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>tgin@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Experiments" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen (50%): Multiple choice spørgsmål, der dækker alle dele af projektet &#xD;&#xA;&#xD;&#xA;Bedømmelse af øvelser (50%): Det byggede system evalueres på kompleksitet i forhold til antal funktioner og funktioners niveau samt validering af disse funktioner, m.m.&#xD;&#xA;&#xD;&#xA;Den endelige karakter er baseret på en samlet vurdering af begge delprøver. Begge delprøver skal bestås for at få en karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination (50%): Multiple choice questions (MCQ) covering all parts of the project.&#xD;&#xA;&#xD;&#xA;Experiments (50%): The built system is evaluated for complexity in terms of number of functions and level of functions as well as validation of these functions etc. &#xD;&#xA;&#xD;&#xA;The final grade is based on an overall assessment of both part exams. Both the MCQ and the experimental parts must be passed to obtain a grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="A Computer is required to access the assignment." />
+            <Aid_Txt Lang="da-DK" Txt="Computer skal bruges til at tilgå opgaven." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Det levende system og dets tilsigtede formål definerer, hvordan bioreaktoren konstrueres. Derfor skal en klar beskrivelse af bioreaktoren, det levende system og deres tilsigtede anvendelse være fastlagt, før prototyping kan påbegyndes.
+
+Prototyping indebærer design og opbygning af delsystemer, der måler nøgleparametre såsom opløst ilt, turbiditet, antal copepoder og algetæthed. Disse målinger danner grundlag for styring af bioreaktoren — eksempelvis regulering af næringstilførsel og temperatur i overensstemmelse med det levende systems behov. De enkelte delsystemer integreres efterfølgende i én samlet funktionel enhed.
+
+Et multi-parametrisk sensorsystem er ønskeligt, da væksten af levende organismer afhænger af mange indbyrdes relaterede faktorer (f.eks. pH, temperatur og tilstedeværelse af prædatorer). De studerende har betydelig frihed til at vælge, hvilke sensorer der skal implementeres, og hvordan de indsamlede data skal bruges til at styre systemet. Udfordringen ligger i at afgøre, hvilke parametre der er mest kritiske for at opretholde det levende system og opnå bioreaktorens formål på den mest effektive måde. De studerende kan også udforske muligheden for fjernovervågning og -styring via webbaserede grænseflader.
+
+De studerende arbejder i store tværfaglige teams på 9–10 medlemmer. De studerende er selv ansvarlige for at danne deres teams; underviserne tildeler ikke teammedlemmer. Et velfungerende team samler en bred vifte af ingeniørprofiler for at imødekomme projektets tværfaglige krav. Projektet er studenterstyret, hvilket giver de studerende praktisk erfaring med at lede et stort team bestående af medlemmer med forskellige tekniske baggrunde. Hvert team støttes af en senior underviser, der vejleder i projektledelsesmæssige aspekter.
+
+De studerende opfordres til at anvende AI-værktøjer (f.eks. Claude, Gemini, Copilot) som læringshjælpemidler til fejlfinding, forståelse af begreber og idégenerering. Alt indleveret arbejde skal dog afspejle den studerendes egen forståelse og skal kunne verificeres under evalueringsmøder.
+
+Fysisk fremmøde er obligatorisk til alle laboratoriesessioner og evalueringsmøder. De studerende skal jævnligt tjekke kursets skema-/meddelelsesside for opdateringer.</Contents>
+          <Teaching_And_Learning_Methods>Kurset er et laboratoriekursus, der hovedsageligt kræver, at studerende designer og bygger et autonomt system til at kontrollere og studere et givet levende system. Det forventes, at studerende arbejder 8 timer i døgnet i laboratoriet.</Teaching_And_Learning_Methods>
+          <Course_Literature>Undervisningstimer, vejledninger, og lektionsnoter. Internettet vil blive brugt som informationskilde.</Course_Literature>
+          <Course_Objectives>En bioreaktor bruges typisk til produktion og rensning af vand, men også til små økosystemer i modelstørrelsen. Bioreaktorer er derfor vigtige både for forskningen og industrien. Det er målet at lave en prototype dvs. bygge og designe en enhed, der kan (1) undersøge flere parametre i en bioreaktor (f.eks. pH-værdien, ilt, turbiditet, saltindhold, cellevækst mm.), (2) benytte disse parametre til at regulere tilførslen af [medium]/vand/næringsstoffer til bioreaktoren, og (3) forme den endelige dyrkning. Målet er også at få erfaring med brugen af forskellige eukaryoter så som alger, vandlopper og rejer. Projekterne vil være tværfaglige and kræve tæt samarbejde i gruppen for at lykkes. Derfor er det vigtigt at benytte projektplanlægning og en strategisk arbejdsfordeling.</Course_Objectives>
+          <DTU_Remark>Kun tilgængelig for General Engineering studerende</DTU_Remark>
+          <Remark>De studerende skal medbringe en 64-bit computer til programmeringsindlejrede systemer.
+Hvis du har spørgsmål om kurset, bedes du først spørge IDUN AI-assistenten: https://etehw8.wixsite.com/idun-assistant</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The living system and its intended purpose define how the bioreactor is constructed. Therefore, a clear description of the bioreactor, the living system, and their intended use must be established before prototyping can begin.
+
+Prototyping involves designing and building subsystems that measure key parameters such as dissolved oxygen, turbidity, copepod count, and algae density. These measurements form the basis for controlling the bioreactor — for example, regulating nutrient feed and temperature in accordance with the needs of the living system. The individual subsystems are subsequently integrated into a single functional device.
+
+A multi-parametric sensor system is desirable, as the growth of living organisms depends on many interrelated factors (e.g., pH, temperature, and predator presence). Students have considerable freedom in choosing which sensors to implement and how to use the collected data to control the system. The challenge lies in deciding which parameters are most critical for sustaining the living system and achieving the bioreactor's purpose in the most efficient way. Students may also explore the possibility of remote monitoring and control via web-based interfaces.
+
+Students work in large interdisciplinary teams of 9–10 members. Students are responsible for forming their own teams; teachers do not assign team members. A successful team brings together a broad range of engineering profiles to meet the multidisciplinary demands of the project. The project is student-led, giving students hands-on experience in managing a large team composed of members with diverse technical backgrounds. Each team is supported by a senior teacher who provides guidance on project management aspects.
+
+Students are encouraged to use AI tools (e.g., Claude, Gemini, Copilot) as learning aids for troubleshooting, understanding concepts, and generating ideas. However, all submitted work must reflect the student's own understanding and must be verifiable during review meetings.
+
+Physical attendance is mandatory for all lab sessions and review meetings. Students must check the course Schedule/Announcements page frequently for updates.</Contents>
+          <Teaching_And_Learning_Methods>The course is a laboratory course that mainly requires students to design and build an autonomous system to control and study a given living system. It is expected that students work 8h/day in the laboratory.</Teaching_And_Learning_Methods>
+          <Course_Literature>Teaching hours, tutorials, and lesson notes. The Internet will be used as a source of information.</Course_Literature>
+          <Course_Objectives>A bioreactor is typically used for production, water cleaning but also to model small ecosystems. Bioreactors are therefore central for research and industry. The objective is to “prototype”, that is design and build, a device that can (1) investigate some parameters in the bioreactor (e.g. pH, oxygen, turbidity, salinity, cell growth etc), (2) to use these parameters to regulate the feed of medium/water/nutrients to the bioreactor and (3) to model the resulting culture. The objective is also to get experience with using various eukaryotes such as algae, copepods and shrimps. The projects will be cross-disciplinary and require close collaboration between team members to succeed.  Therefore, an important objective is to apply project planning, and labour division strategies.</Course_Objectives>
+          <DTU_Remark>Only available for general engineering students</DTU_Remark>
+          <Remark>Students should bring a (64-bit) computer for programming embedded systems.
+If you have any questions about the course, please ask the IDUN AI Assistant first: https://etehw8.wixsite.com/idun-assistant</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Design-build courses 1-3 på General engineering BSc uddannelsen." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Design-build courses 1-3 on the General engineering BSc programme." />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og benytte designværktøjer som CAD, en proportional-integral-differential kontol (PID), en programmerbar indlejret styreenhed, et levende system, et fluidisk system og sensor-systemer." />
+          <Txt Lang="en-GB" Txt="describe and use computer aided design tools (CAD), a proportional-integral-derivative (PID) controller, a programmable embedded controller, a living system, a fluidic system, sensor systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive bæredygtige krav til et givent levende system f.eks. iltning, næringsstoffer, niveauet af giftige forbindelser, lys mm." />
+          <Txt Lang="en-GB" Txt="describe sustainable conditions for a given living system e.g. oxygenation, nutrients, level of toxic compounds, light etc. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="overføre kravene til et bæredygtigt og kontrollerende levende system, så det bliver til en præcist specificeret anordning." />
+          <Txt Lang="en-GB" Txt="translate the requirements for a sustaining and controlling a given living system into an exact specification for a device." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og bygge et fysisk system (en prototype), der kan benyttes til at vedligeholde og analysere på et komplekst levende system uden bruger-indgriben." />
+          <Txt Lang="en-GB" Txt="design and build a physical system (a prototype) for maintaining and analysing a complex living system without user intervention. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere data og bygge en matematisk model af bioreaktorens ydeevne." />
+          <Txt Lang="en-GB" Txt="analyse data and build a mathematical model of the bioreactor performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave en projektplan for et mangetrådet projekt udført af et tværfagligt team." />
+          <Txt Lang="en-GB" Txt="make a project plan for a multithreaded project performed in an interdisciplinary team." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere prototypens ydeevne." />
+          <Txt Lang="en-GB" Txt="evaluate the performance of the prototype." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere projektplanens virkeevne." />
+          <Txt Lang="en-GB" Txt="evaluate the efficacy of the project plan." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere sit teams præstation i forhold til projektets mål." />
+          <Txt Lang="en-GB" Txt="evaluate the performance of his/her own team in relation to project goals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge og anvende generative AI-værktøjer (f.eks. LLM'er) til at assistere ved programmering af indlejrede styreenheder, dataanalyse eller udarbejdelse af teknisk projektdokumentation, og samtidig kritisk evaluere nøjagtigheden og pålideligheden af det AI-genererede output." />
+          <Txt Lang="en-GB" Txt="select and apply generative AI tools (e.g., LLMs) to assist in the programming of embedded controllers, data analysis, or the drafting of technical project documentation, while critically evaluating the accuracy and reliability of the AI-generated output." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://www.healthtech.dtu.dk/research/research-sections/section-idun/group-midas" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="33270" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="60" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="60" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="60" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="200" Min="100" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-08-13" Time="15:42:09.723" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

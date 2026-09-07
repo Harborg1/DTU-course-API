@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10387" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Scientific computing i kvanteinformationsvidenskab" />
+        <Title Lang="en-GB" Title="Scientific computing in quantum information science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="29186" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jonas Schou</GivenName>
+            <FamilyName>Neergaard-Nielsen</FamilyName>
+            <Email>jsne@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den sidste halvdel af kurset vil primært bestå af individualiseret projektarbejde (individuelt eller i par) som afsluttes med en mundtlig præsentation for holdet samt aflevering af et Github repository. Bedømmelsen er en helhedsvurdering med ca. lige vægt på aflevering og præsentation." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The last half of the course will mostly consist of individualized project work (individual or in pairs) which will conclude with an oral presentation in class and submission of a Github repository. The submitted work and the presentation have roughly equal weights in the overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Pakkehåndtering og virtuelle environments.
+Versionskontrol med git.
+Kerne-pakkerne for scientific computing i Python: Numpy, Scipy, Matplotlib.
+Udforskende kodning: interaktiv prompt - Jupyter notebooks - scripts - pakker; IDE'er.
+Benchmarking og optimering af kode: timing, linjeprofilering, arrays vs. loops, caching, numexpr, Numba.
+Effektiv brug af arrays.
+Præsentation af kode med notebooks og reveal.js.
+
+Udvalgte numeriske metoder, f.eks. spektralanalyse, konveks optimering, master-ligninger.
+Udvalgte emner i kvanteinformation og kvanteoptik, f.eks. kvanteoptik med kontinuerte variable, dekohærens af qubits, kvantetilfældighed, kvantekredsløb.
+Udvalgte pakker for simulering af kvantesystemer, f.eks. QuTiP, Strawberryfields, Qiskit.
+
+Hvis der er tid:
+Instrument-kommunikation, dataopsampling, GUI'er.
+Interaktiv visualisering med f.eks. Bokeh, Plotly, ipywidgets.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, kode-demonstrationer, hands-on tutorials, projektarbejde, præsentationer af studerende</Teaching_And_Learning_Methods>
+          <Course_Objectives>Simulering, numeriske beregninger, eksperiment-kontrol, dataanalyse, visualisering: Disse er alle essentielle elementer af moderne videnskab og engineering, og de handler alle om kode. Enhver forsker eller R&amp;D ingeniør bør have en basal forståelse af metoder fra scientific computing (dvs. beregninger og andet kodning med videnskabeligt formål). Formålet med dette kursus er at styrke din "computational thinking" og introducere dig til en række datalogiske værktøjer og metoder med relevans i videnskab.
+
+Du vil blive gjort bekendt med pakker og værktøjer (alle i Python) der er bredt anvendelige indenfor engineering og videnskab, samt mere specifikke pakker der ofte bruges i kvanteoptik og kvanteinformation. Kurset er derfor særligt relevant for dem, der overvejer en karriere indenfor kvanteinformationsvidenskab, og for dem der laver speciale eller PhD-projekt i det felt.</Course_Objectives>
+          <Remark>Du opfordres til at gøre brug af AI til hjælp med programmering og lignende. Du skal blot forstå hvad din kode gør.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Package management and virtual environments.
+Version control with git.
+Core scientific computing packages for Python: Numpy, Scipy, Matplotlib. 
+Explorative code development: interactive prompt - Jupyter notebooks - scripts - packages; IDEs.
+Benchmarking and optimisation of code: timing, line profiling, arrays vs. loops, caching, numexpr, Numba.
+Efficient use of arrays.
+Presenting code with notebooks and reveal.js.
+
+Selected numerical methods, e.g. spectral analysis, convex optimisation, master equations.
+Selected topics in quantum information and quantum optics, e.g. continuous-variable quantum optics, decoherence of qubits, quantum randomness, quantum circuits.
+Selected packages for simulation of quantum systems, e.g. QuTiP, Strawberryfields, Qiskit.
+
+If time allows: 
+Instrument interfaces, data acquisition, GUIs.
+Interactive visualisation with e.g. Bokeh, Plotly, ipywidgets.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, code demonstrations, hands-on tutorials, project work, student presentations</Teaching_And_Learning_Methods>
+          <Course_Objectives>Simulation, numerical computation, experiment control, data analysis, visualisation: These are all essential components of modern science and engineering, and they all rely on code. Any scientist or R&amp;D engineer should have a basic understanding of the methods of scientific computing. This course aims to strengthen your computational thinking and introduce you to a range of computational tools and methods relevant in science.
+
+You will get acquainted with libraries and tools (all Python) that are generally useful in engineering and science, as well as more specific libraries often used in quantum optics and quantum information. The course is therefore particularly relevant for those considering an academic or industrial career in quantum information science and technology and for those doing a master or PhD project in the field.</Course_Objectives>
+          <Remark>Using AI for speeding up programming, etc., will be encouraged throughout the course. You must, however, understand what your code does.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det anbefales kraftigt at have taget et eller flere kurser med relation til kvanteinformation/kvanteteknologi samt at have nogen erfaring med programmering i Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Highly recommended to have prior course(s) relating to quantum information science/quantum technology plus some experience with programming in Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10112/10380/10384/10385/34042" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå sammenhængen mellem de mest almindelige pakker i Python-økosystemet for scientific computing" />
+          <Txt Lang="en-GB" Txt="Understand the relationship between the most common libraries of the Python scientific computing ecosystem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende basal versionskontrol med git og håndtere et mindre open source software-projekt på Github" />
+          <Txt Lang="en-GB" Txt="Use basic version control with git and manage a small open source software project on Github " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle genanvendelig, effektiv og veldokumenteret kode til løsning eller analyse af et fysisk problem" />
+          <Txt Lang="en-GB" Txt="Develop reusable, efficient, and well-documented code for solving or analysing a physical problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og simulere kvanteoptiske kredsløb" />
+          <Txt Lang="en-GB" Txt="Analyse and simulate quantum optical circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere og simulere dynamikken af åbne kvantesystemer" />
+          <Txt Lang="en-GB" Txt="Model and simulate the dynamics of open quantum systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantitativt analysere støjfyldte måledata" />
+          <Txt Lang="en-GB" Txt="Quantitatively analyse noisy measurement data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge ekskveringstid for kode og kende til metoder til at gøre den hurtigere" />
+          <Txt Lang="en-GB" Txt="Examine code execution time and know about methods for speeding it up" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre et større, tidsbegrænset programmeringsprojekt, inkl. planlægning, udforskning, implementering og afrunding" />
+          <Txt Lang="en-GB" Txt="Carry out a larger, time-constrained coding project, including planning, exploration, implementation, and wrap-up" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Klart og præcist præsentere et beregningsmæssigt problem, den anvendte løsningsmetode og dens resultater" />
+          <Txt Lang="en-GB" Txt="Clearly and concisely present a computational problem, the chosen solution method, and its results" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:17.823" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

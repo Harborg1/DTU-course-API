@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62525" Volume="2026/2027" University="dtu" LastUpdated="2026-03-10+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Digital Signalbehandling." />
+        <Title Lang="en-GB" Title="Digital Signal Processing." />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="145690" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Iver Mølgaard</GivenName>
+            <FamilyName>Ottosen</FamilyName>
+            <Email>ivot@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="There will be a need for more than one exam day." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Der er behov for mere end én eksamensdag." />
+            <Schedule ScheduleKey="E5A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="20 minutter i alt per studerende (indkluderer votering)." />
+          <Duration Lang="en-GB" Txt="20 minutes per student (this includes the final assessment). " />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Principperne for opbygning af et digitalt analysesystem for signaler. Arkitekturen af et signalbehandlingssystem ud fra grundlæggende komponenter. Grundlæggende repræsentationer af kontinuerte og diskrete, deterministiske og stokastiske signaler og anvendelse af disse. Spektralanalyse af signaler herunder tids/frekvens analyse. Et digitalt filter repræsenteret som et lineært, tidsinvariant system (LTI), herunder funktionerne impulsrespons, foldning og system funktion. Software til design af lavpas, båndpas og højpas digitale filtre. Design af digitalt filter til forbedring af signal støj forholdet for et signal.</Contents>
+          <Teaching_And_Learning_Methods>Kursussessioner med præsentation af kursusmateriale og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at introducere metoder til konstruktion af digitale signalbehandlingssystemer og give eksempler på sådanne for et udvalg af signaler bl.a. fra det medicotekniske område.</Course_Objectives>
+          <DTU_Remark>.</DTU_Remark>
+          <Remark>Sektion for Mekanisk teknologi
+Kurset er obligatorisk for Computer Engineering diplom 3. semester og
+Sundhedsteknologi 3. semester.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Principles for the design of a digital analysis system for signals. The architecture of a digital signal processing system based on fundamental components. The representation of continuous and discrete, deterministic and stochastic signals and their applications. Spectral analysis of signals including time/frequency analysis. A digital filter represented as a linear, time invariant (LTI) system, including the functiions impulse response, convolution and system function. Software for design of low-, band- and highpass digital filters. Design of digital filter for improving the signal-to-noise ratio for a signal.</Contents>
+          <Teaching_And_Learning_Methods>Course sessions with presentation of course material and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course objective is to introduce methods for construction of digital signal processing systems and present examples of such systems for a selection of signals, e.g. including medical  signals.</Course_Objectives>
+          <Remark>Section of Mechanical Technology
+The course is mandatory for Computer Engineering B.Eng. 3. semester and Healthcare Technology 3. semester.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende principperne for opbygning af et analysesystem for signaler baseret på begreberne måling, forstærkning, A/D konvertering, sampling, aliasering og kvantisering af signaler." />
+          <Txt Lang="en-GB" Txt="Describe and apply the principles for construction of an analysis system for signals, based on the concepts measurement, amplification, A/D conversion, sampling, aliasing and quantization of signals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive arkitekturen af et signalbehandlingssystem ud fra grundlæggende komponenter: A/D, D/A, RAM (Random Access Memory), ROM (Read Only Memory), klokgenerator samt energikilde og relatere arkitekturen til begreber som analogt/digitalt signal, koefficienter i filter, samplingfrekvens, energiforbrug og bæredygtighed." />
+          <Txt Lang="en-GB" Txt="Describe the architecture of a signal processing system, based on the components: A/D, D/A, RAM (Random Access Memory), ROM (Read Only Memory), clock generator and energy source (e.g. battery) and relate the architecture to the concepts of analog/digital signals, filtercoefficients, sampling frequency, power consumption and sustainability." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for grundlæggende repræsentationer af kontinuerte og diskrete, deterministiske og stokastiske signaler og anvende disse." />
+          <Txt Lang="en-GB" Txt="Explain the fundamental representations of continuous and discrete, deterministic and stochastic signals and apply these." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende spektralanalyse af signaler." />
+          <Txt Lang="en-GB" Txt="Explain and apply spectral analysis of signals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for metoder til tids-/frekvensanalyse (spektrogram, diskret Fourier transformation, fast Fourier transformation) og anvende disse." />
+          <Txt Lang="en-GB" Txt="Explain and apply methods for time/frequency analysis of signals (spectrogram, discrete Fourier transform, fast Fourier transform)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Specificere  og simulere et digitalt filter som et lineært tidsinvariant (LTI) system ved anvendelse af begreberne: differensligning, impulsrespons, foldning, systemfunktion i Z domænet samt frekvensrespons." />
+          <Txt Lang="en-GB" Txt="Specify and simulate a digital filter as a linear, time invariant system (LTI) by using the concepts: difference equation, impulse response, convolution, system function in the Z domain and frequence response." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og verificere lavpas, båndpas og højpas digitale filtre med software værktøjer ud fra specifikationer samt signaler fra anvendelsesdomænet." />
+          <Txt Lang="en-GB" Txt="Design and verify digital filters by using software tools and filter specifications targeting signals from an application domain." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende softwareværktøjer til simulering af et digitalt signalbehandlingssystem." />
+          <Txt Lang="en-GB" Txt="Apply software tools for simulation of a digital signal processing system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende et digitalt filter til forbedring af signal-støj forholdet for et givet signal." />
+          <Txt Lang="en-GB" Txt="Apply a digital filter for improving of the signal-to-noise ratio for a given signal." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejde med medstuderende om analyse, implementering og dokumentation af en signalbehandlings problemstilling." />
+          <Txt Lang="en-GB" Txt="Cooperate with fellow students within analysis, implementation and documentation of a signal processing system." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="62418. 62524. 62743." />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:39.11" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

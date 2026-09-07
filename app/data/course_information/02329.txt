@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02329" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Digitale systemer CDIO projekt" />
+        <Title Lang="en-GB" Title="Digital systems CDIO project" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="6158" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Edward Alexandru</GivenName>
+            <FamilyName>Todirica</FamilyName>
+            <Email>eato@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2340" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Flemming</GivenName>
+            <FamilyName>Stassen</FamilyName>
+            <Email>flst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Arkitektur og instruktionssæt for en simpel CPU.
+• Hardware design ved brug af hardware-beskrivende sprog (p.t. VHDL).
+• Programmering af en simpel CPU i assembly/C
+• Memory mapping og kommunikation mellem CPUen og IO enheder</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og projekt</Teaching_And_Learning_Methods>
+          <Course_Objectives>I dette 2. semester-kursus påbegynder studerende et CDIO-projekt (Conceive-Design-Implement-Operate), hvor de anvender og integrerer viden erhvervet i kurserne 02322 Maskinnær Programmering og 02320 Digital Elektronik. Projektets hovedfokus er skabelsen af et kompakt computersystem implementeret på en FPGA, som interagerer med simple I/O-enheder. Studerende vil navigere i softwareudfordringer ved brug af C og/eller assembly sprog, med vægt på praktisk, hands-on erfaring i systemdesign og udvikling. Gennem samarbejdsbaseret projektarbejde vil studerende forbedre deres evner inden for teamwork, problemløsning og teknisk kommunikation, hvilket forbereder dem til ingeniørmæssige udfordringer i den virkelige verden. Dette kursus tilbyder en unik mulighed for at omsætte teoretisk viden til praksis gennem udviklingen af et funktionelt indlejret system.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Architecture and instruction set for a simple CPU.
+• Hardware design using hardware description languages (currently VHDL).
+• Programming a simple CPU in assembly/C.
+• Memory mapping and communication between the CPU and I/O devices.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and project</Teaching_And_Learning_Methods>
+          <Course_Objectives>In this 2nd-semester course, students embark on a CDIO project (Conceive-Design-Implement-Operate), applying and integrating the knowledge acquired in 02322 Machine Oriented Programming and 02320 Digital Electronics. The project's centerpiece is the creation of a compact computer system, implemented on an FPGA, which interfaces with simple IO devices. Students will tackle the software challenges using C and/or assembly language, emphasizing practical, hands-on experience in system design and development. Through collaborative project work, students will enhance their skills in teamwork, problem-solving, and technical communication, preparing them for real-world engineering challenges. This course offers a unique opportunity to bring theoretical knowledge to life through the development of a functional embedded system.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forventes, at de studerende har forhåndskendskab til digital elektronik og erfaring med implementering af hardware på en FPGA ved brug af VHDL. Det forventes desuden, at de forstår grundlæggende computerarkitektur og kan skrive programmer i assembly og C." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students are expected to have prior knowledge of digital electronics and experience with implementing hardware on an FPGA using VHDL. They are also expected to understand basic computer architecture and to be able to write programs in assembly language and C." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02322.(02328/02138)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv funktionen og interaktionen mellem hardware- og softwarekomponenter inden for en simpel computerarkitektur." />
+          <Txt Lang="en-GB" Txt="Describe the function and interaction of hardware and software components within a simple computer architecture." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og konstruer et grundlæggende computersystem ved at integrere hardware- og softwarekomponenter til at udføre specifikke opgaver." />
+          <Txt Lang="en-GB" Txt="Design and construct a basic computing system by integrating hardware and software components to perform specific tasks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og programmere simple programmer skrevet i assembler/C." />
+          <Txt Lang="en-GB" Txt="Explain and construct simple programs written in assembly/C." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv principperne og funktionerne af memory mapped input/output, og anvend denne viden til at udvikle et program, der muliggør effektiv kommunikation mellem processoren og perifere enheder i et computersystem." />
+          <Txt Lang="en-GB" Txt="Describe the principles and operations of memory mapped input/output, and apply this knowledge to develop a program that enables effective communication between the processor and peripheral devices in a computer system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design, simulér, implementer og test digital hardware på en FPGA ved brug af VHDL." />
+          <Txt Lang="en-GB" Txt="Design, simulate, implement and test digital hardware on an FPGA using VHDL." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruer og fejlfind programmer i C/assembly, der muliggør, at en processor kan styre input/output-enheder ved brug af kommunikationsprotokoller såsom UART, I2C, SPI osv." />
+          <Txt Lang="en-GB" Txt="Construct and debug programs in C/assembly that enable a processor to control input/output devices, using communication protocols such as UART, I2C, SPI etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, designe og implementere et større hardware/software projekt i samarbejde med 1 til 2 medstuderende." />
+          <Txt Lang="en-GB" Txt="Analyse, design and implement a larger hardware/software project, working in a group together with 1 or 2 other students." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere et sådant designarbejde i en teknisk rapport" />
+          <Txt Lang="en-GB" Txt="Document a design project in a technical report." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02320" />
+        <PreviousCourse CourseCode="02320" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:31.97" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

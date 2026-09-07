@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34121" Volume="2026/2027" University="dtu" LastUpdated="2022-04-05+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Introduktion til fiberoptisk kommunikation" />
+        <Title Lang="en-GB" Title="Introduction to Fibre Optic Communications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="70016" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Toshio</GivenName>
+            <FamilyName>Morioka</FamilyName>
+            <Email>tomo@fotonik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One final exam including oral defence of report (50 % of total grade) and oral presentation of one question in curriculum (50 % of total grade)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Optisk fiber: struktur, princip ved styret lysudbredelse, dæmpning, materiale og bølgeleder dispersion, grundlæggende puls udbredelsesligning.
+Laser: Halvleder fysik, pn-overgange, laser virkemåde, overgangsligninger, direkte modulation.
+Modulator: amplitude og fase modulatorer, sammenkoblede modulatorer.
+Fotodetektorer: detektering af optiske signaler, støjbidrag.
+Optisk forstærker: EDFA opbygning og virkemåde, forstærknings karakteristika, ASE, støjtal.
+WDM princip: ITU-net, filter implementeringer, krydstale, indflydelse af bølgelængde afhængige komponenter.
+Kohærent modulation: TX og RX implementering, QAM modulation, BER ydelse.
+Digital signalbehandling: dispersion og fasestøjs kompensation, algoritme struktur og implementering</Contents>
+          <Teaching_And_Learning_Methods>Lektioner, simuleringsøvelser, en skriftlig karakterbedømt rapport med mundtlig forsvar til eksamen, selv tests.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende et indblik i de grundlæggende principper for punkt-til-punkt fiberoptiske kommunikationssystemer, ryggraden i internettet. Den studerende vil blive fortrolig med: a) optisk hardware såsom sendere (lasere og modulatorer), modtagere, optiske fibre, optiske filtre, optiske forstærkere, b) simuleringsværktøjer til at evaluere disse systemer samt c) simpel digital signalbehandling til kohærent kommunikationssystemer.</Course_Objectives>
+          <Remark>Dette kursus er til en vis grad det teoretiske sidestykke til det eksperimentelle kursus i optisk kommunikation 34126 og 34129; kurserne komplementerer hinanden. En mere dybdegående gennemgang af optisk kommunikation kan findes i kurset 34130.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Optical fibre: structure, principle of light guiding, attenuation, material and waveguide dispersion, basic pulse propagation equation.
+Laser: semiconductor physics, pn-junction, laser operation, rate equations, direct modulation.
+Modulator: amplitude and phase modulators, nested modulators. 
+Photodiode: detection of optical signals, noise contributions.
+Optical amplifier: EDFA structure and operation, gain characterisation, ASE, noise figure, Raman amplifier.
+WDM: principle, ITU-grid, filter implementations, crosstalk, impact of wavelength dependent components.
+Coherent modulation: TX and RX implementation, QAM modulation, BER performance.
+Digital Signal Processing: dispersion and phase noise compensation, algorithm structure and implementation.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, simulation exercises, one graded report with oral defense, self-assessment tests</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give students insight into the basic principles of point-to-point optical communication systems, the backbone of the Internet. The students will become familiar with: a) optical hardware such as transmitters (lasers and modulators), receivers, optical fibres, optical filters, optical amplifiers, b) simulation software to evaluate these systems, and c) simple digital signal processing software for coherent communication systems.</Course_Objectives>
+          <Remark>This course is to some extent the theoretical counterpart of the experimental optical communication system course 34126 and 34129; the courses complement each other.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den basale udbredelsesligning i en optisk fiber inklusive kromatisk dispersion og dæmpning" />
+          <Txt Lang="en-GB" Txt="Formulate the basic propagation equation in an optical fibre including chromatic dispersion and attenuation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere indflydelsen af dispersion og beskrive hvorledes dispersion kan blive kompenseret ved brug af dispersionskompenserende fibre" />
+          <Txt Lang="en-GB" Txt="Evaluate the impact of dispersion and describe how dispersion can be compensated using dispersion compensating fibre." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvorledes en optisk sender (TX) og modtager (RX) fungerer og hvorledes man kan karakterisere ydelsen ved hjælp af bit fejl (BER); benyt datablade for TX og RX til at beregne hvorledes de indvirker på den samlede system ydelse" />
+          <Txt Lang="en-GB" Txt="Explain how an optical transmitter (TX) and a receiver (RX) work, and how one can characterise the performance by bit error rate (BER); use datasheets for TX and RX to calculate how they impact the overall system performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere hvorledes en Erbium doteret fiberforstærker (EDFA) introducer forstærkning og forklare hvorledes forstærket spontan emission (ASE) er inkluderet i støjtallet" />
+          <Txt Lang="en-GB" Txt="Argue how an Erbium-doped fibre amplifier (EDFA) introduces gain and explain how amplified spontaneous emission (ASE) is encapsulated in the noise figure parameter." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive bølgelængde adskilte systemer (WDM) samt deres nøglekomponenter; udregn krydstale for forskellige filter parametre samt signal adskillelse; beskrive indflydelsen af komponenters, såsom EDFA, RX og TX, bølgelængde afhængighed på systemets samlede ydelse" />
+          <Txt Lang="en-GB" Txt="Describe Wavelength-Division Multiplexing (WDM) systems and their key components; calculate crosstalk for different filter parameters and channel spacings; Describe how wavelength dependence of components such as EDFAs, TXs, RXs impact the total performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere hvorledes kvadratur amplitude modulation (QAM) adskiller sig fra simpel tænd-sluk modulation; beskrive forskellene i sender og modtager udstyr" />
+          <Txt Lang="en-GB" Txt="Argue how Quadrature Amplitude Modulation (QAM) differs from the simple on-off keying modulation; describe differences in transmitter and receiver equipment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne BER ydelsen for et tænd-sluk system med et QAM system og diskutere fordele og ulemper ved de forskellige modulationsformater" />
+          <Txt Lang="en-GB" Txt="Compare the BER performance of an on-off keying system with a QAM system and argue pros and cons for the different modulation formats" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvorledes digital signalbehandling (DSB) bliver benyttet til at kompensere for dispersion og fasestøj; sammenfatte hvorledes algoritmerne fungerer" />
+          <Txt Lang="en-GB" Txt="Explain how Digital Signal Processing (DSP) is used to compensate for dispersion and phase noise; outline how the algorithms work.   " />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34120" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til fiberoptisk telekommunikation</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:49.497" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

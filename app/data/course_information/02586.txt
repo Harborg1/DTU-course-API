@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02586" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Statistisk Genetik" />
+        <Title Lang="en-GB" Title="Statistical Genetics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="41999" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Stockmarr</FamilyName>
+            <Email>anst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Hvis mere end 30 studerende deltager, kan skriftlig eksamen afløse den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="If more than 30 students participates, a written exam may repplace the oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="With a written exam, only written aids are permitted (no internet or generative AI)." />
+            <Aid_Txt Lang="da-DK" Txt="Ved skriftlig eksamen er kun skriftlige hjælpemidler tilladt (intet internet eller generativ AI)." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Grundlæggende begreber i molekylær genetik; genetiske modeller; allel frekvens estimation; populationssubstruktur, Hardy-Weinberg ligevægt, test af ligevægtsmodeller, nedarvningsanalyser; linkage analyse; genetisk associering; co-dominans, recessive og dominans modeller; styrkefunktioner; genetisk afstand; adaption og kontrol af statistiske modeller; prediktioner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og seminar</Teaching_And_Learning_Methods>
+          <Course_Literature>Laird NM and Lange C:The Fundamentals of Modern Statistical Genetics, Springer 2011.</Course_Literature>
+          <Course_Objectives>At give deltagerne en ramme indenfor statistisk metodologi, for at forstå begreber i genetik der af natur er probabilistiske, i denne kontekst. Der vil blive lagt særlig vægt på inferens om begreber som linkage disequilibrium og tilsvarende koncepter i nedarvningsmodeller. Kurset vil også fokusere på at beherske metoder indenfor statistik og sandynlighedsregning, med henblik på anvendelser indenfor kursets område.</Course_Objectives>
+          <DTU_Remark>Afholdes i ulige år</DTU_Remark>
+          <Remark>Selvom kurset ikke har formelle forudsætninger i sandsynlighedsteori, fordres der til anvendelserne en høj grad af uddannelsesmæssig modenhed, samt interesse for at sammenkæde biologi og statistik/sandsynlighedsregning.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Basic concepts of molecular genetics; genetic models; allele frequencies estimation; population substructure; Hardy-Weinberg equilibrium; testing equilibrium models; heritibility analyses; linkage analysis; genetic association; codominant, recessive and dominant models; power functions; genetic distance; adaption and control of statistical models; predictions.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and seminar</Teaching_And_Learning_Methods>
+          <Course_Literature>Laird NM and Lange C:The Fundamentals of Modern Statistical Genetics, Springer 2011.</Course_Literature>
+          <Course_Objectives>To provide the participants with a framework within statistical methodology, in order to understand concepts in genetics that in nature are probabilistic, in this context. A special emphasis  will be devoted to inference on issues such as linkage disequilibrium and similar concepts in inheritance models.The course will also focus on obtaining methods within statistics and probability theory, with the aim of applications within the area of the course.</Course_Objectives>
+          <DTU_Remark>Held in odd years</DTU_Remark>
+          <Remark>Even though the course does not have formal requirements in probability theory, the applications demand a high degree of educational maturity, and an interest in linking biology and statistics/probability.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset kræver modenhed ifht. statistiske anvendelser. Man vil have fordel af at have fulgt 02405 Sandsynlighedsregning." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course requires maturity for what regards statistical applications. It is an advantage to have followed 02405 Probability." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01001/01002/01003/01004/01005.(02402/02403)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Besidde den fornødne viden, færdigheder og redskaber til at kunne læse aktuel teoretisk, metodisk og anvendt litteratur i statistisk genetik, til at forstå metoder, og til at fortolke analyser." />
+          <Txt Lang="en-GB" Txt="Possess the knowledge, skills and tools needed to read current theoretical, methodological and applied literature in Statistical Genetics, to understand methods, and to interpret analyses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå nedarvning efter mendelske principper i en sandsynlighedsteoretisk ramme." />
+          <Txt Lang="en-GB" Txt="Understand Mendelian inheritance in a probabilistic framework." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå den praktiske anvendelse af grundliggende statistiske og sandsynlighedsteoretiske metoder indenfor statistisk genetik." />
+          <Txt Lang="en-GB" Txt="Understand the practical implementation of basic statistical and probabilistic methods within statistical genetics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Være i stand til at arbejde med metoder fra statistisk genetik i praksis." />
+          <Txt Lang="en-GB" Txt="Be able to work with methods from statistical genetics in practice." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere procedurer for estimation af allel frekvenser og andre genetiske parametre, der ligger til grund for observationer af mendelske træk." />
+          <Txt Lang="en-GB" Txt="Identify procedures for estimation of allele frequencies, recombination frequencies, and other genetic parameters underlying observations on Mendelian traits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille modeller for linkage equilibrium og disequilibrium, og gennemføre de tilhørende analyser." />
+          <Txt Lang="en-GB" Txt="Set up models for linkage equilibrium and disequilibrium, and perform the corresponding analyses." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre sammenhængsstudier for udvalgte sygdomstræk og genetiske markører." />
+          <Txt Lang="en-GB" Txt="Perform association studies for selected disease traits and genetic markers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere forklaringsgraden for en given fænotype baseret på genotype." />
+          <Txt Lang="en-GB" Txt="Estimate the degree to which a certain phenotype may be explained based on genotype." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere genetiske data på populationsniveau med matematiske og statistiske modeller." />
+          <Txt Lang="en-GB" Txt="Model genetic data at population level with mathematical and statistical models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere hvilken statistisk model der bedst beskriver et givent datasæt indenfor kursets område." />
+          <Txt Lang="en-GB" Txt="Evaluate which statistical model that best explains a given data set relevant for the course contents." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Være i stand til at lede en diskussion om emner fra statistisk genetik blandt personer med indsigt i emnet." />
+          <Txt Lang="en-GB" Txt="Be able to lead a discussion among peers on topics of statistical genetics." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02938 02950" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:20.597" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

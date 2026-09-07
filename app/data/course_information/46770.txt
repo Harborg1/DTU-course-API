@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46770" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Integrerede energinet" />
+        <Title Lang="en-GB" Title="Integrated energy grids" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="214968" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Marta</GivenName>
+            <FamilyName>Victoria</FamilyName>
+            <Email>mvipe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="217661" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Aleksander</GivenName>
+            <FamilyName>Grochowicz</FamilyName>
+            <Email>algro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="222117" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Parisa</GivenName>
+            <FamilyName>Rahdan</FamilyName>
+            <Email>parra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion
+
+Optimal power flow (OPF) problem:
+- Vekselstrømsflowvariabler og ligninger;
+- Optimal power flow formulering;
+- Løsningstilgange til transmissions- og radiale distributionsnet, herunder DC-OPF-linearisering og konveksificering.
+
+Optimalt gasflowproblem:
+- gasstrømsvariabler og ligninger i steady state og dynamiske modeller, med line-pack;
+- Optimal gasflowformulering og løsningstilgange.
+
+Optimalt varmeflow problem:
+- Varmestrømsvariabler og ligninger i steady state og dynamiske modeller, med lagring i rørledninger;
+- Optimal varmeflowformulering og øsningstilgange
+
+
+Udbygning af energinetværk
+- Kapacitet og afsendelsesoptimering i et netværk
+- Vedvarende balancering gennem regional integration
+- Trængselsindtægter
+
+Integration af multi-carrier energisystemer:
+- Interface og synergier mellem energibærere;
+- Strategier for drift og koordinering af multi-carrier energisystemer;
+- Multi-carrier energistrømme og indvirkning på vedvarende energi.
+- Virkninger af CO2-grænsebegrænsninger</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, computerøvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Multi-carrier energisystemer er kendetegnet ved stærk drifts- og planlægningskoordinering på tværs af flere energisystemer, herunder elektricitet, brint, naturgas og fjernvarme, for at udnytte synergierne mellem energibærerne, forbedre pålideligheden og omkostningseffektiviteten af ​​energileverancen med minimal påvirkning på miljøet. Formålet med kurset er at give de studerende den nødvendige baggrundsviden om multi-carrier energisystemer. De studerende lærer at modellere og løse de grundlæggende driftsproblemer i individuelle energisystemer og analysere deres integration.</Course_Objectives>
+          <DTU_Remark>Kursus er obligatorisk for studerende på Bæredygtig Energi Systemer, der har første prioritet. Ledige pladser findes via lodtrækning</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction
+
+Optimal power flow (OPF) problem:
+- AC power flow variables and equations;
+- Optimal power flow formulation;
+- Solution approaches for transmission and radial distribution grids, including DC-OPF linearization and convex relaxation.
+
+Optimal gas flow problem:
+- Gas flow variables and equations in steady state and dynamic models, including line-pack;
+- Optimal gas flow formulation and solution approaches.
+
+Optimal heat flow problem:
+- Heat flow variables and equations in steady state and dynamic models, with storage in pipelines;
+- Optimal heat flow formulation and solution approaches.
+
+Expansion of energy networks:
+- Join capacity and dispatch optimization in a network
+- Renewable balancing throughout regional integration
+- Congestion rent
+
+Multi-carrier energy systems integration:
+- Interface and synergies between energy carriers;
+- Strategies for multi-carrier energy systems operation and coordination;
+- Multi-carrier energy flows and impact on renewables penetration.
+- Impacts of CO2 limit constraints</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, computer exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>Multi-carrier energy systems are characterized by strong operational and planning coordination across multiple energy systems, including electricity, hydrogen, natural gas, and district heating, to exploit the synergies between the energy carriers, and improve the reliability and cost-effectiveness of energy delivery with minimal impact on the environment. The aim of the course is to give the students the necessary background knowledge of multi-carrier energy systems. The students will learn to model and solve the basic operational problems in individual energy systems and analyze their integration.</Course_Objectives>
+          <DTU_Remark>The course is mandatory for students at Sustainable Energy Systems and they have first priority. Any available seats are allocated by lottery</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det anbefales, at studerende har taget (i) et kursus om strømsystemkomponenter og vekselstrøm, (ii) et kursus om energiøkonomi, (iii) et kursus om optimeringsteori inklusive Lagrange-multiplikatorer" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students are recommended to have taken (i) a course on power system components and AC power, (ii) a course on energy economics, (iii) a course on optimization theory including Lagrange multipliers" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46700/42015/46750" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv strukturen af ​​multi-carrier energi (el, varme, naturgas og brint) systemer og komponenter i grænsefladen mellem dem." />
+          <Txt Lang="en-GB" Txt="Describe the structure of multi-carrier energy systems (electricity, heat, natural gas and hydrogen) and components at the interface between them." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar synergierne mellem energisektorerne og begreberne sektorkoordinering" />
+          <Txt Lang="en-GB" Txt="Explain the synergies between the energy sectors and the concept of sector coupling." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv det optimale energiflowproblem for forskellige energibærere og tilgangene til at løse det." />
+          <Txt Lang="en-GB" Txt="Describe the optimal energy flow problem for different energy carriers and the approaches to solve it." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler det optimale strømflowproblem for transmissions- og radiale distributionssystemer på en computer." />
+          <Txt Lang="en-GB" Txt="Formulate the optimal power flow problem for transmission and radial distribution systems on a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler det optimale gasflowproblem på en computer." />
+          <Txt Lang="en-GB" Txt="Formulate the optimal gas flow problem on a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler det optimale varmeflowproblem på en computer." />
+          <Txt Lang="en-GB" Txt="Formulate the optimal heat flow problem on a computer." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler kapacitets- og afsendelsesoptimeringsproblemer herunder multi-carrier energisystemer" />
+          <Txt Lang="en-GB" Txt="Formulate capacity and dispatch optimization problems comprising multi-carrier energy systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar lighederne mellem energiflowproblemer for forskellige energibærere og multienergiflowproblemet." />
+          <Txt Lang="en-GB" Txt="Explain the similarities between energy flow problems for different energy carriers, and the multi-energy flow problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke, analysere og præsentere numeriske resultater." />
+          <Txt Lang="en-GB" Txt="Interpret, analyze, and present numerical results." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="130" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:54.2" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

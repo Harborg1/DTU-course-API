@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="23263" Volume="2026/2027" University="dtu" LastUpdated="2026-04-21+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Avanceret modellering af infektionssygdomme" />
+        <Title Lang="en-GB" Title="Advanced modeling of infectious diseases" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="23" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="23" />
+        <Course_Responsible PersonKey="95209" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Brinch</FamilyName>
+            <Email>cbri@food.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="20 minutter" />
+          <Duration Lang="en-GB" Txt="20 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dynamiske systemer, stabilitetsanalyse, ikke-lineær dynamik og kaos. Temporale modeller (SIR). Risikostrukturer. Multi-vært/multi-pathogen modeller. Drevne modeller, Tilfældig dynamik og modeller med støj, agent-baserede modeller. Rumlige modeller, netværksmodeller og meta-populationer. Sygdomskontrol og forebyggelse. Global mobilitet, pandemier, økonomisk epidemiologi og antibiotikaresistens.</Contents>
+          <Teaching_And_Learning_Methods>Ugentlige forelæsninger og øvelsestimer</Teaching_And_Learning_Methods>
+          <Course_Literature>"Modeling Infectious Disease in Humans and Animals", Keeling and Rohani, Princeton Press</Course_Literature>
+          <Course_Objectives>Dette kursus giver en grundig indføring i epidemiologisk modellering. Studerende lærer en bred vifte af teknikker som kan bruges til at analysere udbrud og forudsige udviklingen af epidemier. Kurset fokuserer på en matematisk beskrivelse af sygdomsmodellerne og der bruges Python til at udvikle og løse modellerne.</Course_Objectives>
+          <DTU_Remark>Studerende på kandidatuddannelsen "Infectious Disease Health Informatics" har fortrinsret på dette kursus.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Dynamical systems, analysis of stability and fixed points, non-linear dynamics and chaos. Temporal models (SIR and derivatives). Risk structures. Multi-host/multi-pathogen models. Forced models. Random dynamics and noisy models, agent-based models. Spatial models, lattice-based models and meta-populations. Disease control and prevention. Global mobility, pandemics, economic epidemiology, and antimicrobial resistance.</Contents>
+          <Teaching_And_Learning_Methods>Weekly lectures and class room exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>"Modeling Infectious Disease in Humans and Animals", Keeling and Rohani, Princeton Press</Course_Literature>
+          <Course_Objectives>This course aims at providing a solid foundation in epidemiological modeling. Students will learn a wide array of techniques that can be used to analyze outbreaks and forecast the development of epidemics. The course will focus on the mathematical aspects of disease modeling and the python programming language will be used extensively.</Course_Objectives>
+          <DTU_Remark>Students from the MSc "Infectious Disease Health Informatics" have first priority in this course.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Matematik 1 (eller tilsvarende)&#xD;&#xA;Unix &amp; Python (eller tilsvarende)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Mathematics 1 (or equivalent)&#xD;&#xA;Python programming (or equivalent)" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01005 22113" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Genkend leddene i SIR modellen og afledte modeller" />
+          <Txt Lang="en-GB" Txt="Recognize the terms in the SIR model and its derivatives" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilpas en simple model til en given epidemi" />
+          <Txt Lang="en-GB" Txt="Adapt a basic model to describe a given epidemic" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg den passende modeltype til et givent udbrud" />
+          <Txt Lang="en-GB" Txt="Choose a proper model framework given a type of outbreak" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løs en tids-afhængig epidemiologisk model numerisk" />
+          <Txt Lang="en-GB" Txt="Solve a time-dependent epidemiological model numerically" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fit modelparametre til epidemiologiske data" />
+          <Txt Lang="en-GB" Txt="Fit model parameters to epidemiological data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar effekten af støj i epidemiologiske data" />
+          <Txt Lang="en-GB" Txt="Explain the effect of noise in epidemiological data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar effekten af sæsonvariation og andre tidsafhængige led" />
+          <Txt Lang="en-GB" Txt="Explain the effects of seasonality and other driving terms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udled den endemiske ligevægtsløsning for en given model" />
+          <Txt Lang="en-GB" Txt="Obtain the endemic equilibrium for a given model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn hastigheden af en epidemi ud fra en rumlig model" />
+          <Txt Lang="en-GB" Txt="Calculate the propagation speed of an epidemic using a spatial model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser epidemier ud fra netværksbaserede modeller" />
+          <Txt Lang="en-GB" Txt="Analyze an epidemic using lattice based models " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar de gængse vaccinationsstrategier" />
+          <Txt Lang="en-GB" Txt="Explain the main vaccination strategies" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="25" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:20:11.403" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

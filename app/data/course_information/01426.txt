@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="01426" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Forskningsemner i kryptografi" />
+        <Title Lang="en-GB" Title="Research Topics in Cryptography" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="189326" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Luisa</GivenName>
+            <FamilyName>Siniscalchi</FamilyName>
+            <Email>luisi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="86800" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tyge</GivenName>
+            <FamilyName>Tiessen</FamilyName>
+            <Email>tyti@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="166539" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Majenz</FamilyName>
+            <Email>chmaj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Advanced construction of zero-knowledge proofs, two-party computation, multi-party computation, information-theoretically secure cryptographic protocols (e.g., verifiable secret sharing), og idealized models.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med dette kursus er at gøre de studerende fortrolige med kryptografi på forskningsniveau.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Advanced construction of zero-knowledge proofs, two-party computation, multi-party computation, information-theoretically secure cryptographic protocols (e.g., verifiable secret sharing), and idealized models.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The purpose of this course is for students to familiarize themselves with research-level cryptography.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Se engelsk" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Participants should have solid foundations in cryptography, and it is strongly recommended to have attended 02231/01410 and 01425/02255." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02231(01410)/01425(02255)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare egenskaber og begrænsninger ved avancerede kryptografiske protokoller " />
+          <Txt Lang="en-GB" Txt="Explain properties and limitations of advanced cryptographic protocols " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive designet af kryptografiske protokoller som f.eks. specifikke flerpartsberegningsprotokoller " />
+          <Txt Lang="en-GB" Txt="Describe the design of cryptographic protocols such as specific multiparty computation protocol " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar moderne grundlag for kryptografiens hårdhed, såsom hash-baseret kryptografi." />
+          <Txt Lang="en-GB" Txt="Explain modern foundations of the hardness of cryptography, such as hash-based cryptography" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenlign kryptografiske primitiver og protokoller baseret på sikkerheds- og omkostningsmålinger " />
+          <Txt Lang="en-GB" Txt="Compare cryptographic primitives and protocols based on security and cost metrics " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare avancerede kryptografiske primitiver som verifiable secret sharing" />
+          <Txt Lang="en-GB" Txt="Explain advanced cryptographic primitives such as information-theoretically secure verifiable secret sharing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive fordele og begrænsninger ved sikkerhedsanalyse i idealiserede modeller " />
+          <Txt Lang="en-GB" Txt="Describe the advantages and limitations of security analysis in idealized models " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udforsk anvendeligheden af avancerede kryptografiske protokoller i komplekse brugssituationer" />
+          <Txt Lang="en-GB" Txt="Explore the applicability of advanced cryptographic protocols in complex use-cases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formidle og diskutere resultater fra den kryptografiske litteratur  " />
+          <Txt Lang="en-GB" Txt="Disseminate and discuss results from the cryptographic literature  " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:23.56" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

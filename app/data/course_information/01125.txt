@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="01125" University="dtu" LastUpdated="2026-04-14+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Topologiske grundbegreber og metriske rum" />
+        <Title Lang="en-GB" Title="Fundamental topological concepts and metric spaces" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="3435" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Henriksen</FamilyName>
+            <Email>chrh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren er baseret på en helhedsvurdering af opgave(r) og den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is based on an overall assessment of the exercise(s) and the written exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Metrisk Topologi: Topologi i de reelle talrum og i metriske rum. Konvergens af følger, kontinuitet af funktioner, kompakthedsbegrebet. Konkret indføring i metoder til bevisførelse i matematikken. Sammenhænghedsbegrebet. Normerede vektorrum. Fuldstændige metriske rum.</Contents>
+          <Teaching_And_Learning_Methods>- forelæsninger, hvor fundamentale begreber, metoder og resultater fremlægges og sættes i perspektiv
+- klasseundervisning, hvor teorien behandles i større detalje og eksemplificeres ved løsning af opgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningnoter.
+Supplerende litteratur: Vagn Lundsgaard Hansen: “Fundamental Concepts in Modern Analysis”, 2. Edition, World Scientific 2019.  Kan fås i Polyteknisk Boghandel</Course_Literature>
+          <Course_Objectives>Alle videregående matematiske discipliner, der anvendes ved modellering af kontinuerte fænomener, bygger på et fælles grundlag, der bl.a. omhandler metriske (topologiske) strukturer i punktmængder. Det er hensigten med kurset at udbygge den viden der er opnået om matematisk analyse og lineær algebra i Matematik 1 og Matematik 2 med nogle fundamentale begrebsdannelser vedrørende metriske og lineære strukturer. Derved opnås et solidt matematisk grundlag for en række videregående kurser og for studier af nyere litteratur i matematik og de teoretiske ingeniørvidenskaber.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Metric Topology: Topology in the real numbers spaces and in metric spaces. Convergence of sequences, Continuity of functions, Compactness. Concrete introduction to proofs in mathematics. Connectedness. Normed decor spaces. Complete metric spaces.</Contents>
+          <Teaching_And_Learning_Methods>- lectures, where fundamental notions, methods and results are presented and put into perspective
+- class work, where the theory is discussed in greater detail and exemplified by solution of exercises</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes.
+Supplementary litterature:Vagn Lundsgaard Hansen: “Fundamental Concepts in Modern Analysis”, 2. Edition, World Scientific 2019.  Available from Polyteknisk Boghandel</Course_Literature>
+          <Course_Objectives>All advanced mathematical disciplines used in mathematical modelling of continuous phenomena have a common foundation incorporating among others metrical (topological) structures in point sets. It is the purpose of this course to enhance the knowledge of mathematical analysis and linear algebra obtained in Mathematics 1 and Mathematics 2 with fundamental notions about metrical and linear structures. In this way a firm mathematical foundation is established for advanced couses and for studies of modern literature in mathematics and the theoretical engineering sciences.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset er ganske abstrakt så det vil være bedre at have Matematik 2 for Matematik og Teknologi (01025), fremfor Matematik 2 (01035). Ligeledes vil algebra kurset (01018) eller lineær algebra kurset (01020) have givet forberedende træning i abstrakt matematik." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is quite abstract, and consequently Mathematics 2 for Mathematics and Technology (01025) is a better preparation than Mathematics 2 (01035). Likewise, the algebra course (01018) or the linear algebra course (01020) may provide preparatory training in abstract mathematics." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01025/01034/01035/01037" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Omsætte intuitive begrebsdannelser vedrørende kontinuitet og konvergens til stringent matematik." />
+          <Txt Lang="en-GB" Txt="Transform intuitive notions about continuity and convergence to exact mathematics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere matematiske beviser af metodisk karakter." />
+          <Txt Lang="en-GB" Txt="Construct mathematical proofs of a methodological character." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Operere og argumentere med abstrakte afstandsbegreber." />
+          <Txt Lang="en-GB" Txt="Operate and argue with abstract notions of distances." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med abstrakte afstandsbegreber i studiet af kontinuitet og konvergens." />
+          <Txt Lang="en-GB" Txt="Work with abstract notions of distance in the study of continuity and convergence." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Operere og argumentere med abstrakte topologiske begreber." />
+          <Txt Lang="en-GB" Txt="Operate and argue with abstract topological concepts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med abstrakte topologiske begreber i studiet af kontinuitet og konvergens." />
+          <Txt Lang="en-GB" Txt="Work with abstract topological concepts in the study of continuity and convergence." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udnytte viden om punktmængders topologi i studiet af ekstremalforhold for kontinuerte funktioner." />
+          <Txt Lang="en-GB" Txt="Exploit knowledge about the topology of point sets in the study of extremal properties of continuous functions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde med begrebet sammenhængende mængder i generelle topologiske rum" />
+          <Txt Lang="en-GB" Txt="Work with the concept of connectedness in general topological spaces." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:16.28" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34053" University="dtu" LastUpdated="2026-06-11+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Numeriske metoder i fotonik" />
+        <Title Lang="en-GB" Title="Numerical methods in photonics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="9383" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Andrei</GivenName>
+            <FamilyName>Laurynenka</FamilyName>
+            <Email>alav@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6148" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Bang</FamilyName>
+            <Email>oban@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6065" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jesper</GivenName>
+            <FamilyName>Lægsgaard</FamilyName>
+            <Email>jlag@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen og bedømmelse af rapporter bidrager hver med 50% til den samlede karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam and report evaluations each contribute 50% of the final grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Både forskning og teknologiudvikling indenfor moderne fotonik er i stigende grad afhængigt af effektive numeriske metoder for præcis modellering af optiske egenskaber af såvel avancerede komponenter, f.eks. højindeksbølgeledere, mikrostrukturerede optiske fibre og ringresonatorer, som metamaterialer, f.eks. fotoniske krystaller, etc. Der er også en stigende interesse for at udnytte ulineære optiske effekter til signalbehandling, så et grundlæggende kendskab til numeriske modelleringsværktøjer for både lineære og ulineære optiske fænomener er vigtigt for enhver der arbejder med forskning eller udvikling indenfor fotonik. Målet med dette kursus er at give deltagerne en grundlæggende forståelse af alment anvendte numeriske metoder, med vægt på såvel den grundlæggende matematik, algoritmiske problemer forbundet med deres implementering, og deres effektivitet i løsningen af vigtige problemstillinger indenfor moderne fotonik. De følgende metoder vil blive studeret i løbet af kurset: 
+Metoder: Finite-difference tidsdomæne metoden, finite-difference metoden i frekvensdomænet, og split-step Fouriermetoden.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger med computerbaserede øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At gøre deltagerne bekendte med modellering af moderne fotoniske komponenter vja finite-difference metoden i både tid- og frekvensdomænet. Deltagerne vil også lære at modellere udbredelse af pulser for lange distancer i optiske fiber under påvirkning af ulinearitet ved brug af split-step Fourier metoden. Endelig vil stationære mode-strukturer blive beregnet ved at løse det underliggende randværdiproblem.</Course_Objectives>
+          <Remark>Øvrige undervisere:
+Ole Bang, Lyngby Campus, bygning 343
+oban@fotonik.dtu.dk
+Tlf. 45 25 63 73</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Modern photonics research and technology is increasingly reliant on efficient numerical methods for accurate modeling of the optical properties of advanced components such as high-index waveguides, microstructured fibres, microresonators or nanostructured systems such as metamaterials, photonic crystals, etc. There is also an increasing interest in using nonlinear effects for all-optical signal processing so a basic knowledge of numerical modeling tools for both linear and nonlinear optical phenomena is important for anyone doing photonics research and development. This course aims to give its participants a basic understanding of common numerical methods, emphasizing both the underlying mathematics, algorithmic issues encountered in their implementation, and their performance in solving important photonics problems. The following numerical methods are studied during the course: finite-difference time-domain method, finite-difference frequency-domain method and split-step Fourier method.</Contents>
+          <Teaching_And_Learning_Methods>Lectures with computer based exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To make the participants familiar with modeling of modern photonics components using the finite-difference method in the time and frequency domains. The participants will also learn to model the propagation of pulses over long distances in optical fibers under the influence of nonlinearity by using the split-step Fourier method. Finally stationary mode-structures will be calculated by solving the equivalent boundary-value problem.</Course_Objectives>
+          <Remark>Other teachers:
+Ole Bang, Lyngby Campus, building 343
+oban@fotonik.dtu.dk
+Phone: 45 25 63 73</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til Matlab eller Python er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of MATLAB or Python is an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10036/31400.10370/34041" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opstille 2. ordens og 4. ordens finite-difference metoder til numerisk løsning af Maxwell’s ligninger " />
+          <Txt Lang="en-GB" Txt="write down the second and forth order finite-difference schemes for numerical solution of Maxwell’s equations                                                     " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere numerisk dispersion og stabilitetskriterier for finite-difference tids-domæne metoder i 1D, 2D og 3D" />
+          <Txt Lang="en-GB" Txt="analyse numerical dispersion and stability criteria of the finite-difference time-domain method in 1D, 2D and 3D" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere finite-difference tids-domæne metoden i 1D i MATLAB og analysere udbredelse af pulser" />
+          <Txt Lang="en-GB" Txt="implement a MATLAB realization of the finite-difference time-domain method in 1D and analyse the propagation of pulses in multilayer dielectric media (reflection and transmission spectra, group velocities and field amplitudes)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for de forudsætninger og tilnærmelser der ligger bag opstillingen af fuldvektorielle og skalare bølgeligninger i frekvensdomænet for bundne felttilstande i lige bølgeledere" />
+          <Txt Lang="en-GB" Txt="describe the conditions and approximations under which full-vectorial and scalar wave equations in the frequency domain for guided modes in straight waveguides may be derived" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="omformulere bølgeligningerne til et matrix-egenværdiproblem via finite-difference teknikken, og implementere et numerisk værktøj i MATLAB til løsning af de fremkomne ligninger" />
+          <Txt Lang="en-GB" Txt="recast the wave equations as a matrix eigenvalue problem using the finite-difference technique, and implement a numerical tool in MATLAB to solve this eigenvalue problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udnytte spejlsymmetrier til at formulere og implementere finite-difference problemet for bølgeledere i et reduceret beregningsdomæne" />
+          <Txt Lang="en-GB" Txt="utilize mirror symmetries to formulate the waveguide finite-difference problem in a reduced calculation domain" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte MATLAB-programmerne til bestemmelse af udbredelseskonstanter og feltprofiler i forskellige typer af lige bølgeledere, og foretage en kritisk vurdering af de fundne resultaters nøjagtighed" />
+          <Txt Lang="en-GB" Txt="use the MATLAB code to determine propagation constants and mode profiles in various types of straight waveguides, and ascertain that the results are well-converged in resolution and domain size" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en split-step Fourier metode i MATLAB til modellering af ulineær udbredelse og vekselvirkning af pulser i optiske fibre og udføre alle nødvendige gyldighedscheck" />
+          <Txt Lang="en-GB" Txt="implement a split-step Fourier method in MATLAB for modeling nonlinear pulse propagation and interaction in optical fibres and perform all necessary validations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="finde bevarede størrelser og symmetriegenskaber for den integrable og den udvidede ikke-lineære Schrödinger ligning for at efterprøve kodens gyldighed" />
+          <Txt Lang="en-GB" Txt="find conserved quantities and symmetry properties of the integrable and extended nonlinear Schrödinger equations to use for validity tests of the code" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere numerisk en række af vigtige ulineære effekter i optiske fibre, som solitoner og deres vekselvirkning, modulation ustabilitet og Raman rødforskydning " />
+          <Txt Lang="en-GB" Txt="analyse numerically a range of important nonlinear effects in optical fibers, such as solitons and their interaction, modulational instability,and  Raman red-shift" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Numeriske metoder i fotonik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-06-11" Time="11:47:13.707" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

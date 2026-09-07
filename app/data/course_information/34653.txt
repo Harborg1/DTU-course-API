@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34653" University="dtu" LastUpdated="2025-04-06+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="34" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Power Electronics 2. Laboratoriekursus" />
+        <Title Lang="en-GB" Title="Power Electronics 2. Laboratory course" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="53459" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ziwei</GivenName>
+            <FamilyName>Ouyang</FamilyName>
+            <Email>ziou@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Fremstilling af magnetiske komponenter. EMC forhold. Filterdesign. Praktiske forhold vedrørende opbygning og måling på switch-mode konvertere. Beregning og måling af småsignaloverføringsfunktion - loop stabilitet, slope-kompensering, input- og outputimpedans.</Contents>
+          <Teaching_And_Learning_Methods>Projekt- og laboratoriearbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets overordnede mål er at gøre den studerende bekendt med praktiske forhold vedrørende design af switch-mode konvertere.
+Endvidere at sætte den studerende istand til at opbygge en switch-mode konverter i praksis (incl. fejlfinding og støjbekæmpelse) samt gøre den studerende bekendt med praktiske forhold vedrørende målinger på switch-mode konvertere og verifikation af virkemåden.</Course_Objectives>
+          <Remark>Kurset er en naturlig fortsættelse af 34652 Power Electronics 1. I kurset vil der blive tilstræbt et tæt industrisamarbejde eller opgaver inspireret af virksomheder.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Design of magnetic components. EMC aspects. Filter design. Practical considerations w.r.t.  construction of - and measurement on switch-mode converters. Analysis and measurement of small-signal Transfer function - Loop stability. Slope-compensation. Input- and output impedance.</Contents>
+          <Teaching_And_Learning_Methods>Project and laboratory work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course goal is to provide the students with knowledge about the practical considerations when designing switch mode converters. 
+Further to enable the student to build a switch-mode converter (incl. error finding and noise attenuation) and to teach the students practical considerations concerning measurements on switch-mode converters, including verification of the specs.</Course_Objectives>
+          <DTU_Remark>MSc
+Offered as a single course
+Core competence course, MSc. Eng., Electrical Engineering
+Programme specific courses, MSc. Eng., Electrical Engineering</DTU_Remark>
+          <Remark>This course is a natural continuation of 34652 Power Electronics 1. A large extent of industrial co-operation or tasks inspired by industry will be aimed at.</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Studerende skal have bestået kursus 34652, før de kan deltage i kursus 34653" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="students must attend the course 34652 before signing up the course 34653" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34652 " />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="det anbefales at have grundlæggende færdigheder i lodning og brug af oscilloskop, laboratorie strømforsyning og multimeter" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="it is recommended to have a basic skill in soldering and using oscilloscope, lab power supply and multimeters." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34652 (original 31352)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="fremstille magnetiske komponenter" />
+          <Txt Lang="en-GB" Txt="produce magnetic components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre et praktisk filterdesign" />
+          <Txt Lang="en-GB" Txt="perform a practical filter design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opbygge en switch-mode converter" />
+          <Txt Lang="en-GB" Txt="build a switch mode converter" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne en småsignaloverføringsfunktion" />
+          <Txt Lang="en-GB" Txt="calculate a small-signal transfer function" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="måle en småsignaloverføringsfunktion" />
+          <Txt Lang="en-GB" Txt="measure a small-signal transfer function" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere sløjfe stabiliteten" />
+          <Txt Lang="en-GB" Txt="evaluate loop stability" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre slope-kompensering" />
+          <Txt Lang="en-GB" Txt="implement slope compensation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="måle EMC forhold" />
+          <Txt Lang="en-GB" Txt="measure EMC aspects" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://sites.google.com/view/ziweiouyang/teaching" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>DC/DC konvertere, laboratoriekursus</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31353" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="35" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:40.933" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

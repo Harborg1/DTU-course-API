@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34690" University="dtu" LastUpdated="2025-03-19+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="DTU_Fotonik" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Ph.d.-kursus - Journal klub om effektelektronik og IC-design" />
+        <Title Lang="en-GB" Title="PhD Course - Journal Club in Power Electronics and IC design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Mandage, efter aftale med kursusansvarlige." />
+          <Schedule_Txt Lang="en-GB" Txt="Mondays, will be arranged by the course responsible." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="4801" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Michael A. E.</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>maea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_PROFESSOR" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset vil bestå af præsentationer af ph.d.-studerende af deres egne videnskabelige artikler fra anerkendte tidsskrifter. Artiklens formål, resultater og konklusioner skal præsenteres, og en kritisk stillingtagen til metode og resultat skal foretages. Den enkelte studerende skal redegøre for hvad det nye i artiklen er og for hvorledes dette kan bidrage til vedkommendes forskningsprojekt. Hver præsentation skal resultere i én sides resume med de vigtigste resultater og konklusioner.</Contents>
+          <Teaching_And_Learning_Methods>Seminarer.</Teaching_And_Learning_Methods>
+          <Course_Objectives>- At gøre de studerende i stand til bedre at forstå og forholde sig kritisk til aktuelle forskningsresultater indenfor effektelektronik og IC-design.
+- At gøre de studerende fortrolige med videnskabelige artikler og andre publikationer indenfor feltet.
+- At gøre de studerende i stand til kritisk at vurdere andres og egne artikler.
+- At øge de studerendes evne til at formidle og diskutere egne videnskabelige synspunkter.</Course_Objectives>
+          <Remark>Paper'et udvælges i forvejen af den studerende som skal fremlægge på den pågældende seminar-dag. Til hver seminar-dag har de studerende i forvejen læst og vurderet det udvalgte paper. Ph.d.-vejlederne deltager i fremlæggelsen og diskussionen. Hver studerende skal fremlægge mindst 3 af den studerendes egne paper's i løbet af kurset samt deltage i yderligere 10 seminar-dage. Et paper skal være den studerendes eget review paper om state-of-the-art indenfor den studerdes eget forskningsområde. Mindst 2 af de 3 papers skal være den studerendes eget forslag til journal paper.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will consist of presentations by the students of their own scientific papers from recognised journals. The goal, results and conclusions shall be presented, and a critical review of method and results shall be made. The individual student shall give an account of the new elements in the paper and for how this can contribute to the student’s research. The presentations shall result in one page summaries with the important results and conclusions.</Contents>
+          <Teaching_And_Learning_Methods>Seminars.</Teaching_And_Learning_Methods>
+          <Course_Objectives>- To bring the student in a position to better understand and critically relate to current research results within power electronics and IC design
+- To get the student become familiar with scientific papers and other publications within the field
+- To bring the student in a position to review others and owns papers
+- To increase the skills of the student to communicate and discuss own scientific standpoints.</Course_Objectives>
+          <Remark>Papers are selected in advanced by the student doing the presentation for the actual seminar day. For each course day all participants have read and accessed the selected paper. PhD supervisors will participate in the presentations and discussions. Each student should present minimum 3 of the students own draft papers during the course and participate in another 10 seminars. One paper must be the students own review paper about state-of-the-art within the students own research area. At least 2 of the 3 papers must be the students own draft journal paper.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Videregående emner indenfor effektelektronik og IC-design. MSc studerende indenfor disse fagområder kan følge dette kursus." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Advanced topics related to power electronics and IC design. MSc students within these fields may follow the course." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At gøre de studerende i stand til bedre at forstå og forholde sig kritisk til aktuelle forskningsresultater inden for effektelektronik og IC-design." />
+          <Txt Lang="en-GB" Txt="To bring the student in a position to better understand and critically relate to current research results within power electronics and IC design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At gøre de studerende fortrolige med videnskabelige artikler og andre publikationer inden for feltet." />
+          <Txt Lang="en-GB" Txt="To get the student become familiar with scientific papers and other publications within the field." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At gøre de studerende i stand til kritisk at vurdere andres og egne artikler." />
+          <Txt Lang="en-GB" Txt="To bring the student in a position to review others and owns papers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At øge de studerendes evne til at formidle og diskutere egne videnskabelige synspunkter." />
+          <Txt Lang="en-GB" Txt="To increase the skills of the student to communicate and discuss own scientific standpoints." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At gøre de studerende i stand til kritisk at bedømme metoderne og resultaterne i en videnskabelig publikation indenfor området." />
+          <Txt Lang="en-GB" Txt="To enable the student to critical review the methods and results in a scientific publication within the field." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At gøre de studerende i stand til at organisere og formulere egne videnskabelige resultater." />
+          <Txt Lang="en-GB" Txt="To enable the student to organize and formulate own scientific results." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At gøre de studerende i stand til at debattere og kritisere indholdet i videnskabelige artikler." />
+          <Txt Lang="en-GB" Txt="To enable the student to debate and criticize the content in a scientific paper." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At gøre de studerende i stand til at sammenligne og evaluere egne resultater med dem i videnskabelige artikler." />
+          <Txt Lang="en-GB" Txt="To enable the student to compare and evaluate own results with those in scientific papers." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31357" />
+        <PreviousCourse CourseCode="31357" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="13" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:46.24" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

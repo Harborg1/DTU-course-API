@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02581" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Analyse og beregninger på geometriske data" />
+        <Title Lang="en-GB" Title="Geometric Data Analysis and Processing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Tilbydes første gang som efterårskursus i efteråret 2026" />
+          <Schedule_Txt Lang="en-GB" Txt="Offered first time as autumn course in the autumn of 2026" />
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="4465" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>J. Andreas</GivenName>
+            <FamilyName>Bærentzen</FamilyName>
+            <Email>janba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="2210" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter</GivenName>
+            <FamilyName>Røgen</FamilyName>
+            <Email>prog@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="219202" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Theodora</GivenName>
+            <FamilyName>Kontogianni</FamilyName>
+            <Email>thekon@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Følgende emner indgår i kurset:
+- Flere fladerepræsentationer som f.eks. polygon- (især trekants) net, distance fields (med og uden fortegn), skelet og medial repræsentationer, gitre af tetraedere og hexaedere, punktskyer, etc.
+- Spektral analyse af trekantsnet via metoder, der er analoge til Fourieranalyse.
+- Geometriske og differentialgeometriske egenskaber ved diskrete fladerepræsentationer.
+- Metoder til manipulation af trekantsnet: udglatning, støjreduktion, forsimpling, optimering af konnektivitet og parametrisering.
+- Registrering af punktskyer med ICP metoden.
+- Triangulering og manipulation af trianguleringer.
+- Brugen af basisfunktioner i forbindelse med interpolation i ustrukturerede punkter. Repræsentation af overflader som implicitte flader eller højdekort via basisfunktioner.
+- Processering af geometrisker data via computerprogrammering.
+- Brugen af metoder fra lineær algebra såsom løsning af lineære systemer (inklusiv via singular value decomposition) til at løse opgaver fra overflade rekonstruktion og manipulation.
+- Udregning af topologiske egenskaber v.h.a. Euler-Poincare formlen.
+- Visualisering af geometriske data med henblik på tilgængeliggørelse.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser i databar</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at forberede de studerende på problemstillinger, der involverer geometriske data såsom punktskyer, trekantsnet eller flader givet implicit som isoflader i skalare felter. Sådanne problemer kunne være oprensning og sammenlægning af data fra optiske scannere, modellering af flader fra spredte punkter, procedural generering af geometri og meshing til FEM beregninger. Under dette større mål er det umiddelbare sigte at gøre de studerende bekendte med teknikker til repræsentation af geometri og at introducere de studerende til en række algoritmer til at processere sådanne data, konvertere mellem repræsentationer og visualisere geometri.
+
+Det praktiske arbejde består af ugentlige opgaver, der løses med Python programmeringssproget.</Course_Objectives>
+          <DTU_Remark>Tilbydes som rent M.Sc. kursus første gang efterår 2026. Kurset er flyttet fra forår til efterår.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The following topics are discussed: 
+- Several surface representations, for instance, meshes, distance fields (signed and unsigned), skeletal and medial representations, tetrahedral and hexahedral grids, point clouds, etc.
+- Spectral analys of triangle meshes using methods that are analogous to Fourier analysis.
+- Geometric and differential geometry properties of discrete surface representations. 
+- Primitive operations on meshes. 
+- Simplification and optimization of meshes. 
+- Registration of point clouds using the ICP method.
+- Triangulation and manipulation of triangulations. 
+- Basis functions and scattered data interpolation. Representation of surfaces as implicit surfaces or height maps via basis functions.
+- Approaching geometry processing and analysis through programming.
+- The use of methods from linear algebra such as linear system solving (including the Singular Value Decomposition) for tasks in geometry reconstruction and manipulation.
+- Computation of topological characteristics using the Euler-Poincare formula.
+- Using computer graphics to make geometric data more accessible.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and databar exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of this course is to prepare students for problems that require dealing with geometric data such as point clouds, triangle meshes, or surfaces given implicitly as iso-contours of scalar fields. Such problems include cleaning and merging data from optical scanners, modeling surfaces from scattered points, generating geometry algorithmically, and meshing for FEM simulation. Informed by this larger goal, the immediate objectives are to familiarise students with representations for geometric data and to introduce a range of algorithms for processing geometric data, converting between representations, and visualising geometric data.
+
+The practical work consists of weekly assignments solved in Python.</Course_Objectives>
+          <DTU_Remark>Offered as a pure MSc course from autumn 2026. The course has moved from spring to autumn.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til et programmeringssprog såsom Python og en god forståelse af basal ingeniørmatematik, herunder matematisk analyse og lineær algebra inklusive egenværdiproblemer. Kendskab til Fourierserier." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of a programming language such as Python and a good understanding of basic calculus and linear algebra including eigenvalue problems. Knowledge of Fourier series." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01002/01004/01005/01006).(01025/01034/01035/01037).(02002/02100/02631/02632/02633)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvælge og bruge fladerepræsentationer som punktskyer, trekantsnet og implicitte overflader til opgaver, der involverer geometriske data" />
+          <Txt Lang="en-GB" Txt="select and use surface representations such as point clouds, triangle meshes and implicit surfaces for tasks involving geometric data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne geometriske og differentialgeometriske egenskaber for trekantsnet" />
+          <Txt Lang="en-GB" Txt="compute geometric and differential geometric properties of triangle meshes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte redskaber fra lineær algebra til rekonstruktion og manipulation af overflader" />
+          <Txt Lang="en-GB" Txt="use tools from linear algebra for reconstruction and manipulation of surfaces" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="polygonalisere implicitte flader" />
+          <Txt Lang="en-GB" Txt="polygonize implicit surfaces" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="reducere, optimere og fjerne støj fra trekantsnet" />
+          <Txt Lang="en-GB" Txt="simplify, optimize, and remove noise from 3D triangle meshes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="foretage spektral analyse af trekantsnet med Laplace-Beltrami operatoren og anvende den til udglatning, parametrisering m.m." />
+          <Txt Lang="en-GB" Txt="perform spectral analysis of triangle meshes using the Laplace-Beltrami operator and apply it to smoothing, parametrization and more" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="detektere og klassificere karakteristiske områder i punktskyer og registrere punktskyer" />
+          <Txt Lang="en-GB" Txt="detect and classify features in point clouds and register point clouds" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Delaunay triangulere 2D punktsæt" />
+          <Txt Lang="en-GB" Txt="triangulate 2D point sets using Delaunay triangulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="rekonstruere trekantsnet fra 3D punktskyer" />
+          <Txt Lang="en-GB" Txt="reconstruct triangle meshes from 3D point clouds" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne basale topologiske egenskaber såsom genus fra polygonnet" />
+          <Txt Lang="en-GB" Txt="compute basic topological features such as genus from polygonal meshes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive 3D former via skeletter eller medialflader" />
+          <Txt Lang="en-GB" Txt="represent 3D surfaces as skeletons or medial surfaces" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Metoder til at skabe 3D modeller fra rå geometriske data</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02580" />
+        <PreviousCourse CourseCode="02580" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:18.757" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

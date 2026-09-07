@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46400" University="dtu" LastUpdated="2026-04-10+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Vindmøller og måleteknik" />
+        <Title Lang="en-GB" Title="Wind Turbine Measurement Technique" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="En dag på Risø Campus resten på Lyngby Campus" />
+          <Schedule_Txt Lang="en-GB" Txt="One day at Risø Campus and the rest at Lyngby Campus" />
+          <Schedule ScheduleKey="F1" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="6569" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ebba</GivenName>
+            <FamilyName>Dellwik</FamilyName>
+            <Email>ebde@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="144427" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Vasiliki</GivenName>
+            <FamilyName>Mallini</FamilyName>
+            <Email>vasma@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren er baseret på en samlet vurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade for the course is based on overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1A" />
+            <Schedule ScheduleKey="E1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Velkommen til målingernes verden! Dette kursus giver en introduktion til almindeligt anvendte måleteknikker inden for vindenergi. Vi dækker in-situ og fjernmålingsteknikker (for eksempel lidars og sodars) til vindmåling, vurdering af vindmøllers effektpræstation, observationer af mekaniske belastninger, måling af støjemission fra vindmøller samt SCADA-data fra vindfarmdrift. Disse emner vil blive præsenteret i relation til de relevante IEC-standarder, der regulerer alle faser af vindmølle-/vindfarmdrift. Forelæsningerne kombineres med praktisk eksperimentelt arbejde ved brug af instrumenter og dataloggere samt øvelser baseret på vindmølledata fra den godt instrumenterede 850 kW mølle på Risø-campus. Et besøg på Risø er en integreret og populær del af kurset.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, regneopgaver, laboratorieøvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Introduktion til den måleteknik, som anvendes på og omkring vindmøller.</Course_Objectives>
+          <Remark>Hvis flere end 32 har tilmeldt sig kurset gives 1. prioritet til studerende på M.Sc. i Vindenergi. Alle rapporter skal afleveres og bedømmes inden eksamen.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Welcome to the world of measurements! This course presents an introduction to commonly used measurement techniques used in wind energy. We cover in-situ and remote-sensing (for example, lidars and sodars) wind measurement techniques, wind turbine power performance assessment, observations of mechanical loads, measurement of wind turbine noise emission and wind farm operational SCADA data. These topics will be presented in relation to the relevant IEC standards that govern all phases of wind turbine/farm operation. The lectures are combined with practical experimental work using instruments and data loggers, as well as exercises and assignments based on wind turbine data from the well-instrumented 850kW turbine at the Risø campus. A visit to Risø is an integrated and popular part of the course.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and lab. work</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give an overview of measurement techniques used in and around wind turbines.</Course_Objectives>
+          <Remark>If more than 32 have signed up for the course 1st priority is given to students at the M.Sc. in Wind Energy. All assignments need to be submitted and accepted before the examination.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Vindkraft og aeroteknologi da der forudsættes viden om en vindmøllers strukturelle opbygning og virkemåde for at gennemføre dette kursus.&#xD;&#xA;&#xD;&#xA;Kendskab til Python- eller Matlab-programmering vil være nødvendig for at kunne gennemføre opgaverne." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Wind Turbine Technology and Aerodynamics, since knowledge on wind turbine structure and operational behaviour are important in this course.&#xD;&#xA;&#xD;&#xA;Working knowledge of Python or Matlab programming will be necessary in order to complete the assignments." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46300/02631/02633" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive hvordan målinger anvendes i forbindelse med placering af vindmølleparker, test af vindmøllers effekt, vurdering af vindmøllers belastninger og drift af vindmølleparker." />
+          <Txt Lang="en-GB" Txt="Describe how measurements are used in connection to wind farm siting, wind turbine power performance testing, wind turbine loads assessment, and wind farm operations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare måleprincipperne og fordele/ulemper ved almindeligt anvendte fjernmålinger og in situ vindmålinger og evaluere en måleopsætning." />
+          <Txt Lang="en-GB" Txt="Explain the measurement principles and pros/cons of commonly used remote-sensing and in-situ wind measurements and critically evaluate a measurement setup  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive interaktionerne mellem forskellige elementer i dataopsamlingskæden " />
+          <Txt Lang="en-GB" Txt="Describe the roles and interactions of the different elements in the data acquisition chain as part of a complete measurement system " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare begreberne måleusikkerhed, dækningsfaktor og hvordan usikkerheder kombineres, og anvende denne viden i realistiske målesituationer." />
+          <Txt Lang="en-GB" Txt="Explain the concepts of measurement uncertainty, coverage factor and how uncertainties are combined and apply this knowledge to realistic measurement situations  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere forståelse for dataorganisering, -håndtering og -dokumentation" />
+          <Txt Lang="en-GB" Txt="Demonstrate an understanding of data organisation, management and documentation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere vinddata ved hjælp af datavisualisering, identificer fejl, udfør regressionsanalyse og estimer usikkerhed" />
+          <Txt Lang="en-GB" Txt="Analyse wind data by data visualisation, identifying errors, performing regression analysis, and estimating uncertainty " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå hvordan målinger bruges til siting af nye vindmøller" />
+          <Txt Lang="en-GB" Txt="Understand how measurements are used for siting of new wind turbines " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne effektkurven og den årlige energiproduktion (AEP) for en vindmølle, inklusive usikkerhed" />
+          <Txt Lang="en-GB" Txt="Determine the power curve and Annual Energy Production (AEP) for a wind turbine, including uncertainty" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere strukturelle laster og identifiere strukturelle frekvenser for en vindmølle ud fra måledata" />
+          <Txt Lang="en-GB" Txt="Estimate structural loads and identify structural frequencies of a wind turbine from measurement data  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå behovet for støjmålinger fra vindmøller og forklare hvordan disse udføres" />
+          <Txt Lang="en-GB" Txt="Understand the need for wind turbine noise measurements and explain how these are carried out " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare formålet med og fordelene ved SCADA og condition monitoring overvågningssyster" />
+          <Txt Lang="en-GB" Txt="Explain the purpose and benefits of SCADA and condition monitoring systems " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Måling af vindhastighed, elektrisk effekt samt strukturelle laster på vindmøller</SubTitle>
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode=" 31784" />
+        <PreviousCourse CourseCode="31784" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="32" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:38" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

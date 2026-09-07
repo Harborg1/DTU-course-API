@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41969" Volume="2026/2027" University="dtu" LastUpdated="2026-05-01+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Anvendelse af sandsynlighedsmodellering i byggeriet" />
+        <Title Lang="en-GB" Title="Probabilistic Modelling in Civil Engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="99373" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Evangelos</GivenName>
+            <FamilyName>Katsanos</FamilyName>
+            <Email>vakat@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="43652" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Hans Holger Hundborg</GivenName>
+            <FamilyName>Koss</FamilyName>
+            <Email>hoko@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38400" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Frank</GivenName>
+            <FamilyName>Markert</FamilyName>
+            <Email>fram@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En individualiseret grupperapport skal afleveres den 12. undervisningsdag og præsenteres af gruppen den sidste undervisningsdag. Gruppernes præsentation er forudsætning for deltagelse i den skriftlige eksamen (eksamensforudsætning). Slutkarakter baseres på: Rapport 20%; Skriftlig eksamen 80%. Delkarakterer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One individualized group report submitted by the 12th lecturing day and presented by the group on the last lecturing day. The presentation of the report by the groups is a prerequisite for attending the written examination (exam prerequisite). The final grading is based on: Report 20%; Written examination 80%. Partial grades" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Mandatory group presentation on the last lecturing day. F2B written exam." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Obligatorisk gruppepræsentation den sidste undervisningsdag. F2B skriftlig eksamen." />
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Elementer af sandsynlighedsteori; Stokastiske variable/vektorer; Numerisk og grafisk dataanalyse; Probabilistisk modellering og parameter estimering; Modelverificering og - opdatering; Stokastiske processer; Anvendelse indenfor bygningsretningen; Introduktion til teorien for konstruktioners sikkerhed; Bayesiansk teori; Ingeniørmæssig beslutningsanalyse</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelsesopgaver og projektarbejde i grupper (4-5 studerende per gruppe)</Teaching_And_Learning_Methods>
+          <Course_Literature>Faber, M.H. (2012) Statistics and Probability theory: In Pursuit of Engineering Decision Support, Springer.</Course_Literature>
+          <Course_Objectives>Dette kursus giver de teoretiske forudsætninger og grundlaget for design af nye konstruktion og vurdering af eksisterende konstruktioner. Gennem kurset vil de studerende erhverve viden, færdigheder og ekspertise om probabilistisk modellering, vurdering og opdatering for natur laster, konstruktionsmæssige oplysninger, konstruktioners pålidelighed og risiko og ultimativt for ingeniørmæssige beslutninger herunder værdi af information.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Elements of probability theory; Random variables and vectors; Graphical and numerical data analysis; Probabilistic modelling including parameter estimation; Model verification and updating; Stochastic processes; Applications in civil engineering; Introduction to structural reliability theory; Bayesian theory; Engineering decision analysis</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and project work in groups (4-5 students per group)</Teaching_And_Learning_Methods>
+          <Course_Literature>Faber, M.H. (2012) Statistics and Probability theory: In Pursuit of Engineering Decision Support, Springer.</Course_Literature>
+          <Course_Objectives>This course provides the theoretical pre-requisites, the background and the basis for the design of new structures and the assessment of existing structures in our built environment. Through the course, students will acquire knowledge, skills and expertise on probabilistic modelling, assessment and updating in the fields of natural hazards, structural information, structural reliability and risks and ultimately for engineering decisions including the Value of Information.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre beslutningsanalyser" />
+          <Txt Lang="en-GB" Txt="Implement decision analyses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere tekniske beslutninger før og efter implementering" />
+          <Txt Lang="en-GB" Txt="Evaluate engineering decisions before and after implementation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge, bestemme, verificere og opdatere probabilistiske modeller inden for natur laster, konstruktionsmæssige oplysninger, konstruktioners pålidelighed og risiko samt ingeniørmæssige beslutninger" />
+          <Txt Lang="en-GB" Txt="Select, determine, verify and update probabilistic models in the fields of natural hazards, structural information, structural reliability and risks and engineering decisions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge analyseværktøjer til vurdering konstruktioners pålidelighed, konstruktioners risiko og beslutningsanalyser" />
+          <Txt Lang="en-GB" Txt="Select proper analyses tools for structural reliability, structural risk and decision analyses" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge passende fordelinger af variabler i stationære stokastiske processer" />
+          <Txt Lang="en-GB" Txt="Select appropriate distributions of random variables for stationary random processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fastlægge grænsetilstands funktioner med grundlæggende probabilistiske modeller og definitioner" />
+          <Txt Lang="en-GB" Txt="Determine limit state functions with basic probabilistic concepts and definitions " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre konstruktionsmæssige pålidelighedsanalyser ved hjælp af førsteordens pålidelighedsmetode (sikkerhedsindeksmetoden) og Monte Carlo simulering" />
+          <Txt Lang="en-GB" Txt="Perform structural reliability analyses using the First Order Reliability Method (safety index) and Monte Carlo simulation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og vurdere probabilistiske modeller for konstruktionsmæssige oplysninger" />
+          <Txt Lang="en-GB" Txt="Create and evaluate probabilistic models for structural information" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opsummere data med numerisk og grafisk dataanalyse" />
+          <Txt Lang="en-GB" Txt="Summarize data with numerical and graphical data analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare definitionen af og begreberne stokastiske variabler, vektorer og processer" />
+          <Txt Lang="en-GB" Txt="Explain the definition and concept of random variables, vectors and processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de grundlæggende begreber for pålidelighed og risikobaseret design og vurdering af konstruktioner" />
+          <Txt Lang="en-GB" Txt="Explain the fundamental concepts of reliability and risk based design and assessment of structures" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02405" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="11376" />
+        <PreviousCourse CourseCode="11376" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="63" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="4" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:40.197" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34692" Volume="2026/2027" University="dtu" LastUpdated="2026-05-29+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Ph.d.-kursus - Electro forskningskollokvium" />
+        <Title Lang="en-GB" Title="PhD Course - Electro Research Colloquium" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Mødedatoer fastlægges i fællesskab inden for hver undergruppe. Obligatorisk deltagelse i semesterstart." />
+          <Schedule_Txt Lang="en-GB" Txt="Meeting dates are determined collaboratively within each subgroup. Mandatory attendance of initial semester kickoff." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Fotonik" />
+        <Course_Responsible PersonKey="4801" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Michael A. E.</GivenName>
+            <FamilyName>Andersen</FamilyName>
+            <Email>maea@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="210068" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>David</GivenName>
+            <FamilyName>Bøge</FamilyName>
+            <Email>davidb@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueres gennem kontinuerlig aktiv deltagelse og demonstreret akademisk forberedelse. Det forventes, at de studerende selvstændigt kuraterer, læser, analyserer og præsenterer relevant litteratur forud for hver session for at sikre et højt niveau af kritisk diskurs. For at gennemføre kurset skal den studerende deltage i mindst 12 sessioner, fungere som sessionsmægler i 3 møder og deltage mindst én gang i semesterets kick-off-arrangement. Mæglerrollen kræver, at man leverer en struktureret introduktionspræsentation og aktivt faciliterer en omfattende gruppediskussion, der analyserer de udvalgte artiklers videnskabelige bidrag, metodologiske styrker og begrænsninger samt overførbarhed på tværs af domæner. Efter hver session skal mægleren indsende sin præsentation samt en fremmødeliste." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluated through continuous active participation and demonstrated academic preparation. Students are expected to independently curate, read, analyze, and present relevant literature prior to each session to ensure a high level of critical discourse. To successfully complete the course, a student must attend a minimum of 12 sessions, act as a session mediator for 3 meetings, and attend the semester kick-off event at least once. The mediator role requires delivering a structured introductory presentation and actively facilitating a comprehensive group discussion analyzing the selected papers' scientific contributions, methodological strengths and limitations, and cross-domain transferability. After each session, the mediator is required to submit their presentation as well as the list of participants." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="Studerende kan tilmelde sig når som helst i løbet af året. Det anbefales dog kraftigt at starte i begyndelsen af ​​et semester." />
+            <DeadLineTxt Lang="en-GB" Txt="Students can join at any point during the year. However, starting at the beginning of a semester is highly recommended." />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Selvom dette kursus primært udbydes af DTU Electro, opfordres ph.d.-studerende fra tilstødende institutter (Sundhedsteknologi, Compute, Fysik osv.) udtrykkeligt til at tilmelde sig. Mange forskningsudfordringer og metoder overlapper betydeligt på tværs af disse discipliner. Studerende anbefales kraftigt at tilføje dette kursus til deres ph.d.-plan tidligt i deres studier for at maksimere fordelene ved tværfagligt netværk og metodologisk udveksling." />
+            <Supp_Txt Lang="en-GB" Txt="While this course is primarily hosted by DTU Electro, PhD students from adjacent departments (Health Tech, Compute, Physics, …) are explicitly encouraged to register. Many research challenges and methodologies significantly overlap across these disciplines. Students are strongly advised to add this course to their PhD plan early in their studies to maximize the benefits of cross-departmental networking and methodological exchange" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursusindholdet fokuserer på brede, fælles forskningstemaer, der ikke er specifikke for en enkelt forskergruppe. Disse temaer overlapper en bred vifte af felter, herunder, men ikke begrænset til: maskinlæring, signalbehandling, sensorer, optimering og indlejrede systemer. Pensum er deltagerdrevet og bygget op omkring regelmæssige (ugentlige/hver anden uge) undergruppemøder. Hver session har en roterende mægler, der vælger et emne og afholder en kort introduktionspræsentation. Gruppemedlemmerne finder, læser og præsenterer individuelt deres resultater fra relevant litteratur for at fremme en guidet gruppediskussion. Derudover giver kurset et forum for konstruktiv peer review, hvor studerende modtager feedback på deres præsentationer og, når det er relevant, på udkast til akademiske manuskripter.</Contents>
+          <Teaching_And_Learning_Methods>Kurset kører løbende, hvilket betyder, at studerende kan tilmelde sig når som helst i løbet af året. Det anbefales dog kraftigt at starte i begyndelsen af ​​et semester. Semestercyklussen begynder med en stor kick-off-session, hvor deltagerne grupperes i undergrupper baseret på overlappende temaer. Kurset lægger vægt på uafhængig litteratursøgning og aktiv deltagelse i fagfællefaciliterede diskussioner, hvilket skaber et samarbejdsorienteret til at øve præsentation og kritisk tænkning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med dette kursus er at skabe et struktureret, tilbagevendende forum for ph.d.-studerende, hvor de kan mødes og udveksle viden. Ved at bryde isolationen mellem forskningsgrupper fremmer kurset et akademisk fællesskab og giver et dedikeret rum til udveksling af ideer, metoder og state-of-the-art forskning. Det er designet til at give de studerende adgang til forskningsretninger uden for eller i tangentiale til deres specialisering, samtidig med at det fremmer netværk og samarbejde på tværs af laboratorier og afdelinger.</Course_Objectives>
+          <DTU_Remark>Anbefales på det kraftigste til alle ph.d.-studerende på DTU Electro. Deltagelse fra andre institutter opfordres.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course content centers on broad, shared research themes that are not specific to a single research group. These themes overlap across a wide range of fields, including, but certainly not limited to: machine learning, signal processing, sensors, optimization, and embedded systems. The curriculum is participant-driven and built around regular (weekly/bi-weekly) subgroup meetings. Each session features a rotating mediator who selects a topic and delivers a short introductory presentation. Group members individually find, read, and present their findings from relevant literature to foster a guided group discussion. Additionally, the course provides a forum for constructive peer review, where students receive feedback on their presentations and, when relevant, on draft academic manuscripts.</Contents>
+          <Teaching_And_Learning_Methods>The course is continuously running, meaning students can join at any point during the year. However, starting at the beginning of a semester is highly recommended. The semester cycle begins with a large kick-off session, where participants are clustered into subgroups based on overlapping themes. The course emphasizes independent literature search and active participation in peer-facilitated discussions, providing a collaborative environment to practice presenting and critical thinking.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The objective of this course is to provide a structured, recurring forum for PhD students to meet and exchange knowledge. By breaking the isolation between research groups, the course fosters an academic community and provides a dedicated space for the exchange of ideas, methods, and state-of-the-art research. It is designed to expose students to research directions outside or tangential to their specialization while promoting networking and collaboration across laboratories and departments.</Course_Objectives>
+          <DTU_Remark>Highly recommended for all PhD students at DTU Electro. 
+Participation from other departments is encouraged.</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Selvstændigt kuratere og syntetisere relevant videnskabelig litteratur for at forberede sig til videnskabelig diskurs." />
+          <Txt Lang="en-GB" Txt="Independently curate and synthesize relevant scientific literature to prepare for scientific discourse." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter kritisk bidraget til og relevansen af ​​forskellige akademiske artikler." />
+          <Txt Lang="en-GB" Txt="Critically discuss the contribution and relevance of diverse academic papers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne og evaluere forskningsmetoder for at bestemme deres overførbarhed på tværs af forskellige videnskabelige domæner." />
+          <Txt Lang="en-GB" Txt="Compare and evaluate research methods to determine their transferability across different scientific domains." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Oversæt komplekse, domænespecifikke forskningskoncepter til et tilgængeligt sprog for et mangfoldigt, tværfagligt publikum" />
+          <Txt Lang="en-GB" Txt="Translate complex, domain-specific research concepts into accessible language for a diverse, cross-disciplinary audience" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere forskningsemner og formidle akademisk diskussion i en peergruppe." />
+          <Txt Lang="en-GB" Txt="Present research topics and mediate academic discussion within a peer group." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurder styrkerne, begrænsningerne og potentielle anvendelser af forskellige metoder." />
+          <Txt Lang="en-GB" Txt="Assess the strengths, limitations, and potential applications of various methodologies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Giv konstruktiv peer review og feedback på akademiske artikler og præsentationer." />
+          <Txt Lang="en-GB" Txt="Provide constructive peer review and feedback on academic papers and presentations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bidrag til skabelsen af ​​et ph.d.-studerendefællesskab ved aktivt at engagere sig i tværfaglig videnudveksling og samarbejde." />
+          <Txt Lang="en-GB" Txt="Contribute to the creation of a PhD student community by actively engaging in interdepartmental knowledge exchange and collaboration.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-06-03" Time="15:07:26.633" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

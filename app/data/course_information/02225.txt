@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02225" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Distribuerede realtidssystemer" />
+        <Title Lang="en-GB" Title="Distributed Real-Time Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="34674" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Paul</GivenName>
+            <FamilyName>Pop</FamilyName>
+            <Email>paupo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er struktureret i tre hovedsektioner: (1) Introduktion til realtidssystemer, med fokus på modellen for periodiske tasks og skeduleringsanalyse. (2) Detaljeret udforskning af realtidsnetværk, især tidsfølsomme netværkn (TSN) og deres betydning i distribuerede systemer. (3) Anvendelse af viden gennem øvelser og et projekt om systemsimulering, skeduleringspolitikker, trafikformning og systemoptimering, inklusiv afbildning af tasks og ruteplanlægning for beskeder. Metaheuristikker som en optimeringsmetode vil blive introduceret for systemoptimeringsopgaver.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Giorgio Buttazzo, Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications, 2024</Course_Literature>
+          <Course_Objectives>Dette kursus sigter mod at introducere de grundlæggende koncepter, metoder og udfordringer ved konstruktion af distribuerede realtidssystemer. De studerende vil lære om modeller for tidstro tasks, skeduleringssanalyse og realtidsnetværk, med fokus på tidsfølsomme netværk (TSN). Gennem øvelser og et projekt vil de studerende simulere skedulerings- eller trafikformningspolitikker og optimere systemarkitektur eller -design, såsom afbildning af tasks på kerner eller ruteplanlægning for beskeder. Selvstudiekomponenter inkluderer simulering og metaheuristiske optimeringsmetoder til brug ved øvelser og projektarbejde.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is structured into three main sections: (1) Introduction to real-time systems, focusing on the periodic task model and schedulability analysis. (2) Detailed exploration of real-time networks, especially Time-Sensitive Networking (TSN), and their importance in distributed systems. (3) Application of knowledge through exercises and a project on system simulation, scheduling policies, traffic shaping, and system optimization, including task mapping and message routing. Metaheuristics as an optimization method will be introduced for system optimization challenges.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Literature>Giorgio Buttazzo, Hard Real-Time Computing Systems: Predictable Scheduling Algorithms and Applications, 2024</Course_Literature>
+          <Course_Objectives>This course aims to introduce the fundamental concepts, methods, and challenges of engineering distributed real-time systems. Students will learn about real-time task models, schedulability analysis, and real-time networks, with a focus on Time-Sensitive Networking (TSN). Through exercises and a project, students will simulate scheduling or traffic shaping policies and optimize system architecture or design, such as task mapping to cores or routing of messages. Self-learning components include simulation and metaheuristic optimization methods for exercises and project work.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Studerende forventes at have indgående kendskab til et imperativt programmeringssprog og en basal viden om computerarkitektur" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students are expected to be familiar with an imperative programming language and basics of computer architecture" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02160/02161).(02132/02135)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de centrale principper og definitioner for konstruktion af distribuerede realtidssystemer" />
+          <Txt Lang="en-GB" Txt="Explain the key principles and definitions of distributed real-time systems engineering" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå koncepter og operationer for modeller af tidstro tasks og skeduleringsanalyse" />
+          <Txt Lang="en-GB" Txt="Understand the concepts and operations of real-time task models and schedulability analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende teknikker til analyse af realtidsnetværk, med fokus på tidsfølsomme netværk (TSN)" />
+          <Txt Lang="en-GB" Txt="Apply techniques for real-time network analysis, focusing on Time-Sensitive Networking (TSN)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere skeduleringsalgoritmer og trafikformningspolitikker for realtidssystemer" />
+          <Txt Lang="en-GB" Txt="Analyze scheduling algorithms and traffic shaping policies for real-time systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere forskellige strategier for systemoptimering, inklusiv afbildning af tasks på kerner og ruteplanlægning for beskeder" />
+          <Txt Lang="en-GB" Txt="Evaluate different strategies for system optimization, including task mapping to cores and routing of messages" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skabe simuleringer for at teste skedulerings- eller trafikformningspolitikker i distribuerede realtidssystemer" />
+          <Txt Lang="en-GB" Txt="Create simulations to test scheduling or traffic shaping policies in distributed real-time systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende metaheuristiske optimeringsmetoder til at løse komplekse problemer med systemoptimering" />
+          <Txt Lang="en-GB" Txt="Apply metaheuristic optimization methods to solve complex system optimization problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe arkitekturer af distribuerede realtidssystemer, der opfylder specifikke krav" />
+          <Txt Lang="en-GB" Txt="Design distributed real-time system architectures that meet specified requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kritisere og optimere distribuerede realtidssystemer baseret på ydelsesmetrikker" />
+          <Txt Lang="en-GB" Txt="Critique and optimize distributed real-time systems based on performance metrics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommunikere komplekse systemdesigns og -optimeringer effektivt i både skriftlig og mundtlig form" />
+          <Txt Lang="en-GB" Txt="Communicate complex system designs and optimizations effectively in both written and oral forms" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Indføring i konstruktion af disribuerede realtidssystemer med praktisk projektarbejde</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:02.457" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

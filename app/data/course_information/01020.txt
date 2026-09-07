@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="01020" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Videregående Lineær Algebra" />
+        <Title Lang="en-GB" Title="Advanced Linear Algebra" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="50472" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>David</GivenName>
+            <FamilyName>Brander</FamilyName>
+            <Email>dbra@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="21544" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jakob</GivenName>
+            <FamilyName>Lemvig</FamilyName>
+            <Email>jakle@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Et antal afleveringer skal godkendes for at få adgang til den skriftlige eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A number of home works must be approved to qualify for the written exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Lineær algebra er gren af matematikken, der er brugt overalt i natur- og ingeniørvidenskaberne. I dette kursus gennemgås
+* Vektorer, matricer, direkte sum og Kroneckerproduktet af matricer.
+* Et udvalg af matrixtyper: Blokmatricer, Householder, hermitisk,positiv (semi-)definit, unitær, ortogonal projektion, normal, cirkulær, pseudoinvers, kvadratroden, osv.).
+* Norm, indreprodukt, induceret norm, Frobenius norm, osv.
+* Matrixfaktoriseringer/diagonaliseringer: QR-faktorisering, Schur triangulering, spektral (egenværdi/egenvektor), Jordan normalform, singulær værdi-dekompositionen (SVD), polærdekompositionen.
+* Specielle lineære transformationer: Householder reflektion, foldning (cirkulantmatrix), Diskret (og hurtig) Fourier transformation (DFT/FFT).
+* Gershgorins cirkelsætning (begrænsning af egenværdier), Foldningssætningen, Cholesky-faktorisering
+
+Kurset er en fortsættelse af den lineære algebra fra Matematik 1, men med fokus på beviser og indsigt og med mindre fokus på CAS-udregninger. Vi vil blandt andet bevise dimensionssætningen og spektralsætningen, som indgår i Matematik 1-pensum uden bevis. Beviserne i kurset vil så vidt muligt følge argumenter der direkte muliggører stabile numeriske implementeringer. Fx vil beviset af QR-faktoriseringen (som i sig selv er et vigtigt værktøj for numerisk løsning af Least-Square Fit problemer og beregning af egenværdier) benytte Householder-transformationer. Kurset vil dog ikke indeholde selve implementeringen af fx QR-faktorisering. Kursets fokus er at beviser skal give indsigt i de matematiske værktøjer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Literature>Linear Algebra Done Wrong by Sergei Treil, https://www.math.brown.edu/~treil/papers/LADW/LADW_2017-09-04.pdf</Course_Literature>
+          <Course_Objectives>At udstyre deltagerne med det matematiske grundlag for den del af den avancerede lineær algebra, som er brugt anvendt matematik, statistik, fysik, maskinlæring, og data science. Kursets hovedfokus er på endeligdimensionelle reelle eller komplekse vektorrum udstyret med et indre produkt, lineære transformation på sådanne rum og matrixfaktoriseringer så som QR, SVD, og DFT/FFT.
+
+Undervisningsstilen er tavle-og-kridt forelæsninger og regneøvelser med papir-og-blyant. Computerprogrammer som Maple, Matlab, Python osv. vil kun spille en marginal rolle og vil primært blive brugt, når det egner sig til at illustrere teorien. Kursets mål er at give indsigt i den lineære algebra, der er nyttig for løsning af en lang række tekniske problemer. Kurset sigter mod at formulere alle resultater præcist og give fuldstændige beviser for dem. Dette vil styrke evnen til at håndtere og forstå abstrakte matematiske begreber, resultater og beviser, samt til selv at konstruere (simplere) matematiske beviser af teknisk karakter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Linear algebra is a branch of mathematics that is widely used throughout the natural sciences and engineering.  In this course we will cover:
+* Vectors, matrices, direct sum and Kronecker product of matrices.
+* Various matrix types: Block matrices, Householder, Hermitian, Positive (Semi-)Definite, Unitary, Orthogonal Projections, Normal, Circulant, Pseudo-inverse,  etc.
+* Norms and inner products: induced norms, Frobenious norms, etc. 
+* Matrix factorizations/diagonalizations: QR factorization, Schur's Triangularization, Spectral (Eigenvalue/Eigenvector), Jordan normal form, Singular Value Decomposition (SVD), Polar Decomposition.
+* Specific linear transforms: Householder reflections, Convolutions (circulant matrices), Discrete (fast) Fourier Transform (DFT/FFT)
+* Gershgorin’s disc theorem (bounding the eigenvalues), the Convolution theorem, the Cholesky factorization.
+
+This course is a continuation of the linear algebra from Mathematics 1, but with emphasis on proofs and insight and with less focus on Maple computations and applications. In particular, we will prove the dimension and the spectral theorem which are mentioned and applied in Mathematics 1 without proof. The proofs will whenever possible follow strategies that allow for stable numerical implementations, e.g., the proof of QR factorization (which in itself is an important tool for numerical solutions of least-squares problems and computing eigenvalues) relies on Householder transformations; we will, however, not do the actual implementation. Our focus is that the proofs should provide insight.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and class exercise sessions</Teaching_And_Learning_Methods>
+          <Course_Literature>Linear Algebra Done Wrong by Sergei Treil, https://www.math.brown.edu/~treil/papers/LADW/LADW_2017-09-04.pdf</Course_Literature>
+          <Course_Objectives>To provide the students with the mathematical background on advanced linear algebra that is used in, mainly, applied mathematics, but also computer science, statistics and physics as well as machine learning, data science, etc.  The main focus is on (finite dimensional) inner product spaces, linear transforms on such spaces, and matrix factorizations such as QR, SVD, and DFT/FFT. 
+
+The course style is blackboard lectures and pen-and-paper exercises - computer programs as Maple, Matlab, Pyhton, etc. will only play a marginal role. On the other hand, the course will give insight into the structure of linear algebra that is incredible powerful for the solution of a large range of engineering problems. The course also aims to state all results clearly and prove them rigorously. This will strengthen the ability to handle abstract mathematical objects, to understand mathematical results and proofs, and to prove results yourself.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="01001 eller første halvdel af 01005, specielt følgende emner: Matricer og Matrixalgebra, Determinanter, Vektorrum, Lineære afbildninger, Egenværdier og Egenvektorer, Similaritet og Diagonalisering og Symmetriske Matricer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="01001 or first half of 01005. in particular, the following subjects: Matrix and Matrix Algebra, Determinants, Vector Spaces, Linear Transformations, Eigenvalues and Eigenvectors, Similarity and Diagonalization, and Symmetric Matrices." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01001/01005" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give eksempler på konkrete vektorrum, normer og indre produkter" />
+          <Txt Lang="en-GB" Txt="Give examples of concrete vector spaces, norms, and inner products" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare konceptet lineære transformationer og de tilhørende begreber (kernen, billedrummet, rang, søjlerummet, osv.)" />
+          <Txt Lang="en-GB" Txt="Explain the concept of linear transforms and related notions (kernel, range, rank, column space, etc.)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå virkningen af matrixfremstillinger (blok, Householder, hermitisk, unitær, normal, osv.)" />
+          <Txt Lang="en-GB" Txt="Understand the action of matrix types (block, Householder, Hermitian, Unitary, Normal, etc.)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå betydningen af matrixfaktoriseringer og dekomponeringer" />
+          <Txt Lang="en-GB" Txt="Understand the role of matrix factorizations and decompositions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og bevise spektralsætningen" />
+          <Txt Lang="en-GB" Txt="Apply and prove the spectral theorem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og bevise singulær værdi-dekompositionen" />
+          <Txt Lang="en-GB" Txt="Apply and prove the Singular Value Decomposition" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive den diskrete Fourier-transformation og dens egenskaber" />
+          <Txt Lang="en-GB" Txt="Describe the Discrete Fourier Transform and its properties" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre et matematisk bevis" />
+          <Txt Lang="en-GB" Txt="Carry out a mathematical proof" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:12.04" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

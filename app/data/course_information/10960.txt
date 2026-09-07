@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10960" University="dtu" LastUpdated="2026-05-26+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Naturvidenskab (Polyteknisk grundlag - diplom)" />
+        <Title Lang="en-GB" Title="Natural Science (Polytechnical Foundation - B.Eng.)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Riso" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="10" />
+        <Course_Responsible PersonKey="3949" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carsten</GivenName>
+            <FamilyName>Knudsen</FamilyName>
+            <Email>cakn@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="38517" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Martin Meedom</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>mmee@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="25538" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Stefan Kragh</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>skni@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="No internet access." />
+            <Aid_Txt Lang="da-DK" Txt="Ingen internetadgang." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til grundbegreber i naturvidenskab centreret omkring energi, dvs. mekanisk, termodynamisk, elektromagnetisk og kemi energi.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning og regneøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset Naturvidenskab introducerer de studerende til de grundlæggende principper, der ligger til grund for moderne ingeniørarbejde, med særligt fokus på energi, modellering og forståelse af fysiske systemer. Gennem en kombination af mekanik, termodynamik, elektromagnetisme og elementer fra kemi og bioteknologi opbygges en sammenhængende forståelse af, hvordan energi produceres, omdannes, transporteres og lagres i tekniske systemer.
+
+De studerende arbejder med centrale begreber som kræfter, bevægelse, arbejde, energi og effekt samt med energibevarelse og Newtons love som fundament for analyse af fysiske systemer. Samtidig introduceres de til elektriske og magnetiske fænomener samt termodynamiske processer, herunder varmepumper, varmemaskiner og energilagring i kemiske bindinger. Kurset kobler disse grundlæggende teorier til aktuelle teknologier som vindkraft, batterier, brændselsceller og Power-to-X.
+
+En vigtig del af kurset er at udvikle evnen til at arbejde kvantitativt og kritisk med naturvidenskabelige problemstillinger. De studerende lærer at anvende SI-enheder, dimensionsanalyse og Fermi-estimater til at vurdere størrelsesordener og modellere virkelige systemer. Derudover anvendes Python og generativ kunstig intelligens som værktøjer til dataanalyse, beregninger og problemløsning.
+
+Kurset lægger vægt på at opbygge både konceptuel forståelse og praktiske færdigheder, så de studerende bliver i stand til at analysere og vurdere energirelaterede problemstillinger i en ingeniørmæssig kontekst.</Course_Objectives>
+          <DTU_Remark>Kurset for kun for studerende på diplomingeniøruddannelser Industriel teknologi. Kurset følges parallelt med 10961 Data (Polyteknisk grundlag - diplom)</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to basic concepts in natural science centered around energy, i.e., mechanical, thermodynamic, electromagnetic, and chemical energy.</Contents>
+          <Teaching_And_Learning_Methods>Classroom lectures and tutorials.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course Natural Science introduces students to the fundamental principles underlying modern engineering, with a particular focus on energy, modeling, and the understanding of physical systems. Through an integrated approach combining mechanics, thermodynamics, electromagnetism, and elements of chemistry and biotechnology, students develop a coherent understanding of how energy is produced, converted, transported, and stored in technical systems.
+
+Students work with core concepts such as forces, motion, work, energy, and power, and use Newton’s laws and energy conservation as a foundation for analyzing physical systems. The course also introduces electrical and magnetic phenomena, as well as thermodynamic processes, including heat pumps, heat engines, and energy storage in chemical bonds. These fundamental principles are linked to modern technologies such as wind power, batteries, fuel cells, and Power-to-X.
+
+A key objective of the course is to develop students’ ability to approach scientific problems quantitatively and critically. Students learn to apply SI units, dimensional analysis, and Fermi estimation to assess orders of magnitude and model real-world systems. In addition, Python and generative artificial intelligence are used as tools for data analysis, computation, and problem solving.
+
+The course emphasizes both conceptual understanding and practical skills, enabling students to analyze and evaluate energy-related challenges within an engineering context.</Course_Objectives>
+          <DTU_Remark>The course is only for students on the bachelor of engineering education Industrial Technology. The course is taken in parallel with 10961 Data (Polytechnical Foundation - B.Eng.).</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive funktionen af energiproduktions- og lagringssystemer såsom vandkraft, vindkraft, kernekraft, bioreaktorer, batterier, brændselsceller og Power-to-X. " />
+          <Txt Lang="en-GB" Txt="Describe the function of energy production and storage systems such as hydropower, wind power, nuclear power, bioreactors, batteries, fuel cells, and Power-to-X." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere energistrømme og energilagring i tekniske systemer og forklare, hvordan energi konverteres mellem mekaniske, elektriske, termiske og kemiske former. " />
+          <Txt Lang="en-GB" Txt="Analyze energy flows and energy storage in technical systems and explain how energy is converted between mechanical, electrical, thermal, and chemical forms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende SI-systemets grundenheder og dimensioner samt udføre Fermi-beregninger til vurdering af størrelsesordener i naturvidenskabelige og tekniske problemstillinger. " />
+          <Txt Lang="en-GB" Txt="Apply SI base units and dimensions, and perform Fermi calculations to estimate orders of magnitude in scientific and engineering problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende centrale begreber i mekanisk fysik såsom position, hastighed, acceleration, kræfter, arbejde, energi og effekt. " />
+          <Txt Lang="en-GB" Txt="Apply core concepts in mechanics such as position, velocity, acceleration, forces, work, energy, and power." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og analysere fysiske systemer ved hjælp af Newtons love, arbejdssætningen og energibevarelse. " />
+          <Txt Lang="en-GB" Txt="Apply and analyze physical systems using Newton’s laws, the work–energy principle, and conservation of energy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare magnetfelter og magnetiske kræfter på ladede partikler. " />
+          <Txt Lang="en-GB" Txt="Explain magnetic fields and magnetic forces acting on charged particles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og analysere omdannelse mellem elektrisk og mekanisk energi i tekniske systemer. " />
+          <Txt Lang="en-GB" Txt="Explain and analyze the conversion between electrical and mechanical energy in technical systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende idealgasligningen samt forklare og anvende termodynamikkens første og anden hovedsætning, herunder energilagring i kemiske bindinger. " />
+          <Txt Lang="en-GB" Txt="Apply the ideal gas law and explain and use the first and second laws of thermodynamics, including energy storage in chemical bonds." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare simple termodynamiske processer og virkemåden af varmepumper, varmemaskiner og kølemaskiner. " />
+          <Txt Lang="en-GB" Txt="Explain simple thermodynamic processes and the operation of heat pumps, heat engines, and refrigeration systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare energiforhold i kemiske og biokemiske reaktioner. " />
+          <Txt Lang="en-GB" Txt="Explain energy relationships in chemical and biochemical reactions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Python til at analysere og løse fysiske problemstillinger og anvendelse af generativ kunstig intelligens. " />
+          <Txt Lang="en-GB" Txt="Use Python to analyze and solve physical problems, including the use of generative artificial intelligence." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Mekanik, termodynamik, og elektromagnetisme.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="10913/10914/10917/10931/10020/10022/10024/10026/10028/10033/10034/10050/10052/10054/10060/10063/10065" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-29" Time="08:37:19.573" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

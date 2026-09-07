@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34331" Volume="2026/2027" University="dtu" LastUpdated="2026-06-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Digital hardwaredesign til kommunikation" />
+        <Title Lang="en-GB" Title="Digital Hardware Design for Communications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="6050" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Michael Stübert</GivenName>
+            <FamilyName>Berger</FamilyName>
+            <Email>msbe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Komponenter til digitalt design. Digital abstraktion (binære signaler og diskret tid), talrepræsentationer; grundlæggende digitale elementer; kombinatoriske og se-kventielle kredsløb; tilstandsmaskiner; analyse af forsinkelsestider og kritiske veje; metastabilitet, pipelining, VHDL, FPGA (ModelSim, Quartus). Projektopgaver med design af kredsløb til kommunikationssystemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>At introducere og anvende grundlæggende principper for digitale kredsløb og at sætte deltagerne i stand til at analysere, designe, simulere, syntetisere, afprøve og dokumentere digitale funktioner, som indgår i digitalt kommunikationssystemer. Herunder at anvende moderne udviklingsværktøjer som f.eks. VHDL baseret på Intel Quartus Prime og ModelSim.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Components for digital design. Digital abstraction (binary signals and discreet time), numeracy representations; basic digital elements; combinatorial and se-quential circuits; state machines; analysis of delay times and critical roads; meta-stability, pipelining, VHDL, FPGA (ModelSim, Quartus). Project tasks with the de-sign of circuits for communication systems.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce and apply basic principles of digital circuits and to enable participants to analyse, design, simulate, synthesize, test and document digital functions that are part of digital communication systems. This includes using modern develop-ment tools, such as VHDL based on Intel Quartus Prime and ModelSim.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive diskrete elektroniske komponenter og forklare opbygningen af logiske gates ved hjælp af MOS transistorer." />
+          <Txt Lang="en-GB" Txt="Describe discrete electronic components and explain the construction of logical gates using MOS transistors." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for grundlæggende begreber i synkrone digitale kredsløb baseret på kombinatorisk logik til beregninger og sekventiel logik til hukommelse." />
+          <Txt Lang="en-GB" Txt="Explain basic concepts in synchronous digital circuits based on a combination of combinatorial logic for computations and sequential logic for storage." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare funktionalitet og realisering af hukommelseselementer (Flip-Flop/Latche)" />
+          <Txt Lang="en-GB" Txt="Explain functionality and realization of storage elements (Flip-Flop/Latches). " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere og analysere kritisk vej i såvel kombinatoriske og sekventielle kredsløb, herunder at definere maksimale klokfrekvenser" />
+          <Txt Lang="en-GB" Txt="Identify and analyze critical pathway in both combinatorial and sequential cir-cuits, including defining maximum clock frequencies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Syntetisere tilstandsmaskiner, herunder beskrive designprocessen fra til-standsgraf til VHDL kode." />
+          <Txt Lang="en-GB" Txt="Synthesize state machines, including describing the design process from state graph to VHDL code." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare arkitekturen af typiske FPGAer herunder begrænsninger." />
+          <Txt Lang="en-GB" Txt="Explain the architecture of typical FPGA's including limitations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende simulerings- og synteseværktøjer for digitale kredsløb, og herunder kunne beskrive kredsløb i VHDL." />
+          <Txt Lang="en-GB" Txt="Use simulation and synthesis tools for digital circuits, including being able to describe circuits in VHDL. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere og dokumentere simple digitale kredsløb/systemer til kommunikati-onsformål." />
+          <Txt Lang="en-GB" Txt="Construct and document simple digital circuits/systems for communication purposes." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02138/02139" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-06-10" Time="15:31:35.147" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

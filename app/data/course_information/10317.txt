@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="10317" University="dtu" LastUpdated="2025-04-28+02:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="10" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Faststoffysik" />
+        <Title Lang="en-GB" Title="Condensed Matter Physics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Class_Schedule SortID="2">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="10" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="38880" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Niels Bech</GivenName>
+            <FamilyName>Christensen</FamilyName>
+            <Email>nbch@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="16091" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter Christian Kjærgaard</GivenName>
+            <FamilyName>Vesborg</FamilyName>
+            <Email>peter.vesborg@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="36158" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Søren</GivenName>
+            <FamilyName>Raza</FamilyName>
+            <Email>sraz@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="151931" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Stig</GivenName>
+            <FamilyName>Helveg</FamilyName>
+            <Email>stig@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen vil delvist være baseret på et udvalg af opgaver, der er stillet i løbet af semesteret." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam will partially be based on a selection of problems that are posed during the semester." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Depending on the number of participating students, the oral examinations may take place over several days. These will include the officlal E4A/F4A exam dates, and will be identified during the course." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Afhængigt af antallet af deltagende studerende, kan de mundtlige eksaminer forløbe over flere dage. Disse vil inkludere de officiellle E4A/F4A eksamensdatoerne, og vil blive identificeret i løbet af kurset." />
+            <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="20-25 minutter " />
+          <Duration Lang="en-GB" Txt="20-25 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Krystalgitre, det reciprokke rum og røntgendiffraktion. Fononer i Einstein og Debye modellerne. Elektron- og gitterbidrag til varmekapaciteten af krystaller. Elektronstruktur, Drude, Sommerfeld, fri-, næsten-fri- og tight-binding-modellerne. Isolatorer, metaller og halvledere. Halvlederkomponenter.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaveregning.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: Steven H. Simon, The Oxford Solid State Basics.</Course_Literature>
+          <Course_Objectives>At bibringe den studerende en teoribaseret forståelse af fundamentale begreber indenfor faststoffysik og materialefysik, og derved skabe et systematisk grundlag for forståelse af funktionelle egenskaber af avancerede materialer i moderne teknologi.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Crystal lattices, reciprocal space, and X-ray diffraction, Phonons in the Einstein and Debye models. Electronic and lattice contributions to the heat capacity of solids. Electronic structure, Drude, Sommerfeld, free-, nearly-free-, and tight-binding models. Insulators, metals and semiconductors. Semiconductor devices.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem sessions</Teaching_And_Learning_Methods>
+          <Course_Literature>Textbook: Steven H. Simon, The Oxford Solid State Basics.</Course_Literature>
+          <Course_Objectives>To give the student a theory-based understanding of fundamental concepts in condensed matter physics and materials physics with the goal of establishing a systematic basis for the understanding of functional properties of advanced materials in modern technology.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Introducerende kurser i elektromagnetisme, kvantemekanik og optimalt også termodynamik/statistisk mekanik. For studerende der ikke har haft mulighed for at følge et kursus i termodynamik/statistisk mekanik vil underviserne henvise til begrænset supplerende læse-materiale." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introductory courses on electromagnetism, quantum mechanics and optimally thermodynamics/statistical mechanics. For students who have not had the opportunity to follow a course in thermodynamics/statistical mechanics, the lecturers will refer to limited supplemental reading material." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(10034/10018).(10036/10041/10080/31400).(10102/10104)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive faste stoffer kvalitativt." />
+          <Txt Lang="en-GB" Txt="Describe condensed matter systems qualitatively." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå begrebet krystalimpuls i faste stoffer, og hvorledes det relaterer sig til energierne af elektroner og gittervibrationer." />
+          <Txt Lang="en-GB" Txt="Understand the concept of crystal momentum in condensed matter systems and how it relates to the energies of electrons and lattice vibrations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Operere med krystalgitre og symmetrier både i det reelle rum og i det reciprokke rum (impulsrummet)." />
+          <Txt Lang="en-GB" Txt="Operate with crystal lattices and symmetries both in real space and in  reciprocal space (momentum space)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende kvantemekanikken på faste stoffer til beskrivelse af spredning af bølger på krystalgitre og til beskrivelse af egen-tilstande og egen-energier i systemer med periodiske grænsebetingelser." />
+          <Txt Lang="en-GB" Txt="Apply quantum mechanics on condensed matter systems to describe scattering of waves in crystals and to describe the eigenstates and the eigenenergies in systems with periodic boundary conditions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille teoretiske modeller for faste stoffers elektroniske og termiske egenskaber, begge i enkelt-partikel billedet." />
+          <Txt Lang="en-GB" Txt="Construct theoretical models of the electronic and thermal properties of condensed matter systems, both in the single-particle picture." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare forskellen på isolatorer, halvledere og metaller." />
+          <Txt Lang="en-GB" Txt="Explain the difference between insulators, semiconductors and metals." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende de teoretiske modeller til at udregne karakteristiske egenskaber for faste stoffer (eksempelvis: lydhastighed, varmefylde, elektrisk og termisk ledningsevne, effektive masser, båndgab, Fermi-energier og impulser)." />
+          <Txt Lang="en-GB" Txt="Apply the theoretical models to calculate the characteristic properties of materials (e.g. sound velocity, specific heat, electrical and themal conductivities, effective masses, band gaps, Fermi energies and momenta)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende de teoretiske modeller til at udregne de elektriske egenskaber af  en række teknologisk interessante halvlederkomponenter. " />
+          <Txt Lang="en-GB" Txt="Apply the theoretical models to calculate the electrical properties of a number of semiconductor devices of technological interest." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere faststoffysiske problemstillinger og udvælge og anvende de relevante modeller." />
+          <Txt Lang="en-GB" Txt="Analyze problems in condensed matter systems and select and apply the appropriate models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Genkende og anvende fagspecifikke termer på engelsk." />
+          <Txt Lang="en-GB" Txt="Recognize and apply professional terminology in English." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Faststoffysik </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="10303" />
+        <PreviousCourse CourseCode="10303" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:07.097" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

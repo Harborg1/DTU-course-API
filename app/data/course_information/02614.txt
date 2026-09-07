@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02614" University="dtu" LastUpdated="2025-03-18+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="High-Performance Computing" />
+        <Title Lang="en-GB" Title="High-Performance Computing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="449" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Bernd</GivenName>
+            <FamilyName>Dammann</FamilyName>
+            <Email>beda@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individualiserede grupperapporter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individualized group reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til højtydende computere med vægt på de aspekter der bestemmer computerens ydeevne ved numeriske beregninger for store problemer.  Parallelle computere og grafikkort:  arkitektur og netværk, med vægt på multi-kerne og SMP computere.  Parallel-programmering med OpenMP.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning, computerøvelser og computerprojekter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Nutidens computere med multi-core processorer, samt brug af grafikkort (GPU) til beregninger, gør det muligt for forskere at udføre komplekse beregninger på standardhardware. Det er dog kun få anvendelser, der udnytter den fulde potentielle processorkraft, på grund af manglende viden og forståelse for, hvordan man skriver og implementerer effektive programmer og workflows på computere med moderne arkitekturer, ved at gøre brug af High-Performance Computing (HPC) metoder.
+Dette kursus sætter de studerende i stand til at arbejde med beregningproblemer fra Scientific Computing og relaterede områder, og deres effektive og velfungerende implementering. Kurset giver en introduktion til de færdigheder og værktøjer, der er nødvendige for at udnytte high-performance computing metoder, og deres anvendelse og implementering på moderne hardware - fra en enkelt CPU-kerne til en GPU, og fra en bærbar computer til større HPC installationer.</Course_Objectives>
+          <Remark>Programmering og implementering af C/C++ kode og brug af Linux kommandolinjen udgør en væsentlig del af kurset, og derfor anbefales at man har fulgt kursus 02635 (eller et lignende kursus) før man tager dette kursus! Kontakt venligst den kursusanvarlige for at høre mere om forudsætninger.  
+Undervisningsmaterialet består af udleverede noter.
+Kurset henvender sig til studerende fra alle master programmer.  Hvis kurset er overtegnet, har studerende fra de retninger der er listet under 'Kursustype' fortrinsret.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to high-performance computers  emphasizing those aspects that are important in connection with numerical computations for larger problems. Parallel computers and GPUs: architecture and network, with an emphasis on multi-core and SMP computers.  Parallel programming using OpenMP.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, computer exercises and computer projects.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Today's computers with multi-core CPUs, and the usage of GPUs for computations, enable researchers to carry out complex computations on commodity hardware.  However, only a few applications exploit the potential processing power, due to the lack of knowledge and understanding, how to write and implement efficient programs and workflows on computers with modern architectures, making use of High-Performance Computing (HPC) methods. 
+This course enables the students to work with computational problems from Scientific Computing and related areas, and their efficient and well performing implementation.  The course provides an introduction to the skills needed to utilize high-performance computing methods, and the application and deployment on modern hardware - from a single CPU-core to a GPU, and from a laptop to larger HPC installations.</Course_Objectives>
+          <Remark>Programming and implementation of C/C++ code, as well as using the Linux command line, is an essential part of the course, and thus we advise to have followed course 02635 (or an equivalent course) before taking this course!  Contact the responsible course teacher about the prerequisites, if you are in doubt.
+The course material consists of notes handed out by the lecturers.
+The course is aimed at students from all master programs.  In the case of over-subscription of the course, first priority is given to students from the study programs listed under 'Course type' above.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med programmering i C/C++ samt kendskab til numeriske beregninger.  Kendskab til Linux/Unix kommandolinjen og kodning af shell-scripts er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience with programming in C/C++ and numerical computations.  Knowledge of the Linux/Unix command line, and programming of shell-scripts is an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02635" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de fundamentale byggeklodser af moderne cache-baserede computer systemer samt højtydende grafikkort" />
+          <Txt Lang="en-GB" Txt="explain the basics of modern cache-based computer systems as well as high-performance GPUs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udnytte vekselvirkning mellem komponenter som CPU, GPU, caches og memory" />
+          <Txt Lang="en-GB" Txt="utilize the interplay of computer components like CPU, GPU, caches, and memory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere performance i Scientific Computing problemer" />
+          <Txt Lang="en-GB" Txt="analyze performance of Scientific Computing problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende optimeringsteknikker på eksisterende koder" />
+          <Txt Lang="en-GB" Txt="apply optimization techniques on existing codes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe parallelle koder for Scientific Computing problemer" />
+          <Txt Lang="en-GB" Txt="design parallel codes for Scientific Computing problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive parallelle programmer med OpenMP" />
+          <Txt Lang="en-GB" Txt="write parallel programs with OpenMP" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive effektive koder til multi-kerne processorer og mange-kerne grafikkort" />
+          <Txt Lang="en-GB" Txt="write efficient programs for multi-core processors and many-core GPUs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende moderne værktøjer til parallelprogrammering" />
+          <Txt Lang="en-GB" Txt="apply modern tools in parallel programming" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe, udføre, evaluere og dokumentere computereksperimenter" />
+          <Txt Lang="en-GB" Txt="design, conduct, evaluate and document computer experiments" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="51" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="51" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="54" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="50" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:24.67" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

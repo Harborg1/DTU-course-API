@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02162" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Software Engineering 2" />
+        <Title Lang="en-GB" Title="Software Engineering 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="41537" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Ekkart</GivenName>
+            <FamilyName>Kindler</FamilyName>
+            <Email>ekki@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelsen individualiseres i det grupperapportens afsnit bliver individualiseret, den afleverede kode bliver markerert med individuelle author-tags og de studerende holder oplæg under selve kurset hvor de studerende har deres egne individuelle dele." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation will be individualized by indicating the authors of sections/subsections in the report, by author tags in the submitted code and by presentations during the course, where each student has at least one individual occurrence." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Domæne-specificering.
+Krav-specificering.
+Software-arkitektur.
+Software-design.
+Implementeringsteknikker.
+Afprøvning, validering og verifikation.
+Procesmodeller for softwareudvikling.
+Projektledelse.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og studenterpræsentationer samt et projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give de studerende færdigheder i professionel udvikling af store programmelsystemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Domain engineering.
+Requirements engineering.
+Software architeture.
+Software design.
+Implementation techniques.
+Test, validation, and verification.
+Software development process models.
+Project management.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, tutorials and student presentations, along with a project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the students skills in professional development of large software systems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurser &quot;Algoritmer og datastrukturer 1&quot; (02105) og Software Engineering 1 (02161) eller kurser med ækvivalent indhold anbefales som forudsætning til dette kusus." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Courses &quot;Algorithms and Data Structures 1&quot; (02105) and &quot;Software Engineering 1&quot; (02161) or equivalent courses are recommended prerequisites for this course." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02105.02161" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="liste de forskellige aktiviteter i programmeludvikling " />
+          <Txt Lang="en-GB" Txt="list the different activities in developing software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="liste programmeludviklings-procesmodeller og vælge en passende procesmodel for en given opgave " />
+          <Txt Lang="en-GB" Txt="list software development process models and choose an appropriate software development process model for a given task" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere et anvendelsesområde og bygge en domænemodel" />
+          <Txt Lang="en-GB" Txt="analyse a problem domain and build a domain model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="afdække og dokumentere krav" />
+          <Txt Lang="en-GB" Txt="capture and document requirements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et programmelsystem" />
+          <Txt Lang="en-GB" Txt="design a software system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vælge en passende arkitektur for et programmelsystem" />
+          <Txt Lang="en-GB" Txt="choose an appropriate architecture for a software system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dokumentere design og arkitekturer for programmelsystemer" />
+          <Txt Lang="en-GB" Txt="document software designs and software architectures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere/evaluere et design" />
+          <Txt Lang="en-GB" Txt="analyse/evaluate a design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere et design" />
+          <Txt Lang="en-GB" Txt="implement a design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udtænke og implementere en test plan" />
+          <Txt Lang="en-GB" Txt="devise and implement a test plan" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www2.compute.dtu.dk/courses/02162/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Et praktis kursus i softwareudvikling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:52.64" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

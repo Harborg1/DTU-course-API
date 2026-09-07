@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02118" Volume="2026/2027" University="dtu" LastUpdated="2026-03-18+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til Chip Design" />
+        <Title Lang="en-GB" Title="Introduction to Chip Design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="59001" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Martin</GivenName>
+            <FamilyName>Schoeberl</FamilyName>
+            <Email>masca@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="220909" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ole</GivenName>
+            <FamilyName>Richter</FamilyName>
+            <Email>ojuri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="140018" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tjark</GivenName>
+            <FamilyName>Petersen</FamilyName>
+            <Email>tjape@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Samlet bedømmelse baseret på mundtlig eksamen og hovedprojektet i kurset." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment based on oral examination and the main project of the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Grundlæggende principper for digital kredsløbsdesign (transistorer, logiske porte, kombinatoriske og sekventielle kredsløb).
+ • Introduktion til ASIC-design og PDK-koncepter.
+ • Hukommelsesdesign (typer, organisering, registerfiler og hukommelsesmakroer i open-source PDK’er).
+ • System-on-Chip (SoC) design (partitionering, floorplanning, forbindelser og network-on-chip).
+ • Verifikationsmetoder og continuous integration.
+ • Open-source værktøjer og designflows (OpenLane2, Tiny Tapeout, Chisel).
+ • RTL-syntese, place-and-route, timing-closure og GDSII-generering.
+ • Tapeout-proces (virtuel tapeout med SkyWater PDK, reel tapeout med Tiny Tapeout).
+ • Gruppebaseret afsluttende projekt (SoC-design og implementering ved brug af open-source værktøjer).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde og hjemmeopgaver. Obligatoriske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus giver en introduktion til design af digitale integrerede kredsløb og udstyrer studerende med både teoretiske grundlag og praktisk erfaring inden for moderne chipdesign. Kurset dækker grundlæggende digitale kredsløbskoncepter, designmetoder og brugen af open-source værktøjer til chipudvikling.
+
+Studerende vil udforske nøgleemner såsom transistor-niveau design, logisk syntese, floorplanning, verifikation og System-on-Chip (SoC) integration. Kurset lægger også vægt på praktiske færdigheder ved at guide de studerende gennem en komplet chipdesignproces, der fører til en tapeout hos SkyWater.
+
+Kurset er opdelt i teoretiske forelæsninger og praktiske øvelser. Emnerne inkluderer:
+ • Gennemgang af transistorer, logiske porte, kombinatoriske og sekventielle kredsløb.
+ • Introduktion til ASIC-design og PDK-koncepter.
+ • Hukommelsestyper, organisering og implementering (inklusive registerfiler og hukommelsesmakroer i open-source PDK’er).
+ • Partitionering, floorplanning, forbindelser og network-on-chip.
+ • Verifikation.
+ • Open-source værktøjer og sprog (LibreLane, Tiny Tapeout, Chisel).
+ • RTL-syntese, place-and-route, timing-closure og GDSII-generering.
+
+Dette kursus inkluderer et afsluttende projekt i grupper, hvor de studerende anvender de lærte koncepter og bruger open-source værktøjer til tapeout.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Fundamentals of digital circuit design (transistors, logic gates, combinational and sequential circuits).
+ • Introduction to ASIC design and PDK concepts.
+ • Memory design (types, organization, register files, and memory macros in open-source PDKs).
+ • System-on-Chip (SoC) design (partitioning, floorplanning, interconnects, and networks-on-chip).
+ • Verification methodologies and continuous integration.
+ • Open-source tools and design flows (OpenLane2, Tiny Tapeout, Chisel).
+ • RTL synthesis, place-and-route, timing closure, and GDSII generation.
+ • Tapeout process (virtual tapeout with SkyWater PDK, real tapeout with Tiny Tapeout).
+ • Team-based final project (SoC design and implementation using open-source tools).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, and homework. Mandatory final project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course introduces the design of digital integrated circuits, equipping students with theoretical foundations and hands-on experience in modern chip design. The course covers fundamental digital circuit concepts, design methodologies, and the use of open-source tools for chip development.
+
+Students will explore key topics such as transistor-level design, logic synthesis, floorplanning, verification, and System-on-Chip (SoC) integration. The course also emphasizes practical skills by guiding students through a complete chip design flow, leading to a tapeout with SkyWater.
+
+The course is divided into lecture-based theoretical sessions and lab-based practical exercises. Topics include:
+ • Review of transistors, logic gates, combinational circuits, and sequential circuits.
+ • Introduction to ASIC design and PDK concepts.
+ • Memory types, organization, and implementation (including register files and memory macros in open-source PDKs).
+ • Partitioning, floorplanning, interconnects, and networks-on-chip.
+ • Verification.
+ • Open-source tools and languages (LibreLane, Tiny Tapeout, Chisel).
+ • RTL synthesis, place-and-route, timing closure, and GDSII generation.
+
+This course includes a team-based final project. Students will apply the concepts learned throughout the course and utilize open-source tools for tapeout.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende færdigheder i programmering og digital elektronik, herunder en vis viden om et hardwarebeskrivelsessprog." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic skills in programming and digital electronics including some knowledge of a hardware description language." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02139/02132/02135" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare grundlæggende drift af halvlederkomponenter, herunder transistorer, og anvende denne viden til at designe basale digitale kredsløb." />
+          <Txt Lang="en-GB" Txt="Explain the basics operation of semiconductor devices, including transistors, and apply this knowledge to design basic digital circuits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge open-source designværktøjer (OpenLane2, Tiny Tapeout, Chisel) til at udvikle og simulere et digitalt kredsløb gennem en komplet designproces." />
+          <Txt Lang="en-GB" Txt="Use open-source design tools (OpenLane2, Tiny Tapeout, Chisel) to develop and simulate a digital circuit through a complete design flow." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende den fulde chipdesignproces (RTL synthesis, place-and-route, timing closure, and virtual tapeout) og vurdere designkompromiser med henblik på en reel tapeout." />
+          <Txt Lang="en-GB" Txt="Apply the complete chip design process (RTL synthesis, place-and-route, timing closure, and virtual tapeout) and evaluate design trade-offs for an actual tapeout." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende principperne for System-on-Chip (SoC) design, herunder forbindelser, til at udvikle en grundlæggende SoC og evaluere multicore SoC-arkitekturer." />
+          <Txt Lang="en-GB" Txt="Apply the principles of System-on-Chip (SoC) design, including interconnects, to develop a basic SoC and to evaluate multicore SoC architectures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere hardware-verifikationsteknikker, herunder simuleringsbaseret verifikation og testbench-design, for at validere en simpel SoC." />
+          <Txt Lang="en-GB" Txt="Implement hardware verification techniques, including simulation-based verification and testbench design, to validate a simple SoC." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere forskellige hukommelsesarkitekturer, herunder registerfiler og hukommelsesmakroer, samt designe simple hukommelsessystemer." />
+          <Txt Lang="en-GB" Txt="Analyze different memory architectures, including register files and memory macros, and design simple memory subsystems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende standardcelle-baserede designprincipper til at implementere ASIC-design ved hjælp af process design kits (PDK’er)." />
+          <Txt Lang="en-GB" Txt="Apply standard-cell-based design principles to implement ASIC designs using process design kits (PDKs)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende design- og simuleringsmetoder til at implementere et simpelt System-on-Chip (SoC) og gennemføre en virtuel tapeout-proces." />
+          <Txt Lang="en-GB" Txt="Apply design and simulation methods to implement a simple System-on-Chip (SoC) and carry out a virtual tapeout process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og optimere digitale systemer af middel kompleksitet for at styrke kritisk tænkning og problemløsningskompetencer." />
+          <Txt Lang="en-GB" Txt="Evaluate and optimize medium-complexity digital systems to strengthen critical thinking and problem-solving abilities." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:40.56" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

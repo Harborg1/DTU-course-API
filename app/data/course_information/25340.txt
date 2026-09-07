@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="25340" Volume="2026/2027" University="dtu" LastUpdated="2026-04-16+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Digital Ocean" />
+        <Title Lang="en-GB" Title="Digital Ocean" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Forår - Tirsdag (13-17)" />
+          <Schedule_Txt Lang="en-GB" Txt="Spring - Tuesday (13-17)" />
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="25" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="25" />
+        <Course_Responsible PersonKey="146147" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Rafael</GivenName>
+            <FamilyName>Gonçalves-Araujo</FamilyName>
+            <Email>rafgo@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="3692" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Asbjørn</GivenName>
+            <FamilyName>Christensen</FamilyName>
+            <Email>asc@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Se engelsk version." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Reports (40%) and Project report/oral examination (60%)&#xD;&#xA;Students will have a presentation on their final project and we will ask questions. &#xD;&#xA;Each group will have a 30 minute slot allocated." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="30 minutter" />
+          <Duration Lang="en-GB" Txt="30 Minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se engelsk version</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger &amp; gruppearbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Se engelsk version</Course_Objectives>
+          <Remark>Se engelsk version</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will present an introduction to the major types of oceanographic data that are freely available and the international programs (e.g., Copernicus, GLODAP) responsible for compiling and distributing oceanographic data. It will present the formats commonly used for oceanographic data, and the practical aspects of accessing these databases. Concepts of ocean model data products will be covered, including reanalysis, hindcast, forecasts, data assimilation, ensembles, observation postprocessing, data fusion, primitive equation models. 
+
+Specific topics to be covered include: 
+• Processing and plotting data with Ocean Data View 
+• Downloading, processing and plotting data with software that require coding 
+• Processing and analysis of CTD data 
+• Processing and analysis of Satellite remote sensing data 
+• Processing and analysis of Earth System Model outputs 
+• Processing and analysis of data from in situ sources (Drifters, buoys, ships of opportunity) 
+
+The course will be composed of two components. The first, a period of organized weekly learning sessions, and a group project that will last the entire duration of the course and represents 60% of the final grade. 
+
+During the learning sessions, those will be organized as lectures and practical exercises. Class activities involve: 
+• Lectures covering theoretical background. 
+• Practical sessions in retrieving and handling data. 
+• Exercises to analyze and visualize data. 
+• Presentation and discussion to provide feedback from both peers and teacher. 
+
+During the group project period, students will conduct group work on a specific topic. Specifically, students will explore an application relevant for their specific interests. Examples could include using Argo float observations to map variations in mixed layer depth in the Nordic Seas, or using ocean color satellite products to map changes in primary productivity to fisheries recruitment indices. Students will produce a written report on this group work. Reports will be presented and defended on the allocated exam date, thus constituting the oral exam, and will constitute 60% of the final grade.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course will provide the students with a basic knowledge of how to find, extract, handle and analyze oceanographic data from diverse platforms, instruments and databases.
+
+This is a skill that is relevant in all disciplines of ocean engineering, from planning and monitoring commercial activities to analyzing and understanding oceanographic processes. 
+
+The course is structured as a combination of lectures with hands on exercises.
+Lectures will provide basic knowledge on the data to be used (including principles, methodology, etc.) and description of the exercises and assignments to be performed.
+
+The course will enable the students to work with oceanographic data products from a range of sources such as satellite remote sensing, reanalysis, model outputs, drifter/buoys, data repositories, atlas, etc.
+
+Exercises will expose students to different data plotting and analyses tools, including Ocean Data View, and coding software such as Matlab, R or Python. (participants are welcome to work with other coding languages of their choice independently)</Course_Objectives>
+          <DTU_Remark>Technological specialization course, MSc. Eng., Ocean Engineering
+Programme specific course (MSc), Ocean Engineering
+Programme specific course (MSc), Sustainable Fisheries and Aquaculture</DTU_Remark>
+          <Remark>While the course will be offered primarily on Lyngby Campus, remote classroom attendance on the Hirtshals Campus will be made available if sufficient students choose this option.
+
+This course provides students with competences relevant to UN SDGs, particularly #13 (Climate Action) and #14 (Life Below Water)</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="List the types of ocean-related data products that are publicly available in data repositories." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="Find and retrieve data within these repositories for a specific application in marine sciences or ocean engineering." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="Apply computer software to handle and extract large volumes of data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="Visualize and analyze oceanographic data using modern software applications with interfaces (Ocean Data View)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="Explain how ocean data products are produced from models and observations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="Explain advantages and limitations of different oceanography data sources." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="Produce diverse plots and maps to present data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="Conduct basic statistical analysis. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version -" />
+          <Txt Lang="en-GB" Txt="Analyze, interpret and visualize ocean data for a specific application." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Se engelsk version - " />
+          <Txt Lang="en-GB" Txt="Prepare and present reports with summary of results." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Digital Ocean</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="1" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:21:02.09" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

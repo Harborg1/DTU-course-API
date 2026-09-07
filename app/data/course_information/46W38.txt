@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46W38" Volume="2026/2027" University="dtu" LastUpdated="2026-04-24+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_MASTER" />
+        <Title Lang="da-DK" Title="Praktisk Programmering for Vindenergiprofessionelle" />
+        <Title Lang="en-GB" Title="Practical Programming for Wind Energy Professionals" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_online" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="The course is offered as E-learning" />
+          <Schedule_Txt Lang="en-GB" Txt="The course is offered as E-learning" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="73930" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ju</GivenName>
+            <FamilyName>Feng</FamilyName>
+            <Email>jufen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="211981" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Andrew</GivenName>
+            <FamilyName>Russell</FamilyName>
+            <Email>ajaru@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="All reports must be submitted to fulfil the requirements for taking the oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="1 Juni" />
+            <DeadLineTxt Lang="en-GB" Txt="1 June" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="Please find more information at https:/​/​lifelonglearning.dtu.dk/​en/​wind-energy/​master-en/​wind-energy-master-online-programme/​" />
+            <Supp_Txt Lang="en-GB" Txt="Please find more information at https:/​/​lifelonglearning.dtu.dk/​en/​wind-energy/​master-en/​wind-energy-master-online-programme/​" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>The course consists of 13 modules covering the following content/topics in the wind energy application context:
+   - Foundational Programming Tools, such as Git for version control and VS Code.
+   - Python basics for wind energy applications, covering topics such as basic data structure, control flow, functions and modules.
+   - Numerical programming essentials for wind energy with numpy, matplotlib and scipy, such as manipulating, visualizing data from wind energy, and solving numerical computing problems relevant for wind energy.
+   - Computational thinking and good programming practices for wind energy, such as class and object-oriented programming, software architecture design, code quality and testing.
+
+The students will practice what they learned in a final hands-on programming project for selected wind energy applications, among topics like wind resource assessment, wind turbine modeling and wind power forecasting.</Contents>
+          <Teaching_And_Learning_Methods>E-learning consisting of video lectures, assignments and programming project</Teaching_And_Learning_Methods>
+          <Course_Objectives>Writing code to solve complex problems is an essential skill for researchers, engineers and professionals in wind energy. This course helps students to develop this skill in the wind energy context through: mastering Python basics; learning core principles and best practices for programming; practicing usage of fundamental software development tools and techniques such as version control and architecture design; leveraging numerical computation tools commonly used in the wind energy field, like numpy, matplotlib and scipy; developing, evaluating and communicating Python scripts/libraries for wind energy applications through hands-on coding projects, peer code reviews and code presentations.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course consists of 13 modules covering the following content/topics in the wind energy application context:
+   - Foundational Programming Tools, such as Git for version control and VS Code.
+   - Python basics for wind energy applications, covering topics such as basic data structure, control flow, functions and modules.
+   - Numerical programming essentials for wind energy with numpy, matplotlib and scipy, such as manipulating, visualizing data from wind energy, and solving numerical computing problems relevant for wind energy.
+   - Computational thinking and good programming practices for wind energy, such as class and object-oriented programming, software architecture design, code quality and testing.
+
+The students will practice what they learned in a final hands-on programming project for selected wind energy applications, among topics like wind resource assessment, wind turbine modeling and wind power forecasting.</Contents>
+          <Teaching_And_Learning_Methods>E-learning consisting of video lectures, assignments and programming project</Teaching_And_Learning_Methods>
+          <Course_Objectives>Writing code to solve complex problems is an essential skill for researchers, engineers and professionals in wind energy. This course helps students to develop this skill in the wind energy context through: mastering Python basics; learning core principles and best practices for programming; practicing usage of fundamental software development tools and techniques such as version control and architecture design; leveraging numerical computation tools commonly used in the wind energy field, like numpy, matplotlib and scipy; developing, evaluating and communicating Python scripts/libraries for wind energy applications through hands-on coding projects, peer code reviews and code presentations.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain core concepts of computational thinking and programming with examples from wind energy" />
+          <Txt Lang="en-GB" Txt="Explain core concepts of computational thinking and programming with examples from wind energy" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Write Python functions and scripts for basic wind energy applications" />
+          <Txt Lang="en-GB" Txt="Write Python functions and scripts for basic wind energy applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Utilize Python packages common to wind energy applications, such as numpy, matplotlib, scipy, etc." />
+          <Txt Lang="en-GB" Txt="Utilize Python packages common to wind energy applications, such as numpy, matplotlib, scipy, etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Manipulate data stored in the most common wind energy formats, demonstrating skills such as loading from/saving to file, performing computations, and visualizing results" />
+          <Txt Lang="en-GB" Txt="Manipulate data stored in the most common wind energy formats, demonstrating skills such as loading from/saving to file, performing computations, and visualizing results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Do version control on documents/projects for wind energy applications with a typical Git workflow (change, add and commit)" />
+          <Txt Lang="en-GB" Txt="Do version control on documents/projects for wind energy applications with a typical Git workflow (change, add and commit)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Write and debug code using VS Code and related extensions" />
+          <Txt Lang="en-GB" Txt="Write and debug code using VS Code and related extensions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Communicate code orally and also in writing, via diagrams, comments, commit messages, and documentation" />
+          <Txt Lang="en-GB" Txt="Communicate code orally and also in writing, via diagrams, comments, commit messages, and documentation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Critically analyze code for good coding practices such as modularity, maintainability, adherence to stylistic conventions, etc." />
+          <Txt Lang="en-GB" Txt="Critically analyze code for good coding practices such as modularity, maintainability, adherence to stylistic conventions, etc." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://lifelonglearning.dtu.dk/en/wind-energy/master-en/master-en-master-of-wind-energy-online-programme/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="54673" PersonUniversity="dtu" Date="2026-04-28" Time="14:41:05.153" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

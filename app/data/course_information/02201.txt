@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02201" Volume="2026/2027" University="dtu" LastUpdated="2026-05-05+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Agil hardwareudvikling" />
+        <Title Lang="en-GB" Title="Agile Hardware Design" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="59001" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Martin</GivenName>
+            <FamilyName>Schoeberl</FamilyName>
+            <Email>masca@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kredsløbsgenerator, objektorienteret og funktionel hardware design, testdrevet udvikling, system-on-chip og forbindelse, verifikation af digitale systemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde og hjemmeopgaver. Obligatoriske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Agil hardware design med Chisel (Constructing Hardware in a Scala Embedded Language) er et specialiseret kursus, der fokuserer på at anvende Chisel hardware beskrivelsessprog (HDL) som en del af den agile hardware designproces. Chisel er et moderne HDL-sprog, der gør det muligt for designere at skabe digitale kredsløb med præcis, højniveau kode, der er nemmere at skrive og vedligeholde end traditionelle HDL-sprog.
+
+Kurset dækker følgende emner:
+1.	Introduktion til Agil Hardware Design med Chisel: Oversigt over agil design generelt, hardware design og Chisel HDL inklusive dets syntax, funktioner og fordele.
+2.	Agil Hardware Designproces med Chisel: Agil hardware designproces ved brug af Chisel, inklusive indsamling af forudsætninger, design, prototyper, test og implementering.
+3.	Chisel Design Patterns: Designmønstre og idiomatisk brug i Chisel, såsom generatorer, parameterisering og funktionel abstraktion.
+4.	Verificering af Designs: Verifikation med Chisel Test, testdrevet udvikling, kontinuerlig integration, formel verifikation.
+5.	Agil Hardware Design Case Studies: Et projekt af en virkeligt hardware designprojekt, der bruger Chisel og agile metoder, der giver studerende praktiske eksempler på, hvordan man anvender disse begreber i deres eget arbejde.
+
+Kurset vil give de studerende en omfattende forståelse af agil hardware design med Chisel og gøre dem i stand til at designe og implementere komplekse digitale kredsløb med større hastighed, fleksibilitet og effektivitet.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Circuit generator, object-oriented and functional hardware design, test-driven development, system-on-chip and interconnect, verification of digital systems</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work, and home work. Mandatory laboratory exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Agile hardware design with Chisel (Constructing Hardware in a Scala Embedded Language) is a specialized course that focuses on using the Chisel hardware description language (HDL) as part of the agile hardware design process. Chisel is a modern hardware description language that enables designers to create digital circuits with concise, high-level code that is easier to write and maintain than traditional HDLs.
+The course covers the following topics:
+1.	Introduction to Agile Hardware Design with Chisel: an overview of agile design in general and hardware design and the Chisel HDL, including its syntax, features, and benefits.
+2.	Agile Hardware Design Process with Chisel: agile hardware design process using Chisel, including requirements gathering, design, prototyping, testing, and deployment.
+3.	Chisel Design Patterns: design patterns and idioms used in Chisel, such as generators, parameterization, and functional abstraction.
+4.	Verification of Designs: Verification with Chisel Test, test-driven development, continuous integration, formal verification.
+5.	Agile Hardware Design Case Studies: a project of a real-world hardware design project that uses Chisel and agile methodologies, providing students with practical examples of how to apply these concepts in their work.
+Overall, the course will provide the students with a comprehensive understanding of agile hardware design with Chisel, enabling them to design and implement complex digital circuits with greater speed, flexibility, and efficiency.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive principperne for agilt design, og hvordan de anvendes til hardwareudvikling ved hjælp af Chisel." />
+          <Txt Lang="en-GB" Txt="Describe the principles of agile design and how they apply to hardware development using Chisel." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare Chisel HDL, herunder dens syntaks, funktioner og fordele." />
+          <Txt Lang="en-GB" Txt="Explain the Chisel HDL, including its syntax, features, and benefits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende den agile hardware-designproces, herunder kravindsamling, design, prototyping, test og implementering." />
+          <Txt Lang="en-GB" Txt="Apply the agile hardware design process, including requirements gathering, design, prototyping, testing, and deployment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere Chisel designmønstre og idiomer, såsom generatorer, parametrisering og funktionel abstraktion." />
+          <Txt Lang="en-GB" Txt="Implement Chisel design patterns and idioms, such as generators, parameterization, and functional abstraction." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge biblioteker og værktøjer, såsom Rocket Chip-generatoren, Chisel-testkabelsættet og Verilog-emitteren." />
+          <Txt Lang="en-GB" Txt="Utilize libraries and tools, such as the Rocket Chip generator, the Chisel test harness, and the Verilog emitter." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere komplekse digitale kredsløb ved hjælp af Chisel og agile metoder." />
+          <Txt Lang="en-GB" Txt="Design and implement complex digital circuits using Chisel and agile methodologies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Overføre agilt hardware-design med Chisel til casestudier fra den virkelige verden og give praktiske eksempler på, hvordan disse koncepter kan anvendes i professionelle sammenhænge." />
+          <Txt Lang="en-GB" Txt="Transfer agile hardware design with Chisel to real-world case studies, providing practical examples of how to apply these concepts in professional contexts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en teknisk rapport, der dokumenterer projektarbejdet." />
+          <Txt Lang="en-GB" Txt="Write a technical report that documents the project work." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02139/02132/02135" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Agile Hardware Design</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-18" Time="16:38:47.253" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28155" University="dtu" LastUpdated="2026-04-22+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til procesregulering" />
+        <Title Lang="en-GB" Title="Introduction to Process Control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_online">
+          <LocationTxt Lang="da-DK" Txt="Mulighed for deltagelse på campus lyngby" />
+          <LocationTxt Lang="en-GB" Txt="Posibility for attendance on Campus Lyngby" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="E2A is skemaplaceringen for den fysiske undervisning i kursus 28150 som det er mulig at følge online. Et ekstra tidsrum vil blive tilbudt kursister på kursus 28155 til Q&amp;A i forhold til forelæsninger og hjælp til grupperegning." />
+          <Schedule_Txt Lang="en-GB" Txt="E2A is the timeslot for the physical lecture of course 28150 which is possible to follow online. An extra timeslot for tutoring of students on 28155 will be offered to support Q&amp;A regarding the lecture and problem solving." />
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="21473" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jakob Kjøbsted</GivenName>
+            <FamilyName>Huusom</FamilyName>
+            <Email>jkh@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evalueringen er baseret på en projekt rapport samt en individuel mundtlig" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based on a project report as well as a individual oral exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>basisprincipper for modelbygning - model linearisering - Laplace transformation - overførselsfunktion - tilstandsmodeller - procesdynamik - tilbagekoblet regulering - PID-regulering (design og tuning) - frekvensrespons analyse - fremadkoblet regulering - forholdsregulering - kaskade regulering</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveregning, projektbaseret gruppearbejde</Teaching_And_Learning_Methods>
+          <Course_Literature>Seborg D.E., Edgar T.F., Mellichamp  D.A. and Doyle F.J. (2016) Process Dynamics and Control (4th edition), John Wiley &amp; Sons.</Course_Literature>
+          <Course_Objectives>Det overordnede mål er at bibringe de studerende en forståelse for
+- procesdynamik
+- funktionen og anvendelsen af simpel fremad- og tilbagekoblet regulering
+- hvorledes målinger og aktuatorer kan sammenkobles i en reguleringsstruktur for et procesanlæg
+
+Kurset vil sætte de studerende i stand til at designe, implementere og simulere single input - single output (SISO) reguleringssystemer til kemiske og biotekniske procesanlæg og dermed opnår en mere ensartet drift.</Course_Objectives>
+          <DTU_Remark>Kurset samundervises med kursus 28150 som kan følges fysisk i Lyngby</DTU_Remark>
+          <Remark>Kurset er en forudsætning for efterfølgende kandidatkurser indenfor procesregulering.
+Kurset er et af de anbefalede kurser på civilstudiets bachelorniveau for studerende der ønsker en kemiteknisk præget bachelorgrad.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>basic modelling principles - model linearisation - Laplace transform - transfer functions - state space models - process dynamics - feedback control - PID controller (design and tuning) - frequency response analysis - feedforward control - ratio control - cascade control</Contents>
+          <Teaching_And_Learning_Methods>Lectures, problem solving, Project based group work</Teaching_And_Learning_Methods>
+          <Course_Literature>Seborg D.E., Edgar T.F., Mellichamp  D.A. and Doyle F.J. (2016) Process Dynamics and Control (4th edition), John Wiley &amp; Sons.</Course_Literature>
+          <Course_Objectives>The overall aim is to provide the students an understanding of:
+- process dynamics
+- the operation and application of simple feedforward and feedback control
+- how measurements and actuators can be connected in a process plant
+
+The course should thus provide the student the ability to design, implement and simulate single input - single output (SISO) control systems for chemical and biotechnical processes to achieve a more consistent operation.</Course_Objectives>
+          <DTU_Remark>The course is taught together with course 28150 which is given physical in Lyngby</DTU_Remark>
+          <Remark>The course is a prerequisite for a number of chemical engineering key courses within process control. The course is recommended for students who wish to obtain a profile in the BSc degree related to process technology and chemical engineering.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til basisprincipperne af MATLAB eller Python ved kursets begyndelsen er en fordel, men ikke et krav." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge on the use of MATLAB or Python at the start of the course is an advantage, but not a necessity." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(28020).(28160)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kendskab til basal procesinstrumentering" />
+          <Txt Lang="en-GB" Txt="Knowledge of basic process instrumentation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Linearisere et ulineært system af  differentialligninger" />
+          <Txt Lang="en-GB" Txt="Linearise a non-linear system of differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse lineare differentialligninger via Laplace transformation" />
+          <Txt Lang="en-GB" Txt="Solve linear differential equations using Laplace transforms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Aflede overføringsfunktion og tilstandsmodel for et system af differentialligninger" />
+          <Txt Lang="en-GB" Txt="Convert a system of differential equations to transfer function and state-space notation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gengive et system i blokdiagram" />
+          <Txt Lang="en-GB" Txt="Represent a system as a block diagram" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og tune en tilbagekoblet regulering" />
+          <Txt Lang="en-GB" Txt="Design and tune a feedback controller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og tune en fremadkoblet regulering" />
+          <Txt Lang="en-GB" Txt="Design and tune a feedforward controller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge stabilitet af et system" />
+          <Txt Lang="en-GB" Txt="Evaluate the stability of a system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere et system med feedback/feedforward regulering" />
+          <Txt Lang="en-GB" Txt="Simulate a system with feedback/feedforward control" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="15" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:22:53.87" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02160" Volume="2026/2027" University="dtu" LastUpdated="2026-04-22+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Agil objektorienteret softwareudvikling" />
+        <Title Lang="en-GB" Title="Agile Object-oriented Software Development" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="123622" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Andrea</GivenName>
+            <FamilyName>Burattin</FamilyName>
+            <Email>andbur@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren er baseret på en helhedsvurdering af gruppearbejdet (præsentation og rapport), skriftlige spørgsmål og mellemliggende øvelser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is based on an overall assessment of group work (presentation and report), written questions, and intermediate exercises." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer en almindeligt anvendt objektorienteret programmeringssprog, og anvender agile udviklingsmetoder, der dækker følgende emner:
+
+Emnerne, der præsenteres, er:
+▪ Primitive typer og klassetyper
+▪ Grundlæggende programmeringskonstruktioner (loops, branching statements, osv.)
+▪ Værdier, operatører og udtryk
+▪ Klasser, objekter, felter og metoder
+▪ Brug af biblioteker
+▪ Design af klasser, hierarkier, arv
+▪ Abstraktion (abstrakte klasser, grænseflader)
+▪ Fejl- og undtagelseshåndtering
+▪ Grundlæggende designmønstre og softwarearkitekturer
+▪ Pair programming
+▪ Brugerhistorier, adfærdsdrevet udvikling, test af enheder
+▪ Debugging, refactoring
+▪ Versionskontrol, kontinuerlig integration
+▪ Brug af udviklingsværktøjer (IDE osv.)
+▪ Diskussion om hvorvidt og hvornår man skal bruge generativ AI til programmeringsopgaver</Contents>
+          <Teaching_And_Learning_Methods>Seminarer og træningskurser. Træningskurser omfatter løsningen af mindre øvelser samt udvikling af et softwaresystem i hold på 4-6 studerende. Projektopgaven dokumenteres ved at køre software, og at præsentere testresultater og rapporter, der er inkluderet i den samlede vurdering af kurset.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet med kurset er at formidle de grundlæggende begreber i object-oriented programming, og at sætte studerende i stand til at anvende disse begreber ved at bruge typiske objektorienterede programmeringssprog. Den studerende vil kunne være i stand til at læse programkode og at analysere programmets adfærd. Derudover vil den studerende være i stand til at anvende moderne agile softwareudviklingspraksis i sammenhæng med mindre softwareudviklingsprojekter, både ved at udvide eksisterende software og at udvikle nye funktionaliteter. Der vil fokuseres på kvalitetssikring, bl.a. automatiserede test og kontinuerlig integration. Yderligere lærer den studerende at arbejde i teams, at præsentere sit arbejde og dokumentere det. Den studerende lærer også at arbejde med aktuelle softwareudviklingsværktøjer (f.eks. IDE'er osv.).</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces a commonly used object-oriented programming language, and applies agile development methods covering the following topics:
+
+The topics presented are: 
+▪ Types, primitive and referenced 
+▪ Basic programming constructs (loops, branching statements, etc.) 
+▪ Values, operators and expressions 
+▪ Classes, objects, fields and methods 
+▪ Use of libraries 
+▪ Design of classes, hierarchies, inheritance 
+▪ Abstraction (abstract classes, interfaces) 
+▪ Error/exception handling
+▪ Simple design patterns and basic software architectures
+▪ Pair programming
+▪ User stories, behavior driven development, unit testing,
+▪ Debugging, refactoring
+▪ Version control, continuous integration
+▪ Use of development tools (IDE, etc)
+▪ Discussion about if and when to use generative AI for programming tasks</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercise classes. The exercise classes involve solving smaller exercises as well as the development of a software system in teams of 4-6 students. The project work is documented by running software, tests, and reports that are included in the overall assessment of the course.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to convey the basic concepts of object-oriented programming and to enable the student to apply these concepts using common object-oriented programming languages.  The student will be able to read program code and analyze the behavior of the program. In addition, the student will be able to apply contemporary agile software development practices in the context of smaller software development projects both extending existing software and developing new functionality. A focus will be put on quality assurance like automated testing and continuous integration. Moreover the student will learn to work in teams, present the work, and document it. The student will also learn to work with contemporary software development tools (e.g., IDEs, etc.)</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med procedural programming" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience in procedural programming" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/02003/02631" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne for objektorienterede programmeringssprog" />
+          <Txt Lang="en-GB" Txt="Explain the principles of object-oriented programming languages" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle software ved hjælp af objektorienterede principper i det introducerede programmeringssprog til at håndtere indkapsling, abstraktion, arv og polymorfisme" />
+          <Txt Lang="en-GB" Txt="Develop software using the object-oriented principles of the introduced programming language to handle encapsulation, abstraction, inheritance, and polymorphism" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere software ved hjælp af begreberne af brugerhistorier og adfærdsdrevet udvikling" />
+          <Txt Lang="en-GB" Txt="Design software using the concepts of user stories and behavior driven development" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende begregerne af automatiseret test, refactoring og genbrug af eksisterende kode og biblioteker" />
+          <Txt Lang="en-GB" Txt="Apply the concepts of automated testing, refactoring, and reuse of existing code and libraries" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare betydningen af systematisk fejlsøgning og være i stand til at anvende den" />
+          <Txt Lang="en-GB" Txt="Explain the significance of systematic debugging and be able to apply it" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende begreberne af versionskontrol og kontinuerlig integration" />
+          <Txt Lang="en-GB" Txt="Apply the concepts of version control and continuous integration" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anerkende og være i stand til at anvende et par ukomplicerede designmønstre" />
+          <Txt Lang="en-GB" Txt="Recognize and be able to apply a few, simple design patterns" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare fordelene ved en valgt softwarearkitektur" />
+          <Txt Lang="en-GB" Txt="Explain the advantages of a selected software architecture" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre et multi-ugers softwareteamprojekt, der anvender parprogrammering og dækker brugerhistorier, kører software, test og dokumentation" />
+          <Txt Lang="en-GB" Txt="Complete a multi-week software project in a team applying pair programming and covering user stories, running software, tests, and documentation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere koncis projektiterationsresultater (dvs. at køre software og andre artefakter)" />
+          <Txt Lang="en-GB" Txt="Concisely present project iteration results (i.e., running software and other artifacts)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en klar og velstruktureret rapport, der dokumenterer alle de centrale aspekter af et softwareudviklingsprojekt, herunder om og hvornår generativ AI skal anvendes" />
+          <Txt Lang="en-GB" Txt="Write a clear and well-structured report documenting all the core aspects of a software development project, including if and when to use generative AI" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Håndtere udviklingen af et softwareprodukt i et agil team" />
+          <Txt Lang="en-GB" Txt="Manage the development of a software product in an agile team" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>-</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02161.02100.02101.02102.02312.02314" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:50.997" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

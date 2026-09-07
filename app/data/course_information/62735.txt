@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62735" University="dtu" LastUpdated="2025-02-26+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Videregående Matematik for Diplom Elektroteknologi" />
+        <Title Lang="en-GB" Title="Advanced Mathematics for diploma Electro Technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="154303" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Maryamsadat</GivenName>
+            <FamilyName>Tahavori</FamilyName>
+            <Email>marta@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Laplace-transformation. 
+Fourierrækker 
+Fouriertransformation.
+Z - transformation.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning og regneøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte deltagerne i stand til at løse matematiske problemer og læse matematisk litteratur, som naturligt opstår i forbindelse elektroniske/elektrotekniske anvendelser.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektroteknologi 2. semester
+Elektrisk energiteknologi 2. semester
+
+Dette kursus bidrager til at opnå viden til at udvikle matematiske modeller til at håndtere komplekse miljømæssige og sociale problemstillinger, såsom klimaændringer og ressourceforvaltning.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Laplace Transformation. 
+Fourier Series.
+Fourier transformation.
+Z - transformation.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>Make the student capable of solving mathematical problems and read mathematical litterature, which arise naturally in applications related to electronics/electro technical uses.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektroteknologi 2. semester
+Elektrisk energiteknologi 2. semester
+
+This course contributes to gaining knowledge for develop mathematical models for addressing complex environmental and social issues, such as climate change and resource management.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Basismat 1 og Basismat 2" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Calculus and Algebra 1&#xD;&#xA;Calculus and Algebra 2" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01901/01920" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme den Laplacetransformerede af funktioner, der er alment forekommende i elektroteknisk sammenhæng." />
+          <Txt Lang="en-GB" Txt="determine the Laplace transforms of functions appearing in electro technical applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse begyndelsesværdiproblemer baseret på lineære differentialligninger/integrodifferentialligninger og systemer af sådanne ligninger ved anvendelse af Laplace-transformation." />
+          <Txt Lang="en-GB" Txt="solve initial value problems based on to linear integro-differential equations with constant coefficients and systems of such equations using Laplace transformation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne systemfunktionen for et lineært tidsinvariant system og benytte denne til bestemmelse af systemets impulsrespons. Endvidere kunne bestemme stabilitetsforhold for et lineært tidsinvariant system på grundlag af systemfunktionen." />
+          <Txt Lang="en-GB" Txt="calculate the System function of a linear time invariant system and use this to find the impulse response. Furthermore determine stability of the system from the system function." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme Fourierrækken for en periodiske funktion på kompleks form og heraf udlede de reelle fremstillinger af Fourierrækken." />
+          <Txt Lang="en-GB" Txt="determine the Fourier Series of a periodic function in complex form and from this deduct the real representations of the Fourier Series." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne den stationære løsning til et stabilt lineært tidsinvariant system med periodisk inputfunktion beskrevet ved dens Fourierrække og vurdere fejlen ved en trunkering af Fourierrækken." />
+          <Txt Lang="en-GB" Txt="calculate the steady state solution to a stable linear time invariant system with a periodic input function given by its Fourier Series and estimate the error caused by truncating the Fourier series." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme middeleffekten af et periodisk signal i såvel tidsdomænet som frekvensdomænet." />
+          <Txt Lang="en-GB" Txt="determine the mean power of a periodic signal in the time as well as the frequency domain." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme den Fouriertransformerede af funktioner, der er alment forekommende i elektroteknisk sammenhæng og repræsentere disse signaler i frekvensdomænet ved deres amplitude - og fasespektra." />
+          <Txt Lang="en-GB" Txt="determine the Laplace transforms of functions appearing in electro technical applications and represent these signals in the frequency domain by their magnitude and phase spectra." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne frekvensresponsefunktionen for et stabilt lineært tidsinvariant system og benytte denne til bestemmelse af systemets impulsrespons." />
+          <Txt Lang="en-GB" Txt="calculate the frequency response function for a stable linear time invariant system and find the impulse response from this." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne en løsning til en lineær differentialligning/integrodifferentialligning med konstante koefficienter ved Fourier transformation." />
+          <Txt Lang="en-GB" Txt="find a solution to linear integro-differential equations with  constant coefficients using Fourier  transformation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bestemme den z - transformerede af et diskret tidssignal og anvende z - transformation til løsning af begyndelsesværdiproblemer baseret på lineære differensligninger med konstante koefficienter." />
+          <Txt Lang="en-GB" Txt="determine the z - Transform of a discrete time signal and use z - transformation to solve initial value problems based on linear difference equations with constant coefficients." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne systemfunktionen for et diskret lineært tidsinvariant system og benytte denne til bestemmelse af systemets impulsrespons. Endvidere kunne bestemme stabilitetsforhold for et lineært tidsinvariant system på grundlag af systemfunktionen." />
+          <Txt Lang="en-GB" Txt="calculate the System function of a discrete time linear time invariant system and use this to find the impulse response of the system. Furthermore determine stability of the system from the system function." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende matematisk software" />
+          <Txt Lang="en-GB" Txt="use mathematical software" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="01964/ 62736" />
+        <PreviousCourse CourseCode="62736" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:07.397" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

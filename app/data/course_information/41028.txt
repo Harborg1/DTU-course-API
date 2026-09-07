@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41028" University="dtu" LastUpdated="2026-02-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Design af mekatroniske systemer 1" />
+        <Title Lang="en-GB" Title="Design of mechatronic systems 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="34" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="93663" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tobias</GivenName>
+            <FamilyName>Eifler</FamilyName>
+            <Email>tobeif@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17403" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Søren</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>sohan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering af 2 gruppeafleveringer/øvelser i løbet af semesteret og et afsluttende gruppeprojekt (rapport, prototype og en design review præsentation). Det skal tydeligt anføres hvilke dele af arbejdet hvert gruppemedlem er ansvarlig for." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of 2 intermediate group assignments/exercises as well as a final group project (report, prototype, and a design review presentation). The individual contribution must be clearly communicated." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Presentation in the last week of the 13-weeks period." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Præsentation sidste uge af 13-ugers perioden" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er opdelt faser. I første fase vil studerende med elektronik baggrund blive introduceret til mekanisk design og konstruktion af forskellige komponenter med anvendelse af CAD og 3D print. Studerende med mekanik og design &amp; innovation baggrund vil blive introduceret til intuitiv kredsløbs analyse og design, samt programmering af micro-controllere. I anden fase vil studerende på tværs af kompetenceområder lære at designe og bygge mekatroniske systemer. I tematiske øvelser vil studerende blive introduceret til brug af sensorer og dataopsamling med mikrocontrollere, til komponenter og software til IoT baserede mekatroniske systemer og integration af elektronik, software og simple prototype teknikker (som 3D print og laserskæring) til at bygge fysiske prototyper. Eksempler på, hvordan man dokumenterer og præsenterer mekatroniske løsninger, herunder interaktioner mellem domæner, vil blive integreret i de tematiske øvelser. Tredje fase består i gennemførelse af et projekt, hvor fokus er på design, udvikling og opbygning af en funktionel/alpha prototype af et mekatronisk produkt (eller nøglemodule heri) baseret på kompetencer og viden fra kursets to første faser. Kursusdeltagerne gennemfører et interdisciplinært projektet med anvendelse af værkstedsfaciliteter og laboratorier ved DTU Mekanik, DTU Elektro og DTU Skylab. Kurset afsluttes med et foreløbigt design review af hvert projekt (baseret på den afleverede rapport, den byggede prototype og en præsentation). De som ønsker det, kan bruge denne feedback til videreudvikling af deres produkter i 41029 Design af mekatroniske systemer 2. Studerende skal i begyndelsen af kurset tilkendegive hvorvidt de vil gennemføre 41029 Design af mekatroniske systemer 2.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, opgaveløsning og projektarbejde i udviklingsteams.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kompendiemateriale.</Course_Literature>
+          <Course_Objectives>Mekatronik er synergien mellem mekanisk konstruktion, elektronikkonstruktion og informationsteknologisk udvikling. Kursets formål er at give studerende med mekanik, elektronik og design &amp; innovation baggrund grundlæggende kompetencer i at designe mekatroniske systemer, og at sætte dem i stand til at udvikle og bygge en fungerende prototype i et tværfagligt udviklingsteam.</Course_Objectives>
+          <Remark>Ingen adgangsbegrænsning for studerende optaget på BSc Design &amp; Innovation (obligatorisk kursus). For øvrige retninger har studerende optaget på BSc Produktion og Konstruktion (Mechanical Engineering) og BSc Elektroteknologi (Electrical Engineering) fortrinsret.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is divided into stages. In the first part, students with an Electrical Engineering background will be introduced to mechanical design and construction of different parts using CAD modeling and 3D printers, while students with Mechanical Engineering and Design and Innovation backgrounds will learn about intuitive circuit analysis and design, and about programming of microcontrollers. In the second stage, students from all backgrounds will come together to learn how to design and build mechatronic systems. In thematic exercises, the students will be introduced to the use of sensors and data collection with microcontrollers, to components and software for IoT-enabled mechatronic systems, and the integration of electronics, software and simple prototyping techniques (3D printing and laser cutting) used for building initial physical prototypes. Examples how to document and present mechatronic solutions, including the interactions between different domains, will be integrated in the thematic exercises. The third stage will then be devoted to the final project, and will focus on designing, developing, and building a functional / alpha prototype of a mechatronics product (or a key module hereof), which will incorporate the skills and knowledge learnt during the preceding stages of the course. The participants will work in interdisciplinary teams and will use the workshop facilities and laboratories at DTU Mechanical Engineering, DTU Electrical Engineering, and DTU Skylab to realize their prototypes. The course concludes with a preliminary design review for each project, where the students will present their work (including project report, created prototype, and presentation). Those that choose to do so will be able to use this feedback to iterate their products in 41029 Design of mechatronic systems 2 . Students must declare their intention at the beginning of the course for whether they intend to continue on to 41029 Design of mechatronic systems 2.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, assignments and project work in development teams.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes from teachers.</Course_Literature>
+          <Course_Objectives>Mechatronics is the synergy of mechanical engineering, electronic engineering, and information technology. The course objective is to give students from mechanical engineering, electrical engineering, and design and innovation backgrounds the basic cross-disciplinary knowledge that is necessary for the design of mechatronic systems, and to finally enable them to develop and build a funtional alpha prototype in an interdisciplinary development team.</Course_Objectives>
+          <Remark>No participation limit for students of the BSc Design &amp; Innovation (mandatory course). For other programmes, students admitted to BSc Mechanical Engineering (Produktion og Konstruktion) and BSc Electrical Engineering (Elektroteknologi) have priority access to this course.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmering (Polyteknisk Grundlag) eller tilsvarende kursus i programmering og databehandling" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Computer programming (Polytechnical Foundation) or similar introduction to programming and data processing" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002 / 02003" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare virkemåden af analoge kredsløb med modstande, kondensatorer, spoler, dioder, transistorer og operationsforstærkere, og bruge denne viden til at designe og bygge analoge kredsløb" />
+          <Txt Lang="en-GB" Txt="Explain the workings of analog circuits with resistors, capacitors, inductors, diodes and opamps; and apply this knowledge to design and build them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge udstyr som multimetre og oscilloskoper til fejlfinding af elektroniske kredsløb" />
+          <Txt Lang="en-GB" Txt="Use equipment like multimeters and oscilloscopes for troubleshooting electronic circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne bag og reflektere over udfordringerne ved brug af mikrokontrollere til måling af signaler og styring af forskellige aktuatorer" />
+          <Txt Lang="en-GB" Txt="Explain the principles and reflect on the challenges in using digital micro-controllers for measuring of signals and control of different actuators" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende basal viden og færdigheder inden for 3D CAD systemer så der kan laves 3D tegninger af mekaniske komponenter til fremstilling" />
+          <Txt Lang="en-GB" Txt="Apply basic knowledge and skills of 3D CAD systems to create 3D drawings of mechanical parts for fabrication." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge processer som 3D print og laserskæring til at producere mekaniske komponenter til prototyper" />
+          <Txt Lang="en-GB" Txt="Use processes such as a 3D printing and laser cutting to produce mechanical components for prototypes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere design specifikationer med focus på funktionalitet og logik, samt lave flere mekatroniske design koncepter baseret på denne specifikation og udvælge det bedste koncept" />
+          <Txt Lang="en-GB" Txt="Formulate your own design specification with focus upon functionality and logic, and create alternative mechatronic design concepts based upon this specification and decide for the best alternative." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge en funktionel alpha protype med anvendelse af de værktøjer som bliver gennemgået i kurset." />
+          <Txt Lang="en-GB" Txt="Build a functional alpha prototype using the tools presented in the course." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere og fejlfinde microcontrollere, f.eks. med Arduino platformen." />
+          <Txt Lang="en-GB" Txt="Program and troubleshoot programs for microcontrollers, fx. with the Arduino platform." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere og præsentere resultater, samt reflektere om udfordringer i interdisciplinær mekatroniske design processer." />
+          <Txt Lang="en-GB" Txt="Report and present results, including a reflection on the challenges of an interdisciplinary mechatronic design process." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="42030 / 41030 /31373" />
+        <PreviousCourse CourseCode="42030 / 41030 / 31373" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="85" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="15" />
+        </TeacherTypesDistribuition>
+        <OfferedAsACourseOfTypes>
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ" />
+          <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ Collider" />
+        </OfferedAsACourseOfTypes>
+        <Restrictions Max="150" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:27.99" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34064" University="dtu" LastUpdated="2026-04-22+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Bølgelederoptik" />
+        <Title Lang="en-GB" Title="Waveguide optics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="6065" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jesper</GivenName>
+            <FamilyName>Lægsgaard</FamilyName>
+            <Email>jlag@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="28742" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Peter Uhd</GivenName>
+            <FamilyName>Jepsen</FamilyName>
+            <Email>puje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="To skriftlige opgaver skal afleveres og godkendes som forudsætning for at den studerende kan gå til mundtlig eksamen. Opgaverne indgår ikke i den samlede karakter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Two written exercises must be submitted and approved in order for the student to attend the oral examination. The exercises do not count towards the final grade." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Med udgangspunkt i Maxwells ligninger etableres de grundlæggende principper for lokalisering og manipulering af lys. Dielektriske bølgeledere, deres geometrier og indbyrdes kobling vil blive gennemgået. Endvidere introduceres plasmonbølgeledning og metalliske bølgeledere for terahertz-stråling. Kurset omfatter en gennemgang af byggesten til optiske kredsløb, eksempelvis passive bølgeledere, Bragg-gitre og koblere. Mikrostrukturerede lysledere og båndgabseffekter heri bliver ligeledes introduceret. Kurset indeholder ekskursioner til danske virksomheder og giver derved et godt indtryk af igangværende aktiviteter indenfor området.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger med opgaveløsning undervejs.</Teaching_And_Learning_Methods>
+          <Course_Literature>Egne forelæsningsnoter, som udleveres i løbet af kurset, samt uddrag fra Stefan Maier: Plasmonics - fundamentals and applications, tilgængelig via DTUs bibliotek</Course_Literature>
+          <Course_Objectives>At tilvejebringe en solid forståelse af den fysiske og teknologiske baggrund for optiske bølgeledere og komponenter til kontrol af et bredt spektrum af lys, rækkende fra det synlige til THz-frekvenser. Optiske kredsløb forventes at få en stor betydning for fremtidens ingeniører indenfor områder som telekommunikation, sensorer og computer arkitektur. Optiske fibre spiller allerede en afgørende rolle indenfor lang-distance signal transmission og bliver i øget grad anvendt til sensorer, lasersystemer og signalprocessering. Dette kursus giver en elementær forståelse af integrerede optiske bølgeledere, optiske fibre, plasmoniske bølgeledere, basale optiske komponenter baseret på disse, samt en gennemgang af elementær THz teknologi. Kurset udgør en god platform for videre arbejde (eks. master projekter) indenfor disse områder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Starting from Maxwell's equations, the fundamental principles for localization and manipulation of light are established. Dielectric waveguides, their geometries and mutual coupling, will be discussed. Furthermore, plasmonic waveguides and metallic waveguides for THz radiation are introduced. The course gives an introduction to the building blocks of optical circuits, such as passive waveguides, Bragg gratings and couplers. Microstructured optical fibers and their bandgap effects are also introduced. The course contains excursions to danish companies, thus giving a good impression of the ongoing activities within the field.</Contents>
+          <Teaching_And_Learning_Methods>Lectures with exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Own lecture notes, distributed during the course, and some excerpts from Stefan Maier: Plasmonics - fundamentals and applications, available through DTU library</Course_Literature>
+          <Course_Objectives>To establish a solid understanding of the physical and technological background for optical waveguides and components for the control of a broad spectrum of light, from the visible to THz frequencies. Optical circuits are expected to become of great importance for future engineers within areas such as telecommunication, sensors and computer architecture. Optical fibers already play a crucial role within long-distance signal transmission, and are increasingly used as sensors, in laser systems, and for signal processing. This course gives an elementary understanding of integrated optical waveguides, optical fibers, plasmonic waveguides, simple optical components based on these, and a discussion of elementary THz technology. The course constitutes a solid platform for further work (e.g. masters projects) within these fields.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til Maxwells feltligninger og den elektromagnetiske bølgeligning. Kendskab til vektor matematik, infinitesimalregning og differentialligninger." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of Maxwells field equations, and the electromagnetic wave equation. Knowledge of vector mathematics, calculus, and differential equations." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10036/31400/34020/34021" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille ligninger til beskrivelse af bundne felttilstande i lige og svagt bøjede optiske bølgeledere baseret på dielektriske materialer og/eller metaller, herunder svag-ledningsapproksimationen og de skaleringslove den medfører." />
+          <Txt Lang="en-GB" Txt="Formulate equations describing guided modes in straight and weakly bent optical waveguides, based on dielectric materials and/or metals, including the weak-guidance approximation and the scaling laws it implies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere ligninger der kontrollerer lysindkobling i dielektriske bølgeledere. " />
+          <Txt Lang="en-GB" Txt="Formulate equations describing the coupling of light into dielectric waveguides." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for definition og betydning af begreberne dispersion, ulineær koefficient/effektivt areal samt bøjningstab for bølgeledere." />
+          <Txt Lang="en-GB" Txt="Describe the definition and implications of the concepts of dispersion, nonlinear coefficient/effective area, and bend loss for waveguides." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for strukturen af felttilstandene og bølgeledende egenskaber i slab og rektangulære bølgeledere, herunder dispersion, effektivt areal og bøjningstab." />
+          <Txt Lang="en-GB" Txt="Describe the structure of guided modes and waveguiding properties in slab and rectangular waveguides, including dispersion, effective area and bend loss. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for strukturen af felttilstandene og bølgeledende egenskaber i step-index lysledere, herunder dispersion, effektivt areal og bøjningstab for givne værdier af kerneradius og indekskontrast" />
+          <Txt Lang="en-GB" Txt="Describe the structure of guided modes and waveguiding properties in step-index fibers, including dispersion, effective area and bend loss for given values of core radius and index contrast." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skitsere struktur og anvendelser af graded-index fibre, polarisationsbevarende fibre og fotoniske krystalfibre" />
+          <Txt Lang="en-GB" Txt="Discuss structure and applications of graded-index fibers, polarization-maintaining fibers, and photonic crystal fibers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for struktur, felttilstande, udbredelsestab og anvendelser af forskellige typer optiske fibre med hul kerne" />
+          <Txt Lang="en-GB" Txt="Describe structure, guided modes, propagation loss and applications for various kind of hollow-core optical fibers. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede ligninger for refleksion/transmission/modekobling i bølgeleder-integrerede Bragg og langperiodiske gitre. Skitsere løsninger for uniforme Bragg og langperiodiske gitre, forstå betydningen af chirp og apodisering" />
+          <Txt Lang="en-GB" Txt="Derive equations for reflection/transmission/mode coupling in waveguide-integrated Bragg and long-period gratings. Sketch solutions for uniform Bragg and long-period gratings, understand the meaning of chirp and apodisation. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede koblede tilstandsligninger for retningskoblere, og skitsere deres løsninger, samt udnytte disse til at opskrive transmissionsligninger for Mach-Zender interferometre og simple ring-resonatorer. " />
+          <Txt Lang="en-GB" Txt="Derive coupled-mode equations for directional couplers, and sketch their solutions. Use these results to formulate transmission equations for Mach-Zender interferometers and simple ring resonators." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for egenskaberne af Surface Plasmon Polaritons (SPP). Opstille bølgeligningen for beskrivelse af SPP, beskrive dispersionsdiagrammet for SPP bølger ved luft/metal overgange" />
+          <Txt Lang="en-GB" Txt="Describe the properties of surface plasmon polaritons (SPP). Set up the wave equation describing SPP, and outline the dispersion diagram for SPP waves at air/metal interfaces." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for prisme- og gitter-assisteret kobling af lys til SPP tilstande, og have kendskab til prisme-assisteret stråledeling i THz-området" />
+          <Txt Lang="en-GB" Txt="Describe prism- and grating-assisted coupling of light into SPP modes, and have knowledge of prism-assisted beam-splitting in the THz regime." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for bølgeledning af bredbåndede optiske signaler i terahertz-området, beskrive opførslen af dispersionsfri så vel som dispersive metalliske bølgeledere, beskrive tabsmekanismer for THz-bølger på grund af endelig elektrisk ledningsevne i bølgeledere" />
+          <Txt Lang="en-GB" Txt="Describe waveguidance of broadband signals in the THz range,the properties of dispersion-free as well as dispersive metallic waveguides, and loss mechanisms for THz waves due to finite electrical conductance in waveguides." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Bølgelederoptik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="34041" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:33:23.413" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

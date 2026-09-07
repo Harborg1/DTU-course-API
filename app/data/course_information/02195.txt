@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02195" Volume="2026/2027" University="dtu" LastUpdated="2026-04-16+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Kvantealgoritmer og Maskinlæring" />
+        <Title Lang="en-GB" Title="Quantum Algorithms and Machine Learning" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="Datalogiskt institut, KU" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="DIKU, University of Copenhagen" />
+          </Extern_Dep>
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="166539" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christian</GivenName>
+            <FamilyName>Majenz</FamilyName>
+            <Email>chmaj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Pocket calculators are not allowed." />
+            <Aid_Txt Lang="da-DK" Txt="Lommeregner er ikke tilladt." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Brug af centrale kvantebegreber i algoritmer: Kvantetilstande; Qubits; Qubit gates; Superposition; sammenfiltring
+
+Algoritme teori: Kompleksitets klasser
+
+kvantealgoritmeteori: Universelle gate sæt; Reversibel databehandling; Kvante variational metoder; variational kvante eigensolver; Kvante approksimativ optimering; Statsforberedelse; Målinger;
+
+Frameworks for kvanteberegning
+
+Kvantemaskinelæring</Contents>
+          <Course_Objectives>Kvantecomputer algoritmer kræver en ny tankegang, som afviger fra klassiske computere. I dette kursus bliver der introduceret fundamentale koncepter for kvante algoritmer. Relationen mellem klassiske computere og kvantecomputere er studeret.
+
+En lang række dataanalyse- og maskinlæringsmetoder drives ved at udføre matrixoperationer på vektorer i et højdimensionalt vektorrum, som er det matematiske grundlag for kvanteberegning. Dette kursus introducerer hvordan kvantemaskinelæring kan udvikles.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Use of key quantum concepts in algorithms: Quantum states; Qubits; Qubit gates; Superposition; Entanglement
+
+Algorithm theory: Complexity classes
+
+Quantum algorithm theory: Universal gate sets; Reversible computing; Quantum variational methods; Variational quantum eigensolver; Quantum approximate optimization; State preparation; Measurements;
+
+Frameworks for quantum computing
+
+Quantum machine learning</Contents>
+          <Course_Objectives>Quantum computer algorithms require a new mindset departing from classical computing. In this course, fundamental concepts for quantum algorithms will be introduced. The relationship between classical algorithms and quantum algorithms is studied.
+
+A wide variety of data analysis and machine learning methods rely on matrix operations on vectors in a high-dimensional vector space, which is the mathematical foundation of quantum computation. This course explores how quantum machine learning can be developed.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvordan superposition og sammenfiltring kan bruges konstruktivt ved design af kvantealgoritmer" />
+          <Txt Lang="en-GB" Txt="explain how superposition and entanglement can be used constructively when designing quantum algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare almindelige kvantealgoritmer" />
+          <Txt Lang="en-GB" Txt="explain common quantum algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare algoritmer inden for kvante variational metoder, variational kvante eigensolvers og kvante approksimativ optimering" />
+          <Txt Lang="en-GB" Txt="explain algorithms within quantum variational methods, variational quantum eigen solvers and quantum approximate optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="brug kvante beregnings frameworks" />
+          <Txt Lang="en-GB" Txt="use quantum computing frameworks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle kvantealgoritmer" />
+          <Txt Lang="en-GB" Txt="develop quantum algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="evaluere ydeevnen af kvantealgoritmer" />
+          <Txt Lang="en-GB" Txt="evaluate the performance of quantum algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="optimere en kvantealgoritm til specifik platform" />
+          <Txt Lang="en-GB" Txt="optimize a quantum algorithm for a specific platform" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="relatere en kvantealgoritme til kompleksitetsklasser" />
+          <Txt Lang="en-GB" Txt="relate a quantum algorithm to complexity classes" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:55.597" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

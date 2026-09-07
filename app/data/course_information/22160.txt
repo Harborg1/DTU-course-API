@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22160" Volume="2026/2027" University="dtu" LastUpdated="2024-04-08+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="22" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="R for Bio Data Science" />
+        <Title Lang="en-GB" Title="R for Bio Data Science" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="22554" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Leon Eyrich</GivenName>
+            <FamilyName>Jessen</FamilyName>
+            <Email>ljess@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen består af 3 delprøver:&#xD;&#xA;1. Et kodebaseret gruppeprojekt.&#xD;&#xA;2. En mundtlig gruppepræsentation af projektet.&#xD;&#xA;3. 2 timers afsluttende individuel MCQ-eksamen.&#xD;&#xA;&#xD;&#xA;Alle tre delprøver skal gennemføres for at man kan bestå kurset. Den endelige karakter er baseret på en helhedsvurdering af alle tre delprøver.&#xD;&#xA;&#xD;&#xA;Bemærkninger til delprøver:&#xD;&#xA;1. Alle medlemmer er ansvarlige for alle dele af projektet.&#xD;&#xA;2. Alle medlemmer skal præsentere fysisk på den sidste undervisningsdag.&#xD;&#xA;3. Der eksamineres i generelle kursuslæringsmål.&#xD;&#xA;&#xD;&#xA;Reeksamen vil bestå af selvstændig udarbejdelse af et nyt projekt efter samme retningslinier, som under den ordinære eksamen, efterfulgt af en mundtlig præsentation, hvor der også eksamineres i de generelle kursuslæringsmål. Der ydes i den forbindelse ikke vejledning. Der er ingen afsluttende MCQ-eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam consists of 3 sub-tests:&#xD;&#xA;1. A code-based group project.&#xD;&#xA;2. An oral group presentation of the project.&#xD;&#xA;3. 2 hour final individual MCQ exam.&#xD;&#xA;&#xD;&#xA;All three sub-tests must be completed in order to pass the course. The final grade is based on an overall assessment of all three sub-tests.&#xD;&#xA;&#xD;&#xA;Notes for partial tests:&#xD;&#xA;1. All members are responsible for all parts of the project.&#xD;&#xA;2. All members must present physically on the last day of classes.&#xD;&#xA;3. General course learning objectives are examined.&#xD;&#xA;&#xD;&#xA;The re-examination will consist of independent preparation of a new project according to the same guidelines as during the ordinary exam, followed by an oral presentation, where the general course learning objectives are also examined. No supervision is provided in this regard. There is no final MCQ exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Moderne bio data science i Tidyverse R, data -oprensning, -transformering, -visualisering og -kommunikering. Tidyverse R, RStudio, Rmarkdown, dplyr, ggplot, reproducerbar bio-dataanalyse, rstudio.cloud, shinyapps.io, R-pakker, git/GitHub, bio-data-science projekt-organisering alt med et anvendelsesoritenteret fokus. Nogle elementer af anvendt basal statistik of maskinlæring.</Contents>
+          <Teaching_And_Learning_Methods>Semi-flipped classroom. Eleverne forbereder tildelte skriftlige og videobaserede materialer før undervisningen. Undervisningen indledes med en kort opsummering af nøglepunkter fra sidste uges øvelser efterfulgt af en kort introduktion til nøglepunkter i dagens emne. Resten af klassen er Cloud-baserede øvelser. Studerende skal medbringe egen bærbar computer med fungerende trådløst internet og gyldig DTU-konto.</Teaching_And_Learning_Methods>
+          <Course_Literature>Undervisningen vil i store træk følge "R for Data Science (2e)" af Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund [1], men også suppleres af andre open source læringsmaterialer. Se kursushjemmesiden for mere information.
+1. Open source bog: https://r4ds.hadley.nz</Course_Literature>
+          <Course_Objectives>Målet med dette kursus er at udstyre de studerende med praktiske færdigheder i moderne biodatascience ved hjælp af Tidyverse R, RStudio IDE og Quarto-rapporteringssystemet. I løbet af kurset vil de studerende lære at omdanne rodede datasæt til rene og organiserede, udføre dataanalyse, få indsigt gennem undersøgende dataanalyse og kommunikere resultater via datavisualisering og dynamisk rapportering. Der vil blive lagt vægt på vigtigheden af reproducerbar dataanalyse og design, organisering og eksekvering af samarbejdsprojekter inden for biodatascience ved hjælp af Tidyverse R og git/GitHub. Kurset vil udelukkende fokusere på biologiske datasæt.</Course_Objectives>
+          <DTU_Remark>Arbejder du i industrien, og er du interesseret i at følge dette kursus, så er du meget velkommen! Læs mere om dine muligheder her: https://www.dtu.dk/efteruddannelse/enkeltfagskurser. Kurset eksisterer også på BSc niveau (22100). Er du indskrevet på et andet universitet, skal du indskrives som meritstuderende.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Modern bio data science in Tidyverse R, data -cleaning, -wrangling, -visualisation and -communication. Tidyverse R, RStudio, Quarto, dplyr, ggplot, reproducible bio data analysis, rstudio.cloud, shinyapps.io, R-packages, git/GitHub,  bio data science project organisation all with an applied focus. Some elements of applied basic statistics and machine learning.</Contents>
+          <Teaching_And_Learning_Methods>Semi-flipped classroom. Students prepare assigned written and video based materials before class. Classes are initiated by a brief summary of key points from last week's exercises followed by a brief introduction to key points of the topic of the day. The remainder of the class is Cloud based exercises. Students are required to bring their own laptop with functioning wireless internet and a valid DTU account.</Teaching_And_Learning_Methods>
+          <Course_Literature>The teaching will largely follow "R for Data Science (2e)" by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund [1], but also other open source learning materials will be used. See course website for more information.
+1. Open source book: https://r4ds.hadley.nz</Course_Literature>
+          <Course_Objectives>The aim of this course is to equip students with practical skills in modern bio data science using Tidyverse R, RStudio IDE, and the Quarto reporting system. Throughout the course, students will learn how to transform messy data sets into clean and organized ones, perform data analysis, gain insights through exploratory data analysis, and communicate results via data visualization and dynamic reporting. Emphasis will be placed on the importance of reproducible data analysis and designing, organizing and executing collaborative bio data science projects using Tidyverse R and git/GitHub. The course will exclusively focus on biological data sets.</Course_Objectives>
+          <DTU_Remark>If you work in industry, and are interested in following this course, you are most welcome! Read more about your options here: https://www.dtu.dk/english/continuing-education/single-course-student. The course also exists on BSc level (22100). If you are enrolled at another university, please register as guest student.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forudsættes, at den studerende har eksisterende viden om matematik, statistik, basal programmering (sprog irrelevant), life science og bioinformatik svarende til niveauet for bachelorkurser på DTU (se relevante kursusnumre ovenfor)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is assumed that the student has existing knowledge of mathematics, statistics, basic programming (language irrelevant), life science and bioinformatics corresponding to the level of bachelor's courses at DTU (see relevant course numbers above)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01005.(02402/(27024.23214)).(22101/02631/02632/02633).(27002/27008).22111" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for hvorfor reproducerbar dataanalyse er vigtig og for forskellen mellem replikerbarhed og reproducerbarhed." />
+          <Txt Lang="en-GB" Txt="explain why reproducible data analysis is important and the difference between replicability and reproducibility." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive de grundlæggende begreber for datarensning og transformation, og hvordan de relaterer til reproducerbar dataanalyse." />
+          <Txt Lang="en-GB" Txt="describe the basic concepts of data cleaning and transformation and how they relate to reproducible data analysis." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare hvilke Tidyverse-værktøjer, der gør hvad, og identificere passende værktøjer til givne opgaver." />
+          <Txt Lang="en-GB" Txt="explain which Tidyverse tools do what and correctly identify appropriate tools for given tasks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Tidyverse-værktøjer til at konvertere et rodet datasæt til et rent og konsistent i sammenhæng med undersøgende dataanalyse og opnå indsigt i biologiske data." />
+          <Txt Lang="en-GB" Txt="apply Tidyverse tools to convert a messy data set into a clean and consistent one in context with exploratory data analysis and gain insights into biological data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge RStudio og git/GitHub til at arbejde kollaborativt på biodatascience-projekter." />
+          <Txt Lang="en-GB" Txt="use RStudio and git/GitHub to collaborate on bio data science projects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre basale statistiske test og lineære modeller ved hjælp af Tidyverse framework." />
+          <Txt Lang="en-GB" Txt="perform basic statistical tests and linear models using Tidyverse framework." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere en simpel R-pakke." />
+          <Txt Lang="en-GB" Txt="create a simple R package." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere en simpel Shiny app." />
+          <Txt Lang="en-GB" Txt="create a simple Shiny app." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="selvstændigt identificere og adaptere relevante nye state-of-the-art biodatascience-værktøjer." />
+          <Txt Lang="en-GB" Txt="independently identify and adapt relevant novel state-of-the-art data science tools." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge Large-Language-Model (LLM) teknologi såsom chatGPT som sparringspartner i et biodatascience-projekt, samt vurdere og redegøre for de potentielle faldgruber og konsekvenser heraf." />
+          <Txt Lang="en-GB" Txt="use Large-Language-Model (LLM) technology such as chatGPT as a sparring-partner in a Bio Data Science project and assess the potential pitfalls and impact hereof." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og organisere et kollaborativt end-to-end biodatascience-projekt ved hjælp af Tidyverse R og git/GitHub og præsentere resultaterne i en omfattende dynamisk Quarto-rapport/præsentation." />
+          <Txt Lang="en-GB" Txt="design and organize a collaborative end-to-end bio data science project using Tidyverse R and git/GitHub and present the results in a comprehensive dynamic Quarto report/presentation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere et allerede udført biodatascience-projekt for at vurdere valg af metoder, reproducerbarhed og kvalitet af datakommunikation." />
+          <Txt Lang="en-GB" Txt="analyze an already performed Bio Data Science project to assess the choice of methods, reproducibility, and quality of data communication." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modern applied bio-data analysis in Tidyverse R with a focus on efficient coding, visualisation, communication and reproducibility</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="22100" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:15.503" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

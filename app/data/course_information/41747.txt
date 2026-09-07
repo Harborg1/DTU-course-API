@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41747" University="dtu" LastUpdated="2024-02-28+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Modellering i materiale- og procesteknologi - varmetransmission og diffusion" />
+        <Title Lang="en-GB" Title="Modelling in materials and manufacturing engineering - heat transfer and diffusion" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="844" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jesper Henri</GivenName>
+            <FamilyName>Hattel</FamilyName>
+            <Email>jhat@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="129138" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mohamad</GivenName>
+            <FamilyName>Bayat</FamilyName>
+            <Email>mbayat@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="3 individuelle rapporter baseret på øvelser. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="3 individual reports based on exercies. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Forelæsninger: 
+Numeriske metoder til simulering af termiske materialeprocesser herunder støbning og varmebehandling. Finite volume og finite difference metoderne. Fouriers lov. Termisk modstand. Numerisk løsning af varmeledningsligningen. Eksplicitte og implicitte metoder. Stabilitetsanalyser. Crank-Nicholsons metode. Analytiske løsninger til varmeledningsligningen. Riemann temperatur. Algoritmer for frigivelse af latent varme. Chvorinonvs modullov. Ficks første lov. Diffusiv modstand. Numerisk løsning af Ficks anden lov. Analytiske løsninger for diffusion i.f.m. overfladehærdning og homogenisering.
+
+Øvelser: 
+Opstilling og programmering af algoritmer til simulering af støbning og varmebehandling
+Programmeringssprog: Matlab</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset har som overordnet mål at bibringe de studerende en forståelse af og viden om numerisk og analytisk modellering af materiale- og procesteknologi med fokus på støbe- og varmebehandlingsprocesser. De studerende gøres fortrolige med grundlæggende modelleringsmetoder til beregning af temperaturer og koncentrationsprofiler som følge af termisk og masse diffusion. Dette opnås ved at programmere de numeriske metoder selv.
+Et gennemgående tema i kurset er beskrivelse af materialeopførslen under processerne v.h.a. både numeriske og analytiske metoder og sammenligning mellem disse som et værktøj til at vurdere de numeriske metoders validitet. De anvendte metoder er generelle og kan anvendes ved analyse af materialeopførsel i.f.m. en lang række processer indenfor materiale- og procesteknologi.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Lectures: 
+Numerical methods for simulation of thermal processing of materials including casting and heat treatment. The finite volume and finite difference methods. Fourier's law. Thermal resistance. Numerical solution of the heat conduction equation. Explicit and implicit algorithms. Stability analyses. Crank-Nicholson’s method. Analytical solutions to the heat conduction equation. The Riemann temperature. Algorithms for release of latent heat. Chvorinov’s rule. Fick's 1st law. Diffusive resistance. Numerical solution of Fick’s second law. Analytical solutions for diffusion during surface hardening and homogenization.
+
+Computer exercises: 
+Setting up and programming algorithms for simulation of casting and heat treatment
+Programming environment: Matlab</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The overall objective of the course is to give the students an understanding and knowledge of numerical and analytical modelling of materials and manufacturing engineering with special focus on casting and heat treatment. The students will learn about basic modeling methods for the calculation of temperature and concentration profiles as a result of thermal and mass diffusion. This is achieved by programming the numerical methods themselves. An overall theme of the course is the modeling of the processes by both analytical and numerical methods and the comparison between these methods as a mean to evaluate the validity of the numerical methods. 
+The applied methods are of general nature and can be applied for analysis of numerous processes within the materials and manufacturing industry.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Procesteknik 42201/42911/41704/41784. Materialelære svarende til 41681/41650/41659. Matematik svarende til 01035 (evt. sideløbende)&#xD;&#xA;&#xD;&#xA;N.B.: For studerende, som ikke har forudgående erfaring i grundlæggende programmering i Matlab, gives et en-eftermiddags crash-kursus i grundlæggende Matlab inden kursusstart." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of basic process technology 42201/42911/41704/41784. Knowledge of materials technology corresponding to 41659. Knowledge of mathematics corresponding to 01035 (possibly in parallel)&#xD;&#xA;&#xD;&#xA;N.B.: For students who do not have experience in Matlab programming, a crash-course of one afternoon in basic Matlab will be given prior to the course." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare den grundlæggende natur af temperatur- og koncentrationsprofiler ved varmeledning og diffusion." />
+          <Txt Lang="en-GB" Txt="Explain the basic nature of temperature and concentration profiles as a result of thermal and mass diffusion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå varmeledningsligningen såvel som Fick's anden lov i 1D." />
+          <Txt Lang="en-GB" Txt="Understand the heat conduction equation as well as Fick’s second law in 1D" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende numeriske og analytiske metoder til beregning af temperaturer og koncentrationer, generelt" />
+          <Txt Lang="en-GB" Txt="Apply numerical as well as analytical methods to calculate temperatures and concentrations in general" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende numeriske og analytiske metoder til beregning af temperaturer og koncentrationer i støbning og varmebehandling, specifikt." />
+          <Txt Lang="en-GB" Txt="Apply numerical as well as analytical methods to calculate temperatures and concentrations in casting and heat treatment in particular" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge Matlab til løsning af partielle differentialligninger" />
+          <Txt Lang="en-GB" Txt="Use Matlab to solve partial differential equations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge Matlab til løsning af varmeledningsligningen og Fick's anden lov" />
+          <Txt Lang="en-GB" Txt="Use Matlab to solve the heat conduction equation and Fick’s second law" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere numeriske løsningers validitet ved sammenligning med relevante analytiske løsninger" />
+          <Txt Lang="en-GB" Txt="Evaluate the validity of numerical methods by comparison with relevant analytical solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere mulighederne i at løse termiske og diffusive problemer med analytiske og numeriske metoder" />
+          <Txt Lang="en-GB" Txt="Assess the possibilities of solving diffusive problems with analytical and numerical methods" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.mek.dtu.dk" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Processimulering, varmetransmission og diffusion, simple og hurtige beregninger i 1D, størkning og varmebehandling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="42224/42225/41741/41745/41746" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:54.31" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

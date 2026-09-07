@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02421" University="dtu" LastUpdated="2026-04-21+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Stokastisk adaptiv regulering" />
+        <Title Lang="en-GB" Title="Stochastic Adaptive Control" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="64403" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tobias Kasper Skovborg</GivenName>
+            <FamilyName>Ritschel</FamilyName>
+            <Email>tobk@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1559" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Madsen</FamilyName>
+            <Email>hmad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen i hele pensum samt gruppeafleveringer. Karakteren vil blive givet på baggrund af en helhedsvurdering af afleveringerne og præstationen til den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam in the full curriculum and group assignments. The grade will be based on an overall assessment of the assignments and the individual performance at the oral exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="15 min." />
+          <Duration Lang="en-GB" Txt="15 min." />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I dette kursus kombinerer vi analyse af stokastiske systemer med regulatordesign, tilstands- og parameterestimering og design af eksperimenter (både offline og online) til at udvikle adaptive reguleringsmetoder der kan reducere effekten af tidsvarierende parameterværdier og ukendte forstyrrelser.
+
+Vi vil fokusere på lineære state space modeller i diskret tid samt ARMAX modeller. For state space modellerne vil vi bruge Kalman filteret, lineære kvadratiske regulatorer, lineære kvadratiske Gaussiske regulatorer og generaliseret prædiktiv regulering. Vi vil desuden bruge det udvidede Kalman filter til estimering af parameterværdier. For ARMAX modellerne vil vi bruge udvidet mindste kvadraters metode, maximum likelihood, og prediction error metoder (samt som deres rekursive varianter) til at estimere parameterværdier og generaliseret minimum varians- og generaliseret prædiktiv reguleringsmetoder til styring. For begge typer af modeller vil vi bruge diverse fremgangsmåder til at designe informative eksperimenter og validere de identificerede modeller og vi kombinerer alle de ovenstående elementer til stokastiske adaptive reguleringsmetoder som identificerer parameterværdierne i den underliggende model og opdaterer den designede controller hver gang et sæt af målinger fra systemet bliver tilgængelig.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og grupperegning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>En studerende der har gennemført alle dele af kurset vil være i stand til følgende.
+1. Modellere og styre dynamiske systemer der er påvirket af ukendte og/eller tidsvarierende forstyrrelser eller variationer i parameterværdier.
+2. Identificere stokastiske systemer (specifikt, deres parameterværdier) baseret på målinger.
+3. Udvikle adaptive reguleringsmetoder som kan reducere effekten af de ukendte/tidsvarierende forstyrrelser og/eller parameterværdier.</Course_Objectives>
+          <DTU_Remark>Karakteren gives nu på baggrund af en mundtlig eksamen og gruppeafleveringer.</DTU_Remark>
+          <Remark>I kurset kombineres reguleringsteknik, statistik, sandsyndlighedsregning og optimeringsmetoder. Kurset knytter sig til andre videregående kurser i regulering. Vi vil udvikle og teste metoderne på enheden Temperature Control Lab (https://apmonitor.com/pdc/index.php/Main/PurchaseLabKit).</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>In this course, we combine analysis of stochastic systems with controller design, state and parameter estimation, and experiment design (both offline and online) to create adaptive control algorithms that can mitigate the effect of time-varying parameters and unknown disturbances.
+
+We will focus on linear discrete-time state space models and ARMAX models. For the state space models, we will consider the Kalman filter, the linear quadratic regulator (LQR), the linear quadratic gaussian (LQG) regulator, and generalized predictive control. Furthermore, we will consider the extended Kalman filter for parameter estimation. For the ARMAX models, we will consider extended least-squares, maximum likelihood, and prediction error methods (as well as their recursive variants) for parameter estimation and generalized minimum variance and generalized predictive algorithms for control. Finally, we will use various approaches for creating informative experiments and validating the identified models before combining all of the above into stochastic adaptive control algorithms which repeatedly identify the system and updates the designed controller accordingly.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercise sessions.</Teaching_And_Learning_Methods>
+          <Course_Objectives>A student who has successfully completed the course will be able to do the following.
+1. Model and control dynamical systems that are subject to unknown and/or time-varying disturbances and variations in parameter values.
+2. Identify stochastic systems (specifically, their parameter values) based on measurements.
+3. Develop adaptive control methods which can mitigate the effects of the unknown/time-varying disturbances and/or parameter values.</Course_Objectives>
+          <DTU_Remark>The grade is now based on an oral exam and group assignments.</DTU_Remark>
+          <Remark>In this course, control theory is combined with control design, statistics, probability theory, and optimization methods.  The course is related to other advanced courses in control. We will develop and test the methods on the unit Temperature Control Lab (https://apmonitor.com/pdc/index.php/Main/PurchaseLabKit).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Indledende kursus i statistik (02402) eller sandsynlighedsregning (02405) og i reguleringsteknik (34745 / 28150) eller tidsrækkeanalyse (02417)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introductory course in statistics (02402) or probability theory (02405) and in control (34745 / 28150) or time series analysis (02417)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02402 / 02405).(34745 / 28150 / 02417)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive en fysisk proces med en intern (state space) eller ekstern (ARMAX) model." />
+          <Txt Lang="en-GB" Txt="Describe a physical process using an internal (state space) or external (ARMAX) model." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Linearisere og diskretisere ikke-lineære tidskontinuerte modeller." />
+          <Txt Lang="en-GB" Txt="Linearize and discretize nonlinear continuous-time models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere interne og eksterne modeller (f.eks., vha. Lyapunov ligninger)." />
+          <Txt Lang="en-GB" Txt="Analyze internal and external models (e.g., using Lyapunov equations)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Monitorere tilstanden af et system (f.eks, vha. et Kalman filter)." />
+          <Txt Lang="en-GB" Txt="Monitor the state of a system (e.g., using a Kalman filter)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Styre en proces (f.eks., vha. en lineær kvadratisk regulator)." />
+          <Txt Lang="en-GB" Txt="Control a process (e.g., using a linear quadratic regulator (LQR))." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificére et system (dvs., parameterværdierne i en model af systemet)." />
+          <Txt Lang="en-GB" Txt="Identify a system (i.e., the parameter values in a model of the system)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Monitorere ukendte og tidsvarierende forstyrrelser eller parameterværdier (online systemidentifikation)." />
+          <Txt Lang="en-GB" Txt="Monitor unknown time-varying disturbances or parameters (online system identification)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge adaptiv regulering til at reducere effekten af ukendte variationer i forstyrrelser og parameterværdier." />
+          <Txt Lang="en-GB" Txt="Mitigate the effects of unknown variations in disturbances and parameter values using adaptive control." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive de væsentligste aspekter af de metoder der bliver præsenteret i kurset, inklusive deres formål og de underliggende antagelser." />
+          <Txt Lang="en-GB" Txt="Describe the key aspects of the methods presented during the course, their main purpose, and the underlying assumptions." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for matematikken der ligger til grund for metoderne. F.eks., de væsentligste elementer af deres udledning. (Projektionsteoremet er, for eksempel, en væsentlig del af udledningen af Kalman filteret.)" />
+          <Txt Lang="en-GB" Txt="Account for the underlying mathematics of the methods, e.g., key steps in the derivation. (For instance, the projection theorem is a key step in the derivation of the Kalman filter.)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modificere eksisterende metoder og udlede nye metoder der ikke eksplicit er blevet præsenteret i forelæsningerne. (For eksempel, at anvende Kalman filteret og en lineær kvadratisk regulator på et system med korrelleret proces- og målestøj.)" />
+          <Txt Lang="en-GB" Txt="Modify existing methods and derive new methods for systems not presented in class. (For instance, apply the Kalman filter and LQR to a system with correlated process and measurement noise.)" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://www.imm.dtu.dk/courses/02421" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modellering, styring og optimering af stokastiske dynamiske systemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:44.05" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22115" University="dtu" LastUpdated="2026-04-28+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Molekylær evolution" />
+        <Title Lang="en-GB" Title="Computational Molecular Evolution" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="5118" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Anders Gorm</GivenName>
+            <FamilyName>Pedersen</FamilyName>
+            <Email>agpe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Resultaterne fra ugentlige computerøvelser og regneøvelser skal afleveres og godkendes for at gå til eksamen. &#xD;&#xA;Eksamen: Skriftlig rapport baseret på individuelt miniprojekt. Den studerende vil arbejde på eksamensprojektet i de sidste to uger af kurset og aflevere rapporten den sidste dag i 13-ugers undervisningsperioden." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Results from the weekly computer exercises and handout exercises must be submitted and approved in order to attend the exam. &#xD;&#xA;Exam: written report based on individual mini project. The student will work on the exam project in the final two weeks of the course, and submit the report on the last day of the 13-week period." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="2 uger" />
+          <Duration Lang="en-GB" Txt="2 weeks " />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kort introduktion til grundlæggende evolutionsteori og populationsgenetik. Drivkræfterne bag molekylær evolution. Modeller for DNA- og protein-substitution. Rekonstruktion af fylogenetiske træer ved hjælp af afstandsmetoder, parsimoni, maximum likelihood og Bayesiansk analyse. Avancerede nukleotid-substitutionsmodeller (gammafordelte mutationsrater, molecular clock modeller, codon-modeller og analyse af selektivt pres). Statistiske analyser af evolutionsbiologiske hypoteser (likelihood ratio tests, bootstrapping, AIC, Bayesiansk statistik).
+
+De studerende vil opnå praktisk erfaring i at benytte computermetoder ved selv at analysere sekvenser fra den videnskabelige litteratur.</Contents>
+          <Teaching_And_Learning_Methods>Online forelæsninger, computerøvelser, regneøvelser. 
+OBS: Kurset køres som "flipped classroom", dvs. forelæsninger ses på video før undervisning.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give den studerende et omfattende kendskab til molekylær evolution (dvs. evolutionen af DNA, RNA og proteiner). Specielt er det målet at give den studerende både erfaring med, og teoretisk forståelse af, modelbaserede metoder til at rekonstruere fylogenetiske træer og til at teste hypoteser i en evolutionær kontekst. Selvom molekylær evolutionær analyse kræver en del matematisk forståelse, er kurset designet til at kunne tages af en bred vifte af studerende.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Brief introduction to evolutionary theory and population genetics.
+Mechanisms of molecular evolution. Models of DNA and protein substitution. Reconstruction of phylogenetic trees using distance based methods, parsimony, maximum likelihood, and Bayesian techniques. Advanced models of nucleotide substitution (gamma-distributed mutation rates, molecular clock models, codon models and analysis of selective pressure). Statistical analysis of biological hypotheses (likelihood ratio tests, bootstrapping, AIC, Bayesian statistics).
+
+The student will acquire practical experience in the use of computational methods by analyzing sequences from the scientific literature.</Contents>
+          <Teaching_And_Learning_Methods>Online lectures, computer exercises, handout exercises.
+NOTE: The course is run as a "flipped classroom", i.e., lectures are viewed online before class.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To provide the student with broad knowledge in the field of molecular evolution (i.e. the evolution of DNA, RNA, and proteins). It is in particular the aim to provide the student with experience and in-depth knowledge of model-based methods for phylogenetic tree reconstruction and hypothesis testing in an evolutionary context. Although the study of molecular evolution does require a certain level of mathematical understanding, this course has been designed to attract a diverse range of students.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forudsættes, at den studerende har forudgående kendskab til matematik, statistik, basal programmering (programmeringssprog er uden betydning), biovidenskab og bioinformatik svarende til niveauet på bachelor-kurser ved DTU (se relevante kursusnumre ovenfor)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is assumed that the student has existing knowledge of mathematics, statistics, basic programming (language irrelevant), life science and bioinformatics corresponding to the level of bachelor's courses at DTU (see relevant course numbers above)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01005.02402.(22101/02631/02632/02633).(27002/27008).22111" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for naturlig selektion og teorien om neutral molekylær evolution." />
+          <Txt Lang="en-GB" Txt="account for natural selection and the neutral theory of molecular evolution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse simple populationsgenetiske opgaver." />
+          <Txt Lang="en-GB" Txt="solve simple population genetic problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for de vigtigste egenskaber ved fylogenetiske træer." />
+          <Txt Lang="en-GB" Txt="account for important properties of phylogenetic trees." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere fylogenetiske træer under parsimoni-, afstands-, og maximum likelihood-kriterierne (vha. programmet PAUP*); konstruere Bayesianske fylogenetiske træer (vha. programmerne MrBayes og BEAST)." />
+          <Txt Lang="en-GB" Txt="construct phylogenetic trees under the parsimony, distance, and maximum likelihood criteria (using the PAUP* program); construct Bayesian phylogenetic trees (using the MrBayes and BEAST programs)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge Fitch algoritmen til manuelt at udregne længden af et fylogenetisk træ givet et alignment; derudfra vælge det/de mest parsimone træ(er)." />
+          <Txt Lang="en-GB" Txt="use the Fitch algorithm to manually compute the length of a tree given an alignment; use this as the basis for selecting the most parsimonious tree(s)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for substitutionsmodeller baseret på Markovkæder." />
+          <Txt Lang="en-GB" Txt="account for substitution models based on Markov chains." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udregne likelihood for en fylogenetisk model manuelt, givet et sæt af parameterværdier og et alignment." />
+          <Txt Lang="en-GB" Txt="manually compute the likelihood for a phylogenetic model given a set of parameter values and an alignment." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte modeludvælgelseskriterier (f.eks. likelihood ratio testing og AIC) til at vælge den bedste af en række substitutionsmodeller." />
+          <Txt Lang="en-GB" Txt="use model selection criteria (e.g. likelihood ratio testing and AIC) for selecting the best of several alternative phylogenetic models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte programpakken PAML til at finde positivt selekterede codons i et proteinkodende gen." />
+          <Txt Lang="en-GB" Txt="use the PAML program package to detect positively selected sites in a protein-encoding gene." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte R (f.eks. RStudio) til at manipulere, plotte, og analysere fylogenetiske træer." />
+          <Txt Lang="en-GB" Txt="use R (eg. RStudio) for manipulating, plotting, and analysing phylogenetic trees." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="brug Large-Language-Model (LLM)-teknologi såsom ChatGPT som en sparringspartner til at understøtte læring indenfor molekylær evolution ved (i) at uddybe forståelsen af centrale begreber, (ii) at fejlfinde software og workflows, og (iii) at få hjælp til at løse konkrete problemer ved brug af software, som du ikke har set før – uden at bruge værktøjet til direkte at løse bedømte øvelser." />
+          <Txt Lang="en-GB" Txt="Use Large Language Models (e.g., ChatGPT) as a sparring partner to support learning in computational molecular evolution by (i) deepening understanding of key concepts, (ii) troubleshooting software and workflows, and (iii) getting help with how to solve concrete problems using previously unseen software, without using the tool to directly solve assessed exercises." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://teaching.healthtech.dtu.dk/22115/index.php/22115_-_Computational_Molecular_Evolution" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Konstruktion af fylogenetiske træer fra sekvensdata. Analyse af selektion og andre biologiske hypoteser på basis af træer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="27615" />
+        <PreviousCourse CourseCode="36615" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:07.483" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

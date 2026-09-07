@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30545" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Analyse af rumligt og temporalt data inden for geovidenskab" />
+        <Title Lang="en-GB" Title="Analysis of spatial and temporal data within geoscience" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="3 uger" />
+          <Schedule_Txt Lang="en-GB" Txt="3 weeks" />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="50252" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Karina</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>karni@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Evaluering er baseret på en grupperapport, en individuel rapport, der skal afleveres i slutningen af kurset og en mundtlig eksamen.&#xD;&#xA;Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation will be based on a group report, an individual report to be handed in at the end of the course, and an oral exam.&#xD;&#xA;Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Rumlige og tidslige data er en integreret del af geovidenskab. Indholdet af dette kursus introducerer nogle generelle værktøjer til håndtering af sådanne data.
+Nogle specifikke emner er:
+     • Maximum likelihood estimation
+     • Covariance-funktioner
+     • Gaussisk Markov random field
+     • State-space model 
+     • Kriging
+     • Modelevaluering</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning, øvelser og projektarbejde i grupper.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet med kurset er at give den studerende indsigt i og praktisk erfaring med metoder til analyse og behandling af rumlige og tidslige data. Metoderne anvendes på datasæt inden for kortlægning, navigation og jordobservationer.
+Dette kursus har et stærkt praktisk aspekt. De studerende præsenteres for metoder, der danner grundlaget for deres egen implementering (i R) og analyse af virkelige data.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Spatial and temporal data are an integrated part of earth science. The content of this course will introduce some general tools to handle such data.  
+Some specific topics are:
+    • Maximum likelihood estimation
+    • Covariance functions
+    • Gaussian Markov random field
+    • State-space model 
+    • Kriging
+    • Model evaluation</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, project work in groups.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course aims to give the student insight into and practical experience with methods to analyze and process spatial and temporal data. The methodologies are applied to data sets within the fields of mapping, navigation, and earth observations.
+
+This course has a strong practical aspect. The students are presented with the methodologies providing the foundation for their own implementation (in R) and real data analysis.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til programmering" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of programming" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(30201/30202).30230" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="nævne og beskrive de mest almindelige covariansmodeller" />
+          <Txt Lang="en-GB" Txt="list and describe commonly used covariance models " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive princippet i maximum likelihood estimation" />
+          <Txt Lang="en-GB" Txt="describe the principle of maximum likelihood estimation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare konceptet i en state-space model" />
+          <Txt Lang="en-GB" Txt="explain the concept in a state-space model " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende kendte processer i modellering som for eksempel en random walk og en autoregressiv model   " />
+          <Txt Lang="en-GB" Txt="apply well known processes in modeling  such as a random walk and an autoregressive model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere algorithmer til rumlig modellering som for eksempel kriging og et Gaussian Markov random field" />
+          <Txt Lang="en-GB" Txt="implement different algorithms for spatial modeling such as kriging and  Gaussian Markov random fields" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="sammenlige og evaluere modeller" />
+          <Txt Lang="en-GB" Txt="compare and evaluate models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diskutere og forsvare valg af model" />
+          <Txt Lang="en-GB" Txt="discuss and defend choice of model " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en rumlig eller tidsmæssig model for at analysere virkelige data" />
+          <Txt Lang="en-GB" Txt="design a spatial or temporal model to analyse real data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dokumentere og præsentere videnskabeligt arbejde." />
+          <Txt Lang="en-GB" Txt="document and present scientific work." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Praktisk erfaring med metoder til analyse og behandle  rumlige og tidslige data inden for kortlægning, navigation og jordobservationer.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="18" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:14.053" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

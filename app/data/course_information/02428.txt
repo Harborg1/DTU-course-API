@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02428" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Dynamisk Optimering" />
+        <Title Lang="en-GB" Title="Dynamic Optimization" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="2493" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Uffe Høgsbro</GivenName>
+            <FamilyName>Thygesen</FamilyName>
+            <Email>uhth@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="20 minutter" />
+          <Duration Lang="en-GB" Txt="20 minutes" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Optimiering over funktionsrum. Variationsregning. Pontryagins maksimumsprincip; hamiltonsk formalisme. Dynamisk programmering på grafer. Markovske beslutningsproblemer. Hamilton-Jacobi-Bellman-ligningen for optimal kontrol. Dynamiske spil. Numeriske metoder for optimal kontrol.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger. Øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Forelæsningsnoter. Uddrag fra lærebøger: Kamien &amp; Schwarts (1999) Dynamic Optimization. Liberzon (2012) Calculus of variations and optimal control.</Course_Literature>
+          <Course_Objectives>Kurset belyser matematiske temaer og teknikker indenfor dynamisk optimering. Det starter med klassiske eksempler på dynamisk optimering fra fysikken såsom korteste kurver og energiminimering, og udvikler derfra variationsregningen og dens generalisering til optimal kontrol med brug af hamiltonsk formalisme. Det udforsker dynamisk programmering (i Bellmans forstand) og hvordan det kan anvendes på forskellige problemer, diskrete og kontinuerte, såvel som deterministiske og stokastiske. Vi undersøger eksempler på dynamiske spil, både to-personers spil og middelfelttilnærmelser til spil med mange spillere. Teorien illustreres med simple kanoniske eksempler fra fysikken og fra beslutnings- og kontrolteori. Kurset dækker simple numeriske metoder, men fokus er på den matematiske teori.</Course_Objectives>
+          <No_Credit_Points_With>Der er stort fagligt overlap med det nu nedlagte 42111 Statistik og Dynamisk Optimering</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Optimization over function spaces. Calculus of variations. Pontryagin’s maximum principle; Hamiltonian formalism. Dynamic programming on graphs. Markov Decision Problems. The Hamilton-Jacobi-Bellman equation for optimal control. Dynamic games. Numerical methods for optimal control.</Contents>
+          <Teaching_And_Learning_Methods>Lectures. Exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes. Excerpts from textbooks: Kamien &amp; Schwarts (1999) Dynamic Optimization. Liberzon (2012) Calculus of variations and optimal control.</Course_Literature>
+          <Course_Objectives>The course elucidates mathematical themes and techniques in dynamic optimization. Starting with classical examples of dynamic optimization from mathematical physics (such as shortest path problems and minimum energy problems), we develop calculus of variations and its generalisation to optimal control using Hamiltonian formalism. We explore dynamic programming (in the sense of Bellman) and how it applies to a variety of problems, discrete and continuous, as well as deterministic and stochastic. We examine examples of dynamic games, both two-player games and mean-field approximations to many-player games. The theory is illustrated with simple canonical examples from physics and from decision and control. We cover simple numerical methods, but the emphasis is on mathematical theory.</Course_Objectives>
+          <No_Credit_Points_With>There is significant overlap with the cancelled 42111 Static and Dynamic Optimization</No_Credit_Points_With>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Dynamiske systemer, f.eks. 01617. Optimering, også under begrænsninger v.h.a. Lagrange multiplikatorer, f.eks. 02612. Et vist kendskab til partielle differentialligninger, f.eks. 01418. Elementær sandsynlighed er påkrævet; kendskab til Markov-processer vil være nyttigt, f.eks. 02407. Kendskab til differentialgeometri og funktionalanalyse vil være en fordel men forudsættes ikke." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Dynamic systems (e.g. 01617). Optimization including constrained optimization and Lagrange multipliers (e.g. 02612). Some exposure to partial differential equations will be helpful (e.g. 01418). Elementary probability is needed and exposure to Markov chains is helpful (e.g. 02407). Familiarity with differential geometry and functional analysis will be an advantage but is not assumed." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01617" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At anvende Euler-Lagrange ligningerne til at bestemme stationære punkter for integralfunktionaler" />
+          <Txt Lang="en-GB" Txt="To apply the Euler-Lagrange equation to identify stationary points for integral functionals" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At anvende Pontryagins Maksimumsprincip til at bestemme optimale kontrolsignaler" />
+          <Txt Lang="en-GB" Txt="To apply the Maximum Principle of Pontryagin to identify optimal controls." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At opstille og løse den dynamiske programmeringsligning for optimal kontrol af differentialligniger" />
+          <Txt Lang="en-GB" Txt="To pose and solve the Dynamic Programming equation for optimal control of differential equations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At beregne lineariserede tilbagekoblingsstrategier som er gyldige nær optimale ligevægtspunkter og banekurver" />
+          <Txt Lang="en-GB" Txt="To compute linearized feedback strategies which apply near optimal equilibria and trajectories. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At opstille og løse den dynamiske programmeringsligning for Markovske beslutningsproblemer og for dynamisk optimering på grafer" />
+          <Txt Lang="en-GB" Txt="To pose and solve the Dynamic Programming equation for Markov Decision Problems and optimization problems on graphs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At give eksempler på analyse af dynamiske spil " />
+          <Txt Lang="en-GB" Txt="To give examples of analysis of dynamic games" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At analysere dynamiske optimeringsproblemer både teoretisk og numerisk " />
+          <Txt Lang="en-GB" Txt="To analyse dynamic optimization problems both theoretically and numerically" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At give eksempler på dynamiske optimeringsproblemer indenfor fysik, beslutningsteori, og kontrolteori" />
+          <Txt Lang="en-GB" Txt="To give examples of dynamic optimization problems in physics, decision, and control" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>The mathematics of finding optimal functions, trajectories, and strategies</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="42111" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:47.333" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:17-alpine
+    image: pgvector/pgvector:pg17
     environment:
       POSTGRES_DB: dtu_courses
       POSTGRES_USER: dtu
@@ -24,6 +24,11 @@ services:
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
       GROQ_API_KEY: ${GROQ_API_KEY:-}
       GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+      EMBEDDING_API_KEY: ${EMBEDDING_API_KEY:-}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-text-embedding-3-small}
+      EMBEDDING_DIMENSIONS: ${EMBEDDING_DIMENSIONS:-1536}
+      SEMANTIC_COURSE_SEARCH_ENABLED: ${SEMANTIC_COURSE_SEARCH_ENABLED:-true}
+      SEMANTIC_COURSE_MIN_SIMILARITY: ${SEMANTIC_COURSE_MIN_SIMILARITY:-0.35}
       MCP_TOKEN: ${MCP_TOKEN:-}
       MCP_SERVER_URL: ${MCP_SERVER_URL:-}
     ports:
@@ -35,4 +40,3 @@ services:
 
 volumes:
   postgres_data:
-

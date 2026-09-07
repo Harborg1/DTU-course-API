@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30035" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Anvendt elektromagnetisme" />
+        <Title Lang="en-GB" Title="Engineering Electromagnetics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1A" SortID="0" />
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="70188" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Rasmus Elkjær</GivenName>
+            <FamilyName>Jacobsen</FamilyName>
+            <Email>rajac@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="20958" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Samel</GivenName>
+            <FamilyName>Arslanagic</FamilyName>
+            <Email>sar@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den skriftlige prøve, hjemmeafleveringer og laboratorieøvelser tæller med i den afsluttende bedømmelse/karakter. Samlet vurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The written exam, home assignments and laboratory exercises count towards the final evaluation/grade. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1A" />
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Maxwells ligninger
+- Bølger og fasorer, frekvens, bølgetal, dæmpningskonstant, udbredelseskonstant.
+- Transmissionslinier, transmissionslinie parametre (R’, L’, G’, C’), telegrafligningerne, karakteristisk impedans, refleksionskoefficient, transmissionskoefficient, standbølgeforhold, indgangsimpedans, effektflow, Smith kort, impedanstilpasning, kvartbølgetransformer, stubtilpasning.
+- Koaksialkabel, to-tråds transmissionslinie, mikrostrip transmissionslinie.
+- Plane bølger, intrinsisk impedans, udbredelseskonstant, linear, cirkulær, og elliptisk polarisation, refleksionskoefficient, parallel og vinkelret polarisation, Fresnel refleksionskoefficienter, Brewster vinkel, Poyntings vektor og power flow.
+- Vektor analyse, gradient, divergens, rotation, cylinderkoordinater, kuglekoordinater.
+- Elektrostatik, elektriske feltstørrelser, ladning og ladningstæthed, dielektricitetskonstant, Coulombs lov, Gauss’ lov, (elektrisk) potential, perfekte ledere, ledere med tab, isolatorer (dielektrika), polarisering, grænsebetingelser, kapacitans.
+- Magnetostatik, magnetiske feltstørrelser, Biot-Savarts lov, Gauss lov for magnetiske felter, magnetiske materialer og permeabilitet, grænsebetingelser.
+- Induktion, Faradays lov, Lenz’ lov, selvinduktans, gensidig induktans.
+- Laboratoriemålinger, oscilloskop, signalgenerator, netværksanalysator.
+- Matlab/Python.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning, grupperegning, laboratorieøvelser og hjemmeafleveringer.</Teaching_And_Learning_Methods>
+          <Course_Literature>Fawwas T. Ulaby and Umberto Ravaioli, Fundamentals of Applied Electromagnetics, 8th Edition, Global Edition, ISBN-10 1292436735, ISBN-13 9781292436739, Pearson Education, Limited (Marts 2022)
+
+Bemærk: brug af Matlab/Python/Maple på egen PC vil være en fordel.</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at give en introduktion til elektromagnetisme, således at de grundlæggende love der i kurset anvendes på idealiserede specialtilfælde, kan benyttes til at estimere opførslen af mere realistiske systemer inden for elektroteknik. Udover den klassiske elektromagnetisme skal studerende kunne regne på simple transmissionslinjekredsløb, som er vigtige fx. indenfor højhastighed-digital elektronik og mikrobølgeteknik. Derudover trænes samspillet mellem teoretiske overvejelser, kvantitative udregninger vha. computer programmer såsom Matlab/Python, samt måling i laboratoriet vha. standard instrumenter såsom fx oscilloskop, signalgenerator og netværksanalysator. Endelig tænkes kurset som det første af en række for studerende som planlægger en karriere indenfor RF systemer, antenneteknik og mikrobølgedesign.</Course_Objectives>
+          <Remark>For studerende med studiestart i februar er den vejledende placering i 4. (og ikke i 3.) semester. Læringsmålet om anvendelsen af såvel dansk som engelsk elektroteknisk terminologi skyldes kursets centrale position i Elektroteknologi-uddannelsen. Dansktalende studerende skal tilegne sig såvel den danske som den engelske elektrotekniske terminologi, mens ikke-dansktalende studerende skal tilegne sig den engelske elektrotekniske terminologi.
+E-learning anvendes i form af online quizz (home assignments), web-based tools og digital eksamen.
+Dette kursus giver eleverne kompetencer, der er relevante for FN's Verdensmål, især #9 (Industri, innovation og infrastruktur) #12 (Ansvarligt forbrug og produktion), #13 (Klimaindsats), #14 (Livet i havet) og #15 (Livet på land).</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Maxwell's equations.
+- Waves and phasors, frequency, wave number, attenuation constant, propagation constant.
+- Transmission lines, transmission line parameters (R’, L’, G’, C’), telegraphers equations, characteristic impedance, reflection and transmission coefficients, standing wave ratio, input impedance, power flow, Smith chart, impedance matching, quarter-wave transformer, single-stub tuner.
+- Coaxial cable, two-wire transmission line, microstrip transmission line.
+- Plane waves, intrinsic impedance, propagation constant, linear, circular, and elliptical polarization, parallel and perpendicular polarization, Fresnel reflection coefficients, Brewster angle, Poynting vector and power flow.
+- Vector analysis, gradient, divergence, curl, cylindrical coordinates, spherical coordinates.
+- Electrostatics, electric field quantities, charge and charge density, dielectric constant, Coulomb’s law, Gauss’ law, (electric) potential, perfect conductor, conductor with losses, isolators (dielectrics), polarization, boundary conditions, capacitance.
+- Magnetostatics, magnetic field quantities, the Biot-Savart law, Gauss law for magnetostatics, magnetic materials and permeability, boundary conditions.
+- Induction, Faraday’s law, Lenz’ law, self-inductance, mutual inductance.
+- Matlab/Python.</Contents>
+          <Teaching_And_Learning_Methods>Class lectures, group tutorials, laboratory exercises and home assignments.</Teaching_And_Learning_Methods>
+          <Course_Literature>Fawwas T. Ulaby and Umberto Ravaioli, Fundamentals of Applied Electromagnetics, 8th Edition, Global Edition, ISBN-10 1292436735, ISBN-13 9781292436739, Pearson Education, Limited (Marts 2022)
+
+Remark: Own PC/Laptop with Matlab/Python/Maple will be an advantage.</Course_Literature>
+          <Course_Objectives>The course aims to introduce electromagnetics so that the basic laws, which in the course are applied to idealised special cases, can be used to estimate the behaviour of realistic electrical systems. In addition to classical electromagnetism, the students should be able to make simple calculations on important transmission line circuits, e.g. for high-speed digital electronics or microwave engineering. Additionally, the students should be trained in combining theoretical considerations with quantitative calculations from computer programs such as Matlab/Python and laboratory measurements generated using standard instruments such as e.g. oscilloscopes, signal generators and network analysers. Finally, the course is the first one in a sequence of courses intended for students pursuing a career within RF systems and antenna and microwave circuit design.</Course_Objectives>
+          <Remark>For students beginning in February, the course is recommended in the 4th (and not the 3rd) semester. The learning objective for applying Danish and English electro-technical terminology is due to the central position of the course in the Electrical Engineering education. Danish-speaking students must acquire Danish and English electro-technical terminology, while non-Danish-speaking students must acquire English electro-technical terminology.
+E-learning is used in the form of online quizzes (home assignments), web-based tools and digital exam.
+This course provides students with competencies relevant to UN SDGs, particularly #9 (Industry, innovation and infrastructure), #12 (Responsible consumption and production), #13 (Climate action), #14 (Life below water) and #15 (Life on land).</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Matematisk Analyse og Modellering,&#xD;&#xA;Lineær Algebra og Modellering,&#xD;&#xA;Elektroteknik,&#xD;&#xA;Analog elektronik,&#xD;&#xA;Videregående Matematik for Diplom Elektroteknologi" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Mathematical Analysis and Modelling,&#xD;&#xA;Linear Algebra and Modelling,&#xD;&#xA;Electrotechnics,&#xD;&#xA;Analogue electronics,&#xD;&#xA;Advanced Mathematics for diploma Electro Technology" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01901.01911.01920.30032.62732.62735" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og evaluere styret og ustyret elektromagnetiske bølgeudbredelse." />
+          <Txt Lang="en-GB" Txt="Analyze and evaluate guided and unguided propagation of electromagnetic waves." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende transmissionslinjeteori til at designe basale kredsløb." />
+          <Txt Lang="en-GB" Txt="Apply transmission line theory to design basic circuits. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende elektrostatik-, magnetostatik- og induktionslove til at analysere forenklede konfigurationer af ladninger, ledere, dielektrikum og magnetiske materialer." />
+          <Txt Lang="en-GB" Txt="Apply electrostatics, magnetostatics and induction laws to analyze simplified configurations of charges, conductors, dielectrics and magnetic materials." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge deduktiv og induktiv ræsonnement i analyser af elektromagnetiske systemer." />
+          <Txt Lang="en-GB" Txt="Use deductive and inductive reasoning in analyses of electromagnetic systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende vektoroperatorer på skalar- og vektorfelter i rektangulære, cylindriske og sfæriske koordinatsystemer." />
+          <Txt Lang="en-GB" Txt="Explain and apply vector operators on scalar and vector fields in rectangular, cylindrical and spherical coordinate systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samle transmissionsledningskredsløb og bruge vektornetværksanalysatorer til at vurdere dem." />
+          <Txt Lang="en-GB" Txt="Assemble transmission line circuits and use vector network analyzers to assess them." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Relatere eksperimentelle observationer til teori." />
+          <Txt Lang="en-GB" Txt="Relate experimental observations to theory." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Brug elektromagnetisk terminologi." />
+          <Txt Lang="en-GB" Txt="Use electromagnetic terminology." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Elektromagnetisme, elektriske kredsløb og elektronik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="10036.30400.62461" />
+        <PreviousCourse CourseCode="31035" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="70" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="30" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:47.277" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

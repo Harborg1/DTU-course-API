@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02291" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Systemintegration" />
+        <Title Lang="en-GB" Title="System Integration" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="102607" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Hugo-Andrés</GivenName>
+            <FamilyName>López-Acosta</FamilyName>
+            <Email>hulo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen. Reeksamensformen og/eller varigheden kan afvige fra den ordinære eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination. The form and/or duration of the reexam may be different from that of the regular exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus dækker modelbaserede teknikker til integration af komponenterne i et komplekst softwaresystem. Kurset fokuserer på hvordan man modellerer forskellige perspektiver på et komplekst system bestående af flere komponenter og hvordan man integrerer flere perspektiver på softwarekomponenter (f.eks. funktionelle aspekter, dataaspekter, ikke-funktionelle aspekter…). De dækkede teknikker vil omfatte kravspecifikationsteknikker (f.eks. kravspecifikationer), komponentbaserede modelleringsteknikker og integrationsteknikker (f.eks. samarbejde, koreografier osv.).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Udvalgt læsemateriale vil blive stillet til rådighed online.</Course_Literature>
+          <Course_Objectives>Kursets mål er at give deltagerne et teoretisk grundlag og værktøjsbaserede metoder til at forstå, modellere, analysere og designe komplekse heterogene systemer, der er samlet af forskellige komponenter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course covers model-based techniques for integrating the components of a complex software system. The course will focus on how to model different views of a complex system made of multiple components, and how to integrate multiple perspectives of software components (e.g., functional aspects, data aspects, non-functional aspects...). The techniques covered will include requirements engineering techniques (e.g., requirement specifications), component-based modelling techniques, and integration techniques (e.g., collaboration, choreographies, etc.).</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Selected reading materials will be provided online.</Course_Literature>
+          <Course_Objectives>The objective of the course is to provide the participants with theoretical foundations and tool-supported methodologies to understand, model, analyze, and design complex heterogeneous systems assembled from different components.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om standard modelleringsprog i datalogi (e.g. UML, automater, ER) som forudsat f.eks. i 02141/02143/02161/02170." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of standard modelling languages in computer science (e.g., UML, Automata, ER) - as provided e.g. in 02141/02143/02161/02170." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02141/02143/02161/02170" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare et komplekst softwaresystem ved hjælp af modeller" />
+          <Txt Lang="en-GB" Txt="explain a complex software system using models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere og modellere kravene til et komplekst softwaresystem" />
+          <Txt Lang="en-GB" Txt="identify and model the requirements of a complex software system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="modellere et komplekst softwaresystem og dets komponenter" />
+          <Txt Lang="en-GB" Txt="model a complex software system and its components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe integrationen af ​​komponenter" />
+          <Txt Lang="en-GB" Txt="design the integration of components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare forholdet mellem krav, komponenter og deres integration" />
+          <Txt Lang="en-GB" Txt="explain the relation between requirements, components and their integration" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="diskutere en models hensigtsmæssighed til at beskrive et problem" />
+          <Txt Lang="en-GB" Txt="discuss the appropriateness of models to explain a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende modellering værktøjer og forklare den overordnede virkemåde for sådanne værktøjer" />
+          <Txt Lang="en-GB" Txt="operate modelling tools and explain the overall workings of such tools" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere situationer hvor kursets teknikker er anvendelige" />
+          <Txt Lang="en-GB" Txt="identify situations where the covered techniques apply" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>System integration and system modelling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:23.427" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

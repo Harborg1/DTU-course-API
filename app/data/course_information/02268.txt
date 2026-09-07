@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02268" University="dtu" LastUpdated="2026-04-30+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Procesorienterede og event-drevne softwaresystemer" />
+        <Title Lang="en-GB" Title="Process-oriented and Event-driven Software Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="102607" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Hugo-Andrés</GivenName>
+            <FamilyName>López-Acosta</FamilyName>
+            <Email>hulo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren vil blive fastsat på baggrund af en samlet vurdering af et individualiseret gruppeprojekt. For at blive indstillet til eksamen skal den studerende have fået godkendt et sæt af mellemliggende opgaver." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade will be based on an overall assessment of an individualized group project. To be admitted to the exam, the student should have approved a set of intermediate assignments." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer principperne for udvikling af procesorienterede og event-drevne softwaresystemer til automatisering af forretningsprocesser.
+
+Emnerne, der præsenteres, er:
+▪ Forretningsproceslivscyklus og procesarkitekturer.
+▪ Formalisering af forretningsprocesser ved hjælp af procesmodelleringsnotationer,  bl.a. Business Process Model and Notation, DCR-grafer, m.m.
+▪ Metoder og teknikker til analyse af korrektheden af ​​en procesmodel
+▪ Metoder og teknikker til redesign af forretningsprocesser
+▪ Teknologier til automatisering af forretningsprocesser (dvs. procesbevidste informationssystemer)
+▪ Teknologier til eventbehandling</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og studenterpræsentationer samt et projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets formal er sætte de studerende i stand til at bruge procesorienterede og event-drevne principper for at automatisere forretningsprocesser. Det indbefatter modellering og analyse af forretningsprocesser og implementering af procesorienterede og event-drevne arkitekturer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces the principles for developing process-oriented and event-driven software systems to automate business processes. 
+
+The topics presented are: 
+▪ Business Process Lifecycle and Process Architectures.
+▪ Formalization of business processes using process modelling notations, e.g., Business Process Model and Notation, DCR graphs, and/or others.
+▪ Methods and techniques for analyzing the correctness of a process model
+▪ Methods and techniques for redesigning business processes
+▪ Technologies for automating business processes (i.e., Process-Aware Information Systems)
+▪ Technologies for event processing</Contents>
+          <Teaching_And_Learning_Methods>Lectures, tutorials and student presentations, along with a project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course aims to enable students to apply the principles for developing process-oriented and event-driven software systems in the automation of business processes. This includes modelling business processes, analysing and improving them, and implementing them using process-oriented and event-driven architectures.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Solid programmeringserfaring i Java. Videm om algorithmer og data strukturer. Basale færdigheder i softwareudvikling; erfaring med kommandoliner grænseflader og programmering af små scripts." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Solid working knowledge of Java. Knowledge of algorithms and data structures. Basic software engineering skills. Experience with command-line interface and small scripts." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02161/02160).02105" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne identificere et sæt af processer i en organisation og karakterisere deres betydning i en procesarkitektur" />
+          <Txt Lang="en-GB" Txt="Be able to identify a set of processes in an organization and characterize their importance in a process architecture" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå eksekveringssemantikken for udvalgte forretningsprocesmodelleringsnotationer" />
+          <Txt Lang="en-GB" Txt="Understand the execution semantics of selected business process modelling notations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formelt modellere processer ved hjælp af en forretningsprocesmodelleringsnotation som Business Process Model and Notation (BPMN), DCR-grafer og/eller andre modelleringstilgange" />
+          <Txt Lang="en-GB" Txt="Formally model processes using a business process modeling notation like Business Process Model and Notation (BPMN), DCR graphs and/or other modeling approaches" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argument om kvaliteten af ​​en procesmodel ved hjælp af standardkriterier for korrekthed" />
+          <Txt Lang="en-GB" Txt="Argument on the quality of a process model using standard correctness criteria " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg passende procesrepræsentation for en given proces i henhold til specifikke mål, f.eks. deres kompleksitet, forudsigelighed og repeterbarhed." />
+          <Txt Lang="en-GB" Txt="Select appropriate process representation for a given process according to  specific goals, e.g., their complexity, predictability, and repeatability" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend redesign heuristik til forbedring af forretningsprocesser" />
+          <Txt Lang="en-GB" Txt="Apply redesign heuristics for the improvement of business processes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At være i stand til at forfine en procesmodel, så den opfylder et specifikt formål (f.eks. til automatisering eller til kommunikation)" />
+          <Txt Lang="en-GB" Txt="Being able to refine a process model so it obeys a specific purpose (e.g. for automation, or for communication)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="At integrere procesmodeller i en implementering, herunder procesbevidste informationssystemer (PAIS) og valg af passende datakilder" />
+          <Txt Lang="en-GB" Txt="To integrate process models in an implementation, including Process Aware Information Systems (PAIS), selecting appropriate data sources" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse problemer som del af et team" />
+          <Txt Lang="en-GB" Txt="Solve problems in teams" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Business Process Management: Opportunities for flexible automation, and integration with event sources (such as IoT)</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:14.32" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

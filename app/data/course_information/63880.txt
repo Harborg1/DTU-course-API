@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="63880" University="dtu" LastUpdated="2025-02-14+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Data analytics i transport med fokus på jernbaner" />
+        <Title Lang="en-GB" Title="Data analytics in transport with emphasis on railways" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="93497" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Steven Seth</GivenName>
+            <FamilyName>Harrod</FamilyName>
+            <Email>stehar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der bliver fire vurderet opgaver. Karakteren beregnes ud fra: 25% opgaver, 25% midtvejs eksamen og 50% kursus eksamen. Eksamen og opgave spørgsmål stilles på engelsk, men aflevering kan foregå på dansk ved de studerendes anmodning. Ekstern censoren vurderer alt undtaget opgaverne." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="There are four graded exercises. Course grade is calculated from: 25% exercises, 25% midterm exam and 50% course exam. Exam and exercise questions are presented in English, but submissions can be delivered in Danish on the students request. External censor evaluates all except exercises." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer lineær regression og derefter fortsætter til avanceret metoder. Læringsmål omfatter både metoder og problemløsningstip. Et sortiment af datasæt om mobilitet og transport udforskes til at demonstrere kompleks modeler, også til vise hvad kan tage fejl, og hvordan man kan undgå falsk fortolkninger. Kurset sluttes med et fokus på virkelige data og muligheden for flere fortolkninger af dataene.
+
+Kurset sammelæses med diplom kursus 62637, men bachelor studerende får anderledes opgaver og vurdering.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning, øvelser, en del gruppearbejde og afsluttende eksamen.</Teaching_And_Learning_Methods>
+          <Course_Literature>Faraway, J. J. (2016). Linear Models with R (2nd ed.). Taylor &amp; Francis.
+ISBN 978 1 4398 8733 2
+
+Harvard Business School case studier må købes direkte fra forlægger online. Cases bliver udgivet ved kursusstart. Cases ændrer sig løbende hvert år.
+
+Videnskabelige artikler fra DTU biblioteket.</Course_Literature>
+          <Course_Objectives>Kurset holder meget om lineær regressionsanalyse, som er et vigtigt værktøj i markedsføring, planlægning, drift og årsagsanalyse. Kurset virker som videre læsning efter 02403, med dækning af multiple linear regression og stochastic regression (multinomial og Poisson). Studerende øve sig i forskellige datatyper og problemstillinger, og flere eksempler fra jernbaner.
+
+Kurset benytter "R" statistik software.</Course_Objectives>
+          <Remark>Sektion for Produktion, transport og planlægning
+
+Valgfag: Decision Support in Engineering: 3/5. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces linear regression and then continues to advanced methods. Learning objectives cover both methods and problem solving tips.  A variety of data sets from mobility and transport are explored to demonstrate complex models, but also to demonstrate what can go wrong, and how to avoid false interpretations. The course ends with an emphasis on real world data and the possibility of multiple interpretations of that data.
+
+The course meets together with diplom course 62637, but the bachelor students receive different exercises and evaluation.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, some group work and final exam.</Teaching_And_Learning_Methods>
+          <Course_Literature>Faraway, J. J. (2016). Linear Models with R (2nd ed.). Taylor &amp; Francis.
+ISBN 978 1 4398 8733 2
+
+Harvard Business School case studies must be purchased direct from publisher online. Cases are announced at course start. Cases change every year.
+
+Research articles from DTU library.</Course_Literature>
+          <Course_Objectives>The course is focused on linear regression analysis, which is an important tool in marketing, planning, operations and causal analysis. The course functions as a further study after 02403, with coverage of multiple linear regress and stochastic regression (multinomial and Poisson). Students practice with a variety of data types and problem descriptions, and multiple examples from railways. 
+
+The course uses "R" statistics software.</Course_Objectives>
+          <Remark>Section of Production, Transportation and Planning
+
+Elective: Decision Support in Engineering: 3/5. semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Studerende bør havde bestået et kursus som indeholder deskriptiv statistik, estimatberegninger af parametre i statistiske modeller og hypotesetester. Det er et fast krav." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students should have previously passed a course covering descriptive statistics, distribution fitting, and hypothesis testing. This is a firm requirement." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62668" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv problemer med en formel struktur og vælg den relevant analyse" />
+          <Txt Lang="en-GB" Txt="Formally define problems and identify the relevant analysis " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg, samle, lave om og rette data ifølge erkendt standarder" />
+          <Txt Lang="en-GB" Txt="Choose, collect, format, and clean data according to recommended standards" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv datasæt ved hjælp af deskriptiv statistikker, ANOVA og signifikanstest" />
+          <Txt Lang="en-GB" Txt="Describe data by means of descriptive statistics, ANOVA, and test for significance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegør for grundliggende teori af lineær regression og &quot;ordinary least squares&quot;" />
+          <Txt Lang="en-GB" Txt="Explain the theoretical basis for linear regression and &quot;ordinary least squares&quot;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør restanalyse, anvend data transformationer og evaluer hvordan en model passer " />
+          <Txt Lang="en-GB" Txt="Perform residual analysis, apply data transformations, and evaluate model fit" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilpas multipel regressionsmodeler ved hjælp af trinvis regression" />
+          <Txt Lang="en-GB" Txt="Fit multiple regression models with stepwise regression" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler beslutningsmodeler med logistisk regression" />
+          <Txt Lang="en-GB" Txt="Formulate decision models with logistic regression" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler efterspørgsels- og fejlmodeler med Poisson regression" />
+          <Txt Lang="en-GB" Txt="Formulate demand and failure models with Poisson regression" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv drift problemmer ved jernbaner og anvendelse af data analyse i planlægning og forudsigelser" />
+          <Txt Lang="en-GB" Txt="Describe operations problems in railways and applications of data analysis in planning and forecasting" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løs casestudier om forudsigelser eller årsagsanlyser" />
+          <Txt Lang="en-GB" Txt="Evaluate case studies in forecasting or causal analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle relevant statistisk analyse software færdigheder, især &quot;R&quot;" />
+          <Txt Lang="en-GB" Txt="Develop skills in relevant statistical analysis software, especially &quot;R&quot;" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Data analytics i transport med fokus på jernbaner</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="10" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="42890.62637" />
+        <PreviousCourse CourseCode="42890" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:34.7" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

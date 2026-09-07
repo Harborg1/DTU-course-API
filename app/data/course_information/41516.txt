@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41516" University="dtu" LastUpdated="2025-02-27+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Anisotropi og fiberkompositter" />
+        <Title Lang="en-GB" Title="Anisotropy and fibre composites" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="2169" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ann Bettina</GivenName>
+            <FamilyName>Richelsen</FamilyName>
+            <Email>abri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="9529" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Brian Nyvang</GivenName>
+            <FamilyName>Legarth</FamilyName>
+            <Email>bnle@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering baseret på en projektrapport og en individuel rapport. Projektrapporten udarbejdes i grupper af 2 studerende med tydelig angivelse af, hvilke dele hvert gruppemedlem er ansvarlig for. Den individuelle rapport forudsætter aflevering af projektrapporten." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment based on a project report and an individual report. The project report is written in groups of 2 students with clear specification of the parts each group member is responsible for. The individual report requires hand-in of project report." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Sammenhængen mellem spændinger og tøjninger i elastiske anisotrope materialer samt rotationstransformation af konstitutive modeller gennemgås. Bestemmelse af elastiske materialeparametre for kompositter. Den nødvendige teori til at analysere udbøjning, svigt, buling og svingning af fiberkompositplader behandles. Kurset omhandler anisotrope materialer som glas-, kul- og aramidfiber-armerede polymerer.
+
+Kursets indhold er ligeligt fordelt mellem teoretiske analysemetoder og disse metoders anvendelse i dimensionering ud fra stivheds- og styrkekriterier. Analysemetoderne er både analytiske og numeriske. Egne beregningsværktøjer programmeres.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde. Øvelser og projektarbejde foregår i grupper af 2 studerende.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne den nødvendige baggrund for generel anisotrop elasticitetsteori med henblik på analyse af konstruktioner i fiberarmerede kompositmaterialer. At give deltageren baggrund for at kunne dimensionere laminatkonstruktioner ud fra stivheds- og styrkekriterier.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The relation between stresses and strains in elastic anisotropic materials,  together with rotational transformations of consitutive models are presented. Determination of elastic properties of composites. The necessary theory to analysis deflections, failure, stability and vibrations of fibre composite plates is presented. The course treats anisotropic materials like glass, carbon and aramid fibre reinforced polymers.
+
+The course content is equally distributed between theoretical methods for analysis and the application of these methods in design based on criteria for stiffness and strength. Own computational tools are developed.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work.  Exercises and project work are performed in groups of 2 students.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give the student the necessary background for general anisotropic elasticity theory with special attention to analyses of structures made of fibre reinforced composites. To give the student the background to dimension laminate structures with respect to stiffness and strength.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="samt programmeringserfaring (f.eks. MATLAB). Ønskeligt er desuden erfaring med et Finite Element program f.eks. 41812/41815/11305/41958." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="and programming expertise (e.g. MATLAB).  Recommended is also experience with Finite Element programs e.g. 41812/41815/11305/41958." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41501/41533/41203.41502/41534" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende generel anisotrop elasticitetsteori  til at beregne spændinger og tøjninger i kartesiske og roterede koordinatsystemer" />
+          <Txt Lang="en-GB" Txt="Use general anisotropic elasticity theory to calculate stresses and strains in Cartesian and in rotated coordinate systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne elastiske materialeparametre for fiberkompositmaterialer" />
+          <Txt Lang="en-GB" Txt="Compute elastic properties for fibre composite materials" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for og anvende de grundlæggende metoder inden for klassisk laminatteori" />
+          <Txt Lang="en-GB" Txt="Account for and apply the basic methods within classical laminate theory" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for den generelle sammenhæng mellem snitkræfter, snitmomenter og spændingsfordelinger for laminatplader" />
+          <Txt Lang="en-GB" Txt="Account for the general relations between cross sectional forces and stresses for laminate plates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte pladedifferentialligninger samt standardløsninger til at beregne udbøjninger af plader" />
+          <Txt Lang="en-GB" Txt="Use plate differential equations with standard solutions to compute deflections of plates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne progressivt svigt i fiberkompositter ved anvendelse af state-of-art brudkriterier" />
+          <Txt Lang="en-GB" Txt="Compute progressive failure in fibre composites using state-of-art criteria" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kombinere de klassiske teoretiske design- og analyse-værktøjer og udvikle et eget beregningsværktøj, der kan bruges til at dimensionere specifikke fiberkompositkonstruktioner, der ikke passer ind i standardløsninger" />
+          <Txt Lang="en-GB" Txt="Combine the classical theoretical design and analysis tools and develop a new calculation algorithm able to dimension specific fibre composite structures which do not fit into standard solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere resultater opnået via standard eller egne udviklede design- og analyse-værktøjer imod et forventet konstruktions-respons" />
+          <Txt Lang="en-GB" Txt="Evaluate results achieved using standard or new developed design and analysis tools against an expected structural response" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Elastisk anisotropi og fiberlaminater - teori og beregning</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41228/41820" />
+        <PreviousCourse CourseCode="41820" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:27:21.093" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

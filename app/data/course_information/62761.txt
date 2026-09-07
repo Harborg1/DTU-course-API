@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62761" Volume="2026/2027" University="dtu" LastUpdated="2026-03-24+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Elforsyning 2" />
+        <Title Lang="en-GB" Title="Power Engineering 2" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="178698" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Mehdi</GivenName>
+            <FamilyName>Savaghebi</FamilyName>
+            <Email>medi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="214374" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sam</GivenName>
+            <FamilyName>Roozbehani</FamilyName>
+            <Email>samro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Symmetriske fejl
+- Sekvenskomposanter 
+- Sekvensnetværk
+- Usymmetriske fejl
+- RelaySimTest 
+- Transient stabilitet
+- Generel beskyttelsesfilosofi
+- Indgangsenheder til relæer, f.eks. Strømtransformere og spændingstransformere
+- Jording af elforsyningssystemer
+- Overstrøms beskyttelse ved hjælp af tid og invers tidsindstillinger
+- Zone beskyttelse og backup beskyttelse
+- Afstandsbeskyttelse, Pilotbeskyttelse, Samleskinnebeskyttelse, Transformerbeskyttelse</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning, opgave og opgaveregning</Teaching_And_Learning_Methods>
+          <Course_Literature>Noter og bogen fra 
+- Glover, Overbye and Sarma, "Power systems analysis &amp; design", sjette udgave
+- Blackburn &amp; Domin, "Protective Relaying: Principles and Applications", fjerde udgave</Course_Literature>
+          <Course_Objectives>Introduktion til symmetriske komponenter giver grundlag for at analysere forskellige typer fejl (både symmetriske og usymmetriske), der kan forekomme i et elsystem.
+Introduktion til transient stabilitet i et elsystem på grund af fejl på elsystemet bliver diskuteret.
+Introduktion til give den studerende grundlæggende viden og kompetencer i beskyttelsesmetoder for elforsyningssystemer. Den studerende skal være i stand til selvstændigt at tilegne sig viden om sikkerhedsspørgsmål i forbindelse med driften af​​elforsyningssystemet.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektrisk Energiteknologi: 4. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Symmetrical fault 
+- Sequence components
+- Sequence networks
+- Unsymmetrical faults
+- RelaySimTest 
+- Transient stability
+- General protection philosophy
+- Input devices to relay, e.g. CTs and VTs
+- Grounding of power systems
+- Over current protection using definite time and inverse definite time settings
+- Overcurrent protection using time and inverse time settings
+- Zone protection and Backup protection
+- Distance protection, Pilot protection, Bus protection, Transformer protection</Contents>
+          <Teaching_And_Learning_Methods>Lectures, assignments and problem solving</Teaching_And_Learning_Methods>
+          <Course_Literature>Notes and the book from 
+- Glover, Overbye and Sarma, "Power systems analysis &amp; design", sixth edition
+- Blackburn &amp; Domin, "Protective Relaying: Principles and Applications", fourth edition"</Course_Literature>
+          <Course_Objectives>Introduction to symmetrical components provides a basis for analysing various types of faults (both symmetrical and unsymmetrical) that may occur in the electrical network.
+Introduction to transient stability in the electrical network due to faults on the power system is discussed.
+Introduction to basic knowledge and skills regarding methods of protection of power systems. The student must be able to, independently, acquire knowledge of safety issues associated with the operation of the electrical power system.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektrisk Energiteknologi: 4. semester</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne de symmetriske fejlstrømme i et elsystem fra et enkeltfase ækvivalent Thévenin kredsløb" />
+          <Txt Lang="en-GB" Txt="Calculate the symmetrical fault currents in a power system from the single phase equivalent Thévenin circuit " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne de symmetriske fejlstrømme og busspændinger i et elsystem ved at benytte busimpedansmatricen" />
+          <Txt Lang="en-GB" Txt="Calculate the symmetrical fault currents and bus voltages in a power system by making use of the bus impedance matrix " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå princippet om sekvenskomposanter" />
+          <Txt Lang="en-GB" Txt="Understand the principle of sequence components " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere et ækvivalent nul-, positivt og negativt-sekvensnetværk til et elsystem" />
+          <Txt Lang="en-GB" Txt="Construct an equivalent zero-, positive- and negative- sequence network for a power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne de usymmetriske fejlstrømme under en enkelt linje til jord, linje til linje og linje til linje til jord fejl, fra det ækvivalente Thévenin kredsløb af det ækvivalent nul-, positive- og negativ-sekvensnetværk til et elsystem" />
+          <Txt Lang="en-GB" Txt="Calculate the unsymmetrical fault currents, during a single line to ground, line to line, and line to line to ground fault, from the equivalent Thévenin circuit of the zero-, positive- and negative- sequence network for a power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne de usymmetriske fejlstrømme samt busspændinger under en enkelt linje til jord, linje til linje og linje til linje til jord fejl, fra nul-, positiv- og negativ-sekvensen busimpedansmatricer af et elsystem" />
+          <Txt Lang="en-GB" Txt="Calculate the unsymmetrical fault currents, as well as bus voltages during a single line to ground, line to line, and line to line to ground fault, from the zero-, positive- and negative- sequence bus impedance matrices of a power system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå princippet om transient stabilitet under fejl på elsystemet og være i stand til at beregne den kritiske fejl clearingstid for at systemet forbliver stabilt" />
+          <Txt Lang="en-GB" Txt="Understand the principle of transient stability during faults on the power system and be able to calculate the critical fault clearing time for the system to remain stable" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå mulighederne og begrænsningerne for forskellige beskyttelsesprincipper" />
+          <Txt Lang="en-GB" Txt="Understand the possibilities and limitations of different principles of protection" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne udvælge et passende beskyttelsesprincip" />
+          <Txt Lang="en-GB" Txt="Be able to pick a suitable principle of protection" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Have forståelse for hvorledes relæer og andre beskyttelsesindretninger fungere" />
+          <Txt Lang="en-GB" Txt="Have an understanding of how relays and other protection devices work" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå hvorledes relæer og andre beskyttelsesindretninger indstilles og testes" />
+          <Txt Lang="en-GB" Txt="Have an understanding of how relays and other protection equipment are set up and tested" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende værktøjer såsom MATLAB og DIgSILENT PowerFactory til analyse og simulering af elsystemer." />
+          <Txt Lang="en-GB" Txt="Utilize tools such as MATLAB and DIgSILENT PowerFactory for power system analysis and simulation." />
+        </DTU_ObjectiveKeyword>
+        <Mandatory_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="62760" />
+        </Mandatory_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Power System Analysis II</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62709/62710" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:12.923" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

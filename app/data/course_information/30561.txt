@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30561" University="dtu" LastUpdated="2026-03-27+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Fysisk Geodæsi" />
+        <Title Lang="en-GB" Title="Physical Geodesy" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="38284" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Gabriel</GivenName>
+            <FamilyName>Strykowski</FamilyName>
+            <Email>gs@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="65553" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Tim Enzlberger</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>timj@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="4 obligatoriske opgaver. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="4 compulsory assignments. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursets omhandler: Jordens tyngdefelt, måling af tyngdefelt på land samt fra fly og satellit, beregning af geoide, samt satellitter og deres bevægelse i tyngdefeltet. Kurset har endvidere elementer i geostatistik og estimering.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og praktiske målinger.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Jordens tyngdefelt varierer fra sted til sted afhængigt af undergrundens sammensætning. Variationerne påvirker Jordens form og bevirker blandt andet, at vandet i havene ikke følger en simpel flade. Geoiden er en tyngdeækvipotentialflade, som beskriver den aktuelle nulniveauflade. På land er Geoiden nødvendig for at kunne bestemme fysiske højder med satellitpositionering. 
+
+Målet med kurset er at give de studerende et godt kendskab til de matematiske modeller og metoder, der ligger til grund for beskrivelse af Jordens geometri og tyngdefelt.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The content of the course includes Earth's gravity field, measurement of gravity on land and from aircraft and satellites, computation of the geoid, and satellites and their behaviour in the gravity field, supplemented by elements from statistics and estimation.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, computer exercises and measurements.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The Earth's gravity field varies from location to location depending on the composition of the materials in the subsurface. These variations impact the shape of the Earth and cause the water in the oceans not to coincide with a simple surface. The Geoid is an equipotential surface for gravity describing the zero-level surface. On land, the Geoid is needed to compute heights from satellite positioning. 
+
+The course aims to provide the students with knowledge about the mathematical models and methodology used for describing the Earth's shape and gravity field.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser og beskriv sammenhængden mellemn Jordens tyngdefelt og Jordens form" />
+          <Txt Lang="en-GB" Txt="Interpret and describe the interrelation of gravity and Earth shape" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planæg og udfør en tyngdeopmåling samt netværksudjævning" />
+          <Txt Lang="en-GB" Txt="Design and carry out a gravity survey, set up and carry out a network adjustment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Nævn de fysiske processer som bidrager til tidslig variation i Jordens tyngdefelt samt deres omfang og tidsskala" />
+          <Txt Lang="en-GB" Txt="List and prioritize the physical processes that contribute to temporal variations in the gravity field of the Earth" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Nævn de parametre som definerer en ellipsoide og idenfificer forskelle mellem tyngdedisturbanser og tyngdeanomalier" />
+          <Txt Lang="en-GB" Txt="List the defining parameters of the level ellipsoid and identify the difference between gravity disturbances and gravity anomalies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend frilufts- og terræn-reduktioner og beskriv Pratt-Hayford og Airy-Heiskanen isostatiske reduktioner" />
+          <Txt Lang="en-GB" Txt="Apply free-air reductions and terrain reductions and describe the Pratt-Hayford and Airy-Heiskanen isostatic reductions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn geopotentialet og afladte variable fra sfærisk harmoniske modeller. Beskriv sammenhængen mellem sfærisk harmoniske funktioner, &quot;mesh grids&quot; og rumlig opløsning." />
+          <Txt Lang="en-GB" Txt="Evaluate the geopotential and derived quantities from models based on spherical harmonic functions and relate spherical harmonics and mesh grids to spatial resolution" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv hvordan satellitbaserede metoder bidrager til kendskab af Jordens tyngdefelt og Jordens form" />
+          <Txt Lang="en-GB" Txt="Explain the contribution of satellite methods to knowledge of the Earth’s gravity field and the knowledge of the shape of the Earth" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv forskellen mellem forskellige typer af højdesystemer, identificer de associerede referenceflader og vær istand til at transformere mellem disse" />
+          <Txt Lang="en-GB" Txt="Discriminate between different types of height systems, identify their associated reference surfaces and transform between these" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar begreberne geoide og kvasigeoide og de vigtigste modelleringsteknikker ved geoidemodellering" />
+          <Txt Lang="en-GB" Txt="Explain the concepts of geoid and quasi-geoid and the main techniques to model them" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv en relationen mellem geometrisk nivellement og gravimetrisk geoide/kvasigeoide" />
+          <Txt Lang="en-GB" Txt="Describe the relation between spirit levelling and the gravimetric geoid/quasi-geoid" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vær i stand til at modellere en kvasigeoide med to forskellige metoder (sfærisk FFT og kollokation)." />
+          <Txt Lang="en-GB" Txt="Model a quasi-geoid by using the spherical FFT and collocation, describe difference of the two methods and evaluate the results." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="(10020/10022/10024/10033).01035.(30140.30141.30142).30150" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>The modern definition of heights, the Earth’s gravity field and some geophysical applications</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="18" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="30560" />
+        <PreviousCourse CourseCode="30560" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="25" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:17.043" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

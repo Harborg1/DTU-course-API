@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02242" University="dtu" LastUpdated="2026-05-05+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">7.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Programanalyse" />
+        <Title Lang="en-GB" Title="Program Analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="57664" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Christian Gram</GivenName>
+            <FamilyName>Kalhauge</FamilyName>
+            <Email>chrg@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="94040" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Alberto Lluch</GivenName>
+            <FamilyName>Lafuente</FamilyName>
+            <Email>albl@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="En skriftlig artikel udarbejdet i en gruppe danner grundlag for en fælles mundtlig eksamen og bedømmes med én samlet karakter. I løbet af kurset skal de studerende gennemføre flere delprøver med bestået/ikke-bestået i form af hjemmeopgaver. Alle disse skal bestås for at kunne gå til den afsluttende eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A paper written in a group serves as the foundation for a joint oral exam and receives a single overall assessment. Throughout the course, students must complete several pass/fail part exams in the form of take-home assignments. All of these must be passed in order to qualify for the final exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Due to the number of students extra exam days may be needed." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Grundet antallet af studerende kan ekstra eksamensdage være nødvendige." />
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>I dette kursus vil de studerende blive fortrolig med forskellige måder at udlede fakta fra programmer, vha. både dynamiske og statiske analyser. Kurset vil fokusere på analyser for JVM. Den teoretiske del af kurset vil blive dækket i den første halvdel af kurset; efter hvilket de studerende skal skrive et oplæg til et gruppeprojekt. Til sidst vil de studerende udføre eksperimenter for at verificer deres ideer. Dette skrives i en artikel, der skal præsenteres mundtligt.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og praktiske opgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kurset vil gøre brug af relevante artikler og forelæsningsnotater. Materialer vi blive tilgængeligt på DTU Learn.</Course_Literature>
+          <Course_Objectives>De studerende vil automatisk kunne udlede fakta fra programmer vha. forskellige programanalyser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>In this course, the student will become familiar with different ways of deriving facts from programs, using both dynamic and static analyses. The course will focus on analyses for the JVM. The theoretical part of the course will be covered in the first half of the course; after which the students should write a proposal for a group project. Finally, the students will carry out experiments verifying their ideas, which they will write up in a paper and present orally.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and practical exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>The course will use relevant papers and lecture notes. Materials will be made available on DTU Learn.</Course_Literature>
+          <Course_Objectives>The students will be able to automatically derive facts from programs using different program analyses.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="De studerende forventes af have kendskab til regulære og kontekst-frie sprog såvel som semantik; denne baggrund kan opnås i kurset 02141. De studerende skal beherske mindst et programmeringssprog (Undervisningen gør brug af Python) og være i stand til at udnytte de relevante data strukturer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The students are expected to be familiar with regular and context-free languages as well as semantics; this background can be obtained in the course 02141. The students must be fluent in at least one programming language (The lectures uses Python) and be able to use relevant data structures." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02141" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare begreberne sundhed og fuldstændighed samt begrænsningerne af programanalyse;" />
+          <Txt Lang="en-GB" Txt="explain the concepts for soundness and completeness and the limitations of program analysis;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare fordelene og ulemperne ved syntaktiske, semantiske, dynamiske og statiske analyser;" />
+          <Txt Lang="en-GB" Txt="explain the benefits and tradeoffs associated with syntactic, semantic, dynamic and static analyses;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe en analyse til at løse et specifikt problem;" />
+          <Txt Lang="en-GB" Txt="design an analysis to solve a specific problem;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formulere de teoretiske garantier samt begrænsninger af analysen;" />
+          <Txt Lang="en-GB" Txt="formulate theoretical guarantees and limitations of the analysis;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="argumentere for fremgangsmåden i et projektoplæg;" />
+          <Txt Lang="en-GB" Txt="argument for the approach in a project proposal;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en analyse for en del af et rigtig programmeringssprog;" />
+          <Txt Lang="en-GB" Txt="implement an analysis for part of a real programming language;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og motivere en sekvens af eksperimenter som benytter det konstruerede værktøj og kunne fortolke de opnåede resultater;" />
+          <Txt Lang="en-GB" Txt="design and motivate a series of experiments using this analysis and interpret the results obtained;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere de opnåede resultater på en klar og præcis måde i et artikel format; og" />
+          <Txt Lang="en-GB" Txt="communicate their results in a clear and precise manner in a paper format; and" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opnå ovennævnte resultater som del af et gruppearbejde, på en sådan måde at de individuelle bidrag kan identificeres." />
+          <Txt Lang="en-GB" Txt="achieve the above goals in a group effort while at the same time maintaining individual accountability." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02242" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til teknikker til automatisk analyser af programmer og systemer ved hjælp af systemerne på FormalMethods.dk</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-18" Time="16:39:58.48" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

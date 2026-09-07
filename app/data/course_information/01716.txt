@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="01716" University="dtu" LastUpdated="2026-03-26+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående emner i partielle differentialligninger med anvendelser" />
+        <Title Lang="en-GB" Title="Advanced Partial Differential Equations: Theory and Applications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="50476" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Kim</GivenName>
+            <FamilyName>Knudsen</FamilyName>
+            <Email>kiknu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="20347" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Mirza</GivenName>
+            <FamilyName>Karamehmedovic</FamilyName>
+            <Email>mika@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der foretages en samlet vurdering af den studerendes præstation i kurset baseret på indlejrede, mundtlige præsentationer og skriftlige opgaver." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="An overall assessment of students' performance throughout the course is made based on embedded, oral presentations and written problems." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omhandler funktionalanalytiske metoder indenfor integral- og  partielle differentialligninger. Mere specifikt differentialoperatorer, Sobolevrum, elliptiske ransværdiproblemer, fixpunkt-sætninger, Galerkin approksimation og FEM, optimering i Hilbert og Banachrum.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, teoretiske og praktiske øvelser, og mundtlige præsentationer fra studerende</Teaching_And_Learning_Methods>
+          <Course_Literature>Vi bruger uddrag af et antal bøger</Course_Literature>
+          <Course_Objectives>Det primære mål er at udnytte og anvende de grundlæggende begreber, abstraktioner, og principper fra funktionalanalyse til at løse konkrete matematiske problemer relateret til partielle differentialligninger. Vi sigter endvidere mod at styrke de studerendes kompetencer til at udføre analytiske og logiske ræsonnementer og at foretage problemløsning.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course concerns functional analytic methods for integral and/or partial differential equations. Some specific keywords include: differential operators,  Sobolev spaces, elliptic boundary value problems, fixed point theorems,  Galerkin method and FEM, and optimization in Hilbert and Banach spaces.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, theoretical and practical exercises, and oral presentations by students</Teaching_And_Learning_Methods>
+          <Course_Literature>We use excerpts from several books</Course_Literature>
+          <Course_Objectives>The primary goal is to utilize and apply fundamental notions, abstractions, and principles of functional analysis towards solving concrete mathematical problems arising in partial differential equations. In addition we aim at strengthening students' analytical, logical reasoning, and problem solving abilities.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Introducerende kendskab til partielle differentialligninger og funktionalanalyse" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of partial differential equations and functional analysis" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01715.01418" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere funktionalanalytiske abstraktioner i formuleringen af konkrete modelproblemer for partielle differentialligninger (PDEs)" />
+          <Txt Lang="en-GB" Txt="Identify functional analytic abstractions in statements of concrete model problems in partial differential equations (PDEs)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke modelproblemer med begreber fra funktionalanalysen og formelt eftervise, at forudsætningerne for sådanne fortolkninger er opfyldt" />
+          <Txt Lang="en-GB" Txt="Interpret model problems in functional analytic terms and formally verify prerequisites for such interpretations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udnytte og anvende grundlæggende principper fra funktionalanalysen til analyse og løsning af modelproblemer" />
+          <Txt Lang="en-GB" Txt="Utilize and apply fundamental functional analytic principles towards analyzing and solving model problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke visse algoritmer til numerisk beregning i termer af funktionalanalysen" />
+          <Txt Lang="en-GB" Txt="Interpret certain computational algorithms in functional analytic terms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Følge og gennemføre logiske ræsonnementer i formelle matematiske argumenter" />
+          <Txt Lang="en-GB" Txt="Follow and apply logical strategies of formal mathematical arguments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fastslå rigtigheden af matematiske udsagn om modeller ved at opføre og give formelle argumenter" />
+          <Txt Lang="en-GB" Txt="Establish the validity mathematical statements about models by constructing and providing formal arguments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beherske relevant matematisk sprogbrug og være i stand til at kommunikere abstrakte og præcise matematiske udsagn og ræsonnementer mundtligt og skriftligt" />
+          <Txt Lang="en-GB" Txt="Know and master the relevant mathematical language and be able to communicate abstract and precise mathematical statements and reasoning orally and in writing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende og beherske videregående emner i funktionalanalysen som fx spektralsætningen for kompakte operatorer, kompakte indlejringer, Lax-Milgrams sætning mm." />
+          <Txt Lang="en-GB" Txt="Know and master advanced topics in functional analysis such as the spectral theorem for compact operators, compact embeddings and the Lax-Milgram Theorem." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Advanced Partial Differential Equations: Theory and applications</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:28.63" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

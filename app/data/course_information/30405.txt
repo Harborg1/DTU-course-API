@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30405" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til trådløse teknologier" />
+        <Title Lang="en-GB" Title="Introduction to Wireless Technologies" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Anbefales på 4. semester af B.Sc./B.Eng-uddannelserne" />
+          <Schedule_Txt Lang="en-GB" Txt="Recommended in the 4th semester of the B.Sc./B.Eng programmes" />
+          <Schedule ScheduleKey="F1A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="32148" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Vitaliy</GivenName>
+            <FamilyName>Zhurbenko</FamilyName>
+            <Email>vizh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="70188" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Rasmus Elkjær</GivenName>
+            <FamilyName>Jacobsen</FamilyName>
+            <Email>rajac@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering af eksamen og obligatoriske opgaver&#xD;&#xA;(eksamen og hjemmeopgaver bidrager ligeligt).&#xD;&#xA;Obligatoriske opgaver er forudsætning for at kunne gå til eksamen.&#xD;&#xA;Reeksamener er skriftlige." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of examination and mandatory assignments.&#xD;&#xA;(exam and home assignments contribute equally to the final grade). &#xD;&#xA;Mandatory assignments are a prerequisite for exam participation.&#xD;&#xA;Reexaminations are written." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="the oral exam can be placed elsewhere within the examination period" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="eksamensplacering kan ændres indenfor eksamensperiode" />
+            <Schedule ScheduleKey="F1A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til trådløse kommunikationssystemer, sendere og modtagere, RF-kredsløb og antenner, støj og effektbudgetter, radiobølgers udbredelse, analog og digital modulation. Teknologi bag Bluetooth, WiFi, Internet of Things (IoT), 5G/6G communications, Connected Cars, radarer, medicinske og biomedicinske instrumenter, og sv.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, laboratorieøvelser, gruppearbejde og obligatoriske hjemmeopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>De studerende opnår en viden om det fysiske lag i trådløs kommunikation, som dels giver dem en forståelse af systemer og elementer, og dels gør dem i stand til at løse simple tekniske problemer.</Course_Objectives>
+          <Remark>Kurset er egnet for civilstuderende på bachelorlinierne Elektroteknologi, IT og Kommunikation, og Fysik og Ingeniørvidenskab (f.eks. på 4. semester) samt af Diplom-E (på 4. eller 5. semester).  
+
+Kurset danner et afsluttet hele, men er også forudsætning for de videregående fag i mikrobølge-, antenne og RF-engineering og er tæt  knyttet til forskningen ved Elektromagnetiske Systemer.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to wireless communication systems, transmitters and receivers, RF circuits and antennas, noise and power budget, radio wave propagation, and analogue and digital modulation. Technology behind Bluetooth, WiFi, Internet of Things (IoT), 5G/6G communications, Connected Cars, radars, medical and biomedical instruments and many others.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, laboratory exercises, group tutorials, and mandatory home assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The students acquire knowledge about the physical layer in wireless communications, which gives them an understanding of systems and elements and makes them capable of solving simple technical problems.</Course_Objectives>
+          <Remark>The course is well-suited for B.Sc. students from the Electrical Engineering, IT and Communications Technology, and Engineering Physics programs, and for B.Eng. students from the electrical engineering program (in the 4th or 5th semester). 
+
+The course forms an integrated whole but is also a prerequisite for the advanced courses in microwave-, antenna-, and RF engineering and is closely linked to the research at Electromagnetic Systems.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset kræver grundlæggende viden inden for elektromagnetisme (Maxwells ligninger, plane bølger og transmissionslinier), kredsløbsteori, signalbehandling og sandsynlighedsregning. Et indledende signalbehandlingskursus kan følges samtidig." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course requires basic knowledge of electromagnetics (Maxwell's equations, plane waves, and transmission lines), circuit theory, signal processing, and probability calculus.  An introductory signal processing course can be followed simultaneously." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(30400/30035/10036/34120).(02402/02403/02405)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre systemanalyse af det fysiske lag af simple trådløse systemer " />
+          <Txt Lang="en-GB" Txt="perform system analysis of the physical layer of a wireless communication systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne signalniveauer i følgende elementer af en trådløs kommunikationsforbindelse: RF sender, transmissionslinier, sender- og modtagerantenner, radiobølgeudbredelseskanal samt RF modtager" />
+          <Txt Lang="en-GB" Txt="calculate the signal level in the following elements of a wireless communication system: RF transmitter, transmission lines, transmitting and receiving antennas, radio wave propagation channel, and RF receiver" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre støjberegninger på en komplet modtagerkæde, bestående af f.eks. antenne, lavstøjsforstærker, transmissionslinie, filtre, mixer og demodulator" />
+          <Txt Lang="en-GB" Txt="perform calculation of noise in a complete receiver chain consisting of, e.g., antenna, low-noise amplifier, transmission line, filters, mixer, and demodulator" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere strukturer for simple RF sendere og modtagere" />
+          <Txt Lang="en-GB" Txt="analyse basic RF transmitters and receivers structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne effektoverførsel på transmissionslinier" />
+          <Txt Lang="en-GB" Txt="calculate power transfer on transmission lines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne direktivitet, forstærkning, udstrålingseffektivitet, polarisation, effektivt areal og effektiv længde for simple antenner" />
+          <Txt Lang="en-GB" Txt="calculate directivity, gain, radiation efficiency, polarisation, effective area, and effective length for simple antennas" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne udbredelsestab og fading for idealiserede og realistiske radiobølgeudbredelseskanaler" />
+          <Txt Lang="en-GB" Txt="calculate path loss and fading for ideal and realistic radiowave propagation channels" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå simple analoge og digitale modulationsformer samt analysere tilhørende modulatorer og demodulatorer" />
+          <Txt Lang="en-GB" Txt="understand basic analogue and digital modulation forms and analyse the associated modulators and demodulators" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beregne bitfejlssandsynlighed for simple digitale modulationsformer." />
+          <Txt Lang="en-GB" Txt="calculate bit error probability for basic digital modulation forms." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>The physical layer of wireless communications</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31405" />
+        <PreviousCourse CourseCode="31405" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="60" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:06.377" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

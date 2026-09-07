@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34194" Volume="2026/2027" University="dtu" LastUpdated="2025-03-03+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Study_Board Study_BoardKey="DTU_Fotonik" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Ph.d.-kursus - Avancerede forsknings metoder" />
+        <Title Lang="en-GB" Title="PhD Course - Advanced research practices" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="55309" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Francesco Da</GivenName>
+            <FamilyName>Ros</FamilyName>
+            <Email>fdro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="20242" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Michael</GivenName>
+            <FamilyName>Galili</FamilyName>
+            <Email>mgal@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af præsentationer" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of presentations" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer på teori og metoder til at minimere usikkerheder i forbindelse med frembringelse af præcise og statistik gyldige resultater. Dette gøres gennem individuelle analyser, klasseundervisning og gruppediskussioner.
+Det primære kursusindhold vil være:
+-	Introduktion til støj- og fejlkilder:
+målestøj, systemstøj, påvirkning fra omgivelserne, systematiske fejl, numerisk præcision, afhængighed af numeriske strategier m.fl.
+-	Systemspecifik analyse relateret til den enkelte studerendes valgte projektemne.
+-	Design af forbedret undersøgelsesmetode for at øge resultaternes præcision eller pålidelighed.
+-	Diskussioner med medstuderende og underviser ved at give, modtage og reagere på konstruktiv, konkret og omsorgsfuld feedback.
+-	Kvantificere og diskutere forbedringer og begrænsninger fra den nyudviklede metode</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger analyse og design af komplekse eksperimentelle og numeriske forsknings procedurer, gruppediskussioner og studenterpræsentationer.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er for den studerende at tilegne sig viden og evner til at planlægge, analysere og implementere komplekse eksperimentelle og numeriske forsknings procedurer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course will focus on error theory and methods to minimize uncertainties to achieve precise and statistically accurate results through individual analysis, classroom teaching and group discussion. 
+The main course content here will be:
+-	Introduction to sources of noise and errors: measurement noise, system noise, environmental effects, systematic errors, numerical precision, impact of numerical strategies etc.
+-	System-specific analysis related to the project work chosen by each student
+-	Design of improved research methods increasing the results’ precision
+-	Interactive discussion with fellow students and teachers by providing, receiving, and reacting upon constructive, concrete and caring feedback
+-	Quantify and discuss the improvements and limitations of the newly devised method</Contents>
+          <Teaching_And_Learning_Methods>Lectures, analysis and design of complex experimental and numerical research practices , group discussion and student presentations.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The purpose of the course is for the student to acquire knowledge and ability to plan, analyze and implement experimental and numerical research procedures.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar et valgt forskningsproblem og den aktuelle forskningsmetodik, der benyttes" />
+          <Txt Lang="en-GB" Txt="Explain a chosen research problem and current research method applied to it" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer kilder til usikkerhed i en given forskningsmetode" />
+          <Txt Lang="en-GB" Txt="Identify sources of uncertainty in a method method." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Adskil og klassificer kilder til usikkerhed" />
+          <Txt Lang="en-GB" Txt="Distinguish and classify sources of uncertainty." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificer indflydelsen af usikkerheder på det opnåede forskningsresultat" />
+          <Txt Lang="en-GB" Txt="Quantify the impact of uncertainty sources on the research results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle en metode til at forbedre den statistiske sikkerhed af det opnåede resultat" />
+          <Txt Lang="en-GB" Txt="Develop a new method to improve statistical relevance of the results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificer den forventede forbedring ved brug af den nye metode" />
+          <Txt Lang="en-GB" Txt="Quantify the expected improvement with the newly developed method" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Give omsorgsfull, konkret og konstruktiv feedback til medstuderendes analyser og modtag feedback på passende vis" />
+          <Txt Lang="en-GB" Txt="Give caring&amp;concrete&amp;constructive feedback to peers’ analyses, and react appropriately to it" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende feedback til at revidere og forbedre eget arbejde" />
+          <Txt Lang="en-GB" Txt="Apply feedback to revise and improve own work" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:57.343" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

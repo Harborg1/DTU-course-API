@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02960" Volume="2026/2027" University="dtu" LastUpdated="2026-05-13+02:00">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Time Series Analysis - with a focus on Modelling and Forecasting in Energy Systems" />
+        <Title Lang="en-GB" Title="Time Series Analysis - with a focus on Modelling and Forecasting in Energy Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" Tuition_Fee="12350" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Se hjemmesiden." />
+          <LocationTxt Lang="en-GB" Txt="See the website." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset afholdes over 5 dage, se hjemmesiden." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is held over 5 days, see the website." />
+          <Schedule ScheduleKey="August" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Compute" />
+        <Course_Responsible PersonKey="16518" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Peder</GivenName>
+            <FamilyName>Bacher</FamilyName>
+            <Email>pbac@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="1559" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Madsen</FamilyName>
+            <Email>hmad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="For at bestå kurset og opnå ECTS point skal raporter over øvelserne givet under sommerskolen afleveres en måned efter sidste dag, samt godkendes." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="In order to pass the course and achieve the ECTS points reports of the exercises given during the summer school must be handed in within a month after the final day. The reports must be approved to pass." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Within a month after the summer school the final report is handed for evaluation" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Inden en måned efter sommerskolen afleveres den sidste rapport til evaluering" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="samt følg instruktionerne på https://02960.compute.dtu.dk/registration" />
+            <Supp_Txt Lang="en-GB" Txt="and follow instructions on https://02960.compute.dtu.dk/registration" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Generelt er der brug for selvindstillende modeller af hver komponent i et system, men kun i den nødvendige detaljegrad til den konkrete anvendelse. Har man f.eks. en bygning med solceller og varmepumpe, så har man typisk brug for en model fra vejrprognoser og styrevariabler til: eleffekt fra solceller,  ellast fra varmepumpen, samt indetemperatur i bygningen. Disse i kombination med elpriser, vil i en MPC styring, kunne optimere driften af varmepumpen og flytte forbruget for at opnå den billigste drift. Der findes mange andre anvendelse, e.g. KPI performance estimation og fejldiagnostisering, disse anvendelser vil også blive eksemplificeret. Den statistiske teori bag modellerne vil blive præsenteret, specielt er fokus på ikke-lineære modeller, både diskrete (kernels og splines) og kontinuerte (grey-box modellering med SDEer).</Contents>
+          <Teaching_And_Learning_Methods>Sommerskolen arrangeres af DTU i samarbejde med Center Denmark og IEA EBC Annexes 94 og 96, og projekterne Next Energy, ARV, BIPED, Seeds, INSIEME, BlueBird samt ELEXIA.</Teaching_And_Learning_Methods>
+          <Course_Literature>Som udgangspunkt forventes kendskab til tidsrækkeanalyse, som præsenteret i http://henrikmadsen.org/books/time-series-analysis/. Materialet til selve kurset vil blive tilgængeligt for deltagerne.</Course_Literature>
+          <Course_Objectives>At give deltagerne en konkret indføring i de statistiske teknikker, som er specielt andvendlige til modellering baseret på data observeret fra energi systemer, samt anvendelsen af modellerne f.eks. til styring.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Generally, one will need a self tuning model for each component in a system, which has only the complexity needed for the particular application. For example, a building with PV and a heat pump, one will need a model from weather forecasts and control variables to: power from the PV, load from the heat pump and the indoor temperature in the building. These, in combination with electricity prices, will in an MPC control be able to optimize the operation of the heat pump and shift the load to achieve the cheapest operation. There are many other applications of the data-driven models, e.g. performance assessment and fault-detection, these will also be presented with examples. The statistical techniques behind the models will be elaborated, with focus on non-linear models, both discrete (kernels and splines) and continuous (grey-box modelling with SDEs).</Contents>
+          <Teaching_And_Learning_Methods>The summer school is arranged by DTU in collaboration with CEBE, Center Denmark and IEA EBC Annexes 94 and 96, and other projects.</Teaching_And_Learning_Methods>
+          <Course_Literature>As a starting point familiarity with time series analysis as presented in http://henrikmadsen.org/books/time-series-analysis/. The particular material for the course will be handed out to the participants.</Course_Literature>
+          <Course_Objectives>To give a hands on introduction to the statistical techniques, which are highly useful for modelling based on data observed from energy systems, as well as the use of these e.g. for control.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende ingeniør statistik kursus, samt et basalt kendskab til tidsrækkeanalyse." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="A basic engineering statistics course, as well as basic knowledge of time series analysis." />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opnå grundig forståelse for maximum likelihood estimationsteknikker." />
+          <Txt Lang="en-GB" Txt="Achieve thorough understanding of maximum likelihood estimation techniques." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende ikke-parametriske modeller vha. kernel funktioner og splines - specielt til modellering af solindstrålings- og brugeradfærdeffekter." />
+          <Txt Lang="en-GB" Txt="Formulate and apply non-parametric models using kernel functions and splines - with focus on solar and occupancy effects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende tidsadaptive modeller." />
+          <Txt Lang="en-GB" Txt="Formulate and apply time adaptive models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende modeller til short-term forecasting i energisystemer, f.eks. til varmeforbrug i bygninger, eleffekt fra solceller og vindmøller." />
+          <Txt Lang="en-GB" Txt="Formulate and apply models for short-term forecasting in energy systems, e.g. for heat load in buildings, electrical power from PV and wind systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvendelse af statistiske modeludvælgelsesteknikker (F-test, likelihood ratio-tests, model validering)." />
+          <Txt Lang="en-GB" Txt="Application of statistical model selection techniques (F-test, likelihood-ratio tests, model validation)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende grey-box modeller - model identifikation - test for model order og model validering, samt avancerede ikke-lineære modeller." />
+          <Txt Lang="en-GB" Txt="Formulate and apply grey-box models - model identification - tests for model order and model validation, and advanced non-linear models." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opnå forståelse af model predictive control (MPC) - via konkrete anvendte eksempler på energisystemer." />
+          <Txt Lang="en-GB" Txt="Achieve understanding of model predictive control (MPC) - via applied examples on energy systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opnå forståelse af fleksibilitetsfunktioner og -indeks." />
+          <Txt Lang="en-GB" Txt="Achieve understanding of flexibility functions and indicies." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://02960.compute.dtu.dk/" />
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02402 02417" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Models for forecasting and optimization</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <Restrictions Max="60" Min="15" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-06-30" Time="09:45:22.983" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

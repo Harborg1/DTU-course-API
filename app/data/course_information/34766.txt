@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34766" Volume="2026/2027" University="dtu" LastUpdated="2026-04-17+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Robotic Manipulation: Perception, Planning, Control and Learning" />
+        <Title Lang="en-GB" Title="Robotic Manipulation: Perception, Planning, Control and Learning" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="142538" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lazaros</GivenName>
+            <FamilyName>Nalpantidis</FamilyName>
+            <Email>lanalpa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="220320" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tran Nguyen</GivenName>
+            <FamilyName>Le</FamilyName>
+            <Email>tngle@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination and exercises&#xD;&#xA;Approval of exercises (total &gt;= threshold) is mandatory for taking the exam. The written exam is multiple-choice. The exercises and the exam will be evaluated together. Re-exam can be written or oral exam only (when the report is approved)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Written exam with all aids and closed internet." />
+            <Aid_Txt Lang="da-DK" Txt="Skriftlig eksamen med alle hjælpemidler og lukket internet." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til robotrammeværket ROS, robotgreb, robotmanipulation, bevægelsesplanlægning, robotstyring, robotlæring, imitationlæring, VLA'er.
+Øvelsesdelen består af introduktionsøvelser og et projekt, der løses i hold.</Contents>
+          <Course_Objectives>Robotsystemer har udviklet sig markant i de senere år og har udvidet sig ud over kontrollerede industrielle miljøer til komplekse miljøer som varehuse, sundhedsfaciliteter og fjernudforskning. Trods disse fremskridt er det fortsat en central udfordring inden for robotteknologi at sætte robotter i stand til robust at interagere med den fysiske verden og generalisere på tværs af opgaver og miljøer.
+
+Dette kursus undersøger disse udfordringer og giver en dybdegående introduktion til moderne robotmanipulation gennem studiet af grundlæggende metoder og aktuel forskning på området. Dette kursus giver et overblik over de matematiske modeller og algoritmiske fundamenter, der ligger til grund for state-of-the-art manipulationssystemer. Emnerne omfatter perception til manipulation, bevægelsesplanlægning og -kontrol, gribning, kontrol i kontakt og indlæring af manipulationsfærdigheder via avancerede maskinlæringsteknikker, herunder imitationlæring og nye grundlæggende modeller. Studerende vil opnå både konceptuel forståelse og eksponering for aktuelle forskningsudviklinger.
+
+Ved afslutningen af ​​kurset vil de studerende være i stand til at: (i) forklare nøglebegreber og metoder inden for robotmanipulation; (ii) kritisk læse og fortolke videnskabelig litteratur inden for robotteknologi; (iii) designe algoritmer, der gør det muligt for robotter at gribe, manipulere og interagere autonomt med objekter.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to the robotic framework ROS, Robotic Grasping, Robotc Manipulation, Motion Planning, Robot Control, Robot Learning, Imitation Learning, VLAs
+The exercise part consists of introductory exercises and a project solved in teams.</Contents>
+          <Course_Objectives>Robotic systems have advanced significantly in recent years, expanding beyond controlled industrial settings into complex environments such as warehouses, healthcare facilities, and remote exploration. Despite this progress, enabling robots to robustly interact with the physical world and generalize across tasks and environments remains a central challenge in robotics.
+
+This course examines these challenges and provides an in-depth introduction to modern robotic manipulation through the study of foundational methods and current research in the field. This course provides an overview of the mathematical models and algorithmic foundations underlying state-of-the-art manipulation systems. Topics include perception for manipulation, motion planning and control, grasping, control in contact, and learning manipulation skills via advanced machine learning techniques including imitation learning and emerging foundation models. Students will gain both conceptual understanding and exposure to current research developments.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="- Grundlæggende kalkulus (gradienter), lineær algebra (vektorer og matricer), grundlæggende sandsynlighed (stokastiske variable og forventningsværdi) undervist i f.eks. 01001/01003 eller 01002/01004&#xD;&#xA;&#xD;&#xA;- Introduktion til robotkoncepter (forlæns og invers kinematik, Jacobianere) undervist i f.eks. 34753 Robotik.&#xD;&#xA;&#xD;&#xA;- Kendskab til C++ eller Python programmering, Linux undervist i f.eks. 34758 31391" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="- Basic calculus (gradients), linear algebra (vectors and matrices), basic probability (random variables and expectation) taught in e.g. 01001/01003 or 01002/01004 &#xD;&#xA;&#xD;&#xA;- Introductory robotics concepts (forward and inverse kinematics, Jacobians) taught in e.g. 34753 Robotics.&#xD;&#xA;&#xD;&#xA;- Familiarity with C++ or Python programming, Linux taught in e.g. 34758 31391" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(01001/01003) (01002/01004) (34753) (34758 31391)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Integrer perceptions-, planlægnings-, kontrol- og læringskomponenter for at designe komplette robotmanipulationspipelines ved hjælp af ROS." />
+          <Txt Lang="en-GB" Txt="Integrate perception, planning, control, and learning components to design complete robotic manipulation pipelines using ROS." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend algoritmer til at behandle visuelle data (f.eks. billeder eller punktskyer) med henblik på opfattelse i manipulation." />
+          <Txt Lang="en-GB" Txt="Apply algorithms to process visual data (e.g., images or point clouds) for perception in manipulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend bevægelsesplanlægningsalgoritmer til at generere gennemførlige manipulationsbaner under opgavebegrænsninger." />
+          <Txt Lang="en-GB" Txt="Apply motion planning algorithms to generate feasible manipulation trajectories under task constraints." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar grundlæggende metoder til robotbevægelsesstyring, herunder positions-, hastigheds- og momentstyring." />
+          <Txt Lang="en-GB" Txt="Explain fundamental robot motion control methods, including position, velocity, and torque control." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementer forskellige kontrolstrategier til bevægelsessporing, compliance og kraftregulering." />
+          <Txt Lang="en-GB" Txt="Implement different control strategies for motion tracking, compliance, and force regulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend principper for grebstabilitet (f.eks. form/kraft-lukning, friktionsmodeller) til at evaluere grebskvaliteten." />
+          <Txt Lang="en-GB" Txt="Apply grasp stability principles (e.g., form/force closure, friction models) to evaluate grasp quality." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter rollen og udfordringerne ved maskinlæring i robotmanipulation." />
+          <Txt Lang="en-GB" Txt="Discuss the role and challenges of machine learning in robotic manipulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser fordele og begrænsninger ved moderne læringsparadigmer, såsom vision-sprog-handling (VLA) modeller for generalistiske manipulationspolitikker." />
+          <Txt Lang="en-GB" Txt="Analyze the advantages and limitations of modern learning paradigms such as vision-language-action (VLA) models for generalist manipulation policies." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foreslå og implementere løsninger til manipulationsopgaver ved hjælp af de teknikker, der er dækket i kurset, og videnskabelig litteratur inden for robotteknologi." />
+          <Txt Lang="en-GB" Txt="Propose and implement solutions for manipulation tasks using the techniques covered in the course and scientific literature in robotics. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="34761 " />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="5639" PersonUniversity="dtu" Date="2026-06-08" Time="11:47:23.3" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

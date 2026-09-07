@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="25205" Volume="2026/2027" University="dtu" LastUpdated="2026-04-28+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Elementære modeller og statistik i R" />
+        <Title Lang="en-GB" Title="Basic modelling and statistics in R" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="campua_sisimiut" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F" SortID="0" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="25" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="25" />
+        <Course_Responsible PersonKey="40378" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Nielsen</FamilyName>
+            <Email>an@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="93186" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Christoffer Moesgaard</GivenName>
+            <FamilyName>Albertsen</FamilyName>
+            <Email>cmoe@aqua.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af to skriftlige opgaver (ca. 8 sider hver) &#xD;&#xA;Der afleveres en individuel skriftlig opgave baseret på projektarbejde efter de første 2 ugers undervisning. Efter den sidste uges undervisning afleveres endnu en individuel skriftlig opgave. Der gives én samlet karakter for begge delprøver" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="-" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="-" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Umiddelbart efter kursets afslutning i uge 36" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="2 skriftlige opgaver á ca. 8 sider hver" />
+          <Duration Lang="en-GB" Txt="-" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver en introduktion til R og modellering af biologiske systemer. Fokus er på den praktiske brug af R. Vi starter med installation og setup af R og gennemgår den basale brug af R til beregning, indlæsning og manipulation af data, grafisk illustration af data og funktioner, samt simulationer simple analyser. Hvert trin vil blive trænet via øvelser. De biologiske modeller vil blive introduceret og R vil blive brugt til at løse, illustrere og studere disse modeller. 
+
+Kurset er opdelt i to dele. Første del omhandler brugen af R og simple statistiske analyser. Anden del definerer og studerer almindelige differentialligninger som anvendes til at beskrive biologiske systemer. Hver del afsluttes med en individuel afleveringsopgave. Den afsluttende karakter baseres på en samlet vurdering af de to opgaver.</Contents>
+          <Teaching_And_Learning_Methods>Varighed: 3 uger: 2 uger forår + 1 uge efterår
+Forelæsninger, øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset er en introduktion til modellering i biologien, med fokus på statistiske og dynamiske modeller. Det omfatter enkle statistiske analyser, opstilling og analyse af differentialligninger med udgangspunkt i biologien, numerisk analyse i R, og enkle metoder til estimation af parametre i disse modeller ud fra observerede tidsrækker.</Course_Objectives>
+          <DTU_Remark>Obligatorisk kursus, Diplomingeniørretning Fiskeriteknologi</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>-</Contents>
+          <Teaching_And_Learning_Methods>-</Teaching_And_Learning_Methods>
+          <Course_Objectives>-</Course_Objectives>
+          <DTU_Remark>-</DTU_Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Installere, indlæse og anvende basale faciliteter i statistikprogrammet R;" />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage elementære statistiske analyser i R, inklusiv indlæsning af data, beregning af statistikker, og præsentation af resultater" />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende R til at simulere stokastiske eksperimenter, der omfatter diskrete og kontinuerte variable, " />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive simple programmer i R" />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive almindelige differentialligninger i biologien, såsom eksponential og logistisk vækst og von Bertalanffy vækst" />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse skalære differentialligningsmodeller fra biologien numerisk v.h.a. R" />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Tilpasse differentligningsmodeller til observerede tidsrækker ved at kalibrere parametre med hånden" />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere parametre i differentialligningsmodeller udfra tidsrækker v.h.a. mindste kvadraters metode." />
+          <Txt Lang="en-GB" Txt="-" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="24" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:20:39.43" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

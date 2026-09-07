@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62222" Volume="2026/2027" University="dtu" LastUpdated="2026-03-29+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="IT Forretning" />
+        <Title Lang="en-GB" Title="IT Business" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="42028" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Rolf</GivenName>
+            <FamilyName>Nordahl</FamilyName>
+            <Email>rono@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Individuel mundtlig eksamen baseret på projektarbejdet, herunder tilhørende øvelser og projektportefølje. Forudsætning for deltagelse i eksamen er, at projektporteføljen og det tilhørende website er godkendt af kursusansvarlig (kursusholder) på forhånd." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Individual oral examination based on the project work, including associated exercises and the project portfolio. Participation in the exam requires prior approval of the project portfolio and the associated website by the course responsible (course instructor)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="The student must bring their project portfolio (including exercises) and access to the developed website." />
+            <Aid_Txt Lang="da-DK" Txt="Den studerende skal medbringe sin projektportefølje (herunder øvelser) samt adgang til det udviklede website." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="2 modules: F3A and F1B" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="2 moduler: F3A og F1B" />
+            <Schedule ScheduleKey="F3A" />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer til følgende fagområder:
+
+- Informationsteknologi samt IT anvendelser i en forretningsmæssig kontekst, herunder finansielle, organisatoriske og juridiske konsekvenser ved anvendelse af IT løsninger (fx databeskyttelse, ansvar og håndtering af brugerdata) samt IT hardware og systemers energiforbrug i digitale løsninger
+
+- IT software design og softwareudviklingsprocesser samt opbygning af digitale systemer på anvenderniveau, herunder sammenhængen mellem krav, design og implementering samt samspillet mellem frontend, backend og database
+
+- Brugerforståelse og design af digitale løsninger, herunder visuelt design af brugergrænseflader, usability, user experience og accessibility (fx personas, behovsanalyse og designprincipper)
+
+- Website design og implementation, herunder anvendelse af digitale værktøjer og platforme til opbygning af webbaserede systemer samt grundlæggende forståelse af underliggende teknologier (fx HTML, CSS og JavaScript), herunder scripting af både klient og server på anvenderniveau i webbaserede systemer samt databaser og datalagring på anvenderniveau i webbaserede systemer
+
+- Datanetværk på anvenderniveau
+
+- Modellering af systemer ved hjælp af UML (fx use case og activity diagrams)
+
+- Projektplanlægning, herunder opgaveopdeling, estimering og risikohåndtering (fx opdeling af funktionalitet i udviklingsopgaver) samt test og evaluering af digitale løsninger</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, klassediskussioner, øvelser og projektarbejde. Kurset omfatter en struktureret række øvelser, der understøtter projektudviklingen, herunder forberedende øvelser (fx programmering). Projektet kan gennemføres i grupper, men hver studerende skal være ansvarlig for en klart afgrænset del (inkl. implementering). Projektet dokumenteres gennem et website og en projektportefølje.</Teaching_And_Learning_Methods>
+          <Course_Literature>- Eventuelle bøger, der skal anskaffes, fastlægges ved kursusstart.
+- Relevante artikler, værktøjer samt andre materialer fra internettet.</Course_Literature>
+          <Course_Objectives>At give den studerende en forståelse af, hvordan digitale systemer designes, udvikles, vælges og anvendes i en forretningsmæssig kontekst på anvenderniveau.
+
+Endvidere skal kurset sætte den studerende i stand til at arbejde med udvikling af digitale løsninger fra problemforståelse og brugerbehov over idé og konceptualisering til design, implementering og evaluering af et færdigt produkt på anvenderniveau, herunder at kunne træffe og begrunde valg af digitale løsninger i praksis.</Course_Objectives>
+          <DTU_Remark>Undervisningssproget er primært dansk; dog kan undervisningen foregå på engelsk.</DTU_Remark>
+          <Remark>Sektion for Energiteknologi og computer science
+Global business og teknologi: 2. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces the following subject areas:
+
+- Information technology and IT applications in a business context, including financial, organisational, and legal implications of IT solutions (e.g. data protection, responsibility, and handling of user data), as well as energy consumption of IT hardware and systems in digital solutions
+
+- IT software design and software development processes, as well as the structure of digital systems at an applied level, including the relationship between requirements, design, and implementation, and the interaction between frontend, backend, and database
+
+- User understanding and design of digital solutions, including visual design of user interfaces, usability, user experience, and accessibility (e.g. personas, needs analysis, and design principles)
+
+- Website design and implementation, including the use of digital tools and platforms for building web-based systems, as well as a basic understanding of underlying technologies (e.g. HTML, CSS, and JavaScript), including scripting of both client and server at an applied level in web-based systems, as well as databases and data storage at an applied level in web-based systems
+
+- Data networks at an applied level
+
+- Modelling of systems using UML (e.g. use case and activity diagrams)
+
+- Project planning, including task decomposition, estimation, and risk management (e.g. breakdown of functionality into development tasks), as well as testing and evaluation of digital solutions</Contents>
+          <Teaching_And_Learning_Methods>Lectures, classroom discussions, exercises, and project work. The course includes a structured sequence of exercises supporting project development, including preparatory exercises (e.g. programming). The project may be carried out in groups, but each student must be responsible for a clearly defined part (incl. implementation). The project is documented through a website and a project portfolio.</Teaching_And_Learning_Methods>
+          <Course_Literature>- Any required textbooks will be determined at the start of the course.
+- Relevant articles, tools, and other materials from the internet.</Course_Literature>
+          <Course_Objectives>To provide the student with an understanding of how digital systems are designed, developed, selected, and used in a business context at an applied level.
+
+Furthermore, the course enables the student to work with the development of digital solutions from problem understanding and user needs through ideation and conceptualisation to design, implementation, and evaluation of a finished product at an applied level, including the ability to make and justify choices of digital solutions in practice.</Course_Objectives>
+          <DTU_Remark>The primary language of instruction is Danish; however, teaching may be conducted in English.</DTU_Remark>
+          <Remark>Section of Energy Technology and Computer Science
+Global business og teknologi: 2. semester</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurset er obligatorisk for Global Business og Teknologi, men kan efter aftale med den kursusansvarlige også tages af andre." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The course is mandatory for Global Business and Technology but may, by agreement with the course responsible, also be taken by others." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå alment anvendte IT begreber og anvende relevante IT fagtermer korrekt samt forstå forskellen på forskellig IT hardware og software, samt forstå sammenhængen mellem hardware, systemsoftware og anvendersoftware" />
+          <Txt Lang="en-GB" Txt="understand commonly used IT concepts and apply relevant IT terminology correctly, as well as understand the differences between different types of IT hardware and software, and the relationship between hardware, system software, and application software" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå processen ved softwareudvikling og anvende simple softwareudviklingsmetoder" />
+          <Txt Lang="en-GB" Txt="understand the software development process and apply simple software development methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere og beskrive brugere og deres behov samt omsætte disse til krav, systemfunktionalitet og design af digitale løsninger samt anvende principper for visuelt design, usability, user experience og accessibility i udvikling af brugergrænseflader" />
+          <Txt Lang="en-GB" Txt="identify and describe users and their needs and translate these into requirements, system functionality, and design of digital solutions, as well as apply principles of visual design, usability, user experience, and accessibility in the development of user interfaces" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå opbygningen af et digitalt system på anvenderniveau" />
+          <Txt Lang="en-GB" Txt="understand the structure of a digital system at an applied level" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende digitale værktøjer og platforme samt forstå underliggende webteknologier (fx HTML, CSS og JavaScript) på anvenderniveau i et WWW-baseret system samt forstå hvordan en database opbygges og anvendes på anvenderniveau i et WWW-baseret system" />
+          <Txt Lang="en-GB" Txt="apply digital tools and platforms and understand underlying web technologies (e.g. HTML, CSS, and JavaScript) at an applied level in a web-based system, as well as understand how a database is structured and used at an applied level in a web-based system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="modellere og beskrive systemer ved hjælp af simple UML-diagrammer" />
+          <Txt Lang="en-GB" Txt="model and describe systems using simple UML diagrams" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="nedbryde funktionalitet i udviklingsopgaver samt foretage simpel estimering og planlægning samt anvende grundlæggende testmetoder til evaluering af digitale løsninger" />
+          <Txt Lang="en-GB" Txt="break down functionality into development tasks and perform simple estimation and planning, as well as apply basic testing methods to evaluate digital solutions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå applikationslaget og hvordan dette anvender transportlaget i TCP/IP modellen på anvenderniveau samt forstå datanetværk på anvenderniveau" />
+          <Txt Lang="en-GB" Txt="understand the application layer and how it uses the transport layer in the TCP/IP model at an applied level, as well as understand data networks at an applied level" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå forskellen mellem forskellige alment anvendte, relevante IT værktøjer samt hvordan og hvornår disse anvendes i forretningsøjemed samt forstå grundlæggende juridiske og samfundsmæssige aspekter ved anvendelse af digitale systemer (fx databeskyttelse og håndtering af brugerdata)" />
+          <Txt Lang="en-GB" Txt="understand the differences between commonly used IT tools and when and how they are applied in a business context, as well as understand basic legal and societal aspects of digital systems (e.g. data protection and handling of user data)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå indflydelsen af digitale systemer på energiforbrug og bæredygtighed" />
+          <Txt Lang="en-GB" Txt="understand the impact of digital systems on energy consumption and sustainability" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="62229" />
+        <PreviousCourse CourseCode="62197/XMØN-U2" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:56.437" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

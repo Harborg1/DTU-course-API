@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02244" University="dtu" LastUpdated="2025-03-25+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">7.5</Point>
+        <Title Lang="da-DK" Title="Logik for sikkerhed" />
+        <Title Lang="en-GB" Title="Logic for Security" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="59879" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sebastian Alexander</GivenName>
+            <FamilyName>Mödersheim</FamilyName>
+            <Email>samo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af individualiserede grupperapporter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment is based on individualized group reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset omfatter sikkerhedsprotokoller, deres modellering og analyse, samt teknikker og værktøjer der kan bruges til at finde eller undgå brud på fortrolighed eller autentifikation. Kurset omfatter også teknikker for information flow, herunder adgangskontrol og lavniveau-mekanismer der støtter sikkerhed.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, praktiske øvelser og teoretiske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Hovedsageligt konference og workshop artikler.</Course_Literature>
+          <Course_Objectives>De studerende skal være i stand til at anvende de sikkerhedsformalismer der introduceres, og at kunne anvende relevante værktøjer og teknikker på konkret problemløsning.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers security protocols, their modeling and analysis, including techniques and tools that can be used to either detect confidentiality and authentication errors or to guarantee that no such errors can occur. The course also covers techniques for  Information Flow, including Access Control and low-level support for security.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, practical exercises, and theoretical exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Mainly papers from conferences and workshops.</Course_Literature>
+          <Course_Objectives>The students should be able to apply the security formalisms introduced, and to apply the relevant tools and techniques with the aim of solving related problems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Generel viden om programmeringssprog (syntax og semantik)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="General knowledge on programming languages (syntax and semantics)." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare de grundlæggende begreber introduceret på kurset og forklare betydningen af logik for sikkerhed i anvendelser" />
+          <Txt Lang="en-GB" Txt="explain the basic concepts introduced in the course and explain the role of  logic for security in concrete settings;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende avancerede værktøjer til modellering og analyse af protokoller" />
+          <Txt Lang="en-GB" Txt="apply advanced tools for modeling and analyzing protocols;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og motivere eksperimenter til at analysere sikkerhedsegenskaber" />
+          <Txt Lang="en-GB" Txt="design and motivate a series of experiments for analysing security properties;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere og fortolke resultaterne fra avancerede værktøjer" />
+          <Txt Lang="en-GB" Txt="analyze and interpret the results obtained from advanced analysis tools;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive ideer og metoder bag automatiske værtøjer for analyse af sikkerhed og anvende dem på små eksempler" />
+          <Txt Lang="en-GB" Txt="describe the ideas of methods for automated security tools and apply them to small examples;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere styrker og svagheder ved forskellige metoder" />
+          <Txt Lang="en-GB" Txt="identify strengths and weaknesses of different methods;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare betydningen af en formel beskrivelse af en sikkerhedsegenskab og at anvende den på et konkret eksempel" />
+          <Txt Lang="en-GB" Txt="given a formal description of a policy, explain its meaning and determine if a given program satisfies the policy;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="formelt specificere privatheds- og ansvarlighedsmålene for et distribueret system" />
+          <Txt Lang="en-GB" Txt="formally specify the privacy and accountability goals of a distributed system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere brug af avancerede kryptografiske primitiver (som zero knowledge) i en system" />
+          <Txt Lang="en-GB" Txt="analyze the use of advanced cryptographic primitives (like zero knowledge) in a system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="afgøre i hvilke situationer man kan tage en kompositionel tilgang til sikkerhed" />
+          <Txt Lang="en-GB" Txt="determine the applicability of compositional reasoning for security;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere resultaterne på en klar og præcis måde i form af en teknisk rapport" />
+          <Txt Lang="en-GB" Txt="communicate the results in a clear and precise manner, using a standard format for technical reports." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02244" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Metoder til konstruktion af sikre software systemer.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:06.923" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

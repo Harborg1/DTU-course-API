@@ -8,28 +8,60 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session, selectinload
 
 from app.models.course import Course
+from app.models.specialization import (
+    SpecializationRequirement,
+    SpecializationRequirementCourse,
+    StudySpecialization,
+)
 from app.models.study_plan import StudyPlanRequirement, StudyPlanRequirementCourse, StudyPlanSection, StudyProgram
 from app.services.course_service import get_course
+from app.services.course_change_service import CatalogComparisonError, get_new_courses
 from app.schemas.recommendation import (
     ChatResponse,
+    CompletedTurnState,
+    CourseResultMode,
     RecommendedCourse,
+    RecommendedStudyProgram,
+    SpecializationCourseInfo,
+    SpecializationInfo,
+    SpecializationRequirementInfo,
     StudyPlanCourseInfo,
     StudyPlanOverview,
     StudyPlanRequirementInfo,
     StudyPlanSectionInfo,
     UnderstoodContext,
 )
+from app.services.conversation_state_service import completed_turns_context, model_question
 from app.services.course_qa_service import CourseQAError, answer_with_remote_mcp
 from app.services.intent_service import (
+    ClarificationIntent,
     CourseQAIntent,
+    NewCoursesIntent,
     OpenQuestionIntent,
     RecommendationIntent,
+    SpecializationIntent,
+    StudyProgramRecommendationIntent,
     StudyPlanIntent,
     classify_intent,
     extract_course_number,
+    extract_recommendation_topic,
+    is_course_target,
+    is_study_program_target,
 )
+from app.services.language_service import resolve_response_language
 from app.services.search_service import SearchResult, search_courses
+from app.services.semantic_resolver import SemanticCandidate, resolve_semantic_candidate
+from app.services.semantic_intent_service import (
+    SemanticQueryPlan,
+    classify_query_semantically,
+    intent_from_query_plan,
+)
+from app.services.specialization_aliases import SPECIALIZATION_ALIASES
 from app.services.study_program_aliases import PROGRAM_ALIASES
+from app.services.study_program_recommendation_service import (
+    recommend_study_programs,
+    study_program_description,
+)
 
 
 logger = logging.getLogger(__name__)
@@ -103,16 +135,25 @@ _STOP_WORDS = {
 }
 
 
-def _answer_with_llm(course: Course, messages: list[str], academic_year: str) -> ChatResponse:
-    latest_user_message = messages[-1] if messages else "Hvad kan du fortælle om dette kursus?"
-
-    answer = answer_with_remote_mcp(latest_user_message, academic_year)
+def _answer_with_llm(
+    course: Course,
+    question: str,
+    academic_year: str,
+    *,
+    response_language: str,
+) -> ChatResponse:
+    answer = answer_with_remote_mcp(
+        question,
+        academic_year,
+        response_language=response_language,
+    )
 
     return ChatResponse(
         reply=answer,
         understood=UnderstoodContext(topic=f"course {course.course_number}", level=course.level),
         recommendations=[],
         academicYear=academic_year,
+        responseLanguage=response_language,
         isDirectAnswer=True,
     )
 
@@ -124,6 +165,7 @@ class RecommendationContext:
     ects: Decimal | None
     language: str | None
     period: str | None
+    result_mode: CourseResultMode
 
 
 def _normalise(text: str) -> str:
@@ -191,7 +233,75 @@ def understand_context(messages: list[str]) -> RecommendationContext:
         ects=_extract_ects(text),
         language=_extract_language(text),
         period=_extract_period(text),
+        result_mode="all" if _asks_for_all_results(text) else "summary",
     )
+
+
+def _context_from_plan(
+    latest_user_message: str,
+    plan: SemanticQueryPlan | None,
+    completed_turns: list[CompletedTurnState] | None = None,
+) -> RecommendationContext:
+    """Overlay the latest explicit filters on a referenced completed course search."""
+    context = understand_context([latest_user_message])
+    if plan is None:
+        return context
+    referenced_turn = _referenced_course_search(plan, completed_turns or [])
+    planned_topic = plan.topic or (" and ".join(plan.topics) if plan.topics else None)
+    explicit_topic = extract_recommendation_topic(latest_user_message)
+    topic = (
+        planned_topic
+        or explicit_topic
+        or (referenced_turn.topic if referenced_turn else None)
+        or context.topic
+    )
+    if _asks_for_all_results(latest_user_message) or plan.result_mode == "all":
+        result_mode: CourseResultMode = "all"
+    elif plan.result_mode is not None:
+        result_mode = "summary"
+    elif referenced_turn is not None and referenced_turn.result_mode is not None:
+        result_mode = referenced_turn.result_mode
+    else:
+        result_mode = "summary"
+    return RecommendationContext(
+        topic=topic,
+        level=plan.level or context.level or (referenced_turn.level if referenced_turn else None),
+        ects=(
+            Decimal(str(plan.ects))
+            if plan.ects is not None
+            else context.ects
+            or (
+                Decimal(str(referenced_turn.ects))
+                if referenced_turn is not None and referenced_turn.ects is not None
+                else None
+            )
+        ),
+        language=(
+            plan.teaching_language
+            or context.language
+            or (referenced_turn.language if referenced_turn else None)
+        ),
+        period=plan.period or context.period or (referenced_turn.period if referenced_turn else None),
+        result_mode=result_mode,
+    )
+
+
+def _referenced_course_search(
+    plan: SemanticQueryPlan | None,
+    turns: list[CompletedTurnState],
+) -> CompletedTurnState | None:
+    """Return the most recent valid course-search turn explicitly referenced by the plan."""
+    if plan is None:
+        return None
+    valid_indexes = sorted(
+        {
+            index
+            for index in plan.referenced_turn_indexes
+            if 0 <= index < len(turns) and turns[index].operation == "course_search"
+        },
+        reverse=True,
+    )
+    return turns[valid_indexes[0]] if valid_indexes else None
 
 
 def _program_key(value: str) -> str:
@@ -200,6 +310,28 @@ def _program_key(value: str) -> str:
 
 def _requested_degree_type(text: str) -> str | None:
     return {"MSc": "Master", "BSc": "Bachelor"}.get(_extract_level(_normalise(text)))
+
+
+def _asks_general_msc_ects(text: str) -> bool:
+    normalized = _normalise(text)
+    mentions_msc = re.search(
+        r"\b(msc|master(?:'s)?|kandidat(?:en|uddannelse[nr]?)?|civilingeniør)\b",
+        normalized,
+    )
+    asks_for_total = re.search(
+        r"\b(hvor mange|gennemføre|afslutte|fuldføre|bestå|i alt|kræver|kræves|"
+        r"how many|complete|finish|graduate|total|required)\b",
+        normalized,
+    )
+    return "ects" in normalized and mentions_msc is not None and asks_for_total is not None
+
+
+def _asks_for_all_results(text: str) -> bool:
+    normalized = _normalise(text)
+    return re.search(
+        r"\b(all|every|entire|complete|full list|list them all|alle|samtlige|hele listen|vis dem alle)\b",
+        normalized,
+    ) is not None
 
 
 def _program_aliases(program: StudyProgram) -> dict[str, int]:
@@ -237,12 +369,14 @@ def _matching_study_program(session: Session, text: str) -> StudyProgram | None:
     padded_text = f" {normalized_key} "
     text_tokens = normalized_key.split()
     requested_degree = _requested_degree_type(text)
-    programs = list(session.scalars(select(StudyProgram)))
+    programs = [
+        program
+        for program in session.scalars(select(StudyProgram))
+        if requested_degree is None or program.degree_type == requested_degree
+    ]
     candidates: list[tuple[int, float, int, int, StudyProgram]] = []
 
     for program in programs:
-        if requested_degree and program.degree_type != requested_degree:
-            continue
         for alias, priority in _program_aliases(program).items():
             if f" {alias} " in padded_text:
                 candidates.append((2, 1.0, priority, len(alias), program))
@@ -252,25 +386,259 @@ def _matching_study_program(session: Session, text: str) -> StudyProgram | None:
             if similarity >= threshold:
                 candidates.append((1, similarity, priority, len(alias), program))
 
-    if not candidates:
-        return None
-    candidates.sort(key=lambda item: item[:4], reverse=True)
-    best = candidates[0]
-    competing = next((item for item in candidates[1:] if item[4].id != best[4].id), None)
-    if competing is not None:
-        if best[0] == competing[0] == 2 and best[1:4] == competing[1:4]:
-            return None
-        if best[0] == competing[0] == 1 and best[1] - competing[1] < 0.04:
-            return None
+    matched_program: StudyProgram | None = None
+    if candidates:
+        candidates.sort(key=lambda item: item[:4], reverse=True)
+        best = candidates[0]
+        competing = next((item for item in candidates[1:] if item[4].id != best[4].id), None)
+        ambiguous = competing is not None and (
+            (best[0] == competing[0] == 2 and best[1:4] == competing[1:4])
+            or (best[0] == competing[0] == 1 and best[1] - competing[1] < 0.04)
+        )
+        if not ambiguous:
+            matched_program = best[4]
 
-    statement = select(StudyProgram).where(StudyProgram.id == best[4].id).options(
+    if matched_program is None:
+        semantic_id = resolve_semantic_candidate(
+            text,
+            [
+                SemanticCandidate(
+                    id=str(program.id),
+                    name=f"{program.name} ({program.degree_type})",
+                    aliases=tuple(_program_aliases(program)),
+                )
+                for program in programs
+            ],
+            entity_type="DTU study programme",
+            context=(f"The requested degree type is {requested_degree}." if requested_degree else None),
+        )
+        matched_program = next((program for program in programs if str(program.id) == semantic_id), None)
+
+    if matched_program is None:
+        return None
+
+    statement = select(StudyProgram).where(StudyProgram.id == matched_program.id).options(
         selectinload(StudyProgram.sections).selectinload(StudyPlanSection.courses),
         selectinload(StudyProgram.sections)
         .selectinload(StudyPlanSection.requirements)
         .selectinload(StudyPlanRequirement.course_links)
         .selectinload(StudyPlanRequirementCourse.course),
+        selectinload(StudyProgram.specializations).selectinload(StudySpecialization.courses),
+        selectinload(StudyProgram.specializations)
+        .selectinload(StudySpecialization.requirements)
+        .selectinload(SpecializationRequirement.course_links)
+        .selectinload(SpecializationRequirementCourse.course),
     )
     return session.scalar(statement)
+
+
+def _specialization_aliases(specialization: StudySpecialization) -> set[str]:
+    aliases = {
+        _program_key(specialization.name),
+        _program_key(specialization.slug.replace("-", " ")),
+    }
+    aliases.update(
+        _program_key(alias)
+        for alias in SPECIALIZATION_ALIASES.get(specialization.program.slug, {}).get(
+            specialization.slug,
+            (),
+        )
+    )
+    return {alias for alias in aliases if alias}
+
+
+def _asks_for_specialization_overview(text: str) -> bool:
+    tokens = set(_program_key(text).split())
+    return bool(
+        tokens
+        & {
+            "specialiseringer",
+            "specialiseringerne",
+            "specialisations",
+            "specialities",
+            "specializations",
+            "specialties",
+        }
+    )
+
+
+def _matching_specialization(
+    session: Session,
+    text: str,
+    *,
+    program: StudyProgram | None = None,
+) -> StudySpecialization | None:
+    normalized_key = _program_key(text)
+    padded_text = f" {normalized_key} "
+    text_tokens = normalized_key.split()
+    statement = select(StudySpecialization).options(selectinload(StudySpecialization.program))
+    if program is not None:
+        statement = statement.where(StudySpecialization.program_id == program.id)
+    specializations = list(session.scalars(statement))
+    candidates: list[tuple[int, float, int, StudySpecialization]] = []
+    for specialization in specializations:
+        for alias in _specialization_aliases(specialization):
+            if f" {alias} " in padded_text:
+                candidates.append((2, 1.0, len(alias), specialization))
+                continue
+            similarity = _alias_similarity(alias, text_tokens)
+            if similarity >= (0.9 if len(alias.split()) == 1 else 0.86):
+                candidates.append((1, similarity, len(alias), specialization))
+    matched_specialization: StudySpecialization | None = None
+    if candidates:
+        candidates.sort(key=lambda item: item[:3], reverse=True)
+        best = candidates[0]
+        distinct_matches = {item[3].id for item in candidates if item[:3] == best[:3]}
+        if len(distinct_matches) == 1:
+            matched_specialization = best[3]
+
+    if matched_specialization is None and not _asks_for_specialization_overview(text):
+        semantic_id = resolve_semantic_candidate(
+            text,
+            [
+                SemanticCandidate(
+                    id=str(specialization.id),
+                    name=specialization.name,
+                    aliases=tuple(_specialization_aliases(specialization)),
+                )
+                for specialization in specializations
+            ],
+            entity_type="DTU study specialization",
+            context=(f"The study programme is {program.name}." if program else None),
+        )
+        matched_specialization = next(
+            (specialization for specialization in specializations if str(specialization.id) == semantic_id),
+            None,
+        )
+
+    if matched_specialization is None:
+        return None
+    options = (
+        selectinload(StudySpecialization.program),
+        selectinload(StudySpecialization.courses),
+        selectinload(StudySpecialization.requirements)
+        .selectinload(SpecializationRequirement.course_links)
+        .selectinload(SpecializationRequirementCourse.course),
+    )
+    return session.scalar(
+        select(StudySpecialization).where(StudySpecialization.id == matched_specialization.id).options(*options)
+    )
+
+
+def _specialization_course_info(course) -> SpecializationCourseInfo:
+    return SpecializationCourseInfo(
+        courseNumber=course.course_number,
+        title=course.title,
+        ects=float(course.ects) if course.ects is not None else None,
+        schedule=course.schedule,
+        role=course.role,
+        isTerminated=course.is_terminated,
+        sourceUrl=course.source_url,
+    )
+
+
+def _specialization_info(specialization: StudySpecialization) -> SpecializationInfo:
+    requirements = []
+    for requirement in specialization.requirements:
+        linked_courses = sorted(
+            (link.course for link in requirement.course_links), key=lambda course: course.position
+        )
+        requirements.append(
+            SpecializationRequirementInfo(
+                requirementType=requirement.requirement_type,
+                description=requirement.description,
+                requiredEcts=(float(requirement.required_ects) if requirement.required_ects is not None else None),
+                requiredCount=requirement.required_count,
+                courses=[_specialization_course_info(course) for course in linked_courses],
+            )
+        )
+    return SpecializationInfo(
+        programName=specialization.program.name,
+        name=specialization.name,
+        slug=specialization.slug,
+        isOptional=True,
+        description=specialization.description,
+        sourceUrl=specialization.source_url,
+        requirements=requirements,
+        courses=[_specialization_course_info(course) for course in specialization.courses],
+    )
+
+
+def _specialization_requirement_text(requirement: SpecializationRequirement, language: str) -> str:
+    course_labels = ", ".join(
+        f"{link.course.course_number} {link.course.title}" if link.course.course_number else link.course.title
+        for link in sorted(requirement.course_links, key=lambda link: link.course.position)
+    )
+    if requirement.requirement_type == "min_ects" and requirement.required_ects is not None:
+        lead = (
+            f"Vælg mindst {_format_ects(requirement.required_ects)} ECTS"
+            if language == "da"
+            else f"Choose at least {_format_ects(requirement.required_ects)} ECTS"
+        )
+    elif requirement.requirement_type == "one_of":
+        lead = "Vælg ét kursus" if language == "da" else "Choose one course"
+    elif requirement.requirement_type == "min_count" and requirement.required_count is not None:
+        lead = (
+            f"Vælg mindst {requirement.required_count} kurser"
+            if language == "da"
+            else f"Choose at least {requirement.required_count} courses"
+        )
+    elif requirement.requirement_type == "all_of":
+        lead = "Tag alle følgende kurser" if language == "da" else "Take all of the following courses"
+    elif requirement.requirement_type == "recommended":
+        lead = "Anbefalede kurser" if language == "da" else "Recommended courses"
+    elif requirement.requirement_type == "historical":
+        lead = (
+            "Udgåede kurser, der stadig tæller"
+            if language == "da"
+            else "Discontinued courses that still count"
+        )
+    else:
+        lead = requirement.description
+    return f"{lead}: {course_labels}." if course_labels else f"{lead}."
+
+
+def _answer_specializations(
+    program: StudyProgram,
+    specialization: StudySpecialization | None,
+    *,
+    academic_year: str,
+    language: str,
+) -> ChatResponse:
+    if specialization is None:
+        specializations = list(program.specializations)
+        if not specializations:
+            reply = (
+                f"Jeg har ingen importerede officielle specialiseringer for {program.name}."
+                if language == "da"
+                else f"I have no imported official specializations for {program.name}."
+            )
+        else:
+            names = ", ".join(item.name for item in specializations)
+            reply = (
+                f"{program.name} har følgende importerede specialiseringer: {names}."
+                if language == "da"
+                else f"{program.name} has the following imported specializations: {names}."
+            )
+    else:
+        specializations = [specialization]
+        details = " ".join(
+            _specialization_requirement_text(rule, language) for rule in specialization.requirements
+        )
+        reply = (
+            f"For specialiseringen {specialization.name} på {program.name}: {details}"
+            if language == "da"
+            else f"For the {specialization.name} specialization in {program.name}: {details}"
+        ).strip()
+    return ChatResponse(
+        reply=reply,
+        understood=UnderstoodContext(topic="specialization", level=program.degree_type, program=program.name),
+        recommendations=[],
+        specializations=[_specialization_info(item) for item in specializations],
+        academicYear=program.academic_year or academic_year,
+        responseLanguage=language,
+        isDirectAnswer=True,
+    )
 
 
 def _study_plan_course_info(course) -> StudyPlanCourseInfo:
@@ -333,7 +701,7 @@ def _format_ects(value: Decimal) -> str:
     return f"{float(value):g}"
 
 
-def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
+def _choice_requirement_detail(requirement: StudyPlanRequirement, language: str) -> str | None:
     courses = sorted((link.course for link in requirement.course_links), key=lambda course: course.position)
     if not courses:
         return None
@@ -341,7 +709,13 @@ def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
     labels = _course_labels(requirement)
     ects_values = {course.ects for course in courses if course.ects is not None}
     common_ects = next(iter(ects_values)) if len(ects_values) == 1 else None
-    ects_phrase = f" på {_format_ects(common_ects)} ECTS" if common_ects is not None else ""
+    ects_phrase = ""
+    if common_ects is not None:
+        ects_phrase = (
+            f" på {_format_ects(common_ects)} ECTS"
+            if language == "da"
+            else f" worth {_format_ects(common_ects)} ECTS"
+        )
 
     if requirement.requirement_type == "one_of":
         alternative_match = re.search(
@@ -360,12 +734,22 @@ def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
                     f"{course.course_number} {course.title}" if course.course_number else course.title
                     for course in alternatives
                 )
+                if language == "da":
+                    return (
+                        f"Vælg ét kursus{ects_phrase}: normalt ét blandt {primary_labels}. "
+                        "Hvis du har avancerede innovationskompetencer, kan du i stedet vælge ét blandt "
+                        f"{alternative_labels}."
+                    )
                 return (
-                    f"Vælg ét kursus{ects_phrase}: normalt ét blandt {primary_labels}. "
-                    "Hvis du har avancerede innovationskompetencer, kan du i stedet vælge ét blandt "
+                    f"Choose one course{ects_phrase}: normally one of {primary_labels}. "
+                    "If you have advanced innovation competencies, you may instead choose one of "
                     f"{alternative_labels}."
                 )
-        return f"Vælg ét kursus{ects_phrase} blandt: {labels}."
+        return (
+            f"Vælg ét kursus{ects_phrase} blandt: {labels}."
+            if language == "da"
+            else f"Choose one course{ects_phrase} from: {labels}."
+        )
 
     if requirement.requirement_type == "exact_count" and requirement.required_count is not None:
         note = ""
@@ -374,28 +758,50 @@ def _choice_requirement_detail(requirement: StudyPlanRequirement) -> str | None:
                 r"core competence courses", requirement.description, maxsplit=1, flags=re.IGNORECASE
             )[0].strip()
             if leading_text:
-                note = f"Bemærk: {leading_text} "
-        return f"{note}Vælg præcis {requirement.required_count} kurser blandt: {labels}."
+                note = f"Bemærk: {leading_text} " if language == "da" else f"Note: {leading_text} "
+        return (
+            f"{note}Vælg præcis {requirement.required_count} kurser blandt: {labels}."
+            if language == "da"
+            else f"{note}Choose exactly {requirement.required_count} courses from: {labels}."
+        )
 
     if requirement.requirement_type == "min_count" and requirement.required_count is not None:
-        return f"Vælg mindst {requirement.required_count} kurser blandt: {labels}."
+        return (
+            f"Vælg mindst {requirement.required_count} kurser blandt: {labels}."
+            if language == "da"
+            else f"Choose at least {requirement.required_count} courses from: {labels}."
+        )
 
     if requirement.requirement_type == "group_ects" and requirement.required_ects is not None:
-        return f"Vælg {_format_ects(requirement.required_ects)} ECTS fra denne pulje: {labels}."
+        return (
+            f"Vælg {_format_ects(requirement.required_ects)} ECTS fra denne pulje: {labels}."
+            if language == "da"
+            else f"Choose {_format_ects(requirement.required_ects)} ECTS from this pool: {labels}."
+        )
 
     if requirement.requirement_type == "remainder_pool":
+        if language == "da":
+            return (
+                "De resterende ECTS i den programspecifikke blok skal vælges fra "
+                f"den brede pulje med {len(courses)} kurser. Den fulde kursusliste vises "
+                "i studieplansoversigten nedenfor."
+            )
         return (
-            "De resterende ECTS i den programspecifikke blok skal vælges fra "
-            f"den brede pulje med {len(courses)} kurser. Den fulde kursusliste vises "
-            "i studieplansoversigten nedenfor."
+            "Choose the remaining ECTS in the programme-specific block from "
+            f"the broad pool of {len(courses)} courses. The complete course list is shown "
+            "in the study plan overview below."
         )
 
     return None
 
 
-def _study_plan_reply(program: StudyProgram) -> str:
-    validity = f" for studerende optaget fra {program.valid_from_year}" if program.valid_from_year else ""
-    lines = [f"Her er opbygningen af {program.name}{validity}:"]
+def _study_plan_reply(program: StudyProgram, language: str) -> str:
+    if language == "da":
+        validity = f" for studerende optaget fra {program.valid_from_year}" if program.valid_from_year else ""
+        lines = [f"Her er opbygningen af {program.name}{validity}:"]
+    else:
+        validity = f" for students admitted from {program.valid_from_year}" if program.valid_from_year else ""
+        lines = [f"Here is the structure of {program.name}{validity}:"]
     for section in program.sections:
         details: list[str] = []
         seen_requirement_descriptions: set[str] = set()
@@ -405,11 +811,15 @@ def _study_plan_reply(program: StudyProgram) -> str:
                 f"{course.course_number} {course.title}" if course.course_number else course.title
                 for course in mandatory
             )
-            details.append(f"Obligatoriske kurser: {labels}.")
+            details.append(
+                f"Obligatoriske kurser: {labels}."
+                if language == "da"
+                else f"Mandatory courses: {labels}."
+            )
         for requirement in section.requirements:
             if requirement.requirement_type == "all_of":
                 continue
-            typed_detail = _choice_requirement_detail(requirement)
+            typed_detail = _choice_requirement_detail(requirement, language)
             if typed_detail:
                 details.append(typed_detail)
                 continue
@@ -421,7 +831,7 @@ def _study_plan_reply(program: StudyProgram) -> str:
             if section.description:
                 details.append(section.description)
             details.append(
-                "Projekter: "
+                ("Projekter: " if language == "da" else "Projects: ")
                 + ", ".join(
                     f"{course.course_number} {course.title}" if course.course_number else course.title
                     for course in section.courses
@@ -431,10 +841,18 @@ def _study_plan_reply(program: StudyProgram) -> str:
         if section.name.casefold() == "forhåndsgodkendte kandidatkurser" or (
             "pre-approved" in section.name.casefold() and "msc" in section.name.casefold()
         ):
-            details.append(f"Listen indeholder {len(section.courses)} forhåndsgodkendte kandidatkurser.")
+            details.append(
+                f"Listen indeholder {len(section.courses)} forhåndsgodkendte kandidatkurser."
+                if language == "da"
+                else f"The list contains {len(section.courses)} pre-approved MSc courses."
+            )
         if details:
             lines.append(f"{section.name}: {' '.join(details)}")
-    lines.append("Kurser i underkrav tæller samtidig med i den overordnede ECTS-pulje; de tælles ikke dobbelt.")
+    lines.append(
+        "Kurser i underkrav tæller samtidig med i den overordnede ECTS-pulje; de tælles ikke dobbelt."
+        if language == "da"
+        else "Courses in subrequirements also count toward the overall ECTS pool; they are not counted twice."
+    )
     return "\n\n".join(lines)
 
 
@@ -442,13 +860,190 @@ def _answer_study_plan(
     program: StudyProgram,
     *,
     academic_year: str,
+    language: str,
 ) -> ChatResponse:
     return ChatResponse(
-        reply=_study_plan_reply(program),
+        reply=_study_plan_reply(program, language),
         understood=UnderstoodContext(topic="study plan", level=program.degree_type, program=program.name),
         recommendations=[],
         studyPlan=_study_plan_overview(program),
         academicYear=program.academic_year or academic_year,
+        responseLanguage=language,
+    )
+
+
+def _answer_program_overview(
+    program: StudyProgram,
+    *,
+    academic_year: str,
+    language: str,
+) -> ChatResponse:
+    """Render a database-backed overview without asking the LLM to infer requirements."""
+    specializations = list(program.specializations)
+    specialization_names = ", ".join(item.name for item in specializations)
+
+    if language == "da":
+        opening = f"{program.name} er en {program.degree_type}-uddannelse"
+        if program.degree_type == "Master":
+            structure = (
+                "Den ordinære MSc er på 120 ECTS: mindst 10 ECTS polyteknisk grundlag, "
+                "mindst 50 ECTS retningsspecifikke kurser, 30 ECTS kandidatspeciale og "
+                "valgfrie kurser op til de 120 ECTS."
+            )
+        else:
+            section_names = ", ".join(section.name for section in program.sections)
+            structure = (
+                f"Den importerede studieplan er opdelt i: {section_names}."
+                if section_names
+                else "Den strukturerede studieplan fremgår nedenfor."
+            )
+        specialization_text = (
+            f"Programmet tilbyder følgende valgfrie specialiseringsmuligheder: {specialization_names}. "
+            "Kurser under en specialisering er krav for at få den pågældende specialisering, "
+            "men de er ikke automatisk obligatoriske for alle studerende på programmet."
+            if specialization_names
+            else "Der er ingen importerede specialiseringer for programmet."
+        )
+    else:
+        opening = f"{program.name} is a {program.degree_type} programme"
+        if program.degree_type == "Master":
+            structure = (
+                "The standard MSc totals 120 ECTS: at least 10 ECTS of polytechnical foundation, "
+                "at least 50 ECTS of programme-specific courses, a 30 ECTS master's thesis, and "
+                "electives completing the 120 ECTS total."
+            )
+        else:
+            section_names = ", ".join(section.name for section in program.sections)
+            structure = (
+                f"The imported study plan is divided into: {section_names}."
+                if section_names
+                else "The structured study plan is included below."
+            )
+        specialization_text = (
+            f"The programme offers these optional specialization paths: {specialization_names}. "
+            "Courses under a specialization are requirements for earning that specialization; "
+            "they are not automatically mandatory for every student in the programme."
+            if specialization_names
+            else "No specializations have been imported for this programme."
+        )
+
+    return ChatResponse(
+        reply=f"{opening}. {structure} {specialization_text}",
+        understood=UnderstoodContext(
+            topic="program overview",
+            level=program.degree_type,
+            program=program.name,
+        ),
+        recommendations=[],
+        studyPlan=_study_plan_overview(program),
+        specializations=[_specialization_info(item) for item in specializations],
+        academicYear=program.academic_year or academic_year,
+        responseLanguage=language,
+        isDirectAnswer=True,
+    )
+
+
+def _answer_all_course_matches(
+    session: Session,
+    *,
+    plan: SemanticQueryPlan,
+    messages: list[str],
+    academic_year: str,
+    context: RecommendationContext | None = None,
+) -> ChatResponse:
+    """Return the complete, deduplicated union for every requested course topic."""
+    context = context or understand_context(messages)
+    topics = list(dict.fromkeys(topic.strip() for topic in plan.topics if topic.strip()))
+    if not topics and plan.topic:
+        topics = [plan.topic.strip()]
+    if not topics and context.topic != "DTU courses":
+        topics = [context.topic]
+
+    matches: dict[str, tuple[Course, float, set[str]]] = {}
+    for topic in topics:
+        result = search_courses(
+            session,
+            q=topic,
+            academic_year=academic_year,
+            ects=context.ects,
+            level=context.level,
+            period=context.period,
+            language=context.language,
+            search_language=plan.language,
+            search_all_languages=True,
+            limit=10_000,
+            offset=0,
+        )
+        for course, score in result.courses:
+            existing = matches.get(course.course_number)
+            if existing is None:
+                matches[course.course_number] = (course, score, {topic})
+            else:
+                existing[2].add(topic)
+                if score > existing[1]:
+                    matches[course.course_number] = (course, score, existing[2])
+
+    sorted_matches = sorted(
+        matches.values(),
+        key=lambda item: item[0].course_number.casefold(),
+    )
+    recommendations = [
+        RecommendedCourse(
+            courseNumber=course.course_number,
+            title=course.translated_value("title", plan.language) or course.title,
+            ects=float(course.ects) if course.ects is not None else None,
+            level=course.level,
+            period=course.period,
+            schedule=course.schedule,
+            language=course.language,
+            department=course.department,
+            description=_short_description(course.translated_value("description", plan.language)),
+            reason=(
+                "Matcher databasesøgningen for: "
+                if plan.language == "da"
+                else "Matches the database search for: "
+            )
+            + ", ".join(sorted(matched_topics))
+            + ".",
+            sourceUrl=course.source_url,
+        )
+        for course, _score, matched_topics in sorted_matches
+    ]
+
+    topic_label = plan.topic or " and ".join(topics)
+    if plan.language == "da":
+        heading = f"Jeg fandt {len(recommendations)} unikke kurser for {topic_label}."
+    else:
+        heading = f"I found {len(recommendations)} unique courses for {topic_label}."
+    course_lines = [
+        "- "
+        + f"{course.course_number} — {course.translated_value('title', plan.language) or course.title}"
+        + (f" ({float(course.ects):g} ECTS)" if course.ects is not None else "")
+        for course, _score, _matched_topics in sorted_matches
+    ]
+    if not course_lines:
+        reply = (
+            f"{heading} Prøv et andet eller mere konkret emne."
+            if plan.language == "da"
+            else f"{heading} Try another or more specific topic."
+        )
+    else:
+        reply = heading + "\n\n" + "\n".join(course_lines)
+
+    return ChatResponse(
+        reply=reply,
+        understood=UnderstoodContext(
+            topic=topic_label,
+            level=context.level,
+            ects=float(context.ects) if context.ects is not None else None,
+            language=context.language,
+            period=context.period,
+        ),
+        recommendations=recommendations,
+        academicYear=academic_year,
+        responseLanguage=plan.language,
+        isDirectAnswer=True,
+        resultMode="all",
     )
 
 
@@ -462,6 +1057,7 @@ def _run_search(session: Session, context: RecommendationContext, academic_year:
         "language": context.language,
         "limit": 5,
         "offset": 0,
+        "search_all_languages": True,
     }
     result = search_courses(session, **kwargs)
     if result.count == 0 and context.level:
@@ -473,15 +1069,235 @@ def _run_search(session: Session, context: RecommendationContext, academic_year:
     return result
 
 
-def _reason(course: Course, context: RecommendationContext) -> str:
-    reasons = [f"Kursets indhold matcher emnet {context.topic}"]
+def _reason(course: Course, context: RecommendationContext, language: str) -> str:
+    if language == "da":
+        reasons = [f"Kursets indhold matcher emnet {context.topic}"]
+        if context.level and course.level and context.level.casefold() in course.level.casefold():
+            reasons.append(f"det er angivet på {course.level}-niveau")
+        if context.ects is not None and course.ects == context.ects:
+            reasons.append(f"det giver {float(course.ects):g} ECTS")
+        if context.language and course.language == context.language:
+            reasons.append(f"undervisningssproget er {course.language}")
+        return ", og ".join(reasons) + "."
+
+    reasons = [f"The course content matches the topic {context.topic}"]
     if context.level and course.level and context.level.casefold() in course.level.casefold():
-        reasons.append(f"det er angivet på {course.level}-niveau")
+        reasons.append(f"it is listed at {course.level} level")
     if context.ects is not None and course.ects == context.ects:
-        reasons.append(f"det giver {float(course.ects):g} ECTS")
+        reasons.append(f"it is worth {float(course.ects):g} ECTS")
     if context.language and course.language == context.language:
-        reasons.append(f"undervisningssproget er {course.language}")
-    return ", og ".join(reasons) + "."
+        reasons.append(f"the teaching language is {course.language}")
+    return ", and ".join(reasons) + "."
+
+
+def _short_description(description: str | None) -> str | None:
+    if description and len(description) > 360:
+        return description[:357].rstrip() + "..."
+    return description
+
+
+def _previous_recommendation_topic(messages: list[str]) -> str:
+    for message in reversed(messages[:-1]):
+        topic = extract_recommendation_topic(message)
+        if topic:
+            return topic
+    return ""
+
+
+def _previous_state_topic(turns: list[CompletedTurnState]) -> str:
+    for turn in reversed(turns):
+        if turn.topic and turn.topic not in {
+            "general question",
+            "specialization",
+            "study plan",
+            "study plan qa",
+        }:
+            return turn.topic
+    return ""
+
+
+def _referenced_state_text(
+    latest_user_message: str,
+    plan: SemanticQueryPlan | None,
+    turns: list[CompletedTurnState],
+) -> str:
+    """Build entity-resolution text without treating every old request as current."""
+    parts = [latest_user_message]
+    if plan is not None:
+        parts.extend(
+            mention
+            for mention in (plan.program_mention, plan.specialization_mention)
+            if mention
+        )
+        for index in plan.referenced_turn_indexes:
+            if 0 <= index < len(turns):
+                turn = turns[index]
+                parts.extend(
+                    value
+                    for value in (
+                        turn.program,
+                        *turn.study_program_names,
+                        *turn.specialization_names,
+                    )
+                    if value
+                )
+    return " ".join(parts)
+
+
+def _all_results_plan(
+    latest_user_message: str,
+    response_language: str,
+    semantic_plan: SemanticQueryPlan | None,
+) -> SemanticQueryPlan:
+    """Guarantee that an explicit request for all results never uses the five-item path."""
+    if (
+        semantic_plan is not None
+        and semantic_plan.domain == "course"
+        and semantic_plan.operation in {"search", "list", "recommend", "count"}
+    ):
+        return semantic_plan.model_copy(update={"result_mode": "all"})
+
+    context = understand_context([latest_user_message])
+    topic = None if context.topic == "DTU courses" else context.topic
+    return SemanticQueryPlan(
+        domain="course",
+        operation="search",
+        program_mention=None,
+        specialization_mention=None,
+        course_number=None,
+        topic=topic,
+        topics=[topic] if topic else [],
+        result_mode="all",
+        language=response_language,
+        confidence=1.0,
+        level=context.level,
+        ects=float(context.ects) if context.ects is not None else None,
+        teaching_language=context.language,
+        period=context.period,
+    )
+
+
+def _is_standalone_recommendation_choice(text: str, *, target: str) -> bool:
+    normalized = re.sub(r"[^a-zæøå]+", " ", text.casefold()).strip()
+    choices = {
+        "programme": {
+            "studie",
+            "studier",
+            "studieprogram",
+            "studieprogrammer",
+            "uddannelse",
+            "uddannelser",
+            "program",
+            "programmer",
+            "programme",
+            "programmes",
+        },
+        "course": {"kursus", "kurser", "course", "courses"},
+    }
+    polite_suffixes = {"", " tak", " please"}
+    return any(normalized == choice + suffix for choice in choices[target] for suffix in polite_suffixes)
+
+
+def _answer_study_program_recommendations(
+    session: Session,
+    *,
+    intent: StudyProgramRecommendationIntent,
+    academic_year: str,
+    language: str,
+) -> ChatResponse:
+    topic = intent.topic.strip()
+    if not topic:
+        reply = (
+            "Hvilket emne interesserer dig, og leder du efter en bachelor- eller kandidatuddannelse?"
+            if language == "da"
+            else "What subject interests you, and are you looking for a bachelor's or master's programme?"
+        )
+        return ChatResponse(
+            reply=reply,
+            understood=UnderstoodContext(topic=""),
+            academicYear=academic_year,
+            responseLanguage=language,
+            isDirectAnswer=True,
+        )
+
+    matches = recommend_study_programs(
+        session,
+        topic=topic,
+        academic_year=academic_year,
+        degree_type=intent.degree_type or None,
+        language=language,
+    )
+    recommendations = [
+        RecommendedStudyProgram(
+            name=match.program.name,
+            degreeType=match.program.degree_type,
+            description=study_program_description(match.program),
+            reason=match.reason,
+            sourceUrl=match.program.source_url,
+        )
+        for match in matches
+    ]
+
+    if language == "da":
+        level = (
+            f" på {intent.degree_type}-niveau"
+            if intent.degree_type
+            else " på både bachelor- og kandidatniveau"
+        )
+        reply = (
+            f"Jeg fandt {len(recommendations)} importerede studieprogrammer{level}, der matcher din "
+            f"interesse for {topic}. Se hvorfor de matcher nedenfor."
+            if recommendations
+            else f"Jeg kunne ikke finde importerede studieprogrammer, der matcher {topic}."
+        )
+    else:
+        level = f" at {intent.degree_type} level" if intent.degree_type else " across bachelor's and master's levels"
+        reply = (
+            f"I found {len(recommendations)} imported study programmes{level} matching your interest in "
+            f"{topic}. See why they match below."
+            if recommendations
+            else f"I could not find imported study programmes matching {topic}."
+        )
+
+    return ChatResponse(
+        reply=reply,
+        understood=UnderstoodContext(
+            topic=topic,
+            level=intent.degree_type or None,
+        ),
+        studyPrograms=recommendations,
+        academicYear=academic_year,
+        responseLanguage=language,
+        isDirectAnswer=True,
+    )
+
+
+def _answer_recommendation_clarification(
+    *,
+    intent: ClarificationIntent,
+    academic_year: str,
+    language: str,
+) -> ChatResponse:
+    topic = intent.topic.strip()
+    if language == "da":
+        subject = f" inden for {topic}" if topic else ""
+        reply = (
+            f"Leder du efter forslag til studieprogrammer eller kurser{subject}? "
+            "Svar for eksempel ‘studier’ eller ‘kurser’."
+        )
+    else:
+        subject = f" related to {topic}" if topic else ""
+        reply = (
+            f"Are you looking for study programme or course recommendations{subject}? "
+            "Reply with, for example, ‘programmes’ or ‘courses’."
+        )
+    return ChatResponse(
+        reply=reply,
+        understood=UnderstoodContext(topic=topic),
+        academicYear=academic_year,
+        responseLanguage=language,
+        isDirectAnswer=True,
+    )
 
 
 def recommend_courses(
@@ -489,118 +1305,456 @@ def recommend_courses(
     *,
     messages: list[str],
     academic_year: str,
+    completed_turns: list[CompletedTurnState] | None = None,
 ) -> ChatResponse:
+    turns = completed_turns or []
     conversation = " ".join(messages)
+    latest_user_message = messages[-1] if messages else ""
+    structured_context = completed_turns_context(turns)
+    remote_question = model_question(latest_user_message, turns) if turns else conversation
 
-    # Intent-based routing
-    intent = classify_intent(conversation)
+    # Route from the latest request so an earlier operation cannot override a
+    # new one. Structured clients provide earlier facts separately; legacy API
+    # callers can still send their user-message history.
+    intent = classify_intent(latest_user_message)
+    if isinstance(intent, OpenQuestionIntent) and (len(messages) > 1 or turns):
+        previous_topic = _previous_state_topic(turns) if turns else _previous_recommendation_topic(messages)
+        if is_study_program_target(latest_user_message) and (
+            previous_topic
+            or _is_standalone_recommendation_choice(latest_user_message, target="programme")
+        ):
+            intent = StudyProgramRecommendationIntent(
+                confidence=0.95,
+                topic=previous_topic,
+            )
+        elif is_course_target(latest_user_message) and (
+            previous_topic
+            or _is_standalone_recommendation_choice(latest_user_message, target="course")
+        ):
+            intent = RecommendationIntent(
+                confidence=0.95,
+                topic=previous_topic,
+            )
+    # Semantic routing is a fallback for intents that the deterministic router
+    # could not identify with high confidence. This prevents a model guess from
+    # replacing explicit signals such as a five-digit course number.
+    semantic_plan = (
+        None
+        if intent.confidence >= 0.9
+        else classify_query_semantically(
+            latest_user_message,
+            conversation=structured_context or conversation,
+        )
+    )
+    if semantic_plan is not None:
+        semantic_intent = intent_from_query_plan(semantic_plan)
+        if semantic_intent is not None:
+            intent = semantic_intent
 
-    # 1. Course Q&A — 5-digit course number → Groq via remote MCP
+    response_language = resolve_response_language(
+        latest_user_message,
+        previous_messages=messages[:-1],
+        previous_languages=[turn.response_language for turn in turns],
+        inferred_language=semantic_plan.language if semantic_plan is not None else None,
+    )
+
+    resolution_text = (
+        _referenced_state_text(latest_user_message, semantic_plan, turns)
+        if turns
+        else conversation
+    )
+    if semantic_plan is not None and not turns:
+        extracted_mentions = [
+            semantic_plan.program_mention,
+            semantic_plan.specialization_mention,
+        ]
+        resolution_text = " ".join(
+            [conversation, *(mention for mention in extracted_mentions if mention)]
+        )
+
+    # 1. Study programme recommendation — deterministic ranking over imported programme data
+    if isinstance(intent, StudyProgramRecommendationIntent):
+        if not intent.topic and semantic_plan is not None and semantic_plan.topic:
+            intent.topic = semantic_plan.topic
+        return _answer_study_program_recommendations(
+            session,
+            intent=intent,
+            academic_year=academic_year,
+            language=response_language,
+        )
+
+    if isinstance(intent, ClarificationIntent):
+        return _answer_recommendation_clarification(
+            intent=intent,
+            academic_year=academic_year,
+            language=response_language,
+        )
+
+    if isinstance(intent, NewCoursesIntent):
+        try:
+            changes = get_new_courses(
+                session,
+                academic_year,
+                level=intent.level or None,
+                topic=intent.topic or None,
+                ects=intent.ects,
+            )
+        except CatalogComparisonError:
+            comparison_year = f"{int(academic_year[:4]) - 1}-{academic_year[:4]}"
+            return ChatResponse(
+                reply=(
+                    f"Jeg kan ikke sammenligne kursuskatalogerne endnu, fordi data for "
+                    f"{comparison_year} eller {academic_year} mangler."
+                    if response_language == "da"
+                    else f"I cannot compare the course catalogues yet because data for "
+                    f"{comparison_year} or {academic_year} is missing."
+                ),
+                understood=UnderstoodContext(topic="new courses"),
+                academicYear=academic_year,
+                responseLanguage=response_language,
+                isDirectAnswer=True,
+                resultMode="all",
+            )
+
+        recommendations = []
+        for item in changes.courses:
+            course = item.course
+            if item.classification == "renumbered":
+                old_numbers = ", ".join(item.previous_course_numbers)
+                reason = (
+                    f"Nyt kursusnummer; erstatter {old_numbers}."
+                    if response_language == "da"
+                    else f"New course number; replaces {old_numbers}."
+                )
+            else:
+                reason = (
+                    f"Findes ikke i kursuskataloget for {changes.previous_academic_year}."
+                    if response_language == "da"
+                    else f"Does not appear in the {changes.previous_academic_year} course catalogue."
+                )
+            title = (
+                course.title_da or course.title_en or course.title
+                if response_language == "da"
+                else course.title_en or course.title_da or course.title
+            )
+            recommendations.append(
+                RecommendedCourse(
+                    courseNumber=course.course_number,
+                    title=title,
+                    ects=float(course.ects) if course.ects is not None else None,
+                    level=course.level,
+                    period=course.period,
+                    schedule=course.schedule,
+                    language=course.language,
+                    department=course.department,
+                    description=_short_description(course.description),
+                    reason=reason,
+                    sourceUrl=course.source_url,
+                )
+            )
+
+        total = len(changes.courses)
+        topic_da = f" om {intent.topic}" if intent.topic else ""
+        topic_en = f" about {intent.topic}" if intent.topic else ""
+        ects_text = (
+            format(intent.ects.normalize(), "f")
+            if intent.ects is not None
+            else ""
+        )
+        ects_da = f" på {ects_text} ECTS" if ects_text else ""
+        ects_en = f" worth {ects_text} ECTS" if ects_text else ""
+        level_da = f" på {intent.level}-niveau" if intent.level else ""
+        level_en = f" at {intent.level} level" if intent.level else ""
+        course_label_da = "nyt kursus" if total == 1 else "nye kurser"
+        course_label_en = "new course" if total == 1 else "new courses"
+        created_verb_en = "is" if changes.created_count == 1 else "are"
+        renumbered_verb_en = "has" if changes.renumbered_count == 1 else "have"
+        reply = (
+            f"Jeg fandt {total} {course_label_da}{topic_da}{ects_da}{level_da} i {academic_year}: "
+            f"{changes.created_count} er nyoprettede, og {changes.renumbered_count} har fået nyt kursusnummer."
+            if response_language == "da"
+            else f"I found {total} {course_label_en}{topic_en}{ects_en}{level_en} in {academic_year}: "
+            f"{changes.created_count} {created_verb_en} newly created and "
+            f"{changes.renumbered_count} {renumbered_verb_en} a new course number."
+        )
+        return ChatResponse(
+            reply=reply,
+            understood=UnderstoodContext(
+                topic=intent.topic or "new courses",
+                level=intent.level or None,
+                ects=float(intent.ects) if intent.ects is not None else None,
+            ),
+            recommendations=recommendations,
+            academicYear=academic_year,
+            responseLanguage=response_language,
+            isDirectAnswer=True,
+            resultMode="all",
+        )
+
+    # 2. Specialization Q&A — deterministic database answer with structured requirements
+    if isinstance(intent, SpecializationIntent):
+        program = _matching_study_program(session, resolution_text)
+        specialization = _matching_specialization(session, resolution_text, program=program)
+        asks_for_overview = _asks_for_specialization_overview(resolution_text)
+        if specialization is None and not (program is not None and asks_for_overview):
+            global_specialization = _matching_specialization(session, resolution_text)
+            if global_specialization is not None:
+                specialization = global_specialization
+                program = global_specialization.program
+        elif program is None:
+            program = specialization.program
+        if program is None:
+            return ChatResponse(
+                reply=(
+                    "Jeg kan forklare specialiseringerne, men jeg kan ikke identificere studieprogrammet eller "
+                    "specialiseringen entydigt. Skriv for eksempel 'specialiseringer på Computer Science and Engineering'."
+                    if response_language == "da"
+                    else "I can explain the specializations, but I cannot identify the study programme or "
+                    "specialization unambiguously. For example, write "
+                    "'specializations in Computer Science and Engineering'."
+                ),
+                understood=UnderstoodContext(topic="specialization"),
+                recommendations=[],
+                academicYear=academic_year,
+                responseLanguage=response_language,
+            )
+        return _answer_specializations(
+            program,
+            specialization,
+            academic_year=academic_year,
+            language=response_language,
+        )
+
+    # 2. Course Q&A — 5-digit course number → Groq via remote MCP
     if isinstance(intent, CourseQAIntent):
         course = get_course(session, intent.course_number, academic_year)
         if course:
             try:
-                return _answer_with_llm(course, messages, academic_year)
+                return _answer_with_llm(
+                    course,
+                    remote_question if turns else latest_user_message,
+                    academic_year,
+                    response_language=response_language,
+                )
             except CourseQAError:
                 logger.exception("Groq could not answer a question about course %s", intent.course_number)
                 return ChatResponse(
                     reply=(
                         f"Jeg fandt kursus {intent.course_number}, men AI-svaret kunne ikke hentes lige nu. "
                         "Prøv igen om et øjeblik."
+                        if response_language == "da"
+                        else f"I found course {intent.course_number}, but the AI answer is currently unavailable. "
+                        "Please try again in a moment."
                     ),
                     understood=UnderstoodContext(topic=f"course {course.course_number}", level=course.level),
                     recommendations=[],
                     academicYear=academic_year,
+                    responseLanguage=response_language,
                     isDirectAnswer=True,
                 )
         return ChatResponse(
             reply=(
                 f"Jeg kunne ikke finde kursus {intent.course_number}. "
                 "Tjek venligst at du har skrevet et 5-cifret kursusnummer."
+                if response_language == "da"
+                else f"I could not find course {intent.course_number}. "
+                "Please check that you entered a five-digit course number."
             ),
             understood=UnderstoodContext(topic="course not found"),
             recommendations=[],
             academicYear=academic_year,
+            responseLanguage=response_language,
         )
 
-    # 2. Study Plan Q&A — Groq via remote MCP, fallback to static plan
+    # 3. Study Plan Q&A — Groq via remote MCP, fallback to static plan
     if isinstance(intent, StudyPlanIntent):
-        program = _matching_study_program(session, conversation)
+        if _asks_general_msc_ects(latest_user_message):
+            return ChatResponse(
+                reply=(
+                    "En ordinær toårig kandidatuddannelse (MSc) på DTU er på 120 ECTS. "
+                    "De er normalt fordelt på 10 ECTS polyteknisk grundlag, 50 ECTS "
+                    "retningsspecifikke kurser, 30 ECTS valgfrie kurser og et "
+                    "kandidatspeciale på 30 ECTS."
+                    if response_language == "da"
+                    else "A standard two-year MSc programme at DTU totals 120 ECTS. "
+                    "It normally consists of 10 ECTS of polytechnical foundation courses, "
+                    "50 ECTS of programme-specific courses, 30 ECTS of electives, and a "
+                    "30 ECTS master's thesis."
+                ),
+                understood=UnderstoodContext(
+                    topic="MSc degree requirements",
+                    level="Master",
+                    ects=120,
+                ),
+                recommendations=[],
+                academicYear=academic_year,
+                responseLanguage=response_language,
+                isDirectAnswer=True,
+            )
+        program = _matching_study_program(session, resolution_text)
         if program is None:
             return ChatResponse(
                 reply=(
                     "Jeg kan forklare studieplanen, men jeg kan ikke identificere uddannelsen entydigt. "
                     "Skriv både uddannelsens navn og niveau, for eksempel 'Jeg læser Bioteknologi på kandidaten'."
+                    if response_language == "da"
+                    else "I can explain the study plan, but I cannot identify the programme unambiguously. "
+                    "Include both the programme name and level, for example "
+                    "'I study Biotechnology at master's level'."
                 ),
                 understood=UnderstoodContext(topic="study plan"),
                 recommendations=[],
                 academicYear=academic_year,
+                responseLanguage=response_language,
+            )
+        if (
+            semantic_plan is not None
+            and semantic_plan.domain == "study_program"
+            and semantic_plan.operation == "overview"
+        ):
+            return _answer_program_overview(
+                program,
+                academic_year=academic_year,
+                language=response_language,
             )
         try:
-            reply = answer_with_remote_mcp(conversation, academic_year)
+            identified_program = (
+                f"Identificeret studieprogram: {program.name} ({program.degree_type})."
+                if response_language == "da"
+                else f"Identified study programme: {program.name} ({program.degree_type})."
+            )
+            study_plan_question = (
+                f"{latest_user_message}\n\n"
+                f"{identified_program}"
+            )
+            reply = answer_with_remote_mcp(
+                study_plan_question,
+                academic_year,
+                response_language=response_language,
+            )
             return ChatResponse(
                 reply=reply,
                 understood=UnderstoodContext(topic="study plan qa", level=program.degree_type, program=program.name),
                 recommendations=[],
                 studyPlan=_study_plan_overview(program),
                 academicYear=program.academic_year or academic_year,
+                responseLanguage=response_language,
                 isDirectAnswer=True,
             )
         except CourseQAError:
             logger.exception("Groq/MCP could not answer a study plan question — falling back to static plan")
-            return _answer_study_plan(program, academic_year=academic_year)
-
-    # 3. Course Recommendation — Groq via remote MCP
-    if isinstance(intent, RecommendationIntent):
-        try:
-            reply = answer_with_remote_mcp(conversation, academic_year)
-            return ChatResponse(
-                reply=reply,
-                understood=UnderstoodContext(topic=intent.topic, level=intent.level or None),
-                recommendations=[],
-                academicYear=academic_year,
-                isDirectAnswer=True,
+            return _answer_study_plan(
+                program,
+                academic_year=academic_year,
+                language=response_language,
             )
-        except CourseQAError:
-            logger.exception("Groq/MCP could not answer a recommendation request")
-            pass  # fall through to regex search
 
-    # 4. Open Question — Groq (no DB)
+    # 4. Course Recommendation — Groq via remote MCP
+    if isinstance(intent, RecommendationIntent):
+        recommendation_context = (
+            _context_from_plan(latest_user_message, semantic_plan, turns)
+            if turns or semantic_plan is not None
+            else understand_context(messages)
+        )
+        is_contextual_refinement = _referenced_course_search(semantic_plan, turns) is not None
+        if recommendation_context.result_mode == "all":
+            all_results_plan = _all_results_plan(
+                latest_user_message,
+                response_language,
+                semantic_plan,
+            )
+            return _answer_all_course_matches(
+                session,
+                plan=all_results_plan,
+                messages=messages,
+                academic_year=academic_year,
+                context=recommendation_context,
+            )
+        if not is_contextual_refinement:
+            try:
+                reply = answer_with_remote_mcp(
+                    remote_question,
+                    academic_year,
+                    response_language=response_language,
+                )
+                return ChatResponse(
+                    reply=reply,
+                    understood=UnderstoodContext(
+                        topic=intent.topic or recommendation_context.topic,
+                        level=recommendation_context.level,
+                        ects=(
+                            float(recommendation_context.ects)
+                            if recommendation_context.ects is not None
+                            else None
+                        ),
+                        language=recommendation_context.language,
+                        period=recommendation_context.period,
+                    ),
+                    recommendations=[],
+                    academicYear=academic_year,
+                    responseLanguage=response_language,
+                    isDirectAnswer=True,
+                    resultMode="summary",
+                )
+            except CourseQAError:
+                logger.exception("Groq/MCP could not answer a recommendation request")
+                pass  # fall through to deterministic search
+
+    # 5. Open Question — Groq (no DB)
     if isinstance(intent, OpenQuestionIntent):
         try:
-            reply = answer_with_remote_mcp(conversation, academic_year)
+            reply = answer_with_remote_mcp(
+                remote_question,
+                academic_year,
+                response_language=response_language,
+            )
             return ChatResponse(
                 reply=reply,
                 understood=UnderstoodContext(topic="general question"),
                 recommendations=[],
                 academicYear=academic_year,
+                responseLanguage=response_language,
                 isDirectAnswer=True,
             )
         except CourseQAError:
             logger.exception("Groq could not answer an open question")
-            pass  # fall through to regex search
+            return ChatResponse(
+                reply=(
+                    "Jeg kunne ikke hente AI-svaret lige nu. Prøv igen om et øjeblik."
+                    if response_language == "da"
+                    else "I could not retrieve the AI answer right now. Please try again in a moment."
+                ),
+                understood=UnderstoodContext(topic="general question"),
+                recommendations=[],
+                academicYear=academic_year,
+                responseLanguage=response_language,
+                isDirectAnswer=True,
+            )
 
     # Fallback — regex-based search (unchanged)
-    context = understand_context(messages)
+    context = (
+        _context_from_plan(latest_user_message, semantic_plan, turns)
+        if turns
+        else understand_context(messages)
+    )
     result = _run_search(session, context, academic_year)
     ranked_courses = result.courses
     if ranked_courses and ranked_courses[0][1] > 0:
         minimum_score = ranked_courses[0][1] * 0.4
         ranked_courses = [item for item in ranked_courses if item[1] >= minimum_score]
+    ranked_courses.sort(key=lambda item: item[0].course_number.casefold())
     courses = [
         RecommendedCourse(
             courseNumber=course.course_number,
-            title=course.title,
+            title=course.translated_value("title", response_language) or course.title,
             ects=float(course.ects) if course.ects is not None else None,
             level=course.level,
             period=course.period,
             schedule=course.schedule,
             language=course.language,
             department=course.department,
-            description=(course.description[:357].rstrip() + "...")
-            if course.description and len(course.description) > 360
-            else course.description,
-            reason=_reason(course, context),
+            description=_short_description(course.translated_value("description", response_language)),
+            reason=_reason(course, context, response_language),
             sourceUrl=course.source_url,
         )
         for course, _score in ranked_courses
@@ -615,20 +1769,31 @@ def recommend_courses(
     if courses:
         qualifiers = [context.topic]
         if context.level:
-            qualifiers.append(f"{context.level}-niveau")
+            qualifiers.append(
+                f"{context.level}-niveau" if response_language == "da" else f"{context.level} level"
+            )
         reply = (
             f"Jeg fandt {len(courses)} relevante kurser til "
             f"{', '.join(qualifiers)}. Se anbefalingerne nedenfor, og kontrollér altid "
             "forudsætninger og den aktuelle kursusbeskrivelse via DTU-linket."
+            if response_language == "da"
+            else f"I found {len(courses)} relevant courses for "
+            f"{', '.join(qualifiers)}. See the recommendations below, and always check "
+            "the prerequisites and current course description via the DTU link."
         )
     else:
         reply = (
             "Jeg kunne ikke finde kurser, der matcher det endnu. Prøv at skrive et mere konkret "
             "emne, eksempelvis machine learning, optimization eller computer vision."
+            if response_language == "da"
+            else "I could not find any matching courses yet. Try a more specific topic, "
+            "such as machine learning, optimization, or computer vision."
         )
     return ChatResponse(
         reply=reply,
         understood=understood,
         recommendations=courses,
         academicYear=academic_year,
+        responseLanguage=response_language,
+        resultMode="summary",
     )

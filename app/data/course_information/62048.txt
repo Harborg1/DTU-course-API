@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62048" Volume="2026/2027" University="dtu" LastUpdated="2025-03-21+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">10</Point>
+        <Title Lang="da-DK" Title="Physical Computing" />
+        <Title Lang="en-GB" Title="Physical Computing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="166844" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jussi Ville</GivenName>
+            <FamilyName>Mikkonen</FamilyName>
+            <Email>jusmi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Det er en forudsætning for at kunne indstille sig til eksamen, at op til 6 obligatoriske kursusopgaver er afleveret rettidigt og godkendt af den ansvarlige underviser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="In order to participate in the exam all students must hand in 6 mandatory assignments. They must be handed in on time and approved by the lecturer." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Additional exam-days might be necessary." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Det kan være nødvendigt med flere undersøgelsesdage." />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>De studerende vil lære programmering og prototyping ud fra et Human-Computer Interaction-perspektiv, så de kan skabe og relatere et detaljeret mikrocontroller-program og en digital grænseflade til en situation i den virkelige verden. Kurset vil give de grundlæggende færdigheder til uafhængig prototyping, dvs. hvordan man interfacer til elektronik, hvordan man programmerer kompleks adfærd, der gør brug af elektronikken, og skaber en interaktiv grafisk brugergrænseflade på en pc.
+
+De studerende vil også lære at reflektere over prototypens opførsel i forhold til brugerevalueringen med henblik på at producere funktionelle og situationstilpassede prototyper.</Contents>
+          <Teaching_And_Learning_Methods>Klasseundervisning, praktiske programmeringsøvelser og eksamensprojekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Målet med kurset er at give en grundlæggende forståelse af programmering og Physical Computing, og hvordan forskellige former for interaktion (f.eks. lyd, tryk, knapper, grafiske brugergrænseflader) kan bruges i menneske-maskine-scenarier.</Course_Objectives>
+          <DTU_Remark>Det primære undervisningssprog er dansk dog kan lektioner på engelsk forekomme.</DTU_Remark>
+          <Remark>Sektion for Innovationsprocesser og entrepreneurskab
+Proces og Innovation: 4. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The students will learn programming and prototyping from a Human-Computer Interaction perspective, being able to create and relate a detailed microcontroller-program and a digital interface to a real-world situation. The course will provide the basic skills towards independent prototyping, i.e. how to interface to electronics, how to program complex behaviours that make use of the electronics, and create an interactive graphical user interface on a PC.
+
+The students will also learn to reflect on the behaviour of the prototype with respect to the user evaluation, towards producing functional and situation-appropriate prototypes.</Contents>
+          <Teaching_And_Learning_Methods>Class lectures and exercises in programming. Final exam project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The goal of the course is to give a basic understanding of programming and Physical Computing and how different forms of interaction (e.g. sound, pressure, button, graphical user interfaces) can be used in human-machine scenarios.</Course_Objectives>
+          <DTU_Remark>The primary language in the course is Danish however lectures in English can occur.</DTU_Remark>
+          <Remark>Section of Innovation Processes and Entrepreneurship
+Proces og Innovation: 4. semester</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne nævne og diskutere interaktionsmodeller i relation til HCI (menneske-maskine interaktion) og physical computing." />
+          <Txt Lang="en-GB" Txt="Be able to name and discuss interaction models in relation to HCI (human-machine interaction) and physical computing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende basale elektroniske komponenter, sensorer, aktuatorer, mm." />
+          <Txt Lang="en-GB" Txt="Be able to apply basic eletronic components, sensors, actuators, mm." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere avancerede interaktive modeller, enheder eller systemer, der bruger mikrocontrollere og en pc, som de studerende skal programmere." />
+          <Txt Lang="en-GB" Txt="Construct advanced interactive models, devices, or systems, that use microcontrollers and a PC that the students must program." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Prototype et Physical Computing system, der virker." />
+          <Txt Lang="en-GB" Txt="Prototype a working Physical Computing system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmer styringen af forskellige typer hardware i et relevant sprog (C++/java) ved hjælp af Storycoding." />
+          <Txt Lang="en-GB" Txt="Program the control of different types of hardware in a relevant language (C++/java) using Storycoding." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og implementere en simpel kommunikationsgrænseflade til en pc." />
+          <Txt Lang="en-GB" Txt="Understand and implement a simple communication interface to a PC." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og implementere simple WiFi-baserede Physical Computing systemer." />
+          <Txt Lang="en-GB" Txt="Understand and implement simple WiFi-based physical computing systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå, implementere og dokumentere testscenarier." />
+          <Txt Lang="en-GB" Txt="Understand, implement, and document test scenarios." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere og reflektere over arbejdet ud fra et teknisk, fysisk/digitalt perspektiv, interaktionsparadigmer og dokumentation som UML." />
+          <Txt Lang="en-GB" Txt="Evaluate and reflect on the work from the perspective of a technical, physical/digital, interaction paradigms, and documentation such as UML." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå, hvordan energistyring og energiudnyttelse kan bruges inden for fysisk databehandling til at opbygge bæredygtige indlejrede systemer." />
+          <Txt Lang="en-GB" Txt="Understand how energy-management and energy-harvesting can be used within physical computing towards sustainable embedded systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Innovativ produktudvikling i mødet mellem hardware og software.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62046" />
+        <PreviousCourse CourseCode="62046" />
+        <PreviousCourse CourseCode="62974" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:30:40.71" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

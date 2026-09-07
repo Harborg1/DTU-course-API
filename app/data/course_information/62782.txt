@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62782" Volume="2026/2027" University="dtu" LastUpdated="2026-04-10+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Anvendt kredsløbsteknik" />
+        <Title Lang="en-GB" Title="Applied circuit technique" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="170915" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ashraf Fathi Khalil</GivenName>
+            <FamilyName>Sulayman</FamilyName>
+            <Email>ashka@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="154303" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Maryamsadat</GivenName>
+            <FamilyName>Tahavori</FamilyName>
+            <Email>marta@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Anvendelse af Laplace teorien til analyse af kredsløb i tids- og s-domænet med henblik på at undersøge et kredsløbs respons overfor stepfunktioner etc.
+Bestemmelse af overføringsfunktion for et kredsløb i s-domænet. Bestemmelse af frekvensrespons for simple passive lavpas-, højpas-, båndpas- og båndafvisningsfiltre. Bestemmelse af overføringsfunktion for operationsforstærker kredsløb. Introduktion til simple aktive filtre. Introduktion til Decibel og Bode plots og hvordan man tegner et Bode plot for amplitude og fase som en funktion af frekvensen. En blid introduktion til Fourier række udvikling.
+Teoretisk gennemgang af en èn-faset ensretter med kapacitiv udglatning, herunder bestemmelse af forløbet af indgangsstrømmen og udgangsspændingen som funktion af belastningen.  Eksperimentel undersøgelse af ensretteren. Måleresultaterne sammenholdes med den teoretiske beskrivelse og Matlab-simuleringer.</Contents>
+          <Teaching_And_Learning_Methods>Om formiddagen tests og forelæsninger
+Om eftermiddagen udførelse af eksperimentelle øvelser, projektarbejde og forberedelse til næste dag</Teaching_And_Learning_Methods>
+          <Course_Literature>1. Undervisningsmateriale udleveret af Ashraf Fathi Khalil Sulayman
+2.C. K. Alexander and M. N. O. Sadiku, Fundamnetals of Electric Circuits,
+McGrawHill, 7th Eddition, 2021, er ikke obligatorisk og man kan fint klare sig uden bogen. Men bogen er en mulighed som supplerende læsning, hvis man ønsker en lærebog, der inkluderer Laplace transformation.</Course_Literature>
+          <Course_Objectives>Anvendelse af Laplace teorien til at analysere tids- og s-domæne kredsløb samt analysere filtre, overføringsfunktioner mv.
+Teoretisk gennemgang af en én-faset ensretter bestående af en skilletransformer, 4-diode bro og en udglatningskondensator, samt eksperimentel undersøgelse og simulering af ensretteren.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektrisk Energiteknologi: 2. semester</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Laplace theory analysis of a circuit in the time- and s-domain to examine the response of a circuit to a step function etc.
+Determining the transfer function of a circuit in the s-domain. Determining the frequency response of simple passive low-pass, high-pass, band-pass and band-reject filters.  Determining of the transfer function for operational amplifier circuits. Introduction to simple active filters. Introduction to the Decibel and Bode plots and how to draw a Bode plot for the amplitude and phase as a function of the frequency. A gentle introduction to the Fourier series expansion.
+Theoretical review of a single-phase rectifier with capacitive smoothing, including derivation of the course of input current and output voltage as a function of load. Experimental examination of the rectifier and comparing the measurement results with the reviewed theory and Matlab simulations.</Contents>
+          <Teaching_And_Learning_Methods>In the morning tests and lectures
+In the afternoon experimental exercises, project work and preparation for the next day</Teaching_And_Learning_Methods>
+          <Course_Literature>1. Teaching material handed out by Ashraf Fathi Khalil Sulayman
+2. .C. K. Alexander and M. N. O. Sadiku, Fundamnetals of Electric Circuits,
+McGrawHill, 7th Eddition, 2021, is not mandatory and you can easily be without the book. However, the book is a possibility if you want a large textbook, that includes the Laplace transformation.</Course_Literature>
+          <Course_Objectives>Using Laplace theory for circuit analysis of time- and s-domain circuits and analysis of filters, transfer functions etc.
+Theoretical analysis of a single phase rectifier consisting of a transformer, 4-diode bridge and a smoothing capacitor, as well as experimental examination and simulation of the rectifier.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektrisk Energiteknologi: 2. semester</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende Laplace teorien til analyse af kredsløb i tids- og s-domænet med henblik på at undersøge et kredsløbs respons overfor stepfunktioner etc." />
+          <Txt Lang="en-GB" Txt="Understand and use Laplace theory to analyse a circuit in the time- and s-domain to examine the response of a circuit to a step function etc." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme overføringsfunktionen for et kredsløb  " />
+          <Txt Lang="en-GB" Txt="Determine the transfer function of a circuit" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå frekvensresponsen for simple lavpas, højpas, båndpas og båndstop filter kredsløb ud fra grundlæggende principper" />
+          <Txt Lang="en-GB" Txt="Understand the frequency response of simple low-pass, high-pass, band-pass and band-reject filter circuit from first principles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skitsere Bode-plots for mere komplekse overføringsfunktioner med hensyn til størrelse og faserespons som funktion af frekvensen" />
+          <Txt Lang="en-GB" Txt="Sketch a Bode plot for a more complex transfer function with regard to the magnitude and phase response, as a function of frequency" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme overføringsfunktion og frekvens respons for en operationsforstærker og for simple aktive filter kredsløb" />
+          <Txt Lang="en-GB" Txt="Determine transfer function and frequency response for an operational amplifier and for simple active filter circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og opbygge et simpelt kaskade koblet aktivt filter for at opnå en ønsket frekvens respons karakteristik" />
+          <Txt Lang="en-GB" Txt="Design and build simple cascaded active filter in order to obtain a desired frequency response characteristic" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå den grundlæggende virkemåde af en èn-faset ensretter med kapacitiv udglatning." />
+          <Txt Lang="en-GB" Txt="Understand the basic operation of a single-phase rectifier with capacitive smoothing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere ensretteren i simuleringsprogrammet Matlab." />
+          <Txt Lang="en-GB" Txt="Be able to simulate the rectifier in Matlab simulation program." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Foretage relevante laboratorieundersøgelse på en én-faset ensretter." />
+          <Txt Lang="en-GB" Txt="Perform appropriate laboratory examination on a one-phase rectifier." />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="62741 / 62742" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:19.08" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

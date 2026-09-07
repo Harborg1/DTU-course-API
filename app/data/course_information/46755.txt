@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46755" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Vedvarende energi i el-markederne" />
+        <Title Lang="en-GB" Title="Renewables in electricity markets" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="103136" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jalal</GivenName>
+            <FamilyName>Kazempour</FamilyName>
+            <Email>jalal@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="103606" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lesia</GivenName>
+            <FamilyName>Mitridati</FamilyName>
+            <Email>lemitri@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Alle opgaver/rapporter skal afleveres. Den endelige bedømmelse er baseret på grupperapporterne. &#xD;&#xA;Hvis en eller flere af rapporterne ikke er afleveret kan kurset ikke bestås." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="All reports and exercises must be submitted. The assessment is based on group reports, and failure to submit one or both reports will result in not passing the course." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus giver et omfattende overblik over elmarkeder, der dækker både systemniveau og markedsdeltageres perspektiver. Læseplanen inkluderer:
+
+**System og Markedsperspektiv**
+
+Grundlæggende om Elmarkeder
+- Udbuds- og efterspørgselskurver og merit-ordensprincip 
+- Definitioner af samfundsmæssig velfærd og ligevægt 
+- Forskellige prisdannelsesmekanismer 
+- Forskellige elmarkeder og markedsaktører 
+- Sammenligning af europæiske og amerikanske elmarkeder
+
+Markedsafklaring: Optimering vs. Ligevægt
+- Markedsafklaring som et optimeringsproblem 
+- Markedsafklaring som et konkurrence-ligevægtsproblem 
+- Definitioner af Nash-ligevægt og blandede komplementaritetsproblemer
+
+Dagen-før Markeder
+- Praktiske aspekter (fokus på europæiske markeder) 
+- Markedsafklaringsproblem formuleret som et optimeringsproblem 
+- Prisverificering gennem optimalitetsbetingelser 
+- Netværkseffekter: Zonale vs. nodale markedsafklaringer 
+- Flow-baseret markedskobling
+
+Intradag Markeder
+- Markedsstruktur og praktisk implementering (fokus på europæiske markeder) 
+- Kontinuerlig intradag handel 
+- Auktionsbaserede intradag markeder
+
+Balancering Markeder
+- Praktisk implementering (fokus på europæiske markeder) 
+- Markedsafklaringsproblem formuleret som et optimeringsproblem 
+- Én-pris vs. to-pris balanceringsafregninger
+
+Markeder for Ancillary Services
+- Oversigt over markeder for ancillary services (fokus på europæiske og nordiske markeder: mFRR, aFRR, FCR) 
+- Markedsafklaringsproblem formuleret som et optimeringsproblem 
+- Løbende europæiske initiativer for balancering
+
+Virkninger af Vedvarende Energi på Elmarkederne
+
+**Markedsdeltager Perspektiv**
+
+Budstrategi for en Pristager Vindmølleproducent
+- Pristager vs. prissætter - Budstrategi som et nyhedsbutiksproblem 
+- Stokastisk programmering for beslutningstagning under usikkerhed 
+- Risikoovervejelser 
+- Beslutningskvalitetsanalyse: Ex-post out-of-sample validering og krydsvalidering
+
+Budstrategi for en Fleksibilitetsaggregator i Ancillary Service Markeder
+- Forudgående kvalifikationskrav for budgivning i ancillary service markeder 
+- Chance-betinget programmering og løsningsmetoder 
+- Chance-betinget optimeringsmodel for budstrategier</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, computerøvelser, projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Elmarkedet spiller en central rolle i udviklingen af elektricitet i dag. Den stigende integration af vedvarende energikilder i elsystemer har en betydelig og kompleks indflydelse på disse markeder. Dette kursus har til formål at introducere studerende til de grundlæggende aspekter af vedvarende energi i elmarkederne, med fokus på både markedsoperatørers og marked deltageres perspektiver.</Course_Objectives>
+          <Remark>Indhold fra tidligere år for at få yderligere indsigt i kurset: Videooptagelser, slides og eksempler på opgaver baseret på programmering fra tidligere år er tilgængelige her: https://www.jalalkazempour.com/teaching/msc-renewables-in-electricity-markets
+
+Evalueringen er baseret på gruppe-rapporter for kursusopgaver, så gruppestyringsevner er essentielle. Studerende er ansvarlige for at danne deres egne grupper.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course provides a comprehensive overview of electricity markets, covering both system-level and market participant perspectives. The curriculum includes:
+
+**System and Market Perspective**
+
+Fundamentals of Electricity Markets
+     - Supply and demand curves and the merit-order principle
+     - Definitions of social welfare and equilibrium
+     - Various pricing mechanisms
+     - Different electricity markets and market actors
+     - Comparison of European and U.S. electricity markets
+
+Market Clearing: Optimization vs. Equilibrium
+     - Market clearing as an optimization problem
+     - Market clearing as a competitive equilibrium problem
+     - Definitions of Nash equilibrium and mixed complementarity problems
+
+Day-Ahead Markets
+     - Practical aspects (focus on European markets)
+     - Market-clearing problem formulated as an optimization problem
+     - Price verification through optimality conditions
+     - Network effects: Zonal vs. nodal market clearing
+     - Flow-based market coupling
+
+Intraday Markets
+     - Market structure and practical implementation (focus on European markets)
+     - Continuous intraday trading
+     - Auction-based intraday markets
+
+Balancing Markets
+     - Practical implementation (focus on European markets)
+     - Market-clearing problem formulated as an optimization problem
+     - One-price vs. two-price balancing settlements
+
+Ancillary Service Markets
+     - Overview of ancillary service markets (focus on European and Nordic markets: mFRR, aFRR, FCR)
+     - Market-clearing problem formulated as an optimization problem
+     - Ongoing European initiatives for balancing
+
+Impacts of Renewable Energy on Electricity Markets
+
+**Market Participant Perspective**
+
+Offering Strategy of a Price-Taker Wind Power Producer
+     - Price-taker vs. price-maker 
+     - Offering strategy as a newsvendor problem
+     - Stochastic programming for decision-making under uncertainty
+     - Risk considerations
+     - Decision quality analysis: Ex-post out-of-sample validation and cross-validation
+
+Offering Strategy of a Flexibility Aggregator in Ancillary Service Markets
+     - Pre-qualification requirements for bidding in ancillary service markets
+     - Chance-constrained programming and solution techniques
+     - Chance-constrained optimization model for offering strategies</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, computer exercises, project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>Electricity markets play a central role in the exchange of electricity today. The growing integration of renewable energy sources into power systems has a significant and complex impact on these markets. This course aims to introduce students to the fundamental aspects of renewable energy in electricity markets, considering perspectives from both market operators and market participants.</Course_Objectives>
+          <Remark>Content from previous years to gain further insight into the course: Video recordings, slides, and examples of programming-based assignments from previous years are available here: https://www.jalalkazempour.com/teaching/msc-renewables-in-electricity-markets
+
+The evaluation is based on group reports for course assignments, so group management skills are essential. Students are responsible for forming their own groups.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Studerende uden stærke programmeringsfærdigheder i Julia, Python eller lignende sprog vil ikke kunne bestå dette kursus, da programmering er essentiel for opgaverne. Studerende skal have en solid forståelse af optimering og lineær programmering. Derudover anbefales det at have kendskab til grundlæggende elektriske energisystemer og energimarkeder." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students without strong programming skills in Julia, Python, or similar languages will not be able to pass this course, as programming is essential for the assignments. Students must have a solid understanding of optimization and linear programming. Additionally, familiarity with the fundamentals of electric power systems and energy economics is recommended." />
+          <DTU_CoursesTxt Lang="da-DK" Txt=" 42101 42112 42015 46700 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de grundlæggende principper for elmarkeder" />
+          <Txt Lang="en-GB" Txt="Explain the fundamentals of electricity markets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige markedsstrukturer, nøgleaktører og prisdannelsesmekanismer" />
+          <Txt Lang="en-GB" Txt="Describe various market structures, key actors, and pricing mechanisms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare markedsafklaringsprocessen ud fra både et optimerings- og et ligevægtsperspektiv" />
+          <Txt Lang="en-GB" Txt="Explain the market-clearing process from both optimization and equilibrium perspectives" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere virkningen af vedvarende energi på elmarkederne" />
+          <Txt Lang="en-GB" Txt="Analyze the impact of renewable energy on electricity markets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle matematiske modeller, herunder optimerings- og ligevægtsformuleringer, til afklaring af forskellige elmarkeder" />
+          <Txt Lang="en-GB" Txt="Develop mathematical models, including optimization and equilibrium formulations, for clearing different electricity markets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe matematiske modeller for markedsdeltagere, der gør det muligt for dem at træffe optimale budstrategiske beslutninger under usikkerhed" />
+          <Txt Lang="en-GB" Txt="Design mathematical models for market participants enabling them to make optimal offering strategy decisions under uncertainty" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere udvalgte matematiske modeller ved hjælp af Julia eller Python" />
+          <Txt Lang="en-GB" Txt="Implement selected mathematical models using Julia or Python" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere, analysere og fortolke numeriske resultater effektivt" />
+          <Txt Lang="en-GB" Txt="Present, analyze, and interpret numerical results effectively" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <PreviousCourse CourseCode="31761" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="10" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="10" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:52.763" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62642" Volume="2026/2027" University="dtu" LastUpdated="2025-03-03+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Planlægning af infrastruktur" />
+        <Title Lang="en-GB" Title="Planning of infrastructure" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <External_Course_Responsible Name="Jacqueline Arriagada Fernandez" IsContact="false" SortID="1" />
+        <Course_Responsible PersonKey="212813" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jacqueline G Arriagada</GivenName>
+            <FamilyName>Fernandez</FamilyName>
+            <Email>jacfe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="22453" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Samuel Brüning</GivenName>
+            <FamilyName>Larsen</FamilyName>
+            <Email>sbla@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der afleveres én samlet grupperapport i slutningen af kurset.&#xD;&#xA;Bedømmelsen er en helhedsvurdering af grupperapporten og en individuel mundtlig eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One group report is submitted at the end of the course.&#xD;&#xA;An overall assessment is based on the group report and an individual oral examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Et vejprojekt i Hovedstadsregionen kodes, modelleres og trafikkonsekvensvurderes. Dette inkluderer projektkonkretisering, overordnet behovsanalyse, valg og kodning af linieføring, estimat af anlægsomkostning, beregning af rutevalg, trafikspring og øvrige transporteffekter. Vejprojektet vurderes vha. en cost-benefit analyse.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppearbejde med planlægning af et vejprojekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets formål er at give de studerende grundlæggende kompetencer indenfor området vejtrafikplanlægning, samt udbygge deres GIS kompetencer til at omfatte, hvad behovet er i vejsektoren.</Course_Objectives>
+          <Remark>Sektion for Produktion, transport og planlægning</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>A road project in the Metropolitan area is coded, modelled and evaluated with respect to the traffic impacts. This includes specification of the project, overall need analysis, choice and coding of the alignment, estimating construction costs, calculation of route choice, induced traffic and other traffic impacts. The road project is evaluated by means of a cost-benefit analysis.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work with planning of road project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The objective of the course is to provide the students with the basic competences within the field of road traffic planning, as well as further develop their GIS skills to the level that is needed in the road sector.</Course_Objectives>
+          <Remark>Section of Production, Transportation and Planning</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende forudsætninger i GIS" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or similar GIS prerequisites" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30531" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre en overordnet behovsanalyse for et vejprojekt og på basis heraf at konkretisere projektet" />
+          <Txt Lang="en-GB" Txt="Carry out an overall need analysis for a road project and based on that to specify the project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge mulighederne for linjeføring og argumentere for det endelige valg" />
+          <Txt Lang="en-GB" Txt="Examine the alignment options and substantiate the final choice" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimere anlægsomkostninger for et vejprojekt" />
+          <Txt Lang="en-GB" Txt="Estimate the construction costs related to a road project" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de grundlæggende principper bag rutevalgsberegninger" />
+          <Txt Lang="en-GB" Txt="Understand the basic principles behind route choice assignment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre en rutevalgsberegning og kunne fortolke og kvalitetssikre resultaterne" />
+          <Txt Lang="en-GB" Txt="Carry out a quality control of the results of the route choice assignments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne trafikspring og fortolke resultater heraf" />
+          <Txt Lang="en-GB" Txt="Calculate induced traffic and interpret the results hereof" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne og analysere transporteffekter (fx ulykker, støj, luftforurening, rejsetid og kørselsomkostninger) og kunne redegøre for initiativer som reducerer problemerne" />
+          <Txt Lang="en-GB" Txt="Calculate and analyze traffic impacts (e.g. accidents, noise, air pollution, travel time and driving costs) and be able to explain which initiatives will reduce the problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Gennemføre en cost-benefit analyse af et vejprojekt og fortolke resultater heraf" />
+          <Txt Lang="en-GB" Txt="Carry out a cost-benefit analysis of a road project and interpret the results hereof" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte GIS til at udarbejde klare og forståelige illustrationer til at anskueliggøre og analysere data og resultater" />
+          <Txt Lang="en-GB" Txt="Use GIS to produce simple maps to illustrate and analyze data and results" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en teknisk rapport" />
+          <Txt Lang="en-GB" Txt="Write a technical report" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="42985/42175/42973" />
+        <PreviousCourse CourseCode="42973" />
+        <PreviousCourse CourseCode="42175" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:52.097" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="28751" Volume="2026/2027" University="dtu" LastUpdated="2026-04-22+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Procesregulering og instrumentering i bioprocesindustrien" />
+        <Title Lang="en-GB" Title="Control systems in biomanufacturing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="campus_kalundborg">
+          <LocationTxt Lang="da-DK" Txt="Efterår 2024&#xD;&#xA;Kurset følger ikke DTU's normale skemaplaceringer" />
+          <LocationTxt Lang="en-GB" Txt="Autum 2024&#xD;&#xA;The course is not following DTUs normal Schedule" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Efterår 2024&#xD;&#xA;Kurset følger ikke DTU's normale skemaplaceringer" />
+          <Schedule_Txt Lang="en-GB" Txt="Autum 2024&#xD;&#xA;The course is not following DTUs normal Schedule" />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="21473" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jakob Kjøbsted</GivenName>
+            <FamilyName>Huusom</FamilyName>
+            <Email>jkh@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="143742" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jochen</GivenName>
+            <FamilyName>Dreyer</FamilyName>
+            <Email>jodre@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>This course will start with a fast recap of development and design of single loop control using feedforward and feedback with PID control. Special emphasis will be given to controller tuning and troubleshooting of poor performance before delving into control systems instrumentation, Distributed Control System (DSC) and Supervisory Control and Data Acquisition (SCADA) system, data communication protocols and process historians.
+
+Following this, the course will introduce the plantwide challenges for control systems and discuss different approached for process optimization in both continuous and batch manufacturing systems and the implications for this type of production planning at the control and operation level.
+
+In the last part of the course method for multivariable and model-based control are introduced and special focus is given to control of bioreactors in batch and fed-batch operation.</Contents>
+          <Teaching_And_Learning_Methods>Forlæsninger, øvelser og projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Typical chemical plants may contain hundreds of measurements and control loops. Most control theories (those you have seen in the introduction to process control) assume that a control structure is already given at the start, which reduces the problem to tuning and calculation of a control law. In practice, however, given a plant design with its process flow diagram, a control engineer faces the following problems: i) which variables should be controlled, ii) which variables should be measured, iii) which inputs should be manipulated, and iv) which links should be established between them? These are the questions that the plantwide control course addresses. To this end, a systematic methodology based on hierarchical decomposition of the control problem into layers is used for designing a plantwide control structure based on process understanding and with an economic production objective in mind. The performance of the control structure is then evaluated and further refined using dynamic simulations of the process in question in an iterative manner. 
+
+The goal of the course is thus to learn i) how data acquisition and controls are managed in an industrial setting; ii) to manage the complicated task of designing a control strategy for the entire plant or a multivariable process; iii) to understand process dynamics using dynamic simulations and process data; vi) to develop and implement a control strategy that meets control design objectives (stabilize the system, optimize the economics, environmental sustainability and satisfy the constraints); and v) evaluation of alternative solutions. Ultimately all these efforts are to help develop and operate better, safer, and optimal processes for chemical and biochemical industries.</Course_Objectives>
+          <DTU_Remark>Kurset gives kun i efterår lige år</DTU_Remark>
+          <No_Credit_Points_With>Optimerende drift af procesanlæg</No_Credit_Points_With>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course will start with a fast recap of development and design of single loop control using feedforward and feedback with PID control. Special emphasis will be given to controller tuning and troubleshooting of poor performance before delving into control systems instrumentation, Distributed Control System (DSC) and Supervisory Control and Data Acquisition (SCADA) system, data communication protocols and process historians.
+
+Following this, the course will introduce the plantwide challenges for control systems and discuss different approached for process optimization in both continuous and batch manufacturing systems and the implications for this type of production planning at the control and operation level.
+
+In the last part of the course method for multivariable and model-based control are introduced and special focus is given to control of bioreactors in batch and fed-batch operation.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>Typical chemical plants may contain hundreds of measurements and control loops. Most control theories (those you have seen in the introduction to process control) assume that a control structure is already given at the start, which reduces the problem to tuning and calculation of a control law. In practice, however, given a plant design with its process flow diagram, a control engineer faces the following problems: i) which variables should be controlled, ii) which variables should be measured, iii) which inputs should be manipulated, and iv) which links should be established between them? These are the questions that the plantwide control course addresses. To this end, a systematic methodology based on hierarchical decomposition of the control problem into layers is used for designing a plantwide control structure based on process understanding and with an economic production objective in mind. The performance of the control structure is then evaluated and further refined using dynamic simulations of the process in question in an iterative manner. 
+
+The goal of the course is thus to learn i) how data acquisition and controls are managed in an industrial setting; ii) to manage the complicated task of designing a control strategy for the entire plant or a multivariable process; iii) to understand process dynamics using dynamic simulations and process data; vi) to develop and implement a control strategy that meets control design objectives (stabilize the system, optimize the economics, environmental sustainability and satisfy the constraints); and v) evaluation of alternative solutions. Ultimately all these efforts are to help develop and operate better, safer, and optimal processes for chemical and biochemical industries.</Course_Objectives>
+          <DTU_Remark>The course is part of the 4-year master's program in Kalundborg.
+The course is only given in Autumn even years</DTU_Remark>
+          <No_Credit_Points_With>Optimising Plantwide Control</No_Credit_Points_With>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Et introducerende kursus i procesregulering men fokus op enkeltsløjfe PID regulering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="An introductory course in chemical process control similar to 28352 or 28150 focused on single loop PID control." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="28150 / 28352" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyse and tune PID control loop" />
+          <Txt Lang="en-GB" Txt="Analyse and tune PID control loop" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Explain how some relevant signals (temperature, pressure, flow rate) are acquired " />
+          <Txt Lang="en-GB" Txt="Explain how some relevant signals (temperature, pressure, flow rate) are acquired " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Perform a basic data visualization and analysis in Python" />
+          <Txt Lang="en-GB" Txt="Perform a basic data visualization and analysis in Python" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Describe industrial control systems infrastructure " />
+          <Txt Lang="en-GB" Txt="Describe industrial control systems infrastructure " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Perform a systematic analysis of the operation of chemical and biochemical process plants" />
+          <Txt Lang="en-GB" Txt="Perform a systematic analysis of the operation of chemical and biochemical process plants" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Derive a control structure based upon the process analysis" />
+          <Txt Lang="en-GB" Txt="Derive a control structure based upon the process analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Calculate the optimal point of operation and process schedules for the control system" />
+          <Txt Lang="en-GB" Txt="Calculate the optimal point of operation and process schedules for the control system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Derive simple linear models for control design from complex process systems" />
+          <Txt Lang="en-GB" Txt="Derive simple linear models for control design from complex process systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyse observability and controllability of a dynamical system" />
+          <Txt Lang="en-GB" Txt="Analyse observability and controllability of a dynamical system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design multivariable PID control structures" />
+          <Txt Lang="en-GB" Txt="Design multivariable PID control structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design model based multivariable control structures" />
+          <Txt Lang="en-GB" Txt="Design model based multivariable control structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluate controller's performance using simulation and dynamic process model" />
+          <Txt Lang="en-GB" Txt="Evaluate controller's performance using simulation and dynamic process model" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Procesregulering og instrumentering i bioprocesindustrien</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="28451" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:25.013" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

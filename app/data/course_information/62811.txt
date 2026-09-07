@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62811" Volume="2026/2027" University="dtu" LastUpdated="2026-03-30+02:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Introduktion til mekatronik og robotteknik" />
+        <Title Lang="en-GB" Title="Introduction to mechatronics and robotics systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="36701" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Christian Kim</GivenName>
+            <FamilyName>Christiansen</FamilyName>
+            <Email>chkch@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="220320" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tran Nguyen</GivenName>
+            <FamilyName>Le</FamilyName>
+            <Email>tngle@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="209706" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Karam</GivenName>
+            <FamilyName>Eliker</FamilyName>
+            <Email>kaeli@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="112136" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Morten Hedelykke Dietz</GivenName>
+            <FamilyName>Fuglsang</FamilyName>
+            <Email>mofu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Sensorer, aktuatorer og elektriske kredsløb; roterende og lineære bevægelsessensorer; motorer; kombinatorisk og sekventiel kontrol; kontrolsystemer ved hjælp af mikrocontrollere (f.eks. Arduino og ESP32) eller industrielle controllere, HMI-paneler, GUI Interface.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppearbejde med opgaver og øvelser på simulator. 
+Praktiske laboratorieprojekter i værksted og softwareudvikling på controllere såsom mikrocontrollere (f.eks. Arduino og ESP32) eller industrielle controllere (f.eks. PLC’er) samt grafiske brugerflader.
+Hands-on-arbejde med mekanik, elektronik og software.</Teaching_And_Learning_Methods>
+          <Course_Literature>Udmeldes ved semesterstart
+Noter fra DTU Learn
+Den studerende skal selv anskaffe sin egen Arduino efter instruktioner i løbet af kurset.</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at give de studerende en teoretisk, faglig introduktion til, og en praktisk erfaring med mekatronik og robotanlæg. Kurset omfatter den tekniske interaktion mellem fagområderne mekanik, elektronik og softwareudvikling i industrielle og robotbaserede systemer.
+
+Kurset bibringer den studerende kompetence inden for opbygning af automatiske kontrolsystemer indenfor styring, regulering og overvågning af industrielle og robotbaserede systemer.
+
+Kurset gør brug af de styrings- og reguleringstekniske teorier og metoder, der anvendes til at kontrollere f.eks. mekaniske og termiske processer i praktiske anlæg, ved at benytte sensorer, aktuatorer og tilhørende softwareudvikling på controllere såsom mikrocontrollere (f.eks. Arduino og ESP32) eller industrielle controllere (f.eks. PLC’er) samt grafiske brugerflader.</Course_Objectives>
+          <Remark>Sektion for Mekanisk teknologi
+Maskinteknik: 4. semester
+Indgår som forudsætning for specialisering "Mekatronik og robotteknik"</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Sensors, actuators, and electric circuits; rotary and linear motion sensing; motors; combinatorial and sequential control; control systems using microcontrollers (e.g., Arduino, ESP32) or industrial controllers, HMI panels, GUI Interface.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group problem solving on simulator. 
+Practical laboratory projects in workshop and software development on controllers such as microcontrollers (e.g., Arduino and ESP32) or industrial controllers (e.g., PLCs), along with graphical user interfaces.
+Hands-on work with mechanics, electronics, and software.</Teaching_And_Learning_Methods>
+          <Course_Literature>It will be announced at the start of semester
+Notes from DTU Learn
+The student must acquire his/her own Arduino after instructions during the course.</Course_Literature>
+          <Course_Objectives>The aim of the course is to give the students a theoretical introduction to, and practical experience with mechatronics and robotics. The course encompasses the technical interaction between the fields of mechanics, electronics, and software development in industrial and robotic systems.
+
+The course equips the student with the competence to design and construct automatic control systems in the control, regulation, and monitoring of industrial and robotic systems.
+
+The course applies control engineering theories and methods used to manage, for instance, mechanical and thermal processes in practical systems, using sensors, actuators, and associated software development on controllers such as microcontrollers (e.g., Arduino and ESP32) or industrial controllers (e.g., PLCs), along with graphical user interfaces.</Course_Objectives>
+          <Remark>Section of Mechanical Technology
+Mecanical engineering: 4. semester
+Included as a prerequisite for specialization "Mechatronics and robotics"</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="62677 Anvendt reguleringsteknik&#xD;&#xA;62904 Anvendt reguleringsteknik" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="62677 Applied Control Engineering&#xD;&#xA;62904 Applied Control Engineering" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62677/62904" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge sensorer, analoge signaler og aktuatorer til brug i robot- eller industrielle applikationer." />
+          <Txt Lang="en-GB" Txt="Use sensors, analog signals, and actuators for robotic or industrial applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge og implementere passende grænseflader for sensorer og aktuatorer i systemer såsom robotsystemer eller procesanlæg." />
+          <Txt Lang="en-GB" Txt="Select and implement appropriate interfaces for sensors and actuators in systems such as robotic systems or process plants." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle software og grafiske brugergrænseflader til styrings- og overvågningsapplikationer." />
+          <Txt Lang="en-GB" Txt="Develop software and graphical user interfaces for control and monitoring applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere kombinatorisk og sekventiel styrelogik på platforme såsom mikrocontrollere (f.eks. Arduino, ESP32) eller industrielle controllere (f.eks. PLC’er)." />
+          <Txt Lang="en-GB" Txt="Design and implement combinational and sequential control logic on platforms such as microcontrollers (e.g., Arduino, ESP32) or industrial controllers (e.g., PLCs)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere og designe styringsmetoder til dynamiske processer såsom robotsystemer eller procesanlæg." />
+          <Txt Lang="en-GB" Txt="Analyze and design control methods for dynamic processes such as robotic systems or process plants." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende og evaluere kontrolmetoder til at regulere systemer såsom mekaniske, fluide eller termiske systemer." />
+          <Txt Lang="en-GB" Txt="Apply and evaluate control methods to regulate systems such as mechanical, fluid, or thermal systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere realtidsprogrammering af PID-algoritmer på mikrocontrollere, herunder Arduino, ESP32 eller industrielle styringer." />
+          <Txt Lang="en-GB" Txt="Implement real-time programming of PID algorithms to microcontrollers, including Arduino, ESP32, or industrial controllers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opnå praktisk erfaring gennem laboratorie- og værkstedsaktiviteter med systemer såsom et 3-DOF robotsystem." />
+          <Txt Lang="en-GB" Txt="Gain hands-on experience through laboratory and workshop activities involving systems such as 3-DOF robotic system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejde i teams om praksisnære projekter, hvor de studerende designer, bygger og demonstrerer selvudviklede, funktionelle mekatroniske systemer med mere end to frihedsgrader til virkelige anvendelser." />
+          <Txt Lang="en-GB" Txt="Collaborate on hands-on projects in teams where students design, build, and demonstrate self-developed functional mechatronic systems with more than two degrees of freedom for real-world applications." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <OpenUniversity>
+            <SubTitle>Grundlæggende mekatroniske systemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="62800" />
+        <PreviousCourse CourseCode="62800" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:26.767" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

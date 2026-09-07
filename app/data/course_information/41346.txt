@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41346" University="dtu" LastUpdated="2025-02-26+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Forbrændingsmotorer - Eksperimentelle metoder og databehandling" />
+        <Title Lang="en-GB" Title="Internal combustion engines - experimental methods and data processing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="14800" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Anders</GivenName>
+            <FamilyName>Ivarsson</FamilyName>
+            <Email>aniv@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="215408" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Bengt Håkan</GivenName>
+            <FamilyName>Johansson</FamilyName>
+            <Email>bhajo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Helhedsvurdering af 3 individualiserede grupperapporter. Rapporterne udarbejdes i grupper af max 2 studerende." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of 3 individualized group reports. Reports are written in groups of max 2 students." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Studerende vil udføre traditionelle såvel som nye motoreksperimenter/-undersøgelser med kompressionstændte og gnisttændte forbrændingsmotorer. Eksperimenterne vil inkludere måling/regulering af omdrejningshastighed, moment, cylindertryk, friktion, brændstof og luft forbrug, tænding/indsprøjtnings timing, gas og partikel emissioner. Eksperimenterne vil i størst mulig omfang være en del af aktuelle forskningsaktiviteter med bæredygtige brændstoffer og reduktion af emissioner.
+
+Målingerne vil bringe studerende i stand til at karakterisere motorydelse i form af traditionelle motorspecifikationer som effektive middeltryk, effektivitet, specifikke brændstofforbrug og specifikke emissioner mm.
+
+I gruppearbejde vil de eksperimentelle data blive analyseret i Matlab. Grafiske illustrationer af analysen og deres fortolkning er det primære fokus i rapportskrivningen.
+
+Kerneelementer:
+
+•	Matlab programmering.
+•	Programmering med strukturerede databaser.
+•	Analyse af varmefrigivelse baseret på cylindertryk.
+•	Spektralanalyse af cylindertryk med FFT (Fast Fourier Transform).
+•	Digital signal filtrering.
+•	Undersøge og fortolke resultater fra variation af motorparametre.
+•	Grafisk præsentation af resultater.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, gruppearbejde med laboratorieøvelser og rapporter</Teaching_And_Learning_Methods>
+          <Course_Literature>Engine Principles and Vehicles, Spencer C. Sorensen, DTU book store</Course_Literature>
+          <Course_Objectives>Kursets mål er at give studerende, med den teoretiske baggrund for forbrændingsmotorer, den nødvendige eksperimentelle baggrund til at kunne arbejde med forbrændingsmotorer på et forsknings og udviklings niveau. Numerisk talbehandling af indsamlede forsøgsdata er betragtet som det primære læringsmål. Det er en vigtig forberedelse til at kunne udføre eksperimentelle projekter med forbrændingsmotorer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Students will carry out classical as well as new IC engine experiments/investigations with compression ignition and spark ignition engines. The experiments will include measurement/control of engine speed, torque, cylinder pressure, friction, fuel and air consumption, ignition/injection timing, gaseous and particulate emissions. The particular experiments will to widest possible extend be part of current research activities on sustainable fuels and emission reduction.
+
+The measurements enable students to characterize the engine performance in terms of traditional engine specifications like mean effective pressures, efficiencies, specific fuel consumption and specific emissions etc.
+
+In group work the experimental data will be analyzed with Matlab. Graphical illustrations of the analysis and their interpretations, is the main subject in the report writing. 
+
+Core elements:
+
+•	Matlab programming
+•	Programming with structured databases 
+•	Heat release analysis based on cylinder pressure
+•	Spectral analysis of cylinder pressure with FFT (Fast Fourier Transform)
+•	Digital signal filtering
+•	Investigate and interpret results from variation of engine parameters
+•	Graphical presentation of results</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group work with laboratory exercises and reports</Teaching_And_Learning_Methods>
+          <Course_Literature>Engine Principles and Vehicles, Spencer C. Sorensen, DTU book store</Course_Literature>
+          <Course_Objectives>The purpose of the course is to give students with a theoretical IC engine background, the necessary experimental background to enable working with IC engines on a research and development level. The numerical treatment of acquired experimental data is considered as the major objective of the course. It is an important prerequisite for experimental projects with IC engines.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller tilsvarende kursus om grundlæggende forbrændingsmotorer. Erfaring med Matlab programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or similar course in combustion engines. Experience with programming in Matlab." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41344/41347" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Liste de målinger op der er nødvendige for at kunne foretage de vigtigste forbrændingsmotorundersøgelser." />
+          <Txt Lang="en-GB" Txt="List the measurements that are required to cover all major engine investigations." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne sikkert mellem de tre vigtigste forbrændingsmotorprincipper." />
+          <Txt Lang="en-GB" Txt="Distinguish confidently between the three most important IC engine principles." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare hvordan ændringer af motorenparametre og brændstofegenskaber påvirker motorens emissioner og ydelse." />
+          <Txt Lang="en-GB" Txt="Explain how changes of engine parameters and fuel properties influence emissions and performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne en motors middeltryk og kurve for varmefrigivelse på basis af målinger." />
+          <Txt Lang="en-GB" Txt="Calculate an engine’s mean effective pressures and heat release curve based on measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne frekvensspektret for en motors forbrændingsakustik på basis af målinger." />
+          <Txt Lang="en-GB" Txt="Calculate the frequency spectrum of an engine’s combustion acoustics based on cylinder measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme de forskellige energitab fra en motor på basis af målinger." />
+          <Txt Lang="en-GB" Txt="Determine the different energy losses from an engine, based on measurements." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Navigere selvstændigt i komplekse projekter." />
+          <Txt Lang="en-GB" Txt="Navigate independently in complex projects." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre talbehandling af store eksperimentelle datamængder i Matlab." />
+          <Txt Lang="en-GB" Txt="Carry out data treatment of large experimental data sets in Matlab." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lave grafiske illustrationer af eksperimentelle resultater med mange varierede motorparametre." />
+          <Txt Lang="en-GB" Txt="Create graphical illustrations of experimental results with multiple engine parameters varied. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge en egnet eksperimentel metode til en bestemt forbrændingsmotorundersøgelse." />
+          <Txt Lang="en-GB" Txt="Select an appropriate experimental method for a certain IC engine investigation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge hvilke resultater der har relevans og skal inkluderes i en rapport." />
+          <Txt Lang="en-GB" Txt="Select which results that are relevant and should be included in a report." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere usikkerheder på eksperimentelle resultater." />
+          <Txt Lang="en-GB" Txt="Consider uncertainties of the experimental results. " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="41414. 41345" />
+        <PreviousCourse CourseCode="41345" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="12" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:58.47" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

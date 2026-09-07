@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30150" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Numeriske metoder i Geofysik" />
+        <Title Lang="en-GB" Title="Numerical Methods in Geophysics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="38314" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Shfaqat A</GivenName>
+            <FamilyName>Khan</FamilyName>
+            <Email>sakh@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="2 projekter/rapporter i løbet af kursusforløbet og afsluttende skriftlig eksamen.&#xD;&#xA;Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="2 projects/reports during the course and a final written exam.&#xD;&#xA;Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til kartesiske koordinatsystemer, samt spænding, volumenkræfter og traktion (overfladestress), deformation og rotation. Avanceret programmering i Python. Eksempler på bevarelsessætninger og bevægelsesligninger. Eksempler på anvendelser: Hydrostatisk tryk, elasticitet, visco-elastisk flydning i Jorden, plastisk isflydning, strømning i porøse medier, turbulens og laminar flydning. Introduktion til lineære og ikke-lineære inverse problemer i 1D og 2D. Analyse af tidsserier og usikkerhed, samt interpolation i 1D g 2D ved anvendelse af bl.a. kriging. Introduktion til numeriske metoder til projektion og transformationer med afstand, areal og/eller vinkelbevaring, UTM-projektion, polar stenografisk projektion. Introduktion til geodætiske koordinationssystemer og transformationer mellem disse ved Helmert-transformationen, herunder ITRF, EUREF. Introduktion til Euler rotation, pladebevægelse og postglacial rebound.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og regneøvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Kompendium + Forelæsningsnoter.</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at give de grundlæggende matematiske redskaber til løsning af numeriske problemer i rum- og geofysik. Der fokuseres særligt på løsninger af matematiske problemer vha. kodning i Python.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to Cartesian coordinate systems, stress, strain, volume forces, deformation, and rotation. Advanced programming in Python. Introduction to numerical methods for projection and transformations with distance, area and/or angle conservation. Introduction to linear and non-linear inverse problems in 1D and 2D. Analysis of time series and uncertainty and interpolation in 1D g 2D using kriging. Examples of equations of motion and conservation of mass/flux. Examples of applications: Hydrostatic pressure, elasticity, viscous flow (earth mantle), ice flow, turbulence, and laminar flow. Introduction to geodetic coordination systems and transformation between them by Helmert transformation, including ITRF, EUREF. Introduction to Euler rotation, plate motion, and post-glacial rebound.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Compendium + Lecture notes.</Course_Literature>
+          <Course_Objectives>The course aims to provide basic mathematical tools for solving numerical problems in space and geophysics. In particular, the course will focus on using python to solve general mathematical problems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende Python programmering er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic programming skills in Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="01035.(30140/30141/30142).(30130/30131)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for begreberne spænding, deformation, ydre kræfter, konstitutive relationer" />
+          <Txt Lang="en-GB" Txt="explain the concepts tension, deformation, external forces, constitutive relationships" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for fundamentale begreber i forbindelse med interpolation, projektion, herunder kriging, simulation, variogram, korrelation, areal-/afstand-/vinkel-bevarelse" />
+          <Txt Lang="en-GB" Txt="explain fundamental concepts in connection with interpolation, projection, including kriging, simulation, semi-variogram, correlation, area/distance/angle conservation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse lineære og ikke-lineære inverse problemer i 1D og 2D" />
+          <Txt Lang="en-GB" Txt="solve simple linear and non-linear inverse problems in 1D and 2D" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse problemer vedrørende statiske tryk- og spændingsforhold, strømningsfænomener i havet og i Jorden" />
+          <Txt Lang="en-GB" Txt="solve problems regarding static pressure and stress conditions, flow phenomena in the ocean and in the earth" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse problemer vedrørende plastisk flydning i iskapper, og strømning i porøse medier" />
+          <Txt Lang="en-GB" Txt="solve problems regarding plastic flow in ice caps and flow in porous media" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse problemer vedrørende transformationer mellem geodætiske koordinatsystemer (ITRF, EUREF)" />
+          <Txt Lang="en-GB" Txt="solve problems concerning transformations between geodetic coordinate systems (ITRF, EUREF)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere tidsserier og beregne hertil hørende usikkerhed på model parametre" />
+          <Txt Lang="en-GB" Txt="analyze time series and calculate the corresponding uncertainty" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="programmere i Python og sammensætte kompleks kode til at løse numerisk integration i forbindelse med geofysiske problemstillinger" />
+          <Txt Lang="en-GB" Txt="programming in Python and compile complex code to solve numerical integration in connection with geophysical problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Python til at konstruere animationer/videoer i forbindelse med formidling af geofysiske problemstillinger." />
+          <Txt Lang="en-GB" Txt="use Python to construct animations/videos in connection with the dissemination of geophysical problems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Introduction til GNSS og analyse af GNSS tidsserier" />
+          <Txt Lang="en-GB" Txt="Introduction to GNSS (Global Navigation Satellite system) and analysis of GNSS time series" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Rum- og geofysik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:54.587" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

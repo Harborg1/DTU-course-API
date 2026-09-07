@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02321" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Hardware/Software Programmering" />
+        <Title Lang="en-GB" Title="Hardware/Software Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P8M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="6158" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Edward Alexandru</GivenName>
+            <FamilyName>Todirica</FamilyName>
+            <Email>eato@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter gives på baggrund af en helhedsvurdering. Den skriftelige eksamen afholdes i afslutnings af 3-ugers perioden. Den afsluttende projektrapport afleveres i slutningen af 3-ugers perioden i januar." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on all results in their entirety.The written exam takes place at the end of the 3-weeks period. The final project is delivered at the end of the 3 weeks period from January." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>* ANSI C programmering
+* Xilinx Zynq-arkitekturen (baseret på Digilent Zybo-boardet)
+* Hardware design og implementation ved hjælp af FPGA og VHDL/HLS
+* Hukommelser
+* Interaktion med I/O enheder: polling, interrupts, memory mapping
+* Programmer, der styrer I/O enheder
+* Enhedsdrivere
+* Projekt, der involverer strukturering, design, implementering og test af en applikation, som eksekverer på et computer system af en vis kompleksitet, hvor funktionaliteten realiseres ved en kombination af maskinel og programmel
+* Dette kursus er det projektbærende kursus for 3. semester CDIO projekt.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, lab øvelser og projekt.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne en god viden om moderne indlejrede computer-systemers opbygning og virkemåde ved gennemgang af de involverede komponenter og abstraktionsniveauer, som bruges til at håndtere kompleksiteten af et sådant system.
+At give deltagerne en forståelse af grænsefladen mellem en indlejret processor og eksterne enheder.
+At gøre deltagerne i stand til at designe, implementere, fejlfinde, teste og dokumentere et computer-system til en indlejret applikation bestående af hardware og software komponenter.</Course_Objectives>
+          <Remark>Kravspecifikationen for 3-ugens-projektet udføres af de studerende i samarbejde med underviseren.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>* ANSI C programming
+* The Xilinx Zynq architecture (based on the Digilent Zybo board)
+* Hardware design and implementation using FPGA and VHDL/HLS
+* Memories
+* Interacting with I/O devices: polling, interrupts, memory mapping
+* Programs that control I/O devices 
+* Device drivers
+* Project involving the structuring, design, implementation and test of an application, which runs on a computer system of some complexity where functionality is provided by a combination of HW &amp; SW
+* This course is the bearing course for the 3rd semester CDIO project.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, lab exercises and project.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give a good understanding of how a modern embedded computer system is organized and works by considering the components involved and the layers of abstractions used to handle the complexity of such a system. 
+To give an understanding of how an embedded processor/microcontroller interfaces with peripheral devices.
+To enable participants to design, implement, debug, test and document a computer system for an embedded application consisting of hardware and software components.</Course_Objectives>
+          <Remark>The requirements specification for the 3-weeks project is decided by the students in collaboration with the teacher.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Færdighed i C programmering. Kendskab til grundlæggende computer arkitektur. Kendskab til digital elektronik og VHDL.  Kendskab til indlejrede systemer." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Skills in C programming. Knowledge of basic computer architecture. Knowledge of digital electronics and VHDL. Knowledge of embedded systems." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02311.02322.02328.02329 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere et indlejret system, der interfacer med I/O enheder." />
+          <Txt Lang="en-GB" Txt="Construct an embedded system that interfaces with I/O devices." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende interrupts i et computer system." />
+          <Txt Lang="en-GB" Txt="Describe and use interrupts in a computer system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opdele designet af et indlejret computersystem af moderat kompleksitet i håndterbare hardware- og softwarekomponenter" />
+          <Txt Lang="en-GB" Txt="Decompose the design of an embedded computer system of moderate complexity into manageable hardware and software components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare memory-mapped input/output og anvende det til at kommunikere med enheder i et computersystem" />
+          <Txt Lang="en-GB" Txt="Explain memory mapped input/output and use it to communicate with devices in a computer system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere programmer, der gør det muligt for processoren at styre input-/outputenheder gennem relevante interfaces og kommunikationsprotokoller" />
+          <Txt Lang="en-GB" Txt="Construct programs that allow the processor to control input/output devices through appropriate interfaces and communication protocols" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle software i et højniveauprogrammeringssprog" />
+          <Txt Lang="en-GB" Txt="Develop software in a high-level programming language" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere og anvende device drivers til at styre input-/outputenheder" />
+          <Txt Lang="en-GB" Txt="Construct and use device drivers in order to control I/O devices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skabe specialudviklede IP-kerner ved hjælp af hardwarebeskrivelsessprog eller high-level synthesis-værktøjer (f.eks. VHDL eller HLS)" />
+          <Txt Lang="en-GB" Txt="Create custom IP cores using hardware description languages or high-level synthesis tools (e.g. VHDL or HLS)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en teknisk rapport, der dokumenterer projektarbejdet." />
+          <Txt Lang="en-GB" Txt="Write a technical report that documents the project work." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bidrage konstruktivt som medlem af et lille designteam (2–5 deltagere)" />
+          <Txt Lang="en-GB" Txt="Contribute constructively as a member of a small design team (2–5 participants)" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02321" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="172" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="172" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:25.623" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34764" Volume="2026/2027" University="dtu" LastUpdated="2024-10-24+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="34" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Robotteknologi og Automation i Farmaceutisk Produktion" />
+        <Title Lang="en-GB" Title="Robotics and Automation in Pharmaceutical Manufacturing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Other">
+          <LocationTxt Lang="da-DK" Txt="Kurset foregår primært hos NNE i Virum, mens forelæsningerne foregår på DTU Lyngby campus." />
+          <LocationTxt Lang="en-GB" Txt="The course takes place primarily on the premises of NNE in Virum, while lectures take place on the DTU Lyngby campus." />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+          <Extern_Dep Resources="0" SortID="0" Show="true" KVL_Resources="0">
+            <Extern_Dep_Txt Lang="da-DK" Txt="NNE - Novo Nordisk Engineering" />
+            <Extern_Dep_Txt Lang="en-GB" Txt="NNE - Novo Nordisk Engineering" />
+          </Extern_Dep>
+        </Departments>
+        <Course_Responsible PersonKey="142538" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Lazaros</GivenName>
+            <FamilyName>Nalpantidis</FamilyName>
+            <Email>lanalpa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="17403" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Søren</GivenName>
+            <FamilyName>Hansen</FamilyName>
+            <Email>sohan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="76394" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jing</GivenName>
+            <FamilyName>Wu</FamilyName>
+            <Email>jinwu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Experiments_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Vurdering baseret på skriftlig rapport og gruppepræsentation/demonstration af deres integrerede system." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Assessment based on written report and group presentation/demonstration of their integrated system." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset introducerer forskellige enheder, komponenter og kommunikationsprotokoller, der bruges i industriel automation, og hvordan man vælger den passende til den specifikke applikation. Kurset fokuserer på, hvordan de automatiserede systemer interagerer i et rigtigt produktionsmiljø. Det giver et indblik i forskellige aspekter og regler, der skal tages i betragtning, når et automatiseringssystem designes, og de yderligere krav, der er specifikke for farmaceutisk fremstilling. Kursets indhold er bygget op omkring en konkret, virkelighedsnær opgave, hvor læringen direkte kan anvendes og sigte mod at give praktiske færdigheder i programmering af PLC'er, HMI'er, industrirobotter og visionsystemer.
+Kursets struktur vil kombinere udvalgte forelæsninger på DTU om emner som industrirobotarme, PLC-programmering og robotvision, hver efterfulgt af hands-on udvikling i lokalerne hos NNE (Novo Nordisk Engineering) i Virum.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger. Gruppearbejde på et givet use-case.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset har til formål at give deltagerne grundlæggende forståelse og færdigheder, der kræves til at designe og implementere integreret robotteknologi og automatiseringsløsninger i et farmaceutisk produktionsmiljø. De studerende vil lære om automatisering, robotteknologi, perception og sikkerhed og bliver nødt til at syntetisere disse emner i et integreret arbejdssystem. Ved at udvikle en løsning på et virkeligt problem, vil deltagerne være i stand til at identificere de nødvendige komponenter, kommunikationsstrategier og sikkerhedsforanstaltninger, der er specifikke for det farmaceutiske fremstillingsdomæne. Kurset giver deltagerne mulighed for at arbejde på en use-case i farmaproduktion for direkte at anvende de erfaringer, de har lært.</Course_Objectives>
+          <DTU_Remark>Programmering i et sprog som Python og viden om grundlæggende robotteknologiske begreber er væsentlige dele af kurset.
+Kurset er forbeholdt studerende på MSc Autonomous Systems samt MSc Electrical Engineering.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces various devices, components and communication protocols used in industrial automation and how to choose the appropriate one for the specific application. The course focuses on how the automated systems interact in a real production environment. It gives an insight into various aspects and regulations that need to be considered when designing an automation system, and the additional requirements specific to pharma manufacturing. The content of the course is built around a concrete, real-life task where the learnings can be directly applied and aimed to give practical skills in programming PLCs, HMIs, industrial robots and vision systems.
+The structure of the course will combine selected lectures at DTU on topics such as industrial robot arms, PLC programming, and robot vision, each followed by hands-on development in the premises of NNE (Novo Nordisk Engineering) in Virum.</Contents>
+          <Teaching_And_Learning_Methods>Lectures. Group work on a given use-case.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course aims to provide participants with fundamental understanding and skills required to design and implement integrated robotics and automation solutions in a pharmaceutical manufacturing environment. The students will learn about automation, robotics, perception and safety and will need to synthesize these topics within an integrated working system. By developing a solution to a real-life problem, participants will be able to identify the necessary components, communication strategies and safety measures specific to the pharmaceutical manufacturing domain. The course offers participants an opportunity to work on a use-case in pharma manufacturing to directly apply the lessons learned.</Course_Objectives>
+          <DTU_Remark>Programming in a high-level language, e.g. Python, and knowledge of basic robotics concepts are essential parts of the course.
+The course is reserved for students at MSc Autonomous Systems and MSc Electrical Engineering.</DTU_Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til robotteknik og kendskab/praktisk erfaring med progammeringssprog som C/C++ og Python, samt operative systemer som Linux og ROS er påkrævet." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of robotics and knowledge/practical experience with programming languages such as C/C++ and Python, as well as operating systems such as Linux and ROS is mandatory." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/02003 34753" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til programmering af Programmerbare Logic Controllere (PLC'er) anbefales." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of programming Programmable Logic Controllers (PLC's) is recommended." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34723/34724 62104" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificer forskellige enheder og komponenter, der bruges i industriel automatisering" />
+          <Txt Lang="en-GB" Txt="Identify various devices and components used in industrial automation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Brug PLC og robotprogrammeringssprog til at udvikle kode til farmaceutiske fremstillingsapplikationer" />
+          <Txt Lang="en-GB" Txt="Use PLC and robot programming languages to develop code for pharmaceutical manufacturing applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter valget af en passende controller, kommunikationsmåde og sikkerhedskomponenter" />
+          <Txt Lang="en-GB" Txt="Argue about the choice of an appropriate controller, way of communication and safety components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og programmer et sikkerhedssystem baseret på grundlæggende risikovurdering" />
+          <Txt Lang="en-GB" Txt="Design and program a safety system based on basic risk assessment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar og begrund forskellige regulatoriske krav i lægemiddelfremstilling" />
+          <Txt Lang="en-GB" Txt="Explain and reason various regulatory requirements in pharma manufacturing" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design og implementer grænseflader og interlocks mellem forskellige systemer inden for farmaceutisk fremstilling som fx robot, PLC, vision system." />
+          <Txt Lang="en-GB" Txt="Design and implement interfaces and interlocks between different systems within pharmaceutical manufacturing such as e,g, robot, PLC, vision system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser et problem ved at integrere et industrielt automationssystem og formuler specifikationer og succeskriterier" />
+          <Txt Lang="en-GB" Txt="Analyze a problem of integrating an industrial automation system and formulate specifications and success criteria" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar og formidl konceptet og løsningen på et integrationsproblem til industriel automation" />
+          <Txt Lang="en-GB" Txt="Explain and communicate the concept and solution to an industrial automation system integration problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejd i et team for at løse en kompleks opgave" />
+          <Txt Lang="en-GB" Txt="Work in a team to solve a complex task" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="12" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="40" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:58.953" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

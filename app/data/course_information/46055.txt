@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46055" Volume="2026/2027" University="dtu" LastUpdated="2026-04-14+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Almen Elektroteknik" />
+        <Title Lang="en-GB" Title="General electrical engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="149652" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Tomislav</GivenName>
+            <FamilyName>Dragicevic</FamilyName>
+            <Email>tomdr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="158073" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Pere Izquierdo</GivenName>
+            <FamilyName>Gómez</FamilyName>
+            <Email>pizgo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="161193" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Miguel</GivenName>
+            <FamilyName>Lopez</FamilyName>
+            <Email>melga@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Grundlæggende kredsløb
+Ohms lov, KVL og KCL, Thevenin- og Norton-ækvivalenter
+• AC 
+AC spændinger og strømme, Impedans og admittans, Kompleks effekt, 3-fasede systemer
+• Energikonvertering
+Transformere, Motorer, Generatorer, PV, Effektelektronik
+• Elbiler 
+Princip, Komponenter (Motor/generator, Konverter, batteri), Ladeteknologier, Styring og virkningsgrad
+• Elektrisk energiforsyning
+Struktur, Optimal effektflow, El-markeder
+• Måleteknik
+• Projektledelse
+• Rapport</Contents>
+          <Teaching_And_Learning_Methods>Projektarbejde understøttet af forelæsninger og obligatoriske øvelser, grupperet i et antal undervisningsmoduler.</Teaching_And_Learning_Methods>
+          <Course_Literature>"Electric Power Systems: A Conceptual Introduction" (Second Edition, 2024), by Alexandra von Meier, Published by Wiley-IEEE Press</Course_Literature>
+          <Course_Objectives>Kurset sigter mod at give de studerende grundlæggende kendskab til elektroteknik i en form, som er relevant for studerende, der følger specialiseringen 'future energy'. 
+Kompetencerne dækker et bredt spektrum af udvalgte emner, som passer til en ikke-elektrisk kompetenceprofil indenfor energi.
+En tæt relation til en realistisk case sikrer klar fokus på de vigtigste aspekter indenfor elektrisk energi og gør det muligt for de studerende at se emnerne i et applikationsorientet perspektiv. 
+Med en elbil som det centrale element, lærer de studerende grundlæggende elektroteknik og får kendskab til AC og DC systemer, inklusiv komponenter indenfor energikonvertering, -distribution og -lagring.
+Som supplement til den teoretiske del og projektet, giver de eksperimentelle laboratoriøvelser praktiske kompetencer i måleteknik og indblik i virkelige komponenter og systemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Basic Electrical engineering
+Ohms law, KVL and KCL, Thevenin and Norton equivalents
+• AC 
+AC voltages and currents, Impedance and admittance, Complex power, 3-phase systems
+• Energy conversion
+Transformers, Motors, Generators, PV, Power Electronics
+• Electric vehicles 
+Principle, Components (Motor/generator, converter, battery), Charging technologies, Control and efficiency
+• Electric energy systems
+Structure, Optimal power flow, Power markets
+• Measurement techniques
+• Project management
+• Report writing</Contents>
+          <Teaching_And_Learning_Methods>Project work supported by lectures and mandatory exercises, grouped in a number of teaching modules.</Teaching_And_Learning_Methods>
+          <Course_Literature>"Electric Power Systems: A Conceptual Introduction" (Second Edition, 2024), by Alexandra von Meier, Published by Wiley-IEEE Press</Course_Literature>
+          <Course_Objectives>The course aims at providing the students with a basic knowledge within electrical engineering as relevant for students following the specialisation 'future energy'. 
+The competences given are covering a broad range within selected topics as suitable for a non-electric competence profile within energy.
+Close relation to a real case ensures clear focus on the important energy aspects and allows the students to see the topics in an application oriented view. 
+By means of an electric vehicle as the central element, the students learn basic electrical theory and gain knowledge to AC and DC systems, including components within energy conversion, distribution and storage.
+In addition to a theoretical and a project part, laboratory work will give the students practical measurement competences and insight in real components and systems.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og forstå grundlæggende elektriske AC og DC kredsløb" />
+          <Txt Lang="en-GB" Txt="Design and understand basic electrical AC and DC circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne bag elektriske hovedkomponenter i energisystemer" />
+          <Txt Lang="en-GB" Txt="Explain the principles of major electric components in energy systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå konceptet af kompleks effekt i AC-systemer" />
+          <Txt Lang="en-GB" Txt="Understand the concept of complex power in AC systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere virkningsgraden i elektriske energisystemer" />
+          <Txt Lang="en-GB" Txt="Estimate efficiencies within electrical energy systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå effektelektronik og dens anvendelser" />
+          <Txt Lang="en-GB" Txt="Understand power electronics and its applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere principperne og performance af elbiler " />
+          <Txt Lang="en-GB" Txt="Analyse the principles and performance of electrical vehicles " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive elbilers styring og kommunikation" />
+          <Txt Lang="en-GB" Txt="Describe control and communication principles related to electric vehicles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå driften af ​​elmarkeder" />
+          <Txt Lang="en-GB" Txt="Understand the operation of electric power markets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende elektriske måleteknikker på realistiske problemstillinger" />
+          <Txt Lang="en-GB" Txt="Apply electric measurement techniques to real problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Styre et projekt med komplekse udfordringer indenfor elektroteknikken" />
+          <Txt Lang="en-GB" Txt="Manage a project with complex challenges within electrical engineering  " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="31710" />
+        <PreviousCourse CourseCode="31710" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:27.033" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

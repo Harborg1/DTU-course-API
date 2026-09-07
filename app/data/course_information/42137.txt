@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="42137" University="dtu" LastUpdated="2026-03-23+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Optimering ved hjælp af metaheuristikker" />
+        <Title Lang="en-GB" Title="Optimization using metaheuristics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="42" />
+        <Course_Responsible PersonKey="6509" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Thomas Jacob Riis</GivenName>
+            <FamilyName>Stidsen</FamilyName>
+            <Email>thst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53748" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Dario</GivenName>
+            <FamilyName>Pacino</FamilyName>
+            <Email>darpa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Samlet vurdering baseret på en helhedsvurdering af de afleverede opgaver og den skriftlige eksamen. Den studerende vil under kurset aflevere mindst 3 implementerede (i Julia) metaheuristikker ud af 6 mulige, som fungere på et rimeligt niveau." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The evaluation is based on an overall evaluation of assignments and a written exam. The student will have to hand in at least 3 implemented metaheurists (in Julia) our of 6 possible, each functioning at a reasonable level." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Digital exam without access to the internet" />
+            <Aid_Txt Lang="da-DK" Txt="Digital eksamen uden adgang til internet" />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="3H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Mange vigtige optimeringsproblemer kan ikke løses ved hjælp af standardløsere, fordi problemerne er for store eller for komplekse.
+
+En pragmatisk tilgang er derfor at benytte specialdesignede algoritmer til at undersøge et stort antal løsninger for at finde en god og brugbar løsning. Denne type algoritmer kaldes heuristikker. Disse garanterer ikke, at den optimale løsning identificeres, men beregner en god løsning. Der eksisterer et antal generelle heuristik-skabeloner, som kan anvendes til en stor mængde forskellige optimeringsproblemer. Disse kaldes metaheuristikker. I dette kursus vil et antal af disse blive præsenteret og gennemgået for de studerende:
+- Simuleret nedkøling
+- Genetiske algoritmer/evolutionære algoritmer
+- TABU søgning
+- GRASP
+- ALNS
+- ILS
+
+Siden dette felt af algoritmer er under konstant udvikling, udvikler indholdet sig løbende. Øvelserne i faget vil bruge computersproget Julia, så kendskab til Julia før kurset vil være en fordel.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Literature>Handbook of Metaheuristics (https://findit.dtu.dk/en/catalog/2441612036)
+Search Methodologies (https://findit.dtu.dk/en/catalog/2510427489 )
+Stochastic Local Search (https://findit.dtu.dk/en/catalog/2356053931)</Course_Literature>
+          <Course_Objectives>At give en grundig introduktion til brugen af metaheuristikker som værktøjer til løsning af praktiske optimeringsproblemer, hvor der foretages en afvejning mellem tid og løsningskvalitet.</Course_Objectives>
+          <DTU_Remark>OBS: Tilmelding til kurset er garanteret i den regulære tilmeldingsperiode. Eftertilmelding er tilladt, så længe der er plads i auditoriet. Så snart auditoriet er fuldt, lukkes tilmeldingen, og den åbnes ikke igen.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Many interesting optimization problems cannot be solved using standard solvers dues to their size and complexity.
+
+A pragmatic approach to optimization is to use tailored computer algorithms to test a large number of solutions in order to find a good feasible solution. Such algorithms are called heuristics. Those algorithms do not guarantee to find optimal solutions but attempt to identify good solutions. There exist a number of more general algorithmic frameworks which can be applied to a wide variety of optimization problems. Those are the so-called meta-heuristics. In this course a number of these meta-heuristics will be presented:
+
+- Simulated Annealing
+- Genetic Algorithms/Evolutionary Algorithms
+- TABU search
+- GRASP
+- ALNS
+- ILS
+
+As this field is constantly developing, the content of the course is constantly updated. The exercises in the course will be in the computing language Julia, hence prior experience with Julia is an advantage.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, excercises and project work.</Teaching_And_Learning_Methods>
+          <Course_Literature>Handbook of Metaheuristics (https://findit.dtu.dk/en/catalog/2441612036)
+Search Methodologies (https://findit.dtu.dk/en/catalog/2510427489 )
+Stochastic Local Search (https://findit.dtu.dk/en/catalog/2356053931)</Course_Literature>
+          <Course_Objectives>To give a thorough introduction to the use of metaheuristics for optimization for solving real-world optimizaton problems, where a trade-off is necessary between solution quality and solution time.</Course_Objectives>
+          <DTU_Remark>NOTE: Registration to the course is guaranteed during the regular registration period. Registration during the supplementary registration period will be allowed so long as there is space in the classroom. Once the room space is exceeded the registration will close and will not open again.</DTU_Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Af de ovenstående 8 kurser skal der minimum være gennemført 10 ECTS for at kunne tage dette kursus.&#xD;&#xA;&#xD;&#xA;Under kurset skal den studerende implementere sin egen metaheuristik i et effektivt standardsprog, f.eks. C#, Java, C/C++ eller lignende, men ikke MATLAB, Python, R eller GAMS. Alt kursusmateriale vil være baseret på programmeringssproget Julia." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="A minimum of 10 ECTS must be taken among the 8 programming courses above.&#xD;&#xA;&#xD;&#xA;During the course, the students have to implement their own meta-heuristic in an efficient standard programming language like C#, Java, C/C++, etc. but NOT MatLab, Python, R, or GAMS. Course material will be based on the Julia programming language." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02100/02105/02110/02614/02635" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Introduktion til Operations Analyse og programmerings erfaring. Der kan forventes en høj programmeringsbyrde." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Introduction to Operations Research and programming experience. The course heavily relies on your ability to program." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="42101" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse komplekse og/eller store optimeringsproblemer med metaheuristikker" />
+          <Txt Lang="en-GB" Txt="Solve complex and/or large optimization problems using meta-heuristics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere, hvilke metaheuristikker der er velegnede til et konkret optimeringsproblem" />
+          <Txt Lang="en-GB" Txt="Identify what are the most appropriate meta-heuristics for a specific optimization problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Repræsentere et konkret problem på en måde, så det kan løses med en metaheuristik" />
+          <Txt Lang="en-GB" Txt="Device a problem representation that allows a specific problem to be optimized using a meta-heuristic." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Specialisere en metaheuristik, så den kan anvendes til et konkret optimeringsproblem" />
+          <Txt Lang="en-GB" Txt="Specialize a meta-heuristic such that it can be applied to a specific optimization problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere en metaheuristik, så den kan anvendes til et konkret optimeringsproblem" />
+          <Txt Lang="en-GB" Txt="Implement a metaheuristic such that it can be applied to a specific optimization problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Afprøve en metaheuristik, så dens effektivitet kan evalueres pålideligt" />
+          <Txt Lang="en-GB" Txt="Test a meta-heuristic such that its efficiency can be reliably evaluated." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive skriftligt anvendelsen af en metaheuristik på en specifik problemstilling" />
+          <Txt Lang="en-GB" Txt="Describe in written form the adaptation of a meta-heuristic to a specific problem formulation." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå forskellen mellem diversificerings- og intensiveringsstrategier anvendt af de forskellige metaheuristikker" />
+          <Txt Lang="en-GB" Txt="Understand the difference between the diversification and intensification strategies of different meta-heuristic frameworks." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Algoritmer til heuristisk optimering af svære optimerings problemer.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="28" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="28" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="24" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:57.34" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="12125" Volume="2026/2027" University="dtu" LastUpdated="2026-04-08+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Design og planlægning af klimatilpasning i det byggede miljø" />
+        <Title Lang="en-GB" Title="Design and planning of climate adaptation measures in the built environment" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="12" University="DTU" Resources="65" KVL_Resources="100" />
+          <Ass_Dep UID="42" Resources="35" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="12" />
+        <Course_Responsible PersonKey="66407" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Roland</GivenName>
+            <FamilyName>Löwe</FamilyName>
+            <Email>rolo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="7614" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Martin</GivenName>
+            <FamilyName>Drews</FamilyName>
+            <Email>mard@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="30705" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Chiara</GivenName>
+            <FamilyName>Fratini</FamilyName>
+            <Email>chif@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Overall assessment of on-line quizzes, group reports and presentations." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of on-line quizzes, group reports and presentations." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>-Identifikation af vejrekstremer (regn, havniveau, bølgehøjde, vind) ud fra data
+-Scenariofremskrivninger for klimaekstremer
+-Rumlig vurdering af farer og udsatte aktiver
+-Påvirkning af vejrekstremer på aktiver
+-Økonomisk risikovurdering
+-Omkostnings- og nytteanalyse for klimatilpasningsforanstaltninger
+-Planlægningsprocesser og regulering, der påvirker klimatilpasning
+-Værktøjer til opbygning af kapacitet til at overvinde organisatoriske barrierer</Contents>
+          <Teaching_And_Learning_Methods>Gruppearbejde og forelæsninger. Kurset forudsætter aktiv deltagelse i gruppearbejde og diskussioner i undervisningen. Et centralt element i kurset er at de studerende selvstændigt udvikler klimatilpasning for konkrete cases. Det forventes at de studerende hjælper hinanden med at forstå og løse opgaverne.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Dette kursus har til formål at gøre deltagerne i stand til at designe, planlægge og implementere klimatilpasningsforanstaltninger inden for det byggede miljø. Kurset vil give en introduktion til fremskrivninger af klimarelaterede risici og hvordan disse kan omdannes til designkriterier på lokalt niveau, introducere grundlæggende økonomiske begreber for risikovurdering samt give et overblik over planlægningsrammer, der driver klimatilpasningsprocesser i det byggede miljø. Koncepterne vil blive anvendt ved at designe og planlægge klimatilpasningsforanstaltninger for bygninger og infrastruktur (f.eks. oversvømmelsesbeskyttelse i et bykvarter, tilpasning af vindmølleparker til bølgehøjder og vindhastigheder). Det forudsættes, at studerende har en forståelse af spatiale data og hydrologiske processer og er bekendt med grundlæggende GIS-analyse.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>-Identification of weather extremes (rain, sea level, wave height, wind) from data
+-Scenario projections for climate extremes
+-Spatial assessment of hazards and exposed assets
+-Impact of weather extremes on assets
+-Economic risk assessment
+-Cost benefit analysis for climate adaptation measures
+-Planning processes and regulation affecting climate adaptation
+-Tools for building capacity to overcome organisational barriers</Contents>
+          <Teaching_And_Learning_Methods>A mixture of lectures and group work. The course requires active participation in group work and discussions in class. A central part of the course is unsupervised group work where climate adaptation measures are developed for concrete cases. During this time the groups are expected to help each other towards understanding and solving the problems at hand.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course aims to enable participants to design, plan for and implement climate adaptation measures within the built environment. The course will provide an introduction to projections of climate hazards and how they can be converted into design criteria on the local scale, introduce basic economic concepts for risk assessment, and provide an overview of policy and planning practices driving climate adaptation processes in the built environment. The concepts will be applied by designing and planning climate adaptation measures for buildings and infrastructure (e.g. flood protection for an urban neighborhood, adaptation of windparks to wave heights and wind speed). It is assumed that students have an understanding of spatial data and hydrological processes and are familiar with basic GIS analysis.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til GIS og Python" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of GIS and Python" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kvantificer vind-, temperatur- og vand-relaterede ekstremhændelser for et case område." />
+          <Txt Lang="en-GB" Txt="Quantify wind, temperature and water hazards for locations of interest" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle scenariofremskrivninger for klimarisici baseret på seneste videnskabelige resultater" />
+          <Txt Lang="en-GB" Txt="Develop scenario projections for climate hazards based on recent scientific findings" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøg gennem hvilke processer klimarelaterede farer påvirker det byggede miljø" />
+          <Txt Lang="en-GB" Txt="Examine through which processes climate hazards impact the built environment" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend vurderinger af fare, sårbarhed og eksponering til at kvantificere klimarisici" />
+          <Txt Lang="en-GB" Txt="Apply hazard, vulnerability, and exposure assessments to quantify climate risks" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregn forventet årlig skade baseret på rumlige risikovurderinger" />
+          <Txt Lang="en-GB" Txt="Calculate expected annual damage based on spatial risk assessments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Design realistiske klimatilpasningsforanstaltninger" />
+          <Txt Lang="en-GB" Txt="Design physically feasible climate adaptation measures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøg omkostningseffektiviteten af klimatilpasningsforanstaltninger ved at sammenholde tilpasningsomkostninger og risikoreduktion" />
+          <Txt Lang="en-GB" Txt="Investigate the cost-efficiency of climate adaptation measures by contrasting adaptation cost and risk reduction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurder hvordan planlægningsprocesser og institutionelle rammer påvirker implementeringen af klimatilpasningsforanstaltninger" />
+          <Txt Lang="en-GB" Txt="Evaluate the influence of policy context and institutional framework on the implementation of climate change adaptation measures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle strategier til at overvinde organisatoriske barrierer, herunder identificering af aktørnetværk og organisering af en transitionsarena." />
+          <Txt Lang="en-GB" Txt="Develop strategies to overcome organisational barriers for climate adaptation, including the identification of actor-networks and the organization of a transition arena" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Design and planning of climate adaptation measures in the built environment</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="12124" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:17:56.71" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

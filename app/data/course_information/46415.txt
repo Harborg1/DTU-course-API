@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46415" Volume="2026/2027" University="dtu" LastUpdated="2026-04-23+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Numerisk designoptimering af vindmøller" />
+        <Title Lang="en-GB" Title="Numerical design optimization of wind turbines" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="109728" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Michael Kenneth</GivenName>
+            <FamilyName>McWilliam</FamilyName>
+            <Email>mimc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="99755" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Kenneth</GivenName>
+            <FamilyName>Lønbæk</FamilyName>
+            <Email>kenloen@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="107067" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Antariksh Chandrashekhar</GivenName>
+            <FamilyName>Dicholkar</FamilyName>
+            <Email>acdi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="De studerende evalueres på basis af to individuelle rapporter og en præsentation: En kort skriftlig rapport, en større projektrapport, præsentation af projektrapporten efterfulgt af spørgsmål til hele pensum." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Students are evaluated based on two individual reports and a presentation: One short written report, a larger project report, a presentation of the project report followed by questions to the entire curriculum." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er fokuseret på den praktiske anvendelse af numerisk optimering til at løse almindelige vindmølledesignproblemer. Meget af indholdet er dog stadig relevant for andre områder. Kurset vil byde på forelæsninger om følgende emner:
+
+- Komponentoptimering med fokus på relevante problemformuleringer.
+- Optimeringsteori og algoritmer til ikke-lineær optimering.
+- En kort gennemgang af aerodynamiske og strukturelle analysemetoder, ved brug af metoder, der typisk anvendes i industrielt design
+- Overblik over den iterative proces, der ligger til grund for designoptimering af vindmøllekomponenter.
+- Bestemmelse af de designmæssige drivende begrænsninger og dets sammenhæng med de forskellige fænomener, der observeres i vindmøllekomponenter.
+
+Kurset er bygget op omkring 3 projekter. Den studerende vil have mulighed for at fokusere på 1 af 3 designproblemer:
+
+1) Strukturelt vindmøllerotor design med komposit materialer.
+2) Aerodynamisk vindmøllerotor design.
+3) Udformning af offshore-støttestruktur af vindmøllestål.
+
+Efter godkendelse fra den kursusansvarlige vil studerende have mulighed for at tage fat på deres eget designoptimeringsprojekt til det afsluttende projekt.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, samt individuelt projektarbejde.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Optimering bliver i stigende grad brugt i design af avancerede, højtydende og lette komponenter og strukturer. Eksempler på dette omfatter vindmøller, fly, landkøretøjer, marine- og rumfartøjer. Numeriske optimeringsalgoritmer anvendes rutinemæssigt til at bestemme den optimale kombination af geometri, materialeegenskaber og topologi, der maksimerer ydeevnen af forskellige komponenter.
+
+Kurset giver den studerende indblik i hvordan man anvender numerisk designoptimering til design af komponenter inden for vindenergi. Den studerende får mulighed for at udforske strukturelt rotor design med komposit materialer, rotor aerodynamisk design eller design af stål støtte struktur til vindmøller. Kurset tilbyder analysekode til hvert enkelt af disse problemer. Erfaringen fra kurset er også anvendeligt som en introduktion til design optimering af komplekse komponenter og strukturer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course is focused on the practical application of numerical optimization to solve common wind turbine design problems. However, much of the content is still relevant for other fields. The course will feature lectures of the following topics:
+
+- Components optimization with focus on relevant problem formulations.
+- Optimization theory and algorithms for nonlinear optimization.
+- A brief review of aerodynamic and structural analysis methods, using methods typically used in industrial design
+- Overview of the iterative process underlying the design optimization of wind turbine components.
+- Determination of the design driving constraints and its relation with the different phenomena observed in wind turbine components.
+
+The course is structured around 3 projects, students will have the option to focus on 1 of 3 design problems:
+
+1) Wind Turbine Rotor Composite Structural Design.
+2) Wind Turbine Rotor Aerodynamic Design.
+3) Wind turbine steel offshore support structure design.
+
+Following approval from the course responsible students will have the option to tackle their own design optimization project for the final project.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and individual project work.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Optimal design workflows are increasingly being used in the design of advanced, high performance and lightweight components and structures. Examples include wind turbines, airplanes, land vehicles, marine and space vehicles. Numerical optimization algorithms are routinely employed for determining the optimal combination of geometry, material properties and topology that maximize the performance of various components.
+
+The course will provide the student with experience on how to apply numerical design optimization for component design problems within wind energy. The student will have the option to explore rotor composite structural design, rotor aerodynamic design or wind turbine steel support structure design. Analysis code for each of these problems will be given. The experience is also relevant for the design of a general class of other complex components and structures.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forventes, at de studerende tager dette kursus senere i programmet, når de har fået en vis forståelse for vindmølleteknologi. Det anbefales også, at de studerende er fortrolige med Python- og/eller Matlab-programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Students are expected to take this course later in the program once they have gained some understanding with wind turbine technology. It is also recommended that students are comfortable with Python and/or Matlab programming." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formuler et optimalt designproblem, dvs. identificer designvariablerne og den tilsvarende parameteriseringsteknik, vælg passende begrænsninger og objektive funktioner" />
+          <Txt Lang="en-GB" Txt="Formulate an optimal design problem, i.e., identify the design variables and corresponding parameterization technique, choose suitable constraints and objective functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør følsomhedsanalyse af de foreslåede problemer" />
+          <Txt Lang="en-GB" Txt="Perform sensitivity analysis of the proposed problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Estimer den optimale konfiguration af en vindmølles rotorvinge eller støttestruktur ved hjælp af nogle forenklede antagelser og grundlæggende belastningstilfælde" />
+          <Txt Lang="en-GB" Txt="Estimate the optimal configuration of a wind turbine rotor blade or support structure, using some simplifying assumptions and basic load cases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregningskritiske begrænsninger for designproblemer" />
+          <Txt Lang="en-GB" Txt="Computing critical constraints for design problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse aerodynamiske/strukturelle numeriske optimeringsproblemer og udføre følsomhedsanalyse ved hjælp af optimerings-algoritmer og -teknikker" />
+          <Txt Lang="en-GB" Txt="Numerically solve aerodynamic/structural optimization problems and conduct sensitivity analysis using specific optimization algorithms and techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør relevante ingeniørdesignstudier ved hjælp af numerisk optimering" />
+          <Txt Lang="en-GB" Txt="Carry out relevant engineering design studies using numerically optimization" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolke og analysere resultaterne fra optimeringsprocessen" />
+          <Txt Lang="en-GB" Txt="Interpret and analyze the results from the optimization process" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive tekniske rapporter, der beskriver det arbejde, der er udført gennem hele forløbet" />
+          <Txt Lang="en-GB" Txt="Write technical reports describing the work carried out throughout the course" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Optimering af vindmøller</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:39.617" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

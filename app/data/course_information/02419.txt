@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02419" University="dtu" LastUpdated="2026-03-25+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Statistisk modellering: teori og anvendelser" />
+        <Title Lang="en-GB" Title="Statistical modelling: Theory and practice" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="20293" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jan Kloppenborg</GivenName>
+            <FamilyName>Møller</FamilyName>
+            <Email>jkmo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig fremlæggelse af projekt(er) samt spørgsmål general teori" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral presentation of project(s) and questions on general  theory" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Der vil blive undervist i de mest anvendte statistiske metoder, som regel med udgangspunkt i praktiske problemstillinger og ved brug af den statistiske programpakker R. Derudover gives en introduktion til mere teoretiske emner. Der lægges vægt på at træne og diskutere statistisk tankegang, samtidig med at der introduceres de emner, der behandles grundigere i de øvrige videregående statistikkurser på instituttet.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser (integrerede) samt løsning af praktiske opgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give deltagerne et overblik over de mest anvendte statistiske metoder samt at give en introduktion til videregående statistiske emner med fokus på likelihood teori.  Deltagerne sættes i stand til at udføre statistiske analyser vha.  statistik programpakken R. Der lægges stor vægt på fortolkning og præsentation af statistiske resultater. Kurset tænkes som bindeled mellem kursus 02402/02403 Introduktion til statistik og de videregående statistikkurser på instituttet.</Course_Objectives>
+          <Remark>Kurset er et bindeled mellem introduktionskurset og mere avanceret kursus (f.eks. 02429 og 02426), der udbydes på instituttet.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The most commonly used statistical methods will be taught, usually based on practical problems and using the statistical software packages R. In addition, an introduction to more theoretical topics is provided. Emphasis is placed on training and discussing statistical thinking, while introducing the topics that are covered in more depth in the other advanced statistics courses at the department.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and excercises (integrated) plus solution of a practical assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To introduce some of the most applied statistical methods and to introduce more advanced and theoretical topics in statistics with focus on likelihood theory. The course participants will learn to conduct statistical analysis using the software R. Emphasis will be put on analysis, interpretation and presentation of data. The course is a link between the introductory course and more advanced course offered at the Department.</Course_Objectives>
+          <Remark>The course is a link between the introductory course and more advanced course (e.g. 02429 og 02426) offered at the Department.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til grundlæggende statistiske metoder svarende til indholdet i 02402/02403. Yderligere kendskab til sandsynlihedsregning (02405) er desuden en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge of statistical methods equivalent to course 02402/02403. Some additional knowledge of probability theory (02405) is an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt=" 02402/02403" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere og anvende hyppigt anvendte statistiske modeller" />
+          <Txt Lang="en-GB" Txt=" Formulate and apply common statistical models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre modelkontrol og være i stand til at vurdere avendeligheden af ​​statistiske metoder i specifikke anvendelser" />
+          <Txt Lang="en-GB" Txt=" Perform model check and be able to evaluate the adequacy of statistical methods in specific applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne fortolke og præsentere resultater fra statistisk analyse" />
+          <Txt Lang="en-GB" Txt="Be able to interpret and present results from statistical analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende estimeringsmetoder, specielt Maximum Likelihood princippet" />
+          <Txt Lang="en-GB" Txt="Apply estimation methods, in particular the principle of Maximum Likelihood" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre likelihood ratio tests, Wald test og bruge profile likelihood funktionen til at vurdere parameter usikkerhed" />
+          <Txt Lang="en-GB" Txt="Perform likelihood ratio tests, Wald test and use the profile likelihood function to assess parameter unceartainty " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge simuleringsbaserede metoder til usikkerhedsestimation" />
+          <Txt Lang="en-GB" Txt="Use simulation based methods for unceartainty estimation " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne udføre standard statistiske analyse ved hjælp af den statistiske software R" />
+          <Txt Lang="en-GB" Txt="Be able to perform standard statistical analysis using the statistical software R" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anerkende den mulige brug af og potentialet for mere avancerede statistiske metoder" />
+          <Txt Lang="en-GB" Txt="Recognize the possible use and potential of more advanced statistical methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende generaliserede lineære modeller" />
+          <Txt Lang="en-GB" Txt="Describe and apply generalized linear models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge ikke-parametriske (Kaplan-Meier) og parametriske metoder til at beskrive og sammenligne overlevelsesdata" />
+          <Txt Lang="en-GB" Txt="Use non-parametric (Kaplan-Meier) and parametric methods to describe and compare survial data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Modellere tidsrække data ved hjælp af skjulte Markov-modeller" />
+          <Txt Lang="en-GB" Txt="Model time-series data using hidden Markov models" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Anvendt statistik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02418" />
+        <PreviousCourse CourseCode="02418" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:43.267" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

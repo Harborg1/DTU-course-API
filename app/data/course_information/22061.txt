@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22061" Volume="2026/2027" University="dtu" LastUpdated="2026-05-21+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Introduktion til digital sundhedsteknologi" />
+        <Title Lang="en-GB" Title="Introduction to Digital Health" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="107464" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jakob Eyvind</GivenName>
+            <FamilyName>Bardram</FamilyName>
+            <Email>jakba@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus introducerer digitale sundhedsteknologier i en bred forstand og dækker emner både indenfor medical informatics – såsom forskellige typer af teknologier samt standarder – såvel som emner indenfor softwarekonstruktion, herunder analyse og design af sundhedsteknologi og programmering i Dart, som er et moderne objekt-orienteret programmeringssprog. Kurset vil fokusere på bruger-fokuseret applikationsudvikling af slutbruger applikationer på mobiltelefoner ("mobile health") og den studerende lærer at bygge en mobil-telefon app i Flutter.
+
+Kurset giver de studerende et systematisk grundlag og praktisk erfaring med at designe og programmere simple prototyper, som senere kan udvides til at implementere mere "solide" digitale sundhedsteknologier.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger samt øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Se kursushjemmeside på LEARN</Course_Literature>
+          <Course_Objectives>Kurset introducerer den studerende til digitale sundhedsteknologier med det mål at kunne konstruere prototyper af simple digitale sundhedsteknologier. Medical Informatics teori benyttes til at give den studerende et overblik over, og forståelse for, forskellige begreber og typer af digitale sundhedsteknologier. Software Engineering teori anvendes til at give en forståelse for analyse og design af digitale systemer indenfor sundhed. Datalogisk programmeringsteori anvendes til at lære, hvordan digitale sundhedsteknologier kan programmeres til indsamling, transformation, opbevaring, og visualisering af sundhedsdata.</Course_Objectives>
+          <Remark>Dette kursus arbejder med programmering af mobiltelefoner i Flutter/Dart. Det er derfor en forudsætning at du medbringer en laptop og en mobiltelefon du kan programmere. Bemærk at Android telefoner kan programmeres fra både Windows og Mac PCer, hvorimod at hvis du (kun) ejer en iPhone skal du anvende en Mac PC (Xcode) til programmering.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces digital health technology in a broad sense and covers topics in medical informatics, types of medical information systems, and technical standards, as well as topics in software engineering, including analysis and design of medical informatics systems and programming in Dart, which is a modern object-oriented language. The course will focus on user-facing design and development of a mobile health app in Flutter.
+
+The course provides students with a systematic foundation and practical experience in designing and programming digital health prototype designs, which can also later be expanded to implement more "solid" digital health technologies.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>See the course home page on LEARN</Course_Literature>
+          <Course_Objectives>The course introduces the student to digital health technologies with the aim of constructing prototypes of simple health systems. Medical Informatics theory is used for analyzing and understanding different concepts and types of digital health technology. Software engineering theory is used for analyzing, designing, and implementing software systems for the healthcare domain. Computer science programming theory is used to implement digital health software systems for the collection, transformation, storage, and visualization of health data.</Course_Objectives>
+          <Remark>This course works with Flutter/Dart programming on Smartphones and it is a prerequisite that you have a laptop and a smartphone you can program. Android phones can be programmed on both Mac and Windows PCs, while an iPhone can ONLY be programmed on a MAC PC. Hence, if you (only) have an iPhone, you should have a Mac PC running Xcode.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det er en faglig forudsætning for at kunne tage kurset, at du har taget introduktionskurser indenfor programmering, så du har en grundlæggende forståelse og erfaring for programmering." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is an academic prerequisite for this course that you have completed courses in introductory programming, so you have a basic understanding of and experience with programming languages." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02002/02160/02100" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive, analysere og kategorisere forskellige type af digitale sundhedsteknologier og deres hovedkomponenter." />
+          <Txt Lang="en-GB" Txt="describe, analyse, and categorise different types of digital health technologies and their main components." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og anvende forskellige tekniske standarder indenfor digital sundhedsteknologi." />
+          <Txt Lang="en-GB" Txt="describe and apply different types of  technical standards in digital health technology." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere nytten af forskellige typer af sundhedsteknologi både på et personlig, klinisk, organisatorisk, og samfundsmæssigt niveau." />
+          <Txt Lang="en-GB" Txt="analyse the utility of different types of health technologies both on a personal, clinical, organisational, and societal level." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive simple programmer i et moderne objekt-orienteret sprog." />
+          <Txt Lang="en-GB" Txt="write simple programs in a modern object-oriented programming language." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og dokumentere strukturen af et softwaresystem." />
+          <Txt Lang="en-GB" Txt="design and document the structure of a digital health software system." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende nogle få simple designmønstre ved integration til bærbare enheder." />
+          <Txt Lang="en-GB" Txt="apply a few, simple software design patterns for integration to wearable medical devices." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende simple software-ingeniør principper til design af digitale sundhedsteknologier." />
+          <Txt Lang="en-GB" Txt="apply simple software engineering principles in the design of digital health systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende simple bruger-fokuserede designmetoder til design af digitale sundhedsteknologier." />
+          <Txt Lang="en-GB" Txt="apply simple user-centered design methods in the design of digital health systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="undersøge hvilken GAI‑kodeassistent der er bedst egnet til programmering, installere og konfigurere den, samt anvende den til ikke‑trivielle programmeringsopgaver" />
+          <Txt Lang="en-GB" Txt="investigate which GAI code assistant is best suited for programming, install and configure it, and use it for non-trivial programming tasks." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="20" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="80" Min="20" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-21" Time="08:53:54.353" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

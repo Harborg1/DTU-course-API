@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="23262" Volume="2026/2027" University="dtu" LastUpdated="2026-04-16+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Bioinformatik for smitsomme sygdomme" />
+        <Title Lang="en-GB" Title="Infectious disease bioinformatics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="23" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="23" />
+        <Course_Responsible PersonKey="66087" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Pimlapas Shinny</GivenName>
+            <FamilyName>Leekitcharoenphon</FamilyName>
+            <Email>pile@food.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="39147" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Frank Møller</GivenName>
+            <FamilyName>Aarestrup</FamilyName>
+            <Email>fmaa@food.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="63723" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Rolf Sommer</GivenName>
+            <FamilyName>Kaas</FamilyName>
+            <Email>rkmo@food.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="77510" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Philip Thomas Lanken Conradsen</GivenName>
+            <FamilyName>Clausen</FamilyName>
+            <Email>plan@food.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Team præsentation af en videnskabelig artikel i løbet af kurset (10%). Projektpræsentation i grupper efterfulgt af individuelle spørgsmål baseret på præsentationen. En samlet karakter for gruppepræsentation og individuelle spørgsmål (90%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Team presentation of a scientific article during the course (10%). Project presentation in group followed by individual questions based on the presentation. One final grade for group presentation and individual questions (90%)." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Sekventeringsteknologier, sekvenseringskvalitet, trimning og samling ved hjælp af kommandolinjeværktøjer
+
+Justering og kortlægning inklusive håndtering af læst sekventeringsdata
+
+Fremstilling af Finder-værktøjer med eksempel på identifikation af arter, MLST, antimikrobiel resistens, virulensgener og plasmid ved hjælp af kommandolinjebaserede metoder
+
+SNP-trækonstruktion ved hjælp af kommandolinjebaserede metoder og fylogenivisualisering
+
+Konstruktion af cgMLST / wgMLST træ og storskala fylogeni
+
+Langvarig fylogeni ved hjælp af BEAST
+
+Bestemmelse af større og mindre mutationer i sekventeringsdata
+
+Pan-genom-analyse inklusive kerne- og tilbehørgener
+
+Betydningen af deling af sekventeringsdata, hvordan man downloader og deler sekventeringsdata fra / til offentlige databaser
+
+Behandling, analyse og forberedelse af genomiske data til epidemiologiske analyser og modellering</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerbaserede øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Hele genom-sekventering og bioinformatik er blevet anvendt med succes i forskellige analyser af infektiøse sygdomme såsom udbruddsundersøgelse og epidemisk dynamik. Teknologien er blevet så billig, at sekvenseringsplatforme flytter ind på hospitaler og fødevaresikkerhedslaboratorier for at forhindre og kontrollere infektionssygdomme. Udfordringen er ikke længere at generere sekvenserne, men snarere at analysere dem og udtrække den relevante information fra de store mængder sekventeringsdata.
+
+Efter at have fulgt dette kursus vil du være i stand til at redegøre for den biologiske og genetiske baggrund for forskellige mikroorganismer, der forårsager smitsomme sygdomme. Ved at bruge og oprette en række metoder vil du desuden lære at analysere og fortolke mikrobielle helgenometdata i relation til smitsomme sygdomme og fødevaresikkerhedsspørgsmål.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Sequencing technologies, sequencing quality, trimming and assembly using command line tools  
+
+Alignment and mapping including handling long read sequencing data  
+
+Making Finder tools with example of Identification of species, MLST, antimicrobial resistance, virulence genes and plasmid using command line-based methods 
+
+SNP tree construction using command line-based methods and phylogeny visualization 
+
+Construction of cgMLST/wgMLST tree and large scale phylogeny  
+
+Long term phylogeny using BEAST 
+
+Determination of major and minor mutations in sequencing data  
+
+Pan-genome analysis including core and accessory genes  
+
+Importance of sharing sequencing data, how to download and share sequencing data from/to public databases 
+
+Processing, analysing and preparing genomic data for epidemiological analyses and modelling</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer-based exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Whole genome sequencing and bioinformatics has been used successfully in various analyses of infectious diseases such as outbreak investigation and epidemic dynamics. The technology has become so cheap that sequencing platforms are moving into hospitals and food safety laboratories to prevent and control of infectious diseases. The challenge is no longer to generate the sequences, but rather to analyse them and extract the relevant information from the large amounts of sequencing data.  
+
+Having followed this course, you will be able to account for the biological and genetic background of different microorganism causing infectious diseases. Further, by using and creating a number of methods, you will learn how to analyse and interpret microbial whole-genome data in relation to infectious disease and food safety issues.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Unix / Linux baggrund. Grundlæggende forståelse af bioinformatik i sekvensanalyse og infektiøs sygdom" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Unix/Linux background. Basic understanding of bioinformatics in sequence analysis and infectious disease." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="23205" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne bruge hele genom-sekventeringsdata fra forskellige sekventeringsteknologier til at kontrollere kvalitet, beskæring, kortlægning, justering og samling ved hjælp af kommandolinjebaserede bioinformatikmetoder." />
+          <Txt Lang="en-GB" Txt="Be able to use whole genome sequencing data from different sequencing technologies to check for quality, trimming, mapping, alignment and assembly using command-line based bioinformatics methods.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend kommandolinjebaserede metoder til at analysere arter, undertypning, identificere antimikrobiel resistens og andre vigtige genmarkører." />
+          <Txt Lang="en-GB" Txt="Apply command line-based methods to analyse species, sub-typing,  identify antimicrobial resistance and other important gene markers. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend kommandolinjebaserede metoder til at konstruere fylogeni til epidemiologiske undersøgelser, langsigtet udvikling og storskala fylogeni." />
+          <Txt Lang="en-GB" Txt="Apply command line-based methods for constructing phylogeny for epidemiological investigations, long-term evolution and large scale phylogeny.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend kommandolinjebaserede metoder til at bestemme større og mindre mutationer i patogengenomer." />
+          <Txt Lang="en-GB" Txt="Apply command line-based methods to determine major and minor mutations in pathogen genomes.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend kommandolinjebaserede metoder til at identificere og analysere kerne-genom, tilbehørsgener og pan-genom." />
+          <Txt Lang="en-GB" Txt="Apply command line-based methods to identify and analyse core-genome, accessory genes and pan-genome.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne downloade og dele sekventeringsdata fra / til offentlige databaser." />
+          <Txt Lang="en-GB" Txt="Be able to download and share sequencing data from/to public databases.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluer de enkelte komponenter i bioinformatiske arbejdsgange og rørledninger." />
+          <Txt Lang="en-GB" Txt="Evaluate the single components of bioinformatic workflows and pipelines. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende avancerede metoder og værktøjer til at analysere og fortolke genomiske data fra mennesker og forskellige reservoirer (dyr, mad og miljø) og forberede sådanne data til epidemiologiske analyser og modellering." />
+          <Txt Lang="en-GB" Txt="Apply state-of-the-art methodologies and tools to analyse and interpret genomic data from humans and various reservoirs (animals, food and environment) and prepare such data for epidemiological analyses and modelling.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Bioinformatik for smitsomme sygdomme</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="27683/ 36683" />
+        <PreviousCourse CourseCode="27683" />
+        <PreviousCourse CourseCode="36683" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:20:10.68" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

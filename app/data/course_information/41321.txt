@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41321" Volume="2026/2027" University="dtu" LastUpdated="2026-02-20+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Komplekse strømninger" />
+        <Title Lang="en-GB" Title="Complex flows" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="1621" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Knud Erik</GivenName>
+            <FamilyName>Meyer</FamilyName>
+            <Email>keme@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="7646" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jens Honore</GivenName>
+            <FamilyName>Walther</FamilyName>
+            <Email>jhwa@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af 3 individuelle opgaver samt skriftlig eksamen. Helhedsvurdering" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="3 individual exercises and written exam. Overall assessment" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>En-dimensional kompressibel strømning, analogi mellem transport af  bevægelsesmængde, varme og stof, klassifikation af multifase strømning, dynamiske relationer for partikler, dråber og bobler, statistisk beskrivelse af partikler, dråber og bobler, modeller for partikel-partikel, partikel-fluid og partikel-væg interaktion, midlede ligninger for multifase strømning. Generel erfaring i at anvende og udvikle modeller for komplekse strømninger.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og opgaveløsning</Teaching_And_Learning_Methods>
+          <Course_Literature>Michaelides et al: Multiphase flows with droplets and particles, CRC press 2023</Course_Literature>
+          <Course_Objectives>Komplekse strømninger undersøges ved hjælp af de fundamentale strømningsligninger kombineret med overfladespænding, kompressibilitet, varme og stoftransport samt multifase fænomener. Dette inkludere egenskaber for strømning med fordelte faser, partikelstørrelsesfordeling samt partikel-partikel og partikel-fluid interaktion. Den studerende vil anvende løsninger og modeller på ingeniørproblemer.</Course_Objectives>
+          <Remark>Nogle opgaver vil bruge Python som programmeringssprog</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>One-dimensional compressible flows, analogy between momentum, heat and mass transfer, classification of multiphase flows, dynamical relations for particles and droplets, statistical description of particles, droplets or bubbles, models for particle-particle, particle-fluid og particle-wall interaction, averaged equations for multiphase flows. General experience in applying and developing models for complex flow situations.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and problem solving</Teaching_And_Learning_Methods>
+          <Course_Literature>Michaelides et al: Multiphase flows with droplets and particles, CRC press 2023</Course_Literature>
+          <Course_Objectives>Complex flows are addressed using the fundamental flow equations combined with effects from surface tension, compressibility, heat and scalar transport and with multiphase phenomena. This includes properties of dispersed phase flow, particle size distribution, and particle-particle and particle-fluid interactions. The student will use the solutions and models on relevant engineering problems.</Course_Objectives>
+          <Remark>Some exercises will use Python as programming language</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Rutine i anvendelse af Navier-Stokes ligninger og erfaring med programmering til databehandling." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Routine in applying Navier-Stokes equations and experience with programming for data processing." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41320.02002/02631" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille algebraiske relationer og differentialligninger for komplekse strømninger ud fra bevarelsesprincipper og anvende dem på strømningsproblemer" />
+          <Txt Lang="en-GB" Txt="Develop algebraic relations and differential equations for complex flows from conservation principles and apply this on fluid problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende relationer for udveksling af varme og masse fra en overflade" />
+          <Txt Lang="en-GB" Txt="Describe and apply relations for exchange of heat and mass at a surface" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive fænomener i kompressible strømninger og beregne en-dimensional kompressibel strømning" />
+          <Txt Lang="en-GB" Txt="Describe phenomena in compressible flows and compute one-dimensional compressible flow" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Klassificere og beskrive multifase strømninger" />
+          <Txt Lang="en-GB" Txt="Classify and describe multiphase flows" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og løse dynamiske relationer for partikler og dråber i en strømning" />
+          <Txt Lang="en-GB" Txt="Describe and solve dynamical relations for particles and droplets in a flow" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende statistiske relationer til at beskrive en population af partikler, dråber eller bobler" />
+          <Txt Lang="en-GB" Txt="Use statistical relations to describe a population of particles, droplets or bubbles" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og anvende modeller for partikel-partikel, partikel-fluid og partikel-væg interaktion" />
+          <Txt Lang="en-GB" Txt="Describe and apply models for particle-particle, particle-fluid and particle-wall interaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende midlede ligninger for komplekse strømninger ved brug af differentialligninger og flux" />
+          <Txt Lang="en-GB" Txt="Apply averaged equations for complex flow using differential equations and fluxes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og modellere effekter af overfladespænding i strømninger" />
+          <Txt Lang="en-GB" Txt="Describe and model effects of surface tension in flows" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere en teknisk løsning eller model på en kort og præcis form" />
+          <Txt Lang="en-GB" Txt="Present a technical solution or model in a short and precise form" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modellering af flerfasestrømning og andre komplekse strømninger</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41323" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:55.437" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

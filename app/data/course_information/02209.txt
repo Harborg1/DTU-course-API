@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02209" University="dtu" LastUpdated="2026-03-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Test af digitale systemer" />
+        <Title Lang="en-GB" Title="Test of Digital Systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="2340" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Flemming</GivenName>
+            <FamilyName>Stassen</FamilyName>
+            <Email>flst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Deltagelse i mundtlig eksamen forudsætter godkendelse af de obligatoriske aktiviteter: &#xD;&#xA;3 mundtlige fremlæggelser samt 2 rapporter og fremlæggelse heraf." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Approval of compulsory activities is a prerequisite for taking part in the examination:&#xD;&#xA;3 oral presentations and 2 written assignments with oral presentation." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset gennemgår den grundlæggende teori for test af elektroniske kredsløb specielt med henblik på  design af digitale, integrerede kredsløb med gode testegenskaber. 
+Kurset omhandler områderne: 
+1) fysiske fejlmekanismer og logiske fejlmodeller,
+2) testbarhedsanalyse (kontrollerbarhed og observerbarhed),
+3) algoritmer til test mønster generering,
+4) fejlsimulering (fejldækning),
+5) design for test,
+6) boundary scan teknikker,
+7) testplanlægning i designfasen,
+8) testsystemer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger.
+1 ugentlig opgaveregning.
+2-3 mundtlige fremlæggelser (obligatorisk, på skift ugentligt blandt deltagerne),
+2 rapporter samt fremlæggelse (obligatorisk).</Teaching_And_Learning_Methods>
+          <Course_Objectives>Indførelse i testproblematikken for integrerede kredsløb, der sætter deltagerne i stand til at designe integrerede kredsløb af høj testmæssig kvalitet.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course treats the fundamental theory for test of electronic circuits with specific emphasis on the design of highly testable digital integrated circuits.
+The course covers the topics of:
+- physical failure mechanisms and logic fault models,
+- testability analysis (controllability and observability),
+- algorithms for test pattern generation,
+- fault simulation (fault coverage),
+- design for test,
+- boundary scan techniques,
+- test planning in the design phase,
+- test systems.</Contents>
+          <Teaching_And_Learning_Methods>Lectures.
+1 weekly problem solving session.
+2-3 oral presentations (compulsory, alternating weekly between participants),
+2 written assignments with oral presentation (compulsory).</Teaching_And_Learning_Methods>
+          <Course_Objectives>Introduction to the testing problem for integrated circuits, enabling the participants to design integrated circuits of high test quality.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundkursus i digitale systemer eller design af VLSI kredsløb" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic course in digital systems or design of integrated systems" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02203 / 02155 / 02138 / 02205" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og forklare grundlæggende metoder og begreber inden for test og design for test af integrerede kredsløb (f.eks. stuck-at fejl, D-algoritme, indbygget selvtest)." />
+          <Txt Lang="en-GB" Txt="Describe and explain basic methods and concepts in test and design for test of integrated circuits (e.g. stuck-at faults, D-algorithm, built-in self-test)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for, hvad det vil sige, at et kredsløb er testbart og analysere, hvorvidt et digitalt kredsløb eller dele heraf er testbart." />
+          <Txt Lang="en-GB" Txt="Describe what a testable system is and analyze whether a digital circuit or parts thereof are testable." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere mindre dele af et testbart digitalt kredsløb, der benytter gængse metoder for test og design for test." />
+          <Txt Lang="en-GB" Txt="Analyze smaller parts of a testable digital circuit using well-known methods for test and design for test." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvælge og optimere de testressourcer, det er hensigtsmæssigt at benytte i en given situation." />
+          <Txt Lang="en-GB" Txt="Choose and optimise the test resources that are appropriate under certain circumstances." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Givet et digitalt kredsløb, redegøre for kredsløbets testbarhedsegenskaber (f.eks. overhead, kompleksitet) samt foreslå og sammenligne forskellige muligheder for at forbedre disse egenskaber." />
+          <Txt Lang="en-GB" Txt="Given a digital circuit, describe the circuit's test properties (e.g., overhead, complexity) and suggest and compare different approaches to improve the test properties." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Undersøge en faglig problemstilling [på baggrund af et oplæg] og fremlægge resultatet af undersøgelsen på en klar og koncis måde i form af en standardiseret teknisk rapport." />
+          <Txt Lang="en-GB" Txt="Investigate a technical problem [based on an introduction] and communicate the results of the analysis in a clear and precise manner, using a standard format of technical reports." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive forskellige løsningsmetoder til en udvalgt teknisk problemstilling og bedømme fordele og ulemper ved metoderne som løsninger på problemstillingen." />
+          <Txt Lang="en-GB" Txt="Assess different methods for solving a selected technical problem and evaluate their advantages and disadvantages as solutions for the problem." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruktivt kritisere en skriftlig fremstilling [over en faglig problemstilling], supplere eventuelle mangelfulde dele i rapporten, og konkludere på fremstillingens helhed." />
+          <Txt Lang="en-GB" Txt="Constructively criticise a written report [on an academic problem], provide any missing parts in the report, and conclude on the entirety of the report." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere fremlagte metoder [i tekniske artikler] og relatere disse til tilsvarende resultater under angivelse af ligheder og forskelle." />
+          <Txt Lang="en-GB" Txt="Discuss the methods presented [in technical papers] and relate these methods to similar findings, indicating similarities and differences." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02209" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Test samt design for test af elektroniske digitale systemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:59.777" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

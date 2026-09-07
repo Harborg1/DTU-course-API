@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41956" University="dtu" LastUpdated="2024-03-06+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Betonkonstruktioner" />
+        <Title Lang="en-GB" Title="Concrete Structures" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="905" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Cao Linh</GivenName>
+            <FamilyName>Hoang</FamilyName>
+            <Email>linho@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="51289" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jesper Harrild</GivenName>
+            <FamilyName>Sørensen</FamilyName>
+            <Email>jhaso@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Virkemåde af armereret beton. 
+Sikkerhedskoncept iht. Eurocode.
+Bæreevneberegninger i brudgrænsetilstanden for bjælker, plader og søjler
+Bestemmelse af revnevidder og nedbøjninger i bjælker i brugsgrænsetilstanden
+Design af konstruktionselementer (bjælker, plader og søjler) af armeret beton
+Introduktion til numeriske metoder til at analysere spændinger i vilkårlig tværsnit og kollapsmekanismer i plader
+Brug af Matlab-baserede programmer til at analysere tværsnit og plader</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At sætte de studerende i stand til at udforme og beregne konstruktionselementer i simple betonkonstruktioner.</Course_Objectives>
+          <Remark>Dette kursus udgør sammen med 41957 "Stålkonstruktioner" det elementære inden for konstruktionsfagene.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The behavior of reinforced concrete
+Safety concept according to Eurocode
+Capacity calculation in the Ultimate Limit State for beams, slabs, and columns
+Determination of crack widths and deflections of beams in the Serviceability Limit State
+Design of reinforced concrete structural elements (beams, slabs, and columns) 
+Introduction to numerical methods for stress analysis in arbitrary cross sections and for analysis of collapse mechanisms in slabs
+Use of application-ready Matlab-based programs for cross-section analysis and slab analysis</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To make the student capable of designing structural elements in simple concrete structures.</Course_Objectives>
+          <Remark>Together with course 41957, this course makes up the fundamental courses in construction.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive egenskaberne ved en armeret betonkonstruktion og forklare principperne i design af simple konstruktionselementer lavet af armeret beton" />
+          <Txt Lang="en-GB" Txt="Describe the characteristics of a reinforced concrete structure and explain the principles in design of simple structural elements made of reinforced concrete " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive sikkerhedskonceptet, som anvendes ved design af armerede betonkonstruktioner baseret på Eurocode 2" />
+          <Txt Lang="en-GB" Txt="Describe the safety concept to apply in design of reinforced concrete structures based on Eurocode 2 " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre beregninger af bæreevnen i brudgrænsetilstanden for simple konstruktionselementer" />
+          <Txt Lang="en-GB" Txt="Perform calculations of load carrying capacity in the ultimate limit state of simple structural elements " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere brudformer i konstruktionselementer, såsom bjælker, søjler og plader, og estimere de tilhørende bæreevner" />
+          <Txt Lang="en-GB" Txt="Analyze structural elements, such as beam, columns, and plates, and estimate failure modes and associated load carrying capacity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende øvre- og nedreværdisætningen på simple armerede betonkonstruktioner og vurdere deres anvendelighed på et givet problem" />
+          <Txt Lang="en-GB" Txt="Apply the upper and lower bound theorems of limit analysis to simple reinforced concrete structures and evaluate their applicability to a given problem " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe konstruktionselementer, så de opfylder krav i brugsgrænsetilstand og brudgrænsetilstand i henhold til Eurocode 2" />
+          <Txt Lang="en-GB" Txt="Design structural elements to meet requirements in the serviceability limit state and ultimate limit state according to Eurocode 2 provisions " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive numerisk metode og anvende numerisk værktøj til at analysere armerede betontværsnit påvirket til skævbøjning" />
+          <Txt Lang="en-GB" Txt="Describe the numerical method and apply numerical tool for analysis of reinforced concrete cross sections with biaxial bending" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive numerisk metode og anvende numerisk værktøj til at analysere brudlinjer i dobbeltspændte betonplader" />
+          <Txt Lang="en-GB" Txt="Describe the numerical method and apply numerical tool for yield line analysis of two-way spanning reinforced concrete slabs" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="41205/41203/11342/41954" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Grundliggende betonkonstruktioner - undervisning i teori og beregning</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="11521/11744/11746/11311" />
+        <PreviousCourse CourseCode="11311" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="4" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="42" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="58" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:35.503" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

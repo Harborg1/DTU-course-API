@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22117" University="dtu" LastUpdated="2026-04-24+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Proteinstruktur: Modeller, analyser og beregninger" />
+        <Title Lang="en-GB" Title="Protein structure and computational biology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="160796" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Elena</GivenName>
+            <FamilyName>Papaleo</FamilyName>
+            <Email>elpap@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="85387" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Matteo</GivenName>
+            <FamilyName>Tiberti</FamilyName>
+            <Email>tiberti@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Report" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen består af videnskabelige artikler fra gruppebaserede projekter med en individuel forfatterbidragserklæring. De studerende forventes at skrive artikler i form af en videnskabelig artikel med individuelle bidrag. Når rapporten er afleveret, vil læreren skrive en evaluering i form af en peer-review med en indledende individuel karakter, hvor 30% er teamets bidrag fra abstract, introduktion og diskussion, og 70% er de individuelle bidrag til resultater og metoder samt datatilgængelighed for disse dele. Den indledende karakter vil blive revurderet af læreren baseret på en ikke-obligatorisk revideret version af de individuelle bidrag. Den endelige karakter vil tage højde for den indledende karakter og forbedringerne under revisionsprocessen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam consists of scientific articles from group-based projects with individualized author contribution statement. The students are expected to write articles in the form of a scientific article with individualized contributions. Once the report is submitted, the teacher will write an evaluaiton in the form of  a peer-review with an initial  individual grade, where 30% is the contribution from Abstract, Introduction and Discussion of the team, and 70% the individual contributions to the Results and Methods and the Data Availability for those parts. The initial grade will be re-assessed by the teacher based on a non mandatory revised version of the individual contributions. The final grade will take into account the initial one and the improvements during the revision process." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Scientific articles are submitted on the last week of the course." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Videnskabelige artikler indsendes den sidste uge af kurset." />
+            <Schedule ScheduleKey="F5A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Proteiners struktur fra primær til kvaternær, eksperimentel bestemmelse af proteinstruktur, strukturel genomik, forudsigelse af sekundærstruktur, overfladetilgængelighed m.m., fold-genkendelse, homologimodellering og de novo modellering, strukturvalidering, proteinstrukturanalyse, ”protein engineering”, molekylære dynamik-simuleringer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger med flipped-class, computerøvelser, afleveringsøvelser, gruppearbejde. I anden del af kurset, med start efter Forelæsning 7, vil der være aktiviteter til projektudvikling i grupper, som bruges til den afsluttende eksamen.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset sigter på at gøre de studerende i stand til at analysere proteiners struktur og funktioner med henblik på rationelt design af lægemidler, og forståelse af sygdomsrelaterede mutationer. Dette inkluderer praktiske computerøvelser i at konstruere og evaluere modeller af proteiner, for hvilke der endnu ikke findes eksperimentelle strukturer, da dette gør det muligt at forudsige biologiske egenskaber for nye proteiner.</Course_Objectives>
+          <Remark>Projektarbejdet i slutningen af ​​forløbet udføres i små, selvvalgte grupper med medlemmer med forskellig ekspertise/baggrund og afsluttes med videnskabelige artikler, som de studerende selv skal skrive og producere data til resultatafsnittet.
+
+Opgaverne  omhandler hovedsagligt proteinstrukturvisualisering med programmet PyMOL. Modellerne vil blive forudsagt med AlphaFold. Mutationsscanningerne vil blive udført ved hjælp af FoldX eller lignende på en Linux Cluster. Til en del af øvelserne og i projektarbejdet vil vi arbejde på en Linux Cluster ved hjælp af terminal- og kommandolinjebaseret software.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Protein structure from primary to quaternary, experimental determination of protein structures, structural genomics, prediction of secondary structure, accessibility etc, fold recognition, homology and de novo modelling, structure validation, protein structure analysis, protein engineering, molecular dynamics simulations.</Contents>
+          <Teaching_And_Learning_Methods>Lectures with flipped-class, computer exercises, hand-in exercises, group work. In the second part of the course, starting after Lecture8, there will be activities for project to develop in groups which is used for the final exam.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to enable students to analyse protein structure and function for the purpose of understanding of disease-related mutations and rational design. This includes practical computer exercises dealing with construction and validation of models of proteins for which no experimental structure is available, as this allows prediction of biological properties of novel proteins.</Course_Objectives>
+          <Remark>The project work at the end of the course is performed in small, self-elected groups with members from different expertises/background and completed with scientific articles that the students should write themselves and produce data for the results section.  
+
+The exercises deal with protein structure visualisation using the program PyMOL. The models will be predicted with AlphaFold. The mutational scans will be performed using FoldX and similar tools on a Linux cluster. For part of the exercises and in the project work, we will work on a Linux Cluster using the terminal and command-line based software.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til bioinformatik og kemi" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of Bioinformatics and Chemistry" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="22111.22113" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive proteinstrukturelementer, deres egenskaber og aminosyrers kemiske og strukturelle egenskaber." />
+          <Txt Lang="en-GB" Txt="describe  protein structure elements, their properties and the chemical and structural properties of amino acids." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="vurdere eksperimentelle proteinstrukturers og modellers kvalitet." />
+          <Txt Lang="en-GB" Txt="evaluate the quality of experimental and model structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="navigere PDB strukturdatabasen og betjene funktioner i programmet PyMOL til visualisering af proteiners tredimensionelle struktur." />
+          <Txt Lang="en-GB" Txt="navigate PDB database and operate with  PyMOL for visualisation and analyses of protein structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere en model af et protein med ukendt struktur og analysere det." />
+          <Txt Lang="en-GB" Txt="construct models of a protein of unknown structure and analyze them." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forudsige effekten af punktmutationer på interaktioner med ligander, konformationsændringer eller andre strukturelle egenskaber." />
+          <Txt Lang="en-GB" Txt="predict the effect of point mutations on the interaction with ligands, conformational changes and other structural properties." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udføre molekylære simuleringer for at studere proteindynamik." />
+          <Txt Lang="en-GB" Txt="design and develop a scientific article and learn principles for peer-review." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe og udvikle en videnskabelig artikel og lære principper for peer-review." />
+          <Txt Lang="en-GB" Txt="perform molecular simulations to study protein dynamics." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende kommandolinjeværktøjer på en computerserver." />
+          <Txt Lang="en-GB" Txt="apply command-line tools on a computing server." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Brug store sprogmodeller (chatGPT og lignende) til at forbedre dit arbejde, for eksempel i projektdesignet eller ved at skrive manuskripter til dataindsamling/analyser." />
+          <Txt Lang="en-GB" Txt="Use Large-Language-Models (chatGPT and alike) to aid augment your work, for example in the project design or writing scripts for data collection/analyses" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Analysere proteiners struktur og funktion, lægemidler, biokatalysatorer </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="5" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="27617" />
+        <PreviousCourse CourseCode="36617" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="80" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="20" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="120" Min="10" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:09.06" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

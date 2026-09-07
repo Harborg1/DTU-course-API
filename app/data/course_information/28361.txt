@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="28361" University="dtu" LastUpdated="2026-04-21+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">7.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Modelanalyse for kemiingeniører" />
+        <Title Lang="en-GB" Title="Chemical engineering model analysis" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="28" />
+        <Course_Responsible PersonKey="3687" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alexander</GivenName>
+            <FamilyName>Shapiro</FamilyName>
+            <Email>ASH@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="71381" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Xiaodong</GivenName>
+            <FamilyName>Liang</FamilyName>
+            <Email>xlia@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af rapporter udført i løbet af kurset, samt en kort eksamen" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of the reports, which are prepared during the course, combined with the short examination" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="1/2 time" />
+          <Duration Lang="en-GB" Txt="1/2 hour" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Undervisningen bliver bygget op om et antal modeleksempler, der bredt beskriver problemstillinger med kemi- og bioteknisk indhold. Disse modeleksempler løses numerisk med MATLAB som redskab, Typiske mulige modelsystemer er (valget kan være forskellig hvert år):
+
+Modellering af enzymatisk hydrolyse af cellulose.
+
+Modellering af forbrændingsprocesser.
+
+Modellering af coating, med agglomerering af partikler.
+
+Chromatografisk separation. Lineære og ulineære isotermer.
+
+Flerfasestrømning i porøse medier, herunder filtration og kuldioxid lagring.</Contents>
+          <Teaching_And_Learning_Methods>"Learn by doing". Korte forelæsninger. Gruppearbejde på kursusopgaver.</Teaching_And_Learning_Methods>
+          <Course_Literature>Hovedsageligt overheads og andet materiale som vil blive uploadet i Campusnet. Bøger som kunne bruges i forbindelsen med kurset er: 
+R. Rice and D. Do, Applied Mathematics and Modeling for Chemical Engineers, J. Wiley and Sons, N.Y., 1995 (Elektronisk version eksisterer i DTV databaser);
+A.N. Tikhonov and A.A. Samarskii, Equations of Mathematical Physics, Dover Publications, 1990.
+I. Miller, J. Freund, and R. Johnson, Probability and statistics for engineers, Pearson Higher Education, N.J., 2005.</Course_Literature>
+          <Course_Objectives>Hovedformålet med det indeværende kursus er, at den studerende bliver i stand til at udvikle en matematisk model for et spektrum af komplekse og realistiske kemi- og biotekniske problemstillinger, herunder bæredygtigheden, med vægt på at foretage en numerisk løsning af sådanne modeller.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Teaching is built around a number of model examples, which broadly describe the statements of the problems with the chemical- and biotechnical contents. The problems are solved numerically, applying MATLAB as a tool. The possible typical model examples are (the choice may be different in the different years): 
+
+Modelling of the enzymatic hydrolyses of cellulose.
+
+Modelling of the combustion processes.
+
+Modelling of particle coating, with agglomeration.
+
+Chromatografical separation. Linear and nonlinear isotherms
+
+Multiphase flows in porous media, including deep bed filtration and carbon dioxide underground storage.</Contents>
+          <Teaching_And_Learning_Methods>"Learn by doing". Short lectures. Group work on the course assignments</Teaching_And_Learning_Methods>
+          <Course_Literature>The main teaching materials for the course are notes and additional materials uploaded to Campusnet. The optional literature is:
+
+R. Rice and D. Do, Applied Mathematics and Modeling for Chemical Engineers, J. Wiley and Sons, N.Y., 1995 (Electronic version of the book is freely available for the DTU students at the Knovel database)
+A.N. Tikhonov and A.A. Samarskii, Equations of Mathematical Physics, Dover Publications, 1990.
+I. Miller, J. Freund, and R. Johnson, Probability and statistics for engineers, Pearson Higher Education, N.J., 2005.</Course_Literature>
+          <Course_Objectives>The main goal of the present course is to prepare a student for development of the mathematical models for a large number of the complex and realistic chemical and biotechnical problems, also involving sustainability, and for carrying out numerical solutions of such problems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="01035, 28160, 28864, eller tilsvarende kurser. Indledende kendskab til programmering (hovedsageligt Matlab eller Python)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="01035, 28160, 28864, or similar courses. Initial knowledge of programming (preferably, Matlab or Python)." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle en matematisk model for et system, der beskriver stationære såvel som ikke-stationære processer, hvori stof- og energitransport ved konvektion og diffusion, samt kemisk reaktion er involverede;" />
+          <Txt Lang="en-GB" Txt="To develop a mathematical model for description of stationary, as well as non-stationary processes, involving transport of matter and energy by convection and diffusion, as well as chemical reactions;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Formulere initial- og randbetingelser for den matematiske model, på grundlag af relevante fysiske betragtninger;" />
+          <Txt Lang="en-GB" Txt="To formulate initial and boundary conditions for a mathematical problem applying relevant physical considerations;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Have kendskab til og kunne arbejde, med populationsbalancer. Opstille en matematisk model for et system, hvori populationsbalancer er af betydning. Formulere en numerisk løsningsmetode for problemstillinger, hvor populationsbalancer er af betydning;" />
+          <Txt Lang="en-GB" Txt="To learn and to be able of working with the population balances. To set mathematical problem formulations for the systems involving the population balances. To select a solution method for such systems;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende de forskellige diskretiseringsmetoder til løsninger af de ordinære og partielle differentialligninger;" />
+          <Txt Lang="en-GB" Txt="To apply the different discretization methods for solutions of the ordinary and partial differential equations;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne anvende kvalitativ analyse og numeriske løsningsmetoder til løsning af koblede 1.ordens differentialligninger, herunder stive differentialligninger og differential-algebraiske ligninger;" />
+          <Txt Lang="en-GB" Txt="To apply the methods for qualitative analysis and numerical solution of the coupled first order differential equations, including stiff differential equations and differential-algebraic equations;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Have kendskab til de analytiske løsningsmetoder ved systemer, der beskrives ved hyperbolske partielle differentialligninger;" />
+          <Txt Lang="en-GB" Txt="To learn the analytical solution methods for the systems described by the first order hyperbolic partial differential equations;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende numeriske værktøjer til løsninger af de parabolske partielle differentialligninger; analysere steady states og stabilitet;" />
+          <Txt Lang="en-GB" Txt="To apply numerical tools for solutions of the parabolic partial differential equations; analyze steady states and stability;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kunne anvende en moderne programmeringssprog (hovedsagelig, Matlab eller Python) til numerisk løsning af praktiske problemstillinger samt til at grafisk analyse af løsningerne" />
+          <Txt Lang="en-GB" Txt="To be capable of applying a modern programming language (presumably, Matlab or Python) for numerical solution of the practically relevant statements and for graphical analysis of the solutions." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Modern modeling methods for chemical engineers</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="11" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:11.223" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

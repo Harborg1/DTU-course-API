@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41107" University="dtu" LastUpdated="2025-02-27+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="41" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Marin- og havteknik" />
+        <Title Lang="en-GB" Title="Marine and ocean engineering" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="14331" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Stefan</GivenName>
+            <FamilyName>Carstensen</FamilyName>
+            <Email>scar@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="117076" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Yanlin</GivenName>
+            <FamilyName>Shao</FamilyName>
+            <Email>yshao@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="2 obligatoriske og individualiserede opgavebesvarelser/rapporter afleveres i løbet af kurset efter afslutning af relevante forelæsninger. Kurset afsluttes med en skriftlig eksamen. En enkelt karakter gives efter den skriftlige eksamen, baseret på en samlet vurdering af disse to elementer." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="2 mandatory and individualized assignments/reports are handed in during the course, following completion of relevant lectures.  The course finishes with a written examination. A single grade is given after the written examination, based on an overall assessment of these two elements." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Beskrivelse af bølgeklimaet offshore og til havs i tids- og frekvensdomænet (uregelmæssige og tredimensionale bølger, havbølgespektre); Strøm og bølgekræfter på cylindriske strukturer, marine rørledninger / kabler, havvindmøllefundamenter, faste og bundunderstøttede offshore platforme (drag og inertikræfter, og Morison's ligning, tværgående løftekraft). Strømnings- og hvirvelinducerede vibrationer. Bevægelsesoverføringsfunktoner (respons amplitude operator, RAO) og respons spektre for skibe og flydende konstruktioner (bølgeinducerede bevægelser) inklusiv simple styrke beregninger.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, afløsningsopgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>Lærebog: "B. Mutlu Sumer &amp; Jørgen Fredsøe (2006). Hydrodynamics Around Cylindrical Structures" og forelæsningsnoter</Course_Literature>
+          <Course_Objectives>At beskrive alle væsentlige hydrodynamiske kræfter på faste, bundunderstøttede og flydende marine konstruktioner / fartøjer, således, at den studerende bliver i stand til at foretage såvel overslagsberegninger og mere detaljerede analyser af kræfter og bevægelser for relevante konstruktioner / fartøjer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Short- and long-term marine wave climate in the time and frequency domain offshore and on deep water (irregular and three-dimensional waves, ocean wave spectra); Current and wave forces on cylindrical structures applicable to marine pipelines/cables, offshore wind turbine foundations and fixed and bottom-supported offshore platforms (drag and inertia forces, and the Morison equation, cross-flow lift forces). Flow- and vortex-induced vibrations. Motion transfer function (response amplitude operator, RAO) and response spectra applicable to ships and floating structures (wave-induced motions) including simple strength calculations.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, assignments</Teaching_And_Learning_Methods>
+          <Course_Literature>Textbook: "B. Mutlu Sumer &amp; Jørgen Fredsøe (2006). Hydrodynamics Around Cylindrical Structures" and lecture notes.</Course_Literature>
+          <Course_Objectives>To describe all significant hydrodynamic forces on fixed, bottom-supported and floating marine structures / vessels such that the student will be able to perform overall load and motion estimations as well as detailed numerical calculations of actual structures / vessels.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="I opgaverne anvendes der typisk Excel og/eller Matlab (Python eller R) suppleret med Maple." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Assignments are typically done with Excel and/or Matlab (Python or R) supplemented by Maple." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41111.(41102/41312/41202/41201)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive strømningsprocesser omkring slanke marine konstruktioner, med cylindriske strukturelle elementer (eller struktur), så som marine rørledninger, havvindmøllefundmenter, og faste offshore platforme." />
+          <Txt Lang="en-GB" Txt="describe flow processes around slender marine structures with cylindrical structural elements (or structure), such as marine pipelines, offshore wind turbine foundations, and fixed offshore platforms." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive processer relateret til strøm og bølgekræfter / -laster på sådanne konstruktioner." />
+          <Txt Lang="en-GB" Txt="describe processes related to current and wave forces / loads on these structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og analysere drag og inertikræfter (Morison's ligning). " />
+          <Txt Lang="en-GB" Txt="explain and analyse the in-line drag and inertia forces (the Morison equation). " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og analysere tværgående løftekraft." />
+          <Txt Lang="en-GB" Txt="explain and analyse the cross-flow (lift) force." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Morison's ligning til at beregne stabiliteten af simple marine konstruktioner (f.eks. marine rørledninger)." />
+          <Txt Lang="en-GB" Txt="apply the Morison equation (in-line force) and cross-flow (lift) force to evaluate the stability of simple marine structures (e.g. marine pipelines)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive strømningsprocesser omkring store legemer/konstruktioner (en lodret cylinder med stor diameter) og analysere kræfter på disse strukturer. " />
+          <Txt Lang="en-GB" Txt="describe flow processes around large bodies (a large vertical circular cylinder) and analyse the forces on these structures." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og vurdere hvirvel- og strømningsinducerede vibrationer og bevægelser" />
+          <Txt Lang="en-GB" Txt="describe and evaluate vortex- and flow-induced vibrations and motions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare og analysere irregulære bølge tidsserier i tids- og frekvensdomænet, bølgestatistik over korte og lange perioder." />
+          <Txt Lang="en-GB" Txt="explain and analyse irregular wave time series in time and frequency domain, short-term and long-term statistics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="karakterisere og beskrive havbølger i form af søtilstande og havbølgespektre" />
+          <Txt Lang="en-GB" Txt="characterize and describe ocean wave systems in terms of sea states and wave energy density spectra" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive og anvende bevægelsesoverføringsfunktioner med henblik på at undersøge sødygtighed af flydende konstruktioner / fartøjer (f.eks. skibe)" />
+          <Txt Lang="en-GB" Txt="describe and apply motion transfer functions to investigate the seakeeping ability of floating structures / vessels (e.g. ships)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende Morison's ligning til at analysere bundunderstøttede og flydende konstruktioner." />
+          <Txt Lang="en-GB" Txt="apply the Morison equation for a simple analysis of bottom-supported and floating structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive grundlæggende forhold omkring styrkeberegninger for lange flydende konstruktioner / fartøjer (f.eks. skibe)." />
+          <Txt Lang="en-GB" Txt="describe the fundamentals related to strength calculations of long floating structures / vessels (e.g. ships)" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Hydrodynamic forces on fixed, bottom-supported and floating marine structures/vessels from overall load and motion estimations to detailed numerical calculations of actual structures/vessels.</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="6" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41106" />
+        <PreviousCourse CourseCode="41106" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="6" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:35.39" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

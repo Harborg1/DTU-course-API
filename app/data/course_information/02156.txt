@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02156" University="dtu" LastUpdated="2025-03-26+01:00" Volume="2026/2027">
+        <Study_Board Study_BoardKey="1" />
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Logiske Systemer og Logikprogrammering" />
+        <Title Lang="en-GB" Title="Logical Systems and Logic Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="6524" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Jørgen</GivenName>
+            <FamilyName>Villadsen</FamilyName>
+            <Email>jovi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmes som en helhed." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Is evaluated as a whole." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E4A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset dækker logikprogrammering (især Prolog som et "rapid prototyping" værktøj), elementære logikker (herunder propositionel og førsteordenslogik), bevissystemer (deduktive systemer og/eller refutationssystemer), og problemløsningsteknikker (såsom "backtracking" algoritmen).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og obligatoriske afleveringsopgaver.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursusmålet er at give de studerende en introduktion til nogle af de grundlæggende deklarative formalismer fra formel datalogi og logik, der kan benyttes til at beskrive, analysere og konstruere IT-systemer.
+Det omfatter såvel teoretiske indsigter som praktiske færdigheder i relevante højniveau-programmeringssprog.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers logic programming (in particular Prolog as a rapid prototyping tool), elementary logics (including propositional and first-order logic), proof systems (deductive systems and/or refutation systems), and problem solving techniques (for instance the backtracking algorithm).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises and mandatory assignments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to give the students an introduction to some of the basic declarative formalisms from formal computer science and logic that can be used for describing, analysing and constructing IT systems.
+It will cover theoretical insight as well as practical skills in relevant high-level programming languages.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Programmering i et deklarativt eller imperativt sprog, diskret matematik, algoritmer og datastrukturer. Funktionsprogrammering er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Programming in a declarative or imperative language, discrete mathematics, algorithms and data structures. Functional programming is an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02002/02003/02100).01017.02105" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="relatere forskellige slags bevissystemer" />
+          <Txt Lang="en-GB" Txt="relate different kinds of proof systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="konstruere formelle beviser i elementære logikker" />
+          <Txt Lang="en-GB" Txt="construct formal proofs in elementary logics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udnytte udvalgte klassiske og ikke-klassiske logikker" />
+          <Txt Lang="en-GB" Txt="exploit selected classical and non-classical logics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte &quot;backtracking&quot; algoritmen til simpel problemløsning" />
+          <Txt Lang="en-GB" Txt="use the backtracking algorithm for simple problem solving" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere effekten af et deklarativt program" />
+          <Txt Lang="en-GB" Txt="analyze the effect of a declarative program" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="etablere et funktionelt design for et givet problem, således at hovedbegreberne for problemet direkte kan spores i designet" />
+          <Txt Lang="en-GB" Txt="establish a functional design for a given problem, so that the main concepts of the problem are directly traceable in the design" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beherske logiske tilgange til programmering ved at definere rekursive prædikater" />
+          <Txt Lang="en-GB" Txt="master logical approaches to programming in terms of defining recursive predicates" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere løsninger til problemer på en klar og præcis måde" />
+          <Txt Lang="en-GB" Txt="communicate solutions to problems in a clear and precise manner" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.compute.dtu.dk/02156/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Logik og Prolog</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:48.753" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

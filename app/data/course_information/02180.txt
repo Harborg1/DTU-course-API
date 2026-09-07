@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02180" University="dtu" LastUpdated="2026-03-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Introduktion til kunstig intelligens" />
+        <Title Lang="en-GB" Title="Introduction to Artificial Intelligence" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="104472" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Nina</GivenName>
+            <FamilyName>Gierasimczuk</FamilyName>
+            <Email>nigi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Individualiserede grupperapporter og skriftlig eksamen bedømmes ved en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Individualised group reports and a written exam are assessed in their entirety." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Hvad er kunstig intelligens? Grundlaget for kunstig intelligens. Uinformeret søgning. Informeret/heuristisk søgning: A*, greedy best-first search. Ikke-determinisme og partiel observerbarhed. Adversarial search: spiltræer, Minimax, Monte-Carlo Tree Search. Vidensbaser i udsagnslogik og prædikatlogik. Inferensteknikker i udsagnslogik og prædikatlogik: modus ponens, forward og backward chaining, resolution, model-checking, SAT-solving. Basale strategier til opdatering af vidensbaser (belief revision). Filosofiske, etiske, juridiske og samfundsmæssige aspekter af kunstig intelligens.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og skriftlige afleveringer.</Teaching_And_Learning_Methods>
+          <Course_Literature>S. Russell og P. Norvig: Artificial Intellligence, A Modern Approach, Prentice Hall.</Course_Literature>
+          <Course_Objectives>Målet er at give den studerende en forståelse af fundamentale begreber og teknikker indenfor kunstig intelligens (AI), samt træne den studerendes evne til at anvende disse teknikker. Kurset fokuserer primært på symbolske teknikker indenfor kunstig intelligens, især relateret til søgning og logik.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>What is AI? Foundations of AI. Uninformed search. Informed/heuristic search: A*, greedy best-first search. Adversarial search: game trees, Minimax, Monte-Carlo Tree Search. Knowledge bases in propositional and first-order logic. Inference techniques in propositional and first-order logic: modus ponens, forward and backward chaining, resolution, model-checking, SAT-solving. Basic strategies for updating knowledge bases (belief revision). Philosophical, ethical, legal and societal aspects of AI.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, and written assignments.</Teaching_And_Learning_Methods>
+          <Course_Literature>S. Russell &amp;  P. Norvig: Artificial Intellligence, A Modern Approach, Prentice Hall.</Course_Literature>
+          <Course_Objectives>The aim is to provide the student with an understanding of basic notions and techniques in artificial intelligence (AI) and to train the student’s abilities to apply these techniques. The focus of the course is primarily on symbolic artificial intelligence, in particular techniques based on search and logic.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="eller ækvivalente kurser. Du skal have erfaring med algoritmer og datastrukturer, programmering, udsagnslogik og rekursive procedurer. Kurset kræver erfaring med implementation af ikke-trivielle algoritmer i et standard programmeringssprog som fx Java eller Python. Kurset kan tages af bachelorstuderende som opfylder de anbefalede forudsætninger." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="or equivalent courses. You need experience with algorithms and data structures, programming, propositional logic and recursive procedures. The course requires experience with implementing non-trivial algorithms in a standard programming language like Java or Python. The course can be taken by bachelor students satisfying the recommended prerequisites." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02100/02101/02102/02312/02314).(02105).(01017/01019) " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, anvende og implementere uinformerede og informerede søgeteknikker til løsning af AI-problemer" />
+          <Txt Lang="en-GB" Txt="Explain, apply and implement uninformed and informed search techniques to solve AI problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, anvende og implementere søgeteknikker til kunstig intelligens i spil" />
+          <Txt Lang="en-GB" Txt="Explain, apply and implement adversarial search techniques for AI in games" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe, implementere, benchmarke og analysere søgeheuristikker og spil-evalueringsfunktioner" />
+          <Txt Lang="en-GB" Txt="Design, implement, benchmark and analyse search heuristics and game evaluation functions" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare og anvende logiske teknikker til repræsentation af viden og ræssonering" />
+          <Txt Lang="en-GB" Txt="Explain and apply logical techniques for the representation of knowledge and reasoning" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, anvende og implementere inferensteknikker i udsagnslogik og første-ordenslogik" />
+          <Txt Lang="en-GB" Txt="Explain, apply and implement inference techniques in propositional and first-order logic" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de logiske metoder for opdatering af vidensbaser" />
+          <Txt Lang="en-GB" Txt="Explain the logical methods of knowledge-base update" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare styrker og svagheder ved forskellige AI-teknikker indenfor søgning og logik" />
+          <Txt Lang="en-GB" Txt="Explain the strength and weaknesses of different AI techniques within search and logic" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Korrekt identificere den relevante AI-teknik til løsning af et givet problem" />
+          <Txt Lang="en-GB" Txt="Correctly determine the relevant AI technique for solving a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare anvendelsesområderne for kunstig intelligens, dets potentiale for samfundet samt dets begrænsninger" />
+          <Txt Lang="en-GB" Txt="Explain the scope of AI, its potential for society as well as its limitations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere filosofiske, etiske, juridiske og samfundsmæssige konsekvenser af AI" />
+          <Txt Lang="en-GB" Txt="Discuss philosophical, ethical, legal, and societal consequences of AI" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion til centrale metoder indenfor (især) symbolsk kunstig intelligens: søgning, planlægning, logisk ræsonnering. </SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02182" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:54.107" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

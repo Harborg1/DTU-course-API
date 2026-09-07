@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46715" University="dtu" LastUpdated="2026-05-27+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Transienter i elforsyningssystemer" />
+        <Title Lang="en-GB" Title="Transients in power systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="54018" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Guangya</GivenName>
+            <FamilyName>Yang</FamilyName>
+            <Email>gyyan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="916" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Joachim</GivenName>
+            <FamilyName>Holbøll</FamilyName>
+            <Email>johol@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Løsningerne til de obligatoriske opgaver skal være afleveret og godkendt før den mundtlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The solutions of the mandatory assignments have to be handed in and be approved prior to the oral examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E1B" />
+            <Schedule ScheduleKey="F1B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>En række grundlæggende transiente sammenhænge af betydning indenfor elforsyningens systemer og komponenter behandles.
+Transienter opstår ved lynpåvirkning og under både bryde- og slutteforløb i nettet.
+Beregning af overspændinger kræver højfrekvente komponentækvivalenter, baseret på kompakte kredsløbsækvivalenter som på transmissionslinjemodeller med distribuerede parametre. 
+Konkret behandles kabler, brydere og transformere i forskellige konfigurationer og under forskellige driftsforhold. Dertil beregning og simulering af overspændinger i luftledningssystemer ved lynpåvirkning.
+Systemets respons og modstandsdygtighed overfor disse transienter undersøges ved anvendelse af isolationskoordination.
+Det numeriske værktøj i den større opgave er PSCAD.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og gruppearbejde. En række obligatoriske opgaver skal løses inkl. en større simuleringsopgave ved brug af et numerisk tidsdomæneværktøj. Godkendelse af alle opgaveløsninger er forudsætning for at kunne bestå kurset.</Teaching_And_Learning_Methods>
+          <Course_Objectives>At give en solid baggrund for at kunne forstå og beregne transienters opståen og karakteristika i udvalgte elforsyningssystemer.
+Derudover opnås kendskab til komponenters højfrekvente ækvivalenter og transienters effekt på disse komponenter og på nettet.
+De studerende bliver fortrolige med PSCAD som et numerisk værktøj til tidsdomænesimuleringer plus en række andre metoder som finder anvendelse i elforsyningen.</Course_Objectives>
+          <DTU_Remark>Kurset bliver ikke udbudt i efteråret 2026</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>A number of fundamental topics relevant for the power system and its components will be treated.
+Transients occur under lightning and under switching processes in the grid, including closing and breaking actions.
+Calculation of overvoltages requires application of high frequent component equivalents based on lumped circuits, as well as including transmission line models with distributed parameters.
+In particular will be treated cables, breakers and transformers in different configurations. Also covered are calculation of overvoltages in overhead line systems under lightning.
+The system's response and resistance against these transients are investigated by means of insulation coordination.
+The numerical tool used in the larger assignment is PSCAD.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and group work. A number of mandatory problems have to be solved incl. a larger simulation assignment by means of a numerical time domain tool. Approval of all solutions of the assignments is required for passing the course.</Teaching_And_Learning_Methods>
+          <Course_Objectives>To give a solid background for understanding and calculation of the generation and characteristics of electrical transients in selected electric power systems.
+Also knowledge will be achieved within component's high frequent equivalents and the influence of transients on these components and on the grid.
+The students will become familiar with PSCAD as numerical tool for time domain simulations and a number of other methods used in power engineering.</Course_Objectives>
+          <DTU_Remark>This course will not be offered Fall 2026</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="46700/31730 Elforsyning, grundkursus" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="46700/31730 Electric Power Engineering, fundamentals" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="31730/46700" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne simple transiente forløb analytisk og numerisk" />
+          <Txt Lang="en-GB" Txt="Calculate simple transients analytically and numerically" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille bredbåndsmodeller for nogle almindelige komponenter " />
+          <Txt Lang="en-GB" Txt="Establish broad band models for some common components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluere en komponents elektriske karakteristika under transiente påvirkninger " />
+          <Txt Lang="en-GB" Txt="Evaluate a component's electrical characteristics under transient voltages" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende PSCAD som numerisk værktøj til tidsdomænesimuleringer" />
+          <Txt Lang="en-GB" Txt="Use PSCAD as numerical tool for time domain simulations" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skelne mellem modeller med og uden distribuerede parametre" />
+          <Txt Lang="en-GB" Txt="Distinguish between models with and without distributed parametres" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende en række elektromagnetiske principper på elforsyningskomponenter" />
+          <Txt Lang="en-GB" Txt="Apply a number of electromagnetic principles to power components " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne overspændinger under koblinger og lynpåvirkning" />
+          <Txt Lang="en-GB" Txt="Calculate over voltages under switching events and lightning exposure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå de grundlæggende principper for overspændingsbeskyttelse" />
+          <Txt Lang="en-GB" Txt="Understand the basic principles of overvoltage protection" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Transienter i elforsyningssystemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31773" />
+        <PreviousCourse CourseCode="31773" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="12" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-29" Time="09:04:53.77" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

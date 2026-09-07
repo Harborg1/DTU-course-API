@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="34370" Volume="2026/2027" University="dtu" LastUpdated="2026-04-06+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Cloud-netværk" />
+        <Title Lang="en-GB" Title="Cloud Networking" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="2334" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Lars</GivenName>
+            <FamilyName>Staalhagen</FamilyName>
+            <Email>larst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen og evaluering af opgaver. Kurset bedømmes ud fra en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam and evaluation of exercises. The course is evaluated as a whole." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til “Cloud” som et generelt koncept og de teknologier og komponenter som indgår. Teknologier til switching og virtualisering af netværk. Softwarekoncepter i Linux operativsystemet som muliggør virtuelle netværk og systemer. Virtualisering af computere og servere baseret på hypervisorer. Network Function Virtualization (NFV) konceptet som evolution af tjenester i telekommunikationsnetværk, herunder udviklingen mod Service Oriented Architectures og microservices. Containere som implementering af microservices, herunder Container Networking Models. Container orkestrering (Docker Swarm og Kubernetes).</Contents>
+          <Course_Objectives>At sætte deltagerne i stand til at analysere og designe netværk til cloud-tjenester og cloud-native miljøer med fokus på de underliggende teknologier.</Course_Objectives>
+          <Remark>Kurset er i høj grad baseret på hands-on eksempler og øvelser i lektionerne, som afvikles på deltagernes egne computere. Det er derfor forventningen, at deltagerne medbringer en laptop med en Intel-kompatibel x86-64 processor med minimum 8 GB RAM og minimum 40 GB fri plads på harddisken.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to ”the Cloud” as a generic concept and the technologies and components that are part of it. Technologies for switching and virtualization of networks. Software concepts in the Linux operating system that enable virtual networks and systems. Host virtualization based on hypervisors. The Network Function Virtualization (NFV) concept as an evolution of services in telecommunication networks, including the evolution towards Service Oriented Architectures and microservices. Containers as implementation of microservices, including Container Network Models. Container orchestration (Docker Swarm and Kubernetes).</Contents>
+          <Course_Objectives>To qualify the participants to analyze and design networks for cloud services and cloud-native environments with focus in the underlying technologies.</Course_Objectives>
+          <Remark>A significant part of the course are hands-on examples and exercises in the lectures, which are intended to be performed on the participants' own computers. It is therefore expected that the participants bring a laptop with an Intel-compatible x86-64 processor with minimum 8 GB RAM and minimum 40 GB free harddrive space.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kendskab til internettets vigtigste protokoller, såsom IP, TCP, UDP, DHCP, DNS, m.fl." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Knowledge about the most important protocols in the internet, such as IP, TCP, UDP, DHCP, DNS, and so on." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="34334.34359" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive begrebet &quot;cloud&quot; fra et teknisk perspektiv med fokus på komponenter og teknologisk udvikling." />
+          <Txt Lang="en-GB" Txt="Describe &quot;the Cloud&quot; from a technical perspective with focus on components and the technological evolution." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for konceptet om &quot;cloud-native&quot; design." />
+          <Txt Lang="en-GB" Txt="Explain the concept of &quot;Cloud-native&quot; design." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og sammenligne forskellige netværkstopologier til data centre." />
+          <Txt Lang="en-GB" Txt="Describe and compare network topologies for data centres." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Linux teknologier til isolation af processer og ressourcer samt relaterede netværksprincipper til at implementere virtuelle netværkstopologier i Linux hosts." />
+          <Txt Lang="en-GB" Txt="Use Linux technologies for isolation of processes and resources and related networking principles for implementing virtual network topologies in Linux hosts." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og sammenligne mekanismer til virtualisering og isolering, som f.eks. virtuelle maskiner og containere." />
+          <Txt Lang="en-GB" Txt="Describe and compare mechanisms for virtualization and isolation, such as virtual machines and containers." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare Network Function Virtualization (NFV) konceptet og beskrive standard NFV arkitekturer og komponenter." />
+          <Txt Lang="en-GB" Txt="Explain the Network Function Virtualization (NFV) concept and describe standard NFV architectures and components." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne forskellige Virtual Infrastructure Managers (VIMs), som f.eks. OpenStack, Docker Swarm og Kubernetes, herunder deres brug af virtuelle netværk." />
+          <Txt Lang="en-GB" Txt="Compare different Virtual Infrastructure Managers (VIMs), such as OpenStack, Docker Swarm and Kubernetes, including their use of virtual networks." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive automatisering i relation til cloud-netværk og –systemer." />
+          <Txt Lang="en-GB" Txt="Explain network automation in relation to cloud networks and systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Cloud Networking</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:25:20.59" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

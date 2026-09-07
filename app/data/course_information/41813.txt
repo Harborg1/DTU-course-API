@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41813" Volume="2026/2027" University="dtu" LastUpdated="2024-11-19+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="41" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Finite Element Metoder for lyd og svingninger" />
+        <Title Lang="en-GB" Title="Finite Element Methods for sound and vibrations" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="18078" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Niels</GivenName>
+            <FamilyName>Aage</FamilyName>
+            <Email>naage@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="64076" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Marie</GivenName>
+            <FamilyName>Brøns</FamilyName>
+            <Email>maribr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Bedømmelse af 2 individualiserede grupperapporter. Baseret på en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Evaluation of 2 individualized group reports. Based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_Report" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer på teoretiske forelæsninger kombineret med computerøvelser i Comsol/Matlab til beregning af strukturelle vibrationer med og uden effekten af akustisk kobling. Tvungne svingninger analyseres vha. modal superposition og direkte metoder. Forskellige reduktionsmetoder analyseres. Forskellige materiale og dæmpnings-modeller betragtes og implementeres. Energibetragtninger opstilles og absorberende randbetingelser implementeres for simulering af bølgeudbredelse. Modeller der beskriver interaktionen med et akustisk medium opstilles og der udføres beregninger for egenværdiproblemer og tvungne svingninger. Komplekse finite element modeller for emner på mikroskala opbygges.
+
+Forelæsninger og computerøvelser danner grundlag for to rapportafleveringer.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og computerøvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Højtalere og mikrofoner er klassiske mekaniske komponenter, der er afhængige af samspillet mellem vibrationer og akustik. Moderne applikationer (Industri 4.0), herunder autonome IoT-enheder med energiharvesting af omgivende akustisk energi, virtuelle sensorer og nye MEMS-baserede mikrofoner og højttalere, er afhængige af ingeniører med en grundlæggende forståelse for vibrationsanalyse af komplekse strukturer og deres kobling til omgivelserne. Målet med dette kursus er at lære de studerende at bruge Finite Element Metoden (FEM) til at løse avancerede, multifysiske vibrationsproblemer, med særlig fokus på problemer, der involverer akustisk-mekanisk interaktion. Denne viden vil blive brugt til at opbygge komplekse finite element modeller til undersøgelse af vibrationsproblemer i mikroskala-komponenter, der involverer akustik ved hørbare frekvenser.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course focuses on theoretical lectures combined with computer exercises using Matlab (and sometimes COMSOL) to solve structural vibration problems with and without acoustic coupling. Solution methods will cover modal superposition and direct methods as well as various reduced order model (ROM) techniques. Different material and damping models (proportional, structural) will be analyzed and absorbing boundary conditions will be implemented for the simulation of wave propagation. Power flow analysis and evaluation of kinetic, potential and dissipated energy in vibrating structures will be carried out. Interaction problems are formulated and computations in the form of eigenvalues and forced vibrations are performed. Complex finite element models for micro scale components are constructed. 
+
+Lectures and computer exercises serve basis for two reports.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and computer exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>Loudspeakers and microphones are classical mechanical components that rely on the interaction between vibrations and acoustics. Modern applications (Industry 4.0) ranging from self-powering of IoT-devices by energy-harvesting of ambient acoustic energy, virtual sensing, medical equipment (biomechanics &amp; life-sciences) to novel MEMS based microphones and speakers, all rely on engineers with a fundamental understanding of vibration analysis of complex structures and their coupling to the surroundings. In order to enable such skills, the goal of this course is to teach the students to use the Finite Element Method (FEM) to solve advanced, multiphysics vibration problems with specific consideration to problems that involve acoustic-mechanical interaction. This knowledge will be used to create complex finite element models for realistic assessment of the vibrations of micro scale components that involve acoustics at audible frequencies.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om mekaniske vibrationer er forudsat. Kendskab til finite element teori og programmeringserfaring i matlab er en fordel." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Fundamental knowledge of mechanical vibrations is required. Knowledge of finite element theory and programming experience in matlab is an advantage." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(41560/41237/31270/62643).(41525/41812)" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte finite element metoden til at opstille numeriske modeller for vibrationsproblemer" />
+          <Txt Lang="en-GB" Txt="Apply the finite element method to formulate numerical models for vibration problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Løse problemer med tvungne svingninger vha. direkte metoder, modal superposition og reduktionsmetoder" />
+          <Txt Lang="en-GB" Txt="Solve forced vibration problems using direct methods, modal superposition and advanced reduced order models (ROM) such as super-element methods (Craig-Bampton) and the second-order-Arnoldi-method (SOAM)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for og implementere forskellige materiale modeller herunder dæmpningmodeller" />
+          <Txt Lang="en-GB" Txt="Evaluate and implement various material models including different damping models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille og evaluere effekt-flow ligninger baseret på en finite element model" />
+          <Txt Lang="en-GB" Txt="Set up and evaluate power flow equations based on a finite element model" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne fordelingen af kinetisk, potentiel og dissiperet energi i vibrerende strukturer" />
+          <Txt Lang="en-GB" Txt="Compute spatial distributions of kinetic, potential and dissipated energy for vibrating structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere absorberende randbetingelser for bølgeudbredelsesproblemer" />
+          <Txt Lang="en-GB" Txt="Formulate and implement absorbing boundary conditions for wave propagation problems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beregne energiflowet i vibrerende strukturer" />
+          <Txt Lang="en-GB" Txt="Compute the energy flow in a vibrating structure" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opstille finite element modeller for interaktionen mellem en vibrerende struktur og et akustisk medie" />
+          <Txt Lang="en-GB" Txt="Formulate finite element models for the interaction between a vibrating structure and an acoustic medium" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere og løse egenværdiproblemer og tvungne vibrationsproblemer med akustisk interaktion" />
+          <Txt Lang="en-GB" Txt="Perform eigenvalue and forced vibration analysis for mechanical structures involving acoustic interaction" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Opbygge komplekse finite element modeller til at løse akustisk-mekaniske interaktionsproblemer på mikroskala" />
+          <Txt Lang="en-GB" Txt="Construct complex finite element models for solving acoustic-mechanical interaction problems at micro scale." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Avanceret finite element analyse for vibrationsproblemer og akustisk kobling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:01.89" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

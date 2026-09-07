@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62T38" Volume="2026/2027" University="dtu" LastUpdated="2025-07-02+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Sikker implementering af systemer" />
+        <Title Lang="en-GB" Title="Secure implementation of systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="6 undervisningsgange én ugentlig hverdag kl 17.00-20.30. Start: Se hjemmesiden." />
+          <Schedule_Txt Lang="en-GB" Txt="Lectures one day weekly at 17.00-20.30 during 6 weeks. Start: Look at the home page." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="78757" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Tange</FamilyName>
+            <Email>htan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="78833" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lynn</GivenName>
+            <FamilyName>Eriksen</FamilyName>
+            <Email>lyka@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Mundtlig prøve kombineret med skriftlig projektopgave. Eksamen kan gennemføres individuelt eller i en gruppe på 2 eller 3 studerende. Opgavens omfang: 1 studerende: op til 5 normalsider, 2 studerende: op til 8 normalsider og 3 studerende: op til 11 normalsider." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Oral exam combined with written project assignment. Exams can be completed individually or in groups of 2 or 3 students. Scope of the assignment: 1 student: up to 5 pages, 2 students: up to 8 pages and 3 students: up to 11 pages." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Provided by DTU Learn for Life" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Eksamen planlægges af sekretariatet på DTU Learn for Life." />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="Ca. 3 uger før kursusstart" />
+            <DeadLineTxt Lang="en-GB" Txt="App. 3 weeks before teaching starts." />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_DEPARTMENT" />
+            <Supp_Txt Lang="da-DK" Txt="https://lifelonglearning.dtu.dk/engineering-technology/diplom/sikker-implementering-af-systemer/" />
+            <Supp_Txt Lang="en-GB" Txt="https://lifelonglearning.dtu.dk/engineering-technology/diplom/sikker-implementering-af-systemer/" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Indhold:
+- Sikkert systemdesign
+- Cyber Security Framework (NIST)
+- Cyber risiko og modsvar 
+- Sikkerhedsdokumentation</Contents>
+          <Teaching_And_Learning_Methods>Forelæsning, gruppeøvelser og -diskussioner, egne cases, eksperimenter og kobling til egen ledelsespraksis.</Teaching_And_Learning_Methods>
+          <Course_Literature>https://www.polyteknisk.dk/home/akademi/cv</Course_Literature>
+          <Course_Objectives>Når virksomheden skal sikre data under transport og opbevaring, er det vigtigt at vælge en sikker og tilstrækkelig hurtig kryptografisk algoritme. For at kunne træffe et fornuftigt valg er det nødvendigt at kende de mest brugte algoritmer. Det er ligeledes vigtigt at sikre en sikker opbygning af netværk og databaser. 
+Det er ligeledes nødvendigt at arbejde med strategisk planlægning indenfor cyber security. 
+Kurset giver et overblik over sikker netværksopbygning og dataopbevaring samt  de mest brugte sikkerhedsalgoritmer. Kurset har introduktion symmetriske og asymmetriske algoritmer samt ECC (Elliptic Curve Cryptography). Derudover har kurset en gennemgang HASH algoritmer samt brug af digitale signaturer. På kurset gennemgås de mest brugte sikkerhedsprotokoller (Diffie-Hellman nøgledistribution, Kereberos, X.509, PgP, SSL/TLS). På kurset arbejdes der ligeledes med implementation af backup systemer og brug af honeypots.
+På kurset benyttes Cybersecurity Framework fra NIST. Dette framework benyttes til at identificere sikkerhedsrisici og skabe beskyttelsesstrategier samt strategier til at kunne opdage cybersecurity hændelser i systemet.</Course_Objectives>
+          <Remark>DTU Engineering Technology efteruddannelse
+Valgmodul (vf18) , IT-Diplomuddannelsen
+AI, matematik og software</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Secure system design
+- Cyber Security Framework (NIST)
+- Cyber riscs and respond 
+- Documentation of security</Contents>
+          <Teaching_And_Learning_Methods>Teaching with lectures, group exercises and discussions, own cases, experiments and connection to own management practice.</Teaching_And_Learning_Methods>
+          <Course_Literature>https://www.polyteknisk.dk/home/akademi/cv</Course_Literature>
+          <Course_Objectives>When the company must secure data in transit and storage, it is important to choose a safe and fast cryptographic algorithm. In order to make a sensible choice, it is necessary to know the most commonly used algorithms.It is also important to create a secure network and databases.
+It is also necessary to work with strategic planning in cyber security.
+The course provides an overview of secure network and data storage as well as the most commonly used security algorithms. The course introduces symmetric and asymmetric algorithms and ECC (Elliptic Curve Cryptography). In addition, the course reviews HASH algorithms and the use of digital signatures. The course covers the most commonly used security protocols (Diffie-Hellman key distribution, Kereberos, X.509, PgP SSL / TLS). The course also contains implementation of backup systems and use of honeypots.
+The course uses Cybersecurity Framework from NIST. This framework is used to identify security risks and create protection strategies as well as strategies to detect cyber security events in the system.</Course_Objectives>
+          <Remark>DTU Engineering Technology Continuing Education
+Elective (vf18), Diploma of IT
+AI, Mathematics and Software</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Optagelse på IT-Diplomuddannelsen forudsætter:&#xD;&#xA;- At ansøgeren har gennemført en relevant adgangsgivende uddannelse mindst på niveau med en erhvervsakademiuddannelse eller en relevant videregående voksenuddannelse &#xD;&#xA;- At ansøger har mindst 2 års relevant erhvervserfaring efter gennemført adgangsgivende uddannelse" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Admission requirements:&#xD;&#xA;The applicant must have a relevant qualifying examination minimum at the level of an academy education or relevant further adult education &#xD;&#xA;- The applicant must have obtained at least two years of relevant work experience after qualifying examination" />
+        </Mandatory_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe et sikkert system" />
+          <Txt Lang="en-GB" Txt="Design  a secure system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumentere sikkerheden i et system" />
+          <Txt Lang="en-GB" Txt="Document  the secuirty in the system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå, forklare og anvende Cyber Security framework (NIST)" />
+          <Txt Lang="en-GB" Txt="Know, understand, explain and apply the Cyber Security framework (NIST)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kende, forstå og forklare de mest benyttede kryptografiske algoritmer" />
+          <Txt Lang="en-GB" Txt="Know, understand and explain the most used cryptographic algorithms" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over anvendte kryptografiske algoritmer i et system" />
+          <Txt Lang="en-GB" Txt="Reflect on the cryptographic algorithms used in a system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere sikkerhedsrisici i et system" />
+          <Txt Lang="en-GB" Txt="Identify security risks in a system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive metoder til sikring af netværk og databaser" />
+          <Txt Lang="en-GB" Txt="Describe a methodology for security of networks and databases" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Argumentere for valg af beskyttelsesstrategier " />
+          <Txt Lang="en-GB" Txt="Argue for the choice of protective strategies" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Reflektere over hvordan et modsvar (respond) vil være mod en given sikkerhedshændelse" />
+          <Txt Lang="en-GB" Txt="Reflect on how a respond will be on a given security incident" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://lifelonglearning.dtu.dk/engineering-technology/diplom/sikker-implementering-af-systemer/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="24" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="24" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="54673" PersonUniversity="dtu" Date="2026-04-30" Time="12:19:50.413" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

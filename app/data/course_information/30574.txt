@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="30574" University="dtu" LastUpdated="2026-02-24+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Jordobservation for monitorering  (EO4Change)" />
+        <Title Lang="en-GB" Title="Earth observations for monitoring changes (EO4Change)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="June" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="87949" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Sebastian Bjerregaard</GivenName>
+            <FamilyName>Simonsen</FamilyName>
+            <Email>ssim@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Grupperne giver mundtlig statuspræsentation af den endelige rapport et par dage inden aflevering. Helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The groups will give an oral status presentation of the final report, a couple of days before the final hand-in --&gt; overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="A few days before hand-in is it expected to participate oral status presentation" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Et par dage inden aflevering forventes deltagelse mundtlig status presentation" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>•	General indsigt i EO
+•	Case-driven introduktion til specifikke applikationer af EO data
+•	Introduktion til datahåndtering i Python, f.eks. EO-learn
+•	Litteratursøgning i forbindelse med algoritme udvælgelse.</Contents>
+          <Teaching_And_Learning_Methods>Forlæsninger og databehandling</Teaching_And_Learning_Methods>
+          <Course_Literature>Introduction to Satellite Remote Sensing - Atmosphere, Ocean, Cryosphere and Land Applications, Editor(s): William Emery, Adriano Camps, Elsevier, 2017, ISBN 9780128092545, https://doi.org/10.1016/B978-0-12-809254-5.12001-9.</Course_Literature>
+          <Course_Objectives>Jorden er i forandring, og mange af disse forandringer kan observeres fra satellitter. Efter et grundlæggende overblik over de forskellige observationer der er tilgængelige, samt eksempler på anvendelse, vil de studerende i grupper skulle vælge et fænomen (f.eks. skovrydning, oversvømmelser, eller istykkelse), de gerne vil observere. De skal kortlægge kravene til data (såsom tidslig og rumlig opløsning) og identificere relevante satellitmissioner. De vil herefter arbejde mere i dybeden med dette datasæt og udvikle/implementere/anvende metoder til at monitorere det valgte fænomen. Eksempler på fænomener kunne være: Skovrydning, tørke, oversvømmelser, biologisk aktivitet i havet, havisens udbredelse eller indlandsisens tykkelse. Vi vil især fokusere på data fra EU’s Kopernikus program for jordobservationer (Sentinel-missionerne), men det vil også være muligt at benytte sig af andet data, så som ICESat, MODIS eller Landsat. 
+I dette kursus vil den studerende få et overblik over mulighederne inden for satellit-baseret jordobservation (Earth Observation, EO) og være i stand til at navigere den støt voksende datamængde, der er frit tilgængeligt fra de mange dataudbydere.</Course_Objectives>
+          <DTU_Remark>Dette kursus giver studerende kompetencer, der er relevante for FN's Verdensmål for Bæredygtig Udvikling, især mål #13 (Klimaindsats), #14 (Livet under vandet) og #15 (Livet på landjorden), da alle overvåges ved hjælp af jordobservationsmetoder.</DTU_Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>•	General insight into EO
+•	Case-driven introduction to specific applications of EO data
+•	Introduction to data management in Python, e.g. EO-learn
+•	Literature search in connection with algorithm selection.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and data processing</Teaching_And_Learning_Methods>
+          <Course_Literature>Introduction to Satellite Remote Sensing - Atmosphere, Ocean, Cryosphere and Land Applications, Editor(s): William Emery, Adriano Camps, Elsevier, 2017, ISBN 9780128092545, https://doi.org/10.1016/B978-0-12-809254-5.12001-9.</Course_Literature>
+          <Course_Objectives>The Earth is changing, and these changes are clearly visible from space. Here, we will introduce some of the available satellite-based Earth observation (EO) datasets, emphasising real-life use examples. After the introduction, the students (in groups) will work more in-depth with a specific dataset to observe the most interesting phenomena (e.g., deforestation, floods, drought, ice thickness). We must identify relevant satellite missions and spatio-temporal data requirements before diving into the method development, implementation, and analysis. Examples of such projects could be, e.g., the use of NASA's ICESat-2 green-laser mission to determine Amazon deforestation, monitor drought across continents with the EU Sentinel missions, or use Sentinel-2 to see the biological activity in the world's oceans. These are just some examples of the data we aim to have the students be able to grasp and analyze. Through this course, we aim for the students to be able to navigate the growing stream of EO data freely available from different agencies and make use of them for society.</Course_Objectives>
+          <DTU_Remark>This course equips students with skills applicable to achieving the United Nations Sustainable Development Goals (SDGs), focusing specifically on SDG #13 (Climate Action), #14 (Life below water), and #15 (Life on land), all of which are monitored using Earth Observation (EO) methods.</DTU_Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende kendskab til programmering forventes (Matlab, Python eller lignende)" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A basic knowledge of programming is expected (Matlab, R, Python, or similar)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="(10020/10022/10024/10033).30350.30752 " />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="redegøre for de forskellige sensorer af relevans for jord/klima-overvågning, og evt. tekniske udfordringer" />
+          <Txt Lang="en-GB" Txt="describe the different EO platforms relevant to terrestrial/climate monitoring and possible technical challenges" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beskrive de vigtigste usikkerhedskilder" />
+          <Txt Lang="en-GB" Txt="explain the most important error sources" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende korrekte metoder i behandlingen af et specifikt EO datasæt" />
+          <Txt Lang="en-GB" Txt="apply the most suitable method to process a specific EO-dataset" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvælge et relevant EO satellit-datasæt til at studere et givent fænomen og håndtere store datamængder" />
+          <Txt Lang="en-GB" Txt="choose the most suitable EO-dataset for studying a given phenomenon" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere et EO datasæt med det formål at monitorere et givent fænomen på jorden" />
+          <Txt Lang="en-GB" Txt="analyze the EO dataset in context of monitoring a given phenomenon" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="afgøre om et udvalgt fænomen på jorden med succes kan observeres ud fra dette datasæt" />
+          <Txt Lang="en-GB" Txt="judge if the chosen phenomena can successfully be observed by the EO dataset" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forsvare og argumentere for de valgte metoder og det valgte datasæt" />
+          <Txt Lang="en-GB" Txt="defend and argue for the choice of method and data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="designe et oplæg til operationalisering af observationerne som f.eks Copernicus-tjenesten." />
+          <Txt Lang="en-GB" Txt="develop a draft plan for the analyzed EO dataset as an operational service within e.g. Copernicus." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Jordobservations data for monitorering af ændringer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="18" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="2" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:18.69" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

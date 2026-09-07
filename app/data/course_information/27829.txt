@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="27829" Volume="2026/2027" University="dtu" LastUpdated="2026-08-05+02:00">
+        <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Good Enough Software Engineering for Bioinformaticians" />
+        <Title Lang="en-GB" Title="Good Enough Software Engineering for Bioinformaticians" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="ServiceCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="21-25 September 2026 + 2 October 2026&#xD;&#xA;Four and a half days of interactive teaching, 9:00-16:00, followed by project work period and presentation." />
+          <Schedule_Txt Lang="en-GB" Txt="21-25 September 2026 + 2 October 2026&#xD;&#xA;Four and a half days of interactive teaching, 9:00-16:00, followed by project work period and presentation." />
+          <Schedule ScheduleKey="E" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="27" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Bioengineering" />
+        <Course_Responsible PersonKey="101881" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Kai</GivenName>
+            <FamilyName>Blin</FamilyName>
+            <Email>kblin@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="116655" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Simon</GivenName>
+            <FamilyName>Shaw</FamilyName>
+            <Email>sisha@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Students build a small project using the knowledge acquired in the course and present their implementation to their peers." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Students build a small project using the knowledge acquired in the course and present their implementation to their peers." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Right after the course" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Right after the course" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <DeadLine>
+            <DeadLineTxt Lang="da-DK" Txt="The registration period is open: 23/8-14/9" />
+            <DeadLineTxt Lang="en-GB" Txt="The registration period is open: 23/8-14/9" />
+          </DeadLine>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="DTU PhD students must register for this course through the Study Planner.&#xD;&#xA;&#xD;&#xA;In case of problems regarding the registration, please contact study officer Birgitte Kolby Karsbøl, bkka@dtu.dk" />
+            <Supp_Txt Lang="en-GB" Txt="DTU PhD students must register for this course through the Study Planner.&#xD;&#xA;&#xD;&#xA;In case of problems regarding the registration, please contact study officer Birgitte Kolby Karsbøl, bkka@dtu.dk" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>This course offers a practical, language-independent introduction to software design, tailored for PhD students who want to build robust, maintainable tools to support their research. Unlike traditional programming courses that focus on syntax and language-specific features, this course emphasises the underlying principles of software design that apply across all programming languages. Whether you're working in Python, R, Java, or any other language, the skills developed here will help you structure your code and data more effectively.
+The course is ideal for students who have basic programming experience but want to deepen their understanding of how to approach software development tasks methodically and thoughtfully. By focusing on design rather than implementation, students will learn how to think like software architects—making their future coding efforts more efficient, scalable, and user-friendly.
+
+# Course Structure:
+The course is divided into four core modules, each taught over one day:
+
+## Problem Decomposition
+Learn how to break down complex tasks into manageable components. Exercises will challenge students to model everyday activities (e.g., grocery shopping) as structured problems, revealing hidden complexity and encouraging systematic thinking.
+
+## Communication and Usability of Results
+Explore how to present data and results effectively to diverse audiences. Topics include designing outputs for human readability, machine parsing, and accessibility. Students will practice creating interfaces that prioritise clarity and usability.
+
+## Data Structures
+Understand how to organise and store data in ways that support efficient access and manipulation. Through relatable exercises (e.g., modelling the contents of a kitchen or a backpack), students will learn how to design data structures that reflect real-world relationships.
+
+## Software Design
+Dive into the principles of good software design, including requirements analysis, input validation, testing strategies, and basic concepts like programming by contract and invariance. Students will work with pseudo-code to identify flaws and design robust solutions.
+
+## Final Project:
+Following the teaching component, students will collaborate in a half-day session to define the requirements for a final project. Over the next five days, they will apply course concepts to outline and partially implement a software tool relevant to their own research. The course concludes with a half-day of project presentations, where students share their design decisions and reflect on the development process.</Contents>
+          <Teaching_And_Learning_Methods>Four days of in-person teaching, then the students spend half a day discussing and planning their projects in groups, five days to work on the project, and half a day to present their implementations.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This PhD-level course provides a language-independent foundation in software design, equipping students with the skills to structure code and data effectively for research-driven tool development. By focusing on core principles such as problem decomposition, data organization, usability, and testing, students learn to approach software challenges methodically, regardless of the programming language used. The course includes in a hands-on project, allowing participants to apply these concepts to real-world tasks in their own research.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course offers a practical, language-independent introduction to software design, tailored for PhD students who want to build robust, maintainable tools to support their research. Unlike traditional programming courses that focus on syntax and language-specific features, this course emphasises the underlying principles of software design that apply across all programming languages. Whether you're working in Python, R, Java, or any other language, the skills developed here will help you structure your code and data more effectively.
+The course is ideal for students who have basic programming experience but want to deepen their understanding of how to approach software development tasks methodically and thoughtfully. By focusing on design rather than implementation, students will learn how to think like software architects—making their future coding efforts more efficient, scalable, and user-friendly.
+
+# Course Structure:
+The course is divided into four core modules, each taught over one day:
+
+## Problem Decomposition
+Learn how to break down complex tasks into manageable components. Exercises will challenge students to model everyday activities (e.g., grocery shopping) as structured problems, revealing hidden complexity and encouraging systematic thinking.
+
+## Communication and Usability of Results
+Explore how to present data and results effectively to diverse audiences. Topics include designing outputs for human readability, machine parsing, and accessibility. Students will practice creating interfaces that prioritise clarity and usability.
+
+## Data Structures
+Understand how to organise and store data in ways that support efficient access and manipulation. Through relatable exercises (e.g., modelling the contents of a kitchen or a backpack), students will learn how to design data structures that reflect real-world relationships.
+
+## Software Design
+Dive into the principles of good software design, including requirements analysis, input validation, testing strategies, and basic concepts like programming by contract and invariance. Students will work with pseudo-code to identify flaws and design robust solutions.
+
+## Final Project:
+Following the teaching component, students will collaborate in a half-day session to define the requirements for a final project. Over the next five days, they will apply course concepts to outline and partially implement a software tool relevant to their own research. The course concludes with a half-day of project presentations, where students share their design decisions and reflect on the development process.</Contents>
+          <Teaching_And_Learning_Methods>Four days of in-person teaching, then the students spend half a day discussing and planning their projects in groups, five days to work on the project, and half a day to present their implementations.</Teaching_And_Learning_Methods>
+          <Course_Objectives>This PhD-level course provides a language-independent foundation in software design, equipping students with the skills to structure code and data effectively for research-driven tool development. By focusing on core principles such as problem decomposition, data organization, usability, and testing, students learn to approach software challenges methodically, regardless of the programming language used. The course includes in a hands-on project, allowing participants to apply these concepts to real-world tasks in their own research.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Participants should know how to program in a common programming language such as Python, C/C++, Java, or similar." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Participants should know how to program in a common programming language such as Python, C/C++, Java, or similar." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Problem Decomposition Students will be able to break down complex tasks into manageable sub-problems and identify hidden complexity in seemingly simple challenges." />
+          <Txt Lang="en-GB" Txt="Problem Decomposition Students will be able to break down complex tasks into manageable sub-problems and identify hidden complexity in seemingly simple challenges." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="User-Centric Communication Students will learn to design outputs that are accessible and usable for diverse audiences, considering factors like domain knowledge, disabilities, and downstream tool compatibility." />
+          <Txt Lang="en-GB" Txt="User-Centric Communication Students will learn to design outputs that are accessible and usable for diverse audiences, considering factors like domain knowledge, disabilities, and downstream tool compatibility." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Data Structure Design Students will be able to organise and store data effectively by selecting appropriate structures that reflect real-world relationships and support robust access." />
+          <Txt Lang="en-GB" Txt="Data Structure Design Students will be able to organise and store data effectively by selecting appropriate structures that reflect real-world relationships and support robust access." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Software Design Principles Students will gain awareness of key software design components such as requirements analysis, input validation, and testing strategies, and apply them to small-scale tools." />
+          <Txt Lang="en-GB" Txt="Software Design Principles Students will gain awareness of key software design components such as requirements analysis, input validation, and testing strategies, and apply them to small-scale tools." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Testing and Validation Students will be able to construct meaningful tests for software components, including unit and regression tests, and understand the role of automated testing pipelines." />
+          <Txt Lang="en-GB" Txt="Testing and Validation Students will be able to construct meaningful tests for software components, including unit and regression tests, and understand the role of automated testing pipelines." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programming by Contract and Invariance Students will understand foundational concepts like invariance and programming by contract, and apply them to ensure software reliability and maintainability." />
+          <Txt Lang="en-GB" Txt="Programming by Contract and Invariance Students will understand foundational concepts like invariance and programming by contract, and apply them to ensure software reliability and maintainability." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Computational Complexity Awareness Students will be able to recognize computationally expensive implementations, identify common performance bottlenecks, and apply profiling techniques to optimise code." />
+          <Txt Lang="en-GB" Txt="Computational Complexity Awareness Students will be able to recognize computationally expensive implementations, identify common performance bottlenecks, and apply profiling techniques to optimise code." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Project Planning and Implementation Students will be able to outline and partially implement a software project using the methodologies learned, demonstrating their ability to apply design principles to real-world research tasks." />
+          <Txt Lang="en-GB" Txt="Project Planning and Implementation Students will be able to outline and partially implement a software project using the methodologies learned, demonstrating their ability to apply design principles to real-world research tasks." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="28" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="10" Min="3" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-08-21" Time="15:35:34.497" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

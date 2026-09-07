@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02328" Volume="2026/2027" University="dtu" LastUpdated="2026-03-23+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Digital elektronik" />
+        <Title Lang="en-GB" Title="Digital electronics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="2340" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Flemming</GivenName>
+            <FamilyName>Stassen</FamilyName>
+            <Email>flst@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="6158" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Edward Alexandru</GivenName>
+            <FamilyName>Todirica</FamilyName>
+            <Email>eato@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter gives på baggrund af en helhedsvurdering (skriftlig eksamen og projektrapport)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on all results in their entirety (written exam and project report)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• FSM (endelig tilstandsmaskine) og FSMD (endelig tilstandsmaskine med datavej).
+• Hardware design ved brug af hardware-beskrivende sprog (p.t. VHDL).
+• FPGA teknologi: struktur og virkemåde. 
+• Laboratorieøvelser dækkende VHDL og CAD-værktøjer til simulering, syntese og prototype udvikling ved FPGA technology (p.t. Xilinx).</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projekt</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets formål er at sætte den studerende i stand til at analysere, designe, simulere, implementere, afprøve og dokumentere
+- digitale systemer på Register Transfer Level (RTL) niveau
+- synkrone sekvensmaskiner 
+under anvendelse af rekonfigurerbar hardware.
+
+Kurset sætter deltagerne i stand til at analysere, designe, simulere, implementere, afprøve og dokumentere digitale kredsløb, som foretager simple beregninger eller simple styringsopgaver ved anvendelse af gængse syntese- og simuleringsværktøjer (p.t. VHDL og Xilinx Vivado) og at realisere disse kredsløb i rekonfigurerbar hardware (FPGA-teknologi).</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• FSM (Finite state machine) and FSMD (Finite state machine with datapath).
+• Hardware design using hardware description language (currently VHDL).
+• FPGA technology: Basics of structure and principles of operation. 
+• Lab exercises covering VHDL and related CAD-tools for simulation, synthesis and prototype implementation using FPGA technology (currently Xilinx).</Contents>
+          <Teaching_And_Learning_Methods>Lectures, lab exercises and project</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to provide the participants the skills how to analyse, design, simulate, implement, test and document
+- Digital systems at Register Transfer Level (RTL)
+- Synchronous sequential circuits 
+using reconfigurable hardware.
+
+The course provides the participants the competences necessary to design digital circuits that perform simple calculations or control tasks using typical synthesis and simulation tools (currently VHDL and Xilinx Vivado), and to implement these circuits using reconfigurable hardware (FPGA technology)</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegør for de grundlæggende begreber og antagelser omkring synkrone digitale kredsløb – den 'diskrete abstraktion' samt den grundlæggende struktur ved brug af logiske funktioner (kombinatoriske kredsløb) og hukommelseselementer (flip-flops)." />
+          <Txt Lang="en-GB" Txt="Explain the fundamental concepts and assumptions regarding synchronous digital circuits – the 'discrete abstraction' as well as the basic structure using logical functions (combinatorial circuits) and memory elements (flip-flops)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar virkemåde og realisering af digitale kredsløb opbygget af logiske porte (som AND, OR, NOT, NAND, NOR) og oversæt mellem logiske udtryk (boolesk algebra) og digitale kredsløb." />
+          <Txt Lang="en-GB" Txt="Explain the functioning and realization of digital circuits built from logic gates (such as AND, OR, NOT, NAND, NOR) and translate between logical expressions (Boolean algebra) and digital circuits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar virkemåde og realisering af grundlæggende hukommelseselementer (D flip-flop og D-latch)." />
+          <Txt Lang="en-GB" Txt="Explain the operation and implementation of fundamental memory elements (D flip-flop’s and D-latches)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegør for opbygning og virkemåde af synkrone tilstandsmaskiner samt beskrive trin for trin, hvorledes en sådan tilstandsmaskine designes (tilstandsgraf, tilstandstabel, tilstandsminimering, tilstandskodning, etc.)." />
+          <Txt Lang="en-GB" Txt="Explain the structure and operation of a synchronous finite state machine, and explain step-by-step how such a finite state machine is designed (state graph, state table, state minimization, state encoding, etc.)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Omsæt et verbalt designoplæg til en specifikation af et digitalt kredsløb ved brug af Boolesk algebra, sandhedstabeller, tilstandsgrafer m.v. og efterfølgende  syntetisere og implementere kredsløbet." />
+          <Txt Lang="en-GB" Txt="Transform a verbal description of an intended circuit into a specification using Boolean algebra, truth tables, state-graphs, etc., and subsequently synthesize and implement the circuit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrer grundlæggende kendskab til simulerings- og synteseværktøjer for digitale kredsløb, og herunder beskriv mindre kredsløb i et hardwarebeskrivende sprog (som f.eks. VHDL)." />
+          <Txt Lang="en-GB" Txt="Demonstrate basic knowledge of simulation and synthesis tools for digital circuits, including the ability to describe smaller circuits using a hardware description language (such as VHDL)." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Definer og forklar/redegør for tidsparametre for komponenter på RTL-niveau (registre og logik) samt på baggrund af disse at beregne kritiske signalveje for et givent sekventielt kredsløb og bestemme den mindst mulige periodetid for kloksignalet." />
+          <Txt Lang="en-GB" Txt="Define and explain timing parameters for RTL-level components (registers and logic). Use these parameters to calculate the critical signal paths in a given sequential circuit, and determine the minimum achievable possible clock period for the circuit." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar opbygning og virkemåde af et sekventielt kredsløb bestående af en datavej og en tilhørende tilstandsmaskine/​kontrolenhed samt designe en sådan FSMD-realisering af simple algoritmer og styringskredsløb" />
+          <Txt Lang="en-GB" Txt="Explain the structure and operation of a sequential circuit consisting of a datapath and a finite state machine control unit and design such FSMD implementations of simple algorithms and control circuits." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar fænomenet metastabilitet." />
+          <Txt Lang="en-GB" Txt="Explain the phenomenon metastability." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analyser, opdel og implementer et hardwareprojekt i samarbejde med 1 til 2 medstuderende." />
+          <Txt Lang="en-GB" Txt="Act as a member of a small design-team (2-3 students) and participate constructively in its management." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Dokumenter et sådant designarbejde i en teknisk rapport." />
+          <Txt Lang="en-GB" Txt="Document a design project in a technical report." />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="http://courses.compute.dtu.dk/02320" />
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="02311. 01904" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02138. 30081. 34331" />
+        <PreviousCourse CourseCode="02320" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:31.183" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="46735" University="dtu" LastUpdated="2026-04-15+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Vindmøller, PV og Elektriske Energilagring drivetrains" />
+        <Title Lang="en-GB" Title="Wind, solar and energy storage electrical drive trains" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="49626" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Nenad</GivenName>
+            <FamilyName>Mijatovic</FamilyName>
+            <Email>nemi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="161193" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Miguel</GivenName>
+            <FamilyName>Lopez</FamilyName>
+            <Email>melga@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="158073" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Pere Izquierdo</GivenName>
+            <FamilyName>Gómez</FamilyName>
+            <Email>pizgo@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Only group report can be used during the exam." />
+            <Aid_Txt Lang="da-DK" Txt="Kun grupperepport kan bruges under eksam." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt=" ~1 time pr. Gruppe" />
+          <Duration Lang="en-GB" Txt="~1h per group " />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer på styring og drift af elektriske komponenter og delsystemer til vind- og solgenerering samt batterilagringsteknologien. Den studerende vil få indsigt i vindmøllegeneratordrift og netbundet konverterdrift og styring, drift og styring af elektrisk energilagringssystem samt drift og styring af solcelleanlæg.
+
+Eleverne vil få mulighed for at opnå viden i rækken af guidede eksperimentelle projekter, som vil give dem mulighed for at blive fortrolige med de fleste relevante tekniske systemer i nuværende/fremtidigt elsystem. De studerende vil arbejde i grupper på hvert teknisk/eksperimentelt projekt i 2-3 uger, hvorefter de vil rotere til de nye opstillinger. På den måde vil alle elever opleve alle projekter i rotation.
+
+De projekter, som studerende skal arbejde på, vil blive realiseret med hensyn til systemanvendelse (WT, PV...), såsom dem, der er nævnt i Almindelige kursusmål. Det underliggende fællestræk blandt disse er de komponenter, der bruges til at etablere disse systemer, såsom elektriske strømomformere, maskine, passive komponenter, batterier, PV paneler.... Den studerende vil således have mulighed for at arbejde med de samme komponenter i forskellige applikationer/kontekster , som giver en forståelse af de grundlæggende komponenter og deres driftsprincipper.
+
+De eksperimentelle projekter vil blive udført ved hjælp af både simuleringsplatforme (Simulink/MatLab, LabView og Comsol) og laboratorieopsætninger med indlejrede controllere (dSpace og cRIO) og vil danne basis for en endelig rapport, som eleverne skal præsentere og forsvare som en gruppe .</Contents>
+          <Teaching_And_Learning_Methods>Vejledende simuleringer og eksperimenter fungerer i laboratoriet.</Teaching_And_Learning_Methods>
+          <Course_Literature>Power Conversion and Control of Wind Energy Systems, by Bin Wu</Course_Literature>
+          <Course_Objectives>Formålet med kurset er at sætte de studerende i stand til at lære om forskellige koncepter for drift af elektriske drivlinjer i en vindmølle, PV-installationer og energilagringsteknologi.
+
+Nogle af aspekterne af drivlinjedesignet, der behandles i kurset, omfatter princippet om drift, design og dimensioneringsovervejelser af generatorer, effektelektroniske omformere (AC/DC og DC/DC) og andre komponenter, samt forståelse af kontrolskemaer, der binder komponenter sammen i tilhørende systemer (vindmølle, solcelleanlæg, elektrisk lagersystem).
+
+Efter dedikerede indledende forelæsninger, hvor vi vil introducere vigtige aspekter af hovedkomponenter for hvert større drivlinjekoncept, vil de studerende have mulighed for at arbejde med flere teknologiapplikationer gennem sekvensen af 2-3 ugers eksperimentelle projekter. Nogle eksempler på eksperimentelle projekter inkluderer:
+- Vindmøllegenerator karakterisering, analyse og drift, implementering af analyse og Maximum Power Point Tracking
+- Implementering af feltorienteret hastighedskontrol til elektriske maskiner (som generatorer og EV-traktionsmotorer),
+- Sammenligning mellem PI-controller og Model Predictive Control af UPS-strømkonvertere
+- Isoleret grid (ø) drift &amp; kontrol
+- Aktiv Front End (AFT) konverterstyring
+- PV og lager DC/DC konverter drift,
+- Implementering af PV MPPT kontrolskema mm
+
+Det videre kursusmål er at sætte studerende i stand til at blive fortrolige, dygtige og komfortable med at arbejde med eksperimentel opsætning og forstå, hvordan man korrekt kvalificerer kvaliteten af resultaterne (nøjagtighed, tolerancer, medafhængighed mellem testparametre...).</Course_Objectives>
+          <Remark>E-læring anvendes i form af MS teamgruppe og adgang til simulerings-/styringsværktøjer</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course focuses on control and operation of electrical components and subsystems of wind and solar generation as well as the battery storage technology. The student will gain insight into the overview of wind turbine generator drivetrain and grid tied converter operation and control, electric energy storage system operation and control and PV system operation and control.
+
+Students will get the opportunity to gain knowledge in the series of guided experimental projects, which will allow them to get familiar with most relevant technical systems in current/emerging in power system. Students, organized in groups will work on each technical/experimental project for 2-3 weeks after which they will rotate to the new setups. In this way, all students will experience all projects in rotation. 
+
+Technical projects students will be working on will be realized in terms of system application (WT, PV...), such as the ones mentioned in General Course Objectives. The underlying commonality among these are the components used to establish these systems, such are electrical power converters, machine, passive components, batteries, PV panels.... Thus, student will have the opportunity to work with same components in different applications/contexts, fortifying the components basics and principle of operation. 
+
+The experimental projects will be carried out using both simulation platforms (Simulink/MatLab, LabView and Comsol) and laboratory setups featuring embedded controllers (dSpace and cRIO) and will be base for a final report, students will need to present and defend as a group.</Contents>
+          <Teaching_And_Learning_Methods>Guided simulations &amp; experiments work in the laboratory.</Teaching_And_Learning_Methods>
+          <Course_Literature>Power Conversion and Control of Wind Energy Systems, by Bin Wu</Course_Literature>
+          <Course_Objectives>The objectives of the course are to enable students to learn about various concepts of operation of electrical drivetrains in wind turbines, PV installations and energy storage technology.
+
+Some of the aspects of the drivetrain design addressed in the course, include principle of operation, designing and sizing considerations of generators, power electronic converters (AC/DC and DC/DC) and other components, as well as understanding of control schemes that tie components together in associated systems (wind turbine, PV system, Electrical Storage System).
+
+After dedicated introductory lectures where we will introduce important aspects of major components for each major drivetrain concepts, students will have the opportunity to work with several technology applications through the sequence of 2-3 week experimental projects. Some examples of experimental project include:
+-	Wind Turbine generator characterization, analysis and operation, implementation and analysis of Maximum Power Point Tracking
+-	Implementation of Field Oriented speed control for electrical machines (as generators and EV traction motors),
+-	Comparison between PI controller and Model Predictive Control of UPS power converters
+-	Isolated grid (island) operation &amp; control
+-	Active Front End (AFT) converter control
+-	PV and storage DC/DC converter operation,
+-	Implementation of PV MPPT control schema 
+
+
+The further course objective is to enable students to get familiar, capable and comfortable working with experimental setup and understand how to properly qualify the quality of the findings (accuracy, tolerances, co-dependency among test parameters... ).</Course_Objectives>
+          <Remark>E-learning is used in the form of MS team group and access to simulation/control tools</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om kraftsystemer, højeffektelektronik, elektriske kredsløb, elektriske maskiner og lignende angivne kurser" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge to power systems, high power electronics, electric circuits and electrical machines similar indicated courses" />
+          <DTU_CoursesTxt Lang="da-DK" Txt="46700.46725.46550.46300" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstår principperne for elektriske og styresystemers drift af moderne vindmøller, PV-installationer og elektrisk batteriopbevaring." />
+          <Txt Lang="en-GB" Txt="Understands the principles of electrical and control system operations of modern Wind Turbines, PV installations and Battery Electrical Storage." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og beskrive steady state og dynamiske modeller af de elektriske komponenter (ækvivalente kredsløb, kontrolskemaer) og bruge dem til at" />
+          <Txt Lang="en-GB" Txt="Understand and describe the steady state and dynamic models of the electrical components (equivalent circuits, control schemes) and use them to " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simuler komponenterne i de elektriske systemer til vedvarende energi (f.eks. moderne multi-MW vindmøller eller en del af PV-farminstallationen) for at vurdere ydeevnen af deres drift." />
+          <Txt Lang="en-GB" Txt="Simulate the Renewable Energy electrical systems drivetrains components (e.g. modern multi-MW wind turbines or part of the PV farm installation) to assess the performance of their operation. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Lær og implementer kontrolkoncepter for vedvarende energisystemer som Maximal Power Point Tracking til vind- og solsystemer, feltorienteret kontrol / vektorstyring af motordrev og aktive frontend-nettilsluttede omformere." />
+          <Txt Lang="en-GB" Txt="Learn and implement control concepts for Renewable Energy systems like Maximal Power Point Tracking for wind and solar systems, Field Oriented Control / Vector Control of motor drives and Active Front End grid connected converters." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere erhvervet viden i laboratoriet og evaluere ydeevnen af systemer baseret på simuleringer, sammenlignende analyse med eksperimentel validering" />
+          <Txt Lang="en-GB" Txt="Demonstrate acquired knowledge in laboratory and evaluate the performance of systems based on simulations, comparative analysis with experimental validation" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere erhvervet viden i laboratorieeksperimentel opsætning eller high fidelity simuleringsmodel (fx: implementering af MPPT kontrol til WT, FOC konverter kontrol (AC eller DC) baserede systemer," />
+          <Txt Lang="en-GB" Txt="Demonstrate acquired knowledge in laboratory experimental setup or high fidelity simulation model (eg: implementation of MPPT control for WT, FOC converter control (AC or DC) based systems, " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive klare tekniske rapporter og " />
+          <Txt Lang="en-GB" Txt="Write clear technical reports and" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Arbejde effektivt som en del af et team" />
+          <Txt Lang="en-GB" Txt="Work effectively as part of a team" />
+        </DTU_ObjectiveKeyword>
+        <Mandatory_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="46300" />
+        </Mandatory_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
+          <OpenUniversity>
+            <SubTitle>Vindmøller, elektrisk design</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="16" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:49.27" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

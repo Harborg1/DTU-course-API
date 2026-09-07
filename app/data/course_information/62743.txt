@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="62743" University="dtu" LastUpdated="2026-03-10+01:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Digital signalbehandling" />
+        <Title Lang="en-GB" Title="Digital Signal Processing" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Bemærk: Der er tilknyttet CDIO kursus 62739 i 3 ugers perioden i januar" />
+          <Schedule_Txt Lang="en-GB" Txt="Notice: A CDIO course 62739 placed in the 3 week period in January is associated with the course" />
+          <Schedule ScheduleKey="E3A" SortID="0" />
+          <Schedule ScheduleKey="E2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="50" KVL_Resources="100" />
+          <Ass_Dep UID="34" Resources="50" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="145690" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Iver Mølgaard</GivenName>
+            <FamilyName>Ottosen</FamilyName>
+            <Email>ivot@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="22865" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lars Søgaard</GivenName>
+            <FamilyName>Rishøj</FamilyName>
+            <Email>lris@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="154303" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Maryamsadat</GivenName>
+            <FamilyName>Tahavori</FamilyName>
+            <Email>marta@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den skriftlige eksamen og én opgave i undervisningen (pen og papir) tæller med i den endelige evaluering/karakter. Samlet bedømmelse." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The written exam, and one in the class (pen and paper) assignment count towards the final evaluation/grade. Overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til og anvendelse af Matlab ved signalbehandling.
+
+Klassifikation af signaler i tid og frekvens, kontinuert og diskret tid.
+
+Impuls og frekvens respons.
+
+z-transformation.
+
+Sampling (A/D) og rekonstruktion af signaler f.eks. tale (D/A)
+
+Fourier serier, Fourier transformation, DFT, DTFT.
+
+FFT applikationer.
+
+Lineære systemer.
+
+Fordele ved digital signalbehandling sammenlignet med analog signalbehandling.
+
+Oversampling, opsampling, nedsampling samt kombinationer i multi-rate systemer.
+
+Design af digitale filter, FIR og IIR, samt karakterisering af filter egenskaberne.
+
+Beregningseffektive spektralanalysemetoder såsom FFT</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og regneøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at sætte den studerende i stand til at beherske disciplinerne: lineære systemer, digital signalbehandling og anvendelse af digitale signalprocessorer.
+
+Herved opnår den studerende forståelse og anvendelsesviden om de grundlæggende metoder og signalbehandlingsalgoritmer, der indgår i elektroniske produkter, informationsteknologiske systemer, kommunikationssystemer og medicinske systemer.</Course_Objectives>
+          <Remark>Sektion for Mekanisk teknologi (50); Institut for Elektroteknologi og Fotonik (50)
+Elektroteknologi: 3. semester
+
+Matlab vil blive benyttet fra den første forelæsning, hvorfor den studerende bør sikre sig at have adgang til Matlab på deres labtop fra semesterstart.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to and application of Matlab in signal processing.
+
+Classification of signals in time and frequency, continuous- or discrete time.
+
+Impulse- and frequency response.
+
+z-transformation.
+
+Sampling (A/D) and reconstruction of signals such as e.g.  speech (D/A).
+
+Fourier series, Fourier transform, DFT, DTFT.
+
+FFT applications.
+
+Linear systems.
+
+Advantages of digital signal processing against analog signal processing.
+
+Oversampling, up-sampling, down-sampling and combinations in terms of multi-rate systems.
+
+Design digital filters, FIR and IIR, and characterise the filter properties.
+
+Computational efficient spectral analysis methods, such as FFT.</Contents>
+          <Teaching_And_Learning_Methods>Lectures and exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of the course is to enable the student to master the following disciplines: linear systems, digital signal processing, and application of digital signal processors.
+
+Thus the student achieves understanding and application knowledge about the fundamental methods and signal processing algorithms for electronic products, it-systems, communication systems, and medical systems.</Course_Objectives>
+          <Remark>Section of Mechanical Technology (50); Department of Electrical and Photonics Engineering (50)
+Elektroteknologi: 3. semester
+
+Matlab will be used from the very first lecture so the student should make sure to have access to Matlab on their laptops at the semester start.</Remark>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt=" Klassificere og karakterisere diskrete tidssignaler og systemer." />
+          <Txt Lang="en-GB" Txt="Classify and characterise discrete time signals and systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere diskret tidssignaler og diskret tidssystemer i tids-, z- og frekvensdomænet." />
+          <Txt Lang="en-GB" Txt="Analyse discrete time signals and discrete time systems in time-, z-, and frequency domain." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende diskret Fourier transformation på signaler i diskret tid og beskrive det transformerede signals karakteristika. " />
+          <Txt Lang="en-GB" Txt="Apply Discrete Time Fourier Transformation on discrete time signals and review the characteristics of the transformed signal." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere et samplingsystems nødvendige samplingsfrekvens og kvantiseringsniveauer for en given kodningstype og et givent signal til kvantiseringsstøj forhold. " />
+          <Txt Lang="en-GB" Txt="Analyse a sampling system in terms of required sampling frequency and quantization levels for a predefined Signal to Quantization Noise ratio and coding scheme." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Inkludere et anti-aliasing filter i et samplingsystem og sammenholde dette med den krævede samplingsfrekvens; modificere et sampling system så oversampling, opsampling, nedsampling samt multi-rate systemer muliggøres." />
+          <Txt Lang="en-GB" Txt="Include anti-aliasing filter in sampling system and relate impact with required sampling frequency, modify sampling system to accommodate for over sampling, up-sampling, down-sampling and design systems for multi-rate systems. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe digitale filtre, FIR og IIR samt karakterisere filter egenskaberne." />
+          <Txt Lang="en-GB" Txt="Design digital filters, FIR and IIR, and characterise the filter properties." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive og analysere lineære systemer." />
+          <Txt Lang="en-GB" Txt="Describe and analyse linear systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende teorien for spektralanalyse af signaler – både i kontinuert og diskret tid." />
+          <Txt Lang="en-GB" Txt="Apply theory for spectral analysis of signals - both continuous time and discrete time." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte funktioner samt værktøjskasser fra Matlab til at implementere digital signalbehandling." />
+          <Txt Lang="en-GB" Txt="Utilise functions and tool-boxes from Matlab to implement digital signal processing" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="62735" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Digital signalbehandling</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="02451/22050/22051/30160/31038/31605/31606/62516/62525/62738" />
+        <PreviousCourse CourseCode="62738" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="130" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="130" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:08.2" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

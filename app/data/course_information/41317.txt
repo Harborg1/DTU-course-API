@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="41317" University="dtu" LastUpdated="2026-08-11+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Numerisk fluid mekanik" />
+        <Title Lang="en-GB" Title="Computational Fluid Dynamics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="41" />
+        <Course_Responsible PersonKey="6371" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Harry Bradford</GivenName>
+            <FamilyName>Bingham</FamilyName>
+            <Email>hbbi@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="I kurset løses en række opgaver, som afleveres i to korte individualiserede grupperapporter.  Karakteren er baseret på en helhedsvurdering af eksamen og de to rapporter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="A series of problems are solved and submitted as two short individualized group reports.  The final grade is based on an overall assessment of the exam and the two reports." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset fokuserer på metoder til løsning af de grundlæggende ligninger i fluid mekanikken:  Navier-Stokes ligningerne.  Vi begynder med en inviskos approksimation (en potential strømning) og arbejder videre til de fulde ligninger.  De resulterende partielle differentialligninger diskretiseres og løses ved brug af finite-difference og finite-volume metoder.  Følgende emner diskuteres:  stabilitet, numerisk diffusion, linearisering, trunkeringsfejl, konvergens og konsistens. Direkte og iterative metoder til løsning af lineære ligningssystemer er kort introduceret.  
+
+En række computer programmer opbygges til løsning af simple todimensionelle strømningsproblemer, herunder:  rørstrømning; partikelbevægelse i en potentialstrømning omkring en cylinder;  og laminære strømninger i en firkantcylinder. Der gives råd om effektiv grafisk præsentation af resultater i Python eller Matlab, og vi sammenligner med resultater fra literaturen.  Disse eksempler er brugt til at føre den studerende igennem bygningsprocessing for deres egen 2-D finite-volume method løsning til de fulde inkompressibel Navier-Stokes ligninger i Python eller MATLAB.</Contents>
+          <Teaching_And_Learning_Methods>Forlæsninger, opgaveløsning med test quizzer.</Teaching_And_Learning_Methods>
+          <Course_Literature>Noter.</Course_Literature>
+          <Course_Objectives>At opbygge en finite-volume metode til løsning af de inkompressibel Navier-Stokes ligninger i to dimensioner.  At få erfaring med opbygning af komplekse og effektive computer programmer opbygget vha. moduler i Python eller MATLAB.  At beregne eksempler på strømninger med konvektion/diffusion og med en bevægelig væg og sammenligne med resultater fra litteraturen.  At få et indblik i de nødvendige skridt der kan omdanne programmet til et "state of the art" industriel CFD program.</Course_Objectives>
+          <Remark>Praktiske øvelser udføres ved brug af Python eller Matlab.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course is focused on methods for solving the generic conservation law, and in particular its manifestation as the fundamental equations of a fluid flow:  The Navier-Stokes equations.  We begin with the inviscid approximation to these equations (a potential flow) and work up to the full equations.  The resulting partial differential equations are discretised and solved using finite difference and finite-volume methods.   The topics of: Stability, numerical diffusion, linearisation, truncation error, convergence, and consistency are discussed. Direct and iterative methods for solving linear systems of equations are briefly introduced. 
+
+A series of solvers is built up during the course and applied to some simple two-dimensional flows including:  Pipe-flow; 2D potential flows; and laminar lid driven flow in a square cylinder.  Tips are given for effective visualisation of the results using Python or Matlab, and comparison is made to benchmark results from the literature. These examples are used to guide the student through the process of building their own 2-D finite-volume method solution to the incompressible Navier-Stokes equations using Python or MATLAB.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises with sample quizzes.</Teaching_And_Learning_Methods>
+          <Course_Literature>Lecture notes.</Course_Literature>
+          <Course_Objectives>To develop a finite-volume method solution to the incompressible Navier-Stokes equations in two-dimensions.  To gain experience in building a complex computer program in a modular and effective way using Phython or MATLAB.  To compute examples of heat convection/diffusion and lid driven flows and compare with benchmark results from the literature.  To aquire insight into the steps required to turn this code into a state of the art commercial CFD code.</Course_Objectives>
+          <Remark>Problem solving using Python or Matlab.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Indledende fluid mekanik og programmering erfaring i Python eller MATLAB er forventet. Kurser i videregående fluid mekanik samt numeriske algoritmer og metoder til løsning af differentialligninger vil være en hjælp." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="A basic course in fluid dynamics along with some programming experience in Python or MATLAB is expected.  An advanced course in fluid mechanics and courses on numerical algorithms and methods for solving differential equations are all very helpful." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="41312/41102/10346.41320.02601.02002/02003" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede finite difference skemaer af arbitrær orden, i en eller flere dimensioner på uniformt eller strukket net. " />
+          <Txt Lang="en-GB" Txt="Derive finite difference schemes of arbitrary order, in any number of dimensions on uniform or non-uniform grids. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udlede finite volume skemaer af arbitrær orden på et rektangulært net. " />
+          <Txt Lang="en-GB" Txt="Derive finite volume schemes of arbitrary order on a rectangular grid.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestemme nøjagtighedsorden (trunkeringsfejl) i finite difference og finite volume skemaer og vise sammenhæng mellem dem.  " />
+          <Txt Lang="en-GB" Txt="Determine the order of accuracy (truncation error) of finite difference and finite volume schemes and show the relationship between them.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge finite difference skemaer eksplicit og implicit til at beregne og/eller løse systemer af partielle differentialligninger.  " />
+          <Txt Lang="en-GB" Txt="Apply finite difference schemes explicitly and implicitly to evaluate and/or solve systems of partial differential equations.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge et andens orden finite volume skema til at løse et partielle differentialligningssystem på bevarelsesform, særligt for de inkompressible Navier-Stokes ligninger. " />
+          <Txt Lang="en-GB" Txt="Apply a second-order finite volume scheme to solve systems of partial differential equations in conservation form including, in particular,  the incompressible Navier-Stokes equations.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge skabeloner til at bygge et klart, velorganiseret og modulært program til CFD beregniner i Python eller MATLAB.  " />
+          <Txt Lang="en-GB" Txt="Use a set of templates to build a clear, well orginized and modular program for making CFD calculations in Python or MATLAB." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge en effektiv, direkte metode til løsning af sparse lineære ligningssystemer.  " />
+          <Txt Lang="en-GB" Txt="Use an efficient direct method for solving sparse linear systems of equations.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vise konvergens i CFD beregninger for 2D laminære strømninger og sammenligne med kvantitative benchmark beregninger fra literaturen.  " />
+          <Txt Lang="en-GB" Txt="Demonstrate the convergence of CFD calculations for 2D laminar flows through a quantitative comparison with benchmarks from the litterature." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre en stabilitetsanalyse af et diskret system af partielle differentialligninger. " />
+          <Txt Lang="en-GB" Txt="Perform a linear stability analysis of a discrete solution scheme for a system of partial differential equations. " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Skrive en klar og præcis rapport om en numerisk undersøgelse. " />
+          <Txt Lang="en-GB" Txt=" Prepare a clear and concise report on a short research project.  " />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Forstå de grundlæggende numeriske metoder bag typiske kommercielle CFD software pakker</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="8" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="41319" />
+        <PreviousCourse CourseCode="41319" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="10" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="83" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="17" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-08-12" Time="10:32:26.2" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

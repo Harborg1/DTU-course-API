@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02002" Volume="2026/2027" University="dtu" LastUpdated="2026-03-25+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+        <Title Lang="da-DK" Title="Programmering (Polyteknisk grundlag)" />
+        <Title Lang="en-GB" Title="Computer Programming (Polytechnical Foundation)" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E1B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="34118" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Vedrana Andersen</GivenName>
+            <FamilyName>Dahl</FamilyName>
+            <Email>vand@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="70571" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Morten Rieger</GivenName>
+            <FamilyName>Hannemose</FamilyName>
+            <Email>mohan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="27111" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jakob Sauer</GivenName>
+            <FamilyName>Jørgensen</FamilyName>
+            <Email>jakj@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen med muligheden for at optjene ekstra point i løbet af semestret." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written exam with the possibility of obtaining extra points during the semester." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Special day: Click &quot;Date of examination&quot; to the left and find 02002 in DTU's examination timetable." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Særlig eksamensdag. Klik på linket ”Eksamensplacering” til venstre for denne tekst og find 02002 i DTU’s planlagte eksamensskema." />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Spørgsmål om kurset bedes sendes til programmering@compute.dtu.dk" />
+            <Supp_Txt Lang="en-GB" Txt="Please send questions about the course to programmering@compute.dtu.dk" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset er en introduktion til programmering, og det anvendte programmeringssprog er Python. Der undervises i de grundlæggende programmeringskoncepter: datatyper, sætninger, forgreninger og løkker samt objektorienteret programmering. De studerende lærer praktisk programmering gennem øvelser, der er baseret på problemstillinger fra ingeniørfagene. De studerende introduceres også til, hvordan man anvender pakker i Python.</Contents>
+          <Teaching_And_Learning_Methods>Ugentligt forberedende hjemmearbejde; aktiviteter i klassen, herunder quizzer, korte forelæsninger, demos og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Hovedformålet er at give de studerende det fundament for at tænke beregningsmæssigt, som skal bruges i senere kurser og når man arbejder som ingeniør. Programmering er nøglekompetencen, der behøver for at løse problemer og arbejde som ingeniør i den digitale verden. I dette kursus lærer de studerende principperne for programmering og trænes i at løse problemer gennem programmering.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course is an introduction to computer programming, and the programming language employed is Python. The basic programming concepts are taught: data types, statements, flow control, and object-oriented programming. The students are learn practical programming through exercises, which are based on problems from engineering disciplines. Students are also introduced to how to use packages in Python.</Contents>
+          <Teaching_And_Learning_Methods>Weekly preparatory homework; in-class activities including quizzes, short lectures, demos, and exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The main objective is to provide students with the foundation for computational thinking that is needed in later courses and when working as an engineer. Computer programming is the key competence needed for problem solving and engineering in the digital world. In this course, students are taught the principles of computer programming and trained in solving problems through computer programming.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="De studerende forventes at følge kurset sideløbende med Mat1a eller allerede have forudsætninger svarende til Mat1a" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The students are expected to follow this course alongside Math 1a or already have prerequisites equivalent to Math 1a" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="løse beregningsmæssige problemer med programmer" />
+          <Txt Lang="en-GB" Txt="solve computational problems using computer programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive korrekt og velfungerende kode" />
+          <Txt Lang="en-GB" Txt="write correct and well-functioning code" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere et program for at forstå hvordan en computer ville eksekvere det" />
+          <Txt Lang="en-GB" Txt="analyze a computer program in order to understand how it would be executed by a computer" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive programmer med basale typer, tildeling, udtryk, forgreninger og løkker samt funktioner og funktionskald" />
+          <Txt Lang="en-GB" Txt="write computer programs using basic types, assignments, expressions, flow control, and functions/function calls" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skive programmer, der læser input fra en fil" />
+          <Txt Lang="en-GB" Txt="write computer programs which read input from a file" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive programmer med strukturerede typer såsom tupler, lister, dictionaries og hierarkiske typer" />
+          <Txt Lang="en-GB" Txt="write computer programs which employ structured types such as tuples, list, dictionaries, and nested types" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge simple klasser" />
+          <Txt Lang="en-GB" Txt="use simple classes" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="bruge moduler (eller pakker) i computerprogrammer" />
+          <Txt Lang="en-GB" Txt="make use of modules (or packages) in computer programs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="teste funktioner for korrekthed" />
+          <Txt Lang="en-GB" Txt="test functions for correctness" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://programmering.compute.dtu.dk/ " />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <No_Credit_Points_With CourseCode="02100/02003" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="50" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:33.077" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30421" University="dtu" LastUpdated="2026-04-29+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Videregående mikrobølgeteknik og højhastighedselektronik" />
+        <Title Lang="en-GB" Title="Advanced Microwave Techniques and High Speed Electronics" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="30" />
+        <Course_Responsible PersonKey="6153" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Tom Keinicke</GivenName>
+            <FamilyName>Johansen</FamilyName>
+            <Email>tkj@space.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen vægtes med 60%, hjemmeopgaver med 20% samt projektrapport med 20%. Deltagelse i obligatoriske øvelser." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination counts 60%, home assignments 20% and project report 20%. Participation in mandatory exercises." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Design af mikrobølgefiltre, analyse af ulineære kredsløb. aktive mikrobølgekomponenter og kredsløb, design af mikrobølgetransistorforstærkere, mixere og oscillatorer. Brug af CAD til microwave kredsløb design og analyse. Signalintegritet i højhastighedselektronik. Kursusindholdet kan variere fra år til år.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, grupperegninger, projektarbejde, computerøvelser, hjemmeopgaver og labøvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Udvalgte kapitler fra D. M. Pozar, "Microwave Engineering," Wiley, 4th. edition, 2011.
+
+Udvalgte kapitler fra Hall, S.H. and Heck H.L, "Advanced Signal Integrity for High-Speed Digital Designs", Wiley, Hoboken NJ, USA, 2009 (available on-line from DTIC).</Course_Literature>
+          <Course_Objectives>At sætte deltagerne i stand til at analysere og dimensionere analoge RF og mikrobølgekredsløb med anvendelse af transmissionslinier, resonatorer, powersplittere og retningskoblere, aktive og passive komponenter samt lineære og ulineære hybride og monolitisk integrerede kredsløb. Kurset vil yderligere give deltagerene et grundlæggende kendskab til højhastighedselektronik inklusiv signalintegritet problemstillinger.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Design of microwave filters. Nonlinear microwave circuit analysis. Active microwave devices and circuits, design of microwave transistor amplifiers, mixers, and oscillators. Use of CAD for microwave circuit design and analysis. Signal integrity in high-speed electronics. The content may vary from year to year.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, group tutorials, project work, computer exercises, home assignments and lab exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Selected chapters from D. M. Pozar, "Microwave Engineering," Wiley, 4th. edition, 2011.
+ 
+Selected chapters from Hall, S.H. and Heck H.L, "Advanced Signal Integrity for High-Speed Digital Designs", Wiley, Hoboken NJ, USA, 2009 (available on-line from DTIC).</Course_Literature>
+          <Course_Objectives>To enable the participants to analyze and design analogue RF and microwave circuits using transmission lines, resonators, power dividers and directional couplers, active and passive components, and linear and nonlinear hybrid and monolithic integrated circuits. Furthermore, the course will give the participants a basic knowledge of high-speed electronics, including signal integrity problems.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Trådløs kommunikation, HF-kommunikationskredsløb og elektromagnetisme. Kendskab til halvlederkomponenters opbygning og virkemåde er en fordel. Grundlæggende kendskab til Fourier- og Laplace-transformationmetoder." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Wireless Communications, RF Communications Circuits, and Electromagnetics. Knowledge of semiconductor devices' structure and operation is an advantage. Basics of Fourier and Laplace transformation methods." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="30400.30035.30405.30410.30415." />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere mikrobølgefiltre ved brug af transmissionslinjer, resonatorer, retningskoblere, og impedans- og admittansinvertertransformationsteknikker" />
+          <Txt Lang="en-GB" Txt="design microwave filters using transmission lines, resonators, directional couplers, and impedance- and admittance inverter transform techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå teorien bag design af lavstøjsmikrobølgeforstærkere " />
+          <Txt Lang="en-GB" Txt="understand the design of microwave low-noise amplifiers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende kredsløbanalyse for ulineære mikrobølgekredsløb" />
+          <Txt Lang="en-GB" Txt="use circuit analysis techniques for nonlinear microwave circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere mikrobølgemixere og oscillatorer" />
+          <Txt Lang="en-GB" Txt="design and analyze mixer and oscillator circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dimensionere effektforstærkere i klasse A, AB, B og C" />
+          <Txt Lang="en-GB" Txt="design and analyze power amplifiers in class A, AB, B and C" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende CAD værktøjer til design og analyse af mikrobølgekredsløb" />
+          <Txt Lang="en-GB" Txt="apply CAD tools for the design and analysis of microwave circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå den fysiske opbygning og virkemøde af aktive højfrekvens halvlederkomponenter." />
+          <Txt Lang="en-GB" Txt="understand the physical structure and operation of active high-frequency semiconductor devices." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="analysere den transiente opførelse af reflektioner fra realistiske belastninger" />
+          <Txt Lang="en-GB" Txt="analyse the transient behaviour due to reflections from realistic loads" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare koblingen mellem transmissionslinjer og analysere effekten af krydstale i højhastighedskredsløb" />
+          <Txt Lang="en-GB" Txt="explain cross-coupling between transmission lines and analyse the effect of crosstalk in high speed circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte S-parametre og deres relation til tidsdomænet for 1- og 2-porte" />
+          <Txt Lang="en-GB" Txt="use S-parameters and their relation to time-domain behaviour of 1- and 2-ports" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="benytte mikrobølgenetværksanalyse til at modellere viaer og ikke-uniforme transmissionslinjer." />
+          <Txt Lang="en-GB" Txt="use microwave network analysis to model vias and non-uniform transmission lines." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Mikrobølgeteknik og højhastighedselektronik</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="12" />
+          </OpenUniversity>
+        </DTU>
+        <No_Credit_Points_With CourseCode="31420" />
+        <PreviousCourse CourseCode="31420" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:08.673" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

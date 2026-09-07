@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02324" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Videregående programmering" />
+        <Title Lang="en-GB" Title="Advanced Programming" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+          <Schedule ScheduleKey="F4B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="219203" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Carlos Esteban</GivenName>
+            <FamilyName>Budde</FamilyName>
+            <Email>cesbu@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="41537" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Ekkart</GivenName>
+            <FamilyName>Kindler</FamilyName>
+            <Email>ekki@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Exercises" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter gives på baggrund af en helhedsvurdering (skriftlig eksamen og opgaver)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on all results in their entirety (written exam and project reports)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Note that the exam date might change due to restrictions from CBS which DTU does not have control over." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Bemærk at det er muligt at eksamensdato må flyttes pga. restriktioner fra CBS som DTU ikke har kontrol over." />
+            <Schedule ScheduleKey="F4B" />
+          </Date_Of_Exam>
+          <DurationKey Key="2H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>• Interfaces and API'er
+• Generics
+• Kollektioner and Java API'er
+• Fejlhåndtering
+• Rekursion
+• Java Streams
+• Lambda-udryk
+• GUI-programmering
+• JavaDocs
+• Versionskontrol og organisering af softwareprojekter ved brug af git
+• Introduktion til designmønstre og systemarkitekturer
+• Softwaretest og -debugging
+• Tråde
+• Webprogrammering (med focus på backend-programmering)
+• Programmering af bidirektionelle forbindelser (fx. TCP/IP Sockets og Web Sockets)
+• I/O og datatilgang</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med kurset er, at eleven skal kunne anvende etablerede programmeringsmetoder og teknikker i Java. Derudover vil den studerende kunne bruge Java-baserede teknologier, begreber og API'er, der er uundværlige i softwareudvikling, og de vil kunne vídereudvikle eksiterende projekter. Dette trænes ved at udvikle flere tematiske Java-programmer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>• Interfaces and APIs
+• Generics
+• Collections and Java APIs
+• Exception handling
+• Recursion
+• Java Streams
+• Lambda expressions
+• GUI-programming
+• JavaDocs
+• Version control and organization of software projects using git
+• Introduction to design patterns and system architectures
+• Software testing and debugging
+• Threads
+• Web programming (with the focus on backend programming)
+• Programming of bidirectional connections (fx. TCP/IP Sockets and Web Sockets)
+• I/O and data access</Contents>
+          <Teaching_And_Learning_Methods>Lectures and lab work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The purpose of the course is for the student to be able to apply established programming methods and techniques in Java. Furthermore, the student will be able to use Java-based technologies, concepts, and APIs indispensable in software development, and they will be able to continue development on already existing projects. This is trained by developing multiple thematic Java programs.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og bruge de vigtigeste dele af Javas API'er og udvikle egne enkle APIer" />
+          <Txt Lang="en-GB" Txt="Understand and use essential parts of the Java API and develop simple own ones " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge avancerede Java-biblioteker og sprogfunktioner" />
+          <Txt Lang="en-GB" Txt="Use advanced Java libraries and language features" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle applikationer af en vis kompleksitet" />
+          <Txt Lang="en-GB" Txt="Develop applications of a certain complexity" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bruge UML-diagrammer ved udvikling af applikationer" />
+          <Txt Lang="en-GB" Txt="Use UML diagrams when developing applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og anvende passende designmønstre til et givet problem" />
+          <Txt Lang="en-GB" Txt="Understand and apply appropriate design patterns for a given problem" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Følge en passende arkitektur ved undvikling af en applikation" />
+          <Txt Lang="en-GB" Txt="Follow an appropriate architecture when developing an application" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælge and andvend passende testmetoder" />
+          <Txt Lang="en-GB" Txt="Choose and apply appropriate test methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Planlæge, implementere og dokumentére testaktiviteter" />
+          <Txt Lang="en-GB" Txt="Plan, implement and document test activities" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende versionskontrol i enkle software projekter (opsætning og følge en basal pull-commit-push cyklus)" />
+          <Txt Lang="en-GB" Txt="Use version control in simple software development projects (initial set up and follow basic pull-commit-push cycle)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Samarbejde i grupper i et softwareprojekt" />
+          <Txt Lang="en-GB" Txt="Collaborate on a software project in groups" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kommunikere design og implementering af et softwareprojekt mundligt og skriftligt" />
+          <Txt Lang="en-GB" Txt="Communicate design and implementation of a software project orally and in written" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="(02312/02314).62531.(02327/02170)" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="104" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="0" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="67" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:28.157" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

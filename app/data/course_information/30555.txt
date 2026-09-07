@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="30555" Volume="2026/2027" University="dtu" LastUpdated="2025-03-31+02:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Study_Board Study_BoardKey="30" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Mikrobølge telemålingsmodeller og data" />
+        <Title Lang="en-GB" Title="Microwave remote sensing models and data" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="30" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="166528" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Rasmus Tage</GivenName>
+            <FamilyName>Tonboe</FamilyName>
+            <Email>rtato@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset giver en introduktion til følgende emner:
+Mikrobølge telemåling af hav, havis, og atmosfære.
+Primære, sekundære og tertiære mikrobølge tilbagespredning- og strålingsmodel parametre.
+Strålingsmodeller
+Spredningsmodeller
+Hav, havis, og atmosfære radiometri
+Havoverflade temperatur, haviskoncentration model invertering og andre modelanvendelser.
+
+Dette kursus gennemgår enmer der er relevante i forhold til FN's mål for bæredygtighed, f.eks. #13 (Klima indsats), #14 (Livet i havet).</Contents>
+          <Teaching_And_Learning_Methods>Undervisningsformen kombinerer forelæsninger, gruppearbejde, læsning af videnskabelig litteratur med praktiske programmeringsøvelser. Fokus er på "hands-on" implementering af modeller og modelmoduler samt dataprocessering med modellerne.</Teaching_And_Learning_Methods>
+          <Course_Literature>Tonboe, R. T. (2023). Modeling Microwave Emission and Scattering from Snow-Covered Sea Ice. In M. Shokr, &amp; N. K. Sinha (Eds.), Sea Ice: Physics and Remote Sensing (2. ed.). Wiley. https://doi.org/10.1002/9781119828242.ch12</Course_Literature>
+          <Course_Objectives>Kursets overordnede mål er at give et indblik i mikrobølge strålings- og spredningsmodeller og at implementere og afprøve modellerne sammen med satellitdata.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course introduces the following topics:  
+Microwave remote sensing of the ice, ocean and atmosphere, 
+Primary, secondary and tertiary microwave emission and scattering model parameters, 
+Emission models, 
+Scattering models, 
+Ocean, ice and atmospheric radiometry, 
+Sea surface temperature and sea ice concentration integrated retrievals and other applications.
+
+This course provides students with competencies relevant to UN SDGs, for example, #13 (Climate Action) and #14 (Life below water).</Contents>
+          <Teaching_And_Learning_Methods>The teaching combines lectures, group work, reading of scientific literature and practical programming exercises. Focus is on hands-on implementation of models and model modules and data processing using the models.</Teaching_And_Learning_Methods>
+          <Course_Literature>Tonboe, R. T. (2023). Modeling Microwave Emission and Scattering from Snow-Covered Sea Ice. In M. Shokr, &amp; N. K. Sinha (Eds.), Sea Ice: Physics and Remote Sensing (2. ed.). Wiley. https://doi.org/10.1002/9781119828242.ch12</Course_Literature>
+          <Course_Objectives>The overall aim of the course is to give an introduction to microwave emission and scattering models and to implement and use the models with satellite data.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Erfaring med programmering i Python" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Experience with Python programming" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Kritisk vurdering af videnskabelig litteratur" />
+          <Txt Lang="en-GB" Txt="Critically appraise scientific literature" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar de vigtigste fysiske parametre i hav, havis, og atmosfæresystemet" />
+          <Txt Lang="en-GB" Txt="Explain the most important physical state parameters in the ice, ocean atmospheric system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar de vigtigste radar og radiometer satellitsystemer og deres målinger" />
+          <Txt Lang="en-GB" Txt="Explain different radar and radiometer satellite systems and their measurements" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementér modeller og modelmoduler beskrevet i den videnskabelige litteratur som computerprogrammer" />
+          <Txt Lang="en-GB" Txt="Implement models and model modules from the scientific literature as code" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdér sammenhængen mellem de vigtigste fysiske hav, havis og atmosfære parametre med den målte og simulerede mikrobølge tilbagespredning og stråling" />
+          <Txt Lang="en-GB" Txt="Appraise the relationship between the physical state of the ice, ocean and atmosphere and the measured backscatter and microwave radiance" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar følsomheden af mikrobølge tilbagespredning og stråling overfor de vigtigste fysiske hav, havis og atmosfære parametre ved hjælp af modeller" />
+          <Txt Lang="en-GB" Txt="Explain the sensitivity of backscatter and radiance to the physical state of ice, ocean and atmosphere using models " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Evaluér modeller ved hjælp af valideringsdata" />
+          <Txt Lang="en-GB" Txt="Evaluate models using validation data " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysér relevant telemålingsdata ved hjælp af modeller og beregn de vigtigste fysiske hav, havis og atmosfære parametre" />
+          <Txt Lang="en-GB" Txt="Analyze relevant remote sensing data using models and retrieve the physical state of the ice, ocean and atmosphere system" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutér de beregnede fysiske parametre og deres relevans i hav, havis og atmosfære modellering og klimaovervågning." />
+          <Txt Lang="en-GB" Txt="Discuss the retrieved physical parameters and their relevance in ice, ocean and atmospheric modeling and climate assessment." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:16.267" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

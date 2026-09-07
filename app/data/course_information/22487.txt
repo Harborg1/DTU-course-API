@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22487" Volume="2026/2027" University="dtu" LastUpdated="2026-02-25+01:00">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Avancerede forskningsværktøjer til medicinsk ultralyd" />
+        <Title Lang="en-GB" Title="Advanced ultrasound research tools" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="FocusCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P0M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Undervises efter behov primært på onsdage. Startdato aftales med underviser." />
+          <Schedule_Txt Lang="en-GB" Txt="Lecturing is primarily performed on Wednesdays. Start date after agreement with course responsible." />
+          <Schedule ScheduleKey="OutsideSchedule" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_SundTek" />
+        <Course_Responsible PersonKey="1066" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jørgen Arendt</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>jaje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_PROFESSOR" />
+            <Supp_Txt Lang="da-DK" Txt="Kurset er henvendt udelukkende til Ph.d.-studerende på DTU." />
+            <Supp_Txt Lang="en-GB" Txt="The course is intended only for PhD students at DTU." />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Se den engelske beskrivelse af kursusindhold.</Contents>
+          <Teaching_And_Learning_Methods>Kurset består af 2 timers forelæsninger om onsdagen efterfulgt af en række individuelle øvelser.</Teaching_And_Learning_Methods>
+          <Course_Literature>Noter og artikler.</Course_Literature>
+          <Course_Objectives>Kurset giver en introduktion til avancerede forskningsværktøjer inden for medicinsk ultralydsscanning. Dette omfatter værktøjer til simulering af ultralydsscanning (Field II), beamforming af data, måling af data ved hjælp af forskningsscannere med forskningsinterface, SARUS - Synthetic Aperture Realtime Ultrasound Scanner) og Verasonics, Onda intensitet målesystem og forskellige test set-ups. En øvelse udføres individuelt for alle typer af faciliteter, og resultaterne beskrives i en endelig rapport. Forelæsninger og øvelser gives af personale og ph.d.-studerende i Center for Hurtig Ultralydsscanning, der er ansvarlige for de forskellige faciliteter.</Course_Objectives>
+          <DTU_Remark>Kurset er henvendt udelukkende til Ph.d.-studerende på DTU.</DTU_Remark>
+          <Remark>I kurset indgår 14 forelæsninger med forudgående læsemateriale. Dette svarer til 4x14 timer=56 timer. Efter hver forelæsning indgår en øvelse i laboratoriet, i alt 13 øvelser. Til hver øvelse er forudgående Matlab programmering, arbejde i laboratoriet og efterbehandling af data. Dette er for hver øvelse 4+8+4 timer=16 timer. Der er i alt 13 øvelsessessioner, hvilket svarer til 208 timer. Efterfølgende skal alle resultater samles til en rapport med en diskussion af resultaterne. Det tager ca. 20 timer, så kurset er beregnet til i alt 56+208+20=284 timer for de 10 ECTS point.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Lecture 1: Theory of linear acoustics, spatial impulse response, Simple uses of Field II for array; emitted fields, CW, PSFs, intensities and how to calibrate
+Exercise 1: Field II using simple examples: psf + intensities
+Lecture 2: Simulating imaging systems, simple &amp; complex
+Exercise 2: B-mode imaging phantoms
+Lecture 3: Beam formation toolbox  - Geometric setup
+Exercise 3: Dynamic receive focusing/fixed focusing
+Lecture 4: SARUS and Verasonics: Lecture 1: Architecture and function
+Lecture 5: SARUS and Verasonics: lecture 2: System library
+Exercise 4: Acquisition of linear array data
+Lecture 6: Lecture 2: Fixed F# and apodization
+Exercise 5: Beamformation of linear array data
+Lecture 7: Synthetic aperture imaging and beamform along different lines
+Exercise 6: Beamformation
+Lecture 8: Onda intensity measurement system
+Exercise 7: Measurement of PSF for single element transducer
+Lecture 9: Commercial research scanner  Acquisition and start of exercise
+Exercise 8: Acquisition of B-mode data
+Lecture 10: Commercial scanner: Data acquisition exercise, data from research interface
+Exercise 9: Processing of data and interpolation
+Lecture 11: Advanced simulations: flow and SA imaging and using SLURM
+Exercise 10: Field II flow on SLURM
+Lecture 12: Flow rig 
+Exercise 11: Acquisition of flow data using the ProFocus
+Lecture 13: Use of the pulsatile flow pump
+Exercise 12: Acquisition of flow with carotid waveform
+Lecture 14: Clinical session – Scanning using clinical scanners
+Exercise 13: Scan major organs in the body
+Lecture 15: Hand in of report</Contents>
+          <Teaching_And_Learning_Methods>The course consists of 2 hour lectures Wednesday morning followed by individual exercises.</Teaching_And_Learning_Methods>
+          <Course_Literature>Notes and papers.</Course_Literature>
+          <Course_Objectives>The course gives an introduction to advanced research tools within medical ultrasound imaging. This includes tools for simulating ultrasound imaging (Field II), beamforming of data, acquiring data using research scanners with a research interface, SARUS – Synthetic Aperture Real time Ultrasound research scanner) and Verasonics,  the Onda intensity measurement system, and various test set-ups. An exercise is conducted individually for all types of facilities, and the results are described in a final report. The lectures and exercises are given by the staff and PhD students in Center for Fast Ultrasound imaging that are responsible for the different facilities.</Course_Objectives>
+          <DTU_Remark>The course is intended only for PhD students at DTU.</DTU_Remark>
+          <Remark>The course includes 14 lectures with prior reading material. This corresponds to 4x14 hours = 56 hours. After each lecture, one exercise is included in the laboratory, a total of 13 exercises. Each exercise includes Matlab programming, laboratory work, and data processing. This is for each exercise 4 + 8 + 4 hours = 16 hours. There are a total of 13 practice sessions, which is equivalent to 208 hours. Subsequently, all results must be compiled into a report with a discussion of the results. It takes approx. 20 hours, so the course is calculated for a total of 56 + 208 + 20 = 284 hours for the 10 ECTS points.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det er en forudsætning for at tilmelde sig kurset, at studerende har gennemført Medical imaging systems (22485)." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="It is a prerequisite for registrering that students have completed Medical Imaging Systems (22485)." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="22485" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="simulere medicinske ultralydsystemer." />
+          <Txt Lang="en-GB" Txt="simulate medical ultrasound systems." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="beamforme opsamlede og simulerede RF data for fokusering." />
+          <Txt Lang="en-GB" Txt="beamform acquired and simulated RF data for focusing." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave ultralyd laboratorieeksperimenter." />
+          <Txt Lang="en-GB" Txt="conduct ultrasound laboratory experiments." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive programmer for opsamling af forskningsdata." />
+          <Txt Lang="en-GB" Txt="write programs for acquiring research data." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvikle avancerede billedsekvenser i ultralyd." />
+          <Txt Lang="en-GB" Txt="develop advanced imaging sequences in ultrasound." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave intensitetsmålinger, der opfylder FDA reglerne for sikkerhed." />
+          <Txt Lang="en-GB" Txt="conduct intensity measurements to abide by FDA rules." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="lave simple kliniske scans." />
+          <Txt Lang="en-GB" Txt="make simple clinical scans." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="dokumentere programmer til forskningsformål." />
+          <Txt Lang="en-GB" Txt="document programs for research purposes." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="brug et AI tool til at finde fejl i dit simuleringsprogram og kommenter på hvad det finder" />
+          <Txt Lang="en-GB" Txt="use an AI tool to find errors in your simulation program and comment on what it found" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="31550" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="13" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="10" Min="2" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:48.883" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

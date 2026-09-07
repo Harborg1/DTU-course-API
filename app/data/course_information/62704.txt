@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62704" Volume="2026/2027" University="dtu" LastUpdated="2025-03-21+01:00">
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Point PointType="ECTS">5</Point>
+        <Title Lang="da-DK" Title="Elektriske maskiner" />
+        <Title Lang="en-GB" Title="Electric machines" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F3A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Course_Responsible PersonKey="170915" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Ashraf Fathi Khalil</GivenName>
+            <FamilyName>Sulayman</FamilyName>
+            <Email>ashka@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Skriftlig eksamen (50%) og rapporter (50%)" Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Written examination (50%) and reports (50%)" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="F3A" />
+          </Date_Of_Exam>
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Introduktion til elektriske maskiner: elektromekanisk energikonvertering, typer af elektriske maskiner, arbejdsprincip og konstruktion af DC og AC maskiner, roterende magnetfelt, synkron hastighed, fluxfordeling i AC maskiner, induceret spænding og moment i AC maskiner, fuld pitch, kort pitch , pitch og distributionsfaktorer.
+
+DC-maskiner: Konstruktion og drift af DC-maskiner, strømflow og tab, ækvivalent kredsløb af DC-maskiner, typer af DC-maskiner, hastighedskontrol, børsteløse DC-maskiner med permanent magneter.
+
+Induktionsmaskiner (asynkronmaskiner): Arbejdsprincip, konstruktion, slip, rotorfrekvens og spænding, viklet rotorinduktionsmaskine og induktionsmaskine med kortslutningsrotor, rotormoment, startmoment, arbejdsmoment, drejningsmoment relationer, ækvivalent kredsløb, bestemmelse af ækvivalente kredsløbsparametre, effekttrin , hastighed-drejningsmoment karakteristika, kortslutningstest og tomgangstest, induktionsmotorstart, hastighedskontrol, selvmagnetiseret og dobbeltfødede induktionsmaskiner, enfaset induktionsmotor: konstruktion, dobbelt omdrejningsfeltteori, slip, ækvivalent kredsløb, klassifikationer, start, AC serie motor, motor med kondensator, start og drift, skyggepols motor.
+
+Synkronmaskiner (både viklet rotorvikling og permanent magnet): Konstruktion, poler og frekvens, arbejdsprincip, excitation, emf-ligning, ækvivalent kredsløb, fasediagrammer og spændingsregulering, test, effekt- og momentudtryk, synkronmaskine med udprægede poler, moment og effektudtryk , synkron maskine tilsluttet elnettet, synkron generator kapacitetskurver, synkronmotor: arbejdsprincipper, start, ækvivalent kredsløb, fasediagrammer, synkron impedans, effekt af forskellige feltexcitationer, fasediagrammer for motor med udprægede poler, effektudtryk for turbomakiner og med udprægede poler , v-kurver, applikationer, permanent magnet synkronmaskiner.
+
+
+Specialmaskiner: Konstruktion og drift af styrede reluktansmaskiner og stepmotorer</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og opgaver</Teaching_And_Learning_Methods>
+          <Course_Literature>1- A. E. Fitzgerald, Charles Kingsley, Stephen D. Umans, “Electric Machinery”, McGraw Hill, 7th, 2014.
+2- Stephen J. Chapman, “Electric Machinery Fundamentals”, McGraw Hill, 5th, 2012.
+3- P. C. Sen, “Principles of Electric Machines and Power Electronics”, Wiley, 3rd, 2014.</Course_Literature>
+          <Course_Objectives>Kurset giver de studerende viden om forskellige elektriske maskiners teori, egenskaber og drift. Kurset giver de studerende kompetencer til at analysere ydeevnen af ​​elektriske maskiner gennem indgående kendskab til deres funktionsprincip og til at vælge en maskine til en given industriapplikation.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Elektrisk Energiteknologi: 4. semester
+
+Analyse og design vil blive udført med Matlab/Simulink og PSCAD. Laboratorieøvelser vil inkludere test på elektriske maskiner og undersøge deres egenskaber.</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Introduction to Electrical Machines: electromechanical energy conversion, types of electrical machines, working principle and construction of DC an AC machines, rotating magnetic field, synchronous speed, flux distribution in AC machines, induced voltage and torque in AC machines, full pitch, short pitch, pitch and distribution factors. 
+
+DC Machines:  Construction and operation of DC Machines, power flow and losses, equivalent circuit of DC machines, types of DC machines, speed control, permanent magnet brushless DC machines.
+
+Induction Machines: Working principle, construction, slip, rotor frequency and voltage, wound rotor induction machine and squirrel cage induction machine, rotor torque, starting torque, running torque, torque relations, equivalent circuit, determination of equivalent circuit parameters, power stages, speed-torque characteristics, blocked rotor test and open circuit test, induction motor starting, speed control, self-exciting and doubly Fed Induction machines, single-phase induction motor: construction, double revolving field theory, slip, equivalent circuit, classifications, starting, ac series motor, capacitor start motor, capacitor start and capacitor run motor, shaded pole motor. 
+
+Synchronous machines (both wound field and Permanent Magnet): Construction, poles and frequency, working principle, excitation, emf equation, equivalent circuit, phasor diagrams and voltage regulation, tests, power and torque expressions, salient pole synchronous machine, torque and power expressions, synchronous machine connected to the grid, synchronous generator capability curves, synchronous motor: working principles, starting, equivalent circuit, phasor diagrams, synchronous impedance, effect of different field excitations, phasor diagrams for salient motor, power expression for cylindrical and salient pole motors, v-curves, applications, permanent magnet synchronous machines.
+
+Special machines: Construction and operation of switched reluctance machines and stepper motors.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, excersises and assignments</Teaching_And_Learning_Methods>
+          <Course_Literature>1- A. E. Fitzgerald, Charles Kingsley, Stephen D. Umans, “Electric Machinery”, McGraw Hill, 7th, 2014.
+2- Stephen J. Chapman, “Electric Machinery Fundamentals”, McGraw Hill, 5th, 2012.
+3- P. C. Sen, “Principles of Electric Machines and Power Electronics”, Wiley, 3rd, 2014.</Course_Literature>
+          <Course_Objectives>The course gives the students a knowledge of the theory, properties and operation of various electrical machines. The course develops the students’ abilities to analyze the performance of electrical machines through in-depth knowledge of their principle of operation and to select a machine for a given industry application.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Elektrisk Energiteknologi: 4. semester
+
+Analysis and design will be carried out with Matlab/Simulink and PSCAD. Lab exercises will involve performing tests on electrical machines and investigating their characteristics.</Remark>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="De nævnte kurser bør være bestået for at kunne følge faget" />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="These courses should be passed in order to follow the course." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="62774 / 62742 / 62760" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive konstruktionen af ​​elektriske maskiner" />
+          <Txt Lang="en-GB" Txt="Explain the construction of electrical machines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Demonstrere forståelse for virkemåde og egenskaber ved elektriske maskiner." />
+          <Txt Lang="en-GB" Txt="Demonstrate understanding of the working principles and characteristics of electrical machines." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare de forskellige teknikker til start og styring af elektriske maskiner" />
+          <Txt Lang="en-GB" Txt="Explain the different techniques for starting and controlling electrical machines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere ækvivalente kredsløb for elektriske maskiner" />
+          <Txt Lang="en-GB" Txt="Analyze equivalent circuits of electrical machines." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende ækvivalent kredsløbsmodel til at beregne tabene i elektriske maskiner." />
+          <Txt Lang="en-GB" Txt="Use equivalent circuit model to calculate the losses in electrical machines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Simulere elektriske maskiner ved hjælp af Matlab/Simulink" />
+          <Txt Lang="en-GB" Txt="Simulate electrical machines using Matlab/Simulink" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udføre tests for at identificere parametrene i kredsløbsmodel for elektriske maskiner" />
+          <Txt Lang="en-GB" Txt="Perform tests to identify the parameters of electrical machines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende teknisk viden til at vælge elektriske maskiner til industriapplikationer" />
+          <Txt Lang="en-GB" Txt="Apply technical knowledge to select electrical machines for industry applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:00.71" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

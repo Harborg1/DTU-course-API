@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34895" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Ph.d.-kursus - Forskningsemner i akustisk teknologi" />
+        <Title Lang="en-GB" Title="PhD Course - Research topics in acoustic technology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="false" SortID="1" Show="true">
+            <Type TypeKey="IdentityCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P12M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Ugentlige møder mandag 10.00-10.45" />
+          <Schedule_Txt Lang="en-GB" Txt="Weekly meetings monday 10.00-10.45" />
+          <Schedule ScheduleKey="E" SortID="0" />
+          <Schedule ScheduleKey="F" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Fotonik" />
+        <Course_Responsible PersonKey="5829" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Vicente Cutanda</GivenName>
+            <FamilyName>Henriquez</FamilyName>
+            <Email>vcuhe@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset behandler aktuelle emner i teoretisk og eksperimental akustik, herunder avancerede måleteknikker som beamforming og akustisk holografi, vibrationsanalyse og dæmpning, bestemmelse af rumakustiske parametre og deres betydning for lydopfattelse i rum, bygningskonstruktioners vibroakustiske egenskaber, og højttaleres egenskaber både for små signaler og i det ulineære område.
+
+Hver deltager giver to foredrag i løbet af kursusåret. Det ene resumérer og diskuterer formål, metoder og nøgleresultater i udvalgte nyligt publicerede artikler fra højtprofilerede internationale tidsskrifter med vægt på resultaternes indflydelse på for fremtidig forskning. Det andet foredrag fokuseres om den enkelte phd-studerendes eget emneområde. Derudover kræves en skriftlig rapport om præsentationerne samt relevante diskussioner. Den studerende skal følge mindst 70% af kursets præsentationer. Foredragene og rapporten afholdes/afleveres løbende og udgør bedømmelsesgrundlaget.</Contents>
+          <Course_Objectives>At udvikle den studerendes selvlæringsevner samt at øge kendskabet til aktuel litteratur inden for den studerendes eget fagområde og relaterede områder. At forbedre den studerendes videnskabelige kommunikationsformåen samt at fremme diskussioner om aktuelle emner inden for forskningsområdet.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course deals with current research in theoretical and experimental acoustics, such as advanced measurement techniques, e.g., beamforming and acoustic holography, analysis and reduction of structural vibrations, determination of room acoustic parameters and their effect on perception, the vibroacoustic properties of buildings, and the behaviour of the loudspeaker for small signals as well as in the non-linear domain.
+
+Each student should give two oral presentations over the course of the year. One of the presentations should summarize and discuss the purpose, the methods and the key results in selected recent scientific publications from high-profile journals and should emphasize the impact of the findings for future research directions; the other presentation should focus on the specific research topic of the individual PhD student and closely related areas. In addition, a written summary of the presentations and relevant discussion is required. Each student should attend at least 70% of the presentations throughout the course. The presentations and the written material will be collected during the course and serve as the basis for evaluation.</Contents>
+          <Course_Objectives>To develop the student’s self-learning ability and to increase the knowledge of recent literature within the student’s own research area and related topics. To improve the student’s scientific communication skills
+and promote scientific discussions of current topics in acoustics.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Præsentere, diskutere og evaluere aktuelle emner i tidsskriftartikler" />
+          <Txt Lang="en-GB" Txt="Present, discuss and critically evaluate current topics in recent journal papers" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og redegøre for metoderne i moderne rumakustisk simuleringsmodeller" />
+          <Txt Lang="en-GB" Txt="Understand and explain the principles underlying modern room acoustic modelling techniques" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og redegøre for grundlæggende akustisk tranducerteknologi" />
+          <Txt Lang="en-GB" Txt="Understand and explain fundamentals of acoustic transducer technology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og redegøre for principperne bag avanceret akustisk måleteknik, f.eks. baseret på array-metoder" />
+          <Txt Lang="en-GB" Txt="Understand and explain the principles used in advanced acoustic measurement techniques, e.g., array-based methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og redegøre for de grundlæggende principper ved beregning af strukturlyd" />
+          <Txt Lang="en-GB" Txt="Understand and explain fundamentals of structure-borne sound" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og redegøre for lydudstråling fra vibrerende strukturer" />
+          <Txt Lang="en-GB" Txt="Understand and explain radiation of sound from vibrating structures" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og redegøre for principperne bag modellering af lydopfattelse og taleforståelighed i rum" />
+          <Txt Lang="en-GB" Txt="Understand and explain the psychoacoustic principles used for modelling perception and speech intelligibility in room acoustics" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå og redegøre for principperne bag modeller for beregning af genevirkning af støj" />
+          <Txt Lang="en-GB" Txt="Understand and explain the psychoacoustic principles used in estimating annoyance in environmental acoustics" />
+        </DTU_ObjectiveKeyword>
+        <Qualified_Prerequisites>
+          <DTU_CoursesTxt Lang="da-DK" Txt="34840/34850/34860/34870/34880" />
+        </Qualified_Prerequisites>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="1" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-08-03" Time="12:01:23.4" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

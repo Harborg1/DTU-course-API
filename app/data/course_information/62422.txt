@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="62422" Volume="2026/2027" University="dtu" LastUpdated="2026-03-27+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Medicoteknik 1" />
+        <Title Lang="en-GB" Title="Bio-medical electronics 1" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Ballerup" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="227196" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Morten Bak</GivenName>
+            <FamilyName>Kristoffersen</FamilyName>
+            <Email>mobkr@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="If needed further examination days may be used." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="I det omfang det findes nødvendigt kan yderlige eksamensdage tages i brug." />
+            <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="E5B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Basal komponentlære 
+Kredsløbsanalyse 
+Digitalteknik. 
+Talsystemer og koder. 
+Grundlæggende funktioner og cifferbegreber. 
+Boolsk algebra. 
+A/D og D/A konvertering 
+Microcontrollere 
+Sensorer
+Øvelser med analysesoftware
+Laboratorieøvelser</Contents>
+          <Teaching_And_Learning_Methods>Teoriundervisning, eksempler, opgaveregning og laboratorieøvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>De overordnede mål er at give den studerende en indføring i de grundlæggende problemstillinger ved elektroniske kredsløb, samt introducere til deres anvendelse ved omsætning af humanfysiologiske parametre til registrerbare elektriske målinger og brugbare signaler.</Course_Objectives>
+          <Remark>Sektion for Energiteknologi og computer science
+Sundhedsteknologi: 1. semester
+Kurset er et grundlæggende naturfagligt kursus og danner grundlag for at bidrage til den grønne omstilling i videregående kurser</Remark>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Basic component knowledge 
+Circuit analysis 
+Digital electronics. 
+Number systems and codes. 
+Basic digital functions and numeric concepts. 
+Boolean algebra. 
+A/D and D/A conversion 
+Microcontrollers 
+Sensors
+Exercises with analysis software
+Laboratory exercises</Contents>
+          <Teaching_And_Learning_Methods>Lectures, examples, assignments, and lab exercises</Teaching_And_Learning_Methods>
+          <Course_Objectives>The overall objective is to provide students with an introduction to the basic problems of electronic circuits as well as an introduction to their use in transforming human physiological parameters to detectable electrical measurements and useful signals.</Course_Objectives>
+          <Remark>Section of Energy Technology and Computer Science
+Sundhedsteknologi: 1. semester
+This course is a basic science course and forms the basis for contributing to the green transition in advanced courses</Remark>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Ingen særlige" />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="None" />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Ikke yderligere forudsætninger." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="None" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende korrekt terminologi" />
+          <Txt Lang="en-GB" Txt="Use correct terminology" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for grundlæggende modeller for elektriske kredsløb" />
+          <Txt Lang="en-GB" Txt="Explain the basic models of electric circuits" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for digitale grundkomponenters funktion" />
+          <Txt Lang="en-GB" Txt="Explain operation of basic digital components" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for de grundlæggende regler for D/A og A/D konvertering" />
+          <Txt Lang="en-GB" Txt="Explain the basic rules of D/A and A/D conversion" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for strukturen af programmer til en microcontroller" />
+          <Txt Lang="en-GB" Txt="Explain the structure of programs to a microcontroller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Implementere simple programmer til en microcontroller" />
+          <Txt Lang="en-GB" Txt="Implement simple programs for a microcontroller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvise indsigt i brug af elektroniske måleinstrumenter" />
+          <Txt Lang="en-GB" Txt="Demonstrate understanding of the use of electronic measuring instruments" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Redegøre for problemstillinger i forbindelse med medicoteknisk måleteknik" />
+          <Txt Lang="en-GB" Txt="Explain the issues related to biomedical measurement technique" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende analysesoftware til kredsløbsanalyse" />
+          <Txt Lang="en-GB" Txt="Use analysis software for circuit analysis" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="SU-MET1-U1" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:30.3" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

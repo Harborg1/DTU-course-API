@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02311" Volume="2026/2027" University="dtu" LastUpdated="2026-03-26+01:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+        <Title Lang="da-DK" Title="Introduktion til indlejrede systemer" />
+        <Title Lang="en-GB" Title="Introduction to embedded systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E5B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="6158" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Edward Alexandru</GivenName>
+            <FamilyName>Todirica</FamilyName>
+            <Email>eato@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="74954" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Luca</GivenName>
+            <FamilyName>Pezzarossa</FamilyName>
+            <Email>lpez@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige karakter gives på baggrund af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final grade is based on all results in their entirety." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="WITH_AID" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Regular exam is planned for E5B (and F7 for the re-exam)" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Eksamenen er planlagt til E5B (og F7 for re-eksamenen)" />
+            <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="F7" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>- Mikrocontrollere og input/output-enheder
+- Principper for kommunikation med perifere enheder via serialle protokoller eller analoge signaler
+- Interrupts og deres anvendelse til programstyring
+- Programmeringssprog til indlejrede systemer
+- Udviklings- og fejlsøgningsværktøjer til mikrocontrollerprogrammer</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser og projekt</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset introducerer den studerende til konstruktion af indlejrede systemer med fokus på mikrocontrolleren, dens virkemåde og programmering samt forbindelsen til input/output-enheder</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>- Microcontrollers and input/output devices
+- Principles for communicating with peripheral devices via serial protocols or analog signals.
+- Interrupts and their use in program control.
+- Programming languages for embedded systems
+- Development and debugging tools for microcontroller software</Contents>
+          <Teaching_And_Learning_Methods>Lectures, lab exercises, and project</Teaching_And_Learning_Methods>
+          <Course_Objectives>This course introduces students to the construction of embedded systems, with a focus on microcontrollers, their functionality and programming, as well as their integration with input/output devices.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Programmere mikrocontrollere og foretage fejlfinding i mikrocontroller-baserede programmer" />
+          <Txt Lang="en-GB" Txt="Program microcontrollers and perform debugging of microcontroller-based applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare, hvordan forskellige typer input- og output-enheder i indlejrede systemer fungerer, og hvordan de forbindes til en mikrocontroller" />
+          <Txt Lang="en-GB" Txt="Explain how different types of inputs and outputs for an embedded system work and how to connect them to a microcontroller" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive formålet med multimetre og oscilloskoper og give eksempler på, hvordan de kan bruges til fejlfinding." />
+          <Txt Lang="en-GB" Txt="Describe the purpose of multimeters and oscilloscopes and provide examples of how they can be used for debugging." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare principperne for anvendelse af mikrocontrollere til aflæsning af analoge og digitale inputværdier samt styring af output (f.eks. aktuatorer, lysdioder m.m.)" />
+          <Txt Lang="en-GB" Txt="Explain the principles behind using microcontrollers to read analog and digital input values and to control output devices (e.g. actuators, LEDs, etc.)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Designe og implementere programmer til indlejrede mikroprocessorsystemer" />
+          <Txt Lang="en-GB" Txt="Design and implement software for embedded microprocessor systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende interrupts til at synkronisere programmets eksekvering med hardwarehændelser" />
+          <Txt Lang="en-GB" Txt="Use the interrupt system to synchronize program execution with hardware events." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Benytte kommunikationsprotokoller til udveksling af data med andre computere eller perifere enheder" />
+          <Txt Lang="en-GB" Txt="Employ communication protocols to exchange data with other computers or peripheral devices" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende en mikrocontrollers indbyggede hardwareenheder i indlejrede applikationer" />
+          <Txt Lang="en-GB" Txt="Use a microcontroller’s built-in hardware modules in embedded applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere, designe og implementere et større hardwareprojekt i en gruppe med 2-3 studerende" />
+          <Txt Lang="en-GB" Txt="Analyse, design, and implement a larger hardware project within a group of 2 – 3 students" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <PreviousCourse CourseCode="62505" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="50" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:24.13" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

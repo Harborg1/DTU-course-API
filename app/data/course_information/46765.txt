@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="46765" Volume="2026/2027" University="dtu" LastUpdated="2026-04-23+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Maskinlæring til energisystemer" />
+        <Title Lang="en-GB" Title="Machine learning for energy systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="46" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="46" />
+        <Course_Responsible PersonKey="135672" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Farzaneh</GivenName>
+            <FamilyName>Pourahmadi</FamilyName>
+            <Email>farpour@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="103136" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jalal</GivenName>
+            <FamilyName>Kazempour</FamilyName>
+            <Email>jalal@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Vurderingen er baseret på gruppebaserede rapporter for 2 opgaver og præstationen i den skriftlige eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The assessment is based on group-based reports for 2 assignments and the performance in the written examination." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="E2A" />
+          </Date_Of_Exam>
+          <DurationKey Key="1H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kursusindholdet er struktureret i tre dele, hvoraf hver afsluttes med en opgave.
+1. Kurset giver et overordnet billede, dvs. en oversigt over relevante maskinlæringsmetoder og relevante energisystemapplikationer set fra både et systemoperatør- og individperspektiv, idet fysikken af aktiver tages i betragtning. Applikationerne omfatter problemer, der skal løses på et fremadrettet stadie (f.eks. på et dag-forud-stadie) eller i realtid. Derefter mapper vi disse energisystemapplikationer til relevante maskinlæringsmetoder. Først tager vi interessentens perspektiv. De eksempler, der skal dækkes, er (i) handel med vedvarende energi på elmarkeder på et fremadrettet stadie, (ii) forudsigelse af vindressourcer på et fremadrettet stadie via klassiske og værdiorienterede læringsmetoder.
+2. Vi fortsætter stadig fra interessentens perspektiv. De eksempler, der skal dækkes, er realtidsovervågning af en aktivpost, f.eks. et batterilager eller en sammensætter af distribuerede energiressourcer på kontinuerlige elmarkeder.
+3. Vi tager systemoperatørens perspektiv. De eksempler, der skal dækkes, er optimal planlægning på dag-forud-basis og risikovurdering af hele systemet. 
+For alle tre dele vil vi levere relevante metoder, implementere dem i en case-studie og analysere resultaterne.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, projektarbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>De seneste betydelige fremskridt inden for maskinlæringsteknikker har åbnet op for nye muligheder inden for energisystemapplikationer. Dette gør det muligt at tackle komplekse beslutningstagning- og risikoanalyseproblemer samt at drive og kontrollere individuelle anlæg eller et system af anlæg effektivt i realtid. Dette kursus har primært fokus på at forklare logikken bag anvendelsen af maskinlæringsmetoder inden for energisystemapplikationer. Der vil blive præsenteret en række nøgleeksempler set fra både individuelle interessenters og en systemoperatørs synspunkt. Kurset giver de studerende færdigheder til at forberede data, identificere og implementere relevante maskinlæringsmetoder til forskellige energisystemapplikationer samt analysere deres præstation.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course content is structured into three parts, each of which is finalized by means of an assignment. 
+1. The course provides a big picture, i.e., an overview of relevant machine learning methods and relevant energy system applications from the perspective of both a system operator and individuals, taking into account the physics of assets. The applications cover problems to be solved in a forward stage (e.g., in a day-ahead stage) or in real time. We then map those energy system applications into relevant machine learning methods. We first take the perspective of a stakeholder. The examples to be covered are (i) renewable energy trading in electricity markets in a forward stage, (ii) wind resource prediction in a forward stage via classical and value-oriented learning methods.
+2. We still continue from the perspective of a stakeholder. The examples to be covered is real-time control of an asset, e.g., a battery storage or an aggregator of distributed energy resources in continuous electricity markets.
+3. We take the perspective of a system operator. The examples to be covered are optimal day-ahead scheduling and risk assessment of the entire system.
+For all three parts, we will provide relevant methods, implement them for a case study and analyze results.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, project work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The significant advances in machine learning techniques have provided new opportunities for energy system applications, enabling to solve large-scale decision-making and risk assessment problems as well as efficient real-time operation and control of individual assets or a system of assets. The main focus of this course is to clarify the rationale behind the utilization of machine learning techniques in energy system applications. It equips students with tools and skills to effectively prepare data, recognize and employ appropriate machine learning methods for various energy system applications. Subsequently, students will apply these methods to a number of key examples from the viewpoint of both individual stakeholders and a system operator, while evaluating their performance.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="02450/02451 og 46755 eller lignende er stærkt anbefalet. Studerende uden disse forudsætninger vil have vanskeligt ved at følge kurset. &#xD;&#xA;Kendskab til Python og en grundlæggende forståelse af energimarkeder forventes." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="02450/02451 and 46755 or similar are highly recommended. Students without these prerequisites will have difficulties to follow the course.&#xD;&#xA;Knowledge of Python and a basic understanding of energy markets is expected." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02450/02451.46755" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere centrale begreber og modeller inden for maskinlæring til energisystemapplikationer" />
+          <Txt Lang="en-GB" Txt="Explain motivations for exploiting machine learning methods for energy system applications, identifying potential opportunities and challenges" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskuter centrale machine learning-koncepter og teknikker til anvendelse inden for energisystemer" />
+          <Txt Lang="en-GB" Txt="Discuss key machine learning concepts and techniques for energy system applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvend matematiske værktøjer og algoritmer relateret til maskinlæringsmetoder til energisystemapplikationer" />
+          <Txt Lang="en-GB" Txt="Apply mathematical tools and algorithms related to machine learning techniques for energy system applications" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Fortolk, hvordan machine learning-modeller kan hjælpe med at løse komplekse problemer inden for energisystemer." />
+          <Txt Lang="en-GB" Txt="Interpret how machine learning models can help solve complex problems in energy systems" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udvikle maskinlæringsmodeller fra både individuelle interessenters og systemoperatørens perspektiv" />
+          <Txt Lang="en-GB" Txt="Develop machine learning models from the perspective of both a system operator and an individual stakeholder" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Anvende Python-programmeringssproget til databehandling og implementering af maskinlæringsmodeller samt identificere potentielle muligheder og udfordringer" />
+          <Txt Lang="en-GB" Txt="Apply the python programming language for processing data and implementing machine learning models" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Analysere resultaterne og evaluere effektiviteten af de anvendte maskinlæringsmetoder" />
+          <Txt Lang="en-GB" Txt="Analyze the results and evaluate the performance of machine learning methods adopted" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Effektivt præsentere og diskutere resultater fra opgaver skriftligt" />
+          <Txt Lang="en-GB" Txt="Effectively present and discus results from assignments in written form" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:53.533" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

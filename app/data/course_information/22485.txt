@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="22485" University="dtu" LastUpdated="2026-04-13+02:00" Volume="2026/2027">
+        <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Medicinske billedsystemer" />
+        <Title Lang="en-GB" Title="Medical imaging systems" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="E2" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="22" University="DTU" Resources="97" KVL_Resources="100" />
+          <Ass_Dep UID="10" Resources="3" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
+        </Departments>
+        <Study_Board Study_BoardKey="22" />
+        <Course_Responsible PersonKey="1066" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Jørgen Arendt</GivenName>
+            <FamilyName>Jensen</FamilyName>
+            <Email>jaje@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="16156" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Hans Magnus Henrik</GivenName>
+            <FamilyName>Lundell</FamilyName>
+            <Email>hmag@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Written_Or_Oral_Examination" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der gives tre delkarakterer i kurset: en for hver af de afleverede rapporter og en til eksamen. &#xD;&#xA;&#xD;&#xA;Eksamen er mundtligt, hvis der er færre end 30 deltagere. Ved flere deltagere er eksamen skriftlig." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Three part-grades are given in the course: one for each submitted report and one for the examination. &#xD;&#xA;&#xD;&#xA;The exam is oral if there are less than 30 participants. It will be a written exam, if there are more participants." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Aid AidKey="NO_AID" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Books are allowed for a written exam without internet connection.&#xD;&#xA;No notes are allowed for the oral exam." />
+            <Aid_Txt Lang="da-DK" Txt="Bøger tillades for skriftlig eksamen uden internetforbindelse.&#xD;&#xA;Ingen hjælpemidler er tilladt, hvis det er en mundtlig eksamen." />
+          </Aid>
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The oral exam will ususally take place over two days." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Den mundtlige eksamen forløber som regel over to dage." />
+            <Schedule ScheduleKey="E2A" />
+            <Schedule ScheduleKey="F2A" />
+          </Date_Of_Exam>
+          <Duration Lang="da-DK" Txt="Mundtlig eksamen. 20 minutter uden forberedelse." />
+          <Duration Lang="en-GB" Txt="Oral exam. 20 minutes without preparation." />
+          <DurationKey Key="4H" />
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Fysikken bag ultralydskanning. Billeddannelse i ultralydsystemer. Signalbehandlingen for blodhastighedsestimation med ultralyd (Doppler systemer). Røntgenfysik og billeddannelsen. CT scanning og rekonstruktion. MR scanning og rekonstruktion. PET, PET/CT, PET/MR og SPECT skanning. Matlab øvelser. Implementering af signalbehandlingen for valgt billedsystem. Udarbejdelse af rapporter.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, projektarbejde og udarbejdelse af 2 rapporter.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kursets mål er at give en grundig indføring i moderne diagnostiske billedsystemer, som anvendes på hospitaler. Der gives en grundig introduktion til de primære billedsystemer som ultralyd, røntgen, computertomografi  (CT) og MR. Desuden vil visse aspekter af PET, PET/CT, PET/MR og SPECT skanning blive nævnt. Ved en gennemgang af systemerne opnås en forståelse af fysikken bag deres virkemåde, og hvordan stokastisk signal- og billedbehandling indgår i rekonstruktionen af billederne. Under kurset laves en række øvelser. Der laves to projekter med rapportaflevering om to forskellige billedsystemer.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>Physics of ultrasound scanning. ultrasound imaging. Signal processing in flow estimation systems (Doppler Systems). X-ray physics and imaging. CT scanning and reconstruction. MR scanning and reconstruction. PET, PET/CT, PET/MR, and SPECT scanning. Matlab exercises. Implementation of signal processing. Report writing.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, projects and two reports.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The purpose of the course is to give a thorough introduction to modern diagnostic imaging systems. This includes the primary systems as X-ray, computer tomgraphy (CT), ultrasound and MR. Certain aspects of PET, PET/CT, PET/MR and SPECT will also be explained.  Through an overview of the systems, an understanding is gained of the underlying physics governing their operation, as well as how stochastic signal and image processing are applied in the reconstruction of images. Two projects about two different imaging systems must be handed in during the course.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Kurser i digital signalbehandling af stokastiske signaler og introduktion til medicinske billedsystemer. Kendskab til programmering i Matlab eller Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Courses in signal processing of stochastic signals and introduction to medical imaging systems. Knowledge of programming with Matlab or Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="22052. 22481. 02002/02003" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare den fysiske interaktionsmekanisme i ultralyd, røntgen, CT, MR, SPECT og PET skanning." />
+          <Txt Lang="en-GB" Txt="explain the physical interaction mechanisms for ultrasound, X-ray, CT, MR, SPECT, and PET scanning." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare signalbehandlingen involveret i at lave ultralydsbillede." />
+          <Txt Lang="en-GB" Txt="explain the signal processing involved in making an ultrasound image." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare signalbehandlingsmetoder for estimering af blodets hastighed ved hjælp af ultralyd." />
+          <Txt Lang="en-GB" Txt="explain signal processing methods for estimating blood velocity using ultrasound." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare tilbageprojektionsalgoritmer anvendt til CT, MR og PET scanning." />
+          <Txt Lang="en-GB" Txt="explain back-projection algorithms used in CT, MR, and PET scanners." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive programmer i Matlab som implementerer signalbehandlingsmetoder og estimatorer til medicinsk billeddannelse." />
+          <Txt Lang="en-GB" Txt="write programs in Matlab that implement signal processing methods and estimators used in medical imaging." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive rapporter som beskriver kvantitative resultater opnået med Matlab." />
+          <Txt Lang="en-GB" Txt="write reports describing quantitative results from Matlab programs." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forstå videnskabelige artikler om medicinsk billeddannelse og implementere signalbehandlingsalgoritmer fra litteraturen." />
+          <Txt Lang="en-GB" Txt="understand journal articles on medical imaging and implement signal processing algorithms from the literature." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="give en kvantitativ evaluering af signal- og billedbehandlingsalgoritmers ydelse og nøjagtighed." />
+          <Txt Lang="en-GB" Txt="give a quantitative evaluation of signal and image processing algorithms in terms of performance and accuracy." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="skrive en videnskabelig rapport, som forklarer virkemåden af signalbehandlingsalgoritmer implementeret i Matlab og kvantificere deres ydelse." />
+          <Txt Lang="en-GB" Txt="write a scientific report explaining a signal processing algorithm implementation made in Matlab and quantifying its performance." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="identificere anatomiske strukturer i kliniske billeder." />
+          <Txt Lang="en-GB" Txt="identify anatomic structures in a clinical image." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvend AI tools som hjælp til at skrive programmer, og dokumenter hvordan de er brugt og hvordan kodens funktion er valideret" />
+          <Txt Lang="en-GB" Txt="use AI tools to assist in writing programs, and document how they have been used, and how the code's function was validated" />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://courses.healthtech.dtu.dk/22485/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Omhandler fysikken og signalbehandlingen for moderne medicinske billedsystemer</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <PreviousCourse CourseCode="31545, 49414" />
+        <PreviousCourse CourseCode="31655" />
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="96" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="0" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="96" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="8" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="0" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="0" />
+        </TeacherTypesDistribuition>
+        <Restrictions Max="" Min="5" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:19:47.32" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

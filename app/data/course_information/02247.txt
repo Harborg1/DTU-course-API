@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02247" Volume="2026/2027" University="dtu" LastUpdated="2026-03-29+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Oversætterkonstruktion" />
+        <Title Lang="en-GB" Title="Compiler Construction" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F2B" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <Course_Responsible PersonKey="153309" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Alceste</GivenName>
+            <FamilyName>Scalas</FamilyName>
+            <Email>alcsc@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Eksamen er baseret på projektet og rapporten om de studerende har arbejdet med i kurset. Den endelige karakter gives på baggrund af en helhedsvurdering." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The exam is based on the project and report that the students have worked on during the course. The final grade is given based on an overall assessment." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Additional days could be necessary depending on the number of students" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Yderligere dage kan være nødvendige, afhængigt af antallet af studerende" />
+            <Schedule ScheduleKey="F2B" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset dækker tre hovedemner: 
+(1) Kompileringsprocessen: fra high-level programmeringssprog til hardwarearkitekturer og virtuelle maskiner;
+(2) Intermediate representationer og deres indflydelse på oversættelsen;
+(3) Lexing, parsing, kodeanalyse, kodegenerering,  og optimeringer.
+Kursusprojektet kræver at udvide en eksisterende compiler-framework for at understøtte mere avancerede programmeringssprogsfunktioner.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, teoretiske øvelser og praktiske øvelser.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Oversættere bidrager til pålideligheden af softwaresystemer med hjælp af analyser og optimeringer af systemets kode, og ved at sikre egenskaber af de genererede programmer. Mange IT-virksomheder (hereunder f.eks. Google, Facebook og Microsoft) opretter og vedligeholder compilere til nye og eksisterende programmeringssprog.
+
+Kurset underviser i teknikker som bruges til at effektiv implementere moderne  programmeringssprog, og til at sikre pålideligheden af de genererede programmer. Vi behandler grundlæggende teknikker i moderne oversættere, fra implementering over optimeringer til køretids understøttelse for nye hardwarearkitekturer. I kurset arbejder de studerende i gruppe med at implementere en oversætter for et realistisk programmeringssprog.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course covers three main topics: 
+(1) The compilation process: from high-level programming language to hardware architectures and virtual machines;
+(2) Intermediate representations and their role in compilers; and
+(3) Lexing, parsing, code analysis, code generation, and optimizations.
+The course project requires to extend an existing compiler framework to support more advanced programming language features.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, theoretical exercises, and practical exercises.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Compilers contribute to the reliability of software systems by analyzing and optimizing the system's code, and by guaranteeing properties of the generated executables. Many IT companies (including e.g. Google, Facebook, and Microsoft) create and maintain compilers for new and existing programming languages.
+
+This course teaches techniques to efficiently implement modern programming languages, and to guarantee reliability of the generated executables. We cover essential techniques in modern compilers, from implementation of high-level concepts over optimizations to run-time support for new hardware architectures. During the course, students will work in groups on a compiler for a realistic programming language.</Course_Objectives>
+        </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="De studerende forventes at være fortrolige med grundlæggende datavidenskabelige begreber som inferensregler, regulære udtryk og kontekstfrie grammatiker. Denne baggrund kan opnås i kurset 02141.  De studerende skal kunne udtrykke sig flydende i mindst et programmeringssprog; erfaring med funktionel programmering (især med F#) anbefales stærkt. Denne baggrund kan opnås i kurset 02157." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="The students are expected to be familiar with fundamental computer science concepts like inference rules, regular expressions, and context-free grammars. This background can be obtained in the course 02141. The students must be fluent in at least one programming language; experience with functional programming (in particular, with F#) is highly recommended. This background can be obtained in the course 02157." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="02141 02157" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare oversætternes bidrag til pålidelighed af softwaresystemer;" />
+          <Txt Lang="en-GB" Txt="explain the contribution of compilers to the reliability of software systems;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare strukturen af optimerende oversættere og funktionaliteten af de forskellige faser;" />
+          <Txt Lang="en-GB" Txt="explain the structure of optimising compilers and the functionality of the different phases;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare relationen mellem højtniveaussprog, intermediate representation, analyser, og optimeringer;" />
+          <Txt Lang="en-GB" Txt="explain the relation between high-level language, intermediate representation, analyses, and optimisations;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="forklare processen af code generering for moderne computer arkitekturer, herunder virtual machines" />
+          <Txt Lang="en-GB" Txt="explain the process of code generation for modern computer architectures, including virtual machines" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="udvide en compiler for at tilføje nye funktionaliteter til et programmeringssprog" />
+          <Txt Lang="en-GB" Txt="extend a compiler to add new functionalities to a programming language" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="anvende moderne værktøjer til implementering af oversættere og forklare deres funktionalitet;" />
+          <Txt Lang="en-GB" Txt="use modern tools to implement parts of compilers, and explain their functionality;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="implementere en oversætter for et realistisk programmeringssprog, eller udvide en eksisterende oversætter;" />
+          <Txt Lang="en-GB" Txt="implement a compiler for a realistic programming language, or extend an existing one;" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="opnå ovennævnte resultater som del af et gruppe projekt men på en sådan måde at de individuelle bidrag kan identificeres; og" />
+          <Txt Lang="en-GB" Txt="achieve the above results in a group project while at the same time maintaining individual accountability; and" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="kommunikere de opnåede resultater på en klar og præcis måde i en standard form for teknisk rapport." />
+          <Txt Lang="en-GB" Txt="communicate the obtained results in a clear and precise manner using a standard form for technical reports." />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Oversætter, domain-specifikke programmeringsprog</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="GreaterThanOrEqual40" Hours="26" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="2" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="75" />
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:15:09.187" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>
