@@ -1,0 +1,57 @@
+Connect to Bitbucket repo through SSH and to make initial commit:
+git init
+We must initialize the project so we can push it to a REPO with Git
+git add .
+git commit -m "Commit Message"
+git remote add origin git@(reponame).git
+git branch -M main
+git push --force origin main
+We must use "--force" because we generate .gitingore and readme file when creating a REPO on Bitbucket (it overrides the repo history)
+
+Push changes to branch
+git status
+git add .
+git commit -m "Commit Message"
+git push
+
+Discard recent changes:
+git status
+git restore .
+git clean -fdn
+git clean -fd
+git status
+
+Clone Project
+git clone git@bitbucket.org:oessuniit/<folder_name>.git
+cd <folder_name>
+git status
+
+Create a new branch:
+git status
+git switch <branch_to_clone>
+git pull origin <branch_to_clone>
+git switch -c <branch_name>
+git push -u origin <branch_name>
+
+Pull changes from another branch:
+git switch <target_branch> 
+git pull origin <source_branch> 
+
+Unstage all staged changes:
+git restore --staged .
+git status
+
+Push changes to another branch while keeping some files from a previous
+commit. 
+
+git fetch origin
+git switch <target_branch>
+git pull --ff-only origin <target_branch>
+
+git merge --no-commit --no-ff origin/<source_branch>
+
+git restore --source=HEAD --staged --worktree -- \
+  path_to_file1 space path_to_file2
+
+git commit -m "Merge <source_branch> into <target_branch>"
+git push origin <target_branch>
