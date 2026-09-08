@@ -11,7 +11,6 @@ from app.schemas.recommendation import (
     RecommendedCourse,
     RecommendedStudyProgram,
     SpecializationInfo,
-    StudyPlanOverview,
     UnderstoodContext,
 )
 from app.services.conversation_state_service import completed_turns_context
@@ -53,7 +52,6 @@ def _attach_tool_results(response: ChatResponse, answer: MCPAnswer) -> None:
     """Preserve source-backed cards without classifying or rewriting the request."""
     courses = {}
     programs = {}
-    plans = {}
     specializations = {}
     for result in answer.tool_results:
         if result.name in {"search_courses", "get_new_courses"}:
@@ -68,18 +66,12 @@ def _attach_tool_results(response: ChatResponse, answer: MCPAnswer) -> None:
                 program = RecommendedStudyProgram.model_validate({
                     "name": result.data.get("program_name"),
                     "degree_type": result.data.get("degree_type"),
-                    "description": result.data.get("introduction"),
                     "source_url": result.data.get("source_url"),
                     "reason": "",
                 })
             except ValidationError:
                 continue
             programs[program.source_url] = program
-            try:
-                plans[program.source_url] = StudyPlanOverview.model_validate(result.data)
-            except ValidationError:
-                # Older MCP deployments may not expose all structured fields.
-                pass
         elif result.name == "get_specializations":
             for data in result.data.get("specializations", []):
                 try:
@@ -93,8 +85,9 @@ def _attach_tool_results(response: ChatResponse, answer: MCPAnswer) -> None:
     response.recommendations = sorted(courses.values(), key=lambda course: course.course_number)
     response.study_programs = list(programs.values())
     response.specializations = list(specializations.values())
-    if len(plans) == 1 and len(programs) == 1:
-        response.study_plan = next(iter(plans.values()))
+    # The model already explains the study plan in its answer. Keep programme
+    # cards as compact source references instead of repeating the introduction
+    # and entire curriculum beneath every answer that uses get_study_plan.
 
 
 def answer_chat(request: ChatRequest, academic_year: str) -> ChatResponse:

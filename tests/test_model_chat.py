@@ -169,9 +169,50 @@ def test_real_mcp_data_becomes_course_and_program_cards(client, db_session, samp
     body = response.json()
     assert body["recommendations"][0]["courseNumber"] == "02450"
     assert body["recommendations"][0]["sourceUrl"] == course_data["courses"][0]["source_url"]
-    assert body["studyPrograms"][0]["description"] == "Physics experiments and mathematical models."
-    assert body["studyPlan"]["programName"] == "Physics"
-    assert body["studyPlan"]["sourceUrl"] == "https://www.dtu.dk/physics"
+    assert body["studyPrograms"][0]["name"] == "Physics"
+    assert body["studyPrograms"][0]["description"] is None
+    assert body["studyPrograms"][0]["sourceUrl"] == "https://www.dtu.dk/physics"
+    assert body["studyPlan"] is None
+
+
+@pytest.mark.parametrize("prompt", [
+    "computer science studieplan",
+    "How many programme-specific ECTS do I need in Computer Science and Engineering?",
+])
+def test_study_plan_answer_does_not_repeat_full_curriculum(client, prompt):
+    answer = MCPAnswer("The programme-specific block requires 50 ECTS.", [
+        MCPToolResult("get_study_plan", {}, {
+            "program_name": "Computer Science and Engineering",
+            "degree_type": "Master",
+            "introduction": "An introduction that should not be repeated below the answer.",
+            "source_url": "https://www.dtu.dk/computer-science-and-engineering/curriculum",
+            "sections": [{
+                "name": "Programme-specific courses",
+                "courses": [],
+                "requirements": [{
+                    "requirement_type": "group_ects",
+                    "description": "Choose 50 ECTS from programme-specific courses.",
+                    "required_ects": 50,
+                    "courses": [],
+                }],
+            }],
+        }),
+    ])
+    with patch("app.services.chat_service.respond_with_remote_mcp", return_value=answer):
+        response = client.post("/api/chat", json={"messages": [{"role": "user", "content": prompt}]})
+
+    assert response.status_code == 200
+    body = response.json()
+    assert body["reply"] == answer.reply
+    assert body["studyPlan"] is None
+    assert body["studyPrograms"] == [{
+        "name": "Computer Science and Engineering",
+        "degreeType": "Master",
+        "description": None,
+        "reason": "",
+        "sourceUrl": "https://www.dtu.dk/computer-science-and-engineering/curriculum",
+    }]
+    assert body["turnState"]["studyProgramNames"] == ["Computer Science and Engineering"]
 
 
 def test_program_comparison_preserves_both_programs_without_selecting_one_plan(client):
