@@ -22,6 +22,10 @@ logger = logging.getLogger(__name__)
 class CourseQAError(RuntimeError):
     """Raised when a course answer cannot be obtained from Groq."""
 
+    def __init__(self, message: str, *, code: str = "unavailable") -> None:
+        super().__init__(message)
+        self.code = code
+
 
 @dataclass
 class MCPToolResult:
@@ -82,17 +86,15 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
     return (
         "Du er en hjælpende DTU-studeguide for studerende ved Danmarks Tekniske Universitet.\n\n"
         f"{lang_instruction}.\n\n"
-        "Du har adgang til databasen via værktøjer, der automatisk kaldes når nødvendigt.\n"
+        "Du har adgang til en række skrivebeskyttede databaseværktøjer. Vælg selv, om et "
+        "spørgsmål kræver værktøjer, hvilke værktøjer der er relevante, og hvor mange kald "
+        "der er nødvendige for et fyldestgørende svar. Du må også svare uden værktøjskald, "
+        "når spørgsmålet ikke kræver konkrete DTU-data.\n"
         f"Brug studieåret {academic_year}, medmindre brugeren udtrykkeligt angiver et andet.\n"
-        f"Når du kalder search_courses, skal search_language være '{language}'.\n"
-        "Når du kalder search_courses, skal q være et kort, kanonisk engelsk emne; oversæt brugerens "
-        "søgeemne til engelsk, mens search_language kun styrer sproget i de returnerede tekster.\n"
-        f"Når du kalder get_course, skal response_language være '{language}'.\n"
-        "Brug altid værktøjerne til at hente fakta fra databasen — gæt aldrig data.\n"
-        "Brug get_new_courses, når brugeren spørger hvilke kurser der er nye eller har fået nyt kursusnummer; "
-        "sæt level til BSc, MSc eller PhD, når brugeren angiver et niveau, sæt ects ved et angivet "
-        "ECTS-tal, og sæt q til et kort, kanonisk engelsk emne, når brugeren angiver et emne.\n"
-        "Brug get_specializations til spørgsmål om specialiseringer og deres kursuskrav.\n"
+        f"Sæt sprogfeltet i et valgt værktøj til '{language}', når værktøjet har et "
+        "search_language- eller response_language-felt. Søgeforespørgsler bør bruge et kort, "
+        "kanonisk engelsk emne; sprogfeltet styrer sproget i de returnerede tekster.\n"
+        "Konkrete DTU-fakta skal verificeres med de tilgængelige værktøjer — gæt aldrig data.\n"
         "Specialiseringer er valgfrie studieveje. Beskriv aldrig en specialiserings kursuspulje som "
         "obligatorisk for alle på programmet; respekter de returnerede requirement-roller.\n"
         "Forstå hele brugerens spørgsmål, og besvar det direkte med en begrundet vurdering. "
@@ -106,13 +108,10 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         "kursusliste eller en uddannelsesanbefaling. Der vises ingen automatiske resultatkort "
         "efter dit svar, så medtag relevante resultater og deres officielle links i selve svaret, "
         "når brugeren beder om en søgning eller anbefaling.\n"
-        "Ved valg mellem uddannelser: brug get_study_plan for hver relevant uddannelse, "
-        "sammenhold deres indhold med brugerens interesser, og forklar hvad der taler for hvert valg. "
+        "Ved valg mellem uddannelser: indhent tilstrækkelige officielle oplysninger om hver relevant "
+        "uddannelse, sammenhold deres indhold med brugerens interesser, og forklar hvad der taler for hvert valg. "
         "Start med din vurdering, når der er grundlag for den. Hvis et navn er tvetydigt eller "
         "ikke findes, forklar usikkerheden uden at opfinde et officielt match.\n"
-        "VIGTIGT: Start undersøgelsen af en uddannelsessammenligning med get_study_plan, "
-        "ikke search_courses. Udelad degree_type, hvis brugeren ikke har angivet niveau. "
-        "Brug kun det degree_type og officielle navn, som studieplansværktøjet returnerer. "
         "Et kursussøgeresultat beviser IKKE, at et kursus indgår i en bestemt uddannelse, "
         "er et kernefag eller kan vælges som valgfag. Kun studieplanens krav kan dokumentere "
         "den slags tilknytning. Uden en matchende studieplan: giv en generel, tydeligt "
@@ -132,9 +131,8 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         "Hilsner og generel vejledning kræver ikke værktøjskald. Konkrete DTU-oplysninger "
         "skal bygge på værktøjsdata. Henvis til de returnerede officielle kildelinks.\n"
         "Ved kursussøgning: respekter niveau, ECTS, undervisningssprog og periode. "
-        "Ved ønske om alle resultater: brug limit og offset til at hente flere sider, "
-        "indtil next_offset er null. Hvis kald- eller svarbudgettet ikke rækker, sig tydeligt "
-        "at listen er ufuldstændig; kald aldrig en begrænset liste komplet.\n"
+        "Et pagineret resultat med next_offset er ikke en komplet liste. Afgør selv, om flere "
+        "sider er nødvendige for brugerens spørgsmål, og kald aldrig en begrænset liste komplet.\n"
         "Hvis et værktøj returnerer en fejl, forklar det kort til brugeren.\n"
         "Never format course results as Markdown tables.\n"
         "The chat displays plain text. Avoid Markdown tables, heading markers, bold markers "
@@ -187,7 +185,7 @@ def respond_with_remote_mcp(
     if not settings.mcp_token:
         raise CourseQAError("MCP_TOKEN is not configured")
 
-    from openai import OpenAI, OpenAIError
+    from openai import APITimeoutError, OpenAI, OpenAIError
 
     language = response_language if response_language in {"da", "en"} else _detect_language(question)
     selected_academic_year = academic_year or settings.default_academic_year
@@ -212,6 +210,7 @@ def respond_with_remote_mcp(
             "server_description": "Read-only access to official DTU courses, study plans, and specializations.",
             "allowed_tools": [
                 "get_course",
+                "get_courses",
                 "search_courses",
                 "get_new_courses",
                 "get_study_plan",
@@ -227,28 +226,63 @@ def respond_with_remote_mcp(
             instructions=_build_system_prompt(language, selected_academic_year),
             input=messages if messages is not None else question,
             tools=tools,
+            tool_choice="auto",
             temperature=settings.groq_temperature,
             max_output_tokens=settings.chat_max_output_tokens,
-            max_tool_calls=settings.chat_max_tool_calls,
         )
     except OpenAIError as exc:
-        logger.exception("Groq Responses API request failed")
-        raise CourseQAError("Groq request failed") from exc
+        error_code = "timeout" if isinstance(exc, APITimeoutError) else "upstream"
+        logger.exception(
+            "Groq Responses API request failed error_type=%s",
+            type(exc).__name__,
+        )
+        raise CourseQAError("Groq request failed", code=error_code) from exc
+
+    output = response.output or []
+    status = getattr(response, "status", None)
+    response_id = getattr(response, "id", None)
+    tool_names = [
+        item.name
+        for item in output
+        if getattr(item, "type", None) == "mcp_call" and getattr(item, "name", None)
+    ]
+    logger.info(
+        "Groq Responses API completed response_id=%s status=%s mcp_call_count=%d mcp_tools=%s",
+        response_id,
+        status,
+        len(tool_names),
+        tool_names,
+    )
+
+    if status == "incomplete":
+        details = getattr(response, "incomplete_details", None)
+        reason = details.get("reason") if isinstance(details, dict) else getattr(details, "reason", None)
+        reason = reason or "unknown"
+        logger.warning(
+            "Groq response incomplete response_id=%s reason=%s mcp_call_count=%d mcp_tools=%s",
+            response_id,
+            reason,
+            len(tool_names),
+            tool_names,
+        )
+        raise CourseQAError(f"Groq response was incomplete: {reason}", code="incomplete")
+
+    if status in {"failed", "cancelled"}:
+        logger.error("Groq response ended with status=%s response_id=%s", status, response_id)
+        raise CourseQAError(f"Groq response status was {status}", code="upstream")
 
     # Extract final text output from response
-    if not response.output:
-        raise CourseQAError("Groq returned no output")
+    if not output:
+        logger.error("Groq returned no output response_id=%s status=%s", response_id, status)
+        raise CourseQAError("Groq returned no output", code="empty")
 
-    if getattr(response, "status", None) == "incomplete":
-        raise CourseQAError("Groq response was incomplete")
-
-    tool_results = _tool_results(response.output)
+    tool_results = _tool_results(output)
     output_text = getattr(response, "output_text", None)
     if isinstance(output_text, str) and output_text.strip():
         return MCPAnswer(reply=output_text.strip(), tool_results=tool_results)
 
     text_parts = []
-    for item in response.output:
+    for item in output:
         if hasattr(item, "content") and item.content:
             for content in item.content:
                 if hasattr(content, "text") and content.text:
@@ -256,7 +290,8 @@ def respond_with_remote_mcp(
 
     content = " ".join(text_parts).strip()
     if not content:
-        raise CourseQAError("Groq returned an empty answer")
+        logger.error("Groq returned an empty answer response_id=%s status=%s", response_id, status)
+        raise CourseQAError("Groq returned an empty answer", code="empty")
 
     return MCPAnswer(reply=content, tool_results=tool_results)
 

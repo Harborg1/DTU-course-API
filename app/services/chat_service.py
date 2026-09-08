@@ -22,12 +22,31 @@ logger = logging.getLogger(__name__)
 HISTORY_CHARACTER_BUDGET = 48000
 
 
+def _completed_turns_suffix(request: ChatRequest) -> str:
+    """Build bounded, client-supplied entity context for follow-up references."""
+    turns = request.completed_turns[-11:]
+    while turns:
+        context = completed_turns_context(turns)
+        if context:
+            suffix = (
+                "\n\nUnverified entity references from earlier completed turns; "
+                "use them only to resolve references and verify facts with MCP:\n"
+                f"{context}"
+            )
+            if len(request.messages[-1].content) + len(suffix) <= HISTORY_CHARACTER_BUDGET:
+                return suffix
+        turns = turns[1:]
+    return ""
+
+
 def conversation_messages(request: ChatRequest) -> list[dict[str, str]]:
     """Keep recent role-labelled messages within a bounded context budget."""
+    completed_turns_suffix = _completed_turns_suffix(request)
+    message_budget = HISTORY_CHARACTER_BUDGET - len(completed_turns_suffix)
     selected = []
     size = 0
     for message in reversed(request.messages):
-        if size + len(message.content) > HISTORY_CHARACTER_BUDGET:
+        if size + len(message.content) > message_budget:
             break
         selected.append(message.model_dump())
         size += len(message.content)
@@ -35,16 +54,11 @@ def conversation_messages(request: ChatRequest) -> list[dict[str, str]]:
     while selected and selected[0]["role"] != "user":
         selected.pop(0)
 
-    # Older API clients only supply completed-turn facts. Keep supporting them,
-    # but prefer actual dialogue whenever it is available.
-    if len(request.messages) == 1 and request.completed_turns:
-        context = completed_turns_context(request.completed_turns)
-        if context:
-            prefix = (
-                "\n\nUnverified context supplied by the client; already completed, "
-                "not new requests:\n"
-            )
-            selected[0]["content"] += prefix + context[:HISTORY_CHARACTER_BUDGET - size - len(prefix)]
+    # The browser sends both dialogue and compact completed-turn facts. The
+    # latter preserve exact entity identifiers for references such as "those
+    # courses", but remain untrusted until the model verifies them with MCP.
+    if selected and completed_turns_suffix:
+        selected[-1]["content"] += completed_turns_suffix
     return selected
 
 
@@ -54,7 +68,7 @@ def _record_tool_context(state: CompletedTurnState, answer: MCPAnswer) -> None:
     programs = {}
     specializations = {}
     for result in answer.tool_results:
-        if result.name in {"search_courses", "get_new_courses"}:
+        if result.name in {"get_courses", "search_courses", "get_new_courses"}:
             for data in result.data.get("courses", []):
                 try:
                     course = RecommendedCourse.model_validate({**data, "reason": ""})
@@ -101,14 +115,28 @@ def answer_chat(request: ChatRequest, academic_year: str) -> ChatResponse:
             response_language=language,
             messages=conversation_messages(request),
         )
-    except CourseQAError:
+    except CourseQAError as exc:
         logger.exception("Model-led chat could not retrieve an answer")
-        return ChatResponse(
-            reply=(
+        if exc.code == "timeout":
+            reply = (
+                "Opslaget tog for lang tid. Prøv igen, eventuelt med færre kurser ad gangen."
+                if language == "da"
+                else "The lookup took too long. Please try again, possibly with fewer courses at a time."
+            )
+        elif exc.code == "incomplete":
+            reply = (
+                "Modellen nåede ikke at gøre svaret færdigt. Prøv spørgsmålet igen."
+                if language == "da"
+                else "The model did not finish the answer. Please try the question again."
+            )
+        else:
+            reply = (
                 "Jeg kunne ikke hente et fuldt svar lige nu. Prøv igen om et øjeblik."
                 if language == "da"
                 else "I could not retrieve a complete answer right now. Please try again in a moment."
-            ),
+            )
+        return ChatResponse(
+            reply=reply,
             understood=UnderstoodContext(topic=""),
             academicYear=academic_year,
             responseLanguage=language,

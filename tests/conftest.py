@@ -9,6 +9,7 @@ from sqlalchemy.pool import StaticPool
 
 os.environ["API_KEY"] = "test-secret"
 os.environ["DATABASE_URL"] = "sqlite://"
+os.environ["GROQ_API_KEY"] = "test-groq-key"
 os.environ["MCP_TOKEN"] = "test-mcp-token"
 os.environ["SEMANTIC_RESOLUTION_ENABLED"] = "false"
 os.environ["SEMANTIC_INTENT_ENABLED"] = "false"

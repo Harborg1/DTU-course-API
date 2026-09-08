@@ -66,6 +66,33 @@ _GET_COURSE_SCHEMA: dict[str, Any] = {
     "required": ["course_number", "academic_year"],
 }
 
+_GET_COURSES_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "properties": {
+        "course_numbers": {
+            "type": "array",
+            "description": (
+                "Known 5-digit course numbers to retrieve together. Use this when several "
+                "specific courses need to be compared or classified."
+            ),
+            "items": {"type": "string", "pattern": "^[0-9]{5}$"},
+            "minItems": 1,
+            "maxItems": 20,
+        },
+        "academic_year": {
+            "type": "string",
+            "description": "Academic year filter (e.g. '2026-2027')",
+            "pattern": "^[0-9]{4}-[0-9]{4}$",
+        },
+        "response_language": {
+            "type": "string",
+            "description": "Preferred response language; use 'da' for Danish and 'en' for English",
+            "enum": ["da", "en"],
+        },
+    },
+    "required": ["course_numbers", "academic_year"],
+}
+
 _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
     "type": "object",
     "properties": {
@@ -215,6 +242,16 @@ _COURSE_TOOL = Tool(
     inputSchema=_GET_COURSE_SCHEMA,
 )
 
+_COURSES_TOOL = Tool(
+    name="get_courses",
+    description=(
+        "Get full official details for up to 20 known DTU course numbers in one request. "
+        "Useful when comparing or classifying a previously identified set of courses. "
+        "Returns localized course details and reports numbers not found in the selected year."
+    ),
+    inputSchema=_GET_COURSES_SCHEMA,
+)
+
 _SEARCH_COURSES_TOOL = Tool(
     name="search_courses",
     description=(
@@ -260,6 +297,7 @@ _GET_SPECIALIZATIONS_TOOL = Tool(
 
 ALL_TOOLS: list[Tool] = [
     _COURSE_TOOL,
+    _COURSES_TOOL,
     _SEARCH_COURSES_TOOL,
     _GET_NEW_COURSES_TOOL,
     _GET_STUDY_PLAN_TOOL,
@@ -277,6 +315,64 @@ def _academic_year(arguments: dict[str, Any]) -> str | None:
     if not match or int(match.group(2)) != int(match.group(1)) + 1:
         return None
     return value
+
+
+def _course_data(course: Any, response_language: str | None) -> dict[str, Any]:
+    """Serialize one course consistently for single and batch lookups."""
+    if response_language == "da":
+        localized_title = course.title_da or course.title_en or course.title
+        localized_description = course.description_da or course.description_en or course.description
+        localized_content = course.content_da or course.content_en or course.content
+        localized_objectives = (
+            course.learning_objectives_da
+            or course.learning_objectives_en
+            or course.learning_objectives
+        )
+        localized_prerequisites = (
+            course.prerequisites_da or course.prerequisites_en or course.prerequisites
+        )
+    else:
+        localized_title = course.title_en or course.title_da or course.title
+        localized_description = course.description_en or course.description_da or course.description
+        localized_content = course.content_en or course.content_da or course.content
+        localized_objectives = (
+            course.learning_objectives_en
+            or course.learning_objectives_da
+            or course.learning_objectives
+        )
+        localized_prerequisites = (
+            course.prerequisites_en or course.prerequisites_da or course.prerequisites
+        )
+
+    return {
+        "course_number": course.course_number,
+        "title": localized_title,
+        "title_da": course.title_da,
+        "title_en": course.title_en,
+        "ects": float(course.ects) if course.ects else None,
+        "level": course.level,
+        "course_type": course.course_type,
+        "language": course.language,
+        "department": course.department,
+        "period": course.period,
+        "schedule": course.schedule,
+        "campus": course.campus,
+        "prerequisites": localized_prerequisites,
+        "recommended_prerequisite_course_numbers": (
+            course.recommended_prerequisite_course_numbers
+        ),
+        "mandatory_prerequisites": course.mandatory_prerequisites,
+        "exam": course.exam,
+        "evaluation": course.evaluation,
+        "description": localized_description,
+        "content": localized_content,
+        "learning_objectives": localized_objectives,
+        "course_responsible": course.course_responsible,
+        "teachers": course.teachers,
+        "responsible_people": course.responsible_people,
+        "previous_course_numbers": course.previous_course_numbers,
+        "source_url": course.source_url,
+    }
 
 
 def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
@@ -303,48 +399,56 @@ def _handle_get_course(arguments: dict[str, Any]) -> dict[str, Any]:
         if not course:
             return {"error": f"Course {course_number} not found in {academic_year}"}
 
-        response_language = arguments.get("response_language")
-        if response_language == "da":
-            localized_title = course.title_da or course.title_en or course.title
-            localized_description = course.description_da or course.description_en or course.description
-            localized_content = course.content_da or course.content_en or course.content
-            localized_objectives = course.learning_objectives_da or course.learning_objectives_en or course.learning_objectives
-            localized_prerequisites = course.prerequisites_da or course.prerequisites_en or course.prerequisites
-        else:
-            localized_title = course.title_en or course.title_da or course.title
-            localized_description = course.description_en or course.description_da or course.description
-            localized_content = course.content_en or course.content_da or course.content
-            localized_objectives = course.learning_objectives_en or course.learning_objectives_da or course.learning_objectives
-            localized_prerequisites = course.prerequisites_en or course.prerequisites_da or course.prerequisites
+        return _course_data(course, arguments.get("response_language"))
+    finally:
+        session.close()
 
+
+def _handle_get_courses(arguments: dict[str, Any]) -> dict[str, Any]:
+    course_numbers = arguments.get("course_numbers")
+    if not isinstance(course_numbers, list) or not 1 <= len(course_numbers) <= 20:
+        return {"error": "course_numbers must contain between 1 and 20 course numbers"}
+    if any(
+        not isinstance(number, str) or not re.fullmatch(r"[0-9]{5}", number)
+        for number in course_numbers
+    ):
+        return {"error": "every course number must contain exactly 5 digits"}
+
+    academic_year = _academic_year(arguments)
+    if academic_year is None:
+        return {"error": "academic_year must contain consecutive years, e.g. 2026-2027"}
+    response_language = arguments.get("response_language")
+    if response_language not in {None, "da", "en"}:
+        return {"error": "response_language must be 'da' or 'en'"}
+
+    # Deduplicate without changing the model's requested order.
+    requested_numbers = list(dict.fromkeys(course_numbers))
+
+    from app.database import SessionLocal
+    from app.models.course import Course
+    from sqlalchemy import select
+
+    session = SessionLocal()
+    try:
+        matches = session.scalars(
+            select(Course).where(
+                Course.course_number.in_(requested_numbers),
+                Course.academic_year == academic_year,
+            )
+        ).all()
+        courses_by_number = {course.course_number: course for course in matches}
         return {
-            "course_number": course.course_number,
-            "title": localized_title,
-            "title_da": course.title_da,
-            "title_en": course.title_en,
-            "ects": float(course.ects) if course.ects else None,
-            "level": course.level,
-            "course_type": course.course_type,
-            "language": course.language,
-            "department": course.department,
-            "period": course.period,
-            "schedule": course.schedule,
-            "campus": course.campus,
-            "prerequisites": localized_prerequisites,
-            "recommended_prerequisite_course_numbers": (
-                course.recommended_prerequisite_course_numbers
-            ),
-            "mandatory_prerequisites": course.mandatory_prerequisites,
-            "exam": course.exam,
-            "evaluation": course.evaluation,
-            "description": localized_description,
-            "content": localized_content,
-            "learning_objectives": localized_objectives,
-            "course_responsible": course.course_responsible,
-            "teachers": course.teachers,
-            "responsible_people": course.responsible_people,
-            "previous_course_numbers": course.previous_course_numbers,
-            "source_url": course.source_url,
+            "academic_year": academic_year,
+            "requested": len(requested_numbers),
+            "returned": len(courses_by_number),
+            "missing_course_numbers": [
+                number for number in requested_numbers if number not in courses_by_number
+            ],
+            "courses": [
+                _course_data(courses_by_number[number], response_language)
+                for number in requested_numbers
+                if number in courses_by_number
+            ],
         }
     finally:
         session.close()
@@ -774,6 +878,7 @@ def _handle_get_specializations(arguments: dict[str, Any]) -> dict[str, Any]:
 
 _TOOL_HANDLERS: dict[str, Callable[[dict[str, Any]], dict[str, Any]]] = {
     "get_course": _handle_get_course,
+    "get_courses": _handle_get_courses,
     "search_courses": _handle_search_courses,
     "get_new_courses": _handle_get_new_courses,
     "get_study_plan": _handle_get_study_plan,

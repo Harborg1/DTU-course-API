@@ -21,7 +21,6 @@ class Settings(BaseSettings):
     groq_temperature: float = Field(default=0.0)
     chat_mode: Literal["model", "legacy"] = "model"
     chat_max_output_tokens: int = Field(default=4000, ge=256, le=8192)
-    chat_max_tool_calls: int = Field(default=8, ge=1, le=20)
     chat_timeout: float = Field(default=45.0, gt=0, le=120)
     embedding_api_key: str = Field(default="")
     embedding_model: str = Field(default="text-embedding-3-small")

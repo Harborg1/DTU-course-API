@@ -72,6 +72,28 @@ def test_follow_up_preserves_assistant_reasoning_and_roles(client):
     assert model.call_args.kwargs["messages"] == messages
 
 
+def test_follow_up_includes_completed_course_references_for_model():
+    messages = [
+        {"role": "user", "content": "Find AI courses"},
+        {"role": "assistant", "content": "I found several AI courses."},
+        {"role": "user", "content": "Which of those are advanced?"},
+    ]
+    completed_turns = [{
+        "request": "Find AI courses",
+        "operation": "general",
+        "courseNumbers": ["02450", "02476", "02582"],
+        "responseLanguage": "en",
+    }]
+    request = ChatRequest(messages=messages, completedTurns=completed_turns)
+    sent = conversation_messages(request)
+    assert sent[:-1] == messages[:-1]
+    assert sent[-1]["content"].startswith(messages[-1]["content"])
+    assert "02450" in sent[-1]["content"]
+    assert "02476" in sent[-1]["content"]
+    assert "02582" in sent[-1]["content"]
+    assert "verify facts with MCP" in sent[-1]["content"]
+
+
 def test_new_topic_and_explicit_language_change_reach_model(client):
     messages = [
         {"role": "user", "content": "Hvad er studieplanen for Anvendt Matematik?"},
@@ -148,6 +170,24 @@ def test_remote_failure_does_not_fall_back_to_keyword_clarification(client):
     assert "could not retrieve a complete answer" in response.json()["reply"]
     assert response.json()["turnState"] is None
     legacy.assert_not_called()
+
+
+@pytest.mark.parametrize(("code", "expected"), [
+    ("timeout", "tog for lang tid"),
+    ("incomplete", "ikke at gøre svaret færdigt"),
+])
+def test_model_chat_explains_recoverable_failure_type(client, code, expected):
+    with patch(
+        "app.services.chat_service.respond_with_remote_mcp",
+        side_effect=CourseQAError("failed", code=code),
+    ):
+        response = client.post(
+            "/api/chat",
+            json={"messages": [{"role": "user", "content": "Hvilke af dem er avancerede?"}]},
+        )
+
+    assert response.status_code == 200
+    assert expected in response.json()["reply"]
 
 
 def test_real_mcp_data_is_kept_as_context_without_automatic_cards(client, db_session, sample_courses):
@@ -277,11 +317,12 @@ def test_remote_model_receives_role_labelled_dialogue_and_reasoning_instructions
     sent = client.return_value.responses.create.call_args.kwargs
     assert sent["input"] == messages
     assert sent["max_output_tokens"] == get_settings().chat_max_output_tokens
-    assert sent["max_tool_calls"] == get_settings().chat_max_tool_calls
+    assert sent["tool_choice"] == "auto"
+    assert "max_tool_calls" not in sent
     assert "højst 3 sætninger" not in sent["instructions"]
+    assert "Vælg selv" in sent["instructions"]
     assert "egen foreløbige anbefaling" in sent["instructions"]
-    assert "get_study_plan for hver" in sent["instructions"]
-    assert "Udelad degree_type" in sent["instructions"]
+    assert "Start undersøgelsen" not in sent["instructions"]
     assert "Et kursussøgeresultat beviser IKKE" in sent["instructions"]
     assert "hvert kursus er obligatorisk" in sent["instructions"]
     assert "Værktøjsopslag er baggrund for svaret" in sent["instructions"]
@@ -305,12 +346,20 @@ def test_remote_mcp_extracts_facts_from_tool_output_only(wrapped):
     assert answer.tool_results == [MCPToolResult("search_courses", {"q": "physics"}, data)]
 
 
-def test_incomplete_model_response_is_not_presented_as_complete():
-    result = SimpleNamespace(status="incomplete", output_text="A truncated answer", output=[SimpleNamespace(type="message")])
+def test_incomplete_model_response_is_not_presented_as_complete(caplog):
+    result = SimpleNamespace(
+        id="response-123",
+        status="incomplete",
+        incomplete_details=SimpleNamespace(reason="max_output_tokens"),
+        output_text="A truncated answer",
+        output=[SimpleNamespace(type="message")],
+    )
     with patch("openai.OpenAI") as client:
         client.return_value.responses.create.return_value = result
         with pytest.raises(CourseQAError, match="incomplete"):
             respond_with_remote_mcp(PHYSICS_QUESTION)
+    assert "response-123" in caplog.text
+    assert "max_output_tokens" in caplog.text
 
 
 def test_mcp_course_search_preserves_filters_and_supports_pagination(db_session, sample_courses):

@@ -46,7 +46,7 @@ Hjemmesiden findes på `/`. `POST /api/chat` sender som standard spørgsmålet o
 
 Browseren sender op til 23 beskeder med rollerne `user` og `assistant`, så tidligere begrundelser kan bruges i opfølgninger. Serveren begrænser modelhistorikken til 48.000 tegn. Brugerbeskeder er fortsat begrænset til 800 tegn; assistentbeskeder må fylde op til 64.000 tegn. Den sidste besked skal være fra brugeren. Ældre klienter, der kun sender seneste spørgsmål og `completedTurns`, understøttes stadig, men mangler tidligere svartekster. I model-chatten vises modellens svar med relevante resultater og officielle kildelinks. MCP-opslag tilføjer ikke automatisk kursuslister, uddannelseskort eller specialiseringsoversigter efter svaret: et baggrundsopslag er ikke en anbefaling. Hentede kursusnumre og navne bevares i `completedTurns` som samtalekontekst. Den tidligere kortvisning er fortsat tilgængelig i legacy-chatten. Browseren modtager aldrig `API_KEY`, `GROQ_API_KEY` eller `MCP_TOKEN`.
 
-Den nye vej kræver `GROQ_API_KEY`, `MCP_TOKEN` og en `MCP_SERVER_URL`, som Groq kan nå. `CHAT_MODE=model` er standard; `CHAT_MODE=legacy` aktiverer midlertidigt den tidligere routing til sammenligning eller tilbagerulning. Model- eller forbindelsesfejl giver en kort fejlbesked uden automatisk skift til den gamle routing. Opdater også MCP-serveren ved separat deployment: `get_study_plan` returnerer nu introduktion, kildelink og strukturerede krav; `search_courses` understøtter undervisningssprog, periode og pagination via `offset`/`next_offset`. Store resultatlister kan kræve flere kald; modellen skal oplyse, hvis værktøjsbudgettet forhindrer en komplet liste. Der kræves ingen migration eller genimport.
+Den nye vej kræver `GROQ_API_KEY`, `MCP_TOKEN` og en `MCP_SERVER_URL`, som Groq kan nå. `CHAT_MODE=model` er standard; `CHAT_MODE=legacy` aktiverer midlertidigt den tidligere routing til sammenligning eller tilbagerulning. Model- eller forbindelsesfejl giver en kort fejlbesked uden automatisk skift til den gamle routing. Modellen vælger selv, om den vil bruge MCP, hvilke værktøjer den vil bruge, og hvor mange kald der er nødvendige; applikationen sætter ikke et særskilt loft over antallet af værktøjskald. Opdater også MCP-serveren ved separat deployment: `get_courses` kan hente flere kendte kursusnumre samlet, `get_study_plan` returnerer introduktion, kildelink og strukturerede krav, og `search_courses` understøtter undervisningssprog, periode og pagination via `offset`/`next_offset`. Der kræves ingen migration eller genimport.
 
 ## Lokal Python-installation
 
@@ -82,7 +82,6 @@ uvicorn app.main:app --reload
 | `GROQ_MODEL` | Groq-model; standard er `openai/gpt-oss-120b` |
 | `CHAT_MODE` | `model` (standard) bruger fælles model/MCP-chat; `legacy` bruger tidligere intent-routing |
 | `CHAT_MAX_OUTPUT_TOKENS` | Maksimalt modeloutput; standard `4000` |
-| `CHAT_MAX_TOOL_CALLS` | Maksimale MCP-kald pr. svar; standard `8` |
 | `CHAT_TIMEOUT` | Modelkaldets timeout i sekunder; standard `45`, uden automatiske genforsøg. Hold den under hostingens request-timeout (Vercel: 60 sekunder) |
 | `EMBEDDING_API_KEY` | Separat OpenAI API-nøgle til kursus- og query-embeddings |
 | `EMBEDDING_MODEL` | Embeddingmodel; standard er `text-embedding-3-small` |
@@ -99,8 +98,9 @@ uvicorn app.main:app --reload
 | `MCP_TOKEN` | Lang, tilfældig bearer token, der beskytter `/mcp` |
 | `MCP_SERVER_URL` | Offentlig HTTPS-base-URL, fx `https://app.example.com` |
 
-Chatten bruger Groqs Responses API. Groq kalder de skrivebeskyttede MCP-tools
-`get_course`, `search_courses` og `get_study_plan` på `/mcp`; browseren får aldrig
+Chatten bruger Groqs Responses API. Modellen vælger automatisk mellem de skrivebeskyttede
+MCP-tools på `/mcp`, herunder `get_course`, `get_courses`, `search_courses` og
+`get_study_plan`; browseren får aldrig
 adgang til `GROQ_API_KEY` eller `MCP_TOKEN`.
 
 Programmer og specialiseringer matches først deterministisk med officielle navne,

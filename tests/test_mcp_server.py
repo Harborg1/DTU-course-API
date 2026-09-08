@@ -3,7 +3,7 @@
 Covers:
 - Authentication (401/403, Bearer token)
 - Tool discovery (POST JSON-RPC tools/list)
-- Tool calls: get_course, search_courses, get_study_plan, get_specializations
+- Tool calls: get_course, get_courses, search_courses, get_study_plan, get_specializations
 - Input validation (missing fields, invalid course numbers, caps)
 - Groq configuration (missing MCP_TOKEN / MCP_SERVER_URL raises CourseQAError)
 """
@@ -110,6 +110,7 @@ def test_discovery_returns_course_and_study_tools(test_client):
     tool_names = {t["name"] for t in tools}
     assert tool_names == {
         "get_course",
+        "get_courses",
         "search_courses",
         "get_new_courses",
         "get_study_plan",
@@ -124,6 +125,15 @@ def test_discovery_get_course_schema(test_client):
     course_tool = next(t for t in tools if t["name"] == "get_course")
     assert "course_number" in course_tool["inputSchema"]["required"]
     assert "academic_year" in course_tool["inputSchema"]["required"]
+
+
+def test_discovery_get_courses_schema(test_client):
+    response = _send_jsonrpc(test_client, "tools/list")
+    tools = response.json()["result"]["tools"]
+    courses_tool = next(t for t in tools if t["name"] == "get_courses")
+    assert "course_numbers" in courses_tool["inputSchema"]["required"]
+    assert courses_tool["inputSchema"]["properties"]["course_numbers"]["maxItems"] == 20
+    assert "academic_year" in courses_tool["inputSchema"]["required"]
 
 
 def test_discovery_search_courses_schema(test_client):
@@ -335,6 +345,46 @@ def test_get_course_wrong_academic_year_returns_error(test_client, db_session):
     assert response.status_code == 200
     body = response.json()
     content = json.loads(body["result"]["content"][0]["text"])
+    assert "error" in content
+
+
+# ---------------------------------------------------------------------------
+# get_courses tool
+# ---------------------------------------------------------------------------
+
+
+def test_get_courses_returns_requested_courses_in_one_call(db_session):
+    from app.mcp_server.server import _handle_get_courses
+
+    db_session.add_all([
+        _make_course("02450", "2026-2027", level="MSc"),
+        _make_course("02476", "2026-2027", level="MSc"),
+    ])
+    db_session.commit()
+    factory = sessionmaker(bind=db_session.get_bind(), expire_on_commit=False)
+
+    with patch("app.database.SessionLocal", factory):
+        content = _handle_get_courses({
+            "course_numbers": ["02476", "99999", "02450", "02476"],
+            "academic_year": "2026-2027",
+            "response_language": "en",
+        })
+
+    assert content["requested"] == 3
+    assert content["returned"] == 2
+    assert content["missing_course_numbers"] == ["99999"]
+    assert [course["course_number"] for course in content["courses"]] == ["02476", "02450"]
+    assert all(course["level"] == "MSc" for course in content["courses"])
+
+
+@pytest.mark.parametrize("course_numbers", [[], ["abcde"], ["02450"] * 21, "02450"])
+def test_get_courses_rejects_invalid_course_number_lists(course_numbers):
+    from app.mcp_server.server import _handle_get_courses
+
+    content = _handle_get_courses({
+        "course_numbers": course_numbers,
+        "academic_year": "2026-2027",
+    })
     assert "error" in content
 
 
@@ -690,13 +740,15 @@ def test_remote_mcp_uses_correct_groq_headers():
         assert tools[0]["headers"]["Authorization"] == f"Bearer {mcp_token}"
         assert tools[0]["allowed_tools"] == [
             "get_course",
+            "get_courses",
             "search_courses",
             "get_new_courses",
             "get_study_plan",
             "get_specializations",
         ]
         assert call_kwargs["max_output_tokens"] == get_settings().chat_max_output_tokens
-        assert call_kwargs["max_tool_calls"] == get_settings().chat_max_tool_calls
+        assert call_kwargs["tool_choice"] == "auto"
+        assert "max_tool_calls" not in call_kwargs
         assert "2026-2027" in call_kwargs["instructions"]
 
 
