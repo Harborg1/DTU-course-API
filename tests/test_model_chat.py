@@ -150,7 +150,7 @@ def test_remote_failure_does_not_fall_back_to_keyword_clarification(client):
     legacy.assert_not_called()
 
 
-def test_real_mcp_data_becomes_course_and_program_cards(client, db_session, sample_courses):
+def test_real_mcp_data_is_kept_as_context_without_automatic_cards(client, db_session, sample_courses):
     db_session.add(StudyProgram(
         slug="physics", name="Physics", degree_type="Master", academic_year="2026-2027",
         introduction="Physics experiments and mathematical models.",
@@ -167,12 +167,11 @@ def test_real_mcp_data_becomes_course_and_program_cards(client, db_session, samp
     with patch("app.services.chat_service.respond_with_remote_mcp", return_value=answer):
         response = client.post("/api/chat", json={"messages": [{"role": "user", "content": "Show the results"}]})
     body = response.json()
-    assert body["recommendations"][0]["courseNumber"] == "02450"
-    assert body["recommendations"][0]["sourceUrl"] == course_data["courses"][0]["source_url"]
-    assert body["studyPrograms"][0]["name"] == "Physics"
-    assert body["studyPrograms"][0]["description"] is None
-    assert body["studyPrograms"][0]["sourceUrl"] == "https://www.dtu.dk/physics"
+    assert body["recommendations"] == []
+    assert body["studyPrograms"] == []
     assert body["studyPlan"] is None
+    assert body["turnState"]["courseNumbers"] == ["02450"]
+    assert body["turnState"]["studyProgramNames"] == ["Physics"]
 
 
 @pytest.mark.parametrize("prompt", [
@@ -205,13 +204,7 @@ def test_study_plan_answer_does_not_repeat_full_curriculum(client, prompt):
     body = response.json()
     assert body["reply"] == answer.reply
     assert body["studyPlan"] is None
-    assert body["studyPrograms"] == [{
-        "name": "Computer Science and Engineering",
-        "degreeType": "Master",
-        "description": None,
-        "reason": "",
-        "sourceUrl": "https://www.dtu.dk/computer-science-and-engineering/curriculum",
-    }]
+    assert body["studyPrograms"] == []
     assert body["turnState"]["studyProgramNames"] == ["Computer Science and Engineering"]
 
 
@@ -224,9 +217,55 @@ def test_program_comparison_preserves_both_programs_without_selecting_one_plan(c
     ])
     with patch("app.services.chat_service.respond_with_remote_mcp", return_value=answer):
         response = client.post("/api/chat", json={"messages": [{"role": "user", "content": PHYSICS_QUESTION}]})
-    assert len(response.json()["studyPrograms"]) == 2
+    assert response.json()["studyPrograms"] == []
+    assert response.json()["turnState"]["studyProgramNames"] == ["Physics", "Computer Science and Engineering"]
     assert response.json()["studyPlan"] is None
     assert response.json()["reply"] == "Physics is the closer fit."
+
+
+@pytest.mark.parametrize("prompt", [
+    "Jeg er interesseret i algoritmer og datastrukturer. Bør jeg først tage algoritmer "
+    "og datastrukutrer 2 når jeg har taget algoritmer og datastrukturere 1?",
+    "Find courses about algorithms and data structures",
+])
+def test_background_lookups_do_not_add_lists_or_program_links_to_answer(client, prompt):
+    reply = "Her er svaret med de relevante oplysninger om kurserne."
+    answer = MCPAnswer(reply, [
+        MCPToolResult("search_courses", {}, {"courses": [{
+            "course_number": "02105", "title": "Algorithms and Data Structures 1",
+            "source_url": "https://kurser.dtu.dk/course/02105",
+        }, {
+            "course_number": "02110", "title": "Algorithms and Data Structures 2",
+            "source_url": "https://kurser.dtu.dk/course/02110",
+        }]}),
+        MCPToolResult("get_study_plan", {}, {
+            "program_name": "Computer Science and Engineering", "degree_type": "Master",
+            "source_url": "https://www.dtu.dk/computer-science-and-engineering/curriculum",
+            "sections": [],
+        }),
+        MCPToolResult("get_specializations", {}, {
+            "program_name": "Computer Science and Engineering",
+            "specializations": [{
+                "name": "Algorithms", "slug": "algorithms",
+                "source_url": "https://www.dtu.dk/algorithms",
+                "courses": [], "requirements": [],
+            }],
+        }),
+    ])
+    with patch("app.services.chat_service.respond_with_remote_mcp", return_value=answer) as model:
+        response = client.post("/api/chat", json={"messages": [{"role": "user", "content": prompt}]})
+
+    assert response.status_code == 200
+    body = response.json()
+    assert body["reply"] == reply
+    assert body["recommendations"] == []
+    assert body["studyPrograms"] == []
+    assert body["studyPlan"] is None
+    assert body["specializations"] == []
+    assert body["turnState"]["courseNumbers"] == ["02105", "02110"]
+    assert body["turnState"]["studyProgramNames"] == ["Computer Science and Engineering"]
+    assert body["turnState"]["specializationNames"] == ["Algorithms"]
+    assert model.call_args.args[0] == prompt
 
 
 def test_remote_model_receives_role_labelled_dialogue_and_reasoning_instructions():
@@ -245,6 +284,8 @@ def test_remote_model_receives_role_labelled_dialogue_and_reasoning_instructions
     assert "Udelad degree_type" in sent["instructions"]
     assert "Et kursussøgeresultat beviser IKKE" in sent["instructions"]
     assert "hvert kursus er obligatorisk" in sent["instructions"]
+    assert "Værktøjsopslag er baggrund for svaret" in sent["instructions"]
+    assert "kursusrækkefølge eller forudsætninger" in sent["instructions"]
     assert answer.reply == "Physics may fit."
 
 

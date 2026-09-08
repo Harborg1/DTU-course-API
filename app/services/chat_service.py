@@ -1,4 +1,4 @@
-"""Model-led conversation with factual UI results from remote MCP calls."""
+"""Model-led conversation with MCP lookups retained as conversation context."""
 
 import logging
 
@@ -48,8 +48,8 @@ def conversation_messages(request: ChatRequest) -> list[dict[str, str]]:
     return selected
 
 
-def _attach_tool_results(response: ChatResponse, answer: MCPAnswer) -> None:
-    """Preserve source-backed cards without classifying or rewriting the request."""
+def _record_tool_context(state: CompletedTurnState, answer: MCPAnswer) -> None:
+    """Record retrieved entities without presenting background lookups as recommendations."""
     courses = {}
     programs = {}
     specializations = {}
@@ -82,12 +82,9 @@ def _attach_tool_results(response: ChatResponse, answer: MCPAnswer) -> None:
                     continue
                 specializations[specialization.source_url] = specialization
 
-    response.recommendations = sorted(courses.values(), key=lambda course: course.course_number)
-    response.study_programs = list(programs.values())
-    response.specializations = list(specializations.values())
-    # The model already explains the study plan in its answer. Keep programme
-    # cards as compact source references instead of repeating the introduction
-    # and entire curriculum beneath every answer that uses get_study_plan.
+    state.course_numbers = sorted(courses)[:200]
+    state.study_program_names = [program.name for program in programs.values()][:50]
+    state.specialization_names = [item.name for item in specializations.values()][:50]
 
 
 def answer_chat(request: ChatRequest, academic_year: str) -> ChatResponse:
@@ -125,15 +122,12 @@ def answer_chat(request: ChatRequest, academic_year: str) -> ChatResponse:
         responseLanguage=language,
         isDirectAnswer=True,
     )
-    _attach_tool_results(response, answer)
     # Compatibility metadata is derived from retrieved facts. It must not run
     # the old intent classifier or decide how the model answers a follow-up.
     response.turn_state = CompletedTurnState(
         request=latest,
         operation="general",
-        courseNumbers=[course.course_number for course in response.recommendations][:200],
-        studyProgramNames=[program.name for program in response.study_programs][:50],
-        specializationNames=[item.name for item in response.specializations][:50],
         responseLanguage=language,
     )
+    _record_tool_context(response.turn_state, answer)
     return response
