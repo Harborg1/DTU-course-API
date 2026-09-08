@@ -28,7 +28,6 @@ git merge --ff-only origin/main
 `origin` is the GitHub remote. If `--ff-only` is rejected, investigate the
 problem before continuing. Do not use `--force` or reset the branch.
 
-
 Activate the project's Python environment
 
 ```bash

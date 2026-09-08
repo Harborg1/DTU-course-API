@@ -1,11 +1,12 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.config import get_settings
 from app.database import get_db
 from app.schemas.recommendation import ChatRequest, ChatResponse
+from app.services.chat_service import answer_chat
 from app.services.conversation_state_service import build_completed_turn
 from app.services.recommendation_service import recommend_courses
 
@@ -22,7 +23,11 @@ def chat(request: ChatRequest, session: Annotated[Session, Depends(get_db)]) -> 
     user_messages = [message.content for message in request.messages if message.role == "user"]
     if not user_messages:
         raise HTTPException(status_code=422, detail="At least one user message is required")
+    if request.messages[-1].role != "user":
+        raise HTTPException(status_code=422, detail="The last message must be from the user")
     academic_year = request.academic_year or get_settings().default_academic_year
+    if get_settings().chat_mode == "model":
+        return answer_chat(request, academic_year)
     latest_user_message = user_messages[-1]
     service_messages = [latest_user_message] if request.completed_turns else user_messages
     response = recommend_courses(

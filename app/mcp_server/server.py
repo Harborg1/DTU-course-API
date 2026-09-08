@@ -99,6 +99,20 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
             "minimum": 1,
             "maximum": 20,
         },
+        "offset": {
+            "type": "integer",
+            "description": "Pagination offset; follow next_offset to retrieve more results",
+            "minimum": 0,
+        },
+        "period": {
+            "type": "string",
+            "description": "Teaching period filter (e.g. E or F)",
+        },
+        "language": {
+            "type": "string",
+            "description": "Teaching language filter, distinct from search_language",
+            "enum": ["English", "Danish"],
+        },
     },
     "required": ["q", "academic_year", "search_language"],
 }
@@ -349,6 +363,15 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
         limit = max(1, min(int(arguments.get("limit", 10)), 20))
     except (TypeError, ValueError):
         return {"error": "limit must be an integer between 1 and 20"}
+    offset = arguments.get("offset", 0)
+    if isinstance(offset, bool) or not isinstance(offset, int) or offset < 0:
+        return {"error": "offset must be a non-negative integer"}
+    language = arguments.get("language")
+    if language not in {None, "English", "Danish"}:
+        return {"error": "language must be English or Danish"}
+    period = arguments.get("period")
+    if period is not None and not isinstance(period, str):
+        return {"error": "period must be a string"}
     try:
         ects = Decimal(str(arguments["ects"])) if arguments.get("ects") is not None else None
     except (InvalidOperation, ValueError):
@@ -367,12 +390,12 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             academic_year=academic_year,
             ects=ects,
             level=level,
-            period=None,
-            language=None,
+            period=period,
+            language=language,
             search_language=search_language,
             search_all_languages=True,
             limit=limit,
-            offset=0,
+            offset=offset,
         )
 
         selected_courses = sorted(
@@ -394,6 +417,10 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
                 ),
                 "ects": float(course.ects) if course.ects else None,
                 "level": course.level,
+                "language": course.language,
+                "period": course.period,
+                "schedule": course.schedule,
+                "department": course.department,
                 "source_url": course.source_url,
             }
             for course, _score in selected_courses
@@ -404,6 +431,12 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             "search_language": search_language,
             "count": result.count,
             "returned": len(courses),
+            "offset": offset,
+            "next_offset": (
+                offset + len(courses)
+                if courses and offset + len(courses) < result.count
+                else None
+            ),
             "courses": courses,
         }
     finally:
@@ -561,6 +594,9 @@ def _handle_get_study_plan(arguments: dict[str, Any]) -> dict[str, Any]:
                         "course_number": c.course_number,
                         "title": c.title,
                         "ects": float(c.ects) if c.ects else None,
+                        "ects_options": c.ects_options,
+                        "schedule": c.schedule,
+                        "source_url": c.source_url,
                         "requirement_role": c.requirement_role,
                     }
                     for c in section.courses
@@ -571,10 +607,16 @@ def _handle_get_study_plan(arguments: dict[str, Any]) -> dict[str, Any]:
                         "description": r.description,
                         "required_ects": float(r.required_ects) if r.required_ects else None,
                         "required_count": r.required_count,
+                        "is_subrequirement": r.parent_requirement_id is not None,
                         "courses": [
                             {
                                 "course_number": link.course.course_number,
                                 "title": link.course.title,
+                                "ects": float(link.course.ects) if link.course.ects else None,
+                                "ects_options": link.course.ects_options,
+                                "schedule": link.course.schedule,
+                                "source_url": link.course.source_url,
+                                "requirement_role": link.course.requirement_role,
                             }
                             for link in r.course_links
                         ],
@@ -588,6 +630,10 @@ def _handle_get_study_plan(arguments: dict[str, Any]) -> dict[str, Any]:
             "program_name": program.name,
             "degree_type": program.degree_type,
             "academic_year": program.academic_year or academic_year,
+            "introduction": program.introduction,
+            "source_url": program.source_url,
+            "valid_from_year": program.valid_from_year,
+            "valid_to_year": program.valid_to_year,
             "sections": sections,
         }
     finally:
@@ -682,6 +728,17 @@ def _handle_get_specializations(arguments: dict[str, Any]) -> dict[str, Any]:
                     "is_optional": True,
                     "description": specialization.description,
                     "source_url": specialization.source_url,
+                    "courses": [
+                        {
+                            "course_number": course.course_number,
+                            "title": course.title,
+                            "ects": float(course.ects) if course.ects is not None else None,
+                            "schedule": course.schedule,
+                            "role": course.role,
+                            "is_terminated": course.is_terminated,
+                        }
+                        for course in specialization.courses
+                    ],
                     "requirements": [
                         {
                             "requirement_type": requirement.requirement_type,

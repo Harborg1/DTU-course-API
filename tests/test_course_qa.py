@@ -124,7 +124,7 @@ def test_answer_course_question_without_api_key():
     get_settings.cache_clear()
 
 
-def test_course_question_triggers_llm(client, sample_courses):
+def test_course_question_triggers_llm(legacy_chat, client, sample_courses):
     with patch(
         "app.services.recommendation_service.answer_with_remote_mcp",
         return_value="Skemagruppen for 02450 er E2A.",
@@ -155,7 +155,7 @@ def test_course_question_triggers_llm(client, sample_courses):
     assert body["recommendations"] == []
 
 
-def test_course_question_nonexistent_course(client, sample_courses):
+def test_course_question_nonexistent_course(legacy_chat, client, sample_courses):
     response = client.post(
         "/api/chat",
         json={
@@ -175,7 +175,7 @@ def test_course_question_nonexistent_course(client, sample_courses):
     assert "ikke finde" in body["reply"] or "kunne ikke" in body["reply"]
 
 
-def test_english_course_question_has_english_not_found_answer(client, sample_courses):
+def test_english_course_question_has_english_not_found_answer(legacy_chat, client, sample_courses):
     response = client.post(
         "/api/chat",
         json={
@@ -194,7 +194,7 @@ def test_english_course_question_has_english_not_found_answer(client, sample_cou
     assert body["reply"].startswith("I could not find course 99999")
 
 
-def test_neutral_follow_up_reuses_completed_turn_response_language(client, sample_courses):
+def test_neutral_follow_up_reuses_completed_turn_response_language(legacy_chat, client, sample_courses):
     with patch(
         "app.services.recommendation_service.answer_with_remote_mcp",
         return_value="Her er flere oplysninger om kurset.",

@@ -546,9 +546,9 @@ async function submitMessage(text) {
   addTyping();
 
   try {
-    // Previous replies are represented by compact completed-turn state. This
-    // keeps old requests available as context without replaying them as active instructions.
-    const requestMessages = [{ role: "user", content: cleaned }];
+    // Preserve the actual reasoning and references from recent completed turns.
+    const requestMessages = messages.slice(-23);
+    if (requestMessages[0]?.role === "assistant") requestMessages.shift();
     const response = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

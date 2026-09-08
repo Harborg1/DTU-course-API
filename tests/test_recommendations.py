@@ -29,7 +29,7 @@ def test_understands_danish_software_technology_prompt():
     assert context.level == "BSc"
 
 
-def test_public_chat_recommends_matching_course_without_api_key(client, sample_courses):
+def test_public_chat_recommends_matching_course_without_api_key(legacy_chat, client, sample_courses):
     response = client.post(
         "/api/chat",
         json={
@@ -59,7 +59,7 @@ def test_chat_requires_a_user_message(client):
     assert response.status_code == 422
 
 
-def test_chat_returns_clear_empty_result(client):
+def test_chat_returns_clear_empty_result(legacy_chat, client):
     response = client.post(
         "/api/chat",
         json={"messages": [{"role": "user", "content": "Jeg vil lære biotechnology"}]},

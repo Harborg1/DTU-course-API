@@ -1,11 +1,17 @@
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 
 class ChatMessage(BaseModel):
     role: Literal["user", "assistant"]
-    content: str = Field(min_length=1, max_length=800)
+    content: str = Field(min_length=1, max_length=64000)
+
+    @model_validator(mode="after")
+    def validate_user_length(self) -> "ChatMessage":
+        if self.role == "user" and len(self.content) > 800:
+            raise ValueError("User messages must contain at most 800 characters")
+        return self
 
 
 class UnderstoodContext(BaseModel):
@@ -54,7 +60,7 @@ class CompletedTurnState(BaseModel):
 
 
 class ChatRequest(BaseModel):
-    messages: list[ChatMessage] = Field(min_length=1, max_length=12)
+    messages: list[ChatMessage] = Field(min_length=1, max_length=23)
     completed_turns: list[CompletedTurnState] = Field(default_factory=list, max_length=11, alias="completedTurns")
     academic_year: str | None = Field(default=None, pattern=r"^\d{4}-\d{4}$", alias="academicYear")
 

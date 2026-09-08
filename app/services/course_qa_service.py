@@ -6,7 +6,10 @@ a clean Groq Responses API integration. Groq calls the MCP server
 directly via Streamable HTTP.
 """
 
+import json
 import logging
+from dataclasses import dataclass, field
+from typing import Any
 
 from app.config import get_settings
 from app.models.course import Course
@@ -15,8 +18,44 @@ from app.services.language_service import detect_user_language
 
 logger = logging.getLogger(__name__)
 
+
 class CourseQAError(RuntimeError):
     """Raised when a course answer cannot be obtained from Groq."""
+
+
+@dataclass
+class MCPToolResult:
+    name: str
+    arguments: dict[str, Any]
+    data: dict[str, Any]
+
+
+@dataclass
+class MCPAnswer:
+    reply: str
+    tool_results: list[MCPToolResult] = field(default_factory=list)
+
+
+def _tool_results(output: list) -> list[MCPToolResult]:
+    """Read factual results, never assistant-generated JSON, for UI cards."""
+    results = []
+    for item in output:
+        if getattr(item, "type", None) != "mcp_call" or getattr(item, "error", None):
+            continue
+        try:
+            data = json.loads(item.output)
+            arguments = json.loads(item.arguments)
+            if isinstance(data, dict) and data.get("isError"):
+                continue
+            if isinstance(data, dict) and "content" in data:
+                data = json.loads(next(
+                    block["text"] for block in data["content"] if block.get("type") == "text"
+                ))
+        except (ValueError, TypeError, KeyError, AttributeError, StopIteration):
+            continue
+        if isinstance(data, dict) and isinstance(arguments, dict) and "error" not in data:
+            results.append(MCPToolResult(name=item.name, arguments=arguments, data=data))
+    return results
 
 
 def _detect_language(text: str) -> str:
@@ -56,15 +95,53 @@ def _build_system_prompt(language: str, academic_year: str) -> str:
         "Brug get_specializations til spørgsmål om specialiseringer og deres kursuskrav.\n"
         "Specialiseringer er valgfrie studieveje. Beskriv aldrig en specialiserings kursuspulje som "
         "obligatorisk for alle på programmet; respekter de returnerede requirement-roller.\n"
-        "Besvar kun på baggrund af data fra værktøjerne.\n"
+        "Forstå hele brugerens spørgsmål, og besvar det direkte med en begrundet vurdering. "
+        "Du må ræsonnere over brugerens interesser og de hentede oplysninger. Skeln mellem "
+        "dokumenterede DTU-fakta og din egen foreløbige anbefaling; opfind aldrig uddannelser, "
+        "kursusindhold, adgangskrav eller kildelinks.\n"
+        "Ved valg mellem uddannelser: brug get_study_plan for hver relevant uddannelse, "
+        "sammenhold deres indhold med brugerens interesser, og forklar hvad der taler for hvert valg. "
+        "Start med din vurdering, når der er grundlag for den. Hvis et navn er tvetydigt eller "
+        "ikke findes, forklar usikkerheden uden at opfinde et officielt match.\n"
+        "VIGTIGT: Start undersøgelsen af en uddannelsessammenligning med get_study_plan, "
+        "ikke search_courses. Udelad degree_type, hvis brugeren ikke har angivet niveau. "
+        "Brug kun det degree_type og officielle navn, som studieplansværktøjet returnerer. "
+        "Et kursussøgeresultat beviser IKKE, at et kursus indgår i en bestemt uddannelse, "
+        "er et kernefag eller kan vælges som valgfag. Kun studieplanens krav kan dokumentere "
+        "den slags tilknytning. Uden en matchende studieplan: giv en generel, tydeligt "
+        "foreløbig faglig vurdering og forklar at DTU-uddannelsen ikke er verificeret. "
+        "Udled aldrig uddannelsens niveau fra niveauet på enkelte kurser. "
+        "En pulje med valgmuligheder betyder ikke, at hvert kursus er obligatorisk. "
+        "Bevar forskellen på obligatoriske kurser og krav om at vælge fra en pulje. "
+        "Påstande om løn, jobmuligheder og adgang til videre uddannelse kræver også belæg; "
+        "lad være med at tilføje dem alene ud fra kursustitler.\n"
+        "Bed kun om afklaring, når manglende oplysninger væsentligt hindrer et nyttigt svar. "
+        "Et spørgsmål om at studere X eller Y handler allerede om uddannelsesvalg; spørg ikke "
+        "om brugeren mener kurser eller uddannelser. En kort interesse kan mødes med en nyttig "
+        "indledende vurdering og et relevant opfølgende spørgsmål.\n"
+        "Tidligere bruger- og assistentbeskeder er samtalehistorik. Besvar den seneste "
+        "brugerbesked, brug historikken til referencer og præferencer, og følg eksplicitte emneskift. "
+        "Tidligere assistentsvar og oplysninger fra brugeren er ikke verificerede DTU-kilder.\n"
+        "Hilsner og generel vejledning kræver ikke værktøjskald. Konkrete DTU-oplysninger "
+        "skal bygge på værktøjsdata. Henvis til de returnerede officielle kildelinks.\n"
+        "Ved kursussøgning: respekter niveau, ECTS, undervisningssprog og periode. "
+        "Ved ønske om alle resultater: brug limit og offset til at hente flere sider, "
+        "indtil next_offset er null. Hvis kald- eller svarbudgettet ikke rækker, sig tydeligt "
+        "at listen er ufuldstændig; kald aldrig en begrænset liste komplet.\n"
         "Hvis et værktøj returnerer en fejl, forklar det kort til brugeren.\n"
         "Never format course results as Markdown tables.\n"
+        "The chat displays plain text. Avoid Markdown tables, heading markers, bold markers "
+        "and invented citation markers. Use paragraphs and simple bullet lists, with official "
+        "source URLs returned by tools when available.\n"
         "Present courses as a readable bullet list.\n"
         "Put the course number and title on the first line and ECTS and level on the following line.\n"
         "Do not place multiple courses on the same line.\n"
         "Always sort every course list by course number in ascending order before presenting it.\n"
-        "The sentence limit applies to prose, not to individual course-list entries.\n"
-        "Svar kort og præcist — højst 3 sætninger.\n"
+        "Tilpas længden til spørgsmålet: korte svar til enkle spørgsmål og udførlige "
+        "forklaringer til sammenligninger og studievejledning. Et enkelt spørgsmål om "
+        "hvilken uddannelse der passer bedst bør normalt besvares i nogle få afsnit med "
+        "de vigtigste forskelle; undlad lange kursuskataloger, medmindre brugeren beder om dem. "
+        "Undgå fyld.\n"
     )
 
 
@@ -74,6 +151,19 @@ def answer_with_remote_mcp(
     *,
     response_language: str | None = None,
 ) -> str:
+    """Compatibility wrapper for services that only need the answer text."""
+    return respond_with_remote_mcp(
+        question, academic_year, response_language=response_language,
+    ).reply
+
+
+def respond_with_remote_mcp(
+    question: str,
+    academic_year: str | None = None,
+    *,
+    response_language: str | None = None,
+    messages: list[dict[str, str]] | None = None,
+) -> MCPAnswer:
     """Answer using Groq Responses API with remote MCP tools.
 
     Groq decides which tool to call, the MCP server executes it via
@@ -101,8 +191,8 @@ def answer_with_remote_mcp(
     client = OpenAI(
         api_key=settings.groq_api_key,
         base_url=settings.groq_base_url,
-        timeout=30.0,
-        max_retries=1,
+        timeout=settings.chat_timeout,
+        max_retries=0,
     )
 
     # Remote MCP tool definition — Groq contacts the server directly
@@ -128,11 +218,11 @@ def answer_with_remote_mcp(
         response = client.responses.create(
             model=settings.groq_model,
             instructions=_build_system_prompt(language, selected_academic_year),
-            input=question,
+            input=messages if messages is not None else question,
             tools=tools,
             temperature=settings.groq_temperature,
-            max_output_tokens=1000,
-            max_tool_calls=3,
+            max_output_tokens=settings.chat_max_output_tokens,
+            max_tool_calls=settings.chat_max_tool_calls,
         )
     except OpenAIError as exc:
         logger.exception("Groq Responses API request failed")
@@ -142,9 +232,13 @@ def answer_with_remote_mcp(
     if not response.output:
         raise CourseQAError("Groq returned no output")
 
+    if getattr(response, "status", None) == "incomplete":
+        raise CourseQAError("Groq response was incomplete")
+
+    tool_results = _tool_results(response.output)
     output_text = getattr(response, "output_text", None)
     if isinstance(output_text, str) and output_text.strip():
-        return output_text.strip()
+        return MCPAnswer(reply=output_text.strip(), tool_results=tool_results)
 
     text_parts = []
     for item in response.output:
@@ -157,7 +251,7 @@ def answer_with_remote_mcp(
     if not content:
         raise CourseQAError("Groq returned an empty answer")
 
-    return content
+    return MCPAnswer(reply=content, tool_results=tool_results)
 
 
 # ---------------------------------------------------------------------------

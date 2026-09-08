@@ -58,10 +58,11 @@ def test_chat_message_styles_preserve_model_line_breaks():
     assert ".message p { margin: 0; white-space: pre-wrap; }" in styles
 
 
-def test_chat_submits_current_request_with_completed_turn_state():
+def test_chat_submits_recent_dialogue_with_completed_turn_state():
     script = (PROJECT_ROOT / "app" / "web" / "static" / "app.js").read_text()
 
-    assert 'const requestMessages = [{ role: "user", content: cleaned }]' in script
+    assert 'const requestMessages = messages.slice(-23)' in script
+    assert 'if (requestMessages[0]?.role === "assistant") requestMessages.shift()' in script
     assert "completedTurns: completedTurns.slice(-11)" in script
     assert "if (result.turnState) completedTurns.push(result.turnState)" in script
 

@@ -226,7 +226,7 @@ def test_study_plan_is_stored_separately_and_reuses_courses_across_rules(db_sess
     assert upsert_study_plan(db_session, data) == "unchanged"
 
 
-def test_chat_explains_applied_mathematics_study_structure(client, db_session):
+def test_chat_explains_applied_mathematics_study_structure(legacy_chat, client, db_session):
     data = parse_study_plan_page(_study_plan_html(), SOURCE_URL)
     upsert_study_plan(db_session, data)
     db_session.commit()
@@ -279,7 +279,7 @@ def test_english_study_plan_prompt_uses_english_fallback(db_session):
     assert "Vælg" not in response.reply
 
 
-def test_chat_uses_degree_context_to_resolve_bilingual_program_names(client, db_session):
+def test_chat_uses_degree_context_to_resolve_bilingual_program_names(legacy_chat, client, db_session):
     bachelor = parse_study_plan_page(
         _study_plan_html().replace("Anvendt Matematik", "Bioteknologi"),
         "https://student.dtu.dk/studieordninger/Bachelor/bioteknologi/studieplan",
@@ -329,7 +329,7 @@ def test_chat_uses_degree_context_to_resolve_bilingual_program_names(client, db_
     assert bachelor_response.json()["understood"]["level"] == "Bachelor"
 
 
-def test_chat_answers_general_msc_ects_without_program_name(client):
+def test_chat_answers_general_msc_ects_without_program_name(legacy_chat, client):
     response = client.post(
         "/api/chat",
         json={
@@ -352,7 +352,7 @@ def test_chat_answers_general_msc_ects_without_program_name(client):
     assert body["isDirectAnswer"] is True
 
 
-def test_chat_remembers_program_context_and_tolerates_a_spelling_error(client, db_session):
+def test_chat_remembers_program_context_and_tolerates_a_spelling_error(legacy_chat, client, db_session):
     curriculum_html = (
         _msc_curriculum_html()
         .replace("Applied Chemistry", "Computer Science and Engineering")

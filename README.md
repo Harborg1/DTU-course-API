@@ -42,7 +42,11 @@ curl -H "X-API-Key: $API_KEY" http://localhost:8000/api/v1/import/status
 
 API-dokumentation findes på `/docs`, `/redoc` og `/openapi.json`.
 
-Hjemmesiden findes på `/`. Den sender brugerens samtalekontekst til `POST /api/chat`, hvor emne, niveau, ECTS, periode og sprog udledes, og der søges direkte i de officielle kursus- og studieprogramdata. Studieprogramanbefalinger returneres særskilt i `studyPrograms`; tvetydige interesseforespørgsler beder brugeren vælge mellem studier og kurser. Browseren modtager aldrig den interne `API_KEY`.
+Hjemmesiden findes på `/`. `POST /api/chat` sender som standard spørgsmålet og den seneste samtale til modellen, som selv vælger de nødvendige MCP-værktøjer. Der køres ikke intent-routing før svaret. Modellen kan sammenligne uddannelser, begrunde anbefalinger og stille relevante opfølgende spørgsmål; konkrete DTU-oplysninger skal underbygges med værktøjsdata og officielle kildelinks. Svarlængden tilpasses spørgsmålet.
+
+Browseren sender op til 23 beskeder med rollerne `user` og `assistant`, så tidligere begrundelser kan bruges i opfølgninger. Serveren begrænser modelhistorikken til 48.000 tegn. Brugerbeskeder er fortsat begrænset til 800 tegn; assistentbeskeder må fylde op til 64.000 tegn. Den sidste besked skal være fra brugeren. Ældre klienter, der kun sender seneste spørgsmål og `completedTurns`, understøttes stadig, men mangler tidligere svartekster. Kursus-, uddannelses- og studieplanskort bygges fra returnerede MCP-data; modellens tekst bruges ikke som kilde til kortenes fakta. Browseren modtager aldrig `API_KEY`, `GROQ_API_KEY` eller `MCP_TOKEN`.
+
+Den nye vej kræver `GROQ_API_KEY`, `MCP_TOKEN` og en `MCP_SERVER_URL`, som Groq kan nå. `CHAT_MODE=model` er standard; `CHAT_MODE=legacy` aktiverer midlertidigt den tidligere routing til sammenligning eller tilbagerulning. Model- eller forbindelsesfejl giver en kort fejlbesked uden automatisk skift til den gamle routing. Opdater også MCP-serveren ved separat deployment: `get_study_plan` returnerer nu introduktion, kildelink og strukturerede krav; `search_courses` understøtter undervisningssprog, periode og pagination via `offset`/`next_offset`. Store resultatlister kan kræve flere kald; modellen skal oplyse, hvis værktøjsbudgettet forhindrer en komplet liste. Der kræves ingen migration eller genimport.
 
 ## Lokal Python-installation
 
@@ -76,6 +80,10 @@ uvicorn app.main:app --reload
 | `LOG_LEVEL` | Fx `INFO` eller `DEBUG` |
 | `GROQ_API_KEY` | Groq API-nøgle til chatten |
 | `GROQ_MODEL` | Groq-model; standard er `openai/gpt-oss-120b` |
+| `CHAT_MODE` | `model` (standard) bruger fælles model/MCP-chat; `legacy` bruger tidligere intent-routing |
+| `CHAT_MAX_OUTPUT_TOKENS` | Maksimalt modeloutput; standard `4000` |
+| `CHAT_MAX_TOOL_CALLS` | Maksimale MCP-kald pr. svar; standard `8` |
+| `CHAT_TIMEOUT` | Modelkaldets timeout i sekunder; standard `45`, uden automatiske genforsøg. Hold den under hostingens request-timeout (Vercel: 60 sekunder) |
 | `EMBEDDING_API_KEY` | Separat OpenAI API-nøgle til kursus- og query-embeddings |
 | `EMBEDDING_MODEL` | Embeddingmodel; standard er `text-embedding-3-small` |
 | `EMBEDDING_DIMENSIONS` | Vektordimension; databaseskemaet bruger `1536` |
@@ -85,7 +93,7 @@ uvicorn app.main:app --reload
 | `SEMANTIC_RESOLUTION_ENABLED` | Slår valideret semantisk program- og specialiseringsmatching til eller fra |
 | `SEMANTIC_RESOLUTION_MIN_CONFIDENCE` | Minimum confidence for at acceptere et semantisk match; standard er `0.85` |
 | `SEMANTIC_RESOLUTION_TIMEOUT` | Timeout i sekunder for den semantiske fallback; standard er `10` |
-| `SEMANTIC_INTENT_ENABLED` | Slår struktureret semantisk hensigtsklassifikation til for spørgsmål, som keyword-routeren ikke forstår |
+| `SEMANTIC_INTENT_ENABLED` | Kun legacy-chat: semantisk hensigtsklassifikation for spørgsmål, som keyword-routeren ikke forstår |
 | `SEMANTIC_INTENT_MIN_CONFIDENCE` | Minimum confidence for at acceptere en semantisk hensigt; standard er `0.85` |
 | `SEMANTIC_INTENT_TIMEOUT` | Timeout i sekunder for hensigtsklassifikationen; standard er `10` |
 | `MCP_TOKEN` | Lang, tilfældig bearer token, der beskytter `/mcp` |

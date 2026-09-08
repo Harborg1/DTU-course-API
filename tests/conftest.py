@@ -22,6 +22,15 @@ from app.models.course import Course, CourseTranslation  # noqa: E402
 
 
 @pytest.fixture
+def legacy_chat(monkeypatch):
+    """Exercise the explicitly retained legacy API mode in its regression tests."""
+    monkeypatch.setenv("CHAT_MODE", "legacy")
+    get_settings.cache_clear()
+    yield
+    get_settings.cache_clear()
+
+
+@pytest.fixture
 def db_session() -> Session:
     engine = create_engine("sqlite://", connect_args={"check_same_thread": False}, poolclass=StaticPool)
     Base.metadata.create_all(engine)

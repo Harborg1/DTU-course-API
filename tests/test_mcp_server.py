@@ -695,8 +695,8 @@ def test_remote_mcp_uses_correct_groq_headers():
             "get_study_plan",
             "get_specializations",
         ]
-        assert call_kwargs["max_output_tokens"] == 1000
-        assert call_kwargs["max_tool_calls"] == 3
+        assert call_kwargs["max_output_tokens"] == get_settings().chat_max_output_tokens
+        assert call_kwargs["max_tool_calls"] == get_settings().chat_max_tool_calls
         assert "2026-2027" in call_kwargs["instructions"]
 
 
