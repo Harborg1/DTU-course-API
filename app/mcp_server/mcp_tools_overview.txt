@@ -1,0 +1,293 @@
+DTU COURSE API - MCP-SERVER OG TOOLS
+====================================
+
+Formaal
+-------
+app/mcp_server/server.py eksponerer projektets kursusdata som read-only MCP-tools.
+MCP-serveren er ikke en separat database eller en separat Vercel-applikation. Den
+monteres paa /mcp i den eksisterende FastAPI-applikation og bruger den samme
+database, de samme SQLAlchemy-modeller og udvalgte services som resten af
+projektet.
+
+En MCP-klient, eksempelvis Groq eller GitHub Copilot, vaelger hvilke tools der
+skal kaldes. server.py validerer argumenterne, udfører opslaget og returnerer
+resultatet som JSON-tekst i et MCP CallToolResult.
+
+
+TILGAENGELIGE MCP-TOOLS
+=======================
+
+1. get_course
+-------------
+Formaal:
+Henter alle relevante oplysninger om ét bestemt DTU-kursus.
+
+Obligatoriske argumenter:
+- course_number: Et kursusnummer med praecis fem cifre.
+- academic_year: Et studieaar med to fortloebende aar, eksempelvis 2026-2027.
+
+Valgfrit argument:
+- response_language: "da" eller "en". Bestemmer hvilket af de danske og
+  engelske tekstfelter der foretraekkes.
+
+Returnerer blandt andet titel, ECTS, niveau, kursustype, undervisningssprog,
+institut, periode, skema, campus, forudsaetninger, eksamen, evaluering,
+beskrivelse, indhold, laeringsmaal, undervisere, tidligere kursusnumre og link
+til den officielle kilde.
+
+Kode fra resten af projektet:
+- app.database.SessionLocal opretter databasesessionen.
+- app.models.course.Course er SQLAlchemy-modellen, der forespoerges paa.
+- sqlalchemy.select bruges til opslaget.
+- Den lokale _course_data-funktion i server.py serialiserer kurset.
+
+
+2. get_courses
+--------------
+Formaal:
+Henter detaljer for mellem 1 og 20 kendte kursusnumre i ét samlet opslag. Det
+er nyttigt, naar modellen skal sammenligne eller klassificere kurser, der
+allerede er fundet.
+
+Obligatoriske argumenter:
+- course_numbers: En liste med 1-20 femcifrede kursusnumre.
+- academic_year: Studieaaret.
+
+Valgfrit argument:
+- response_language: "da" eller "en".
+
+Dubletter fjernes uden at aendre den oprindelige raekkefoelge. Svaret indeholder
+ogsaa missing_course_numbers for numre, der ikke findes i det valgte studieaar.
+
+Kode fra resten af projektet:
+- app.database.SessionLocal
+- app.models.course.Course
+- sqlalchemy.select
+- Den lokale _course_data-funktion i server.py
+
+
+3. search_courses
+-----------------
+Formaal:
+Soeger efter DTU-kurser ud fra et emne eller en tekst og kan filtrere
+resultaterne. Soegningen gennemfoeres i baade danske og engelske kursusfelter.
+
+Obligatoriske argumenter:
+- q: Soegeord eller soegefrase.
+- academic_year: Studieaaret.
+- search_language: "da" eller "en" for sproget i de returnerede tekster.
+
+Valgfrie argumenter:
+- level: Eksempelvis BSc, MSc eller PhD.
+- ects: Et bestemt antal ECTS.
+- period: Undervisningsperiode, eksempelvis E eller F.
+- language: Kursets undervisningssprog, "English" eller "Danish".
+- limit: 1-20 resultater, som standard 10.
+- offset: Startposition til paginering.
+
+Svaret indeholder resultater, samlet antal matches og next_offset, hvis der er
+flere resultater at hente.
+
+Kode fra resten af projektet:
+- app.database.SessionLocal
+- app.services.search_service.search_courses
+
+Den egentlige soege- og filterlogik ligger dermed i search_service.py. MCP-
+handleren validerer input, kalder servicen og former resultatet til MCP-svaret.
+
+
+4. get_new_courses
+------------------
+Formaal:
+Sammenligner to importerede kursuskataloger og finder kursusnumre, som ikke
+fandtes i det tidligere studieaar. Metadata om tidligere kursusnumre bruges til
+at skelne mellem helt nye kurser og kurser, der blot har faaet nyt nummer.
+
+Obligatoriske argumenter:
+- academic_year: Det nyere studieaar.
+- response_language: "da" eller "en".
+
+Valgfrie argumenter:
+- previous_academic_year: Sammenligningsaaret. Ellers bruges det umiddelbart
+  foregaaende studieaar.
+- level: BSc, MSc eller PhD.
+- q: Emnefilter.
+- ects: Eksakt ECTS-filter.
+- limit: 1-200 kurser, som standard 200.
+
+Svaret indeholder blandt andet klassifikationen for hvert kursus samt antal
+helt nye og omnummererede kurser.
+
+Kode fra resten af projektet:
+- app.database.SessionLocal
+- app.services.course_change_service.get_new_courses
+- app.services.course_change_service.CatalogComparisonError
+
+
+5. get_study_plan
+-----------------
+Formaal:
+Henter den fulde studieplan for en DTU-uddannelse, inklusive sektioner, krav,
+kurser og ECTS-oplysninger.
+
+Obligatoriske argumenter:
+- program_name: Uddannelsens navn.
+- academic_year: Studieaaret.
+
+Valgfrit argument:
+- degree_type: "Bachelor" eller "Master".
+
+Der soeges foerst efter et praecist navn og derefter efter et delvist match. Et
+tvetydigt navn returnerer en liste over mulige matches i stedet for at vaelge
+vilkaarligt.
+
+Kode fra resten af projektet:
+- app.database.SessionLocal
+- app.models.study_plan.StudyProgram
+- app.models.study_plan.StudyPlanSection
+- app.models.study_plan.StudyPlanRequirement
+- app.models.study_plan.StudyPlanRequirementCourse
+- SQLAlchemy-funktionerne select, and_, or_ og func
+- sqlalchemy.orm.selectinload til at hente relaterede sektioner, krav og kurser
+
+I modsaetning til search_courses ligger selve databaseforespoergslen for dette
+tool direkte i server.py og ikke i en separat service.
+
+
+6. get_specializations
+----------------------
+Formaal:
+Lister de officielle, valgfrie specialiseringer paa en kandidatuddannelse eller
+henter de strukturerede krav for én bestemt specialisering.
+
+Obligatoriske argumenter:
+- program_name: Navnet paa kandidatuddannelsen.
+- academic_year: Studieaaret.
+
+Valgfrit argument:
+- specialization_name: Navnet paa en bestemt specialisering. Udelades det,
+  returneres alle specialiseringer paa uddannelsen.
+
+Svaret skelner mellem obligatoriske kurser, valgmuligheder, anbefalede kurser
+og historiske eller nedlagte kurser. En specialisering markeres som valgfri og
+maa ikke fortolkes som et krav for alle studerende paa uddannelsen.
+
+Kode fra resten af projektet:
+- app.database.SessionLocal
+- app.models.study_plan.StudyProgram
+- app.models.specialization.StudySpecialization
+- app.models.specialization.SpecializationRequirement
+- app.models.specialization.SpecializationRequirementCourse
+- SQLAlchemy-funktionerne select, and_, or_ og func
+- sqlalchemy.orm.selectinload
+
+Databaseforespoergslen for dette tool ligger direkte i server.py.
+
+
+FAELLES KODE I SERVER.PY
+========================
+
+Inputvalidering
+---------------
+JSON Schema-definitionerne oeverst i server.py beskriver de argumenter, som
+MCP-klienten maa sende. Handlerne foretager derudover runtime-validering. Den
+lokale _academic_year-funktion sikrer eksempelvis baade formatet YYYY-YYYY og,
+at det andet aar er det foerste aar plus én.
+
+Tool-routing
+------------
+ALL_TOOLS er den liste, der sendes til MCP-klienten. _TOOL_HANDLERS forbinder
+hvert offentligt toolnavn med den tilsvarende Python-handler. _on_list_tools
+returnerer tool-listen, mens _on_call_tool finder og afvikler handleren.
+
+Handlerne er synkrone databasefunktioner og afvikles via asyncio.to_thread, saa
+de ikke blokerer MCP-serverens asynkrone event loop.
+
+Databasesessioner
+-----------------
+Hver handler opretter sin egen SessionLocal og lukker den igen i en finally-
+blok. MCP-kald deler derfor ikke en FastAPI request-scoped databasesession.
+
+Serialisering og fejl
+---------------------
+_json_result konverterer handlerens dictionary til JSON-tekst. Hvis resultatet
+indeholder noeglen "error", markeres MCP-resultatet som en fejl. Uventede
+exceptions logges og returneres som en generel tool-fejl.
+
+Transport og sikkerhed
+----------------------
+server.py bruger det officielle MCP Python SDK til en stateless Streamable HTTP-
+transport. Starlette bruges som ASGI-lag.
+
+_BearerTokenMiddleware kraever denne header paa /mcp:
+
+  Authorization: Bearer <MCP_TOKEN>
+
+Tokenet sammenlignes med hmac.compare_digest. transport_security_for_url
+aktiverer desuden beskyttelse mod DNS rebinding og tillader den konfigurerede
+MCP-host samt lokale udviklingshosts.
+
+
+HVORDAN MCP-SERVEREN MONTERES OG KALDES
+=======================================
+
+app/main.py
+-----------
+- Importerer create_mcp_transport og transport_security_for_url fra server.py.
+- Opretter MCP-transporten under FastAPI-applikationens lifespan.
+- Monterer den paa /mcp, naar MCP_TOKEN er konfigureret.
+
+app/mcp_server/main.py
+----------------------
+- Er et lille kompatibilitetsmodul, som re-eksporterer ALL_TOOLS,
+  create_mcp_transport og transport_security_for_url fra server.py.
+- Indeholder ikke en ekstra MCP-server eller selvstaendig tool-logik.
+
+app/services/course_qa_service.py
+---------------------------------
+- Kalder ikke handlerfunktionerne direkte.
+- Giver Groq adressen paa /mcp og sender MCP_TOKEN som Bearer-token.
+- Groq vaelger derefter tools og kalder MCP-serveren over HTTP.
+
+app/services/chat_service.py
+----------------------------
+- Kalder course_qa_service.py for modelstyrede chatsvar.
+- Bruger ikke MCP-handlerne direkte.
+
+
+SAMLET KALDEFLOW
+================
+
+Chat paa hjemmesiden:
+
+  Browser
+    -> POST /api/chat
+    -> app/api/routes/chat.py
+    -> app/services/chat_service.py
+    -> app/services/course_qa_service.py
+    -> Groq Responses API
+    -> POST /mcp med MCP_TOKEN
+    -> app/mcp_server/server.py
+    -> projektets services/modeller
+    -> PostgreSQL
+
+Direkte MCP-klient, eksempelvis Copilot:
+
+  MCP-klient
+    -> POST /mcp med MCP_TOKEN
+    -> app/mcp_server/server.py
+    -> projektets services/modeller
+    -> PostgreSQL
+
+
+KODE SOM SERVER.PY IKKE BRUGER DIREKTE
+=======================================
+
+- app/services/chat_service.py
+- Groq-klienten og dens systemprompt
+- Frontendkoden i app/web
+- Importeringskoden i importer/
+- De almindelige /api/v1-routehandlers
+
+Disse dele kan starte et flow, der ender i MCP-serveren, eller levere data til
+databasen, men server.py importerer eller kalder dem ikke selv.
