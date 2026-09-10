@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="26250" Volume="2026/2027" University="dtu" LastUpdated="2026-05-29+02:00">
+      <Course CourseCode="26250" Volume="2026/2027" University="dtu" LastUpdated="2026-09-07+02:00">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Machine learning-driven molecular science" />
@@ -21,18 +21,18 @@
           <Main_Dep UID="26" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
         <Study_Board Study_BoardKey="26" />
-        <Course_Responsible PersonKey="224217" FUniversity="DTU" SortID="0" DepartmentKey="" Contact="true" Show="true">
-          <Description>
-            <GivenName>Eli Nathan</GivenName>
-            <FamilyName>Weinstein</FamilyName>
-            <Email>enawe@kemi.dtu.dk</Email>
-          </Description>
-        </Course_Responsible>
-        <Course_Responsible PersonKey="2794" FUniversity="DTU" SortID="1" DepartmentKey="" Primary="true" Show="true">
+        <Course_Responsible PersonKey="2794" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
             <GivenName>Klaus Braagaard</GivenName>
             <FamilyName>Møller</FamilyName>
             <Email>kbmo@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="224217" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+          <Description>
+            <GivenName>Eli Nathan</GivenName>
+            <FamilyName>Weinstein</FamilyName>
+            <Email>enawe@kemi.dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
@@ -43,6 +43,7 @@
           <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
           </Date_Of_Exam>
         </Examination>
         <Sign_Up>
@@ -119,7 +120,7 @@ Throughout, we focus on obtaining both a deep conceptual understanding and hands
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-30" Time="15:50:11.703" />
+          <Action Action="Accepted" PersonKey="129761" PersonUniversity="dtu" Date="2026-09-07" Time="13:47:29.363" />
         </Record_Info>
       </Course>
     </CourseXml>

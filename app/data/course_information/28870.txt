@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="28870" University="dtu" LastUpdated="2026-08-21+02:00" Volume="2026/2027">
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="28870" University="dtu" LastUpdated="2026-09-10+02:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Energi og bæredygtighed" />
@@ -21,25 +21,25 @@
           <Main_Dep UID="28" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
         <Study_Board Study_BoardKey="28" />
-        <Course_Responsible PersonKey="110698" FUniversity="DTU" SortID="0" DepartmentKey="" Show="true">
+        <Course_Responsible PersonKey="181163" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Sonia</GivenName>
+            <FamilyName>Mohamadnia</FamilyName>
+            <Email>sonmoha@kt.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="110698" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
           <Description>
             <GivenName>Giulia</GivenName>
             <FamilyName>Ravenni</FamilyName>
             <Email>grav@kt.dtu.dk</Email>
           </Description>
         </Course_Responsible>
-        <Course_Responsible PersonKey="4803" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+        <Course_Responsible PersonKey="4803" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
           <Description>
             <GivenName>Irini</GivenName>
             <FamilyName>Angelidaki</FamilyName>
             <Email>iria@kt.dtu.dk</Email>
-          </Description>
-        </Course_Responsible>
-        <Course_Responsible PersonKey="181163" FUniversity="DTU" SortID="2" DepartmentKey="" Primary="true" Show="true">
-          <Description>
-            <GivenName>Sonia</GivenName>
-            <FamilyName>Mohamadnia</FamilyName>
-            <Email>sonmoha@kt.dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
@@ -56,6 +56,7 @@
           </Aid>
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E7" />
+            <Schedule ScheduleKey="F7" />
           </Date_Of_Exam>
           <Duration Lang="da-DK" Txt="Skriftlig eksamen" />
           <Duration Lang="en-GB" Txt="Written exam" />
@@ -134,7 +135,7 @@
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-08-21" Time="11:52:14.367" />
+          <Action Action="Accepted" PersonKey="129761" PersonUniversity="dtu" Date="2026-09-10" Time="10:52:22.287" />
         </Record_Info>
       </Course>
     </CourseXml>

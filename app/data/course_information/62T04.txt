@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="62T04" Volume="2026/2027" University="dtu" LastUpdated="2025-04-30+02:00">
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_DIPLOM" />
-        <Study_Board Study_BoardKey="dtu diplom" />
+      <Course CourseCode="62T04" Volume="2026/2027" University="dtu" LastUpdated="2026-09-04+02:00">
         <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PARTTIME_DIPLOM" />
         <Title Lang="da-DK" Title="Webteknologier" />
         <Title Lang="en-GB" Title="Web Technologies" />
         <Description_Language Lang="da-DK" />
@@ -23,25 +22,26 @@
         <Departments>
           <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
-        <Course_Responsible PersonKey="78833" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
-          <Description>
-            <GivenName>Lynn</GivenName>
-            <FamilyName>Eriksen</FamilyName>
-            <Email>lyka@dtu.dk</Email>
-          </Description>
-        </Course_Responsible>
-        <Course_Responsible PersonKey="78715" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="78715" FUniversity="DTU" SortID="0" DepartmentKey="" Contact="true" Show="true">
           <Description>
             <GivenName>Birger</GivenName>
             <FamilyName>Andersen</FamilyName>
             <Email>birad@dtu.dk</Email>
           </Description>
         </Course_Responsible>
-        <Course_Responsible PersonKey="16519" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+        <Course_Responsible PersonKey="16519" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
           <Description>
             <GivenName>Daniel</GivenName>
             <FamilyName>Rubin-Grøn</FamilyName>
             <Email>dkrug@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="136111" FUniversity="DTU" SortID="2" DepartmentKey="" Primary="true" Show="true">
+          <Description>
+            <GivenName>Kathrin</GivenName>
+            <FamilyName>Kirchner</FamilyName>
+            <Email>kakir@dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
@@ -184,7 +184,7 @@ AI, Mathematics and Software</Remark>
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="54673" PersonUniversity="dtu" Date="2026-04-30" Time="12:17:49.067" />
+          <Action Action="Accepted" PersonKey="54673" PersonUniversity="dtu" Date="2026-09-07" Time="14:31:02.203" />
         </Record_Info>
       </Course>
     </CourseXml>

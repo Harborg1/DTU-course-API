@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="28857" University="dtu" LastUpdated="2026-04-24+02:00" Volume="2026/2027">
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="28857" University="dtu" LastUpdated="2026-09-10+02:00" Volume="2026/2027">
         <Point PointType="ECTS">7.5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="GMP og kvalitet i farmaceutisk, biotek og fødevareindustri - Praktísk version" />
@@ -26,11 +26,11 @@
           <Ass_Dep UID="23" Resources="8" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
         </Departments>
         <Study_Board Study_BoardKey="28" />
-        <Course_Responsible PersonKey="5085" FUniversity="DTU" SortID="0" DepartmentKey="" Show="true">
+        <Course_Responsible PersonKey="189335" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
-            <GivenName>Ulrich</GivenName>
-            <FamilyName>Krühne</FamilyName>
-            <Email>ulkr@kt.dtu.dk</Email>
+            <GivenName>Julian</GivenName>
+            <FamilyName>Kager</FamilyName>
+            <Email>jukager@kt.dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Course_Responsible PersonKey="126814" FUniversity="DTU" SortID="1" DepartmentKey="" Contact="true" Show="true">
@@ -40,11 +40,11 @@
             <Email>stelar@kt.dtu.dk</Email>
           </Description>
         </Course_Responsible>
-        <Course_Responsible PersonKey="189335" FUniversity="DTU" SortID="2" DepartmentKey="" Primary="true" Show="true">
+        <Course_Responsible PersonKey="5085" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
           <Description>
-            <GivenName>Julian</GivenName>
-            <FamilyName>Kager</FamilyName>
-            <Email>jukager@kt.dtu.dk</Email>
+            <GivenName>Ulrich</GivenName>
+            <FamilyName>Krühne</FamilyName>
+            <Email>ulkr@kt.dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Course_Responsible PersonKey="140769" FUniversity="DTU" SortID="3" DepartmentKey="" Show="true">
@@ -65,6 +65,7 @@
           <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E1B" />
+            <Schedule ScheduleKey="F1B" />
           </Date_Of_Exam>
           <DurationKey Key="4H" />
         </Examination>
@@ -161,7 +162,7 @@ The GMP courses exist in two versions: A practical version 28857 to 7.5 ECTS, an
         </TeacherTypesDistribuition>
         <Restrictions Max="56" Min="10" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:23:33.27" />
+          <Action Action="Accepted" PersonKey="129761" PersonUniversity="dtu" Date="2026-09-10" Time="10:51:15.98" />
         </Record_Info>
       </Course>
     </CourseXml>
