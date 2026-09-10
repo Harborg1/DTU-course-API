@@ -146,6 +146,9 @@ def test_discovery_search_courses_schema(test_client):
     assert "level" in search_tool["inputSchema"]["properties"]
     assert "ects" in search_tool["inputSchema"]["properties"]
     assert "search_language" in search_tool["inputSchema"]["required"]
+    result_mode = search_tool["inputSchema"]["properties"]["result_mode"]
+    assert result_mode["enum"] == ["summary", "all"]
+    assert result_mode["default"] == "summary"
 
 
 def test_discovery_get_new_courses_schema():
@@ -409,6 +412,8 @@ def test_search_courses_returns_results(test_client, db_session):
     body = response.json()
     content = json.loads(body["result"]["content"][0]["text"])
     assert "courses" in content
+    assert content["result_mode"] == "summary"
+    assert content["next_offset"] is None
 
 
 def test_search_courses_limits_results(test_client):
@@ -425,6 +430,43 @@ def test_search_courses_limits_results(test_client):
     body = response.json()
     content = json.loads(body["result"]["content"][0]["text"])
     assert content["returned"] <= 20
+
+
+def test_search_courses_all_mode_exposes_pagination(test_client, db_session):
+    db_session.add_all(
+        [
+            _make_course(
+                "01001",
+                "2026-2027",
+                title_en="Artificial Intelligence One",
+                title_da="Kunstig intelligens et",
+            ),
+            _make_course(
+                "01002",
+                "2026-2027",
+                title_en="Artificial Intelligence Two",
+                title_da="Kunstig intelligens to",
+            ),
+        ]
+    )
+    db_session.commit()
+
+    response = _send_jsonrpc(test_client, "tools/call", {
+        "name": "search_courses",
+        "arguments": {
+            "q": "artificial intelligence",
+            "academic_year": "2026-2027",
+            "search_language": "en",
+            "result_mode": "all",
+            "limit": 1,
+        },
+    })
+
+    content = json.loads(response.json()["result"]["content"][0]["text"])
+    assert content["result_mode"] == "all"
+    assert content["count"] == content["total_matches"] == 2
+    assert content["returned"] == 1
+    assert content["next_offset"] == 1
 
 
 def test_search_courses_returns_selected_results_in_ascending_course_number_order(

@@ -122,14 +122,28 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
         },
         "limit": {
             "type": "integer",
-            "description": "Maximum number of results to return (max 20)",
+            "description": (
+                "Maximum number of results to return (max 20). Defaults to 10 "
+                "for summary mode and 20 for all mode."
+            ),
             "minimum": 1,
             "maximum": 20,
         },
         "offset": {
             "type": "integer",
-            "description": "Pagination offset; follow next_offset to retrieve more results",
+            "description": (
+                "Pagination offset for all mode; follow next_offset to retrieve more results"
+            ),
             "minimum": 0,
+        },
+        "result_mode": {
+            "type": "string",
+            "description": (
+                "Use summary for a bounded selection of the best matches. Use all only when "
+                "the user explicitly asks for every match, then follow next_offset until null."
+            ),
+            "enum": ["summary", "all"],
+            "default": "summary",
         },
         "period": {
             "type": "string",
@@ -258,8 +272,9 @@ _SEARCH_COURSES_TOOL = Tool(
         "Search for DTU courses by keyword and optional filters. "
         "Searches both Danish and English course text, merges duplicate courses, and uses "
         "search_language only to select the language of returned titles and descriptions. "
-        "Returns the selected matching courses in ascending course-number order, "
-        "with localized titles and descriptions."
+        "Use result_mode=summary for an ordinary bounded recommendation and result_mode=all "
+        "only for an explicitly complete, paginated result. Returns the selected matching "
+        "courses in ascending course-number order, with localized titles and descriptions."
     ),
     inputSchema=_SEARCH_COURSES_SCHEMA,
 )
@@ -463,13 +478,19 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
     search_language = arguments.get("search_language")
     if search_language not in {"da", "en"}:
         return {"error": "search_language must be 'da' or 'en'"}
+    result_mode = arguments.get("result_mode", "summary")
+    if result_mode not in {"summary", "all"}:
+        return {"error": "result_mode must be 'summary' or 'all'"}
     try:
-        limit = max(1, min(int(arguments.get("limit", 10)), 20))
+        default_limit = 10 if result_mode == "summary" else 20
+        limit = max(1, min(int(arguments.get("limit", default_limit)), 20))
     except (TypeError, ValueError):
         return {"error": "limit must be an integer between 1 and 20"}
     offset = arguments.get("offset", 0)
     if isinstance(offset, bool) or not isinstance(offset, int) or offset < 0:
         return {"error": "offset must be a non-negative integer"}
+    if result_mode == "summary" and offset != 0:
+        return {"error": "offset can only be used with result_mode='all'"}
     language = arguments.get("language")
     if language not in {None, "English", "Danish"}:
         return {"error": "language must be English or Danish"}
@@ -500,6 +521,7 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             search_all_languages=True,
             limit=limit,
             offset=offset,
+            result_mode=result_mode,
         )
 
         selected_courses = sorted(
@@ -533,12 +555,14 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
         return {
             "query": query,
             "search_language": search_language,
+            "result_mode": result_mode,
             "count": result.count,
+            "total_matches": result.count,
             "returned": len(courses),
             "offset": offset,
             "next_offset": (
                 offset + len(courses)
-                if courses and offset + len(courses) < result.count
+                if result_mode == "all" and courses and offset + len(courses) < result.count
                 else None
             ),
             "courses": courses,

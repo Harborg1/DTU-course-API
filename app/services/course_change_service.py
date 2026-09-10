@@ -93,6 +93,7 @@ def get_new_courses(
             level=level,
             search_all_languages=True,
             limit=100_000,
+            result_mode="all",
         )
         current_courses = tuple(
             course

@@ -366,10 +366,11 @@ def test_mcp_course_search_preserves_filters_and_supports_pagination(db_session,
     with patch("app.database.SessionLocal", sessionmaker(bind=db_session.get_bind())):
         first = _handle_search_courses({
             "q": "", "academic_year": "2026-2027", "search_language": "en", "limit": 1,
+            "result_mode": "all",
         })
         second = _handle_search_courses({
             "q": "", "academic_year": "2026-2027", "search_language": "en", "limit": 1,
-            "offset": first["next_offset"],
+            "offset": first["next_offset"], "result_mode": "all",
         })
         filtered = _handle_search_courses({
             "q": "", "academic_year": "2026-2027", "search_language": "en",
@@ -389,6 +390,7 @@ def test_mcp_course_search_preserves_filters_and_supports_pagination(db_session,
 
 @pytest.mark.parametrize("filters", [
     {"offset": -1}, {"offset": 0.5}, {"offset": True}, {"offset": "1"},
+    {"offset": 1, "result_mode": "summary"}, {"result_mode": "invalid"},
     {"language": "French"}, {"period": ["E"]},
 ])
 def test_mcp_rejects_invalid_pagination_and_filters(filters):

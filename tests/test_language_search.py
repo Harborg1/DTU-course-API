@@ -158,6 +158,8 @@ def test_chat_prompt_passes_detected_language_to_mcp_tools():
     assert "search_language være 'da'" in prompt
     assert "response_language være 'da'" in prompt
     assert "q være et kort, kanonisk engelsk emne" in prompt
+    assert "result_mode='summary'" in prompt
+    assert "result_mode='all'" in prompt
 
 
 def test_chat_prompt_formats_course_results_as_multiline_bullet_lists():

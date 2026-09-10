@@ -1,8 +1,9 @@
 import logging
 from dataclasses import dataclass
 from decimal import Decimal
+from typing import Literal
 
-from sqlalchemy import and_, func, literal, or_, select
+from sqlalchemy import and_, func, literal, or_, select, union_all
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
@@ -14,6 +15,9 @@ from app.services.language_service import detect_user_language
 
 logger = logging.getLogger(__name__)
 RRF_RANK_CONSTANT = 60
+SUMMARY_CANDIDATE_LIMIT = 100
+
+SearchResultMode = Literal["summary", "all"]
 
 
 @dataclass
@@ -21,6 +25,20 @@ class SearchResult:
     count: int
     courses: list[tuple[Course, float]]
     search_language: str
+    result_mode: SearchResultMode = "all"
+
+
+def _count_distinct_matches(session: Session, statements: list) -> int:
+    """Count a union of matching course IDs without materializing courses."""
+    if not statements:
+        return 0
+    matches = union_all(*statements).subquery()
+    return int(
+        session.scalar(
+            select(func.count(func.distinct(matches.c.course_id)))
+        )
+        or 0
+    )
 
 
 def _merge_best_scores(
@@ -74,7 +92,11 @@ def search_courses(
     search_all_languages: bool = False,
     limit: int = 20,
     offset: int = 0,
+    result_mode: SearchResultMode = "all",
 ) -> SearchResult:
+    if result_mode not in {"summary", "all"}:
+        raise ValueError("result_mode must be 'summary' or 'all'")
+
     selected_language = (
         search_language
         if search_language in {"da", "en"}
@@ -141,6 +163,7 @@ def search_courses(
             count=count,
             courses=[(course, float(score or 0.0)) for course, score in rows],
             search_language=selected_language,
+            result_mode=result_mode,
         )
 
     languages = (
@@ -149,34 +172,49 @@ def search_courses(
         else ((selected_language_code, selected_config),)
     )
     lexical_rows: list[tuple[Course, float]] = []
+    lexical_match_statements = []
+    candidate_limit = max(SUMMARY_CANDIDATE_LIMIT, offset + limit)
     for language_code, search_config in languages:
         condition = base_condition(language_code)
         if dialect == "postgresql":
             query = func.websearch_to_tsquery(search_config, q)
             rank = func.ts_rank_cd(CourseTranslation.search_vector, query, 32)
+            match_condition = CourseTranslation.search_vector.op("@@")(query)
             statement = (
                 select(Course, rank.label("relevance_score"))
                 .join(CourseTranslation)
-                .where(condition, CourseTranslation.search_vector.op("@@")(query))
+                .where(condition, match_condition)
                 .order_by(rank.desc(), Course.course_number)
+            )
+            match_statement = (
+                select(Course.id.label("course_id"))
+                .join(CourseTranslation)
+                .where(condition, match_condition)
             )
         else:
             pattern = f"%{q}%"
+            match_condition = or_(*(column.ilike(pattern) for column in searchable_columns))
             statement = (
                 select(Course, literal(1.0).label("relevance_score"))
                 .join(CourseTranslation)
-                .where(
-                    condition,
-                    or_(*(column.ilike(pattern) for column in searchable_columns)),
-                )
+                .where(condition, match_condition)
                 .order_by(Course.course_number)
             )
+            match_statement = (
+                select(Course.id.label("course_id"))
+                .join(CourseTranslation)
+                .where(condition, match_condition)
+            )
+        lexical_match_statements.append(match_statement)
+        if result_mode == "summary":
+            statement = statement.limit(candidate_limit)
         lexical_rows.extend(
             (course, float(score or 0.0))
             for course, score in session.execute(statement).all()
         )
 
     semantic_rows: list[tuple[Course, float]] = []
+    semantic_match_statements = []
     settings = get_settings()
     semantic_enabled = (
         dialect == "postgresql"
@@ -200,13 +238,27 @@ def search_courses(
                     )
                     .order_by(similarity.desc(), Course.course_number)
                 )
+                match_statement = (
+                    select(Course.id.label("course_id"))
+                    .join(CourseTranslation)
+                    .where(
+                        base_condition(language_code),
+                        CourseTranslation.embedding.is_not(None),
+                        CourseTranslation.embedding_model == settings.embedding_model,
+                        similarity >= settings.semantic_course_min_similarity,
+                    )
+                )
+                if result_mode == "summary":
+                    statement = statement.limit(candidate_limit)
                 with session.begin_nested():
                     semantic_rows.extend(
                         (course, float(score or 0.0))
                         for course, score in session.execute(statement).all()
                     )
+                semantic_match_statements.append(match_statement)
         except (EmbeddingServiceError, SQLAlchemyError):
             semantic_rows.clear()
+            semantic_match_statements.clear()
             logger.warning(
                 "Semantic course search failed; using lexical search fallback",
                 exc_info=True,
@@ -215,10 +267,26 @@ def search_courses(
     lexical = _merge_best_scores(lexical_rows)
     semantic = _merge_best_scores(semantic_rows)
     merged_rows = _reciprocal_rank_fusion(lexical, semantic)
-    count = len(merged_rows)
+    if result_mode == "all":
+        count = len(merged_rows)
+    else:
+        match_statements = lexical_match_statements + semantic_match_statements
+        try:
+            with session.begin_nested():
+                count = _count_distinct_matches(session, match_statements)
+        except SQLAlchemyError:
+            # A provider-specific vector expression may fail even after the
+            # candidate query succeeded. Keep the lexical count usable.
+            logger.warning(
+                "Could not count semantic search matches; using lexical count",
+                exc_info=True,
+            )
+            with session.begin_nested():
+                count = _count_distinct_matches(session, lexical_match_statements)
     rows = merged_rows[offset : offset + limit]
     return SearchResult(
         count=count,
         courses=rows,
         search_language=selected_language,
+        result_mode=result_mode,
     )

@@ -82,11 +82,16 @@ Valgfrie argumenter:
 - ects: Et bestemt antal ECTS.
 - period: Undervisningsperiode, eksempelvis E eller F.
 - language: Kursets undervisningssprog, "English" eller "Danish".
-- limit: 1-20 resultater, som standard 10.
-- offset: Startposition til paginering.
+- result_mode: "summary" for et afgrænset udvalg af de bedste matches eller
+  "all" for en komplet, pagineret søgning. Standardværdien er "summary".
+- limit: 1-20 resultater. Standardværdien er 10 i summary-tilstand og 20 i
+  all-tilstand.
+- offset: Startposition til paginering i all-tilstand.
 
-Svaret indeholder resultater, samlet antal matches og next_offset, hvis der er
-flere resultater at hente.
+Summary-tilstand begrænser databaseforespørgslerne til de bedste kandidater og
+returnerer ikke next_offset. All-tilstand bevarer den komplette søgning og
+returnerer next_offset, indtil alle sider er hentet. Svaret indeholder i begge
+tilstande det samlede antal matches.
 
 Kode fra resten af projektet:
 - app.database.SessionLocal
