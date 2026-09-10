@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="26171" University="dtu" LastUpdated="2025-04-02+02:00" Volume="2026/2027">
-        <Study_Board Study_BoardKey="26" />
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
+      <Course CourseCode="26171" University="dtu" LastUpdated="2026-09-07+02:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
         <Title Lang="da-DK" Title="Almen kemi" />
         <Title Lang="en-GB" Title="General Chemistry" />
         <Description_Language Lang="da-DK" />
@@ -22,18 +21,19 @@
         <Departments>
           <Main_Dep UID="26" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
-        <Course_Responsible PersonKey="119775" FUniversity="DTU" SortID="0" DepartmentKey="" Show="true">
-          <Description>
-            <GivenName>Sonia</GivenName>
-            <FamilyName>Coriani</FamilyName>
-            <Email>soco@kemi.dtu.dk</Email>
-          </Description>
-        </Course_Responsible>
-        <Course_Responsible PersonKey="81490" FUniversity="DTU" SortID="1" DepartmentKey="" Primary="true" Contact="true" Show="true">
+        <Study_Board Study_BoardKey="26" />
+        <Course_Responsible PersonKey="81490" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
             <GivenName>Martin</GivenName>
             <FamilyName>Nielsen</FamilyName>
             <Email>marnie@kemi.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="119775" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Sonia</GivenName>
+            <FamilyName>Coriani</FamilyName>
+            <Email>soco@kemi.dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
@@ -47,6 +47,7 @@
           <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E4A" />
+            <Schedule ScheduleKey="F4A" />
           </Date_Of_Exam>
           <DurationKey Key="4H" />
         </Examination>
@@ -129,7 +130,7 @@
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="50" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:21:42.51" />
+          <Action Action="Accepted" PersonKey="86201" PersonUniversity="dtu" Date="2026-09-07" Time="13:32:51.51" />
         </Record_Info>
       </Course>
     </CourseXml>

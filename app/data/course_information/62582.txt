@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="62582" Volume="2026/2027" University="dtu" LastUpdated="2025-02-14+01:00">
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
-        <Study_Board Study_BoardKey="dtu diplom" />
+      <Course CourseCode="62582" Volume="2026/2027" University="dtu" LastUpdated="2026-09-08+02:00">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
         <Title Lang="da-DK" Title="Komplekse systemer og Devops" />
         <Title Lang="en-GB" Title="Complex Systems and Devops" />
         <Description_Language Lang="da-DK" />
@@ -21,11 +20,19 @@
         <Departments>
           <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
-        <Course_Responsible PersonKey="215716" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+        <Study_Board Study_BoardKey="dtu diplom" />
+        <Course_Responsible PersonKey="78757" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
-            <GivenName>Lars</GivenName>
-            <FamilyName>Sommer</FamilyName>
-            <Email>lasom@dtu.dk</Email>
+            <GivenName>Henrik</GivenName>
+            <FamilyName>Tange</FamilyName>
+            <Email>htan@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="214986" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Maria</GivenName>
+            <FamilyName>Papaioannou</FamilyName>
+            <Email>marpapa@dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
@@ -134,7 +141,7 @@ Valgfag: IT og Økonomi</Remark>
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:43.277" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-09-08" Time="13:17:16.807" />
         </Record_Info>
       </Course>
     </CourseXml>
