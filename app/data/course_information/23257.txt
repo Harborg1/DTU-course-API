@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="23257" Volume="2026/2027" University="dtu" LastUpdated="2025-04-08+02:00">
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
-        <Study_Board Study_BoardKey="23" />
+      <Course CourseCode="23257" Volume="2026/2027" University="dtu" LastUpdated="2026-09-17+02:00">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Kompositionel analyse af genomiske data" />
         <Title Lang="en-GB" Title="Compositional data analysis with applications in genomics" />
         <Description_Language Lang="da-DK" />
@@ -21,6 +20,7 @@
         <Departments>
           <Main_Dep UID="23" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="23" />
         <Course_Responsible PersonKey="95209" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
             <GivenName>Christian</GivenName>
@@ -31,15 +31,15 @@
         <Examination ExaminationSortID="0" Show="true">
           <Evaluation EvaluationKey="GLOB_INTERN" />
           <Assessment>
-            <Pre_Def_List AssessmentKey="Report" Show="true" />
+            <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
           </Assessment>
           <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
-          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Aid AidKey="NO_AID" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
-            <Schedule ScheduleKey="F2A" />
+            <Date_of_Exam_Txt Lang="en-GB" Txt="Last day of the course" />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="Sidste kursus-dag" />
           </Date_Of_Exam>
-          <Duration Lang="da-DK" Txt="2 uger" />
-          <Duration Lang="en-GB" Txt="2 weeks" />
+          <DurationKey Key="1H" />
         </Examination>
         <Sign_Up>
           <Place>
@@ -121,7 +121,7 @@ Towards the end of the course, students will pick a compositional data set, whic
         </TeacherTypesDistribuition>
         <Restrictions Max="" Min="10" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:20:07.797" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-09-18" Time="13:45:17.39" />
         </Record_Info>
       </Course>
     </CourseXml>
