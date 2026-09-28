@@ -73,3 +73,40 @@ python -m importer.course_embedding_cli \
 
 The update is complete when the course import reports `Courses Failed: 0` and
 the embedding check reports `Embeddings Pending: 0`.
+
+Download and review study information locally
+
+Study plans and specializations are updated manually and are not part of the
+GitHub Actions course-data workflow. Download missing snapshots with:
+
+```bash
+python scripts/get_all_study_information.py
+```
+
+Existing files are left untouched by default. To fetch every page again and
+replace only snapshots whose content changed, run:
+
+```bash
+python scripts/get_all_study_information.py --overwrite
+```
+
+The raw HTML is stored below `app/data/study_information/`. Review the local
+changes before importing them:
+
+```bash
+git status --short app/data/study_information
+git diff -- app/data/study_information
+```
+
+Import saved study plans and then saved specializations
+
+Study plans must be imported first because every specialization is linked to
+an existing study program:
+
+```bash
+python -m importer.study_plan_cli
+python -m importer.specialization_cli
+```
+
+Both commands read the URL lists in `app/data/` and parse the corresponding
+saved HTML files. They do not download pages during the database import.

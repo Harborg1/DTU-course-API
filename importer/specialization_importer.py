@@ -2,6 +2,7 @@ import hashlib
 import json
 import logging
 from dataclasses import dataclass
+from pathlib import Path
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session
@@ -13,6 +14,7 @@ from app.models.specialization import (
     StudySpecialization,
 )
 from app.models.study_plan import StudyProgram
+from importer.study_information import read_snapshot, specialization_relative_path
 from importer.specialization_parser import SpecializationData, parse_specialization_page
 from importer.study_plan_importer import StudyPlanClient
 
@@ -140,4 +142,43 @@ async def run_specialization_import(
                 session.rollback()
                 logger.exception("Failed to import specialization page %s", url)
                 summary.failed += 1
+    return summary
+
+
+def run_specialization_snapshot_import(
+    session: Session,
+    *,
+    urls: list[str],
+    snapshot_root: Path,
+) -> SpecializationImportSummary:
+    summary = SpecializationImportSummary(discovered=len(urls))
+    for page_position, url in enumerate(urls):
+        try:
+            html = read_snapshot(snapshot_root, specialization_relative_path(url))
+            specializations = parse_specialization_page(html, url)
+            parsed_slugs = {data.slug for data in specializations}
+            for offset, data in enumerate(specializations):
+                data.position = page_position * 10 + offset
+                action = upsert_specialization(session, data)
+                setattr(summary, action, getattr(summary, action) + 1)
+
+            program_slug = specializations[0].program_slug
+            program = session.scalar(select(StudyProgram).where(StudyProgram.slug == program_slug))
+            if program is not None:
+                stale = list(
+                    session.scalars(
+                        select(StudySpecialization).where(
+                            StudySpecialization.program_id == program.id,
+                            StudySpecialization.source_url == url,
+                            StudySpecialization.slug.not_in(parsed_slugs),
+                        )
+                    )
+                )
+                for specialization in stale:
+                    session.delete(specialization)
+            session.commit()
+        except Exception:
+            session.rollback()
+            logger.exception("Failed to import saved specialization page %s", url)
+            summary.failed += 1
     return summary

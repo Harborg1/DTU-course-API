@@ -3,6 +3,7 @@ import hashlib
 import json
 import logging
 from dataclasses import dataclass
+from pathlib import Path
 from time import monotonic
 from urllib.parse import urlparse
 
@@ -18,6 +19,7 @@ from app.models.study_plan import (
     StudyPlanSection,
     StudyProgram,
 )
+from importer.study_information import read_snapshot, study_plan_relative_path
 from importer.study_plan_parser import StudyProgramData, parse_study_plan_page
 
 logger = logging.getLogger(__name__)
@@ -190,4 +192,25 @@ async def run_study_plan_import(
                 session.rollback()
                 logger.exception("Failed to import study plan from %s", url)
                 summary.failed += 1
+    return summary
+
+
+def run_study_plan_snapshot_import(
+    session: Session,
+    *,
+    urls: list[str],
+    snapshot_root: Path,
+) -> StudyPlanImportSummary:
+    summary = StudyPlanImportSummary(discovered=len(urls))
+    for url in urls:
+        try:
+            html = read_snapshot(snapshot_root, study_plan_relative_path(url))
+            data = parse_study_plan_page(html, url)
+            action = upsert_study_plan(session, data)
+            session.commit()
+            setattr(summary, action, getattr(summary, action) + 1)
+        except Exception:
+            session.rollback()
+            logger.exception("Failed to import saved study plan from %s", url)
+            summary.failed += 1
     return summary
