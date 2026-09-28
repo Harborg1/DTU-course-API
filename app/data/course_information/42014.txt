@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="42014" Volume="2026/2027" University="dtu" LastUpdated="2026-03-09+01:00">
+      <Course CourseCode="42014" Volume="2026/2027" University="dtu" LastUpdated="2026-09-21+02:00">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Miljø-og resourceøkonomi" />
@@ -22,11 +22,25 @@
           <Main_Dep UID="42" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
         <Study_Board Study_BoardKey="42" />
-        <Course_Responsible PersonKey="161775" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+        <Course_Responsible PersonKey="230213" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Nathan W</GivenName>
+            <FamilyName>Chan</FamilyName>
+            <Email>nwach@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="161775" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
           <Description>
             <GivenName>Jacob</GivenName>
             <FamilyName>Ladenburg</FamilyName>
             <Email>Jlad@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="157020" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Matteo</GivenName>
+            <FamilyName>Zuch</FamilyName>
+            <Email>matzu@dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
@@ -185,7 +199,7 @@ c) How the three pillars of sustainability (economy, environment, society) are r
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="40" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:50.727" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-09-23" Time="13:50:04.147" />
         </Record_Info>
       </Course>
     </CourseXml>
