@@ -375,6 +375,7 @@ def test_mcp_course_search_preserves_filters_and_supports_pagination(db_session,
         filtered = _handle_search_courses({
             "q": "", "academic_year": "2026-2027", "search_language": "en",
             "level": "MSc", "ects": 5, "language": "English", "period": "E",
+            "department": "Compute",
         })
         empty = _handle_search_courses({
             "q": "", "academic_year": "2026-2027", "search_language": "en",
@@ -391,7 +392,8 @@ def test_mcp_course_search_preserves_filters_and_supports_pagination(db_session,
 @pytest.mark.parametrize("filters", [
     {"offset": -1}, {"offset": 0.5}, {"offset": True}, {"offset": "1"},
     {"offset": 1, "result_mode": "summary"}, {"result_mode": "invalid"},
-    {"language": "French"}, {"period": ["E"]},
+    {"language": "French"}, {"period": ["E"]}, {"department": ["DTU Compute"]},
+    {"department": "  "},
 ])
 def test_mcp_rejects_invalid_pagination_and_filters(filters):
     result = _handle_search_courses({

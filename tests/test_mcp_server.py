@@ -145,6 +145,7 @@ def test_discovery_search_courses_schema(test_client):
     assert "academic_year" in search_tool["inputSchema"]["required"]
     assert "level" in search_tool["inputSchema"]["properties"]
     assert "ects" in search_tool["inputSchema"]["properties"]
+    assert "department" in search_tool["inputSchema"]["properties"]
     assert "search_language" in search_tool["inputSchema"]["required"]
     result_mode = search_tool["inputSchema"]["properties"]["result_mode"]
     assert result_mode["enum"] == ["summary", "all"]
@@ -512,6 +513,30 @@ def test_search_courses_with_level_filter(test_client, db_session):
     content = json.loads(body["result"]["content"][0]["text"])
     for course_item in content["courses"]:
         assert course_item["level"] == "MSc"
+
+
+def test_search_courses_with_department_filter(test_client, db_session):
+    db_session.add_all(
+        [
+            _make_course("02450", "2026-2027", department="DTU Compute"),
+            _make_course("10001", "2026-2027", department="DTU Physics"),
+        ]
+    )
+    db_session.commit()
+
+    response = _send_jsonrpc(test_client, "tools/call", {
+        "name": "search_courses",
+        "arguments": {
+            "q": "machine learning",
+            "academic_year": "2026-2027",
+            "search_language": "en",
+            "department": "Compute",
+        },
+    })
+
+    assert response.status_code == 200
+    content = json.loads(response.json()["result"]["content"][0]["text"])
+    assert [course["course_number"] for course in content["courses"]] == ["02450"]
 
 
 def test_search_courses_uses_requested_danish_text(test_client, db_session):

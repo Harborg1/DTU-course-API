@@ -1,4 +1,5 @@
 import logging
+import re
 from dataclasses import dataclass
 from decimal import Decimal
 from typing import Literal
@@ -9,6 +10,10 @@ from sqlalchemy.orm import Session
 
 from app.config import get_settings
 from app.models.course import Course, CourseTranslation
+from app.services.dtu_keyword_search_service import (
+    DtuKeywordSearchError,
+    get_dtu_keyword_course_numbers,
+)
 from app.services.embedding_service import EmbeddingServiceError, get_embedding_service
 from app.services.language_service import detect_user_language
 
@@ -16,6 +21,17 @@ from app.services.language_service import detect_user_language
 logger = logging.getLogger(__name__)
 RRF_RANK_CONSTANT = 60
 SUMMARY_CANDIDATE_LIMIT = 100
+KEYWORD_FIELD_WEIGHTS = (
+    ("title", 4.0),
+    ("description", 2.0),
+    ("content", 2.0),
+    ("learning_objectives", 2.0),
+    ("prerequisites", 1.0),
+    ("mandatory_prerequisites", 1.0),
+    ("teaching_methods", 1.0),
+    ("literature", 0.5),
+    ("remarks", 0.5),
+)
 
 SearchResultMode = Literal["summary", "all"]
 
@@ -56,12 +72,17 @@ def _merge_best_scores(
 def _reciprocal_rank_fusion(
     lexical: dict[int, tuple[Course, float]],
     semantic: dict[int, tuple[Course, float]],
+    provider: dict[int, tuple[Course, float]] | None = None,
 ) -> list[tuple[Course, float]]:
     fused: dict[int, tuple[Course, float]] = {}
-    ranked_sources = (
+    ranked_sources = [
         sorted(lexical.values(), key=lambda item: (-item[1], item[0].course_number)),
         sorted(semantic.values(), key=lambda item: (-item[1], item[0].course_number)),
-    )
+    ]
+    if provider:
+        ranked_sources.append(
+            sorted(provider.values(), key=lambda item: (-item[1], item[0].course_number))
+        )
     for rows in ranked_sources:
         for rank, (course, _source_score) in enumerate(rows, start=1):
             increment = 1.0 / (RRF_RANK_CONSTANT + rank)
@@ -74,6 +95,51 @@ def _reciprocal_rank_fusion(
         fused.values(),
         key=lambda item: (-item[1], item[0].course_number),
     )
+
+
+def _query_terms(query: str) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            term
+            for term in re.findall(r"[^\W_]+", query.casefold())
+            if len(term) > 1 or term.isdigit()
+        )
+    )
+
+
+def _term_matches(term: str, value_terms: set[str]) -> bool:
+    if term in value_terms:
+        return True
+    return len(term) >= 4 and any(value_term.startswith(term) for value_term in value_terms)
+
+
+def _provider_keyword_score(
+    course: Course,
+    *,
+    query: str,
+    terms: tuple[str, ...],
+    language_codes: set[str],
+) -> float:
+    """Rerank DTU candidates locally because the provider returns course-code order."""
+    if not terms:
+        return 0.0
+    normalized_query = " ".join(query.casefold().split())
+    best_score = 0.0
+    for translation in course.translations:
+        if translation.language_code not in language_codes:
+            continue
+        translation_score = 0.0
+        for field, weight in KEYWORD_FIELD_WEIGHTS:
+            value = " ".join((getattr(translation, field) or "").casefold().split())
+            if not value:
+                continue
+            value_terms = set(re.findall(r"[^\W_]+", value))
+            matches = sum(1 for term in terms if _term_matches(term, value_terms))
+            translation_score += weight * matches / len(terms)
+            if normalized_query and normalized_query in value:
+                translation_score += weight
+        best_score = max(best_score, translation_score)
+    return best_score
 
 
 def search_courses(
@@ -97,6 +163,7 @@ def search_courses(
     if result_mode not in {"summary", "all"}:
         raise ValueError("result_mode must be 'summary' or 'all'")
 
+    settings = get_settings()
     selected_language = (
         search_language
         if search_language in {"da", "en"}
@@ -171,9 +238,55 @@ def search_courses(
         if search_all_languages
         else ((selected_language_code, selected_config),)
     )
+    candidate_limit = max(SUMMARY_CANDIDATE_LIMIT, offset + limit)
+    provider_rows: list[tuple[Course, float]] = []
+    provider_match_statements = []
+    if settings.dtu_keyword_search_enabled:
+        try:
+            provider_course_numbers = get_dtu_keyword_course_numbers(q, academic_year)
+        except DtuKeywordSearchError:
+            provider_course_numbers = []
+            logger.warning(
+                "DTU keyword search failed; using local search fallback",
+                exc_info=True,
+            )
+        if provider_course_numbers:
+            provider_courses = session.scalars(
+                select(Course).where(
+                    *course_filters,
+                    Course.course_number.in_(provider_course_numbers),
+                )
+            ).all()
+            terms = _query_terms(q)
+            language_codes = {language_code for language_code, _config in languages}
+            all_provider_rows = [
+                (course, score)
+                for course in provider_courses
+                if (
+                    score := _provider_keyword_score(
+                        course,
+                        query=q,
+                        terms=terms,
+                        language_codes=language_codes,
+                    )
+                ) > 0
+            ]
+            if all_provider_rows:
+                provider_ids = [course.id for course, _score in all_provider_rows]
+                provider_match_statements.append(
+                    select(Course.id.label("course_id")).where(Course.id.in_(provider_ids))
+                )
+                all_provider_rows.sort(
+                    key=lambda item: (-item[1], item[0].course_number)
+                )
+                provider_rows = (
+                    all_provider_rows[:candidate_limit]
+                    if result_mode == "summary"
+                    else all_provider_rows
+                )
+
     lexical_rows: list[tuple[Course, float]] = []
     lexical_match_statements = []
-    candidate_limit = max(SUMMARY_CANDIDATE_LIMIT, offset + limit)
     for language_code, search_config in languages:
         condition = base_condition(language_code)
         if dialect == "postgresql":
@@ -215,7 +328,6 @@ def search_courses(
 
     semantic_rows: list[tuple[Course, float]] = []
     semantic_match_statements = []
-    settings = get_settings()
     semantic_enabled = (
         dialect == "postgresql"
         and settings.semantic_course_search_enabled
@@ -266,11 +378,16 @@ def search_courses(
 
     lexical = _merge_best_scores(lexical_rows)
     semantic = _merge_best_scores(semantic_rows)
-    merged_rows = _reciprocal_rank_fusion(lexical, semantic)
+    provider = _merge_best_scores(provider_rows)
+    merged_rows = _reciprocal_rank_fusion(lexical, semantic, provider)
     if result_mode == "all":
         count = len(merged_rows)
     else:
-        match_statements = lexical_match_statements + semantic_match_statements
+        match_statements = (
+            lexical_match_statements
+            + semantic_match_statements
+            + provider_match_statements
+        )
         try:
             with session.begin_nested():
                 count = _count_distinct_matches(session, match_statements)
@@ -282,7 +399,10 @@ def search_courses(
                 exc_info=True,
             )
             with session.begin_nested():
-                count = _count_distinct_matches(session, lexical_match_statements)
+                count = _count_distinct_matches(
+                    session,
+                    lexical_match_statements + provider_match_statements,
+                )
     rows = merged_rows[offset : offset + limit]
     return SearchResult(
         count=count,

@@ -149,6 +149,14 @@ _SEARCH_COURSES_SCHEMA: dict[str, Any] = {
             "type": "string",
             "description": "Teaching period filter (e.g. E or F)",
         },
+        "department": {
+            "type": "string",
+            "description": (
+                "Department name or distinctive part of it (e.g. 'DTU Compute' or 'Compute')"
+            ),
+            "minLength": 1,
+            "maxLength": 200,
+        },
         "language": {
             "type": "string",
             "description": "Teaching language filter, distinct from search_language",
@@ -272,6 +280,7 @@ _SEARCH_COURSES_TOOL = Tool(
         "Search for DTU courses by keyword and optional filters. "
         "Searches both Danish and English course text, merges duplicate courses, and uses "
         "search_language only to select the language of returned titles and descriptions. "
+        "Use department when the user restricts the search to a named DTU department. "
         "Use result_mode=summary for an ordinary bounded recommendation and result_mode=all "
         "only for an explicitly complete, paginated result. Returns the selected matching "
         "courses in ascending course-number order, with localized titles and descriptions."
@@ -497,6 +506,11 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
     period = arguments.get("period")
     if period is not None and not isinstance(period, str):
         return {"error": "period must be a string"}
+    department = arguments.get("department")
+    if department is not None:
+        if not isinstance(department, str) or not department.strip():
+            return {"error": "department must be a non-empty string"}
+        department = department.strip()
     try:
         ects = Decimal(str(arguments["ects"])) if arguments.get("ects") is not None else None
     except (InvalidOperation, ValueError):
@@ -516,6 +530,7 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
             ects=ects,
             level=level,
             period=period,
+            department=department,
             language=language,
             search_language=search_language,
             search_all_languages=True,

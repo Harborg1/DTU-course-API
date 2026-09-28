@@ -12,6 +12,10 @@ class Settings(BaseSettings):
     migration_database_url: str | None = None
     api_key: str = Field(min_length=1)
     dtu_base_url: str = "https://kurser.dtu.dk"
+    dtu_keyword_search_enabled: bool = True
+    dtu_keyword_search_timeout: float = Field(default=3.0, gt=0, le=10)
+    dtu_keyword_cache_ttl: int = Field(default=900, ge=0, le=3600)
+    dtu_keyword_max_candidates: int = Field(default=2000, ge=1, le=10_000)
     default_academic_year: str = "2026-2027"
     import_request_delay: float = Field(default=0.5, ge=0)
     log_level: str = "INFO"

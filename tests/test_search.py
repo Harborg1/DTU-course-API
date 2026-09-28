@@ -1,3 +1,9 @@
+from unittest.mock import patch
+
+from app.config import get_settings
+from app.services.dtu_keyword_search_service import DtuKeywordSearchError
+
+
 def test_search_matches_content_and_is_compact(client, auth_headers, sample_courses):
     response = client.get("/api/v1/courses/search?q=machine%20learning", headers=auth_headers)
     assert response.status_code == 200
@@ -55,3 +61,76 @@ def test_english_search_uses_only_english_course_text(client, auth_headers, samp
     assert [course["courseNumber"] for course in english.json()["courses"]] == ["02450"]
     assert english.json()["courses"][0]["title"] == "Introduction to Machine Learning"
     assert danish.json()["count"] == 0
+
+
+def test_dtu_candidates_broaden_multi_term_search(client, auth_headers, sample_courses):
+    settings = get_settings().model_copy(update={"dtu_keyword_search_enabled": True})
+    with (
+        patch("app.services.search_service.get_settings", return_value=settings),
+        patch(
+            "app.services.search_service.get_dtu_keyword_course_numbers",
+            return_value=["02450", "01418", "99999"],
+        ) as provider,
+    ):
+        response = client.get(
+            "/api/v1/courses/search?q=machine%20physics&search_language=en",
+            headers=auth_headers,
+        )
+
+    assert response.status_code == 200
+    assert response.json()["count"] == 2
+    assert [course["courseNumber"] for course in response.json()["courses"]] == [
+        "02450",
+        "01418",
+    ]
+    provider.assert_called_once_with("machine physics", "2026-2027")
+
+
+def test_structured_filters_apply_to_dtu_candidates(client, auth_headers, sample_courses):
+    settings = get_settings().model_copy(update={"dtu_keyword_search_enabled": True})
+    with (
+        patch("app.services.search_service.get_settings", return_value=settings),
+        patch(
+            "app.services.search_service.get_dtu_keyword_course_numbers",
+            return_value=["02450", "01418"],
+        ),
+    ):
+        response = client.get(
+            "/api/v1/courses/search?q=machine%20physics&level=MSc&search_language=en",
+            headers=auth_headers,
+        )
+
+    assert response.status_code == 200
+    assert [course["courseNumber"] for course in response.json()["courses"]] == ["02450"]
+
+
+def test_dtu_failure_falls_back_to_local_search(client, auth_headers, sample_courses):
+    settings = get_settings().model_copy(update={"dtu_keyword_search_enabled": True})
+    with (
+        patch("app.services.search_service.get_settings", return_value=settings),
+        patch(
+            "app.services.search_service.get_dtu_keyword_course_numbers",
+            side_effect=DtuKeywordSearchError("unavailable"),
+        ),
+    ):
+        response = client.get(
+            "/api/v1/courses/search?q=machine%20learning&search_language=en",
+            headers=auth_headers,
+        )
+
+    assert response.status_code == 200
+    assert [course["courseNumber"] for course in response.json()["courses"]] == ["02450"]
+
+
+def test_course_listing_does_not_call_dtu_keyword_search(
+    client, auth_headers, sample_courses
+):
+    settings = get_settings().model_copy(update={"dtu_keyword_search_enabled": True})
+    with (
+        patch("app.services.search_service.get_settings", return_value=settings),
+        patch("app.services.search_service.get_dtu_keyword_course_numbers") as provider,
+    ):
+        response = client.get("/api/v1/courses", headers=auth_headers)
+
+    assert response.status_code == 200
+    provider.assert_not_called()
