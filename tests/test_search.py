@@ -23,6 +23,31 @@ def test_structured_filters(client, auth_headers, sample_courses):
     assert [course["courseNumber"] for course in response.json()["courses"]] == ["02450"]
 
 
+def test_department_alias_uses_imported_department_code(
+    client, auth_headers, sample_courses, db_session
+):
+    compute_course = next(
+        course
+        for course in sample_courses
+        if course.course_number == "02450" and course.academic_year == "2026-2027"
+    )
+    compute_course.department = None
+    compute_course.department_code = "1"
+    db_session.commit()
+
+    response = client.get(
+        "/api/v1/courses/search?q=machine%20learning&department=DTU%20Compute",
+        headers=auth_headers,
+    )
+
+    assert response.status_code == 200
+    assert response.json()["count"] == 1
+    assert response.json()["courses"][0]["courseNumber"] == "02450"
+    assert response.json()["courses"][0]["department"] == (
+        "Department of Applied Mathematics and Computer Science"
+    )
+
+
 def test_limit_is_capped_at_50(client, auth_headers):
     response = client.get("/api/v1/courses/search?limit=51", headers=auth_headers)
     assert response.status_code == 422

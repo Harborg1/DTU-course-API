@@ -518,8 +518,12 @@ def test_search_courses_with_level_filter(test_client, db_session):
 def test_search_courses_with_department_filter(test_client, db_session):
     db_session.add_all(
         [
-            _make_course("02450", "2026-2027", department="DTU Compute"),
-            _make_course("10001", "2026-2027", department="DTU Physics"),
+            _make_course(
+                "02450", "2026-2027", department=None, department_code="1"
+            ),
+            _make_course(
+                "10001", "2026-2027", department=None, department_code="10"
+            ),
         ]
     )
     db_session.commit()
@@ -537,6 +541,9 @@ def test_search_courses_with_department_filter(test_client, db_session):
     assert response.status_code == 200
     content = json.loads(response.json()["result"]["content"][0]["text"])
     assert [course["course_number"] for course in content["courses"]] == ["02450"]
+    assert content["courses"][0]["department"] == (
+        "Department of Applied Mathematics and Computer Science"
+    )
 
 
 def test_search_courses_uses_requested_danish_text(test_client, db_session):

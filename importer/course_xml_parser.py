@@ -4,6 +4,7 @@ from decimal import Decimal, InvalidOperation
 from xml.etree import ElementTree
 
 from app.schemas.course import CourseData
+from app.services.department_service import department_name
 
 
 SPACE_RE = re.compile(r"\s+")
@@ -258,6 +259,8 @@ def parse_course_xml(content: bytes | str) -> CourseData:
     teacher_names = [person["name"] for person in people if person["name"]]
     first_exam = examinations[0] if examinations else None
 
+    department_code = main_department.get("UID") if main_department is not None else None
+
     return CourseData(
         course_number=course_number,
         academic_year=academic_year,
@@ -273,7 +276,8 @@ def parse_course_xml(content: bytes | str) -> CourseData:
         level=level,
         course_type=course_type,
         language=LANGUAGE_NAMES.get(teaching_language_code, teaching_language_code),
-        department_code=main_department.get("UID") if main_department is not None else None,
+        department=department_name(department_code),
+        department_code=department_code,
         period=_period(schedules),
         schedule=", ".join(schedules) or None,
         campus=location_code.replace("_", " ") if location_code else None,

@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 
 from app.config import get_settings
 from app.models.course import Course, CourseTranslation
+from app.services.department_service import resolve_department_codes
 from app.services.dtu_keyword_search_service import (
     DtuKeywordSearchError,
     get_dtu_keyword_course_numbers,
@@ -180,7 +181,17 @@ def search_courses(
     if schedule:
         course_filters.append(Course.schedule.ilike(f"%{schedule}%"))
     if department:
-        course_filters.append(Course.department.ilike(f"%{department}%"))
+        department_name_match = Course.department.ilike(f"%{department}%")
+        department_codes = resolve_department_codes(department)
+        if department_codes:
+            course_filters.append(
+                or_(
+                    department_name_match,
+                    Course.department_code.in_(department_codes),
+                )
+            )
+        else:
+            course_filters.append(department_name_match)
     if language:
         course_filters.append(func.lower(Course.language) == language.casefold())
     if campus:

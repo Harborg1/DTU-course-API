@@ -519,6 +519,7 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
         return {"error": "ects must be greater than 0 and at most 120"}
 
     from app.database import SessionLocal
+    from app.services.department_service import display_department
     from app.services.search_service import search_courses
 
     session = SessionLocal()
@@ -561,7 +562,10 @@ def _handle_search_courses(arguments: dict[str, Any]) -> dict[str, Any]:
                 "language": course.language,
                 "period": course.period,
                 "schedule": course.schedule,
-                "department": course.department,
+                "department": display_department(
+                    course.department,
+                    course.department_code,
+                ),
                 "source_url": course.source_url,
             }
             for course, _score in selected_courses

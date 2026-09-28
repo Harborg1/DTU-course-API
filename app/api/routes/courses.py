@@ -16,6 +16,7 @@ from app.schemas.course import CourseDetail, CourseSummary
 from app.schemas.search import CourseListResponse, CourseSearchResponse
 from app.security.api_key import require_api_key
 from app.services.course_service import get_course
+from app.services.department_service import display_department
 from app.services.search_service import search_courses
 
 router = APIRouter(prefix="/api/v1", dependencies=[Depends(require_api_key)])
@@ -38,7 +39,7 @@ def _summary(course: Course, score: float | None, search_language: str) -> Cours
         period=course.period,
         schedule=course.schedule,
         language=course.language,
-        department=course.department,
+        department=display_department(course.department, course.department_code),
         campus=course.campus,
         description=description,
         relevanceScore=round(score, 6) if score is not None else None,
