@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="34051" University="dtu" LastUpdated="2025-07-04+02:00" Volume="2026/2027">
-        <Study_Board Study_BoardKey="34" />
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+      <Course CourseCode="34051" University="dtu" LastUpdated="2026-08-27+02:00" Volume="2026/2027">
         <Point PointType="ECTS">10</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Nanofotonik" />
         <Title Lang="en-GB" Title="Nanophotonics" />
         <Description_Language Lang="da-DK" />
@@ -22,6 +21,7 @@
         <Departments>
           <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="34" />
         <Course_Responsible PersonKey="15120" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
             <GivenName>Philip Trøst</GivenName>
@@ -53,12 +53,9 @@
         <Examination ExaminationSortID="0" Show="true">
           <Evaluation EvaluationKey="GLOB_EXTERN" />
           <Assessment>
-            <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
-            <Supp_Txt Lang="da-DK" Txt="Mundtlig eksamen og skriftlige rapporter, bedømt som en helhed med 30 % vægtning af rapporter og 70 % vægtning af den mundtlige eksamen." Show="true" />
-            <Supp_Txt Lang="en-GB" Txt="Oral examination and reports, judged as a whole. Weighting: Reports 30 %, oral exam 70 %." Show="true" />
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
           </Assessment>
           <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
-          <Aid AidKey="WITH_AID" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="F1A" />
           </Date_Of_Exam>
@@ -141,7 +138,7 @@
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:41.13" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-09-24" Time="12:16:23.22" />
         </Record_Info>
       </Course>
     </CourseXml>
