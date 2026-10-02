@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="02197" Volume="2026/2027" University="dtu" LastUpdated="2026-09-09+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+        <Title Lang="da-DK" Title="Udvalgte emner i kvante-nonlokalitet: Spil, grafer og anvendelser" />
+        <Title Lang="en-GB" Title="Topics in Quantum Nonlocality: Games, Graphs, and Applications" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Teaching_Language LangCode="en-GB" />
+        <Open_University TaughtUnderOpenUniversity="true" />
+        <Course_Duration>
+          <Exact>P6M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby" />
+        <Class_Schedule SortID="1">
+          <Schedule ScheduleKey="F4A" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="1" />
+        <External_Course_Responsible Email="mancinska@math.ku.dk" Name="Laura Mancinska" IsContact="true" SortID="1" />
+        <Course_Responsible PersonKey="126613" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>David Earl</GivenName>
+            <FamilyName>Roberson</FamilyName>
+            <Email>dero@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="53475" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Jonatan Bohr</GivenName>
+            <FamilyName>Brask</FamilyName>
+            <Email>jobb@fysik.dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Der vil være 2-3 obligatoriske opgaver, som de studerende skal besvare og aflevere. Opgaverne bedømmes ikke med karakterer, men vurderes som godkendt eller ikke godkendt på baggrund af, om de er fuldført. Alle opgaver skal være godkendt, for at de studerende kan gå til eksamen." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="There will be 2-3 mandatory assignments that the students must complete and submit. The assignments will not be graded but they will be checked for completion and approved or unapproved. All assignments must be approved in order to take the exam." Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="DTU_DecideWithTeacher" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Dette kursus introducerer de centrale idéer og værktøjer, der anvendes til at studere kvante-nonlokalitet gennem sproget fra spil, Bell-uligheder og korrelationer. Vi vil kort gennemgå den kvantemekaniske formalisme, der er nødvendig for at beskrive delte systemer, målinger og strategier, før vi udvikler sondringen mellem klassiske, kvantemekaniske og mere generelle non-signalling-strategier. Undervejs vil vi møde vigtige familier af eksempler, herunder spil med algebraisk og grafteoretisk struktur, samt forbindelser til kvanteteoriens historiske grundlag. Et væsentligt fokus vil være på grafteoretiske spil, herunder graf-farvnings-, homomorfi- og isomorfispil, samt deres forbindelser til kvantegrafparametre og kvanteautomorfigrupper. Kurset afsluttes med en introduktion til self-testing, det device-independent paradigme og optiske implementeringer af device-independent protokoller.</Contents>
+          <Teaching_And_Learning_Methods>Forelæsninger, øvelser, gruppearbejde</Teaching_And_Learning_Methods>
+          <Course_Objectives>Formålet med dette kursus er at give et moderne perspektiv på nonlokalitet og hvordan dette studeres i aktuel forskning inden for fysik, matematik og datalogi, herunder praktiske anvendelser i kvanteteknologier såsom sikker generering af tilfældighed og certificering af kvanteenheder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>This course introduces the core ideas and tools used to study quantum nonlocality through the language of games, Bell inequalities, and correlations. We will briefly review the quantum formalism needed to describe shared systems, measurements, and strategies, before developing the distinction between classical, quantum, and more general non-signalling strategies. Along the way, we will encounter important families of examples, including games with algebraic and graph-theoretic structure, as well as connections to the historical foundations of quantum theory. A substantial focus will be placed on graph-theoretic games, including graph colouring, homomorphism, and isomorphism games, and on their links to quantum graph parameters and quantum automorphism groups. The course will conclude by introducing self-testing, the device-independent paradigm, and optical implementations of device-independent protocols.</Contents>
+          <Teaching_And_Learning_Methods>Lectures, exercises, group work</Teaching_And_Learning_Methods>
+          <Course_Objectives>The aim of this course is to provide a modern perspective on nonlocality and how it is studied in current research across physics, mathematics, and computer science, including practical applications in quantum technologies such as secure randomness generation and the certification of quantum devices.</Course_Objectives>
+        </Txt>
+        <Mandatory_Prerequisites>
+          <Mandatory_Prerequisites_Txt Lang="da-DK" Txt="Grundlæggende viden om kvanteinformation er nødvendig. Kendskab til grafteori er en fordel." />
+          <Mandatory_Prerequisites_Txt Lang="en-GB" Txt="Basic knowledge of quantum information is needed. Knowledge of graph theory is a plus." />
+        </Mandatory_Prerequisites>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="10384 dækker den grundlæggende kvanteinformation, der er nødvendig for dette kursus. Alternativt kan man tage KU-kurset NMAK23007U Introduction to Quantum Computing.&#xD;&#xA;01227 dækker den grundlæggende grafteori, der vil være nyttig i dette kursus." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="10384 would cover the basics of quantum information needed for this course. Alternatively, one could take the KU course NMAK23007U Introduction to Quantum Computing.&#xD;&#xA;01227 would cover the basics of graph theory that would be useful in this course." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="10384.01227" />
+        </Qualified_Prerequisites>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar de grundlæggende quantumprincipper for nonlokalitet" />
+          <Txt Lang="en-GB" Txt="Explain the quantum fundamentals needed for nonlocality" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare sammenhængen mellem Bell-uligheder og nonlokale spil " />
+          <Txt Lang="en-GB" Txt="Explain the connection between Bell inequalities and nonlocal games" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Sammenligne klassiske, kvantemekaniske og non-signalling-strategier for nonlokale spil samt beskrive de tilhørende korrelationsmængder" />
+          <Txt Lang="en-GB" Txt="Compare classical, quantum, and non-signalling strategies for nonlocal games and describe the associated correlation sets" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Identificere specifikke klasser af nonlokale spil" />
+          <Txt Lang="en-GB" Txt="Identify specific classes of nonlocal games" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bevise standardresultater om kvantehomomorfier og kvanteisomorfier for grafer" />
+          <Txt Lang="en-GB" Txt="Prove standard results about quantum homomorphisms and isomorphisms of graphs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklare sammenhængen mellem kvanteisomorfier og kvantegrupper" />
+          <Txt Lang="en-GB" Txt="Explain the connection between quantum isomorphisms and quantum groups" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Konstruere eksempler på kvanteisomorfe grafer" />
+          <Txt Lang="en-GB" Txt="Construct examples of quantum isomorphic graphs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskrive self-testing og device-independent metoder" />
+          <Txt Lang="en-GB" Txt="Describe self-testing and device independent methods" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diskutere optiske implementeringer af device-independent protokoller" />
+          <Txt Lang="en-GB" Txt="Discuss optical implementations of device-independent protocols" />
+        </DTU_ObjectiveKeyword>
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Topics in Quantum Nonlocality: Games, Graphs, and Applications</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="14" />
+          </OpenUniversity>
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="LessThan40" Hours="52" />
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="52" />
+        </HoursDistribuition>
+        <TeacherTypesDistribuition>
+          <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
+        </TeacherTypesDistribuition>
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-09-29" Time="06:53:57.737" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>

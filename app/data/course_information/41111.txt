@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="41111" University="dtu" LastUpdated="2025-02-18+01:00" Volume="2026/2027">
-        <Study_Board Study_BoardKey="41" />
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+      <Course CourseCode="41111" University="dtu" LastUpdated="2026-09-28+02:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Strømningsmekanik 2" />
         <Title Lang="en-GB" Title="Hydrodynamics 2" />
         <Description_Language Lang="da-DK" />
@@ -22,6 +21,7 @@
         <Departments>
           <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="41" />
         <Course_Responsible PersonKey="9680" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
             <GivenName>David R.</GivenName>
@@ -40,6 +40,7 @@
           <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E3A" />
+            <Schedule ScheduleKey="F3A" />
           </Date_Of_Exam>
           <DurationKey Key="4H" />
         </Examination>
@@ -136,7 +137,7 @@ Turbulent flow. Instabiliy of laminar flows. Reynolds averaging. Turbulent energ
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:26:36.177" />
+          <Action Action="Accepted" PersonKey="129761" PersonUniversity="dtu" Date="2026-09-28" Time="13:15:29.92" />
         </Record_Info>
       </Course>
     </CourseXml>
