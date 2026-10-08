@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41935" University="dtu" LastUpdated="2025-02-25+01:00" Volume="2026/2027">
-        <Study_Board Study_BoardKey="41" />
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="41935" University="dtu" LastUpdated="2026-10-02+02:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Superlette konstruktioner" />
         <Title Lang="en-GB" Title="Super-light structures" />
         <Description_Language Lang="da-DK" />
@@ -16,11 +15,14 @@
         </Course_Duration>
         <Location Key="Campus_Lyngby" />
         <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Kurset udbydes ikke i foråret 2027." />
+          <Schedule_Txt Lang="en-GB" Txt="The course is not offered in Spring 2027." />
           <Schedule ScheduleKey="F4B" SortID="0" />
         </Class_Schedule>
         <Departments>
           <Main_Dep UID="41" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="41" />
         <Course_Responsible PersonKey="42294" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
             <GivenName>Philip Skov</GivenName>
@@ -58,6 +60,7 @@ De gør det muligt at give bygninger nye former og at reducere pris og ressource
 Kurset søger at give deltagerne kompetencer til at forstå, designe og beregne super-lette konstruktioner og deltage i udviklingen af deres detaljer, komponenter og arkitektoniske udtryk.
 Man lærer at skabe et optimalt og muligt kraftforløb og designe konstruktionen dertil i stedet for at designe en konstruktion først og finde kraftforløbet bagefter. 
 Kurset giver desuden kompetence i at opstille beregningsmodeller og identificere kritiske forhold for et design, hvad der er vigtigt for ingeniørers arbejde i de tidlige faser af et bygningsprojekt.</Course_Objectives>
+          <DTU_Remark>Kurset udbydes ikke i foråret 2027.</DTU_Remark>
           <Remark>Kurset er et generelt retningskompetencekursus på Kanidatuddannelsen i Bygningsdesign.</Remark>
         </Txt>
         <Txt Lang="en-GB">
@@ -71,6 +74,7 @@ They open possibilities for new shapes of building structures and for reducing t
 The course aims to give the participants competences to understand, design and calculate super-light structures and participate in the development of their details, components and architectural expressions.
 You learn how to create an optimal and possible force distribution and to design a structure for it, instead of first designing a structure and then finding the forces in it.
 In addition, the course gives competence in establishing calculation models and identifying critical matters for a design, which is important for engineering work at the early phases of a building project.</Course_Objectives>
+          <DTU_Remark>The course is not offered in Spring 2027.</DTU_Remark>
           <Remark>The course is a general competence course at the Master in Architectural Engineering.</Remark>
         </Txt>
         <Qualified_Prerequisites>
@@ -129,7 +133,7 @@ In addition, the course gives competence in establishing calculation models and 
         </TeacherTypesDistribuition>
         <Restrictions Max="" Min="10" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:28:22.897" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-10-06" Time="11:04:00.137" />
         </Record_Info>
       </Course>
     </CourseXml>
