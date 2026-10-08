@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="38404" Volume="2026/2027" University="dtu" LastUpdated="2026-05-28+02:00">
+      <Course CourseCode="38404" Volume="2026/2027" University="dtu" LastUpdated="2026-10-05+02:00">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Innovation in Engineering (Polyteknisk grundfag)" />
@@ -31,14 +31,8 @@
           </Extern_Dep>
         </Departments>
         <Study_Board Study_BoardKey="42" />
-        <Course_Responsible PersonKey="57690" FUniversity="DTU" SortID="0" DepartmentKey="" Contact="true" Show="true">
-          <Description>
-            <GivenName>Toke</GivenName>
-            <FamilyName>Malm</FamilyName>
-            <Email>tokmalm@dtu.dk</Email>
-          </Description>
-        </Course_Responsible>
-        <Course_Responsible PersonKey="63077" FUniversity="DTU" SortID="1" DepartmentKey="" Primary="true" Show="true">
+        <External_Course_Responsible Email="IN-FA-Contact@dtu.dk" Name="Innovation &amp; Facilitation Course Contact " IsContact="true" SortID="1" />
+        <Course_Responsible PersonKey="63077" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
             <GivenName>Thomas James</GivenName>
             <FamilyName>Howard</FamilyName>
@@ -183,7 +177,7 @@ The Facilitation course (38401, 38403, 38405) is intended for students who alrea
         </TeacherTypesDistribuition>
         <Restrictions Max="800" Min="" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-05-29" Time="09:03:53.093" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-10-06" Time="11:02:02.37" />
         </Record_Info>
       </Course>
     </CourseXml>
