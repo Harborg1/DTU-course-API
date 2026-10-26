@@ -5,7 +5,6 @@ from sqlalchemy.orm import sessionmaker
 
 from app.mcp_server.server import _SEARCH_COURSES_SCHEMA, _handle_search_courses
 from app.models.course import Course, CourseTranslation
-from app.services.course_qa_service import _build_system_prompt
 from app.services.language_service import (
     detect_explicit_user_language,
     detect_user_language,
@@ -150,27 +149,6 @@ def test_mcp_search_requires_and_returns_search_language(db_session):
     assert result["search_language"] == "da"
     assert result["courses"][0]["title"] == "Machine learning"
     assert result["courses"][0]["description"] == "Datamodellering med beslutningstræer"
-
-
-def test_chat_prompt_passes_detected_language_to_mcp_tools():
-    prompt = _build_system_prompt("da", "2026-2027")
-
-    assert "search_language være 'da'" in prompt
-    assert "response_language være 'da'" in prompt
-    assert "q være et kort, kanonisk engelsk emne" in prompt
-    assert "result_mode='summary'" in prompt
-    assert "result_mode='all'" in prompt
-
-
-def test_chat_prompt_formats_course_results_as_multiline_bullet_lists():
-    prompt = _build_system_prompt("en", "2026-2027")
-
-    assert "Never format course results as Markdown tables." in prompt
-    assert "Present courses as a readable bullet list." in prompt
-    assert "course number and title on the first line" in prompt
-    assert "ECTS and level on the following line" in prompt
-    assert "Do not place multiple courses on the same line." in prompt
-    assert "sort every course list by course number in ascending order" in prompt
 
 
 def test_response_language_follows_study_guide_wording():

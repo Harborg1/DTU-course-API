@@ -9,74 +9,25 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 def test_api_info_route_describes_the_service_without_authentication():
     assert "/api/info" in {route.path for route in router.routes}
     assert service_info().model_dump(by_alias=True) == {
-        "name": "DTU Course API",
+        "name": "DTU Course MCP Server",
         "status": "ok",
+        "mcpEndpoint": "/mcp",
         "documentationUrl": "/docs",
         "healthUrl": "/health",
     }
 
 
-def test_homepage_is_public_html(client):
+def test_homepage_is_public_service_metadata(client):
     response = client.get("/")
+
     assert response.status_code == 200
-    assert "Course Compass" in response.text
-    assert response.headers["content-type"].startswith("text/html")
+    assert response.json() == service_info().model_dump(by_alias=True)
 
 
-def test_homepage_defaults_to_english_and_has_language_toggle(client):
-    response = client.get("/")
-
-    assert '<html lang="en">' in response.text
-    assert "Your personal course guide" in response.text
-    assert 'data-language="en" aria-pressed="true"' in response.text
-    assert 'data-language="da" aria-pressed="false"' in response.text
-
-
-def test_homepage_has_localized_how_it_works_guide_with_generic_prompts():
-    homepage = (PROJECT_ROOT / "app" / "web" / "index.html").read_text()
-    script = (PROJECT_ROOT / "app" / "web" / "static" / "app.js").read_text()
-
-    assert 'id="howItWorksButton"' in homepage
-    assert 'id="howItWorksDialog"' in homepage
-    assert "Compare &lt;study programme 1&gt; and &lt;study programme 2&gt;" in homepage
-    assert 'howItWorks: "How it works"' in script
-    assert 'howItWorks: "Sådan virker det"' in script
-    assert 'howPromptCompare: "Sammenlign <studieretning 1> og <studieretning 2>"' in script
-    assert 'howPromptProgrammeRecommendation: "Jeg interesserer mig for <emne>. Hvilke studier kan du anbefale?"' in script
-    assert 'howPromptCourses: "Find kurser på <ECTS> ECTS om <emne> på <studieniveau>"' in script
-    assert 'howPromptAllCourses: "Find alle kurser på <ECTS> ECTS om <emne> på <studieniveau>"' in script
-    assert "Find new courses about &lt;topic&gt;" in homepage
-    assert 'howPromptNewCourses: "Find nye kurser om <emne>"' in script
-    assert 'howAllResultsText: "Tilføj “alle” for at få samtlige matchende kurser' in script
-    assert "howItWorksDialog.showModal()" in script
-    assert "input.value = translations[currentLanguage][button.dataset.templateKey]" in script
-
-
-def test_chat_message_styles_preserve_model_line_breaks():
-    styles = (PROJECT_ROOT / "app" / "web" / "static" / "styles.css").read_text()
-
-    assert ".message p { margin: 0; white-space: pre-wrap; }" in styles
-
-
-def test_chat_submits_recent_dialogue_with_completed_turn_state():
-    script = (PROJECT_ROOT / "app" / "web" / "static" / "app.js").read_text()
-
-    assert 'const requestMessages = messages.slice(-23)' in script
-    assert 'if (requestMessages[0]?.role === "assistant") requestMessages.shift()' in script
-    assert "completedTurns: completedTurns.slice(-11)" in script
-    assert "if (result.turnState) completedTurns.push(result.turnState)" in script
-
-
-def test_structured_chat_results_follow_the_response_language():
-    script = (PROJECT_ROOT / "app" / "web" / "static" / "app.js").read_text()
-
-    assert 'studyPlanLink: "View the official study plan at DTU ↗"' in script
-    assert 'specializationLink: "View the specialization at DTU ↗"' in script
-    assert 'studyProgramLink: "View the official programme at DTU ↗"' in script
-    assert 'studyProgramLink: "Se det officielle studieprogram hos DTU ↗"' in script
-    assert "addStudyPrograms(result.studyPrograms, responseLanguage)" in script
-    assert "addStudyPlan(result.studyPlan, responseLanguage)" in script
-    assert "addSpecializations(result.specializations, responseLanguage)" in script
+def test_removed_web_chat_and_rest_routes_are_not_exposed(client):
+    assert client.post("/api/chat", json={}).status_code == 404
+    assert client.get("/api/v1/courses").status_code == 404
+    assert client.get("/static/app.js").status_code == 404
 
 
 def test_python_runtime_is_pinned_to_312():

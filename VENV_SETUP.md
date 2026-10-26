@@ -97,4 +97,6 @@ Linux/macOS:
 cp .env.example .env
 ```
 
-Ret derefter mindst `API_KEY` og `DATABASE_URL` i `.env`. Filen `.env` er ignoreret af Git og må ikke indeholde secrets, som committes til Bitbucket.
+Ret derefter mindst `DATABASE_URL`, `MCP_TOKEN` og `MCP_SERVER_URL` i `.env`.
+Filen `.env` er ignoreret af Git og må ikke indeholde secrets, som committes
+til versionsstyring.

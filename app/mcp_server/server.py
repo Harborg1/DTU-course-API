@@ -1002,7 +1002,7 @@ class _BearerTokenMiddleware:
 
 
 def transport_security_for_url(server_url: str) -> TransportSecuritySettings:
-    """Allow local test hosts plus the exact public hostname configured for Groq."""
+    """Allow local test hosts plus the configured public MCP hostname."""
     allowed_hosts = ["127.0.0.1:*", "localhost:*", "testserver"]
     allowed_origins = ["http://127.0.0.1:*", "http://localhost:*"]
     parsed = urlsplit(server_url)

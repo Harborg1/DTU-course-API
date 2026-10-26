@@ -17,13 +17,10 @@ services:
     build: .
     environment:
       DATABASE_URL: postgresql+psycopg://dtu:dtu@postgres:5432/dtu_courses
-      API_KEY: ${API_KEY:-development-only-key}
       DTU_BASE_URL: https://kurser.dtu.dk
       DEFAULT_ACADEMIC_YEAR: 2026-2027
       IMPORT_REQUEST_DELAY: ${IMPORT_REQUEST_DELAY:-0.5}
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
-      GROQ_API_KEY: ${GROQ_API_KEY:-}
-      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
       EMBEDDING_API_KEY: ${EMBEDDING_API_KEY:-}
       EMBEDDING_MODEL: ${EMBEDDING_MODEL:-text-embedding-3-small}
       EMBEDDING_DIMENSIONS: ${EMBEDDING_DIMENSIONS:-1536}

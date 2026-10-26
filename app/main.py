@@ -1,13 +1,11 @@
 import logging
 from contextlib import asynccontextmanager
-from pathlib import Path
 
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
 from starlette.responses import JSONResponse
 from starlette.types import ASGIApp, Receive, Scope, Send
 
-from app.api.routes import chat, courses, health, root
+from app.api.routes import health, root
 from app.config import get_settings
 from app.mcp_server.server import create_mcp_transport, transport_security_for_url
 
@@ -51,20 +49,17 @@ async def lifespan(_app: FastAPI):
         mcp_proxy.app = None
 
 app = FastAPI(
-    title="DTU Course API",
-    description="Chat-based course recommendations and a searchable official DTU course catalogue.",
+    title="DTU Course MCP Server",
+    description="Read-only MCP tools backed by official DTU course and study data.",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
     openapi_url="/openapi.json",
     lifespan=lifespan,
 )
-app.mount("/static", StaticFiles(directory=Path(__file__).parent / "web" / "static"), name="static")
 
 app.include_router(root.router)
 app.include_router(health.router)
-app.include_router(chat.router)
-app.include_router(courses.router)
 
 if mcp_proxy is not None:
     app.mount("/mcp", mcp_proxy)

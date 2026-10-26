@@ -1,146 +1,94 @@
-# DTU Course API
+# DTU Course MCP Server
 
-DTU Course API samler officielle oplysninger om DTU-kurser, studieplaner og
-specialiseringer i én database. Data kan bruges gennem en chat, et REST API
-eller MCP-værktøjer til AI-klienter.
-
-Alle resultater bygger på importerede DTU-kilder og indeholder links tilbage
-til de officielle sider.
-
-## Sådan er systemet bygget
+Projektet samler officielle oplysninger om DTU-kurser, studieplaner og
+specialiseringer i PostgreSQL og eksponerer dem som seks skrivebeskyttede
+MCP-værktøjer til Microsoft Copilot Studio.
 
 ```text
-DTU Kursusbasen og DTU's studieordninger
-                    │
-                    ▼
-         Import og strukturering af data
-                    │
-                    ▼
-          PostgreSQL med pgvector
-                    │
-                    ▼
-                 FastAPI
-          ┌─────────┼─────────┐
-          ▼         ▼         ▼
-         Chat    REST API    MCP
+DTU-kilder → importere → PostgreSQL/Supabase → FastAPI /mcp → Copilot Studio
 ```
 
-Systemet består af fire hoveddele:
-
-1. **Importerne** henter kursusdata som XML fra DTU Kursusbasen og læser
-   studieplaner og specialiseringer fra DTU's officielle sider.
-2. **PostgreSQL** gemmer data struktureret og adskilt efter akademisk år.
-   Danske og engelske kursustekster gemmes separat. PostgreSQL full-text search
-   og pgvector bruges til tekstbaseret og semantisk søgning.
-3. **FastAPI** indeholder søgning, filtre, opslag og chat-endpoints.
-4. **Chatten** bruger en sprogmodel, som kan slå data op gennem de
-   skrivebeskyttede MCP-værktøjer og vedlægge officielle kildelinks.
-
-## Hvilke data er tilgængelige?
-
-### Kurser
-
-For hvert importeret akademisk år kan systemet blandt andet levere:
-
-- kursusnummer, dansk og engelsk titel
-- ECTS, niveau og kursustype
-- institut, campus og undervisningssprog
-- undervisningsperiode og skemaplacering
-- beskrivelse, fagligt indhold og læringsmål
-- anbefalede og obligatoriske forudsætninger
-- undervisningsformer, eksamen og evaluering
-- kursusansvarlige og undervisere
-- kurser, som ikke kan give merit sammen
-- tidligere kursusnumre
-- link til den officielle kursusside
-
-Kurser kan søges efter fritekst og filtreres efter blandt andet årgang, ECTS,
-niveau, periode, skema, institut, undervisningssprog og campus. Søgningen kan
-bruge både danske og engelske kursustekster.
-
-### Studieplaner
-
-Importerede studieplaner indeholder:
-
-- uddannelsens navn, gradstype og introduktion
-- studieplanens sektioner og kurser
-- obligatoriske og valgfrie kurser
-- regler som "vælg ét af", minimum antal kurser og minimum ECTS
-- kursernes rolle, ECTS og skemaplacering
-- link til den officielle studieordning
-
-### Specialiseringer
-
-Specialiseringer er knyttet til de relevante kandidatuddannelser. Systemet
-bevarer forskellen mellem obligatoriske kurser, valgmuligheder, anbefalede
-kurser og udgåede kurser, som stadig kan tælle med i kravene.
-
-### Ændringer mellem årgange
-
-Når flere årgange er importeret, kan systemet finde kurser, der er kommet til
-siden den foregående årgang. DTU's oplysninger om tidligere kursusnumre bruges
-til at skelne mellem helt nye kurser og kurser, som blot har fået nyt nummer.
-
-## Adgang til data
-
-Den offentlige chat findes på `/`. Den kan søge efter kurser, forklare
-studieplaner, vise specialiseringer og sammenligne katalogårgange.
-
-Det beskyttede REST API bruger headeren `X-API-Key`:
-
-| Endpoint | Indhold |
-|---|---|
-| `GET /api/v1/courses/search` | Søgning og filtrering i kurser |
-| `GET /api/v1/courses` | Sideinddelt kursusliste |
-| `GET /api/v1/courses/{course_number}` | Alle oplysninger om ét kursus |
-| `GET /api/v1/import/status` | Antal kurser og status for seneste import |
-
-Interaktiv API-dokumentation findes på `/docs`. En Swagger-definition til
-Microsoft Copilot Studio ligger i
-[`connector/swagger.json`](connector/swagger.json).
-
-MCP-serveren ligger på `/mcp` og tilbyder følgende skrivebeskyttede værktøjer:
+## MCP-værktøjer
 
 | Værktøj | Formål |
 |---|---|
-| `search_courses` | Søg efter kurser med relevante filtre |
-| `get_course` | Hent ét kursus |
-| `get_courses` | Hent flere kendte kursusnumre samlet |
+| `search_courses` | Søg efter kurser med emne og strukturerede filtre |
+| `get_course` | Hent alle relevante oplysninger om ét kursus |
+| `get_courses` | Hent op til 20 kendte kursusnumre samlet |
 | `get_new_courses` | Sammenlign to katalogårgange |
-| `get_study_plan` | Hent en uddannelses studieplan og dens krav |
-| `get_specializations` | Hent en uddannelses specialiseringer og kursuskrav |
+| `get_study_plan` | Hent en uddannelses studieplan og krav |
+| `get_specializations` | Hent specialiseringer og deres kursuskrav |
 
-## Kør projektet lokalt
+MCP-serveren bruger stateless Streamable HTTP på `/mcp` og kræver:
 
-Projektet kræver Docker. Opret en lokal konfiguration ud fra eksemplet og start
-derefter API og database:
+```http
+Authorization: Bearer <MCP_TOKEN>
+```
+
+FastAPI forbinder til databasen via `DATABASE_URL`. MCP-tokenet giver ikke
+direkte databaseadgang.
+
+## Konfiguration
+
+Opret lokal konfiguration og angiv som minimum databaseforbindelsen, et langt
+tilfældigt MCP-token og serverens offentlige URL:
 
 ```bash
 cp .env.example .env
+```
+
+```dotenv
+DATABASE_URL=postgresql+psycopg://...
+MCP_TOKEN=<generate-a-long-random-secret>
+MCP_SERVER_URL=https://your-domain.vercel.app
+```
+
+`MCP_SERVER_URL` bruges til MCP-transportens host- og origin-beskyttelse.
+
+## Lokal udvikling
+
+Projektet kræver Python 3.12. Den komplette lokale stack kan startes med:
+
+```bash
 docker compose up --build
 ```
 
-Applikationen er derefter tilgængelig på `http://localhost:8000`.
+Applikationen er derefter tilgængelig på `http://localhost:8000`:
 
-## Projektets vigtigste mapper
+- `/` viser serviceinformation som JSON.
+- `/health` kontrollerer databaseforbindelsen.
+- `/mcp` er den beskyttede MCP-transport.
+
+Kør den offline testsuite med:
+
+```bash
+pytest -q
+```
+
+## Data og import
+
+`importer/` henter og parser data fra DTU Kursusbasen og DTU's officielle
+studieordningssider. Rå snapshots ligger i `app/data/`, mens Alembic-revisioner
+ligger i `migrations/`. Disse dele bruges til at vedligeholde databasen, men er
+ekskluderet fra Vercels runtime-bundle.
+
+En mindre XML-import kan afprøves efter migrationerne:
+
+```bash
+python -m importer.course_xml_cli --academic-year 2026-2027 --limit 20
+```
+
+Se `scripts/update_supabase.md` for den fulde opdateringsproces.
+
+## Projektstruktur
 
 | Mappe | Indhold |
 |---|---|
-| `app/api/routes/` | REST- og chat-endpoints |
-| `app/services/` | Søgning, anbefalinger og forretningslogik |
-| `app/models/` | Databasemodeller for kurser og studieplaner |
-| `app/mcp_server/` | MCP-server og værktøjer til AI-klienter |
-| `app/web/` | Den offentlige chatbrugerflade |
+| `app/mcp_server/` | MCP-transport, autentifikation og de seks værktøjer |
+| `app/services/` | Søgning, katalogsammenligning og fælles logik |
+| `app/models/` | SQLAlchemy-modeller |
+| `app/api/routes/` | Status- og health-endpoints |
 | `importer/` | Import af kurser, studieplaner og specialiseringer |
-| `app/data/study_information/` | Lokale HTML-snapshots af studieplaner og specialiseringer |
-| `migrations/` | Ændringer til databaseskemaet |
-| `connector/` | Connector-definition til Microsoft Copilot Studio |
-
-## Datakilder
-
-Kursusnumre og kursusoplysninger kommer fra DTU Kursusbasens officielle
-`CourseWebServiceV2`. Studieplaner og specialiseringer kommer fra DTU's
-officielle studieordningssider. Deres rå HTML gemmes i
-`app/data/study_information/`, før den parses og importeres. Importerne gemmer
-data lokalt, så almindelige søgninger og chatsvar ikke kræver et live opslag
-hos DTU.
+| `app/data/` | Lokale snapshots og URL-lister til importarbejdet |
+| `migrations/` | Databaseskemaets revisionshistorik |
+| `tests/` | Offline tests for MCP, database og importere |

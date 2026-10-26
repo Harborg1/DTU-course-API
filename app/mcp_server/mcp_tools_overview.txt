@@ -9,7 +9,7 @@ monteres paa /mcp i den eksisterende FastAPI-applikation og bruger den samme
 database, de samme SQLAlchemy-modeller og udvalgte services som resten af
 projektet.
 
-En MCP-klient, eksempelvis Groq eller GitHub Copilot, vaelger hvilke tools der
+En MCP-klient, eksempelvis Microsoft Copilot Studio, vaelger hvilke tools der
 skal kaldes. server.py validerer argumenterne, udfører opslaget og returnerer
 resultatet som JSON-tekst i et MCP CallToolResult.
 
@@ -250,37 +250,12 @@ app/mcp_server/main.py
   create_mcp_transport og transport_security_for_url fra server.py.
 - Indeholder ikke en ekstra MCP-server eller selvstaendig tool-logik.
 
-app/services/course_qa_service.py
----------------------------------
-- Kalder ikke handlerfunktionerne direkte.
-- Giver Groq adressen paa /mcp og sender MCP_TOKEN som Bearer-token.
-- Groq vaelger derefter tools og kalder MCP-serveren over HTTP.
-
-app/services/chat_service.py
-----------------------------
-- Kalder course_qa_service.py for modelstyrede chatsvar.
-- Bruger ikke MCP-handlerne direkte.
-
-
 SAMLET KALDEFLOW
 ================
 
-Chat paa hjemmesiden:
+Microsoft Copilot Studio:
 
-  Browser
-    -> POST /api/chat
-    -> app/api/routes/chat.py
-    -> app/services/chat_service.py
-    -> app/services/course_qa_service.py
-    -> Groq Responses API
-    -> POST /mcp med MCP_TOKEN
-    -> app/mcp_server/server.py
-    -> projektets services/modeller
-    -> PostgreSQL
-
-Direkte MCP-klient, eksempelvis Copilot:
-
-  MCP-klient
+  Copilot Studio
     -> POST /mcp med MCP_TOKEN
     -> app/mcp_server/server.py
     -> projektets services/modeller
@@ -290,11 +265,7 @@ Direkte MCP-klient, eksempelvis Copilot:
 KODE SOM SERVER.PY IKKE BRUGER DIREKTE
 =======================================
 
-- app/services/chat_service.py
-- Groq-klienten og dens systemprompt
-- Frontendkoden i app/web
 - Importeringskoden i importer/
-- De almindelige /api/v1-routehandlers
 
-Disse dele kan starte et flow, der ender i MCP-serveren, eller levere data til
-databasen, men server.py importerer eller kalder dem ikke selv.
+Importeringskoden leverer data til databasen, men server.py importerer eller
+kalder den ikke selv under almindelige MCP-requests.

@@ -7,12 +7,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.pool import StaticPool
 
-os.environ["API_KEY"] = "test-secret"
 os.environ["DATABASE_URL"] = "sqlite://"
-os.environ["GROQ_API_KEY"] = "test-groq-key"
 os.environ["MCP_TOKEN"] = "test-mcp-token"
-os.environ["SEMANTIC_RESOLUTION_ENABLED"] = "false"
-os.environ["SEMANTIC_INTENT_ENABLED"] = "false"
 os.environ["SEMANTIC_COURSE_SEARCH_ENABLED"] = "false"
 os.environ["DTU_KEYWORD_SEARCH_ENABLED"] = "false"
 
@@ -21,15 +17,6 @@ get_settings.cache_clear()
 from app.database import Base, get_db  # noqa: E402
 from app.main import app  # noqa: E402
 from app.models.course import Course, CourseTranslation  # noqa: E402
-
-
-@pytest.fixture
-def legacy_chat(monkeypatch):
-    """Exercise the explicitly retained legacy API mode in its regression tests."""
-    monkeypatch.setenv("CHAT_MODE", "legacy")
-    get_settings.cache_clear()
-    yield
-    get_settings.cache_clear()
 
 
 @pytest.fixture
@@ -102,8 +89,3 @@ def client(db_session: Session) -> TestClient:
     with TestClient(app) as test_client:
         yield test_client
     app.dependency_overrides.clear()
-
-
-@pytest.fixture
-def auth_headers() -> dict[str, str]:
-    return {"X-API-Key": "test-secret"}
