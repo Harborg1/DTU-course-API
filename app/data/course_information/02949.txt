@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="02949" University="dtu" LastUpdated="2024-04-04+02:00" Volume="2026/2027">
-        <Study_Board Study_BoardKey="DTU_Compute" />
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+      <Course CourseCode="02949" University="dtu" LastUpdated="2026-10-14+02:00" Volume="2026/2027">
         <Point PointType="ECTS">2.5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
         <Title Lang="da-DK" Title="DTU Compute ph.d.-seminar" />
         <Title Lang="en-GB" Title="DTU Compute PhD Seminar" />
         <Description_Language Lang="da-DK" />
@@ -32,6 +31,7 @@
         <Departments>
           <Main_Dep UID="1" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="DTU_Compute" />
         <Course_Responsible PersonKey="34118" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
             <GivenName>Vedrana Andersen</GivenName>
@@ -50,7 +50,7 @@
           <Evaluation EvaluationKey="GLOB_INTERN" />
           <Assessment>
             <Pre_Def_List AssessmentKey="Eval_Of_Exercises" Show="true" />
-            <Supp_Txt Lang="da-DK" Txt="Påkrævet tilstedeværelse ved det 2-dages kick-off seminar, aktiv deltagelse på alle seminardagene, samt besvarelse af spørgeskemaer og rundspørger." Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Påkrævet tilstedeværelse ved det 2-dages kick-off seminar, aktiv deltagelse på alle seminardagene, samt besvarelse af spørgeskemaer." Show="true" />
             <Supp_Txt Lang="en-GB" Txt="Attendance at the kick-off meeting, active participation in the seminars, answering questionnaires and surveys." Show="true" />
           </Assessment>
           <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
@@ -71,8 +71,9 @@ Kommunikation og videndeling
 Forskningsintegritet
 Projektstyring
 Ph.d.-vejleder-relationen 
-Innovation</Contents>
-          <Teaching_And_Learning_Methods>Kurset består af et 2-dages kick-off seminar med overnatning (enten i februar/marts eller september/oktober) og 3 seminardage om generiske færdigheder. Forberedelse forekommer.</Teaching_And_Learning_Methods>
+Ekstern forskningsophold og funding
+Akademisk artikelskrivning</Contents>
+          <Teaching_And_Learning_Methods>Kurset består af et 2-dages kick-off seminar med overnatning ( i marts og september/oktober) og 3 seminardage om generiske færdigheder. Forberedelse forekommer.</Teaching_And_Learning_Methods>
           <Course_Objectives>Formålet med dette kursus er at give en bred introduktion til livet som ph.d.-studerende. Der sættes fokus på en række værktøjer og emner, som er af betydning for den ph.d.-studerendes arbejde og fremtidige karriere. Endvidere gives en bred introduktionen til DTU Computes faglighed.</Course_Objectives>
           <DTU_Remark>Kurset er målrettet og obligatorisk for ph.d.-studerende på DTU Compute.</DTU_Remark>
           <Remark>Kurset er obligatorisk og gratis for ph.d.-studerende fra DTU Compute. For andre studerende koster det 1800 kr., som dækker forplejning og overnatning.</Remark>
@@ -84,8 +85,9 @@ Communication and knowledge sharing
 Research integrity
 Project management
 The PhD supervisor relationship
-Innovation</Contents>
-          <Teaching_And_Learning_Methods>The course consists of a 2 day kick-off seminar (either in February/March or September/October) and 3 seminar days on generic competences. Preparation is expected.</Teaching_And_Learning_Methods>
+External research stay and funding
+Academic writing</Contents>
+          <Teaching_And_Learning_Methods>The course consists of a 2 day kick-off seminar (in March and in September/October) and 3 seminar days on generic competences. Preparation is expected.</Teaching_And_Learning_Methods>
           <Course_Objectives>The aim of this course is to give a broad introduction to the life as a PhD student. The focus is on a number of topics and specific that are vital for the PhD student’s work and future career. Moreover,  the coourse gives an introduction to the scientific profile of DTU Compute.</Course_Objectives>
           <DTU_Remark>The course is intended and mandatory for PhD students at DTU Compute.</DTU_Remark>
           <Remark>The course is mandatory and free for participants from DTU Compute. For other students the cost is 1800 kr. which covers meals and accomodation.</Remark>
@@ -123,8 +125,12 @@ Innovation</Contents>
           <Txt Lang="en-GB" Txt="Understand and discuss the principles behind &quot;Responsible conduct of research&quot;" />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Kende og bruge DTU's innovations faciliteter" />
-          <Txt Lang="en-GB" Txt="Know and use DTU's ecosystem for innovation" />
+          <Txt Lang="da-DK" Txt="Indsigt og planlægning af miljøskifte (eksternt forskningsophold)" />
+          <Txt Lang="en-GB" Txt="Understand and plan the external research stay (change of research environment)" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forstå of diskutere relevante emner inden for ethical AI og data managment plan" />
+          <Txt Lang="en-GB" Txt="Understand and discuss relevant topics within ethical AI and data management plan" />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
           <Txt Lang="da-DK" Txt="Forstå væsentlige faglige temaer på DTU Compute" />
@@ -139,7 +145,7 @@ Innovation</Contents>
         <No_Credit_Points_With CourseCode="02921" />
         <PreviousCourse CourseCode="02921" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:41.05" />
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-10-30" Time="10:29:40.97" />
         </Record_Info>
       </Course>
     </CourseXml>

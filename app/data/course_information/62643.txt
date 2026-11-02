@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="62643" Volume="2026/2027" University="dtu" LastUpdated="2024-03-20+01:00">
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
-        <Study_Board Study_BoardKey="dtu diplom" />
+      <Course CourseCode="62643" Volume="2026/2027" University="dtu" LastUpdated="2026-10-30+01:00">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
         <Title Lang="da-DK" Title="Svingningslære" />
         <Title Lang="en-GB" Title="Mechanical Vibrations" />
         <Description_Language Lang="da-DK" />
@@ -22,6 +21,7 @@
         <Departments>
           <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
         <Course_Responsible PersonKey="23707" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
             <GivenName>Jens Michael</GivenName>
@@ -42,6 +42,7 @@
             <Date_of_Exam_Txt Lang="en-GB" Txt="Internal censorship for both written exams and CDIO reports." />
             <Date_of_Exam_Txt Lang="da-DK" Txt="Intern censur for både skriftlig eksamen og CDIO-rapporter." />
             <Schedule ScheduleKey="E5A" />
+            <Schedule ScheduleKey="F5A" />
           </Date_Of_Exam>
           <DurationKey Key="4H" />
         </Examination>
@@ -165,7 +166,7 @@ Valgfag</Remark>
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:52.953" />
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-10-30" Time="10:49:09.503" />
         </Record_Info>
       </Course>
     </CourseXml>

@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="62642" Volume="2026/2027" University="dtu" LastUpdated="2025-03-03+01:00">
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
-        <Study_Board Study_BoardKey="dtu diplom" />
+      <Course CourseCode="62642" Volume="2026/2027" University="dtu" LastUpdated="2026-10-30+01:00">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
         <Title Lang="da-DK" Title="Planlægning af infrastruktur" />
         <Title Lang="en-GB" Title="Planning of infrastructure" />
         <Description_Language Lang="da-DK" />
@@ -21,6 +20,7 @@
         <Departments>
           <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
         <External_Course_Responsible Name="Jacqueline Arriagada Fernandez" IsContact="false" SortID="1" />
         <Course_Responsible PersonKey="212813" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
@@ -47,6 +47,7 @@
           <Aid AidKey="WITH_AID" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E2B" />
+            <Schedule ScheduleKey="F2B" />
           </Date_Of_Exam>
         </Examination>
         <Sign_Up>
@@ -129,7 +130,7 @@
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:52.097" />
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-10-30" Time="10:48:07.027" />
         </Record_Info>
       </Course>
     </CourseXml>

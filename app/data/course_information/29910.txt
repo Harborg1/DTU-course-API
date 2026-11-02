@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="">
+  <CoursePublished>
+    <CourseXml>
+      <Course CourseCode="29910" Volume="2026/2027" University="dtu" LastUpdated="2026-10-07+02:00">
+        <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_PHD" />
+        <Title Lang="da-DK" Title="Bayesian statistics for computational biology" />
+        <Title Lang="en-GB" Title="Bayesian statistics for computational biology" />
+        <Description_Language Lang="da-DK" />
+        <Description_Language Lang="en-GB" />
+        <Programme Show="true">
+          <Course_Type OpenForExternal="true" SortID="1" Show="true">
+            <Type TypeKey="GeneralServiceCourse_DTU_PHD" />
+          </Course_Type>
+        </Programme>
+        <Teaching_Language LangCode="en-GB" />
+        <Course_Duration>
+          <Exact>P2M</Exact>
+        </Course_Duration>
+        <Location Key="Campus_Lyngby">
+          <LocationTxt Lang="da-DK" Txt="LY220-R111D (am) &#xD;&#xA;LY220-R107D (pm)" />
+          <LocationTxt Lang="en-GB" Txt="LY220-R111D (am) &#xD;&#xA;LY220-R107D (pm)" />
+        </Location>
+        <Class_Schedule SortID="1">
+          <Schedule_Txt Lang="da-DK" Txt="Startdato: 2027-01-04&#xD;&#xA;Slutdato: 2027-01-22" />
+          <Schedule_Txt Lang="en-GB" Txt="Start date: 2027-01-04&#xD;&#xA;End date: 2027-01-22" />
+          <Schedule ScheduleKey="January" SortID="0" />
+        </Class_Schedule>
+        <Departments>
+          <Main_Dep UID="29" University="DTU" Resources="100" KVL_Resources="100" />
+        </Departments>
+        <Study_Board Study_BoardKey="DTU_Biosustain" />
+        <Course_Responsible PersonKey="140936" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
+          <Description>
+            <GivenName>Teddy</GivenName>
+            <FamilyName>Groves</FamilyName>
+            <Email>tedgro@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="133654" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Nicholas Luke</GivenName>
+            <FamilyName>Cowie</FamilyName>
+            <Email>nicow@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Examination ExaminationSortID="0" Show="true">
+          <Evaluation EvaluationKey="GLOB_INTERN" />
+          <Assessment>
+            <Pre_Def_List AssessmentKey="Report" Show="true" />
+          </Assessment>
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Date_Of_Exam SortID="1" Show="true">
+            <Schedule ScheduleKey="3-uger" />
+            <Schedule ScheduleKey="3-uger" />
+          </Date_Of_Exam>
+        </Examination>
+        <Sign_Up>
+          <Place>
+            <Pre_Def_List PlaceKey="GLOB_CAMPUSNET" />
+            <Supp_Txt Lang="da-DK" Txt="Ved problemer med tilmeldding, kontakt Garima Madaan Dua, BRIGHT-PHD@bright.dtu.dk" />
+            <Supp_Txt Lang="en-GB" Txt="In case of problems regarding registration, please contact Garima Madaan Dua, BRIGHT-PHD@bright.dtu.dk" />
+          </Place>
+        </Sign_Up>
+        <Txt Lang="da-DK">
+          <Contents>Kurset foregår over tre uger. Formålet med den første uge er at dække det meste af det materielle materiale. I løbet af den anden uge vil eleverne uddybe deres viden ved at praktisere højere opgaver som diagnostik, evaluering, softwarevalg og projektplanlægning. Den tredje uge er afsat til at gennemføre et overvåget uafhængigt projekt.
+
+Uge 1: Bayesian statistik?
+
+Dag 1
+Tema: hvordan og hvorfor skal man tage dette kursus
+Emner: Introduktion, kursusressourcer, Bayesian statistik i kontekst
+Aktiviteter: 
+Bayesian statistik tarot læsning
+Rollespil som fermenteringsinteressenter
+
+Dag 2
+Tema: Sandsynlighed som model for målingsstøj og information
+Emner: Sandsynlighedsrum, begrænsede målinger, kvantitativ vs kvalitativ tro
+Aktiviteter: 
+Diskuter: Hvad er... Et rum? Et sandsynlighedsrum? Støj? Tro på det?
+Motion: hvordan man modellerer forskellige former for måling? Herunder optisk tæthed, isotopologue sammensætninger og kvantitative metabolomics
+Computeropsætning
+Øvelse: kalibrere en OD meter
+
+Dag 3
+Tema: Gradient-baseret Markov kæde Monte Carlo
+Emner: Dynamiske systemer, Numerisk løsning
+Aktiviteter:
+Bryd en symbolsk integrator 
+Fix en brudt Bayesian beregning
+
+Dag 4
+Temaer: automatisk differentiering og modelevaluering
+Emner: automatisk differentiering, push-forward evalueringer, tab funktioner
+Aktiviteter:
+Automatisk differentiering tarot
+Interessentkomitéen kritiserer en model
+
+Dag 5
+Tema: Indlejrede dynamiske systemer
+Emner: MCMC og automatisk differentiering med indlejret numerisk løsning
+Aktiviteter:
+Få en simpel model af en fermentering
+Idéation af projekt 
+
+Uge 2: Bayesian statistik i praksis
+
+Dag 6
+Tema: Software til Bayesian statistik
+Emner: typer af software, tommelfingerregler for at vælge mellem alternativer
+Aktiviteter:
+Undersøg et Bayesiansk softwarebibliotek
+Forbedre gæringsmodellen og opdatere kurset repository
+
+Dag 7
+Tema: Vanskelige modeller
+Emner: vanskelige målinger (manglende data, mætning, heterosekstinfikatisme), vanskelige priorer (sammenhæng, afhængighed, haleoplysninger, ikke-parametriske modeller)
+Aktivitet: passer til en vanskelig model og tilføj den til kursuslageret
+
+Dag 8 
+Tema: Staten af kunsten
+Emner: seneste algoritmer, modeller og applikationer
+Aktiviteter
+Nogle interessante emner i Bayesian statistik forskning
+Find og læs en interessant nylig Bayesian statistik papir
+Beslutte i udvalgene, hvordan hovedmodellen kan forbedres på grundlag af resultater
+
+Dag 9
+Tema: Gør små forbedringer
+Aktiviteter:
+Projektplanlægning
+Lav en konkret plan for at forbedre Bayesian statistik. For eksempel, find et live problem i en Bayesian software bibliotek og forsøge at løse det, eller udarbejde et forslag til at gøre konferencer mere inkluderende.
+
+Dag 10
+Tema: Huller i marken
+Aktiviteter:
+Diskuter og præsentere: det største problem med beregningsmæssige Bayesian statistik?
+Præsentere projektplaner, få og give peer feedback
+
+Uge 3: Projektarbejde</Contents>
+          <Teaching_And_Learning_Methods>Dette kursus giver en fuldstændig introduktion til Bayesiansk statistik med vægt på realistiske anvendelser inden for beregningsbiologi. Kursusmaterialet trækker på forfatternes forskningserfaring og giver en bred vifte af detaljerede og fuldt ud gennemarbejdede eksempler samt masser af praktiske råd og vejledt videre læsning.</Teaching_And_Learning_Methods>
+          <Course_Literature>Gelman, Vehtari, McElreath, Simpson, Margossian, Yao, Kennedy, Gabry, Bürkner, Modrák, Leos Barajas (2026). Bayesian Workflow. Chapman &amp; Hall.</Course_Literature>
+          <Course_Objectives>En studerende, der har opfyldt kursets mål, vil være i stand til at udføre en brugerdefineret Bayesiansk statistisk analyse af realistiske biologiske data ved hjælp af de nyeste tilgængelige teoretiske og beregningsmæssige metoder.</Course_Objectives>
+        </Txt>
+        <Txt Lang="en-GB">
+          <Contents>The course takes place over three weeks. The aim of the first week is to cover most of the substantive material. During the second week the students will deepen their knowledge by practicing higher-level tasks like diagnostics, evaluation, software choice and project planning. The third week is set aside for carrying out a supervised independent project.
+
+Week 1: Bayesian statistics?
+
+Day 1
+Theme: how and why to take this course
+Topics: Introduction, course resources, Bayesian statistics in context
+Activities: 
+Bayesian statistics tarot reading
+Role play as fermentation stakeholders
+
+Day 2
+Theme: Probability as a model for measurement noise and information
+Topics: Probability spaces, constrained measurements, quantitative vs qualitative belief
+Activities: 
+Discuss: What is… A space? A probability space? Noise? Belief?
+Exercise: how to model different kinds of measurement? Including optical density, isotopologue compositions and quantitative metabolomics
+Computer setup
+Exercise: calibrate an OD meter
+
+Day 3
+Theme: Gradient-based Markov chain Monte Carlo
+Topics: Dynamical systems, Numerical solving
+Activities:
+Break a symplectic integrator 
+Fix a broken Bayesian computation
+
+Day 4
+Themes: automatic differentiation and model evaluation
+Topics: automatic differentiation, push-forward evaluations, loss functions
+Activities:
+Automatic differentiation tarot
+Stakeholder committee critiques a model
+
+Day 5
+Theme: embedded dynamical systems
+Topics: MCMC and automatic differentiation with embedded numerical solving
+Activities:
+Fit a simple model of a fermentation
+Project ideation 
+
+Week 2: Bayesian statistics in practice
+
+Day 6
+Theme: Software for Bayesian statistics
+Topics: types of software, rules of thumb for choosing between alternatives
+Activities:
+Research a Bayesian software library
+Improve the fermentation model and update the course repository
+
+Day 7
+Theme: Difficult models
+Topics: difficult measurements (missing data, saturation, heteroskedasticity), difficult priors (colinearity, dependence, tail information, non-parametric models)
+Activity: fit a difficult model and add it to the course repository
+
+Day 8 
+Theme: The state of the art
+Topics: recent algorithms, models and applications
+Activities
+Some interesting topics in Bayesian statistics research
+Find and read an interesting recent Bayesian statistics paper
+Decide in committees how to improve the main model based on findings
+
+Day 9
+Theme: Making small improvements
+Activities:
+Project planning
+Make a concrete plan for improving Bayesian statistics. For example, find a live issue in a Bayesian software library and try to fix it, or draft a proposal for making conferences more inclusive.
+
+Day 10
+Theme: Gaps in the field
+Activities:
+Discuss and present: the biggest problem with computational Bayesian statistics?
+Present project plans, get and give peer feedback
+
+Week 3: Project work</Contents>
+          <Teaching_And_Learning_Methods>This course provides a full introduction to Bayesian statistics with an emphasis on realistic applications to computational biology. The course material draws on the authors’ research experience to provide a range of detailed and fully worked out examples, as well as plenty of practical advice and guided further reading.</Teaching_And_Learning_Methods>
+          <Course_Literature>Gelman, Vehtari, McElreath, Simpson, Margossian, Yao, Kennedy, Gabry, Bürkner, Modrák, Leos Barajas (2026). Bayesian Workflow. Chapman &amp; Hall.</Course_Literature>
+          <Course_Objectives>A student who has met the objectives of the course will be able to conduct a custom Bayesian statstical analysis of realistic biological data using the latest available theoretical and computational methods.</Course_Objectives>
+        </Txt>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Forklar fælles Bayesian statistik udtryk såsom sandsynlighedsrum, forudgående distribution, målemodel, fælles fordeling, bagdel distribution, Markov Chain Monte Carlo, regression, lineær model, generaliseret lineær model" />
+          <Txt Lang="en-GB" Txt="Explain common Bayesian statistics terms such as probability space, prior distribution, measurement model, joint distribution, posterior distribution, Markov Chain Monte Carlo, regression, linear model, generalised linear model " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bestem det rum, hvor nogle data eller parametre lever (ubegrænset euklidansk rum, positivt begrænset, simplex osv.) og anvende passende transformationer" />
+          <Txt Lang="en-GB" Txt="Determine the space in which some data or parameters live (unconstrained Euclidean space, positive-constrained, simplex, etc.) and apply appropriate transformations " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Beskriv, hvordan gradient-baseret Markov Chain Monte Carlo fungerer" />
+          <Txt Lang="en-GB" Txt="Describe how gradient-based Markov Chain Monte Carlo works " />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Monter en Bayesian statistisk model med et indlejret dynamisk system baseret på en fed-batch fermentering proces." />
+          <Txt Lang="en-GB" Txt="Fit a Bayesian statistical model with an embedded dynamical system based on a fed-batch fermentation process." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Diagnosticere ikke-konvergens, overdreven autokorrelation og løser fejl fra gradient baseret Markov Kæde Monte Carlo outputs" />
+          <Txt Lang="en-GB" Txt="Diagnose non-convergence, excessive autocorrelation and solver failures from gradient based Markov Chain Monte Carlo outputs" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vurdere, hvor godt en statistisk model passer til nogle data" />
+          <Txt Lang="en-GB" Txt="Evaluate how well a statistical model fits some data" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Vælg den rigtige software til et Bayesian statistisk modelleringsproblem: formelbaseret grænseflade på højt niveau, probabilistisk programmeringssprog eller almindelig JAX." />
+          <Txt Lang="en-GB" Txt="Choose the right software for a Bayesian statistical modelling problem: high-level formula-based interface, probabilistic programming language or plain JAX." />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Udfør et uafhængigt projekt, der involverer bayesiske statistikker, og skriv derefter resultaterne i en rapport" />
+          <Txt Lang="en-GB" Txt="Carry out an independent project involving Bayesian statistics, then write up the results in a report" />
+        </DTU_ObjectiveKeyword>
+        <DTU_ObjectiveKeyword SortID="1">
+          <Txt Lang="da-DK" Txt="Bidrage til at forbedre beregningsmæssige Bayesian software" />
+          <Txt Lang="en-GB" Txt="Contribute to improving computational Bayesian software " />
+        </DTU_ObjectiveKeyword>
+        <Course_Home_Page Lang="da-DK" URL="https://dtu-qmcm.github.io/bayesian_statistics_for_computational_biology/" />
+        <DTU>
+          <GroenDyst ParticipationKey="dtu_groendyst_no" />
+        </DTU>
+        <HoursDistribuition>
+          <HourDistribuition HourDistribuitionKey="Teaching" Hours="40" />
+          <HourDistribuition HourDistribuitionKey="SupervisionHours" Hours="12" />
+        </HoursDistribuition>
+        <Restrictions Max="20" Min="" />
+        <Record_Info>
+          <Action Action="Accepted" PersonKey="191367" PersonUniversity="dtu" Date="2026-10-30" Time="10:25:22.773" />
+        </Record_Info>
+      </Course>
+    </CourseXml>
+  </CoursePublished>
+</root>
