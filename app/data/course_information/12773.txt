@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="12773" University="dtu" LastUpdated="2026-04-10+02:00" Volume="2026/2027">
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="12773" University="dtu" LastUpdated="2026-10-30+01:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Avancerede livscyklusvurderingsmetoder" />
@@ -40,16 +40,15 @@
           <Evaluation EvaluationKey="GLOB_INTERN" />
           <Assessment>
             <Pre_Def_List AssessmentKey="Oral_Exam_And_Exercises" Show="true" />
-            <Supp_Txt Lang="da-DK" Txt="Samlet vurdering af en grupperapport, en individuel quiz og en gruppe-baseret mundtlig eksamen" Show="true" />
-            <Supp_Txt Lang="en-GB" Txt="Overall assessment involving a group assignment, an individual quiz and a group-based oral exam" Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Den endelige bedømmelse af deltagerne baseres på en grupperapport (ca. 50%), en individuel quiz (ca. 25%) og en gruppe-baseret mundtlig eksamen (ca. 25%)." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The final assessment of the participants is based on a group assignment (approx. 50%), an individual quiz (approx. 25%) and a group-based oral exam (approx. 25%)." Show="true" />
           </Assessment>
           <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
-          <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
+          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
-            <Date_of_Exam_Txt Lang="en-GB" Txt="The group-based oral exams will be held on May 21 and May 22, 2026." />
-            <Date_of_Exam_Txt Lang="da-DK" Txt="De gruppebaserede mundtlige prøver afholdes den 21. maj og den 22. maj 2026." />
+            <Date_of_Exam_Txt Lang="en-GB" Txt="The group-based oral exams will be held on May 20 and May 21, 2027." />
+            <Date_of_Exam_Txt Lang="da-DK" Txt="De gruppebaserede mundtlige prøver afholdes den 20. maj og den 21. maj 2027." />
             <Schedule ScheduleKey="F3A" />
-            <Schedule ScheduleKey="F3B" />
           </Date_Of_Exam>
         </Examination>
         <Sign_Up>
@@ -58,27 +57,31 @@
           </Place>
         </Sign_Up>
         <Txt Lang="da-DK">
-          <Contents>Introduktion til prospektiv livscyklusvurdering (pLCA). Principper for miljømæssigt udvidet input-output-modellering. Præsentation af miljølæringsteori og kvantificering af miljølæringsrater. Introduktion til modellering af baggrundssystemer, delte socioøkonomiske udviklingsforløb (SSP'er), repræsentative koncentrationsforløb (RCP'er) og integrerede vurderingsmodeller (IAM'er). Udforskning af bæredygtighedsdesign-konceptet. Forbinde prospektive miljøpåvirkninger med absolut bæredygtighed. Praktisk problemløsning ved brug af Python og softwareværktøjer som SimaPro og MATLAB. Studerende vil lære at reflektere kritisk over begrænsningerne ved avancerede vurderingsresultater til beslutningsstøtte, idet der tages hensyn til anvendelseskontekst og usikkerheder. Deltagerne vil diskutere og fortolke resultater fra en udvalgt anvendelse, formulere tekniske resuméer, give peer feedback og præsentere simuleringsresultater.</Contents>
+          <Contents>Kurset introducerer prospektiv livscyklusvurdering (pLCA) og miljømæssigt udvidet input-output (EEIO) modellering. Deltagerne introduceres til udviklende baggrunds- og forgrundssystemmodellering ved hjælp af fælles socioøkonomiske veje (SSP), integrerede vurderingsmodeller (IAM'er) og teorien om miljømæssig læring og skalering. Kurset giver indsigt i konsekvensvurdering af forsyningskæden, identifikation af hotspots og muligheder for at kombinere EEIO og procesbaseret LCA. Kursusdeltagerne udforsker bæredygtige-by-design-tilgange og forbindelserne mellem fremtidige miljøpåvirkninger og absolut miljømæssig bæredygtighed.
+
+Øvelser og aktive læringsopgaver involverer praktisk problemløsning ved hjælp af Activity Browser LCA-softwaren og guidet Python-baseret modellering. Deltagerne inviteres til at danne deres egne grupper, undersøge en selvvalgt applikationscase, diskutere og fortolke simuleringsresultater, udarbejde tekniske resuméer, udveksle peer-feedback og præsentere deres resultater. Kurset udvikler både tekniske og overførbare færdigheder med fokus på kritisk fortolkning af miljøpåvirkningsresultater og reflektering over begrænsninger og antagelser ved avancerede LCA-metoder.</Contents>
           <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
-          <Course_Objectives>Kurset har til formål at udvide studerendes viden om livscyklusvurdering (LCA) og udstyre dem til at løse komplekse problemer ved hjælp af avancerede LCA-metoder inden for bæredygtig ingeniørfag og relaterede videnskabelige discipliner. Deltagerne vil opnå færdigheder til at udføre prospektive livscyklusvurderinger (pLCA), foreslå bæredygtige designstrategier og udføre miljømæssigt udvidede input-output-analyser. Kurset forbereder studerende til anvendelser i den virkelige verden og en karriere inden for livscyklusbaseret bæredygtighedsvurdering i industrien eller akademia.</Course_Objectives>
+          <Course_Objectives>Kurset har til formål at udvide studerendes viden om livscyklusvurdering (LCA) og udstyre dem til at løse komplekse problemer ved hjælp af avancerede LCA-metoder inden for bæredygtig ingeniørfag og relaterede videnskabelige discipliner. Deltagerne vil udvikle færdigheder til at udføre prospektive livscyklusvurderinger (pLCA), foreslå bæredygtige designstrategier og udføre miljømæssigt udvidede input-output (EEIO) analyser. Gennem disse metoder vil de studerende lære at kvantificere dynamiske, udviklende miljøpåvirkninger, identificere hotspots i forsyningskæden og designe fremtidige veje mod absolut bæredygtighed. Kurset forbereder studerende til anvendelser i den virkelige verden og en karriere inden for livscyklusbaseret bæredygtighedsvurdering i industrien eller akademia.</Course_Objectives>
         </Txt>
         <Txt Lang="en-GB">
-          <Contents>Introduction to prospective life cycle assessment (pLCA). Principles of environmentally extended input-output modeling. Presentation of environmental learning theory and quantification of environmental learning rates. Introduction to background system modelling, shared socioeconomic pathways (SSPs), representative concentration pathways (RCPs), and integrated assessment models (IAMs). Exploring the sustainable-by-design concept. Linking prospective environmental impacts to absolute sustainability. Practical problem-solving using Python and software tools like SimaPro and MATLAB. Students will learn to critically reflect on the limitations of advanced assessment results for decision support, considering the application context and uncertainties. Participants will discuss and interpret results from a chosen application, formulate technical summaries, provide peer feedback, and present simulation results.</Contents>
+          <Contents>The course introduces prospective life cycle assessment (pLCA) and environmentally extended input-output (EEIO) modelling. Participants are introduced to evolving background and foreground system modelling using shared socioeconomic pathways (SSP), integrated assessment models (IAMs), and the environmental learning and scaling theory. The course provides insights into supply chain impact assessment, hotspot identification, and opportunities to combine EEIO and process-based LCA. Course attendees explore sustainable-by-design approaches and links between future environmental impacts and absolute environmental sustainability. 
+
+Exercises and active learning tasks involve practical problem-solving using the Activity Browser LCA software and guided Python-based modelling. Participants are invited to form their own groups, investigate a self-selected application case, discuss and interpret simulation results, prepare technical summaries, exchange peer feedback, and present their findings. The course develops both technical and transferable skills, with a focus on critically interpreting environmental impact results and reflecting on the limitations and assumptions of advanced LCA methods.</Contents>
           <Teaching_And_Learning_Methods>Lectures and exercises</Teaching_And_Learning_Methods>
-          <Course_Objectives>The course aims to broaden students´ knowledge in life cycle assessment (LCA), equipping them to solve complex problems using advanced LCA methods within sustainable engineering and related scientific disciplines. Participants will obtain skills to perform prospective life cycle assessment (pLCA), propose sustainable-by-design strategies, and conduct environmentally extended input-output analyses. The course prepares students for real-world applications and a career in life cycle-based sustainability assessment in industry or academia.</Course_Objectives>
+          <Course_Objectives>The course aims to broaden participants´ knowledge in life cycle assessment (LCA), equipping them to solve complex problems using advanced LCA methods within sustainable engineering and related scientific disciplines. Participants will develop skills to perform prospective life cycle assessment (pLCA), propose sustainable-by-design strategies, and conduct environmentally extended input-output (EEIO) analyses. Through these methods, students will learn to quantify dynamic, evolving environmental impacts, identify supply-chain hotspots, and design future pathways towards absolute sustainability. The course prepares students for real-world applications and a career in life cycle-based sustainability assessment in industry or academia.</Course_Objectives>
         </Txt>
         <Qualified_Prerequisites>
-          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Eller tilsvarende kursus om livscyklusvurdering og tilsvarende kursus, der giver Python-kompetencer og/eller erfaring med at arbejde i Python og elementær viden om MATLAB." />
-          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Or other equivalent LCA course and other equivalent course that provides Python competences and/or experience working with Python and rudimentary knowledge of MATLAB." />
-          <DTU_CoursesTxt Lang="da-DK" Txt="12772/02002/02003" />
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Eller tilsvarende kursus om livscyklusvurdering, bæredygtighed og tilsvarende kursus, der giver grundlæggende færdigheder i Python og/eller erfaring med at arbejde med Python." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Or other equivalent LCA or sustainability-oriented course, and other equivalent course that provides basic, elementary skills in Python and/or experience working with Python." />
+          <DTU_CoursesTxt Lang="da-DK" Txt="12772/02002/02003/12100/12101/12105/12106/12605/12132/41636/41051/12143" />
         </Qualified_Prerequisites>
         <DTU_ObjectiveKeyword SortID="1">
           <Txt Lang="da-DK" Txt="Relatere de miljømæssige påvirkninger af ingeniørsystemer ved at anvende avancerede livscyklusvurderingsmetoder." />
           <Txt Lang="en-GB" Txt="Relate the environmental impacts of engineering systems by using advanced life cycle assessment methods." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Bruge en kommerciel LCA-simulator (SimaPro) i kombination med avancerede livscyklusvurderingsmetoder for at reducere produkters og tjenesters miljømæssige fodaftryk." />
-          <Txt Lang="en-GB" Txt="Use a commercial LCA simulator (SimaPro) in combination with advanced life cycle assessment methods to reduce the environmental footprint of products and services." />
+          <Txt Lang="da-DK" Txt="Bruge en professionel LCA-simulator (Activity Browser, Brightway2) og databaser i kombination med avancerede livscyklusvurderingsmetoder for at modellere og evaluere produkters og tjenesters miljømæssige fodaftryk og positive miljøbidrag." />
+          <Txt Lang="en-GB" Txt="Use a professional LCA simulator (Activity Browser, Brightway2) and databases in combination with advanced life cycle assessment methods to model and evaluate the environmental footprints and handprints of products and services." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
           <Txt Lang="da-DK" Txt="Beskrive hvordan livscyklusinventardata kan transformeres til at repræsentere fremtidige ændringer i teknosfæren." />
@@ -89,28 +92,28 @@
           <Txt Lang="en-GB" Txt="Extract information from a prospective database." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Analysere miljømæssige fremskridt i baggrundssystemer med inddragelse af delte socioøkonomiske udviklingsforløb og repræsentative koncentrationsforløb." />
-          <Txt Lang="en-GB" Txt="Analyze environmental progress in background systems factoring shared socioeconomic pathways and representative concentration pathways." />
+          <Txt Lang="da-DK" Txt="Analysere miljømæssige fremskridt i baggrundssystemer med inddragelse af delte socioøkonomiske udviklingsforløb (SSP'er), integrerede vurderingsmodeller (IAM'er) og klimapolitikker." />
+          <Txt Lang="en-GB" Txt="Analyse environmental progress in background systems, factoring shared socioeconomic pathways (SSPs), integrated assessment models (IAMs) and climate policies." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Beregne miljømæssige læringsrater og projekter miljøfremskridt i forgrundssystemer." />
-          <Txt Lang="en-GB" Txt="Calculate environmental learning rates and project environmental progress in foreground systems." />
+          <Txt Lang="da-DK" Txt="Beregne miljømæssige læringsrater og fremskriv udviklingen i miljøpåvirkninger i forgrundssystemer ved hjælp af læringskurver." />
+          <Txt Lang="en-GB" Txt="Calculate environmental learning rates and project evolving environmental impacts in foreground systems using learning curves." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Observere og kritisk evaluere virkningerne af miljømæssige læringseffekter på fremtidige bæredygtighedspotentialer." />
-          <Txt Lang="en-GB" Txt="Observe and critically evaluate the impacts of environmental learning effects on future sustainability potentials." />
+          <Txt Lang="da-DK" Txt="Observere og kritisk evaluere virkningerne af miljømæssige læring og skaleringseffekter på fremtidige bæredygtighedspotentialer." />
+          <Txt Lang="en-GB" Txt="Observe and critically evaluate the impacts of environmental learning and scaling effects on future sustainability potentials." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Organiser økonomiske og miljømæssige data for at danne grundlag for en miljømæssigt udvidet input-output model." />
-          <Txt Lang="en-GB" Txt="Organize economic and environmental data to form the basis for an environmentally extended input-output model." />
+          <Txt Lang="da-DK" Txt="Beregn og undersøg miljøpåvirkninger på tværs af forsyningskæder ved hjælp af miljøudvidet input-output (EEIO) modellering." />
+          <Txt Lang="en-GB" Txt="Compute and examine environmental impacts across supply chains using environmentally extended input-output (EEIO) modelling." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Estimere store systemers miljøpåvirkning gennem miljø-udvidet input-output analyse." />
-          <Txt Lang="en-GB" Txt="Estimate the environmental impacts of large-scale systems using environmentally extended input-output analysis." />
+          <Txt Lang="da-DK" Txt="Vurder miljømæssige hotspots, kritiske forsyningskædeveje og muligheder for at kombinere EEIO og procesbaseret LCA for at understøtte fremtidige bæredygtighedsinterventioner og scenarieanalyser." />
+          <Txt Lang="en-GB" Txt="Assess environmental hotspots, critical supply-chain pathways, and opportunities for combining EEIO and process-based LCA to support future sustainability interventions and scenario analyses." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Udvikle bæredygtige designstrategier for at opnå absolut bæredygtighed inden for rammerne af prospektiv livscyklusvurdering." />
-          <Txt Lang="en-GB" Txt="Develop sustainable-by-design strategies for reaching absolute sustainability in the framework of prospective life cycle assessment." />
+          <Txt Lang="da-DK" Txt="Udvikl bæredygtige designstrategier for at nå mål om absolut bæredygtighed inden for rammerne af prospektiv livscyklusvurdering." />
+          <Txt Lang="en-GB" Txt="Develop sustainable-by-design strategies to reach absolute sustainability targets within the framework of prospective life cycle assessment." />
         </DTU_ObjectiveKeyword>
         <DTU>
           <GroenDyst ParticipationKey="dtu_groendyst_contact" />
@@ -135,7 +138,7 @@
           <OfferedAsACourseOfType OfferedAsACourseOfTypeKey="EuroTeQ Collider" />
         </OfferedAsACourseOfTypes>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:37.317" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-11-02" Time="10:58:34.447" />
         </Record_Info>
       </Course>
     </CourseXml>

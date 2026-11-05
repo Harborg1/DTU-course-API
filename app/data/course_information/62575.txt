@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="62575" Volume="2026/2027" University="dtu" LastUpdated="2025-03-25+01:00">
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
-        <Study_Board Study_BoardKey="dtu diplom" />
+      <Course CourseCode="62575" Volume="2026/2027" University="dtu" LastUpdated="2026-10-30+01:00">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
         <Title Lang="da-DK" Title="Sikkerhed i indlejrede systemer" />
         <Title Lang="en-GB" Title="Security in Embedded Systems" />
         <Description_Language Lang="da-DK" />
@@ -23,6 +22,7 @@
           <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
           <Ass_Dep UID="1" Resources="0" University="DTU" SortID="0" Show="true" KVL_Resources="0" />
         </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
         <Course_Responsible PersonKey="78715" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
             <GivenName>Birger</GivenName>
@@ -44,6 +44,7 @@
             <Date_of_Exam_Txt Lang="en-GB" Txt="Additional days might be necessary." />
             <Date_of_Exam_Txt Lang="da-DK" Txt="Ekstra dage kan forekomme." />
             <Schedule ScheduleKey="E5B" />
+            <Schedule ScheduleKey="F5B" />
           </Date_Of_Exam>
         </Examination>
         <Sign_Up>
@@ -156,7 +157,7 @@ Elective: Software Technology, Healthcare Technology, Electrical Engineering</Re
         </TeacherTypesDistribuition>
         <Restrictions Max="60" Min="" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:31:42.573" />
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-10-30" Time="08:06:34.747" />
         </Record_Info>
       </Course>
     </CourseXml>

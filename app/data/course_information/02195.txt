@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="02195" Volume="2026/2027" University="dtu" LastUpdated="2026-04-16+02:00">
+      <Course CourseCode="02195" Volume="2026/2027" University="dtu" LastUpdated="2026-10-21+02:00">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Kvantealgoritmer og Maskinlæring" />
@@ -65,6 +65,7 @@ Kvantemaskinelæring</Contents>
           <Course_Objectives>Kvantecomputer algoritmer kræver en ny tankegang, som afviger fra klassiske computere. I dette kursus bliver der introduceret fundamentale koncepter for kvante algoritmer. Relationen mellem klassiske computere og kvantecomputere er studeret.
 
 En lang række dataanalyse- og maskinlæringsmetoder drives ved at udføre matrixoperationer på vektorer i et højdimensionalt vektorrum, som er det matematiske grundlag for kvanteberegning. Dette kursus introducerer hvordan kvantemaskinelæring kan udvikles.</Course_Objectives>
+          <DTU_Remark>Dette kursus kan vælges som valgfag (Restricted Elective Course) på den fælles kandidatuddannelse i Quantum Information Science mellem KU og DTU.</DTU_Remark>
         </Txt>
         <Txt Lang="en-GB">
           <Contents>Use of key quantum concepts in algorithms: Quantum states; Qubits; Qubit gates; Superposition; Entanglement
@@ -79,7 +80,12 @@ Quantum machine learning</Contents>
           <Course_Objectives>Quantum computer algorithms require a new mindset departing from classical computing. In this course, fundamental concepts for quantum algorithms will be introduced. The relationship between classical algorithms and quantum algorithms is studied.
 
 A wide variety of data analysis and machine learning methods rely on matrix operations on vectors in a high-dimensional vector space, which is the mathematical foundation of quantum computation. This course explores how quantum machine learning can be developed.</Course_Objectives>
+          <DTU_Remark>This course is available as a Restricted Elective Course for the joint M.Sc. program "Quantum Information Science" between UCPH and DTU.</DTU_Remark>
         </Txt>
+        <Qualified_Prerequisites>
+          <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Det forventes, at de studerende enten har et grundlæggende kendskab til kvantecomputing eller er villige til at gøre en ekstra indsats for at tilegne sig den nødvendige grundlag ved siden af kurset." />
+          <Qualified_Prerequisites_Txt Lang="en-GB" Txt="Basic familiarity with quantum computing, or the willingness to spend extra effort to learn quantum computing basics on the side, is expected." />
+        </Qualified_Prerequisites>
         <DTU_ObjectiveKeyword SortID="1">
           <Txt Lang="da-DK" Txt="forklare hvordan superposition og sammenfiltring kan bruges konstruktivt ved design af kvantealgoritmer" />
           <Txt Lang="en-GB" Txt="explain how superposition and entanglement can be used constructively when designing quantum algorithms" />
@@ -124,7 +130,7 @@ A wide variety of data analysis and machine learning methods rely on matrix oper
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="25" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:14:55.597" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-10-21" Time="16:20:36.733" />
         </Record_Info>
       </Course>
     </CourseXml>

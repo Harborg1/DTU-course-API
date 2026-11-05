@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="62755" Volume="2026/2027" University="dtu" LastUpdated="2025-04-28+02:00">
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
-        <Study_Board Study_BoardKey="dtu diplom" />
+      <Course CourseCode="62755" Volume="2026/2027" University="dtu" LastUpdated="2026-10-30+01:00">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
         <Title Lang="da-DK" Title="Effektelektronik" />
         <Title Lang="en-GB" Title="Power Electronics" />
         <Description_Language Lang="da-DK" />
@@ -21,6 +20,7 @@
         <Departments>
           <Main_Dep UID="IHK" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="dtu diplom" />
         <Course_Responsible PersonKey="170915" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
             <GivenName>Ashraf Fathi Khalil</GivenName>
@@ -39,6 +39,7 @@
           <Aid AidKey="ALL_AID_no internet" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="E1A" />
+            <Schedule ScheduleKey="F1A" />
           </Date_Of_Exam>
           <DurationKey Key="4H" />
         </Examination>
@@ -141,7 +142,7 @@ The design will be carried out through Texas Instruments™ C2000™ Microcontro
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:32:10.583" />
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-10-30" Time="11:01:18.62" />
         </Record_Info>
       </Course>
     </CourseXml>
