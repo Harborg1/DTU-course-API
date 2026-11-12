@@ -2,14 +2,14 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02526" University="dtu" LastUpdated="2026-04-24+02:00" Volume="2026/2027">
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02526" University="dtu" LastUpdated="2026-11-01+01:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
         <Title Lang="da-DK" Title="Matematisk modellering" />
         <Title Lang="en-GB" Title="Mathematical Modeling" />
         <Description_Language Lang="da-DK" />
         <Description_Language Lang="en-GB" />
-        <Teaching_Language LangCode="en-GB" />
+        <Teaching_Language LangCode="da-DK" />
         <Open_University TaughtUnderOpenUniversity="true" />
         <Course_Duration>
           <Exact>P2M</Exact>
@@ -34,13 +34,13 @@
           </Description>
         </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
-          <Evaluation EvaluationKey="GLOB_EXTERN" />
+          <Evaluation EvaluationKey="GLOB_INTERN" />
           <Assessment>
             <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
-            <Supp_Txt Lang="da-DK" Txt="1 obligatorisk rapport, der skal godkendes (bestået/ikke-bestået), og en endelig eksamensrapport, som forsvares til en mundtlig eksamen.&#xD;&#xA;&#xD;&#xA;Karakteren er baseret på en helheldsbedømmelse af de to rapporter og af den mundtlige eksamen." Show="true" />
-            <Supp_Txt Lang="en-GB" Txt="1 mandatory report that must be passed (pass/fail), and a final exam report that is defended at an oral exam.&#xD;&#xA;&#xD;&#xA;The final grade is based on an overall assessment of the two reports and of the oral exam." Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Én obligatorisk rapport, der udarbejdes i to trin. Første trin afleveres cirka midtvejs i kursusforløbet og skal godkendes (bestået/ikke-bestået), før den studerende kan gå til eksamen. Andet trin består af den endelige eksamensrapport, som forsvares ved en mundtlig eksamen.&#xD;&#xA;&#xD;&#xA;Karakteren fastsættes på baggrund af en samlet vurdering af den endelige rapport og den mundtlige præstation." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="One mandatory report, prepared in two stages. The first stage must be submitted approximately halfway through the course and must be approved (pass/fail) before the student can take the examination. The second stage consists of the final examination report, which is defended at an oral examination.&#xD;&#xA;&#xD;&#xA;The final grade is based on an overall assessment of the final report and the student's performance at the oral examination." Show="true" />
           </Assessment>
-          <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
+          <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
           <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="3-uger" />
@@ -54,13 +54,13 @@
           </Place>
         </Sign_Up>
         <Txt Lang="da-DK">
-          <Contents>Kursets hovedindhold er løsning af konkrete cases med tilhørende problemstillinger. For hver case skal problemet analyseres, den matematiske model beskrives og implementeres på en computer, og der skal gennemføres beregninger og simuleringer, som belyser modellens relevans og anvendelighed. Alt dette skal afrapporteres på en struktureret og fagligt velbegrundet måde. De anvendte metoder vil typisk ligge inden for diskret matematik, billedanalyse, differentialligninger, materialelære, operationsanalyse og scientific computing. Kurset omfatter desuden peergrading af andre studerendes rapporter, og deltagelse i denne aktivitet er en forudsætning for at kunne gå til eksamen.</Contents>
+          <Contents>Kursets hovedindhold er løsning af konkrete cases med tilhørende problemstillinger. For hver case skal problemet analyseres, den matematiske model beskrives og implementeres på en computer, og der skal gennemføres beregninger og simuleringer, som belyser modellens relevans og anvendelighed. Alt dette skal afrapporteres på en struktureret og fagligt velbegrundet måde. De anvendte metoder vil typisk ligge inden for diskret matematik, billedanalyse, differentialligninger, materialelære, operationsanalyse og scientific computing.</Contents>
           <Teaching_And_Learning_Methods>Forelæsninger, øvelser, og rapporter</Teaching_And_Learning_Methods>
           <Course_Objectives>Matematisk modellering er en central del af løsningen af de fleste tekniske problemstillinger. Typisk begynder processen med formuleringen af en matematisk model, som derefter implementeres på en computer og anvendes til at understøtte laboratorieforsøg og sidenhen udviklingen af virkelige løsninger. Evnen til at formulere relevante matematiske modeller, implementere dem computerbaseret og anvende dem til at opnå meningsfuld indsigt er derfor en grundlæggende kompetence i moderne ingeniørarbejde. I kurset opnår de studerende værktøjer til at formulere matematiske modeller, udføre simulationer og beregninger samt kritisk analysere og formidle de opnåede resultater.</Course_Objectives>
           <Remark>Kurset er forudsætning for følgende videregående kurser: 02610 Optimering og datafitting, 02614 High performance computing, 02616 Storskala modellering, 02623 Elementmetoden for partielle differentialligninger, 02685 Scientific Computing for differentialligninger. Kurset er et retningsspecifikt kursus for BSc Anvendt Matematik. Kurset er forbeholdt studerende optaget på Anvendt Matematik samt General Engineering, og andre studerende er velkomne i det omfang der er plads.</Remark>
         </Txt>
         <Txt Lang="en-GB">
-          <Contents>The main content of the course is the solution of specific cases and their associated problems. For each case, the problem must be analyzed, the mathematical model described and implemented on a computer, and calculations and simulations carried out to illustrate the relevance and the applicability of the model. All of this must be documented in a structured manner. The methods applied may include discrete mathematics, image analysis, differential equations, materials science, operations research, and scientific computing. The course also includes peer grading of other students’ reports, and participation in this activity is a prerequisite for taking the exam.</Contents>
+          <Contents>The main content of the course is the solution of specific cases and their associated problems. For each case, the problem must be analyzed, the mathematical model described and implemented on a computer, and calculations and simulations carried out to illustrate the relevance and the applicability of the model. All of this must be documented in a structured manner. The methods applied may include discrete mathematics, image analysis, differential equations, materials science, operations research, and scientific computing.</Contents>
           <Teaching_And_Learning_Methods>Lectures, exercises, and reports</Teaching_And_Learning_Methods>
           <Course_Objectives>Mathematical modeling is a central component in the solution of most technical problems. Typically, the process begins with the formulation of a mathematical model, which is then implemented computationally and used to support laboratory-scale experiments and, eventually, the development of real-world solutions. The ability to formulate relevant mathematical models, implement them on a computer, and use them to obtain meaningful insight is therefore a fundamental competence in modern engineering. In this course, students will acquire tools for formulating mathematical models, carrying out simulations and calculations, and critically analyzing and reporting the results.</Course_Objectives>
           <Remark>The course is a prerequisite for the following advanced courses: 02610 Optimization and datafitting, 02614 High performance computing, 02616 Large-scale modeling, 02623 Finite element methods for partial differential equations, 02685 Scientific computing for differential equations. The course is a programme-specific course for BSc Applied Mathematics. The course is reserved for students from Applied Mathematics and General Engineering, and other students are welcome if there are available seats.</Remark>
@@ -134,7 +134,7 @@
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="80" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:14.45" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-11-04" Time="09:53:30.34" />
         </Record_Info>
       </Course>
     </CourseXml>
