@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="12836" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="12836" University="dtu" LastUpdated="2026-11-11+01:00" Volume="2026/2027">
         <Point PointType="ECTS">7.5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_DIPLOM" />
         <Title Lang="da-DK" Title="Grønlandsk Forsyning &amp; Miljøteknik" />
@@ -10,6 +10,7 @@
         <Description_Language Lang="da-DK" />
         <Description_Language Lang="en-GB" />
         <Teaching_Language LangCode="da-DK" />
+        <Open_University TaughtUnderOpenUniversity="true" />
         <Course_Duration>
           <Exact>P0M</Exact>
         </Course_Duration>
@@ -23,21 +24,34 @@
           <Main_Dep UID="12" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
         <Study_Board Study_BoardKey="12" />
-        <External_Course_Responsible Email="bhof@plan.aau.dk" Name="Birgitte Hoffmann" IsContact="true" SortID="1" />
         <External_Course_Responsible Email="jada06@frederiksberg.dk" Name="Jacob Dahl-Hesselkilde" IsContact="false" SortID="1" />
-        <Course_Responsible PersonKey="7161" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
+        <Course_Responsible PersonKey="7161" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Contact="true" Show="true">
           <Description>
             <GivenName>Pernille Erland</GivenName>
             <FamilyName>Jensen</FamilyName>
             <Email>peej@dtu.dk</Email>
           </Description>
         </Course_Responsible>
+        <Course_Responsible PersonKey="10014" FUniversity="DTU" SortID="1" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Gunvor Marie</GivenName>
+            <FamilyName>Kirkelund</FamilyName>
+            <Email>gunki@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
+        <Course_Responsible PersonKey="75423" FUniversity="DTU" SortID="2" DepartmentKey="" Show="true">
+          <Description>
+            <GivenName>Lea</GivenName>
+            <FamilyName>Tolstrup</FamilyName>
+            <Email>leatol@dtu.dk</Email>
+          </Description>
+        </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
           <Evaluation EvaluationKey="GLOB_EXTERN" />
           <Assessment>
             <Pre_Def_List AssessmentKey="Oral_Exam_And_Reports" Show="true" />
-            <Supp_Txt Lang="da-DK" Txt="Karakteren gives ud fra en helhedsvurdering af den studerendes deltagelse i og bidrag til projektarbejdet og projektrapporterne i løbet af kurset, en mundtlig fremlæggelse af projektarbejdet ved kursusafslutning kombineret med en mundtlig individuel eksamen." Show="true" />
-            <Supp_Txt Lang="en-GB" Txt="The grade is based on an overall assessment of the students participation in and contribution to the project work during the course and an oral presentation of the project work on course completion combined with an oral individual exam." Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Karakteren gives ud fra en helhedsvurdering af den studerendes deltagelse i og bidrag til projektarbejdet i løbet af kurset og en mundtlig individuel eksamen ved kursusafslutning." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="The grade is based on an overall assessment of the students participation in and contribution to the project work during the course and an oral oral individual exam by the end of the course." Show="true" />
           </Assessment>
           <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
           <Aid AidKey="WITH_AID" AidSortID="1">
@@ -54,32 +68,33 @@
           </Place>
         </Sign_Up>
         <Txt Lang="da-DK">
-          <Contents>Centrale elementer: 
-•	Bæredygtig forsyningsinfrastruktur i arktisk ø-drift
-•	Samarbejde med borgere og brugere 
-•	Prioriteringer og beslutningsprocesser
+          <Contents>Forsyningsområderne energi, varme, vand, sanitet, spildevand og affald i Grønland.
+Energisystemer, alternative energiformer.
+Grundlæggende hydrologi, hydraulik, vandindvinding, vandbehandling og vanddistribution.
+Sanitære forhold, afløbsteknik, spildevandsrensning samt recipientforhold.
+Affaldshierarkiet, affaldshåndtering, affaldsbehandling, husholdningsaffald, farligt affald
 
-Emner: 
-Forsyningsområderne vand, varme, energi, spildevand og affald. 
-
-Grundlæggende hydrologi, vandindvinding og distribution, afløbsteknik og spildevandsrensning samt recipientforhold.
-
-Forvaltningsmæssige prioriteringer og beslutninger i forbindelse med forsynings- og miljøteknik.</Contents>
+Tværgående emner:
+Arktiske forholds påvirkning af forsyningsområderne inklusive de klima- og infrastrukturmæssige udfordringer.
+Forsyningsområdernes bæredygtighed, klimapåvirkninger og miljøpåvirkninger.
+Målanalyse, stedsanalyse, multikriterie-vurdering.
+Planhierarki og offentlige plandokumenter.</Contents>
           <Teaching_And_Learning_Methods>Klasseundervisning med øvelser, oplæg fra lokale fagfolk, ekskursioner, præsentationer og gruppearbejde.</Teaching_And_Learning_Methods>
           <Course_Objectives>Kurset bibringer en forståelse for forsyningsinfrastruktur i arktiske ø-driftsbyer og hvordan forsyningsområdet kan bidrage til en bæredygtig udvikling i Grønland.
 Herunder giver kurset kendskab til projektering og dimensionering inden for vandforsynings- og afløbsteknik samt kendskab til el- og varmeforsyning og affaldssystemer tilpasset arktiske ø-driftssamfund. Kurset rummer tilgange og metoder til at analysere disse forsyningssystemers påvirkning af vores omgivelser og viden om de kommunale og nationale beslutningsprocesser knyttet til området.</Course_Objectives>
         </Txt>
         <Txt Lang="en-GB">
-          <Contents>Central topics:
-• Sustainable supply in Arctic island operation
-• Communication with citizens / users  
-• Priorities and Decision Making 
-Topics: 
-Supply areas of water, heat, energy, water and waste. 
+          <Contents>Energy, district heating, water supply, sanitation, wastewater, and waste management in Greenland.
+Energy systems and alternative energy sources.
+Basic hydrology, hydraulics, water abstraction, water treatment, and water distribution.
+Sanitary conditions, drainage engineering, wastewater treatment, and receiving water conditions.
+The waste hierarchy, waste management, waste treatment, municipal solid waste, and hazardous waste.
 
-Basic hydrology, water extraction and distribution, drainage systems and water treatment and the recipient water. 
-
-Management Technical priorities and decisions related to supply and environmental engineering.</Contents>
+Cross-cutting topics:
+The impact of Arctic conditions on utility sectors, including climatic and infrastructure-related challenges.
+Sustainability of utility sectors, climate impacts, and environmental impacts.
+Goal analysis, site analysis, and multi-criteria assessment.
+Planning hierarchy and public planning documents.</Contents>
           <Teaching_And_Learning_Methods>Lectures, exercises, presentations by local experts, excursions, presentations and group work.</Teaching_And_Learning_Methods>
           <Course_Objectives>The course provides an understanding of supply infrastructure in Arctic island operation cities, and how the supply system may contribute to sustainable development in Greenland. Including knowledge about the design and dimensioning of water supply and waste water technology, and knowledge of electricity and heat supply and waste systems adapted to the Arctic island-operated society. The course involves approaches and methods to analyze the impacts of these supply systems on our environment, and knowledge of municipal and national decision-making processes related to the area.</Course_Objectives>
         </Txt>
@@ -121,6 +136,10 @@ Management Technical priorities and decisions related to supply and environmenta
         </DTU_ObjectiveKeyword>
         <DTU>
           <GroenDyst ParticipationKey="dtu_groendyst_no" />
+          <OpenUniversity>
+            <SubTitle>Introduktion for nyansatte i miljøforvaltningen i Grønland</SubTitle>
+            <AreaOfExpertise AreaOfExpertiseKey="9" />
+          </OpenUniversity>
         </DTU>
         <No_Credit_Points_With CourseCode="11836" />
         <PreviousCourse CourseCode="11836" />
@@ -133,7 +152,7 @@ Management Technical priorities and decisions related to supply and environmenta
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="ParttimeEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:18:41.05" />
+          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-11-12" Time="08:26:05.617" />
         </Record_Info>
       </Course>
     </CourseXml>

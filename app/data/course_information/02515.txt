@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02515" University="dtu" LastUpdated="2026-04-08+02:00" Volume="2026/2027">
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="02515" University="dtu" LastUpdated="2026-11-12+01:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Billedanalyse" />
@@ -42,7 +42,10 @@
             <Pre_Def_List AssessmentKey="Written_Exam" Show="true" />
           </Assessment>
           <Marking_Scale Marking_ScaleKey="GLOB_7Skala" />
-          <Aid AidKey="ALL_AID_with internet" AidSortID="1" />
+          <Aid AidKey="ALL_AID_no internet" AidSortID="1">
+            <Aid_Txt Lang="en-GB" Txt="Digital exam using computer. No internet. No generative AI." />
+            <Aid_Txt Lang="da-DK" Txt="Digital eksamen på computer. Ikke internet. Ikke generativ AI." />
+          </Aid>
           <Date_Of_Exam SortID="1" Show="true">
             <Schedule ScheduleKey="F3A" />
           </Date_Of_Exam>
@@ -142,7 +145,7 @@ This course will give the student a solid understanding of digital images. Their
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="TeacherAssistant" Percentage="33" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:16:10.073" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-11-16" Time="13:29:43.58" />
         </Record_Info>
       </Course>
     </CourseXml>
