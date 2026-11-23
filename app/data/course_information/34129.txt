@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="34129" University="dtu" LastUpdated="2019-06-21+02:00" Volume="2026/2027">
-        <Study_Board Study_BoardKey="34" />
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+      <Course CourseCode="34129" University="dtu" LastUpdated="2026-11-17+01:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
         <Title Lang="da-DK" Title="Eksperimentelt kursus i optisk kommunikation" />
         <Title Lang="en-GB" Title="Experimental course in optical communication" />
         <Description_Language Lang="da-DK" />
@@ -25,19 +24,20 @@
         <Departments>
           <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
-        <Course_Responsible PersonKey="20242" FUniversity="DTU" SortID="0" DepartmentKey="" Show="true" Primary="true">
+        <Study_Board Study_BoardKey="34" />
+        <Course_Responsible PersonKey="20242" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
             <GivenName>Michael</GivenName>
             <FamilyName>Galili</FamilyName>
-            <Email>mgal@fotonik.dtu.dk</Email>
+            <Email>mgal@dtu.dk</Email>
           </Description>
         </Course_Responsible>
         <Examination ExaminationSortID="0" Show="true">
           <Evaluation EvaluationKey="GLOB_INTERN" />
           <Assessment>
             <Pre_Def_List AssessmentKey="Oral_Exam" Show="true" />
-            <Supp_Txt Lang="da-DK" Txt="Samlet vurdering af laboratoriearbejde, logbøger, ugentlige præsentationer samt 2 mundtlige prøver uden hjælpemidler med afsæt i udførte eksperimenter." Show="true" />
-            <Supp_Txt Lang="en-GB" Txt="Overall assessment of lab work, log books, weekly presentations and two oral examinations without aid based on the conducted experiments." Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="Samlet vurdering af laboratoriearbejde og ugentlige præsentationer samt 2 mundtlige prøver uden hjælpemidler med afsæt i udførte eksperimenter." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Overall assessment of lab work, weekly presentations and two oral examinations without aid based on the conducted experiments." Show="true" />
           </Assessment>
           <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
           <Aid AidKey="NO_AID" AidSortID="1" />
@@ -52,64 +52,74 @@
           </Place>
         </Sign_Up>
         <Txt Lang="da-DK">
-          <Contents>Lasere (byg en laser fra grunden).
-Fibre (transmission af lys, tab, polarisation, dispersion, ulineære effekter, skattering ).
-Optiske komponenter (Raman og Erbium doterede fiber forstærkere, modulator).
-Optisk datatransmission gennem fiber.
-Digitale optiske systemer (evaluering af kommunikationskvalitet).</Contents>
-          <Teaching_And_Learning_Methods>De studerende skal udføre obligatoriske eksperimenter i en session pr. uge (4 timer). Eksperimenterne vil blive udført i grupper af 2-4, mens der føres individuelle logbøger. Hver studerende skal være forberedt hjemmefra og have læst dagens øvelsesvejledning samt svare på de spørgsmål som stilles. Desuden skal den studerende præsenterer sine resultater fra forrige uges eksperimenter.</Teaching_And_Learning_Methods>
-          <Course_Objectives>Kursets mål er at introducere alle de basale fysiske komponenter i et avanceret moderne optisk kommunikations system gennem ”hands-on” eksperimenter. Dette vil bibringe den studerende en god fornemmelse for optik, laseregenskaber, interferometre, optiske forstærkere og optisk kommunikation. Udvikle praktiske færdigheder i et optisk studenterlaboratorium. At få praktisk erfaring i et optisk laboratorium - brug dine hænder til at få ting til at ske. Lær at bruge en laboratorie-journal som dokumentation for eksperimenter. Bemærk, 34126 i skemaplacering E5B/F5B er identisk til dette kursus.</Course_Objectives>
-          <Remark>Dette kursus er godkendt til at erstatte det teknologiske linjefag 34127 Eksperimentel Optik og Fotonik når der startes på MSc i Photonics Engineering. Kontakt studielinjelederen af Photonics Engineering for godkendelse.</Remark>
+          <Contents>Kurset giver praktisk erfaring med centrale komponenter og fysiske fænomener i optiske kommunikationssystemer gennem laboratorieøvelser.
+
+Emnerne omfatter:
+Optiske fibre med fokus på tabsmekanismer, ikke-lineære effekter, spredning og polarisation.
+Opbygning og karakterisering af erbiumdoterede fiberforstærkere og Raman-forstærkere.
+Opbygning og karakterisering af en fiberlaser.
+
+De eksperimentelle aktiviteter omfatter også optisk tidsdomænereflektometri og optimering af forstærkeres og fiberlaseres ydeevne.
+
+De studerende planlægger og opbygger forsøgsopstillinger til eksperimentel karakterisering, analyserer og diskuterer måleresultater samt dokumenterer deres eksperimentelle metoder og resultater. Der lægges vægt på grundigt eksperimentelt arbejde og på at udvikle praktiske laboratoriefærdigheder samt en systematisk og analytisk tilgang til laboratoriearbejde.</Contents>
+          <Teaching_And_Learning_Methods>Undervisningen består af praktiske laboratorieøvelser i grupper på 2-4 studerende, understøttet af vejledninger om teori, eksperimentelt arbejde og mål. De studerende planlægger og opbygger forsøgsopstillinger, udfører målinger samt analyserer og diskuterer resultater. Metoder, opstillinger og resultater dokumenteres løbende med vægt på en systematisk tilgang og grundig undersøgelse og fortolkning af hvert eksperiment.</Teaching_And_Learning_Methods>
+          <Course_Objectives>Kurset har til formål at udvikle de studerendes forståelse af centrale komponenter og fysiske fænomener i optiske kommunikationssystemer gennem praktisk laboratoriearbejde med optiske fibre, optiske forstærkere og fiberlasere. Ved at planlægge og opbygge forsøgsopstillinger, udføre målinger og analysere resultater forbinder de studerende de bagvedliggende fysiske principper med praktiske observationer. Kurset udvikler praktiske laboratoriefærdigheder og en systematisk, analytisk tilgang til at undersøge fysiske egenskaber samt til at opbygge, karakterisere og optimere optiske forstærkere og fiberlasere. Der lægges vægt på kritisk analyse og fortolkning af eksperimentelle resultater samt på at præsentere metoder, resultater og konklusioner klart og i relation til de bagvedliggende fysiske principper. Bemærk, 34126 i skemaplacering E5B/F5B er identisk til dette kursus.</Course_Objectives>
+          <Remark>Dette kursus er godkendt til at erstatte det Retningsspecifikt kursus 34046 (https://kurser.dtu.dk/course/34046) når der startes på MSc i Lys og Teknologi. Kontakt studielinjelederen for godkendelse.</Remark>
         </Txt>
         <Txt Lang="en-GB">
-          <Contents>Lasers (build one from scratch)
-Fibres (transmission, loss, polarisation, dispersion, nonlinear effects, scattering)
-Optical components (Raman and Erbium doped fibre amplifiers, modulators)
-Optical data transmission over fibre
-Digital optical systems (communication quality assessment).</Contents>
-          <Teaching_And_Learning_Methods>The course consists of mandatory laboratory experiments one session per week (4 hours). Experiments will be carried out in groups of 2-4, while keeping individual log books of the experiments. Each student should be prepared from home by reading the exercise manuals and answer the assignments. Furthermore, the student needs to prepare a small presentation of previous week results.</Teaching_And_Learning_Methods>
-          <Course_Objectives>The course aims at introducing all the basic physical components of an advanced modern optical communication system through hands-on experience. In the process, the student will get a good feeling for the splendour of optics, the properties of lasers, interferometers, optical amplifiers and optical communications, and develop practical skills in the optical student lab. To get a practical experience in an optical laboratory - learning-by-doing by using your hands to make things happen. Learn to use a laboratory log-book as documentation for the experiments. Notice, course 34126 in module E5B/F5B is identical to this course.</Course_Objectives>
-          <Remark>This course is approved to replace the technology core course 34127 Experimental Optics and Photonics when starting on MSc in Photonics Engineering. Contact the head of studies of Photonics Engineering for approval.</Remark>
+          <Contents>The course provides practical experience with essential components and physical phenomena in optical communication systems through laboratory experiments. 
+
+Topics include: 
+Optical fibres, with emphasis on loss mechanisms, nonlinear effects, scattering and polarisation 
+Construction and characterisation of erbium-doped fibre amplifiers and Raman amplifiers 
+Construction and characterisation of a fibre laser. 
+
+Experimental activities also include optical time-domain reflectometry and optimisation of amplifier and fibre-laser performance.
+
+Students plan and implement experimental characterisation setups, analyse and discuss measurement results, and document their experimental methods and findings. The emphasis is on thorough experimental work and developing practical laboratory skills and a systematic and analytical approach to laboratory work.</Contents>
+          <Teaching_And_Learning_Methods>Teaching centres on hands-on laboratory exercises in groups of 2-4, supported by manuals covering relevant theory, experimental work and objectives. Students plan and build setups, take measurements, and analyse and discuss results, documenting methods, setups and findings throughout. Emphasis is placed on systematic work and thorough investigation and interpretation of the experiments.</Teaching_And_Learning_Methods>
+          <Course_Objectives>The course aims to develop students’ understanding of essential components and physical phenomena in optical communication systems through hands-on laboratory work with optical fibres, optical amplifiers and fibre lasers. Through planning and building experimental setups, performing measurements and analysing results, students connect underlying physical principles with practical observations. The course develops practical laboratory skills and a systematic, analytical approach to investigating physical properties and to constructing, characterising and optimising optical amplifiers and fibre lasers. Emphasis is placed on critical analysis and interpretation of experimental results and on presenting methods, findings and conclusions clearly and in relation to the underlying physical principles. Notice, course 34126 in module E5B/F5B is identical to this course.</Course_Objectives>
+          <Remark>This course is approved to replace the Programme specific course 34046 (https://kurser.dtu.dk/course/34046) when starting on MSc in Engineering Light. Contact the head of studies for approval.</Remark>
         </Txt>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Identificere grundstenene i en laser, samle og måle relevante parametre" />
-          <Txt Lang="en-GB" Txt="Identify the key elements of a laser, assemble and characterise it" />
+          <Txt Lang="da-DK" Txt="Planlægge og opbygge forsøgsopstillinger til karakterisering af optiske fibre, optiske forstærkere og fiberlasere." />
+          <Txt Lang="en-GB" Txt="Plan and implement experimental setups for characterising optical fibres, optical amplifiers and fibre lasers." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Benytte interferometer til kontrolleret manipulation af lys" />
-          <Txt Lang="en-GB" Txt="Apply interferometers for controlled manipulation of light" />
+          <Txt Lang="da-DK" Txt="Måle tab i optiske fibre og fortolke resultaterne i relation til relevante tabsmekanismer." />
+          <Txt Lang="en-GB" Txt="Measure optical fibre loss and interpret the results in relation to relevant loss mechanisms." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Karakterisere samt fortolke målelige fænomener i transmissions fibre" />
-          <Txt Lang="en-GB" Txt="Characterise and interpret impact of measureable phenomena in optical fibres " />
+          <Txt Lang="da-DK" Txt="Undersøge ikke-lineære effekter og spredning i optiske fibre og forklare deres indflydelse på eksperimentelle observationer." />
+          <Txt Lang="en-GB" Txt="Investigate nonlinear effects and scattering in optical fibres and explain their influence on experimental observations." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Karakterisere samt fortolke målelige fænomener i optiske forstærkere" />
-          <Txt Lang="en-GB" Txt="Characterise and interpret measurable phenomena in optical amplifiers" />
+          <Txt Lang="da-DK" Txt="Undersøge polarisationseffekter i optiske fibre og fortolke deres indvirkning på målte optiske signaler." />
+          <Txt Lang="en-GB" Txt="Investigate polarisation effects in optical fibres and interpret their impact on measured optical signals." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Demonstrere implementering af en optisk sender samt mål relevante parametre" />
-          <Txt Lang="en-GB" Txt="Demonstrate the implementation of an optical transmitter and characterise it." />
+          <Txt Lang="da-DK" Txt="Opbygge og karakterisere en erbiumdoteret fiberforstærker og forklare dens virkemåde." />
+          <Txt Lang="en-GB" Txt="Build and characterise an erbium-doped fibre amplifier and explain its operating principles." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Karakterisere de nødvendige komponenter der kræves for at implementere et digitalt optisk kommunikationssystem." />
-          <Txt Lang="en-GB" Txt="Characterize the components required for implementing a digital optical communication system" />
+          <Txt Lang="da-DK" Txt="Opbygge og karakterisere en Raman-forstærker og forklare dens virkemåde." />
+          <Txt Lang="en-GB" Txt="Build and characterise a Raman amplifier and explain its operating principles." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Konstruere et punkt-til-punkt optisk kommunikations system" />
-          <Txt Lang="en-GB" Txt="Assemble a point-to-point full optical communication system" />
+          <Txt Lang="da-DK" Txt="Opbygge og karakterisere en fiberlaser og forklare betydningen af optisk forstærkning og tilbagekobling for laserens funktion." />
+          <Txt Lang="en-GB" Txt="Build and characterise a fibre laser and explain the roles of optical gain and feedback in laser operation." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Evaluere kvaliteten af et optisk kommunikations system" />
-          <Txt Lang="en-GB" Txt="Evaluate the quality and performance of an optical communication system" />
+          <Txt Lang="da-DK" Txt="Udføre målinger med optisk tidsdomænereflektometri og fortolke de resulterende målekurver med henblik på at karakterisere en optisk fiber." />
+          <Txt Lang="en-GB" Txt="Perform optical time-domain reflectometry measurements and interpret the resulting traces to characterise an optical fibre." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Planlægge eksperimentelle opstillinger" />
-          <Txt Lang="en-GB" Txt="Plan experimental set-ups" />
+          <Txt Lang="da-DK" Txt="Systematisk justere eksperimentelle parametre for at optimere forstærkeres og fiberlaseres ydeevne og evaluere de resulterende ændringer." />
+          <Txt Lang="en-GB" Txt="Systematically adjust experimental parameters to optimise amplifier and fibre-laser performance and evaluate the resulting changes." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Føre en detaljeret videnskabelig log-bog." />
-          <Txt Lang="en-GB" Txt="Write a detailed scientific log-book" />
+          <Txt Lang="da-DK" Txt="Dokumentere forsøgsopstillinger, metoder og resultater samt kritisk analysere og formidle resultaterne i relation til de bagvedliggende fysiske principper." />
+          <Txt Lang="en-GB" Txt="Document experimental setups, methods and results, and critically analyse and communicate findings in relation to the underlying physical principles." />
         </DTU_ObjectiveKeyword>
         <DTU>
           <GroenDyst ParticipationKey="dtu_groendyst_no" />
@@ -128,7 +138,7 @@ Digital optical systems (communication quality assessment).</Contents>
         </TeacherTypesDistribuition>
         <Restrictions Max="12" Min="" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:51.79" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-11-18" Time="13:17:05.05" />
         </Record_Info>
       </Course>
     </CourseXml>

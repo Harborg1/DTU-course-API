@@ -2,10 +2,9 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34127" University="dtu" LastUpdated="2024-04-11+02:00" Volume="2026/2027">
-        <Study_Board Study_BoardKey="34" />
-        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
+      <Course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CourseCode="34127" University="dtu" LastUpdated="2026-11-18+01:00" Volume="2026/2027">
         <Point PointType="ECTS">5</Point>
+        <CBS_Programme_Level CBS_Programme_LevellKey="DTU_BSC" />
         <Title Lang="da-DK" Title="Eksperimentel optik og fotonik" />
         <Title Lang="en-GB" Title="Experimental optics and photonics" />
         <Description_Language Lang="da-DK" />
@@ -21,6 +20,7 @@
         <Departments>
           <Main_Dep UID="34" University="DTU" Resources="100" KVL_Resources="100" />
         </Departments>
+        <Study_Board Study_BoardKey="34" />
         <Course_Responsible PersonKey="59900" FUniversity="DTU" SortID="0" DepartmentKey="" Primary="true" Show="true">
           <Description>
             <GivenName>Yiyu</GivenName>
@@ -61,7 +61,9 @@ De eksperimentelle øvelser fokuserer på optiske måleinstrumenter og deres bru
           <Teaching_And_Learning_Methods>Forelæsninger og øvelser</Teaching_And_Learning_Methods>
           <Course_Literature>B. E. A. Saleh and M. C. Teich, Fundamentals of Photonics, second edition (Wiley, 2007). ISBN: 978-0-471-35832-9.</Course_Literature>
           <Course_Objectives>Dette kursus fokuserer på at introducere den studerende til en række optiske fænomener, forskelligt måleteknisk udstyr som er nødvendigt for at kunne karakterisere disse optiske fænomener, samt til at bruge udstyret til at evaluere optiske systemers virkemåde og undersøge fundamentale optiske fænomener.</Course_Objectives>
-          <Remark>Dette kursus er en del af BSc in Fysik og Nanoteknologi og leder op til kurset Anvendt Optik (34530).</Remark>
+          <Remark>Dette kursus er en del af BSc in Fysik og Nanoteknologi og leder op til kurset Anvendt Optik (34530).
+
+Dette kursus er godkendt til at erstatte det Retningsspecifikt kursus 34046 dansk titel når der startes på MSc i Lys og Teknologi. Kontakt studielinjelederen for godkendelse.</Remark>
         </Txt>
         <Txt Lang="en-GB">
           <Contents>The course contains lectures on 
@@ -80,7 +82,9 @@ The experimental exercises focus on optics instrumentation and its use for chara
           <Teaching_And_Learning_Methods>Lectures and laboratory exercises</Teaching_And_Learning_Methods>
           <Course_Literature>B. E. A. Saleh and M. C. Teich, Fundamentals of Photonics, second edition (Wiley, 2007). ISBN: 978-0-471-35832-9.</Course_Literature>
           <Course_Objectives>The focus of this course is to introduce the student to selected, important optical phenomena and practical optics instrumentation required for the investigation of these phenomena and characterization of optical systems.</Course_Objectives>
-          <Remark>This course is part of the BSc in Physics and Nanotechnology and leads up to the course Applied Photonics (34530).</Remark>
+          <Remark>This course is part of the BSc in Physics and Nanotechnology and leads up to the course Applied Photonics (34530).
+
+This course is approved to replace the Programme specific course 34046 Experimental methods in photonics when starting on MSc in Engineering Light. Contact the head of studies for approval.</Remark>
         </Txt>
         <Qualified_Prerequisites>
           <Qualified_Prerequisites_Txt Lang="da-DK" Txt="Optik og fotonik" />
@@ -92,8 +96,8 @@ The experimental exercises focus on optics instrumentation and its use for chara
           <Txt Lang="en-GB" Txt="Explain the difference between ray optics and Gaussian beams" />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Forstå begreberne optisk diffraktion, interferens og polarisation" />
-          <Txt Lang="en-GB" Txt="Understand concept of optical diffraction, interference, polarization" />
+          <Txt Lang="da-DK" Txt="Forklare begreberne optisk diffraktion, interferens og polarisation" />
+          <Txt Lang="en-GB" Txt="Explain the concept of optical diffraction, interference, polarization" />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
           <Txt Lang="da-DK" Txt="Karakterisere de optiske egenskaber af optiske fibre" />
@@ -120,7 +124,7 @@ The experimental exercises focus on optics instrumentation and its use for chara
           <Txt Lang="en-GB" Txt="Document, evaluate and report on experimental results; analyze error source in an experiment and comment on possible improvements" />
         </DTU_ObjectiveKeyword>
         <DTU>
-          <GroenDyst ParticipationKey="dtu_groendyst_yes" />
+          <GroenDyst ParticipationKey="dtu_groendyst_contact" />
         </DTU>
         <No_Credit_Points_With CourseCode="34033/34045/34046/34125 " />
         <HoursDistribuition>
@@ -132,7 +136,7 @@ The experimental exercises focus on optics instrumentation and its use for chara
         </TeacherTypesDistribuition>
         <Restrictions Max="20" Min="" />
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:24:51" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-11-18" Time="13:56:09.167" />
         </Record_Info>
       </Course>
     </CourseXml>
