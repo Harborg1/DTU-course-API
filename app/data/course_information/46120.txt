@@ -2,7 +2,7 @@
 <root xmlns="">
   <CoursePublished>
     <CourseXml>
-      <Course CourseCode="46120" Volume="2026/2027" University="dtu" LastUpdated="2026-03-30+02:00">
+      <Course CourseCode="46120" Volume="2026/2027" University="dtu" LastUpdated="2026-11-19+01:00">
         <Point PointType="ECTS">5</Point>
         <CBS_Programme_Level CBS_Programme_LevellKey="DTU_MSC" />
         <Title Lang="da-DK" Title="Videnskabelig Programmering for Vindenergi" />
@@ -43,8 +43,8 @@
           <Evaluation EvaluationKey="GLOB_INTERN" />
           <Assessment>
             <Pre_Def_List AssessmentKey="Report" Show="true" />
-            <Supp_Txt Lang="da-DK" Txt="Studerende skal indsende to projekter som GitHub-repositories til evaluering. Det første projekt skal bestås for at kunne indsende det afsluttende projekt.&#xD;&#xA;&#xD;&#xA;Den individuelle karakter bedømmes som en kumulativ evaluering af bidrag til det afsluttende programmeringsprojekt og en individuel skriftlig quiz." Show="true" />
-            <Supp_Txt Lang="en-GB" Txt="Students must submit two projects as GitHub repositories for evaluation. Students must pass the first project to submit the final project.&#xD;&#xA;&#xD;&#xA;The individual final grade is determined as a cumulative evaluation of the person’s contributions to the final programming project and an individual written quiz." Show="true" />
+            <Supp_Txt Lang="da-DK" Txt="For at bestå kurset skal den studerende bestå mindst 80 % af de individuelle ugentlige opgaver samt to gruppeprojekter. Bedømmelsen er bestået/ikke bestået og sker på baggrund af en løbende evaluering af de afleverede opgaver gennem hele kursusforløbet." Show="true" />
+            <Supp_Txt Lang="en-GB" Txt="Students must pass at least 80% of the individual weekly assignments and pass two group projects. Assessment is pass/fail and based on continuous evaluation of submitted coursework." Show="true" />
           </Assessment>
           <Marking_Scale Marking_ScaleKey="GLOB_BESTAEET" />
           <Date_Of_Exam SortID="1" Show="true">
@@ -59,22 +59,22 @@
           </Place>
         </Sign_Up>
         <Txt Lang="da-DK">
-          <Contents>Indholdet i dette kursus er egnet til studerende, der har nogen eller lidt erfaring med programmering, og som ønsker at tage andre kurser på DTU Wind. Kurset bruger programmeringssproget Python. I løbet af kurset arbejder studerende i små grupper med øvelser under undervisning, ugentlige opgaver og to projekter. En studerende skal bestå det første projekt for at indsende det andet projekt. Den endelige karakter evalueres på baggrund af det andet projekt. Kommunikation om videnskabelig kode øves ved ugentlige gruppe-til-gruppe-præsentationer af løsningerne på ugens opgave.
+          <Contents>Indholdet i dette kursus er egnet til studerende, der har nogen eller lidt erfaring med programmering, og som ønsker at tage andre kurser på DTU Wind. Kurset bruger programmeringssproget Python. I løbet af kurset arbejder studerende individuelle ugentlige opgaver. Derudover gennemføres to gruppeprojekter. Kommunikation om videnskabelig kode øves ved de ugentlige individuelle opgaver. For at bestå kurset skal de studerende bestå mindst 80 % af de individuelle ugentlige opgaver samt begge gruppeprojekter.
 
 I den første del af kurset lærer de studerende, hvordan man samarbejder i grupper om kode ved hjælp af versionsstyringssoftwaren git/GitHub, som bruges hele semesteret. Derefter bruger de studerende de grundlæggende pakker til videnskabelig Python-programmering (numpy, matplotlib, scipy) til at øve grundlæggende færdigheder som numerisk array-manipulation, indlæsning/lagring/visualisering af data og skrivning/import af funktioner. Disse færdigheder cementeres i det første projekt, hvor grupperne beregner en simpel vindmøllemodels tidsmarcherende respons på forskellige turbulente vindforhold og visualiserer de resulterende statistikker.
 
-Når det første projekt er afleveret, præsenteres mere avancerede emner. Dette inkluderer mere abstrakte koncepter fra generel programmering - såsom objektorienteret praksis, design af pakkearkitekturer og linting - samt mere vindspecifikke emner - f.eks. pakker og dataformater, der almindeligvis bruges i vindenergi. Kurset slutter med det afsluttende projekt, hvor de studerende arbejder individuelt eller i grupper for at udgive en Python-pakke til vindenergi, komplet med test og dokumentation. Der er en liste over foruddefinerede afsluttende projekter, men de studerende kan indsende en anmodning om et andet projekt, hvis de har en idé, de gerne vil forfølge.</Contents>
+Når det første projekt er afleveret, præsenteres mere avancerede emner. Dette inkluderer mere abstrakte koncepter fra generel programmering - såsom objektorienteret praksis, design af pakkearkitekturer og linting - samt mere vindspecifikke emner - f.eks. pakker og dataformater, der almindeligvis bruges i vindenergi. Kurset slutter med det afsluttende projekt, hvor de studerende arbejder individuelt eller i grupper for at udgive en Python-pakke til vindenergi, komplet med test og dokumentation. Der er en liste over foruddefinerede afsluttende projekter, men de studerende kan indsende en anmodning om et andet projekt, hvis de har en idé, de gerne vil forfølge. Agentbaseret programmering er integreret i kurset.</Contents>
           <Teaching_And_Learning_Methods>Forelæsninger og gruppearbejde på opgaver (2-3 studerende pr. gruppe)</Teaching_And_Learning_Methods>
-          <Course_Objectives>At skrive kode til at løse komplekse videnskabelige og tekniske problemer er blevet en vigtig færdighed for forskere og ingeniører. Dette kursus hjælper studerende med at udvikle denne færdighed gennem: at lære kerneprincipper og bedste praksis for programmering; at øve brugen af grundlæggende softwareudviklingsværktøjer og teknikker som versionskontrol, pakning og arkitekturdesign; at udnytte videnskabelige beregningsværktøjer, der ofte bruges i videnskabelig Python, som numpy, matplotlib og scipy; at udvikle, evaluere og kommunikere Python-biblioteker til vindenergiapplikationer gennem praktiske gruppeprojekter, peer code reviews og kodepræsentationer. Gennem dette kursus vil den studerendes materielle, kognitive og sociale computerfærdigheder i høj grad blive forbedret sammen med evnen til at formulere computerproblemer inden for vindenergi og løse dem med programmering.</Course_Objectives>
+          <Course_Objectives>At skrive forståelig kode i samarbejde med andre til at løse komplekse videnskabelige og tekniske problemer er en vigtig færdighed for forskere og ingeniører, og den er blevet endnu vigtigere i takt med udbredelsen af kunstig intelligens. Dette kursus hjælper studerende med at udvikle denne færdighed gennem: at lære kerneprincipper og bedste praksis for programmering; at øve brugen af grundlæggende softwareudviklingsværktøjer og teknikker som versionskontrol, pakning og arkitekturdesign; at udnytte videnskabelige beregningsværktøjer, der ofte bruges i videnskabelig Python, som numpy, matplotlib og scipy; at udvikle, evaluere og kommunikere Python-biblioteker til vindenergiapplikationer gennem praktiske gruppeprojekter, samt en introduktion til agentbaseret programmering med AI-værktøjer. Gennem dette kursus vil den studerendes materielle, kognitive og sociale computerfærdigheder i høj grad blive forbedret sammen med evnen til at formulere computerproblemer inden for vindenergi og løse dem med programmering.</Course_Objectives>
         </Txt>
         <Txt Lang="en-GB">
-          <Contents>The content of this course is tailored to students who have average to little previous experience in programming and want to take other courses at DTU Wind. The course uses the Python programming language. During the course, students work in small groups on in-class exercises, weekly assignments, and two projects. Students must pass the first project to submit the second project. The final grade is evaluated based on the second project. Consistent practice in communication about scientific code is ensured by weekly group-to-group presentations of their solutions to the week’s assignment.
+          <Contents>The content of this course is tailored to students who have average to little previous experience in programming and want to take other courses at DTU Wind. The course uses the Python programming language. During the course, students submit small weekly assignments individually. Additionally, there are two group projects. Consistent practice in communication about and understanding of scientific code is ensured by weekly individual assignments. Students must pass 80% of the weekly individual assignments and both group projects to pass the course.
 
 In the first part of the course, students learn how to collaborate in groups on code using the version-control software git/GitHub, which is used throughout the semester. After that, students use the foundational packages for scientific Python programming (numpy, matplotlib, scipy) to practice basic skills such as numeric array manipulation, loading/saving/visualizing data, and writing/importing functions. These skills are cemented in the first project, in which groups calculate the time-marching response of a simple wind turbine model for different turbulent wind conditions and visualize the resulting statistics.
 
-After the first project is handed in, more advanced topics are presented. This includes more abstract concepts from general programming—such as object-oriented practices, designing package architectures, and linting—as well as more wind-specific topics—e.g., packages and data formats that are commonly used in wind energy. The course ends with the final project, in which students work individually or in groups to publish a Python package for wind energy, complete with tests and documentation. A list of pre-defined final projects is provided, but students may submit a request for a different project if they have an idea they would like to pursue.</Contents>
+After the first project is handed in, more advanced topics are presented. This includes more abstract concepts from general programming—such as object-oriented practices, designing package architectures, and linting—as well as more wind-specific topics—e.g., packages and data formats that are commonly used in wind energy. The course ends with the final project, in which students work individually or in groups to publish a Python package for wind energy, complete with tests and documentation. A list of pre-defined final projects is provided, but students may submit a request for a different project if they have an idea they would like to pursue. Agentic programming is integrated into the course.</Contents>
           <Teaching_And_Learning_Methods>Lectures and group work on assignments (2-3 students per group)</Teaching_And_Learning_Methods>
-          <Course_Objectives>Writing code to solve complex scientific and engineering problems has become an essential skill for scientists and engineers. This course helps students to develop this skill through: learning core principles and best practices for programming; practicing usage of fundamental software development tools and techniques such as version control, packaging and architecture design; leveraging scientific computation tools commonly used in scientific Python, like numpy, matplotlib and scipy; developing, evaluating and communicating Python libraries for wind-energy applications through hands-on group projects, peer code reviews and code presentations. Through this course, a student’s material, cognitive, and social computational literacy will be largely improved, together with the ability to formulate computational problems in wind energy and solve them with programming.</Course_Objectives>
+          <Course_Objectives>Collaboratively writing understandable code to solve complex scientific and engineering problems is an essential skill for scientists and engineers, and is more important in this age of AI. This course helps students to develop this skill through: learning core principles and best practices for programming; practicing usage of fundamental software development tools and techniques such as version control, packaging and architecture design; leveraging scientific computation tools commonly used in scientific Python, like numpy, matplotlib and scipy; developing, evaluating and communicating Python libraries for wind-energy applications through hands-on group projects; and the basics of agentic programming. Through this course, a student’s material, cognitive, and social computational literacy will be largely improved, together with the ability to formulate computational problems in wind energy and solve them with programming.</Course_Objectives>
         </Txt>
         <DTU_ObjectiveKeyword SortID="1">
           <Txt Lang="da-DK" Txt="Bruge Python-pakker, der er almindelige for vindenergi, såsom numpy, matplotlib, scipy, PyWake, TOPFARM, xarray, pandas osv." />
@@ -85,20 +85,20 @@ After the first project is handed in, more advanced topics are presented. This i
           <Txt Lang="en-GB" Txt="Manipulate data stored in the most common wind-energy formats, demonstrating skills such as loading from/saving to file, performing computations, and visualizing results." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Designe og publicere en Python-pakke til en vindenergi-applikation med tests og dokumentation." />
-          <Txt Lang="en-GB" Txt="Design and publish a Python package for a wind-energy application with tests and documentation." />
+          <Txt Lang="da-DK" Txt="I samarbejde med andre og ved brug af AI-værktøjer designe og publicere en Python-pakke til en vindenergi-applikation med tests og dokumentation." />
+          <Txt Lang="en-GB" Txt="In teams and with AI, design and publish a Python package for a wind-energy application with tests and documentation." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Samarbejde med et team om en kodebase, der er hostet på GitLab, og demonstrere grundlæggende git-færdigheder som at tilføje, committe, pushe og branching." />
-          <Txt Lang="en-GB" Txt="Collaborate with a team on a code base hosted on GitLab, demonstrating basic git skills such as adding, committing, pushing, and branching." />
+          <Txt Lang="da-DK" Txt="Demonstrere grundlæggende git-færdigheder som at tilføje, committe, pushe og branching." />
+          <Txt Lang="en-GB" Txt="Demonstrate basic git skills such as adding, committing, pushing, and branching." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Udvikle, debugge, og linte kode med VS Code og relateret udvidelser." />
-          <Txt Lang="en-GB" Txt="Develop, debug, and lint code using VS Code and related extensions." />
+          <Txt Lang="da-DK" Txt="Udvikle, debugge, og linte kode med VS Code, AI-agenter og relateret udvidelser." />
+          <Txt Lang="en-GB" Txt="Develop, debug, and lint code using VS Code, agents and related extensions." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Kommunikere kode mundtligt og skriftligt via diagrammer, kommentarer, commit-meddelelser og dokumentation." />
-          <Txt Lang="en-GB" Txt="Communicate code orally and also in writing, via diagrams, comments, commit messages, and documentation." />
+          <Txt Lang="da-DK" Txt="Demonstrere forståelse for kode genereret af kunstig intelligens." />
+          <Txt Lang="en-GB" Txt="Demonstrate understanding of code generated by AI." />
         </DTU_ObjectiveKeyword>
         <DTU_ObjectiveKeyword SortID="1">
           <Txt Lang="da-DK" Txt="Kritisk analysere kode for god kodningspraksis såsom modularitet, vedligeholdelighed, overholdelse af stilistiske konventioner osv." />
@@ -107,10 +107,6 @@ After the first project is handed in, more advanced topics are presented. This i
         <DTU_ObjectiveKeyword SortID="1">
           <Txt Lang="da-DK" Txt="Skrive tests til videnskabelig kode." />
           <Txt Lang="en-GB" Txt="Write tests for scientific code." />
-        </DTU_ObjectiveKeyword>
-        <DTU_ObjectiveKeyword SortID="1">
-          <Txt Lang="da-DK" Txt="Eksekvere kode på en computerklynge." />
-          <Txt Lang="en-GB" Txt="Execute code on a computing cluster." />
         </DTU_ObjectiveKeyword>
         <DTU>
           <GroenDyst ParticipationKey="dtu_groendyst_yes" />
@@ -129,7 +125,7 @@ After the first project is handed in, more advanced topics are presented. This i
           <TeacherTypeDistribuition TeacherTypeDistribuitionKey="PermanentEmployedTeacher" Percentage="100" />
         </TeacherTypesDistribuition>
         <Record_Info>
-          <Action Action="Accepted" PersonKey="41322" PersonUniversity="dtu" Date="2026-05-04" Time="08:29:30.967" />
+          <Action Action="Accepted" PersonKey="103493" PersonUniversity="dtu" Date="2026-11-23" Time="08:47:16.733" />
         </Record_Info>
       </Course>
     </CourseXml>
